@@ -1,0 +1,31 @@
+{
+  "condition": "CROSS",
+  "repeat": 2,
+  "chunk_index": 0,
+  "chunk_id": "controlled-US7991757B2-cross-000",
+  "file_path": "US7991757B2.txt",
+  "call_id": 14,
+  "request_messages_exact_match": true,
+  "response": {
+    "id": 14,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "entity<|#|>Computer System<|#|>Artifact<|#|>A computer system referenced in claim 1 that, in this claim, comprises multiple physical computing devices.\nentity<|#|>Registration Module<|#|>Artifact<|#|>A module of the system that is further configured to allow a provider of an external recommender to provide something.\nentity<|#|>External Recommender<|#|>Artifact<|#|>An external recommender belonging to a plurality of external recommenders, whose provider is allowed by the registration module to provide something.\nentity<|#|>Provider<|#|>Person<|#|>A provider of an external recommender associated with the plurality of external recommenders.\nrelation<|#|>Computer System<|#|>Multiple Physical Computing Devices<|#|>comprises, composition<|#|>The computer system comprises multiple physical computing devices.\nrelation<|#|>Registration Module<|#|>Provider<|#|>allows, configuration<|#|>The registration module is configured to allow a provider of an external recommender to provide something.\nrelation<|#|>Provider<|#|>External Recommender<|#|>provides, association<|#|>The provider is a provider of an external recommender associated with the plurality of external recommenders.\n<|COMPLETE|>",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1870,
+      "completion_tokens": 303,
+      "total_tokens": 2173,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1870
+    },
+    "reasoning_content_present": false
+  },
+  "completion_delimiter_present": true,
+  "valid_nontruncated": true
+}

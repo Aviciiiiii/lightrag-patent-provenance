@@ -1,0 +1,381 @@
+{
+  "audit_id": "N007",
+  "node_id": "System",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "三篇均为由计算部件执行程序的系统宽类，分别服务于内容界面辅助、翻译式查询模式挖掘和说话人识别。原抽取描述和各邻边分别保留其任务，未证实互不相容的System词义。",
+  "class_instance_interpretation_zh": "每篇的system是本专利的局部系统实施例；共享类级ID不证明三者是同一个体或拥有彼此全部功能。以计算系统宽类解释足够，故不单凭应用不同判contextual_conflation。",
+  "source_assessments": [
+    {
+      "publication_number": "US10867122B1",
+      "evidence_quote": "A system comprising: one or more processors configured to execute computer program instructions;",
+      "claim_or_section": "Claim 11",
+      "source_chunk_ids": [
+        "US10867122B1-chunk-001"
+      ],
+      "additional_evidence_quotes": [
+        {
+          "evidence_quote": "inserting a portion of the content displayed in the user interface element into the content of the display environment.",
+          "claim_or_section": "Claim 15",
+          "source_chunk_ids": [
+            "US10867122B1-chunk-001",
+            "US10867122B1-chunk-002"
+          ]
+        }
+      ],
+      "claim_verification_path": "data/claims/US10867122B1.json",
+      "role_zh": "根据用户正在输入的内容确定事实实体、提供相关界面内容，并响应输入插入内容的计算系统。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取实体描述的该专利用途可由已读Claims支持；不能将合并后其他专利用途一并归给本专利。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US10867122B1-chunk-001",
+            "cache_key": "default:extract:e4a3e399bef66acd82eec1d8ea32fbc3",
+            "line_number": 12,
+            "description": "A system comprising one or more processors configured to execute computer program instructions and computer storage media encoded with such instructions."
+          },
+          {
+            "chunk_id": "US10867122B1-chunk-002",
+            "cache_key": "default:extract:aba337a2690600101edcd58be94e9ce1",
+            "line_number": 5,
+            "description": "A system that performs operations including causing display of updated content in a user interface element and inserting content into a display environment."
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US10867122B1-chunk-001",
+            "cache_key": "default:extract:e4a3e399bef66acd82eec1d8ea32fbc3",
+            "line_number": 39,
+            "raw_line": "relation<|#|>System<|#|>Processors<|#|>comprises<|#|>The system comprises one or more processors configured to execute computer program instructions."
+          },
+          {
+            "chunk_id": "US10867122B1-chunk-001",
+            "cache_key": "default:extract:e4a3e399bef66acd82eec1d8ea32fbc3",
+            "line_number": 40,
+            "raw_line": "relation<|#|>System<|#|>Computer Program Instructions<|#|>executes<|#|>The system's processors execute computer program instructions to cause a computer device to perform operations."
+          },
+          {
+            "chunk_id": "US10867122B1-chunk-002",
+            "cache_key": "default:extract:aba337a2690600101edcd58be94e9ce1",
+            "line_number": 9,
+            "raw_line": "relation<|#|>System<|#|>User Interface Element<|#|>causes display, updated content<|#|>The system causes display of the updated content in the user interface element with the display environment."
+          },
+          {
+            "chunk_id": "US10867122B1-chunk-002",
+            "cache_key": "default:extract:aba337a2690600101edcd58be94e9ce1",
+            "line_number": 13,
+            "raw_line": "relation<|#|>System<|#|>Input Indication<|#|>receives<|#|>The system receives an indication that the user device supplied input to the input element."
+          },
+          {
+            "chunk_id": "US10867122B1-chunk-002",
+            "cache_key": "default:extract:aba337a2690600101edcd58be94e9ce1",
+            "line_number": 14,
+            "raw_line": "relation<|#|>System<|#|>Content Portion<|#|>inserts<|#|>The system inserts a portion of the content displayed in the user interface element into the content of the display environment."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The system comprises one or more processors configured to execute computer program instructions.",
+          "keywords": "comprises",
+          "source_id": "US10867122B1-chunk-001",
+          "file_path": "US10867122B1.txt",
+          "created_at": 1793284649,
+          "truncate": "",
+          "source": "System",
+          "target": "Processors",
+          "edge_index": 155,
+          "source_chunks": [
+            "US10867122B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10867122B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The system's processors execute computer program instructions to cause a computer device to perform operations.",
+          "keywords": "executes",
+          "source_id": "US10867122B1-chunk-001",
+          "file_path": "US10867122B1.txt",
+          "created_at": 1793284649,
+          "truncate": "",
+          "source": "System",
+          "target": "Computer Program Instructions",
+          "edge_index": 156,
+          "source_chunks": [
+            "US10867122B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10867122B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The system causes display of the updated content in the user interface element with the display environment.",
+          "keywords": "causes display,updated content",
+          "source_id": "US10867122B1-chunk-002",
+          "file_path": "US10867122B1.txt",
+          "created_at": 1793284649,
+          "truncate": "",
+          "source": "System",
+          "target": "User Interface Element",
+          "edge_index": 157,
+          "source_chunks": [
+            "US10867122B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US10867122B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The system receives an indication that the user device supplied input to the input element.",
+          "keywords": "receives",
+          "source_id": "US10867122B1-chunk-002",
+          "file_path": "US10867122B1.txt",
+          "created_at": 1793284649,
+          "truncate": "",
+          "source": "System",
+          "target": "Input Indication",
+          "edge_index": 158,
+          "source_chunks": [
+            "US10867122B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US10867122B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The system inserts a portion of the content displayed in the user interface element into the content of the display environment.",
+          "keywords": "inserts",
+          "source_id": "US10867122B1-chunk-002",
+          "file_path": "US10867122B1.txt",
+          "created_at": 1793284649,
+          "truncate": "",
+          "source": "System",
+          "target": "Content Portion",
+          "edge_index": 159,
+          "source_chunks": [
+            "US10867122B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US10867122B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "all_source_chunk_ids_reviewed": [
+        "US10867122B1-chunk-001",
+        "US10867122B1-chunk-002"
+      ]
+    },
+    {
+      "publication_number": "US8655901B1",
+      "evidence_quote": "A system comprising: one or more processors configured to interact with a computer-readable medium",
+      "claim_or_section": "Claim 8",
+      "source_chunk_ids": [
+        "US8655901B1-chunk-000"
+      ],
+      "additional_evidence_quotes": [
+        {
+          "evidence_quote": "translating the collection of annotated queries in the first language into a translated collection of queries in a second language;",
+          "claim_or_section": "Claim 8",
+          "source_chunk_ids": [
+            "US8655901B1-chunk-000"
+          ]
+        }
+      ],
+      "claim_verification_path": "data/claims/US8655901B1.json",
+      "role_zh": "执行查询模式匹配、标签注释、翻译及译后模式提取的计算系统。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取实体描述的该专利用途可由已读Claims支持；不能将合并后其他专利用途一并归给本专利。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8655901B1-chunk-000",
+            "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "line_number": 13,
+            "description": "A computing system comprising one or more processors configured to interact with a computer-readable medium to perform query pattern mining operations."
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8655901B1-chunk-000",
+            "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "line_number": 34,
+            "raw_line": "relation<|#|>System<|#|>Processor<|#|>comprises<|#|>The system comprises one or more processors configured to interact with a computer-readable medium to perform operations."
+          },
+          {
+            "chunk_id": "US8655901B1-chunk-000",
+            "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "line_number": 36,
+            "raw_line": "relation<|#|>System<|#|>Translation-Based Query Pattern Mining<|#|>performs operations of<|#|>The system is configured to perform operations comprising receiving a query pattern, identifying queries, annotating, translating, and extracting a translated query pattern."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The system comprises one or more processors configured to interact with a computer-readable medium to perform operations.",
+          "keywords": "comprises",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "System",
+          "target": "Processor",
+          "edge_index": 153,
+          "source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The system is configured to perform operations comprising receiving a query pattern, identifying queries, annotating, translating, and extracting a translated query pattern.",
+          "keywords": "performs operations of",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "System",
+          "target": "Translation-Based Query Pattern Mining",
+          "edge_index": 154,
+          "source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "all_source_chunk_ids_reviewed": [
+        "US8655901B1-chunk-000"
+      ]
+    },
+    {
+      "publication_number": "US9514753B2",
+      "evidence_quote": "A system comprising: one or more computers; and a computer-readable storage device storing instructions",
+      "claim_or_section": "Claim 18",
+      "source_chunk_ids": [
+        "US9514753B2-chunk-001"
+      ],
+      "additional_evidence_quotes": [
+        {
+          "evidence_quote": "selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector.",
+          "claim_or_section": "Claim 18",
+          "source_chunk_ids": [
+            "US9514753B2-chunk-001"
+          ]
+        }
+      ],
+      "claim_verification_path": "data/claims/US9514753B2.json",
+      "role_zh": "运行话语向量哈希与说话人向量比较的系统；共享类不等于与查询模式挖掘系统同一实例。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取实体描述的该专利用途可由已读Claims支持；不能将合并后其他专利用途一并归给本专利。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9514753B2-chunk-001",
+            "cache_key": "default:extract:01d28ddc0f0554b0a28e043f6f9db994",
+            "line_number": 14,
+            "description": "A system comprising one or more computers and a computer-readable storage device storing instructions."
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9514753B2-chunk-001",
+            "cache_key": "default:extract:01d28ddc0f0554b0a28e043f6f9db994",
+            "line_number": 27,
+            "raw_line": "relation<|#|>System<|#|>Computer<|#|>composition<|#|>The system comprises one or more computers."
+          },
+          {
+            "chunk_id": "US9514753B2-chunk-001",
+            "cache_key": "default:extract:01d28ddc0f0554b0a28e043f6f9db994",
+            "line_number": 28,
+            "raw_line": "relation<|#|>System<|#|>Computer-Readable Storage Device<|#|>composition<|#|>The system comprises a computer-readable storage device storing instructions."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The system comprises a computer-readable storage device storing instructions.",
+          "keywords": "composition",
+          "source_id": "US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793284149,
+          "truncate": "",
+          "source": "Computer-Readable Storage Device",
+          "target": "System",
+          "edge_index": 147,
+          "source_chunks": [
+            "US9514753B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514753B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The system comprises one or more computers.",
+          "keywords": "composition",
+          "source_id": "US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793284149,
+          "truncate": "",
+          "source": "Computer",
+          "target": "System",
+          "edge_index": 152,
+          "source_chunks": [
+            "US9514753B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514753B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "all_source_chunk_ids_reviewed": [
+        "US9514753B2-chunk-001"
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 9,
+    "observed_unsupported_edge": false,
+    "details_zh": "全部9条实际邻边已核对：147/152对应US9514753B2的存储设备/计算机；153/154对应US8655901B1的处理器/查询挖掘；155–159对应US10867122B1的处理器、指令和界面操作。157的chunk002以Claim14尾句开始，完整Claim14与相邻chunk001可补足主语；未把片段主语缺失误判为无原文支持边。",
+    "edge_indices": [
+      147,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159
+    ],
+    "unsupported_edge_indices": [],
+    "all_actual_incident_edges_reviewed": true
+  },
+  "limitations_zh": [
+    "AI辅助逐条审阅，不是独立人工gold；分类是概念/实例解释，不是LightRAG本体声明。",
+    "只审查已保存来源、抽取记录和实际邻边；没有新查询或生成，不能推断潜在跨文档路径已经引起答案污染。",
+    "相同source_id需结合原round2工作空间解释；合并description每个片段的细粒度来源需回查原抽取行。"
+  ],
+  "review_method": "Read all dossier source chunks, target raw entity/relation rows and all actual incident edges; check exact contiguous quotes against saved claim JSON and actual chunk content. No model API.",
+  "reviewed_utc": "2026-10-30T08:11:05.427127+00:00",
+  "external_model_api_calls": 0,
+  "credentials_read": false
+}

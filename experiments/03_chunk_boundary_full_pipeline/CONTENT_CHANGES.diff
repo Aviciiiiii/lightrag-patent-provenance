@@ -1,0 +1,7 @@
+--- before/experiments/03_chunk_boundary_full_pipeline/scripts/build_final_report.py
++++ after/experiments/03_chunk_boundary_full_pipeline/scripts/build_final_report.py
+@@ -55,2 +55,2 @@
+-<已删去的原文行，不在仓库中保留>
+- assert 70<=len(english.split())<=100
++ english='[已删去：与实验无关的个人申请材料，见 reports/README.md]'
++ # word-count assert removed with the paragraph

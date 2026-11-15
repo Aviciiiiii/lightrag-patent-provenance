@@ -1,0 +1,28 @@
+{
+  "status": "processed",
+  "content_summary": "Publication number: US8069128B2\nTitle: Real-time ad-hoc spam filtering of email\n\nABSTRACT\nEmbodiments are directed towards employing a multi-pass ad-hoc spam message filtering approach that dynamically generates a temporary classifier during a first ...",
+  "content_length": 9043,
+  "created_at": "2026-11-05T16:01:41.514105+00:00",
+  "updated_at": "2026-11-05T16:02:10.884907+00:00",
+  "file_path": "US8069128B2.txt",
+  "track_id": "insert_20261105_080141_84f23a43",
+  "content_hash": "7eb480f70c2120924dabed8f4e0eb6ab",
+  "metadata": {
+    "parse_start_time": 1793894501,
+    "parse_stage_skipped": true,
+    "parse_format": "raw",
+    "parse_engine": "legacy",
+    "analyzing_start_time": 1793894501,
+    "analyzing_stage_skipped": true,
+    "kg_write_state": "graph_mutation_started",
+    "process_start_time": 1793894501,
+    "process_end_time": 1793894530,
+    "chunk_method": "legacy_chunking_func",
+    "chunk_opts": "size=1200, split_only=False, overlap=100"
+  },
+  "chunks_count": 2,
+  "chunks_list": [
+    "US8069128B2-chunk-000",
+    "US8069128B2-chunk-001"
+  ]
+}

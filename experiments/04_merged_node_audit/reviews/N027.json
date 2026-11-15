@@ -1,0 +1,508 @@
+{
+  "audit_id": "N027",
+  "node_id": "User Feedback",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两来源都指用户显式提供的反馈数据；一处判断用户是否偏好虚构角色，另一处判断疑似拼写错误是否为作者有意写法。不同反馈对象和字段不改变“用户反馈”这一共同上位数据类。合并描述保留两种任务，不能据此认定两个反馈实例相同或词义冲突。",
+  "class_instance_interpretation_zh": "共同类为用户提供的意见/判定；US9374411B1的角色偏好反馈与US9514120B1的文本校验反馈是不同文档局部数据实例，字段及取值不应跨文档移植。",
+  "concept_class_vs_local_instance": "shared_class; document-local instances remain distinct",
+  "source_assessments": [
+    {
+      "publication_number": "US9374411B1",
+      "evidence_quote": "obtain explicit user feedback expressing that the user favors the first fictional character via a user interface.",
+      "claim_or_section": "Claim 23",
+      "source_chunk_ids": [
+        "US9374411B1-chunk-002"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US9374411B1-chunk-002"
+      ],
+      "claim_number": 23,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 161,
+        "indexed_document_char_offset": 12684
+      },
+      "role_zh": "用户经界面表达对第一个虚构角色的偏好。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk002实体行与Claim23一致；三条关系分别保留指令获取、界面渠道和所偏好角色。",
+        "raw_records": [
+          {
+            "chunk_id": "US9374411B1-chunk-002",
+            "content_sha256": "b5779b04614e5a41d1a3eb710fae56a98a1d9153d5b676b056c38b64dd24a8be",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+                "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 7,
+                "raw_line": "entity<|#|>User Feedback<|#|>Data<|#|>Explicit user feedback expressing that the user favors the first fictional character, obtained via a user interface as described in claim 23.",
+                "fields": [
+                  "entity",
+                  "User Feedback",
+                  "Data",
+                  "Explicit user feedback expressing that the user favors the first fictional character, obtained via a user interface as described in claim 23."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+                "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 16,
+                "raw_line": "relation<|#|>Computer Instructions<|#|>User Feedback<|#|>obtains, causes<|#|>The computer instructions cause the computing device to obtain explicit user feedback expressing that the user favors the first fictional character.",
+                "fields": [
+                  "relation",
+                  "Computer Instructions",
+                  "User Feedback",
+                  "obtains, causes",
+                  "The computer instructions cause the computing device to obtain explicit user feedback expressing that the user favors the first fictional character."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+                "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 17,
+                "raw_line": "relation<|#|>User Feedback<|#|>User Interface<|#|>obtained via, expresses<|#|>The explicit user feedback is obtained via a user interface.",
+                "fields": [
+                  "relation",
+                  "User Feedback",
+                  "User Interface",
+                  "obtained via, expresses",
+                  "The explicit user feedback is obtained via a user interface."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+                "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 18,
+                "raw_line": "relation<|#|>User Feedback<|#|>First Fictional Character<|#|>favors, expresses preference<|#|>The user feedback expresses that the user favors the first fictional character.",
+                "fields": [
+                  "relation",
+                  "User Feedback",
+                  "First Fictional Character",
+                  "favors, expresses preference",
+                  "The user feedback expresses that the user favors the first fictional character."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9374411B1-chunk-002",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "55d66deeaf26058f9f185573d9c9eb15b74dc404982847d9df7aa98c8df82ed7"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The explicit user feedback is obtained via a user interface.",
+          "keywords": "expresses,obtained via",
+          "source_id": "US9374411B1-chunk-002",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User Interface",
+          "target": "User Feedback",
+          "edge_index": 440,
+          "source_chunks": [
+            "US9374411B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computer instructions cause the computing device to obtain explicit user feedback expressing that the user favors the first fictional character.",
+          "keywords": "causes,obtains",
+          "source_id": "US9374411B1-chunk-002",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User Feedback",
+          "target": "Computer Instructions",
+          "edge_index": 491,
+          "source_chunks": [
+            "US9374411B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The user feedback expresses that the user favors the first fictional character.",
+          "keywords": "expresses preference,favors",
+          "source_id": "US9374411B1-chunk-002",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User Feedback",
+          "target": "First Fictional Character",
+          "edge_index": 492,
+          "source_chunks": [
+            "US9374411B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "evidence_quote": "feedback comprising an indicator that specifies that the potential typographical error is an author-intended string for the work",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ],
+      "claim_number": 1,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 409,
+        "indexed_document_char_offset": 1363
+      },
+      "role_zh": "用户反馈是判断疑似排版/拼写错误是否为作者意图的输入，并与其他作品反馈组合。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000实体描述的核心判定与Claim1一致，列举字段来自Claim7；原文“at least one of”是可选字段，抽取描述未明说全字段必需。",
+        "raw_records": [
+          {
+            "chunk_id": "US9514120B1-chunk-000",
+            "content_sha256": "0b094b66650820aadeb8cf681dbb275f6e8339dfd53ea0886553a1ad1e7e9a0e",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 12,
+                "raw_line": "entity<|#|>User Feedback<|#|>Data<|#|>Feedback collected from users for a work indicating whether potential typographical errors are author-intended strings, comprising user identifier, work identifier, string, position, decision, confidence level, and parameters.",
+                "fields": [
+                  "entity",
+                  "User Feedback",
+                  "Data",
+                  "Feedback collected from users for a work indicating whether potential typographical errors are author-intended strings, comprising user identifier, work identifier, string, position, decision, confidence level, and parameters."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 28,
+                "raw_line": "relation<|#|>Computing Device<|#|>User Feedback<|#|>collects, combines, sorts<|#|>The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback.",
+                "fields": [
+                  "relation",
+                  "Computing Device",
+                  "User Feedback",
+                  "collects, combines, sorts",
+                  "The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 31,
+                "raw_line": "relation<|#|>Processing Device<|#|>User Feedback<|#|>receives, combines, sorts<|#|>The processing device receives feedback from users, combines it with feedback for additional works, and sorts the combined feedback.",
+                "fields": [
+                  "relation",
+                  "Processing Device",
+                  "User Feedback",
+                  "receives, combines, sorts",
+                  "The processing device receives feedback from users, combines it with feedback for additional works, and sorts the combined feedback."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 38,
+                "raw_line": "relation<|#|>User Feedback<|#|>Author-Intended String<|#|>indicates<|#|>User feedback indicates whether potential typographical errors are author-intended strings.",
+                "fields": [
+                  "relation",
+                  "User Feedback",
+                  "Author-Intended String",
+                  "indicates",
+                  "User feedback indicates whether potential typographical errors are author-intended strings."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 39,
+                "raw_line": "relation<|#|>User Feedback<|#|>Combined Feedback<|#|>combined into<|#|>Feedback for a work is combined with feedback for additional works to generate combined feedback.",
+                "fields": [
+                  "relation",
+                  "User Feedback",
+                  "Combined Feedback",
+                  "combined into",
+                  "Feedback for a work is combined with feedback for additional works to generate combined feedback."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9514120B1-chunk-000",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "4fe04b755a3773900247f241ed3834154557d16eacb219db1ebf120bb60459d7"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback.",
+          "keywords": "collects,combines,sorts",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "User Feedback",
+          "edge_index": 450,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processing device receives feedback from users, combines it with feedback for additional works, and sorts the combined feedback.",
+          "keywords": "combines,receives,sorts",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Processing Device",
+          "target": "User Feedback",
+          "edge_index": 461,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "User feedback indicates whether potential typographical errors are author-intended strings.",
+          "keywords": "indicates",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Author-Intended String",
+          "target": "User Feedback",
+          "edge_index": 480,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Feedback for a work is combined with feedback for additional works to generate combined feedback.",
+          "keywords": "combined into",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "User Feedback",
+          "target": "Combined Feedback",
+          "edge_index": 490,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 7,
+    "observed_unsupported_edge": false,
+    "observed_unsupported_edge_definition": "true仅用于依据原文明确不支持的实际关系；类级概括/端点角色候选单列，不自动计入。",
+    "details_zh": "已逐条检查全部实际邻边及其source_id/file_path；各关系在所属专利中有对应陈述，未发现将另一专利特征直接写入本专利边描述的确证。共同节点容许潜在无作用域路径组合，但本审计没有执行或观察该传播。",
+    "edge_indices": [
+      440,
+      450,
+      461,
+      480,
+      490,
+      491,
+      492
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 440,
+        "source": "User Interface",
+        "target": "User Feedback",
+        "source_id": "US9374411B1-chunk-002",
+        "file_path": "US9374411B1.txt",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "actual_description": "The explicit user feedback is obtained via a user interface.",
+        "claim_or_section": "US9374411B1 Claim23",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 450,
+        "source": "Computing Device",
+        "target": "User Feedback",
+        "source_id": "US9514120B1-chunk-000",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback.",
+        "claim_or_section": "US9514120B1 Abstract/Claim1",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 461,
+        "source": "Processing Device",
+        "target": "User Feedback",
+        "source_id": "US9514120B1-chunk-000",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The processing device receives feedback from users, combines it with feedback for additional works, and sorts the combined feedback.",
+        "claim_or_section": "US9514120B1 Claim1",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 480,
+        "source": "Author-Intended String",
+        "target": "User Feedback",
+        "source_id": "US9514120B1-chunk-000",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "User feedback indicates whether potential typographical errors are author-intended strings.",
+        "claim_or_section": "US9514120B1 Claim1",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 490,
+        "source": "User Feedback",
+        "target": "Combined Feedback",
+        "source_id": "US9514120B1-chunk-000",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "Feedback for a work is combined with feedback for additional works to generate combined feedback.",
+        "claim_or_section": "US9514120B1 Claim1",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 491,
+        "source": "User Feedback",
+        "target": "Computer Instructions",
+        "source_id": "US9374411B1-chunk-002",
+        "file_path": "US9374411B1.txt",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "actual_description": "The computer instructions cause the computing device to obtain explicit user feedback expressing that the user favors the first fictional character.",
+        "claim_or_section": "US9374411B1 Claim23",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 492,
+        "source": "User Feedback",
+        "target": "First Fictional Character",
+        "source_id": "US9374411B1-chunk-002",
+        "file_path": "US9374411B1.txt",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "actual_description": "The user feedback expresses that the user favors the first fictional character.",
+        "claim_or_section": "US9374411B1 Claim23",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      }
+    ],
+    "observed_cross_publication_unsupported_edge": false
+  },
+  "limitations_zh": [
+    "本结果为AI辅助逐来源语义审阅，不是独立人工金标准；分类依赖所声明的类/实例粒度。",
+    "只审计第二轮既有20篇索引中的可见原chunk、原抽取与实际图邻边；原文范围为已索引的标题、摘要及Claims，未额外读取完整说明书或新语料，未调用模型API，也未进行新的检索/生成传播测试。",
+    "共享节点产生跨专利邻接不等于已观察到错误跨文档推理；边的source_id和file_path应保持作用域。"
+  ],
+  "review_method": "AI-assisted source-by-source reading; deterministic quote/coverage validation; no external model API",
+  "reviewed_utc": "2026-10-30T08:17:26.134054+00:00",
+  "dossier_sha256": "e0d64c88b4cec75c44aca42184ca2086e888d4bb5a4ce9c2b6d601f377049d48",
+  "input_sha256": {
+    "round2_multisource_audit/dossiers/N027.json": "e0d64c88b4cec75c44aca42184ca2086e888d4bb5a4ce9c2b6d601f377049d48",
+    "data/claims/US9374411B1.json": "0a477135e7ff698cddc3d74095c31506212dd525bec8ad9fb5529a6a658955e4",
+    "data/documents/US9374411B1.txt": "7c866dd365c48e58b42236245779b90e15862f6d0861f15b30182a49980bda19",
+    "data/claims/US9514120B1.json": "8346fa36328fdfbabb59a6e1b894c45fb7d867deac3a02966169ba752bd06d81",
+    "data/documents/US9514120B1.txt": "5e38f1308be15b55022afd8d84a90bafe735903cca172069ef79854d9fe26057"
+  },
+  "source_and_raw_review_coverage": {
+    "publication_count": 2,
+    "source_chunk_ids_reviewed": [
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000"
+    ],
+    "all_source_chunks_read": true,
+    "all_raw_entity_and_relation_endpoint_rows_read": true,
+    "all_actual_incident_edges_reviewed": true
+  }
+}

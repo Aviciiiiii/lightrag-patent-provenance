@@ -1,0 +1,406 @@
+{
+  "node_id": "Data Processing Apparatus",
+  "entity_type": "artifact",
+  "graph_source_chunks": [
+    "US10867122B1-chunk-000",
+    "US8655901B1-chunk-001"
+  ],
+  "entity_chunk_store_sources": [
+    "US10867122B1-chunk-000",
+    "US8655901B1-chunk-001"
+  ],
+  "all_source_chunks": [
+    "US10867122B1-chunk-000",
+    "US8655901B1-chunk-001"
+  ],
+  "canonical_publications": [
+    "US10867122B1",
+    "US8655901B1"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US10867122B1.txt",
+    "US8655901B1.txt"
+  ],
+  "graph_file_paths": [
+    "US8655901B1.txt",
+    "US10867122B1.txt"
+  ],
+  "graph_file_path_publications": [
+    "US10867122B1",
+    "US8655901B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US10867122B1-chunk-000",
+    "US8655901B1-chunk-001"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US10867122B1-chunk-000",
+    "US8655901B1-chunk-001"
+  ],
+  "graph_node": {
+    "entity_id": "Data Processing Apparatus",
+    "entity_type": "artifact",
+    "description": "Apparatus that executes program instructions to perform the query pattern translation operations.<SEP>An apparatus that performs the claimed method of receiving content, determining factual entities, requesting knowledge panel content, and providing display instructions.",
+    "source_id": "US8655901B1-chunk-001<SEP>US10867122B1-chunk-000",
+    "file_path": "US8655901B1.txt<SEP>US10867122B1.txt",
+    "created_at": 1793284649,
+    "truncate": "",
+    "id": "Data Processing Apparatus"
+  },
+  "incident_edge_count": 4,
+  "audit_id": "N037",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US10867122B1",
+      "file_paths": [
+        "US10867122B1.txt"
+      ],
+      "source_chunks": [
+        "US10867122B1-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US10867122B1",
+          "full_doc_id": "US10867122B1",
+          "file_path": "US10867122B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "cdb9a31ce359fcaf09cc018de814c284abb820d41aa8a4684e6518a413fe7162",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6595,
+          "content": "Publication number: US10867122B1\nTitle: Contextually relevant knowledge panels in an application environment\n\nABSTRACT\nFrom the content of a document, a factual entity that relates to the content of the document is determined. Content for a knowledge panel is requested. A knowledge panel is a user interface element that provides a collection of content related to the factual entity. The contents of the knowledge panel is received for contemporaneous display on the user device with the content of the document.\n\nCLAIMS\nWhat is claimed is: 1. A method performed by a data processing apparatus, the method comprising: receiving content displayed within a display environment that is displayed on a user device as the content is being typed into the display environment by a user; determining, while receiving a first portion of the content being typed in the display environment that is displayed on a user device, and based on a second portion of the content that (i) was previously typed and (ii) is behind an input cursor included in the display environment, a first factual entity related to the second portion of content that is behind the input cursor; after determining the first factual entity and while receiving a third portion of the content being typed and based on (i) the first portion of the content that was previously typed and (ii) the second portion content that was previously typed, that both collectively comprise an updated portion of content that occurs in the display environment, determining a second factual entity that is related to the first portion of the content, the second portion of the content, and the third portion of the content, the determining the second factual entity comprising: determining that a measured level of intent for the third portion of the content is greater than a threshold level of intent; and in response to determining that the measured level of intent for the third portion of the content is greater than the threshold level of intent, determining the second factual entity that is related to the first portion of the content, the second portion of the content, and the third portion of the content; requesting, for a user interface element, content that is related to both the first factual entity and the second factual entity, wherein the user interface element provides a collection of content related to the first factual entity and the second factual entity within the display environment; receiving the content of the user interface element for contemporaneous display on the user device with the content of the display environment; and providing, to the user device, instructions to cause display of the content in the user interface element with the display environment. 2. The method of claim 1 , the method further comprising: providing, to the user device, instructions to cause display of the first factual entity and the second factual entity with the content of the user interface element. 3. The method of claim 1 , wherein the display environment is a document display environment, and wherein the document display environment displays a document authored by the user. 4. The method of claim 1 , further comprising: after providing instructions to cause display of the content of the user interface element with the display environment: receiving additional content that is typed in the display environment after the first portion of the content that was typed in the display environment; determining, in response to the additional content, a third factual entity related to the additional content; requesting, for the user interface element, updated content that is related to the first factual entity, the second factual entity, and the third factual entity; receiving the updated content of the user interface element for contemporaneous display on the user device with the content of the display environment; and providing, to the user device, instructions to cause display of the updated content in the user interface element with the display environment. 5. The method of claim 1 , wherein: the user interface element comprises an input element configured to receive input from the user device; and the method further comprises: receiving an indication that the user device supplied input to input element; and inserting a portion of the content displayed in the user interface element into the content of the display environment. 6. A non-transitory computer storage medium encoded with computer program instructions that, when executed by one or more processors, cause a computer device to perform operations comprising: receiving content displayed within a display environment that is displayed on a user device as the content is being typed into the display environment by a user; determining, while receiving a first portion of the content being typed in the display environment that is displayed on a user device, and based on a second portion of the content that (i) was previously typed and (ii) is behind an input cursor included in the display environment, a first factual entity related to the second portion of content that is behind the input cursor; after determining the first factual entity and while receiving a third portion of the content being typed and based on (i) the first portion of the content that was previously typed and (ii) the second portion content that was previously typed, that both collectively comprise an updated portion of content that occurs in the display environment, determining a second factual entity that is related to the first portion of the content, the second portion of the content, and the third portion of the content, the determining the second factual entity comprising: determining that a measured level of intent for the third portion of the content is greater than a threshold level of intent; and in response to determining that the measured level of intent for the third portion of the content is greater than the threshold level of intent, determining the second factual entity that is related to the first portion of the content, the second portion of the content, and the third portion of the content; requesting, for a user interface element, content that is related to both the first factual entity and the second factual entity, wherein the user interface element provides a collection of content related to the first factual entity and the second factual entity within the display environment; receiving the content of the user interface element for contemporaneous display on the user device with the content of the display environment; and",
+          "llm_cache_list": [
+            "default:extract:90a6084cf6306c9e73b570be657dce5c"
+          ],
+          "chunk_id": "US10867122B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US10867122B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "e5391ee125d0af11d24e7f861f449819339379f3b291416aa3d7cf9747d0aafe"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+              "cache_key": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 7,
+              "raw_line": "entity<|#|>Data Processing Apparatus<|#|>Artifact<|#|>An apparatus that performs the claimed method of receiving content, determining factual entities, requesting knowledge panel content, and providing display instructions.",
+              "fields": [
+                "entity",
+                "Data Processing Apparatus",
+                "Artifact",
+                "An apparatus that performs the claimed method of receiving content, determining factual entities, requesting knowledge panel content, and providing display instructions."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+              "cache_key": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 21,
+              "raw_line": "relation<|#|>Data Processing Apparatus<|#|>Factual Entity<|#|>determines<|#|>The data processing apparatus performs the method of determining factual entities from received content.",
+              "fields": [
+                "relation",
+                "Data Processing Apparatus",
+                "Factual Entity",
+                "determines",
+                "The data processing apparatus performs the method of determining factual entities from received content."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+              "cache_key": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 22,
+              "raw_line": "relation<|#|>Data Processing Apparatus<|#|>Knowledge Panel<|#|>requests content for<|#|>The data processing apparatus requests content for a user interface element related to the factual entities.",
+              "fields": [
+                "relation",
+                "Data Processing Apparatus",
+                "Knowledge Panel",
+                "requests content for",
+                "The data processing apparatus requests content for a user interface element related to the factual entities."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+              "cache_key": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 24,
+              "raw_line": "relation<|#|>Computer Program Instructions<|#|>Data Processing Apparatus<|#|>cause operations on<|#|>The computer program instructions, when executed by processors, cause a computer device to perform operations including determining factual entities.",
+              "fields": [
+                "relation",
+                "Computer Program Instructions",
+                "Data Processing Apparatus",
+                "cause operations on",
+                "The computer program instructions, when executed by processors, cause a computer device to perform operations including determining factual entities."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 390,
+              "chunk_char_end": 835,
+              "text": "contents of the knowledge panel is received for contemporaneous display on the user device with the content of the document.\n\nCLAIMS\nWhat is claimed is: 1. A method performed by a data processing apparatus, the method comprising: receiving content displayed within a display environment that is displayed on a user device as the content is being typed into the display environment by a user; determining, while receiving a first portion of the c"
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The data processing apparatus performs the method of determining factual entities from received content.",
+          "keywords": "determines",
+          "source_id": "US10867122B1-chunk-000",
+          "file_path": "US10867122B1.txt",
+          "created_at": 1793284649,
+          "truncate": "",
+          "source": "Data Processing Apparatus",
+          "target": "Factual Entity",
+          "edge_index": 846,
+          "source_chunks": [
+            "US10867122B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US10867122B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing apparatus requests content for a user interface element related to the factual entities.",
+          "keywords": "requests content for",
+          "source_id": "US10867122B1-chunk-000",
+          "file_path": "US10867122B1.txt",
+          "created_at": 1793284649,
+          "truncate": "",
+          "source": "Data Processing Apparatus",
+          "target": "Knowledge Panel",
+          "edge_index": 847,
+          "source_chunks": [
+            "US10867122B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US10867122B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computer program instructions, when executed by processors, cause a computer device to perform operations including determining factual entities.",
+          "keywords": "cause operations on",
+          "source_id": "US10867122B1-chunk-000",
+          "file_path": "US10867122B1.txt",
+          "created_at": 1793284649,
+          "truncate": "",
+          "source": "Data Processing Apparatus",
+          "target": "Computer Program Instructions",
+          "edge_index": 848,
+          "source_chunks": [
+            "US10867122B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US10867122B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8655901B1",
+      "file_paths": [
+        "US8655901B1.txt"
+      ],
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8655901B1",
+          "full_doc_id": "US8655901B1",
+          "file_path": "US8655901B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 532,
+          "content_sha256": "5d0d79edafe5af7919f82cb1ee8099a3dec6b156ad11326e2bf75e47dad3f315",
+          "exact_doc_char_start": 6164,
+          "exact_doc_char_end": 9170,
+          "content": ", where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 12. The system of claim 8 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern. 13. The system of claim 8 , where annotating each query includes labeling portions of the query according to the first query pattern. 14. The system of claim 8 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold. 15. A non-transitory computer storage medium encoded with a computer program, the program comprising instructions that when executed by data processing apparatus cause the data processing apparatus to perform operations comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating, with a system comprising one or more computing devices, the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern.",
+          "llm_cache_list": [
+            "default:extract:c20f6f1580eec63f6eb8020610ec1b05"
+          ],
+          "chunk_id": "US8655901B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US8655901B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "316996f6608a19543149f869b202a0f90c851b294a1aea1e4f2b52f923f5462b"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 14,
+              "raw_line": "entity<|#|>Data Processing Apparatus<|#|>Artifact<|#|>Apparatus that executes program instructions to perform the query pattern translation operations.",
+              "fields": [
+                "entity",
+                "Data Processing Apparatus",
+                "Artifact",
+                "Apparatus that executes program instructions to perform the query pattern translation operations."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 31,
+              "raw_line": "relation<|#|>Non-Transitory Computer Storage Medium<|#|>Data Processing Apparatus<|#|>program instructions, execution<|#|>The storage medium is encoded with a computer program whose instructions, when executed by data processing apparatus, cause the apparatus to perform operations.",
+              "fields": [
+                "relation",
+                "Non-Transitory Computer Storage Medium",
+                "Data Processing Apparatus",
+                "program instructions, execution",
+                "The storage medium is encoded with a computer program whose instructions, when executed by data processing apparatus, cause the apparatus to perform operations."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 942,
+              "chunk_char_end": 1387,
+              "text": "espect to a specified occurrence threshold. 15. A non-transitory computer storage medium encoded with a computer program, the program comprising instructions that when executed by data processing apparatus cause the data processing apparatus to perform operations comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; id"
+            },
+            {
+              "chunk_char_start": 978,
+              "chunk_char_end": 1423,
+              "text": "eshold. 15. A non-transitory computer storage medium encoded with a computer program, the program comprising instructions that when executed by data processing apparatus cause the data processing apparatus to perform operations comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in"
+            }
+          ],
+          "lexical_occurrence_count": 2
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The storage medium is encoded with a computer program whose instructions, when executed by data processing apparatus, cause the apparatus to perform operations.",
+          "keywords": "execution,program instructions",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Non-Transitory Computer Storage Medium",
+          "target": "Data Processing Apparatus",
+          "edge_index": 844,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "The storage medium is encoded with a computer program whose instructions, when executed by data processing apparatus, cause the apparatus to perform operations.",
+      "keywords": "execution,program instructions",
+      "source_id": "US8655901B1-chunk-001",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Non-Transitory Computer Storage Medium",
+      "target": "Data Processing Apparatus",
+      "edge_index": 844,
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing apparatus performs the method of determining factual entities from received content.",
+      "keywords": "determines",
+      "source_id": "US10867122B1-chunk-000",
+      "file_path": "US10867122B1.txt",
+      "created_at": 1793284649,
+      "truncate": "",
+      "source": "Data Processing Apparatus",
+      "target": "Factual Entity",
+      "edge_index": 846,
+      "source_chunks": [
+        "US10867122B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US10867122B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing apparatus requests content for a user interface element related to the factual entities.",
+      "keywords": "requests content for",
+      "source_id": "US10867122B1-chunk-000",
+      "file_path": "US10867122B1.txt",
+      "created_at": 1793284649,
+      "truncate": "",
+      "source": "Data Processing Apparatus",
+      "target": "Knowledge Panel",
+      "edge_index": 847,
+      "source_chunks": [
+        "US10867122B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US10867122B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computer program instructions, when executed by processors, cause a computer device to perform operations including determining factual entities.",
+      "keywords": "cause operations on",
+      "source_id": "US10867122B1-chunk-000",
+      "file_path": "US10867122B1.txt",
+      "created_at": 1793284649,
+      "truncate": "",
+      "source": "Data Processing Apparatus",
+      "target": "Computer Program Instructions",
+      "edge_index": 848,
+      "source_chunks": [
+        "US10867122B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US10867122B1"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

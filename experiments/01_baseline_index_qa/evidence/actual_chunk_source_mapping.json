@@ -1,0 +1,488 @@
+{
+  "checked_utc": "2026-10-29T15:00:48.897219+00:00",
+  "actual_chunks": 48,
+  "exact_span_matches": 48,
+  "missing_graph_source_ids": [],
+  "mapping": [
+    {
+      "chunk_id": "US9298709B2-chunk-000",
+      "publication_number": "US9298709B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6353
+      },
+      "content_sha256": "8fe0cc191a15103560ecc685a97b69c5cc54731822d7f184591eb321f59192bf"
+    },
+    {
+      "chunk_id": "US9298709B2-chunk-001",
+      "publication_number": "US9298709B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 5738,
+        "end": 10981
+      },
+      "content_sha256": "dc3d46c7e159540d1fc2de2dc3682d543bec83a9cb40dded6b70b22b3d185c5a"
+    },
+    {
+      "chunk_id": "US8509827B2-chunk-000",
+      "publication_number": "US8509827B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6249
+      },
+      "content_sha256": "6773cf78665bbb35e2353f276d6c19b21d69539b45a17c7fb0645c99c7afd791"
+    },
+    {
+      "chunk_id": "US8509827B2-chunk-001",
+      "publication_number": "US8509827B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 5734,
+        "end": 6895
+      },
+      "content_sha256": "5a69c19d4d793958af4570ac5edb0a3d06dce47d9b48d21e3314d72b39575031"
+    },
+    {
+      "chunk_id": "US9514753B2-chunk-000",
+      "publication_number": "US9514753B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6618
+      },
+      "content_sha256": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285"
+    },
+    {
+      "chunk_id": "US9514753B2-chunk-001",
+      "publication_number": "US9514753B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 6068,
+        "end": 9477
+      },
+      "content_sha256": "ecff5193fe8a1b4124688ce3b082245a1ed6ccb01cd429d4aaea07eae5ab659c"
+    },
+    {
+      "chunk_id": "US9304738B1-chunk-000",
+      "publication_number": "US9304738B1",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6516
+      },
+      "content_sha256": "bf269ef3cfec2756c71ada433b655ddffc3b98b38e15a717a03facdb173d7546"
+    },
+    {
+      "chunk_id": "US9304738B1-chunk-001",
+      "publication_number": "US9304738B1",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 5970,
+        "end": 12622
+      },
+      "content_sha256": "886071717df3356cda9c51bbd4b7299b9087e0e835cf5f86a477e6df3d50296d"
+    },
+    {
+      "chunk_id": "US9304738B1-chunk-002",
+      "publication_number": "US9304738B1",
+      "chunk_order_index": 2,
+      "source_span": {
+        "start": 12067,
+        "end": 13508
+      },
+      "content_sha256": "5068046fde0e59f40e0ae450831aa70f5f1383b362efb5455d0ec0cf6d409520"
+    },
+    {
+      "chunk_id": "US9118735B1-chunk-000",
+      "publication_number": "US9118735B1",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6404
+      },
+      "content_sha256": "309f82082f5c546ffbe04ef4427e7a3f66cfb4e51a0abfd0cc60e2913ad83997"
+    },
+    {
+      "chunk_id": "US9118735B1-chunk-001",
+      "publication_number": "US9118735B1",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 5938,
+        "end": 10873
+      },
+      "content_sha256": "b3448c0610adb75d41d0e719be9b14b65e384183af67e7f82dd178abc42f6404"
+    },
+    {
+      "chunk_id": "US8095432B1-chunk-000",
+      "publication_number": "US8095432B1",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6336
+      },
+      "content_sha256": "870959f01fdf22e55223e95ba2ca5f25438debf5d1fc2aec28abb31eac4e2c83"
+    },
+    {
+      "chunk_id": "US8095432B1-chunk-001",
+      "publication_number": "US8095432B1",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 5766,
+        "end": 11258
+      },
+      "content_sha256": "4e2287011be7023b7feb214f57a86aa9b40e2f5fdf57cef3bf400c7635c63bbb"
+    },
+    {
+      "chunk_id": "US8880423B2-chunk-000",
+      "publication_number": "US8880423B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6866
+      },
+      "content_sha256": "9a6a83a5aac470476df10e59c8227d9d42ff76b2b03646c94d6fae0828e241c0"
+    },
+    {
+      "chunk_id": "US8880423B2-chunk-001",
+      "publication_number": "US8880423B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 6274,
+        "end": 9597
+      },
+      "content_sha256": "7b957d00b2bb065b82fd3b987fa0a012ed7e648f9d6388e3d659c005d7f9f7eb"
+    },
+    {
+      "chunk_id": "US8917913B2-chunk-000",
+      "publication_number": "US8917913B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6237
+      },
+      "content_sha256": "6d67cb50bcf0a48da8ae11e36b05d1af01b1fc47cc847884499fd725f56cad52"
+    },
+    {
+      "chunk_id": "US8917913B2-chunk-001",
+      "publication_number": "US8917913B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 5639,
+        "end": 10117
+      },
+      "content_sha256": "5cb21156d0ae55d42ff0fbb93c20e4a6750c33ae1335d9c90ce7ee6cb5e41ba7"
+    },
+    {
+      "chunk_id": "US9514120B1-chunk-000",
+      "publication_number": "US9514120B1",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6477
+      },
+      "content_sha256": "0b094b66650820aadeb8cf681dbb275f6e8339dfd53ea0886553a1ad1e7e9a0e"
+    },
+    {
+      "chunk_id": "US9514120B1-chunk-001",
+      "publication_number": "US9514120B1",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 5971,
+        "end": 12444
+      },
+      "content_sha256": "7dd8efe9e014ee9e28d8ff4d1c7090dfcca115a354cf7d985cc95448a9241a74"
+    },
+    {
+      "chunk_id": "US9514120B1-chunk-002",
+      "publication_number": "US9514120B1",
+      "chunk_order_index": 2,
+      "source_span": {
+        "start": 11936,
+        "end": 12917
+      },
+      "content_sha256": "acd8de2188aa5f0e351b4f28d3bc69adfe94c510abc71739d4e7b707f20b5e40"
+    },
+    {
+      "chunk_id": "US7991757B2-chunk-000",
+      "publication_number": "US7991757B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6819
+      },
+      "content_sha256": "44d14ac28f58ce1923e60c3a11843fe0f1dac0d16d0d7febf9882ad01fe17259"
+    },
+    {
+      "chunk_id": "US7991757B2-chunk-001",
+      "publication_number": "US7991757B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 6237,
+        "end": 10953
+      },
+      "content_sha256": "e47c6e4c92c4b2d8567f8a01218a71a0dfe0ef1d353d28abc5f8acac2212e6f3"
+    },
+    {
+      "chunk_id": "US8069128B2-chunk-000",
+      "publication_number": "US8069128B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6639
+      },
+      "content_sha256": "03d27b9af9a95fc99659dae87ae86cc8134f0f4319687342b04ae8d524454c1c"
+    },
+    {
+      "chunk_id": "US8069128B2-chunk-001",
+      "publication_number": "US8069128B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 6097,
+        "end": 9043
+      },
+      "content_sha256": "5f3c413a5144fe5d3a95802edf16f3f070a0a6b7d0c00a2440d10ace81083b2e"
+    },
+    {
+      "chunk_id": "US9374411B1-chunk-000",
+      "publication_number": "US9374411B1",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6777
+      },
+      "content_sha256": "1c6ddec8304601845ddead7675e8d25ffe813f0a1d7087766b31ededcbd9a1cc"
+    },
+    {
+      "chunk_id": "US9374411B1-chunk-001",
+      "publication_number": "US9374411B1",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 6254,
+        "end": 12921
+      },
+      "content_sha256": "bbe6f2f25b0f58e297204d0c91d3cd176e3a59c7a39ef03093c9724efe2d9fe0"
+    },
+    {
+      "chunk_id": "US9374411B1-chunk-002",
+      "publication_number": "US9374411B1",
+      "chunk_order_index": 2,
+      "source_span": {
+        "start": 12390,
+        "end": 13265
+      },
+      "content_sha256": "b5779b04614e5a41d1a3eb710fae56a98a1d9153d5b676b056c38b64dd24a8be"
+    },
+    {
+      "chunk_id": "US9218390B2-chunk-000",
+      "publication_number": "US9218390B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6334
+      },
+      "content_sha256": "7a73db91316653f79b50b327f19f59f747f43106e5cf0f44c5a0db631d7b203e"
+    },
+    {
+      "chunk_id": "US9218390B2-chunk-001",
+      "publication_number": "US9218390B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 5796,
+        "end": 11677
+      },
+      "content_sha256": "e801d5ed7f21fb39be88a47c0dfc43607dff1ecd392bb9cad9f8ee8c0d0d5f44"
+    },
+    {
+      "chunk_id": "US9218390B2-chunk-002",
+      "publication_number": "US9218390B2",
+      "chunk_order_index": 2,
+      "source_span": {
+        "start": 11148,
+        "end": 13990
+      },
+      "content_sha256": "77bfbf775e4f111c23aae4de373e87c4778a5f6b7d4821dc232eeaa95153886c"
+    },
+    {
+      "chunk_id": "US7756837B2-chunk-000",
+      "publication_number": "US7756837B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 5990
+      },
+      "content_sha256": "816fc9cf05223956b4e376ef0f6e135985e9f900de35575a229b3fb046a5e544"
+    },
+    {
+      "chunk_id": "US7756837B2-chunk-001",
+      "publication_number": "US7756837B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 5468,
+        "end": 11353
+      },
+      "content_sha256": "8b1a94961ae323fa62890371b8df43eadff7e06ff68633f58c71a9050db94c86"
+    },
+    {
+      "chunk_id": "US7756837B2-chunk-002",
+      "publication_number": "US7756837B2",
+      "chunk_order_index": 2,
+      "source_span": {
+        "start": 10847,
+        "end": 16739
+      },
+      "content_sha256": "c301fb50a9bcd91ff8802abcebcecf3db19cbcb3773547c471bfbded65e67e9c"
+    },
+    {
+      "chunk_id": "US7756837B2-chunk-003",
+      "publication_number": "US7756837B2",
+      "chunk_order_index": 3,
+      "source_span": {
+        "start": 16282,
+        "end": 20106
+      },
+      "content_sha256": "5ca770e817b88c8e4b61b1c1ae32cd89984a4352dc1d9ce89b5dd81f8ca2e5e1"
+    },
+    {
+      "chunk_id": "US8719408B2-chunk-000",
+      "publication_number": "US8719408B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 7208
+      },
+      "content_sha256": "e303c7516b50f0904a4432e14df56d76382064de207d1bbaba9d60f88fef0554"
+    },
+    {
+      "chunk_id": "US8719408B2-chunk-001",
+      "publication_number": "US8719408B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 6624,
+        "end": 11600
+      },
+      "content_sha256": "dcd5540204015d2851b60923695a591f918c1aa150e91fd42d534817a881c085"
+    },
+    {
+      "chunk_id": "US8655901B1-chunk-000",
+      "publication_number": "US8655901B1",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6722
+      },
+      "content_sha256": "0bab0caa8c0462609609b9037c577b4201a3af3034b28331edefba06b1dee6e8"
+    },
+    {
+      "chunk_id": "US8655901B1-chunk-001",
+      "publication_number": "US8655901B1",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 6164,
+        "end": 9170
+      },
+      "content_sha256": "5d0d79edafe5af7919f82cb1ee8099a3dec6b156ad11326e2bf75e47dad3f315"
+    },
+    {
+      "chunk_id": "US10867122B1-chunk-000",
+      "publication_number": "US10867122B1",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6595
+      },
+      "content_sha256": "cdb9a31ce359fcaf09cc018de814c284abb820d41aa8a4684e6518a413fe7162"
+    },
+    {
+      "chunk_id": "US10867122B1-chunk-001",
+      "publication_number": "US10867122B1",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 6031,
+        "end": 12653
+      },
+      "content_sha256": "5dc22e43a86f2857a02ec24570aa4c188da80a599ce2a759c648cd304b3af0a8"
+    },
+    {
+      "chunk_id": "US10867122B1-chunk-002",
+      "publication_number": "US10867122B1",
+      "chunk_order_index": 2,
+      "source_span": {
+        "start": 12172,
+        "end": 12653
+      },
+      "content_sha256": "0a26cd618675f29934ed159460d7a42b3a7e3f748b6ae07fa4b3598bbd003d27"
+    },
+    {
+      "chunk_id": "US11423041B2-chunk-000",
+      "publication_number": "US11423041B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6231
+      },
+      "content_sha256": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65"
+    },
+    {
+      "chunk_id": "US11423041B2-chunk-001",
+      "publication_number": "US11423041B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 5690,
+        "end": 11698
+      },
+      "content_sha256": "8f3d13a18781a5fb01b8d2de56b03acd746fc3ace6168e4b910162e77bfec7fb"
+    },
+    {
+      "chunk_id": "US11423041B2-chunk-002",
+      "publication_number": "US11423041B2",
+      "chunk_order_index": 2,
+      "source_span": {
+        "start": 11489,
+        "end": 11698
+      },
+      "content_sha256": "ac2cd7c77f6fc35a12ea9f1e96876a10e5f6c8bbc7d7aa3dbefb204255c5d278"
+    },
+    {
+      "chunk_id": "US10778629B2-chunk-000",
+      "publication_number": "US10778629B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6584
+      },
+      "content_sha256": "4186cbfdf5ae0546a6a2e816d9f4dec6c2a2dab527fc6cb34fce62150374f67a"
+    },
+    {
+      "chunk_id": "US10778629B2-chunk-001",
+      "publication_number": "US10778629B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 6053,
+        "end": 10078
+      },
+      "content_sha256": "9c08affa61a10a781ad7e194ca432d33e618652662386c29953015f69b28cc9c"
+    },
+    {
+      "chunk_id": "US9589231B2-chunk-000",
+      "publication_number": "US9589231B2",
+      "chunk_order_index": 0,
+      "source_span": {
+        "start": 0,
+        "end": 6070
+      },
+      "content_sha256": "4b8801b6f9af5b47586773582b57626a8b88aa3adcf5641b0301ea63536f59d7"
+    },
+    {
+      "chunk_id": "US9589231B2-chunk-001",
+      "publication_number": "US9589231B2",
+      "chunk_order_index": 1,
+      "source_span": {
+        "start": 5563,
+        "end": 8799
+      },
+      "content_sha256": "6c471f8c23a679d6965872da70a3167aecd6312380e16ae9ba071b3f71d90f8c"
+    }
+  ]
+}

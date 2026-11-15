@@ -1,0 +1,223 @@
+{
+  "official_pure_parser_replay": true,
+  "model_calls": 0,
+  "nodes": 42,
+  "edges": 34,
+  "feature_nodes": {
+    "Class-Based Language Model Features": [
+      {
+        "entity_name": "Class-Based Language Model Features",
+        "entity_type": "data",
+        "description": "Features comprising at least one token appearing in a defined position in a model feature comprising a grouping of tokens of a given length n.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "GEO_UNI_FIRST": [
+      {
+        "entity_name": "GEO_UNI_FIRST",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the first token in a grouping of tokens of length one relating to a geographic term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "GEO_BI_FIRST": [
+      {
+        "entity_name": "GEO_BI_FIRST",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the first token in a grouping of tokens of length two relating to a geographic term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "GEO_BI_SECOND": [
+      {
+        "entity_name": "GEO_BI_SECOND",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the second token in a grouping of tokens of length two relating to a geographic term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "GEO_TRI_FIRST": [
+      {
+        "entity_name": "GEO_TRI_FIRST",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the first token in a grouping of tokens of length three relating to a geographic term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "GEO_TRI_SECOND": [
+      {
+        "entity_name": "GEO_TRI_SECOND",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the second token in a grouping of tokens of length three relating to a geographic term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "GEO_TRI_THIRD": [
+      {
+        "entity_name": "GEO_TRI_THIRD",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the third token in a grouping of tokens of length three relating to a geographic term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "ST_UNI_FIRST": [
+      {
+        "entity_name": "ST_UNI_FIRST",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the first token in a grouping of tokens of length one relating to a search term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "ST_BI_FIRST": [
+      {
+        "entity_name": "ST_BI_FIRST",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the first token in a grouping of tokens of length two relating to a search term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "ST_BI_SECOND": [
+      {
+        "entity_name": "ST_BI_SECOND",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the second token in a grouping of tokens of length two relating to a search term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "ST_TRI_FIRST": [
+      {
+        "entity_name": "ST_TRI_FIRST",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the first token in a grouping of tokens of length three relating to a search term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "ST_TRI_SECOND": [
+      {
+        "entity_name": "ST_TRI_SECOND",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the second token in a grouping of tokens of length three relating to a search term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "ST_TRI_THIRD": [
+      {
+        "entity_name": "ST_TRI_THIRD",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the third token in a grouping of tokens of length three relating to a search term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ]
+  },
+  "feature_edges": [
+    {
+      "endpoints": [
+        "Query Parser Derivation Computing Device",
+        "Class-Based Language Model Features"
+      ],
+      "records": [
+        {
+          "src_id": "Query Parser Derivation Computing Device",
+          "tgt_id": "Class-Based Language Model Features",
+          "weight": 1.0,
+          "description": "The query parser derivation computing device defines class-based language model features.",
+          "keywords": "defines",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        },
+        {
+          "src_id": "Query Parser Derivation Computing Device",
+          "tgt_id": "Class-Based Language Model Features",
+          "weight": 1.0,
+          "description": "The query parser derivation computing device utilizes the class-based language model features as high-level language model features in deriving the query parser.",
+          "keywords": "utilizes",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Class-Based Language Model Features",
+        "GEO_UNI_FIRST"
+      ],
+      "records": [
+        {
+          "src_id": "Class-Based Language Model Features",
+          "tgt_id": "GEO_UNI_FIRST",
+          "weight": 1.0,
+          "description": "The class-based language model features include GEO_UNI_FIRST.",
+          "keywords": "includes",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Class-Based Language Model Features",
+        "GEO_BI_FIRST"
+      ],
+      "records": [
+        {
+          "src_id": "Class-Based Language Model Features",
+          "tgt_id": "GEO_BI_FIRST",
+          "weight": 1.0,
+          "description": "The class-based language model features include GEO_BI_FIRST.",
+          "keywords": "includes",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Class-Based Language Model Features",
+        "GEO_BI_SECOND"
+      ],
+      "records": [
+        {
+          "src_id": "Class-Based Language Model Features",
+          "tgt_id": "GEO_BI_SECOND",
+          "weight": 1.0,
+          "description": "The class-based language model features include GEO_BI_SECOND.",
+          "keywords": "includes",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    }
+  ],
+  "geo_tri_first_membership_edge_present": false
+}

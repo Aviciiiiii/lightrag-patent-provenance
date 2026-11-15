@@ -1,0 +1,27 @@
+{
+  "condition": "A",
+  "repeat": 3,
+  "call_id": 8,
+  "request_exact_match": true,
+  "messages_sha256": "2fca4d69c1c5554b570ff04a57ccc8ae1c8af87862bae14e46a5f755a4a3490e",
+  "response": {
+    "id": 8,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "I do not have enough information to answer this query. The provided **Context** does not contain any document chunk, knowledge graph entity, or reference entry for **US7991757B2**. The reference document list includes patents such as US10867122B1, US9374411B1, US8655901B1, US7756837B2, US8095432B1, US9514120B1, US8719408B2, US8069128B2, US11423041B2, US9304738B1, US9218390B2, US9514753B2, and US9118735B1, but none of these is US7991757B2.\n\nBecause the patent itself is absent, I cannot quote Claim 1 or Claim 27, cannot state the registration capability specified in Claim 1, cannot identify the additional capability added by Claim 27, and cannot explain their dependency. Any such statement would be inference or invention rather than evidence.\n\nWhat is missing from the evidence:\n- The text of US7991757B2, including at least Claim 1 and Claim 27.\n- Any indication of whether Claim 27 depends from Claim 1 or another claim.\n- Any wording describing a \"registration capability\" in that patent.\n\nRelated context does mention a **Registration Module** configured to allow a provider of an external recommender to provide \"machine readable descriptions of the external recommender,\" and **Registration Submissions** operative to \"request registration of recommenders.\" However, these facts are not tied to US7991757B2 in the provided evidence, so they cannot be used to answer about that patent's claims.\n\n### References\n\n- [1] US10867122B1.txt\n- [4] US7756837B2.txt\n- [5] US8095432B1.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 28360,
+      "completion_tokens": 384,
+      "total_tokens": 28744,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 6144
+      },
+      "prompt_cache_hit_tokens": 6144,
+      "prompt_cache_miss_tokens": 22216
+    },
+    "reasoning_content_present": false
+  }
+}

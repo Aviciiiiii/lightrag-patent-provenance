@@ -1,0 +1,18 @@
+{
+  "successful_llm_calls": 117,
+  "successful_embedding_calls": 247,
+  "all_attempts": 364,
+  "llm_prompt_tokens": 275739,
+  "llm_completion_tokens": 97386,
+  "cached_input_tokens": 125952,
+  "reasoning_tokens": 0,
+  "cache_aware_cny": 1.08370008,
+  "no_cache_cny": 1.330566,
+  "unknown_reserved_cny": 0,
+  "states_not_success": [],
+  "length_finish_call_ids": [
+    1,
+    56
+  ],
+  "not_invoice": true
+}

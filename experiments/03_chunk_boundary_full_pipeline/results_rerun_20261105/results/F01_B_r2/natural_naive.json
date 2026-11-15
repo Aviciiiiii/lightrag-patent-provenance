@@ -1,0 +1,82 @@
+{
+  "run_id": "F01_B_r2",
+  "started_utc": "2026-11-05T16:22:02.028354+00:00",
+  "forced_evidence": false,
+  "mode": "naive",
+  "query": "In US9589231B2, how are the existing medical cases and the set of experts embedded with respect to an ontology, and what named terminology system underlies that ontology? Identify the supporting claims and distinguish the explicit technical chain from an inferred shortcut relation.",
+  "params": {
+    "mode": "naive",
+    "stream": false,
+    "include_references": true,
+    "enable_rerank": false,
+    "top_k": 12,
+    "chunk_top_k": 8,
+    "max_entity_tokens": 2000,
+    "max_relation_tokens": 2000,
+    "max_total_tokens": 8000,
+    "user_prompt": "Use only retrieved evidence. State the patent publication number and the exact Claim number only when present in the evidence. Quote the supporting wording exactly, keeping each quotation short. Distinguish document facts from comparisons and inference. If evidence is insufficient, state what is missing. Do not invent links between patents. Answer in English in at most 350 words and preserve source references."
+  },
+  "result": {
+    "status": "success",
+    "message": "Query processed successfully",
+    "data": {
+      "entities": [],
+      "relationships": [],
+      "chunks": [
+        {
+          "reference_id": "1",
+          "content": "Publication number: US9589231B2\nTitle: Social medical network for diagnosis assistance\n\nABSTRACT\nA method for diagnosis assistance exploits similarity between a new medical case and existing medical cases and experts when embedded in a common embedding space. Different types of queries are provided for, including a query-by-cases and a query-by-experts. These may be associated with different cost structures that encourage the requester to use the query-by-cases first and seek expert assistance if this proves unsuccessful. Depending on whether the query-by-cases or query-by-experts is requested, a subset of the existing cases or experts is identified based on the similarity of their representations, in the embedding space, with a representation of the new case in the embedding space. There may then be provision for communicating the new case to a selected one or more of the subset of experts for the expert to attempt to provide a diagnosis.\n\nCLAIMS\nWhat is claimed is: 1. A method for diagnosis assistance comprising: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts wherein at least one of the embedding, providing, returning the subset of the cases, returning the subset of the experts, and computing the query cost are performed with a computer processor. 2. The method of claim 1 , further comprising computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases. 3. The method of claim 2 , wherein the computed query cost is higher for a query-for-experts than for a query-for-cases. 4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology. 5. The method of claim 4 , wherein the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation. 6. The method of claim 5 , wherein the computing the similarity measure between the representation of the new case and representations of the existing cases or experts, a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology. 7. The method of claim 4 , wherein the ontology includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof. 8. The method of claim 4 , wherein the",
+          "file_path": "US9589231B2.txt",
+          "chunk_id": "US9589231B2-chunk-000"
+        },
+        {
+          "reference_id": "1",
+          "content": " method of claim 5 , wherein the computing the similarity measure between the representation of the new case and representations of the existing cases or experts, a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology. 7. The method of claim 4 , wherein the ontology includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof. 8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System. 9. The method of claim 1 , wherein the experts in the set of experts are each embedded based on information associated with the expert selected from the group consisting of: a profile of the expert; coded medical procedures which have been performed by the expert; articles authored by the expert; stored medical cases linked to the expert; and combinations thereof. 10. The method of claim 1 , wherein when the query-for-experts is selected, the returning of the subset of the experts is also based on at least one of: an availability of the expert; a rating of the expert; and a number of followers of the expert among users of the system. 11. The method of claim 1 , further comprising, when the query-for-cases is selected, returning documents from a public database based on a computed similarity between the embedded new case and documents embedded in the embedding space. 12. The method of claim 1 , wherein when the query-for-experts is selected, providing the new case to a selected one of the subset of experts for formulating a diagnosis. 13. The method of claim 12 , wherein when the query-for-experts is selected, providing for making a payment to the expert for formulating the diagnosis. 14. The method of claim 1 , wherein the new medical case comprises a plurality of records relating to a specific patient. 15. The method of claim 1 , wherein the plurality of records comprises records selected from the group consisting of laboratory test results, images, descriptions of symptoms, results of patient monitors, diagnoses, prescribed medications and treatments, and combinations thereof. 16. The method of claim 1 , further comprising when the query-by-cases is selected, providing for a query-by-experts to be performed subsequent to the query-by-cases. 17. A system comprising memory storing instructions for performing the method of claim 1 and a processor in communication with the memory for executing the instructions. 18. A computer program product comprising a non-transitory recording medium storing instructions, which when executed on a computer causes the computer to perform the method of claim 1 . 19. A system for diagnosis assistance comprising: memory which stores instructions for: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts; computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases; and a processor in communication with the memory for executing the instructions. 20. A network comprising a system for diagnosis assistance and a set of user devices for linking requesters and experts with the system, the system comprising: memory which stores instructions for: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts; and a processor in communication with the memory for executing the instructions. 21. The system of claim 20 wherein the instructions further comprise instructions for computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases. 22. A method for diagnosis assistance comprising: for each of an existing set of medical cases, generating a multidimensional representation in an embedding space; for each of a set of experts, generating a multidimensional representation in the embedding space; receiving a new case for which a diagnosis is sought; generating a multidimensional representation of the new case in the embedding space; providing for a plurality of query types, including a query-by-cases at a first cost and a query-by-experts at a second cost, higher than the first cost; when the query-by-cases is requested, identifying a subset of the existing cases based on a similarity between the multidimensional representation of the new case and the multidimensional representations of existing cases in the set of cases; when the query-by-experts is requested, identifying a subset of the experts based on a similarity between the multidimensional representation of the new case and the multidimensional representations of experts in the set of experts, and providing for communicating the new case to one of the subset of experts for the expert to attempt to provide a diagnosis; and computing a cost for the query based on the query type requested.",
+          "file_path": "US9589231B2.txt",
+          "chunk_id": "US9589231B2-chunk-001"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9589231B2.txt"
+        }
+      ]
+    },
+    "metadata": {
+      "query_mode": "naive",
+      "keywords": {
+        "high_level": [],
+        "low_level": []
+      },
+      "processing_info": {
+        "total_chunks_found": 2,
+        "final_chunks_count": 2
+      }
+    },
+    "llm_response": {
+      "content": "The patent describes embedding both existing medical cases and experts in a common embedding space, with the embedding tied to a medical ontology. Claim 4 states that \"the embedding of the new medical case comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Claim 5 adds that \"the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.\" Claim 7 specifies the ontology \"includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.\"\n\nThe named terminology system is identified in Claim 8: \"the medical ontology is based on the Unified Medical Language System.\"\n\n**Explicit technical chain (as claimed):** ontology → concepts joined by links → each concept as a dimension → multidimensional representation → embedding of cases and experts (Claims 4, 5, 8). Claim 6 further notes that \"a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.\"\n\n**Inferred shortcut relation:** The evidence does not explicitly state that the Unified Medical Language System itself supplies the concept-to-dimension mapping or the proximity matrix; that link is an inference, not a claimed connection. The claims only state the ontology is \"based on\" UMLS (Claim 8) and separately describe the concept-dimension structure (Claim 5).\n\n### References\n\n- [1] US9589231B2.txt",
+      "response_iterator": null,
+      "is_streaming": false,
+      "llm_generated": true
+    }
+  },
+  "call_id_range": [
+    333,
+    334
+  ],
+  "actual_new_answer_call": true,
+  "status": "completed",
+  "ended_utc": "2026-11-05T16:22:07.635844+00:00",
+  "core_index_hashes_before": {
+    "graph_chunk_entity_relation.graphml": "61fe083e543d533befff569c6ff5baeeeffe2bbaf3a04fe23bb6e894b6bddd1e",
+    "vdb_chunks.json": "f8883225533f80c757817b379705839c7896a20dc3de8ca122717d32dbbc429e",
+    "kv_store_text_chunks.json": "964c650854ff1cbadb506e8109044c40ea6dda9ba0384092473106f58244b5e1"
+  },
+  "core_index_hashes_after": {
+    "graph_chunk_entity_relation.graphml": "61fe083e543d533befff569c6ff5baeeeffe2bbaf3a04fe23bb6e894b6bddd1e",
+    "vdb_chunks.json": "f8883225533f80c757817b379705839c7896a20dc3de8ca122717d32dbbc429e",
+    "kv_store_text_chunks.json": "964c650854ff1cbadb506e8109044c40ea6dda9ba0384092473106f58244b5e1"
+  },
+  "core_index_unchanged": true
+}

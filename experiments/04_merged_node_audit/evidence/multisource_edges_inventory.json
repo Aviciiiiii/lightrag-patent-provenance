@@ -1,0 +1,68 @@
+[
+  {
+    "edge_index": 173,
+    "publications": [
+      "US10778629B2",
+      "US9304738B1"
+    ],
+    "weight": 2.0,
+    "description": "Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics.<SEP>A weight is assigned to each of the plurality of characteristics for each pair of users.",
+    "keywords": "assigned to,based on",
+    "source_id": "US9304738B1-chunk-000<SEP>US10778629B2-chunk-001",
+    "file_path": "US9304738B1.txt<SEP>US10778629B2.txt",
+    "created_at": 1793284713,
+    "truncate": "",
+    "source": "Weight",
+    "target": "Characteristic"
+  },
+  {
+    "edge_index": 251,
+    "publications": [
+      "US8655901B1",
+      "US9218390B2"
+    ],
+    "weight": 2.0,
+    "description": "A label is assigned to each of a plurality of the tokens.<SEP>The one or more tokens are annotated with labels for the corresponding components of the first query pattern.",
+    "keywords": "annotated with,assigned to",
+    "source_id": "US9218390B2-chunk-002<SEP>US8655901B1-chunk-000",
+    "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+    "created_at": 1793284621,
+    "truncate": "",
+    "source": "Token",
+    "target": "Label"
+  },
+  {
+    "edge_index": 303,
+    "publications": [
+      "US11423041B2",
+      "US8095432B1",
+      "US8719408B2",
+      "US9589231B2"
+    ],
+    "weight": 4.0,
+    "description": "The memory is operatively connected to the processor.<SEP>The processor is coupled to memory and programmed by program code stored in the memory.<SEP>The at least one processor executes program instructions stored in the memory.<SEP>The processor is in communication with the memory for executing the instructions.",
+    "keywords": "coupling,executes instructions from,in communication with,operatively connected,program code storage",
+    "source_id": "US8095432B1-chunk-001<SEP>US8719408B2-chunk-001<SEP>US11423041B2-chunk-000<SEP>US9589231B2-chunk-001",
+    "file_path": "US8095432B1.txt<SEP>US8719408B2.txt<SEP>US11423041B2.txt<SEP>US9589231B2.txt",
+    "created_at": 1793284741,
+    "truncate": "",
+    "source": "Processor",
+    "target": "Memory"
+  },
+  {
+    "edge_index": 704,
+    "publications": [
+      "US8655901B1",
+      "US9218390B2"
+    ],
+    "weight": 2.0,
+    "description": "A label is assigned to each of a plurality of the tokens.<SEP>The tokens are annotated with labels for the corresponding components of the first query pattern.",
+    "keywords": "annotation,assigned",
+    "source_id": "US9218390B2-chunk-000<SEP>US8655901B1-chunk-001",
+    "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+    "created_at": 1793284621,
+    "truncate": "",
+    "source": "Tokens",
+    "target": "Labels"
+  }
+]

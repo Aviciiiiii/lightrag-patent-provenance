@@ -1,0 +1,36 @@
+{
+  "frozen_utc": "2026-10-30T03:28:26.046687+00:00",
+  "group": "F01",
+  "publication_number": "US9589231B2",
+  "source": "round4/conditions/frozen_groups.json and round4/evidence/manual_gold_review.json",
+  "outputs_seen_before_scoring_freeze": false,
+  "reviewer_type": "AI-assisted researcher reading original text and actual records; not independent human annotation; no judge-model API",
+  "predicates": [
+    {
+      "id": "R_case",
+      "claim": 4,
+      "statement": "Existing medical cases are embedded based on the medical ontology; a new-case-only relation is insufficient."
+    },
+    {
+      "id": "R_expert",
+      "claim": 4,
+      "statement": "The set of experts is embedded based on the medical ontology."
+    },
+    {
+      "id": "R_umls",
+      "claim": 8,
+      "statement": "The medical ontology is based on the Unified Medical Language System."
+    }
+  ],
+  "edge_criterion": "Explicit record supporting each predicate through endpoint plus description semantics. Do not require an invented direct existing-case/expert-to-UMLS shortcut. Report entity-description retention separately from relation retention. Any multi-edge graph-path interpretation is labeled separately from explicit predicate-record retention. Require actual shared MedicalOntology node identity when reporting merged graph chain.",
+  "claim_dependency_secondary": "Claim8 expressly depends on Claim4. Score explicit graph dependency separately; default graph absence is not technical relation loss.",
+  "retrieval": "Record whether each original target quote appears in actually returned chunks; score graph/context predicate retention separately. Full original source claims outside retrieval do not count as retrieved evidence.",
+  "answer": "Check existing-case and expert roles, ontology basis/UMLS, correct Claims4/8 attribution, publication/citation mapping, distinction of explicit chain and inference. Do not require verbose reasoning if explicit supported chain is correct.",
+  "forced_evidence": "Diagnostic-only; never natural retrieval score.",
+  "invalid_samples": "Any extraction finish_reason length, failed indexing, missing parser evidence or missing completed status is excluded or separately marked; cannot label as valid boundary loss.",
+  "causal_limits": [
+    "Three repeated runs per condition, same model at temperature0 without guaranteed seed/determinism; no general causality claim.",
+    "Boundary changes chunk length and possibly token-budget utilization; inspect raw/parse/merge/retrieval stages before attribution.",
+    "Literal-anchor segregation does not guarantee removal of every inferential/semantic alternative cue."
+  ]
+}

@@ -1,0 +1,361 @@
+{
+  "audit_id": "N031",
+  "node_id": "Score",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两来源的Score均为算法评估值，但一处评估推荐项目并加权归一化，另一处评估消息是否误放文件夹。可共同解释为评估分数类；量纲、算法与数值实例不可互换不等于Score一词的异义误并。",
+  "class_instance_interpretation_zh": "共享量化评估值类；推荐分数及消息分类分数的取值域、阈值和计算过程属于各自文档，图中未声明同一数值变量。",
+  "concept_class_vs_local_instance": "shared_class; document-local instances remain distinct",
+  "source_assessments": [
+    {
+      "publication_number": "US7991757B2",
+      "evidence_quote": "receiving recommendations and corresponding scores from the recommenders; applying weights to each of the recommenders; combining the scores with the weights to produce overall scores;",
+      "claim_or_section": "Claim 4",
+      "source_chunk_ids": [
+        "US7991757B2-chunk-000"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US7991757B2-chunk-000"
+      ],
+      "claim_number": 4,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 553,
+        "indexed_document_char_offset": 3407
+      },
+      "role_zh": "推荐器返回的项目评分，归一化及加权后生成总分。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000描述由Claim1的归一化和Claim4的加权组合共同支持，未把消息分类语义加入其原始抽取。",
+        "raw_records": [
+          {
+            "chunk_id": "US7991757B2-chunk-000",
+            "content_sha256": "44d14ac28f58ce1923e60c3a11843fe0f1dac0d16d0d7febf9882ad01fe17259",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+                "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 16,
+                "raw_line": "entity<|#|>Score<|#|>Data<|#|>A value associated with a recommendation received from a recommender, which may be normalized and combined with weights to produce overall scores.",
+                "fields": [
+                  "entity",
+                  "Score",
+                  "Data",
+                  "A value associated with a recommendation received from a recommender, which may be normalized and combined with weights to produce overall scores."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+                "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 36,
+                "raw_line": "relation<|#|>Optimization Module<|#|>Score<|#|>normalizes<|#|>The optimization module normalizes the associated scores.",
+                "fields": [
+                  "relation",
+                  "Optimization Module",
+                  "Score",
+                  "normalizes",
+                  "The optimization module normalizes the associated scores."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+                "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 39,
+                "raw_line": "relation<|#|>Score<|#|>Weight<|#|>combined with<|#|>Scores are combined with weights to produce overall scores.",
+                "fields": [
+                  "relation",
+                  "Score",
+                  "Weight",
+                  "combined with",
+                  "Scores are combined with weights to produce overall scores."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+                "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 40,
+                "raw_line": "relation<|#|>Score<|#|>Overall Score<|#|>produces<|#|>Combining scores with weights produces overall scores.",
+                "fields": [
+                  "relation",
+                  "Score",
+                  "Overall Score",
+                  "produces",
+                  "Combining scores with weights produces overall scores."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US7991757B2-chunk-000",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "5d76ff542ec3100d50d47293821b56e0a9509d93a97136f4dc97f3c2023c387e"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "Scores are combined with weights to produce overall scores.",
+          "keywords": "combined with",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284383,
+          "truncate": "",
+          "source": "Weight",
+          "target": "Score",
+          "edge_index": 177,
+          "source_chunks": [
+            "US7991757B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The optimization module normalizes the associated scores.",
+          "keywords": "normalizes",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284383,
+          "truncate": "",
+          "source": "Optimization Module",
+          "target": "Score",
+          "edge_index": 556,
+          "source_chunks": [
+            "US7991757B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Combining scores with weights produces overall scores.",
+          "keywords": "produces",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284383,
+          "truncate": "",
+          "source": "Score",
+          "target": "Overall Score",
+          "edge_index": 558,
+          "source_chunks": [
+            "US7991757B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8069128B2",
+      "evidence_quote": "using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message;",
+      "claim_or_section": "Claim 17",
+      "source_chunk_ids": [
+        "US8069128B2-chunk-001"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US8069128B2-chunk-001"
+      ],
+      "claim_number": 17,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 838,
+        "indexed_document_char_offset": 3718
+      },
+      "role_zh": "多遍消息过滤器第二遍对消息打分，用以发现错误文件夹中的消息。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk001实体及Score–Message关系直接对应Claim17。",
+        "raw_records": [
+          {
+            "chunk_id": "US8069128B2-chunk-001",
+            "content_sha256": "5f3c413a5144fe5d3a95802edf16f3f070a0a6b7d0c00a2440d10ace81083b2e",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+                "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 17,
+                "raw_line": "entity<|#|>Score<|#|>Data<|#|>A value assigned to each message by the second pass of the multi-pass message filter, used to indicate whether the message is sorted into an incorrect message folder.",
+                "fields": [
+                  "entity",
+                  "Score",
+                  "Data",
+                  "A value assigned to each message by the second pass of the multi-pass message filter, used to indicate whether the message is sorted into an incorrect message folder."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+                "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 27,
+                "raw_line": "relation<|#|>Score<|#|>Message<|#|>indicates sorting of<|#|>Each message's respective score indicates whether the message is sorted into an incorrect message folder.",
+                "fields": [
+                  "relation",
+                  "Score",
+                  "Message",
+                  "indicates sorting of",
+                  "Each message's respective score indicates whether the message is sorted into an incorrect message folder."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US8069128B2-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "20a4c3ded32f36dca72d7e0e52d7c5a264c15da3a1996ddc5c9436555a02655e"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "Each message's respective score indicates whether the message is sorted into an incorrect message folder.",
+          "keywords": "indicates sorting of",
+          "source_id": "US8069128B2-chunk-001",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "Score",
+          "target": "Message",
+          "edge_index": 559,
+          "source_chunks": [
+            "US8069128B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 4,
+    "observed_unsupported_edge": false,
+    "observed_unsupported_edge_definition": "true仅用于依据原文明确不支持的实际关系；类级概括/端点角色候选单列，不自动计入。",
+    "details_zh": "已逐条检查全部实际邻边及其source_id/file_path；各关系在所属专利中有对应陈述，未发现将另一专利特征直接写入本专利边描述的确证。共同节点容许潜在无作用域路径组合，但本审计没有执行或观察该传播。",
+    "edge_indices": [
+      177,
+      556,
+      558,
+      559
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 177,
+        "source": "Weight",
+        "target": "Score",
+        "source_id": "US7991757B2-chunk-000",
+        "file_path": "US7991757B2.txt",
+        "canonical_publications": [
+          "US7991757B2"
+        ],
+        "actual_description": "Scores are combined with weights to produce overall scores.",
+        "claim_or_section": "US7991757B2 Claim4",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 556,
+        "source": "Optimization Module",
+        "target": "Score",
+        "source_id": "US7991757B2-chunk-000",
+        "file_path": "US7991757B2.txt",
+        "canonical_publications": [
+          "US7991757B2"
+        ],
+        "actual_description": "The optimization module normalizes the associated scores.",
+        "claim_or_section": "US7991757B2 Claim1",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 558,
+        "source": "Score",
+        "target": "Overall Score",
+        "source_id": "US7991757B2-chunk-000",
+        "file_path": "US7991757B2.txt",
+        "canonical_publications": [
+          "US7991757B2"
+        ],
+        "actual_description": "Combining scores with weights produces overall scores.",
+        "claim_or_section": "US7991757B2 Claim4",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 559,
+        "source": "Score",
+        "target": "Message",
+        "source_id": "US8069128B2-chunk-001",
+        "file_path": "US8069128B2.txt",
+        "canonical_publications": [
+          "US8069128B2"
+        ],
+        "actual_description": "Each message's respective score indicates whether the message is sorted into an incorrect message folder.",
+        "claim_or_section": "US8069128B2 Claim17",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      }
+    ],
+    "observed_cross_publication_unsupported_edge": false
+  },
+  "limitations_zh": [
+    "本结果为AI辅助逐来源语义审阅，不是独立人工金标准；分类依赖所声明的类/实例粒度。",
+    "只审计第二轮既有20篇索引中的可见原chunk、原抽取与实际图邻边；原文范围为已索引的标题、摘要及Claims，未额外读取完整说明书或新语料，未调用模型API，也未进行新的检索/生成传播测试。",
+    "共享节点产生跨专利邻接不等于已观察到错误跨文档推理；边的source_id和file_path应保持作用域。"
+  ],
+  "review_method": "AI-assisted source-by-source reading; deterministic quote/coverage validation; no external model API",
+  "reviewed_utc": "2026-10-30T08:17:35.488955+00:00",
+  "dossier_sha256": "6f630f7face48ff4a49e5e69f1433055b8a5b70901248dca33dc9d911d61d7d1",
+  "input_sha256": {
+    "round2_multisource_audit/dossiers/N031.json": "6f630f7face48ff4a49e5e69f1433055b8a5b70901248dca33dc9d911d61d7d1",
+    "data/claims/US7991757B2.json": "0ced9d1ec3872c98f02cad189cca345cc584f993bad73ab4d45fa1bc31e834dc",
+    "data/documents/US7991757B2.txt": "8d6d3c38c198d6e9ddba783716e45d230ec597d4c2c7a4699c34a7167b7510e9",
+    "data/claims/US8069128B2.json": "931e4f61d8ac862d3c8a094a127cd10ede2d79a1b78d6a6b73f6f40282d8e053",
+    "data/documents/US8069128B2.txt": "3251f41d985e233f6ce1f3904a7d47d2057fcce8744a1fb7bf7167be9be27c06"
+  },
+  "source_and_raw_review_coverage": {
+    "publication_count": 2,
+    "source_chunk_ids_reviewed": [
+      "US7991757B2-chunk-000",
+      "US8069128B2-chunk-001"
+    ],
+    "all_source_chunks_read": true,
+    "all_raw_entity_and_relation_endpoint_rows_read": true,
+    "all_actual_incident_edges_reviewed": true
+  }
+}

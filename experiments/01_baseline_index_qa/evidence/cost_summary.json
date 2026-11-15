@@ -1,0 +1,24 @@
+{
+  "generated_utc": "2026-10-29T15:00:49.872795+00:00",
+  "calls_total": 392,
+  "llm_calls": 95,
+  "embedding_calls": 297,
+  "llm_prompt_tokens": 421530,
+  "llm_completion_tokens": 115419,
+  "prompt_cache_hit_tokens": 105856,
+  "reasoning_tokens": 0,
+  "provider_errors": 0,
+  "missing_usage_calls": 0,
+  "truncated_call_ids": [
+    191
+  ],
+  "upper_price_estimate_cny": 1.7664120000000003,
+  "reserved_unknown_cny": 0.0,
+  "cache_aware_price_estimate_cny": 1.55893424,
+  "cny_per_usd_reference": 6.7147,
+  "internal_budget_cny": 10,
+  "not_invoice": true,
+  "sdk_max_retries": 0,
+  "estimated_usd_upper": 0.26306640654087304,
+  "estimated_usd_cache_aware": 0.23216737009844074
+}

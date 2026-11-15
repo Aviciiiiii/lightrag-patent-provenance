@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-30T03:49:39.523359+00:00",
+  "user_facing_title": "第三轮 Chunk Boundary Ablation 完整管线补充报告",
+  "internal_path": "round4_full_20261030",
+  "new_full_groups": [
+    "F01",
+    "F04",
+    "F05"
+  ],
+  "new_fresh_indexes": 18,
+  "new_M01_indexes": 0,
+  "reason_M01_not_repeated": "Latest user instruction to preserve completed minimum control and not repeat existing results",
+  "old_minimum_preserved": "round4 separate extraction-only original Claims1/27 3pairedrepeats",
+  "environment_smoke_excluded": true,
+  "natural_modes": [
+    "mix",
+    "naive"
+  ],
+  "hard_deadline_unchanged": "2026-10-30T04:11:08+00:00"
+}

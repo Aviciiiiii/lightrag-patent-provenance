@@ -1,0 +1,1999 @@
+{
+  "audit_id": "N019",
+  "node_id": "Processor",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "已逐一审阅 9 篇、14 个来源块。每篇均直接使用 processor(s) 执行其方法或指令：关系数据生成、ETL、归档、垃圾邮件过滤、推荐、查询翻译、媒体过滤、广告库存估计、诊断辅助。它们支持相同的计算处理硬件/执行元件类；应用动作不同不构成不同词义。合并描述显式采用 across various system contexts 及 may be 等范围语句，未证实把九个实例宣称为同一物理处理器。",
+  "class_instance_interpretation_zh": "共享处理器类而非同一硬件实例；25 条邻边都是来源限定的应用/组件角色。Processor—Memory 的多源关系为常见耦合/执行关系，不能由此推断九篇系统共享一块内存或处理器。",
+  "source_assessments": [
+    {
+      "publication_number": "US10778629B2",
+      "evidence_quote": "transferring, from the server, the data to a processor for generating relationship data by determining a relationship strength associated with each pair of users",
+      "claim_or_section": "Claim 10",
+      "claim_number": 10,
+      "role_zh": "接收服务器传来的数据并生成用户对关系强度/关系数据。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US10778629B2-chunk-000",
+        "US10778629B2-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US10778629B2-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US10778629B2.json",
+        "claim_file_sha256": "41a36ef04795d6af3beddfdb7812b36a8aa7a81ec895ae69382a8592dca42a00",
+        "claim_number": 10
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claims 10,21 对两块原抽取都有直接支持。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US10778629B2-chunk-000",
+            "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 9,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>A processor that generates relationship data by determining a relationship strength associated with each pair of users.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "A processor that generates relationship data by determining a relationship strength associated with each pair of users."
+            ]
+          },
+          {
+            "chunk_id": "US10778629B2-chunk-001",
+            "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+            "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 10,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>A component that generates relationship data by determining relationship strength associated with each pair of users.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "A component that generates relationship data by determining relationship strength associated with each pair of users."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US10778629B2-chunk-000",
+            "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 43,
+            "raw_line": "relation<|#|>Server<|#|>Processor<|#|>data transfer<|#|>The server transfers data to a processor for generating relationship data.",
+            "fields": [
+              "relation",
+              "Server",
+              "Processor",
+              "data transfer",
+              "The server transfers data to a processor for generating relationship data."
+            ]
+          },
+          {
+            "chunk_id": "US10778629B2-chunk-000",
+            "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 44,
+            "raw_line": "relation<|#|>Processor<|#|>Relationship Strength<|#|>determining, generating<|#|>The processor generates relationship data by determining a relationship strength associated with each pair of users.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Relationship Strength",
+              "determining, generating",
+              "The processor generates relationship data by determining a relationship strength associated with each pair of users."
+            ]
+          },
+          {
+            "chunk_id": "US10778629B2-chunk-001",
+            "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+            "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 38,
+            "raw_line": "relation<|#|>Server<|#|>Processor<|#|>transfers data to<|#|>The server transfers the data to a processor for generating relationship data.",
+            "fields": [
+              "relation",
+              "Server",
+              "Processor",
+              "transfers data to",
+              "The server transfers the data to a processor for generating relationship data."
+            ]
+          },
+          {
+            "chunk_id": "US10778629B2-chunk-001",
+            "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+            "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 39,
+            "raw_line": "relation<|#|>Processor<|#|>Relationship Data<|#|>generates<|#|>The processor generates relationship data by determining relationship strength associated with each pair of users.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Relationship Data",
+              "generates",
+              "The processor generates relationship data by determining relationship strength associated with each pair of users."
+            ]
+          }
+        ],
+        "raw_entity_count": 2,
+        "raw_relation_endpoint_count": 4
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The server transfers the data to a processor for generating relationship data.<SEP>The server transfers data to a processor for generating relationship data.",
+          "keywords": "data transfer,transfers data to",
+          "source_id": "US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Server",
+          "target": "Processor",
+          "edge_index": 91,
+          "source_chunks": [
+            "US10778629B2-chunk-000",
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor generates relationship data by determining a relationship strength associated with each pair of users.",
+          "keywords": "determining,generating",
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Relationship Strength",
+          "edge_index": 320,
+          "source_chunks": [
+            "US10778629B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor generates relationship data by determining relationship strength associated with each pair of users.",
+          "keywords": "generates",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Relationship Data",
+          "edge_index": 321,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US10778629B2-chunk-000",
+          "sha256": "4186cbfdf5ae0546a6a2e816d9f4dec6c2a2dab527fc6cb34fce62150374f67a",
+          "characters": 6584
+        },
+        {
+          "chunk_id": "US10778629B2-chunk-001",
+          "sha256": "9c08affa61a10a781ad7e194ca432d33e618652662386c29953015f69b28cc9c",
+          "characters": 4025
+        }
+      ]
+    },
+    {
+      "publication_number": "US11423041B2",
+      "evidence_quote": "a memory, storing program instructions that when executed by the at least one processor",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "执行存于 memory 的指令以实现数据目录。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US11423041B2-chunk-000"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US11423041B2-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US11423041B2.json",
+        "claim_file_sha256": "0356d98469cafed1e4867806dcbfc7cc87bc83f274757db009123e4522083e2c",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claim 1 支持原实体、Processor—Memory 和 Processor—Data Catalog。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US11423041B2-chunk-000",
+            "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 13,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>At least one processor in a system that executes program instructions to implement the data catalog.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "At least one processor in a system that executes program instructions to implement the data catalog."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US11423041B2-chunk-000",
+            "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 29,
+            "raw_line": "relation<|#|>Processor<|#|>Memory<|#|>executes instructions from<|#|>The at least one processor executes program instructions stored in the memory.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Memory",
+              "executes instructions from",
+              "The at least one processor executes program instructions stored in the memory."
+            ]
+          },
+          {
+            "chunk_id": "US11423041B2-chunk-000",
+            "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 30,
+            "raw_line": "relation<|#|>Processor<|#|>Data Catalog<|#|>implements<|#|>The at least one processor implements the data catalog by executing program instructions.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Data Catalog",
+              "implements",
+              "The at least one processor implements the data catalog by executing program instructions."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 4.0,
+          "description": "The memory is operatively connected to the processor.<SEP>The processor is coupled to memory and programmed by program code stored in the memory.<SEP>The at least one processor executes program instructions stored in the memory.<SEP>The processor is in communication with the memory for executing the instructions.",
+          "keywords": "coupling,executes instructions from,in communication with,operatively connected,program code storage",
+          "source_id": "US8095432B1-chunk-001<SEP>US8719408B2-chunk-001<SEP>US11423041B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US8095432B1.txt<SEP>US8719408B2.txt<SEP>US11423041B2.txt<SEP>US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Memory",
+          "edge_index": 303,
+          "source_chunks": [
+            "US8095432B1-chunk-001",
+            "US8719408B2-chunk-001",
+            "US11423041B2-chunk-000",
+            "US9589231B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2",
+            "US8095432B1",
+            "US8719408B2",
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The at least one processor implements the data catalog by executing program instructions.",
+          "keywords": "implements",
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Data Catalog",
+          "edge_index": 319,
+          "source_chunks": [
+            "US11423041B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US11423041B2-chunk-000",
+          "sha256": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65",
+          "characters": 6231
+        }
+      ]
+    },
+    {
+      "publication_number": "US7756837B2",
+      "evidence_quote": "A processor operable to execute a software program, the software program causing the processor to perform steps",
+      "claim_or_section": "Claim 16",
+      "claim_number": 16,
+      "role_zh": "运行归档程序：接收数据流、抽取管理数据、存储、查询。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US7756837B2.json",
+        "claim_file_sha256": "cac7dd86fa8b87591b2a118b599c1c485d741c6c9213422a0e3653f70fb35280",
+        "claim_number": 16
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "chunk000 的 Claim 16 起始与完整方法语境、chunk001 的 Claims 16–30、chunk002 的 Claim 32 支持三块原描述；后两块给出完整处理器/程序角色。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US7756837B2-chunk-000",
+            "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+            "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 13,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>A processor operable to execute a software program that performs steps of receiving data-streams, extracting management data, and storing it in a searchable format.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "A processor operable to execute a software program that performs steps of receiving data-streams, extracting management data, and storing it in a searchable format."
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 5,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>A processor operable to execute a software program that causes it to perform steps including receiving, extracting, and storing management data.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "A processor operable to execute a software program that causes it to perform steps including receiving, extracting, and storing management data."
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-002",
+            "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+            "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 6,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>A component caused by a software program to carry out actions such as receiving, extracting, and storing.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "A component caused by a software program to carry out actions such as receiving, extracting, and storing."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US7756837B2-chunk-000",
+            "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+            "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 55,
+            "raw_line": "relation<|#|>Processor<|#|>Software Program<|#|>Executes<|#|>The processor is operable to execute the software program.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Software Program",
+              "Executes",
+              "The processor is operable to execute the software program."
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 21,
+            "raw_line": "relation<|#|>Processor<|#|>Software Program<|#|>executes, causes performance<|#|>The processor is operable to execute the software program, which causes the processor to perform the archiving steps.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Software Program",
+              "executes, causes performance",
+              "The processor is operable to execute the software program, which causes the processor to perform the archiving steps."
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 22,
+            "raw_line": "relation<|#|>Processor<|#|>Data-Stream<|#|>receives<|#|>The processor receives at least one data-stream intended for archiving on a backup storage device.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Data-Stream",
+              "receives",
+              "The processor receives at least one data-stream intended for archiving on a backup storage device."
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 23,
+            "raw_line": "relation<|#|>Processor<|#|>Management Data<|#|>extracts<|#|>The processor extracts management data from the data-stream.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Management Data",
+              "extracts",
+              "The processor extracts management data from the data-stream."
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 24,
+            "raw_line": "relation<|#|>Processor<|#|>Database<|#|>stores management data in<|#|>The processor stores the management data in a searchable format in a database.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Database",
+              "stores management data in",
+              "The processor stores the management data in a searchable format in a database."
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 31,
+            "raw_line": "relation<|#|>Processor<|#|>Backup Storage Device<|#|>passes data-stream to, reads back data from<|#|>The processor passes the data-stream to the backup storage device and reads back data from it to re-create the data-stream.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Backup Storage Device",
+              "passes data-stream to, reads back data from",
+              "The processor passes the data-stream to the backup storage device and reads back data from it to re-create the data-stream."
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 32,
+            "raw_line": "relation<|#|>Processor<|#|>Query<|#|>receives, formulates responses to<|#|>The processor receives a query from a party and formulates responses based on analysis of the management data stored in the database.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Query",
+              "receives, formulates responses to",
+              "The processor receives a query from a party and formulates responses based on analysis of the management data stored in the database."
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 37,
+            "raw_line": "relation<|#|>Processor<|#|>Predetermined Rule Set<|#|>uses<|#|>The processor uses a predetermined rule set to recognize the distinct data sets of the data-stream.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Predetermined Rule Set",
+              "uses",
+              "The processor uses a predetermined rule set to recognize the distinct data sets of the data-stream."
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-002",
+            "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+            "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 32,
+            "raw_line": "relation<|#|>Software Program<|#|>Processor<|#|>causing actions<|#|>The software program is capable of causing the processor to carry out actions.",
+            "fields": [
+              "relation",
+              "Software Program",
+              "Processor",
+              "causing actions",
+              "The software program is capable of causing the processor to carry out actions."
+            ]
+          }
+        ],
+        "raw_entity_count": 3,
+        "raw_relation_endpoint_count": 9
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The processor stores the management data in a searchable format in a database.",
+          "keywords": "stores management data in",
+          "source_id": "US7756837B2-chunk-001",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Database",
+          "target": "Processor",
+          "edge_index": 101,
+          "source_chunks": [
+            "US7756837B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 3.0,
+          "description": "The processor is operable to execute the software program, which causes the processor to perform the archiving steps.<SEP>The processor is operable to execute the software program.<SEP>The software program is capable of causing the processor to carry out actions.",
+          "keywords": "Executes,causes performance,causing actions,executes",
+          "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Software Program",
+          "edge_index": 309,
+          "source_chunks": [
+            "US7756837B2-chunk-000",
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor extracts management data from the data-stream.",
+          "keywords": "extracts",
+          "source_id": "US7756837B2-chunk-001",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Management Data",
+          "edge_index": 310,
+          "source_chunks": [
+            "US7756837B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor receives at least one data-stream intended for archiving on a backup storage device.",
+          "keywords": "receives",
+          "source_id": "US7756837B2-chunk-001",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Data-Stream",
+          "edge_index": 311,
+          "source_chunks": [
+            "US7756837B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor passes the data-stream to the backup storage device and reads back data from it to re-create the data-stream.",
+          "keywords": "passes data-stream to,reads back data from",
+          "source_id": "US7756837B2-chunk-001",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Backup Storage Device",
+          "edge_index": 312,
+          "source_chunks": [
+            "US7756837B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor receives a query from a party and formulates responses based on analysis of the management data stored in the database.",
+          "keywords": "formulates responses to,receives",
+          "source_id": "US7756837B2-chunk-001",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Query",
+          "edge_index": 313,
+          "source_chunks": [
+            "US7756837B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor uses a predetermined rule set to recognize the distinct data sets of the data-stream.",
+          "keywords": "uses",
+          "source_id": "US7756837B2-chunk-001",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Predetermined Rule Set",
+          "edge_index": 314,
+          "source_chunks": [
+            "US7756837B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US7756837B2-chunk-000",
+          "sha256": "816fc9cf05223956b4e376ef0f6e135985e9f900de35575a229b3fb046a5e544",
+          "characters": 5990
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-001",
+          "sha256": "8b1a94961ae323fa62890371b8df43eadff7e06ff68633f58c71a9050db94c86",
+          "characters": 5885
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-002",
+          "sha256": "c301fb50a9bcd91ff8802abcebcecf3db19cbcb3773547c471bfbded65e67e9c",
+          "characters": 5892
+        }
+      ]
+    },
+    {
+      "publication_number": "US8069128B2",
+      "evidence_quote": "a processor that is operative to perform actions",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "网络设备内执行两遍消息分析及模型清除的处理器。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8069128B2-chunk-000"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8069128B2-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8069128B2.json",
+        "claim_file_sha256": "931e4f61d8ac862d3c8a094a127cd10ede2d79a1b78d6a6b73f6f40282d8e053",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claim 1 的完整动作列表直接支持原实体描述；Network Device 的 comprises 邻边亦对应原文。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8069128B2-chunk-000",
+            "raw_record_id": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+            "cache_key": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 12,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>A component of the network device operative to perform actions including first and second pass analyses and purging the classification model.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "A component of the network device operative to perform actions including first and second pass analyses and purging the classification model."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8069128B2-chunk-000",
+            "raw_record_id": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+            "cache_key": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 42,
+            "raw_line": "relation<|#|>Network Device<|#|>Processor<|#|>comprises<|#|>The network device comprises a processor operative to perform the described actions.",
+            "fields": [
+              "relation",
+              "Network Device",
+              "Processor",
+              "comprises",
+              "The network device comprises a processor operative to perform the described actions."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 1
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The network device comprises a processor operative to perform the described actions.",
+          "keywords": "comprises",
+          "source_id": "US8069128B2-chunk-000",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Network Device",
+          "edge_index": 308,
+          "source_chunks": [
+            "US8069128B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8069128B2-chunk-000",
+          "sha256": "03d27b9af9a95fc99659dae87ae86cc8134f0f4319687342b04ae8d524454c1c",
+          "characters": 6639
+        }
+      ]
+    },
+    {
+      "publication_number": "US8095432B1",
+      "evidence_quote": "a recommendation application executing on the processor, resident in memory",
+      "claim_or_section": "Claim 16",
+      "claim_number": 16,
+      "role_zh": "推荐系统中执行应用、计算关系接近度与排序的处理器。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8095432B1-chunk-000",
+        "US8095432B1-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8095432B1-chunk-000",
+        "US8095432B1-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8095432B1.json",
+        "claim_file_sha256": "d1aeb116b21db2124fd894640e5cdc35ae864c3dcd09f3574124493022707585",
+        "claim_number": 16
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claim 1 的 using a processor 和 Claim 16 的组件声明支持两个来源块及应用/内存邻边。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 11,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>A computing component used to determine relationship proximities, rank recommendations, and generate recommendation lists.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "A computing component used to determine relationship proximities, rank recommendations, and generate recommendation lists."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-001",
+            "raw_record_id": "default:extract:004573bea56cbff3fdf6b77458b89786",
+            "cache_key": "default:extract:004573bea56cbff3fdf6b77458b89786",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 2,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>A hardware component that executes the recommendation application and performs the operations of the system.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "A hardware component that executes the recommendation application and performs the operations of the system."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 29,
+            "raw_line": "relation<|#|>Recommendation Engine For Social Networks<|#|>Processor<|#|>executes on<|#|>The recommendation engine operates using a processor to determine proximities and rank recommendations.",
+            "fields": [
+              "relation",
+              "Recommendation Engine For Social Networks",
+              "Processor",
+              "executes on",
+              "The recommendation engine operates using a processor to determine proximities and rank recommendations."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 30,
+            "raw_line": "relation<|#|>Recommendation Application<|#|>Processor<|#|>executes on<|#|>The recommendation application executes on the processor.",
+            "fields": [
+              "relation",
+              "Recommendation Application",
+              "Processor",
+              "executes on",
+              "The recommendation application executes on the processor."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-001",
+            "raw_record_id": "default:extract:004573bea56cbff3fdf6b77458b89786",
+            "cache_key": "default:extract:004573bea56cbff3fdf6b77458b89786",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 21,
+            "raw_line": "relation<|#|>Recommendation Application<|#|>Processor<|#|>executes on, hosted by<|#|>The recommendation application executes on the processor.",
+            "fields": [
+              "relation",
+              "Recommendation Application",
+              "Processor",
+              "executes on, hosted by",
+              "The recommendation application executes on the processor."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-001",
+            "raw_record_id": "default:extract:004573bea56cbff3fdf6b77458b89786",
+            "cache_key": "default:extract:004573bea56cbff3fdf6b77458b89786",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 23,
+            "raw_line": "relation<|#|>Processor<|#|>Memory<|#|>operatively connected<|#|>The memory is operatively connected to the processor.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Memory",
+              "operatively connected",
+              "The memory is operatively connected to the processor."
+            ]
+          }
+        ],
+        "raw_entity_count": 2,
+        "raw_relation_endpoint_count": 4
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The recommendation engine operates using a processor to determine proximities and rank recommendations.",
+          "keywords": "executes on",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Recommendation Engine For Social Networks",
+          "target": "Processor",
+          "edge_index": 258,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The recommendation application executes on the processor.",
+          "keywords": "executes on,hosted by",
+          "source_id": "US8095432B1-chunk-000<SEP>US8095432B1-chunk-001",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Recommendation Application",
+          "edge_index": 302,
+          "source_chunks": [
+            "US8095432B1-chunk-000",
+            "US8095432B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 4.0,
+          "description": "The memory is operatively connected to the processor.<SEP>The processor is coupled to memory and programmed by program code stored in the memory.<SEP>The at least one processor executes program instructions stored in the memory.<SEP>The processor is in communication with the memory for executing the instructions.",
+          "keywords": "coupling,executes instructions from,in communication with,operatively connected,program code storage",
+          "source_id": "US8095432B1-chunk-001<SEP>US8719408B2-chunk-001<SEP>US11423041B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US8095432B1.txt<SEP>US8719408B2.txt<SEP>US11423041B2.txt<SEP>US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Memory",
+          "edge_index": 303,
+          "source_chunks": [
+            "US8095432B1-chunk-001",
+            "US8719408B2-chunk-001",
+            "US11423041B2-chunk-000",
+            "US9589231B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2",
+            "US8095432B1",
+            "US8719408B2",
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8095432B1-chunk-000",
+          "sha256": "870959f01fdf22e55223e95ba2ca5f25438debf5d1fc2aec28abb31eac4e2c83",
+          "characters": 6336
+        },
+        {
+          "chunk_id": "US8095432B1-chunk-001",
+          "sha256": "4e2287011be7023b7feb214f57a86aa9b40e2f5fdf57cef3bf400c7635c63bbb",
+          "characters": 5492
+        }
+      ]
+    },
+    {
+      "publication_number": "US8655901B1",
+      "evidence_quote": "one or more processors configured to interact with a computer-readable medium in order to perform operations",
+      "claim_or_section": "Claim 8",
+      "claim_number": 8,
+      "role_zh": "执行查询模式翻译挖掘操作、与计算机可读介质交互的处理器。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8655901B1-chunk-000"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8655901B1-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8655901B1.json",
+        "claim_file_sha256": "3c4320d6d4a3603680fed5c9a62944142f5443962d5efd343277600f79f8ce75",
+        "claim_number": 8
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claim 8 的开头直接支持实体与两条 System/Medium 邻边。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8655901B1-chunk-000",
+            "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 14,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>One or more processors in the system configured to interact with a computer-readable medium to perform the described operations.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "One or more processors in the system configured to interact with a computer-readable medium to perform the described operations."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8655901B1-chunk-000",
+            "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 34,
+            "raw_line": "relation<|#|>System<|#|>Processor<|#|>comprises<|#|>The system comprises one or more processors configured to interact with a computer-readable medium to perform operations.",
+            "fields": [
+              "relation",
+              "System",
+              "Processor",
+              "comprises",
+              "The system comprises one or more processors configured to interact with a computer-readable medium to perform operations."
+            ]
+          },
+          {
+            "chunk_id": "US8655901B1-chunk-000",
+            "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 35,
+            "raw_line": "relation<|#|>Processor<|#|>Computer-Readable Medium<|#|>interacts with<|#|>The one or more processors are configured to interact with a computer-readable medium in order to perform operations.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Computer-Readable Medium",
+              "interacts with",
+              "The one or more processors are configured to interact with a computer-readable medium in order to perform operations."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The system comprises one or more processors configured to interact with a computer-readable medium to perform operations.",
+          "keywords": "comprises",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "System",
+          "target": "Processor",
+          "edge_index": 153,
+          "source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The one or more processors are configured to interact with a computer-readable medium in order to perform operations.",
+          "keywords": "interacts with",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Computer-Readable Medium",
+          "edge_index": 318,
+          "source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8655901B1-chunk-000",
+          "sha256": "0bab0caa8c0462609609b9037c577b4201a3af3034b28331edefba06b1dee6e8",
+          "characters": 6722
+        }
+      ]
+    },
+    {
+      "publication_number": "US8719408B2",
+      "evidence_quote": "a processor coupled to memory, the processor programmed by program code stored in the memory",
+      "claim_or_section": "Claim 17",
+      "claim_number": 17,
+      "role_zh": "建立用户关系并实施数字媒体过滤各模块的处理器。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8719408B2-chunk-000",
+        "US8719408B2-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8719408B2-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8719408B2.json",
+        "claim_file_sha256": "8fbed8d352cb99d08004c35b1932e38a5b60e8d80c7aba212348f23e534fa87f",
+        "claim_number": 17
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claims 1,9,17 分别支持方法执行、程序指令、与内存耦合三类原抽取描述。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8719408B2-chunk-000",
+            "raw_record_id": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 14,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>A hardware component that performs the steps of establishing user relationships and executing the filtration method.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "A hardware component that performs the steps of establishing user relationships and executing the filtration method."
+            ]
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 8,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>A processor coupled to memory and programmed by program code stored in the memory to implement the modules of the apparatus.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "A processor coupled to memory and programmed by program code stored in the memory to implement the modules of the apparatus."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8719408B2-chunk-000",
+            "raw_record_id": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 57,
+            "raw_line": "relation<|#|>Automated Digital Media Content Filtration<|#|>Processor<|#|>executed by<|#|>The filtration method is performed by a processor.",
+            "fields": [
+              "relation",
+              "Automated Digital Media Content Filtration",
+              "Processor",
+              "executed by",
+              "The filtration method is performed by a processor."
+            ]
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-000",
+            "raw_record_id": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 59,
+            "raw_line": "relation<|#|>Executable Program<|#|>Processor<|#|>instructs<|#|>The executable program instructs a processor to perform the filtration steps.",
+            "fields": [
+              "relation",
+              "Executable Program",
+              "Processor",
+              "instructs",
+              "The executable program instructs a processor to perform the filtration steps."
+            ]
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 29,
+            "raw_line": "relation<|#|>Apparatus For Automated Digital Media Content Filtration<|#|>Processor<|#|>comprises, coupling<|#|>The apparatus comprises a processor coupled to memory.",
+            "fields": [
+              "relation",
+              "Apparatus For Automated Digital Media Content Filtration",
+              "Processor",
+              "comprises, coupling",
+              "The apparatus comprises a processor coupled to memory."
+            ]
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 31,
+            "raw_line": "relation<|#|>Processor<|#|>Memory<|#|>coupling, program code storage<|#|>The processor is coupled to memory and programmed by program code stored in the memory.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Memory",
+              "coupling, program code storage",
+              "The processor is coupled to memory and programmed by program code stored in the memory."
+            ]
+          }
+        ],
+        "raw_entity_count": 2,
+        "raw_relation_endpoint_count": 4
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 4.0,
+          "description": "The memory is operatively connected to the processor.<SEP>The processor is coupled to memory and programmed by program code stored in the memory.<SEP>The at least one processor executes program instructions stored in the memory.<SEP>The processor is in communication with the memory for executing the instructions.",
+          "keywords": "coupling,executes instructions from,in communication with,operatively connected,program code storage",
+          "source_id": "US8095432B1-chunk-001<SEP>US8719408B2-chunk-001<SEP>US11423041B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US8095432B1.txt<SEP>US8719408B2.txt<SEP>US11423041B2.txt<SEP>US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Memory",
+          "edge_index": 303,
+          "source_chunks": [
+            "US8095432B1-chunk-001",
+            "US8719408B2-chunk-001",
+            "US11423041B2-chunk-000",
+            "US9589231B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2",
+            "US8095432B1",
+            "US8719408B2",
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The filtration method is performed by a processor.",
+          "keywords": "executed by",
+          "source_id": "US8719408B2-chunk-000",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Automated Digital Media Content Filtration",
+          "edge_index": 315,
+          "source_chunks": [
+            "US8719408B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The executable program instructs a processor to perform the filtration steps.",
+          "keywords": "instructs",
+          "source_id": "US8719408B2-chunk-000",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Executable Program",
+          "edge_index": 316,
+          "source_chunks": [
+            "US8719408B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The apparatus comprises a processor coupled to memory.",
+          "keywords": "comprises,coupling",
+          "source_id": "US8719408B2-chunk-001",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Apparatus For Automated Digital Media Content Filtration",
+          "edge_index": 317,
+          "source_chunks": [
+            "US8719408B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8719408B2-chunk-000",
+          "sha256": "e303c7516b50f0904a4432e14df56d76382064de207d1bbaba9d60f88fef0554",
+          "characters": 7208
+        },
+        {
+          "chunk_id": "US8719408B2-chunk-001",
+          "sha256": "dcd5540204015d2851b60923695a591f918c1aa150e91fd42d534817a881c085",
+          "characters": 4976
+        }
+      ]
+    },
+    {
+      "publication_number": "US8880423B2",
+      "evidence_quote": "clustering, using a processor, a plurality of viewed pages into a plurality of clusters",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "聚类浏览页面/关键词并估计广告库存的处理器。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8880423B2-chunk-000"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8880423B2-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8880423B2.json",
+        "claim_file_sha256": "629f0de77be165ab196fc2dacd7d1db59be8d8cbdeb0f35e05b7c12a2c9c8f7e",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claims 1,8 支持 cluster/total inventory/deliverable inventory 角色；未把各估算实现等同为其他专利的方法。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8880423B2-chunk-000",
+            "raw_record_id": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "cache_key": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 13,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>A hardware component used to perform clustering, estimating, and other computational steps of the methods.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "A hardware component used to perform clustering, estimating, and other computational steps of the methods."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8880423B2-chunk-000",
+            "raw_record_id": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "cache_key": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 26,
+            "raw_line": "relation<|#|>US8880423B2<|#|>Processor<|#|>describes use of<|#|>The patent's methods use a processor to perform clustering and estimating steps.",
+            "fields": [
+              "relation",
+              "US8880423B2",
+              "Processor",
+              "describes use of",
+              "The patent's methods use a processor to perform clustering and estimating steps."
+            ]
+          },
+          {
+            "chunk_id": "US8880423B2-chunk-000",
+            "raw_record_id": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "cache_key": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 48,
+            "raw_line": "relation<|#|>Processor<|#|>Cluster<|#|>performs clustering<|#|>The processor clusters viewed pages and search keywords into clusters.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Cluster",
+              "performs clustering",
+              "The processor clusters viewed pages and search keywords into clusters."
+            ]
+          },
+          {
+            "chunk_id": "US8880423B2-chunk-000",
+            "raw_record_id": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "cache_key": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 49,
+            "raw_line": "relation<|#|>Processor<|#|>Total Inventory<|#|>estimates<|#|>The processor estimates the plurality of total inventories.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Total Inventory",
+              "estimates",
+              "The processor estimates the plurality of total inventories."
+            ]
+          },
+          {
+            "chunk_id": "US8880423B2-chunk-000",
+            "raw_record_id": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "cache_key": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 50,
+            "raw_line": "relation<|#|>Processor<|#|>Deliverable Inventory<|#|>estimates<|#|>The processor estimates the deliverable inventory for the segment.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Deliverable Inventory",
+              "estimates",
+              "The processor estimates the deliverable inventory for the segment."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 4
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The patent's methods use a processor to perform clustering and estimating steps.",
+          "keywords": "describes use of",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793284282,
+          "truncate": "",
+          "source": "Processor",
+          "target": "US8880423B2",
+          "edge_index": 304,
+          "source_chunks": [
+            "US8880423B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8880423B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor clusters viewed pages and search keywords into clusters.",
+          "keywords": "performs clustering",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793284282,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Cluster",
+          "edge_index": 305,
+          "source_chunks": [
+            "US8880423B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8880423B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor estimates the plurality of total inventories.",
+          "keywords": "estimates",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793284282,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Total Inventory",
+          "edge_index": 306,
+          "source_chunks": [
+            "US8880423B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8880423B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor estimates the deliverable inventory for the segment.",
+          "keywords": "estimates",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793284282,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Deliverable Inventory",
+          "edge_index": 307,
+          "source_chunks": [
+            "US8880423B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8880423B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8880423B2-chunk-000",
+          "sha256": "9a6a83a5aac470476df10e59c8227d9d42ff76b2b03646c94d6fae0828e241c0",
+          "characters": 6866
+        }
+      ]
+    },
+    {
+      "publication_number": "US9589231B2",
+      "evidence_quote": "a processor in communication with the memory for executing the instructions",
+      "claim_or_section": "Claim 20",
+      "claim_number": 20,
+      "role_zh": "诊断辅助系统中执行查询/嵌入等指令的处理器。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9589231B2-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9589231B2-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9589231B2.json",
+        "claim_file_sha256": "6ffab90b44ab1b42f178a3876033f97c0a2a5b30908b21046af4aed39e994d6b",
+        "claim_number": 20
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "chunk001 的 Claims 19,20 直接支持原实体和 Processor—Memory、Diagnosis Assistance System 边。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9589231B2-chunk-001",
+            "raw_record_id": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "cache_key": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 9,
+            "raw_line": "entity<|#|>Processor<|#|>Artifact<|#|>A component in communication with memory for executing stored instructions.",
+            "fields": [
+              "entity",
+              "Processor",
+              "Artifact",
+              "A component in communication with memory for executing stored instructions."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9589231B2-chunk-001",
+            "raw_record_id": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "cache_key": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 26,
+            "raw_line": "relation<|#|>Processor<|#|>Memory<|#|>in communication with<|#|>The processor is in communication with the memory for executing the instructions.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Memory",
+              "in communication with",
+              "The processor is in communication with the memory for executing the instructions."
+            ]
+          },
+          {
+            "chunk_id": "US9589231B2-chunk-001",
+            "raw_record_id": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "cache_key": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 28,
+            "raw_line": "relation<|#|>Diagnosis Assistance System<|#|>Processor<|#|>comprises<|#|>The diagnosis assistance system comprises a processor in communication with the memory.",
+            "fields": [
+              "relation",
+              "Diagnosis Assistance System",
+              "Processor",
+              "comprises",
+              "The diagnosis assistance system comprises a processor in communication with the memory."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 4.0,
+          "description": "The memory is operatively connected to the processor.<SEP>The processor is coupled to memory and programmed by program code stored in the memory.<SEP>The at least one processor executes program instructions stored in the memory.<SEP>The processor is in communication with the memory for executing the instructions.",
+          "keywords": "coupling,executes instructions from,in communication with,operatively connected,program code storage",
+          "source_id": "US8095432B1-chunk-001<SEP>US8719408B2-chunk-001<SEP>US11423041B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US8095432B1.txt<SEP>US8719408B2.txt<SEP>US11423041B2.txt<SEP>US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Memory",
+          "edge_index": 303,
+          "source_chunks": [
+            "US8095432B1-chunk-001",
+            "US8719408B2-chunk-001",
+            "US11423041B2-chunk-000",
+            "US9589231B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2",
+            "US8095432B1",
+            "US8719408B2",
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The diagnosis assistance system comprises a processor in communication with the memory.",
+          "keywords": "comprises",
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Diagnosis Assistance System",
+          "edge_index": 322,
+          "source_chunks": [
+            "US9589231B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9589231B2-chunk-001",
+          "sha256": "6c471f8c23a679d6965872da70a3167aecd6312380e16ae9ba071b3f71d90f8c",
+          "characters": 3236
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 25,
+    "observed_unsupported_edge": false,
+    "details_zh": "已逐条审阅实际邻边及其 source_id。未确认一条缺少其自身来源支持的边；合并后的跨文档邻接不能当成已发生错误边传播的证据。",
+    "edge_indices": [
+      91,
+      101,
+      153,
+      258,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 91,
+        "source_id": "US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US10778629B2 Claims 10,21",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 101,
+        "source_id": "US7756837B2-chunk-001",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US7756837B2 Claim 16",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 153,
+        "source_id": "US8655901B1-chunk-000",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8655901B1 Claim 8",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 258,
+        "source_id": "US8095432B1-chunk-000",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8095432B1 Claims 1,16",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 302,
+        "source_id": "US8095432B1-chunk-000<SEP>US8095432B1-chunk-001",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8095432B1 Claim 16",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 303,
+        "source_id": "US8095432B1-chunk-001<SEP>US8719408B2-chunk-001<SEP>US11423041B2-chunk-000<SEP>US9589231B2-chunk-001",
+        "canonical_publications": [
+          "US11423041B2",
+          "US8095432B1",
+          "US8719408B2",
+          "US9589231B2"
+        ],
+        "assessment": "locally_supported_with_qualification",
+        "source_evidence_claims": "US8095432B1 Claim 16; US8719408B2 Claim 17; US11423041B2 Claim 1; US9589231B2 Claims 19,20",
+        "details_zh": "四篇分别支持 memory/processor 的本地耦合或指令执行关系；共享类边不是同一硬件实例的跨篇证据。"
+      },
+      {
+        "edge_index": 304,
+        "source_id": "US8880423B2-chunk-000",
+        "canonical_publications": [
+          "US8880423B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8880423B2 Claims 1,8",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 305,
+        "source_id": "US8880423B2-chunk-000",
+        "canonical_publications": [
+          "US8880423B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8880423B2 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 306,
+        "source_id": "US8880423B2-chunk-000",
+        "canonical_publications": [
+          "US8880423B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8880423B2 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 307,
+        "source_id": "US8880423B2-chunk-000",
+        "canonical_publications": [
+          "US8880423B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8880423B2 Claim 8",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 308,
+        "source_id": "US8069128B2-chunk-000",
+        "canonical_publications": [
+          "US8069128B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8069128B2 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 309,
+        "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US7756837B2 Claims 16,32",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 310,
+        "source_id": "US7756837B2-chunk-001",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US7756837B2 Claim 16",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 311,
+        "source_id": "US7756837B2-chunk-001",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US7756837B2 Claim 16",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 312,
+        "source_id": "US7756837B2-chunk-001",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US7756837B2 Claims 17,18",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 313,
+        "source_id": "US7756837B2-chunk-001",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US7756837B2 Claim 28",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 314,
+        "source_id": "US7756837B2-chunk-001",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US7756837B2 Claim 25",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 315,
+        "source_id": "US8719408B2-chunk-000",
+        "canonical_publications": [
+          "US8719408B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8719408B2 Claims 1,9",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 316,
+        "source_id": "US8719408B2-chunk-000",
+        "canonical_publications": [
+          "US8719408B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8719408B2 Claim 9",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 317,
+        "source_id": "US8719408B2-chunk-001",
+        "canonical_publications": [
+          "US8719408B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8719408B2 Claim 17",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 318,
+        "source_id": "US8655901B1-chunk-000",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8655901B1 Claim 8",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 319,
+        "source_id": "US11423041B2-chunk-000",
+        "canonical_publications": [
+          "US11423041B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US11423041B2 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 320,
+        "source_id": "US10778629B2-chunk-000",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US10778629B2 Claim 10",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 321,
+        "source_id": "US10778629B2-chunk-001",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US10778629B2 Claim 21",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 322,
+        "source_id": "US9589231B2-chunk-001",
+        "canonical_publications": [
+          "US9589231B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9589231B2 Claims 19,20",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      }
+    ],
+    "retrieval_or_generation_propagation_tested": false
+  },
+  "limitations_zh": [
+    "这是 AI 辅助原文/抽取/图结构审阅，非独立人工标注 gold、非新的模型评判 API 实验。",
+    "仅审核当前保存的第二轮图快照与其来源块；概念合并不等于实例 sameAs，也没有进行跨专利路径检索或答案生成传播实验。",
+    "原文为已索引摘要及 Claims；没有用外部说明书填补缺失事实。原始文本中的格式缺陷保持原样。",
+    "边的端点顺序来自保存的无向图；语义方向按原关系描述核对，不把 source/target 字段顺序当作因果方向。",
+    "observed_unsupported_edge=false 表示本次检查未确认无原文支持的实际边，不是证明全图无误；关键词粒度/局部实施例范围的警示另记。",
+    "未给定显式类/实例 ontology。类别是基于具体词义及作用域的审阅标签，contextual_conflation 数量不是错误边数或代码 bug 率；Event/Network 的宽类解释可改变类别。",
+    "缓存提取行未保存 finish_reason 时不推定完整或截断；本审核只对实际保存的实体/关系行与当前已入图事实作语义核验。"
+  ],
+  "ontology_sensitivity": {
+    "explicit_ontology_available": false,
+    "alternative_shared_broad_class_plausible": false,
+    "interpretation_zh": "类别只描述现有证据下的概念语义，未断言跨专利实例相同或已发生错误推理。"
+  },
+  "review_method": {
+    "reviewer": "AI-assisted Codex content review",
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "all_source_publications_reviewed": 9,
+    "all_source_chunks_reviewed": 14,
+    "all_actual_incident_edges_reviewed": 25,
+    "raw_input_kind": "saved extraction rows; no new extraction",
+    "review_protocol_sha256": "bbed066b8051df60997798d319549164d750797ebef3d7c1e86d69ffc6092255",
+    "dossier_sha256": "e8979d5afb41844a4cbc576cb1324562af5a237679463ea198fc0918b339b544",
+    "generated_utc": "2026-10-30T08:21:11.047915+00:00"
+  },
+  "graph_node_description_reviewed": "The term \"Processor\" refers to a hardware component or computing element that executes software programs and performs a wide range of computational and operational tasks across various system contexts. As a hardware component, the processor executes applications—such as a recommendation application—and carries out the core operations of a system. In the context of recommendation systems, it is used to determine relationship proximities, rank recommendations, and generate recommendation lists. It also performs computational steps such as clustering and estimating within various methods.\n\nThe processor may be a component of a network device, where it is operative to perform actions including first and second pass analyses and purging a classification model. When executing software programs, the processor is operable to perform steps such as receiving, extracting, and storing management data, as well as receiving data-streams, extracting management data, and storing it in a searchable format. In some configurations, the processor is caused by a software program to carry out actions such as receiving, extracting, and storing. It may also be a hardware component that performs the steps of establishing user relationships and executing a filtration method. Additionally, the processor can be coupled to memory and programmed by program code stored in that memory to implement the modules of an apparatus.<SEP>One or more processors in the system configured to interact with a computer-readable medium to perform the described operations.<SEP>At least one processor in a system that executes program instructions to implement the data catalog.<SEP>A component that generates relationship data by determining relationship strength associated with each pair of users.<SEP>A processor that generates relationship data by determining a relationship strength associated with each pair of users.<SEP>A component in communication with memory for executing stored instructions."
+}

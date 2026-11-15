@@ -1,0 +1,1575 @@
+{
+  "method": "normal official imported parser replay, timestamp0",
+  "records": [
+    {
+      "call_id": 55,
+      "chunk_id": "US9589231B2-chunk-000",
+      "file_path": "US9589231B2.txt",
+      "finish_reason": "length",
+      "completion_tokens": 3500,
+      "completion_delimiter_present": false,
+      "nodes": {
+        "US9589231B2": [
+          {
+            "entity_name": "US9589231B2",
+            "entity_type": "content",
+            "description": "A patent publication titled \"Social medical network for diagnosis assistance\" describing a method and system for assisting medical diagnosis by exploiting similarity between new medical cases and existing cases and experts in a common embedding space.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Social Medical Network For Diagnosis Assistance": [
+          {
+            "entity_name": "Social Medical Network For Diagnosis Assistance",
+            "entity_type": "content",
+            "description": "The title of the patent describing a network-based approach to medical diagnosis assistance using embedding spaces and expert queries.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Diagnosis Assistance Method": [
+          {
+            "entity_name": "Diagnosis Assistance Method",
+            "entity_type": "method",
+            "description": "A method that receives a query request including a new medical case, embeds the new case in an embedding space containing existing medical cases and experts, and returns subsets of cases or experts based on computed similarity.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Embedding Space": [
+          {
+            "entity_name": "Embedding Space",
+            "entity_type": "concept",
+            "description": "A common multidimensional space in which new medical cases, existing medical cases, and experts are embedded so that similarity between their representations can be computed.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "New Medical Case": [
+          {
+            "entity_name": "New Medical Case",
+            "entity_type": "data",
+            "description": "A medical case submitted by a requester in a query request, comprising a plurality of records relating to a specific patient, which is embedded in the embedding space.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Existing Medical Cases": [
+          {
+            "entity_name": "Existing Medical Cases",
+            "entity_type": "data",
+            "description": "A set of previously stored medical cases embedded in the embedding space, used as candidates for similarity-based retrieval in a query-for-cases.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Experts": [
+          {
+            "entity_name": "Experts",
+            "entity_type": "person",
+            "description": "A set of medical experts embedded in the embedding space based on information such as profiles, coded medical procedures performed, authored articles, and linked stored medical cases, who may be selected to formulate a diagnosis.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Requester": [
+          {
+            "entity_name": "Requester",
+            "entity_type": "person",
+            "description": "A user who submits a query request including a new medical case and selects from a plurality of query types.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Query-For-Cases": [
+          {
+            "entity_name": "Query-For-Cases",
+            "entity_type": "method",
+            "description": "A query type that, when selected, returns a subset of existing medical cases based on computed similarity between the embedded new case and the embedded existing cases.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Query-For-Experts": [
+          {
+            "entity_name": "Query-For-Experts",
+            "entity_type": "method",
+            "description": "A query type that, when selected, returns a subset of experts based on computed similarity between the embedded new case and the embedded experts.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Query Cost": [
+          {
+            "entity_name": "Query Cost",
+            "entity_type": "concept",
+            "description": "A computed cost for a query, where the cost for a query-for-experts differs from and is higher than the cost for a query-for-cases, encouraging requesters to try query-by-cases first.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Medical Ontology": [
+          {
+            "entity_name": "Medical Ontology",
+            "entity_type": "concept",
+            "description": "A structure comprising a set of medical concepts joined by links, each concept corresponding to a dimension in the multidimensional representation, used to embed medical cases and experts.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Multidimensional Representation": [
+          {
+            "entity_name": "Multidimensional Representation",
+            "entity_type": "data",
+            "description": "A representation of a medical case computed based on a medical ontology, where each medical concept corresponds to a respective dimension.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Matrix Of Proximities": [
+          {
+            "entity_name": "Matrix Of Proximities",
+            "entity_type": "data",
+            "description": "A matrix applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology when computing similarity measures.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Unified Medical Language System": [
+          {
+            "entity_name": "Unified Medical Language System",
+            "entity_type": "concept",
+            "description": "A medical ontology on which the embedding of medical cases and experts may be based.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Human Body": [
+          {
+            "entity_name": "Human Body",
+            "entity_type": "naturalobject",
+            "description": "Parts of the human body that may be included in the medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Biological Functions": [
+          {
+            "entity_name": "Biological Functions",
+            "entity_type": "concept",
+            "description": "Biological functions that may be included in the medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Medical Conditions": [
+          {
+            "entity_name": "Medical Conditions",
+            "entity_type": "concept",
+            "description": "Medical conditions that may be included in the medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Pharmacological Substances": [
+          {
+            "entity_name": "Pharmacological Substances",
+            "entity_type": "naturalobject",
+            "description": "Pharmacological substances that may be included in the medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Expert Profile": [
+          {
+            "entity_name": "Expert Profile",
+            "entity_type": "data",
+            "description": "A profile of an expert used as information for embedding the expert in the embedding space.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Coded Medical Procedures": [
+          {
+            "entity_name": "Coded Medical Procedures",
+            "entity_type": "data",
+            "description": "Medical procedures which have been performed by an expert, used as information for embedding the expert.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Authored Articles": [
+          {
+            "entity_name": "Authored Articles",
+            "entity_type": "content",
+            "description": "Articles authored by an expert, used as information for embedding the expert.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Stored Medical Cases Linked To Expert": [
+          {
+            "entity_name": "Stored Medical Cases Linked To Expert",
+            "entity_type": "data",
+            "description": "Medical cases linked to an expert, used as information for embedding the expert.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Expert Availability": [
+          {
+            "entity_name": "Expert Availability",
+            "entity_type": "data",
+            "description": "An availability of an expert used, when a query-for-experts is selected, as an additional basis for returning the subset of experts.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Expert Rating": [
+          {
+            "entity_name": "Expert Rating",
+            "entity_type": "data",
+            "description": "A rating of an expert used, when a query-for-experts is selected, as an additional basis for returning the subset of experts.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Expert Followers": [
+          {
+            "entity_name": "Expert Followers",
+            "entity_type": "data",
+            "description": "A number of followers of an expert among users of the system, used as an additional basis for returning the subset of experts.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Public Database": [
+          {
+            "entity_name": "Public Database",
+            "entity_type": "data",
+            "description": "A database from which documents may be returned based on computed similarity between the embedded new case and documents embedded in the embedding space when a query-for-cases is selected.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Diagnosis": [
+          {
+            "entity_name": "Diagnosis",
+            "entity_type": "concept",
+            "description": "A diagnosis formulated by a selected expert for the new medical case provided to the expert.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Payment": [
+          {
+            "entity_name": "Payment",
+            "entity_type": "concept",
+            "description": "A payment made to an expert for formulating a diagnosis when a query-for-experts is selected.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Patient Records": [
+          {
+            "entity_name": "Patient Records",
+            "entity_type": "data",
+            "description": "A plurality of records relating to a specific patient that make up the new medical case, including laboratory test results, images, symptom descriptions, patient monitor results, diagnoses, prescribed medications and treatments.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Laboratory Test Results": [
+          {
+            "entity_name": "Laboratory Test Results",
+            "entity_type": "data",
+            "description": "Records of laboratory test results that may comprise part of the new medical case.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Images": [
+          {
+            "entity_name": "Images",
+            "entity_type": "data",
+            "description": "Medical images that may comprise part of the new medical case.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Symptom Descriptions": [
+          {
+            "entity_name": "Symptom Descriptions",
+            "entity_type": "data",
+            "description": "Descriptions of symptoms that may comprise part of the new medical case.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Patient Monitors Results": [
+          {
+            "entity_name": "Patient Monitors Results",
+            "entity_type": "data",
+            "description": "Results of patient monitors that may comprise part of the new medical case.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Prescribed Medications And Treatments": [
+          {
+            "entity_name": "Prescribed Medications And Treatments",
+            "entity_type": "data",
+            "description": "Prescribed medications and treatments that may comprise part of the new medical case.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Diagnosis Assistance System": [
+          {
+            "entity_name": "Diagnosis Assistance System",
+            "entity_type": "artifact",
+            "description": "A system comprising memory storing instructions for performing the diagnosis assistance method and a processor in communication with the memory for executing the instructions.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Computer Program Product": [
+          {
+            "entity_name": "Computer Program Product",
+            "entity_type": "artifact",
+            "description": "A product comprising a non-transitory recording medium storing instructions which, when executed on a computer, cause the computer to perform the diagnosis assistance method.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Computer Processor": [
+          {
+            "entity_name": "Computer Processor",
+            "entity_type": "artifact",
+            "description": "A processor that performs at least one of the embedding, providing, returning subsets, and computing query cost steps of the method.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ]
+      },
+      "edges": [
+        {
+          "endpoints": [
+            "Diagnosis Assistance Method",
+            "Embedding Space"
+          ],
+          "records": [
+            {
+              "src_id": "Diagnosis Assistance Method",
+              "tgt_id": "Embedding Space",
+              "weight": 1.0,
+              "description": "The diagnosis assistance method embeds the new medical case in an embedding space in which existing medical cases and experts are also embedded.",
+              "keywords": "uses, embeds cases and experts",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Diagnosis Assistance Method",
+            "New Medical Case"
+          ],
+          "records": [
+            {
+              "src_id": "Diagnosis Assistance Method",
+              "tgt_id": "New Medical Case",
+              "weight": 1.0,
+              "description": "The diagnosis assistance method receives a query request including a new medical case and embeds it in the embedding space.",
+              "keywords": "receives, processes",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Diagnosis Assistance Method",
+            "Query-For-Cases"
+          ],
+          "records": [
+            {
+              "src_id": "Diagnosis Assistance Method",
+              "tgt_id": "Query-For-Cases",
+              "weight": 1.0,
+              "description": "The diagnosis assistance method provides for the requester to select a query-for-cases among a plurality of query types.",
+              "keywords": "provides query type",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Diagnosis Assistance Method",
+            "Query-For-Experts"
+          ],
+          "records": [
+            {
+              "src_id": "Diagnosis Assistance Method",
+              "tgt_id": "Query-For-Experts",
+              "weight": 1.0,
+              "description": "The diagnosis assistance method provides for the requester to select a query-for-experts among a plurality of query types.",
+              "keywords": "provides query type",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query-For-Cases",
+            "Existing Medical Cases"
+          ],
+          "records": [
+            {
+              "src_id": "Query-For-Cases",
+              "tgt_id": "Existing Medical Cases",
+              "weight": 1.0,
+              "description": "When the query-for-cases is selected, a subset of the existing medical cases is returned based on computed similarity between the embedded new case and the embedded existing cases.",
+              "keywords": "returns subset, similarity-based",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query-For-Experts",
+            "Experts"
+          ],
+          "records": [
+            {
+              "src_id": "Query-For-Experts",
+              "tgt_id": "Experts",
+              "weight": 1.0,
+              "description": "When the query-for-experts is selected, a subset of the experts is returned based on computed similarity between the embedded new case and the embedded experts.",
+              "keywords": "returns subset, similarity-based",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query-For-Experts",
+            "Query Cost"
+          ],
+          "records": [
+            {
+              "src_id": "Query-For-Experts",
+              "tgt_id": "Query Cost",
+              "weight": 1.0,
+              "description": "The computed query cost is higher for a query-for-experts than for a query-for-cases.",
+              "keywords": "higher cost",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query-For-Cases",
+            "Query Cost"
+          ],
+          "records": [
+            {
+              "src_id": "Query-For-Cases",
+              "tgt_id": "Query Cost",
+              "weight": 1.0,
+              "description": "The computed query cost is lower for a query-for-cases than for a query-for-experts.",
+              "keywords": "lower cost",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Diagnosis Assistance Method",
+            "Medical Ontology"
+          ],
+          "records": [
+            {
+              "src_id": "Diagnosis Assistance Method",
+              "tgt_id": "Medical Ontology",
+              "weight": 1.0,
+              "description": "The embedding of the new medical case, existing medical cases, and experts is based on a medical ontology.",
+              "keywords": "uses for embedding",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Medical Ontology",
+            "Multidimensional Representation"
+          ],
+          "records": [
+            {
+              "src_id": "Medical Ontology",
+              "tgt_id": "Multidimensional Representation",
+              "weight": 1.0,
+              "description": "The medical ontology comprises medical concepts each corresponding to a respective dimension in the multidimensional representation of the medical case.",
+              "keywords": "defines dimensions",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Medical Ontology",
+            "Unified Medical Language System"
+          ],
+          "records": [
+            {
+              "src_id": "Medical Ontology",
+              "tgt_id": "Unified Medical Language System",
+              "weight": 1.0,
+              "description": "The medical ontology may be based on the Unified Medical Language System.",
+              "keywords": "based on",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Medical Ontology",
+            "Human Body"
+          ],
+          "records": [
+            {
+              "src_id": "Medical Ontology",
+              "tgt_id": "Human Body",
+              "weight": 1.0,
+              "description": "The ontology includes parts of the human body.",
+              "keywords": "includes parts",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Medical Ontology",
+            "Biological Functions"
+          ],
+          "records": [
+            {
+              "src_id": "Medical Ontology",
+              "tgt_id": "Biological Functions",
+              "weight": 1.0,
+              "description": "The ontology includes biological functions.",
+              "keywords": "includes",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Medical Ontology",
+            "Medical Conditions"
+          ],
+          "records": [
+            {
+              "src_id": "Medical Ontology",
+              "tgt_id": "Medical Conditions",
+              "weight": 1.0,
+              "description": "The ontology includes medical conditions.",
+              "keywords": "includes",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Medical Ontology",
+            "Pharmacological Substances"
+          ],
+          "records": [
+            {
+              "src_id": "Medical Ontology",
+              "tgt_id": "Pharmacological Substances",
+              "weight": 1.0,
+              "description": "The ontology includes pharmacological substances.",
+              "keywords": "includes",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Matrix Of Proximities",
+            "Multidimensional Representation"
+          ],
+          "records": [
+            {
+              "src_id": "Matrix Of Proximities",
+              "tgt_id": "Multidimensional Representation",
+              "weight": 1.0,
+              "description": "The matrix of proximities is applied to the multidimensional representation of the new case to account for relationships between concepts in the ontology.",
+              "keywords": "applied to",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Experts",
+            "Expert Profile"
+          ],
+          "records": [
+            {
+              "src_id": "Experts",
+              "tgt_id": "Expert Profile",
+              "weight": 1.0,
+              "description": "Experts are embedded based on information including a profile of the expert.",
+              "keywords": "embedded based on",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Experts",
+            "Coded Medical Procedures"
+          ],
+          "records": [
+            {
+              "src_id": "Experts",
+              "tgt_id": "Coded Medical Procedures",
+              "weight": 1.0,
+              "description": "Experts are embedded based on coded medical procedures which have been performed by the expert.",
+              "keywords": "embedded based on",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Experts",
+            "Authored Articles"
+          ],
+          "records": [
+            {
+              "src_id": "Experts",
+              "tgt_id": "Authored Articles",
+              "weight": 1.0,
+              "description": "Experts are embedded based on articles authored by the expert.",
+              "keywords": "embedded based on",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Experts",
+            "Stored Medical Cases Linked To Expert"
+          ],
+          "records": [
+            {
+              "src_id": "Experts",
+              "tgt_id": "Stored Medical Cases Linked To Expert",
+              "weight": 1.0,
+              "description": "Experts are embedded based on stored medical cases linked to the expert.",
+              "keywords": "embedded based on",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query-For-Experts",
+            "Expert Availability"
+          ],
+          "records": [
+            {
+              "src_id": "Query-For-Experts",
+              "tgt_id": "Expert Availability",
+              "weight": 1.0,
+              "description": "When the query-for-experts is selected, returning the subset of experts is also based on an availability of the expert.",
+              "keywords": "returns subset based on",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query-For-Experts",
+            "Expert Rating"
+          ],
+          "records": [
+            {
+              "src_id": "Query-For-Experts",
+              "tgt_id": "Expert Rating",
+              "weight": 1.0,
+              "description": "When the query-for-experts is selected, returning the subset of experts is also based on a rating of the expert.",
+              "keywords": "returns subset based on",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query-For-Experts",
+            "Expert Followers"
+          ],
+          "records": [
+            {
+              "src_id": "Query-For-Experts",
+              "tgt_id": "Expert Followers",
+              "weight": 1.0,
+              "description": "When the query-for-experts is selected, returning the subset of experts is also based on a number of followers of the expert.",
+              "keywords": "returns subset based on",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query-For-Cases",
+            "Public Database"
+          ],
+          "records": [
+            {
+              "src_id": "Query-For-Cases",
+              "tgt_id": "Public Database",
+              "weight": 1.0,
+              "description": "When the query-for-cases is selected, documents from a public database are returned based on computed similarity between the embedded new case and embedded documents.",
+              "keywords": "returns documents from",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query-For-Experts",
+            "Diagnosis"
+          ],
+          "records": [
+            {
+              "src_id": "Query-For-Experts",
+              "tgt_id": "Diagnosis",
+              "weight": 1.0,
+              "description": "When the query-for-experts is selected, the new case is provided to a selected one of the subset of experts for formulating a diagnosis.",
+              "keywords": "provides case for",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Diagnosis",
+            "Payment"
+          ],
+          "records": [
+            {
+              "src_id": "Diagnosis",
+              "tgt_id": "Payment",
+              "weight": 1.0,
+              "description": "When the query-for-experts is selected, provision is made for making a payment to the expert for formulating the diagnosis.",
+              "keywords": "compensated by",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "New Medical Case",
+            "Patient Records"
+          ],
+          "records": [
+            {
+              "src_id": "New Medical Case",
+              "tgt_id": "Patient Records",
+              "weight": 1.0,
+              "description": "The new medical case comprises a plurality of records relating to a specific patient.",
+              "keywords": "comprises",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Patient Records",
+            "Laboratory Test Results"
+          ],
+          "records": [
+            {
+              "src_id": "Patient Records",
+              "tgt_id": "Laboratory Test Results",
+              "weight": 1.0,
+              "description": "The plurality of records may include laboratory test results.",
+              "keywords": "includes",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Patient Records",
+            "Images"
+          ],
+          "records": [
+            {
+              "src_id": "Patient Records",
+              "tgt_id": "Images",
+              "weight": 1.0,
+              "description": "The plurality of records may include images.",
+              "keywords": "includes",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Patient Records",
+            "Symptom Descriptions"
+          ],
+          "records": [
+            {
+              "src_id": "Patient Records",
+              "tgt_id": "Symptom Descriptions",
+              "weight": 1.0,
+              "description": "The plurality of records may include descriptions of symptoms.",
+              "keywords": "includes",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Patient Records",
+            "Patient Monitors Results"
+          ],
+          "records": [
+            {
+              "src_id": "Patient Records",
+              "tgt_id": "Patient Monitors Results",
+              "weight": 1.0,
+              "description": "The plurality of records may include results of patient monitors.",
+              "keywords": "includes",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Patient Records",
+            "Prescribed Medications And Treatments"
+          ],
+          "records": [
+            {
+              "src_id": "Patient Records",
+              "tgt_id": "Prescribed Medications And Treatments",
+              "weight": 1.0,
+              "description": "The plurality of records may include prescribed medications and treatments.",
+              "keywords": "includes",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query-For-Cases",
+            "Query-For-Experts"
+          ],
+          "records": [
+            {
+              "src_id": "Query-For-Cases",
+              "tgt_id": "Query-For-Experts",
+              "weight": 1.0,
+              "description": "When the query-by-cases is selected, provision is made for a query-by-experts to be performed subsequent to the query-by-cases.",
+              "keywords": "subsequent query",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Diagnosis Assistance System",
+            "Diagnosis Assistance Method"
+          ],
+          "records": [
+            {
+              "src_id": "Diagnosis Assistance System",
+              "tgt_id": "Diagnosis Assistance Method",
+              "weight": 1.0,
+              "description": "The diagnosis assistance system comprises memory storing instructions for performing the diagnosis assistance method and a processor for executing the instructions.",
+              "keywords": "performs",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Computer Program Product",
+            "Diagnosis Assistance Method"
+          ],
+          "records": [
+            {
+              "src_id": "Computer Program Product",
+              "tgt_id": "Diagnosis Assistance Method",
+              "weight": 1.0,
+              "description": "The computer program product stores instructions which, when executed on a computer, cause the computer to perform the diagnosis assistance method.",
+              "keywords": "causes performance of",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Computer Processor",
+            "Diagnosis Assistance Method"
+          ],
+          "records": [
+            {
+              "src_id": "Computer Processor",
+              "tgt_id": "Diagnosis Assistance Method",
+              "weight": 1.0,
+              "description": "At least one of the embedding, providing, returning subsets, and computing query cost steps is performed with a computer processor.",
+              "keywords": "executes steps of",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Requester",
+            "New Medical Case"
+          ],
+          "records": [
+            {
+              "src_id": "Requester",
+              "tgt_id": "New Medical Case",
+              "weight": 1.0,
+              "description": "The requester submits a query request that includes the new medical case.",
+              "keywords": "submits",
+              "source_id": "US9589231B2-chunk-000",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "call_id": 56,
+      "chunk_id": "US9589231B2-chunk-001",
+      "file_path": "US9589231B2.txt",
+      "finish_reason": "stop",
+      "completion_tokens": 1511,
+      "completion_delimiter_present": true,
+      "nodes": {
+        "Medical Case": [
+          {
+            "entity_name": "Medical Case",
+            "entity_type": "concept",
+            "description": "A medical case, either new or existing, that is embedded in an embedding space to enable similarity-based querying and diagnosis assistance.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Expert": [
+          {
+            "entity_name": "Expert",
+            "entity_type": "person",
+            "description": "A person embedded in the embedding space who can be queried for and to whom a new medical case may be communicated to attempt to provide a diagnosis.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Requester": [
+          {
+            "entity_name": "Requester",
+            "entity_type": "person",
+            "description": "A user who submits a query request including a new medical case and selects from a plurality of query types.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Embedding Space": [
+          {
+            "entity_name": "Embedding Space",
+            "entity_type": "concept",
+            "description": "A multidimensional space in which new medical cases, existing medical cases, and experts are embedded as multidimensional representations to enable similarity computation.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Query-For-Cases": [
+          {
+            "entity_name": "Query-For-Cases",
+            "entity_type": "method",
+            "description": "A query type that returns a subset of existing medical cases based on computed similarity between the embedded new case and the embedded existing cases.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Query-For-Experts": [
+          {
+            "entity_name": "Query-For-Experts",
+            "entity_type": "method",
+            "description": "A query type that returns a subset of experts based on computed similarity between the embedded new case and the embedded experts.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Query Cost": [
+          {
+            "entity_name": "Query Cost",
+            "entity_type": "concept",
+            "description": "A computed cost for a query, where the cost for a query-for-experts differs from the cost for a query-for-cases.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Diagnosis Assistance System": [
+          {
+            "entity_name": "Diagnosis Assistance System",
+            "entity_type": "artifact",
+            "description": "A system comprising memory storing instructions and a processor in communication with the memory for executing the instructions to assist with diagnosis.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Processor": [
+          {
+            "entity_name": "Processor",
+            "entity_type": "artifact",
+            "description": "A component in communication with the memory that executes the stored instructions of the diagnosis assistance system.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Memory": [
+          {
+            "entity_name": "Memory",
+            "entity_type": "artifact",
+            "description": "A component that stores instructions for receiving query requests, embedding medical cases, providing query types, returning subsets, and computing query costs.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Network": [
+          {
+            "entity_name": "Network",
+            "entity_type": "artifact",
+            "description": "A network comprising a diagnosis assistance system and a set of user devices for linking requesters and experts with the system.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "User Device": [
+          {
+            "entity_name": "User Device",
+            "entity_type": "artifact",
+            "description": "Devices in the network used for linking requesters and experts with the diagnosis assistance system.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Multidimensional Representation": [
+          {
+            "entity_name": "Multidimensional Representation",
+            "entity_type": "data",
+            "description": "A representation generated in the embedding space for each existing medical case, each expert, and a new case.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Diagnosis": [
+          {
+            "entity_name": "Diagnosis",
+            "entity_type": "concept",
+            "description": "The determination sought for a new medical case, which an expert may attempt to provide.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "timestamp": 0
+          }
+        ]
+      },
+      "edges": [
+        {
+          "endpoints": [
+            "Requester",
+            "Medical Case"
+          ],
+          "records": [
+            {
+              "src_id": "Requester",
+              "tgt_id": "Medical Case",
+              "weight": 1.0,
+              "description": "The requester submits a query request that includes a new medical case.",
+              "keywords": "query submission, case inclusion",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Medical Case",
+            "Embedding Space"
+          ],
+          "records": [
+            {
+              "src_id": "Medical Case",
+              "tgt_id": "Embedding Space",
+              "weight": 1.0,
+              "description": "The new medical case is embedded in the embedding space alongside existing medical cases and experts.",
+              "keywords": "embedding",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Expert",
+            "Embedding Space"
+          ],
+          "records": [
+            {
+              "src_id": "Expert",
+              "tgt_id": "Embedding Space",
+              "weight": 1.0,
+              "description": "A set of experts is embedded in the embedding space.",
+              "keywords": "embedding",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Requester",
+            "Query-For-Cases"
+          ],
+          "records": [
+            {
+              "src_id": "Requester",
+              "tgt_id": "Query-For-Cases",
+              "weight": 1.0,
+              "description": "The requester is provided the option to select the query-for-cases query type.",
+              "keywords": "query type selection",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Requester",
+            "Query-For-Experts"
+          ],
+          "records": [
+            {
+              "src_id": "Requester",
+              "tgt_id": "Query-For-Experts",
+              "weight": 1.0,
+              "description": "The requester is provided the option to select the query-for-experts query type.",
+              "keywords": "query type selection",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query-For-Cases",
+            "Medical Case"
+          ],
+          "records": [
+            {
+              "src_id": "Query-For-Cases",
+              "tgt_id": "Medical Case",
+              "weight": 1.0,
+              "description": "When query-for-cases is selected, a subset of existing cases is returned based on computed similarity between the embedded new case and the embedded existing cases.",
+              "keywords": "similarity-based retrieval",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query-For-Experts",
+            "Expert"
+          ],
+          "records": [
+            {
+              "src_id": "Query-For-Experts",
+              "tgt_id": "Expert",
+              "weight": 1.0,
+              "description": "When query-for-experts is selected, a subset of experts is returned based on computed similarity between the embedded new case and the embedded experts.",
+              "keywords": "similarity-based retrieval",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query Cost",
+            "Query-For-Experts"
+          ],
+          "records": [
+            {
+              "src_id": "Query Cost",
+              "tgt_id": "Query-For-Experts",
+              "weight": 1.0,
+              "description": "The cost for a query-for-experts is computed and differs from the cost for a query-for-cases.",
+              "keywords": "cost computation",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Query Cost",
+            "Query-For-Cases"
+          ],
+          "records": [
+            {
+              "src_id": "Query Cost",
+              "tgt_id": "Query-For-Cases",
+              "weight": 1.0,
+              "description": "The cost for a query-for-cases is computed and differs from the cost for a query-for-experts.",
+              "keywords": "cost computation",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Diagnosis Assistance System",
+            "Memory"
+          ],
+          "records": [
+            {
+              "src_id": "Diagnosis Assistance System",
+              "tgt_id": "Memory",
+              "weight": 1.0,
+              "description": "The diagnosis assistance system comprises memory that stores instructions.",
+              "keywords": "component inclusion",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Diagnosis Assistance System",
+            "Processor"
+          ],
+          "records": [
+            {
+              "src_id": "Diagnosis Assistance System",
+              "tgt_id": "Processor",
+              "weight": 1.0,
+              "description": "The diagnosis assistance system comprises a processor in communication with the memory for executing the instructions.",
+              "keywords": "component inclusion",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Processor",
+            "Memory"
+          ],
+          "records": [
+            {
+              "src_id": "Processor",
+              "tgt_id": "Memory",
+              "weight": 1.0,
+              "description": "The processor is in communication with the memory to execute the stored instructions.",
+              "keywords": "communication",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Network",
+            "Diagnosis Assistance System"
+          ],
+          "records": [
+            {
+              "src_id": "Network",
+              "tgt_id": "Diagnosis Assistance System",
+              "weight": 1.0,
+              "description": "The network comprises a system for diagnosis assistance.",
+              "keywords": "component inclusion",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Network",
+            "User Device"
+          ],
+          "records": [
+            {
+              "src_id": "Network",
+              "tgt_id": "User Device",
+              "weight": 1.0,
+              "description": "The network comprises a set of user devices for linking requesters and experts with the system.",
+              "keywords": "component inclusion",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "User Device",
+            "Requester"
+          ],
+          "records": [
+            {
+              "src_id": "User Device",
+              "tgt_id": "Requester",
+              "weight": 1.0,
+              "description": "The user devices link requesters with the diagnosis assistance system.",
+              "keywords": "linking",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "User Device",
+            "Expert"
+          ],
+          "records": [
+            {
+              "src_id": "User Device",
+              "tgt_id": "Expert",
+              "weight": 1.0,
+              "description": "The user devices link experts with the diagnosis assistance system.",
+              "keywords": "linking",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Multidimensional Representation",
+            "Medical Case"
+          ],
+          "records": [
+            {
+              "src_id": "Multidimensional Representation",
+              "tgt_id": "Medical Case",
+              "weight": 1.0,
+              "description": "A multidimensional representation is generated in the embedding space for each existing medical case and for the new case.",
+              "keywords": "representation generation",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Multidimensional Representation",
+            "Expert"
+          ],
+          "records": [
+            {
+              "src_id": "Multidimensional Representation",
+              "tgt_id": "Expert",
+              "weight": 1.0,
+              "description": "A multidimensional representation is generated in the embedding space for each expert.",
+              "keywords": "representation generation",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Expert",
+            "Medical Case"
+          ],
+          "records": [
+            {
+              "src_id": "Expert",
+              "tgt_id": "Medical Case",
+              "weight": 1.0,
+              "description": "The new case is communicated to one of the subset of experts for the expert to attempt to provide a diagnosis.",
+              "keywords": "case communication, diagnosis attempt",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Expert",
+            "Diagnosis"
+          ],
+          "records": [
+            {
+              "src_id": "Expert",
+              "tgt_id": "Diagnosis",
+              "weight": 1.0,
+              "description": "An expert attempts to provide a diagnosis for the new medical case.",
+              "keywords": "diagnosis provision",
+              "source_id": "US9589231B2-chunk-001",
+              "file_path": "US9589231B2.txt",
+              "timestamp": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

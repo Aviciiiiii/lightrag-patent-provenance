@@ -1,0 +1,552 @@
+{
+  "audited_utc": "2026-10-30T03:46:58.820382+00:00",
+  "runs": [
+    {
+      "run_id": "F01_A_r1",
+      "status": "completed",
+      "condition": "A",
+      "repeat": 1,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 44,
+        "edges": 57
+      },
+      "truncated_extraction_call_ids": [
+        1
+      ],
+      "boundary_causal_eligible": false,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        619
+      ],
+      "file_paths": [
+        "US9589231B2.txt"
+      ],
+      "chunk_ids": [
+        "US9589231B2-chunk-000",
+        "US9589231B2-chunk-001"
+      ],
+      "workspace": "patent_r4_f01_a_r1"
+    },
+    {
+      "run_id": "F01_A_r2",
+      "status": "completed",
+      "condition": "A",
+      "repeat": 2,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 44,
+        "edges": 59
+      },
+      "truncated_extraction_call_ids": [
+        56
+      ],
+      "boundary_causal_eligible": false,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        619
+      ],
+      "file_paths": [
+        "US9589231B2.txt"
+      ],
+      "chunk_ids": [
+        "US9589231B2-chunk-000",
+        "US9589231B2-chunk-001"
+      ],
+      "workspace": "patent_r4_f01_a_r2"
+    },
+    {
+      "run_id": "F01_A_r3",
+      "status": "completed",
+      "condition": "A",
+      "repeat": 3,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 32,
+        "edges": 48
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        619
+      ],
+      "file_paths": [
+        "US9589231B2.txt"
+      ],
+      "chunk_ids": [
+        "US9589231B2-chunk-000",
+        "US9589231B2-chunk-001"
+      ],
+      "workspace": "patent_r4_f01_a_r3"
+    },
+    {
+      "run_id": "F01_B_r1",
+      "status": "completed",
+      "condition": "B",
+      "repeat": 1,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 36,
+        "edges": 45
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        636,
+        1183
+      ],
+      "file_paths": [
+        "US9589231B2.txt"
+      ],
+      "chunk_ids": [
+        "US9589231B2-chunk-000",
+        "US9589231B2-chunk-001"
+      ],
+      "workspace": "patent_r4_f01_b_r1"
+    },
+    {
+      "run_id": "F01_B_r2",
+      "status": "completed",
+      "condition": "B",
+      "repeat": 2,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 28,
+        "edges": 39
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        636,
+        1183
+      ],
+      "file_paths": [
+        "US9589231B2.txt"
+      ],
+      "chunk_ids": [
+        "US9589231B2-chunk-000",
+        "US9589231B2-chunk-001"
+      ],
+      "workspace": "patent_r4_f01_b_r2"
+    },
+    {
+      "run_id": "F01_B_r3",
+      "status": "completed",
+      "condition": "B",
+      "repeat": 3,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 28,
+        "edges": 39
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        636,
+        1183
+      ],
+      "file_paths": [
+        "US9589231B2.txt"
+      ],
+      "chunk_ids": [
+        "US9589231B2-chunk-000",
+        "US9589231B2-chunk-001"
+      ],
+      "workspace": "patent_r4_f01_b_r3"
+    },
+    {
+      "run_id": "F04_A_r1",
+      "status": "completed",
+      "condition": "A",
+      "repeat": 1,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 23,
+        "edges": 37
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "5a71bb3859364643cc26928be54a07c3bb4c84945dcae928532de56441f3aa0a",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        226
+      ],
+      "file_paths": [
+        "US8509827B2.txt"
+      ],
+      "chunk_ids": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001"
+      ],
+      "workspace": "patent_r4_f04_a_r1"
+    },
+    {
+      "run_id": "F04_A_r2",
+      "status": "completed",
+      "condition": "A",
+      "repeat": 2,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 29,
+        "edges": 44
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "5a71bb3859364643cc26928be54a07c3bb4c84945dcae928532de56441f3aa0a",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        226
+      ],
+      "file_paths": [
+        "US8509827B2.txt"
+      ],
+      "chunk_ids": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001"
+      ],
+      "workspace": "patent_r4_f04_a_r2"
+    },
+    {
+      "run_id": "F04_A_r3",
+      "status": "completed",
+      "condition": "A",
+      "repeat": 3,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 25,
+        "edges": 33
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "5a71bb3859364643cc26928be54a07c3bb4c84945dcae928532de56441f3aa0a",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        226
+      ],
+      "file_paths": [
+        "US8509827B2.txt"
+      ],
+      "chunk_ids": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001"
+      ],
+      "workspace": "patent_r4_f04_a_r3"
+    },
+    {
+      "run_id": "F04_B_r1",
+      "status": "completed",
+      "condition": "B",
+      "repeat": 1,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 33,
+        "edges": 64
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "5a71bb3859364643cc26928be54a07c3bb4c84945dcae928532de56441f3aa0a",
+      "chunk_count": 4,
+      "chunk_lengths": [
+        712,
+        315,
+        456,
+        143
+      ],
+      "file_paths": [
+        "US8509827B2.txt"
+      ],
+      "chunk_ids": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001",
+        "US8509827B2-chunk-002",
+        "US8509827B2-chunk-003"
+      ],
+      "workspace": "patent_r4_f04_b_r1"
+    },
+    {
+      "run_id": "F04_B_r2",
+      "status": "completed",
+      "condition": "B",
+      "repeat": 2,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 33,
+        "edges": 52
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "5a71bb3859364643cc26928be54a07c3bb4c84945dcae928532de56441f3aa0a",
+      "chunk_count": 4,
+      "chunk_lengths": [
+        712,
+        315,
+        456,
+        143
+      ],
+      "file_paths": [
+        "US8509827B2.txt"
+      ],
+      "chunk_ids": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001",
+        "US8509827B2-chunk-002",
+        "US8509827B2-chunk-003"
+      ],
+      "workspace": "patent_r4_f04_b_r2"
+    },
+    {
+      "run_id": "F04_B_r3",
+      "status": "completed",
+      "condition": "B",
+      "repeat": 3,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 36,
+        "edges": 61
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "5a71bb3859364643cc26928be54a07c3bb4c84945dcae928532de56441f3aa0a",
+      "chunk_count": 4,
+      "chunk_lengths": [
+        712,
+        315,
+        456,
+        143
+      ],
+      "file_paths": [
+        "US8509827B2.txt"
+      ],
+      "chunk_ids": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001",
+        "US8509827B2-chunk-002",
+        "US8509827B2-chunk-003"
+      ],
+      "workspace": "patent_r4_f04_b_r3"
+    },
+    {
+      "run_id": "F05_A_r1",
+      "status": "completed",
+      "condition": "A",
+      "repeat": 1,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 30,
+        "edges": 43
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        545
+      ],
+      "file_paths": [
+        "US8069128B2.txt"
+      ],
+      "chunk_ids": [
+        "US8069128B2-chunk-000",
+        "US8069128B2-chunk-001"
+      ],
+      "workspace": "patent_r4_f05_a_r1"
+    },
+    {
+      "run_id": "F05_A_r2",
+      "status": "completed",
+      "condition": "A",
+      "repeat": 2,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 25,
+        "edges": 38
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        545
+      ],
+      "file_paths": [
+        "US8069128B2.txt"
+      ],
+      "chunk_ids": [
+        "US8069128B2-chunk-000",
+        "US8069128B2-chunk-001"
+      ],
+      "workspace": "patent_r4_f05_a_r2"
+    },
+    {
+      "run_id": "F05_A_r3",
+      "status": "completed",
+      "condition": "A",
+      "repeat": 3,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 24,
+        "edges": 37
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        545
+      ],
+      "file_paths": [
+        "US8069128B2.txt"
+      ],
+      "chunk_ids": [
+        "US8069128B2-chunk-000",
+        "US8069128B2-chunk-001"
+      ],
+      "workspace": "patent_r4_f05_a_r3"
+    },
+    {
+      "run_id": "F05_B_r1",
+      "status": "completed",
+      "condition": "B",
+      "repeat": 1,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 33,
+        "edges": 54
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+      "chunk_count": 3,
+      "chunk_lengths": [
+        886,
+        239,
+        720
+      ],
+      "file_paths": [
+        "US8069128B2.txt"
+      ],
+      "chunk_ids": [
+        "US8069128B2-chunk-000",
+        "US8069128B2-chunk-001",
+        "US8069128B2-chunk-002"
+      ],
+      "workspace": "patent_r4_f05_b_r1"
+    },
+    {
+      "run_id": "F05_B_r2",
+      "status": "completed",
+      "condition": "B",
+      "repeat": 2,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 32,
+        "edges": 47
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+      "chunk_count": 3,
+      "chunk_lengths": [
+        886,
+        239,
+        720
+      ],
+      "file_paths": [
+        "US8069128B2.txt"
+      ],
+      "chunk_ids": [
+        "US8069128B2-chunk-000",
+        "US8069128B2-chunk-001",
+        "US8069128B2-chunk-002"
+      ],
+      "workspace": "patent_r4_f05_b_r2"
+    },
+    {
+      "run_id": "F05_B_r3",
+      "status": "completed",
+      "condition": "B",
+      "repeat": 3,
+      "scope": "full_round2_document",
+      "graph_counts": {
+        "nodes": 36,
+        "edges": 50
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "actual_chunk_content_matches_frozen": true,
+      "source_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+      "chunk_count": 3,
+      "chunk_lengths": [
+        886,
+        239,
+        720
+      ],
+      "file_paths": [
+        "US8069128B2.txt"
+      ],
+      "chunk_ids": [
+        "US8069128B2-chunk-000",
+        "US8069128B2-chunk-001",
+        "US8069128B2-chunk-002"
+      ],
+      "workspace": "patent_r4_f05_b_r3"
+    }
+  ],
+  "completed_runs": 18,
+  "actual_chunk_hashes_and_frozen_content_verified": true,
+  "cost": {
+    "successful_llm_calls": 117,
+    "successful_embedding_calls": 247,
+    "all_attempts": 364,
+    "llm_prompt_tokens": 275739,
+    "llm_completion_tokens": 97386,
+    "cached_input_tokens": 125952,
+    "reasoning_tokens": 0,
+    "cache_aware_cny": 1.08370008,
+    "no_cache_cny": 1.330566,
+    "unknown_reserved_cny": 0,
+    "states_not_success": [],
+    "length_finish_call_ids": [
+      1,
+      56
+    ],
+    "not_invoice": true
+  },
+  "scope_note": "Uses only new full-pipeline records; original partial AST control and envdiag smoke are separate."
+}

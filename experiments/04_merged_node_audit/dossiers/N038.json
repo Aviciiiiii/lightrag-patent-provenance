@@ -1,0 +1,320 @@
+{
+  "node_id": "Computing Devices",
+  "entity_type": "artifact",
+  "graph_source_chunks": [
+    "US11423041B2-chunk-001",
+    "US8655901B1-chunk-001"
+  ],
+  "entity_chunk_store_sources": [
+    "US11423041B2-chunk-001",
+    "US8655901B1-chunk-001"
+  ],
+  "all_source_chunks": [
+    "US11423041B2-chunk-001",
+    "US8655901B1-chunk-001"
+  ],
+  "canonical_publications": [
+    "US11423041B2",
+    "US8655901B1"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US11423041B2.txt",
+    "US8655901B1.txt"
+  ],
+  "graph_file_paths": [
+    "US8655901B1.txt",
+    "US11423041B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US11423041B2",
+    "US8655901B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US11423041B2-chunk-001",
+    "US8655901B1-chunk-001"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US11423041B2-chunk-001",
+    "US8655901B1-chunk-001"
+  ],
+  "graph_node": {
+    "entity_id": "Computing Devices",
+    "entity_type": "artifact",
+    "description": "One or more devices forming a system that translates the collection of annotated queries.<SEP>One or more devices on or across which the stored program instructions are executed.",
+    "source_id": "US8655901B1-chunk-001<SEP>US11423041B2-chunk-001",
+    "file_path": "US8655901B1.txt<SEP>US11423041B2.txt",
+    "created_at": 1793284675,
+    "truncate": "",
+    "id": "Computing Devices"
+  },
+  "incident_edge_count": 2,
+  "audit_id": "N038",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US11423041B2",
+      "file_paths": [
+        "US11423041B2.txt"
+      ],
+      "source_chunks": [
+        "US11423041B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US11423041B2",
+          "full_doc_id": "US11423041B2",
+          "file_path": "US11423041B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 1147,
+          "content_sha256": "8f3d13a18781a5fb01b8d2de56b03acd746fc3ace6168e4b910162e77bfec7fb",
+          "exact_doc_char_start": 5690,
+          "exact_doc_char_end": 11698,
+          "content": "receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluating, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL process to be performed. 10. The method of claim 8 , further comprising: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL process. 11. The method of claim 8 , wherein the second ETL process is applied to the one or more transformed data objects. 12. The method of claim 8 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service. 13. The method of claim 8 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service. 14. The method of claim 8 , wherein the criteria is one of a plurality of different alternative criteria registered for triggering the event. 15. One or more non-transitory, computer-readable storage media, storing program instructions that when executed on or across one or more computing devices, cause the one or more computing devices to implement: receiving, at a data catalog for an Extract, Transform, Load (ETL) service, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; storing, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluating, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, causing the second ETL process to be performed. 16. The one or more non-transitory, computer-readable storage media of claim 15 , wherein a second history object is created in the history data structure, and wherein the one or more non-transitory, computer-readable storage media store further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluating, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL process to be performed. 17. The one or more non-transitory, computer-readable storage media of claim 15 , storing further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL process. 18. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the second ETL process is applied to the one or more transformed data objects. 19. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service. 20. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "llm_cache_list": [
+            "default:extract:7ff7beec3b2319e673503a0f9278ffb2"
+          ],
+          "chunk_id": "US11423041B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US11423041B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "ce7ec20d762fc03a6dbf15a47676d5d280cab51146efab3b27b210b0f378a5ce"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 20,
+              "raw_line": "entity<|#|>Computing Devices<|#|>Artifact<|#|>One or more devices on or across which the stored program instructions are executed.",
+              "fields": [
+                "entity",
+                "Computing Devices",
+                "Artifact",
+                "One or more devices on or across which the stored program instructions are executed."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 50,
+              "raw_line": "relation<|#|>Non-Transitory Computer-Readable Storage Media<|#|>Computing Devices<|#|>executed on<|#|>The program instructions stored on the storage media are executed on or across the computing devices.",
+              "fields": [
+                "relation",
+                "Non-Transitory Computer-Readable Storage Media",
+                "Computing Devices",
+                "executed on",
+                "The program instructions stored on the storage media are executed on or across the computing devices."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 1975,
+              "chunk_char_end": 2412,
+              "text": "eria registered for triggering the event. 15. One or more non-transitory, computer-readable storage media, storing program instructions that when executed on or across one or more computing devices, cause the one or more computing devices to implement: receiving, at a data catalog for an Extract, Transform, Load (ETL) service, an indication of a first ETL process applied to one or more source data objects to generate one or more tran"
+            },
+            {
+              "chunk_char_start": 2016,
+              "chunk_char_end": 2453,
+              "text": " 15. One or more non-transitory, computer-readable storage media, storing program instructions that when executed on or across one or more computing devices, cause the one or more computing devices to implement: receiving, at a data catalog for an Extract, Transform, Load (ETL) service, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; storing, in the dat"
+            },
+            {
+              "chunk_char_start": 3521,
+              "chunk_char_end": 3958,
+              "text": " the history data structure, and wherein the one or more non-transitory, computer-readable storage media store further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data obje"
+            },
+            {
+              "chunk_char_start": 3561,
+              "chunk_char_end": 3998,
+              "text": " the one or more non-transitory, computer-readable storage media store further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an in"
+            },
+            {
+              "chunk_char_start": 4920,
+              "chunk_char_end": 5357,
+              "text": "ess to be performed. 17. The one or more non-transitory, computer-readable storage media of claim 15 , storing further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another "
+            },
+            {
+              "chunk_char_start": 4960,
+              "chunk_char_end": 5397,
+              "text": " non-transitory, computer-readable storage media of claim 15 , storing further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL"
+            }
+          ],
+          "lexical_occurrence_count": 6
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The program instructions stored on the storage media are executed on or across the computing devices.",
+          "keywords": "executed on",
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Computing Devices",
+          "target": "Non-Transitory Computer-Readable Storage Media",
+          "edge_index": 849,
+          "source_chunks": [
+            "US11423041B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8655901B1",
+      "file_paths": [
+        "US8655901B1.txt"
+      ],
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8655901B1",
+          "full_doc_id": "US8655901B1",
+          "file_path": "US8655901B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 532,
+          "content_sha256": "5d0d79edafe5af7919f82cb1ee8099a3dec6b156ad11326e2bf75e47dad3f315",
+          "exact_doc_char_start": 6164,
+          "exact_doc_char_end": 9170,
+          "content": ", where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 12. The system of claim 8 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern. 13. The system of claim 8 , where annotating each query includes labeling portions of the query according to the first query pattern. 14. The system of claim 8 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold. 15. A non-transitory computer storage medium encoded with a computer program, the program comprising instructions that when executed by data processing apparatus cause the data processing apparatus to perform operations comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating, with a system comprising one or more computing devices, the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern.",
+          "llm_cache_list": [
+            "default:extract:c20f6f1580eec63f6eb8020610ec1b05"
+          ],
+          "chunk_id": "US8655901B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US8655901B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "316996f6608a19543149f869b202a0f90c851b294a1aea1e4f2b52f923f5462b"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 15,
+              "raw_line": "entity<|#|>Computing Devices<|#|>Artifact<|#|>One or more devices forming a system that translates the collection of annotated queries.",
+              "fields": [
+                "entity",
+                "Computing Devices",
+                "Artifact",
+                "One or more devices forming a system that translates the collection of annotated queries."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 32,
+              "raw_line": "relation<|#|>Computing Devices<|#|>Query<|#|>translation<|#|>A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries.",
+              "fields": [
+                "relation",
+                "Computing Devices",
+                "Query",
+                "translation",
+                "A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 1988,
+              "chunk_char_end": 2425,
+              "text": "rst query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating, with a system comprising one or more computing devices, the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the "
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries.",
+          "keywords": "translation",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Computing Devices",
+          "edge_index": 776,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries.",
+      "keywords": "translation",
+      "source_id": "US8655901B1-chunk-001",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Query",
+      "target": "Computing Devices",
+      "edge_index": 776,
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The program instructions stored on the storage media are executed on or across the computing devices.",
+      "keywords": "executed on",
+      "source_id": "US11423041B2-chunk-001",
+      "file_path": "US11423041B2.txt",
+      "created_at": 1793284678,
+      "truncate": "",
+      "source": "Computing Devices",
+      "target": "Non-Transitory Computer-Readable Storage Media",
+      "edge_index": 849,
+      "source_chunks": [
+        "US11423041B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US11423041B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

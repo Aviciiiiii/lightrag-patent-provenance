@@ -1,0 +1,31 @@
+{
+  "condition": "CROSS",
+  "repeat": 3,
+  "chunk_index": 1,
+  "chunk_id": "controlled-US7991757B2-cross-001",
+  "file_path": "US7991757B2.txt",
+  "call_id": 21,
+  "request_messages_exact_match": true,
+  "response": {
+    "id": 21,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "entity<|#|>External Recommender<|#|>Concept<|#|>An external recommendation system whose behavior is described in machine readable descriptions.\nrelation<|#|>Content Site<|#|>External Recommender<|#|>weight assignment, selection<|#|>The content site selects at least some of the weights to assign to the external recommenders.\nentity<|#|>Content Site<|#|>Concept<|#|>A site that selects at least some of the weights to assign to external recommenders.\n<|COMPLETE|>",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1852,
+      "completion_tokens": 124,
+      "total_tokens": 1976,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1852
+    },
+    "reasoning_content_present": false
+  },
+  "completion_delimiter_present": true,
+  "valid_nontruncated": true
+}

@@ -1,0 +1,89 @@
+{
+  "audit_utc": "2026-10-29T14:43:51.728918+00:00",
+  "status": "preliminary_request_response_and_official_parser_probe",
+  "publication_number": "US9218390B2",
+  "claim_number": 2,
+  "source_url": "https://patents.google.com/patent/US9218390B2/en",
+  "original_claim_text": "2. The method of claim 1 , further comprising: defining, via the query parser derivation computing device, class-based language model features comprising at least one token appearing in a defined position in a model feature comprising a grouping of tokens of a given length n, where n is an integer, including GEO_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a geographic term, GEO_BI_FIRST, for the first token in a grouping of tokens of length two relating to a geographic term, GEO_BI_SECOND, for the second token in a grouping of tokens of length two relating to a geographic term, GEO_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_SECOND, for the second token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_THIRD, for the third token in a grouping of tokens of length three relating to a geographic term, and including ST_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a search term, ST_BI_FIRST, for the first token in a grouping of tokens of length two relating to a search term, ST_BI_SECOND, for the second token in a grouping of tokens of length two relating to a search term, ST_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a search term, ST_TRI_SECOND, for the second token in a grouping of tokens of length three relating to a search term, ST_TRI_THIRD, for the third token in a grouping of tokens of length three relating to a search term, for tokens relating to one of a geographic term and a search term, for any grouping of length n where n is an integer; and utilizing, via the query parser derivation computing device, the class-based language model features as high-level language model features in deriving the query parser.",
+  "specific_source_fact_quote": "GEO_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a geographic term",
+  "claim_fully_present_in_actual_prompt": true,
+  "prompt_chunk": {
+    "exact_input_text": "Publication number: US9218390B2\nTitle: Query parser derivation computing device and method for making a query parser for parsing unstructured search queries\n\nABSTRACT\nA system and method is provided which may comprise parsing an unstructured geographic web-search query into a field-based format, by utilizing conditional random fields, learned by semi-supervised automated learning, to parse structured information from the unstructured geographic web-search query. The system and method may also comprise establishing semi-supervised conditional random fields utilizing one of a rule-based finite state machine model and a statistics-based conditional random field model. Systematic geographic parsing may be used with the one of the rule-based finite state machine model and the statistics-based conditional random field model. Parsing an unstructured local geographical web-based query in local domain may be done by applying a learned model parser to the query, using at least one class-based query log from a form-based query system. The learned model parser may comprise at least one class-level n-gram language model-based feature harvested from a structured query log.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: deriving, via a query parser derivation computing device, a query parser for parsing an unstructured geographic web-search query into a field-based format, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens; calculating the most probable label sequence for the input query; assigning one or more sentences from a plurality of sentences to each label based at least in part on the most probable label sequence for the input query, wherein: the one or more sentences are different from the labels; and the one or more sentences are assigned so that the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information; creating a conditional random field model based at least in part on i) the tokens, ii) the labels, iii) characterizing a set of one or more feature functions, wherein: the set of one or more feature functions represent a state transition feature and/or one or more features of an output state for an input sequence; and a conditional probability is computed based in part on the set of one or more feature functions; training the one or more state transition features and the one or more output state features on a labeled set, wherein learning the state transition feature is limited on learning the one or more features of the output state; and utilizing, by the query parser, conditional random fields, learned by semi-supervised automated learning and based at least in part on the training, to produce structured information from the unstructured geographic web-search query, wherein the utilizing the conditional random fields to produce the structured information comprises: parsing the unstructured geographic web-search query to produce the structured information from the unstructured geographic web-search query; determining that the parsing the unstructured geographic web-search query results in a multiple interpretation condition, where the parsing identifies at least a first interpretation of the unstructured geographic web-search query corresponding to first parsing results and a second interpretation of the unstructured geographic web-search query corresponding to second parsing results; and based at least in part on user behavior data, disambiguate the first parsing results and the second parsing results to select the first parsing results corresponding to the first interpretation of the unstructured geographic web-search query. 2. The method of claim 1 , further comprising: defining, via the query parser derivation computing device, class-based language model features comprising at least one token appearing in a defined position in a model feature comprising a grouping of tokens of a given length n, where n is an integer, including GEO_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a geographic term, GEO_BI_FIRST, for the first token in a grouping of tokens of length two relating to a geographic term, GEO_BI_SECOND, for the second token in a grouping of tokens of length two relating to a geographic term, GEO_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_SECOND, for the second token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_THIRD, for the third token in a grouping of tokens of length three relating to a geographic term, and including ST_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a search term, ST_BI_FIRST, for the first token in a grouping of tokens of length two relating to a search term, ST_BI_SECOND, for the second token in a grouping of tokens of length two relating to a search term, ST_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a search term, ST_TRI_SECOND, for the second token in a grouping of tokens of length three relating to a search term, ST_TRI_THIRD, for the third token in a grouping of tokens of length three relating to a search term, for tokens relating to one of a geographic term and a search term, for any grouping of length n where n is an integer; and utilizing, via the query parser derivation computing device, the class-based language model features as high-level language model features in deriving the query parser. 3. The method of claim 2 , wherein the query parser recognizes both a geographic location token and a search term token in an input query. 4. The method of claim 1 , further comprising: establishing the semi-supervised conditional random fields via one of a rule-based finite state machine model and a statistics-based conditional random field model. 5. The method of claim 4 , wherein the semi-supervised conditional random fields are established via utilizing systematic geographic parsing with the one of the rule-based finite state machine model and the statistics-based conditional random field model. 6",
+    "document_character_span": [
+      0,
+      6334
+    ],
+    "matches_prior_official1200_100_chunk_index": 0
+  },
+  "request": {
+    "id": 191,
+    "stage": "full",
+    "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "max_tokens": 3500,
+    "temperature": 0,
+    "stream": false,
+    "extra_body": {
+      "enable_thinking": false
+    }
+  },
+  "response": {
+    "finish_reason": "length",
+    "usage": {
+      "completion_tokens": 3500,
+      "prompt_tokens": 3019,
+      "total_tokens": 6519,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 1792,
+        "image_tokens": null,
+        "text_tokens": null
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 1227
+    },
+    "reasoning_content_present": false,
+    "entity_rows": 42,
+    "relation_rows_including_partial": 36,
+    "complete_marker_present": false,
+    "last_exact_line": "relation<|#|>Class-Based Language Model Features<|#|>GEO_TRI_FIRST<|#|>includes<|#|>",
+    "geo_tri_first_entity_row": "entity<|#|>GEO_TRI_FIRST<|#|>Data<|#|>A class-based language model feature for the first token in a grouping of tokens of length three relating to a geographic term.",
+    "preceding_complete_membership_rows": [
+      "relation<|#|>Class-Based Language Model Features<|#|>GEO_UNI_FIRST<|#|>includes<|#|>The class-based language model features include GEO_UNI_FIRST.",
+      "relation<|#|>Class-Based Language Model Features<|#|>GEO_BI_FIRST<|#|>includes<|#|>The class-based language model features include GEO_BI_FIRST.",
+      "relation<|#|>Class-Based Language Model Features<|#|>GEO_BI_SECOND<|#|>includes<|#|>The class-based language model features include GEO_BI_SECOND."
+    ]
+  },
+  "official_parser_replay": {
+    "version": "1.5.7",
+    "function": "lightrag.operate._process_extraction_result",
+    "input_type": "TruncatedResponse",
+    "model_calls": 0,
+    "parsed_nodes": 42,
+    "parsed_unique_edge_pairs": 34,
+    "partial_membership_edge_present": false,
+    "warning": "LLM output format error; found4/5 fields on RELATION Class-Based Language Model Features~GEO_TRI_FIRST"
+  },
+  "classification": "experiment-output-cap-induced extraction-generation truncation; incomplete relationship row rejected by official parser",
+  "limits": [
+    "This source fact is complete inside one chunk, so the observed truncation is not a chunk-boundary information gap.",
+    "The entity description still preserves GEO_TRI_FIRST meaning; do not claim the entity or all semantic information was lost.",
+    "Only the already-started unfinished membership edge is directly tied to cutoff. Other un-emitted relationships are candidates, not proven causal losses.",
+    "Request says at most40entity rows; actual response has42. This additional instruction-adherence issue is separate from the token-limit observation.",
+    "Known formula mojibake concernsClaims10/11, which are not in this prompt chunk; it does not explain thisClaim2 truncation.",
+    "This probe alone does not establish full-graph or final-answer failure."
+  ],
+  "suggested_follow_up": "After full snapshot check recovery from other chunks. If budget/time allow, run one separately labelled exact-prompt extraction control with a larger output limit and compare the missing edge; do not silently alter the primary run or infer that one repaired response proves general causality.",
+  "evidence_files": [
+    "round2/logs/api_0191_request.json",
+    "round2/logs/api_0191_response.json",
+    "round2/evidence/extraction_truncation_parser_replay.json"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "condition": "C",
+  "repeat": 3,
+  "call_id": 7,
+  "request_exact_match": true,
+  "messages_sha256": "2206db34c3147b68040fba5aded3384b370174c241cb89dc9f2a9c3a6a1f3a2b",
+  "response": {
+    "id": 7,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "**US7991757B2 — Registration Capability in Claims 1 and 27**\n\n**Claim 1 (explicit evidence).** Claim 1 recites a system comprising a \"registration module configured to provide functionality for registering an external recommender with a recommendations service.\" The same claim also describes the external recommenders as \"provided by one or more entities that differ from a provider of the recommendations service,\" and a data interface \"operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service.\"\n\n**Claim 27 (explicit evidence).** Claim 27 depends on Claim 1 (\"The system of claim 1\") and adds a further configuration of the same module: \"wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.\"\n\n**Dependency and added capability.** Claim 27 expressly incorporates all limitations of Claim 1, so the registration module must both provide registration functionality (Claim 1) and permit the external recommender's provider to supply machine readable descriptions (Claim 27). The added capability is therefore provider-side submission of machine readable descriptions for an external recommender within the already-claimed plurality of external recommenders.\n\n**Inference vs. evidence.** The quoted wording directly supports the registration function and the machine-readable-description capability. Any broader conclusion—for example, that such descriptions are used to configure or integrate the recommender—is not stated in these claims and would be inference, not explicit evidence.\n\n### References\n\n- [1] US7991757B2.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 32445,
+      "completion_tokens": 332,
+      "total_tokens": 32777,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 32445
+    },
+    "reasoning_content_present": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "condition": "A",
+  "repeat": 2,
+  "call_id": 6,
+  "request_exact_match": true,
+  "messages_sha256": "2fca4d69c1c5554b570ff04a57ccc8ae1c8af87862bae14e46a5f755a4a3490e",
+  "response": {
+    "id": 6,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "I do not have enough information to answer this query. The provided **Context** does not contain any document, knowledge-graph entity, or document chunk for **US7991757B2**. The patent publication number US7991757B2 does not appear anywhere in the supplied evidence, so I cannot quote Claim 1 or Claim 27 of that patent, nor describe their dependency.\n\n**What is present in the evidence (for transparency):**\n- The knowledge graph does contain a \"Registration Module\" entity described as \"configured to provide functionality for registering an external recommender with a recommendations service\" and \"configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender,\" along with \"Registration Submission(s)\" and \"Machine Readable Descriptions\" entities.\n- However, these entities are **not linked** in the provided relationships to US7991757B2 (or to any patent number in the reference list). The reference documents supplied are US10867122B1, US9374411B1, US8655901B1, US7756837B2, US8095432B1, US9514120B1, US8719408B2, US8069128B2, US11423041B2, US9304738B1, US9218390B2, US9514753B2, and US9118735B1.\n\n**Explicit evidence vs. inference:** It would be an unsupported inference to attribute the registration-related entities above to US7991757B2, since no relationship in the context makes that link. Doing so would invent a connection between patents, which the evidence does not support.\n\n**What is missing:** The text of US7991757B2, including its Claim 1 and Claim 27, and any relationship tying that patent to the registration entities. If you can supply that document or confirm the correct publication number, I can quote the claims and explain their dependency.\n\n### References\n\n- [1] US10867122B1.txt\n- [4] US7756837B2.txt\n- [5] US8095432B1.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 28360,
+      "completion_tokens": 444,
+      "total_tokens": 28804,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 28288
+      },
+      "prompt_cache_hit_tokens": 28288,
+      "prompt_cache_miss_tokens": 72
+    },
+    "reasoning_content_present": false
+  }
+}

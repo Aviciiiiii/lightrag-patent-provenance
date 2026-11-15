@@ -1,0 +1,584 @@
+{
+  "question_id": "Q05",
+  "mode": "mix",
+  "question": "In US8655901B1, which method claim requires cross-validating a translated query pattern against a query log using an occurrence threshold? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+  "started_utc": "2026-11-15T03:25:51.662119+00:00",
+  "finished_utc": "2026-11-15T03:25:58.836358+00:00",
+  "api_call_id_range": [
+    334,
+    336
+  ],
+  "result": {
+    "status": "success",
+    "message": "Query processed successfully",
+    "data": {
+      "entities": [
+        {
+          "entity_name": "US8655901B1",
+          "entity_type": "content",
+          "description": "A publication number for a patent document titled \"Translation-based query pattern mining\" describing technologies relating to search systems.",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "entity_name": "Query Log",
+          "entity_type": "data",
+          "description": "A stored collection of queries used to identify queries matching a query pattern and to cross-validate translated query patterns against a specified occurrence threshold.<SEP>A log of queries used to identify collections of queries matching a query pattern and to cross-validate translated query patterns against an occurrence threshold.",
+          "source_id": "US8655901B1-chunk-000<SEP>US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713004
+        },
+        {
+          "entity_name": "US8509827B2",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Methods and apparatus of context-data acquisition and ranking\" that discloses a system, method, and article of manufacture for acquiring and ranking context data based on a query derived from a short message.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1794712670
+        },
+        {
+          "entity_name": "Translated Query Pattern",
+          "entity_type": "concept",
+          "description": "A pattern in a second language extracted from a translated collection of annotated queries, used to interpret and search for queries in the second language.",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "entity_name": "Occurrence Threshold",
+          "entity_type": "concept",
+          "description": "A specified threshold used when cross-validating a translated query pattern with a query log.",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "entity_name": "Cross-Validation",
+          "entity_type": "method",
+          "description": "A procedure for validating the translated query pattern with a query log with respect to a specified occurrence threshold.",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "entity_name": "US10778629B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Systems and methods for collation, translation, and analysis of passively created digital interaction and relationship data,\" describing methods for modeling relationships between e-mail users based on extracted e-mail exchange records.",
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1794713071
+        },
+        {
+          "entity_name": "Translation-Based Query Pattern Mining",
+          "entity_type": "concept",
+          "description": "A technique for mining query patterns by translating annotated queries from a first language into a second language and extracting a translated query pattern from the aligned translated collection of queries.",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713004
+        },
+        {
+          "entity_name": "US9514120B1",
+          "entity_type": "content",
+          "description": "A patent document titled \"Classification of a string as a typographical error based on feedback\" describing a method for identifying and classifying potential typographical errors in a work using user feedback.",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1794712826
+        },
+        {
+          "entity_name": "Query",
+          "entity_type": "concept",
+          "description": "A request received from a party concerning the archived data-stream, used to formulate responses based on analysis of stored management data.<SEP>A request received from a party concerning the archived data-stream, answered based on analysis of the management data stored in the database.<SEP>A request from a party concerning the archived data-stream, used to formulate responses based on analysis of stored management data.<SEP>A search query received in a language, which can be segmented into tokens and matched against query patterns.",
+          "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002<SEP>US8655901B1-chunk-001",
+          "file_path": "US7756837B2.txt<SEP>US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "entity_name": "US7756837B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Methods and apparatus for searching backup data based on content and attributes\" that discloses transparent bridging of backup storage devices and extraction of management data from backup data-streams.",
+          "source_id": "US7756837B2-chunk-000",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1794712963
+        },
+        {
+          "entity_name": "Query Splits",
+          "entity_type": "concept",
+          "description": "Divisions of a received query into query components identified by applying the translated query pattern, used to search a respective index for each query component.",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "entity_name": "Speaker Identification Using Hash-Based Indexing",
+          "entity_type": "content",
+          "description": "A patent (US9514753B2) describing methods, systems, and apparatus for performing speaker identification using hash-based indexing of speaker vectors.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Query Pattern",
+          "entity_type": "concept",
+          "description": "A particular rule used to interpret a particular type of query, expressed in a first language and used to identify matching queries in a query log.",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713004
+        },
+        {
+          "entity_name": "US8917913B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Searching with face recognition and social networking profiles\" describing systems for on-line searching using face recognition combined with social networking profiles.",
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1794712798
+        },
+        {
+          "entity_name": "Computer Implemented Method",
+          "entity_type": "method",
+          "description": "A method of evaluating information via a computer network comprising receiving user interest indications, identifying keywords, determining weights, ranking keywords, and selecting advertisements.",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1794712717
+        },
+        {
+          "entity_name": "US8880423B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Inventory estimation for search retargeting\" that describes techniques for estimating advertisement inventory for search retargeting segments.",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1794712778
+        },
+        {
+          "entity_name": "US9304738B1",
+          "entity_type": "content",
+          "description": "A patent titled \"Systems and methods for selecting content using weighted terms\" describing techniques for evaluating information via a computer network using weighted keywords to select content for display.",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1794712717
+        },
+        {
+          "entity_name": "Inventory Estimation For Search Retargeting",
+          "entity_type": "content",
+          "description": "The title of the patent US8880423B2, referring to techniques for estimating advertisement inventory for search retargeting segments.",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1794712778
+        },
+        {
+          "entity_name": "Labels",
+          "entity_type": "concept",
+          "description": "Labels assigned to tokens of the input query, identifying them as corresponding to a search term, geographic expression, geographic expression relation indication, and/or uninteresting information.<SEP>Labels assigned to a plurality of tokens in the input query, distinct from the sentences assigned to them.<SEP>Annotations identifying the parts of each query, associated with corresponding components of the first query pattern.",
+          "source_id": "US9218390B2-chunk-001<SEP>US9218390B2-chunk-002<SEP>US8655901B1-chunk-001",
+          "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "entity_name": "First Query Pattern",
+          "entity_type": "concept",
+          "description": "A query pattern in a first language that identifies a particular rule to interpret a particular type of query.",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "entity_name": "US9118735B1",
+          "entity_type": "content",
+          "description": "A patent document titled \"Finding people using social networks\" that describes embodiments for assisting a first person in finding a second person using a social network, including systems, methods, and privacy mechanisms.",
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1794712735
+        },
+        {
+          "entity_name": "Hash Tables",
+          "entity_type": "data",
+          "description": "A plurality of tables storing speaker vectors indexed by hash values, from which a set of speaker vectors is determined using the hash values of an utterance vector.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Class-Level Multi-Token Language Model-Based Feature",
+          "entity_type": "concept",
+          "description": "A feature harvested from a structured query log and comprised by the learned model parser.",
+          "source_id": "US9218390B2-chunk-001",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1794712933
+        },
+        {
+          "entity_name": "Structured Query Log",
+          "entity_type": "data",
+          "description": "A log comprising a class-based log from a form-based query system.<SEP>A log from which class-level n-gram language model-based features are harvested.",
+          "source_id": "US9218390B2-chunk-000<SEP>US9218390B2-chunk-001",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1794712933
+        },
+        {
+          "entity_name": "Search Results",
+          "entity_type": "data",
+          "description": "Results responsive to a received query in the second language that are found using the translated query pattern and presented to a user.",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713005
+        }
+      ],
+      "relationships": [
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "US8509827B2",
+          "description": "The patent publication US8509827B2 discloses a system, method, and article of manufacture of context-data acquisition and ranking.",
+          "keywords": "describes,discloses",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1794712670
+        },
+        {
+          "src_id": "Query Log",
+          "tgt_id": "Translated Query Pattern",
+          "description": "Extracting a translated query pattern includes cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.",
+          "keywords": "cross-validation,occurrence threshold",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713008
+        },
+        {
+          "src_id": "Computing Device",
+          "tgt_id": "US9514120B1",
+          "description": "The patent document describes a computing device that identifies and classifies potential typographical errors.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1794712828
+        },
+        {
+          "src_id": "Cross-Validation",
+          "tgt_id": "Translation-Based Query Pattern Mining",
+          "description": "Extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.",
+          "keywords": "cross-validates with",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713008
+        },
+        {
+          "src_id": "Social Network",
+          "tgt_id": "US9118735B1",
+          "description": "The patent document describes using a social network to find people.",
+          "keywords": "Patent Subject Matter,Using",
+          "weight": 1.0,
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1794712739
+        },
+        {
+          "src_id": "Query",
+          "tgt_id": "Translated Query Pattern",
+          "description": "The translated query pattern is applied to a received query to identify query splits into query components and to search a respective index for each query component.",
+          "keywords": "application,search",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713008
+        },
+        {
+          "src_id": "Translation-Based Query Pattern Mining",
+          "tgt_id": "US8655901B1",
+          "description": "The publication US8655901B1 is titled \"Translation-based query pattern mining\" and describes this technique.",
+          "keywords": "document title,subject matter",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "src_id": "Query Log",
+          "tgt_id": "Translation-Based Query Pattern Mining",
+          "description": "The technique identifies a collection of queries matching the query pattern by determining which queries in a query log match the query pattern.",
+          "keywords": "identifies queries from",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713008
+        },
+        {
+          "src_id": "Query Splits",
+          "tgt_id": "Translation-Based Query Pattern Mining",
+          "description": "The translated query pattern is applied to a received query to identify one or more query splits into query components.",
+          "keywords": "identifies via translated pattern",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713008
+        },
+        {
+          "src_id": "Speaker Identification Using Hash-Based Indexing",
+          "tgt_id": "Utterance Vector",
+          "description": "The patent describes obtaining an utterance vector derived from an utterance as part of speaker identification.",
+          "keywords": "describes,uses",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Query Pattern",
+          "tgt_id": "Translation-Based Query Pattern Mining",
+          "description": "The technique receives a query pattern identifying a rule to interpret a particular type of query in a first language.",
+          "keywords": "receives,uses",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713008
+        },
+        {
+          "src_id": "Relationship Modeling Program",
+          "tgt_id": "US10778629B2",
+          "description": "The patent document describes a relationship modeling program that assigns weights to characteristics of interaction data to model relationships between e-mail users.",
+          "keywords": "describes,discloses",
+          "weight": 1.0,
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1794713071
+        },
+        {
+          "src_id": "Computer Implemented Method",
+          "tgt_id": "US9304738B1",
+          "description": "The patent claims a computer implemented method of evaluating information via a computer network.",
+          "keywords": "Claims,Describes",
+          "weight": 1.0,
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1794712717
+        },
+        {
+          "src_id": "Search Retargeting Segment",
+          "tgt_id": "US8880423B2",
+          "description": "US8880423B2 describes techniques for estimating advertisement inventory for search retargeting segments.",
+          "keywords": "describes,subject matter",
+          "weight": 1.0,
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1794712782
+        },
+        {
+          "src_id": "Labels",
+          "tgt_id": "Translated Query Pattern",
+          "description": "The translated query pattern is extracted from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query.",
+          "keywords": "correspondence,extraction",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713008
+        },
+        {
+          "src_id": "Intermediate Device",
+          "tgt_id": "US7756837B2",
+          "description": "The patent document discloses methods and apparatus embodied by the intermediate device for transparent bridging of backup storage devices.",
+          "keywords": "describes,discloses",
+          "weight": 1.0,
+          "source_id": "US7756837B2-chunk-000",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1794712968
+        },
+        {
+          "src_id": "First Query Pattern",
+          "tgt_id": "Query Log",
+          "description": "A collection of queries is identified by determining which queries in a query log match the first query pattern.",
+          "keywords": "identification,matching",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713008
+        },
+        {
+          "src_id": "Social Networking Service",
+          "tgt_id": "US8917913B2",
+          "description": "The patent document describes systems interacting with a social networking service.",
+          "keywords": "describes,subject matter",
+          "weight": 1.0,
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1794712801
+        },
+        {
+          "src_id": "Hash Tables",
+          "tgt_id": "Speaker Identification Using Hash-Based Indexing",
+          "description": "The patent describes determining a set of speaker vectors from a plurality of hash tables using hash values.",
+          "keywords": "describes,uses",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Advertisement Inventory",
+          "tgt_id": "US8880423B2",
+          "description": "US8880423B2 describes techniques for estimating advertisement inventory.",
+          "keywords": "describes,subject matter",
+          "weight": 1.0,
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1794712782
+        },
+        {
+          "src_id": "Class-Level Multi-Token Language Model-Based Feature",
+          "tgt_id": "Structured Query Log",
+          "description": "The class-level multi-token language model-based feature is harvested from a structured query log.",
+          "keywords": "harvesting",
+          "weight": 1.0,
+          "source_id": "US9218390B2-chunk-001",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1794712935
+        },
+        {
+          "src_id": "Requesting Person",
+          "tgt_id": "US9118735B1",
+          "description": "The patent document describes embodiments for assisting a requesting person in finding a target person using a social network.",
+          "keywords": "Assisting,Patent Subject Matter",
+          "weight": 1.0,
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1794712736
+        },
+        {
+          "src_id": "Search Results",
+          "tgt_id": "Translation-Based Query Pattern Mining",
+          "description": "The translated query pattern is used to search for results responsive to a received query in the second language and to present search results.",
+          "keywords": "searches for and presents",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713008
+        },
+        {
+          "src_id": "Privacy Mechanism",
+          "tgt_id": "US9118735B1",
+          "description": "The patent document discloses various privacy mechanisms including anonymizing identifying information and encrypting communications.",
+          "keywords": "Disclosing,Patent Subject Matter",
+          "weight": 1.0,
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1794712739
+        },
+        {
+          "src_id": "Speaker Identification Using Hash-Based Indexing",
+          "tgt_id": "Speaker Identity",
+          "description": "The patent describes determining a speaker identity corresponding to the selected speaker vector and outputting data indicating the speaker identity.",
+          "keywords": "describes,outputs",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Target Person",
+          "tgt_id": "US9118735B1",
+          "description": "The patent document describes embodiments for assisting a first person in finding a target person using a social network.",
+          "keywords": "Finding,Patent Subject Matter",
+          "weight": 1.0,
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1794712739
+        },
+        {
+          "src_id": "Face Recognition",
+          "tgt_id": "US8917913B2",
+          "description": "The patent document describes searching with face recognition and social networking profiles.",
+          "keywords": "describes,subject matter",
+          "weight": 1.0,
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1794712801
+        },
+        {
+          "src_id": "Inventory Estimation For Search Retargeting",
+          "tgt_id": "US8880423B2",
+          "description": "US8880423B2 is a patent document whose title is \"Inventory estimation for search retargeting\".",
+          "keywords": "document title,titled",
+          "weight": 1.0,
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1794712778
+        }
+      ],
+      "chunks": [
+        {
+          "reference_id": "1",
+          "content": "Publication number: US8655901B1\nTitle: Translation-based query pattern mining\n\nABSTRACT\nThis specification describes technologies relating to search systems. In general, one aspect of the subject matter described in this specification can be embodied in methods that include the actions of receiving a query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern; annotating each query of the collection of queries with one or more labels; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; aligning the translated collection of queries including identifying a most common term in the translated collection of queries and determining the corresponding positions of the annotations relative to the translated query terms; and extracting a translated query pattern from the aligned translated collection of queries.\n\nCLAIMS\nWhat is claimed: 1. A method comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying, with a system comprising one or more computing devices, a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern. 2. The method of claim 1 , further comprising: using the translated query pattern to interpret received queries in the second language matching the translated query pattern. 3. The method of claim 2 , where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 4. The method of claim 1 , further comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 5. The method of claim 1 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern. 6. The method of claim 1 , where annotating each query includes labeling portions of the query according to the first query pattern. 7. The method of claim 1 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold. 8. A system comprising: one or more processors configured to interact with a computer-readable medium in order to perform operations comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern. 9. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to interpret received queries in the second language matching the translated query pattern. 10. The system of claim 9 , where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 12. The system of claim 8 , where identifying a collection of",
+          "file_path": "US8655901B1.txt",
+          "chunk_id": "US8655901B1-chunk-000"
+        },
+        {
+          "reference_id": "1",
+          "content": ", where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 12. The system of claim 8 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern. 13. The system of claim 8 , where annotating each query includes labeling portions of the query according to the first query pattern. 14. The system of claim 8 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold. 15. A non-transitory computer storage medium encoded with a computer program, the program comprising instructions that when executed by data processing apparatus cause the data processing apparatus to perform operations comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating, with a system comprising one or more computing devices, the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern.",
+          "file_path": "US8655901B1.txt",
+          "chunk_id": "US8655901B1-chunk-001"
+        },
+        {
+          "reference_id": "2",
+          "content": "geographic location token and a search term token in an input query. 4. The method of claim 1 , further comprising: establishing the semi-supervised conditional random fields via one of a rule-based finite state machine model and a statistics-based conditional random field model. 5. The method of claim 4 , wherein the semi-supervised conditional random fields are established via utilizing systematic geographic parsing with the one of the rule-based finite state machine model and the statistics-based conditional random field model. 6. The method of claim 4 , wherein the statistics-based conditional random field model is utilized with class transition features learned from a labeled set of features and extracting at least one high-level language model as a state feature, thereby allowing at least one learned language model to be learned from at least one large-scale class-based log. 7. The method of claim 4 , wherein the rule based finite state machine model is utilized with a phrase level grammar to construct a phrase level grammar composition. 8. The method of claim 7 , further comprising: constructing the phrase level grammar, via the query parser derivation computing device, using a context free grammar composition. 9. The method of claim 4 , wherein the semi-supervised conditional random fields are utilized in a linear-chain Markov random field model. 10. The method of claim 1 , wherein for each label in L = argmax L â¢ â¢ P ( L â¢ ï Q ) . 11. The method of claim 10 , wherein the creating the conditional random field model comprises: characterizing, via the query parser derivation computing device, a conditional random field model of Q and L as a set of feature functions fk, each having a corresponding weight Î»k and computing via the query parser derivation computing device, the conditional probability P ( L â¢ ï Q ) = 1 Z S â¢ exp â¡ ( â t = 1 T â¢ â k â¢ Î» k * f k â¡ ( l t - 1 , l t , Q , t ) ) where fk (ltâ1, lt, Q, t) is a feature function, representing one of a state transition feature, including fk (ltâ1, lt, Q), and an output state feature, including fk (lt, Q), for a given input sequence. 12. A method comprising: deriving a query parser, via a query parser derivation computing device, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens; calculating the most probable label sequence for the input query; assigning one or more sentences from a plurality of sentences to each label based at least in part on the most probable label sequence for the input query, wherein: the one or more sentences are different from the labels; and the one or more sentences are assigned so that the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information; creating a conditional random field model based at least in part on i) the tokens, ii) the labels, iii) characterizing a set of one or more feature functions, wherein: the set of one or more feature functions represent a state transition feature and/or one or more features of an output state for an input sequence; and a conditional probability is computed based in part on the set of one or more feature functions; training the one or more state transition features and the one or more output state features on a labeled set, wherein learning the state transition feature is limited on learning the one or more features of the output state; and utilizing an unstructured local geographical web-based query in local domain by applying a learned model parser, which is based at least in part on the training, to the query, wherein the utilizing the conditional random fields to produce the structured information comprises: parsing the unstructured geographic web-search query to produce the structured information from the unstructured geographic web-search query; determining that the parsing the unstructured geographic web-search query results in a multiple interpretation condition, where the parsing identifies at least a first interpretation of the unstructured geographic web-search query corresponding to first parsing results and a second interpretation of the unstructured geographic web-search query corresponding to second parsing results; and based at least in part on user behavior data, disambiguate the first parsing results and the second parsing results to select the first parsing results corresponding to the first interpretation of the unstructured geographic web-search query. 13. The method of claim 12 , wherein the learned model parser uses at least one class-based query log from a form-based query system. 14. The method of claim 13 , wherein the learned model parser comprises at least one class-level multi-token language model-based feature harvested from a structured query log. 15. The method of claim 14 , wherein the structured query log comprises a class-based log from a form-based query system. 16. The method of claim 12 , wherein the learned model parser comprises a learning statistical conditional random field parser. 17. The method of claim 16 , wherein the learning statistical conditional random field parser performs at least one of segmenting and labeling query sequence data. 18. One or more non-transitory, machine-readable media having machine-readable instructions thereon, which instructions, when executed by one or more computing devices, cause the one or more computing devices to: derive a query parser for parsing an unstructured geographic web-search query into a field-based format, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each",
+          "file_path": "US9218390B2.txt",
+          "chunk_id": "US9218390B2-chunk-001"
+        },
+        {
+          "reference_id": "3",
+          "content": "receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluating, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL process to be performed. 10. The method of claim 8 , further comprising: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL process. 11. The method of claim 8 , wherein the second ETL process is applied to the one or more transformed data objects. 12. The method of claim 8 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service. 13. The method of claim 8 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service. 14. The method of claim 8 , wherein the criteria is one of a plurality of different alternative criteria registered for triggering the event. 15. One or more non-transitory, computer-readable storage media, storing program instructions that when executed on or across one or more computing devices, cause the one or more computing devices to implement: receiving, at a data catalog for an Extract, Transform, Load (ETL) service, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; storing, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluating, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, causing the second ETL process to be performed. 16. The one or more non-transitory, computer-readable storage media of claim 15 , wherein a second history object is created in the history data structure, and wherein the one or more non-transitory, computer-readable storage media store further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluating, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL process to be performed. 17. The one or more non-transitory, computer-readable storage media of claim 15 , storing further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL process. 18. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the second ETL process is applied to the one or more transformed data objects. 19. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service. 20. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "file_path": "US11423041B2.txt",
+          "chunk_id": "US11423041B2-chunk-001"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US8655901B1.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9218390B2.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US11423041B2.txt"
+        }
+      ]
+    },
+    "metadata": {
+      "query_mode": "mix",
+      "keywords": {
+        "high_level": [
+          "patent claim analysis",
+          "query translation",
+          "cross-validation",
+          "query log",
+          "occurrence threshold"
+        ],
+        "low_level": [
+          "US8655901B1",
+          "method claim",
+          "translated query pattern",
+          "query log",
+          "occurrence threshold",
+          "patent publication number",
+          "claim number"
+        ]
+      },
+      "processing_info": {
+        "total_entities_found": 26,
+        "total_relations_found": 28,
+        "entities_after_truncation": 26,
+        "relations_after_truncation": 28,
+        "merged_chunks_count": 19,
+        "final_chunks_count": 4
+      }
+    },
+    "llm_response": {
+      "content": "## Answer\n\n**Stated fact (from the patent text):** In US8655901B1, the method claim that requires cross-validating a translated query pattern against a query log with respect to an occurrence threshold is **claim 7**. Its exact wording is:\n\n> \"7. The method of claim 1, where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.\"\n\nThe same limitation also appears in the system claim **claim 14** (\"The system of claim 8, where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold\"), but that is a system claim, not a method claim.\n\n**Inference (not stated in the text):** Because claim 7 depends from claim 1, the cross-validation step is an added limitation on the method of claim 1 rather than a standalone method. This is a reading of the claim dependency, not an explicit statement in the document.\n\n**Missing/insufficient evidence:** The provided context does not indicate whether the \"specified occurrence threshold\" has a particular numeric value or how it is set; that detail is absent.\n\n### References\n\n- [1] US8655901B1.txt",
+      "response_iterator": null,
+      "is_streaming": false,
+      "llm_generated": true
+    }
+  }
+}

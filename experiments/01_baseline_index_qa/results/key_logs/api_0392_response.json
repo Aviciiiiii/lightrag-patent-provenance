@@ -1,0 +1,28 @@
+{
+  "id": 392,
+  "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "content": "I do not have enough information to answer this query. The provided **Context** does not contain any document, chunk, or knowledge-graph entity for **US7991757B2**, so I cannot quote Claim 1 or Claim 27 of that patent, nor describe their dependency.\n\n**What is present (explicit evidence):** The context does describe a *registration* capability, but in a different patent family. The knowledge graph states that a \"Registration Module\" is \"configured to provide functionality for registering an external recommender with a recommendations service\" and is \"configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.\" It also states that \"Registration submissions are operative to request registration of recommenders\" and are \"received from a plurality of recommender providers.\" However, none of the document chunks in the context contain claim text tied to US7991757B2, and no claim numbers 1 or 27 for that publication appear.\n\n**What is missing:** (1) The text of US7991757B2 Claim 1; (2) the text of Claim 27; (3) any statement of Claim 27's dependency (e.g., \"The method of claim 1, further comprising…\"). Without these, any description of the added capability or the dependency relationship would be inference rather than evidence, which I will not supply.\n\n**Inference vs. evidence:** It would be an unsupported inference to assume the registration language above belongs to US7991757B2 or that Claim 27 depends from Claim 1. To answer, please provide the claims of US7991757B2 or a document chunk containing them.\n\n### References\n\n- [1] US10867122B1.txt",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 360,
+    "prompt_tokens": 28360,
+    "total_tokens": 28720,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 1408,
+      "image_tokens": null,
+      "text_tokens": null
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 26952
+  },
+  "reasoning_content_present": false
+}

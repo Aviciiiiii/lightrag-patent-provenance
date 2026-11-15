@@ -1,0 +1,22 @@
+[
+  {
+    "claim_number": 1,
+    "source_span": [
+      494,
+      2433
+    ],
+    "source_id": "US7991757B2-chunk-000",
+    "exact_original_match": true,
+    "content_sha256": "19822770fbd4984f287b9f8abc2508611f3da3e95cf169595372505ae4266f70"
+  },
+  {
+    "claim_number": 27,
+    "source_span": [
+      10570,
+      10823
+    ],
+    "source_id": "US7991757B2-chunk-001",
+    "exact_original_match": true,
+    "content_sha256": "248285adf70de5a656f4eab7d095847bbd8cf11c83031cea1451e9904aca7c74"
+  }
+]

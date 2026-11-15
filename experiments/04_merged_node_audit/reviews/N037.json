@@ -1,0 +1,362 @@
+{
+  "audit_id": "N037",
+  "node_id": "Data Processing Apparatus",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两来源的Data Processing Apparatus都是执行数据处理方法的计算装置，分别承担内容相关知识面板和查询模式翻译流程。通用执行设备类相容；没有原文身份等同声明。",
+  "class_instance_interpretation_zh": "共同可执行数据处理的装置类；两篇文档内装置是独立实施例。US10867122B1中Claim1的apparatus与Claim6的computer device可以有类级近义解释，但不能据此证明实际个体相同。",
+  "concept_class_vs_local_instance": "shared_class; document-local instances remain distinct",
+  "source_assessments": [
+    {
+      "publication_number": "US10867122B1",
+      "evidence_quote": "A method performed by a data processing apparatus, the method comprising:",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US10867122B1-chunk-000"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US10867122B1-chunk-000"
+      ],
+      "claim_number": 1,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 3,
+        "indexed_document_char_offset": 546
+      },
+      "role_zh": "接收用户输入内容、确定事实实体、请求相关界面内容并提供显示指令的方法执行者。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000实体和确定实体/请求内容关系由Claim1支持。Computer Program Instructions邻边描述来自Claim6的computer device；将其绑定到Data Processing Apparatus是类级名称归并，未证明两个权利要求个体相同。",
+        "raw_records": [
+          {
+            "chunk_id": "US10867122B1-chunk-000",
+            "content_sha256": "cdb9a31ce359fcaf09cc018de814c284abb820d41aa8a4684e6518a413fe7162",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+                "cache_key": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 7,
+                "raw_line": "entity<|#|>Data Processing Apparatus<|#|>Artifact<|#|>An apparatus that performs the claimed method of receiving content, determining factual entities, requesting knowledge panel content, and providing display instructions.",
+                "fields": [
+                  "entity",
+                  "Data Processing Apparatus",
+                  "Artifact",
+                  "An apparatus that performs the claimed method of receiving content, determining factual entities, requesting knowledge panel content, and providing display instructions."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+                "cache_key": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 21,
+                "raw_line": "relation<|#|>Data Processing Apparatus<|#|>Factual Entity<|#|>determines<|#|>The data processing apparatus performs the method of determining factual entities from received content.",
+                "fields": [
+                  "relation",
+                  "Data Processing Apparatus",
+                  "Factual Entity",
+                  "determines",
+                  "The data processing apparatus performs the method of determining factual entities from received content."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+                "cache_key": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 22,
+                "raw_line": "relation<|#|>Data Processing Apparatus<|#|>Knowledge Panel<|#|>requests content for<|#|>The data processing apparatus requests content for a user interface element related to the factual entities.",
+                "fields": [
+                  "relation",
+                  "Data Processing Apparatus",
+                  "Knowledge Panel",
+                  "requests content for",
+                  "The data processing apparatus requests content for a user interface element related to the factual entities."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+                "cache_key": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 24,
+                "raw_line": "relation<|#|>Computer Program Instructions<|#|>Data Processing Apparatus<|#|>cause operations on<|#|>The computer program instructions, when executed by processors, cause a computer device to perform operations including determining factual entities.",
+                "fields": [
+                  "relation",
+                  "Computer Program Instructions",
+                  "Data Processing Apparatus",
+                  "cause operations on",
+                  "The computer program instructions, when executed by processors, cause a computer device to perform operations including determining factual entities."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US10867122B1-chunk-000",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "e5391ee125d0af11d24e7f861f449819339379f3b291416aa3d7cf9747d0aafe"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The data processing apparatus performs the method of determining factual entities from received content.",
+          "keywords": "determines",
+          "source_id": "US10867122B1-chunk-000",
+          "file_path": "US10867122B1.txt",
+          "created_at": 1793284649,
+          "truncate": "",
+          "source": "Data Processing Apparatus",
+          "target": "Factual Entity",
+          "edge_index": 846,
+          "source_chunks": [
+            "US10867122B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US10867122B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing apparatus requests content for a user interface element related to the factual entities.",
+          "keywords": "requests content for",
+          "source_id": "US10867122B1-chunk-000",
+          "file_path": "US10867122B1.txt",
+          "created_at": 1793284649,
+          "truncate": "",
+          "source": "Data Processing Apparatus",
+          "target": "Knowledge Panel",
+          "edge_index": 847,
+          "source_chunks": [
+            "US10867122B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US10867122B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computer program instructions, when executed by processors, cause a computer device to perform operations including determining factual entities.",
+          "keywords": "cause operations on",
+          "source_id": "US10867122B1-chunk-000",
+          "file_path": "US10867122B1.txt",
+          "created_at": 1793284649,
+          "truncate": "",
+          "source": "Data Processing Apparatus",
+          "target": "Computer Program Instructions",
+          "edge_index": 848,
+          "source_chunks": [
+            "US10867122B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US10867122B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8655901B1",
+      "evidence_quote": "instructions that when executed by data processing apparatus cause the data processing apparatus to perform operations comprising:",
+      "claim_or_section": "Claim 15",
+      "source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ],
+      "claim_number": 15,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 101,
+        "indexed_document_char_offset": 7251
+      },
+      "role_zh": "执行存储介质中程序、完成query pattern翻译的方法执行装置。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk001实体及存储介质邻边直接对应Claim15的程序执行关系。",
+        "raw_records": [
+          {
+            "chunk_id": "US8655901B1-chunk-001",
+            "content_sha256": "5d0d79edafe5af7919f82cb1ee8099a3dec6b156ad11326e2bf75e47dad3f315",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 14,
+                "raw_line": "entity<|#|>Data Processing Apparatus<|#|>Artifact<|#|>Apparatus that executes program instructions to perform the query pattern translation operations.",
+                "fields": [
+                  "entity",
+                  "Data Processing Apparatus",
+                  "Artifact",
+                  "Apparatus that executes program instructions to perform the query pattern translation operations."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 31,
+                "raw_line": "relation<|#|>Non-Transitory Computer Storage Medium<|#|>Data Processing Apparatus<|#|>program instructions, execution<|#|>The storage medium is encoded with a computer program whose instructions, when executed by data processing apparatus, cause the apparatus to perform operations.",
+                "fields": [
+                  "relation",
+                  "Non-Transitory Computer Storage Medium",
+                  "Data Processing Apparatus",
+                  "program instructions, execution",
+                  "The storage medium is encoded with a computer program whose instructions, when executed by data processing apparatus, cause the apparatus to perform operations."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US8655901B1-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "316996f6608a19543149f869b202a0f90c851b294a1aea1e4f2b52f923f5462b"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The storage medium is encoded with a computer program whose instructions, when executed by data processing apparatus, cause the apparatus to perform operations.",
+          "keywords": "execution,program instructions",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Non-Transitory Computer Storage Medium",
+          "target": "Data Processing Apparatus",
+          "edge_index": 844,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 4,
+    "observed_unsupported_edge": false,
+    "observed_unsupported_edge_definition": "true仅用于依据原文明确不支持的实际关系；类级概括/端点角色候选单列，不自动计入。",
+    "details_zh": "已逐条检查全部实际邻边及其source_id/file_path；各关系在所属专利中有对应陈述，未发现将另一专利特征直接写入本专利边描述的确证。共同节点容许潜在无作用域路径组合，但本审计没有执行或观察该传播。",
+    "edge_indices": [
+      844,
+      846,
+      847,
+      848
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 844,
+        "source": "Non-Transitory Computer Storage Medium",
+        "target": "Data Processing Apparatus",
+        "source_id": "US8655901B1-chunk-001",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "The storage medium is encoded with a computer program whose instructions, when executed by data processing apparatus, cause the apparatus to perform operations.",
+        "claim_or_section": "US8655901B1 Claim15",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 846,
+        "source": "Data Processing Apparatus",
+        "target": "Factual Entity",
+        "source_id": "US10867122B1-chunk-000",
+        "file_path": "US10867122B1.txt",
+        "canonical_publications": [
+          "US10867122B1"
+        ],
+        "actual_description": "The data processing apparatus performs the method of determining factual entities from received content.",
+        "claim_or_section": "US10867122B1 Claim1",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 847,
+        "source": "Data Processing Apparatus",
+        "target": "Knowledge Panel",
+        "source_id": "US10867122B1-chunk-000",
+        "file_path": "US10867122B1.txt",
+        "canonical_publications": [
+          "US10867122B1"
+        ],
+        "actual_description": "The data processing apparatus requests content for a user interface element related to the factual entities.",
+        "claim_or_section": "US10867122B1 Claim1/Abstract",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 848,
+        "source": "Data Processing Apparatus",
+        "target": "Computer Program Instructions",
+        "source_id": "US10867122B1-chunk-000",
+        "file_path": "US10867122B1.txt",
+        "canonical_publications": [
+          "US10867122B1"
+        ],
+        "actual_description": "The computer program instructions, when executed by processors, cause a computer device to perform operations including determining factual entities.",
+        "claim_or_section": "US10867122B1 Claim6（computer device）",
+        "assessment": "supported_at_class_level_identity_unproven",
+        "assessment_zh": "边描述的computer device执行指令由Claim6支持；端点归一为Data Processing Apparatus仅可作计算设备类概括，不能据此确认与Claim1 apparatus为同一实例。"
+      }
+    ],
+    "observed_cross_publication_unsupported_edge": false
+  },
+  "limitations_zh": [
+    "本结果为AI辅助逐来源语义审阅，不是独立人工金标准；分类依赖所声明的类/实例粒度。",
+    "只审计第二轮既有20篇索引中的可见原chunk、原抽取与实际图邻边；原文范围为已索引的标题、摘要及Claims，未额外读取完整说明书或新语料，未调用模型API，也未进行新的检索/生成传播测试。",
+    "共享节点产生跨专利邻接不等于已观察到错误跨文档推理；边的source_id和file_path应保持作用域。",
+    "edge848的端点名称是抽取时把computer device用Data Processing Apparatus概括；作为共同计算设备类可解释，作为同一个体等同则缺乏证明。"
+  ],
+  "review_method": "AI-assisted source-by-source reading; deterministic quote/coverage validation; no external model API",
+  "reviewed_utc": "2026-10-30T08:17:45.609111+00:00",
+  "dossier_sha256": "eb76db3157185743e428cba7a7075a5ed74eaaa1ed64774ba96ee5a145edf2e1",
+  "input_sha256": {
+    "round2_multisource_audit/dossiers/N037.json": "eb76db3157185743e428cba7a7075a5ed74eaaa1ed64774ba96ee5a145edf2e1",
+    "data/claims/US10867122B1.json": "ad31efe1069840c103b75fb277ff7579fb4500c838425b02fedd9262504f2895",
+    "data/documents/US10867122B1.txt": "8f7e555fc3859383efea70b0e43190a6124f4588de941cc2238100c5c80a741a",
+    "data/claims/US8655901B1.json": "3c4320d6d4a3603680fed5c9a62944142f5443962d5efd343277600f79f8ce75",
+    "data/documents/US8655901B1.txt": "7d17f8090a784af8ad8372cd2c9c958ed21e29ac1078c9c368ef53f49d0632ad"
+  },
+  "source_and_raw_review_coverage": {
+    "publication_count": 2,
+    "source_chunk_ids_reviewed": [
+      "US10867122B1-chunk-000",
+      "US8655901B1-chunk-001"
+    ],
+    "all_source_chunks_read": true,
+    "all_raw_entity_and_relation_endpoint_rows_read": true,
+    "all_actual_incident_edges_reviewed": true
+  }
+}

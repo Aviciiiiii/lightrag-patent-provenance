@@ -1,0 +1,122 @@
+[
+  {
+    "claim_number": 1,
+    "start_char_in_raw_claims": 20,
+    "end_char_in_raw_claims": 1422,
+    "text": "1. A system, comprising: at least one processor; and a memory, storing program instructions that when executed by the at least one processor, cause the at least one processor to implement a data catalog for an Extract, Transform, Load (ETL) service, the data catalog configured to: receive, at the data catalog, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; store, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluate, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed."
+  },
+  {
+    "claim_number": 2,
+    "start_char_in_raw_claims": 1422,
+    "end_char_in_raw_claims": 2736,
+    "text": "2. The system of claim 1 , wherein a second history object is created in the history data structure, and wherein the data catalog is further configured to: receive, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; store, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluate, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to the determination that the performance of the third ETL process satisfies the criteria for triggering the different event, cause the fourth ETL process to be performed."
+  },
+  {
+    "claim_number": 3,
+    "start_char_in_raw_claims": 2736,
+    "end_char_in_raw_claims": 3052,
+    "text": "3. The system of claim 1 , wherein the data catalog service is further configured to: further in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, send a notification of the event to another subscriber different than the second ETL process."
+  },
+  {
+    "claim_number": 4,
+    "start_char_in_raw_claims": 3052,
+    "end_char_in_raw_claims": 3166,
+    "text": "4. The system of claim 1 , wherein the second ETL process is applied to the one or more transformed data objects."
+  },
+  {
+    "claim_number": 5,
+    "start_char_in_raw_claims": 3166,
+    "end_char_in_raw_claims": 3332,
+    "text": "5. The system of claim 1 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service."
+  },
+  {
+    "claim_number": 6,
+    "start_char_in_raw_claims": 3332,
+    "end_char_in_raw_claims": 3489,
+    "text": "6. The system of claim 1 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service."
+  },
+  {
+    "claim_number": 7,
+    "start_char_in_raw_claims": 3489,
+    "end_char_in_raw_claims": 3630,
+    "text": "7. The system of claim 1 , wherein the criteria is one of a plurality of different alternative criteria registered for triggering the event."
+  },
+  {
+    "claim_number": 8,
+    "start_char_in_raw_claims": 3630,
+    "end_char_in_raw_claims": 4821,
+    "text": "8. A method, comprising: receiving, at a data catalog for an Extract, Transform, Load (ETL) service, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; storing, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluating, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, causing the second ETL process to be performed."
+  },
+  {
+    "claim_number": 9,
+    "start_char_in_raw_claims": 4821,
+    "end_char_in_raw_claims": 6124,
+    "text": "9. The method of claim 8 , wherein a second history object is created in the history data structure, and wherein the method further comprises: receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluating, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL process to be performed."
+  },
+  {
+    "claim_number": 10,
+    "start_char_in_raw_claims": 6124,
+    "end_char_in_raw_claims": 6399,
+    "text": "10. The method of claim 8 , further comprising: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL process."
+  },
+  {
+    "claim_number": 11,
+    "start_char_in_raw_claims": 6399,
+    "end_char_in_raw_claims": 6514,
+    "text": "11. The method of claim 8 , wherein the second ETL process is applied to the one or more transformed data objects."
+  },
+  {
+    "claim_number": 12,
+    "start_char_in_raw_claims": 6514,
+    "end_char_in_raw_claims": 6681,
+    "text": "12. The method of claim 8 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service."
+  },
+  {
+    "claim_number": 13,
+    "start_char_in_raw_claims": 6681,
+    "end_char_in_raw_claims": 6839,
+    "text": "13. The method of claim 8 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service."
+  },
+  {
+    "claim_number": 14,
+    "start_char_in_raw_claims": 6839,
+    "end_char_in_raw_claims": 6981,
+    "text": "14. The method of claim 8 , wherein the criteria is one of a plurality of different alternative criteria registered for triggering the event."
+  },
+  {
+    "claim_number": 15,
+    "start_char_in_raw_claims": 6981,
+    "end_char_in_raw_claims": 8358,
+    "text": "15. One or more non-transitory, computer-readable storage media, storing program instructions that when executed on or across one or more computing devices, cause the one or more computing devices to implement: receiving, at a data catalog for an Extract, Transform, Load (ETL) service, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; storing, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluating, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, causing the second ETL process to be performed."
+  },
+  {
+    "claim_number": 16,
+    "start_char_in_raw_claims": 8358,
+    "end_char_in_raw_claims": 9905,
+    "text": "16. The one or more non-transitory, computer-readable storage media of claim 15 , wherein a second history object is created in the history data structure, and wherein the one or more non-transitory, computer-readable storage media store further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluating, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL process to be performed."
+  },
+  {
+    "claim_number": 17,
+    "start_char_in_raw_claims": 9905,
+    "end_char_in_raw_claims": 10371,
+    "text": "17. The one or more non-transitory, computer-readable storage media of claim 15 , storing further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL process."
+  },
+  {
+    "claim_number": 18,
+    "start_char_in_raw_claims": 10371,
+    "end_char_in_raw_claims": 10540,
+    "text": "18. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the second ETL process is applied to the one or more transformed data objects."
+  },
+  {
+    "claim_number": 19,
+    "start_char_in_raw_claims": 10540,
+    "end_char_in_raw_claims": 10761,
+    "text": "19. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service."
+  },
+  {
+    "claim_number": 20,
+    "start_char_in_raw_claims": 10761,
+    "end_char_in_raw_claims": 10972,
+    "text": "20. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service."
+  }
+]

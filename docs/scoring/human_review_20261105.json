@@ -1,0 +1,58 @@
+{
+ "S1:Q06/mix": {
+  "value": false,
+  "note_zh": "回答比较了两篇专利，但只为 US8095432B1 指出了 Claim 1，US7991757B2 缺少对应的 Claim 编号。",
+  "note_en": "No. The answer compares the two patents but names Claim 1 only for US8095432B1; US7991757B2 has no corresponding claim number.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S3:supplement/Q11/mix": {
+  "value": false,
+  "note_zh": "模型说明证据不足以定位到具体 Claim，全文没有把注册能力归给其他专利。",
+  "note_en": "No. The model says the evidence is insufficient to locate a specific claim; nowhere does it attribute the registration capability to another patent.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S5:B1": {
+  "value": true,
+  "note_zh": "模型明确指出，描述外部推荐器注册能力的图谱记录指向 US7991757B2，与输入材料标注的专利号一致。",
+  "note_en": "Yes. The model states explicitly that the graph records describing the external-recommender registration capability point to US7991757B2, which matches the patent number labelled in the input.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S5:B3": {
+  "value": true,
+  "note_zh": "回答明确将描述外部推荐器注册能力的图谱记录归到 US7991757B2，与输入材料的来源标注一致。",
+  "note_en": "Yes. The answer explicitly attributes the graph records describing the external-recommender registration capability to US7991757B2, consistent with the source labels in the input.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S9:F01_A_r3": {
+  "value": false,
+  "note_zh": "图里保留了医学本体与 UMLS 的关系，但没有明确记录已有病例和专家的嵌入也基于该本体。",
+  "note_en": "No. The graph keeps the relation between the medical ontology and UMLS, but does not explicitly record that the embedding of existing cases and experts is also based on that ontology.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S13:F01_B_r2/naive": {
+  "value": false,
+  "note_zh": "回答用箭头串联技术概念，括号中列出支持这些内容的 Claims 4、5、8，没有声称它们依次从属。",
+  "note_en": "No. The answer chains technical concepts with arrows and lists Claims 4, 5 and 8 in parentheses as support; it does not claim that they depend on one another in sequence.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S9:F01_B_r3": {
+  "value": true,
+  "note_zh": "`edges[9]` 明确记录了已有病例和专家的嵌入都基于医学本体，`edges[37]` 明确记录了该本体基于 UMLS。",
+  "note_en": "Yes. `edges[9]` explicitly records that the embeddings of existing cases and experts are based on the medical ontology, and `edges[37]` explicitly records that the ontology is based on UMLS.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ }
+}

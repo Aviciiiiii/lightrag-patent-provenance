@@ -1,0 +1,296 @@
+[
+  {
+    "claim_number": 1,
+    "start_char_in_raw_claims": 0,
+    "end_char_in_raw_claims": 1194,
+    "text": "1. A method, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and storing the management data in a searchable format in a database, wherein the method is carried out by a device that is transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device."
+  },
+  {
+    "claim_number": 2,
+    "start_char_in_raw_claims": 1194,
+    "end_char_in_raw_claims": 1536,
+    "text": "2. The method of claim 1 , further comprising one of: (i) passing the data-stream to the backup storage device before the extraction step; (ii) passing the data-stream to the backup storage device substantially simultaneously with the extraction step; and (iii) passing the data-stream to the backup storage device after the extraction step."
+  },
+  {
+    "claim_number": 3,
+    "start_char_in_raw_claims": 1536,
+    "end_char_in_raw_claims": 1795,
+    "text": "3. The method of claim 2 , further comprising: reading back data from the backup storage device after the data-stream has been passed to the backup storage device to re-create the data-stream; and performing the extraction step on the re-created data-stream."
+  },
+  {
+    "claim_number": 4,
+    "start_char_in_raw_claims": 1795,
+    "end_char_in_raw_claims": 2094,
+    "text": "4. The method of claim 1 , wherein the source is taken from the group consisting of a computer server, a desktop computer, a laptop computer, a notebook computer, a personal digital assistant, and a source database, when the management data includes the identifier of the source of the data-stream."
+  },
+  {
+    "claim_number": 5,
+    "start_char_in_raw_claims": 2094,
+    "end_char_in_raw_claims": 2282,
+    "text": "5. The method of claim 1 , wherein the volume is taken from the group consisting of computer disk drives and computer sub-drives, when the management data includes the volume information."
+  },
+  {
+    "claim_number": 6,
+    "start_char_in_raw_claims": 2282,
+    "end_char_in_raw_claims": 2507,
+    "text": "6. The method of claim 1 , wherein a plurality of data-streams adhere to the same or different protocols, the method further comprising converting the different protocols to a protocol supported by the backup storage device."
+  },
+  {
+    "claim_number": 7,
+    "start_char_in_raw_claims": 2507,
+    "end_char_in_raw_claims": 2718,
+    "text": "7. The method of claim 1 , wherein the extraction step includes at least one of: (i) separating distinct data sets from the data-stream; and (ii) segregating types of data within the data sets into data groups."
+  },
+  {
+    "claim_number": 8,
+    "start_char_in_raw_claims": 2718,
+    "end_char_in_raw_claims": 2999,
+    "text": "8. The method of claim 7 , wherein: the distinct data sets include at least one of file folders, data files, and types of data files; and the types of data include at least one of: text data, image data, audio data, graphic data, tabular data, hyperlink data, and executable data."
+  },
+  {
+    "claim_number": 9,
+    "start_char_in_raw_claims": 2999,
+    "end_char_in_raw_claims": 3116,
+    "text": "9. The method of claim 8 , further comprising indexing at least one of the types of data to obtain keywords thereof."
+  },
+  {
+    "claim_number": 10,
+    "start_char_in_raw_claims": 3116,
+    "end_char_in_raw_claims": 3250,
+    "text": "10. The method of claim 7 , further comprising using a predetermined rule set to recognize the distinct data sets of the data-stream."
+  },
+  {
+    "claim_number": 11,
+    "start_char_in_raw_claims": 3250,
+    "end_char_in_raw_claims": 3461,
+    "text": "11. The method of claim 10 , wherein the predetermined rule set is based on a data-stream protocol of a third party backup data product intended to be used to store the data-stream on the backup storage device."
+  },
+  {
+    "claim_number": 12,
+    "start_char_in_raw_claims": 3461,
+    "end_char_in_raw_claims": 3655,
+    "text": "12. The method of claim 10 , wherein the predetermined rule set is taken from a group of pre-determined rule sets, each set based on a data-stream protocol of a third party backup data product."
+  },
+  {
+    "claim_number": 13,
+    "start_char_in_raw_claims": 3655,
+    "end_char_in_raw_claims": 4411,
+    "text": "13. A method, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data being descriptive of the data of the data-stream; storing the management data in a searchable format in a database; receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party, wherein the method is carried out by a device that is transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device."
+  },
+  {
+    "claim_number": 14,
+    "start_char_in_raw_claims": 4411,
+    "end_char_in_raw_claims": 4620,
+    "text": "14. The method of claim 13 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network."
+  },
+  {
+    "claim_number": 15,
+    "start_char_in_raw_claims": 4620,
+    "end_char_in_raw_claims": 4700,
+    "text": "15. The method of claim 14 , wherein the communication network is the Internet."
+  },
+  {
+    "claim_number": 16,
+    "start_char_in_raw_claims": 4700,
+    "end_char_in_raw_claims": 6013,
+    "text": "16. A processor operable to execute a software program, the software program causing the processor to perform steps, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and storing the management data in a searchable format in a database wherein the steps carried out by the processor are such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device."
+  },
+  {
+    "claim_number": 17,
+    "start_char_in_raw_claims": 6013,
+    "end_char_in_raw_claims": 6360,
+    "text": "17. The processor of claim 16 , further comprising one of: (i) passing the data-stream to the backup storage device before the extraction step; (ii) passing the data-stream to the backup storage device substantially simultaneously with the extraction step; and (iii) passing the data-stream to the backup storage device after the extraction step."
+  },
+  {
+    "claim_number": 18,
+    "start_char_in_raw_claims": 6360,
+    "end_char_in_raw_claims": 6624,
+    "text": "18. The processor of claim 17 , further comprising: reading back data from the backup storage device after the data-stream has been passed to the backup storage device to re-create the data-stream; and performing the extraction step on the re-created data-stream."
+  },
+  {
+    "claim_number": 19,
+    "start_char_in_raw_claims": 6624,
+    "end_char_in_raw_claims": 6928,
+    "text": "19. The processor of claim 16 , wherein the source is taken from the group consisting of a computer server, a desktop computer, a laptop computer, a notebook computer, a personal digital assistant, and a source database, when the management data includes the identifier of the source of the data-stream."
+  },
+  {
+    "claim_number": 20,
+    "start_char_in_raw_claims": 6928,
+    "end_char_in_raw_claims": 7121,
+    "text": "20. The processor of claim 16 , wherein the volume is taken from the group consisting of computer disk drives and computer sub-drives, when the management data includes the volume information."
+  },
+  {
+    "claim_number": 21,
+    "start_char_in_raw_claims": 7121,
+    "end_char_in_raw_claims": 7347,
+    "text": "21. The processor of claim 16 , wherein a plurality of data-streams adhere to the same or different protocols, the steps further include converting the different protocols to a protocol supported by the backup storage device."
+  },
+  {
+    "claim_number": 22,
+    "start_char_in_raw_claims": 7347,
+    "end_char_in_raw_claims": 7563,
+    "text": "22. The processor of claim 16 , wherein the extraction step includes at least one of: (i) separating distinct data sets from the data-stream; and (ii) segregating types of data within the data sets into data groups."
+  },
+  {
+    "claim_number": 23,
+    "start_char_in_raw_claims": 7563,
+    "end_char_in_raw_claims": 7849,
+    "text": "23. The processor of claim 22 , wherein: the distinct data sets include at least one of file folders, data files, and types of data files; and the types of data include at least one of: text data, image data, audio data, graphic data, tabular data, hyperlink data, and executable data."
+  },
+  {
+    "claim_number": 24,
+    "start_char_in_raw_claims": 7849,
+    "end_char_in_raw_claims": 7971,
+    "text": "24. The processor of claim 23 , further comprising indexing at least one of the types of data to obtain keywords thereof."
+  },
+  {
+    "claim_number": 25,
+    "start_char_in_raw_claims": 7971,
+    "end_char_in_raw_claims": 8109,
+    "text": "25. The processor of claim 22 , further comprising using a predetermined rule set to recognize the distinct data sets of the data-stream."
+  },
+  {
+    "claim_number": 26,
+    "start_char_in_raw_claims": 8109,
+    "end_char_in_raw_claims": 8323,
+    "text": "26. The processor of claim 25 , wherein the predetermined rule set is based on a data-stream protocol of a third party backup data product intended to be used to store the data-stream on the backup storage device."
+  },
+  {
+    "claim_number": 27,
+    "start_char_in_raw_claims": 8323,
+    "end_char_in_raw_claims": 8520,
+    "text": "27. The processor of claim 25 , wherein the predetermined rule set is taken from a group of pre-determined rule sets, each set based on a data-stream protocol of a third party backup data product."
+  },
+  {
+    "claim_number": 28,
+    "start_char_in_raw_claims": 8520,
+    "end_char_in_raw_claims": 8820,
+    "text": "28. The processor of claim 16 , further comprising: receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party."
+  },
+  {
+    "claim_number": 29,
+    "start_char_in_raw_claims": 8820,
+    "end_char_in_raw_claims": 9032,
+    "text": "29. The processor of claim 28 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network."
+  },
+  {
+    "claim_number": 30,
+    "start_char_in_raw_claims": 9032,
+    "end_char_in_raw_claims": 9115,
+    "text": "30. The processor of claim 29 , wherein the communication network is the Internet."
+  },
+  {
+    "claim_number": 31,
+    "start_char_in_raw_claims": 9115,
+    "end_char_in_raw_claims": 10379,
+    "text": "31. An apparatus, comprising: means for receiving at least one data-stream intended for archiving on a backup storage device; means for extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and means for storing the management data in a searchable format in a database wherein the receiving, extracting, and storing actions are carried out such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device."
+  },
+  {
+    "claim_number": 32,
+    "start_char_in_raw_claims": 10379,
+    "end_char_in_raw_claims": 11694,
+    "text": "32. A storage medium containing a software program, the program being capable of causing a processor to carry out actions, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and storing the management data in a searchable format in a database wherein the steps carried out by the processor such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device."
+  },
+  {
+    "claim_number": 33,
+    "start_char_in_raw_claims": 11694,
+    "end_char_in_raw_claims": 12046,
+    "text": "33. The storage medium of claim 32 , further comprising one of: (i) passing the data-stream to the backup storage device before the extraction step; (ii) passing the data-stream to the backup storage device substantially simultaneously with the extraction step; and (iii) passing the data-stream to the backup storage device after the extraction step."
+  },
+  {
+    "claim_number": 34,
+    "start_char_in_raw_claims": 12046,
+    "end_char_in_raw_claims": 12315,
+    "text": "34. The storage medium of claim 33 , further comprising: reading back data from the backup storage device after the data-stream has been passed to the backup storage device to re-create the data-stream; and performing the extraction step on the re-created data-stream."
+  },
+  {
+    "claim_number": 35,
+    "start_char_in_raw_claims": 12315,
+    "end_char_in_raw_claims": 12624,
+    "text": "35. The storage medium of claim 32 , wherein the source is taken from the group consisting of a computer server, a desktop computer, a laptop computer, a notebook computer, a personal digital assistant, and a source database, when the management data includes the identifier of the source of the data-stream."
+  },
+  {
+    "claim_number": 36,
+    "start_char_in_raw_claims": 12624,
+    "end_char_in_raw_claims": 12822,
+    "text": "36. The storage medium of claim 32 , wherein the volume is taken from the group consisting of computer disk drives and computer sub-drives, when the management data includes the volume information."
+  },
+  {
+    "claim_number": 37,
+    "start_char_in_raw_claims": 12822,
+    "end_char_in_raw_claims": 13047,
+    "text": "37. The storage medium of claim 32 , wherein a plurality of data-streams adhere to the same or different protocols, the actions include converting the different protocols to a protocol supported by the backup storage device."
+  },
+  {
+    "claim_number": 38,
+    "start_char_in_raw_claims": 13047,
+    "end_char_in_raw_claims": 13268,
+    "text": "38. The storage medium of claim 32 , wherein the extraction step includes at least one of: (i) separating distinct data sets from the data-stream; and (ii) segregating types of data within the data sets into data groups."
+  },
+  {
+    "claim_number": 39,
+    "start_char_in_raw_claims": 13268,
+    "end_char_in_raw_claims": 13559,
+    "text": "39. The storage medium of claim 38 , wherein: the distinct data sets include at least one of file folders, data files, and types of data files; and the types of data include at least one of: text data, image data, audio data, graphic data, tabular data, hyperlink data, and executable data."
+  },
+  {
+    "claim_number": 40,
+    "start_char_in_raw_claims": 13559,
+    "end_char_in_raw_claims": 13686,
+    "text": "40. The storage medium of claim 39 , further comprising indexing at least one of the types of data to obtain keywords thereof."
+  },
+  {
+    "claim_number": 41,
+    "start_char_in_raw_claims": 13686,
+    "end_char_in_raw_claims": 13829,
+    "text": "41. The storage medium of claim 38 , further comprising using a predetermined rule set to recognize the distinct data sets of the data-stream."
+  },
+  {
+    "claim_number": 42,
+    "start_char_in_raw_claims": 13829,
+    "end_char_in_raw_claims": 14048,
+    "text": "42. The storage medium of claim 41 , wherein the predetermined rule set is based on a data-stream protocol of a third party backup data product intended to be used to store the data-stream on the backup storage device."
+  },
+  {
+    "claim_number": 43,
+    "start_char_in_raw_claims": 14048,
+    "end_char_in_raw_claims": 14250,
+    "text": "43. The storage medium of claim 41 , wherein the predetermined rule set is taken from a group of pre-determined rule sets, each set based on a data-stream protocol of a third party backup data product."
+  },
+  {
+    "claim_number": 44,
+    "start_char_in_raw_claims": 14250,
+    "end_char_in_raw_claims": 14555,
+    "text": "44. The storage medium of claim 32 , further comprising: receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party."
+  },
+  {
+    "claim_number": 45,
+    "start_char_in_raw_claims": 14555,
+    "end_char_in_raw_claims": 14772,
+    "text": "45. The storage medium of claim 44 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network."
+  },
+  {
+    "claim_number": 46,
+    "start_char_in_raw_claims": 14772,
+    "end_char_in_raw_claims": 14860,
+    "text": "46. The storage medium of claim 45 , wherein the communication network is the Internet."
+  },
+  {
+    "claim_number": 47,
+    "start_char_in_raw_claims": 14860,
+    "end_char_in_raw_claims": 16272,
+    "text": "47. An apparatus, comprising: means for receiving at least one data-stream from one or more sources, the data-stream intended for archiving on a backup storage device; means for carrying out a storage router function as between the sources and the backup storage device; means for extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and means for storing the management data in a searchable format in a database wherein the actions of receiving, extracting, and storing are carried out such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device."
+  },
+  {
+    "claim_number": 48,
+    "start_char_in_raw_claims": 16272,
+    "end_char_in_raw_claims": 17677,
+    "text": "48. An apparatus, comprising: means for receiving at least one data-stream from one or more sources, the data-stream intended for archiving on a backup storage device; means for carrying out a server function as between the sources and the backup storage device; means for extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and means for storing the management data in a searchable format in a database, wherein the actions of receiving, extracting, and storing are carried out such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device."
+  },
+  {
+    "claim_number": 49,
+    "start_char_in_raw_claims": 17677,
+    "end_char_in_raw_claims": 19152,
+    "text": "49. A method, comprising: receiving at least one data-stream intended for archiving on a backup storage device; storing the data-stream to the backup storage device; after the data-stream has been stored on the backup storage device, reading the data stream out of the backup storage device and extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and storing the management data in a searchable format in a database, wherein the receiving, storing the data-stream, reading the data stream, extracting, and storing the management data is carried out by a device that is transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device."
+  }
+]

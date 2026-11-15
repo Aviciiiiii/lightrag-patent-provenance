@@ -1,0 +1,351 @@
+diff -ruN round3/official_parser_selective.py ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/official_parser_selective.py
+--- round3/official_parser_selective.py	2026-11-04 00:10:17
++++ ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/official_parser_selective.py	2026-11-05 03:29:10
+@@ -15,12 +15,10 @@
+ import logging
+ from pathlib import Path
+ import re
+-import subprocess
+ import types
+ 
+ ROOT=Path(__file__).resolve().parents[2]
+-SOURCE=ROOT/'src/LightRAG-v1.5.7'
+-EXPECTED_COMMIT='28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c'
++from parser_source import SOURCE, EXPECTED_COMMIT, verify_source
+ SELECTION=[
+  ('lightrag/_version.py',['__version__']),
+  ('lightrag/constants.py',['DEFAULT_ENTITY_NAME_MAX_LENGTH','DEFAULT_ENTITY_NAME_MAX_BYTES']),
+@@ -40,9 +38,8 @@
+ 
+ 
+ def load():
+-    commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=SOURCE,text=True).strip()
+-    assert commit==EXPECTED_COMMIT
+-    subprocess.run(['git','diff','--quiet','--',*[p for p,_ in SELECTION]],cwd=SOURCE,check=True)
++    source_check=verify_source([p for p,_ in SELECTION])
++    commit=source_check['official_commit']
+     ns={'__name__':'official_lightrag_parser_selective_control','re':re,'html':html,'asyncio':asyncio,'defaultdict':defaultdict,'logger':logging.getLogger('lightrag')}
+     selected=[]
+     for relative,names in SELECTION:
+@@ -52,6 +49,8 @@
+         mapping={name:node for node in tree.body for name in defined_names(node)}
+         for name in names:
+             node=mapping[name]
++            if hashlib.sha256(source.encode()).hexdigest()!=source_check['selected_file_sha256'][relative]:
++                raise RuntimeError('Official parser source changed after verification')
+             exact=ast.get_source_segment(source,node)
+             module=ast.Module(body=[node],type_ignores=[])
+             code=compile(module,str(path),'exec',flags=__future__.annotations.compiler_flag,dont_inherit=True)
+@@ -67,5 +66,5 @@
+     for name,value in ns.items():
+         if isinstance(value,types.FunctionType):check_code(name,value.__code__)
+     if unresolved:raise RuntimeError(f'Unresolved official parser dependencies: {unresolved}')
+-    metadata={'load_mode':'selective execution of unchanged official AST nodes; not normal package import','official_version':ns['__version__'],'official_commit':commit,'tracked_source_diff_empty':True,'selected_nodes':selected,'all_loaded_global_dependencies_resolved':True,'injected_standard_library_dependencies':['re','html','asyncio','collections.defaultdict'],'logger_binding':'logging.getLogger("lightrag"), same name as official logger; no semantic adapter','functions_rewritten':False,'normal_package_import_blocker':'Local module reads stalled while importing unrelated GraphML/networkx setup; normal import interrupted before parsing.'}
++    metadata={**source_check,'load_mode':'selective execution of unchanged official AST nodes; not normal package import','official_version':ns['__version__'],'official_commit':commit,'tracked_source_diff_empty':True,'selected_nodes':selected,'all_loaded_global_dependencies_resolved':True,'injected_standard_library_dependencies':['re','html','asyncio','collections.defaultdict'],'logger_binding':'logging.getLogger("lightrag"), same name as official logger; no semantic adapter','functions_rewritten':False,'normal_package_import_performed':False,'historical_loader_note':'Original experiment used selective AST loading after unrelated GraphML/networkx startup stalled; this does not describe a new import test.'}
+     return ns,metadata
+diff -ruN round3/parse_chunk_outputs.py ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/parse_chunk_outputs.py
+--- round3/parse_chunk_outputs.py	2026-11-04 00:10:17
++++ ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/parse_chunk_outputs.py	2026-11-05 03:29:10
+@@ -17,7 +17,7 @@
+ 
+ ROOT = Path(__file__).resolve().parents[2]
+ ROUND = ROOT / "round3"
+-SOURCE = ROOT / "src/LightRAG-v1.5.7"
++from parser_source import SOURCE, EXPECTED_COMMIT
+ os.environ["TIKTOKEN_CACHE_DIR"] = str(ROOT / "tiktoken_cache")
+ sys.path.insert(0, str(SOURCE))
+ 
+@@ -62,6 +62,8 @@
+ 
+ async def main():
+     conditions = json.loads((ROUND / "evidence/chunk_conditions.json").read_text())
++    if conditions.get("official_commit") != EXPECTED_COMMIT:
++        raise RuntimeError("Frozen chunk conditions require a different official commit")
+     expected = [(name, rep, chunk, ROUND / "results" / f"chunk_{name}_r{rep}_c{chunk}.json")
+                 for name in ("SAME", "CROSS") for rep in range(1, 4) for chunk in (0, 1)]
+     missing = [str(path) for _, _, _, path in expected if not path.exists()]
+diff -ruN round3/parser_source.py ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/parser_source.py
+--- round3/parser_source.py	1969-12-31 16:00:00
++++ ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/parser_source.py	2026-11-05 03:29:10
+@@ -0,0 +1,54 @@
++"""One pinned official Git source for both B-group offline parser wrappers."""
++import hashlib
++import os
++from pathlib import Path
++import subprocess
++
++ROOT = Path(__file__).resolve().parents[2]
++EXPECTED_COMMIT = '28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c'
++SOURCE = Path(os.environ.get('LIGHTRAG_REPRO_SOURCE',
++                            str(ROOT.parent / 'LightRAG_PINNED_28ff1b05'))).expanduser().resolve()
++OFFICIAL_ORIGINS = {'https://github.com/HKUDS/LightRAG.git',
++                    'https://github.com/HKUDS/LightRAG',
++                    'git@github.com:HKUDS/LightRAG.git'}
++
++
++def git_read(*args):
++    # Ignore caller repository overrides; do not refresh the index or run fsmonitor.
++    env = {key: value for key, value in os.environ.items() if not key.startswith('GIT_')}
++    env.update(GIT_OPTIONAL_LOCKS='0', GIT_NO_REPLACE_OBJECTS='1')
++    result = subprocess.run(
++        ['git', '--no-optional-locks', '-c', 'core.fsmonitor=false',
++         '-c', 'core.untrackedCache=false', '-C', str(SOURCE), *args],
++        env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=30)
++    if result.returncode:
++        raise RuntimeError('Pinned official Git checkout check failed: ' + args[0])
++    return result.stdout
++
++
++def verify_source(selected_files):
++    if not SOURCE.is_dir():
++        raise RuntimeError('Pinned official source directory is missing')
++    top = Path(git_read('rev-parse', '--show-toplevel').decode().strip()).resolve()
++    if top != SOURCE:
++        raise RuntimeError('SOURCE must be the Git checkout root, not an unpacked subdirectory')
++    commit = git_read('rev-parse', '--verify', 'HEAD^{commit}').decode().strip()
++    if commit != EXPECTED_COMMIT:
++        raise RuntimeError('Official parser requires the exact pinned commit')
++    if git_read('remote', 'get-url', 'origin').decode().strip() not in OFFICIAL_ORIGINS:
++        raise RuntimeError('Source origin must be the official HKUDS/LightRAG repository')
++    if git_read('status', '--porcelain=v1', '-z', '--untracked-files=all'):
++        raise RuntimeError('Official checkout has staged, unstaged or untracked changes')
++    hashes = {}
++    for relative in selected_files:
++        path = SOURCE / relative
++        if path.is_symlink() or not path.is_file() or not path.resolve().is_relative_to(SOURCE):
++            raise RuntimeError('Official parser source must be a regular in-checkout file: ' + relative)
++        data = path.read_bytes()
++        if data != git_read('show', EXPECTED_COMMIT + ':' + relative):
++            raise RuntimeError('Official parser source differs from the pinned Git blob: ' + relative)
++        hashes[relative] = hashlib.sha256(data).hexdigest()
++    return {'official_source_root': str(SOURCE), 'official_commit': commit,
++            'git_worktree_clean': True, 'official_origin_verified': True,
++            'selected_files_equal_pinned_git_blobs': True,
++            'selected_file_sha256': hashes}
+diff -ruN round3/repro_runtime.py ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/repro_runtime.py
+--- round3/repro_runtime.py	1969-12-31 16:00:00
++++ ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/repro_runtime.py	2026-11-05 04:24:34
+@@ -0,0 +1,141 @@
++"""Persistent run session. Importing this module never creates or resets a run."""
++import argparse
++from dataclasses import dataclass
++import datetime as dt
++import fcntl
++import json
++import os
++from pathlib import Path
++import tempfile
++
++ROOT = Path(__file__).resolve().parents[2]
++GROUP = 'B'
++ROUND = ROOT / 'round3'
++QUERY_MINUTES = 60
++SESSION_PATH = ROOT / 'config/repro_session.json'
++DEFAULT_CONFIG = Path('<EXTERNAL_DISK>/LightRAG/secrets/.env')
++OUTPUT_DIRS = ['results', 'logs', 'report']
++
++
++@dataclass(frozen=True)
++class Runtime:
++    start: dt.datetime
++    query_deadline: dt.datetime
++    deadline: dt.datetime
++    watchdog_deadline: dt.datetime
++    config_path: Path
++
++
++def utc_time(value):
++    if not isinstance(value, str) or not value.strip():
++        raise RuntimeError('开始时间必须是带时区的 ISO-8601 时间。')
++    try:
++        result = dt.datetime.fromisoformat(value.strip().replace('Z', '+00:00'))
++    except ValueError:
++        raise RuntimeError('开始时间格式无效；已有会话不会被重建。') from None
++    if result.tzinfo is None or result.utcoffset() is None:
++        raise RuntimeError('开始时间必须包含时区。')
++    return result.astimezone(dt.timezone.utc)
++
++
++def _validate(data, require_active=True):
++    required = {'schema_version', 'group', 'root', 'start_utc', 'config_path'}
++    if not isinstance(data, dict) or not required.issubset(data) or type(data['schema_version']) is not int or data['schema_version'] != 1:
++        raise RuntimeError('会话文件格式无效；请保留文件并检查，不会自动重建。')
++    if data['group'] != GROUP or data['root'] != str(ROOT):
++        raise RuntimeError('会话属于其他运行副本；不能复制旧会话继续运行。')
++    start = utc_time(data['start_utc'])
++    if not isinstance(data['config_path'], str) or not data['config_path'].strip() or not Path(data['config_path']).expanduser().is_absolute():
++        raise RuntimeError('会话中的配置路径无效；已有会话不会被重建。')
++    config = Path(data['config_path']).expanduser().resolve()
++    explicit_start = os.environ.get('LIGHTRAG_REPRO_START_UTC', '').strip()
++    if explicit_start and utc_time(explicit_start) != start:
++        raise RuntimeError('环境变量开始时间与已保存会话冲突。取消 LIGHTRAG_REPRO_START_UTC 后可读取原会话；不能延长窗口。')
++    explicit_config = os.environ.get('LIGHTRAG_REPRO_CONFIG', '').strip()
++    if explicit_config and Path(explicit_config).expanduser().resolve() != config:
++        raise RuntimeError('配置路径与已保存会话不一致；不会更换当前运行的配置。')
++    runtime = Runtime(start, start + dt.timedelta(minutes=QUERY_MINUTES),
++                      start + dt.timedelta(minutes=120), start + dt.timedelta(minutes=105), config)
++    now = dt.datetime.now(dt.timezone.utc)
++    if require_active and now < runtime.start:
++        raise RuntimeError('会话开始时间在未来，拒绝运行。')
++    if require_active and now >= runtime.deadline:
++        raise RuntimeError('本轮120分钟窗口已结束；保留会话和结果，另建新运行副本。不会自动重置时间。')
++    if require_active and not config.is_file():
++        raise RuntimeError('找不到会话指定的配置文件，请检查外置硬盘；无需复制密钥。')
++    return runtime
++
++
++def _read(require_active=True):
++    try:
++        data = json.loads(SESSION_PATH.read_text())
++    except (OSError, ValueError):
++        raise RuntimeError('无法读取已有会话文件；保留文件并检查，不会自动重建。') from None
++    return _validate(data, require_active)
++
++
++def _check_empty_outputs():
++    for directory in OUTPUT_DIRS:
++        path = ROUND / directory
++        if path.is_file() or any(p.is_file() or p.is_symlink() for p in path.rglob('*')):
++            raise RuntimeError('已有活动输出但没有会话，拒绝重新计时。请保留结果并检查：' + str(path))
++    if (ROUND / 'evidence/public_runtime_config.json').exists():
++        raise RuntimeError('已有运行配置证据但没有会话，拒绝重新计时。')
++
++
++def get_runtime(create=False, require_active=True):
++    """Create only for an explicit run entrypoint; otherwise read the fixed session."""
++    if SESSION_PATH.exists():
++        runtime = _read(require_active)
++    elif not create:
++        raise RuntimeError('本副本尚未开始运行。请按 START_HERE.txt 执行首个运行命令；无需手动设置开始时间。')
++    else:
++        SESSION_PATH.parent.mkdir(parents=True, exist_ok=True)
++        lock_fd = os.open(SESSION_PATH.with_suffix('.lock'), os.O_CREAT | os.O_RDWR, 0o600)
++        with os.fdopen(lock_fd, 'a+') as lock:
++            fcntl.flock(lock, fcntl.LOCK_EX)
++            if SESSION_PATH.exists():
++                runtime = _read(require_active)
++            else:
++                _check_empty_outputs()
++                config = Path(os.environ.get('LIGHTRAG_REPRO_CONFIG') or DEFAULT_CONFIG).expanduser().resolve()
++                raw_start = os.environ.get('LIGHTRAG_REPRO_START_UTC', '').strip()
++                start = utc_time(raw_start) if raw_start else dt.datetime.now(dt.timezone.utc)
++                data = {'schema_version': 1, 'group': GROUP, 'root': str(ROOT),
++                        'start_utc': start.isoformat(), 'config_path': str(config)}
++                runtime = _validate(data, require_active=True)
++                fd, temp_name = tempfile.mkstemp(prefix='.repro-session-', dir=SESSION_PATH.parent)
++                try:
++                    with os.fdopen(fd, 'w') as output:
++                        json.dump(data, output, ensure_ascii=False, indent=2)
++                        output.write('\n');output.flush();os.fsync(output.fileno())
++                    try:
++                        os.link(temp_name, SESSION_PATH)  # Never overwrite another session.
++                    except FileExistsError:
++                        runtime = _read(require_active)
++                finally:
++                    Path(temp_name).unlink(missing_ok=True)
++    os.environ.setdefault('LIGHTRAG_REPRO_START_UTC', runtime.start.isoformat())
++    os.environ.setdefault('LIGHTRAG_REPRO_CONFIG', str(runtime.config_path))
++    return runtime
++
++
++def main():
++    parser = argparse.ArgumentParser(description='只查看本组会话状态；不创建会话、不调用 API。')
++    parser.add_argument('action', nargs='?', choices=['status'], default='status')
++    parser.parse_args()
++    if not SESSION_PATH.exists():
++        print(json.dumps({'state': 'not_started', 'group': GROUP, 'session_file': str(SESSION_PATH),
++                          'instruction': '直接执行 START_HERE.txt 中的首个运行命令。该命令会调用真实 API；首次运行会固定开始时间。'}, ensure_ascii=False, indent=2))
++        return
++    runtime = get_runtime(require_active=False)
++    now = dt.datetime.now(dt.timezone.utc)
++    state = 'expired' if now >= runtime.deadline else 'future' if now < runtime.start else 'active'
++    print(json.dumps({'state': state, 'group': GROUP, 'start_utc': runtime.start.isoformat(),
++                      'query_deadline_utc': runtime.query_deadline.isoformat(),
++                      'deadline_utc': runtime.deadline.isoformat(), 'config_file_exists': runtime.config_path.is_file(),
++                      'session_file': str(SESSION_PATH)}, ensure_ascii=False, indent=2))
++
++
++if __name__ == '__main__':
++    main()
+diff -ruN round3/run_ablation.py ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/run_ablation.py
+--- round3/run_ablation.py	2026-11-04 00:10:17
++++ ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/run_ablation.py	2026-11-05 04:24:34
+@@ -1,4 +1,12 @@
+ """Matched small-sample generation-only ablation; no retrieval/index mutation."""
++
++if __name__ == '__main__':
++    import argparse
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.parse_args()
++    from repro_runtime import get_runtime
++    get_runtime(create=True)
++
+ import asyncio, hashlib, json, signal
+ from pathlib import Path
+ from safe_api import ROOT, ROUND, SafeAPI, now, write_json, DEADLINE
+diff -ruN round3/run_chunk_control.py ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/run_chunk_control.py
+--- round3/run_chunk_control.py	2026-11-04 00:10:17
++++ ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/run_chunk_control.py	2026-11-05 04:24:34
+@@ -1,4 +1,12 @@
+ """Artificial boundary control with equal source text and two calls per condition."""
++
++if __name__ == '__main__':
++    import argparse
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.parse_args()
++    from repro_runtime import get_runtime
++    get_runtime(create=True)
++
+ import asyncio, json, signal
+ from safe_api import ROOT, ROUND, SafeAPI, now, write_json, DEADLINE
+ 
+diff -ruN round3/safe_api.py ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/safe_api.py
+--- round3/safe_api.py	2026-11-04 00:10:17
++++ ../../../experiments/02_provenance_ablation_and_chunk_control/scripts/safe_api.py	2026-11-05 04:24:34
+@@ -15,9 +15,12 @@
+ # Direct httpx transport preserves the OpenAI-compatible JSON request; no SDK retries or heavyweight imports.
+ # Generation-only controls do not instantiate LightRAG; official parser is used in the separate extraction evaluator.
+ 
+-START=dt.datetime.fromisoformat('2026-10-29T16:01:14+00:00')
+-QUERY_DEADLINE=dt.datetime.fromisoformat('2026-10-29T17:01:14+00:00')
+-DEADLINE=dt.datetime.fromisoformat('2026-10-29T18:01:14+00:00')
++from repro_runtime import get_runtime
++_runtime=get_runtime()
++START=_runtime.start
++QUERY_DEADLINE=_runtime.query_deadline
++DEADLINE=_runtime.deadline
++CONFIG_PATH=_runtime.config_path
+ CAP_CNY=10.0
+ INPUT_CNY_PER_M=2.0
+ OUTPUT_CNY_PER_M=8.0
+@@ -36,7 +39,7 @@
+ class SafeAPI:
+     def __init__(self,stage):
+         # The only credential read. Values remain in process memory and clients.
+-        cfg=dotenv_values('<EXTERNAL_DISK>/LightRAG/secrets/.env')
++        cfg=dotenv_values(str(CONFIG_PATH))
+         required=['LLM_BINDING_HOST','LLM_MODEL','LLM_BINDING_API_KEY','EMBEDDING_BINDING_HOST','EMBEDDING_MODEL','EMBEDDING_BINDING_API_KEY']
+         if any(not cfg.get(k) for k in required):raise ValueError('required configuration field missing')
+         for field in ['LLM_BINDING_HOST','EMBEDDING_BINDING_HOST']:
+@@ -53,15 +56,19 @@
+         self.lock=asyncio.Lock();self.semaphore=asyncio.Semaphore(2)
+         self.ledger_path=ROUND/'results/cost_ledger.json'
+         self.ledger=json.loads(self.ledger_path.read_text()) if self.ledger_path.exists() else {
+-            'currency':'CNY','hard_cap_cny':CAP_CNY,'budget_conversion_cny_per_usd':4,
++            'run_start_utc':START.isoformat(),'currency':'CNY','hard_cap_cny':CAP_CNY,'budget_conversion_cny_per_usd':4,
+             'note':'Conservative price estimate, not provider invoice. Peak rates; no cache discount. Unknown outcomes retain reservation.',
+             'estimated_observed_cost_cny':0.0,'reserved_unknown_cny':0.0,'calls':[]}
++        if self.ledger.get('run_start_utc')!=START.isoformat():
++            raise RuntimeError('Cost ledger belongs to a different or unknown run session; refusing to continue')
+         self.public={'provider':'SiliconFlow','host':'https://api.siliconflow.cn/v1','llm_model':self.llm_model,
+                      'embedding_model':self.embedding_model,'embedding_dim':self.dim,'embedding_token_limit':self.embedding_token_limit,
+-                     'client_max_retries':0,'enable_thinking':False,'deadline_utc':DEADLINE.isoformat(),'hard_cap_cny':CAP_CNY}
++                     'client_max_retries':0,'enable_thinking':False,'start_utc':START.isoformat(),
++                     'query_deadline_utc':QUERY_DEADLINE.isoformat(),'deadline_utc':DEADLINE.isoformat(),'hard_cap_cny':CAP_CNY}
+         write_json(ROUND/'evidence/public_runtime_config.json',self.public)
+ 
+     def check_deadline(self):
++        if now()<START:raise RuntimeError('experiment shared start is in the future')
+         if now()>=DEADLINE:raise TimeoutError('experiment hard deadline reached')
+ 
+     async def reserve(self,kind,reservation):

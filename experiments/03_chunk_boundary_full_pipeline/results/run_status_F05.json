@@ -1,0 +1,254 @@
+{
+  "started_utc": "2026-10-30T03:33:09.150537+00:00",
+  "official_version": "1.5.7",
+  "groups": [
+    "F05"
+  ],
+  "runs": [
+    {
+      "run_id": "F05_A_r1",
+      "group": "F05",
+      "condition": "A",
+      "repeat": 1,
+      "scope": "full_round2_document",
+      "started_utc": "2026-10-30T03:33:09.150949+00:00",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F05_A_r1",
+      "workspace": "patent_r4_f05_a_r1",
+      "no_reused_extraction_or_answer_cache": true,
+      "embedding_cache_reused": false,
+      "publication_number": "US8069128B2",
+      "index_call_id_range": [
+        110,
+        122
+      ],
+      "doc_counts": {
+        "pending": 0,
+        "parsing": 0,
+        "analyzing": 0,
+        "processing": 0,
+        "preprocessed": 0,
+        "processed": 1,
+        "failed": 0,
+        "all": 1
+      },
+      "graph_counts": {
+        "nodes": 30,
+        "edges": 43
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "natural_status": "success",
+      "natural_answer_generated": true,
+      "finished_utc": "2026-10-30T03:33:51.107976+00:00",
+      "cumulative_conservative_cost_cny": 0.450896
+    },
+    {
+      "run_id": "F05_B_r1",
+      "group": "F05",
+      "condition": "B",
+      "repeat": 1,
+      "scope": "full_round2_document",
+      "started_utc": "2026-10-30T03:33:51.109817+00:00",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F05_B_r1",
+      "workspace": "patent_r4_f05_b_r1",
+      "no_reused_extraction_or_answer_cache": true,
+      "embedding_cache_reused": false,
+      "publication_number": "US8069128B2",
+      "index_call_id_range": [
+        127,
+        142
+      ],
+      "doc_counts": {
+        "pending": 0,
+        "parsing": 0,
+        "analyzing": 0,
+        "processing": 0,
+        "preprocessed": 0,
+        "processed": 1,
+        "failed": 0,
+        "all": 1
+      },
+      "graph_counts": {
+        "nodes": 33,
+        "edges": 54
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "natural_status": "success",
+      "natural_answer_generated": true,
+      "finished_utc": "2026-10-30T03:34:48.350943+00:00",
+      "cumulative_conservative_cost_cny": 0.5245520000000001
+    },
+    {
+      "run_id": "F05_B_r2",
+      "group": "F05",
+      "condition": "B",
+      "repeat": 2,
+      "scope": "full_round2_document",
+      "started_utc": "2026-10-30T03:34:48.351815+00:00",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F05_B_r2",
+      "workspace": "patent_r4_f05_b_r2",
+      "no_reused_extraction_or_answer_cache": true,
+      "embedding_cache_reused": false,
+      "publication_number": "US8069128B2",
+      "index_call_id_range": [
+        147,
+        160
+      ],
+      "doc_counts": {
+        "pending": 0,
+        "parsing": 0,
+        "analyzing": 0,
+        "processing": 0,
+        "preprocessed": 0,
+        "processed": 1,
+        "failed": 0,
+        "all": 1
+      },
+      "graph_counts": {
+        "nodes": 32,
+        "edges": 47
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "natural_status": "success",
+      "natural_answer_generated": true,
+      "finished_utc": "2026-10-30T03:35:39.244086+00:00",
+      "cumulative_conservative_cost_cny": 0.594636
+    },
+    {
+      "run_id": "F05_A_r2",
+      "group": "F05",
+      "condition": "A",
+      "repeat": 2,
+      "scope": "full_round2_document",
+      "started_utc": "2026-10-30T03:35:39.245610+00:00",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F05_A_r2",
+      "workspace": "patent_r4_f05_a_r2",
+      "no_reused_extraction_or_answer_cache": true,
+      "embedding_cache_reused": false,
+      "publication_number": "US8069128B2",
+      "index_call_id_range": [
+        165,
+        176
+      ],
+      "doc_counts": {
+        "pending": 0,
+        "parsing": 0,
+        "analyzing": 0,
+        "processing": 0,
+        "preprocessed": 0,
+        "processed": 1,
+        "failed": 0,
+        "all": 1
+      },
+      "graph_counts": {
+        "nodes": 25,
+        "edges": 38
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "natural_status": "success",
+      "natural_answer_generated": true,
+      "finished_utc": "2026-10-30T03:36:13.921037+00:00",
+      "cumulative_conservative_cost_cny": 0.651294
+    },
+    {
+      "run_id": "F05_A_r3",
+      "group": "F05",
+      "condition": "A",
+      "repeat": 3,
+      "scope": "full_round2_document",
+      "started_utc": "2026-10-30T03:36:13.922586+00:00",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F05_A_r3",
+      "workspace": "patent_r4_f05_a_r3",
+      "no_reused_extraction_or_answer_cache": true,
+      "embedding_cache_reused": false,
+      "publication_number": "US8069128B2",
+      "index_call_id_range": [
+        181,
+        191
+      ],
+      "doc_counts": {
+        "pending": 0,
+        "parsing": 0,
+        "analyzing": 0,
+        "processing": 0,
+        "preprocessed": 0,
+        "processed": 1,
+        "failed": 0,
+        "all": 1
+      },
+      "graph_counts": {
+        "nodes": 24,
+        "edges": 37
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "natural_status": "success",
+      "natural_answer_generated": true,
+      "finished_utc": "2026-10-30T03:36:50.016105+00:00",
+      "cumulative_conservative_cost_cny": 0.70596
+    },
+    {
+      "run_id": "F05_B_r3",
+      "group": "F05",
+      "condition": "B",
+      "repeat": 3,
+      "scope": "full_round2_document",
+      "started_utc": "2026-10-30T03:36:50.017721+00:00",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F05_B_r3",
+      "workspace": "patent_r4_f05_b_r3",
+      "no_reused_extraction_or_answer_cache": true,
+      "embedding_cache_reused": false,
+      "publication_number": "US8069128B2",
+      "index_call_id_range": [
+        196,
+        211
+      ],
+      "doc_counts": {
+        "pending": 0,
+        "parsing": 0,
+        "analyzing": 0,
+        "processing": 0,
+        "preprocessed": 0,
+        "processed": 1,
+        "failed": 0,
+        "all": 1
+      },
+      "graph_counts": {
+        "nodes": 36,
+        "edges": 50
+      },
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "natural_status": "success",
+      "natural_answer_generated": true,
+      "finished_utc": "2026-10-30T03:37:43.445634+00:00",
+      "cumulative_conservative_cost_cny": 0.77782
+    }
+  ],
+  "status": "completed",
+  "settings": {
+    "mode": "mix",
+    "stream": false,
+    "include_references": true,
+    "enable_rerank": false,
+    "top_k": 12,
+    "chunk_top_k": 8,
+    "max_entity_tokens": 2000,
+    "max_relation_tokens": 2000,
+    "max_total_tokens": 8000,
+    "user_prompt": "Use only retrieved evidence. State the patent publication number and the exact Claim number only when present in the evidence. Quote the supporting wording exactly, keeping each quotation short. Distinguish document facts from comparisons and inference. If evidence is insufficient, state what is missing. Do not invent links between patents. Answer in English in at most 350 words and preserve source references."
+  },
+  "same_original_model_and_embedding": true,
+  "fresh_index_per_run": true,
+  "natural_retrieval_scope": "one complete target document per full group; minimalgroup clippedclaims only; no20docbackgroundcorpus",
+  "finished_utc": "2026-10-30T03:37:43.446531+00:00"
+}

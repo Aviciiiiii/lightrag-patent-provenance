@@ -1,0 +1,505 @@
+{
+  "audit_id": "N013",
+  "node_id": "Characteristic",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两来源均把Characteristic用作可测量/可描述的属性：一类用于广告用户兴趣与关键词权重，另一类用于邮件交流与关系强度。属性所属对象和取值不同，但都保留attribute这一共同宽类语义；没有证据要求它们是同一个特征实例、同一特征向量或相同计算规则。",
+  "class_instance_interpretation_zh": "Concept宽类“属性/特征”，不是某个具体变量实例。可把邮件频率与广告时段视为不同属性类型，现有合并描述以SEP保留不同场景；不能因具体维度不相同就判定语义错合。",
+  "source_assessments": [
+    {
+      "publication_number": "US10778629B2",
+      "evidence_quote": "the characteristic comprises at least one selected from a group consisting of interaction frequency, interaction type, and number of communication participants",
+      "claim_or_section": "Claim 13",
+      "source_chunk_ids": [
+        "US10778629B2-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US10778629B2-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_chunk": true,
+        "exact_contiguous_in_saved_claim": true,
+        "claims_file": "data/claims/US10778629B2.json",
+        "claim_number": 13,
+        "claim_char_start": 37,
+        "chunk_char_starts": {
+          "US10778629B2-chunk-001": 181
+        }
+      },
+      "role_zh": "邮件交互的属性（频率、类型、参与人数及时间/体量/双向比率）；各属性可赋权以估计用户关系强度。",
+      "extraction_description_support": "Claim13/14列具体属性，19/20/21关联其他通信媒介并支持赋权；原抽取entity和全部6条关系与所读chunk相符。",
+      "raw_extraction_records_reviewed": [
+        {
+          "chunk_id": "US10778629B2-chunk-001",
+          "content_sha256": "9c08affa61a10a781ad7e194ca432d33e618652662386c29953015f69b28cc9c",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 6,
+              "raw_line": "entity<|#|>Characteristic<|#|>Concept<|#|>Attributes of e-mail exchanges between pairs of users, including interaction frequency, interaction type, number of communication participants, time between interactions, time since first interaction, time since last interaction, interaction volume, and ratio of source to target versus target to source interactions.",
+              "fields": [
+                "entity",
+                "Characteristic",
+                "Concept",
+                "Attributes of e-mail exchanges between pairs of users, including interaction frequency, interaction type, number of communication participants, time between interactions, time since first interaction, time since last interaction, interaction volume, and ratio of source to target versus target to source interactions."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 31,
+              "raw_line": "relation<|#|>Characteristic<|#|>E-Mail Exchange<|#|>describes<|#|>The characteristics are attributes of e-mail exchanges between pairs of users, such as interaction frequency, interaction type, and time between interactions.",
+              "fields": [
+                "relation",
+                "Characteristic",
+                "E-Mail Exchange",
+                "describes",
+                "The characteristics are attributes of e-mail exchanges between pairs of users, such as interaction frequency, interaction type, and time between interactions."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 32,
+              "raw_line": "relation<|#|>Weight<|#|>Characteristic<|#|>assigned to<|#|>A weight is assigned to each of the plurality of characteristics for each pair of users.",
+              "fields": [
+                "relation",
+                "Weight",
+                "Characteristic",
+                "assigned to",
+                "A weight is assigned to each of the plurality of characteristics for each pair of users."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 54,
+              "raw_line": "relation<|#|>Characteristic<|#|>Calendar<|#|>associated with<|#|>Characteristics of e-mail exchanges between pairs of users may be further associated with the calendar medium.",
+              "fields": [
+                "relation",
+                "Characteristic",
+                "Calendar",
+                "associated with",
+                "Characteristics of e-mail exchanges between pairs of users may be further associated with the calendar medium."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 55,
+              "raw_line": "relation<|#|>Characteristic<|#|>Instant Messaging<|#|>associated with<|#|>Characteristics of e-mail exchanges between pairs of users may be further associated with the instant messaging medium.",
+              "fields": [
+                "relation",
+                "Characteristic",
+                "Instant Messaging",
+                "associated with",
+                "Characteristics of e-mail exchanges between pairs of users may be further associated with the instant messaging medium."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 56,
+              "raw_line": "relation<|#|>Characteristic<|#|>SMS<|#|>associated with<|#|>Characteristics of e-mail exchanges between pairs of users may be further associated with the SMS medium.",
+              "fields": [
+                "relation",
+                "Characteristic",
+                "SMS",
+                "associated with",
+                "Characteristics of e-mail exchanges between pairs of users may be further associated with the SMS medium."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 57,
+              "raw_line": "relation<|#|>Characteristic<|#|>Phone<|#|>associated with<|#|>Characteristics of e-mail exchanges between pairs of users may be further associated with the phone medium.",
+              "fields": [
+                "relation",
+                "Characteristic",
+                "Phone",
+                "associated with",
+                "Characteristics of e-mail exchanges between pairs of users may be further associated with the phone medium."
+              ]
+            }
+          ]
+        }
+      ],
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics.<SEP>A weight is assigned to each of the plurality of characteristics for each pair of users.",
+          "keywords": "assigned to,based on",
+          "source_id": "US9304738B1-chunk-000<SEP>US10778629B2-chunk-001",
+          "file_path": "US9304738B1.txt<SEP>US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Weight",
+          "target": "Characteristic",
+          "edge_index": 173,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2",
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The characteristics are attributes of e-mail exchanges between pairs of users, such as interaction frequency, interaction type, and time between interactions.",
+          "keywords": "describes",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Characteristic",
+          "target": "E-Mail Exchange",
+          "edge_index": 211,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Characteristics of e-mail exchanges between pairs of users may be further associated with the calendar medium.",
+          "keywords": "associated with",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Characteristic",
+          "target": "Calendar",
+          "edge_index": 212,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Characteristics of e-mail exchanges between pairs of users may be further associated with the instant messaging medium.",
+          "keywords": "associated with",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Characteristic",
+          "target": "Instant Messaging",
+          "edge_index": 213,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Characteristics of e-mail exchanges between pairs of users may be further associated with the SMS medium.",
+          "keywords": "associated with",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Characteristic",
+          "target": "SMS",
+          "edge_index": 214,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Characteristics of e-mail exchanges between pairs of users may be further associated with the phone medium.",
+          "keywords": "associated with",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Characteristic",
+          "target": "Phone",
+          "edge_index": 215,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "evidence_quote": "determining the weight of each of the plurality of keywords based on a characteristic associated with the user interest of the first user",
+      "claim_or_section": "Claim 6",
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000"
+      ],
+      "quote_source_chunk_ids": [
+        "US9304738B1-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_chunk": true,
+        "exact_contiguous_in_saved_claim": true,
+        "claims_file": "data/claims/US9304738B1.json",
+        "claim_number": 6,
+        "claim_char_start": 47,
+        "chunk_char_starts": {
+          "US9304738B1-chunk-000": 4582
+        }
+      },
+      "role_zh": "广告用户兴趣的属性，用于关键词权重；可为时间、日期、页面位置、金钱或表现属性。",
+      "extraction_description_support": "Claim6完整列出temporal/day/content-slot/monetary/performance，支持原实体及Weight基于Characteristic的抽取。",
+      "raw_extraction_records_reviewed": [
+        {
+          "chunk_id": "US9304738B1-chunk-000",
+          "content_sha256": "bf269ef3cfec2756c71ada433b655ddffc3b98b38e15a717a03facdb173d7546",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 27,
+              "raw_line": "entity<|#|>Characteristic<|#|>Concept<|#|>An attribute associated with user interest used in determining keyword weights, including temporal, day, web page content slot, monetary, and performance characteristics.",
+              "fields": [
+                "entity",
+                "Characteristic",
+                "Concept",
+                "An attribute associated with user interest used in determining keyword weights, including temporal, day, web page content slot, monetary, and performance characteristics."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 53,
+              "raw_line": "relation<|#|>Weight<|#|>Characteristic<|#|>based on<|#|>Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics.",
+              "fields": [
+                "relation",
+                "Weight",
+                "Characteristic",
+                "based on",
+                "Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics."
+              ]
+            }
+          ]
+        }
+      ],
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics.<SEP>A weight is assigned to each of the plurality of characteristics for each pair of users.",
+          "keywords": "assigned to,based on",
+          "source_id": "US9304738B1-chunk-000<SEP>US10778629B2-chunk-001",
+          "file_path": "US9304738B1.txt<SEP>US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Weight",
+          "target": "Characteristic",
+          "edge_index": 173,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2",
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 6,
+    "observed_unsupported_edge": false,
+    "details_zh": "6条邻边均审阅。173是实际多源Weight—Characteristic边，两段描述分别是广告关键词权重基于兴趣属性、邮件属性被赋权；两个句子分别有对应来源，不要求每篇专利支持整段合并描述。211–215均来自邮件专利，未观察到把广告特征直接声明为邮件特征的无来源边；可能的无作用域路径组合仅属风险，不是已发生污染。",
+    "edge_indices": [
+      173,
+      211,
+      212,
+      213,
+      214,
+      215
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 173,
+        "source": "Weight",
+        "target": "Characteristic",
+        "source_id": "US9304738B1-chunk-000<SEP>US10778629B2-chunk-001",
+        "canonical_publications": [
+          "US10778629B2",
+          "US9304738B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9304738B1",
+            "claim_numbers": [
+              6
+            ]
+          },
+          {
+            "publication_number": "US10778629B2",
+            "claim_numbers": [
+              20,
+              21
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 211,
+        "source": "Characteristic",
+        "target": "E-Mail Exchange",
+        "source_id": "US10778629B2-chunk-001",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US10778629B2",
+            "claim_numbers": [
+              13,
+              14
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 212,
+        "source": "Characteristic",
+        "target": "Calendar",
+        "source_id": "US10778629B2-chunk-001",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US10778629B2",
+            "claim_numbers": [
+              19,
+              20,
+              21
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 213,
+        "source": "Characteristic",
+        "target": "Instant Messaging",
+        "source_id": "US10778629B2-chunk-001",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US10778629B2",
+            "claim_numbers": [
+              19,
+              20,
+              21
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 214,
+        "source": "Characteristic",
+        "target": "SMS",
+        "source_id": "US10778629B2-chunk-001",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US10778629B2",
+            "claim_numbers": [
+              19,
+              20,
+              21
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 215,
+        "source": "Characteristic",
+        "target": "Phone",
+        "source_id": "US10778629B2-chunk-001",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US10778629B2",
+            "claim_numbers": [
+              19,
+              20,
+              21
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      }
+    ]
+  },
+  "limitations_zh": [
+    "AI辅助逐条原文审阅，非独立人工gold；未调用外部模型API。",
+    "只判断保存快照中的角色/概念与实际邻边，不测试新查询，不据邻接推断已发生检索或生成传播。",
+    "描述以SEP合并后没有句级来源标签；本文借原始抽取行复核句子来源，不能要求多源边的每个子句都被每个source支持。"
+  ],
+  "reviewed_utc": "2026-10-30T08:10:30.360561+00:00",
+  "dossier_path": "dossiers/N013.json",
+  "original_files_modified": false,
+  "external_model_api_calls": 0
+}

@@ -1,0 +1,3119 @@
+{
+  "parsed_utc": "2026-10-29T16:23:37.223269+00:00",
+  "official_version": "1.5.7",
+  "official_commit": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+  "official_parser_module": "<DOT_WORKDIR>/src/LightRAG-v1.5.7/lightrag/operate.py",
+  "official_parser_function": "_process_extraction_result",
+  "parser_load_mode": "selective execution of unchanged official AST nodes; not normal package import",
+  "normal_import_replay_validation": "round3/evidence/parser_validation_api191.json",
+  "source_dependency_manifest": "round3/evidence/parser_selective_source_manifest.json",
+  "source_unchanged": true,
+  "calls_made_by_parser": 0,
+  "parsed_chunks": [
+    {
+      "condition": "SAME",
+      "repeat": 1,
+      "chunk": 0,
+      "input_file": "round3/results/chunk_SAME_r1_c0.json",
+      "chunk_id": "controlled-US7991757B2-same-000",
+      "raw_response_sha256": "4651b5a5b2c12ac3a72e01dc0d1e2a7ab1bddea1d22e0d24444a838532ffb8af",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1878,
+        "completion_tokens": 427,
+        "total_tokens": 2305,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1878
+      },
+      "completion_delimiter_present": true,
+      "parser_timestamp": 1793291017,
+      "nodes": [
+        {
+          "entity_name": "Computer System",
+          "entity_type": "artifact",
+          "description": "A system comprising multiple physical computing devices, referenced in the claims.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Registration Module",
+          "entity_type": "artifact",
+          "description": "A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "artifact",
+          "description": "One of a plurality of external recommenders associated with a provider who can supply machine readable descriptions of it.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Provider",
+          "entity_type": "person",
+          "description": "A provider of an external recommender who is allowed to provide machine readable descriptions of the external recommender.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Machine Readable Descriptions",
+          "entity_type": "data",
+          "description": "Descriptions of an external recommender that a provider is allowed to provide in machine readable form.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "edges": [
+        {
+          "src_id": "Computer System",
+          "tgt_id": "Multiple Physical Computing Devices",
+          "weight": 1.0,
+          "description": "The computer system comprises multiple physical computing devices.",
+          "keywords": "comprises, includes",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Registration Module",
+          "tgt_id": "Provider",
+          "weight": 1.0,
+          "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+          "keywords": "allows, configured to allow",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Provider",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The provider provides an external recommender associated with the plurality of external recommenders.",
+          "keywords": "provides, associated with",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Provider",
+          "tgt_id": "Machine Readable Descriptions",
+          "weight": 1.0,
+          "description": "The provider provides machine readable descriptions of the external recommender.",
+          "keywords": "provides, supplies",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Machine Readable Descriptions",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The machine readable descriptions describe the external recommender.",
+          "keywords": "describes, describes",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "node_groups": [
+        {
+          "key": "Computer System",
+          "records": [
+            {
+              "entity_name": "Computer System",
+              "entity_type": "artifact",
+              "description": "A system comprising multiple physical computing devices, referenced in the claims.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Registration Module",
+          "records": [
+            {
+              "entity_name": "Registration Module",
+              "entity_type": "artifact",
+              "description": "A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "External Recommender",
+          "records": [
+            {
+              "entity_name": "External Recommender",
+              "entity_type": "artifact",
+              "description": "One of a plurality of external recommenders associated with a provider who can supply machine readable descriptions of it.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Provider",
+          "records": [
+            {
+              "entity_name": "Provider",
+              "entity_type": "person",
+              "description": "A provider of an external recommender who is allowed to provide machine readable descriptions of the external recommender.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Machine Readable Descriptions",
+          "records": [
+            {
+              "entity_name": "Machine Readable Descriptions",
+              "entity_type": "data",
+              "description": "Descriptions of an external recommender that a provider is allowed to provide in machine readable form.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "edge_groups": [
+        {
+          "key": [
+            "Computer System",
+            "Multiple Physical Computing Devices"
+          ],
+          "records": [
+            {
+              "src_id": "Computer System",
+              "tgt_id": "Multiple Physical Computing Devices",
+              "weight": 1.0,
+              "description": "The computer system comprises multiple physical computing devices.",
+              "keywords": "comprises, includes",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Registration Module",
+            "Provider"
+          ],
+          "records": [
+            {
+              "src_id": "Registration Module",
+              "tgt_id": "Provider",
+              "weight": 1.0,
+              "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+              "keywords": "allows, configured to allow",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Provider",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Provider",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The provider provides an external recommender associated with the plurality of external recommenders.",
+              "keywords": "provides, associated with",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Provider",
+            "Machine Readable Descriptions"
+          ],
+          "records": [
+            {
+              "src_id": "Provider",
+              "tgt_id": "Machine Readable Descriptions",
+              "weight": 1.0,
+              "description": "The provider provides machine readable descriptions of the external recommender.",
+              "keywords": "provides, supplies",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Machine Readable Descriptions",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Machine Readable Descriptions",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The machine readable descriptions describe the external recommender.",
+              "keywords": "describes, describes",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+            "keywords": "allows, configured to allow",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [
+          {
+            "entity_name": "Registration Module",
+            "entity_type": "artifact",
+            "description": "A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+            "keywords": "allows, configured to allow",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Provider",
+            "tgt_id": "Machine Readable Descriptions",
+            "weight": 1.0,
+            "description": "The provider provides machine readable descriptions of the external recommender.",
+            "keywords": "provides, supplies",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Machine Readable Descriptions",
+            "tgt_id": "External Recommender",
+            "weight": 1.0,
+            "description": "The machine readable descriptions describe the external recommender.",
+            "keywords": "describes, describes",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      }
+    },
+    {
+      "condition": "SAME",
+      "repeat": 1,
+      "chunk": 1,
+      "input_file": "round3/results/chunk_SAME_r1_c1.json",
+      "chunk_id": "controlled-US7991757B2-same-001",
+      "raw_response_sha256": "466d71e5bc6d7aedfc2f4e999e708b700ab24957451c9548c2dda56fc860c387",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1843,
+        "completion_tokens": 240,
+        "total_tokens": 2083,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1843
+      },
+      "completion_delimiter_present": true,
+      "parser_timestamp": 1793291017,
+      "nodes": [
+        {
+          "entity_name": "Content Site",
+          "entity_type": "organization",
+          "description": "A site that selects at least some of the weights to assign to external recommenders, as described in the claim.",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "External Recommenders",
+          "entity_type": "concept",
+          "description": "Entities to which weights are assigned by the content site.",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Weights",
+          "entity_type": "data",
+          "description": "Values assigned to external recommenders, at least some of which are selected by the content site.",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "edges": [
+        {
+          "src_id": "Content Site",
+          "tgt_id": "External Recommenders",
+          "weight": 1.0,
+          "description": "The content site selects at least some of the weights to assign to the external recommenders.",
+          "keywords": "weight assignment, selection",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Content Site",
+          "tgt_id": "Weights",
+          "weight": 1.0,
+          "description": "The content site selects at least some of the weights.",
+          "keywords": "selection",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Weights",
+          "tgt_id": "External Recommenders",
+          "weight": 1.0,
+          "description": "The weights are assigned to the external recommenders.",
+          "keywords": "assignment",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "node_groups": [
+        {
+          "key": "Content Site",
+          "records": [
+            {
+              "entity_name": "Content Site",
+              "entity_type": "organization",
+              "description": "A site that selects at least some of the weights to assign to external recommenders, as described in the claim.",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "External Recommenders",
+          "records": [
+            {
+              "entity_name": "External Recommenders",
+              "entity_type": "concept",
+              "description": "Entities to which weights are assigned by the content site.",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Weights",
+          "records": [
+            {
+              "entity_name": "Weights",
+              "entity_type": "data",
+              "description": "Values assigned to external recommenders, at least some of which are selected by the content site.",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "edge_groups": [
+        {
+          "key": [
+            "Content Site",
+            "External Recommenders"
+          ],
+          "records": [
+            {
+              "src_id": "Content Site",
+              "tgt_id": "External Recommenders",
+              "weight": 1.0,
+              "description": "The content site selects at least some of the weights to assign to the external recommenders.",
+              "keywords": "weight assignment, selection",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Content Site",
+            "Weights"
+          ],
+          "records": [
+            {
+              "src_id": "Content Site",
+              "tgt_id": "Weights",
+              "weight": 1.0,
+              "description": "The content site selects at least some of the weights.",
+              "keywords": "selection",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Weights",
+            "External Recommenders"
+          ],
+          "records": [
+            {
+              "src_id": "Weights",
+              "tgt_id": "External Recommenders",
+              "weight": 1.0,
+              "description": "The weights are assigned to the external recommenders.",
+              "keywords": "assignment",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": []
+      }
+    },
+    {
+      "condition": "SAME",
+      "repeat": 2,
+      "chunk": 0,
+      "input_file": "round3/results/chunk_SAME_r2_c0.json",
+      "chunk_id": "controlled-US7991757B2-same-000",
+      "raw_response_sha256": "fd421c2933937e6d74078f529616b08b987d5adb206440a352db72d43954db6d",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1878,
+        "completion_tokens": 527,
+        "total_tokens": 2405,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1878
+      },
+      "completion_delimiter_present": true,
+      "parser_timestamp": 1793291017,
+      "nodes": [
+        {
+          "entity_name": "Computer System",
+          "entity_type": "artifact",
+          "description": "A computer system referenced in claim 1 that, in this claim, comprises multiple physical computing devices.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Registration Module",
+          "entity_type": "artifact",
+          "description": "A module of the system of claim 1 that is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "artifact",
+          "description": "A recommender external to the system, one of a plurality of external recommenders, whose provider may provide machine readable descriptions of it via the registration module.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Provider",
+          "entity_type": "person",
+          "description": "A provider of an external recommender associated with the plurality of external recommenders, allowed by the registration module to provide machine readable descriptions of the external recommender.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Machine Readable Descriptions",
+          "entity_type": "data",
+          "description": "Descriptions of an external recommender that a provider is allowed to provide in machine readable form.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "edges": [
+        {
+          "src_id": "Computer System",
+          "tgt_id": "Registration Module",
+          "weight": 1.0,
+          "description": "The registration module is a module of the computer system of claim 1 and is configured to allow providers to provide machine readable descriptions.",
+          "keywords": "component, configuration",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Registration Module",
+          "tgt_id": "Provider",
+          "weight": 1.0,
+          "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+          "keywords": "allows, configuration",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Provider",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The provider is a provider of an external recommender associated with the plurality of external recommenders.",
+          "keywords": "provides, association",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Provider",
+          "tgt_id": "Machine Readable Descriptions",
+          "weight": 1.0,
+          "description": "The provider is allowed to provide machine readable descriptions of the external recommender.",
+          "keywords": "provides",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Machine Readable Descriptions",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The machine readable descriptions describe the external recommender.",
+          "keywords": "describes",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Computer System",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The external recommender is one of the plurality of external recommenders associated with the system.",
+          "keywords": "association",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "node_groups": [
+        {
+          "key": "Computer System",
+          "records": [
+            {
+              "entity_name": "Computer System",
+              "entity_type": "artifact",
+              "description": "A computer system referenced in claim 1 that, in this claim, comprises multiple physical computing devices.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Registration Module",
+          "records": [
+            {
+              "entity_name": "Registration Module",
+              "entity_type": "artifact",
+              "description": "A module of the system of claim 1 that is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "External Recommender",
+          "records": [
+            {
+              "entity_name": "External Recommender",
+              "entity_type": "artifact",
+              "description": "A recommender external to the system, one of a plurality of external recommenders, whose provider may provide machine readable descriptions of it via the registration module.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Provider",
+          "records": [
+            {
+              "entity_name": "Provider",
+              "entity_type": "person",
+              "description": "A provider of an external recommender associated with the plurality of external recommenders, allowed by the registration module to provide machine readable descriptions of the external recommender.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Machine Readable Descriptions",
+          "records": [
+            {
+              "entity_name": "Machine Readable Descriptions",
+              "entity_type": "data",
+              "description": "Descriptions of an external recommender that a provider is allowed to provide in machine readable form.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "edge_groups": [
+        {
+          "key": [
+            "Computer System",
+            "Registration Module"
+          ],
+          "records": [
+            {
+              "src_id": "Computer System",
+              "tgt_id": "Registration Module",
+              "weight": 1.0,
+              "description": "The registration module is a module of the computer system of claim 1 and is configured to allow providers to provide machine readable descriptions.",
+              "keywords": "component, configuration",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Registration Module",
+            "Provider"
+          ],
+          "records": [
+            {
+              "src_id": "Registration Module",
+              "tgt_id": "Provider",
+              "weight": 1.0,
+              "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+              "keywords": "allows, configuration",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Provider",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Provider",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The provider is a provider of an external recommender associated with the plurality of external recommenders.",
+              "keywords": "provides, association",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Provider",
+            "Machine Readable Descriptions"
+          ],
+          "records": [
+            {
+              "src_id": "Provider",
+              "tgt_id": "Machine Readable Descriptions",
+              "weight": 1.0,
+              "description": "The provider is allowed to provide machine readable descriptions of the external recommender.",
+              "keywords": "provides",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Machine Readable Descriptions",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Machine Readable Descriptions",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The machine readable descriptions describe the external recommender.",
+              "keywords": "describes",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Computer System",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Computer System",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The external recommender is one of the plurality of external recommenders associated with the system.",
+              "keywords": "association",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [
+          {
+            "src_id": "Computer System",
+            "tgt_id": "Registration Module",
+            "weight": 1.0,
+            "description": "The registration module is a module of the computer system of claim 1 and is configured to allow providers to provide machine readable descriptions.",
+            "keywords": "component, configuration",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "keywords": "allows, configuration",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [
+          {
+            "entity_name": "Registration Module",
+            "entity_type": "artifact",
+            "description": "A module of the system of claim 1 that is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "entity_name": "External Recommender",
+            "entity_type": "artifact",
+            "description": "A recommender external to the system, one of a plurality of external recommenders, whose provider may provide machine readable descriptions of it via the registration module.",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "entity_name": "Provider",
+            "entity_type": "person",
+            "description": "A provider of an external recommender associated with the plurality of external recommenders, allowed by the registration module to provide machine readable descriptions of the external recommender.",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Computer System",
+            "tgt_id": "Registration Module",
+            "weight": 1.0,
+            "description": "The registration module is a module of the computer system of claim 1 and is configured to allow providers to provide machine readable descriptions.",
+            "keywords": "component, configuration",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "keywords": "allows, configuration",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Provider",
+            "tgt_id": "Machine Readable Descriptions",
+            "weight": 1.0,
+            "description": "The provider is allowed to provide machine readable descriptions of the external recommender.",
+            "keywords": "provides",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Machine Readable Descriptions",
+            "tgt_id": "External Recommender",
+            "weight": 1.0,
+            "description": "The machine readable descriptions describe the external recommender.",
+            "keywords": "describes",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      }
+    },
+    {
+      "condition": "SAME",
+      "repeat": 2,
+      "chunk": 1,
+      "input_file": "round3/results/chunk_SAME_r2_c1.json",
+      "chunk_id": "controlled-US7991757B2-same-001",
+      "raw_response_sha256": "0346cb5f444d0cc0daf9a2b06103346086788554dc08b8e374ae073bae1ee20f",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1843,
+        "completion_tokens": 242,
+        "total_tokens": 2085,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1843
+      },
+      "completion_delimiter_present": true,
+      "parser_timestamp": 1793291017,
+      "nodes": [
+        {
+          "entity_name": "Content Site",
+          "entity_type": "organization",
+          "description": "A site that selects at least some of the weights to assign to external recommenders, as described in the claim.",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "External Recommenders",
+          "entity_type": "concept",
+          "description": "Entities to which weights are assigned by the content site.",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Weights",
+          "entity_type": "data",
+          "description": "Values assigned to external recommenders, at least some of which are selected by the content site.",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "edges": [
+        {
+          "src_id": "Content Site",
+          "tgt_id": "External Recommenders",
+          "weight": 1.0,
+          "description": "The content site selects at least some of the weights to assign to the external recommenders.",
+          "keywords": "weight assignment, recommendation",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Content Site",
+          "tgt_id": "Weights",
+          "weight": 1.0,
+          "description": "The content site selects at least some of the weights.",
+          "keywords": "selection, assignment",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Weights",
+          "tgt_id": "External Recommenders",
+          "weight": 1.0,
+          "description": "The weights are assigned to the external recommenders.",
+          "keywords": "assignment",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "node_groups": [
+        {
+          "key": "Content Site",
+          "records": [
+            {
+              "entity_name": "Content Site",
+              "entity_type": "organization",
+              "description": "A site that selects at least some of the weights to assign to external recommenders, as described in the claim.",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "External Recommenders",
+          "records": [
+            {
+              "entity_name": "External Recommenders",
+              "entity_type": "concept",
+              "description": "Entities to which weights are assigned by the content site.",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Weights",
+          "records": [
+            {
+              "entity_name": "Weights",
+              "entity_type": "data",
+              "description": "Values assigned to external recommenders, at least some of which are selected by the content site.",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "edge_groups": [
+        {
+          "key": [
+            "Content Site",
+            "External Recommenders"
+          ],
+          "records": [
+            {
+              "src_id": "Content Site",
+              "tgt_id": "External Recommenders",
+              "weight": 1.0,
+              "description": "The content site selects at least some of the weights to assign to the external recommenders.",
+              "keywords": "weight assignment, recommendation",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Content Site",
+            "Weights"
+          ],
+          "records": [
+            {
+              "src_id": "Content Site",
+              "tgt_id": "Weights",
+              "weight": 1.0,
+              "description": "The content site selects at least some of the weights.",
+              "keywords": "selection, assignment",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Weights",
+            "External Recommenders"
+          ],
+          "records": [
+            {
+              "src_id": "Weights",
+              "tgt_id": "External Recommenders",
+              "weight": 1.0,
+              "description": "The weights are assigned to the external recommenders.",
+              "keywords": "assignment",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": []
+      }
+    },
+    {
+      "condition": "SAME",
+      "repeat": 3,
+      "chunk": 0,
+      "input_file": "round3/results/chunk_SAME_r3_c0.json",
+      "chunk_id": "controlled-US7991757B2-same-000",
+      "raw_response_sha256": "aff40b9014eca65b0c539b913bc6a2d6565cdc79f5e2649d38b3a64f9b9f9122",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1878,
+        "completion_tokens": 425,
+        "total_tokens": 2303,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1878
+      },
+      "completion_delimiter_present": true,
+      "parser_timestamp": 1793291017,
+      "nodes": [
+        {
+          "entity_name": "Computer System",
+          "entity_type": "artifact",
+          "description": "A system comprising multiple physical computing devices, as described in the claims.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Registration Module",
+          "entity_type": "artifact",
+          "description": "A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "artifact",
+          "description": "One of a plurality of external recommenders associated with the system, whose provider may provide machine readable descriptions.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Provider",
+          "entity_type": "person",
+          "description": "A provider of an external recommender who is allowed to provide machine readable descriptions of the external recommender.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Machine Readable Descriptions",
+          "entity_type": "data",
+          "description": "Descriptions of an external recommender that a provider is allowed to provide in machine readable form.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "edges": [
+        {
+          "src_id": "Computer System",
+          "tgt_id": "Registration Module",
+          "weight": 1.0,
+          "description": "The computer system comprises the registration module.",
+          "keywords": "comprises, contains",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Registration Module",
+          "tgt_id": "Provider",
+          "weight": 1.0,
+          "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+          "keywords": "allows, enables",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Provider",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The provider is a provider of an external recommender associated with the plurality of external recommenders.",
+          "keywords": "provides, associated with",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Provider",
+          "tgt_id": "Machine Readable Descriptions",
+          "weight": 1.0,
+          "description": "The provider is allowed to provide machine readable descriptions of the external recommender.",
+          "keywords": "provides",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Machine Readable Descriptions",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The machine readable descriptions describe the external recommender.",
+          "keywords": "describes",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "node_groups": [
+        {
+          "key": "Computer System",
+          "records": [
+            {
+              "entity_name": "Computer System",
+              "entity_type": "artifact",
+              "description": "A system comprising multiple physical computing devices, as described in the claims.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Registration Module",
+          "records": [
+            {
+              "entity_name": "Registration Module",
+              "entity_type": "artifact",
+              "description": "A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "External Recommender",
+          "records": [
+            {
+              "entity_name": "External Recommender",
+              "entity_type": "artifact",
+              "description": "One of a plurality of external recommenders associated with the system, whose provider may provide machine readable descriptions.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Provider",
+          "records": [
+            {
+              "entity_name": "Provider",
+              "entity_type": "person",
+              "description": "A provider of an external recommender who is allowed to provide machine readable descriptions of the external recommender.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Machine Readable Descriptions",
+          "records": [
+            {
+              "entity_name": "Machine Readable Descriptions",
+              "entity_type": "data",
+              "description": "Descriptions of an external recommender that a provider is allowed to provide in machine readable form.",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "edge_groups": [
+        {
+          "key": [
+            "Computer System",
+            "Registration Module"
+          ],
+          "records": [
+            {
+              "src_id": "Computer System",
+              "tgt_id": "Registration Module",
+              "weight": 1.0,
+              "description": "The computer system comprises the registration module.",
+              "keywords": "comprises, contains",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Registration Module",
+            "Provider"
+          ],
+          "records": [
+            {
+              "src_id": "Registration Module",
+              "tgt_id": "Provider",
+              "weight": 1.0,
+              "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+              "keywords": "allows, enables",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Provider",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Provider",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The provider is a provider of an external recommender associated with the plurality of external recommenders.",
+              "keywords": "provides, associated with",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Provider",
+            "Machine Readable Descriptions"
+          ],
+          "records": [
+            {
+              "src_id": "Provider",
+              "tgt_id": "Machine Readable Descriptions",
+              "weight": 1.0,
+              "description": "The provider is allowed to provide machine readable descriptions of the external recommender.",
+              "keywords": "provides",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Machine Readable Descriptions",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Machine Readable Descriptions",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The machine readable descriptions describe the external recommender.",
+              "keywords": "describes",
+              "source_id": "controlled-US7991757B2-same-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+            "keywords": "allows, enables",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [
+          {
+            "entity_name": "Registration Module",
+            "entity_type": "artifact",
+            "description": "A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Computer System",
+            "tgt_id": "Registration Module",
+            "weight": 1.0,
+            "description": "The computer system comprises the registration module.",
+            "keywords": "comprises, contains",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+            "keywords": "allows, enables",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Provider",
+            "tgt_id": "Machine Readable Descriptions",
+            "weight": 1.0,
+            "description": "The provider is allowed to provide machine readable descriptions of the external recommender.",
+            "keywords": "provides",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Machine Readable Descriptions",
+            "tgt_id": "External Recommender",
+            "weight": 1.0,
+            "description": "The machine readable descriptions describe the external recommender.",
+            "keywords": "describes",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      }
+    },
+    {
+      "condition": "SAME",
+      "repeat": 3,
+      "chunk": 1,
+      "input_file": "round3/results/chunk_SAME_r3_c1.json",
+      "chunk_id": "controlled-US7991757B2-same-001",
+      "raw_response_sha256": "fd5691a10fd3a4885374a98e4f885a68b189dd7a68f4624bf92ca312a49b9a36",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1843,
+        "completion_tokens": 241,
+        "total_tokens": 2084,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 51
+      },
+      "completion_delimiter_present": true,
+      "parser_timestamp": 1793291017,
+      "nodes": [
+        {
+          "entity_name": "Content Site",
+          "entity_type": "organization",
+          "description": "A site that selects at least some of the weights to assign to external recommenders, as described in the claim.",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "External Recommenders",
+          "entity_type": "organization",
+          "description": "Entities that receive weights assigned by the content site.",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Weights",
+          "entity_type": "data",
+          "description": "Values assigned to external recommenders, at least some of which are selected by the content site.",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "edges": [
+        {
+          "src_id": "Content Site",
+          "tgt_id": "External Recommenders",
+          "weight": 1.0,
+          "description": "The content site selects at least some of the weights to assign to the external recommenders.",
+          "keywords": "weight assignment, selection",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Content Site",
+          "tgt_id": "Weights",
+          "weight": 1.0,
+          "description": "The content site selects at least some of the weights.",
+          "keywords": "selection, assignment",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Weights",
+          "tgt_id": "External Recommenders",
+          "weight": 1.0,
+          "description": "The weights are assigned to the external recommenders.",
+          "keywords": "assignment",
+          "source_id": "controlled-US7991757B2-same-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "node_groups": [
+        {
+          "key": "Content Site",
+          "records": [
+            {
+              "entity_name": "Content Site",
+              "entity_type": "organization",
+              "description": "A site that selects at least some of the weights to assign to external recommenders, as described in the claim.",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "External Recommenders",
+          "records": [
+            {
+              "entity_name": "External Recommenders",
+              "entity_type": "organization",
+              "description": "Entities that receive weights assigned by the content site.",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Weights",
+          "records": [
+            {
+              "entity_name": "Weights",
+              "entity_type": "data",
+              "description": "Values assigned to external recommenders, at least some of which are selected by the content site.",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "edge_groups": [
+        {
+          "key": [
+            "Content Site",
+            "External Recommenders"
+          ],
+          "records": [
+            {
+              "src_id": "Content Site",
+              "tgt_id": "External Recommenders",
+              "weight": 1.0,
+              "description": "The content site selects at least some of the weights to assign to the external recommenders.",
+              "keywords": "weight assignment, selection",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Content Site",
+            "Weights"
+          ],
+          "records": [
+            {
+              "src_id": "Content Site",
+              "tgt_id": "Weights",
+              "weight": 1.0,
+              "description": "The content site selects at least some of the weights.",
+              "keywords": "selection, assignment",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Weights",
+            "External Recommenders"
+          ],
+          "records": [
+            {
+              "src_id": "Weights",
+              "tgt_id": "External Recommenders",
+              "weight": 1.0,
+              "description": "The weights are assigned to the external recommenders.",
+              "keywords": "assignment",
+              "source_id": "controlled-US7991757B2-same-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": []
+      }
+    },
+    {
+      "condition": "CROSS",
+      "repeat": 1,
+      "chunk": 0,
+      "input_file": "round3/results/chunk_CROSS_r1_c0.json",
+      "chunk_id": "controlled-US7991757B2-cross-000",
+      "raw_response_sha256": "f381ddb8b8c843ab4527b05ecd428bd439bcbf21ce395a627408ce71fd3cef48",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1870,
+        "completion_tokens": 281,
+        "total_tokens": 2151,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1870
+      },
+      "completion_delimiter_present": true,
+      "parser_timestamp": 1793291017,
+      "nodes": [
+        {
+          "entity_name": "Computer System",
+          "entity_type": "artifact",
+          "description": "A system comprising multiple physical computing devices, referenced in the claims.",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Registration Module",
+          "entity_type": "artifact",
+          "description": "A module configured to allow a provider of an external recommender to provide something, referenced in the claims.",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "artifact",
+          "description": "One of a plurality of external recommenders associated with a provider.",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Provider",
+          "entity_type": "person",
+          "description": "A provider of an external recommender associated with the plurality of external recommenders.",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "edges": [
+        {
+          "src_id": "Computer System",
+          "tgt_id": "Multiple Physical Computing Devices",
+          "weight": 1.0,
+          "description": "The computer system comprises multiple physical computing devices.",
+          "keywords": "comprises, includes",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Registration Module",
+          "tgt_id": "Provider",
+          "weight": 1.0,
+          "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+          "keywords": "allows, permits",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Provider",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The provider provides an external recommender associated with the plurality of external recommenders.",
+          "keywords": "provides, associated with",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "node_groups": [
+        {
+          "key": "Computer System",
+          "records": [
+            {
+              "entity_name": "Computer System",
+              "entity_type": "artifact",
+              "description": "A system comprising multiple physical computing devices, referenced in the claims.",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Registration Module",
+          "records": [
+            {
+              "entity_name": "Registration Module",
+              "entity_type": "artifact",
+              "description": "A module configured to allow a provider of an external recommender to provide something, referenced in the claims.",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "External Recommender",
+          "records": [
+            {
+              "entity_name": "External Recommender",
+              "entity_type": "artifact",
+              "description": "One of a plurality of external recommenders associated with a provider.",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Provider",
+          "records": [
+            {
+              "entity_name": "Provider",
+              "entity_type": "person",
+              "description": "A provider of an external recommender associated with the plurality of external recommenders.",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "edge_groups": [
+        {
+          "key": [
+            "Computer System",
+            "Multiple Physical Computing Devices"
+          ],
+          "records": [
+            {
+              "src_id": "Computer System",
+              "tgt_id": "Multiple Physical Computing Devices",
+              "weight": 1.0,
+              "description": "The computer system comprises multiple physical computing devices.",
+              "keywords": "comprises, includes",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Registration Module",
+            "Provider"
+          ],
+          "records": [
+            {
+              "src_id": "Registration Module",
+              "tgt_id": "Provider",
+              "weight": 1.0,
+              "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+              "keywords": "allows, permits",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Provider",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Provider",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The provider provides an external recommender associated with the plurality of external recommenders.",
+              "keywords": "provides, associated with",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+            "keywords": "allows, permits",
+            "source_id": "controlled-US7991757B2-cross-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      }
+    },
+    {
+      "condition": "CROSS",
+      "repeat": 1,
+      "chunk": 1,
+      "input_file": "round3/results/chunk_CROSS_r1_c1.json",
+      "chunk_id": "controlled-US7991757B2-cross-001",
+      "raw_response_sha256": "2eab88faff4151b5ca68c7d687c5e9cde3b74f7ee77d03501921b60aa4eeb381",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1852,
+        "completion_tokens": 98,
+        "total_tokens": 1950,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1852
+      },
+      "completion_delimiter_present": true,
+      "parser_timestamp": 1793291017,
+      "nodes": [
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "artifact",
+          "description": "An external recommender that is described in machine readable descriptions and to which weights are assigned by the content site.",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "edges": [
+        {
+          "src_id": "Content Site",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The content site selects at least some of the weights to assign to the external recommenders.",
+          "keywords": "weight assignment, configuration",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "node_groups": [
+        {
+          "key": "External Recommender",
+          "records": [
+            {
+              "entity_name": "External Recommender",
+              "entity_type": "artifact",
+              "description": "An external recommender that is described in machine readable descriptions and to which weights are assigned by the content site.",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "edge_groups": [
+        {
+          "key": [
+            "Content Site",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Content Site",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The content site selects at least some of the weights to assign to the external recommenders.",
+              "keywords": "weight assignment, configuration",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": []
+      }
+    },
+    {
+      "condition": "CROSS",
+      "repeat": 2,
+      "chunk": 0,
+      "input_file": "round3/results/chunk_CROSS_r2_c0.json",
+      "chunk_id": "controlled-US7991757B2-cross-000",
+      "raw_response_sha256": "a55b2f83e75eb46764c469d29b60bb3599932a6e62d261bd454f87fd6bc8f84a",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1870,
+        "completion_tokens": 303,
+        "total_tokens": 2173,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1870
+      },
+      "completion_delimiter_present": true,
+      "parser_timestamp": 1793291017,
+      "nodes": [
+        {
+          "entity_name": "Computer System",
+          "entity_type": "artifact",
+          "description": "A computer system referenced in claim 1 that, in this claim, comprises multiple physical computing devices.",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Registration Module",
+          "entity_type": "artifact",
+          "description": "A module of the system that is further configured to allow a provider of an external recommender to provide something.",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "artifact",
+          "description": "An external recommender belonging to a plurality of external recommenders, whose provider is allowed by the registration module to provide something.",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Provider",
+          "entity_type": "person",
+          "description": "A provider of an external recommender associated with the plurality of external recommenders.",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "edges": [
+        {
+          "src_id": "Computer System",
+          "tgt_id": "Multiple Physical Computing Devices",
+          "weight": 1.0,
+          "description": "The computer system comprises multiple physical computing devices.",
+          "keywords": "comprises, composition",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Registration Module",
+          "tgt_id": "Provider",
+          "weight": 1.0,
+          "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+          "keywords": "allows, configuration",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Provider",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The provider is a provider of an external recommender associated with the plurality of external recommenders.",
+          "keywords": "provides, association",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "node_groups": [
+        {
+          "key": "Computer System",
+          "records": [
+            {
+              "entity_name": "Computer System",
+              "entity_type": "artifact",
+              "description": "A computer system referenced in claim 1 that, in this claim, comprises multiple physical computing devices.",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Registration Module",
+          "records": [
+            {
+              "entity_name": "Registration Module",
+              "entity_type": "artifact",
+              "description": "A module of the system that is further configured to allow a provider of an external recommender to provide something.",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "External Recommender",
+          "records": [
+            {
+              "entity_name": "External Recommender",
+              "entity_type": "artifact",
+              "description": "An external recommender belonging to a plurality of external recommenders, whose provider is allowed by the registration module to provide something.",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Provider",
+          "records": [
+            {
+              "entity_name": "Provider",
+              "entity_type": "person",
+              "description": "A provider of an external recommender associated with the plurality of external recommenders.",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "edge_groups": [
+        {
+          "key": [
+            "Computer System",
+            "Multiple Physical Computing Devices"
+          ],
+          "records": [
+            {
+              "src_id": "Computer System",
+              "tgt_id": "Multiple Physical Computing Devices",
+              "weight": 1.0,
+              "description": "The computer system comprises multiple physical computing devices.",
+              "keywords": "comprises, composition",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Registration Module",
+            "Provider"
+          ],
+          "records": [
+            {
+              "src_id": "Registration Module",
+              "tgt_id": "Provider",
+              "weight": 1.0,
+              "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+              "keywords": "allows, configuration",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Provider",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Provider",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The provider is a provider of an external recommender associated with the plurality of external recommenders.",
+              "keywords": "provides, association",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+            "keywords": "allows, configuration",
+            "source_id": "controlled-US7991757B2-cross-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      }
+    },
+    {
+      "condition": "CROSS",
+      "repeat": 2,
+      "chunk": 1,
+      "input_file": "round3/results/chunk_CROSS_r2_c1.json",
+      "chunk_id": "controlled-US7991757B2-cross-001",
+      "raw_response_sha256": "769f5995642854d365f9034bd27e8d060d9167bfe935437301daadfdb1bae9e0",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1852,
+        "completion_tokens": 321,
+        "total_tokens": 2173,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1852
+      },
+      "completion_delimiter_present": true,
+      "parser_timestamp": 1793291017,
+      "nodes": [
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "concept",
+          "description": "An external recommendation source whose behavior is described in machine readable descriptions and to which weights are assigned.",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Content Site",
+          "entity_type": "concept",
+          "description": "A site that selects at least some of the weights to assign to the external recommenders.",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Machine Readable Descriptions",
+          "entity_type": "data",
+          "description": "Structured descriptions of the external recommender that can be processed by a machine.",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Weights",
+          "entity_type": "data",
+          "description": "Values assigned to external recommenders, at least some of which are selected by the content site.",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "edges": [
+        {
+          "src_id": "Content Site",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The content site selects at least some of the weights to assign to the external recommenders.",
+          "keywords": "weight assignment, selection",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Machine Readable Descriptions",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The machine readable descriptions describe the external recommender.",
+          "keywords": "description",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Content Site",
+          "tgt_id": "Weights",
+          "weight": 1.0,
+          "description": "The content site selects at least some of the weights.",
+          "keywords": "selection",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Weights",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The weights are assigned to the external recommenders.",
+          "keywords": "assignment",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "node_groups": [
+        {
+          "key": "External Recommender",
+          "records": [
+            {
+              "entity_name": "External Recommender",
+              "entity_type": "concept",
+              "description": "An external recommendation source whose behavior is described in machine readable descriptions and to which weights are assigned.",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Content Site",
+          "records": [
+            {
+              "entity_name": "Content Site",
+              "entity_type": "concept",
+              "description": "A site that selects at least some of the weights to assign to the external recommenders.",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Machine Readable Descriptions",
+          "records": [
+            {
+              "entity_name": "Machine Readable Descriptions",
+              "entity_type": "data",
+              "description": "Structured descriptions of the external recommender that can be processed by a machine.",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Weights",
+          "records": [
+            {
+              "entity_name": "Weights",
+              "entity_type": "data",
+              "description": "Values assigned to external recommenders, at least some of which are selected by the content site.",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "edge_groups": [
+        {
+          "key": [
+            "Content Site",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Content Site",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The content site selects at least some of the weights to assign to the external recommenders.",
+              "keywords": "weight assignment, selection",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Machine Readable Descriptions",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Machine Readable Descriptions",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The machine readable descriptions describe the external recommender.",
+              "keywords": "description",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Content Site",
+            "Weights"
+          ],
+          "records": [
+            {
+              "src_id": "Content Site",
+              "tgt_id": "Weights",
+              "weight": 1.0,
+              "description": "The content site selects at least some of the weights.",
+              "keywords": "selection",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Weights",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Weights",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The weights are assigned to the external recommenders.",
+              "keywords": "assignment",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Machine Readable Descriptions",
+            "tgt_id": "External Recommender",
+            "weight": 1.0,
+            "description": "The machine readable descriptions describe the external recommender.",
+            "keywords": "description",
+            "source_id": "controlled-US7991757B2-cross-001",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      }
+    },
+    {
+      "condition": "CROSS",
+      "repeat": 3,
+      "chunk": 0,
+      "input_file": "round3/results/chunk_CROSS_r3_c0.json",
+      "chunk_id": "controlled-US7991757B2-cross-000",
+      "raw_response_sha256": "54231d539a703c082c9ff28378b097869ef98ded3d76eaf5999ca2b2aee9dc54",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1870,
+        "completion_tokens": 286,
+        "total_tokens": 2156,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 78
+      },
+      "completion_delimiter_present": true,
+      "parser_timestamp": 1793291017,
+      "nodes": [
+        {
+          "entity_name": "Computer System",
+          "entity_type": "artifact",
+          "description": "A system comprising multiple physical computing devices, referenced in the claims.",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Registration Module",
+          "entity_type": "artifact",
+          "description": "A module configured to allow a provider of an external recommender to provide something, referenced in the claims.",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "artifact",
+          "description": "One of a plurality of external recommenders associated with a provider, referenced in the claims.",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Provider",
+          "entity_type": "person",
+          "description": "A provider of an external recommender associated with the plurality of external recommenders.",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "edges": [
+        {
+          "src_id": "Computer System",
+          "tgt_id": "Multiple Physical Computing Devices",
+          "weight": 1.0,
+          "description": "The computer system comprises multiple physical computing devices.",
+          "keywords": "comprises, includes",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Registration Module",
+          "tgt_id": "Provider",
+          "weight": 1.0,
+          "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+          "keywords": "allows, enables",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Provider",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The provider provides an external recommender associated with the plurality of external recommenders.",
+          "keywords": "provides, associated with",
+          "source_id": "controlled-US7991757B2-cross-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "node_groups": [
+        {
+          "key": "Computer System",
+          "records": [
+            {
+              "entity_name": "Computer System",
+              "entity_type": "artifact",
+              "description": "A system comprising multiple physical computing devices, referenced in the claims.",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Registration Module",
+          "records": [
+            {
+              "entity_name": "Registration Module",
+              "entity_type": "artifact",
+              "description": "A module configured to allow a provider of an external recommender to provide something, referenced in the claims.",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "External Recommender",
+          "records": [
+            {
+              "entity_name": "External Recommender",
+              "entity_type": "artifact",
+              "description": "One of a plurality of external recommenders associated with a provider, referenced in the claims.",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Provider",
+          "records": [
+            {
+              "entity_name": "Provider",
+              "entity_type": "person",
+              "description": "A provider of an external recommender associated with the plurality of external recommenders.",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "edge_groups": [
+        {
+          "key": [
+            "Computer System",
+            "Multiple Physical Computing Devices"
+          ],
+          "records": [
+            {
+              "src_id": "Computer System",
+              "tgt_id": "Multiple Physical Computing Devices",
+              "weight": 1.0,
+              "description": "The computer system comprises multiple physical computing devices.",
+              "keywords": "comprises, includes",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Registration Module",
+            "Provider"
+          ],
+          "records": [
+            {
+              "src_id": "Registration Module",
+              "tgt_id": "Provider",
+              "weight": 1.0,
+              "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+              "keywords": "allows, enables",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": [
+            "Provider",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Provider",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The provider provides an external recommender associated with the plurality of external recommenders.",
+              "keywords": "provides, associated with",
+              "source_id": "controlled-US7991757B2-cross-000",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+            "keywords": "allows, enables",
+            "source_id": "controlled-US7991757B2-cross-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      }
+    },
+    {
+      "condition": "CROSS",
+      "repeat": 3,
+      "chunk": 1,
+      "input_file": "round3/results/chunk_CROSS_r3_c1.json",
+      "chunk_id": "controlled-US7991757B2-cross-001",
+      "raw_response_sha256": "c0a85243baf9feac1ccb5d5af1503c418820d4718a7cc039d5f85102dc8cd258",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1852,
+        "completion_tokens": 124,
+        "total_tokens": 1976,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1852
+      },
+      "completion_delimiter_present": true,
+      "parser_timestamp": 1793291017,
+      "nodes": [
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "concept",
+          "description": "An external recommendation system whose behavior is described in machine readable descriptions.",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Content Site",
+          "entity_type": "concept",
+          "description": "A site that selects at least some of the weights to assign to external recommenders.",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "edges": [
+        {
+          "src_id": "Content Site",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The content site selects at least some of the weights to assign to the external recommenders.",
+          "keywords": "weight assignment, selection",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "node_groups": [
+        {
+          "key": "External Recommender",
+          "records": [
+            {
+              "entity_name": "External Recommender",
+              "entity_type": "concept",
+              "description": "An external recommendation system whose behavior is described in machine readable descriptions.",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        },
+        {
+          "key": "Content Site",
+          "records": [
+            {
+              "entity_name": "Content Site",
+              "entity_type": "concept",
+              "description": "A site that selects at least some of the weights to assign to external recommenders.",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "edge_groups": [
+        {
+          "key": [
+            "Content Site",
+            "External Recommender"
+          ],
+          "records": [
+            {
+              "src_id": "Content Site",
+              "tgt_id": "External Recommender",
+              "weight": 1.0,
+              "description": "The content site selects at least some of the weights to assign to the external recommenders.",
+              "keywords": "weight assignment, selection",
+              "source_id": "controlled-US7991757B2-cross-001",
+              "file_path": "US7991757B2.txt",
+              "timestamp": 1793291017
+            }
+          ]
+        }
+      ],
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": []
+      }
+    }
+  ],
+  "condition_repeats": [
+    {
+      "condition": "SAME",
+      "repeat": 1,
+      "chunk_count": 2,
+      "node_records_before_any_merge": 8,
+      "edge_records_before_any_merge": 8,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "truncated": false,
+      "all_completion_delimiters_present": true,
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+            "keywords": "allows, configured to allow",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [
+          {
+            "entity_name": "Registration Module",
+            "entity_type": "artifact",
+            "description": "A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+            "keywords": "allows, configured to allow",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Provider",
+            "tgt_id": "Machine Readable Descriptions",
+            "weight": 1.0,
+            "description": "The provider provides machine readable descriptions of the external recommender.",
+            "keywords": "provides, supplies",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Machine Readable Descriptions",
+            "tgt_id": "External Recommender",
+            "weight": 1.0,
+            "description": "The machine readable descriptions describe the external recommender.",
+            "keywords": "describes, describes",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      },
+      "aggregation": "Concatenate records from the two independent official extraction parses; no new LLM inference or graph insertion/merge."
+    },
+    {
+      "condition": "SAME",
+      "repeat": 2,
+      "chunk_count": 2,
+      "node_records_before_any_merge": 8,
+      "edge_records_before_any_merge": 9,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "truncated": false,
+      "all_completion_delimiters_present": true,
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [
+          {
+            "src_id": "Computer System",
+            "tgt_id": "Registration Module",
+            "weight": 1.0,
+            "description": "The registration module is a module of the computer system of claim 1 and is configured to allow providers to provide machine readable descriptions.",
+            "keywords": "component, configuration",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "keywords": "allows, configuration",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [
+          {
+            "entity_name": "Registration Module",
+            "entity_type": "artifact",
+            "description": "A module of the system of claim 1 that is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "entity_name": "External Recommender",
+            "entity_type": "artifact",
+            "description": "A recommender external to the system, one of a plurality of external recommenders, whose provider may provide machine readable descriptions of it via the registration module.",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "entity_name": "Provider",
+            "entity_type": "person",
+            "description": "A provider of an external recommender associated with the plurality of external recommenders, allowed by the registration module to provide machine readable descriptions of the external recommender.",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Computer System",
+            "tgt_id": "Registration Module",
+            "weight": 1.0,
+            "description": "The registration module is a module of the computer system of claim 1 and is configured to allow providers to provide machine readable descriptions.",
+            "keywords": "component, configuration",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "keywords": "allows, configuration",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Provider",
+            "tgt_id": "Machine Readable Descriptions",
+            "weight": 1.0,
+            "description": "The provider is allowed to provide machine readable descriptions of the external recommender.",
+            "keywords": "provides",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Machine Readable Descriptions",
+            "tgt_id": "External Recommender",
+            "weight": 1.0,
+            "description": "The machine readable descriptions describe the external recommender.",
+            "keywords": "describes",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      },
+      "aggregation": "Concatenate records from the two independent official extraction parses; no new LLM inference or graph insertion/merge."
+    },
+    {
+      "condition": "SAME",
+      "repeat": 3,
+      "chunk_count": 2,
+      "node_records_before_any_merge": 8,
+      "edge_records_before_any_merge": 8,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "truncated": false,
+      "all_completion_delimiters_present": true,
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+            "keywords": "allows, enables",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [
+          {
+            "entity_name": "Registration Module",
+            "entity_type": "artifact",
+            "description": "A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Computer System",
+            "tgt_id": "Registration Module",
+            "weight": 1.0,
+            "description": "The computer system comprises the registration module.",
+            "keywords": "comprises, contains",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+            "keywords": "allows, enables",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Provider",
+            "tgt_id": "Machine Readable Descriptions",
+            "weight": 1.0,
+            "description": "The provider is allowed to provide machine readable descriptions of the external recommender.",
+            "keywords": "provides",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Machine Readable Descriptions",
+            "tgt_id": "External Recommender",
+            "weight": 1.0,
+            "description": "The machine readable descriptions describe the external recommender.",
+            "keywords": "describes",
+            "source_id": "controlled-US7991757B2-same-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      },
+      "aggregation": "Concatenate records from the two independent official extraction parses; no new LLM inference or graph insertion/merge."
+    },
+    {
+      "condition": "CROSS",
+      "repeat": 1,
+      "chunk_count": 2,
+      "node_records_before_any_merge": 5,
+      "edge_records_before_any_merge": 4,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "truncated": false,
+      "all_completion_delimiters_present": true,
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+            "keywords": "allows, permits",
+            "source_id": "controlled-US7991757B2-cross-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      },
+      "aggregation": "Concatenate records from the two independent official extraction parses; no new LLM inference or graph insertion/merge."
+    },
+    {
+      "condition": "CROSS",
+      "repeat": 2,
+      "chunk_count": 2,
+      "node_records_before_any_merge": 8,
+      "edge_records_before_any_merge": 7,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "truncated": false,
+      "all_completion_delimiters_present": true,
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+            "keywords": "allows, configuration",
+            "source_id": "controlled-US7991757B2-cross-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          },
+          {
+            "src_id": "Machine Readable Descriptions",
+            "tgt_id": "External Recommender",
+            "weight": 1.0,
+            "description": "The machine readable descriptions describe the external recommender.",
+            "keywords": "description",
+            "source_id": "controlled-US7991757B2-cross-001",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      },
+      "aggregation": "Concatenate records from the two independent official extraction parses; no new LLM inference or graph insertion/merge."
+    },
+    {
+      "condition": "CROSS",
+      "repeat": 3,
+      "chunk_count": 2,
+      "node_records_before_any_merge": 6,
+      "edge_records_before_any_merge": 4,
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "truncated": false,
+      "all_completion_delimiters_present": true,
+      "candidate_flags": {
+        "primary_relation_candidates_needing_semantic_review": [],
+        "strict_module_description_edge_candidates": [],
+        "entity_complete_proposition_candidates": [],
+        "claim27_claim1_dependency_candidates": [],
+        "local_relation_fragment_candidates": [
+          {
+            "src_id": "Registration Module",
+            "tgt_id": "Provider",
+            "weight": 1.0,
+            "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+            "keywords": "allows, enables",
+            "source_id": "controlled-US7991757B2-cross-000",
+            "file_path": "US7991757B2.txt",
+            "timestamp": 1793291017
+          }
+        ]
+      },
+      "aggregation": "Concatenate records from the two independent official extraction parses; no new LLM inference or graph insertion/merge."
+    }
+  ],
+  "evaluation_note": "Candidate flags select records for semantic review under chunk_conditions.json preregistered_evaluation. They are not conclusive causal or semantic verdicts."
+}

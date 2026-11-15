@@ -1,0 +1,2507 @@
+{
+ "label": "20261105",
+ "rubric": "docs/SCORING_RUBRIC.md",
+ "review_counts": {
+  "rule only, not reviewed item by item": 235,
+  "reviewed by the author": 7
+ },
+ "rows": [
+  {
+   "rubric": "S1",
+   "item": "Q01/naive",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q01_naive.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q01/naive",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q01_naive.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q01/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q01_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q01/mix",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q01_mix.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q01/mix",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q01_mix.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q01/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q01_mix.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q02/naive",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q02_naive.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q02/naive",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q02_naive.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q02/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q02_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q02/mix",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q02_mix.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q02/mix",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q02_mix.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q02/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q02_mix.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q03/naive",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q03_naive.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q03/naive",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q03_naive.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q03/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q03_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q03/mix",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q03_mix.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q03/mix",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q03_mix.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q03/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q03_mix.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q04/naive",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q04_naive.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q04/naive",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q04_naive.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q04/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q04_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q04/mix",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q04_mix.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q04/mix",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q04_mix.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q04/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q04_mix.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q05/naive",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q05_naive.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q05/naive",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q05_naive.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q05/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q05_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q05/mix",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q05_mix.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q05/mix",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q05_mix.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q05/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q05_mix.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q06/naive",
+   "rule_value": false,
+   "rule_reason": "opening abstains",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q06_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q06/naive",
+   "rule_value": false,
+   "rule_reason": "missing 1/2: ['an optimization module configured to nor']",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q06_naive.json → result.data.chunks",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q06/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q06_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q06/mix",
+   "rule_value": false,
+   "rule_reason": "required claim not named ['US7991757B2']",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q06_mix.json → result.llm_response.content",
+   "claude_code_review": {
+    "value": false,
+    "note": "Claude Code read: the answer compares the two patents but states 'No specific claim number or claim wording for US7991757B2 appears'; the US7991757B2 facts come from the graph, with no claim and no citation (citations are only US8095432B1 and US9374411B1). The core task (compare the two patents by claim) is not completed; this is P1 at work."
+   },
+   "human_review": {
+    "value": false,
+    "note_zh": "回答比较了两篇专利，但只为 US8095432B1 指出了 Claim 1，US7991757B2 缺少对应的 Claim 编号。",
+    "note_en": "No. The answer compares the two patents but names Claim 1 only for US8095432B1; US7991757B2 has no corresponding claim number.",
+    "review_language": "zh",
+    "date": "2026-11-15"
+   },
+   "value": false,
+   "status": "human review",
+   "reviewer": "reviewed by the author"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q06/mix",
+   "rule_value": false,
+   "rule_reason": "missing 1/2: ['an optimization module configured to nor']",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q06_mix.json → result.data.chunks",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q06/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q06_mix.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q07/naive",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q07_naive.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q07/naive",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q07_naive.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q07/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q07_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q07/mix",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q07_mix.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q07/mix",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q07_mix.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q07/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q07_mix.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q08/naive",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q08_naive.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q08/naive",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q08_naive.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q08/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q08_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q08/mix",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q08_mix.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q08/mix",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q08_mix.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q08/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q08_mix.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q09/naive",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q09_naive.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q09/naive",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q09_naive.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q09/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q09_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q09/mix",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q09_mix.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q09/mix",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q09_mix.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q09/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q09_mix.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q10/naive",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q10_naive.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q10/naive",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q10_naive.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q10/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q10_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q10/mix",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q10_mix.json → result.llm_response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q10/mix",
+   "rule_value": true,
+   "rule_reason": "all required quotes in same-call chunks",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q10_mix.json → result.data.chunks",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q10/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q10_mix.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q11/naive",
+   "rule_value": false,
+   "rule_reason": "opening abstains",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q11_supplementary_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q11/naive",
+   "rule_value": false,
+   "rule_reason": "missing 2/2: ['1. A system for providing a network serv', '27. The system of claim 1 , wherein the ']",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q11_supplementary_naive.json → result.data.chunks",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q11/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q11_supplementary_naive.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "Q11/mix",
+   "rule_value": false,
+   "rule_reason": "opening abstains",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q11_supplementary_mix.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S2",
+   "item": "Q11/mix",
+   "rule_value": false,
+   "rule_reason": "missing 2/2: ['1. A system for providing a network serv', '27. The system of claim 1 , wherein the ']",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q11_supplementary_mix.json → result.data.chunks",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "Q11/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/full_Q11_supplementary_mix.json → result.llm_response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "supplement/Q06/naive",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/supplement_budget_Q06_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "supplement/Q06/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/supplement_budget_Q06_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "supplement/Q06/mix",
+   "rule_value": true,
+   "rule_reason": "all publications named with claims in their own passages, no opening abstention",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/supplement_budget_Q06_mix.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "supplement/Q06/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/supplement_budget_Q06_mix.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "supplement/Q11/naive",
+   "rule_value": false,
+   "rule_reason": "opening abstains",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/supplement_budget_Q11_supplementary_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "supplement/Q11/naive",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/supplement_budget_Q11_supplementary_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S1",
+   "item": "supplement/Q11/mix",
+   "rule_value": false,
+   "rule_reason": "opening abstains",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/supplement_budget_Q11_supplementary_mix.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S3",
+   "item": "supplement/Q11/mix",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/01_baseline_index_qa/results_rerun_20261105/results/supplement_budget_Q11_supplementary_mix.json",
+   "claude_code_review": {
+    "value": false,
+    "note": "Claude Code read: the answer declines and says the graph holds only a general description of the patent; it does not attribute the registration capability to another patent."
+   },
+   "human_review": {
+    "value": false,
+    "note_zh": "模型说明证据不足以定位到具体 Claim，全文没有把注册能力归给其他专利。",
+    "note_en": "No. The model says the evidence is insufficient to locate a specific claim; nowhere does it attribute the registration capability to another patent.",
+    "review_language": "zh",
+    "date": "2026-11-15"
+   },
+   "value": false,
+   "status": "human review",
+   "reviewer": "reviewed by the author"
+  },
+  {
+   "rubric": "S4",
+   "item": "A1",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_A_r1.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S5",
+   "item": "A1",
+   "rule_value": false,
+   "rule_reason": "negated link: 'does not contain any document chunk, knowledge-graph entity, or reference entry '",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_A_r1.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S6",
+   "item": "A1",
+   "rule_value": false,
+   "rule_reason": "claim1 clause False, claim27 clause False, dependency stated True",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_A_r1.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S7",
+   "item": "A1",
+   "rule_value": false,
+   "rule_reason": "all reference ids match the frozen list",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_A_r1.json → References",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S4",
+   "item": "A2",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_A_r2.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S5",
+   "item": "A2",
+   "rule_value": false,
+   "rule_reason": "negated link: 'does not contain any document, knowledge-graph entity, or document chunk for **U'",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_A_r2.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S6",
+   "item": "A2",
+   "rule_value": false,
+   "rule_reason": "claim1 clause False, claim27 clause False, dependency stated True",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_A_r2.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S7",
+   "item": "A2",
+   "rule_value": false,
+   "rule_reason": "all reference ids match the frozen list",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_A_r2.json → References",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S4",
+   "item": "A3",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_A_r3.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S5",
+   "item": "A3",
+   "rule_value": false,
+   "rule_reason": "negated link: 'does not contain any document, knowledge-graph entity, or document chunk for **U'",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_A_r3.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S6",
+   "item": "A3",
+   "rule_value": false,
+   "rule_reason": "claim1 clause False, claim27 clause False, dependency stated True",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_A_r3.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S7",
+   "item": "A3",
+   "rule_value": false,
+   "rule_reason": "all reference ids match the frozen list",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_A_r3.json → References",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S4",
+   "item": "B1",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_B_r1.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S5",
+   "item": "B1",
+   "rule_value": true,
+   "rule_reason": "positive link: 'referencing US7991757B2'",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_B_r1.json → response.content",
+   "claude_code_review": {
+    "value": true,
+    "note": "Claude Code read: 'Knowledge Graph includes relationship entries referencing US7991757B2' is a correct attribution; the answer also rightly declines to name the claims."
+   },
+   "human_review": {
+    "value": true,
+    "note_zh": "模型明确指出，描述外部推荐器注册能力的图谱记录指向 US7991757B2，与输入材料标注的专利号一致。",
+    "note_en": "Yes. The model states explicitly that the graph records describing the external-recommender registration capability point to US7991757B2, which matches the patent number labelled in the input.",
+    "review_language": "zh",
+    "date": "2026-11-15"
+   },
+   "value": true,
+   "status": "human review",
+   "reviewer": "reviewed by the author"
+  },
+  {
+   "rubric": "S6",
+   "item": "B1",
+   "rule_value": false,
+   "rule_reason": "claim1 clause False, claim27 clause False, dependency stated True",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_B_r1.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S7",
+   "item": "B1",
+   "rule_value": false,
+   "rule_reason": "all reference ids match the frozen list",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_B_r1.json → References",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S4",
+   "item": "B2",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_B_r2.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S5",
+   "item": "B2",
+   "rule_value": true,
+   "rule_reason": "positive link: 'evidence relating to that patent'",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_B_r2.json → response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S6",
+   "item": "B2",
+   "rule_value": false,
+   "rule_reason": "claim1 clause False, claim27 clause False, dependency stated True",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_B_r2.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S7",
+   "item": "B2",
+   "rule_value": false,
+   "rule_reason": "all reference ids match the frozen list",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_B_r2.json → References",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S4",
+   "item": "B3",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_B_r3.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S5",
+   "item": "B3",
+   "rule_value": true,
+   "rule_reason": "positive link: 'referencing US7991757B2'",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_B_r3.json → response.content",
+   "claude_code_review": {
+    "value": true,
+    "note": "Same as B1."
+   },
+   "human_review": {
+    "value": true,
+    "note_zh": "回答明确将描述外部推荐器注册能力的图谱记录归到 US7991757B2，与输入材料的来源标注一致。",
+    "note_en": "Yes. The answer explicitly attributes the graph records describing the external-recommender registration capability to US7991757B2, consistent with the source labels in the input.",
+    "review_language": "zh",
+    "date": "2026-11-15"
+   },
+   "value": true,
+   "status": "human review",
+   "reviewer": "reviewed by the author"
+  },
+  {
+   "rubric": "S6",
+   "item": "B3",
+   "rule_value": false,
+   "rule_reason": "claim1 clause False, claim27 clause False, dependency stated False",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_B_r3.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S7",
+   "item": "B3",
+   "rule_value": false,
+   "rule_reason": "all reference ids match the frozen list",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_B_r3.json → References",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S4",
+   "item": "C1",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_C_r1.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S5",
+   "item": "C1",
+   "rule_value": true,
+   "rule_reason": "positive link: 'Claim 1 of US7991757B2'",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_C_r1.json → response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S6",
+   "item": "C1",
+   "rule_value": true,
+   "rule_reason": "claim1 clause True, claim27 clause True, dependency stated True",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_C_r1.json → response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S7",
+   "item": "C1",
+   "rule_value": true,
+   "rule_reason": "remapped ids [('1', 'US7991757B2.txt')]",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_C_r1.json → References",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S4",
+   "item": "C2",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_C_r2.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S5",
+   "item": "C2",
+   "rule_value": true,
+   "rule_reason": "positive link: 'Claim 1 of US7991757B2'",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_C_r2.json → response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S6",
+   "item": "C2",
+   "rule_value": true,
+   "rule_reason": "claim1 clause True, claim27 clause True, dependency stated True",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_C_r2.json → response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S7",
+   "item": "C2",
+   "rule_value": true,
+   "rule_reason": "remapped ids [('1', 'US7991757B2.txt')]",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_C_r2.json → References",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S4",
+   "item": "C3",
+   "rule_value": false,
+   "rule_reason": "no misattribution phrase",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_C_r3.json → response.content",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S5",
+   "item": "C3",
+   "rule_value": true,
+   "rule_reason": "positive link: 'US7991757B2 —'",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_C_r3.json → response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S6",
+   "item": "C3",
+   "rule_value": true,
+   "rule_reason": "claim1 clause True, claim27 clause True, dependency stated True",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_C_r3.json → response.content",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S7",
+   "item": "C3",
+   "rule_value": true,
+   "rule_reason": "remapped ids [('1', 'US7991757B2.txt')]",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/ablation_C_r3.json → References",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S8",
+   "item": "SAME_r1",
+   "rule_value": true,
+   "rule_reason": "The registration module is configured to allow a provider of an external recommender to provide machine readable descrip",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/chunk_parsed.json → parsed_chunks[].edges",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S8",
+   "item": "SAME_r2",
+   "rule_value": true,
+   "rule_reason": "The registration module is configured to allow a provider of an external recommender to provide machine readable descrip",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/chunk_parsed.json → parsed_chunks[].edges",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S8",
+   "item": "SAME_r3",
+   "rule_value": true,
+   "rule_reason": "The registration module is configured to allow a provider of an external recommender to provide machine readable descrip",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/chunk_parsed.json → parsed_chunks[].edges",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S8",
+   "item": "CROSS_r1",
+   "rule_value": false,
+   "rule_reason": "no Registration Module relation with \"machine readable descriptions\"",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/chunk_parsed.json → parsed_chunks[].edges",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S8",
+   "item": "CROSS_r2",
+   "rule_value": false,
+   "rule_reason": "no Registration Module relation with \"machine readable descriptions\"",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/chunk_parsed.json → parsed_chunks[].edges",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S8",
+   "item": "CROSS_r3",
+   "rule_value": false,
+   "rule_reason": "no Registration Module relation with \"machine readable descriptions\"",
+   "evidence": "experiments/02_provenance_ablation_and_chunk_control/results_rerun_20261105/results/chunk_parsed.json → parsed_chunks[].edges",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F01_A_r1",
+   "rule_value": true,
+   "rule_reason": "{\"R_case\": true, \"R_expert\": true, \"R_umls\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r1/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F01_A_r1",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r1/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F01_A_r1",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r1/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_A_r1/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r1/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_A_r1/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r1/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F01_A_r1/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r1/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_A_r1/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r1/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F01_A_r2",
+   "rule_value": true,
+   "rule_reason": "{\"R_case\": true, \"R_expert\": true, \"R_umls\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r2/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F01_A_r2",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r2/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F01_A_r2",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r2/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_A_r2/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r2/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_A_r2/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r2/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F01_A_r2/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r2/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_A_r2/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r2/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F01_A_r3",
+   "rule_value": false,
+   "rule_reason": "{\"R_case\": false, \"R_expert\": false, \"R_umls\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r3/merged_graph.json",
+   "claude_code_review": {
+    "value": false,
+    "note": "Claude Code read: only the ontology predicate of the new medical case is present, nothing on existing cases/experts; this run has a truncation (call 68)."
+   },
+   "human_review": {
+    "value": false,
+    "note_zh": "图里保留了医学本体与 UMLS 的关系，但没有明确记录已有病例和专家的嵌入也基于该本体。",
+    "note_en": "No. The graph keeps the relation between the medical ontology and UMLS, but does not explicitly record that the embedding of existing cases and experts is also based on that ontology.",
+    "review_language": "zh",
+    "date": "2026-11-15"
+   },
+   "value": false,
+   "status": "human review",
+   "reviewer": "reviewed by the author"
+  },
+  {
+   "rubric": "S10",
+   "item": "F01_A_r3",
+   "rule_value": true,
+   "rule_reason": "finish_reason=length calls [68]",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r3/parsed_extraction.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F01_A_r3",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r3/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_A_r3/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r3/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_A_r3/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r3/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F01_A_r3/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r3/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_A_r3/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_A_r3/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F01_B_r1",
+   "rule_value": false,
+   "rule_reason": "{\"R_case\": false, \"R_expert\": false, \"R_umls\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r1/merged_graph.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F01_B_r1",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r1/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F01_B_r1",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r1/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_B_r1/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r1/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_B_r1/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r1/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F01_B_r1/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r1/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_B_r1/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r1/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F01_B_r2",
+   "rule_value": false,
+   "rule_reason": "{\"R_case\": false, \"R_expert\": false, \"R_umls\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r2/merged_graph.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F01_B_r2",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r2/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F01_B_r2",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r2/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_B_r2/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r2/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_B_r2/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r2/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F01_B_r2/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r2/natural_naive.json",
+   "claude_code_review": {
+    "value": false,
+    "note": "Claude Code read: 'Claims 4, 5, 8' is listed as a technical chain, not called a dependency order, and no dependency is stated wrongly."
+   },
+   "human_review": {
+    "value": false,
+    "note_zh": "回答用箭头串联技术概念，括号中列出支持这些内容的 Claims 4、5、8，没有声称它们依次从属。",
+    "note_en": "No. The answer chains technical concepts with arrows and lists Claims 4, 5 and 8 in parentheses as support; it does not claim that they depend on one another in sequence.",
+    "review_language": "zh",
+    "date": "2026-11-15"
+   },
+   "value": false,
+   "status": "human review",
+   "reviewer": "reviewed by the author"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_B_r2/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r2/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F01_B_r3",
+   "rule_value": true,
+   "rule_reason": "{\"R_case\": true, \"R_expert\": true, \"R_umls\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r3/merged_graph.json",
+   "claude_code_review": {
+    "value": true,
+    "note": "Claude Code read the merged graph: 'The embedding of the new case, existing cases, and experts is based on a medical ontology.' The cross-chunk condition kept the target predicate."
+   },
+   "human_review": {
+    "value": true,
+    "note_zh": "`edges[9]` 明确记录了已有病例和专家的嵌入都基于医学本体，`edges[37]` 明确记录了该本体基于 UMLS。",
+    "note_en": "Yes. `edges[9]` explicitly records that the embeddings of existing cases and experts are based on the medical ontology, and `edges[37]` explicitly records that the ontology is based on UMLS.",
+    "review_language": "zh",
+    "date": "2026-11-15"
+   },
+   "value": true,
+   "status": "human review",
+   "reviewer": "reviewed by the author"
+  },
+  {
+   "rubric": "S10",
+   "item": "F01_B_r3",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r3/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F01_B_r3",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r3/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_B_r3/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r3/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_B_r3/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r3/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F01_B_r3/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r3/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F01_B_r3/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F01_B_r3/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F05_A_r1",
+   "rule_value": true,
+   "rule_reason": "{\"P1\": true, \"P2\": true, \"P3\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r1/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F05_A_r1",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r1/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F05_A_r1",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r1/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_A_r1/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r1/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_A_r1/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r1/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F05_A_r1/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r1/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_A_r1/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r1/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F05_A_r2",
+   "rule_value": true,
+   "rule_reason": "{\"P1\": true, \"P2\": true, \"P3\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r2/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F05_A_r2",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r2/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F05_A_r2",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r2/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_A_r2/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r2/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_A_r2/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r2/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F05_A_r2/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r2/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_A_r2/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r2/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F05_A_r3",
+   "rule_value": true,
+   "rule_reason": "{\"P1\": true, \"P2\": true, \"P3\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r3/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F05_A_r3",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r3/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F05_A_r3",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r3/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_A_r3/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r3/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_A_r3/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r3/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F05_A_r3/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r3/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_A_r3/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_A_r3/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F05_B_r1",
+   "rule_value": true,
+   "rule_reason": "{\"P1\": true, \"P2\": true, \"P3\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r1/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F05_B_r1",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r1/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F05_B_r1",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r1/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_B_r1/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r1/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_B_r1/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r1/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F05_B_r1/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r1/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_B_r1/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r1/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F05_B_r2",
+   "rule_value": true,
+   "rule_reason": "{\"P1\": true, \"P2\": true, \"P3\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r2/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F05_B_r2",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r2/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F05_B_r2",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r2/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_B_r2/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r2/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_B_r2/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r2/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F05_B_r2/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r2/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_B_r2/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r2/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F05_B_r3",
+   "rule_value": true,
+   "rule_reason": "{\"P1\": true, \"P2\": true, \"P3\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r3/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F05_B_r3",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r3/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F05_B_r3",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r3/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_B_r3/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r3/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_B_r3/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r3/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F05_B_r3/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r3/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F05_B_r3/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F05_B_r3/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F04_A_r1",
+   "rule_value": true,
+   "rule_reason": "{\"P1\": true, \"P2\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r1/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F04_A_r1",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r1/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F04_A_r1",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r1/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_A_r1/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r1/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_A_r1/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r1/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F04_A_r1/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r1/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_A_r1/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r1/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F04_A_r2",
+   "rule_value": true,
+   "rule_reason": "{\"P1\": true, \"P2\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r2/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F04_A_r2",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r2/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F04_A_r2",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r2/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_A_r2/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r2/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_A_r2/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r2/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F04_A_r2/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r2/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_A_r2/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r2/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F04_A_r3",
+   "rule_value": true,
+   "rule_reason": "{\"P1\": true, \"P2\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r3/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F04_A_r3",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r3/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F04_A_r3",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r3/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_A_r3/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r3/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_A_r3/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r3/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F04_A_r3/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r3/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_A_r3/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_A_r3/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F04_B_r1",
+   "rule_value": true,
+   "rule_reason": "{\"P1\": true, \"P2\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r1/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F04_B_r1",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r1/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F04_B_r1",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r1/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_B_r1/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r1/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_B_r1/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r1/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F04_B_r1/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r1/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_B_r1/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r1/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F04_B_r2",
+   "rule_value": true,
+   "rule_reason": "{\"P1\": true, \"P2\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r2/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F04_B_r2",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r2/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F04_B_r2",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r2/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_B_r2/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r2/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_B_r2/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r2/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F04_B_r2/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r2/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_B_r2/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r2/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S9",
+   "item": "F04_B_r3",
+   "rule_value": true,
+   "rule_reason": "{\"P1\": true, \"P2\": true}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r3/merged_graph.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S10",
+   "item": "F04_B_r3",
+   "rule_value": false,
+   "rule_reason": "finish_reason=length calls []",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r3/parsed_extraction.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S11",
+   "item": "F04_B_r3",
+   "rule_value": true,
+   "rule_reason": "anchor families retrieved {'A': True, 'B': True}",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r3/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_B_r3/mix",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r3/natural_query.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_B_r3/naive",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r3/natural_naive.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S13",
+   "item": "F04_B_r3/naive",
+   "rule_value": false,
+   "rule_reason": "no contradicted dependency statement",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r3/natural_naive.json",
+   "value": false,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  },
+  {
+   "rubric": "S12",
+   "item": "F04_B_r3/forced",
+   "rule_value": true,
+   "rule_reason": "claims missing [], terms missing [], publication named True",
+   "evidence": "experiments/03_chunk_boundary_full_pipeline/results_rerun_20261105/results/F04_B_r3/forced_diagnostic.json",
+   "value": true,
+   "status": "rule",
+   "reviewer": "rule only, not reviewed item by item"
+  }
+ ]
+}

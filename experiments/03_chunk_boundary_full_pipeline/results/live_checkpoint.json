@@ -1,0 +1,182 @@
+{
+  "utc": "2026-10-30T03:40:20.619663+00:00",
+  "active_group": "F04",
+  "groups": [
+    {
+      "group": "F01",
+      "runs": [
+        {
+          "run_id": "F01_A_r1",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 44,
+            "edges": 57
+          },
+          "truncated_extraction_call_ids": [
+            1
+          ],
+          "finished_utc": "2026-10-30T03:28:33.378781+00:00"
+        },
+        {
+          "run_id": "F01_A_r2",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 44,
+            "edges": 59
+          },
+          "truncated_extraction_call_ids": [
+            56
+          ],
+          "finished_utc": "2026-10-30T03:31:03.772001+00:00"
+        },
+        {
+          "run_id": "F01_A_r3",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 32,
+            "edges": 48
+          },
+          "truncated_extraction_call_ids": [],
+          "finished_utc": "2026-10-30T03:31:52.235229+00:00"
+        },
+        {
+          "run_id": "F01_B_r1",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 36,
+            "edges": 45
+          },
+          "truncated_extraction_call_ids": [],
+          "finished_utc": "2026-10-30T03:29:24.370062+00:00"
+        },
+        {
+          "run_id": "F01_B_r2",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 28,
+            "edges": 39
+          },
+          "truncated_extraction_call_ids": [],
+          "finished_utc": "2026-10-30T03:30:06.786986+00:00"
+        },
+        {
+          "run_id": "F01_B_r3",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 28,
+            "edges": 39
+          },
+          "truncated_extraction_call_ids": [],
+          "finished_utc": "2026-10-30T03:32:37.622219+00:00"
+        }
+      ]
+    },
+    {
+      "group": "F05",
+      "runs": [
+        {
+          "run_id": "F05_A_r1",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 30,
+            "edges": 43
+          },
+          "truncated_extraction_call_ids": [],
+          "finished_utc": "2026-10-30T03:33:51.107976+00:00"
+        },
+        {
+          "run_id": "F05_A_r2",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 25,
+            "edges": 38
+          },
+          "truncated_extraction_call_ids": [],
+          "finished_utc": "2026-10-30T03:36:13.921037+00:00"
+        },
+        {
+          "run_id": "F05_A_r3",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 24,
+            "edges": 37
+          },
+          "truncated_extraction_call_ids": [],
+          "finished_utc": "2026-10-30T03:36:50.016105+00:00"
+        },
+        {
+          "run_id": "F05_B_r1",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 33,
+            "edges": 54
+          },
+          "truncated_extraction_call_ids": [],
+          "finished_utc": "2026-10-30T03:34:48.350943+00:00"
+        },
+        {
+          "run_id": "F05_B_r2",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 32,
+            "edges": 47
+          },
+          "truncated_extraction_call_ids": [],
+          "finished_utc": "2026-10-30T03:35:39.244086+00:00"
+        },
+        {
+          "run_id": "F05_B_r3",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 36,
+            "edges": 50
+          },
+          "truncated_extraction_call_ids": [],
+          "finished_utc": "2026-10-30T03:37:43.445634+00:00"
+        }
+      ]
+    },
+    {
+      "group": "F04",
+      "runs": [
+        {
+          "run_id": "F04_A_r1",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 23,
+            "edges": 37
+          },
+          "truncated_extraction_call_ids": [],
+          "finished_utc": "2026-10-30T03:39:07.920020+00:00"
+        },
+        {
+          "run_id": "F04_B_r1",
+          "status": "completed",
+          "graph_counts": {
+            "nodes": 33,
+            "edges": 64
+          },
+          "truncated_extraction_call_ids": [],
+          "finished_utc": "2026-10-30T03:40:05.101392+00:00"
+        },
+        {
+          "run_id": "F04_B_r2",
+          "status": "running",
+          "graph_counts": null,
+          "truncated_extraction_call_ids": null,
+          "finished_utc": null
+        }
+      ]
+    },
+    {
+      "group": "M01",
+      "runs": []
+    }
+  ],
+  "calls": 254,
+  "observed_upper_cny": 0.9168959999999999,
+  "reserved_cny": 0.632896,
+  "hard_deadline": "2026-10-30T04:11:08+00:00",
+  "compute_stop": "2026-10-30T03:56:08+00:00",
+  "no_duplicate_group_dispatch": true
+}

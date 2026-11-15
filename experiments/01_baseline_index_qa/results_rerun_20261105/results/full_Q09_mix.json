@@ -1,0 +1,553 @@
+{
+  "question_id": "Q09",
+  "mode": "mix",
+  "question": "In US9298709B2, connect the geographic-map-based IP-rights visualization process to the on-screen-button update condition. Which dependent claims establish that connection? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+  "started_utc": "2026-11-05T12:58:21.323202+00:00",
+  "finished_utc": "2026-11-05T12:58:30.116437+00:00",
+  "api_call_id_range": [
+    367,
+    369
+  ],
+  "result": {
+    "status": "success",
+    "message": "Query processed successfully",
+    "data": {
+      "entities": [
+        {
+          "entity_name": "US9298709B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Computer system to visualize data from an IP rights database\" describing a system for visualizing IP rights data as a geographic map.",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "Data Visualization",
+          "entity_type": "artifact",
+          "description": "Visualizations derived from the restricted list of IP rights, including technology type charts, industry type charts, filing trend analysis charts, and IP rights owner filing size charts.<SEP>Visual representations generated in the information pane related to the restricted list of IP rights, such as technology type charts, industry type charts, filing trend analysis charts, owner filing size charts, and lists of IP rights owners.",
+          "source_id": "US9298709B2-chunk-000<SEP>US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "US8509827B2",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Methods and apparatus of context-data acquisition and ranking\" that discloses a system, method, and article of manufacture for acquiring and ranking context data based on a query derived from a short message.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793882765
+        },
+        {
+          "entity_name": "Filing Trend Analysis Chart",
+          "entity_type": "artifact",
+          "description": "A data visualization chart showing filing trend analysis for the IP rights.",
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "US8917913B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Searching with face recognition and social networking profiles\" describing systems for on-line searching using face recognition combined with social networking profiles.",
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793882952
+        },
+        {
+          "entity_name": "Geographic Map",
+          "entity_type": "artifact",
+          "description": "A displayed geographic map having a viewable area whose geographic coordinates define the geographic area used to filter IP rights by owner address.",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "US9589231B2",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Social medical network for diagnosis assistance\" describing a method and system for assisting medical diagnosis by exploiting similarity between new medical cases and existing cases and experts in a common embedding space.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        },
+        {
+          "entity_name": "IP Rights List Generator",
+          "entity_type": "artifact",
+          "description": "A component (37) that generates a list of IP rights from the IP rights database whose owner's geographic address falls within the current viewable area, and restricts the list based on restriction criteria to form a restricted list.",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "US7756837B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Methods and apparatus for searching backup data based on content and attributes\" that discloses transparent bridging of backup storage devices and extraction of management data from backup data-streams.",
+          "source_id": "US7756837B2-chunk-000",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793883179
+        },
+        {
+          "entity_name": "Display Change Notification",
+          "entity_type": "data",
+          "description": "A notification generated by the map display change monitor that includes the geographic coordinates of the current viewable area of the geographic map.<SEP>A notification issued upon detecting a change in the viewable area of the geographic map, generated after a pre-defined time period elapses with no change in the viewable area.",
+          "source_id": "US9298709B2-chunk-000<SEP>US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "Social Medical Network For Diagnosis Assistance",
+          "entity_type": "content",
+          "description": "The title of patent US9589231B2, referring to a network-based approach for assisting diagnosis through similarity matching of medical cases and experts.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        },
+        {
+          "entity_name": "Geographic Map Display",
+          "entity_type": "artifact",
+          "description": "A map interface displaying a viewable geographic area whose coordinates are used to define the geographic area for filtering IP rights by owner address.",
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "US10778629B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Systems and methods for collation, translation, and analysis of passively created digital interaction and relationship data,\" describing methods for modeling relationships between e-mail users.",
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793883322
+        },
+        {
+          "entity_name": "Information Pane",
+          "entity_type": "artifact",
+          "description": "A displayed pane containing one or more data visualizations derived from the restricted list of IP rights.<SEP>A display area containing one or more data visualizations related to the restricted list of IP rights.",
+          "source_id": "US9298709B2-chunk-000<SEP>US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "US8655901B1",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Translation-based query pattern mining\" describing technologies relating to search systems.",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793883238
+        },
+        {
+          "entity_name": "Data Processing System",
+          "entity_type": "artifact",
+          "description": "A computer system (10) that visualizes data from an IP rights database as a geographic map with a viewable area, comprising a map display change monitor, an IP rights list generator, and an information display generator.<SEP>A system with one or more processors and memory configured to evaluate information via a computer network, performing keyword identification, weight determination, ranking, and advertisement selection.<SEP>A computer-based system that detects user interest, identifies keywords, determines keyword weights, receives content requests, ranks keywords, and selects content such as advertisements for display with information resources.",
+          "source_id": "US9298709B2-chunk-000<SEP>US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9298709B2.txt<SEP>US9304738B1.txt",
+          "created_at": 1793882829
+        },
+        {
+          "entity_name": "US8880423B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Inventory estimation for search retargeting\" that describes techniques for estimating advertisement inventory for search retargeting segments.",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882917
+        },
+        {
+          "entity_name": "Inventory Estimation For Search Retargeting",
+          "entity_type": "content",
+          "description": "The title of the patent US8880423B2, referring to techniques for estimating advertisement inventory for search retargeting segments.",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882917
+        },
+        {
+          "entity_name": "Process For Visualizing Data",
+          "entity_type": "method",
+          "description": "A process for visualizing data from an IP rights database involving receiving map change messages, obtaining geographic coordinates, generating and restricting lists of IP rights, and generating and updating data visualizations.",
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "US7991757B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"System for obtaining recommendations from multiple recommenders\" describing a personalization network service and methods for optimizing recommender results.",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793883019
+        },
+        {
+          "entity_name": "Geographic Co-Ordinates",
+          "entity_type": "data",
+          "description": "Coordinates defining the current viewable area of the geographic map display, used to define the geographic area for filtering IP rights and to update data visualizations.",
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "US9304738B1",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Systems and methods for selecting content using weighted terms,\" describing techniques for evaluating information via a computer network using weighted keywords to select content for display.",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793882829
+        },
+        {
+          "entity_name": "IP Right Owner",
+          "entity_type": "person",
+          "description": "An owner of an IP right whose geographic address is used to determine whether the IP right falls within the geographic area of the current viewable area.<SEP>An individual or corporation that owns an IP right, whose geographic address is used to determine whether the IP right falls within the current viewable map area.",
+          "source_id": "US9298709B2-chunk-000<SEP>US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "List Of IP Rights Owners",
+          "entity_type": "data",
+          "description": "A data visualization listing the owners of IP rights.",
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "IP Rights Owner Filing Size Chart",
+          "entity_type": "artifact",
+          "description": "A data visualization chart showing the filing size of IP rights owners.",
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "Restricted List Of IP Rights",
+          "entity_type": "data",
+          "description": "A list of IP rights filtered to those whose owner address is within the current viewable area and further restricted based on one or more restriction criteria.<SEP>A list of IP rights filtered from the IP rights database based on one or more restriction criteria related to the IP rights.",
+          "source_id": "US9298709B2-chunk-000<SEP>US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "Map Change Message",
+          "entity_type": "event",
+          "description": "A message generated in relation to a change in the viewable area of the geographic map, generated after a pre-defined time period elapses and there has been no change in the viewable area.",
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        }
+      ],
+      "relationships": [
+        {
+          "src_id": "Data Processing System",
+          "tgt_id": "US9298709B2",
+          "description": "The patent document describes a data processing system to visualize data from an IP rights database.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Data Visualization",
+          "tgt_id": "Filing Trend Analysis Chart",
+          "description": "The data visualizations include a filing trend analysis chart for the IP rights.",
+          "keywords": "includes",
+          "weight": 1.0,
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Data Processing System",
+          "tgt_id": "US9304738B1",
+          "description": "The patent publication describes systems and methods involving the data processing system for selecting content using weighted terms.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793882829
+        },
+        {
+          "src_id": "Geographic Map",
+          "tgt_id": "IP Rights List Generator",
+          "description": "The IP rights list generator includes IP rights whose owner address is within the geographic area defined by the current viewable area of the geographic map.",
+          "keywords": "filters by viewable area",
+          "weight": 1.0,
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "US8509827B2",
+          "description": "The patent publication US8509827B2 discloses a system, method, and article of manufacture of context-data acquisition and ranking.",
+          "keywords": "describes,discloses",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793882766
+        },
+        {
+          "src_id": "Display Change Notification",
+          "tgt_id": "Geographic Map Display",
+          "description": "The display change notification is issued on detecting a change in the viewable area of the geographic map.",
+          "keywords": "detects change in",
+          "weight": 1.0,
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Diagnosis Assistance Method",
+          "tgt_id": "US9589231B2",
+          "description": "The patent US9589231B2 describes a method for diagnosis assistance exploiting similarity between new medical cases and existing cases and experts.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        },
+        {
+          "src_id": "Data Visualization",
+          "tgt_id": "Information Pane",
+          "description": "The information pane contains one or more data visualizations derived from the restricted list of IP rights.",
+          "keywords": "contains",
+          "weight": 2.0,
+          "source_id": "US9298709B2-chunk-000<SEP>US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Search Retargeting Segment",
+          "tgt_id": "US8880423B2",
+          "description": "The patent describes techniques for estimating advertisement inventory for search retargeting segments.",
+          "keywords": "describes,relates to",
+          "weight": 1.0,
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882922
+        },
+        {
+          "src_id": "Relationship Modeling Program",
+          "tgt_id": "US10778629B2",
+          "description": "The patent document describes a relationship modeling program that assigns weights to characteristics of interaction data and provides a model of relationships between e-mail users.",
+          "keywords": "describes,discloses",
+          "weight": 1.0,
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793883322
+        },
+        {
+          "src_id": "Information Pane",
+          "tgt_id": "Process For Visualizing Data",
+          "description": "The process generates and displays an information pane containing data visualizations related to the restricted list of IP rights.",
+          "keywords": "displays,generates",
+          "weight": 1.0,
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Recommendations Service",
+          "tgt_id": "US7991757B2",
+          "description": "The patent document describes a recommendations service comprising a recommendations retriever and optimization module.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793883023
+        },
+        {
+          "src_id": "Geographic Co-Ordinates",
+          "tgt_id": "IP Right Owner",
+          "description": "The geographic address of at least one owner of each IP right is within the geographic area defined by the geographic coordinates of the current viewable area.",
+          "keywords": "address within area defined by",
+          "weight": 1.0,
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Personalization Network Service",
+          "tgt_id": "US7991757B2",
+          "description": "The patent document describes a personalization network service that enables developers to develop recommenders and optimizes their use and selection.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793883023
+        },
+        {
+          "src_id": "Data Visualization",
+          "tgt_id": "List Of IP Rights Owners",
+          "description": "The data visualizations include a list of IP rights owners.",
+          "keywords": "includes",
+          "weight": 1.0,
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Social Networking Service",
+          "tgt_id": "US8917913B2",
+          "description": "The patent document describes systems interacting with a social networking service.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793882952
+        },
+        {
+          "src_id": "Data Visualization",
+          "tgt_id": "IP Rights Owner Filing Size Chart",
+          "description": "The data visualizations include an IP rights owner filing size chart.",
+          "keywords": "includes",
+          "weight": 1.0,
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Translation-Based Query Pattern Mining",
+          "tgt_id": "US8655901B1",
+          "description": "The patent publication US8655901B1 is titled \"Translation-based query pattern mining\" and describes this technique.",
+          "keywords": "describes,title",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793883238
+        },
+        {
+          "src_id": "Data Visualization",
+          "tgt_id": "Restricted List Of IP Rights",
+          "description": "The data visualizations are derived from the restricted list of IP rights.",
+          "keywords": "derived from",
+          "weight": 1.0,
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Face Recognition",
+          "tgt_id": "US8917913B2",
+          "description": "The patent document describes searching with face recognition and social networking profiles.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793882952
+        },
+        {
+          "src_id": "Geographic Map Display",
+          "tgt_id": "Map Change Message",
+          "description": "The map change message relates to a change in the viewable area of the geographic map.",
+          "keywords": "relates to change in",
+          "weight": 1.0,
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Inventory Estimation For Search Retargeting",
+          "tgt_id": "US8880423B2",
+          "description": "The patent US8880423B2 has the title \"Inventory estimation for search retargeting\" and describes techniques for estimating advertisement inventory.",
+          "keywords": "describes,has title",
+          "weight": 1.0,
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882919
+        },
+        {
+          "src_id": "Display Change Notification",
+          "tgt_id": "Process For Visualizing Data",
+          "description": "The process monitors and stores geographic coordinates and issues a display change notification on detecting a change in the viewable area.",
+          "keywords": "issues",
+          "weight": 1.0,
+          "source_id": "US9298709B2-chunk-001",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Advertisement Inventory",
+          "tgt_id": "US8880423B2",
+          "description": "The patent describes methods and systems for estimating advertisement inventory.",
+          "keywords": "describes,relates to",
+          "weight": 1.0,
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882922
+        },
+        {
+          "src_id": "Social Medical Network For Diagnosis Assistance",
+          "tgt_id": "US9589231B2",
+          "description": "US9589231B2 is the publication number of the patent titled \"Social Medical Network for Diagnosis Assistance\".",
+          "keywords": "has title",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        }
+      ],
+      "chunks": [
+        {
+          "reference_id": "1",
+          "content": "one or more restriction criteria related to the IP rights to form a restricted list of IP rights; and an information display generator to generate and display an information pane containing one or more data visualizations derived from the restricted list of IP rights; wherein, in use, upon receiving each successive display change notification, the information display generator generates or updates each data visualization displayed in the information pane based on the geographic co-ordinates of the current viewable area of the geographic map display corresponding to each successive display change notification. 9. A process for visualizing data from an IP rights database comprising: receiving a map change message in relation to a change in a viewable area of the geographic map, the map change message being generated after a pre-defined time period elapses and there has been no change in the viewable area of the geographic map, obtaining geographic co-ordinates of a current viewable area of the geographic map display, generating a list of IP rights, from the IP rights database, in which a geographic address of at least one owner of each IP right is within a geographic area defined by the geographic co-ordinates of the current viewable area of the geographic map display, restricting the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights, generating and displaying an information pane containing one or more data visualizations related to the restricted list of IP rights, and generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic co-ordinates of the current viewable area of the geographic map display. 10. A process for visualizing data from an IP rights database comprising: monitoring and storing at least recent geographic co-ordinates of a viewable area of a geographic map and issuing a display change notification on detecting a change in the viewable area of the geographic map the display change notification being generated after a pre-defined time period elapses and there has been no change in the viewable area of the geographic map, generating a list of IP rights, from the IP rights database, in which a geographic address of at least one owner of each IP right is within a geographic area defined by geographic co-ordinates of a current viewable area of the geographic map display, restricting the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights, generating and displaying an information pane containing one or more data visualizations related to the restricted list of IP rights, and generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic co-ordinates of the current viewable area of the geographic map display. 11. A process according to claim 10 , wherein the one or more restriction criteria comprises a default setting of one or more restriction criteria, or one or more user-selectable restriction criteria. 12. A process according to claim 10 , wherein the restriction criteria include at least one criterion from the following group: IP jurisdiction of the IP rights; type of IP right; technology type; industry type; filing date of the IP right; the number of applications for IP rights that an IP right owner has filed or owns; whether the IP right owner is an individual or a corporation; whether a representative is listed for the IP right; patent IP rights that are classified in one or more defined IPC classes; trademark IP rights that are classified in a given number of classes; and trademark IP rights classified in one or more defined classes. 13. A process according to claim 10 , wherein the one or more data visualizations comprise a default setting of data visualizations based on a default setting of the restriction criteria, or user-selectable data visualizations based on the restriction criteria. 14. A process according to claim 10 , wherein the data visualizations include at least one data visualization from the following group: a chart of the types of technology to which the IP rights relate; a chart of the types of industries to which the IP rights relate; a filing trend analysis chart for the IP rights; an IP rights owner filing size chart; and, a list of IP rights owners. 15. A process according to claim 10 , wherein generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic coordinates of the current viewable area of the geographic map display occurs after a pre-defined time period elapses and there has been no change in the viewable area of the geographic map. 16. A process according to claim 10 , wherein generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic coordinates of the current viewable area of the geographic map display occurs following a user initiated command. 17. A process according to claim 16 , wherein the user initiated command comprises the pressing of an on-screen button.",
+          "file_path": "US9298709B2.txt",
+          "chunk_id": "US9298709B2-chunk-001"
+        },
+        {
+          "reference_id": "1",
+          "content": "Publication number: US9298709B2\nTitle: Computer system to visualize data from an IP rights database\n\nABSTRACT\nA system ( 10 ) to visualize data from an IP rights database as a geographic map having a viewable area. A map display change monitor ( 23 ) receives a map change message in relation to a change in the viewable area of the geographic map and generates a display change notification, which includes the geographic coordinates of the current viewable area of the geographic map. An IP rights generator ( 37 ) generates a list of IP rights from the IP rights database, in which the geographic address of at least one owner of each IP right is within the geographic area defined by the current map coordinates and also restricts the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights. An information display generator ( 26 ) generates and displays one or more data visualizations derived from the restricted list of IP rights and updates data visualizations upon receiving each successive display change notification.\n\nCLAIMS\nThe invention claimed is: 1. A data processing system to visualise data from an IP rights database comprising: a geographic map display interface to display a geographic map having a viewable area; a map display change monitor to: receive and store at least recent geographic co-ordinates of the viewable area of the geographic map, compare current geographic co-ordinates with immediate previously stored geographic co-ordinates, and generate a display change notification when the current geographic co-ordinates do not match immediate previously stored geographic co-ordinates, wherein the map display change monitor generates the display change notification after a pre-defined time period elapses and there has been no change in the viewable area of the geographic map; a restriction criteria interface to ascertain one or more restriction criteria related to the IP rights; an IP rights list generator to generate a list of IP rights, from the IP rights database, in which a geographic address of at least one owner of each IP right is within a geographic area defined by geographic co-ordinates of the current viewable area of the geographic map, and restrict the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights; and an information display generator to generate and display an information pane containing one or more data visualizations derived from the restricted list of IP rights; wherein, in use, upon receiving each successive display change notification, the information display generator generates or updates each data visualization displayed in the information pane. 2. A system according to claim 1 , wherein the map display change monitor stores the geographic co-ordinates of the viewable area of the geographic map for an entire session, or multiple sessions, to thereby provide a user history of use of the system. 3. A system according to claim 1 , wherein the one or more restriction criteria comprises a default setting of restriction criteria, or one or more user-selectable restriction criteria. 4. A system according to claim 1 , wherein the restriction criteria include at least one criterion from the following group: IP jurisdiction of the IP rights; type of IP right; technology type; industry type; filing date of the IP right; the number of applications for IP rights that an IP right owner has filed; whether the IP right owner is an individual or a corporation; whether a representative is listed for the IP right; patent IP rights that are classified in one or more defined IPC classes; trademark IP rights that are classified in a given number of classes; and trademark IP rights classified in one or more defined classes. 5. A system according to claim 1 , wherein the one or more data visualizations comprise a default setting of data visualizations based on a default setting of the restriction criteria, or user-selectable data visualizations based on the restriction criteria. 6. A system according to claim 1 , wherein it further comprises a data visualization selector to allow the user to select one or more data visualizations based on the restriction criteria. 7. A system according to claim 1 , wherein the data visualizations include at least one data visualization from the following group: a chart of the types of technology to which the IP rights relate; a chart of the types of industries to which the IP rights relate; a filing trend analysis chart for the IP rights; an IP rights owner filing size chart. 8. A computer system to visualise data from an IP rights database comprising: a geographic map display interface to display a geographic map having a viewable area; a map display change monitor to: receive a map change message in relation to a change in the viewable area of the geographic map, obtain geographic co-ordinates of a current viewable area of the geographic map, and generate a display change notification including the geographic co-ordinates of the current viewable area of the geographic map, wherein the display change notification is generated after a pre-defined time period elapses and there has been no change in the viewable area of the geographic map; a restriction criteria interface to ascertain one or more restriction criteria related to the IP rights; an IP rights list generator to generate a list of IP rights, from the IP rights database, in which a geographic address of at least one owner of each IP right is within a geographic area defined by geographic co-ordinates of the current viewable area of the geographic map, and restrict the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights; and an information display generator to generate and display an information pane containing one or more data visualizations derived from the restricted list of IP rights; wherein, in use, upon receiving each successive display change notification, the information display generator generates or updates each data visualization displayed in the information pane based on the geographic co-ordinates of the current viewable area of the geographic map display corresponding to each successive display change notification",
+          "file_path": "US9298709B2.txt",
+          "chunk_id": "US9298709B2-chunk-000"
+        },
+        {
+          "reference_id": "2",
+          "content": "Publication number: US10867122B1\nTitle: Contextually relevant knowledge panels in an application environment\n\nABSTRACT\nFrom the content of a document, a factual entity that relates to the content of the document is determined. Content for a knowledge panel is requested. A knowledge panel is a user interface element that provides a collection of content related to the factual entity. The contents of the knowledge panel is received for contemporaneous display on the user device with the content of the document.\n\nCLAIMS\nWhat is claimed is: 1. A method performed by a data processing apparatus, the method comprising: receiving content displayed within a display environment that is displayed on a user device as the content is being typed into the display environment by a user; determining, while receiving a first portion of the content being typed in the display environment that is displayed on a user device, and based on a second portion of the content that (i) was previously typed and (ii) is behind an input cursor included in the display environment, a first factual entity related to the second portion of content that is behind the input cursor; after determining the first factual entity and while receiving a third portion of the content being typed and based on (i) the first portion of the content that was previously typed and (ii) the second portion content that was previously typed, that both collectively comprise an updated portion of content that occurs in the display environment, determining a second factual entity that is related to the first portion of the content, the second portion of the content, and the third portion of the content, the determining the second factual entity comprising: determining that a measured level of intent for the third portion of the content is greater than a threshold level of intent; and in response to determining that the measured level of intent for the third portion of the content is greater than the threshold level of intent, determining the second factual entity that is related to the first portion of the content, the second portion of the content, and the third portion of the content; requesting, for a user interface element, content that is related to both the first factual entity and the second factual entity, wherein the user interface element provides a collection of content related to the first factual entity and the second factual entity within the display environment; receiving the content of the user interface element for contemporaneous display on the user device with the content of the display environment; and providing, to the user device, instructions to cause display of the content in the user interface element with the display environment. 2. The method of claim 1 , the method further comprising: providing, to the user device, instructions to cause display of the first factual entity and the second factual entity with the content of the user interface element. 3. The method of claim 1 , wherein the display environment is a document display environment, and wherein the document display environment displays a document authored by the user. 4. The method of claim 1 , further comprising: after providing instructions to cause display of the content of the user interface element with the display environment: receiving additional content that is typed in the display environment after the first portion of the content that was typed in the display environment; determining, in response to the additional content, a third factual entity related to the additional content; requesting, for the user interface element, updated content that is related to the first factual entity, the second factual entity, and the third factual entity; receiving the updated content of the user interface element for contemporaneous display on the user device with the content of the display environment; and providing, to the user device, instructions to cause display of the updated content in the user interface element with the display environment. 5. The method of claim 1 , wherein: the user interface element comprises an input element configured to receive input from the user device; and the method further comprises: receiving an indication that the user device supplied input to input element; and inserting a portion of the content displayed in the user interface element into the content of the display environment. 6. A non-transitory computer storage medium encoded with computer program instructions that, when executed by one or more processors, cause a computer device to perform operations comprising: receiving content displayed within a display environment that is displayed on a user device as the content is being typed into the display environment by a user; determining, while receiving a first portion of the content being typed in the display environment that is displayed on a user device, and based on a second portion of the content that (i) was previously typed and (ii) is behind an input cursor included in the display environment, a first factual entity related to the second portion of content that is behind the input cursor; after determining the first factual entity and while receiving a third portion of the content being typed and based on (i) the first portion of the content that was previously typed and (ii) the second portion content that was previously typed, that both collectively comprise an updated portion of content that occurs in the display environment, determining a second factual entity that is related to the first portion of the content, the second portion of the content, and the third portion of the content, the determining the second factual entity comprising: determining that a measured level of intent for the third portion of the content is greater than a threshold level of intent; and in response to determining that the measured level of intent for the third portion of the content is greater than the threshold level of intent, determining the second factual entity that is related to the first portion of the content, the second portion of the content, and the third portion of the content; requesting, for a user interface element, content that is related to both the first factual entity and the second factual entity, wherein the user interface element provides a collection of content related to the first factual entity and the second factual entity within the display environment; receiving the content of the user interface element for contemporaneous display on the user device with the content of the display environment; and",
+          "file_path": "US10867122B1.txt",
+          "chunk_id": "US10867122B1-chunk-000"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9298709B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US10867122B1.txt"
+        }
+      ]
+    },
+    "metadata": {
+      "query_mode": "mix",
+      "keywords": {
+        "high_level": [
+          "patent claim analysis",
+          "geographic-map-based IP-rights visualization",
+          "on-screen-button update condition",
+          "dependent claims",
+          "claim dependency"
+        ],
+        "low_level": [
+          "US9298709B2",
+          "patent publication number",
+          "claim number",
+          "supporting wording",
+          "geographic map",
+          "IP rights visualization",
+          "on-screen button",
+          "update condition"
+        ]
+      },
+      "processing_info": {
+        "total_entities_found": 27,
+        "total_relations_found": 25,
+        "entities_after_truncation": 27,
+        "relations_after_truncation": 25,
+        "merged_chunks_count": 17,
+        "final_chunks_count": 3
+      }
+    },
+    "llm_response": {
+      "content": "## Connection in US9298709B2\n\n**Stated facts (from the claims):**\n\nThe geographic-map-based visualization process is set out in **claim 10** of **US9298709B2**, which recites \"monitoring and storing at least recent geographic co-ordinates of a viewable area of a geographic map and issuing a display change notification on detecting a change in the viewable area of the geographic map,\" then \"generating a list of IP rights... in which a geographic address of at least one owner of each IP right is within a geographic area defined by geographic co-ordinates of a current viewable area,\" \"restricting the list of IP rights based on one or more restriction criteria... to form a restricted list of IP rights,\" and \"generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic co-ordinates.\"\n\nThe on-screen-button update condition is established through a chain of dependent claims:\n\n- **Claim 15** ties updating to timing: \"generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic coordinates of the current viewable area of the geographic map display occurs after a pre-defined time period elapses and there has been no change in the viewable area of the geographic map.\"\n- **Claim 16** introduces the user-command alternative: \"generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic coordinates of the current viewable area of the geographic map display occurs following a user initiated command.\"\n- **Claim 17** specifies the button: \"wherein the user initiated command comprises the pressing of an on-screen button.\"\n\n**Inference (not stated in the patent text):**\n\nClaim 17 depends from claim 16, which depends from claim 10; therefore, the on-screen-button update condition is linked to the geographic-map visualization process of claim 10 only through the dependency chain 10 → 16 → 17. The claims themselves do not expressly state that claim 17 incorporates claim 10's steps; that connection follows from the dependency format.\n\n### References\n\n- [1] US9298709B2.txt",
+      "response_iterator": null,
+      "is_streaming": false,
+      "llm_generated": true
+    }
+  }
+}

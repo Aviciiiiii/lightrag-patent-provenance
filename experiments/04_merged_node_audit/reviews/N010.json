@@ -1,0 +1,546 @@
+{
+  "audit_id": "N010",
+  "node_id": "First User",
+  "category": "contextual_conflation",
+  "confidence": "medium",
+  "reason_zh": "两篇原文中First User分别是社交寻人流程的发起者和广告权重学习中的第一兴趣提供者；first仅在各自文档内赋予指称作用域，不能跨专利用同一个序号判定角色对应。现图把两类具体角色描述和其邻边聚合为单一Person ID。共同User上位类可容纳两类人，但不足以保留First User这一有文档作用域的参与者角色语义；这里只认定作用域折叠，不认定现实个体同一或已发生错误传播。",
+  "class_instance_interpretation_zh": "document-local participant role被折叠；不是现实中命名个体的同一性判断。若将节点专门重解释为“任一文档中的第一用户”宽类，则可以合法聚合，但现有图未明确声明该类、实例边或文档局部角色映射，不能用它连接两个场景中的特定参与者。此替代解释是medium置信度的主要原因。",
+  "source_assessments": [
+    {
+      "publication_number": "US9118735B1",
+      "evidence_quote": "for assisting a first user in finding a second user using a social network",
+      "claim_or_section": "Claim 16",
+      "source_chunk_ids": [
+        "US9118735B1-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US9118735B1-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_chunk": true,
+        "exact_contiguous_in_saved_claim": true,
+        "claims_file": "data/claims/US9118735B1.json",
+        "claim_number": 16,
+        "claim_char_start": 54,
+        "chunk_char_starts": {
+          "US9118735B1-chunk-001": 1930
+        }
+      },
+      "role_zh": "寻人发起者；使用其位置和社交网络寻找第二用户，接收第三用户的标识或回应。",
+      "extraction_description_support": "实体描述的寻人、标识、位置与社交网络由Claim16及8/10/11/12支持。",
+      "raw_extraction_records_reviewed": [
+        {
+          "chunk_id": "US9118735B1-chunk-001",
+          "content_sha256": "b3448c0610adb75d41d0e719be9b14b65e384183af67e7f82dd178abc42f6404",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 1,
+              "raw_line": "entity<|#|>First User<|#|>Person<|#|>A user seeking to find a second user via a social network; the first user has an identifier, a location, and a social network that can be traversed and combined from multiple social network types.",
+              "fields": [
+                "entity",
+                "First User",
+                "Person",
+                "A user seeking to find a second user via a social network; the first user has an identifier, a location, and a social network that can be traversed and combined from multiple social network types."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 19,
+              "raw_line": "relation<|#|>First User<|#|>Second User<|#|>Finding, Assistance<|#|>The first user is assisted in finding the second user using a social network.",
+              "fields": [
+                "relation",
+                "First User",
+                "Second User",
+                "Finding, Assistance",
+                "The first user is assisted in finding the second user using a social network."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 20,
+              "raw_line": "relation<|#|>First User<|#|>Social Network<|#|>Association<|#|>The social network of the first user is determined based on the identifier associated with the first user and can be traversed using the first user as an origin.",
+              "fields": [
+                "relation",
+                "First User",
+                "Social Network",
+                "Association",
+                "The social network of the first user is determined based on the identifier associated with the first user and can be traversed using the first user as an origin."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 22,
+              "raw_line": "relation<|#|>Third User<|#|>First User<|#|>Proximity, Degrees Of Separation<|#|>The third user has a last-known location within a predetermined distance from the first user's location and has a number of degrees of separation and a type of relationship with the first user.",
+              "fields": [
+                "relation",
+                "Third User",
+                "First User",
+                "Proximity, Degrees Of Separation",
+                "The third user has a last-known location within a predetermined distance from the first user's location and has a number of degrees of separation and a type of relationship with the first user."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 24,
+              "raw_line": "relation<|#|>Fourth User<|#|>First User<|#|>Negative Affinity<|#|>The first user and the fourth user have a negative affinity, based on which a determination is made not to return the fourth user's identifier.",
+              "fields": [
+                "relation",
+                "Fourth User",
+                "First User",
+                "Negative Affinity",
+                "The first user and the fourth user have a negative affinity, based on which a determination is made not to return the fourth user's identifier."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 30,
+              "raw_line": "relation<|#|>Third User<|#|>First User<|#|>Same Event Or Venue<|#|>The last-known location of the third user and the location of the first user may be determined to be the same event or venue.",
+              "fields": [
+                "relation",
+                "Third User",
+                "First User",
+                "Same Event Or Venue",
+                "The last-known location of the third user and the location of the first user may be determined to be the same event or venue."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 31,
+              "raw_line": "relation<|#|>First User<|#|>Kiosk<|#|>Identifier Receipt<|#|>The identifier associated with the first user is received at a kiosk having a pre-determined location.",
+              "fields": [
+                "relation",
+                "First User",
+                "Kiosk",
+                "Identifier Receipt",
+                "The identifier associated with the first user is received at a kiosk having a pre-determined location."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 35,
+              "raw_line": "relation<|#|>First User<|#|>Social Network<|#|>Combining, Traversal<|#|>The social network of the first user may be determined by combining a first social network and a second social network of different types, and traversed using the first user and second user as origins.",
+              "fields": [
+                "relation",
+                "First User",
+                "Social Network",
+                "Combining, Traversal",
+                "The social network of the first user may be determined by combining a first social network and a second social network of different types, and traversed using the first user and second user as origins."
+              ]
+            }
+          ]
+        }
+      ],
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The first user is assisted in finding the second user using a social network.",
+          "keywords": "Assistance,Finding",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "First User",
+          "target": "Second User",
+          "edge_index": 188,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The social network of the first user may be determined by combining a first social network and a second social network of different types, and traversed using the first user and second user as origins.<SEP>The social network of the first user is determined based on the identifier associated with the first user and can be traversed using the first user as an origin.",
+          "keywords": "Association,Combining,Traversal",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "First User",
+          "target": "Social Network",
+          "edge_index": 189,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The third user has a last-known location within a predetermined distance from the first user's location and has a number of degrees of separation and a type of relationship with the first user.<SEP>The last-known location of the third user and the location of the first user may be determined to be the same event or venue.",
+          "keywords": "Degrees Of Separation,Proximity,Same Event Or Venue",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "First User",
+          "target": "Third User",
+          "edge_index": 190,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The first user and the fourth user have a negative affinity, based on which a determination is made not to return the fourth user's identifier.",
+          "keywords": "Negative Affinity",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "First User",
+          "target": "Fourth User",
+          "edge_index": 191,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The identifier associated with the first user is received at a kiosk having a pre-determined location.",
+          "keywords": "Identifier Receipt",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "First User",
+          "target": "Kiosk",
+          "edge_index": 192,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "evidence_quote": "an indication of user interest of a first user in a first advertisement displayed on a parked domain web page",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ],
+      "quote_source_chunk_ids": [
+        "US9304738B1-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_chunk": true,
+        "exact_contiguous_in_saved_claim": true,
+        "claims_file": "data/claims/US9304738B1.json",
+        "claim_number": 1,
+        "claim_char_start": 160,
+        "chunk_char_starts": {
+          "US9304738B1-chunk-000": 1202
+        }
+      },
+      "role_zh": "对停放域名网页第一广告表现兴趣的用户；该兴趣参与关键词权重计算。",
+      "extraction_description_support": "chunk000/001实体描述由Claims1/13支持；chunk002把first user称为distinct from second and third，其中first与second必须不同并未在所读Claims1/13/18明文规定（third与两者不同则明确）。这项摘要限定是推断警示，不是现有邻边的无来源事实。",
+      "raw_extraction_records_reviewed": [
+        {
+          "chunk_id": "US9304738B1-chunk-000",
+          "content_sha256": "bf269ef3cfec2756c71ada433b655ddffc3b98b38e15a717a03facdb173d7546",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 11,
+              "raw_line": "entity<|#|>First User<|#|>Person<|#|>A user who shows interest in the first advertisement displayed on the parked domain web page.",
+              "fields": [
+                "entity",
+                "First User",
+                "Person",
+                "A user who shows interest in the first advertisement displayed on the parked domain web page."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 39,
+              "raw_line": "relation<|#|>First User<|#|>First Advertisement<|#|>user interest<|#|>The first user shows interest in the first advertisement displayed on the parked domain web page.",
+              "fields": [
+                "relation",
+                "First User",
+                "First Advertisement",
+                "user interest",
+                "The first user shows interest in the first advertisement displayed on the parked domain web page."
+              ]
+            }
+          ]
+        },
+        {
+          "chunk_id": "US9304738B1-chunk-001",
+          "content_sha256": "886071717df3356cda9c51bbd4b7299b9087e0e835cf5f86a477e6df3d50296d",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 9,
+              "raw_line": "entity<|#|>First User<|#|>Person<|#|>A user whose indication of interest in a first advertisement displayed on a parked domain web page is received.",
+              "fields": [
+                "entity",
+                "First User",
+                "Person",
+                "A user whose indication of interest in a first advertisement displayed on a parked domain web page is received."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 37,
+              "raw_line": "relation<|#|>First User<|#|>First Advertisement<|#|>indicates interest in<|#|>The first user indicates interest in the first advertisement displayed with the parked domain web page.",
+              "fields": [
+                "relation",
+                "First User",
+                "First Advertisement",
+                "indicates interest in",
+                "The first user indicates interest in the first advertisement displayed with the parked domain web page."
+              ]
+            }
+          ]
+        },
+        {
+          "chunk_id": "US9304738B1-chunk-002",
+          "content_sha256": "5068046fde0e59f40e0ae450831aa70f5f1383b362efb5455d0ec0cf6d409520",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "cache_key": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 11,
+              "raw_line": "entity<|#|>First User<|#|>Person<|#|>A user associated with the parked domain web page, distinct from the second and third users.",
+              "fields": [
+                "entity",
+                "First User",
+                "Person",
+                "A user associated with the parked domain web page, distinct from the second and third users."
+              ]
+            }
+          ],
+          "relation_rows": []
+        }
+      ],
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The first user indicates interest in the first advertisement displayed with the parked domain web page.<SEP>The first user shows interest in the first advertisement displayed on the parked domain web page.",
+          "keywords": "indicates interest in,user interest",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "First Advertisement",
+          "target": "First User",
+          "edge_index": 181,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 6,
+    "observed_unsupported_edge": false,
+    "details_zh": "6条实际邻边按各自source_id均有本专利原文支持；广告边181仅源于US9304738B1，寻人/社交/位置边188–192仅源于US9118735B1。未观察到某条边把广告参与者直接断言为寻人发起者；共享节点允许不带来源作用域的跨文档路径组合，但没有读取到这种组合已进入检索/答案的证据。",
+    "edge_indices": [
+      181,
+      188,
+      189,
+      190,
+      191,
+      192
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 181,
+        "source": "First Advertisement",
+        "target": "First User",
+        "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9304738B1",
+            "claim_numbers": [
+              1,
+              13
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 188,
+        "source": "First User",
+        "target": "Second User",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              16
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 189,
+        "source": "First User",
+        "target": "Social Network",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              10,
+              11,
+              12,
+              16
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 190,
+        "source": "First User",
+        "target": "Third User",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              16,
+              17
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 191,
+        "source": "First User",
+        "target": "Fourth User",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              15
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 192,
+        "source": "First User",
+        "target": "Kiosk",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              19
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      }
+    ]
+  },
+  "limitations_zh": [
+    "AI辅助逐条原文审阅，非独立人工gold；未调用外部模型API。",
+    "只判断保存快照中的角色/概念与实际邻边，不测试新查询，不据邻接推断已发生检索或生成传播。",
+    "描述以SEP合并后没有句级来源标签；本文借原始抽取行复核句子来源，不能要求多源边的每个子句都被每个source支持。"
+  ],
+  "reviewed_utc": "2026-10-30T08:10:30.358685+00:00",
+  "dossier_path": "dossiers/N010.json",
+  "original_files_modified": false,
+  "external_model_api_calls": 0
+}

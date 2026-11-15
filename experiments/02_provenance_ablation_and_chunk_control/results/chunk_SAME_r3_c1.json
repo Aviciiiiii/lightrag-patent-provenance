@@ -1,0 +1,31 @@
+{
+  "condition": "SAME",
+  "repeat": 3,
+  "chunk_index": 1,
+  "chunk_id": "controlled-US7991757B2-same-001",
+  "file_path": "US7991757B2.txt",
+  "call_id": 19,
+  "request_messages_exact_match": true,
+  "response": {
+    "id": 19,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "entity<|#|>Content Site<|#|>Organization<|#|>A site that selects at least some of the weights to assign to external recommenders, as described in the claim.\nentity<|#|>External Recommenders<|#|>Organization<|#|>Entities that receive weights assigned by the content site.\nentity<|#|>Weights<|#|>Data<|#|>Values assigned to external recommenders, at least some of which are selected by the content site.\nrelation<|#|>Content Site<|#|>External Recommenders<|#|>weight assignment, selection<|#|>The content site selects at least some of the weights to assign to the external recommenders.\nrelation<|#|>Content Site<|#|>Weights<|#|>selection, assignment<|#|>The content site selects at least some of the weights.\nrelation<|#|>Weights<|#|>External Recommenders<|#|>assignment<|#|>The weights are assigned to the external recommenders.\n<|COMPLETE|>",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1843,
+      "completion_tokens": 241,
+      "total_tokens": 2084,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 51
+    },
+    "reasoning_content_present": false
+  },
+  "completion_delimiter_present": true,
+  "valid_nontruncated": true
+}

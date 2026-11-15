@@ -1,0 +1,39 @@
+{
+  "reviewed_utc": "2026-10-29T16:14:05.132798+00:00",
+  "status": "ready_for_model_calls",
+  "conditions_file": "round3/evidence/chunk_conditions.json",
+  "script": "round3/scripts/prepare_chunks.py",
+  "checks": {
+    "SAME": {
+      "two_calls": true,
+      "source_identical": true,
+      "raw_and_excerpt_tokens_exactly_aligned": true,
+      "chunks_with_module_and_machine_descriptions": [
+        0
+      ]
+    },
+    "CROSS": {
+      "two_calls": true,
+      "source_identical": true,
+      "raw_and_excerpt_tokens_exactly_aligned": true,
+      "chunks_with_module_and_machine_descriptions": []
+    }
+  },
+  "official_prompt_byte_exact_round2_api_0003": true,
+  "official_version": "1.5.7",
+  "parser_must_be_official": "lightrag.operate._process_extraction_result",
+  "primary_target": "The registration module allows a provider of an external recommender to provide machine readable descriptions of that recommender.",
+  "legal_dependency_is_separate": true,
+  "mandatory_output_cap": 8192,
+  "calls_made_by_design_agent": 0,
+  "credentials_read_by_design_agent": false,
+  "prior_round_files_modified": false,
+  "preparation_interruption_note": "Two local preparation imports were interrupted before model/API work because unrelated PyYAML/numpy module file reads stalled. Final preparation uses AST-loaded unmodified official prompt literals and existing cached official tokenizer. Both interrupted processes exited130. Final preparation exited0.",
+  "boundary_limitations": [
+    "Only the original boundary placement changes; lengths and semantic completeness of individual chunks necessarily change.",
+    "Both conditions make two separate stateless extraction calls and repeat the same prompt overhead, controlling call count and total source text. No cross-chunk LLM merge or full-graph reconstruction is performed.",
+    "This tests an artificial split inside one Claim27 sentence, not the natural separation of complete Claim1 and Claim27. Claim27 names the module and external recommender explicitly, so simply separating whole Claims1/27 is not a clean test of this technical relation.",
+    "The excerpt excludes Claims1-25 by the same rule in both conditions; nothing is inserted, paraphrased or shuffled inside the retained contiguous source span."
+  ],
+  "whole_document_endpoint_note": "Final whole-document span endpoint falls within the tokenizer token containing the source final period and document trailing newline. Exact source byte range and enclosing global token range are recorded; raw-claims/excerpt token spans are exact."
+}

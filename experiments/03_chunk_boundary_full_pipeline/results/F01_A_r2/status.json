@@ -1,0 +1,40 @@
+{
+  "run_id": "F01_A_r2",
+  "group": "F01",
+  "condition": "A",
+  "repeat": 2,
+  "scope": "full_round2_document",
+  "started_utc": "2026-10-30T03:30:06.787699+00:00",
+  "status": "completed",
+  "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F01_A_r2",
+  "workspace": "patent_r4_f01_a_r2",
+  "no_reused_extraction_or_answer_cache": true,
+  "embedding_cache_reused": false,
+  "publication_number": "US9589231B2",
+  "index_call_id_range": [
+    56,
+    72
+  ],
+  "doc_counts": {
+    "pending": 0,
+    "parsing": 0,
+    "analyzing": 0,
+    "processing": 0,
+    "preprocessed": 0,
+    "processed": 1,
+    "failed": 0,
+    "all": 1
+  },
+  "graph_counts": {
+    "nodes": 44,
+    "edges": 59
+  },
+  "truncated_extraction_call_ids": [
+    56
+  ],
+  "boundary_causal_eligible": false,
+  "natural_status": "success",
+  "natural_answer_generated": true,
+  "finished_utc": "2026-10-30T03:31:03.772001+00:00",
+  "cumulative_conservative_cost_cny": 0.267282
+}

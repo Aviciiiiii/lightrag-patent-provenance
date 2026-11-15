@@ -1,0 +1,53 @@
+{
+  "frozen_utc": "2026-10-30T03:32:16.124230+00:00",
+  "group": "F04",
+  "publication_number": "US8509827B2",
+  "model_outputs_seen": false,
+  "source_sha256": "5a71bb3859364643cc26928be54a07c3bb4c84945dcae928532de56441f3aa0a",
+  "gold_type": "Independent AI-assisted researcher reading of exact patent source; not human annotated; no model calls or model self-grading",
+  "predicates": {
+    "P1": {
+      "statement": "Context-data ranking or selection uses pecuniary/monetary acquisition cost as its criterion/parameter/metric.",
+      "claims": [
+        1,
+        18,
+        22
+      ],
+      "edge_acceptance": "An explicit edge description must associate a ranking/selection operation or its specified parameter/metric with context-data cost. Flexible faithful endpoints allowed; generic cost availability or source provides data alone fails.",
+      "entity_description_separate": "Record entity-description retention separately; not substitute for a relation edge."
+    },
+    "P2": {
+      "statement": "A context-data source/provider supplies or is allowed to provide the cost value of context-data.",
+      "claims": [
+        14,
+        25
+      ],
+      "edge_acceptance": "An explicit relation description associates the context-data source/provider with providing cost/value/price. Generic provider supplies context-data is not enough.",
+      "entity_description_separate": "Record separately whether supplier-cost meaning occurs in an entity description."
+    }
+  },
+  "joint_edge_criterion": "Both explicit component predicates exist and refer to compatible context-data cost entities/semantics; inspect actual graph endpoint identity. Do not require inferred source/provider-to-ranking shortcut. If no common graph node, report semantic co-retention separately from actual chain connectivity.",
+  "claim_dependency_secondary": "Claim14 depends on1 and Claim25 depends on22; only count graph dependency if actual Claim entities and dependency edge present. Answer dependency can be supported by original retrieved text without graph edge.",
+  "natural_retrieval_criterion": "Record whether original chunks contain full target exact anchor families and whether retrieved graph descriptions retain P1/P2; do not infer retention solely from final answer.",
+  "answer_criterion": "Both correct technical components, correct source US8509827B2 and relevant claims; no invented minimum-price rule, weighting, price algorithm or guaranteed impact. Merely quoting cost does not prove supplier distinction.",
+  "forced_diagnostic": "Original Claims1/14/18/22/25 supplied; score separately and never count as natural retrieval.",
+  "truncation_rule": "Any length extraction or parser truncation makes run ineligible for pure boundary attribution; retain observed positives/negatives with truncation flag, no causal negative.",
+  "known_source_limits": [
+    "Original Claims2/3 have missing parent numbers; this target uses only unaffected Claims1/14/18/22/25. Cost-based ranking occurs in Claims1/18/22 and supplier-cost wording in14/25; all these lexical equivalents are included. The source can provide cost values but no specific pricing algorithm or causal effect is claimed."
+  ],
+  "semantic_limits": [
+    "Claim14 itself calls supplier-provided cost the specified parameter, so B retains related parameter/cost semantics.",
+    "Literal anchor isolation is verified, not semantic equivalence completeness.",
+    "This measures component-chain co-retention, not an irreducibly cross-fragment relation."
+  ],
+  "A_expected_chunk_tokens": [
+    1200,
+    226
+  ],
+  "B_expected_chunk_tokens": [
+    712,
+    315,
+    456,
+    143
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "audit_id": "N005",
+  "node_id": "Communication Network",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两篇都指承载电子数据通信的网络类别：一篇传输备份查询与回复，另一篇传输移动设备上下文数据并以网络状态作为排序参数。不同承载内容并未构成不相容词义。Internet只由US7756837B2支持，不应扩张到另一篇的所有网络。",
+  "class_instance_interpretation_zh": "共享的是通信网络这一宽类，不是两篇实现中的同一物理网络，也不是所有通信网络等同Internet。合并节点汇集带来源的用途描述；没有同一个体等同声明。",
+  "source_assessments": [
+    {
+      "publication_number": "US7756837B2",
+      "evidence_quote": "wherein the query is received electronically over a communication network",
+      "claim_or_section": "Claim 14",
+      "source_chunk_ids": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ],
+      "additional_evidence_quotes": [
+        {
+          "evidence_quote": "wherein the communication network is the Internet.",
+          "claim_or_section": "Claim 15",
+          "source_chunk_ids": [
+            "US7756837B2-chunk-000",
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-002"
+          ]
+        }
+      ],
+      "claim_verification_path": "data/claims/US7756837B2.json",
+      "role_zh": "备份数据检索中接收查询并向请求方发送回复的电子通信网络；从属Claim15将其限定为Internet。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取实体描述的该专利用途可由已读Claims支持；不能将合并后其他专利用途一并归给本专利。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US7756837B2-chunk-000",
+            "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+            "line_number": 11,
+            "description": "A network such as the Internet over which queries are received electronically and responses are transmitted electronically to a party."
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "line_number": 9,
+            "description": "A network over which queries are received and responses transmitted electronically; may be the Internet."
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-002",
+            "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+            "line_number": 14,
+            "description": "A network over which queries are received and responses transmitted electronically, which may be the Internet."
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US7756837B2-chunk-000",
+            "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+            "line_number": 53,
+            "raw_line": "relation<|#|>Party<|#|>Communication Network<|#|>Receives Responses Over<|#|>The party receives responses electronically over the communication network."
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-000",
+            "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+            "line_number": 54,
+            "raw_line": "relation<|#|>Communication Network<|#|>Internet<|#|>Is A<|#|>The communication network may be the Internet."
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "line_number": 34,
+            "raw_line": "relation<|#|>Query<|#|>Communication Network<|#|>received over<|#|>The query is received electronically over a communication network."
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+            "line_number": 35,
+            "raw_line": "relation<|#|>Communication Network<|#|>Internet<|#|>is<|#|>The communication network is the Internet."
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-002",
+            "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+            "line_number": 40,
+            "raw_line": "relation<|#|>Query<|#|>Communication Network<|#|>electronic transmission<|#|>The query is received electronically over the communication network and responses are transmitted electronically over it."
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-002",
+            "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+            "line_number": 41,
+            "raw_line": "relation<|#|>Communication Network<|#|>Internet<|#|>type of<|#|>The communication network may be the Internet."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The party receives responses electronically over the communication network.",
+          "keywords": "Receives Responses Over",
+          "source_id": "US7756837B2-chunk-000",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Communication Network",
+          "target": "Party",
+          "edge_index": 110,
+          "source_chunks": [
+            "US7756837B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 3.0,
+          "description": "The communication network is the Internet.<SEP>The communication network may be the Internet.",
+          "keywords": "Is A,is,type of",
+          "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Communication Network",
+          "target": "Internet",
+          "edge_index": 111,
+          "source_chunks": [
+            "US7756837B2-chunk-000",
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The query is received electronically over a communication network.<SEP>The query is received electronically over the communication network and responses are transmitted electronically over it.",
+          "keywords": "electronic transmission,received over",
+          "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Communication Network",
+          "target": "Query",
+          "edge_index": 112,
+          "source_chunks": [
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "all_source_chunk_ids_reviewed": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ]
+    },
+    {
+      "publication_number": "US8509827B2",
+      "evidence_quote": "wherein the specified parameter comprises a state of an available communication network.",
+      "claim_or_section": "Claim 13",
+      "source_chunk_ids": [
+        "US8509827B2-chunk-000"
+      ],
+      "additional_evidence_quotes": [
+        {
+          "evidence_quote": "rendering a context data from the at least one context-data source for communication through a communication network to a mobile device.",
+          "claim_or_section": "Claim 19",
+          "source_chunk_ids": [
+            "US8509827B2-chunk-000"
+          ]
+        }
+      ],
+      "claim_verification_path": "data/claims/US8509827B2.json",
+      "role_zh": "其网络状态可成为上下文数据排序参数；Claim19也用网络向移动设备传输上下文数据。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取实体描述的该专利用途可由已读Claims支持；不能将合并后其他专利用途一并归给本专利。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8509827B2-chunk-000",
+            "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+            "line_number": 19,
+            "description": "A network through which context data may be communicated to a mobile device and whose state may serve as a specified parameter."
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8509827B2-chunk-000",
+            "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+            "line_number": 41,
+            "raw_line": "relation<|#|>Specified Parameter<|#|>Communication Network<|#|>Includes State Of<|#|>The specified parameter may comprise a state of an available communication network."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The specified parameter may comprise a state of an available communication network.",
+          "keywords": "Includes State Of",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793284125,
+          "truncate": "",
+          "source": "Specified Parameter",
+          "target": "Communication Network",
+          "edge_index": 95,
+          "source_chunks": [
+            "US8509827B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8509827B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "all_source_chunk_ids_reviewed": [
+        "US8509827B2-chunk-000"
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 4,
+    "observed_unsupported_edge": false,
+    "details_zh": "已核对全部4条实际邻边：95是上下文排序参数使用网络状态；110、111、112分别为电子回复、Internet和查询传输，来源均与相应Claims一致。111的is/may表述对应不同从属范围，不能作为所有来源网络必为Internet的断言。未观察到把US7756837B2的Internet限定写成US8509827B2专属事实的新增边。",
+    "edge_indices": [
+      95,
+      110,
+      111,
+      112
+    ],
+    "unsupported_edge_indices": [],
+    "all_actual_incident_edges_reviewed": true
+  },
+  "limitations_zh": [
+    "AI辅助逐条审阅，不是独立人工gold；分类是概念/实例解释，不是LightRAG本体声明。",
+    "只审查已保存来源、抽取记录和实际邻边；没有新查询或生成，不能推断潜在跨文档路径已经引起答案污染。",
+    "相同source_id需结合原round2工作空间解释；合并description每个片段的细粒度来源需回查原抽取行。"
+  ],
+  "review_method": "Read all dossier source chunks, target raw entity/relation rows and all actual incident edges; check exact contiguous quotes against saved claim JSON and actual chunk content. No model API.",
+  "reviewed_utc": "2026-10-30T08:11:05.425498+00:00",
+  "external_model_api_calls": 0,
+  "credentials_read": false
+}

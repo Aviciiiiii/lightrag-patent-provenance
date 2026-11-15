@@ -1,0 +1,383 @@
+{
+  "audit_id": "N015",
+  "node_id": "Non-Transitory Computer Readable Medium",
+  "category": "shared_specific_concept",
+  "confidence": "high",
+  "reason_zh": "两篇都明确声明 non-transitory computer readable medium，且其角色均为携带可执行指令的非暂态计算机可读介质；指令实现的应用分别为邮件关系建模和广告关键词评估，不改变这一明确的技术概念。",
+  "class_instance_interpretation_zh": "共享“含可执行指令的非暂态计算机可读介质”概念，而不是同一介质实例或同一组指令；某一介质的应用功能须保留其专利来源。",
+  "source_assessments": [
+    {
+      "publication_number": "US10778629B2",
+      "evidence_quote": "A non-transitory computer readable medium containing executable instructions that when executed perform a method of modeling relationships",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "执行邮件用户关系建模/关系数据生成方法的介质。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US10778629B2-chunk-000",
+        "US10778629B2-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US10778629B2-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US10778629B2.json",
+        "claim_file_sha256": "41a36ef04795d6af3beddfdb7812b36a8aa7a81ec895ae69382a8592dca42a00",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "chunk000 的 Claim 1、chunk001 的 Claim 20 分别支持两段抽取描述。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US10778629B2-chunk-000",
+            "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 10,
+            "raw_line": "entity<|#|>Non-Transitory Computer Readable Medium<|#|>Artifact<|#|>A medium containing executable instructions that when executed perform a method of modeling relationships between e-mail users.",
+            "fields": [
+              "entity",
+              "Non-Transitory Computer Readable Medium",
+              "Artifact",
+              "A medium containing executable instructions that when executed perform a method of modeling relationships between e-mail users."
+            ]
+          },
+          {
+            "chunk_id": "US10778629B2-chunk-001",
+            "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+            "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 11,
+            "raw_line": "entity<|#|>Non-Transitory Computer Readable Medium<|#|>Artifact<|#|>A medium containing executable instructions that when executed perform a method of generating relationship data.",
+            "fields": [
+              "entity",
+              "Non-Transitory Computer Readable Medium",
+              "Artifact",
+              "A medium containing executable instructions that when executed perform a method of generating relationship data."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US10778629B2-chunk-000",
+            "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 46,
+            "raw_line": "relation<|#|>Non-Transitory Computer Readable Medium<|#|>Relationship Modeling Program<|#|>executable instructions<|#|>The non-transitory computer readable medium contains executable instructions that when executed perform a method of modeling relationships using the relationship modeling program.",
+            "fields": [
+              "relation",
+              "Non-Transitory Computer Readable Medium",
+              "Relationship Modeling Program",
+              "executable instructions",
+              "The non-transitory computer readable medium contains executable instructions that when executed perform a method of modeling relationships using the relationship modeling program."
+            ]
+          },
+          {
+            "chunk_id": "US10778629B2-chunk-001",
+            "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+            "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 40,
+            "raw_line": "relation<|#|>Non-Transitory Computer Readable Medium<|#|>Relationship Data<|#|>instructions generate<|#|>The non-transitory computer readable medium contains executable instructions that when executed perform a method of generating relationship data.",
+            "fields": [
+              "relation",
+              "Non-Transitory Computer Readable Medium",
+              "Relationship Data",
+              "instructions generate",
+              "The non-transitory computer readable medium contains executable instructions that when executed perform a method of generating relationship data."
+            ]
+          }
+        ],
+        "raw_entity_count": 2,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The non-transitory computer readable medium contains executable instructions that when executed perform a method of modeling relationships using the relationship modeling program.",
+          "keywords": "executable instructions",
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Non-Transitory Computer Readable Medium",
+          "target": "Relationship Modeling Program",
+          "edge_index": 218,
+          "source_chunks": [
+            "US10778629B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The non-transitory computer readable medium contains executable instructions that when executed perform a method of generating relationship data.",
+          "keywords": "instructions generate",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Non-Transitory Computer Readable Medium",
+          "target": "Relationship Data",
+          "edge_index": 219,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US10778629B2-chunk-000",
+          "sha256": "4186cbfdf5ae0546a6a2e816d9f4dec6c2a2dab527fc6cb34fce62150374f67a",
+          "characters": 6584
+        },
+        {
+          "chunk_id": "US10778629B2-chunk-001",
+          "sha256": "9c08affa61a10a781ad7e194ca432d33e618652662386c29953015f69b28cc9c",
+          "characters": 4025
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "evidence_quote": "A non-transitory computer readable medium having instructions to evaluate information",
+      "claim_or_section": "Claim 18",
+      "claim_number": 18,
+      "role_zh": "执行停放域名广告关键词权重评估的介质。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9304738B1-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9304738B1.json",
+        "claim_file_sha256": "807035dfe18845ee6d0df5c1c655df3f6fe0f045e877c8c95866b22b15f4faa2",
+        "claim_number": 18
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "chunk001 Claim 18 与 chunk002 Claim 19 对介质及页面特定关键词权重的陈述支持抽取。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 22,
+            "raw_line": "entity<|#|>Non-Transitory Computer Readable Medium<|#|>Artifact<|#|>A medium having instructions to evaluate information, comprising instructions to perform the described operations.",
+            "fields": [
+              "entity",
+              "Non-Transitory Computer Readable Medium",
+              "Artifact",
+              "A medium having instructions to evaluate information, comprising instructions to perform the described operations."
+            ]
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-002",
+            "raw_record_id": "default:extract:7aaccba95e58a8dae5414b328138389c",
+            "cache_key": "default:extract:7aaccba95e58a8dae5414b328138389c",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 16,
+            "raw_line": "entity<|#|>Non-Transitory Computer Readable Medium<|#|>Artifact<|#|>A computer readable medium storing instructions, referenced in claim 18 and claim 19.",
+            "fields": [
+              "entity",
+              "Non-Transitory Computer Readable Medium",
+              "Artifact",
+              "A computer readable medium storing instructions, referenced in claim 18 and claim 19."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 49,
+            "raw_line": "relation<|#|>Non-Transitory Computer Readable Medium<|#|>Data Processing System<|#|>instructions for<|#|>The non-transitory computer readable medium has instructions to evaluate information performed by the data processing system.",
+            "fields": [
+              "relation",
+              "Non-Transitory Computer Readable Medium",
+              "Data Processing System",
+              "instructions for",
+              "The non-transitory computer readable medium has instructions to evaluate information performed by the data processing system."
+            ]
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-002",
+            "raw_record_id": "default:extract:7aaccba95e58a8dae5414b328138389c",
+            "cache_key": "default:extract:7aaccba95e58a8dae5414b328138389c",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 30,
+            "raw_line": "relation<|#|>Non-Transitory Computer Readable Medium<|#|>Parked Domain Web Page<|#|>instructions<|#|>The non-transitory computer readable medium stores instructions relating to the parked domain web page keyword weighting.",
+            "fields": [
+              "relation",
+              "Non-Transitory Computer Readable Medium",
+              "Parked Domain Web Page",
+              "instructions",
+              "The non-transitory computer readable medium stores instructions relating to the parked domain web page keyword weighting."
+            ]
+          }
+        ],
+        "raw_entity_count": 2,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The non-transitory computer readable medium has instructions to evaluate information performed by the data processing system.",
+          "keywords": "instructions for",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Non-Transitory Computer Readable Medium",
+          "edge_index": 17,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The non-transitory computer readable medium stores instructions relating to the parked domain web page keyword weighting.",
+          "keywords": "instructions",
+          "source_id": "US9304738B1-chunk-002",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Parked Domain Web Page",
+          "target": "Non-Transitory Computer Readable Medium",
+          "edge_index": 167,
+          "source_chunks": [
+            "US9304738B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9304738B1-chunk-001",
+          "sha256": "886071717df3356cda9c51bbd4b7299b9087e0e835cf5f86a477e6df3d50296d",
+          "characters": 6652
+        },
+        {
+          "chunk_id": "US9304738B1-chunk-002",
+          "sha256": "5068046fde0e59f40e0ae450831aa70f5f1383b362efb5455d0ec0cf6d409520",
+          "characters": 1441
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 4,
+    "observed_unsupported_edge": false,
+    "details_zh": "已逐条审阅实际邻边及其 source_id。未确认一条缺少其自身来源支持的边；合并后的跨文档邻接不能当成已发生错误边传播的证据。",
+    "edge_indices": [
+      17,
+      167,
+      218,
+      219
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 17,
+        "source_id": "US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9304738B1 Claims 13,18",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 167,
+        "source_id": "US9304738B1-chunk-002",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9304738B1 Claims 18,19",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 218,
+        "source_id": "US10778629B2-chunk-000",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US10778629B2 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 219,
+        "source_id": "US10778629B2-chunk-001",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US10778629B2 Claim 20",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      }
+    ],
+    "retrieval_or_generation_propagation_tested": false
+  },
+  "limitations_zh": [
+    "这是 AI 辅助原文/抽取/图结构审阅，非独立人工标注 gold、非新的模型评判 API 实验。",
+    "仅审核当前保存的第二轮图快照与其来源块；概念合并不等于实例 sameAs，也没有进行跨专利路径检索或答案生成传播实验。",
+    "原文为已索引摘要及 Claims；没有用外部说明书填补缺失事实。原始文本中的格式缺陷保持原样。",
+    "边的端点顺序来自保存的无向图；语义方向按原关系描述核对，不把 source/target 字段顺序当作因果方向。",
+    "observed_unsupported_edge=false 表示本次检查未确认无原文支持的实际边，不是证明全图无误；关键词粒度/局部实施例范围的警示另记。",
+    "未给定显式类/实例 ontology。类别是基于具体词义及作用域的审阅标签，contextual_conflation 数量不是错误边数或代码 bug 率；Event/Network 的宽类解释可改变类别。",
+    "缓存提取行未保存 finish_reason 时不推定完整或截断；本审核只对实际保存的实体/关系行与当前已入图事实作语义核验。"
+  ],
+  "ontology_sensitivity": {
+    "explicit_ontology_available": false,
+    "alternative_shared_broad_class_plausible": false,
+    "interpretation_zh": "类别只描述现有证据下的概念语义，未断言跨专利实例相同或已发生错误推理。"
+  },
+  "review_method": {
+    "reviewer": "AI-assisted Codex content review",
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "all_source_publications_reviewed": 2,
+    "all_source_chunks_reviewed": 4,
+    "all_actual_incident_edges_reviewed": 4,
+    "raw_input_kind": "saved extraction rows; no new extraction",
+    "review_protocol_sha256": "bbed066b8051df60997798d319549164d750797ebef3d7c1e86d69ffc6092255",
+    "dossier_sha256": "04ef6becf7d8abe6cde999301b2e388422da98a29e6305b343cc6fe63f92bb82",
+    "generated_utc": "2026-10-30T08:21:11.042439+00:00"
+  },
+  "graph_node_description_reviewed": "A medium having instructions to evaluate information, comprising instructions to perform the described operations.<SEP>A computer readable medium storing instructions, referenced in claim 18 and claim 19.<SEP>A medium containing executable instructions that when executed perform a method of generating relationship data.<SEP>A medium containing executable instructions that when executed perform a method of modeling relationships between e-mail users."
+}

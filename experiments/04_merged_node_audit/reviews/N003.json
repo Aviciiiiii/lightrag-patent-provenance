@@ -1,0 +1,753 @@
+{
+  "audit_id": "N003",
+  "node_id": "Server",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "五来源都支持计算/服务端角色，分别承担邮件关系数据处理、上下文数据收集、社交网络找人、视频流传送和排字错误分类。服务内容不同并不构成server词义冲突；可归为广义服务端类别。Server→User Interface边的具体执行者较弱，单独记录而不升级为跨专利混并。",
+  "class_instance_interpretation_zh": "共享服务端上位类；不等于一个服务器同时运行五个系统，也不能据此合并五项服务的身份。provider关联server与接收短消息server还可能是同一文档中的不同部署角色，来源原文未要求它们相同。",
+  "concept_class_vs_local_instance": "shared class; distinct or unspecified document-local implementations; no same-individual assertion established",
+  "source_assessments": [
+    {
+      "publication_number": "US10778629B2",
+      "evidence_quote": "a server to: receive data comprising a plurality of characteristics of e-mail exchanges between pairs of users of the e-mail system,",
+      "claim_or_section": "Claim 21",
+      "source_chunk_ids": [
+        "US10778629B2-chunk-000",
+        "US10778629B2-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US10778629B2-chunk-001"
+      ],
+      "quote_validation": {
+        "exact_contiguous_substring": true,
+        "claims_json_path": "data/claims/US10778629B2.json",
+        "claim_numbers_containing_quote": [
+          21
+        ],
+        "selected_claim_checked": 21,
+        "abstract_section_checked": false
+      },
+      "role_zh": "从interaction database接收邮件交换特征、赋权并向processor传递数据的关系建模服务端。",
+      "extraction_description_support": {
+        "assessment_zh": "Claims10、21支持接收、赋权和传递。edge92描述的UI显示事实确在Claim10，但该行并未直接说明server自己渲染UI；只可保守视作同一方法中的关联。",
+        "reviewed_raw_records": [
+          {
+            "chunk_id": "US10778629B2-chunk-000",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+                "line_number": 8,
+                "description": "A server that receives data comprising characteristics of e-mail exchanges, assigns weights to characteristics, and transfers data to a processor for generating relationship data."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+                "line_number": 42,
+                "source": "Server",
+                "target": "Interaction Database",
+                "description": "Data comprising characteristics of e-mail exchanges is transferred to the server from an interaction database."
+              },
+              {
+                "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+                "line_number": 43,
+                "source": "Server",
+                "target": "Processor",
+                "description": "The server transfers data to a processor for generating relationship data."
+              },
+              {
+                "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+                "line_number": 45,
+                "source": "Server",
+                "target": "User Interface",
+                "description": "Relationship data is displayed on a user interface."
+              }
+            ]
+          },
+          {
+            "chunk_id": "US10778629B2-chunk-001",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+                "line_number": 9,
+                "description": "A server that receives data comprising characteristics of e-mail exchanges from the interaction database, assigns weights to characteristics, and transfers data to a processor."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+                "line_number": 36,
+                "source": "Server",
+                "target": "Interaction Database",
+                "description": "The server receives data comprising characteristics of e-mail exchanges transferred from the interaction database."
+              },
+              {
+                "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+                "line_number": 37,
+                "source": "Server",
+                "target": "Weight",
+                "description": "The server assigns a weight to each of the plurality of characteristics for each pair of users."
+              },
+              {
+                "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+                "line_number": 38,
+                "source": "Server",
+                "target": "Processor",
+                "description": "The server transfers the data to a processor for generating relationship data."
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The server receives data comprising characteristics of e-mail exchanges transferred from the interaction database.<SEP>Data comprising characteristics of e-mail exchanges is transferred to the server from an interaction database.",
+          "keywords": "data transfer,receives data from",
+          "source_id": "US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Server",
+          "target": "Interaction Database",
+          "edge_index": 90,
+          "source_chunks": [
+            "US10778629B2-chunk-000",
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The server transfers the data to a processor for generating relationship data.<SEP>The server transfers data to a processor for generating relationship data.",
+          "keywords": "data transfer,transfers data to",
+          "source_id": "US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Server",
+          "target": "Processor",
+          "edge_index": 91,
+          "source_chunks": [
+            "US10778629B2-chunk-000",
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Relationship data is displayed on a user interface.",
+          "keywords": "displaying",
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Server",
+          "target": "User Interface",
+          "edge_index": 92,
+          "source_chunks": [
+            "US10778629B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The server assigns a weight to each of the plurality of characteristics for each pair of users.",
+          "keywords": "assigns",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Server",
+          "target": "Weight",
+          "edge_index": 93,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8509827B2",
+      "evidence_quote": "receiving a short message from a mobile device with a server;",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US8509827B2-chunk-000"
+      ],
+      "quote_validation": {
+        "exact_contiguous_substring": true,
+        "claims_json_path": "data/claims/US8509827B2.json",
+        "claim_numbers_containing_quote": [
+          1
+        ],
+        "selected_claim_checked": 1,
+        "abstract_section_checked": false
+      },
+      "role_zh": "接收移动短消息并用于上下文数据收集的服务端；Claim22另述至少一个server从provider收集数据。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000的接收/处理概括与Claim1相符；chunk001的associated with provider是对Claim22收集关系的宽泛释义，并不证明provider所有权或特定服务器实例等同。",
+        "reviewed_raw_records": [
+          {
+            "chunk_id": "US8509827B2-chunk-000",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+                "line_number": 7,
+                "description": "A computing system that receives short messages from mobile devices, determines context-data types, identifies and ranks context-data sources, and generates requests for context data."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+                "line_number": 25,
+                "source": "Context-Data Acquisition And Ranking",
+                "target": "Server",
+                "description": "The method is performed with a server that receives short messages and generates requests for context data."
+              },
+              {
+                "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+                "line_number": 46,
+                "source": "Context-Data Provider",
+                "target": "Server",
+                "description": "A set of context data is collected from the context-data provider with at least one server."
+              }
+            ]
+          },
+          {
+            "chunk_id": "US8509827B2-chunk-001",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:5232641f0d541aaebc65d8d321b4057c",
+                "line_number": 10,
+                "description": "At least one server associated with a context-data provider used to collect a set of context-data."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:5232641f0d541aaebc65d8d321b4057c",
+                "line_number": 23,
+                "source": "Server",
+                "target": "Context-Data Provider",
+                "description": "At least one server is associated with the context-data provider."
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The method is performed with a server that receives short messages and generates requests for context data.",
+          "keywords": "Executes On",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793284125,
+          "truncate": "",
+          "source": "Context-Data Acquisition And Ranking",
+          "target": "Server",
+          "edge_index": 53,
+          "source_chunks": [
+            "US8509827B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8509827B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "At least one server is associated with the context-data provider.<SEP>A set of context data is collected from the context-data provider with at least one server.",
+          "keywords": "Collected By,associated with",
+          "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793284125,
+          "truncate": "",
+          "source": "Server",
+          "target": "Context-Data Provider",
+          "edge_index": 83,
+          "source_chunks": [
+            "US8509827B2-chunk-000",
+            "US8509827B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8509827B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9118735B1",
+      "evidence_quote": "The server may then traverse that person's social network to identify someone who is in a similar location and who knows the person being sought.",
+      "claim_or_section": "ABSTRACT",
+      "source_chunk_ids": [
+        "US9118735B1-chunk-000"
+      ],
+      "quote_source_chunk_ids": [
+        "US9118735B1-chunk-000"
+      ],
+      "quote_validation": {
+        "exact_contiguous_substring": true,
+        "claims_json_path": "data/claims/US9118735B1.json",
+        "claim_numbers_containing_quote": [],
+        "selected_claim_checked": null,
+        "abstract_section_checked": true
+      },
+      "role_zh": "接收找人请求、遍历请求者社交网络、寻找中介并返回标识或回应的服务器。",
+      "extraction_description_support": {
+        "assessment_zh": "Abstract明确server；Claim1给出系统的定位、网络连接、隐私和返回操作。抽取的server操作与这一本地服务上下文一致。",
+        "reviewed_raw_records": [
+          {
+            "chunk_id": "US9118735B1-chunk-000",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+                "line_number": 5,
+                "description": "A computing system that receives requests, traverses social networks to identify connecting persons, and sends identifiers or responses to the requesting person's computer."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+                "line_number": 20,
+                "source": "US9118735B1",
+                "target": "Server",
+                "description": "The patent document describes a server that receives requests and traverses social networks to identify connecting persons."
+              },
+              {
+                "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+                "line_number": 23,
+                "source": "Requesting Person",
+                "target": "Server",
+                "description": "The requesting person sends a request to the server identifying himself or herself, the target person, and the requestor's location."
+              },
+              {
+                "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+                "line_number": 24,
+                "source": "Server",
+                "target": "Social Network",
+                "description": "The server traverses the requesting person's social network to identify a connecting person."
+              },
+              {
+                "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+                "line_number": 25,
+                "source": "Server",
+                "target": "Connecting Person",
+                "description": "The server determines an identifier associated with a connecting person in the requesting person's social network."
+              },
+              {
+                "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+                "line_number": 26,
+                "source": "Server",
+                "target": "Requesting Person",
+                "description": "The server sends an identifier associated with the connecting person, a response based on the connecting person's response, or a possible location of the target person to the requesting person's computer."
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The patent document describes a server that receives requests and traverses social networks to identify connecting persons.",
+          "keywords": "Patent Document,Subject Matter",
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Server",
+          "target": "US9118735B1",
+          "edge_index": 84,
+          "source_chunks": [
+            "US9118735B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The server sends an identifier associated with the connecting person, a response based on the connecting person's response, or a possible location of the target person to the requesting person's computer.<SEP>The requesting person sends a request to the server identifying himself or herself, the target person, and the requestor's location.",
+          "keywords": "Sends Identifier,Sends Request,Sends Response",
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Server",
+          "target": "Requesting Person",
+          "edge_index": 85,
+          "source_chunks": [
+            "US9118735B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The server traverses the requesting person's social network to identify a connecting person.",
+          "keywords": "Traverses",
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Server",
+          "target": "Social Network",
+          "edge_index": 86,
+          "source_chunks": [
+            "US9118735B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The server determines an identifier associated with a connecting person in the requesting person's social network.",
+          "keywords": "Determines,Identifies",
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Server",
+          "target": "Connecting Person",
+          "edge_index": 87,
+          "source_chunks": [
+            "US9118735B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "evidence_quote": "stream a first video content feature from at least one server to a client associated with a user;",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000"
+      ],
+      "quote_source_chunk_ids": [
+        "US9374411B1-chunk-000"
+      ],
+      "quote_validation": {
+        "exact_contiguous_substring": true,
+        "claims_json_path": "data/claims/US9374411B1.json",
+        "claim_numbers_containing_quote": [
+          1
+        ],
+        "selected_claim_checked": 1,
+        "abstract_section_checked": false
+      },
+      "role_zh": "向用户client流式提供视频内容的服务端。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取只有流式供给client这一角色，Claim1直接支持；未把推荐算法全套动作错误放入该server节点。",
+        "reviewed_raw_records": [
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+                "line_number": 11,
+                "description": "A computing system that streams video content features to a client."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+                "line_number": 39,
+                "source": "Server",
+                "target": "Client",
+                "description": "The server streams the first video content feature to the client associated with the user."
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The server streams the first video content feature to the client associated with the user.",
+          "keywords": "streams content to",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Server",
+          "target": "Client",
+          "edge_index": 89,
+          "source_chunks": [
+            "US9374411B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "evidence_quote": "A computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference.",
+      "claim_or_section": "ABSTRACT",
+      "source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ],
+      "quote_source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ],
+      "quote_validation": {
+        "exact_contiguous_substring": true,
+        "claims_json_path": "data/claims/US9514120B1.json",
+        "claim_numbers_containing_quote": [],
+        "selected_claim_checked": null,
+        "abstract_section_checked": true
+      },
+      "role_zh": "由computing device承载、参与作品排字错误识别及反馈处理的server。",
+      "extraction_description_support": {
+        "assessment_zh": "Abstract直接支持host关系和错误识别上下文；Claim1使用processing device描述后续操作。server并非独立于host的另一已证实实体实例。",
+        "reviewed_raw_records": [
+          {
+            "chunk_id": "US9514120B1-chunk-000",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "line_number": 3,
+                "description": "A server hosted by the computing device that performs the typographical error classification operations."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "line_number": 25,
+                "source": "Computing Device",
+                "target": "Server",
+                "description": "The computing device hosts a server that performs typographical error classification."
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The computing device hosts a server that performs typographical error classification.",
+          "keywords": "hosts",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Server",
+          "target": "Computing Device",
+          "edge_index": 88,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 12,
+    "observed_unsupported_edge": false,
+    "details_zh": "12条实际邻边均按source_id核查。53/83为上下文处理，84–87为找人，88为host，89为视频传送，90–93为邮件关系数据。未发现被明确错误归源的跨专利新边；edge92只有UI显示事实，没有明确server执行该显示动作，标为端点语义强度警示。",
+    "edge_indices": [
+      53,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93
+    ],
+    "per_edge_review": [
+      {
+        "edge_index": 53,
+        "source": "Context-Data Acquisition And Ranking",
+        "target": "Server",
+        "source_id": "US8509827B2-chunk-000",
+        "canonical_publications": [
+          "US8509827B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 83,
+        "source": "Server",
+        "target": "Context-Data Provider",
+        "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+        "canonical_publications": [
+          "US8509827B2"
+        ],
+        "status": "scope_or_endpoint_precision_warning",
+        "details_zh": "associated with的抽取词比Claim22的collecting from provider with server更宽泛；不证明server隶属provider。收集联系有原文依据。"
+      },
+      {
+        "edge_index": 84,
+        "source": "Server",
+        "target": "US9118735B1",
+        "source_id": "US9118735B1-chunk-000",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 85,
+        "source": "Server",
+        "target": "Requesting Person",
+        "source_id": "US9118735B1-chunk-000",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 86,
+        "source": "Server",
+        "target": "Social Network",
+        "source_id": "US9118735B1-chunk-000",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 87,
+        "source": "Server",
+        "target": "Connecting Person",
+        "source_id": "US9118735B1-chunk-000",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 88,
+        "source": "Server",
+        "target": "Computing Device",
+        "source_id": "US9514120B1-chunk-000",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 89,
+        "source": "Server",
+        "target": "Client",
+        "source_id": "US9374411B1-chunk-000",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 90,
+        "source": "Server",
+        "target": "Interaction Database",
+        "source_id": "US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 91,
+        "source": "Server",
+        "target": "Processor",
+        "source_id": "US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 92,
+        "source": "Server",
+        "target": "User Interface",
+        "source_id": "US10778629B2-chunk-000",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "status": "scope_or_endpoint_precision_warning",
+        "details_zh": "真实边为Server—User Interface；description仅为Relationship data is displayed on a user interface.。Claim10确含显示步骤，但未明确server直接渲染，Claim21把UI列为系统另一组成部分。可支持同一处理流程关联，不能把它读成已证实的server自身显示操作或错误跨专利传播。"
+      },
+      {
+        "edge_index": 93,
+        "source": "Server",
+        "target": "Weight",
+        "source_id": "US10778629B2-chunk-001",
+        "canonical_publications": [
+          "US10778629B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      }
+    ],
+    "scope_warning_edge_indices": [
+      92,
+      83
+    ],
+    "observed_cross_document_wrong_edge_propagation": false,
+    "retrieval_or_generation_propagation_evaluated": false
+  },
+  "limitations_zh": [
+    "此为AI辅助逐条原文审阅，非独立人类gold，不使用模型评判API。",
+    "类别判断针对共同概念/角色意义；原文没有给出跨专利实例等同或全部成员共享属性的本体断言。",
+    "共享节点可能允许无来源约束的路径组合，但本审计未运行检索/生成，也不能把潜在风险报告成已发生的答案污染。",
+    "抽取句的全部细粒度法律限定不在此四节点语义分类的穷尽验证范围；已记录的端点精度警示不等于确定错误。"
+  ],
+  "review_metadata": {
+    "reviewed_utc": "2026-10-30T08:11:08.445693+00:00",
+    "protocol": "evidence/review_protocol.json",
+    "dossier_sha256": "91b449a0c49dee61b6e11e4ff8eab25d4bb0f0b23e247a09e2547370e9ab6c18",
+    "source_documents_reviewed": 5,
+    "source_chunks_reviewed": 7,
+    "raw_entity_rows_reviewed": 7,
+    "raw_relation_rows_reviewed": 16,
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "original_round2_modified": false
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "audit_id": "N034",
+  "node_id": "Label",
+  "category": "shared_specific_concept",
+  "confidence": "medium",
+  "reason_zh": "Label单数节点同样表示query token的语义类别标注，一处对应模式组件，另一处对应地理解析类别；技术角色相容。各标签集合不同不是已证明多义混并，且本节点与Labels复数节点是图中两个真实ID，不能在审计中人为合并。",
+  "class_instance_interpretation_zh": "共享查询token语义标签概念，具体标签赋值和标签集按文档限定；Label/Labels命名变体的存在另属归一化粒度问题，本轮不改图。",
+  "concept_class_vs_local_instance": "shared_class; document-local instances remain distinct",
+  "source_assessments": [
+    {
+      "publication_number": "US8655901B1",
+      "evidence_quote": "annotating the one or more tokens with labels for the corresponding components of the first query pattern;",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US8655901B1-chunk-000"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US8655901B1-chunk-000"
+      ],
+      "claim_number": 1,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 874,
+        "indexed_document_char_offset": 1967
+      },
+      "role_zh": "绑定到第一查询模式组件的token标注。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000实体与Claim1的标注步骤相符，Token–Label边保留该角色。",
+        "raw_records": [
+          {
+            "chunk_id": "US8655901B1-chunk-000",
+            "content_sha256": "0bab0caa8c0462609609b9037c577b4201a3af3034b28331edefba06b1dee6e8",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 9,
+                "raw_line": "entity<|#|>Label<|#|>Concept<|#|>An annotation applied to tokens of a query identifying the parts of the query and corresponding to components of the first query pattern.",
+                "fields": [
+                  "entity",
+                  "Label",
+                  "Concept",
+                  "An annotation applied to tokens of a query identifying the parts of the query and corresponding to components of the first query pattern."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 24,
+                "raw_line": "relation<|#|>Token<|#|>Label<|#|>annotated with<|#|>The one or more tokens are annotated with labels for the corresponding components of the first query pattern.",
+                "fields": [
+                  "relation",
+                  "Token",
+                  "Label",
+                  "annotated with",
+                  "The one or more tokens are annotated with labels for the corresponding components of the first query pattern."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US8655901B1-chunk-000",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "4ab90cd0cdefac132bfd091382e77c707d3fb713357bef9e84686fe397b5760d"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "A label is assigned to each of a plurality of the tokens.<SEP>The one or more tokens are annotated with labels for the corresponding components of the first query pattern.",
+          "keywords": "annotated with,assigned to",
+          "source_id": "US9218390B2-chunk-002<SEP>US8655901B1-chunk-000",
+          "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Token",
+          "target": "Label",
+          "edge_index": 251,
+          "source_chunks": [
+            "US9218390B2-chunk-002",
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1",
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9218390B2",
+      "evidence_quote": "the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information;",
+      "claim_or_section": "Claim 18",
+      "source_chunk_ids": [
+        "US9218390B2-chunk-002"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US9218390B2-chunk-002"
+      ],
+      "claim_number": 18,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 838,
+        "indexed_document_char_offset": 1906
+      },
+      "role_zh": "机器可读介质权利要求中，token上的地理/搜索语义类别标注，参与建立CRF模型。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk002完整实体与三条端点关系由Claim18支持；sentence与label不同对象的区分在原文与图中均存在。",
+        "raw_records": [
+          {
+            "chunk_id": "US9218390B2-chunk-002",
+            "content_sha256": "77bfbf775e4f111c23aae4de373e87c4778a5f6b7d4821dc232eeaa95153886c",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+                "cache_key": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 4,
+                "raw_line": "entity<|#|>Label<|#|>Data<|#|>A classification assigned to tokens, corresponding to a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information.",
+                "fields": [
+                  "entity",
+                  "Label",
+                  "Data",
+                  "A classification assigned to tokens, corresponding to a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+                "cache_key": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 24,
+                "raw_line": "relation<|#|>Token<|#|>Label<|#|>assigned to<|#|>A label is assigned to each of a plurality of the tokens.",
+                "fields": [
+                  "relation",
+                  "Token",
+                  "Label",
+                  "assigned to",
+                  "A label is assigned to each of a plurality of the tokens."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+                "cache_key": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 26,
+                "raw_line": "relation<|#|>Label<|#|>Sentence<|#|>assigned to<|#|>One or more sentences are assigned to each label based at least in part on the most probable label sequence.",
+                "fields": [
+                  "relation",
+                  "Label",
+                  "Sentence",
+                  "assigned to",
+                  "One or more sentences are assigned to each label based at least in part on the most probable label sequence."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+                "cache_key": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 28,
+                "raw_line": "relation<|#|>Conditional Random Field Model<|#|>Label<|#|>based on<|#|>The conditional random field model is created based at least in part on the labels.",
+                "fields": [
+                  "relation",
+                  "Conditional Random Field Model",
+                  "Label",
+                  "based on",
+                  "The conditional random field model is created based at least in part on the labels."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9218390B2-chunk-002",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "1c8d2328bfb87bdd27ffc5343311cb572fb0a9b123d179f067a2135d078283e1"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "A label is assigned to each of a plurality of the tokens.<SEP>The one or more tokens are annotated with labels for the corresponding components of the first query pattern.",
+          "keywords": "annotated with,assigned to",
+          "source_id": "US9218390B2-chunk-002<SEP>US8655901B1-chunk-000",
+          "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Token",
+          "target": "Label",
+          "edge_index": 251,
+          "source_chunks": [
+            "US9218390B2-chunk-002",
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1",
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The conditional random field model is created based at least in part on the labels.",
+          "keywords": "based on",
+          "source_id": "US9218390B2-chunk-002",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1793284503,
+          "truncate": "",
+          "source": "Conditional Random Field Model",
+          "target": "Label",
+          "edge_index": 732,
+          "source_chunks": [
+            "US9218390B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "One or more sentences are assigned to each label based at least in part on the most probable label sequence.",
+          "keywords": "assigned to",
+          "source_id": "US9218390B2-chunk-002",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1793284503,
+          "truncate": "",
+          "source": "Label",
+          "target": "Sentence",
+          "edge_index": 736,
+          "source_chunks": [
+            "US9218390B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 3,
+    "observed_unsupported_edge": false,
+    "observed_unsupported_edge_definition": "true仅用于依据原文明确不支持的实际关系；类级概括/端点角色候选单列，不自动计入。",
+    "details_zh": "已逐条检查全部实际邻边及其source_id/file_path；各关系在所属专利中有对应陈述，未发现将另一专利特征直接写入本专利边描述的确证。共同节点容许潜在无作用域路径组合，但本审计没有执行或观察该传播。 跨来源合并的token-label边保留两种标注语境及各source_id，未声明两套标签枚举相同。",
+    "edge_indices": [
+      251,
+      732,
+      736
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 251,
+        "source": "Token",
+        "target": "Label",
+        "source_id": "US9218390B2-chunk-002<SEP>US8655901B1-chunk-000",
+        "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1",
+          "US9218390B2"
+        ],
+        "actual_description": "A label is assigned to each of a plurality of the tokens.<SEP>The one or more tokens are annotated with labels for the corresponding components of the first query pattern.",
+        "claim_or_section": "US9218390B2 Claim18; US8655901B1 Claim1",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 732,
+        "source": "Conditional Random Field Model",
+        "target": "Label",
+        "source_id": "US9218390B2-chunk-002",
+        "file_path": "US9218390B2.txt",
+        "canonical_publications": [
+          "US9218390B2"
+        ],
+        "actual_description": "The conditional random field model is created based at least in part on the labels.",
+        "claim_or_section": "US9218390B2 Claim18",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 736,
+        "source": "Label",
+        "target": "Sentence",
+        "source_id": "US9218390B2-chunk-002",
+        "file_path": "US9218390B2.txt",
+        "canonical_publications": [
+          "US9218390B2"
+        ],
+        "actual_description": "One or more sentences are assigned to each label based at least in part on the most probable label sequence.",
+        "claim_or_section": "US9218390B2 Claim18",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      }
+    ],
+    "observed_cross_publication_unsupported_edge": false
+  },
+  "limitations_zh": [
+    "本结果为AI辅助逐来源语义审阅，不是独立人工金标准；分类依赖所声明的类/实例粒度。",
+    "只审计第二轮既有20篇索引中的可见原chunk、原抽取与实际图邻边；原文范围为已索引的标题、摘要及Claims，未额外读取完整说明书或新语料，未调用模型API，也未进行新的检索/生成传播测试。",
+    "共享节点产生跨专利邻接不等于已观察到错误跨文档推理；边的source_id和file_path应保持作用域。",
+    "不同标签schema不能等同；技术概念共享的判断不意味着单复数ID已被正确归一。"
+  ],
+  "review_method": "AI-assisted source-by-source reading; deterministic quote/coverage validation; no external model API",
+  "reviewed_utc": "2026-10-30T08:17:41.958167+00:00",
+  "dossier_sha256": "779d1554589cc504e3f202a0522eff758690e280c7d0fabcf715c2cbafbe61ae",
+  "input_sha256": {
+    "round2_multisource_audit/dossiers/N034.json": "779d1554589cc504e3f202a0522eff758690e280c7d0fabcf715c2cbafbe61ae",
+    "data/claims/US8655901B1.json": "3c4320d6d4a3603680fed5c9a62944142f5443962d5efd343277600f79f8ce75",
+    "data/documents/US8655901B1.txt": "7d17f8090a784af8ad8372cd2c9c958ed21e29ac1078c9c368ef53f49d0632ad",
+    "data/claims/US9218390B2.json": "b2eb952ccee3cfb211bd336b4fdc4020a99a0ae9fab19e5e7cfa2096eb763735",
+    "data/documents/US9218390B2.txt": "1950b9f4a425e92894efd822f018ff718f11c7b3a43d14bb5cc69cf68748291f"
+  },
+  "source_and_raw_review_coverage": {
+    "publication_count": 2,
+    "source_chunk_ids_reviewed": [
+      "US8655901B1-chunk-000",
+      "US9218390B2-chunk-002"
+    ],
+    "all_source_chunks_read": true,
+    "all_raw_entity_and_relation_endpoint_rows_read": true,
+    "all_actual_incident_edges_reviewed": true
+  }
+}

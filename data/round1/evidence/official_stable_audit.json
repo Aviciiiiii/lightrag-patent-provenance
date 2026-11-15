@@ -1,0 +1,305 @@
+{
+  "audit_utc": "2026-10-29T13:20:03.744754+00:00",
+  "repository": "https://github.com/HKUDS/LightRAG",
+  "release": "v1.5.7",
+  "release_url": "https://github.com/HKUDS/LightRAG/releases/tag/v1.5.7",
+  "commit": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+  "commit_metadata": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c\n2026-09-02T15:21:51+08:00\nBump API version to 0344",
+  "git_status": "",
+  "declared_version": "1.5.7",
+  "api_version": "0344",
+  "source_only_not_runtime_validation": true,
+  "findings": [
+    {
+      "id": "modes",
+      "finding": "naive retrieves original text chunks using vector similarity; mix combines local entity, global relation, and naive chunk retrieval.",
+      "evidence": [
+        "lightrag/base.py:94-100",
+        "lightrag/lightrag.py:4245-4270"
+      ]
+    },
+    {
+      "id": "query-data",
+      "finding": "aquery_llm returns answer plus structured retrieval in one operation. aquery_data stops before answer generation. REST /query uses aquery_llm; /query/data invokes aquery_data and always includes references. Retrieval can still require keyword LLM/embedding calls.",
+      "evidence": [
+        "lightrag/lightrag.py:3998-4008",
+        "lightrag/lightrag.py:4211-4223",
+        "lightrag/api/routers/query_routes.py:1523-1531"
+      ]
+    },
+    {
+      "id": "flags",
+      "finding": "Core QueryParam.include_references defaultsFalse, REST QueryRequest defaultsTrue. REST include_chunk_content defaultsFalse and enriches document references with arrays of retrieved chunk strings; it is excluded when constructing QueryParam.",
+      "evidence": [
+        "lightrag/base.py:171-176",
+        "lightrag/api/routers/query_routes.py:144-153",
+        "lightrag/api/routers/query_routes.py:265",
+        "lightrag/api/routers/query_routes.py:621-642"
+      ]
+    },
+    {
+      "id": "file-citations",
+      "finding": "ainsert supports aligned ids and file_paths. Sources are grouped by file_path; reference IDs are assigned per distinct returned file path, ordered by chunk frequency and first appearance. Mapping to a returned document is distinct from proving the answer sentence is entailed.",
+      "evidence": [
+        "lightrag/lightrag.py:1793-1835",
+        "lightrag/utils.py:6975-7040"
+      ]
+    },
+    {
+      "id": "claim-granularity",
+      "finding": "Formatted retrieval chunk schema includes reference_id, content, file_path, chunk_id. It does not emit an explicit Claim ID or source character offset. This describes the output schema, not an assertion that all internal provenance support is absent.",
+      "evidence": [
+        "lightrag/utils.py:6936-6949"
+      ]
+    },
+    {
+      "id": "chunk-source-span",
+      "finding": "The official deterministic fixed-token chunker supports private _emit_source_span=True. It emits half-open character offsets {start,end} when the decoded, stripped window can be located exactly in input. A UTF8-split/unlocatable window may omit the span. This flag changes metadata only. The ingestion pipeline passes this flag to the unmodified builtin chunker. These internal spans are not the same as a claim-level citation guarantee.",
+      "evidence": [
+        "lightrag/chunker/token_size.py:32-112",
+        "lightrag/chunker/token_size.py:133-148",
+        "lightrag/pipeline.py:5193-5214"
+      ]
+    },
+    {
+      "id": "chunking-call",
+      "finding": "from lightrag.chunker import chunking_by_token_size; from lightrag.utils import TiktokenTokenizer; chunks=chunking_by_token_size(TiktokenTokenizer(\"gpt-4o-mini\"),text,split_by_character=None,split_by_character_only=False,chunk_overlap_token_size=100,chunk_token_size=1200,_emit_source_span=True). Verify text[s[\"start\"]:s[\"end\"]]==chunk[\"content\"] for every emitted span; record missing spans honestly. Tokenizer vocab may require a small cache download; this is not an LLM weight download.",
+      "evidence": [
+        "lightrag/chunker/__init__.py:61-70",
+        "lightrag/chunker/token_size.py:133-148",
+        "lightrag/utils.py:3480-3508"
+      ]
+    },
+    {
+      "id": "per-chunk-extraction",
+      "finding": "Entity/relation extraction uses each chunk content plus optional heading breadcrumb. This suggests boundary-sensitivity hypotheses but is not observed failure evidence.",
+      "evidence": [
+        "lightrag/operate.py:4083-4117",
+        "lightrag/operate.py:4142-4195"
+      ]
+    }
+  ],
+  "defaults_not_actual_experiment_settings": {
+    "chunk_size": 1200,
+    "overlap": 100,
+    "tokenizer_model": "gpt-4o-mini",
+    "top_k": 40,
+    "chunk_top_k": 20,
+    "max_entity_tokens": 6000,
+    "max_relation_tokens": 8000,
+    "max_total_tokens": 30000
+  },
+  "paper_distinction": "Paper v3 is dated2025-04-28; Figure1 already shows original chunk IDs. Current README records citations in2025-03, and context-return API changes in2025-11. Do not call citations wholly absent in the paper era; this2026 stable release is not a reproduction of a pinned paper artifact.",
+  "segments": [
+    {
+      "file": "README.md",
+      "start_line": 60,
+      "end_line": 75,
+      "sha256": "451cd447ca21e06991f1d60dafd6273ff6c2e629c482f16d6e0eef0980316124",
+      "text": "60:       <td style=\"vertical-align: middle;\">\n61:         <img src=\"./assets/LiteWrite.png\"\n62:              width=\"56\"\n63:              height=\"56\"\n64:              alt=\"LiteWrite\"\n65:              style=\"border-radius: 12px;\" />\n66:       </td>\n67:       <td style=\"vertical-align: middle; padding-left: 12px;\">\n68:         <a href=\"https://litewrite.ai\">\n69:           <img src=\"https://img.shields.io/badge/🚀%20LiteWrite-AI%20Native%20LaTeX%20Editor-ff6b6b?style=for-the-badge&logoColor=white&labelColor=1a1a2e\">\n70:         </a>\n71:       </td>\n72:     </tr>\n73:   </table>\n74: </div>\n75: "
+    },
+    {
+      "file": "README.md",
+      "start_line": 274,
+      "end_line": 289,
+      "sha256": "451cd447ca21e06991f1d60dafd6273ff6c2e629c482f16d6e0eef0980316124",
+      "text": "274: \n275: Traditional RAG systems lack an effective way to process multimodal content such as images, formulas, and tables in documents. Starting with v1.5, LightRAG seamlessly integrates multimodal processing into its document pipeline and query flow. Through the knowledge graph, LightRAG connects multimodal content with the body text and can use that information when answering queries to produce more accurate and reliable responses. This capability can substantially improve RAG quality for documents rich in multimodal content, such as operation manuals and academic papers.\n276: \n277: ### LightRAG API Server\n278: \n279: The LightRAG server offers not only a web-based UI for exploring LightRAG functionalities but also a comprehensive REST API. For more information about the LightRAG server, please refer to [LightRAG Server](./docs/LightRAG-API-Server.md).\n280: \n281: ![iShot_2025-03-23_12.40.08](./README.assets/iShot_2025-03-23_12.40.08.png)\n282: \n283: ## Key Configuration Guide\n284: \n285: ### Selecting LLM Models\n286: \n287: LightRAG requires LLM/VLMs of four different roles during its workflow. You should configure models with different capabilities and speeds for different roles to strike a balance between performance and processing speed. LightRAG has higher capability requirements for Large Language Models (LLMs) than traditional RAG because it requires LLMs to perform complex entity-relation extraction tasks from documents. During the query phase, the LLM needs to process a large volume of retrieved information, including entities, relationships, and text chunks. This requires the model to have the capability of generating high-quality responses in long, noisy contexts.\n288: \n289: **Recommended models by role:**"
+    },
+    {
+      "file": "lightrag/_version.py",
+      "start_line": 1,
+      "end_line": 4,
+      "sha256": "6dd9edee78ddd7c0c7822a79214d9db424cb2cc18ca3b61136cc84a71868840a",
+      "text": "1: \"\"\"Lightweight version definitions shared by packaging and runtime code.\"\"\"\n2: \n3: __version__ = \"1.5.7\"\n4: __api_version__ = \"0344\""
+    },
+    {
+      "file": "lightrag/base.py",
+      "start_line": 90,
+      "end_line": 100,
+      "sha256": "53a1628afb3e2b440aa03eb5a0590c365a04ae4974b432ae79914e8927f92a96",
+      "text": "90: class QueryParam:\n91:     \"\"\"Configuration parameters for query execution in LightRAG.\"\"\"\n92: \n93:     mode: Literal[\"local\", \"global\", \"hybrid\", \"naive\", \"mix\", \"bypass\"] = \"mix\"\n94:     \"\"\"Specifies the retrieval mode:\n95:     - \"local\": Focuses on context-dependent information.\n96:     - \"global\": Utilizes global knowledge.\n97:     - \"hybrid\": Combines local and global retrieval methods.\n98:     - \"naive\": Performs a basic search without advanced techniques.\n99:     - \"mix\": Integrates knowledge graph and vector retrieval.\n100:     \"\"\""
+    },
+    {
+      "file": "lightrag/base.py",
+      "start_line": 160,
+      "end_line": 178,
+      "sha256": "53a1628afb3e2b440aa03eb5a0590c365a04ae4974b432ae79914e8927f92a96",
+      "text": "160: \n161:     Two paths do not receive the prefix: ``bypass`` mode ignores this field\n162:     entirely (empty or not), and a caller-supplied ``system_prompt`` without a\n163:     ``{user_prompt}`` placeholder silently drops it.\n164:     \"\"\"\n165: \n166:     enable_rerank: bool = os.getenv(\"RERANK_BY_DEFAULT\", \"true\").lower() == \"true\"\n167:     \"\"\"Enable reranking for retrieved text chunks. If True but no rerank model is configured, a warning will be issued.\n168:     Default is True to enable reranking when rerank model is available.\n169:     \"\"\"\n170: \n171:     include_references: bool = False\n172:     \"\"\"If True, includes reference list in the response for supported endpoints.\n173:     This parameter controls whether the API response includes a references field\n174:     containing citation information for the retrieved content.\n175:     \"\"\"\n176: \n177:     # Declared last on purpose. QueryParam is a plain dataclass, so SDK callers\n178:     # may construct it positionally; inserting a field beside `user_prompt`"
+    },
+    {
+      "file": "lightrag/lightrag.py",
+      "start_line": 1091,
+      "end_line": 1116,
+      "sha256": "ff118d8d197b7f5ab899a2190157fa88782dc6be897c59ab47a42cab52ac45b9",
+      "text": "1091:         # Top-level chunk_token_size — no strategy-specific env exists,\n1092:         # so the chain is: addon_params > legacy ctor > CHUNK_SIZE env.\n1093:         if \"chunk_token_size\" not in chunker_cfg:\n1094:             if self.chunk_token_size is not None:\n1095:                 chunker_cfg[\"chunk_token_size\"] = self.chunk_token_size\n1096:             else:\n1097:                 chunker_cfg[\"chunk_token_size\"] = _chunk_env_int(\"CHUNK_SIZE\", 1200)\n1098:         # Per-strategy chunk_overlap_token_size — strategy env (if set)\n1099:         # already lives in the sub-dict.  Slots still missing fall back\n1100:         # to the legacy ctor field, then CHUNK_OVERLAP_SIZE env.\n1101:         if self.chunk_overlap_token_size is not None:\n1102:             legacy_overlap_default = self.chunk_overlap_token_size\n1103:         else:\n1104:             legacy_overlap_default = _chunk_env_int(\"CHUNK_OVERLAP_SIZE\", 100)\n1105:         for strategy_key in (\n1106:             \"fixed_token\",\n1107:             \"recursive_character\",\n1108:             \"paragraph_semantic\",\n1109:         ):\n1110:             sub = chunker_cfg.get(strategy_key)\n1111:             if not isinstance(sub, dict):\n1112:                 sub = {}\n1113:                 chunker_cfg[strategy_key] = sub\n1114:             if \"chunk_overlap_token_size\" not in sub:\n1115:                 sub[\"chunk_overlap_token_size\"] = legacy_overlap_default\n1116: "
+    },
+    {
+      "file": "lightrag/lightrag.py",
+      "start_line": 1756,
+      "end_line": 1780,
+      "sha256": "ff118d8d197b7f5ab899a2190157fa88782dc6be897c59ab47a42cab52ac45b9",
+      "text": "1756:     def insert(\n1757:         self,\n1758:         input: str | list[str],\n1759:         split_by_character: str | None = None,\n1760:         split_by_character_only: bool = False,\n1761:         ids: str | list[str] | None = None,\n1762:         file_paths: str | list[str] | None = None,\n1763:         track_id: str | None = None,\n1764:     ) -> str:\n1765:         \"\"\"Sync Insert documents with checkpoint support\n1766: \n1767:         Args:\n1768:             input: Single document string or list of document strings\n1769:             split_by_character: if split_by_character is not None, split the string by character, if chunk longer than\n1770:             chunk_token_size, it will be split again by token size.\n1771:             split_by_character_only: if split_by_character_only is True, split the string by character only, when\n1772:             split_by_character is None, this parameter is ignored.\n1773:             ids: single string of the document ID or list of unique document IDs, if not provided, MD5 hash IDs will be generated\n1774:             file_paths: single string of the file path or list of file paths, used for citation\n1775:             track_id: tracking ID for monitoring processing status, if not provided, will be generated\n1776: \n1777:         Returns:\n1778:             str: tracking ID for monitoring processing status\n1779:         \"\"\"\n1780:         return _run_sync("
+    },
+    {
+      "file": "lightrag/lightrag.py",
+      "start_line": 1793,
+      "end_line": 1835,
+      "sha256": "ff118d8d197b7f5ab899a2190157fa88782dc6be897c59ab47a42cab52ac45b9",
+      "text": "1793: \n1794:     async def ainsert(\n1795:         self,\n1796:         input: str | list[str],\n1797:         split_by_character: str | None = None,\n1798:         split_by_character_only: bool = False,\n1799:         ids: str | list[str] | None = None,\n1800:         file_paths: str | list[str] | None = None,\n1801:         track_id: str | None = None,\n1802:     ) -> str:\n1803:         \"\"\"Async insert documents with checkpoint support (fixed-token chunking only).\n1804: \n1805:         SDK convenience entry point. It **always** chunks with the fixed-token\n1806:         (F) strategy: ``process_options`` is intentionally not passed, so the\n1807:         document runs the F chunker. ``split_by_character`` /\n1808:         ``split_by_character_only`` are F-strategy runtime args; the rest of\n1809:         the F config (``chunk_token_size`` / ``chunk_overlap_token_size``,\n1810:         seeded from ``CHUNK_F_SIZE`` / ``CHUNK_SIZE`` etc.) comes from\n1811:         ``addon_params['chunker']['fixed_token']``. ``ainsert`` cannot select\n1812:         the recursive-character (R), semantic-vector (V), or paragraph-semantic\n1813:         (P) strategies.\n1814: \n1815:         The LightRAG **server / REST API does not call this method** — it\n1816:         ingests via :meth:`apipeline_enqueue_documents` +\n1817:         :meth:`apipeline_process_enqueue_documents` with a per-document\n1818:         ``process_options`` selector, which is how F/R/V/P/C are chosen there.\n1819:         To use R/V/P/C (or pass an explicit per-document ``chunk_options``) from\n1820:         the SDK, call those two methods directly with ``process_options=…``\n1821:         instead of ``ainsert``.\n1822: \n1823:         Args:\n1824:             input: Single document string or list of document strings\n1825:             split_by_character: if split_by_character is not None, split the string by character, if chunk longer than\n1826:             chunk_token_size, it will be split again by token size.\n1827:             split_by_character_only: if split_by_character_only is True, split the string by character only, when\n1828:             split_by_character is None, this parameter is ignored.\n1829:             ids: list of unique document IDs, if not provided, MD5 hash IDs will be generated\n1830:             file_paths: list of file paths corresponding to each document, used for citation\n1831:             track_id: tracking ID for monitoring processing status, if not provided, will be generated\n1832: \n1833:         Returns:\n1834:             str: tracking ID for monitoring processing status\n1835:         \"\"\""
+    },
+    {
+      "file": "lightrag/lightrag.py",
+      "start_line": 3998,
+      "end_line": 4075,
+      "sha256": "ff118d8d197b7f5ab899a2190157fa88782dc6be897c59ab47a42cab52ac45b9",
+      "text": "3998:     async def aquery_data(\n3999:         self,\n4000:         query: str,\n4001:         param: QueryParam = QueryParam(),\n4002:     ) -> dict[str, Any]:\n4003:         \"\"\"\n4004:         Asynchronous data retrieval API: returns structured retrieval results without LLM generation.\n4005: \n4006:         This function reuses the same logic as aquery but stops before LLM generation,\n4007:         returning the final processed entities, relationships, and chunks data that would be sent to LLM.\n4008: \n4009:         Args:\n4010:             query: Query text for retrieval.\n4011:             param: Query parameters controlling retrieval behavior (same as aquery).\n4012: \n4013:         Returns:\n4014:             dict[str, Any]: Structured data result in the following format:\n4015: \n4016:             **Success Response:**\n4017:             ```python\n4018:             {\n4019:                 \"status\": \"success\",\n4020:                 \"message\": \"Query executed successfully\",\n4021:                 \"data\": {\n4022:                     \"entities\": [\n4023:                         {\n4024:                             \"entity_name\": str,      # Entity identifier\n4025:                             \"entity_type\": str,      # Entity category/type\n4026:                             \"description\": str,      # Entity description\n4027:                             \"source_id\": str,        # Source chunk references\n4028:                             \"file_path\": str,        # Origin file path\n4029:                             \"created_at\": str,       # Creation timestamp\n4030:                             \"reference_id\": str      # Reference identifier for citations\n4031:                         }\n4032:                     ],\n4033:                     \"relationships\": [\n4034:                         {\n4035:                             \"src_id\": str,           # Source entity name\n4036:                             \"tgt_id\": str,           # Target entity name\n4037:                             \"description\": str,      # Relationship description\n4038:                             \"keywords\": str,         # Relationship keywords\n4039:                             \"weight\": float,         # Evidence floor plus optional boost\n4040:                             \"source_id\": str,        # Source chunk references\n4041:                             \"file_path\": str,        # Origin file path\n4042:                             \"created_at\": str,       # Creation timestamp\n4043:                             \"reference_id\": str      # Reference identifier for citations\n4044:                         }\n4045:                     ],\n4046:                     \"chunks\": [\n4047:                         {\n4048:                             \"content\": str,          # Document chunk content\n4049:                             \"file_path\": str,        # Origin file path\n4050:                             \"chunk_id\": str,         # Unique chunk identifier\n4051:                             \"reference_id\": str      # Reference identifier for citations\n4052:                         }\n4053:                     ],\n4054:                     \"references\": [\n4055:                         {\n4056:                             \"reference_id\": str,     # Reference identifier\n4057:                             \"file_path\": str         # Corresponding file path\n4058:                         }\n4059:                     ]\n4060:                 },\n4061:                 \"metadata\": {\n4062:                     \"query_mode\": str,           # Query mode used (\"local\", \"global\", \"hybrid\", \"mix\", \"naive\", \"bypass\")\n4063:                     \"keywords\": {\n4064:                         \"high_level\": List[str], # High-level keywords extracted\n4065:                         \"low_level\": List[str]   # Low-level keywords extracted\n4066:                     },\n4067:                     \"processing_info\": {\n4068:                         \"total_entities_found\": int,        # Total entities before truncation\n4069:                         \"total_relations_found\": int,       # Total relations before truncation\n4070:                         \"entities_after_truncation\": int,   # Entities after token truncation\n4071:                         \"relations_after_truncation\": int,  # Relations after token truncation\n4072:                         \"merged_chunks_count\": int,          # Chunks before final processing\n4073:                         \"final_chunks_count\": int            # Final chunks in result\n4074:                     }\n4075:                 }"
+    },
+    {
+      "file": "lightrag/lightrag.py",
+      "start_line": 4211,
+      "end_line": 4270,
+      "sha256": "ff118d8d197b7f5ab899a2190157fa88782dc6be897c59ab47a42cab52ac45b9",
+      "text": "4211:     async def aquery_llm(\n4212:         self,\n4213:         query: str,\n4214:         param: QueryParam = QueryParam(),\n4215:         system_prompt: str | None = None,\n4216:         progress_callback=None,\n4217:     ) -> dict[str, Any]:\n4218:         \"\"\"\n4219:         Asynchronous complete query API: returns structured retrieval results with LLM generation.\n4220: \n4221:         This function performs a single query operation and returns both structured data and LLM response,\n4222:         based on the original aquery logic to avoid duplicate calls.\n4223: \n4224:         Args:\n4225:             query: Query text for retrieval and LLM generation.\n4226:             param: Query parameters controlling retrieval and LLM behavior.\n4227:             system_prompt: Optional custom system prompt for LLM generation.\n4228: \n4229:         Returns:\n4230:             dict[str, Any]: Complete response with structured data and LLM response.\n4231:         \"\"\"\n4232:         # `bypass` skips retrieval, so the RAG minimum does not apply to it —\n4233:         # but no mode may forward an empty prompt to the LLM.\n4234:         query = validate_query_not_empty(query)\n4235:         if param.mode != \"bypass\":\n4236:             query = validate_rag_query(query)\n4237: \n4238:         logger.debug(f\"[aquery_llm] Query param: {param}\")\n4239: \n4240:         global_config = self._build_global_config()\n4241: \n4242:         try:\n4243:             query_result = None\n4244: \n4245:             if param.mode in [\"local\", \"global\", \"hybrid\", \"mix\"]:\n4246:                 query_result = await kg_query(\n4247:                     query,\n4248:                     self.chunk_entity_relation_graph,\n4249:                     self.entities_vdb,\n4250:                     self.relationships_vdb,\n4251:                     self.text_chunks,\n4252:                     param,\n4253:                     global_config,\n4254:                     hashing_kv=self.llm_response_cache,\n4255:                     system_prompt=system_prompt,\n4256:                     chunks_vdb=self.chunks_vdb,\n4257:                     progress_callback=progress_callback,\n4258:                 )\n4259:             elif param.mode == \"naive\":\n4260:                 query_result = await naive_query(\n4261:                     query,\n4262:                     self.chunks_vdb,\n4263:                     param,\n4264:                     global_config,\n4265:                     hashing_kv=self.llm_response_cache,\n4266:                     system_prompt=system_prompt,\n4267:                     text_chunks_db=self.text_chunks,\n4268:                     progress_callback=progress_callback,\n4269:                 )\n4270:             elif param.mode == \"bypass\":"
+    },
+    {
+      "file": "lightrag/api/routers/query_routes.py",
+      "start_line": 45,
+      "end_line": 53,
+      "sha256": "61ec3b5b04f10e5dd1511bbc6cd6a1ba9c152552f09da21686814f1cce2c6931",
+      "text": "45:     only_need_context: Optional[bool] = Field(\n46:         default=None,\n47:         description=\"If True, only returns the retrieved context without generating a response.\",\n48:     )\n49: \n50:     only_need_prompt: Optional[bool] = Field(\n51:         default=None,\n52:         description=\"If True, only returns the generated prompt without producing a response.\",\n53:     )"
+    },
+    {
+      "file": "lightrag/api/routers/query_routes.py",
+      "start_line": 144,
+      "end_line": 153,
+      "sha256": "61ec3b5b04f10e5dd1511bbc6cd6a1ba9c152552f09da21686814f1cce2c6931",
+      "text": "144:     include_references: Optional[bool] = Field(\n145:         default=True,\n146:         description=\"If True, includes reference list in responses. Affects /query and /query/stream endpoints. /query/data always includes references.\",\n147:     )\n148: \n149:     include_chunk_content: Optional[bool] = Field(\n150:         default=False,\n151:         description=\"If True, includes actual chunk text content in references. Only applies when include_references=True. Useful for evaluation and debugging.\",\n152:     )\n153: "
+    },
+    {
+      "file": "lightrag/api/routers/query_routes.py",
+      "start_line": 257,
+      "end_line": 269,
+      "sha256": "61ec3b5b04f10e5dd1511bbc6cd6a1ba9c152552f09da21686814f1cce2c6931",
+      "text": "257:         return self\n258: \n259:     def to_query_params(self, is_stream: bool) -> \"QueryParam\":\n260:         \"\"\"Converts a QueryRequest instance into a QueryParam instance.\"\"\"\n261:         # Use Pydantic's `.model_dump(exclude_none=True)` to remove None values automatically\n262:         # Exclude API-level parameters that don't belong in QueryParam\n263:         request_data = self.model_dump(\n264:             exclude_none=True,\n265:             exclude={\"query\", \"include_chunk_content\", \"include_progress\"},\n266:         )\n267: \n268:         # Ensure `mode` and `stream` are set explicitly\n269:         param = QueryParam(**request_data)"
+    },
+    {
+      "file": "lightrag/api/routers/query_routes.py",
+      "start_line": 596,
+      "end_line": 652,
+      "sha256": "61ec3b5b04f10e5dd1511bbc6cd6a1ba9c152552f09da21686814f1cce2c6931",
+      "text": "596:                 False\n597:             )  # Ensure stream=False for non-streaming endpoint\n598:             # Force stream=False for /query endpoint regardless of include_references setting\n599:             param.stream = False\n600:             # Unified approach: always use aquery_llm for both cases\n601:             start_time = time.perf_counter()\n602:             result = await rag.aquery_llm(request.query, param=param)\n603:             response_time = round(time.perf_counter() - start_time, 3)\n604: \n605:             # Extract LLM response and references from unified result\n606:             llm_response = result.get(\"llm_response\", {})\n607:             data = result.get(\"data\", {})\n608:             references = data.get(\"references\", [])\n609: \n610:             # Get the non-streaming response content\n611:             response_content = llm_response.get(\"content\", \"\")\n612:             # Whether the answering LLM wrote it. A missing flag means a result\n613:             # shape that predates it, which only the LLM paths produce.\n614:             llm_generated = bool(llm_response.get(\"llm_generated\", True))\n615:             if not response_content:\n616:                 response_content = \"No relevant context found for the query.\"\n617:                 # Substituted placeholder: nothing was generated.\n618:                 llm_generated = False\n619: \n620:             # Enrich references with chunk content if requested\n621:             if request.include_references and request.include_chunk_content:\n622:                 chunks = data.get(\"chunks\", [])\n623:                 # Create a mapping from reference_id to chunk content\n624:                 ref_id_to_content = {}\n625:                 for chunk in chunks:\n626:                     ref_id = chunk.get(\"reference_id\", \"\")\n627:                     content = chunk.get(\"content\", \"\")\n628:                     if ref_id and content:\n629:                         # Collect chunk content; join later to avoid quadratic string concatenation\n630:                         ref_id_to_content.setdefault(ref_id, []).append(content)\n631: \n632:                 # Add content to references\n633:                 enriched_references = []\n634:                 for ref in references:\n635:                     ref_copy = ref.copy()\n636:                     ref_id = ref.get(\"reference_id\", \"\")\n637:                     if ref_id in ref_id_to_content:\n638:                         # Keep content as a list of chunks (one file may have multiple chunks)\n639:                         ref_copy[\"content\"] = ref_id_to_content[ref_id]\n640:                     enriched_references.append(ref_copy)\n641:                 references = enriched_references\n642: \n643:             # Return response with or without references based on request\n644:             if request.include_references:\n645:                 return QueryResponse(\n646:                     response=response_content,\n647:                     references=references,\n648:                     response_time=response_time,\n649:                     llm_generated=llm_generated,\n650:                 )\n651:             else:\n652:                 return QueryResponse("
+    },
+    {
+      "file": "lightrag/api/routers/query_routes.py",
+      "start_line": 1114,
+      "end_line": 1125,
+      "sha256": "61ec3b5b04f10e5dd1511bbc6cd6a1ba9c152552f09da21686814f1cce2c6931",
+      "text": "1114:     @router.post(\n1115:         \"/query/data\",\n1116:         response_model=QueryDataResponse,\n1117:         dependencies=[Depends(combined_auth)],\n1118:         responses={\n1119:             200: {\n1120:                 \"description\": \"Successful data retrieval response with structured RAG data\",\n1121:                 \"content\": {\n1122:                     \"application/json\": {\n1123:                         \"schema\": {\n1124:                             \"type\": \"object\",\n1125:                             \"properties\": {"
+    },
+    {
+      "file": "lightrag/api/routers/query_routes.py",
+      "start_line": 1495,
+      "end_line": 1548,
+      "sha256": "61ec3b5b04f10e5dd1511bbc6cd6a1ba9c152552f09da21686814f1cce2c6931",
+      "text": "1495:         - **Empty arrays**: Normal for certain modes (e.g., naive mode has no entities/relationships)\n1496:         - **Processing info**: Shows retrieval statistics and token usage\n1497:         - **Keywords**: High-level and low-level keywords extracted from query\n1498:         - **Reference mapping**: Links all data back to source documents\n1499: \n1500:         Args:\n1501:             request (QueryRequest): The request object containing query parameters:\n1502:                 - **query**: The search query to analyze. Must not be empty. RAG modes additionally require an English-equivalent length of at least 3; each Chinese, Japanese or Korean character counts as 2. Bypass mode is exempt from the minimum, not from being non-empty.\n1503:                 - **mode**: Retrieval strategy affecting data types returned\n1504:                 - **top_k**: Number of top entities/relationships to retrieve\n1505:                 - **chunk_top_k**: Number of text chunks to retrieve\n1506:                 - **max_entity_tokens**: Token limit for entity context\n1507:                 - **max_relation_tokens**: Token limit for relationship context\n1508:                 - **max_total_tokens**: Overall token budget for retrieval\n1509: \n1510:         Returns:\n1511:             QueryDataResponse: Structured JSON response containing:\n1512:                 - **status**: \"success\" or \"failure\"\n1513:                 - **message**: Human-readable status description\n1514:                 - **data**: Complete retrieval results with entities, relationships, chunks, references\n1515:                 - **metadata**: Query processing information and statistics\n1516: \n1517:         Raises:\n1518:             HTTPException:\n1519:                 - 400: Request validation failed (e.g., query empty or too short, invalid mode)\n1520:                 - 500: Internal processing error (e.g., knowledge graph unavailable)\n1521: \n1522:         Note:\n1523:             This endpoint always includes references regardless of the include_references parameter,\n1524:             as structured data analysis typically requires source attribution.\n1525:         \"\"\"\n1526:         try:\n1527:             param = request.to_query_params(False)  # No streaming for data endpoint\n1528:             response = await rag.aquery_data(request.query, param=param)\n1529: \n1530:             # aquery_data returns the new format with status, message, data, and metadata\n1531:             if isinstance(response, dict):\n1532:                 return QueryDataResponse(**response)\n1533:             else:\n1534:                 # Handle unexpected response format\n1535:                 return QueryDataResponse(\n1536:                     status=\"failure\",\n1537:                     message=\"Invalid response type\",\n1538:                     data={},\n1539:                     metadata={},\n1540:                 )\n1541:         except Exception as e:\n1542:             logger.error(f\"Error processing data query: {str(e)}\", exc_info=True)\n1543:             raise internal_server_error(e)\n1544: \n1545:     return router"
+    },
+    {
+      "file": "lightrag/operate.py",
+      "start_line": 4083,
+      "end_line": 4117,
+      "sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047",
+      "text": "4083:     async def _process_single_content(chunk_key_dp: tuple[str, TextChunkSchema]):\n4084:         \"\"\"Process a single chunk\n4085:         Args:\n4086:             chunk_key_dp (tuple[str, TextChunkSchema]):\n4087:                 (\"chunk-xxxxxx\", {\"tokens\": int, \"content\": str, \"full_doc_id\": str, \"chunk_order_index\": int})\n4088:         Returns:\n4089:             tuple: (maybe_nodes, maybe_edges) containing extracted entities and relationships\n4090:         \"\"\"\n4091:         nonlocal processed_chunks\n4092:         chunk_key = chunk_key_dp[0]\n4093:         chunk_dp = chunk_key_dp[1]\n4094:         # Strip parser-internal markup (<cite refid>, <drawing id/path/src>,\n4095:         # <equation id>) before building the extraction prompt. The stored\n4096:         # chunk content is left intact so query-time citations still resolve.\n4097:         content = strip_internal_multimodal_markup_for_extraction(chunk_dp[\"content\"])\n4098:         # Get file path from chunk data or use default\n4099:         file_path = chunk_dp.get(\"file_path\", \"unknown_source\")\n4100: \n4101:         # Build the optional `---Section Context---` block from the chunk's\n4102:         # heading breadcrumb. The marker/wrapping lives entirely in the prompt\n4103:         # template; here we only produce the data and decide whether to inject\n4104:         # it. Each level is char-capped inside format_heading_context, and the\n4105:         # joined path is token-budgeted here so heading metadata can never push\n4106:         # an otherwise-valid chunk past the provider context window. When the\n4107:         # chunk carries no heading, the block is an empty string so the user\n4108:         # prompt stays byte-identical to the no-context form.\n4109:         heading_path = _truncate_section_context(\n4110:             format_heading_context(chunk_dp),\n4111:             extract_tokenizer,\n4112:             DEFAULT_MAX_SECTION_CONTEXT_TOKENS,\n4113:         )\n4114:         heading_context_block = (\n4115:             PROMPTS[\"entity_extraction_section_context\"].format(\n4116:                 heading_path=heading_path\n4117:             )"
+    },
+    {
+      "file": "lightrag/operate.py",
+      "start_line": 4142,
+      "end_line": 4195,
+      "sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047",
+      "text": "4142: \n4143:         if use_json_extraction:\n4144:             # JSON mode: use JSON prompts and pass entity_extraction flag to LLM provider.\n4145:             # The local must be bound explicitly: the text-mode branch below\n4146:             # assigns this name, which makes it local to the whole closure\n4147:             # (Python scoping is static), so the gleaning LLM call a few\n4148:             # dozen lines down would otherwise read an unbound local here.\n4149:             entity_continue_extraction_user_prompt = (\n4150:                 json_continue_extraction_user_prompt\n4151:             )\n4152:             entity_extraction_user_prompt = PROMPTS[\n4153:                 \"entity_extraction_json_user_prompt\"\n4154:             ].format(\n4155:                 **{\n4156:                     **context_base,\n4157:                     \"input_text\": content,\n4158:                     \"heading_context_block\": heading_context_block,\n4159:                 }\n4160:             )\n4161:         else:\n4162:             # Text mode: use traditional delimiter-based prompts. The\n4163:             # chunk-invariant system prompt is built once in the enclosing\n4164:             # scope. The continue prompt stays per chunk because a custom\n4165:             # prompt file may reference {input_text}; the default template's\n4166:             # placeholders do not include it, but the call site keeps passing\n4167:             # the kwarg for that override case.\n4168:             entity_extraction_user_prompt = PROMPTS[\n4169:                 \"entity_extraction_user_prompt\"\n4170:             ].format(\n4171:                 **{\n4172:                     **context_base,\n4173:                     \"input_text\": content,\n4174:                     \"heading_context_block\": heading_context_block,\n4175:                 }\n4176:             )\n4177:             entity_continue_extraction_user_prompt = PROMPTS[\n4178:                 \"entity_continue_extraction_user_prompt\"\n4179:             ].format(**{**context_base, \"input_text\": content})\n4180: \n4181:         final_result, timestamp = await use_llm_func_with_cache(\n4182:             entity_extraction_user_prompt,\n4183:             use_llm_func,\n4184:             system_prompt=entity_extraction_system_prompt,\n4185:             llm_response_cache=llm_response_cache,\n4186:             cache_type=\"extract\",\n4187:             chunk_id=chunk_key,\n4188:             cache_keys_collector=cache_keys_collector,\n4189:             response_format=({\"type\": \"json_object\"} if use_json_extraction else None),\n4190:             llm_cache_identity=get_llm_cache_identity(global_config, \"extract\"),\n4191:         )\n4192: \n4193:         _report_truncation(final_result, \"initial\")\n4194: \n4195:         history = pack_user_ass_to_openai_messages("
+    },
+    {
+      "file": "lightrag/utils.py",
+      "start_line": 3480,
+      "end_line": 3508,
+      "sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc",
+      "text": "3480: class TiktokenTokenizer(Tokenizer):\n3481:     \"\"\"\n3482:     A Tokenizer implementation using the tiktoken library.\n3483:     \"\"\"\n3484: \n3485:     def __init__(self, model_name: str = \"gpt-4o-mini\"):\n3486:         \"\"\"\n3487:         Initializes the TiktokenTokenizer with a specified model name.\n3488: \n3489:         Args:\n3490:             model_name: The model name for the tiktoken tokenizer to use.  Defaults to \"gpt-4o-mini\".\n3491: \n3492:         Raises:\n3493:             ImportError: If tiktoken is not installed.\n3494:             ValueError: If the model_name is invalid.\n3495:         \"\"\"\n3496:         try:\n3497:             import tiktoken\n3498:         except ImportError:\n3499:             raise ImportError(\n3500:                 \"tiktoken is not installed. Please install it with `pip install tiktoken` or pass a custom `tokenizer`.\"\n3501:             )\n3502: \n3503:         try:\n3504:             tokenizer = tiktoken.encoding_for_model(model_name)\n3505:             super().__init__(model_name=model_name, tokenizer=tokenizer)\n3506:         except KeyError:\n3507:             raise ValueError(f\"Invalid model_name: {model_name}.\")\n3508: "
+    },
+    {
+      "file": "lightrag/utils.py",
+      "start_line": 6936,
+      "end_line": 6972,
+      "sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc",
+      "text": "6936:             )\n6937: \n6938:     # Convert chunks format (chunks already contain complete data)\n6939:     formatted_chunks = []\n6940:     for i, chunk in enumerate(chunks):\n6941:         chunk_data = {\n6942:             \"reference_id\": chunk.get(\"reference_id\", \"\"),\n6943:             \"content\": chunk.get(\"content\", \"\"),\n6944:             \"file_path\": chunk.get(\"file_path\", \"unknown_source\"),\n6945:             \"chunk_id\": chunk.get(\"chunk_id\", \"\"),\n6946:         }\n6947:         formatted_chunks.append(chunk_data)\n6948: \n6949:     logger.debug(\n6950:         f\"[convert_to_user_format] Formatted {len(formatted_chunks)}/{len(chunks)} chunks\"\n6951:     )\n6952: \n6953:     # Build basic metadata (metadata details will be added by calling functions)\n6954:     metadata = {\n6955:         \"query_mode\": query_mode,\n6956:         \"keywords\": {\n6957:             \"high_level\": [],\n6958:             \"low_level\": [],\n6959:         },  # Placeholder, will be set by calling functions\n6960:     }\n6961: \n6962:     return {\n6963:         \"status\": \"success\",\n6964:         \"message\": \"Query processed successfully\",\n6965:         \"data\": {\n6966:             \"entities\": formatted_entities,\n6967:             \"relationships\": formatted_relationships,\n6968:             \"chunks\": formatted_chunks,\n6969:             \"references\": references,\n6970:         },\n6971:         \"metadata\": metadata,\n6972:     }"
+    },
+    {
+      "file": "lightrag/utils.py",
+      "start_line": 6975,
+      "end_line": 7040,
+      "sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc",
+      "text": "6975: def generate_reference_list_from_chunks(\n6976:     chunks: list[dict],\n6977: ) -> tuple[list[dict], list[dict]]:\n6978:     \"\"\"\n6979:     Generate reference list from chunks, prioritizing by occurrence frequency.\n6980: \n6981:     This function extracts file_paths from chunks, counts their occurrences,\n6982:     sorts by frequency and first appearance order, creates reference_id mappings,\n6983:     and builds a reference_list structure.\n6984: \n6985:     Args:\n6986:         chunks: List of chunk dictionaries with file_path information\n6987: \n6988:     Returns:\n6989:         tuple: (reference_list, updated_chunks_with_reference_ids)\n6990:             - reference_list: List of dicts with reference_id and file_path\n6991:             - updated_chunks_with_reference_ids: Original chunks with reference_id field added\n6992:     \"\"\"\n6993:     if not chunks:\n6994:         return [], []\n6995: \n6996:     # 1. Extract all valid file_paths and count their occurrences\n6997:     file_path_counts = {}\n6998:     for chunk in chunks:\n6999:         file_path = chunk.get(\"file_path\", \"\")\n7000:         if file_path and file_path != \"unknown_source\":\n7001:             file_path_counts[file_path] = file_path_counts.get(file_path, 0) + 1\n7002: \n7003:     # 2. Sort file paths by frequency (descending), then by first appearance order\n7004:     # Create a list of (file_path, count, first_index) tuples\n7005:     file_path_with_indices = []\n7006:     seen_paths = set()\n7007:     for i, chunk in enumerate(chunks):\n7008:         file_path = chunk.get(\"file_path\", \"\")\n7009:         if file_path and file_path != \"unknown_source\" and file_path not in seen_paths:\n7010:             file_path_with_indices.append((file_path, file_path_counts[file_path], i))\n7011:             seen_paths.add(file_path)\n7012: \n7013:     # Sort by count (descending), then by first appearance index (ascending)\n7014:     sorted_file_paths = sorted(file_path_with_indices, key=lambda x: (-x[1], x[2]))\n7015:     unique_file_paths = [item[0] for item in sorted_file_paths]\n7016: \n7017:     # 3. Create mapping from file_path to reference_id (prioritized by frequency)\n7018:     file_path_to_ref_id = {}\n7019:     for i, file_path in enumerate(unique_file_paths):\n7020:         file_path_to_ref_id[file_path] = str(i + 1)\n7021: \n7022:     # 4. Add reference_id field to each chunk\n7023:     updated_chunks = []\n7024:     for chunk in chunks:\n7025:         chunk_copy = chunk.copy()\n7026:         file_path = chunk_copy.get(\"file_path\", \"\")\n7027:         if file_path and file_path != \"unknown_source\":\n7028:             chunk_copy[\"reference_id\"] = file_path_to_ref_id[file_path]\n7029:         else:\n7030:             chunk_copy[\"reference_id\"] = \"\"\n7031:         updated_chunks.append(chunk_copy)\n7032: \n7033:     # 5. Build reference_list\n7034:     reference_list = []\n7035:     for i, file_path in enumerate(unique_file_paths):\n7036:         reference_list.append({\"reference_id\": str(i + 1), \"file_path\": file_path})\n7037: \n7038:     return reference_list, updated_chunks\n7039: \n7040: "
+    },
+    {
+      "file": "lightrag/chunker/token_size.py",
+      "start_line": 32,
+      "end_line": 47,
+      "sha256": "f121ae47281f09367b6c199fb84d2aee6e7ce040e8019e3dbcc4fcee14171572",
+      "text": "32: def _trimmed_span(content: str, start: int, end: int) -> tuple[int, int]:\n33:     \"\"\"Return the source span after applying the chunker's ``.strip()``.\"\"\"\n34:     start = max(0, min(start, len(content)))\n35:     end = max(start, min(end, len(content)))\n36:     while start < end and content[start].isspace():\n37:         start += 1\n38:     while end > start and content[end - 1].isspace():\n39:         end -= 1\n40:     return start, end\n41: \n42: \n43: def _source_span(content: str, start: int, end: int) -> dict[str, int] | None:\n44:     start, end = _trimmed_span(content, start, end)\n45:     if start >= end:\n46:         return None\n47:     return {\"start\": start, \"end\": end}"
+    },
+    {
+      "file": "lightrag/chunker/token_size.py",
+      "start_line": 50,
+      "end_line": 112,
+      "sha256": "f121ae47281f09367b6c199fb84d2aee6e7ce040e8019e3dbcc4fcee14171572",
+      "text": "50: def _token_window_source_span(\n51:     tokenizer: Tokenizer,\n52:     content: str,\n53:     tokens: list[int],\n54:     start_token: int,\n55:     end_token: int,\n56:     *,\n57:     anchor: tuple[int, int],\n58: ) -> tuple[dict[str, int] | None, tuple[int, int]]:\n59:     \"\"\"Map a decoded token window back to its exact source span.\n60: \n61:     ``anchor`` is the previous window's *verified* ``(start_token, start_char)``.\n62:     Window starts are monotonically increasing, so instead of re-decoding the whole\n63:     ``tokens[:start_token]`` prefix (O(N) per window → O(N²) overall) we decode only\n64:     the delta ``tokens[anchor_token:start_token]`` (≈ one chunking step) to predict\n65:     the start char. The predicted offset is then verified against ``content`` exactly\n66:     as a full prefix decode would be: byte-level BPE decode is non-concatenative at a\n67:     multi-byte UTF-8 boundary, so a delta can be off by the few chars of one split\n68:     char — the ±32 ``find`` fallback corrects that, and re-anchoring on the verified\n69:     position each call keeps the error from accumulating. Net cost is O(N) total\n70:     while the located span stays byte-exact.\n71: \n72:     Returns ``(span, new_anchor)``. On an unlocatable (U+FFFD) window the span is\n73:     ``None`` and the anchor is returned unchanged so the next window still predicts\n74:     from the last verified position.\n75:     \"\"\"\n76:     anchor_token, anchor_char = anchor\n77:     window = tokenizer.decode(tokens[start_token:end_token])\n78:     if start_token >= anchor_token:\n79:         start = anchor_char + len(tokenizer.decode(tokens[anchor_token:start_token]))\n80:     else:  # non-monotonic caller (not expected) — fall back to a full prefix decode\n81:         start = len(tokenizer.decode(tokens[:start_token]))\n82:     end = start + len(window)\n83:     if content[start:end] != window:\n84:         found = content.find(\n85:             window,\n86:             max(0, start - 32),\n87:             min(len(content), end + 32 + len(window)),\n88:         )\n89:         if found < 0:\n90:             return None, anchor\n91:         start = found\n92:         end = found + len(window)\n93:     return _source_span(content, start, end), (start_token, start)\n94: \n95: \n96: def _make_chunk(\n97:     *,\n98:     content: str,\n99:     tokens: int,\n100:     order: int,\n101:     source_span: dict[str, int] | None,\n102:     emit_source_span: bool,\n103: ) -> dict[str, Any]:\n104:     item: dict[str, Any] = {\n105:         \"tokens\": tokens,\n106:         \"content\": content.strip(),\n107:         \"chunk_order_index\": order,\n108:     }\n109:     if emit_source_span and source_span is not None:\n110:         item[\"_source_span\"] = source_span\n111:     return item\n112: "
+    },
+    {
+      "file": "lightrag/chunker/token_size.py",
+      "start_line": 133,
+      "end_line": 148,
+      "sha256": "f121ae47281f09367b6c199fb84d2aee6e7ce040e8019e3dbcc4fcee14171572",
+      "text": "133: def chunking_by_token_size(\n134:     tokenizer: Tokenizer,\n135:     content: str,\n136:     split_by_character: str | None = None,\n137:     split_by_character_only: bool = False,\n138:     chunk_overlap_token_size: int = 100,\n139:     chunk_token_size: int = 1200,\n140:     *,\n141:     _emit_source_span: bool = False,\n142: ) -> list[dict[str, Any]]:\n143:     \"\"\"Legacy 6-arg fixed-token chunker (default for ``LightRAG.chunking_func``).\n144: \n145:     Signature is preserved for backward compatibility with externally\n146:     supplied ``chunking_func`` implementations. New file-based chunking\n147:     dispatch uses :func:`chunking_by_fixed_token` instead.\n148:     \"\"\""
+    },
+    {
+      "file": "lightrag/chunker/token_size.py",
+      "start_line": 246,
+      "end_line": 275,
+      "sha256": "f121ae47281f09367b6c199fb84d2aee6e7ce040e8019e3dbcc4fcee14171572",
+      "text": "246:         # Only the fixed-window path needs the whole-document token list;\n247:         # the split_by_character path re-encodes each segment anyway (BPE\n248:         # boundaries differ on substrings), so the full encode is deferred\n249:         # here rather than paid on every call.\n250:         tokens = tokenizer.encode(content)\n251:         anchor = (0, 0)\n252:         for index, start in enumerate(\n253:             range(\n254:                 0,\n255:                 len(tokens),\n256:                 _window_step(chunk_token_size, chunk_overlap_token_size),\n257:             )\n258:         ):\n259:             end = min(start + chunk_token_size, len(tokens))\n260:             chunk_content = tokenizer.decode(tokens[start:end])\n261:             span = None\n262:             if _emit_source_span:\n263:                 span, anchor = _token_window_source_span(\n264:                     tokenizer, content, tokens, start, end, anchor=anchor\n265:                 )\n266:             results.append(\n267:                 _make_chunk(\n268:                     content=chunk_content,\n269:                     tokens=min(chunk_token_size, len(tokens) - start),\n270:                     order=index,\n271:                     source_span=span,\n272:                     emit_source_span=_emit_source_span,\n273:                 )\n274:             )\n275:     return results"
+    },
+    {
+      "file": "lightrag/chunker/token_size.py",
+      "start_line": 278,
+      "end_line": 305,
+      "sha256": "f121ae47281f09367b6c199fb84d2aee6e7ce040e8019e3dbcc4fcee14171572",
+      "text": "278: def chunking_by_fixed_token(\n279:     tokenizer: Tokenizer,\n280:     content: str,\n281:     chunk_token_size: int = 1200,\n282:     *,\n283:     chunk_overlap_token_size: int = 100,\n284:     split_by_character: str | None = None,\n285:     split_by_character_only: bool = False,\n286:     _emit_source_span: bool = False,\n287: ) -> list[dict[str, Any]]:\n288:     \"\"\"Fixed-token chunker — file-chunker contract for the ``\"F\"`` strategy.\n289: \n290:     Implements the same fixed-window algorithm as\n291:     :func:`chunking_by_token_size`, exposed under the standard\n292:     file-chunker signature ``(tokenizer, content, chunk_token_size, *,\n293:     <strategy kwargs>)`` so the file-based chunking dispatcher in\n294:     ``process_single_document`` can call every strategy uniformly.\n295:     \"\"\"\n296:     return chunking_by_token_size(\n297:         tokenizer,\n298:         content,\n299:         split_by_character=split_by_character,\n300:         split_by_character_only=split_by_character_only,\n301:         chunk_overlap_token_size=chunk_overlap_token_size,\n302:         chunk_token_size=chunk_token_size,\n303:         _emit_source_span=_emit_source_span,\n304:     )"
+    },
+    {
+      "file": "lightrag/chunker/__init__.py",
+      "start_line": 1,
+      "end_line": 36,
+      "sha256": "661d6ccd7960859e18ccc7cb1febe70f1f019e1420c922886bb5ae743e2e4cf2",
+      "text": "1: \"\"\"LightRAG chunking strategies.\n2: \n3: Two contracts coexist intentionally:\n4: \n5:   - **Legacy contract** — :func:`chunking_by_token_size` keeps its\n6:     historical 6-positional-arg signature\n7: \n8:         ``(tokenizer, content, split_by_character,\n9:             split_by_character_only, chunk_overlap_token_size,\n10:             chunk_token_size)``\n11: \n12:     so externally-supplied :attr:`lightrag.LightRAG.chunking_func`\n13:     implementations continue to work unchanged. The legacy contract is\n14:     invoked when ``process_options`` does NOT specify a chunking selector\n15:     (i.e. ``chunking_explicit`` is False) — typically direct\n16:     :meth:`LightRAG.ainsert` calls with raw text — and when the explicit\n17:     ``\"C\"`` selector requests the configured custom callback. If ``C`` is\n18:     processed without a custom callback, the dispatcher warns and invokes\n19:     :func:`chunking_by_fixed_token` instead.\n20: \n21:   - **File-chunker contract** — for documents whose ``process_options``\n22:     explicitly selects a built-in chunking strategy, the file-based dispatcher in\n23:     ``_PipelineMixin.process_single_document`` reads\n24:     ``doc_process_opts.chunking`` and routes to a chunker following the\n25:     standardized signature\n26: \n27:         ``(tokenizer, content, chunk_token_size, *,\n28:             <strategy-specific kwargs>)``\n29: \n30:     Currently shipped file chunkers:\n31: \n32:       - :func:`chunking_by_fixed_token` — the ``\"F\"`` strategy. Same\n33:         algorithm as :func:`chunking_by_token_size`, surfaced under the\n34:         new contract.\n35:       - :func:`chunking_by_recursive_character` — the ``\"R\"`` strategy.\n36:         Wraps LangChain ``RecursiveCharacterTextSplitter``; recursively"
+    },
+    {
+      "file": "lightrag/chunker/__init__.py",
+      "start_line": 61,
+      "end_line": 70,
+      "sha256": "661d6ccd7960859e18ccc7cb1febe70f1f019e1420c922886bb5ae743e2e4cf2",
+      "text": "61: )\n62: from lightrag.chunker.semantic_vector import chunking_by_semantic_vector\n63: from lightrag.chunker.token_size import (\n64:     chunking_by_fixed_token,\n65:     chunking_by_token_size,\n66: )\n67: \n68: __all__ = [\n69:     \"chunking_by_fixed_token\",\n70:     \"chunking_by_paragraph_semantic\","
+    },
+    {
+      "file": "lightrag/pipeline.py",
+      "start_line": 5193,
+      "end_line": 5214,
+      "sha256": "65d009d6a0139c9d8b304ebc08fae366b8e2570c2402598c97c379a663653c9c",
+      "text": "5193:                     # Only the unmodified default fixed-token chunker understands the\n5194:                     # private ``_emit_source_span`` kwarg; a user-supplied\n5195:                     # ``chunking_func`` must not receive it.\n5196:                     legacy_kwargs = {}\n5197:                     if is_builtin_chunker:\n5198:                         legacy_kwargs[\"_emit_source_span\"] = True\n5199:                     legacy_args = (\n5200:                         self.tokenizer,\n5201:                         content,\n5202:                         f_opts.get(\"split_by_character\"),\n5203:                         f_opts.get(\"split_by_character_only\", False),\n5204:                         f_opts.get(\n5205:                             \"chunk_overlap_token_size\",\n5206:                             self.chunk_overlap_token_size,\n5207:                         ),\n5208:                         legacy_chunk_size,\n5209:                     )\n5210:                     if is_builtin_chunker:\n5211:                         chunking_result = await run_in_chunking_executor(\n5212:                             self.chunking_func, *legacy_args, **legacy_kwargs\n5213:                         )\n5214:                     else:"
+    },
+    {
+      "file": "lightrag/constants.py",
+      "start_line": 57,
+      "end_line": 61,
+      "sha256": "295f3e46121b111ead3e164231ff363a4a6b0231c9bd530c370b88346157b3b7",
+      "text": "57: DEFAULT_TOP_K = 40\n58: DEFAULT_CHUNK_TOP_K = 20\n59: DEFAULT_MAX_ENTITY_TOKENS = 6000\n60: DEFAULT_MAX_RELATION_TOKENS = 8000\n61: DEFAULT_MAX_TOTAL_TOKENS = 30000"
+    }
+  ]
+}

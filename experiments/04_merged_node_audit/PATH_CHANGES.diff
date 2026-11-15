@@ -1,0 +1,76 @@
+--- dot/scripts/build_inventory.py
++++ repo/scripts/build_inventory.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -6,2 +8,2 @@
+-OUT=Path(__file__).resolve().parents[1]
+-ROOT=OUT.parent
++OUT=legacy_root('round2_multisource_audit')/'round2_multisource_audit'
++ROOT=legacy_root('round2_multisource_audit')
+--- dot/scripts/build_report.py
++++ repo/scripts/build_report.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -5 +7 @@
+-O=Path(__file__).resolve().parents[1];ROOT=O.parent;P=O/'report';P.mkdir(exist_ok=True)
++O=legacy_root('round2_multisource_audit')/'round2_multisource_audit';ROOT=legacy_root('round2_multisource_audit');P=O/'report';P.mkdir(exist_ok=True)
+--- dot/scripts/check_original_documents.py
++++ repo/scripts/check_original_documents.py
+@@ -0,0 +1,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -3 +5 @@
+-O=Path(__file__).resolve().parents[1];ROOT=O.parent
++O=legacy_root('round2_multisource_audit')/'round2_multisource_audit';ROOT=legacy_root('round2_multisource_audit')
+--- dot/scripts/package_evidence.py
++++ repo/scripts/package_evidence.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -5 +7 @@
+-O=Path(__file__).resolve().parents[1];ROOT=O.parent;R=ROOT/'round2';S=R/'storage_full/patent_r2_full'
++O=legacy_root('round2_multisource_audit')/'round2_multisource_audit';ROOT=legacy_root('round2_multisource_audit');R=ROOT/'round2';S=R/'storage_full/patent_r2_full'
+--- dot/scripts/review_n014_n023.py
++++ repo/scripts/review_n014_n023.py
+@@ -7,0 +8,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -13 +15 @@
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = legacy_root('round2_multisource_audit')
+--- dot/scripts/review_n027_n038.py
++++ repo/scripts/review_n027_n038.py
+@@ -6,0 +7,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -8 +10 @@
+-ROOT=pathlib.Path(__file__).resolve().parents[2]
++ROOT=legacy_root('round2_multisource_audit')
+--- dot/scripts/validate_n014_n026.py
++++ repo/scripts/validate_n014_n026.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -6 +8 @@
+-ROOT=Path(__file__).resolve().parents[2]
++ROOT=legacy_root('round2_multisource_audit')
+--- dot/scripts/validate_reviews.py
++++ repo/scripts/validate_reviews.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4 +6 @@
+-OUT=Path(__file__).resolve().parents[1];ROOT=OUT.parent
++OUT=legacy_root('round2_multisource_audit')/'round2_multisource_audit';ROOT=legacy_root('round2_multisource_audit')
+--- dot/source_mapping_audit.py
++++ repo/source_mapping_audit.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[2]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -3,2 +5,2 @@
+-OUT=pathlib.Path(__file__).resolve().parent
+-ROOT=OUT.parent/'round2';STORE=ROOT/'storage_full/patent_r2_full';SEP='<SEP>'
++OUT=legacy_root('round2_multisource_audit')/'round2_multisource_audit'
++ROOT=legacy_root('round2_multisource_audit')/'round2';STORE=ROOT/'storage_full/patent_r2_full';SEP='<SEP>'

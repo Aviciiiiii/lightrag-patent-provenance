@@ -1,0 +1,23 @@
+{
+  "phase": "full",
+  "started_utc": "2026-11-05T12:44:40.125501+00:00",
+  "status": "completed",
+  "index": {
+    "track_id": "insert_20261105_044440_474e2b05",
+    "nodes": 642,
+    "edges": 998,
+    "counts": {
+      "pending": 0,
+      "parsing": 0,
+      "analyzing": 0,
+      "processing": 0,
+      "preprocessed": 0,
+      "processed": 20,
+      "failed": 0,
+      "all": 20
+    }
+  },
+  "queries_attempted": 22,
+  "finished_utc": "2026-11-05T12:58:55.385012+00:00",
+  "conservative_cost_cny": 1.569384
+}

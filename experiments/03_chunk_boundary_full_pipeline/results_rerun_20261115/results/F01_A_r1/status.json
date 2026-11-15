@@ -1,0 +1,40 @@
+{
+  "run_id": "F01_A_r1",
+  "group": "F01",
+  "condition": "A",
+  "repeat": 1,
+  "scope": "full_round2_document",
+  "started_utc": "2026-11-15T03:31:14.872454+00:00",
+  "status": "completed",
+  "storage": "<REPO>/runs/rerun_03_chunk_boundary_full_pipeline_20261115T033114Z/storage/F01_A_r1",
+  "workspace": "patent_r4_f01_a_r1",
+  "no_reused_extraction_or_answer_cache": true,
+  "embedding_cache_reused": false,
+  "publication_number": "US9589231B2",
+  "index_call_id_range": [
+    1,
+    16
+  ],
+  "doc_counts": {
+    "pending": 0,
+    "parsing": 0,
+    "analyzing": 0,
+    "processing": 0,
+    "preprocessed": 0,
+    "processed": 1,
+    "failed": 0,
+    "all": 1
+  },
+  "graph_counts": {
+    "nodes": 44,
+    "edges": 56
+  },
+  "truncated_extraction_call_ids": [
+    1
+  ],
+  "boundary_causal_eligible": false,
+  "natural_status": "success",
+  "natural_answer_generated": true,
+  "finished_utc": "2026-11-15T03:31:55.738644+00:00",
+  "cumulative_conservative_cost_cny": 0.06912
+}

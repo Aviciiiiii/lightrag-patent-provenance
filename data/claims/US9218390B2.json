@@ -1,0 +1,110 @@
+[
+  {
+    "claim_number": 1,
+    "start_char_in_raw_claims": 20,
+    "end_char_in_raw_claims": 2688,
+    "text": "1. A method comprising: deriving, via a query parser derivation computing device, a query parser for parsing an unstructured geographic web-search query into a field-based format, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens; calculating the most probable label sequence for the input query; assigning one or more sentences from a plurality of sentences to each label based at least in part on the most probable label sequence for the input query, wherein: the one or more sentences are different from the labels; and the one or more sentences are assigned so that the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information; creating a conditional random field model based at least in part on i) the tokens, ii) the labels, iii) characterizing a set of one or more feature functions, wherein: the set of one or more feature functions represent a state transition feature and/or one or more features of an output state for an input sequence; and a conditional probability is computed based in part on the set of one or more feature functions; training the one or more state transition features and the one or more output state features on a labeled set, wherein learning the state transition feature is limited on learning the one or more features of the output state; and utilizing, by the query parser, conditional random fields, learned by semi-supervised automated learning and based at least in part on the training, to produce structured information from the unstructured geographic web-search query, wherein the utilizing the conditional random fields to produce the structured information comprises: parsing the unstructured geographic web-search query to produce the structured information from the unstructured geographic web-search query; determining that the parsing the unstructured geographic web-search query results in a multiple interpretation condition, where the parsing identifies at least a first interpretation of the unstructured geographic web-search query corresponding to first parsing results and a second interpretation of the unstructured geographic web-search query corresponding to second parsing results; and based at least in part on user behavior data, disambiguate the first parsing results and the second parsing results to select the first parsing results corresponding to the first interpretation of the unstructured geographic web-search query."
+  },
+  {
+    "claim_number": 2,
+    "start_char_in_raw_claims": 2688,
+    "end_char_in_raw_claims": 4540,
+    "text": "2. The method of claim 1 , further comprising: defining, via the query parser derivation computing device, class-based language model features comprising at least one token appearing in a defined position in a model feature comprising a grouping of tokens of a given length n, where n is an integer, including GEO_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a geographic term, GEO_BI_FIRST, for the first token in a grouping of tokens of length two relating to a geographic term, GEO_BI_SECOND, for the second token in a grouping of tokens of length two relating to a geographic term, GEO_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_SECOND, for the second token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_THIRD, for the third token in a grouping of tokens of length three relating to a geographic term, and including ST_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a search term, ST_BI_FIRST, for the first token in a grouping of tokens of length two relating to a search term, ST_BI_SECOND, for the second token in a grouping of tokens of length two relating to a search term, ST_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a search term, ST_TRI_SECOND, for the second token in a grouping of tokens of length three relating to a search term, ST_TRI_THIRD, for the third token in a grouping of tokens of length three relating to a search term, for tokens relating to one of a geographic term and a search term, for any grouping of length n where n is an integer; and utilizing, via the query parser derivation computing device, the class-based language model features as high-level language model features in deriving the query parser."
+  },
+  {
+    "claim_number": 3,
+    "start_char_in_raw_claims": 4540,
+    "end_char_in_raw_claims": 4679,
+    "text": "3. The method of claim 2 , wherein the query parser recognizes both a geographic location token and a search term token in an input query."
+  },
+  {
+    "claim_number": 4,
+    "start_char_in_raw_claims": 4679,
+    "end_char_in_raw_claims": 4891,
+    "text": "4. The method of claim 1 , further comprising: establishing the semi-supervised conditional random fields via one of a rule-based finite state machine model and a statistics-based conditional random field model."
+  },
+  {
+    "claim_number": 5,
+    "start_char_in_raw_claims": 4891,
+    "end_char_in_raw_claims": 5147,
+    "text": "5. The method of claim 4 , wherein the semi-supervised conditional random fields are established via utilizing systematic geographic parsing with the one of the rule-based finite state machine model and the statistics-based conditional random field model."
+  },
+  {
+    "claim_number": 6,
+    "start_char_in_raw_claims": 5147,
+    "end_char_in_raw_claims": 5504,
+    "text": "6. The method of claim 4 , wherein the statistics-based conditional random field model is utilized with class transition features learned from a labeled set of features and extracting at least one high-level language model as a state feature, thereby allowing at least one learned language model to be learned from at least one large-scale class-based log."
+  },
+  {
+    "claim_number": 7,
+    "start_char_in_raw_claims": 5504,
+    "end_char_in_raw_claims": 5670,
+    "text": "7. The method of claim 4 , wherein the rule based finite state machine model is utilized with a phrase level grammar to construct a phrase level grammar composition."
+  },
+  {
+    "claim_number": 8,
+    "start_char_in_raw_claims": 5670,
+    "end_char_in_raw_claims": 5848,
+    "text": "8. The method of claim 7 , further comprising: constructing the phrase level grammar, via the query parser derivation computing device, using a context free grammar composition."
+  },
+  {
+    "claim_number": 9,
+    "start_char_in_raw_claims": 5848,
+    "end_char_in_raw_claims": 5987,
+    "text": "9. The method of claim 4 , wherein the semi-supervised conditional random fields are utilized in a linear-chain Markov random field model."
+  },
+  {
+    "claim_number": 10,
+    "start_char_in_raw_claims": 5987,
+    "end_char_in_raw_claims": 6082,
+    "text": "10. The method of claim 1 , wherein for each label in L = argmax L â¢ â¢ P ( L â¢ ï Q ) ."
+  },
+  {
+    "claim_number": 11,
+    "start_char_in_raw_claims": 6082,
+    "end_char_in_raw_claims": 6770,
+    "text": "11. The method of claim 10 , wherein the creating the conditional random field model comprises: characterizing, via the query parser derivation computing device, a conditional random field model of Q and L as a set of feature functions fk, each having a corresponding weight Î»k and computing via the query parser derivation computing device, the conditional probability P ( L â¢ ï Q ) = 1 Z S â¢ exp â¡ ( â t = 1 T â¢ â k â¢ Î» k * f k â¡ ( l t - 1 , l t , Q , t ) ) where fk (ltâ1, lt, Q, t) is a feature function, representing one of a state transition feature, including fk (ltâ1, lt, Q), and an output state feature, including fk (lt, Q), for a given input sequence."
+  },
+  {
+    "claim_number": 12,
+    "start_char_in_raw_claims": 6770,
+    "end_char_in_raw_claims": 9298,
+    "text": "12. A method comprising: deriving a query parser, via a query parser derivation computing device, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens; calculating the most probable label sequence for the input query; assigning one or more sentences from a plurality of sentences to each label based at least in part on the most probable label sequence for the input query, wherein: the one or more sentences are different from the labels; and the one or more sentences are assigned so that the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information; creating a conditional random field model based at least in part on i) the tokens, ii) the labels, iii) characterizing a set of one or more feature functions, wherein: the set of one or more feature functions represent a state transition feature and/or one or more features of an output state for an input sequence; and a conditional probability is computed based in part on the set of one or more feature functions; training the one or more state transition features and the one or more output state features on a labeled set, wherein learning the state transition feature is limited on learning the one or more features of the output state; and utilizing an unstructured local geographical web-based query in local domain by applying a learned model parser, which is based at least in part on the training, to the query, wherein the utilizing the conditional random fields to produce the structured information comprises: parsing the unstructured geographic web-search query to produce the structured information from the unstructured geographic web-search query; determining that the parsing the unstructured geographic web-search query results in a multiple interpretation condition, where the parsing identifies at least a first interpretation of the unstructured geographic web-search query corresponding to first parsing results and a second interpretation of the unstructured geographic web-search query corresponding to second parsing results; and based at least in part on user behavior data, disambiguate the first parsing results and the second parsing results to select the first parsing results corresponding to the first interpretation of the unstructured geographic web-search query."
+  },
+  {
+    "claim_number": 13,
+    "start_char_in_raw_claims": 9298,
+    "end_char_in_raw_claims": 9432,
+    "text": "13. The method of claim 12 , wherein the learned model parser uses at least one class-based query log from a form-based query system."
+  },
+  {
+    "claim_number": 14,
+    "start_char_in_raw_claims": 9432,
+    "end_char_in_raw_claims": 9609,
+    "text": "14. The method of claim 13 , wherein the learned model parser comprises at least one class-level multi-token language model-based feature harvested from a structured query log."
+  },
+  {
+    "claim_number": 15,
+    "start_char_in_raw_claims": 9609,
+    "end_char_in_raw_claims": 9731,
+    "text": "15. The method of claim 14 , wherein the structured query log comprises a class-based log from a form-based query system."
+  },
+  {
+    "claim_number": 16,
+    "start_char_in_raw_claims": 9731,
+    "end_char_in_raw_claims": 9859,
+    "text": "16. The method of claim 12 , wherein the learned model parser comprises a learning statistical conditional random field parser."
+  },
+  {
+    "claim_number": 17,
+    "start_char_in_raw_claims": 9859,
+    "end_char_in_raw_claims": 10023,
+    "text": "17. The method of claim 16 , wherein the learning statistical conditional random field parser performs at least one of segmenting and labeling query sequence data."
+  },
+  {
+    "claim_number": 18,
+    "start_char_in_raw_claims": 10023,
+    "end_char_in_raw_claims": 12804,
+    "text": "18. One or more non-transitory, machine-readable media having machine-readable instructions thereon, which instructions, when executed by one or more computing devices, cause the one or more computing devices to: derive a query parser for parsing an unstructured geographic web-search query into a field-based format, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens; calculating the most probable label sequence for the input query; assigning one or more sentences from a plurality of sentences to each label based at least in part on the most probable label sequence for the input query, wherein: the one or more sentences are different from the labels; and the one or more sentences are assigned so that the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information; creating a conditional random field model based at least in part on i) the tokens, ii) the labels, iii) characterizing a set of one or more feature functions, wherein: the set of one or more feature functions represent a state transition feature and/or one or more features of an output state for an input sequence; and a conditional probability is computed based in part on the set of one or more feature functions; training the one or more state transition features and the one or more output state features on a labeled set, wherein learning the state transition feature is limited on learning the one or more features of the output state; and utilize conditional random fields, learned by semi-supervised automated learning and based at least in part on the training, to produce structured information from the unstructured geographic web-search query, wherein the utilizing the conditional random fields to produce the structured information comprises: parsing the unstructured geographic web-search query to produce the structured information from the unstructured geographic web-search query; determining that the parsing the unstructured geographic web-search query results in a multiple interpretation condition, where the parsing identifies at least a first interpretation of the unstructured geographic web-search query corresponding to first parsing results and a second interpretation of the unstructured geographic web-search query corresponding to second parsing results; and based at least in part on user behavior data, disambiguate the first parsing results and the second parsing results to select the first parsing results corresponding to the first interpretation of the unstructured geographic web-search query."
+  }
+]

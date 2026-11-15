@@ -1,0 +1,34 @@
+{
+  "source_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391",
+  "source_tokens": 1719,
+  "chunks": [
+    {
+      "chunk_order_index": 0,
+      "global_token_span": [
+        0,
+        636
+      ],
+      "source_char_span": [
+        0,
+        3246
+      ],
+      "actual_tokens": 636,
+      "content_sha256": "cfd47fe431c7d05c00ada24b8df8db5d7e4515f8b30ac8b4020dd7623ed89dca",
+      "overlap_previous_global_tokens": 0
+    },
+    {
+      "chunk_order_index": 1,
+      "global_token_span": [
+        536,
+        1719
+      ],
+      "source_char_span": [
+        2711,
+        8799
+      ],
+      "actual_tokens": 1183,
+      "content_sha256": "ccff9ea5af7719e1ca76d82dd645c1c64ad561376bc23a0cfae8fa97e7e39e8a",
+      "overlap_previous_global_tokens": 100
+    }
+  ]
+}

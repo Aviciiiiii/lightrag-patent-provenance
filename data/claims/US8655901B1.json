@@ -1,0 +1,92 @@
+[
+  {
+    "claim_number": 1,
+    "start_char_in_raw_claims": 17,
+    "end_char_in_raw_claims": 1830,
+    "text": "1. A method comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying, with a system comprising one or more computing devices, a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern."
+  },
+  {
+    "claim_number": 2,
+    "start_char_in_raw_claims": 1830,
+    "end_char_in_raw_claims": 2004,
+    "text": "2. The method of claim 1 , further comprising: using the translated query pattern to interpret received queries in the second language matching the translated query pattern."
+  },
+  {
+    "claim_number": 3,
+    "start_char_in_raw_claims": 2004,
+    "end_char_in_raw_claims": 2303,
+    "text": "3. The method of claim 2 , where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component."
+  },
+  {
+    "claim_number": 4,
+    "start_char_in_raw_claims": 2303,
+    "end_char_in_raw_claims": 2492,
+    "text": "4. The method of claim 1 , further comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results."
+  },
+  {
+    "claim_number": 5,
+    "start_char_in_raw_claims": 2492,
+    "end_char_in_raw_claims": 2643,
+    "text": "5. The method of claim 1 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern."
+  },
+  {
+    "claim_number": 6,
+    "start_char_in_raw_claims": 2643,
+    "end_char_in_raw_claims": 2776,
+    "text": "6. The method of claim 1 , where annotating each query includes labeling portions of the query according to the first query pattern."
+  },
+  {
+    "claim_number": 7,
+    "start_char_in_raw_claims": 2776,
+    "end_char_in_raw_claims": 2978,
+    "text": "7. The method of claim 1 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold."
+  },
+  {
+    "claim_number": 8,
+    "start_char_in_raw_claims": 2978,
+    "end_char_in_raw_claims": 4855,
+    "text": "8. A system comprising: one or more processors configured to interact with a computer-readable medium in order to perform operations comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern."
+  },
+  {
+    "claim_number": 9,
+    "start_char_in_raw_claims": 4855,
+    "end_char_in_raw_claims": 5062,
+    "text": "9. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to interpret received queries in the second language matching the translated query pattern."
+  },
+  {
+    "claim_number": 10,
+    "start_char_in_raw_claims": 5062,
+    "end_char_in_raw_claims": 5362,
+    "text": "10. The system of claim 9 , where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component."
+  },
+  {
+    "claim_number": 11,
+    "start_char_in_raw_claims": 5362,
+    "end_char_in_raw_claims": 5585,
+    "text": "11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results."
+  },
+  {
+    "claim_number": 12,
+    "start_char_in_raw_claims": 5585,
+    "end_char_in_raw_claims": 5737,
+    "text": "12. The system of claim 8 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern."
+  },
+  {
+    "claim_number": 13,
+    "start_char_in_raw_claims": 5737,
+    "end_char_in_raw_claims": 5871,
+    "text": "13. The system of claim 8 , where annotating each query includes labeling portions of the query according to the first query pattern."
+  },
+  {
+    "claim_number": 14,
+    "start_char_in_raw_claims": 5871,
+    "end_char_in_raw_claims": 6074,
+    "text": "14. The system of claim 8 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold."
+  },
+  {
+    "claim_number": 15,
+    "start_char_in_raw_claims": 6074,
+    "end_char_in_raw_claims": 8094,
+    "text": "15. A non-transitory computer storage medium encoded with a computer program, the program comprising instructions that when executed by data processing apparatus cause the data processing apparatus to perform operations comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating, with a system comprising one or more computing devices, the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern."
+  }
+]

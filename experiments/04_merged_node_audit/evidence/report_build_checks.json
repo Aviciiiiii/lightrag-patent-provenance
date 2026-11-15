@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-10-30T08:30:26.704136+00:00",
+  "category_counts": {
+    "shared_broad_class": 29,
+    "contextual_conflation": 6,
+    "shared_specific_concept": 3
+  },
+  "records": 38,
+  "source_records": 98,
+  "report_files": [
+    {
+      "name": "LightRAG_round2_multisource_node_audit_zh.html",
+      "bytes": 207886,
+      "sha256": "3e92c2484142a41bb37c67041f6c36b266f2c42537b5f6cdf0db23d8262224c4"
+    },
+    {
+      "name": "round2_multisource_nodes.csv",
+      "bytes": 106424,
+      "sha256": "bc5f0e060d0727852ba5f2f77dd08bd0876b478355016685f212b3f5777b36bf"
+    },
+    {
+      "name": "round2_multisource_nodes.json",
+      "bytes": 1604134,
+      "sha256": "b9d97a60cb6875e77072e155b5179138cb446e97086bbba3c7269174adf7b6cb"
+    },
+    {
+      "name": "round2_multisource_sources.csv",
+      "bytes": 383542,
+      "sha256": "90711d7c3121aa74a0e6531600fe612efe2c9ea997c5dd4844207e3a155e473a"
+    }
+  ]
+}

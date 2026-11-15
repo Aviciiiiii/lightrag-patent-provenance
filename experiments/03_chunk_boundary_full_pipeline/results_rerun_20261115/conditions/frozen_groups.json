@@ -1,0 +1,1065 @@
+{
+  "frozen_utc": "2026-10-30T02:38:22.841174+00:00",
+  "model_calls_before_freeze": 0,
+  "groups": [
+    {
+      "id": "M01",
+      "publication_number": "US7991757B2",
+      "file_path": "US7991757B2.txt",
+      "scope": "minimal_clipped_claim_pair_not_full_patent",
+      "content": "1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.\n\n27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+      "content_sha256": "8dd82cfcdd010d7f3eb736ba540b3ce705c69f440d9599eb0f14ec2cfdcda3a2",
+      "tokens": 362,
+      "query": "In US7991757B2, what registration capability is specified in Claim1 and what additional capability does Claim27 add? Explain the dependency and quote the supporting wording from each claim. Distinguish explicit evidence from inference.",
+      "evidenceanchors": [
+        {
+          "id": "R1_registration",
+          "claim": 1,
+          "quote": "a registration module configured to provide functionality for registering an external recommender with a recommendations service;",
+          "input_span": {
+            "char_start": 784,
+            "char_end": 913,
+            "utf8_byte_start": 784,
+            "utf8_byte_end": 913,
+            "enclosing_token_start": 132,
+            "enclosing_token_end": 150,
+            "start_is_token_boundary": false,
+            "end_is_token_boundary": true,
+            "start_byte_inside_token": 1,
+            "end_byte_inside_final_token": 0
+          },
+          "original_document_span": {
+            "char_start": 1278,
+            "char_end": 1407,
+            "utf8_byte_start": 1278,
+            "utf8_byte_end": 1407,
+            "enclosing_token_start": 222,
+            "enclosing_token_end": 240,
+            "start_is_token_boundary": false,
+            "end_is_token_boundary": true,
+            "start_byte_inside_token": 1,
+            "end_byte_inside_final_token": 0
+          },
+          "raw_claims_span": {
+            "char_start": 784,
+            "char_end": 913,
+            "utf8_byte_start": 784,
+            "utf8_byte_end": 913,
+            "enclosing_token_start": 132,
+            "enclosing_token_end": 150,
+            "start_is_token_boundary": false,
+            "end_is_token_boundary": true,
+            "start_byte_inside_token": 1,
+            "end_byte_inside_final_token": 0
+          },
+          "sha256": "f23a9044b01985b85adcb0267a59c38bf050dc3ac0c36c6b2d3379b294bc9e58"
+        },
+        {
+          "id": "R2_machine_readable_descriptions",
+          "claim": 27,
+          "quote": "the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+          "input_span": {
+            "char_start": 1977,
+            "char_end": 2194,
+            "utf8_byte_start": 1977,
+            "utf8_byte_end": 2194,
+            "enclosing_token_start": 328,
+            "enclosing_token_end": 362,
+            "start_is_token_boundary": false,
+            "end_is_token_boundary": true,
+            "start_byte_inside_token": 1,
+            "end_byte_inside_final_token": 0
+          },
+          "original_document_span": {
+            "char_start": 10606,
+            "char_end": 10823,
+            "utf8_byte_start": 10606,
+            "utf8_byte_end": 10823,
+            "enclosing_token_start": 1865,
+            "enclosing_token_end": 1899,
+            "start_is_token_boundary": false,
+            "end_is_token_boundary": true,
+            "start_byte_inside_token": 1,
+            "end_byte_inside_final_token": 0
+          },
+          "raw_claims_span": {
+            "char_start": 10112,
+            "char_end": 10329,
+            "utf8_byte_start": 10112,
+            "utf8_byte_end": 10329,
+            "enclosing_token_start": 1775,
+            "enclosing_token_end": 1809,
+            "start_is_token_boundary": false,
+            "end_is_token_boundary": true,
+            "start_byte_inside_token": 1,
+            "end_byte_inside_final_token": 0
+          },
+          "sha256": "71bc99821f16e6bd2bb5c7d6cb7a950ecc61c1a9744e1aeea5319cd73db21b28"
+        }
+      ],
+      "claims": {
+        "1": {
+          "content": "1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.",
+          "full_document_span": {
+            "char_start": 494,
+            "char_end": 2433,
+            "utf8_byte_start": 494,
+            "utf8_byte_end": 2433,
+            "enclosing_token_start": 90,
+            "enclosing_token_end": 408,
+            "start_is_token_boundary": true,
+            "end_is_token_boundary": true,
+            "start_byte_inside_token": 0,
+            "end_byte_inside_final_token": 0
+          },
+          "raw_claims_span": {
+            "char_start": 0,
+            "char_end": 1939,
+            "utf8_byte_start": 0,
+            "utf8_byte_end": 1939,
+            "enclosing_token_start": 0,
+            "enclosing_token_end": 318,
+            "start_is_token_boundary": true,
+            "end_is_token_boundary": true,
+            "start_byte_inside_token": 0,
+            "end_byte_inside_final_token": 0
+          },
+          "sha256": "19822770fbd4984f287b9f8abc2508611f3da3e95cf169595372505ae4266f70"
+        },
+        "27": {
+          "content": "27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+          "full_document_span": {
+            "char_start": 10570,
+            "char_end": 10823,
+            "utf8_byte_start": 10570,
+            "utf8_byte_end": 10823,
+            "enclosing_token_start": 1855,
+            "enclosing_token_end": 1899,
+            "start_is_token_boundary": true,
+            "end_is_token_boundary": true,
+            "start_byte_inside_token": 0,
+            "end_byte_inside_final_token": 0
+          },
+          "raw_claims_span": {
+            "char_start": 10076,
+            "char_end": 10329,
+            "utf8_byte_start": 10076,
+            "utf8_byte_end": 10329,
+            "enclosing_token_start": 1765,
+            "enclosing_token_end": 1809,
+            "start_is_token_boundary": true,
+            "end_is_token_boundary": true,
+            "start_byte_inside_token": 0,
+            "end_byte_inside_final_token": 0
+          },
+          "sha256": "248285adf70de5a656f4eab7d095847bbd8cf11c83031cea1451e9904aca7c74"
+        }
+      },
+      "conditions": {
+        "A": {
+          "label": "SAME",
+          "chunks": [
+            {
+              "chunk_order_index": 0,
+              "content": "1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.\n\n27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+              "tokens": 362,
+              "token_start": 0,
+              "token_end": 362,
+              "char_start": 0,
+              "char_end": 2194,
+              "sha256": "8dd82cfcdd010d7f3eb736ba540b3ce705c69f440d9599eb0f14ec2cfdcda3a2",
+              "file_path": "US7991757B2.txt",
+              "contains_full_claim1": true,
+              "contains_full_claim27": true,
+              "contains_anchors": {
+                "R1_registration": true,
+                "R2_machine_readable_descriptions": true
+              }
+            }
+          ],
+          "chunk_count": 1,
+          "max_chunk_tokens": 362,
+          "total_processed_source_tokens": 362,
+          "actual_overlap_tokens": [],
+          "full_double_anchor_chunks": [
+            0
+          ],
+          "full_both_claim_chunks": [
+            0
+          ],
+          "input_content_sha256": "8dd82cfcdd010d7f3eb736ba540b3ce705c69f440d9599eb0f14ec2cfdcda3a2"
+        },
+        "B": {
+          "label": "CROSS",
+          "chunks": [
+            {
+              "chunk_order_index": 0,
+              "content": "1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.\n\n",
+              "tokens": 318,
+              "token_start": 0,
+              "token_end": 318,
+              "char_start": 0,
+              "char_end": 1941,
+              "sha256": "2f358842cf063605d28ce822f98be378c5915c00bf40dd756b7219de471995ea",
+              "file_path": "US7991757B2.txt",
+              "contains_full_claim1": true,
+              "contains_full_claim27": false,
+              "contains_anchors": {
+                "R1_registration": true,
+                "R2_machine_readable_descriptions": false
+              }
+            },
+            {
+              "chunk_order_index": 1,
+              "content": " plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.\n\n27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+              "tokens": 144,
+              "token_start": 218,
+              "token_end": 362,
+              "char_start": 1329,
+              "char_end": 2194,
+              "sha256": "dc789a61e26be056ad3bb6922b1101bd90f919101e30ce1d6e13d2f0575dbfc8",
+              "file_path": "US7991757B2.txt",
+              "contains_full_claim1": false,
+              "contains_full_claim27": true,
+              "contains_anchors": {
+                "R1_registration": false,
+                "R2_machine_readable_descriptions": true
+              }
+            }
+          ],
+          "chunk_count": 2,
+          "max_chunk_tokens": 318,
+          "total_processed_source_tokens": 462,
+          "actual_overlap_tokens": [
+            100
+          ],
+          "full_double_anchor_chunks": [],
+          "full_both_claim_chunks": [],
+          "input_content_sha256": "8dd82cfcdd010d7f3eb736ba540b3ce705c69f440d9599eb0f14ec2cfdcda3a2"
+        }
+      },
+      "predicates": [
+        {
+          "id": "R1",
+          "statement": "The Registration Module provides functionality for registering an external recommender with a recommendations service.",
+          "source_claim": 1,
+          "source_anchor": "R1_registration",
+          "edge_success": "A parsed or merged relation explicitly supports module-mediated registration of an external recommender with the service. Endpoints may be Module–External Recommender or Module–Recommendations Service if the full registration predicate is faithfully retained in its description.",
+          "node_success": "A Registration Module entity description explicitly retains the same registration capability."
+        },
+        {
+          "id": "R2",
+          "statement": "The same Registration Module allows a provider of an external recommender to provide machine readable descriptions of that recommender.",
+          "source_claim": 27,
+          "source_anchor": "R2_machine_readable_descriptions",
+          "edge_success": "A parsed or merged relation explicitly supports module-mediated allowance for the provider to provide machine-readable descriptions. Module–Provider is valid if its description retains the complete function; a fixed Module–Descriptions endpoint pair is not required.",
+          "node_success": "A Registration Module entity description explicitly retains the same allowance and machine-readable-description object.",
+          "control_note": "R2 is fully and explicitly stated in Claim27, which remains intact in a B chunk; R2 alone is a self-contained positive control, not a relationship requiring cross-Claim inference."
+        }
+      ],
+      "primary_joint_criterion": "Report R1 and R2 node retention and edge retention separately. Joint technical co-retention succeeds when both supported predicates remain linked to the same actual Registration Module graph identity after merge; preserve actual node IDs and distinguish semantic aliases from a real node merge. Do not require one invented edge connecting registration to descriptions.",
+      "legal_dependency_secondary": "Score an explicit Claim27→Claim1 dependency edge only if actual graph Claim entities and an explicit dependency relation exist. Its absence may be default ontology/representation scope, not technical relation loss. Claim27 contains the words The system of claim1 in both conditions.",
+      "forbidden_gold_inferences": [
+        "Do not invent registration-uses-machine-readable-descriptions as an explicit relationship. Neither original claim states that mechanism.",
+        "Do not count Claim27-only R2 loss as evidence requiring Claim1 and Claim27 to share a chunk.",
+        "Do not equate separate node/edge retention or answer correctness with preservation of an explicit Claim dependency graph."
+      ],
+      "leakage_checks": {
+        "A_has_complete_claim1_and_claim27": true,
+        "B_no_chunk_has_both_full_claims": true,
+        "A_has_both_target_anchor_spans": true,
+        "B_no_chunk_has_both_target_anchor_spans": true,
+        "B_second_chunk_excludes_R1_registration_clause": true,
+        "B_first_chunk_excludes_Claim27": true,
+        "R2_remains_self_contained_in_B_second_chunk": true,
+        "shared_entity_name_is_original_text": "Registration module is explicitly named in both claims; this is intentional entity co-reference, not duplicate evidence inserted by the experiment."
+      },
+      "full_document_pair_preflight": {
+        "same_two_anchor_enclosing_token_span": [
+          222,
+          1899
+        ],
+        "minimum_contiguous_tokens_for_both_anchors": 1677,
+        "fits_1200": false,
+        "status": "exclude this original Claim1/Claim27 pair from full-document same-chunk candidates when span exceeds1200; use only the labeled minimal clipping"
+      },
+      "fixed_settings": {
+        "max_chunk_tokens": 1200,
+        "overlap_tokens": 100,
+        "tokenizer": "o200k_base",
+        "repeat_minimum": 3,
+        "original_claim_text_unchanged": true,
+        "separator": "Two newline characters inserted only between the two complete retained claims; omitted Claims2–26 are not replaced by invented text.",
+        "file_path_same_in_both_conditions": true
+      },
+      "unavoidable_differences": [
+        "A has1chunk andB has2chunks. The configured overlap is100; A has no adjacent chunk to overlap. B repeats100originaltokens.",
+        "Processed source tokens are362 forA versus462 forB, so extraction-call count and total repeated evidence differ. Record these as part of this minimal construction.",
+        "Claims2–26,title,abstract and other sections are excluded identically from both conditions. This is not a full-document condition."
+      ],
+      "gold_standard_type": "Researcher-defined evidence-grounded predicates checked against exact original Claims; no model-generated/self-judged gold.",
+      "generated_utc": "2026-10-30T02:18:26.726754+00:00",
+      "api_calls": 0
+    },
+    {
+      "id": "F01",
+      "publication_number": "US9589231B2",
+      "scope": "full_round2_document",
+      "content_source": "data/documents/US9589231B2.txt",
+      "normalization": "raw.read_text().strip(), same as officialainsert normalization; no original file changed",
+      "raw_sha256": "e1d2e5eeb5a025370f0e9deecdfb65c3ea5391c2c7ab597b283248742aaf2493",
+      "content_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391",
+      "total_tokens": 1719,
+      "query": "In US9589231B2, how are the existing medical cases and the set of experts embedded with respect to an ontology, and what named terminology system underlies that ontology? Identify the supporting claims and distinguish the explicit technical chain from an inferred shortcut relation.",
+      "researcher_predicate": "Existing Medical Cases and the Set of Experts are embedded based on Medical Ontology; Medical Ontology is based on Unified Medical Language System. Require both existing-case and expert roles (or an explicit combined role) plus the ontology-to-UMLS predicate. Do not substitute a new-case-only relation; a direct expert/case-to-UMLS shortcut is optional and inferential.",
+      "candidate_classification": "compositional technical chain backed by explicit Claim8 dependence on Claim4",
+      "warnings": [
+        "Do not demand an inferred direct embedding-to-UMLS edge. Component edges can be independently extracted and merged successfully across chunks. Target is existing cases AND experts. Claim6 applies an ontology-concept proximity matrix to the NEW case; it is related background, not another explicit statement that the existing cases/experts are ontology-based. This target revision occurred before paidcalls because the preliminary new-case target had that alternativecue."
+      ],
+      "target_claim_numbers": [
+        4,
+        8
+      ],
+      "evidence": {
+        "A": [
+          {
+            "quote": "embedding of the existing medical cases and the set of experts being also based on the medical ontology",
+            "char_span": [
+              2389,
+              2492
+            ],
+            "token_span": [
+              473,
+              491
+            ]
+          }
+        ],
+        "B": [
+          {
+            "quote": "medical ontology is based on the Unified Medical Language System",
+            "char_span": [
+              3247,
+              3311
+            ],
+            "token_span": [
+              636,
+              646
+            ]
+          }
+        ]
+      },
+      "conditions": {
+        "A": {
+          "strategy": "regular1200/100",
+          "chunks": [
+            {
+              "index": 0,
+              "token_span": [
+                0,
+                1200
+              ],
+              "char_span": [
+                0,
+                6070
+              ],
+              "tokens": 1200,
+              "content": "Publication number: US9589231B2\nTitle: Social medical network for diagnosis assistance\n\nABSTRACT\nA method for diagnosis assistance exploits similarity between a new medical case and existing medical cases and experts when embedded in a common embedding space. Different types of queries are provided for, including a query-by-cases and a query-by-experts. These may be associated with different cost structures that encourage the requester to use the query-by-cases first and seek expert assistance if this proves unsuccessful. Depending on whether the query-by-cases or query-by-experts is requested, a subset of the existing cases or experts is identified based on the similarity of their representations, in the embedding space, with a representation of the new case in the embedding space. There may then be provision for communicating the new case to a selected one or more of the subset of experts for the expert to attempt to provide a diagnosis.\n\nCLAIMS\nWhat is claimed is: 1. A method for diagnosis assistance comprising: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts wherein at least one of the embedding, providing, returning the subset of the cases, returning the subset of the experts, and computing the query cost are performed with a computer processor. 2. The method of claim 1 , further comprising computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases. 3. The method of claim 2 , wherein the computed query cost is higher for a query-for-experts than for a query-for-cases. 4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology. 5. The method of claim 4 , wherein the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation. 6. The method of claim 5 , wherein the computing the similarity measure between the representation of the new case and representations of the existing cases or experts, a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology. 7. The method of claim 4 , wherein the ontology includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof. 8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System. 9. The method of claim 1 , wherein the experts in the set of experts are each embedded based on information associated with the expert selected from the group consisting of: a profile of the expert; coded medical procedures which have been performed by the expert; articles authored by the expert; stored medical cases linked to the expert; and combinations thereof. 10. The method of claim 1 , wherein when the query-for-experts is selected, the returning of the subset of the experts is also based on at least one of: an availability of the expert; a rating of the expert; and a number of followers of the expert among users of the system. 11. The method of claim 1 , further comprising, when the query-for-cases is selected, returning documents from a public database based on a computed similarity between the embedded new case and documents embedded in the embedding space. 12. The method of claim 1 , wherein when the query-for-experts is selected, providing the new case to a selected one of the subset of experts for formulating a diagnosis. 13. The method of claim 12 , wherein when the query-for-experts is selected, providing for making a payment to the expert for formulating the diagnosis. 14. The method of claim 1 , wherein the new medical case comprises a plurality of records relating to a specific patient. 15. The method of claim 1 , wherein the plurality of records comprises records selected from the group consisting of laboratory test results, images, descriptions of symptoms, results of patient monitors, diagnoses, prescribed medications and treatments, and combinations thereof. 16. The method of claim 1 , further comprising when the query-by-cases is selected, providing for a query-by-experts to be performed subsequent to the query-by-cases. 17. A system comprising memory storing instructions for performing the method of claim 1 and a processor in communication with the memory for executing the instructions. 18. A computer program product comprising a non-transitory recording medium storing instructions, which when executed on a computer causes the computer to perform the method of claim 1 . 19. A system for diagnosis assistance comprising: memory which stores instructions for: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-ex",
+              "content_sha256": "4b8801b6f9af5b47586773582b57626a8b88aa3adcf5641b0301ea63536f59d7"
+            },
+            {
+              "index": 1,
+              "token_span": [
+                1100,
+                1719
+              ],
+              "char_span": [
+                5562,
+                8799
+              ],
+              "tokens": 619,
+              "content": " from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts; computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases; and a processor in communication with the memory for executing the instructions. 20. A network comprising a system for diagnosis assistance and a set of user devices for linking requesters and experts with the system, the system comprising: memory which stores instructions for: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts; and a processor in communication with the memory for executing the instructions. 21. The system of claim 20 wherein the instructions further comprise instructions for computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases. 22. A method for diagnosis assistance comprising: for each of an existing set of medical cases, generating a multidimensional representation in an embedding space; for each of a set of experts, generating a multidimensional representation in the embedding space; receiving a new case for which a diagnosis is sought; generating a multidimensional representation of the new case in the embedding space; providing for a plurality of query types, including a query-by-cases at a first cost and a query-by-experts at a second cost, higher than the first cost; when the query-by-cases is requested, identifying a subset of the existing cases based on a similarity between the multidimensional representation of the new case and the multidimensional representations of existing cases in the set of cases; when the query-by-experts is requested, identifying a subset of the experts based on a similarity between the multidimensional representation of the new case and the multidimensional representations of experts in the set of experts, and providing for communicating the new case to one of the subset of experts for the expert to attempt to provide a diagnosis; and computing a cost for the query based on the query type requested.",
+              "content_sha256": "6bb9b206968b403b673bc1d7e93903a48337262f6585224c5f82feb173cd3b3e"
+            }
+          ]
+        },
+        "B": {
+          "strategy": "greedy variable-length windows capped1200,exact100overlap; nochunkintersectsbothanchorclasses",
+          "chunks": [
+            {
+              "index": 0,
+              "token_span": [
+                0,
+                636
+              ],
+              "char_span": [
+                0,
+                3246
+              ],
+              "tokens": 636,
+              "content": "Publication number: US9589231B2\nTitle: Social medical network for diagnosis assistance\n\nABSTRACT\nA method for diagnosis assistance exploits similarity between a new medical case and existing medical cases and experts when embedded in a common embedding space. Different types of queries are provided for, including a query-by-cases and a query-by-experts. These may be associated with different cost structures that encourage the requester to use the query-by-cases first and seek expert assistance if this proves unsuccessful. Depending on whether the query-by-cases or query-by-experts is requested, a subset of the existing cases or experts is identified based on the similarity of their representations, in the embedding space, with a representation of the new case in the embedding space. There may then be provision for communicating the new case to a selected one or more of the subset of experts for the expert to attempt to provide a diagnosis.\n\nCLAIMS\nWhat is claimed is: 1. A method for diagnosis assistance comprising: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts wherein at least one of the embedding, providing, returning the subset of the cases, returning the subset of the experts, and computing the query cost are performed with a computer processor. 2. The method of claim 1 , further comprising computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases. 3. The method of claim 2 , wherein the computed query cost is higher for a query-for-experts than for a query-for-cases. 4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology. 5. The method of claim 4 , wherein the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation. 6. The method of claim 5 , wherein the computing the similarity measure between the representation of the new case and representations of the existing cases or experts, a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology. 7. The method of claim 4 , wherein the ontology includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof. 8. The method of claim 4 , wherein the",
+              "content_sha256": "cfd47fe431c7d05c00ada24b8df8db5d7e4515f8b30ac8b4020dd7623ed89dca"
+            },
+            {
+              "index": 1,
+              "token_span": [
+                536,
+                1719
+              ],
+              "char_span": [
+                2711,
+                8799
+              ],
+              "tokens": 1183,
+              "content": " method of claim 5 , wherein the computing the similarity measure between the representation of the new case and representations of the existing cases or experts, a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology. 7. The method of claim 4 , wherein the ontology includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof. 8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System. 9. The method of claim 1 , wherein the experts in the set of experts are each embedded based on information associated with the expert selected from the group consisting of: a profile of the expert; coded medical procedures which have been performed by the expert; articles authored by the expert; stored medical cases linked to the expert; and combinations thereof. 10. The method of claim 1 , wherein when the query-for-experts is selected, the returning of the subset of the experts is also based on at least one of: an availability of the expert; a rating of the expert; and a number of followers of the expert among users of the system. 11. The method of claim 1 , further comprising, when the query-for-cases is selected, returning documents from a public database based on a computed similarity between the embedded new case and documents embedded in the embedding space. 12. The method of claim 1 , wherein when the query-for-experts is selected, providing the new case to a selected one of the subset of experts for formulating a diagnosis. 13. The method of claim 12 , wherein when the query-for-experts is selected, providing for making a payment to the expert for formulating the diagnosis. 14. The method of claim 1 , wherein the new medical case comprises a plurality of records relating to a specific patient. 15. The method of claim 1 , wherein the plurality of records comprises records selected from the group consisting of laboratory test results, images, descriptions of symptoms, results of patient monitors, diagnoses, prescribed medications and treatments, and combinations thereof. 16. The method of claim 1 , further comprising when the query-by-cases is selected, providing for a query-by-experts to be performed subsequent to the query-by-cases. 17. A system comprising memory storing instructions for performing the method of claim 1 and a processor in communication with the memory for executing the instructions. 18. A computer program product comprising a non-transitory recording medium storing instructions, which when executed on a computer causes the computer to perform the method of claim 1 . 19. A system for diagnosis assistance comprising: memory which stores instructions for: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts; computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases; and a processor in communication with the memory for executing the instructions. 20. A network comprising a system for diagnosis assistance and a set of user devices for linking requesters and experts with the system, the system comprising: memory which stores instructions for: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts; and a processor in communication with the memory for executing the instructions. 21. The system of claim 20 wherein the instructions further comprise instructions for computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases. 22. A method for diagnosis assistance comprising: for each of an existing set of medical cases, generating a multidimensional representation in an embedding space; for each of a set of experts, generating a multidimensional representation in the embedding space; receiving a new case for which a diagnosis is sought; generating a multidimensional representation of the new case in the embedding space; providing for a plurality of query types, including a query-by-cases at a first cost and a query-by-experts at a second cost, higher than the first cost; when the query-by-cases is requested, identifying a subset of the existing cases based on a similarity between the multidimensional representation of the new case and the multidimensional representations of existing cases in the set of cases; when the query-by-experts is requested, identifying a subset of the experts based on a similarity between the multidimensional representation of the new case and the multidimensional representations of experts in the set of experts, and providing for communicating the new case to one of the subset of experts for the expert to attempt to provide a diagnosis; and computing a cost for the query based on the query type requested.",
+              "content_sha256": "ccff9ea5af7719e1ca76d82dd645c1c64ad561376bc23a0cfae8fa97e7e39e8a"
+            }
+          ]
+        }
+      },
+      "boundary_feasible": true,
+      "all_anchor_literal_occurrences_scanned": true,
+      "semantic_equivalence_exhaustive": false,
+      "semantic_equivalence_note": "All regex-matched lexical anchors were checked, not a proof that every synonymous or inferentially equivalent passage was found. Researcher notes determine eligibility.",
+      "A_joint_evidence_chunks": [
+        0
+      ],
+      "checks": {
+        "all_chunks_max1200": true,
+        "all_adjacent_overlap100": true,
+        "full_document_content_order_identical": true,
+        "B_no_even_partial_joint_anchor": true,
+        "each_anchor_occurrence_wholly_available": true
+      },
+      "content": "Publication number: US9589231B2\nTitle: Social medical network for diagnosis assistance\n\nABSTRACT\nA method for diagnosis assistance exploits similarity between a new medical case and existing medical cases and experts when embedded in a common embedding space. Different types of queries are provided for, including a query-by-cases and a query-by-experts. These may be associated with different cost structures that encourage the requester to use the query-by-cases first and seek expert assistance if this proves unsuccessful. Depending on whether the query-by-cases or query-by-experts is requested, a subset of the existing cases or experts is identified based on the similarity of their representations, in the embedding space, with a representation of the new case in the embedding space. There may then be provision for communicating the new case to a selected one or more of the subset of experts for the expert to attempt to provide a diagnosis.\n\nCLAIMS\nWhat is claimed is: 1. A method for diagnosis assistance comprising: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts wherein at least one of the embedding, providing, returning the subset of the cases, returning the subset of the experts, and computing the query cost are performed with a computer processor. 2. The method of claim 1 , further comprising computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases. 3. The method of claim 2 , wherein the computed query cost is higher for a query-for-experts than for a query-for-cases. 4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology. 5. The method of claim 4 , wherein the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation. 6. The method of claim 5 , wherein the computing the similarity measure between the representation of the new case and representations of the existing cases or experts, a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology. 7. The method of claim 4 , wherein the ontology includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof. 8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System. 9. The method of claim 1 , wherein the experts in the set of experts are each embedded based on information associated with the expert selected from the group consisting of: a profile of the expert; coded medical procedures which have been performed by the expert; articles authored by the expert; stored medical cases linked to the expert; and combinations thereof. 10. The method of claim 1 , wherein when the query-for-experts is selected, the returning of the subset of the experts is also based on at least one of: an availability of the expert; a rating of the expert; and a number of followers of the expert among users of the system. 11. The method of claim 1 , further comprising, when the query-for-cases is selected, returning documents from a public database based on a computed similarity between the embedded new case and documents embedded in the embedding space. 12. The method of claim 1 , wherein when the query-for-experts is selected, providing the new case to a selected one of the subset of experts for formulating a diagnosis. 13. The method of claim 12 , wherein when the query-for-experts is selected, providing for making a payment to the expert for formulating the diagnosis. 14. The method of claim 1 , wherein the new medical case comprises a plurality of records relating to a specific patient. 15. The method of claim 1 , wherein the plurality of records comprises records selected from the group consisting of laboratory test results, images, descriptions of symptoms, results of patient monitors, diagnoses, prescribed medications and treatments, and combinations thereof. 16. The method of claim 1 , further comprising when the query-by-cases is selected, providing for a query-by-experts to be performed subsequent to the query-by-cases. 17. A system comprising memory storing instructions for performing the method of claim 1 and a processor in communication with the memory for executing the instructions. 18. A computer program product comprising a non-transitory recording medium storing instructions, which when executed on a computer causes the computer to perform the method of claim 1 . 19. A system for diagnosis assistance comprising: memory which stores instructions for: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts; computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases; and a processor in communication with the memory for executing the instructions. 20. A network comprising a system for diagnosis assistance and a set of user devices for linking requesters and experts with the system, the system comprising: memory which stores instructions for: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts; and a processor in communication with the memory for executing the instructions. 21. The system of claim 20 wherein the instructions further comprise instructions for computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases. 22. A method for diagnosis assistance comprising: for each of an existing set of medical cases, generating a multidimensional representation in an embedding space; for each of a set of experts, generating a multidimensional representation in the embedding space; receiving a new case for which a diagnosis is sought; generating a multidimensional representation of the new case in the embedding space; providing for a plurality of query types, including a query-by-cases at a first cost and a query-by-experts at a second cost, higher than the first cost; when the query-by-cases is requested, identifying a subset of the existing cases based on a similarity between the multidimensional representation of the new case and the multidimensional representations of existing cases in the set of cases; when the query-by-experts is requested, identifying a subset of the experts based on a similarity between the multidimensional representation of the new case and the multidimensional representations of experts in the set of experts, and providing for communicating the new case to one of the subset of experts for the expert to attempt to provide a diagnosis; and computing a cost for the query based on the query type requested.",
+      "file_path": "US9589231B2.txt",
+      "evidenceanchors": {
+        "A": [
+          {
+            "quote": "embedding of the existing medical cases and the set of experts being also based on the medical ontology",
+            "char_span": [
+              2389,
+              2492
+            ],
+            "token_span": [
+              473,
+              491
+            ]
+          }
+        ],
+        "B": [
+          {
+            "quote": "medical ontology is based on the Unified Medical Language System",
+            "char_span": [
+              3247,
+              3311
+            ],
+            "token_span": [
+              636,
+              646
+            ]
+          }
+        ]
+      },
+      "predicates": {
+        "researcher_standard": "Existing Medical Cases and the Set of Experts are embedded based on Medical Ontology; Medical Ontology is based on Unified Medical Language System. Require both existing-case and expert roles (or an explicit combined role) plus the ontology-to-UMLS predicate. Do not substitute a new-case-only relation; a direct expert/case-to-UMLS shortcut is optional and inferential.",
+        "no_inferred_shortcut_required": true
+      },
+      "claims": [
+        {
+          "claim_number": 4,
+          "text": "4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology."
+        },
+        {
+          "claim_number": 8,
+          "text": "8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System."
+        }
+      ],
+      "diagnostic_text": "4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\n\n8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System."
+    },
+    {
+      "id": "F04",
+      "publication_number": "US8509827B2",
+      "scope": "full_round2_document",
+      "content_source": "data/documents/US8509827B2.txt",
+      "normalization": "raw.read_text().strip(), same as officialainsert normalization; no original file changed",
+      "raw_sha256": "d7a3132bec41157308cab9bfeed67860d89ee8e0e7a80e7a11b5db2c9b43b3c1",
+      "content_sha256": "5a71bb3859364643cc26928be54a07c3bb4c84945dcae928532de56441f3aa0a",
+      "total_tokens": 1326,
+      "query": "In US8509827B2, how does monetary cost enter context-data selection or ranking, and which source or provider can supply the cost value? Identify the supporting claims and keep separate the ranking criterion and the supplier of that criterion.",
+      "researcher_predicate": "Context-data Ranking/Selection uses a monetary/pecuniary Cost criterion; Context-data Source/Provider supplies the Cost value. Claim14 expressly depends on Claim1; score these explicit component edges joined through Cost, not a mandatory inferred provider-to-ranking shortcut.",
+      "candidate_classification": "compositional technical chain backed by Claim14 dependence on Claim1, with repeated cost-based embodiments",
+      "warnings": [
+        "Original Claims2/3 have missing parent numbers; this target uses only unaffected Claims1/14/18/22/25. Cost-based ranking occurs in Claims1/18/22 and supplier-cost wording in14/25; all these lexical equivalents are included. The source can provide cost values but no specific pricing algorithm or causal effect is claimed."
+      ],
+      "target_claim_numbers": [
+        1,
+        14,
+        18,
+        22,
+        25
+      ],
+      "evidence": {
+        "A": [
+          {
+            "quote": "specified parameter comprises a pecuniary cost",
+            "char_span": [
+              1458,
+              1504
+            ],
+            "token_span": [
+              276,
+              284
+            ]
+          },
+          {
+            "quote": "specified parameter comprises a pecuniary cost",
+            "char_span": [
+              4817,
+              4863
+            ],
+            "token_span": [
+              927,
+              935
+            ]
+          },
+          {
+            "quote": "metric comprises a monetary cost",
+            "char_span": [
+              6133,
+              6165
+            ],
+            "token_span": [
+              1178,
+              1183
+            ]
+          }
+        ],
+        "B": [
+          {
+            "quote": "cost value of the context data as provided by the context-data source",
+            "char_span": [
+              3663,
+              3732
+            ],
+            "token_span": [
+              712,
+              725
+            ]
+          },
+          {
+            "quote": "context-data provider is allowed to provide a cost of the context-data",
+            "char_span": [
+              6689,
+              6759
+            ],
+            "token_span": [
+              1283,
+              1296
+            ]
+          }
+        ]
+      },
+      "conditions": {
+        "A": {
+          "strategy": "regular1200/100",
+          "chunks": [
+            {
+              "index": 0,
+              "token_span": [
+                0,
+                1200
+              ],
+              "char_span": [
+                0,
+                6249
+              ],
+              "tokens": 1200,
+              "content": "Publication number: US8509827B2\nTitle: Methods and apparatus of context-data acquisition and ranking\n\nABSTRACT\nDisclosed are a system, method, and article of manufacture of a context-data acquisition and ranking. A context-data type is determined from a query. At least one context-data source that provides the context-data type is identified. A request for a context data of the context-data type is generated from the at least one context data source. A received context data from the at least one context data source according a specified parameter may be ranked. The received context data may be provided to the device that generated a short message. The received context data may be provided to a recipient mobile device. The received context data may be associated with a component of a short message generated by a device that generated the query. The received context data may be appended to the short message.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: receiving a short message from a mobile device with a server; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type from the at least one context data source. 2. The method of claim further comprising: providing the received context data to the device that generated a short message. 3. The method of claim further comprising: providing the received context data to a recipient mobile device, 4. The method of claim 3 , wherein providing the received context data to the recipient mobile device further comprises: associating the received context data with a component of a short message generated by a device that generated the query. 5. The method of claim 4 , wherein providing the received context data to the mobile device further comprises: appending the received context data to the short message. 6. The method of claim 5 further comprising: forwarding the short message and the received context data to the recipient mobile device. 7. The method of claim 4 , wherein providing the received context data to the mobile device further comprises: encoding the received context data into the short message with a markup language. 8. The method of claim 1 , wherein providing the request for the context data of the context-data type to the at least one context data source further comprises: providing the request for the context data of the context-data type to a plurality of context-data sources. 9. The method of claim 1 further comprising: storing the received context data in a database available to a recipient mobile device, 10. The method of claim 9 further comprising: forwarding a Uniform Resource Identifier (URI) of a database server to the receiving mobile device, 11. The method of claim 9 further comprising: appending metadata instructions to query the database for the received context data in the short message. 12. The method of claim 1 , wherein the specified parameter comprises a state of the receiving mobile device. 13. The method of claim 1 , wherein the specified parameter comprises a state of an available communication network. 14. The method of claim 1 , wherein the specified parameter comprises a cost value of the context data as provided by the context-data source. 15. The method of claim 1 , wherein the context-data type provides information about a context of the device that generated the short message. 16. The method of claim 15 , wherein the mobile device that generated the short message comprises a smart phone. 17. The method of claim 1 , further comprising a computer readable medium comprising computer-executable instructions adapted to perform the method of claim 1 . 18. A computerized-apparatus comprising: at least one memory having program instructions, and at least one processor configured to execute the program instructions to perform the operations of: receiving a short message from a mobile device; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type to the at least one context data source. 19. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of rendering a context data from the at least one context-data source for communication through a communication network to a mobile device. 20. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of appending the context data from the at least one context-data source to a short message generated by the mobile device. 21. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of selecting the context-data. from a list of context-data elements weighted according to at least one metric. 22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the context-data is obtained by a physical sensor;",
+              "content_sha256": "6773cf78665bbb35e2353f276d6c19b21d69539b45a17c7fb0645c99c7afd791"
+            },
+            {
+              "index": 1,
+              "token_span": [
+                1100,
+                1326
+              ],
+              "char_span": [
+                5733,
+                6895
+              ],
+              "tokens": 226,
+              "content": " of selecting the context-data. from a list of context-data elements weighted according to at least one metric. 22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the context-data is obtained by a physical sensor; linking the relevant context data to the short message; and formatting the relevant context data and the short message according to a communication protocol. 23. The method of claim 22 , wherein the communication protocol comprises a cellular network short message protocol. 24. The method of claim 22 , wherein the communication protocol comprises an internet communication protocol. 25. The method of claim 22 , wherein the at least one context-data provider is allowed to provide a cost of the context-data. 26. The method of claim 22 , wherein the context data is related to a physical context of the device that generated the short message.",
+              "content_sha256": "f0129c4580519fb3d8fb0d51b61a5a90a1a2c5f87e22d7aaf91e2c0152a11371"
+            }
+          ]
+        },
+        "B": {
+          "strategy": "greedy variable-length windows capped1200,exact100overlap; nochunkintersectsbothanchorclasses",
+          "chunks": [
+            {
+              "index": 0,
+              "token_span": [
+                0,
+                712
+              ],
+              "char_span": [
+                0,
+                3662
+              ],
+              "tokens": 712,
+              "content": "Publication number: US8509827B2\nTitle: Methods and apparatus of context-data acquisition and ranking\n\nABSTRACT\nDisclosed are a system, method, and article of manufacture of a context-data acquisition and ranking. A context-data type is determined from a query. At least one context-data source that provides the context-data type is identified. A request for a context data of the context-data type is generated from the at least one context data source. A received context data from the at least one context data source according a specified parameter may be ranked. The received context data may be provided to the device that generated a short message. The received context data may be provided to a recipient mobile device. The received context data may be associated with a component of a short message generated by a device that generated the query. The received context data may be appended to the short message.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: receiving a short message from a mobile device with a server; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type from the at least one context data source. 2. The method of claim further comprising: providing the received context data to the device that generated a short message. 3. The method of claim further comprising: providing the received context data to a recipient mobile device, 4. The method of claim 3 , wherein providing the received context data to the recipient mobile device further comprises: associating the received context data with a component of a short message generated by a device that generated the query. 5. The method of claim 4 , wherein providing the received context data to the mobile device further comprises: appending the received context data to the short message. 6. The method of claim 5 further comprising: forwarding the short message and the received context data to the recipient mobile device. 7. The method of claim 4 , wherein providing the received context data to the mobile device further comprises: encoding the received context data into the short message with a markup language. 8. The method of claim 1 , wherein providing the request for the context data of the context-data type to the at least one context data source further comprises: providing the request for the context data of the context-data type to a plurality of context-data sources. 9. The method of claim 1 further comprising: storing the received context data in a database available to a recipient mobile device, 10. The method of claim 9 further comprising: forwarding a Uniform Resource Identifier (URI) of a database server to the receiving mobile device, 11. The method of claim 9 further comprising: appending metadata instructions to query the database for the received context data in the short message. 12. The method of claim 1 , wherein the specified parameter comprises a state of the receiving mobile device. 13. The method of claim 1 , wherein the specified parameter comprises a state of an available communication network. 14. The method of claim 1 , wherein the specified parameter comprises a",
+              "content_sha256": "177a26f82458f6073aa1b8fe1829c7fa526c94c2229f4caf6ca97cc1f5f53125"
+            },
+            {
+              "index": 1,
+              "token_span": [
+                612,
+                927
+              ],
+              "char_span": [
+                3163,
+                4816
+              ],
+              "tokens": 315,
+              "content": " database server to the receiving mobile device, 11. The method of claim 9 further comprising: appending metadata instructions to query the database for the received context data in the short message. 12. The method of claim 1 , wherein the specified parameter comprises a state of the receiving mobile device. 13. The method of claim 1 , wherein the specified parameter comprises a state of an available communication network. 14. The method of claim 1 , wherein the specified parameter comprises a cost value of the context data as provided by the context-data source. 15. The method of claim 1 , wherein the context-data type provides information about a context of the device that generated the short message. 16. The method of claim 15 , wherein the mobile device that generated the short message comprises a smart phone. 17. The method of claim 1 , further comprising a computer readable medium comprising computer-executable instructions adapted to perform the method of claim 1 . 18. A computerized-apparatus comprising: at least one memory having program instructions, and at least one processor configured to execute the program instructions to perform the operations of: receiving a short message from a mobile device; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the",
+              "content_sha256": "53aad6550b1418ce89080c814401d4a9a7d582aba6b81f4f933072c5ce916e2c"
+            },
+            {
+              "index": 2,
+              "token_span": [
+                827,
+                1283
+              ],
+              "char_span": [
+                4239,
+                6688
+              ],
+              "tokens": 456,
+              "content": ", and at least one processor configured to execute the program instructions to perform the operations of: receiving a short message from a mobile device; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type to the at least one context data source. 19. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of rendering a context data from the at least one context-data source for communication through a communication network to a mobile device. 20. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of appending the context data from the at least one context-data source to a short message generated by the mobile device. 21. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of selecting the context-data. from a list of context-data elements weighted according to at least one metric. 22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the context-data is obtained by a physical sensor; linking the relevant context data to the short message; and formatting the relevant context data and the short message according to a communication protocol. 23. The method of claim 22 , wherein the communication protocol comprises a cellular network short message protocol. 24. The method of claim 22 , wherein the communication protocol comprises an internet communication protocol. 25. The method of claim 22 , wherein the at least one",
+              "content_sha256": "fa409cfc253169bf5c4aaa66a52cd969d2488f3afbc2d1969f8ec903d48bf420"
+            },
+            {
+              "index": 3,
+              "token_span": [
+                1183,
+                1326
+              ],
+              "char_span": [
+                6165,
+                6895
+              ],
+              "tokens": 143,
+              "content": " of the context-data, and wherein the context-data is obtained by a physical sensor; linking the relevant context data to the short message; and formatting the relevant context data and the short message according to a communication protocol. 23. The method of claim 22 , wherein the communication protocol comprises a cellular network short message protocol. 24. The method of claim 22 , wherein the communication protocol comprises an internet communication protocol. 25. The method of claim 22 , wherein the at least one context-data provider is allowed to provide a cost of the context-data. 26. The method of claim 22 , wherein the context data is related to a physical context of the device that generated the short message.",
+              "content_sha256": "0e2c7de944d3f57998bb252c3b3a5dd16e4bf70602a6246c5c0ea45c4d558366"
+            }
+          ]
+        }
+      },
+      "boundary_feasible": true,
+      "all_anchor_literal_occurrences_scanned": true,
+      "semantic_equivalence_exhaustive": false,
+      "semantic_equivalence_note": "All regex-matched lexical anchors were checked, not a proof that every synonymous or inferentially equivalent passage was found. Researcher notes determine eligibility.",
+      "A_joint_evidence_chunks": [
+        0,
+        1
+      ],
+      "checks": {
+        "all_chunks_max1200": true,
+        "all_adjacent_overlap100": true,
+        "full_document_content_order_identical": true,
+        "B_no_even_partial_joint_anchor": true,
+        "each_anchor_occurrence_wholly_available": true
+      },
+      "content": "Publication number: US8509827B2\nTitle: Methods and apparatus of context-data acquisition and ranking\n\nABSTRACT\nDisclosed are a system, method, and article of manufacture of a context-data acquisition and ranking. A context-data type is determined from a query. At least one context-data source that provides the context-data type is identified. A request for a context data of the context-data type is generated from the at least one context data source. A received context data from the at least one context data source according a specified parameter may be ranked. The received context data may be provided to the device that generated a short message. The received context data may be provided to a recipient mobile device. The received context data may be associated with a component of a short message generated by a device that generated the query. The received context data may be appended to the short message.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: receiving a short message from a mobile device with a server; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type from the at least one context data source. 2. The method of claim further comprising: providing the received context data to the device that generated a short message. 3. The method of claim further comprising: providing the received context data to a recipient mobile device, 4. The method of claim 3 , wherein providing the received context data to the recipient mobile device further comprises: associating the received context data with a component of a short message generated by a device that generated the query. 5. The method of claim 4 , wherein providing the received context data to the mobile device further comprises: appending the received context data to the short message. 6. The method of claim 5 further comprising: forwarding the short message and the received context data to the recipient mobile device. 7. The method of claim 4 , wherein providing the received context data to the mobile device further comprises: encoding the received context data into the short message with a markup language. 8. The method of claim 1 , wherein providing the request for the context data of the context-data type to the at least one context data source further comprises: providing the request for the context data of the context-data type to a plurality of context-data sources. 9. The method of claim 1 further comprising: storing the received context data in a database available to a recipient mobile device, 10. The method of claim 9 further comprising: forwarding a Uniform Resource Identifier (URI) of a database server to the receiving mobile device, 11. The method of claim 9 further comprising: appending metadata instructions to query the database for the received context data in the short message. 12. The method of claim 1 , wherein the specified parameter comprises a state of the receiving mobile device. 13. The method of claim 1 , wherein the specified parameter comprises a state of an available communication network. 14. The method of claim 1 , wherein the specified parameter comprises a cost value of the context data as provided by the context-data source. 15. The method of claim 1 , wherein the context-data type provides information about a context of the device that generated the short message. 16. The method of claim 15 , wherein the mobile device that generated the short message comprises a smart phone. 17. The method of claim 1 , further comprising a computer readable medium comprising computer-executable instructions adapted to perform the method of claim 1 . 18. A computerized-apparatus comprising: at least one memory having program instructions, and at least one processor configured to execute the program instructions to perform the operations of: receiving a short message from a mobile device; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type to the at least one context data source. 19. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of rendering a context data from the at least one context-data source for communication through a communication network to a mobile device. 20. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of appending the context data from the at least one context-data source to a short message generated by the mobile device. 21. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of selecting the context-data. from a list of context-data elements weighted according to at least one metric. 22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the context-data is obtained by a physical sensor; linking the relevant context data to the short message; and formatting the relevant context data and the short message according to a communication protocol. 23. The method of claim 22 , wherein the communication protocol comprises a cellular network short message protocol. 24. The method of claim 22 , wherein the communication protocol comprises an internet communication protocol. 25. The method of claim 22 , wherein the at least one context-data provider is allowed to provide a cost of the context-data. 26. The method of claim 22 , wherein the context data is related to a physical context of the device that generated the short message.",
+      "file_path": "US8509827B2.txt",
+      "evidenceanchors": {
+        "A": [
+          {
+            "quote": "specified parameter comprises a pecuniary cost",
+            "char_span": [
+              1458,
+              1504
+            ],
+            "token_span": [
+              276,
+              284
+            ]
+          },
+          {
+            "quote": "specified parameter comprises a pecuniary cost",
+            "char_span": [
+              4817,
+              4863
+            ],
+            "token_span": [
+              927,
+              935
+            ]
+          },
+          {
+            "quote": "metric comprises a monetary cost",
+            "char_span": [
+              6133,
+              6165
+            ],
+            "token_span": [
+              1178,
+              1183
+            ]
+          }
+        ],
+        "B": [
+          {
+            "quote": "cost value of the context data as provided by the context-data source",
+            "char_span": [
+              3663,
+              3732
+            ],
+            "token_span": [
+              712,
+              725
+            ]
+          },
+          {
+            "quote": "context-data provider is allowed to provide a cost of the context-data",
+            "char_span": [
+              6689,
+              6759
+            ],
+            "token_span": [
+              1283,
+              1296
+            ]
+          }
+        ]
+      },
+      "predicates": {
+        "researcher_standard": "Context-data Ranking/Selection uses a monetary/pecuniary Cost criterion; Context-data Source/Provider supplies the Cost value. Claim14 expressly depends on Claim1; score these explicit component edges joined through Cost, not a mandatory inferred provider-to-ranking shortcut.",
+        "no_inferred_shortcut_required": true
+      },
+      "claims": [
+        {
+          "claim_number": 1,
+          "text": "1. A method comprising: receiving a short message from a mobile device with a server; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type from the at least one context data source."
+        },
+        {
+          "claim_number": 14,
+          "text": "14. The method of claim 1 , wherein the specified parameter comprises a cost value of the context data as provided by the context-data source."
+        },
+        {
+          "claim_number": 18,
+          "text": "18. A computerized-apparatus comprising: at least one memory having program instructions, and at least one processor configured to execute the program instructions to perform the operations of: receiving a short message from a mobile device; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type to the at least one context data source."
+        },
+        {
+          "claim_number": 22,
+          "text": "22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the context-data is obtained by a physical sensor; linking the relevant context data to the short message; and formatting the relevant context data and the short message according to a communication protocol."
+        },
+        {
+          "claim_number": 25,
+          "text": "25. The method of claim 22 , wherein the at least one context-data provider is allowed to provide a cost of the context-data."
+        }
+      ],
+      "diagnostic_text": "1. A method comprising: receiving a short message from a mobile device with a server; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type from the at least one context data source.\n\n14. The method of claim 1 , wherein the specified parameter comprises a cost value of the context data as provided by the context-data source.\n\n18. A computerized-apparatus comprising: at least one memory having program instructions, and at least one processor configured to execute the program instructions to perform the operations of: receiving a short message from a mobile device; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type to the at least one context data source.\n\n22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the context-data is obtained by a physical sensor; linking the relevant context data to the short message; and formatting the relevant context data and the short message according to a communication protocol.\n\n25. The method of claim 22 , wherein the at least one context-data provider is allowed to provide a cost of the context-data."
+    },
+    {
+      "id": "F05",
+      "publication_number": "US8069128B2",
+      "scope": "full_round2_document",
+      "content_source": "data/documents/US8069128B2.txt",
+      "normalization": "raw.read_text().strip(), same as officialainsert normalization; no original file changed",
+      "raw_sha256": "3251f41d985e233f6ce1f3904a7d47d2057fcce8744a1fb7bf7167be9be27c06",
+      "content_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+      "total_tokens": 1645,
+      "query": "In US8069128B2, which classifier can the multi-pass message filter employ, and where does its generated second classification data reside? Identify the supporting claims and distinguish the original persistent first-filter data from the temporary second-filter data.",
+      "researcher_predicate": "Multi-pass Message Filter employs Naive Bayes Classifier (Claim10); the filter generates Second Classification Data residing exclusively in Non-persistent Memory (Claim6). Accept explicit linked component edges through the multi-pass filter/data, not a required inferred NaiveBayes-to-memory shortcut.",
+      "candidate_classification": "compositional technical chain backed by Claim10 dependence on Claim6",
+      "warnings": [
+        "First-filter classification data is persistent; do not conflate it with the second-filter data. The memory-residency condition is repeated in abstract and Claims1/6/12/17; all matched explicit non-persistent-only anchors are segregated from the single NaiveBayes mention. Default extraction need not materialize the legal Claim10-to6 edge."
+      ],
+      "target_claim_numbers": [
+        6,
+        10
+      ],
+      "evidence": {
+        "A": [
+          {
+            "quote": "memory resident only",
+            "char_span": [
+              941,
+              961
+            ],
+            "token_span": [
+              176,
+              179
+            ]
+          },
+          {
+            "quote": "reside exclusively in a non-persistent memory location",
+            "char_span": [
+              1599,
+              1653
+            ],
+            "token_span": [
+              298,
+              307
+            ]
+          },
+          {
+            "quote": "reside exclusively in a non-persistent memory store",
+            "char_span": [
+              3665,
+              3716
+            ],
+            "token_span": [
+              665,
+              674
+            ]
+          },
+          {
+            "quote": "reside exclusively in a non-persistent memory store",
+            "char_span": [
+              5661,
+              5712
+            ],
+            "token_span": [
+              1025,
+              1034
+            ]
+          },
+          {
+            "quote": "reside exclusively in a non-persistent memory store",
+            "char_span": [
+              7878,
+              7929
+            ],
+            "token_span": [
+              1426,
+              1435
+            ]
+          }
+        ],
+        "B": [
+          {
+            "quote": "Naive Bayes classifier",
+            "char_span": [
+              4880,
+              4902
+            ],
+            "token_span": [
+              886,
+              891
+            ]
+          }
+        ]
+      },
+      "conditions": {
+        "A": {
+          "strategy": "regular1200/100",
+          "chunks": [
+            {
+              "index": 0,
+              "token_span": [
+                0,
+                1200
+              ],
+              "char_span": [
+                0,
+                6639
+              ],
+              "tokens": 1200,
+              "content": "Publication number: US8069128B2\nTitle: Real-time ad-hoc spam filtering of email\n\nABSTRACT\nEmbodiments are directed towards employing a multi-pass ad-hoc spam message filtering approach that dynamically generates a temporary classifier during a first pass based on a result of a previously applied message filter that sorts messages into various folders for a user. The first pass scans messages in a user's mail folders, and reads various information within the messages, including, but not limited to sender information, headers, including a subject, an originating network address, message contents, attachments, and the like. After creating a classification model, the classifier with its model is used in a second pass on the message folders to retrospectively inspect the messages and present to the user a list of messages that might be misclassified. The classification model is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.\n\nCLAIMS\n1. A network device to manage a delivery of a message over a network, comprising: a transceiver to send and receive data over a network; and a processor that is operative to perform actions, comprising: performing a first pass analysis on a plurality of messages, which have been previously sorted into a plurality of different message folders by a first message filter, using a second, multi-pass message filter that is configured to generate a classification model based on the first pass analysis, wherein the generated classification model is configured to reside exclusively in a non-persistent memory location; using the generated classification model with the second, multi-pass message filter to perform a second pass on the sorted plurality of messages, to generate a misclassification identification of sorted messages; displaying the misclassification identification of sorted messages such that at least one misclassified message can be moved to a different message folder based on the misclassification identification; and purging the generated classification model from non-persistent memory location. 2. The network device of claim 1 , wherein performing a first pass analysis on the sorted plurality of messages is configured to train the second, multi-pass message filter based on which folder each of the plurality of messages resides. 3. The network device of claim 1 , wherein the generated classification model is generated based on an analysis of at least which message folder a message currently resides. 4. The network device of claim 1 , wherein the classification model is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content. 5. The network device of claim 1 , wherein access to the generated classification model is restricted. 6. A processor readable storage medium that includes data and instructions, wherein the execution of the instructions on a computing device provides for managing messages by enabling actions, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 7. The processor readable storage medium of claim 6 , wherein the instructions enable actions, further comprising deleting second classification data such that it is no longer accessible. 8. The processor readable storage medium of claim 6 , wherein executing the first pass and the second pass of the multi-pass message filter occurs entirely on a client device. 9. The processor readable storage medium of claim 6 , wherein the first message filter is configured to execute on a network device distinct from a client device. 10. The processor readable storage medium of claim 6 , wherein the multi-pass message filter employs a Naive Bayes classifier. 11. The processor readable storage medium of claim 6 , wherein the generated second classification model is generated based on an analysis of at least which message folder a message currently resides. 12. A method for managing a message delivery, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing, on a client device, a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store; using the second classification data, executing on the client device a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 13. The method of claim 12 , wherein the second classification data is deleted from the client device upon providing the display of information. 14. The method of claim 12 , wherein the multi-pass message filter is selectable for execution by a user through an interface on the client device; and wherein the first message filter is automatically executed independent of a",
+              "content_sha256": "03d27b9af9a95fc99659dae87ae86cc8134f0f4319687342b04ae8d524454c1c"
+            },
+            {
+              "index": 1,
+              "token_span": [
+                1100,
+                1645
+              ],
+              "char_span": [
+                6096,
+                9043
+              ],
+              "tokens": 545,
+              "content": " associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 13. The method of claim 12 , wherein the second classification data is deleted from the client device upon providing the display of information. 14. The method of claim 12 , wherein the multi-pass message filter is selectable for execution by a user through an interface on the client device; and wherein the first message filter is automatically executed independent of a user action. 15. The method of claim 12 , wherein the second classification data is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content. 16. The method of claim 12 , wherein the second classification data is generated based on which folder each of the plurality of messages resides. 17. A system for enabling a communications over a network, comprising: a network device configured to perform actions, including: receiving a plurality of messages; assigning the plurality of messages to a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; and communicating the messages over the network to the plurality of different message folders; and a client device configured to perform actions, including: executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store at the client device; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 18. The system of claim 17 , wherein the second classification data is deleted from the client device upon providing the display of information. 19. The system of claim 17 , wherein execution of the multi-pass message filter is user selectable. 20. The system of claim 17 , wherein the second classification data is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content.",
+              "content_sha256": "7fc3128dd12c094caa0580486185fd8a2142eb5035430a24748442afaa30e32b"
+            }
+          ]
+        },
+        "B": {
+          "strategy": "greedy variable-length windows capped1200,exact100overlap; nochunkintersectsbothanchorclasses",
+          "chunks": [
+            {
+              "index": 0,
+              "token_span": [
+                0,
+                886
+              ],
+              "char_span": [
+                0,
+                4879
+              ],
+              "tokens": 886,
+              "content": "Publication number: US8069128B2\nTitle: Real-time ad-hoc spam filtering of email\n\nABSTRACT\nEmbodiments are directed towards employing a multi-pass ad-hoc spam message filtering approach that dynamically generates a temporary classifier during a first pass based on a result of a previously applied message filter that sorts messages into various folders for a user. The first pass scans messages in a user's mail folders, and reads various information within the messages, including, but not limited to sender information, headers, including a subject, an originating network address, message contents, attachments, and the like. After creating a classification model, the classifier with its model is used in a second pass on the message folders to retrospectively inspect the messages and present to the user a list of messages that might be misclassified. The classification model is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.\n\nCLAIMS\n1. A network device to manage a delivery of a message over a network, comprising: a transceiver to send and receive data over a network; and a processor that is operative to perform actions, comprising: performing a first pass analysis on a plurality of messages, which have been previously sorted into a plurality of different message folders by a first message filter, using a second, multi-pass message filter that is configured to generate a classification model based on the first pass analysis, wherein the generated classification model is configured to reside exclusively in a non-persistent memory location; using the generated classification model with the second, multi-pass message filter to perform a second pass on the sorted plurality of messages, to generate a misclassification identification of sorted messages; displaying the misclassification identification of sorted messages such that at least one misclassified message can be moved to a different message folder based on the misclassification identification; and purging the generated classification model from non-persistent memory location. 2. The network device of claim 1 , wherein performing a first pass analysis on the sorted plurality of messages is configured to train the second, multi-pass message filter based on which folder each of the plurality of messages resides. 3. The network device of claim 1 , wherein the generated classification model is generated based on an analysis of at least which message folder a message currently resides. 4. The network device of claim 1 , wherein the classification model is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content. 5. The network device of claim 1 , wherein access to the generated classification model is restricted. 6. A processor readable storage medium that includes data and instructions, wherein the execution of the instructions on a computing device provides for managing messages by enabling actions, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 7. The processor readable storage medium of claim 6 , wherein the instructions enable actions, further comprising deleting second classification data such that it is no longer accessible. 8. The processor readable storage medium of claim 6 , wherein executing the first pass and the second pass of the multi-pass message filter occurs entirely on a client device. 9. The processor readable storage medium of claim 6 , wherein the first message filter is configured to execute on a network device distinct from a client device. 10. The processor readable storage medium of claim 6 , wherein the multi-pass message filter employs a",
+              "content_sha256": "26ccb51ae867067fef8169d9d6b1724bea58a114f14675eb36c0cdd801de9b7d"
+            },
+            {
+              "index": 1,
+              "token_span": [
+                786,
+                1025
+              ],
+              "char_span": [
+                4363,
+                5660
+              ],
+              "tokens": 239,
+              "content": " deleting second classification data such that it is no longer accessible. 8. The processor readable storage medium of claim 6 , wherein executing the first pass and the second pass of the multi-pass message filter occurs entirely on a client device. 9. The processor readable storage medium of claim 6 , wherein the first message filter is configured to execute on a network device distinct from a client device. 10. The processor readable storage medium of claim 6 , wherein the multi-pass message filter employs a Naive Bayes classifier. 11. The processor readable storage medium of claim 6 , wherein the generated second classification model is generated based on an analysis of at least which message folder a message currently resides. 12. A method for managing a message delivery, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing, on a client device, a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to",
+              "content_sha256": "48da639ca2fc9afaac543b6407ec73df83cb43377ce3a96c10d3e839ac0c49f9"
+            },
+            {
+              "index": 2,
+              "token_span": [
+                925,
+                1645
+              ],
+              "char_span": [
+                5085,
+                9043
+              ],
+              "tokens": 720,
+              "content": " currently resides. 12. A method for managing a message delivery, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing, on a client device, a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store; using the second classification data, executing on the client device a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 13. The method of claim 12 , wherein the second classification data is deleted from the client device upon providing the display of information. 14. The method of claim 12 , wherein the multi-pass message filter is selectable for execution by a user through an interface on the client device; and wherein the first message filter is automatically executed independent of a user action. 15. The method of claim 12 , wherein the second classification data is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content. 16. The method of claim 12 , wherein the second classification data is generated based on which folder each of the plurality of messages resides. 17. A system for enabling a communications over a network, comprising: a network device configured to perform actions, including: receiving a plurality of messages; assigning the plurality of messages to a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; and communicating the messages over the network to the plurality of different message folders; and a client device configured to perform actions, including: executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store at the client device; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 18. The system of claim 17 , wherein the second classification data is deleted from the client device upon providing the display of information. 19. The system of claim 17 , wherein execution of the multi-pass message filter is user selectable. 20. The system of claim 17 , wherein the second classification data is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content.",
+              "content_sha256": "0053d7ad1618d79a4e75849aadf60d1a0669ab8eda1022f4384dfa1f3a3d8a23"
+            }
+          ]
+        }
+      },
+      "boundary_feasible": true,
+      "all_anchor_literal_occurrences_scanned": true,
+      "semantic_equivalence_exhaustive": false,
+      "semantic_equivalence_note": "All regex-matched lexical anchors were checked, not a proof that every synonymous or inferentially equivalent passage was found. Researcher notes determine eligibility.",
+      "A_joint_evidence_chunks": [
+        0
+      ],
+      "checks": {
+        "all_chunks_max1200": true,
+        "all_adjacent_overlap100": true,
+        "full_document_content_order_identical": true,
+        "B_no_even_partial_joint_anchor": true,
+        "each_anchor_occurrence_wholly_available": true
+      },
+      "content": "Publication number: US8069128B2\nTitle: Real-time ad-hoc spam filtering of email\n\nABSTRACT\nEmbodiments are directed towards employing a multi-pass ad-hoc spam message filtering approach that dynamically generates a temporary classifier during a first pass based on a result of a previously applied message filter that sorts messages into various folders for a user. The first pass scans messages in a user's mail folders, and reads various information within the messages, including, but not limited to sender information, headers, including a subject, an originating network address, message contents, attachments, and the like. After creating a classification model, the classifier with its model is used in a second pass on the message folders to retrospectively inspect the messages and present to the user a list of messages that might be misclassified. The classification model is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.\n\nCLAIMS\n1. A network device to manage a delivery of a message over a network, comprising: a transceiver to send and receive data over a network; and a processor that is operative to perform actions, comprising: performing a first pass analysis on a plurality of messages, which have been previously sorted into a plurality of different message folders by a first message filter, using a second, multi-pass message filter that is configured to generate a classification model based on the first pass analysis, wherein the generated classification model is configured to reside exclusively in a non-persistent memory location; using the generated classification model with the second, multi-pass message filter to perform a second pass on the sorted plurality of messages, to generate a misclassification identification of sorted messages; displaying the misclassification identification of sorted messages such that at least one misclassified message can be moved to a different message folder based on the misclassification identification; and purging the generated classification model from non-persistent memory location. 2. The network device of claim 1 , wherein performing a first pass analysis on the sorted plurality of messages is configured to train the second, multi-pass message filter based on which folder each of the plurality of messages resides. 3. The network device of claim 1 , wherein the generated classification model is generated based on an analysis of at least which message folder a message currently resides. 4. The network device of claim 1 , wherein the classification model is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content. 5. The network device of claim 1 , wherein access to the generated classification model is restricted. 6. A processor readable storage medium that includes data and instructions, wherein the execution of the instructions on a computing device provides for managing messages by enabling actions, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 7. The processor readable storage medium of claim 6 , wherein the instructions enable actions, further comprising deleting second classification data such that it is no longer accessible. 8. The processor readable storage medium of claim 6 , wherein executing the first pass and the second pass of the multi-pass message filter occurs entirely on a client device. 9. The processor readable storage medium of claim 6 , wherein the first message filter is configured to execute on a network device distinct from a client device. 10. The processor readable storage medium of claim 6 , wherein the multi-pass message filter employs a Naive Bayes classifier. 11. The processor readable storage medium of claim 6 , wherein the generated second classification model is generated based on an analysis of at least which message folder a message currently resides. 12. A method for managing a message delivery, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing, on a client device, a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store; using the second classification data, executing on the client device a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 13. The method of claim 12 , wherein the second classification data is deleted from the client device upon providing the display of information. 14. The method of claim 12 , wherein the multi-pass message filter is selectable for execution by a user through an interface on the client device; and wherein the first message filter is automatically executed independent of a user action. 15. The method of claim 12 , wherein the second classification data is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content. 16. The method of claim 12 , wherein the second classification data is generated based on which folder each of the plurality of messages resides. 17. A system for enabling a communications over a network, comprising: a network device configured to perform actions, including: receiving a plurality of messages; assigning the plurality of messages to a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; and communicating the messages over the network to the plurality of different message folders; and a client device configured to perform actions, including: executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store at the client device; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 18. The system of claim 17 , wherein the second classification data is deleted from the client device upon providing the display of information. 19. The system of claim 17 , wherein execution of the multi-pass message filter is user selectable. 20. The system of claim 17 , wherein the second classification data is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content.",
+      "file_path": "US8069128B2.txt",
+      "evidenceanchors": {
+        "A": [
+          {
+            "quote": "memory resident only",
+            "char_span": [
+              941,
+              961
+            ],
+            "token_span": [
+              176,
+              179
+            ]
+          },
+          {
+            "quote": "reside exclusively in a non-persistent memory location",
+            "char_span": [
+              1599,
+              1653
+            ],
+            "token_span": [
+              298,
+              307
+            ]
+          },
+          {
+            "quote": "reside exclusively in a non-persistent memory store",
+            "char_span": [
+              3665,
+              3716
+            ],
+            "token_span": [
+              665,
+              674
+            ]
+          },
+          {
+            "quote": "reside exclusively in a non-persistent memory store",
+            "char_span": [
+              5661,
+              5712
+            ],
+            "token_span": [
+              1025,
+              1034
+            ]
+          },
+          {
+            "quote": "reside exclusively in a non-persistent memory store",
+            "char_span": [
+              7878,
+              7929
+            ],
+            "token_span": [
+              1426,
+              1435
+            ]
+          }
+        ],
+        "B": [
+          {
+            "quote": "Naive Bayes classifier",
+            "char_span": [
+              4880,
+              4902
+            ],
+            "token_span": [
+              886,
+              891
+            ]
+          }
+        ]
+      },
+      "predicates": {
+        "researcher_standard": "Multi-pass Message Filter employs Naive Bayes Classifier (Claim10); the filter generates Second Classification Data residing exclusively in Non-persistent Memory (Claim6). Accept explicit linked component edges through the multi-pass filter/data, not a required inferred NaiveBayes-to-memory shortcut.",
+        "no_inferred_shortcut_required": true
+      },
+      "claims": [
+        {
+          "claim_number": 6,
+          "text": "6. A processor readable storage medium that includes data and instructions, wherein the execution of the instructions on a computing device provides for managing messages by enabling actions, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder."
+        },
+        {
+          "claim_number": 10,
+          "text": "10. The processor readable storage medium of claim 6 , wherein the multi-pass message filter employs a Naive Bayes classifier."
+        }
+      ],
+      "diagnostic_text": "6. A processor readable storage medium that includes data and instructions, wherein the execution of the instructions on a computing device provides for managing messages by enabling actions, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder.\n\n10. The processor readable storage medium of claim 6 , wherein the multi-pass message filter employs a Naive Bayes classifier."
+    }
+  ],
+  "selection_scope": "20 existingdocuments screened; oneclippedcontrol+3complete indexed-document technicalchains; originaltitle/abstract/allClaims includedinfullgroups, specificationnotindexedinthebaseexperiment",
+  "target_role": "Explicitcomponentrelationsandshared-nodeco-retention; inferredshortcutisnotgold",
+  "natural_retrieval_scope": "Freshsingle-target-documentindexforeachgroup/condition/repetition;not20patentbackgroundretrieval",
+  "fixed_settings": {
+    "max_tokens_per_chunk": 1200,
+    "overlap": 100,
+    "llm": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "embedding": "BAAI/bge-m3",
+    "extraction_output_limit": 3500,
+    "gleaning": 0,
+    "natural_mode": "mix",
+    "top_k": 12,
+    "chunk_top_k": 8,
+    "max_entity_tokens": 2000,
+    "max_relation_tokens": 2000,
+    "max_total_tokens": 8000,
+    "rerank": false,
+    "repeats": 3,
+    "same_prompt_as_round2": true
+  },
+  "design_note": "Boundarychangesalterchunklengthandcount; no padding,textrewriting,unverifiedrelations,orresponsecachecopy.",
+  "full_pipeline_status": "blocked_before_API; full groups preflight only",
+  "actual_scope": "M01 new extraction/parser repetitions and forced-evidence diagnosis only; no mergedgraph or naturalretrieval"
+}

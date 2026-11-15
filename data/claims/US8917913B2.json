@@ -1,0 +1,104 @@
+[
+  {
+    "claim_number": 1,
+    "start_char_in_raw_claims": 20,
+    "end_char_in_raw_claims": 3347,
+    "text": "1. A computer-implemented system for interacting with a social networking service using a mobile device, wherein the social networking service has associated therewith a plurality of member profiles corresponding to a respective plurality of members, wherein each of the member profiles includes at least one member descriptor associated with a respective member, wherein each of the member profiles includes at least one member image associated with a respective member, wherein each member image includes a representation of a face of the respective member, and wherein the mobile device includes at least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one search term, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plurality of faces; and an Internet access mechanism associated with the mobile device, wherein the Internet access mechanism is in operative communication with the application and wherein the Internet access mechanism provides at least the search term and at least some of the representations of the faces in the source image to the search service; wherein the search service is in operative communication with the social networking service, wherein the search service compares the search term to at least some of the member descriptors; wherein the search service compares at least one of the representations of the faces in the source image to at least some of the representations of the faces in the member images, and wherein the search service provides at least one result identifying at least one member who has: (a) a member descriptor that is a match to the search term; and (b) a member image including a representation of a face that is a match to a representation of a face in the source image; wherein the search service sends the result back to the mobile device via at least the Internet access mechanism of the mobile device; wherein the result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least one indicium identifying the at least one member who has: (a) a member descriptor that is a match to the search term; and (b) a member image including a representation of a face that is a match to a representation of a face in the source image: and wherein: the search service provides at least a first result identifying at least a first member who has: (a) a member descriptor that is a match to the search term from the mobile device; and (b) a member image including a representation of a face that is a match to a first one of the representation of faces in the source image; and the search service provides at least a second result identifying at least a second member who has: (a) a member descriptor that is a match to the search term from the mobile device; and (b) a member image including a representation of a face that is a match to a second one of the representation of faces in the source image."
+  },
+  {
+    "claim_number": 2,
+    "start_char_in_raw_claims": 3347,
+    "end_char_in_raw_claims": 3782,
+    "text": "2. The system of claim 1 , wherein: the first result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least a first indicium identifying the first member; and the second result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least a second indicium identifying the second member."
+  },
+  {
+    "claim_number": 3,
+    "start_char_in_raw_claims": 3782,
+    "end_char_in_raw_claims": 3886,
+    "text": "3. The system of claim 1 , wherein the search service is integrated into the social networking service."
+  },
+  {
+    "claim_number": 4,
+    "start_char_in_raw_claims": 3886,
+    "end_char_in_raw_claims": 4049,
+    "text": "4. The system of claim 1 , wherein a member descriptor that is a match to the search term from the mobile device is an essentially exact match to the search term."
+  },
+  {
+    "claim_number": 5,
+    "start_char_in_raw_claims": 4049,
+    "end_char_in_raw_claims": 4252,
+    "text": "5. The system of claim 1 , wherein a member descriptor that is a match to the search term from the mobile device is a match to the search term that is an approximate match within a degree of confidence."
+  },
+  {
+    "claim_number": 6,
+    "start_char_in_raw_claims": 4252,
+    "end_char_in_raw_claims": 4429,
+    "text": "6. The system of claim 1 , wherein a representation of a face in a member image that is a match to a representation of a face in the source image is an essentially exact match."
+  },
+  {
+    "claim_number": 7,
+    "start_char_in_raw_claims": 4429,
+    "end_char_in_raw_claims": 4630,
+    "text": "7. The system of claim 1 , wherein a representation of a face in a member image that is a match to a representation of a face in the source image is an approximate match within a degree of confidence."
+  },
+  {
+    "claim_number": 8,
+    "start_char_in_raw_claims": 4630,
+    "end_char_in_raw_claims": 4720,
+    "text": "8. The system of claim 1 , wherein the search term comprises a plurality of search terms."
+  },
+  {
+    "claim_number": 9,
+    "start_char_in_raw_claims": 4720,
+    "end_char_in_raw_claims": 4888,
+    "text": "9. The system of claim 1 , wherein the mobile device is selected from the group consisting of: (a) a mobile phone, (b) a tablet, (c) a PDA, and (d) a dedicated camera."
+  },
+  {
+    "claim_number": 10,
+    "start_char_in_raw_claims": 4888,
+    "end_char_in_raw_claims": 8264,
+    "text": "10. A computer-implemented system for interacting with a social networking service using a mobile device, wherein the social networking service has associated therewith a plurality of member profiles corresponding to a respective plurality of members, wherein each of the member profiles includes at least one member image associated with a respective member, wherein each member image includes a representation of a face of the respective member, and wherein the mobile device includes at least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plurality of faces; and an Internet access mechanism associated with the mobile device, wherein the Internet access mechanism is in operative communication with the application and wherein the Internet access mechanism provides at least the friend identifier and at least some of the representations of the faces in the source image to the search service; wherein the search service is in operative communication with the social networking service, wherein the search service compares at least one of the representations of the faces in the source image to at least some of the representations of the faces in the member images associated with members who are indicated in the social networking service as friends of the member identified by the friend identifier, and wherein the search service provides at least one result identifying at least one member who is indicated in the social networking service as a friend of the member identified by the friend identifier and who has a member image including a representation of a face that is a match to a representation of a face in the source image; wherein the search service sends the result back to the mobile device via at least the Internet access mechanism of the mobile device; wherein the result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least one indicium identifying the at least one member who is indicated in the social networking service as a friend of the member identified by the friend identifier and who has a member image including a representation of a face that is a match to a representation of a face in the source image; and wherein: the search service provides at least a first result identifying at least a first member who is indicated in the social networking service as a friend of the member identified by the friend identifier and who has a member image including a representation of a face that is a match to a representation of a face in the source image; and the search service provides at least a second result identifying at least a second member who is indicated in the social networking service as a friend of the member identified by the friend identifier and who has a member image including a representation of a face that is a match to a representation of a face in the source image."
+  },
+  {
+    "claim_number": 11,
+    "start_char_in_raw_claims": 8264,
+    "end_char_in_raw_claims": 8701,
+    "text": "11. The system of claim 10 , wherein: the first result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least a first indicium identifying the first member; and the second result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least a second indicium identifying the second member."
+  },
+  {
+    "claim_number": 12,
+    "start_char_in_raw_claims": 8701,
+    "end_char_in_raw_claims": 8807,
+    "text": "12. The system of claim 10 , wherein the search service is integrated into the social networking service."
+  },
+  {
+    "claim_number": 13,
+    "start_char_in_raw_claims": 8807,
+    "end_char_in_raw_claims": 8986,
+    "text": "13. The system of claim 10 , wherein a representation of a face in a member image that is a match to a representation of a face in the source image is an essentially exact match."
+  },
+  {
+    "claim_number": 14,
+    "start_char_in_raw_claims": 8986,
+    "end_char_in_raw_claims": 9189,
+    "text": "14. The system of claim 10 , wherein a representation of a face in a member image that is a match to a representation of a face in the source image is an approximate match within a degree of confidence."
+  },
+  {
+    "claim_number": 15,
+    "start_char_in_raw_claims": 9189,
+    "end_char_in_raw_claims": 9293,
+    "text": "15. The system of claim 10 , wherein the friend identifier comprises a plurality of friend identifiers."
+  },
+  {
+    "claim_number": 16,
+    "start_char_in_raw_claims": 9293,
+    "end_char_in_raw_claims": 9570,
+    "text": "16. The system of claim 10 , wherein: the application further receives from the user interface a friend level indicator; and the search service performs iterative searching of friends-of-friends based at least in part upon the friend level indicator and the friend identifier."
+  },
+  {
+    "claim_number": 17,
+    "start_char_in_raw_claims": 9570,
+    "end_char_in_raw_claims": 9739,
+    "text": "17. The system of claim 10 , wherein the mobile device is selected from the group consisting of: (a) a mobile phone, (b) a tablet, (c) a PDA, and (d) a dedicated camera."
+  }
+]

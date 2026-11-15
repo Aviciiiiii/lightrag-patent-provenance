@@ -1,0 +1,42 @@
+{
+ "S5:B1": {
+  "value": true,
+  "note": "Claude Code read: 'Knowledge Graph includes relationship entries referencing US7991757B2' is a correct attribution; the later 'not tied to Claim 1 or Claim 27' says no matching claim was found, it does not deny the attribution.",
+  "note_zh": "Claude Code 阅读：'Knowledge Graph includes relationship entries referencing US7991757B2'，正确归属；后文 'not tied to Claim 1 or Claim 27' 说的是没有对应的 Claim，不是否定归属。"
+ },
+ "S3:supplement/Q11/mix": {
+  "value": false,
+  "note": "Claude Code read: the answer declines and says the context has no chunk or reference for the patent; it does not attribute the registration capability to another patent.",
+  "note_zh": "Claude Code 阅读：拒答，说明上下文中没有该专利的 chunk 或引用；没有把注册能力归到其他专利。"
+ },
+ "S9:F01_B_r1": {
+  "value": true,
+  "note": "Claude Code read the merged graph: Diagnosis Assistance Method → Medical Ontology, 'The embedding of the new case, existing cases, and experts is based on a medical ontology.'; the UMLS predicate is recorded separately. The cross-chunk condition kept the target predicate.",
+  "note_zh": "Claude Code 阅读合并图：Diagnosis Assistance Method → Medical Ontology，'The embedding of the new case, existing cases, and experts is based on a medical ontology.'；UMLS 谓词另有记录。跨块条件保留了目标谓词。"
+ },
+ "S9:F01_B_r2": {
+  "value": true,
+  "note": "Same as above: 'The embedding of the new medical case, existing cases, and experts is based on a medical ontology.'",
+  "note_zh": "同上：'The embedding of the new medical case, existing cases, and experts is based on a medical ontology.'"
+ },
+ "S9:F01_B_r3": {
+  "value": true,
+  "note": "Same as above.",
+  "note_zh": "同上。"
+ },
+ "S9:F01_A_r1": {
+  "value": false,
+  "note": "Claude Code read: no relation in the merged graph links existing cases/experts with the ontology; the extraction of this run's first chunk was truncated (call 1).",
+  "note_zh": "Claude Code 阅读：合并图中没有同时涉及 existing cases/experts 与 ontology 的关系；该 run 的第一个 chunk 抽取被截断（call 1）。"
+ },
+ "S13:F01_A_r2/naive": {
+  "value": false,
+  "note": "Borderline: writes 'claim 4 → claim 5 → claim 8' and calls it an 'Explicit technical chain', not a dependency order; judged no under S13 (stated dependency contradicts the original).",
+  "note_zh": "边界情况：写 'claim 4 → claim 5 → claim 8' 并称为 'Explicit technical chain'，没有称其为从属顺序；按 S13（陈述的从属关系与原文矛盾）判否。"
+ },
+ "S13:F01_B_r2/naive": {
+  "value": false,
+  "note": "Same as F01_A_r2: called a technical chain, not a dependency order. The original run's error in this run was the explicit 'This is the stated sequence of dependencies'.",
+  "note_zh": "同 F01_A_r2：称为技术链而非从属顺序。原始运行同一 run 的错误是明确写 'This is the stated sequence of dependencies'。"
+ }
+}

@@ -1,0 +1,138 @@
+{
+  "checked_utc": "2026-10-29T14:19:32.278116+00:00",
+  "credentials_accessed": false,
+  "api_calls_made": 0,
+  "service": {
+    "provider": "SiliconFlow China",
+    "base_url": "https://api.siliconflow.cn/v1",
+    "pricing_site": "https://www.siliconflow.cn/pricing",
+    "different_international_domain_pricing_not_used": true
+  },
+  "llm": {
+    "model_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "public_catalog_valid": true,
+    "served_alias_version": "DeepSeek-V4.1-Flash-1017",
+    "alias_upgraded_date": "2026-10-21",
+    "context_catalog": "1024K",
+    "specific_max_output_not_verified": true,
+    "currency": "CNY",
+    "unit_tokens": 1000000,
+    "peak": {
+      "input_cache_miss": 2.0,
+      "input_cache_hit": 0.04,
+      "output": 8.0
+    },
+    "offpeak": {
+      "input_cache_miss": 1.0,
+      "input_cache_hit": 0.02,
+      "output": 4.0
+    },
+    "offpeak_hours_site_text": "02:00–08:00",
+    "budget_uses_peak_rates_all_times": true
+  },
+  "embedding": {
+    "model_id": "BAAI/bge-m3",
+    "public_catalog_valid": true,
+    "listed_price": "free",
+    "input_price_cny_per_million": 0.0,
+    "max_input_tokens_per_item": 8192,
+    "dimensions_configured_by_parent": 1024,
+    "dimensions_parameter_supported": false,
+    "dimensions_note": "API documentation permits dimensions only for Qwen/Qwen3 series. Do not send dimensions for BAAI/bge-m3; verify returned vector length.",
+    "pro_model_not_used": {
+      "model_id": "Pro/BAAI/bge-m3",
+      "input_cny_per_million": 0.07
+    }
+  },
+  "generation_cost_guard": {
+    "max_tokens_excludes_reasoning": true,
+    "enable_thinking_false_recommended": true,
+    "thinking_budget_documented_range": [
+      128,
+      32768
+    ],
+    "warning": "If hidden reasoning occurs despite disabling thinking, account for usage.completion_tokens and reasoning details; max_tokens alone is not a guaranteed total output cap. Disable SDK implicit retries or reserve every attempt. Reconcile usage when available; retain reservations on uncertain timeout."
+  },
+  "estimate": {
+    "nature": "planning estimate, not actual bill",
+    "corpus_tokens": 42087,
+    "chunks": 48,
+    "questions": 10,
+    "modes": 2,
+    "typical_scenario": {
+      "input_tokens": 500000,
+      "output_tokens": 200000,
+      "cost_cny_no_cache_discount": 2.6
+    },
+    "conservative_scenario": {
+      "input_tokens": 1000000,
+      "output_tokens": 500000,
+      "cost_cny_no_cache_discount": 6.0
+    },
+    "suggested_expected_range_cny": [
+      2,
+      6
+    ],
+    "suggested_hard_guard_cny": 20,
+    "conservative_accounting_cny_per_usd": 4,
+    "guard_usd_under_conservative_accounting": 5,
+    "fx_note": "4 is deliberately conservative internal accounting, not a quoted exchange rate or actual billing rate. CFETS public midpoint observed6.7147CNY/USD on2026-10-29 supports wide margin; bank fees/account billing may differ."
+  },
+  "sources": [
+    {
+      "url": "https://www.siliconflow.cn/pricing",
+      "supports": [
+        "exact configured model IDs",
+        "domestic CNY tariff",
+        "bge-m3 free versus Pro price"
+      ],
+      "web_excerpt_locations": "LLM lines19–33; embedding lines379–428"
+    },
+    {
+      "url": "https://api-docs.siliconflow.cn/docs/api/chat-completions-post",
+      "supports": [
+        "OpenAI-compatible /v1/chat/completions",
+        "max_tokens excludes chain-of-thought",
+        "enable_thinking and thinking_budget options"
+      ],
+      "web_excerpt_locations": "lines96–109; example endpoint lines378–380"
+    },
+    {
+      "url": "https://api-docs.siliconflow.cn/docs/api/embeddings-post",
+      "supports": [
+        "bge-m3 input8192",
+        "dimensions restricted toQwen3",
+        "usage response schema",
+        "/v1/embeddings"
+      ],
+      "web_excerpt_locations": "lines84–101;201–205;220"
+    },
+    {
+      "url": "https://api-docs.siliconflow.cn/docs/release-notes/overview",
+      "supports": [
+        "alias upgraded to1017 on2026-10-21"
+      ],
+      "web_excerpt_locations": "lines47–52"
+    },
+    {
+      "url": "https://www.siliconflow.cn/models",
+      "supports": [
+        "official context catalog1024K",
+        "exact model identity"
+      ]
+    },
+    {
+      "url": "https://www.chinamoney.com.cn/chinese/",
+      "supports": [
+        "supplementary FX sanity check only, not model pricing"
+      ],
+      "observed_public_midpoint": "2026-10-29 09:15 USD/CNY6.7147"
+    }
+  ],
+  "limits": [
+    "Public model presence does not prove account permissions; parent must run separate actual LLM and embedding smoke calls.",
+    "Price estimate uses no cache discount and needs live usage reconciliation.",
+    "Latest public alias can change provider weights without changing API model ID.",
+    "Some model-detail links redirect to login; no login or credential access attempted."
+  ]
+}

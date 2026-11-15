@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-10-29T13:16:42.308276+00:00",
+  "main_commit": "aaebfe1bb8d55deb6a4304d357a3bf4c92fcd40a",
+  "prior_attempt": {
+    "checked_at_utc": "2026-10-29T13:16:23.973272+00:00",
+    "main_commit": "aaebfe1bb8d55deb6a4304d357a3bf4c92fcd40a",
+    "status": "failed",
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)>",
+    "elapsed_seconds": 0.471
+  },
+  "transport": "system curl with normal certificate verification",
+  "latest_release": {
+    "tag_name": "v1.5.7",
+    "name": "v1.5.7",
+    "published_at": "2026-09-02T07:23:55Z",
+    "created_at": "2026-09-02T07:21:51Z",
+    "target_commitish": "main",
+    "html_url": "https://github.com/HKUDS/LightRAG/releases/tag/v1.5.7",
+    "prerelease": false,
+    "draft": false
+  },
+  "status": "success_with_tag_api_fallback",
+  "error": "CalledProcessError: Command '['curl', '--fail', '--silent', '--show-error', '--max-time', '15', '-H', 'Accept: application/vnd.github+json', '-H', 'User-Agent: LightRAG-patent-experiment', 'https://api.github.com/repos/HKUDS/LightRAG/git/ref/tags/v1.5.7']' returned non-zero exit status 56.",
+  "elapsed_seconds": 3.041,
+  "git_tag_resolution": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c\trefs/tags/v1.5.7",
+  "release_commit": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+  "main_equals_release": false,
+  "tag_resolution_seconds": 1.75
+}

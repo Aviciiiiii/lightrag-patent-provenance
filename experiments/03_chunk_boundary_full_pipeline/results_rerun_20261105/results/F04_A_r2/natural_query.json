@@ -1,0 +1,524 @@
+{
+  "query": "In US8509827B2, how does monetary cost enter context-data selection or ranking, and which source or provider can supply the cost value? Identify the supporting claims and keep separate the ranking criterion and the supplier of that criterion.",
+  "mode": "mix",
+  "params": {
+    "mode": "mix",
+    "stream": false,
+    "include_references": true,
+    "enable_rerank": false,
+    "top_k": 12,
+    "chunk_top_k": 8,
+    "max_entity_tokens": 2000,
+    "max_relation_tokens": 2000,
+    "max_total_tokens": 8000,
+    "user_prompt": "Use only retrieved evidence. State the patent publication number and the exact Claim number only when present in the evidence. Quote the supporting wording exactly, keeping each quotation short. Distinguish document facts from comparisons and inference. If evidence is insufficient, state what is missing. Do not invent links between patents. Answer in English in at most 350 words and preserve source references."
+  },
+  "call_id_range": [
+    289,
+    291
+  ],
+  "result": {
+    "status": "success",
+    "message": "Query processed successfully",
+    "data": {
+      "entities": [
+        {
+          "entity_name": "US8509827B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Methods and apparatus of context-data acquisition and ranking\" that discloses a system, method, and article of manufacture for acquiring and ranking context data based on a query derived from a short message.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895025
+        },
+        {
+          "entity_name": "Context-Data Acquisition And Ranking",
+          "entity_type": "method",
+          "description": "A method of determining a context-data type from a query, identifying context-data sources, generating requests for context data, and ranking received context data according to a specified parameter.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895025
+        },
+        {
+          "entity_name": "Specified Parameter",
+          "entity_type": "concept",
+          "description": "A criterion used to rank context-data sources, comprising a pecuniary cost to acquire context data, a state of the receiving mobile device, a state of an available communication network, or a cost value of the context data.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "entity_name": "Monetary Cost",
+          "entity_type": "concept",
+          "description": "A cost of the context-data that serves as a metric for algorithmically selecting relevant context data.",
+          "source_id": "US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "entity_name": "Metric",
+          "entity_type": "concept",
+          "description": "A measure used to algorithmically select relevant context data, comprising a monetary cost of the context-data.<SEP>A measure used to algorithmically select relevant context data, comprising a monetary cost of the context data.",
+          "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "entity_name": "Computer Readable Medium",
+          "entity_type": "artifact",
+          "description": "A medium comprising computer-executable instructions adapted to perform the context-data acquisition and ranking method.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "entity_name": "Context-Data Source",
+          "entity_type": "concept",
+          "description": "A provider that supplies a particular context-data type and from which context data is requested and acquired.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895025
+        },
+        {
+          "entity_name": "Context-Data",
+          "entity_type": "data",
+          "description": "Data elements related to the meaning or physical context of a short message, obtained by a physical sensor and provided by context-data providers, weighted and selected according to at least one metric such as monetary cost.",
+          "source_id": "US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "entity_name": "Context-Data Type",
+          "entity_type": "concept",
+          "description": "A classification of context data determined by the meaning of a term of a short message, providing information about the environment or context of the mobile device.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895025
+        },
+        {
+          "entity_name": "Computerized Apparatus",
+          "entity_type": "artifact",
+          "description": "An apparatus comprising at least one memory with program instructions and at least one processor configured to execute operations for context-data acquisition and ranking.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "entity_name": "Context-Data Provider",
+          "entity_type": "concept",
+          "description": "An entity with at least one server that collects and provides a set of context-data, and is allowed to provide a cost of the context-data.<SEP>A provider from which a set of context data related to the meaning of short message content is collected by a server.",
+          "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "entity_name": "Memory",
+          "entity_type": "artifact",
+          "description": "A component of the computerized apparatus having program instructions executable by the processor.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "entity_name": "Physical Sensor",
+          "entity_type": "artifact",
+          "description": "A device by which the context-data is obtained.<SEP>A sensor by which context data is obtained.",
+          "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "entity_name": "Database",
+          "entity_type": "artifact",
+          "description": "A storage system available to a recipient mobile device in which received context data may be stored and queried.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "entity_name": "Short Message",
+          "entity_type": "content",
+          "description": "A message whose content has a meaning to which context-data is related, and to which relevant context data is linked and formatted according to a communication protocol.<SEP>A message received from a mobile device whose terms are analyzed to determine a context-data type; context data may be associated with, appended to, encoded into, or forwarded with the short message.",
+          "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895025
+        }
+      ],
+      "relationships": [
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Short Message",
+          "description": "The method receives a short message and may associate, append, encode, or forward received context data with the short message.",
+          "keywords": "analyzes,appends",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Specified Parameter",
+          "description": "The method ranks context-data sources according to a specified parameter such as pecuniary cost, device state, network state, or cost value.",
+          "keywords": "ranks according to",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Context-Data Provider",
+          "description": "The method collects a set of context data from at least one context-data provider with at least one server.",
+          "keywords": "collects from",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Metric",
+          "description": "The method algorithmically selects relevant context data according to a metric comprising a monetary cost.",
+          "keywords": "selects according to",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Context-Data Source",
+          "description": "The method identifies at least one context-data source providing the context-data type, ranks the source according to a specified parameter, and generates a request for context data from the source.",
+          "keywords": "identifies,ranks,requests",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Context-Data Type",
+          "description": "The method algorithmically determines a context-data type from a query or from the meaning of a term of a short message.",
+          "keywords": "determines,uses",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "US8509827B2",
+          "description": "The patent document US8509827B2 discloses a system, method, and article of manufacture of context-data acquisition and ranking.",
+          "keywords": "describes,discloses",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Mobile Device",
+          "description": "The method provides received context data to the mobile device that generated the short message or query.",
+          "keywords": "provides data to",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data",
+          "tgt_id": "Metric",
+          "description": "Relevant context data is algorithmically selected according to a metric, and context-data elements are weighted according to at least one metric.",
+          "keywords": "selected according to,weighted by",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Database",
+          "description": "The method stores received context data in a database available to a recipient mobile device.",
+          "keywords": "stores in",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Provider",
+          "tgt_id": "Monetary Cost",
+          "description": "The context-data provider is allowed to provide a cost of the context-data.",
+          "keywords": "allowed to provide",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Computerized Apparatus",
+          "tgt_id": "Context-Data Acquisition And Ranking",
+          "description": "The computerized apparatus performs operations of the context-data acquisition and ranking method via its processor.",
+          "keywords": "implemented by",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Provider",
+          "tgt_id": "Metric",
+          "description": "Relevant context data from the context-data provider is selected according to the metric.",
+          "keywords": "selects data from",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Server",
+          "description": "The method is performed with a server that receives short messages and manages context-data acquisition.",
+          "keywords": "executed by",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Source",
+          "tgt_id": "Specified Parameter",
+          "description": "The specified parameter is used to rank the at least one context-data source.",
+          "keywords": "ranks",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Recipient Mobile Device",
+          "description": "The method provides received context data to a recipient mobile device and forwards the short message and context data to it.",
+          "keywords": "provides data to",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Physical Sensor",
+          "description": "The context data is obtained by a physical sensor.",
+          "keywords": "obtains data via",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Uniform Resource Identifier",
+          "description": "The method forwards a Uniform Resource Identifier of a database server to the receiving mobile device.",
+          "keywords": "forwards",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Computer Readable Medium",
+          "tgt_id": "Context-Data Acquisition And Ranking",
+          "description": "A computer readable medium comprises computer-executable instructions adapted to perform the method.",
+          "keywords": "embodied in",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "Markup Language",
+          "description": "Received context data is encoded into the short message with a markup language.",
+          "keywords": "encodes with",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data",
+          "tgt_id": "Short Message",
+          "description": "The context-data is related to the meaning of the short message content, and relevant context data is linked to the short message.",
+          "keywords": "linked to,related to",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data",
+          "tgt_id": "Context-Data Provider",
+          "description": "The context-data provider, with at least one server, collects and provides a set of context-data.",
+          "keywords": "collects,provides",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Provider",
+          "tgt_id": "Server",
+          "description": "The context-data provider collects context-data with at least one server.<SEP>The set of context data is collected from the context-data provider with at least one server.",
+          "keywords": "associated with,collected by,uses",
+          "weight": 2.0,
+          "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data",
+          "tgt_id": "Physical Sensor",
+          "description": "The context-data is obtained by a physical sensor.",
+          "keywords": "obtained by",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data",
+          "tgt_id": "Device",
+          "description": "The context data is related to a physical context of the device that generated the short message.",
+          "keywords": "related to physical context of",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Metric",
+          "tgt_id": "Monetary Cost",
+          "description": "The metric comprises a monetary cost of the context-data.",
+          "keywords": "comprises",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Context-Data Source",
+          "tgt_id": "Context-Data Type",
+          "description": "The context-data source provides the identified context-data type.",
+          "keywords": "provides",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Computerized Apparatus",
+          "tgt_id": "Processor",
+          "description": "The computerized apparatus comprises at least one processor configured to execute program instructions.",
+          "keywords": "comprises",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Computerized Apparatus",
+          "tgt_id": "Memory",
+          "description": "The computerized apparatus comprises at least one memory having program instructions.",
+          "keywords": "comprises",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Database",
+          "tgt_id": "Recipient Mobile Device",
+          "description": "The database is available to the recipient mobile device.",
+          "keywords": "accesses",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Database",
+          "tgt_id": "Uniform Resource Identifier",
+          "description": "The database server is identified by a Uniform Resource Identifier forwarded to the receiving mobile device.",
+          "keywords": "identified by",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        },
+        {
+          "src_id": "Memory",
+          "tgt_id": "Processor",
+          "description": "The processor executes program instructions stored in the memory.",
+          "keywords": "executes instructions from",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793895026
+        }
+      ],
+      "chunks": [
+        {
+          "reference_id": "1",
+          "content": "Publication number: US8509827B2\nTitle: Methods and apparatus of context-data acquisition and ranking\n\nABSTRACT\nDisclosed are a system, method, and article of manufacture of a context-data acquisition and ranking. A context-data type is determined from a query. At least one context-data source that provides the context-data type is identified. A request for a context data of the context-data type is generated from the at least one context data source. A received context data from the at least one context data source according a specified parameter may be ranked. The received context data may be provided to the device that generated a short message. The received context data may be provided to a recipient mobile device. The received context data may be associated with a component of a short message generated by a device that generated the query. The received context data may be appended to the short message.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: receiving a short message from a mobile device with a server; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type from the at least one context data source. 2. The method of claim further comprising: providing the received context data to the device that generated a short message. 3. The method of claim further comprising: providing the received context data to a recipient mobile device, 4. The method of claim 3 , wherein providing the received context data to the recipient mobile device further comprises: associating the received context data with a component of a short message generated by a device that generated the query. 5. The method of claim 4 , wherein providing the received context data to the mobile device further comprises: appending the received context data to the short message. 6. The method of claim 5 further comprising: forwarding the short message and the received context data to the recipient mobile device. 7. The method of claim 4 , wherein providing the received context data to the mobile device further comprises: encoding the received context data into the short message with a markup language. 8. The method of claim 1 , wherein providing the request for the context data of the context-data type to the at least one context data source further comprises: providing the request for the context data of the context-data type to a plurality of context-data sources. 9. The method of claim 1 further comprising: storing the received context data in a database available to a recipient mobile device, 10. The method of claim 9 further comprising: forwarding a Uniform Resource Identifier (URI) of a database server to the receiving mobile device, 11. The method of claim 9 further comprising: appending metadata instructions to query the database for the received context data in the short message. 12. The method of claim 1 , wherein the specified parameter comprises a state of the receiving mobile device. 13. The method of claim 1 , wherein the specified parameter comprises a state of an available communication network. 14. The method of claim 1 , wherein the specified parameter comprises a cost value of the context data as provided by the context-data source. 15. The method of claim 1 , wherein the context-data type provides information about a context of the device that generated the short message. 16. The method of claim 15 , wherein the mobile device that generated the short message comprises a smart phone. 17. The method of claim 1 , further comprising a computer readable medium comprising computer-executable instructions adapted to perform the method of claim 1 . 18. A computerized-apparatus comprising: at least one memory having program instructions, and at least one processor configured to execute the program instructions to perform the operations of: receiving a short message from a mobile device; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type to the at least one context data source. 19. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of rendering a context data from the at least one context-data source for communication through a communication network to a mobile device. 20. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of appending the context data from the at least one context-data source to a short message generated by the mobile device. 21. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of selecting the context-data. from a list of context-data elements weighted according to at least one metric. 22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the context-data is obtained by a physical sensor;",
+          "file_path": "US8509827B2.txt",
+          "chunk_id": "US8509827B2-chunk-000"
+        },
+        {
+          "reference_id": "1",
+          "content": " of selecting the context-data. from a list of context-data elements weighted according to at least one metric. 22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the context-data is obtained by a physical sensor; linking the relevant context data to the short message; and formatting the relevant context data and the short message according to a communication protocol. 23. The method of claim 22 , wherein the communication protocol comprises a cellular network short message protocol. 24. The method of claim 22 , wherein the communication protocol comprises an internet communication protocol. 25. The method of claim 22 , wherein the at least one context-data provider is allowed to provide a cost of the context-data. 26. The method of claim 22 , wherein the context data is related to a physical context of the device that generated the short message.",
+          "file_path": "US8509827B2.txt",
+          "chunk_id": "US8509827B2-chunk-001"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US8509827B2.txt"
+        }
+      ]
+    },
+    "metadata": {
+      "query_mode": "mix",
+      "keywords": {
+        "high_level": [
+          "context-data selection",
+          "context-data ranking",
+          "monetary cost",
+          "cost value source",
+          "patent claim analysis"
+        ],
+        "low_level": [
+          "US8509827B2",
+          "monetary cost",
+          "ranking criterion",
+          "cost value provider",
+          "supporting claims"
+        ]
+      },
+      "processing_info": {
+        "total_entities_found": 15,
+        "total_relations_found": 32,
+        "entities_after_truncation": 15,
+        "relations_after_truncation": 32,
+        "merged_chunks_count": 2,
+        "final_chunks_count": 2
+      }
+    },
+    "llm_response": {
+      "content": "In US8509827B2, monetary cost appears in two distinct roles that should be kept separate: as a **ranking criterion** for context-data sources, and as a **metric for selecting context data**, with the **context-data provider** identified as the party that may supply the cost value.\n\n**Ranking criterion (source ranking).** Claim 1 recites \"algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source.\" So the pecuniary cost is the parameter used to rank the *sources*. Claim 14 adds that the specified parameter may comprise \"a cost value of the context data as provided by the context-data source.\"\n\n**Selection metric (data selection).** Claim 22 recites \"algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data.\" Here the monetary cost is the metric for selecting the *data* itself, not for ranking sources.\n\n**Supplier of the cost value.** Claim 25 states: \"The method of claim 22, wherein the at least one context-data provider is allowed to provide a cost of the context-data.\" Thus the context-data provider is the entity permitted to supply the cost value; Claim 14 ties the cost value to the context-data source.\n\nIn short, the ranking criterion (pecuniary cost) is applied to context-data sources under Claims 1 and 14, while the supplier of the cost value is the context-data provider under Claim 25 (and the source under Claim 14).\n\n### References\n\n- [1] US8509827B2.txt",
+      "response_iterator": null,
+      "is_streaming": false,
+      "llm_generated": true
+    }
+  },
+  "forced_evidence": false
+}

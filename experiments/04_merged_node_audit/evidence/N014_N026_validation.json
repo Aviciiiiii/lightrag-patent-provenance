@@ -1,0 +1,151 @@
+{
+  "validated_utc": "2026-10-30T08:22:07.289390+00:00",
+  "scope": "N014–N026",
+  "review_kind": "AI-assisted source review, not independent human gold",
+  "semantic_decisions_validated_by_script": false,
+  "checks": "publication/chunk/edge membership and exact source/Claim quotation checks only",
+  "errors": [],
+  "records": [
+    {
+      "audit_id": "N014",
+      "node_id": "Computer Network",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications_reviewed": 2,
+      "incident_edges_reviewed": 3,
+      "review_file_sha256": "1f45348f0bfb053cc83e0494df03e36a05c298596da51b58f6d6bff35c3a79f0",
+      "dossier_sha256": "87c767b3a181718bbd08e9a38c3f7085262e949a5db862e59450583b011db88f"
+    },
+    {
+      "audit_id": "N015",
+      "node_id": "Non-Transitory Computer Readable Medium",
+      "category": "shared_specific_concept",
+      "confidence": "high",
+      "publications_reviewed": 2,
+      "incident_edges_reviewed": 4,
+      "review_file_sha256": "a8af51b51694c204e1156028e2d73fdfd1dd7ae379be7a935694a505571ac387",
+      "dossier_sha256": "04ef6becf7d8abe6cde999301b2e388422da98a29e6305b343cc6fe63f92bb82"
+    },
+    {
+      "audit_id": "N016",
+      "node_id": "Event",
+      "category": "contextual_conflation",
+      "confidence": "medium",
+      "publications_reviewed": 2,
+      "incident_edges_reviewed": 9,
+      "review_file_sha256": "ad6c8810b0e79491aab7cba5874e138b73e5c4cf93649ed0f7e7dc0544dc04b4",
+      "dossier_sha256": "90864e1b1aedde5cb45783a55c711297f2a5aede3de917d013eebfed8188a0f2"
+    },
+    {
+      "audit_id": "N017",
+      "node_id": "Token",
+      "category": "contextual_conflation",
+      "confidence": "high",
+      "publications_reviewed": 3,
+      "incident_edges_reviewed": 7,
+      "review_file_sha256": "105c641cf8230de5815244260c5637065440047471721d30ca4a9042d0ca6dee",
+      "dossier_sha256": "2ac5e4ebaf8997ca274c006feb4d997b4d99fca7a7603db9108891c1f2c83135"
+    },
+    {
+      "audit_id": "N018",
+      "node_id": "Recommendation",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications_reviewed": 2,
+      "incident_edges_reviewed": 9,
+      "review_file_sha256": "bad0679b3aeaf1cbea948b616db9d4ca9509eb3f194151723576af5af9a220fa",
+      "dossier_sha256": "4b7ef09c940e037f43937b33b501a7aaf6b87c3a6b32d059b6d2e11a1e4287bc"
+    },
+    {
+      "audit_id": "N019",
+      "node_id": "Processor",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications_reviewed": 9,
+      "incident_edges_reviewed": 25,
+      "review_file_sha256": "9d243baaec499731532edf540248bea35097cf150391d4a07512e3ee354f540f",
+      "dossier_sha256": "e8979d5afb41844a4cbc576cb1324562af5a237679463ea198fc0918b339b544"
+    },
+    {
+      "audit_id": "N020",
+      "node_id": "Memory",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications_reviewed": 5,
+      "incident_edges_reviewed": 5,
+      "review_file_sha256": "7c8b438f2e165a0600d317b467c384773371e5bef0a55ef6b6d70c9ca68d3cee",
+      "dossier_sha256": "e0883a92e082208e7bd0bebe51e10543da25697085213be6c0af316f2440cdb5"
+    },
+    {
+      "audit_id": "N021",
+      "node_id": "Payment",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications_reviewed": 2,
+      "incident_edges_reviewed": 3,
+      "review_file_sha256": "c294c1c6565ff6e782e51220ffb3323ff342da5471ddb88db99e372235174995",
+      "dossier_sha256": "57bfc2307be3b1f9f9440fa6bda1e3646613cc730a9cd6b87e9307bc5d40f227"
+    },
+    {
+      "audit_id": "N022",
+      "node_id": "Network",
+      "category": "contextual_conflation",
+      "confidence": "medium",
+      "publications_reviewed": 2,
+      "incident_edges_reviewed": 4,
+      "review_file_sha256": "57aebd007687ea509b0a8e7313ffe8f9767f464fa2e8e943fb090ea6d375bbee",
+      "dossier_sha256": "d9f43295358caa3d8d61dc78f86df3765fd6b0ee49965b5177e430557a630c6e"
+    },
+    {
+      "audit_id": "N023",
+      "node_id": "User",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications_reviewed": 5,
+      "incident_edges_reviewed": 21,
+      "review_file_sha256": "a319fc816547387c80c45dbf1e50cd073dc794020548d41cd88f20a6cd2f3b2c",
+      "dossier_sha256": "f2698835a96df6aabe8c052663437e56352b08708b4ba7c09305afb377faaf02"
+    },
+    {
+      "audit_id": "N024",
+      "node_id": "Application",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications_reviewed": 2,
+      "incident_edges_reviewed": 7,
+      "review_file_sha256": "5ff4167a5f35dc8d58d0efda6eea7d03e702d593a760fe4d0b1ea401c753630a",
+      "dossier_sha256": "66748ee42f53b43b7a458e70d21efba86025314e3da88fd8ea48b55c2a5c0f22"
+    },
+    {
+      "audit_id": "N025",
+      "node_id": "User Interface",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications_reviewed": 3,
+      "incident_edges_reviewed": 8,
+      "review_file_sha256": "6d4d38f6642a0e0006fd962f53a458bc753f98da3b301ab9492137ff35f409f9",
+      "dossier_sha256": "8c6da68b1a018eb30f7f6e587c30de44b293e39acc930560ac4fb9b135974519"
+    },
+    {
+      "audit_id": "N026",
+      "node_id": "Computing Device",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications_reviewed": 3,
+      "incident_edges_reviewed": 16,
+      "review_file_sha256": "f1c197874011a3d65eb8a4ee795def3221ee569a2105510affbbb5badbf28055",
+      "dossier_sha256": "3268798bfe2e5dc4426caef6f22ee36a775f0f816ba833d5b4da3a486b24ad4a"
+    }
+  ],
+  "categories": {
+    "shared_broad_class": 9,
+    "shared_specific_concept": 1,
+    "contextual_conflation": 3
+  },
+  "source_node_pairs": 42,
+  "incident_edge_reviews_with_duplicates": 121,
+  "unique_incident_edges": 116,
+  "unique_source_chunks": 31,
+  "external_model_api_calls": 0,
+  "credentials_read": false
+}

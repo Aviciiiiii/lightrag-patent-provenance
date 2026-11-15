@@ -1,0 +1,111 @@
+{
+  "started_utc": "2026-10-29T16:11:42.063482+00:00",
+  "order": [
+    [
+      "A",
+      1
+    ],
+    [
+      "B",
+      1
+    ],
+    [
+      "C",
+      1
+    ],
+    [
+      "B",
+      2
+    ],
+    [
+      "C",
+      2
+    ],
+    [
+      "A",
+      2
+    ],
+    [
+      "C",
+      3
+    ],
+    [
+      "A",
+      3
+    ],
+    [
+      "B",
+      3
+    ]
+  ],
+  "calls": [
+    {
+      "condition": "A",
+      "repeat": 1,
+      "call_id": 1,
+      "request_exact_match": true,
+      "messages_sha256": "2fca4d69c1c5554b570ff04a57ccc8ae1c8af87862bae14e46a5f755a4a3490e"
+    },
+    {
+      "condition": "B",
+      "repeat": 1,
+      "call_id": 2,
+      "request_exact_match": true,
+      "messages_sha256": "cbf774bfbb141af7dfbe71e85a6204a5943be9280b8fdb3e2ee3ee80fcc986a5"
+    },
+    {
+      "condition": "C",
+      "repeat": 1,
+      "call_id": 3,
+      "request_exact_match": true,
+      "messages_sha256": "2206db34c3147b68040fba5aded3384b370174c241cb89dc9f2a9c3a6a1f3a2b"
+    },
+    {
+      "condition": "B",
+      "repeat": 2,
+      "call_id": 4,
+      "request_exact_match": true,
+      "messages_sha256": "cbf774bfbb141af7dfbe71e85a6204a5943be9280b8fdb3e2ee3ee80fcc986a5"
+    },
+    {
+      "condition": "C",
+      "repeat": 2,
+      "call_id": 5,
+      "request_exact_match": true,
+      "messages_sha256": "2206db34c3147b68040fba5aded3384b370174c241cb89dc9f2a9c3a6a1f3a2b"
+    },
+    {
+      "condition": "A",
+      "repeat": 2,
+      "call_id": 6,
+      "request_exact_match": true,
+      "messages_sha256": "2fca4d69c1c5554b570ff04a57ccc8ae1c8af87862bae14e46a5f755a4a3490e"
+    },
+    {
+      "condition": "C",
+      "repeat": 3,
+      "call_id": 7,
+      "request_exact_match": true,
+      "messages_sha256": "2206db34c3147b68040fba5aded3384b370174c241cb89dc9f2a9c3a6a1f3a2b"
+    },
+    {
+      "condition": "A",
+      "repeat": 3,
+      "call_id": 8,
+      "request_exact_match": true,
+      "messages_sha256": "2fca4d69c1c5554b570ff04a57ccc8ae1c8af87862bae14e46a5f755a4a3490e"
+    },
+    {
+      "condition": "B",
+      "repeat": 3,
+      "call_id": 9,
+      "request_exact_match": true,
+      "messages_sha256": "cbf774bfbb141af7dfbe71e85a6204a5943be9280b8fdb3e2ee3ee80fcc986a5"
+    }
+  ],
+  "status": "completed",
+  "seed": null,
+  "repeats_per_condition": 3,
+  "not_retrieval_or_index_rebuild": true,
+  "finished_utc": "2026-10-29T16:12:37.044864+00:00"
+}

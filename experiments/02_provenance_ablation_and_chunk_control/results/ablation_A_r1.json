@@ -1,0 +1,27 @@
+{
+  "condition": "A",
+  "repeat": 1,
+  "call_id": 1,
+  "request_exact_match": true,
+  "messages_sha256": "2fca4d69c1c5554b570ff04a57ccc8ae1c8af87862bae14e46a5f755a4a3490e",
+  "response": {
+    "id": 1,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "I do not have enough information to answer this query. The provided **Context** does not contain any document, knowledge-graph entity, or document chunk for **US7991757B2**. The patent publication number US7991757B2 does not appear anywhere in the supplied evidence, so I cannot quote Claim 1 or Claim 27 of that patent, nor explain their dependency.\n\n**What is present vs. missing:**\n\n- **Present in evidence:** The knowledge graph includes a \"Registration Module\" entity described as \"configured to provide functionality for registering an external recommender with a recommendations service,\" and a \"Registration Submission\" entity described as a submission \"operative to request registration of recommenders.\" These are associated with registration-related concepts, but the graph does not link them to US7991757B2.\n- **Missing:** Any text of US7991757B2, including its claims, title, or abstract. No document chunk corresponds to it, and the Reference Document List does not include it.\n\n**Explicit evidence vs. inference:** It would be inference—not explicit evidence—to assume that the registration capability described in the knowledge graph belongs to US7991757B2. I will not make that link, since the instructions require stating what is missing rather than inventing connections between patents.\n\nTo answer, please provide the text of US7991757B2 (at minimum Claims 1 and 27), or confirm the correct publication number if it was mistyped.\n\n### References\n\n- [1] US10867122B1.txt\n- [4] US7756837B2.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 28360,
+      "completion_tokens": 327,
+      "total_tokens": 28687,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 28288
+      },
+      "prompt_cache_hit_tokens": 28288,
+      "prompt_cache_miss_tokens": 72
+    },
+    "reasoning_content_present": false
+  }
+}

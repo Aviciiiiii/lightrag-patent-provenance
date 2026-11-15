@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-10-30T03:26:05.914970+00:00",
+  "official_version": "1.5.7",
+  "groups": [
+    "F01"
+  ],
+  "runs": [],
+  "status": "running",
+  "settings": {
+    "mode": "mix",
+    "stream": false,
+    "include_references": true,
+    "enable_rerank": false,
+    "top_k": 12,
+    "chunk_top_k": 8,
+    "max_entity_tokens": 2000,
+    "max_relation_tokens": 2000,
+    "max_total_tokens": 8000,
+    "user_prompt": "Use only retrieved evidence. State the patent publication number and the exact Claim number only when present in the evidence. Quote the supporting wording exactly, keeping each quotation short. Distinguish document facts from comparisons and inference. If evidence is insufficient, state what is missing. Do not invent links between patents. Answer in English in at most 350 words and preserve source references."
+  },
+  "same_original_model_and_embedding": true,
+  "fresh_index_per_run": true,
+  "natural_retrieval_scope": "one complete target document per full group; minimalgroup clippedclaims only; no20docbackgroundcorpus",
+  "finished_utc": "2026-10-30T03:26:05.928428+00:00"
+}

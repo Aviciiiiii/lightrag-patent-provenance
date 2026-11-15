@@ -1,0 +1,1036 @@
+{
+  "audit_id": "N035",
+  "node_id": "Query",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两来源均指为获取信息而提出的查询请求：备份数据管理查询与用于模式挖掘/翻译的搜索query。前者未限定自然语言格式，后者明确token/语言结构；共同信息查询类仍成立，不能仅因处理流程不同判异义。",
+  "class_instance_interpretation_zh": "共同类为信息检索查询请求；备份管理查询实例不应被默认分词或翻译，语言模式挖掘query也不能默认访问备份数据库。原始边的source_id可区分这些条件。",
+  "concept_class_vs_local_instance": "shared_class; document-local instances remain distinct",
+  "source_assessments": [
+    {
+      "publication_number": "US7756837B2",
+      "evidence_quote": "receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database;",
+      "claim_or_section": "Claim 13",
+      "source_chunk_ids": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ],
+      "claim_number": 13,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 297,
+        "indexed_document_char_offset": 4906
+      },
+      "role_zh": "来自请求方、关于已归档数据流的查询；通过分析管理数据库形成响应，并可经网络收发。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000/001/002抽取分别由Claim13/28/44及网络从属Claim14/29/45支持，均是相同文档局部信息查询角色。",
+        "raw_records": [
+          {
+            "chunk_id": "US7756837B2-chunk-000",
+            "content_sha256": "816fc9cf05223956b4e376ef0f6e135985e9f900de35575a229b3fb046a5e544",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+                "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 10,
+                "raw_line": "entity<|#|>Query<|#|>Concept<|#|>A request received from a party concerning archived data-streams, answered by analyzing the management data stored in the database.",
+                "fields": [
+                  "entity",
+                  "Query",
+                  "Concept",
+                  "A request received from a party concerning archived data-streams, answered by analyzing the management data stored in the database."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+                "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 51,
+                "raw_line": "relation<|#|>Query<|#|>Management Data<|#|>Analyzed Against<|#|>Responses to the query are formulated based on an analysis of the management data stored in the database.",
+                "fields": [
+                  "relation",
+                  "Query",
+                  "Management Data",
+                  "Analyzed Against",
+                  "Responses to the query are formulated based on an analysis of the management data stored in the database."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+                "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 52,
+                "raw_line": "relation<|#|>Party<|#|>Query<|#|>Submits<|#|>The party submits a query concerning the archived data-stream.",
+                "fields": [
+                  "relation",
+                  "Party",
+                  "Query",
+                  "Submits",
+                  "The party submits a query concerning the archived data-stream."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US7756837B2-chunk-000",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "cfcb05ec28398152d92adf72b59710da1ed619ca1dcfc1423fdd2c8d5980b6f0"
+              }
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "content_sha256": "8b1a94961ae323fa62890371b8df43eadff7e06ff68633f58c71a9050db94c86",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 11,
+                "raw_line": "entity<|#|>Query<|#|>Data<|#|>A query received from a party concerning the archived data-stream, used to formulate responses based on analysis of stored management data.",
+                "fields": [
+                  "entity",
+                  "Query",
+                  "Data",
+                  "A query received from a party concerning the archived data-stream, used to formulate responses based on analysis of stored management data."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 32,
+                "raw_line": "relation<|#|>Processor<|#|>Query<|#|>receives, formulates responses to<|#|>The processor receives a query from a party and formulates responses based on analysis of the management data stored in the database.",
+                "fields": [
+                  "relation",
+                  "Processor",
+                  "Query",
+                  "receives, formulates responses to",
+                  "The processor receives a query from a party and formulates responses based on analysis of the management data stored in the database."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 33,
+                "raw_line": "relation<|#|>Query<|#|>Party<|#|>received from<|#|>The query is received from a party concerning the archived data-stream.",
+                "fields": [
+                  "relation",
+                  "Query",
+                  "Party",
+                  "received from",
+                  "The query is received from a party concerning the archived data-stream."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 34,
+                "raw_line": "relation<|#|>Query<|#|>Communication Network<|#|>received over<|#|>The query is received electronically over a communication network.",
+                "fields": [
+                  "relation",
+                  "Query",
+                  "Communication Network",
+                  "received over",
+                  "The query is received electronically over a communication network."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US7756837B2-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "4d3c83871d912887d1d45e4c226af68edf1390b619d2df1afce23ca479d93d32"
+              }
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-002",
+            "content_sha256": "c301fb50a9bcd91ff8802abcebcecf3db19cbcb3773547c471bfbded65e67e9c",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 13,
+                "raw_line": "entity<|#|>Query<|#|>Data<|#|>A query received from a party concerning the archived data-stream, used to formulate responses.",
+                "fields": [
+                  "entity",
+                  "Query",
+                  "Data",
+                  "A query received from a party concerning the archived data-stream, used to formulate responses."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 39,
+                "raw_line": "relation<|#|>Query<|#|>Management Data<|#|>analysis<|#|>Responses to the query are formulated based on an analysis of the management data stored in the database.",
+                "fields": [
+                  "relation",
+                  "Query",
+                  "Management Data",
+                  "analysis",
+                  "Responses to the query are formulated based on an analysis of the management data stored in the database."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 40,
+                "raw_line": "relation<|#|>Query<|#|>Communication Network<|#|>electronic transmission<|#|>The query is received electronically over the communication network and responses are transmitted electronically over it.",
+                "fields": [
+                  "relation",
+                  "Query",
+                  "Communication Network",
+                  "electronic transmission",
+                  "The query is received electronically over the communication network and responses are transmitted electronically over it."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US7756837B2-chunk-002",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "eb197a0cf78cf463212ad664302636f45f8a193d53d7b3e5587313d1e72d1d57"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The query is received electronically over a communication network.<SEP>The query is received electronically over the communication network and responses are transmitted electronically over it.",
+          "keywords": "electronic transmission,received over",
+          "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Communication Network",
+          "target": "Query",
+          "edge_index": 112,
+          "source_chunks": [
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor receives a query from a party and formulates responses based on analysis of the management data stored in the database.",
+          "keywords": "formulates responses to,receives",
+          "source_id": "US7756837B2-chunk-001",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Query",
+          "edge_index": 313,
+          "source_chunks": [
+            "US7756837B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "Responses to the query are formulated based on an analysis of the management data stored in the database.",
+          "keywords": "Analyzed Against,analysis",
+          "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-002",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Management Data",
+          "target": "Query",
+          "edge_index": 758,
+          "source_chunks": [
+            "US7756837B2-chunk-000",
+            "US7756837B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The query is received from a party concerning the archived data-stream.<SEP>The party submits a query concerning the archived data-stream.",
+          "keywords": "Submits,received from",
+          "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-001",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Query",
+          "target": "Party",
+          "edge_index": 769,
+          "source_chunks": [
+            "US7756837B2-chunk-000",
+            "US7756837B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8655901B1",
+      "evidence_quote": "segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query;",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US8655901B1-chunk-000",
+        "US8655901B1-chunk-001"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US8655901B1-chunk-000",
+        "US8655901B1-chunk-001"
+      ],
+      "claim_number": 1,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 402,
+        "indexed_document_char_offset": 1495
+      },
+      "role_zh": "从query log识别、切分、标注、翻译的搜索query，也包括用翻译模式解释的新query。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000/001描述合并了训练集合query与接收query的角色；这些都在Claim1–15中明确出现，不能据此认定同一查询实例。",
+        "raw_records": [
+          {
+            "chunk_id": "US8655901B1-chunk-000",
+            "content_sha256": "0bab0caa8c0462609609b9037c577b4201a3af3034b28331edefba06b1dee6e8",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 7,
+                "raw_line": "entity<|#|>Query<|#|>Concept<|#|>A search request that is segmented into tokens, annotated with labels, and translated as part of the query pattern mining process.",
+                "fields": [
+                  "entity",
+                  "Query",
+                  "Concept",
+                  "A search request that is segmented into tokens, annotated with labels, and translated as part of the query pattern mining process."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 19,
+                "raw_line": "relation<|#|>Translation-Based Query Pattern Mining<|#|>Query<|#|>identifies, annotates, translates<|#|>The method identifies a collection of queries, segments and annotates each query with labels, and translates the annotated queries into a second language.",
+                "fields": [
+                  "relation",
+                  "Translation-Based Query Pattern Mining",
+                  "Query",
+                  "identifies, annotates, translates",
+                  "The method identifies a collection of queries, segments and annotates each query with labels, and translates the annotated queries into a second language."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 22,
+                "raw_line": "relation<|#|>Query<|#|>First Language<|#|>in<|#|>The collection of queries matching the query pattern is in the first language.",
+                "fields": [
+                  "relation",
+                  "Query",
+                  "First Language",
+                  "in",
+                  "The collection of queries matching the query pattern is in the first language."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 23,
+                "raw_line": "relation<|#|>Query<|#|>Token<|#|>segmented into<|#|>A given query among the collection is segmented into one or more tokens in the first language.",
+                "fields": [
+                  "relation",
+                  "Query",
+                  "Token",
+                  "segmented into",
+                  "A given query among the collection is segmented into one or more tokens in the first language."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 26,
+                "raw_line": "relation<|#|>Query<|#|>Second Language<|#|>translated into<|#|>The collection of annotated queries in the first language is translated into a translated collection of queries in a second language.",
+                "fields": [
+                  "relation",
+                  "Query",
+                  "Second Language",
+                  "translated into",
+                  "The collection of annotated queries in the first language is translated into a translated collection of queries in a second language."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 28,
+                "raw_line": "relation<|#|>Translated Query Pattern<|#|>Query<|#|>used to interpret, applied to<|#|>The translated query pattern is used to interpret received queries in the second language and applied to a received query to identify query splits.",
+                "fields": [
+                  "relation",
+                  "Translated Query Pattern",
+                  "Query",
+                  "used to interpret, applied to",
+                  "The translated query pattern is used to interpret received queries in the second language and applied to a received query to identify query splits."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US8655901B1-chunk-000",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "4ab90cd0cdefac132bfd091382e77c707d3fb713357bef9e84686fe397b5760d"
+              }
+            ]
+          },
+          {
+            "chunk_id": "US8655901B1-chunk-001",
+            "content_sha256": "5d0d79edafe5af7919f82cb1ee8099a3dec6b156ad11326e2bf75e47dad3f315",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 4,
+                "raw_line": "entity<|#|>Query<|#|>Concept<|#|>A search query in a first or second language that is segmented into tokens, annotated, translated, and searched against indexes.",
+                "fields": [
+                  "entity",
+                  "Query",
+                  "Concept",
+                  "A search query in a first or second language that is segmented into tokens, annotated, translated, and searched against indexes."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 16,
+                "raw_line": "relation<|#|>Translated Query Pattern<|#|>Query<|#|>application, query splitting<|#|>The translated query pattern is applied to a received query to identify query splits into query components.",
+                "fields": [
+                  "relation",
+                  "Translated Query Pattern",
+                  "Query",
+                  "application, query splitting",
+                  "The translated query pattern is applied to a received query to identify query splits into query components."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 20,
+                "raw_line": "relation<|#|>Query Log<|#|>Query<|#|>matching, identification<|#|>Identifying a collection of queries includes identifying queries from a query log that match the first query pattern.",
+                "fields": [
+                  "relation",
+                  "Query Log",
+                  "Query",
+                  "matching, identification",
+                  "Identifying a collection of queries includes identifying queries from a query log that match the first query pattern."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 21,
+                "raw_line": "relation<|#|>Query<|#|>Labels<|#|>annotation, labeling<|#|>Annotating each query includes labeling portions of the query according to the first query pattern.",
+                "fields": [
+                  "relation",
+                  "Query",
+                  "Labels",
+                  "annotation, labeling",
+                  "Annotating each query includes labeling portions of the query according to the first query pattern."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 24,
+                "raw_line": "relation<|#|>Query Pattern<|#|>Query<|#|>matching, interpretation<|#|>The query pattern identifies a particular rule to interpret a particular type of query, and a collection of queries matching the query pattern is identified.",
+                "fields": [
+                  "relation",
+                  "Query Pattern",
+                  "Query",
+                  "matching, interpretation",
+                  "The query pattern identifies a particular rule to interpret a particular type of query, and a collection of queries matching the query pattern is identified."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 25,
+                "raw_line": "relation<|#|>Query<|#|>Tokens<|#|>segmentation<|#|>A given query among the collection is segmented into one or more tokens in the first language.",
+                "fields": [
+                  "relation",
+                  "Query",
+                  "Tokens",
+                  "segmentation",
+                  "A given query among the collection is segmented into one or more tokens in the first language."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 28,
+                "raw_line": "relation<|#|>Query<|#|>Second Language<|#|>translation<|#|>The collection of annotated queries in the first language is translated into a translated collection of queries in a second language.",
+                "fields": [
+                  "relation",
+                  "Query",
+                  "Second Language",
+                  "translation",
+                  "The collection of annotated queries in the first language is translated into a translated collection of queries in a second language."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 32,
+                "raw_line": "relation<|#|>Computing Devices<|#|>Query<|#|>translation<|#|>A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries.",
+                "fields": [
+                  "relation",
+                  "Computing Devices",
+                  "Query",
+                  "translation",
+                  "A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US8655901B1-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "316996f6608a19543149f869b202a0f90c851b294a1aea1e4f2b52f923f5462b"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "A given query among the collection is segmented into one or more tokens in the first language.",
+          "keywords": "segmented into",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Token",
+          "target": "Query",
+          "edge_index": 253,
+          "source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A given query among the collection is segmented into one or more tokens in the first language.",
+          "keywords": "segmentation",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Tokens",
+          "target": "Query",
+          "edge_index": 706,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Annotating each query includes labeling portions of the query according to the first query pattern.",
+          "keywords": "annotation,labeling",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Labels",
+          "target": "Query",
+          "edge_index": 709,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The method identifies a collection of queries, segments and annotates each query with labels, and translates the annotated queries into a second language.",
+          "keywords": "annotates,identifies,translates",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Translation-Based Query Pattern Mining",
+          "edge_index": 770,
+          "source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The collection of queries matching the query pattern is in the first language.",
+          "keywords": "in",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "First Language",
+          "edge_index": 771,
+          "source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The collection of annotated queries in the first language is translated into a translated collection of queries in a second language.",
+          "keywords": "translated into,translation",
+          "source_id": "US8655901B1-chunk-000<SEP>US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Second Language",
+          "edge_index": 772,
+          "source_chunks": [
+            "US8655901B1-chunk-000",
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The translated query pattern is applied to a received query to identify query splits into query components.<SEP>The translated query pattern is used to interpret received queries in the second language and applied to a received query to identify query splits.",
+          "keywords": "application,applied to,query splitting,used to interpret",
+          "source_id": "US8655901B1-chunk-000<SEP>US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Translated Query Pattern",
+          "edge_index": 773,
+          "source_chunks": [
+            "US8655901B1-chunk-000",
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Identifying a collection of queries includes identifying queries from a query log that match the first query pattern.",
+          "keywords": "identification,matching",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Query Log",
+          "edge_index": 774,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The query pattern identifies a particular rule to interpret a particular type of query, and a collection of queries matching the query pattern is identified.",
+          "keywords": "interpretation,matching",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Query Pattern",
+          "edge_index": 775,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries.",
+          "keywords": "translation",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Computing Devices",
+          "edge_index": 776,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 14,
+    "observed_unsupported_edge": false,
+    "observed_unsupported_edge_definition": "true仅用于依据原文明确不支持的实际关系；类级概括/端点角色候选单列，不自动计入。",
+    "details_zh": "已逐条检查全部实际邻边及其source_id/file_path；各关系在所属专利中有对应陈述，未发现将另一专利特征直接写入本专利边描述的确证。共同节点容许潜在无作用域路径组合，但本审计没有执行或观察该传播。",
+    "edge_indices": [
+      112,
+      253,
+      313,
+      706,
+      709,
+      758,
+      769,
+      770,
+      771,
+      772,
+      773,
+      774,
+      775,
+      776
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 112,
+        "source": "Communication Network",
+        "target": "Query",
+        "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+        "file_path": "US7756837B2.txt",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "actual_description": "The query is received electronically over a communication network.<SEP>The query is received electronically over the communication network and responses are transmitted electronically over it.",
+        "claim_or_section": "US7756837B2 Claims29,45",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 253,
+        "source": "Token",
+        "target": "Query",
+        "source_id": "US8655901B1-chunk-000",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "A given query among the collection is segmented into one or more tokens in the first language.",
+        "claim_or_section": "US8655901B1 Claim1",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 313,
+        "source": "Processor",
+        "target": "Query",
+        "source_id": "US7756837B2-chunk-001",
+        "file_path": "US7756837B2.txt",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "actual_description": "The processor receives a query from a party and formulates responses based on analysis of the management data stored in the database.",
+        "claim_or_section": "US7756837B2 Claim28",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 706,
+        "source": "Tokens",
+        "target": "Query",
+        "source_id": "US8655901B1-chunk-001",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "A given query among the collection is segmented into one or more tokens in the first language.",
+        "claim_or_section": "US8655901B1 Claim15",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 709,
+        "source": "Labels",
+        "target": "Query",
+        "source_id": "US8655901B1-chunk-001",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "Annotating each query includes labeling portions of the query according to the first query pattern.",
+        "claim_or_section": "US8655901B1 Claims13,15",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 758,
+        "source": "Management Data",
+        "target": "Query",
+        "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-002",
+        "file_path": "US7756837B2.txt",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "actual_description": "Responses to the query are formulated based on an analysis of the management data stored in the database.",
+        "claim_or_section": "US7756837B2 Claims13,44",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 769,
+        "source": "Query",
+        "target": "Party",
+        "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-001",
+        "file_path": "US7756837B2.txt",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "actual_description": "The query is received from a party concerning the archived data-stream.<SEP>The party submits a query concerning the archived data-stream.",
+        "claim_or_section": "US7756837B2 Claims13,28",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 770,
+        "source": "Query",
+        "target": "Translation-Based Query Pattern Mining",
+        "source_id": "US8655901B1-chunk-000",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "The method identifies a collection of queries, segments and annotates each query with labels, and translates the annotated queries into a second language.",
+        "claim_or_section": "US8655901B1 Claim1",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 771,
+        "source": "Query",
+        "target": "First Language",
+        "source_id": "US8655901B1-chunk-000",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "The collection of queries matching the query pattern is in the first language.",
+        "claim_or_section": "US8655901B1 Claim1",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 772,
+        "source": "Query",
+        "target": "Second Language",
+        "source_id": "US8655901B1-chunk-000<SEP>US8655901B1-chunk-001",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "The collection of annotated queries in the first language is translated into a translated collection of queries in a second language.",
+        "claim_or_section": "US8655901B1 Claims1,15",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 773,
+        "source": "Query",
+        "target": "Translated Query Pattern",
+        "source_id": "US8655901B1-chunk-000<SEP>US8655901B1-chunk-001",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "The translated query pattern is applied to a received query to identify query splits into query components.<SEP>The translated query pattern is used to interpret received queries in the second language and applied to a received query to identify query splits.",
+        "claim_or_section": "US8655901B1 Claims2,3,9,10",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 774,
+        "source": "Query",
+        "target": "Query Log",
+        "source_id": "US8655901B1-chunk-001",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "Identifying a collection of queries includes identifying queries from a query log that match the first query pattern.",
+        "claim_or_section": "US8655901B1 Claims12,15",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 775,
+        "source": "Query",
+        "target": "Query Pattern",
+        "source_id": "US8655901B1-chunk-001",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "The query pattern identifies a particular rule to interpret a particular type of query, and a collection of queries matching the query pattern is identified.",
+        "claim_or_section": "US8655901B1 Claim15",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 776,
+        "source": "Query",
+        "target": "Computing Devices",
+        "source_id": "US8655901B1-chunk-001",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries.",
+        "claim_or_section": "US8655901B1 Claim15",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      }
+    ],
+    "observed_cross_publication_unsupported_edge": false
+  },
+  "limitations_zh": [
+    "本结果为AI辅助逐来源语义审阅，不是独立人工金标准；分类依赖所声明的类/实例粒度。",
+    "只审计第二轮既有20篇索引中的可见原chunk、原抽取与实际图邻边；原文范围为已索引的标题、摘要及Claims，未额外读取完整说明书或新语料，未调用模型API，也未进行新的检索/生成传播测试。",
+    "共享节点产生跨专利邻接不等于已观察到错误跨文档推理；边的source_id和file_path应保持作用域。"
+  ],
+  "review_method": "AI-assisted source-by-source reading; deterministic quote/coverage validation; no external model API",
+  "reviewed_utc": "2026-10-30T08:17:41.961239+00:00",
+  "dossier_sha256": "c0a26be09b5fb42ab1e0915c4c1b7b4188aac61d3f84baa1beaad911ed42e320",
+  "input_sha256": {
+    "round2_multisource_audit/dossiers/N035.json": "c0a26be09b5fb42ab1e0915c4c1b7b4188aac61d3f84baa1beaad911ed42e320",
+    "data/claims/US7756837B2.json": "cac7dd86fa8b87591b2a118b599c1c485d741c6c9213422a0e3653f70fb35280",
+    "data/documents/US7756837B2.txt": "766052ff1cb06a44e8a2bd6ff0b37d1e77aaf9de3aaf817fe8de7aac9db7e2db",
+    "data/claims/US8655901B1.json": "3c4320d6d4a3603680fed5c9a62944142f5443962d5efd343277600f79f8ce75",
+    "data/documents/US8655901B1.txt": "7d17f8090a784af8ad8372cd2c9c958ed21e29ac1078c9c368ef53f49d0632ad"
+  },
+  "source_and_raw_review_coverage": {
+    "publication_count": 2,
+    "source_chunk_ids_reviewed": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8655901B1-chunk-000",
+      "US8655901B1-chunk-001"
+    ],
+    "all_source_chunks_read": true,
+    "all_raw_entity_and_relation_endpoint_rows_read": true,
+    "all_actual_incident_edges_reviewed": true
+  }
+}

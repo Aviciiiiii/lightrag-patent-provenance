@@ -1,0 +1,146 @@
+{
+  "reviewed_utc": "2026-10-30T08:31:03.996610+00:00",
+  "reviewer": "env_history focused final AI-assisted report review",
+  "report_path": "<DOT_WORKDIR>/round2_multisource_audit/report/LightRAG_round2_multisource_node_audit_zh.html",
+  "report_sha256": "3e92c2484142a41bb37c67041f6c36b266f2c42537b5f6cdf0db23d8262224c4",
+  "outcome": "pass",
+  "blocking_corrections": [],
+  "checks": {
+    "six_C3_nodes_explicitly_not_confirmed_wrong_merges_or_bug_rate": true,
+    "32_reasonable_class_or_concept_sharing_not_individual_identity": true,
+    "final_3_specific_29_broad_6_contextual_consistent_with_root_adjudication": true,
+    "five_case_conservative_ontology_sensitivity_including_Event_acceptable": true,
+    "sensitivity_3_34_1_arithmetic_correct_and_not_accuracy": true,
+    "Event_source_sense_distinction_not_conflated_with_C3_classification_certainty": true,
+    "C1_C2_storage_granularity_changes_preserve_initial_review": true,
+    "Token_edge193_SecondUser_Token_US9118735B1_correct": true,
+    "Token_edge251_Token_Label_only_query_patents_correct": true,
+    "Tokens_edge704_Tokens_Labels_two_query_patents_correct": true,
+    "three_representative_cases_claims_and_source_quotes_verified": true,
+    "singular_plural_graph_nodes_not_silently_combined": true,
+    "N030_three_source_local_actor_warnings_separate_from_cross_publication_propagation": true,
+    "N030_earliest_raw_extraction_and_no_counterfactual_or_new_query_claim": true,
+    "no_API_no_new_query_no_human_gold_boundary_explicit": true,
+    "percentages_not_claimed_as_error_rates": true,
+    "old_round2_audit_not_mixed_with_later_boundary_runs": true,
+    "N030_expanded_support_statement_qualified": true,
+    "Event_final_primary_and_report_confidence_match_medium": true,
+    "Dis2Pat_purposive_20_sample_origin_disclosed": true
+  },
+  "representative_quote_checks": [
+    {
+      "audit_id": "N032",
+      "publication": "US8655901B1",
+      "declared_claim": "Claim 15",
+      "matching_claims": [
+        1,
+        8,
+        15
+      ],
+      "quote_matching_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "passed": true
+    },
+    {
+      "audit_id": "N032",
+      "publication": "US9218390B2",
+      "declared_claim": "Claim 1",
+      "matching_claims": [
+        1,
+        12,
+        18
+      ],
+      "quote_matching_chunks": [
+        "US9218390B2-chunk-000"
+      ],
+      "passed": true
+    },
+    {
+      "audit_id": "N019",
+      "publication": "US10778629B2",
+      "declared_claim": "Claim 10",
+      "matching_claims": [
+        10
+      ],
+      "quote_matching_chunks": [
+        "US10778629B2-chunk-000"
+      ],
+      "passed": true
+    },
+    {
+      "audit_id": "N019",
+      "publication": "US11423041B2",
+      "declared_claim": "Claim 1",
+      "matching_claims": [
+        1
+      ],
+      "quote_matching_chunks": [
+        "US11423041B2-chunk-000"
+      ],
+      "passed": true
+    },
+    {
+      "audit_id": "N017",
+      "publication": "US8655901B1",
+      "declared_claim": "Claim 1",
+      "matching_claims": [
+        1,
+        8,
+        15
+      ],
+      "quote_matching_chunks": [
+        "US8655901B1-chunk-000"
+      ],
+      "passed": true
+    },
+    {
+      "audit_id": "N017",
+      "publication": "US9118735B1",
+      "declared_claim": "Claim 14",
+      "matching_claims": [
+        14
+      ],
+      "quote_matching_chunks": [
+        "US9118735B1-chunk-001"
+      ],
+      "passed": true
+    },
+    {
+      "audit_id": "N017",
+      "publication": "US9218390B2",
+      "declared_claim": "Claim 18",
+      "matching_claims": [
+        1,
+        12,
+        18
+      ],
+      "quote_matching_chunks": [
+        "US9218390B2-chunk-002"
+      ],
+      "passed": true
+    }
+  ],
+  "ontology_sensitivity_assessment_zh": "将Event也纳入保守的5项本体敏感性分析可接受：ETL事件与出席活动的局部语义区别有原文证据，但可在明确occurrence/event上位类中共存。区别证据强不等于必须判为错误合并。报告将Token保留为最清楚异义并置且仍不称bug，措辞恰当。此说明是根节点更保守裁决，并非推翻二审对Event两义的观察。",
+  "minor_suggestions": [],
+  "review_limits": [
+    "Focused final consistency check, not a second full reannotation of38nodes/98source pairs.",
+    "Representative quoted Claims checked against saved Claims and source chunks; all98 quote-coordinate validation is a separate audit.",
+    "No new inference, model call, query, source/index mutation, secret access or external service access.",
+    "Input-integrity/process checks remain root completion responsibilities."
+  ],
+  "external_model_api_calls": 0,
+  "credentials_read": false,
+  "report_modified": false,
+  "minor_suggestions_resolved": [
+    {
+      "issue": "N030 expanded unqualified support wording",
+      "resolution": "Latest HTML explicitly excludes3role-granularity warnings before saying remaining relationships have local support. Original draft review preserved."
+    },
+    {
+      "issue": "Event confidence traceability",
+      "resolution": "Current final primary N016 review itself ismedium, matching report. No root high-to-medium override occurred or is needed; earlier high was a draft observed during secondary review.",
+      "current_primary_review_sha256": "ad6c8810b0e79491aab7cba5874e138b73e5c4cf93649ed0f7e7dc0544dc04b4"
+    }
+  ]
+}

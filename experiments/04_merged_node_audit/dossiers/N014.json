@@ -1,0 +1,420 @@
+{
+  "node_id": "Computer Network",
+  "entity_type": "artifact",
+  "graph_source_chunks": [
+    "US7991757B2-chunk-000",
+    "US7991757B2-chunk-001",
+    "US9304738B1-chunk-001"
+  ],
+  "entity_chunk_store_sources": [
+    "US7991757B2-chunk-000",
+    "US7991757B2-chunk-001",
+    "US9304738B1-chunk-001"
+  ],
+  "all_source_chunks": [
+    "US7991757B2-chunk-000",
+    "US7991757B2-chunk-001",
+    "US9304738B1-chunk-001"
+  ],
+  "canonical_publications": [
+    "US7991757B2",
+    "US9304738B1"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US7991757B2.txt",
+    "US9304738B1.txt"
+  ],
+  "graph_file_paths": [
+    "US9304738B1.txt",
+    "US7991757B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US7991757B2",
+    "US9304738B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US7991757B2-chunk-000",
+    "US7991757B2-chunk-001",
+    "US9304738B1-chunk-001"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US7991757B2-chunk-000",
+    "US7991757B2-chunk-001",
+    "US9304738B1-chunk-001"
+  ],
+  "graph_node": {
+    "entity_id": "Computer Network",
+    "entity_type": "artifact",
+    "description": "A network via which the system evaluates information.<SEP>A network over which requests, recommendations, and scores are transmitted between content sites, the personalization network service, and external recommenders.<SEP>A network over which requests from content sites for item recommendations are received.",
+    "source_id": "US9304738B1-chunk-001<SEP>US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+    "file_path": "US9304738B1.txt<SEP>US7991757B2.txt",
+    "created_at": 1793284383,
+    "truncate": "",
+    "id": "Computer Network"
+  },
+  "incident_edge_count": 3,
+  "audit_id": "N014",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US7991757B2",
+      "file_paths": [
+        "US7991757B2.txt"
+      ],
+      "source_chunks": [
+        "US7991757B2-chunk-000",
+        "US7991757B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US7991757B2",
+          "full_doc_id": "US7991757B2",
+          "file_path": "US7991757B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "44d14ac28f58ce1923e60c3a11843fe0f1dac0d16d0d7febf9882ad01fe17259",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6819,
+          "content": "Publication number: US7991757B2\nTitle: System for obtaining recommendations from multiple recommenders\n\nABSTRACT\nA personalization network service enables developers to develop recommenders that can be made available to content site operators for providing recommendations to end users. The personalization network service may also be capable of optimizing the use and selection of the recommenders for different end users, groups or segments of end users, content sites, and the like.\n\nCLAIMS\n1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site. 2. The system of claim 1 , wherein the optimization module is further configured to optimize the recommendations based at least in part on user-generated events responsive to previous recommendations results and a number of previous content site requests served by the external recommenders. 3. The system of claim 2 , wherein the optimization module is further operative to assign weights to the external recommenders. 4. A computer-implemented method of optimizing recommender results, the method comprising: by a computer system comprising computer hardware: receiving a request from a content site for item recommendations, the request being received with a personalization network service; in response to the request from the content site, requesting recommendations from a plurality of recommenders, wherein the plurality of recommenders comprise external recommenders that are operated by different operators than an operator of the personalization network service; receiving recommendations and corresponding scores from the recommenders; applying weights to each of the recommenders; combining the scores with the weights to produce overall scores; selecting a subset of the recommendations based on the overall scores to provide to the content site; and adjusting the weights for each of the recommenders based at least in part on user-generated events responsive to the recommendations. 5. The method of claim 4 , wherein applying the weights to each of the recommenders comprises applying the weights based at least in part on user-generated events responsive to previous recommendations results. 6. The method of claim 5 , wherein the user-generated events comprise one or more of purchase events, item viewing events, and item rating events. 7. The method of claim 4 , wherein applying the weights to each of the recommenders comprises applying site-specific weights to at least some of the recommenders. 8. The method of claim 4 , wherein applying the weights to each of the recommenders comprises applying user-specific weights to at least some of the recommenders. 9. The method of claim 4 , wherein applying the weights to each of the recommenders comprises applying user segment-specific weights to at least some of the recommenders. 10. The method of claim 4 , wherein applying the weights to each of the recommenders comprises applying a default weight to one or more of the recommenders. 11. The method of claim 4 , further comprising normalizing the scores provided by each of the recommenders to produce normalized scores. 12. The method of claim 11 , wherein combining the scores with the weights to produce overall scores comprises combining the normalized scores with the weights to produce the overall scores. 13. The method of claim 4 , wherein at least some of the recommenders are operated by recommender providers separate from an operator of the personalization network service. 14. A computer-implemented method of optimizing recommender results, the method comprising: by a computer system comprising computer hardware: receiving a request from a content site for item recommendations over a network; requesting recommendations from a plurality of recommenders in response to the request from the content site, wherein the plurality of recommenders comprise external recommenders that are operated by different operators than an operator of the personalization network service; receiving recommendations results from the recommenders; adjusting the recommendations results based at least in part on one or more of user-generated events responsive to previous recommendations results and a number of previous content site requests served by the recommenders; and selecting a subset of the adjusted recommendations results to provide to the content site. 15. The method of claim 14 , wherein the user-generated events comprise one or more of purchase events, item viewing events, and item rating events. 16. The method of claim 14 , wherein adjusting the recommendations results comprises applying weights to the recommendations results. 17. A computer-implemented method of providing a network service to content sites, the method comprising: by a computer system comprising computer hardware: receiving registration submissions for recommenders from a plurality of recommender providers, the registration submissions operative to request registration",
+          "llm_cache_list": [
+            "default:extract:165fbd694545aca044d0d459a62fd0cb"
+          ],
+          "chunk_id": "US7991757B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US7991757B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "5d76ff542ec3100d50d47293821b56e0a9509d93a97136f4dc97f3c2023c387e"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+              "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 21,
+              "raw_line": "entity<|#|>Computer Network<|#|>Artifact<|#|>A network over which requests, recommendations, and scores are transmitted between content sites, the personalization network service, and external recommenders.",
+              "fields": [
+                "entity",
+                "Computer Network",
+                "Artifact",
+                "A network over which requests, recommendations, and scores are transmitted between content sites, the personalization network service, and external recommenders."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+              "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 45,
+              "raw_line": "relation<|#|>Computer Network<|#|>External Recommender<|#|>queries over<|#|>External recommenders are queried over the computer network for recommendations.",
+              "fields": [
+                "relation",
+                "Computer Network",
+                "External Recommender",
+                "queries over",
+                "External recommenders are queried over the computer network for recommendations."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 787,
+              "chunk_char_end": 1223,
+              "text": "ve of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event"
+            },
+            {
+              "chunk_char_start": 925,
+              "chunk_char_end": 1361,
+              "text": ", the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an extern"
+            },
+            {
+              "chunk_char_start": 1688,
+              "chunk_char_end": 2124,
+              "text": "vice; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part o"
+            },
+            {
+              "chunk_char_start": 1849,
+              "chunk_char_end": 2285,
+              "text": "ommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations servi"
+            }
+          ],
+          "lexical_occurrence_count": 4
+        },
+        {
+          "publication_number": "US7991757B2",
+          "full_doc_id": "US7991757B2",
+          "file_path": "US7991757B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 828,
+          "content_sha256": "e47c6e4c92c4b2d8567f8a01218a71a0dfe0ef1d353d28abc5f8acac2212e6f3",
+          "exact_doc_char_start": 6237,
+          "exact_doc_char_end": 10953,
+          "content": "of claim 14 , wherein the user-generated events comprise one or more of purchase events, item viewing events, and item rating events. 16. The method of claim 14 , wherein adjusting the recommendations results comprises applying weights to the recommendations results. 17. A computer-implemented method of providing a network service to content sites, the method comprising: by a computer system comprising computer hardware: receiving registration submissions for recommenders from a plurality of recommender providers, the registration submissions operative to request registration of the recommenders with a recommendations system, wherein the recommender providers are different entities than a provider of the recommendations system; storing, in computer storage, access information for accessing the recommenders with the recommendations system; receiving requests from one or more content sites for item recommendations, the requests being received over a computer network with a network service interface; in response to the requests, using the recommendations system to cause the recommenders to provide recommendations for the one or more content sites; normalizing scores provided by the recommenders to produce normalized scores; applying weights to each of the recommenders; and combining the normalized scores with the weights to generate overall scores to be used in selecting recommendations to provide to the one or more content sites. 18. The method of claim 17 , wherein the information for accessing the recommenders with the recommendations system comprises uniform resource indicators. 19. The method of claim 17 , further comprising receiving recommender selections from the one or more content sites. 20. The method of claim 17 , wherein applying weights to each of the recommenders further comprises weighting the recommenders based on the performance of the recommenders. 21. The method of claim 20 , further comprising receiving weighting selections from the one or more content sites. 22. A system for enabling site operators to obtain item recommendations for presentation to users, the system comprising: a computer data repository that stores information regarding a plurality of recommenders, including network addresses for accessing the recommenders on a network, each recommender provided by a respective recommender provider, at least some of the recommenders provided by different recommendation providers than others, the recommenders capable of using collected event data regarding user-generated events to select particular items to recommend to users; and a server system comprising computer hardware operative to provide a service through which content sites obtain recommendations from the plurality of recommenders for presentation to users, the server system responsive to a request from a content site for recommendations by using the network addresses to request recommendations from the recommenders, and by combining resulting recommendation sets returned by the recommenders to generate a combined set of recommendations to provide to the content site; wherein said combining comprises: normalizing scores provided by the recommenders to produce normalized scores, applying weights to each of the recommenders, and combining the normalized scores with the weights to generate overall scores to be used in selecting the combined set of recommendations. 23. The system of claim 22 , wherein the server system is operative to monitor context-specific performance of each recommender in each of a plurality of contexts, and to use collected data regarding the context-specific performance to determine, for each of the contexts, how much weight to give to particular recommenders in combining the recommendation sets returned by the recommenders. 24. The system of claim 23 , wherein the context-specific performance of each recommender comprises one or more of user-specific performance, segment-specific performance, and site-specific performance. 25. The system of claim 22 , wherein the server system provides an interface that enables an operator of a content site to specify which of the plurality of recommenders are to be used to generate recommendations for the content site. 26. The system of claim 1 , wherein the computer system comprises multiple physical computing devices. 27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender. 28. The system of claim 3 , wherein the content site selects at least some of the weights to assign to the external recommenders.",
+          "llm_cache_list": [
+            "default:extract:05373d30b4b333298413a8a1419224e5"
+          ],
+          "chunk_id": "US7991757B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US7991757B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "fa557a9ca6d9aa0dfc7eda7b769bc36f6f5b1656340010a5edd1df1286348d86"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:05373d30b4b333298413a8a1419224e5",
+              "cache_key": "default:extract:05373d30b4b333298413a8a1419224e5",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 24,
+              "raw_line": "entity<|#|>Computer Network<|#|>Artifact<|#|>A network over which requests from content sites for item recommendations are received.",
+              "fields": [
+                "entity",
+                "Computer Network",
+                "Artifact",
+                "A network over which requests from content sites for item recommendations are received."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:05373d30b4b333298413a8a1419224e5",
+              "cache_key": "default:extract:05373d30b4b333298413a8a1419224e5",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 69,
+              "raw_line": "relation<|#|>Computer Network<|#|>Network Service Interface<|#|>hosts<|#|>Requests are received over a computer network with a network service interface.",
+              "fields": [
+                "relation",
+                "Computer Network",
+                "Network Service Interface",
+                "hosts",
+                "Requests are received over a computer network with a network service interface."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 782,
+              "chunk_char_end": 1218,
+              "text": "tion for accessing the recommenders with the recommendations system; receiving requests from one or more content sites for item recommendations, the requests being received over a computer network with a network service interface; in response to the requests, using the recommendations system to cause the recommenders to provide recommendations for the one or more content sites; normalizing scores provided by the recommenders to prod"
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "External recommenders are queried over the computer network for recommendations.",
+          "keywords": "queries over",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284383,
+          "truncate": "",
+          "source": "Computer Network",
+          "target": "External Recommender",
+          "edge_index": 216,
+          "source_chunks": [
+            "US7991757B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Requests are received over a computer network with a network service interface.",
+          "keywords": "hosts",
+          "source_id": "US7991757B2-chunk-001",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284384,
+          "truncate": "",
+          "source": "Computer Network",
+          "target": "Network Service Interface",
+          "edge_index": 217,
+          "source_chunks": [
+            "US7991757B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "file_paths": [
+        "US9304738B1.txt"
+      ],
+      "source_chunks": [
+        "US9304738B1-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9304738B1",
+          "full_doc_id": "US9304738B1",
+          "file_path": "US9304738B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 1200,
+          "content_sha256": "886071717df3356cda9c51bbd4b7299b9087e0e835cf5f86a477e6df3d50296d",
+          "exact_doc_char_start": 5970,
+          "exact_doc_char_end": 12622,
+          "content": "having the unique identifier, the first advertisement corresponding to the first keyword of the plurality of keywords; responsive to the indication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords with the parked domain web page having the unique identifier. 12. The method of claim 1 , further comprising: responsive to receiving the request for content, accessing the database storing the plurality of keywords and a second plurality of keywords corresponding to advertisements previously displayed on the parked domain web page; determining, for each of the second plurality of keywords, a weight based on a performance of the corresponding advertisement previously displayed on the parked domain web page having the unique identifier; comparing, for the parked domain web page, the weight for each of the second plurality of keywords and the plurality of keywords to select a highest weighted keyword, a weight of the highest weighted keyword satisfying the threshold weight; and using the highest weighted keyword to select the second advertisement to provide for display with the parked domain web page having the unique identifier. 13. A system to evaluate information via a computer network, comprising: a data processing system having one or more processors and memory, the data processing system configured to: receive an indication of user interest of a first user in a first advertisement displayed with a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identify a plurality of keywords associated with the first advertisement using the unique identifier of the parked domain web page; determine for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement of the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and select a third advertisement to provide for display with the parked domain web page based at least in part on the first keyword selected as the highest ranked keyword, wherein the third advertisement is different from the first advertisement and the second advertisement. 14. The system of claim 13 , wherein the data processing system is further configured to: rank, for the parked domain web page, the plurality of keywords based on the weight of each of the plurality of keywords; and evaluate the plurality of keywords to select the first keyword, wherein the first keyword has a top ranking of the plurality of keywords. 15. The system of claim 13 , wherein the plurality of keywords includes the first keyword associated with the first advertisement of the parked domain web page and a third keyword associated with the third advertisement of the parked domain web page. 16. The system of claim 13 , wherein the data processing system is further configured to: receive an indication of user interest in a fourth advertisement of the parked domain web page, the fourth advertisement associated with a third keyword of the plurality of keywords; determine a third weight of the third keyword; and identify one of the first keyword and the third keyword as the highest ranked keyword. 17. The system of claim 13 , wherein the data processing system is further configured to: receive the indication of user interest in the first advertisement, the first advertisement associated with the first keyword; and receive an indication of user interest in a third advertisement, the third advertisement associated with the first keyword. 18. A non-transitory computer readable medium having instructions to evaluate information, the instructions comprising instructions to: receive an indication of user interest of a first user in a first advertisement displayed with a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identify a plurality of keywords associated with the first advertisement using the unique identifier of the parked domain web page; determine for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement of the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user",
+          "llm_cache_list": [
+            "default:extract:01a1996f64d5c8dab6d049de495fe47c"
+          ],
+          "chunk_id": "US9304738B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US9304738B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "67aa8ef7561687895e22a86257706574a7ec37aba9fac32867efafbf1155f530"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 21,
+              "raw_line": "entity<|#|>Computer Network<|#|>Concept<|#|>A network via which the system evaluates information.",
+              "fields": [
+                "entity",
+                "Computer Network",
+                "Concept",
+                "A network via which the system evaluates information."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 50,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Computer Network<|#|>evaluates information via<|#|>The data processing system evaluates information via a computer network.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Computer Network",
+                "evaluates information via",
+                "The data processing system evaluates information via a computer network."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 1162,
+              "chunk_char_end": 1598,
+              "text": "weighted keyword to select the second advertisement to provide for display with the parked domain web page having the unique identifier. 13. A system to evaluate information via a computer network, comprising: a data processing system having one or more processors and memory, the data processing system configured to: receive an indication of user interest of a first user in a first advertisement displayed with a parked domain web pa"
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The data processing system evaluates information via a computer network.",
+          "keywords": "evaluates information via",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Computer Network",
+          "edge_index": 18,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "The data processing system evaluates information via a computer network.",
+      "keywords": "evaluates information via",
+      "source_id": "US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Computer Network",
+      "edge_index": 18,
+      "source_chunks": [
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "External recommenders are queried over the computer network for recommendations.",
+      "keywords": "queries over",
+      "source_id": "US7991757B2-chunk-000",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793284383,
+      "truncate": "",
+      "source": "Computer Network",
+      "target": "External Recommender",
+      "edge_index": 216,
+      "source_chunks": [
+        "US7991757B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US7991757B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Requests are received over a computer network with a network service interface.",
+      "keywords": "hosts",
+      "source_id": "US7991757B2-chunk-001",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793284384,
+      "truncate": "",
+      "source": "Computer Network",
+      "target": "Network Service Interface",
+      "edge_index": 217,
+      "source_chunks": [
+        "US7991757B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US7991757B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

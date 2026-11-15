@@ -1,0 +1,97 @@
+--- dot/scripts/build_report.py
++++ repo/scripts/build_report.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4 +6 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round3'
++ROOT=legacy_root('round3');R=ROOT/'round3'
+--- dot/scripts/evaluate_ablation.py
++++ repo/scripts/evaluate_ablation.py
+@@ -2,0 +3,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -9 +11 @@
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = legacy_root('round3')
+--- dot/scripts/evaluate_chunks.py
++++ repo/scripts/evaluate_chunks.py
+@@ -6,0 +7,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -11 +13 @@
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = legacy_root('round3')
+--- dot/scripts/official_parser_selective.py
++++ repo/scripts/official_parser_selective.py
+@@ -6,0 +7,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -20 +22 @@
+-ROOT=Path(__file__).resolve().parents[2]
++ROOT=legacy_root('round3')
+--- dot/scripts/package_evidence.py
++++ repo/scripts/package_evidence.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root, ENV_FILE  # path mapping only, see paths.py
+@@ -4 +6 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round3';signal.alarm(180)
++ROOT=legacy_root('round3');R=ROOT/'round3';signal.alarm(180)
+@@ -7 +9 @@
+-secrets=[v.encode() for k,v in dotenv_values('<EXTERNAL_DISK>/LightRAG/secrets/.env').items() if k.endswith('_API_KEY') and v]
++secrets=[v.encode() for k,v in dotenv_values(str(ENV_FILE)).items() if k.endswith('_API_KEY') and v]
+--- dot/scripts/parse_chunk_outputs.py
++++ repo/scripts/parse_chunk_outputs.py
+@@ -6,0 +7,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -18 +20 @@
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = legacy_root('round3')
+--- dot/scripts/parser_source.py
++++ repo/scripts/parser_source.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root, PINNED_SOURCE  # path mapping only, see paths.py
+@@ -7 +9 @@
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = legacy_root('round3')
+@@ -10 +12 @@
+-                            str(ROOT.parent / 'LightRAG_PINNED_28ff1b05'))).expanduser().resolve()
++                            str(PINNED_SOURCE))).expanduser().resolve()
+--- dot/scripts/prepare_ablation.py
++++ repo/scripts/prepare_ablation.py
+@@ -5,0 +6,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -14 +16 @@
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = legacy_root('round3')
+--- dot/scripts/prepare_chunks.py
++++ repo/scripts/prepare_chunks.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -10 +12 @@
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = legacy_root('round3')
+--- dot/scripts/repro_runtime.py
++++ repo/scripts/repro_runtime.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root, ENV_FILE  # path mapping only, see paths.py
+@@ -11 +13 @@
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = legacy_root('round3')
+@@ -16 +18 @@
+-DEFAULT_CONFIG = Path('<EXTERNAL_DISK>/LightRAG/secrets/.env')
++DEFAULT_CONFIG = ENV_FILE
+--- dot/scripts/safe_api.py
++++ repo/scripts/safe_api.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -6 +8 @@
+-ROOT=Path(__file__).resolve().parents[2]
++ROOT=legacy_root('round3')

@@ -1,0 +1,66 @@
+{
+  "started_utc": "2026-10-29T16:01:14+00:00",
+  "finished_utc": "2026-10-29T16:30:34.833701+00:00",
+  "elapsed_minutes": 29.35,
+  "hard_deadline_utc": "2026-10-29T18:01:14+00:00",
+  "own_experiment_python_processes": [],
+  "all_api_calls_finished": true,
+  "autodl_accessed": false,
+  "fot_modified": false,
+  "cost_summary": {
+    "generated_utc": "2026-10-29T16:15:52.858229+00:00",
+    "calls_total": 21,
+    "llm_calls": 21,
+    "embedding_calls": 0,
+    "prompt_tokens": 300642,
+    "completion_tokens": 6454,
+    "cached_input_tokens": 254848,
+    "reasoning_tokens": 0,
+    "upper_price_estimate_cny": 0.652916,
+    "cache_aware_price_estimate_cny": 0.15341391999999998,
+    "not_invoice": true,
+    "reserved_unknown_cny": 0,
+    "failed_calls": [],
+    "truncated_calls": []
+  },
+  "library_delivery": {
+    "operation": "replace_library_file",
+    "status": "succeeded",
+    "path": "/LightRAG_patent_provenance_report_zh.html",
+    "file_id": "file_00000000c00c81f5818562ed093cc038",
+    "library_file_id": "libfile_0c4faa8b04148191b409d015af4d8f04",
+    "file_name": "LightRAG_patent_provenance_report_zh.html",
+    "current_version_number": 2,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "2"
+      }
+    ],
+    "directory_id": "libdir_c025cf9ddeb48191956d448946a51960",
+    "mime_type": "text/html",
+    "library_artifact_type": "report",
+    "file_size_bytes": 119727,
+    "external_connectors_accessed": false,
+    "local_path": "<DOT_WORKDIR>/round3/report/LightRAG_patent_provenance_report_zh.html",
+    "local_metadata_applied": true,
+    "credential_value_matches": 0
+  },
+  "evidence_package": {
+    "finished_utc": "2026-10-29T16:29:52.269182+00:00",
+    "file": "<DOT_WORKDIR>/round3/LightRAG_patent_round3_controls_20261029.zip",
+    "bytes": 3432752,
+    "entries": 194,
+    "sha256": "f4e95cf318ddc084bb416d4004165984a5f0818d587207db1695dbb1657f848b",
+    "crc_passed": true,
+    "sha256_checks_passed": 191,
+    "credential_value_matches": 0
+  },
+  "remaining_task_blockers": [],
+  "method_limits": [
+    "Normal official package parser import interrupted after local dependency reads stalled; unchanged official AST functions executed successfully with saved round2 subset/count validation.",
+    "Full git metadata verification inconclusive due object-pack read timeout; the six source files actually used match the preserved official archive."
+  ],
+  "note": "Final delivery/process receipt is outside the already sealed ZIP to avoid self-referential archive hashes."
+}

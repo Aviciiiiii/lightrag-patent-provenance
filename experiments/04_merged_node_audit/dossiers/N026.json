@@ -1,0 +1,1382 @@
+{
+  "node_id": "Computing Device",
+  "entity_type": "artifact",
+  "graph_source_chunks": [
+    "US9218390B2-chunk-002",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001",
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-000"
+  ],
+  "entity_chunk_store_sources": [
+    "US9218390B2-chunk-002",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001",
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-000"
+  ],
+  "all_source_chunks": [
+    "US9218390B2-chunk-002",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001",
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-000"
+  ],
+  "canonical_publications": [
+    "US9218390B2",
+    "US9374411B1",
+    "US9514120B1"
+  ],
+  "publication_count": 3,
+  "actual_chunk_file_paths": [
+    "US9218390B2.txt",
+    "US9374411B1.txt",
+    "US9514120B1.txt"
+  ],
+  "graph_file_paths": [
+    "US9514120B1.txt",
+    "US9374411B1.txt",
+    "US9218390B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US9218390B2",
+    "US9374411B1",
+    "US9514120B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US9218390B2-chunk-002",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001",
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-000"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US9218390B2-chunk-002",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001",
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-000"
+  ],
+  "graph_node": {
+    "entity_id": "Computing Device",
+    "entity_type": "artifact",
+    "description": "A device hosting a server that identifies potential typographical errors in a work, sends data to users, collects and combines feedback, sorts the feedback, and updates an initial reference.<SEP>A device that executes computer instructions and applications to perform content recommendation functions.<SEP>A device that executes an application to render content, obtain interaction data, identify characters, calculate relationship scores, and generate recommendations.<SEP>A device comprising at least one computing device that executes the plurality of computer instructions stored on the non-transitory computer-readable medium.<SEP>One or more devices that execute machine-readable instructions to perform the described operations.",
+    "source_id": "US9514120B1-chunk-000<SEP>US9374411B1-chunk-000<SEP>US9374411B1-chunk-001<SEP>US9374411B1-chunk-002<SEP>US9218390B2-chunk-002",
+    "file_path": "US9514120B1.txt<SEP>US9374411B1.txt<SEP>US9218390B2.txt",
+    "created_at": 1793284503,
+    "truncate": "",
+    "id": "Computing Device"
+  },
+  "incident_edge_count": 16,
+  "audit_id": "N026",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US9218390B2",
+      "file_paths": [
+        "US9218390B2.txt"
+      ],
+      "source_chunks": [
+        "US9218390B2-chunk-002"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9218390B2",
+          "full_doc_id": "US9218390B2",
+          "file_path": "US9218390B2.txt",
+          "chunk_order_index": 2,
+          "tokens": 502,
+          "content_sha256": "77bfbf775e4f111c23aae4de373e87c4778a5f6b7d4821dc232eeaa95153886c",
+          "exact_doc_char_start": 11148,
+          "exact_doc_char_end": 13990,
+          "content": "at least one of segmenting and labeling query sequence data. 18. One or more non-transitory, machine-readable media having machine-readable instructions thereon, which instructions, when executed by one or more computing devices, cause the one or more computing devices to: derive a query parser for parsing an unstructured geographic web-search query into a field-based format, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens; calculating the most probable label sequence for the input query; assigning one or more sentences from a plurality of sentences to each label based at least in part on the most probable label sequence for the input query, wherein: the one or more sentences are different from the labels; and the one or more sentences are assigned so that the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information; creating a conditional random field model based at least in part on i) the tokens, ii) the labels, iii) characterizing a set of one or more feature functions, wherein: the set of one or more feature functions represent a state transition feature and/or one or more features of an output state for an input sequence; and a conditional probability is computed based in part on the set of one or more feature functions; training the one or more state transition features and the one or more output state features on a labeled set, wherein learning the state transition feature is limited on learning the one or more features of the output state; and utilize conditional random fields, learned by semi-supervised automated learning and based at least in part on the training, to produce structured information from the unstructured geographic web-search query, wherein the utilizing the conditional random fields to produce the structured information comprises: parsing the unstructured geographic web-search query to produce the structured information from the unstructured geographic web-search query; determining that the parsing the unstructured geographic web-search query results in a multiple interpretation condition, where the parsing identifies at least a first interpretation of the unstructured geographic web-search query corresponding to first parsing results and a second interpretation of the unstructured geographic web-search query corresponding to second parsing results; and based at least in part on user behavior data, disambiguate the first parsing results and the second parsing results to select the first parsing results corresponding to the first interpretation of the unstructured geographic web-search query.",
+          "llm_cache_list": [
+            "default:extract:7c90aad65a26a0dcb87df7a397281a6d"
+          ],
+          "chunk_id": "US9218390B2-chunk-002",
+          "extraction_records": [
+            {
+              "chunk_id": "US9218390B2-chunk-002",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "1c8d2328bfb87bdd27ffc5343311cb572fb0a9b123d179f067a2135d078283e1"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+              "cache_key": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 20,
+              "raw_line": "entity<|#|>Computing Device<|#|>Artifact<|#|>One or more devices that execute machine-readable instructions to perform the described operations.",
+              "fields": [
+                "entity",
+                "Computing Device",
+                "Artifact",
+                "One or more devices that execute machine-readable instructions to perform the described operations."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+              "cache_key": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 44,
+              "raw_line": "relation<|#|>Computing Device<|#|>Non-Transitory Machine-Readable Media<|#|>executes instructions from<|#|>The computing devices execute machine-readable instructions on the non-transitory machine-readable media.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "Non-Transitory Machine-Readable Media",
+                "executes instructions from",
+                "The computing devices execute machine-readable instructions on the non-transitory machine-readable media."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 31,
+              "chunk_char_end": 467,
+              "text": "labeling query sequence data. 18. One or more non-transitory, machine-readable media having machine-readable instructions thereon, which instructions, when executed by one or more computing devices, cause the one or more computing devices to: derive a query parser for parsing an unstructured geographic web-search query into a field-based format, the deriving of the query parser comprising: receiving an input query, wherein the input"
+            },
+            {
+              "chunk_char_start": 72,
+              "chunk_char_end": 508,
+              "text": "more non-transitory, machine-readable media having machine-readable instructions thereon, which instructions, when executed by one or more computing devices, cause the one or more computing devices to: derive a query parser for parsing an unstructured geographic web-search query into a field-based format, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assi"
+            }
+          ],
+          "lexical_occurrence_count": 2
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The computing devices execute machine-readable instructions on the non-transitory machine-readable media.",
+          "keywords": "executes instructions from",
+          "source_id": "US9218390B2-chunk-002",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1793284503,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "Non-Transitory Machine-Readable Media",
+          "edge_index": 459,
+          "source_chunks": [
+            "US9218390B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "file_paths": [
+        "US9374411B1.txt"
+      ],
+      "source_chunks": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001",
+        "US9374411B1-chunk-002"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9374411B1",
+          "full_doc_id": "US9374411B1",
+          "file_path": "US9374411B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1199,
+          "content_sha256": "1c6ddec8304601845ddead7675e8d25ffe813f0a1d7087766b31ededcbd9a1cc",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6777,
+          "content": "Publication number: US9374411B1\nTitle: Content recommendations using deep data\n\nABSTRACT\nDisclosed are various embodiments for recommending content for users. A user is associated with a user preferred character that is represented in a first network content. A library is referenced to identify a recommended character based at least upon the user preferred character, the recommended character being represented in a second network content, the library associating the preferred character to the recommended character according to a relationship score. A recommendation is sent for presentation of the second network content.\n\nCLAIMS\nTherefore, the following is claimed: 1. A non-transitory computer-readable medium having a plurality of computer instructions executable by at least one computing device, wherein, upon execution, the plurality of computer instructions cause the at least one computing device to: stream a first video content feature from at least one server to a client associated with a user; cause the first video content feature to be rendered in a user interface for display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtain second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; associate a preferred character with the user based at least upon the second user interaction data, the preferred character being represented by a corresponding first cast member of the first video content feature; reference a library to identify a recommended character based at least upon the preferred character, the recommended character being represented by a corresponding second cast member of a second video content feature, the library associating the preferred character to the recommended character according to a relationship score, the relationship score being calculated based at least in part upon a proportion of users who have expressed a preference towards both the preferred character and the recommended character; and send to the user a recommendation to play the second video content feature. 2. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: obtain additional user interaction data from the user based at least upon an interaction with the second video content feature; and update the relationship score based at least upon the additional user interaction data. 3. The non-transitory computer-readable medium of claim 2 , wherein the additional user interaction data comprises user feedback expressing that the user favors at least one scene associated with the second video content feature. 4. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: identify an attribute associated with the recommended character; and send the attribute to the client to indicate a basis for the recommendation to the user. 5. The non-transitory computer-readable medium of claim 1 , wherein the user interaction data is obtained during a playback of the first video content feature via the client. 6. A system, comprising: at least one computing device; and at least one application executable in the at least one computing device, the at least one application causing the at least one computing device to: cause a first video content feature to be rendered in a user interface for display on a client; determine that a user prefers a first character based at least upon a first interaction data, the first character being represented by a corresponding first cast member of the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first interaction data; obtain second user interaction data from the client based at least in part upon an interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; determine that the user prefers a second character based at least upon the second interaction data, the second character being represented by a corresponding second cast member of a second video content feature; determine a relationship score based at least upon the first interaction data and the second interaction data, the relationship score quantifying a degree of commonality between the first character and the second character and being calculated based at least in part upon a proportion of users who have expressed a preference towards both the first character and the second character; and generate a recommendation to play at least one of the first video content feature or the second video content feature based at least upon the relationship score. 7. The system of claim 6 , wherein the at least one application further causes the at least one computing device to: store a first set of attributes associated with the first character; store a second set of attributes associated with the second character; and compare the first set of attributes to the second set of attributes. 8. The system of claim 6 , wherein the first interaction data comprises explicit user feedback expressing that the user favors the first character. 9. The system of claim 6 , wherein the first interaction data comprises at least one of consumption history data relating to a product associated with the first character or browse history data relating to a product associated with the first character. 10. The system of claim 6 , wherein the first interaction data comprises user feedback expressing that the user favors at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim",
+          "llm_cache_list": [
+            "default:extract:4a665eb9b6325343afd5a73cbd168366"
+          ],
+          "chunk_id": "US9374411B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9374411B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "c86c537652ef009d655d7cad38ff0880a71b88ff4bcca89a5d9d2d11f9f7d645"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 12,
+              "raw_line": "entity<|#|>Computing Device<|#|>Artifact<|#|>A device that executes computer instructions and applications to perform content recommendation functions.",
+              "fields": [
+                "entity",
+                "Computing Device",
+                "Artifact",
+                "A device that executes computer instructions and applications to perform content recommendation functions."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 50,
+              "raw_line": "relation<|#|>Non-Transitory Computer-Readable Medium<|#|>Computing Device<|#|>executed by<|#|>The non-transitory computer-readable medium has computer instructions executable by a computing device.",
+              "fields": [
+                "relation",
+                "Non-Transitory Computer-Readable Medium",
+                "Computing Device",
+                "executed by",
+                "The non-transitory computer-readable medium has computer instructions executable by a computing device."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 51,
+              "raw_line": "relation<|#|>Application<|#|>Computing Device<|#|>executable in<|#|>The application is executable in the computing device and causes it to perform content recommendation functions.",
+              "fields": [
+                "relation",
+                "Application",
+                "Computing Device",
+                "executable in",
+                "The application is executable in the computing device and causes it to perform content recommendation functions."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 609,
+              "chunk_char_end": 1045,
+              "text": "d network content.\n\nCLAIMS\nTherefore, the following is claimed: 1. A non-transitory computer-readable medium having a plurality of computer instructions executable by at least one computing device, wherein, upon execution, the plurality of computer instructions cause the at least one computing device to: stream a first video content feature from at least one server to a client associated with a user; cause the first video content fe"
+            },
+            {
+              "chunk_char_start": 714,
+              "chunk_char_end": 1150,
+              "text": "ium having a plurality of computer instructions executable by at least one computing device, wherein, upon execution, the plurality of computer instructions cause the at least one computing device to: stream a first video content feature from at least one server to a client associated with a user; cause the first video content feature to be rendered in a user interface for display on the client; obtain first user interaction data fr"
+            },
+            {
+              "chunk_char_start": 2511,
+              "chunk_char_end": 2947,
+              "text": "to play the second video content feature. 2. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: obtain additional user interaction data from the user based at least upon an interaction with the second video content feature; and update the relationship score based at least upon the additional user interaction data. 3. The non-tran"
+            },
+            {
+              "chunk_char_start": 3120,
+              "chunk_char_end": 3556,
+              "text": "ed with the second video content feature. 4. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: identify an attribute associated with the recommended character; and send the attribute to the client to indicate a basis for the recommendation to the user. 5. The non-transitory computer-readable medium of claim 1 , wherein the user "
+            },
+            {
+              "chunk_char_start": 3512,
+              "chunk_char_end": 3948,
+              "text": "adable medium of claim 1 , wherein the user interaction data is obtained during a playback of the first video content feature via the client. 6. A system, comprising: at least one computing device; and at least one application executable in the at least one computing device, the at least one application causing the at least one computing device to: cause a first video content feature to be rendered in a user interface for display on"
+            },
+            {
+              "chunk_char_start": 3590,
+              "chunk_char_end": 4026,
+              "text": "g a playback of the first video content feature via the client. 6. A system, comprising: at least one computing device; and at least one application executable in the at least one computing device, the at least one application causing the at least one computing device to: cause a first video content feature to be rendered in a user interface for display on a client; determine that a user prefers a first character based at least upon"
+            },
+            {
+              "chunk_char_start": 3662,
+              "chunk_char_end": 4098,
+              "text": "tem, comprising: at least one computing device; and at least one application executable in the at least one computing device, the at least one application causing the at least one computing device to: cause a first video content feature to be rendered in a user interface for display on a client; determine that a user prefers a first character based at least upon a first interaction data, the first character being represented by a co"
+            },
+            {
+              "chunk_char_start": 5320,
+              "chunk_char_end": 5756,
+              "text": "ure or the second video content feature based at least upon the relationship score. 7. The system of claim 6 , wherein the at least one application further causes the at least one computing device to: store a first set of attributes associated with the first character; store a second set of attributes associated with the second character; and compare the first set of attributes to the second set of attributes. 8. The system of claim"
+            },
+            {
+              "chunk_char_start": 6215,
+              "chunk_char_end": 6651,
+              "text": "edback expressing that the user favors at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the"
+            },
+            {
+              "chunk_char_start": 6388,
+              "chunk_char_end": 6777,
+              "text": "st one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim"
+            }
+          ],
+          "lexical_occurrence_count": 10
+        },
+        {
+          "publication_number": "US9374411B1",
+          "full_doc_id": "US9374411B1",
+          "file_path": "US9374411B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 1200,
+          "content_sha256": "bbe6f2f25b0f58e297204d0c91d3cd176e3a59c7a39ef03093c9724efe2d9fe0",
+          "exact_doc_char_start": 6254,
+          "exact_doc_char_end": 12921,
+          "content": "at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim 11 , wherein the at least one application further causes the at least one computing device to: obtain additional user interaction data from the another user, the additional user interaction data being associated with a playback of at least one of the first video content feature or the second video content feature; and update the relationship score based at least upon the additional user interaction data. 13. The system of claim 6 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expressed a preference towards both the first character and the second character. 14. A method, comprising: causing, by at least one computing device, a first network content to be rendered in a user interface for display on a client; obtaining, by the at least one computing device, first user interaction data from the client based at least in part upon a first interaction with the first network content; associating, by the at least one computing device, a user with a user preferred character represented in a first network content based at least in part upon the first user interaction data; causing, by the at least one computing device, a timeline user interface that segments the first network content into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtaining, by the at least one computing device, second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene among the plurality of scenes; referencing, by the at least one computing device, a library to identify a recommended character based at least upon the user preferred character and the second interaction data, the recommended character being represented in a second network content, the library associating the user preferred character to the recommended character according to a relationship score, the relationship score being calculated based at least in part upon a proportion of users who have expressed a preference towards both the user preferred character and the recommended character; and sending, by the at least one computing device, a recommendation for presentation of the second network content. 15. The method of claim 14 , wherein the user preferred character is a preferred fictional character and wherein the recommended character is a recommended fictional character. 16. The method of claim 14 , wherein the second network content comprises a video content feature, an electronic book (e-book), or an audio book. 17. The method of claim 14 , wherein associating the user with the user preferred character comprises obtaining explicit user feedback expressing that the user favors the user preferred character. 18. The method of claim 14 , further comprising obtaining, by the at least one computing device, user interaction data from the user based at least upon the presentation of the second network content. 19. The method of claim 18 , further comprising updating, by the at least one computing device, the relationship score based at least upon the user interaction data. 20. The method of claim 14 , further comprising: storing, by the at least one computing device, a first set of attributes associated with the user preferred character; and storing, by the at least one computing device, a second set of attributes associated with the recommended character; and determining, by the at least one computing device, the relationship score based at least upon a comparison between the first set of attributes and the second set of attributes. 21. A non-transitory computer-readable medium having a plurality of computer instructions executable by at least one computing device, wherein upon execution, the plurality of computer instructions cause the at least one computing device to: cause a first media content to be rendered in a user interface for display on a client; obtain first interaction data from the client based at least upon a first interaction with the first media content; determine that a user prefers a first fictional character based at least upon the first interaction data, the first fictional character being associated with the first media content; cause a timeline user interface that segments the first media content into a plurality of scenes to be rendered in response to obtaining the first interaction data; obtain second interaction data from the client based at least upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; determine that the user prefers a second fictional character based at least upon the second interaction data, the second fictional character being associated with a second media content; determine a relationship score based at least upon the first interaction data and the second interaction data, the relationship score quantifying a degree of commonality between the first fictional character and the second fictional character and being calculated based at least in part upon a proportion of users who have expressed a preference towards both the first fictional character and the second fictional character; and generate a recommendation to present at least one of the first media content or the second media content to another user based at least upon the relationship score. 22. The non-transitory computer-readable medium of claim 21 , wherein the first media content comprises an electronic book (e-book). 23. The non-transitory computer-readable medium of claim 21 , wherein the plurality of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at",
+          "llm_cache_list": [
+            "default:extract:fc07aa368ab1fc09d1e01381471bcdbc"
+          ],
+          "chunk_id": "US9374411B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US9374411B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "3deebe5a4f4731377e367025201bb18e9f1a104d6efd17f64930a9d99b9b4a17"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 1,
+              "raw_line": "entity<|#|>Computing Device<|#|>Artifact<|#|>A device that executes an application to render content, obtain interaction data, identify characters, calculate relationship scores, and generate recommendations.",
+              "fields": [
+                "entity",
+                "Computing Device",
+                "Artifact",
+                "A device that executes an application to render content, obtain interaction data, identify characters, calculate relationship scores, and generate recommendations."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 28,
+              "raw_line": "relation<|#|>Application<|#|>Computing Device<|#|>execution, causation<|#|>The application is executed by the computing device and causes it to perform various operations.",
+              "fields": [
+                "relation",
+                "Application",
+                "Computing Device",
+                "execution, causation",
+                "The application is executed by the computing device and causes it to perform various operations."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 29,
+              "raw_line": "relation<|#|>Computing Device<|#|>First Video Content Feature<|#|>rendering, processing<|#|>The computing device processes the first video content feature and identifies the first character in its scene.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "First Video Content Feature",
+                "rendering, processing",
+                "The computing device processes the first video content feature and identifies the first character in its scene."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 37,
+              "raw_line": "relation<|#|>Computing Device<|#|>First Network Content<|#|>rendering<|#|>The computing device causes the first network content to be rendered in a user interface for display on a client.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "First Network Content",
+                "rendering",
+                "The computing device causes the first network content to be rendered in a user interface for display on a client."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 38,
+              "raw_line": "relation<|#|>Computing Device<|#|>User Interaction Data<|#|>obtaining<|#|>The computing device obtains user interaction data from the client based on interactions with content.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "User Interaction Data",
+                "obtaining",
+                "The computing device obtains user interaction data from the client based on interactions with content."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 40,
+              "raw_line": "relation<|#|>Computing Device<|#|>Timeline User Interface<|#|>rendering, causation<|#|>The computing device causes the timeline user interface to be rendered in response to obtaining interaction data.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "Timeline User Interface",
+                "rendering, causation",
+                "The computing device causes the timeline user interface to be rendered in response to obtaining interaction data."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 43,
+              "raw_line": "relation<|#|>Computing Device<|#|>Library<|#|>referencing<|#|>The computing device references the library to identify a recommended character.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "Library",
+                "referencing",
+                "The computing device references the library to identify a recommended character."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 47,
+              "raw_line": "relation<|#|>Computing Device<|#|>Recommendation<|#|>sending, generation<|#|>The computing device sends a recommendation for presentation of the second network content.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "Recommendation",
+                "sending, generation",
+                "The computing device sends a recommendation for presentation of the second network content."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 61,
+              "raw_line": "relation<|#|>Non-Transitory Computer-Readable Medium<|#|>Computing Device<|#|>execution, instruction<|#|>The computer instructions on the medium are executable by the computing device to cause it to perform operations.",
+              "fields": [
+                "relation",
+                "Non-Transitory Computer-Readable Medium",
+                "Computing Device",
+                "execution, instruction",
+                "The computer instructions on the medium are executable by the computing device to cause it to perform operations."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 397,
+              "text": "at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the"
+            },
+            {
+              "chunk_char_start": 134,
+              "chunk_char_end": 570,
+              "text": "st one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim 11 , wherein the at least one application furt"
+            },
+            {
+              "chunk_char_start": 418,
+              "chunk_char_end": 854,
+              "text": "ing a preference for at least one of the first character or the second character. 12. The system of claim 11 , wherein the at least one application further causes the at least one computing device to: obtain additional user interaction data from the another user, the additional user interaction data being associated with a playback of at least one of the first video content feature or the second video content feature; and update the"
+            },
+            {
+              "chunk_char_start": 1023,
+              "chunk_char_end": 1459,
+              "text": "east in part upon a quantity of users who have expressed a preference towards both the first character and the second character. 14. A method, comprising: causing, by at least one computing device, a first network content to be rendered in a user interface for display on a client; obtaining, by the at least one computing device, first user interaction data from the client based at least in part upon a first interaction with the firs"
+            },
+            {
+              "chunk_char_start": 1156,
+              "chunk_char_end": 1592,
+              "text": "A method, comprising: causing, by at least one computing device, a first network content to be rendered in a user interface for display on a client; obtaining, by the at least one computing device, first user interaction data from the client based at least in part upon a first interaction with the first network content; associating, by the at least one computing device, a user with a user preferred character represented in a first n"
+            },
+            {
+              "chunk_char_start": 1331,
+              "chunk_char_end": 1767,
+              "text": " one computing device, first user interaction data from the client based at least in part upon a first interaction with the first network content; associating, by the at least one computing device, a user with a user preferred character represented in a first network content based at least in part upon the first user interaction data; causing, by the at least one computing device, a timeline user interface that segments the first ne"
+            },
+            {
+              "chunk_char_start": 1517,
+              "chunk_char_end": 1953,
+              "text": "ing device, a user with a user preferred character represented in a first network content based at least in part upon the first user interaction data; causing, by the at least one computing device, a timeline user interface that segments the first network content into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtaining, by the at least one computing device, second user interaction"
+            },
+            {
+              "chunk_char_start": 1732,
+              "chunk_char_end": 2168,
+              "text": "nterface that segments the first network content into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtaining, by the at least one computing device, second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being asso"
+            },
+            {
+              "chunk_char_start": 2080,
+              "chunk_char_end": 2516,
+              "text": "on the timeline user interface, the at least one character feedback interface being associated with a current scene among the plurality of scenes; referencing, by the at least one computing device, a library to identify a recommended character based at least upon the user preferred character and the second interaction data, the recommended character being represented in a second network content, the library associating the user pref"
+            },
+            {
+              "chunk_char_start": 2644,
+              "chunk_char_end": 3080,
+              "text": " least in part upon a proportion of users who have expressed a preference towards both the user preferred character and the recommended character; and sending, by the at least one computing device, a recommendation for presentation of the second network content. 15. The method of claim 14 , wherein the user preferred character is a preferred fictional character and wherein the recommended character is a recommended fictional charact"
+            },
+            {
+              "chunk_char_start": 3326,
+              "chunk_char_end": 3762,
+              "text": "rises obtaining explicit user feedback expressing that the user favors the user preferred character. 18. The method of claim 14 , further comprising obtaining, by the at least one computing device, user interaction data from the user based at least upon the presentation of the second network content. 19. The method of claim 18 , further comprising updating, by the at least one computing device, the relationship score based at least "
+            },
+            {
+              "chunk_char_start": 3526,
+              "chunk_char_end": 3962,
+              "text": "er interaction data from the user based at least upon the presentation of the second network content. 19. The method of claim 18 , further comprising updating, by the at least one computing device, the relationship score based at least upon the user interaction data. 20. The method of claim 14 , further comprising: storing, by the at least one computing device, a first set of attributes associated with the user preferred character; "
+            }
+          ],
+          "lexical_occurrence_count": 18
+        },
+        {
+          "publication_number": "US9374411B1",
+          "full_doc_id": "US9374411B1",
+          "file_path": "US9374411B1.txt",
+          "chunk_order_index": 2,
+          "tokens": 161,
+          "content_sha256": "b5779b04614e5a41d1a3eb710fae56a98a1d9153d5b676b056c38b64dd24a8be",
+          "exact_doc_char_start": 12390,
+          "exact_doc_char_end": 13265,
+          "content": "22. The non-transitory computer-readable medium of claim 21 , wherein the first media content comprises an electronic book (e-book). 23. The non-transitory computer-readable medium of claim 21 , wherein the plurality of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expressed a preference towards the first fictional character. 25. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is based at least in part upon whether the first fictional character and the second fictional character are associated with a similar genre.",
+          "llm_cache_list": [
+            "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf"
+          ],
+          "chunk_id": "US9374411B1-chunk-002",
+          "extraction_records": [
+            {
+              "chunk_id": "US9374411B1-chunk-002",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "55d66deeaf26058f9f185573d9c9eb15b74dc404982847d9df7aa98c8df82ed7"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 4,
+              "raw_line": "entity<|#|>Computing Device<|#|>Artifact<|#|>A device comprising at least one computing device that executes the plurality of computer instructions stored on the non-transitory computer-readable medium.",
+              "fields": [
+                "entity",
+                "Computing Device",
+                "Artifact",
+                "A device comprising at least one computing device that executes the plurality of computer instructions stored on the non-transitory computer-readable medium."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 14,
+              "raw_line": "relation<|#|>Computer Instructions<|#|>Computing Device<|#|>causes, executes<|#|>The plurality of computer instructions causes the at least one computing device to perform operations.",
+              "fields": [
+                "relation",
+                "Computer Instructions",
+                "Computing Device",
+                "causes, executes",
+                "The plurality of computer instructions causes the at least one computing device to perform operations."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 94,
+              "chunk_char_end": 530,
+              "text": "comprises an electronic book (e-book). 23. The non-transitory computer-readable medium of claim 21 , wherein the plurality of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based a"
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The computing device sends a recommendation for presentation of the second network content.",
+          "keywords": "generation,sending",
+          "source_id": "US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Recommendation",
+          "target": "Computing Device",
+          "edge_index": 294,
+          "source_chunks": [
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The application is executable in the computing device and causes it to perform content recommendation functions.<SEP>The application is executed by the computing device and causes it to perform various operations.",
+          "keywords": "causation,executable in,execution",
+          "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Application",
+          "target": "Computing Device",
+          "edge_index": 431,
+          "source_chunks": [
+            "US9374411B1-chunk-000",
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The non-transitory computer-readable medium has computer instructions executable by a computing device.<SEP>The computer instructions on the medium are executable by the computing device to cause it to perform operations.",
+          "keywords": "executed by,execution,instruction",
+          "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "Non-Transitory Computer-Readable Medium",
+          "edge_index": 452,
+          "source_chunks": [
+            "US9374411B1-chunk-000",
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computing device processes the first video content feature and identifies the first character in its scene.",
+          "keywords": "processing,rendering",
+          "source_id": "US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "First Video Content Feature",
+          "edge_index": 453,
+          "source_chunks": [
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computing device causes the first network content to be rendered in a user interface for display on a client.",
+          "keywords": "rendering",
+          "source_id": "US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "First Network Content",
+          "edge_index": 454,
+          "source_chunks": [
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computing device obtains user interaction data from the client based on interactions with content.",
+          "keywords": "obtaining",
+          "source_id": "US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "User Interaction Data",
+          "edge_index": 455,
+          "source_chunks": [
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computing device causes the timeline user interface to be rendered in response to obtaining interaction data.",
+          "keywords": "causation,rendering",
+          "source_id": "US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "Timeline User Interface",
+          "edge_index": 456,
+          "source_chunks": [
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computing device references the library to identify a recommended character.",
+          "keywords": "referencing",
+          "source_id": "US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "Library",
+          "edge_index": 457,
+          "source_chunks": [
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The plurality of computer instructions causes the at least one computing device to perform operations.",
+          "keywords": "causes,executes",
+          "source_id": "US9374411B1-chunk-002",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "Computer Instructions",
+          "edge_index": 458,
+          "source_chunks": [
+            "US9374411B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "file_paths": [
+        "US9514120B1.txt"
+      ],
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9514120B1",
+          "full_doc_id": "US9514120B1",
+          "file_path": "US9514120B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "0b094b66650820aadeb8cf681dbb275f6e8339dfd53ea0886553a1ad1e7e9a0e",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6477,
+          "content": "Publication number: US9514120B1\nTitle: Classification of a string as a typographical error based on feedback\n\nABSTRACT\nA computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference. The computing device sends data indicative of the presence of the potential typographical errors to users. The computing device collects feedback for the work from the users. The feedback for the work indicates whether the potential typographical errors are author-intended strings. The computing device combines the user feedback for the work with user feedback for other works and sorts the combined user feedback based on one or more selected parameters. The computing device determines, based on the sorted user feedback, that one or more of the potential typographical errors includes an acceptable string and updates the initial reference to include the acceptable string.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: identifying, by a processing device, a potential typographical error in a work using an initial reference, wherein the work comprises a plurality of words; sending, by the processing device, data indicative of presence of the potential typographical error in the work to a plurality of users; receiving, by the processing device, feedback for the work from the plurality of users, the feedback comprising an indicator that specifies that the potential typographical error is an author-intended string for the work, wherein the author-intended string comprises at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; combining, by the processing device, the feedback from the plurality of users for the work with feedback for a plurality of additional works to generate a combined feedback; sorting, by the processing device, the combined feedback based on one or more selected parameters associated with the work to generate a sorted feedback, wherein the one or more selected parameters comprises at least one of an author associated with the work, a title associated the work, a topic associated with the work, or a publisher associated with the work; determining, by the processing device and based on the sorted feedback, that the potential typographical error comprises an acceptable string; and updating, by the processing device, the initial reference to include the acceptable string. 2. The method of claim 1 , wherein determining that the potential typographical error comprises an acceptable string comprises: determining a percentage of the sorted feedback that identifies the potential typographical error as an author-intended string; determining that the percentage exceeds a threshold percentage; and identifying the potential typographical error as an acceptable string. 3. The method of claim 2 , further comprising: determining that the percentage does not exceed the threshold percentage; identifying the potential typographical error as an actual error; and associating an alternative string with the actual error. 4. The method of claim 1 , further comprising: generating one or more parameter-specific references based, at least in part, on the acceptable string. 5. The method of claim 4 , wherein generating one or more parameter-specific references comprises: determining, based on the sorted feedback, one or more parameters that are associated with the acceptable string; identifying a parameter-specific reference that corresponds to each of the one or more parameters associated with the acceptable string, wherein the one or more parameter-specific references comprises at least one of an author-specific reference, a title-specific reference, a topic-specific reference, or a publisher-specific reference. 6. The method of claim 1 , wherein updating the initial reference comprises: adding a string to the initial reference to represent the acceptable string. 7. The method of claim 1 , wherein the feedback for the work comprises at least one of a user identifier, a work identifier, at least one string identified as a potential typographical error, a position of the at least one string in a work, a decision indicating whether a corresponding string is an author-intended string, a confidence level of the decision, or at least one parameter associated with the corresponding string. 8. The method of claim 1 , wherein determining that the potential typographical error comprises an acceptable string comprises: compiling, based on the sorted feedback, one or more parameter-specific statistics; determining that at least one of the one or more parameter-specific statistics exceeds a threshold; and identifying the potential typographical error as an acceptable string. 9. The method of claim 8 , wherein the one or more parameter-specific statistics comprises at least one of a number of times users mark a potential typographical error as an author-intended string, a total number of times a potential typographical error is marked as an author-intended string, a percentage of feedback that marked the potential typographical error as an author-intended string, a percentage of users that marked the potential typographical error as an author-intended string, or a number of times the one or more potential typographical errors are marked as an author-intended string for a parameter. 10. A non-transitory computer-readable medium having instructions stored thereon which, when executed by a processing device, cause the processing device to perform operations comprising: receiving, by the processing device, feedback from a plurality of users for one or more potential typographical errors identified in a work, the feedback comprising an indicator that specifies that at least one of the one or more potential typographical errors are author-intended strings for the work, wherein the work comprises a plurality of words and wherein the author-intended strings comprise at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; determining, by the processing device and based at least in part on the indicator received in the feedback for the work, that one or more of the potential typographical errors is an author-intended string; combining, by the processing device, the feedback from",
+          "llm_cache_list": [
+            "default:extract:d59fe2a8e8eb522668e862aa852ac51f"
+          ],
+          "chunk_id": "US9514120B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9514120B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "4fe04b755a3773900247f241ed3834154557d16eacb219db1ebf120bb60459d7"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 2,
+              "raw_line": "entity<|#|>Computing Device<|#|>Artifact<|#|>A device hosting a server that identifies potential typographical errors in a work, sends data to users, collects and combines feedback, sorts the feedback, and updates an initial reference.",
+              "fields": [
+                "entity",
+                "Computing Device",
+                "Artifact",
+                "A device hosting a server that identifies potential typographical errors in a work, sends data to users, collects and combines feedback, sorts the feedback, and updates an initial reference."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Computing Device<|#|>Server<|#|>hosts<|#|>The computing device hosts a server that performs typographical error classification.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "Server",
+                "hosts",
+                "The computing device hosts a server that performs typographical error classification."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 26,
+              "raw_line": "relation<|#|>Computing Device<|#|>Initial Reference<|#|>uses, updates<|#|>The computing device identifies potential typographical errors using an initial reference and updates the initial reference to include acceptable strings.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "Initial Reference",
+                "uses, updates",
+                "The computing device identifies potential typographical errors using an initial reference and updates the initial reference to include acceptable strings."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 27,
+              "raw_line": "relation<|#|>Computing Device<|#|>Work<|#||>identifies errors in<|#|>The computing device identifies potential typographical errors in a work.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "Work<|#||>identifies errors in",
+                "The computing device identifies potential typographical errors in a work."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 28,
+              "raw_line": "relation<|#|>Computing Device<|#|>User Feedback<|#|>collects, combines, sorts<|#|>The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "User Feedback",
+                "collects, combines, sorts",
+                "The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 29,
+              "raw_line": "relation<|#|>Computing Device<|#|>Users<|#|>sends data to, collects feedback from<|#|>The computing device sends data indicative of potential typographical errors to users and collects feedback from them.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "Users",
+                "sends data to, collects feedback from",
+                "The computing device sends data indicative of potential typographical errors to users and collects feedback from them."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 54,
+              "raw_line": "relation<|#|>US9514120B1<|#|>Computing Device<|#|>describes<|#|>The patent document describes operations performed by a computing device for classifying typographical errors.",
+              "fields": [
+                "relation",
+                "US9514120B1",
+                "Computing Device",
+                "describes",
+                "The patent document describes operations performed by a computing device for classifying typographical errors."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 377,
+              "text": "Publication number: US9514120B1\nTitle: Classification of a string as a typographical error based on feedback\n\nABSTRACT\nA computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference. The computing device sends data indicative of the presence of the potential typographical errors to users. The computing device co"
+            },
+            {
+              "chunk_char_start": 71,
+              "chunk_char_end": 507,
+              "text": "typographical error based on feedback\n\nABSTRACT\nA computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference. The computing device sends data indicative of the presence of the potential typographical errors to users. The computing device collects feedback for the work from the users. The feedback for the work indicates whether the potential typographical errors are au"
+            },
+            {
+              "chunk_char_start": 178,
+              "chunk_char_end": 614,
+              "text": "potential typographical errors in a work using an initial reference. The computing device sends data indicative of the presence of the potential typographical errors to users. The computing device collects feedback for the work from the users. The feedback for the work indicates whether the potential typographical errors are author-intended strings. The computing device combines the user feedback for the work with user feedback for "
+            },
+            {
+              "chunk_char_start": 354,
+              "chunk_char_end": 790,
+              "text": "The computing device collects feedback for the work from the users. The feedback for the work indicates whether the potential typographical errors are author-intended strings. The computing device combines the user feedback for the work with user feedback for other works and sorts the combined user feedback based on one or more selected parameters. The computing device determines, based on the sorted user feedback, that one or more "
+            },
+            {
+              "chunk_char_start": 529,
+              "chunk_char_end": 965,
+              "text": " The computing device combines the user feedback for the work with user feedback for other works and sorts the combined user feedback based on one or more selected parameters. The computing device determines, based on the sorted user feedback, that one or more of the potential typographical errors includes an acceptable string and updates the initial reference to include the acceptable string.\n\nCLAIMS\nWhat is claimed is: 1. A method"
+            }
+          ],
+          "lexical_occurrence_count": 5
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The computing device hosts a server that performs typographical error classification.",
+          "keywords": "hosts",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Server",
+          "target": "Computing Device",
+          "edge_index": 88,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The patent document describes operations performed by a computing device for classifying typographical errors.",
+          "keywords": "describes",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "US9514120B1",
+          "target": "Computing Device",
+          "edge_index": 446,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computing device identifies potential typographical errors using an initial reference and updates the initial reference to include acceptable strings.",
+          "keywords": "updates,uses",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "Initial Reference",
+          "edge_index": 448,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computing device identifies potential typographical errors in a work.",
+          "keywords": "identifies errors in",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "Work",
+          "edge_index": 449,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback.",
+          "keywords": "collects,combines,sorts",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "User Feedback",
+          "edge_index": 450,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computing device sends data indicative of potential typographical errors to users and collects feedback from them.",
+          "keywords": "collects feedback from,sends data to",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "Users",
+          "edge_index": 451,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "The computing device hosts a server that performs typographical error classification.",
+      "keywords": "hosts",
+      "source_id": "US9514120B1-chunk-000",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "Server",
+      "target": "Computing Device",
+      "edge_index": 88,
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing device sends a recommendation for presentation of the second network content.",
+      "keywords": "generation,sending",
+      "source_id": "US9374411B1-chunk-001",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "Recommendation",
+      "target": "Computing Device",
+      "edge_index": 294,
+      "source_chunks": [
+        "US9374411B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The application is executable in the computing device and causes it to perform content recommendation functions.<SEP>The application is executed by the computing device and causes it to perform various operations.",
+      "keywords": "causation,executable in,execution",
+      "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "Application",
+      "target": "Computing Device",
+      "edge_index": 431,
+      "source_chunks": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The patent document describes operations performed by a computing device for classifying typographical errors.",
+      "keywords": "describes",
+      "source_id": "US9514120B1-chunk-000",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "US9514120B1",
+      "target": "Computing Device",
+      "edge_index": 446,
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing device identifies potential typographical errors using an initial reference and updates the initial reference to include acceptable strings.",
+      "keywords": "updates,uses",
+      "source_id": "US9514120B1-chunk-000",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "Initial Reference",
+      "edge_index": 448,
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing device identifies potential typographical errors in a work.",
+      "keywords": "identifies errors in",
+      "source_id": "US9514120B1-chunk-000",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "Work",
+      "edge_index": 449,
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback.",
+      "keywords": "collects,combines,sorts",
+      "source_id": "US9514120B1-chunk-000",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "User Feedback",
+      "edge_index": 450,
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing device sends data indicative of potential typographical errors to users and collects feedback from them.",
+      "keywords": "collects feedback from,sends data to",
+      "source_id": "US9514120B1-chunk-000",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "Users",
+      "edge_index": 451,
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The non-transitory computer-readable medium has computer instructions executable by a computing device.<SEP>The computer instructions on the medium are executable by the computing device to cause it to perform operations.",
+      "keywords": "executed by,execution,instruction",
+      "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "Non-Transitory Computer-Readable Medium",
+      "edge_index": 452,
+      "source_chunks": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing device processes the first video content feature and identifies the first character in its scene.",
+      "keywords": "processing,rendering",
+      "source_id": "US9374411B1-chunk-001",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "First Video Content Feature",
+      "edge_index": 453,
+      "source_chunks": [
+        "US9374411B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing device causes the first network content to be rendered in a user interface for display on a client.",
+      "keywords": "rendering",
+      "source_id": "US9374411B1-chunk-001",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "First Network Content",
+      "edge_index": 454,
+      "source_chunks": [
+        "US9374411B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing device obtains user interaction data from the client based on interactions with content.",
+      "keywords": "obtaining",
+      "source_id": "US9374411B1-chunk-001",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "User Interaction Data",
+      "edge_index": 455,
+      "source_chunks": [
+        "US9374411B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing device causes the timeline user interface to be rendered in response to obtaining interaction data.",
+      "keywords": "causation,rendering",
+      "source_id": "US9374411B1-chunk-001",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "Timeline User Interface",
+      "edge_index": 456,
+      "source_chunks": [
+        "US9374411B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing device references the library to identify a recommended character.",
+      "keywords": "referencing",
+      "source_id": "US9374411B1-chunk-001",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "Library",
+      "edge_index": 457,
+      "source_chunks": [
+        "US9374411B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The plurality of computer instructions causes the at least one computing device to perform operations.",
+      "keywords": "causes,executes",
+      "source_id": "US9374411B1-chunk-002",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "Computer Instructions",
+      "edge_index": 458,
+      "source_chunks": [
+        "US9374411B1-chunk-002"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing devices execute machine-readable instructions on the non-transitory machine-readable media.",
+      "keywords": "executes instructions from",
+      "source_id": "US9218390B2-chunk-002",
+      "file_path": "US9218390B2.txt",
+      "created_at": 1793284503,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "Non-Transitory Machine-Readable Media",
+      "edge_index": 459,
+      "source_chunks": [
+        "US9218390B2-chunk-002"
+      ],
+      "canonical_publications": [
+        "US9218390B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

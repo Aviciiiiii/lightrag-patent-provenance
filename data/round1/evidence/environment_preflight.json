@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-29T13:13:48.538968+00:00",
+  "python": "3.10.6",
+  "model_env_names_present": [],
+  "ollama_executable_present": false,
+  "localhost_model_ports": {
+    "11434": "connection refused",
+    "1234": "connection refused"
+  },
+  "credentials_read": false,
+  "autodl_accessed": false,
+  "existing_processes_modified": false,
+  "model_calls": 0,
+  "model_cost_usd": 0,
+  "status": "model service not yet configured; awaiting optional user-provided service/config location"
+}

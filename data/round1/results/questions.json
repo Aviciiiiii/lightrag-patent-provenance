@@ -1,0 +1,407 @@
+{
+  "schema_version": "1.0",
+  "dataset": "lj408/Dis2Pat",
+  "query_execution_status": "not_run",
+  "review_method": "AI-assisted reading of source text, exact-substring and numbered-claim mechanical validation; not an independent human gold standard",
+  "source_file_sha256": "5731610a33b698c76010c4383c92b72653ef4617ae22b82a8c1a7a21c627c038",
+  "question_count": 10,
+  "questions": [
+    {
+      "id": "Q01",
+      "category": "A_specific_entity",
+      "question": "Which patent in this collection uses multiple hash functions and hash tables to select a speaker vector and output a speaker identity? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "question_zh": "哪篇专利用多个哈希函数及哈希表选择说话人向量并输出身份？",
+      "correct_publication_numbers": [
+        "US9514753B2"
+      ],
+      "expected_answer_zh": "US9514753B2，Claim 1：对utterance vector计算多个hash values，用hash tables取得speaker vectors，比较、选择后输出speaker identity。",
+      "evidence": [
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 1,
+          "quote": "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values",
+          "quote_char_start_in_raw_claims": 109,
+          "quote_char_end_in_raw_claims": 296,
+          "full_claim": "1. A method comprising: obtaining an utterance vector that is derived from an utterance; determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "source_url": "https://patents.google.com/patent/US9514753B2/en",
+          "verified_exact_substring": true
+        },
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 1,
+          "quote": "determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "quote_char_start_in_raw_claims": 557,
+          "quote_char_end_in_raw_claims": 686,
+          "full_claim": "1. A method comprising: obtaining an utterance vector that is derived from an utterance; determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "source_url": "https://patents.google.com/patent/US9514753B2/en",
+          "verified_exact_substring": true
+        }
+      ],
+      "status": "not_run",
+      "naive": null,
+      "mix": null,
+      "error_category": null,
+      "attribution": "No official query has been run for this record. Do not interpret missing answers as retrieval failures."
+    },
+    {
+      "id": "Q02",
+      "category": "A_specific_entity",
+      "question": "Which patent uses a data catalog history object describing a first ETL process to trigger a second subscribed ETL process? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "question_zh": "哪篇专利用数据目录中的history object记录首个ETL过程，并触发订阅事件的第二个ETL过程？",
+      "correct_publication_numbers": [
+        "US11423041B2"
+      ],
+      "expected_answer_zh": "US11423041B2，Claim 1：在history object中记录首个ETL过程，按事件条件评估并执行第二个ETL过程。",
+      "evidence": [
+        {
+          "publication_number": "US11423041B2",
+          "claim_number": 1,
+          "quote": "the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object",
+          "quote_char_start_in_raw_claims": 588,
+          "quote_char_end_in_raw_claims": 810,
+          "full_claim": "1. A system, comprising: at least one processor; and a memory, storing program instructions that when executed by the at least one processor, cause the at least one processor to implement a data catalog for an Extract, Transform, Load (ETL) service, the data catalog configured to: receive, at the data catalog, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; store, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluate, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed.",
+          "source_url": "https://patents.google.com/patent/US11423041B2/en",
+          "verified_exact_substring": true
+        },
+        {
+          "publication_number": "US11423041B2",
+          "claim_number": 1,
+          "quote": "in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed.",
+          "quote_char_start_in_raw_claims": 1248,
+          "quote_char_end_in_raw_claims": 1421,
+          "full_claim": "1. A system, comprising: at least one processor; and a memory, storing program instructions that when executed by the at least one processor, cause the at least one processor to implement a data catalog for an Extract, Transform, Load (ETL) service, the data catalog configured to: receive, at the data catalog, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; store, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluate, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed.",
+          "source_url": "https://patents.google.com/patent/US11423041B2/en",
+          "verified_exact_substring": true
+        }
+      ],
+      "status": "not_run",
+      "naive": null,
+      "mix": null,
+      "error_category": null,
+      "attribution": "No official query has been run for this record. Do not interpret missing answers as retrieval failures."
+    },
+    {
+      "id": "Q03",
+      "category": "B_claim_evidence",
+      "question": "In US8509827B2, which claim explicitly ranks context-data sources using the pecuniary cost of acquiring their context data? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "question_zh": "US8509827B2哪一Claim明确按获取上下文数据的货币成本排序数据源？",
+      "correct_publication_numbers": [
+        "US8509827B2"
+      ],
+      "expected_answer_zh": "Claim 1明确规定按specified parameter排序context data source，该参数包括pecuniary cost。Claim 18也有平行装置表达，若答案同时指出也应接受。",
+      "evidence": [
+        {
+          "publication_number": "US8509827B2",
+          "claim_number": 1,
+          "quote": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source",
+          "quote_char_start_in_raw_claims": 424,
+          "quote_char_end_in_raw_claims": 646,
+          "full_claim": "1. A method comprising: receiving a short message from a mobile device with a server; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type from the at least one context data source.",
+          "source_url": "https://patents.google.com/patent/US8509827B2/en",
+          "verified_exact_substring": true
+        }
+      ],
+      "status": "not_run",
+      "naive": null,
+      "mix": null,
+      "error_category": null,
+      "attribution": "No official query has been run for this record. Do not interpret missing answers as retrieval failures.",
+      "source_quality_caveat": "This patent has upstream malformed parent-claim references in claims 2/3; this question uses intact claim 1. Parallel claim 18 is also acceptable with exact supporting text."
+    },
+    {
+      "id": "Q04",
+      "category": "B_claim_evidence",
+      "question": "In US9514753B2, which claim explicitly specifies locality sensitive hash functions, and what exact wording supports this? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "question_zh": "US9514753B2哪一Claim明确指定locality sensitive hash functions？",
+      "correct_publication_numbers": [
+        "US9514753B2"
+      ],
+      "expected_answer_zh": "Claim 6，要求使用one or more locality sensitive hash functions确定hash values。",
+      "evidence": [
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 6,
+          "quote": "6. The method of claim 1 , wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.",
+          "quote_char_start_in_raw_claims": 2447,
+          "quote_char_end_in_raw_claims": 2600,
+          "full_claim": "6. The method of claim 1 , wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.",
+          "source_url": "https://patents.google.com/patent/US9514753B2/en",
+          "verified_exact_substring": true
+        }
+      ],
+      "status": "not_run",
+      "naive": null,
+      "mix": null,
+      "error_category": null,
+      "attribution": "No official query has been run for this record. Do not interpret missing answers as retrieval failures."
+    },
+    {
+      "id": "Q05",
+      "category": "B_claim_evidence",
+      "question": "In US8655901B1, which method claim requires cross-validating a translated query pattern against a query log using an occurrence threshold? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "question_zh": "US8655901B1哪一方法Claim要求按出现次数阈值，以查询日志交叉验证翻译后的查询模式？",
+      "correct_publication_numbers": [
+        "US8655901B1"
+      ],
+      "expected_answer_zh": "方法Claim 7（系统Claim 14有平行表达）：cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold。",
+      "evidence": [
+        {
+          "publication_number": "US8655901B1",
+          "claim_number": 7,
+          "quote": "7. The method of claim 1 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.",
+          "quote_char_start_in_raw_claims": 2776,
+          "quote_char_end_in_raw_claims": 2977,
+          "full_claim": "7. The method of claim 1 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.",
+          "source_url": "https://patents.google.com/patent/US8655901B1/en",
+          "verified_exact_substring": true
+        }
+      ],
+      "status": "not_run",
+      "naive": null,
+      "mix": null,
+      "error_category": null,
+      "attribution": "No official query has been run for this record. Do not interpret missing answers as retrieval failures."
+    },
+    {
+      "id": "Q06",
+      "category": "C_cross_document",
+      "question": "Compare how US7991757B2 and US8095432B1 select or rank recommendations. Does either claim say the two systems interoperate? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "question_zh": "比较US7991757B2与US8095432B1的推荐选择/排序依据；原文是否说两个系统互操作？",
+      "correct_publication_numbers": [
+        "US7991757B2",
+        "US8095432B1"
+      ],
+      "expected_answer_zh": "前者Claim 1从外部recommenders取得scores，经normalize后选subset；后者Claim 1依据社交relationship proximity排序，朋友的rank高于非朋友。两者共享推荐排序主题是本次比较归纳；所引Claims没有声称两专利系统互操作，不能推断两专利绝无其他关联。",
+      "evidence": [
+        {
+          "publication_number": "US7991757B2",
+          "claim_number": 1,
+          "quote": "an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.",
+          "quote_char_start_in_raw_claims": 1688,
+          "quote_char_end_in_raw_claims": 1939,
+          "full_claim": "1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.",
+          "source_url": "https://patents.google.com/patent/US7991757B2/en",
+          "verified_exact_substring": true
+        },
+        {
+          "publication_number": "US8095432B1",
+          "claim_number": 1,
+          "quote": "ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank",
+          "quote_char_start_in_raw_claims": 766,
+          "quote_char_end_in_raw_claims": 1015,
+          "full_claim": "1. A method for generating a recommendation list for an item, comprising: obtaining a first recommendation for the item from a first member of a social networking utility, wherein the first member of the social networking utility is a friend of an inquiring member within the social networking utility; obtaining a second recommendation for the item from a second member of the social networking utility, wherein the second member of the social networking utility is a non-friend of the inquiring member within the social networking utility; determining, using a processor, a first relationship proximity of the first member with the inquiring member; determining, using the processor, a second relationship proximity of the second member with the inquiring member; ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank; receiving, from the inquiring member, a request to search for the item in the social networking utility; performing, based on the request from the inquiring member, a search for the item within the social networking utility; generating, using the processor, a recommendation list for the item comprising the first recommendation and the second recommendation, wherein the first recommendation is higher on the recommendation list than the second recommendation based on the first rank exceeding the second rank; determining that the first member comprises a plurality of interests in common with the inquiring member; determining that a third member of the social networking utility comprises a plurality of different interests than the inquiring member; comparing the first rank of the first recommendation of the first member with a third rank of a third recommendation of the third member; and determining that the first rank is higher than the third rank.",
+          "source_url": "https://patents.google.com/patent/US8095432B1/en",
+          "verified_exact_substring": true
+        }
+      ],
+      "status": "not_run",
+      "naive": null,
+      "mix": null,
+      "error_category": null,
+      "attribution": "No official query has been run for this record. Do not interpret missing answers as retrieval failures.",
+      "comparison_relation_type": "Analyst comparison of separate primary-source facts; no asserted patent-to-patent relationship."
+    },
+    {
+      "id": "Q07",
+      "category": "C_cross_document",
+      "question": "Compare the source-selection criterion in US8509827B2 with the entity-driven content request in US10867122B1. What does each explicitly require? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "question_zh": "比较US8509827B2的数据源选择标准与US10867122B1的实体驱动内容请求，两者各自明确要求什么？",
+      "correct_publication_numbers": [
+        "US8509827B2",
+        "US10867122B1"
+      ],
+      "expected_answer_zh": "US8509827B2 Claim 1按包括获取成本的参数排序context-data sources；US10867122B1 Claim 1请求与first和second factual entity均相关的UI内容。共同的上下文内容获取主题是比较，不是原文声明的专利间链接。",
+      "evidence": [
+        {
+          "publication_number": "US8509827B2",
+          "claim_number": 1,
+          "quote": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source",
+          "quote_char_start_in_raw_claims": 424,
+          "quote_char_end_in_raw_claims": 646,
+          "full_claim": "1. A method comprising: receiving a short message from a mobile device with a server; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type from the at least one context data source.",
+          "source_url": "https://patents.google.com/patent/US8509827B2/en",
+          "verified_exact_substring": true
+        },
+        {
+          "publication_number": "US10867122B1",
+          "claim_number": 1,
+          "quote": "requesting, for a user interface element, content that is related to both the first factual entity and the second factual entity, wherein the user interface element provides a collection of content related to the first factual entity and the second factual entity within the display environment",
+          "quote_char_start_in_raw_claims": 1640,
+          "quote_char_end_in_raw_claims": 1934,
+          "full_claim": "1. A method performed by a data processing apparatus, the method comprising: receiving content displayed within a display environment that is displayed on a user device as the content is being typed into the display environment by a user; determining, while receiving a first portion of the content being typed in the display environment that is displayed on a user device, and based on a second portion of the content that (i) was previously typed and (ii) is behind an input cursor included in the display environment, a first factual entity related to the second portion of content that is behind the input cursor; after determining the first factual entity and while receiving a third portion of the content being typed and based on (i) the first portion of the content that was previously typed and (ii) the second portion content that was previously typed, that both collectively comprise an updated portion of content that occurs in the display environment, determining a second factual entity that is related to the first portion of the content, the second portion of the content, and the third portion of the content, the determining the second factual entity comprising: determining that a measured level of intent for the third portion of the content is greater than a threshold level of intent; and in response to determining that the measured level of intent for the third portion of the content is greater than the threshold level of intent, determining the second factual entity that is related to the first portion of the content, the second portion of the content, and the third portion of the content; requesting, for a user interface element, content that is related to both the first factual entity and the second factual entity, wherein the user interface element provides a collection of content related to the first factual entity and the second factual entity within the display environment; receiving the content of the user interface element for contemporaneous display on the user device with the content of the display environment; and providing, to the user device, instructions to cause display of the content in the user interface element with the display environment.",
+          "source_url": "https://patents.google.com/patent/US10867122B1/en",
+          "verified_exact_substring": true
+        }
+      ],
+      "status": "not_run",
+      "naive": null,
+      "mix": null,
+      "error_category": null,
+      "attribution": "No official query has been run for this record. Do not interpret missing answers as retrieval failures.",
+      "comparison_relation_type": "Analyst comparison, not an extracted patent-to-patent factual edge."
+    },
+    {
+      "id": "Q08",
+      "category": "D_natural_cross_chunk_candidate",
+      "question": "In US9514753B2, trace the claim dependency chain connecting hash-table speaker candidates to selection using the smallest cosine distance below a maximum threshold. Identify the relevant claims and conditions. Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "question_zh": "追踪US9514753B2从哈希表候选说话人到按最小余弦距离及最大阈值选取说话人的Claim依赖链。",
+      "correct_publication_numbers": [
+        "US9514753B2"
+      ],
+      "expected_answer_zh": "Claim 11依赖10，10依赖9，9依赖1；1以hash values从hash tables取得speaker vectors，9按similarity scores选most similar，10用cosine distance，11要求smallest cosine distance低于maximum distance threshold。这里是原文依赖链，不应把余弦距离最小条件错误归为Claim 1的逐字要求。",
+      "evidence": [
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 1,
+          "quote": "determining a set of speaker vectors from a plurality of hash tables using the hash values",
+          "quote_char_start_in_raw_claims": 206,
+          "quote_char_end_in_raw_claims": 296,
+          "full_claim": "1. A method comprising: obtaining an utterance vector that is derived from an utterance; determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "source_url": "https://patents.google.com/patent/US9514753B2/en",
+          "verified_exact_substring": true
+        },
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 9,
+          "quote": "9. The method of claim 1 , wherein comparing the speaker vectors in the set with the utterance vector comprises determining similarity scores",
+          "quote_char_start_in_raw_claims": 3272,
+          "quote_char_end_in_raw_claims": 3413,
+          "full_claim": "9. The method of claim 1 , wherein comparing the speaker vectors in the set with the utterance vector comprises determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set; and wherein selecting a speaker vector comprises selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector.",
+          "source_url": "https://patents.google.com/patent/US9514753B2/en",
+          "verified_exact_substring": true
+        },
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 10,
+          "quote": "10. The method of claim 9 , wherein determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set comprises determining a cosine distance between the utterance vector and each of the speaker vectors in the set.",
+          "quote_char_start_in_raw_claims": 3678,
+          "quote_char_end_in_raw_claims": 3964,
+          "full_claim": "10. The method of claim 9 , wherein determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set comprises determining a cosine distance between the utterance vector and each of the speaker vectors in the set.",
+          "source_url": "https://patents.google.com/patent/US9514753B2/en",
+          "verified_exact_substring": true
+        },
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 11,
+          "quote": "11. The method of claim 10 , wherein selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector comprises: identifying a smallest cosine distance from among the determined cosine distances; determining that the smallest cosine distance is less than a maximum distance threshold value; and based on determining that the smallest cosine distance is less than the maximum distance threshold value, selecting the speaker vector corresponding to the smallest cosine distance.",
+          "quote_char_start_in_raw_claims": 3965,
+          "quote_char_end_in_raw_claims": 4481,
+          "full_claim": "11. The method of claim 10 , wherein selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector comprises: identifying a smallest cosine distance from among the determined cosine distances; determining that the smallest cosine distance is less than a maximum distance threshold value; and based on determining that the smallest cosine distance is less than the maximum distance threshold value, selecting the speaker vector corresponding to the smallest cosine distance.",
+          "source_url": "https://patents.google.com/patent/US9514753B2/en",
+          "verified_exact_substring": true
+        }
+      ],
+      "status": "not_run",
+      "naive": null,
+      "mix": null,
+      "error_category": null,
+      "attribution": "No official query has been run for this record. Do not interpret missing answers as retrieval failures.",
+      "chunk_boundary_status": "candidate_only_pending_actual_official_tokenizer_mapping",
+      "dependency_chain": [
+        11,
+        10,
+        9,
+        1
+      ],
+      "failure_inference_permitted": false
+    },
+    {
+      "id": "Q09",
+      "category": "D_natural_cross_chunk_candidate",
+      "question": "In US9298709B2, connect the geographic-map-based IP-rights visualization process to the on-screen-button update condition. Which dependent claims establish that connection? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "question_zh": "追踪US9298709B2地图范围内IP权利可视化流程与屏幕按钮触发更新条件之间的Claim依赖。",
+      "correct_publication_numbers": [
+        "US9298709B2"
+      ],
+      "expected_answer_zh": "Claim 17依赖16，16依赖10；10生成地理范围及限制条件筛选后的IP可视化，16规定user initiated command之后更新，17指定pressing of an on-screen button。应保留10→16→17的从属关系。",
+      "evidence": [
+        {
+          "publication_number": "US9298709B2",
+          "claim_number": 10,
+          "quote": "restricting the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights, generating and displaying an information pane containing one or more data visualizations related to the restricted list of IP rights",
+          "quote_char_start_in_raw_claims": 7103,
+          "quote_char_end_in_raw_claims": 7376,
+          "full_claim": "10. A process for visualizing data from an IP rights database comprising: monitoring and storing at least recent geographic co-ordinates of a viewable area of a geographic map and issuing a display change notification on detecting a change in the viewable area of the geographic map the display change notification being generated after a pre-defined time period elapses and there has been no change in the viewable area of the geographic map, generating a list of IP rights, from the IP rights database, in which a geographic address of at least one owner of each IP right is within a geographic area defined by geographic co-ordinates of a current viewable area of the geographic map display, restricting the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights, generating and displaying an information pane containing one or more data visualizations related to the restricted list of IP rights, and generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic co-ordinates of the current viewable area of the geographic map display.",
+          "source_url": "https://patents.google.com/patent/US9298709B2/en",
+          "verified_exact_substring": true
+        },
+        {
+          "publication_number": "US9298709B2",
+          "claim_number": 16,
+          "quote": "16. A process according to claim 10 , wherein generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic coordinates of the current viewable area of the geographic map display occurs following a user initiated command.",
+          "quote_char_start_in_raw_claims": 9462,
+          "quote_char_end_in_raw_claims": 9756,
+          "full_claim": "16. A process according to claim 10 , wherein generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic coordinates of the current viewable area of the geographic map display occurs following a user initiated command.",
+          "source_url": "https://patents.google.com/patent/US9298709B2/en",
+          "verified_exact_substring": true
+        },
+        {
+          "publication_number": "US9298709B2",
+          "claim_number": 17,
+          "quote": "17. A process according to claim 16 , wherein the user initiated command comprises the pressing of an on-screen button.",
+          "quote_char_start_in_raw_claims": 9757,
+          "quote_char_end_in_raw_claims": 9876,
+          "full_claim": "17. A process according to claim 16 , wherein the user initiated command comprises the pressing of an on-screen button.",
+          "source_url": "https://patents.google.com/patent/US9298709B2/en",
+          "verified_exact_substring": true
+        }
+      ],
+      "status": "not_run",
+      "naive": null,
+      "mix": null,
+      "error_category": null,
+      "attribution": "No official query has been run for this record. Do not interpret missing answers as retrieval failures.",
+      "chunk_boundary_status": "candidate_only_pending_actual_official_tokenizer_mapping",
+      "dependency_chain": [
+        17,
+        16,
+        10
+      ],
+      "failure_inference_permitted": false
+    },
+    {
+      "id": "Q10",
+      "category": "B_claim_evidence",
+      "question": "In US11423041B2, which dependent system claim says the first ETL process is external to the ETL service while the second is performed by that service? Contrast it with the next claim. Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "question_zh": "US11423041B2哪一从属系统Claim规定首个ETL过程在服务外执行、第二个由服务执行？与下一Claim有何区别？",
+      "correct_publication_numbers": [
+        "US11423041B2"
+      ],
+      "expected_answer_zh": "Claim 5：first external、second by service；Claim 6：first和second都由ETL service执行。这是不同从属实施限定，不能把二者同时强加于同一个实施。",
+      "evidence": [
+        {
+          "publication_number": "US11423041B2",
+          "claim_number": 5,
+          "quote": "5. The system of claim 1 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "quote_char_start_in_raw_claims": 3166,
+          "quote_char_end_in_raw_claims": 3331,
+          "full_claim": "5. The system of claim 1 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "source_url": "https://patents.google.com/patent/US11423041B2/en",
+          "verified_exact_substring": true
+        },
+        {
+          "publication_number": "US11423041B2",
+          "claim_number": 6,
+          "quote": "6. The system of claim 1 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "quote_char_start_in_raw_claims": 3332,
+          "quote_char_end_in_raw_claims": 3488,
+          "full_claim": "6. The system of claim 1 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "source_url": "https://patents.google.com/patent/US11423041B2/en",
+          "verified_exact_substring": true
+        }
+      ],
+      "status": "not_run",
+      "naive": null,
+      "mix": null,
+      "error_category": null,
+      "attribution": "No official query has been run for this record. Do not interpret missing answers as retrieval failures."
+    }
+  ],
+  "interpretation_rules": [
+    "Missing answers are not system failures.",
+    "Cross-chunk candidates must be confirmed against actual chunk mapping before classification.",
+    "A missing graph edge alone does not identify chunking as the cause.",
+    "Citation errors must be assessed separately from extraction errors.",
+    "Negative claims about interoperability are limited to the cited text."
+  ]
+}

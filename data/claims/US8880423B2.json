@@ -1,0 +1,104 @@
+[
+  {
+    "claim_number": 1,
+    "start_char_in_raw_claims": 20,
+    "end_char_in_raw_claims": 1182,
+    "text": "1. A method for estimating advertisement inventory, comprising: clustering, using a processor, a plurality of viewed pages into a plurality of clusters to generate a plurality of page view probability vectors that includes a page view probability vector for each viewed page, said clustering based on a frequency of search keywords present in the viewed pages; clustering by the processor, a plurality of search keywords into the plurality of clusters to generate a plurality of keyword probability vectors that includes a keyword probability vector for each search keyword, the search keywords based on search keywords previously submitted by a plurality of users, and the plurality of viewed pages including previously viewed pages corresponding to the previously submitted search keywords; clustering the plurality of viewed pages into a plurality of clusters based on a time-decaying weighted frequency of the search keywords and an intensity value of the search keywords, present in the viewed pages; and estimating by the processor, a plurality of total inventories that includes an estimated total inventory for each cluster of the plurality of clusters."
+  },
+  {
+    "claim_number": 2,
+    "start_char_in_raw_claims": 1182,
+    "end_char_in_raw_claims": 1533,
+    "text": "2. The method of claim 1 , wherein said clustering the plurality of viewed pages into a plurality of clusters based on a frequency of search keywords present in the viewed pages comprises: clustering the plurality of viewed pages into a plurality of clusters based on a time-decaying weighted frequency of search keywords present in the viewed pages."
+  },
+  {
+    "claim_number": 3,
+    "start_char_in_raw_claims": 1533,
+    "end_char_in_raw_claims": 1752,
+    "text": "3. The method of claim 1 , further comprising: limiting the plurality of search keywords to at least one of a predetermined maximum number of search keywords or search keywords submitted in a predetermined time period."
+  },
+  {
+    "claim_number": 4,
+    "start_char_in_raw_claims": 1752,
+    "end_char_in_raw_claims": 2056,
+    "text": "4. The method of claim 1 , wherein said estimating a total inventory for each cluster of the plurality of clusters comprises: for each cluster, summing the probabilities included in the plurality of page view probability vectors for the cluster to generate the estimated total inventory for the cluster."
+  },
+  {
+    "claim_number": 5,
+    "start_char_in_raw_claims": 2056,
+    "end_char_in_raw_claims": 2238,
+    "text": "5. The method of claim 1 , further comprising: receiving a search retargeting segment that includes a set of search keywords; and estimating a deliverable inventory for the segment."
+  },
+  {
+    "claim_number": 6,
+    "start_char_in_raw_claims": 2238,
+    "end_char_in_raw_claims": 2574,
+    "text": "6. The method of claim 5 , wherein said estimating a deliverable inventory for the segment comprises: determining a deliverable inventory estimate for the segment for each cluster to generate a plurality of cluster-specific deliverable inventory estimates; and summing the plurality of cluster-specific deliverable inventory estimates."
+  },
+  {
+    "claim_number": 7,
+    "start_char_in_raw_claims": 2574,
+    "end_char_in_raw_claims": 3141,
+    "text": "7. The method of claim 6 , wherein said determining a deliverable inventory estimate for the segment for each cluster to generate a plurality of cluster-specific deliverable inventory estimates comprises: for each cluster, summing the probabilities of the search keywords included in the segment that are included in the plurality of keyword probability vectors for the cluster, and multiplying the summed probabilities for the cluster by the estimated total inventory for the cluster to determine the cluster-specific deliverable inventory estimate for the cluster."
+  },
+  {
+    "claim_number": 8,
+    "start_char_in_raw_claims": 3141,
+    "end_char_in_raw_claims": 4084,
+    "text": "8. A method for estimating advertisement inventory, comprising: receiving, by a processor, a search retargeting segment that includes a set of search keywords; clustering, using a processor, a plurality of viewed pages into a plurality of clusters to generate a plurality of page view probability vectors that includes a page view probability vector for each viewed page, said clustering based on a frequency of search keywords present in the viewed pages, the search keywords based on keywords previously submitted by a plurality of users, and the plurality of view pages including previously viewed pages corresponding to the previously submitted keywords; clustering the plurality of viewed pages into a plurality of clusters based on a time-decaying weighted frequency of the search keywords and an intensity value of the keywords, present in the viewed pages; and estimating, using the processor, a deliverable inventory for the segment."
+  },
+  {
+    "claim_number": 9,
+    "start_char_in_raw_claims": 4084,
+    "end_char_in_raw_claims": 4766,
+    "text": "9. The method of claim 8 , wherein said estimating a deliverable inventory for the segment comprises: receiving an indication of a plurality of clusters; receiving a plurality of page view probability vectors that includes a page view probability vector for each viewed page of a plurality of previously viewed pages, each page view probability vector indicating probabilities of a corresponding viewed page being included in each of the clusters; determining a deliverable inventory estimate for the segment for each cluster to generate a plurality of cluster-specific deliverable inventory estimates; and summing the plurality of cluster-specific deliverable inventory estimates."
+  },
+  {
+    "claim_number": 10,
+    "start_char_in_raw_claims": 4766,
+    "end_char_in_raw_claims": 5623,
+    "text": "10. The method of claim 9 , wherein said determining a deliverable inventory estimate for the segment for each cluster to generate a plurality of cluster-specific deliverable inventory estimates comprises: receiving a plurality of keyword probability vectors that includes a keyword probability vector for each of a plurality of previously submitted search keywords, each keyword probability vector indicating probabilities of a corresponding keyword being included in each of the clusters; and for each cluster, summing the probabilities of the search keywords included in the segment that are included in the plurality of keyword probability vectors for the cluster, and multiplying the summed probabilities for the cluster by the estimated total inventory for the cluster to determine the cluster-specific deliverable inventory estimate for the cluster."
+  },
+  {
+    "claim_number": 11,
+    "start_char_in_raw_claims": 5623,
+    "end_char_in_raw_claims": 6950,
+    "text": "11. A system for estimating advertisement inventory, stored in a non-transitory medium executable by a processor, comprising: a cluster probability vector processor configured to cluster a plurality of viewed pages into a plurality of clusters to generate a plurality of page view probability vectors that includes a page view probability vector for each viewed page, said clustering based on a frequency of search keywords present in the viewed pages; the cluster probability vector processor configured to cluster a plurality of search keywords into the plurality of clusters to generate a plurality of keyword probability vectors that includes a keyword probability vector for each search keyword, the search keywords based on search keywords previously submitted by a plurality of users, and the plurality of view pages including previously viewed pages corresponding to the previously submitted search keywords; clustering the plurality of viewed pages into a plurality of clusters based on a time-decaying weighted frequency of the search keywords and an intensity value of the search keywords, present in the viewed pages; and a cluster total inventory estimation processor configured to estimate a plurality of total inventories that includes an estimated total inventory for each cluster of the plurality of clusters."
+  },
+  {
+    "claim_number": 12,
+    "start_char_in_raw_claims": 6950,
+    "end_char_in_raw_claims": 7204,
+    "text": "12. The system of claim 11 , wherein the cluster probability vector generator is configured to cluster the plurality of viewed pages into a plurality of clusters based on a time-decaying weighted frequency of search keywords present in the viewed pages."
+  },
+  {
+    "claim_number": 13,
+    "start_char_in_raw_claims": 7204,
+    "end_char_in_raw_claims": 7453,
+    "text": "13. The system of claim 11 , further comprising: a keyword filter configured to limit the plurality of search keywords to at least one of a predetermined maximum number of search keywords or search keywords submitted in a predetermined time period."
+  },
+  {
+    "claim_number": 14,
+    "start_char_in_raw_claims": 7453,
+    "end_char_in_raw_claims": 7703,
+    "text": "14. The system of claim 11 , wherein for each cluster, the cluster total inventory estimator sums the probabilities included in the plurality of page view probability vectors for the cluster to generate the estimated total inventory for the cluster."
+  },
+  {
+    "claim_number": 15,
+    "start_char_in_raw_claims": 7703,
+    "end_char_in_raw_claims": 7920,
+    "text": "15. The system of claim 11 , further comprising: a segment inventory estimator that receives a search retargeting segment that includes a set of search keywords, and estimates a deliverable inventory for the segment."
+  },
+  {
+    "claim_number": 16,
+    "start_char_in_raw_claims": 7920,
+    "end_char_in_raw_claims": 8361,
+    "text": "16. The system of claim 15 , wherein the segment inventory estimator comprises: a cluster deliverable inventory estimator that determines a deliverable inventory estimate for the segment for each cluster to generate a plurality of cluster-specific deliverable inventory estimates; and a summer that sums the plurality of cluster-specific deliverable inventory estimates to generate the estimate of the deliverable inventory for the segment."
+  },
+  {
+    "claim_number": 17,
+    "start_char_in_raw_claims": 8361,
+    "end_char_in_raw_claims": 8799,
+    "text": "17. The system of claim 16 , wherein for each cluster, the cluster deliverable inventory estimator sums the probabilities of the search keywords included in the segment that are included in the plurality of keyword probability vectors for the cluster, and multiplies the summed probabilities for the cluster by the estimated total inventory for the cluster to determine the cluster-specific deliverable inventory estimate for the cluster."
+  }
+]

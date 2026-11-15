@@ -1,0 +1,27 @@
+{
+  "condition": "C",
+  "repeat": 2,
+  "call_id": 5,
+  "request_exact_match": true,
+  "messages_sha256": "2206db34c3147b68040fba5aded3384b370174c241cb89dc9f2a9c3a6a1f3a2b",
+  "response": {
+    "id": 5,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "**Claim 1 of US7991757B2** specifies a registration module within the claimed system. The claim recites: \"a registration module configured to provide functionality for registering an external recommender with a recommendations service.\" This is explicit evidence from the claim text.\n\n**Claim 27** adds a further registration capability. It recites: \"wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.\" This is also explicit evidence.\n\n**Dependency:** Claim 27 explicitly depends on Claim 1, as shown by its opening wording: \"The system of claim 1, wherein the registration module is further configured…\" This dependency is stated in the claim itself, not inferred.\n\n**Explicit evidence vs. inference:** The facts that Claim 1 includes a registration module for registering an external recommender, that Claim 27 adds the ability for a provider to supply machine readable descriptions, and that Claim 27 depends from Claim 1 are all directly stated in the quoted claim language. Any broader characterization—for example, that Claim 27 narrows the registration module to a specific implementation—is an inference from the \"wherein…further configured\" structure rather than an express statement in the evidence.\n\n### References\n\n- [1] US7991757B2.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 32445,
+      "completion_tokens": 279,
+      "total_tokens": 32724,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 32384
+      },
+      "prompt_cache_hit_tokens": 32384,
+      "prompt_cache_miss_tokens": 61
+    },
+    "reasoning_content_present": false
+  }
+}

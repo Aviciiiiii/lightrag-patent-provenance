@@ -1,0 +1,504 @@
+{
+  "audit_id": "N009",
+  "node_id": "Weight",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "三篇的weight均为赋予对象的评分/相对重要性数值：对象分别是用户对的互动特征、推荐器和广告关键词；没有物理重量等不同词义。共同加权值类别足以解释合并，但不能互换三种权重的对象、单位或更新规则。",
+  "class_instance_interpretation_zh": "共享类为计算中的权重值，文档局部实例分别是特征权重、推荐器权重和关键词权重。图未显式建立sameAs或声称这些数值相等。宽类节点的邻接不能作为跨应用参数可替代的证据。",
+  "source_assessments": [
+    {
+      "publication_number": "US10778629B2",
+      "evidence_quote": "assigning a weight to each of the plurality of characteristics for each pair of users;",
+      "claim_or_section": "Claim 20",
+      "source_chunk_ids": [
+        "US10778629B2-chunk-001"
+      ],
+      "additional_evidence_quotes": [
+        {
+          "evidence_quote": "assign a weight to each of the plurality of characteristics for each pair of users;",
+          "claim_or_section": "Claim 21",
+          "source_chunk_ids": [
+            "US10778629B2-chunk-001"
+          ]
+        }
+      ],
+      "claim_verification_path": "data/claims/US10778629B2.json",
+      "role_zh": "对每一用户对的邮件交互特征赋权，据此计算关系强度；Claim21由服务器赋值。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取实体描述的该专利用途可由已读Claims支持；不能将合并后其他专利用途一并归给本专利。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US10778629B2-chunk-001",
+            "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+            "line_number": 7,
+            "description": "A value assigned to each of the plurality of characteristics for each pair of users, used to determine relationship strength."
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US10778629B2-chunk-001",
+            "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+            "line_number": 32,
+            "raw_line": "relation<|#|>Weight<|#|>Characteristic<|#|>assigned to<|#|>A weight is assigned to each of the plurality of characteristics for each pair of users."
+          },
+          {
+            "chunk_id": "US10778629B2-chunk-001",
+            "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+            "line_number": 33,
+            "raw_line": "relation<|#|>Relationship Strength<|#|>Weight<|#|>determined from<|#|>Relationship strength is determined based on the weight assigned to each of the plurality of characteristics for each pair of users."
+          },
+          {
+            "chunk_id": "US10778629B2-chunk-001",
+            "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+            "line_number": 37,
+            "raw_line": "relation<|#|>Server<|#|>Weight<|#|>assigns<|#|>The server assigns a weight to each of the plurality of characteristics for each pair of users."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The server assigns a weight to each of the plurality of characteristics for each pair of users.",
+          "keywords": "assigns",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Server",
+          "target": "Weight",
+          "edge_index": 93,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics.<SEP>A weight is assigned to each of the plurality of characteristics for each pair of users.",
+          "keywords": "assigned to,based on",
+          "source_id": "US9304738B1-chunk-000<SEP>US10778629B2-chunk-001",
+          "file_path": "US9304738B1.txt<SEP>US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Weight",
+          "target": "Characteristic",
+          "edge_index": 173,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2",
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Relationship strength is determined based on the weight assigned to each of the plurality of characteristics for each pair of users.",
+          "keywords": "determined from",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Weight",
+          "target": "Relationship Strength",
+          "edge_index": 180,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "all_source_chunk_ids_reviewed": [
+        "US10778629B2-chunk-001"
+      ]
+    },
+    {
+      "publication_number": "US7991757B2",
+      "evidence_quote": "applying weights to each of the recommenders; combining the scores with the weights to produce overall scores;",
+      "claim_or_section": "Claim 4",
+      "source_chunk_ids": [
+        "US7991757B2-chunk-000"
+      ],
+      "additional_evidence_quotes": [
+        {
+          "evidence_quote": "applying user segment-specific weights to at least some of the recommenders.",
+          "claim_or_section": "Claim 9",
+          "source_chunk_ids": [
+            "US7991757B2-chunk-000"
+          ]
+        }
+      ],
+      "claim_verification_path": "data/claims/US7991757B2.json",
+      "role_zh": "对推荐器赋权，与其推荐分数组合，并根据用户事件调整；可按用户分段特定化。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取实体描述的该专利用途可由已读Claims支持；不能将合并后其他专利用途一并归给本专利。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US7991757B2-chunk-000",
+            "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+            "line_number": 17,
+            "description": "A value applied to each recommender, which may be site-specific, user-specific, user segment-specific, or default, and is adjusted based on user-generated events."
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US7991757B2-chunk-000",
+            "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+            "line_number": 37,
+            "raw_line": "relation<|#|>Optimization Module<|#|>Weight<|#|>assigns<|#|>The optimization module assigns weights to the external recommenders."
+          },
+          {
+            "chunk_id": "US7991757B2-chunk-000",
+            "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+            "line_number": 39,
+            "raw_line": "relation<|#|>Score<|#|>Weight<|#|>combined with<|#|>Scores are combined with weights to produce overall scores."
+          },
+          {
+            "chunk_id": "US7991757B2-chunk-000",
+            "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+            "line_number": 41,
+            "raw_line": "relation<|#|>User-Generated Event<|#|>Weight<|#|>adjusts<|#|>Weights for each recommender are adjusted based at least in part on user-generated events responsive to recommendations."
+          },
+          {
+            "chunk_id": "US7991757B2-chunk-000",
+            "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+            "line_number": 43,
+            "raw_line": "relation<|#|>User Segment<|#|>Weight<|#|>segment-specific weights<|#|>User segment-specific weights are applied to at least some of the recommenders."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The optimization module assigns weights to the external recommenders.",
+          "keywords": "assigns",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284383,
+          "truncate": "",
+          "source": "Weight",
+          "target": "Optimization Module",
+          "edge_index": 176,
+          "source_chunks": [
+            "US7991757B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Scores are combined with weights to produce overall scores.",
+          "keywords": "combined with",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284383,
+          "truncate": "",
+          "source": "Weight",
+          "target": "Score",
+          "edge_index": 177,
+          "source_chunks": [
+            "US7991757B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Weights for each recommender are adjusted based at least in part on user-generated events responsive to recommendations.",
+          "keywords": "adjusts",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284383,
+          "truncate": "",
+          "source": "Weight",
+          "target": "User-Generated Event",
+          "edge_index": 178,
+          "source_chunks": [
+            "US7991757B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "User segment-specific weights are applied to at least some of the recommenders.",
+          "keywords": "segment-specific weights",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284383,
+          "truncate": "",
+          "source": "Weight",
+          "target": "User Segment",
+          "edge_index": 179,
+          "source_chunks": [
+            "US7991757B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "all_source_chunk_ids_reviewed": [
+        "US7991757B2-chunk-000"
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "evidence_quote": "assigning the weight to each of the plurality of keywords based on a number of user interactions",
+      "claim_or_section": "Claim 10",
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000"
+      ],
+      "additional_evidence_quotes": [
+        {
+          "evidence_quote": "determining the weight of each of the plurality of keywords based on a characteristic associated with the user interest of the first user",
+          "claim_or_section": "Claim 6",
+          "source_chunk_ids": [
+            "US9304738B1-chunk-000"
+          ]
+        }
+      ],
+      "claim_verification_path": "data/claims/US9304738B1.json",
+      "role_zh": "对页面广告关键词赋权，依据用户兴趣、历史表现、交互次数等，用于排序选广告。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取实体描述的该专利用途可由已读Claims支持；不能将合并后其他专利用途一并归给本专利。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9304738B1-chunk-000",
+            "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+            "line_number": 5,
+            "description": "A value determined for each keyword of an information resource based on user interest indications and historic performance, used to rank and select keywords."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "line_number": 4,
+            "description": "A value assigned to a keyword based on user interest indications and historic performance, used to rank and select keywords."
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9304738B1-chunk-000",
+            "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+            "line_number": 36,
+            "raw_line": "relation<|#|>Keyword<|#|>Weight<|#|>assigned weight<|#|>Each keyword is assigned a weight determined based on user interest indications and historic performance."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-000",
+            "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+            "line_number": 52,
+            "raw_line": "relation<|#|>Weight<|#|>Historic Performance<|#|>based on<|#|>Keyword weights are determined based also on historic performance on the parked domain web page."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-000",
+            "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+            "line_number": 53,
+            "raw_line": "relation<|#|>Weight<|#|>Characteristic<|#|>based on<|#|>Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-000",
+            "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+            "line_number": 54,
+            "raw_line": "relation<|#|>Weight<|#|>User Interaction<|#|>based on<|#|>Weights are assigned to keywords based on a number of user interactions with corresponding advertisements previously displayed on the parked domain web page."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "line_number": 28,
+            "raw_line": "relation<|#|>Keyword<|#|>Weight<|#|>has, is assigned<|#|>Each keyword has a weight determined based on user interest indications and historic performance."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "line_number": 29,
+            "raw_line": "relation<|#|>Weight<|#|>User Interest Indication<|#|>based on<|#|>The weight of a keyword is determined based on the indication of user interest in the corresponding advertisement."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "line_number": 30,
+            "raw_line": "relation<|#|>Weight<|#|>Historic Performance<|#|>based on<|#|>The weight of a keyword is also determined based on historic performance on the parked domain web page."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "line_number": 36,
+            "raw_line": "relation<|#|>Database<|#|>Weight<|#|>stores, associates<|#|>The database associates the increased weight of a keyword with the parked domain web page having the unique identifier."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The database associates the increased weight of a keyword with the parked domain web page having the unique identifier.",
+          "keywords": "associates,stores",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Database",
+          "target": "Weight",
+          "edge_index": 99,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "Each keyword has a weight determined based on user interest indications and historic performance.<SEP>Each keyword is assigned a weight determined based on user interest indications and historic performance.",
+          "keywords": "assigned weight,has,is assigned",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Keyword",
+          "target": "Weight",
+          "edge_index": 168,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The weight of a keyword is also determined based on historic performance on the parked domain web page.<SEP>Keyword weights are determined based also on historic performance on the parked domain web page.",
+          "keywords": "based on",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Weight",
+          "target": "Historic Performance",
+          "edge_index": 172,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics.<SEP>A weight is assigned to each of the plurality of characteristics for each pair of users.",
+          "keywords": "assigned to,based on",
+          "source_id": "US9304738B1-chunk-000<SEP>US10778629B2-chunk-001",
+          "file_path": "US9304738B1.txt<SEP>US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Weight",
+          "target": "Characteristic",
+          "edge_index": 173,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2",
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Weights are assigned to keywords based on a number of user interactions with corresponding advertisements previously displayed on the parked domain web page.",
+          "keywords": "based on",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Weight",
+          "target": "User Interaction",
+          "edge_index": 174,
+          "source_chunks": [
+            "US9304738B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The weight of a keyword is determined based on the indication of user interest in the corresponding advertisement.",
+          "keywords": "based on",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Weight",
+          "target": "User Interest Indication",
+          "edge_index": 175,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "all_source_chunk_ids_reviewed": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 12,
+    "observed_unsupported_edge": false,
+    "details_zh": "已核对全部12条实际邻边。93/180对应关系强度特征赋权；176–179对应推荐器权重与分数、事件、用户分段；99/168/172/174/175对应关键词权重。173是实际跨专利合并边：同一Weight–Characteristic端点下，一段为关键词权重based on用户兴趣特征，另一段为用户对特征被assigned weight；两段各有原始抽取行与原文支持，source_id保留两个专利。它丢失统一谓词/论元粒度，需按段和来源解释，但尚不能称新增不受支持边或已发生检索/生成污染。",
+    "edge_indices": [
+      93,
+      99,
+      168,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180
+    ],
+    "unsupported_edge_indices": [],
+    "all_actual_incident_edges_reviewed": true,
+    "scope_sensitive_multi_source_edge_indices": [
+      173
+    ]
+  },
+  "limitations_zh": [
+    "AI辅助逐条审阅，不是独立人工gold；分类是概念/实例解释，不是LightRAG本体声明。",
+    "只审查已保存来源、抽取记录和实际邻边；没有新查询或生成，不能推断潜在跨文档路径已经引起答案污染。",
+    "相同source_id需结合原round2工作空间解释；合并description每个片段的细粒度来源需回查原抽取行。"
+  ],
+  "review_method": "Read all dossier source chunks, target raw entity/relation rows and all actual incident edges; check exact contiguous quotes against saved claim JSON and actual chunk content. No model API.",
+  "reviewed_utc": "2026-10-30T08:11:05.428244+00:00",
+  "external_model_api_calls": 0,
+  "credentials_read": false
+}

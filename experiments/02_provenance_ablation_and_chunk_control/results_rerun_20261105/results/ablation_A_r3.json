@@ -1,0 +1,27 @@
+{
+  "condition": "A",
+  "repeat": 3,
+  "call_id": 8,
+  "request_exact_match": true,
+  "messages_sha256": "2fca4d69c1c5554b570ff04a57ccc8ae1c8af87862bae14e46a5f755a4a3490e",
+  "response": {
+    "id": 8,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "I do not have enough information to answer this query. The provided **Context** does not contain any document, knowledge-graph entity, or document chunk for **US7991757B2**. The patent publication number US7991757B2 does not appear anywhere in the supplied evidence, so I cannot quote Claim 1 or Claim 27 of that patent, nor explain their dependency.\n\n**What is present instead:** The context includes a related concept, \"Registration Module,\" described as \"a module configured to provide functionality for registering an external recommender with a recommendations service\" and \"configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.\" However, this description is not tied to US7991757B2 in the evidence, and no claim text for that patent is provided.\n\n**Explicit evidence vs. inference:** It would be inference—not explicit evidence—to assume that the \"Registration Module\" description belongs to US7991757B2 or that it corresponds to its Claim 1 or Claim 27. The context does not establish that link.\n\n**What is missing:** (1) the text of Claim 1 of US7991757B2; (2) the text of Claim 27 and its dependency reference; (3) any document chunk or entity identifying US7991757B2. Without these, quoting supporting wording or explaining the claim dependency is not possible.\n\n### References\n\n- [1] US10867122B1.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 28360,
+      "completion_tokens": 304,
+      "total_tokens": 28664,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 28288
+      },
+      "prompt_cache_hit_tokens": 28288,
+      "prompt_cache_miss_tokens": 72
+    },
+    "reasoning_content_present": false
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "scope": "N027–N038 only",
+  "reviewer": "round4_full_eval_f05",
+  "ai_assisted_not_human_gold": true,
+  "outputs": [
+    {
+      "audit_id": "N027",
+      "node_id": "User Feedback",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications": 2,
+      "reviewed_incident_edges": 7,
+      "qualified_candidates": []
+    },
+    {
+      "audit_id": "N028",
+      "node_id": "Non-Transitory Computer-Readable Medium",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications": 2,
+      "reviewed_incident_edges": 3,
+      "qualified_candidates": []
+    },
+    {
+      "audit_id": "N029",
+      "node_id": "Users",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications": 2,
+      "reviewed_incident_edges": 2,
+      "qualified_candidates": []
+    },
+    {
+      "audit_id": "N030",
+      "node_id": "Apparatus",
+      "category": "shared_broad_class",
+      "confidence": "medium",
+      "publications": 2,
+      "reviewed_incident_edges": 18,
+      "qualified_candidates": [
+        495,
+        502,
+        517
+      ]
+    },
+    {
+      "audit_id": "N031",
+      "node_id": "Score",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications": 2,
+      "reviewed_incident_edges": 4,
+      "qualified_candidates": []
+    },
+    {
+      "audit_id": "N032",
+      "node_id": "Tokens",
+      "category": "shared_specific_concept",
+      "confidence": "high",
+      "publications": 2,
+      "reviewed_incident_edges": 5,
+      "qualified_candidates": []
+    },
+    {
+      "audit_id": "N033",
+      "node_id": "Labels",
+      "category": "shared_specific_concept",
+      "confidence": "medium",
+      "publications": 2,
+      "reviewed_incident_edges": 5,
+      "qualified_candidates": []
+    },
+    {
+      "audit_id": "N034",
+      "node_id": "Label",
+      "category": "shared_specific_concept",
+      "confidence": "medium",
+      "publications": 2,
+      "reviewed_incident_edges": 3,
+      "qualified_candidates": []
+    },
+    {
+      "audit_id": "N035",
+      "node_id": "Query",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications": 2,
+      "reviewed_incident_edges": 14,
+      "qualified_candidates": []
+    },
+    {
+      "audit_id": "N036",
+      "node_id": "Non-Transitory Computer Storage Medium",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications": 2,
+      "reviewed_incident_edges": 2,
+      "qualified_candidates": []
+    },
+    {
+      "audit_id": "N037",
+      "node_id": "Data Processing Apparatus",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications": 2,
+      "reviewed_incident_edges": 4,
+      "qualified_candidates": []
+    },
+    {
+      "audit_id": "N038",
+      "node_id": "Computing Devices",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "publications": 2,
+      "reviewed_incident_edges": 2,
+      "qualified_candidates": []
+    }
+  ],
+  "validation": "All 24 source quotes exact in claims, full documents, and actual source chunks; all 69 per-node incident-edge appearances reviewed (shared edges can recur between assigned nodes).",
+  "total_per_node_incident_edge_appearances": 69,
+  "category_counts": {
+    "shared_specific_concept": 3,
+    "shared_broad_class": 9,
+    "contextual_conflation": 0,
+    "insufficient_evidence": 0
+  },
+  "external_model_api_calls": 0,
+  "credentials_read": false,
+  "original_round2_files_modified": false
+}

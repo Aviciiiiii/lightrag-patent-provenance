@@ -1,0 +1,62 @@
+REFERENCE ONLY — NOT EXECUTED; THIS IS NOT AN EXPERIMENT RESULT.
+Exact audited source: HKUDS/LightRAG commit aaebfe1bb8d55deb6a4304d357a3bf4c92fcd40a (1.5.8).
+Before invoking any model: resolve an existing authorized provider, verify current prices/model IDs, add a shared <= USD 5 cumulative reservation/usage guard and the absolute experiment deadline. Do not run this sketch as-is as a budget enforcement mechanism.
+
+Official core calls suitable for one real index/query:
+
+from lightrag import LightRAG, QueryParam
+from lightrag.llm.openai import gpt_4o_mini_complete, openai_embed
+
+# These two are official real OpenAI bindings, not mocks. They require an already
+# configured authorized service. Provider/usage/deadline wrappers are separate.
+rag = LightRAG(
+    working_dir="<experiment-only storage directory>",
+    llm_model_func=gpt_4o_mini_complete,
+    embedding_func=openai_embed,
+    chunk_token_size=1200,
+    chunk_overlap_token_size=100,
+    llm_model_max_async=2,
+    embedding_func_max_async=2,
+    entity_extract_max_gleaning=0,
+)
+await rag.initialize_storages()
+try:
+    await rag.ainsert(
+        documents,                     # full title + abstract + original claims
+        ids=publication_numbers,       # one stable ID per patent
+        file_paths=[p + ".txt" for p in publication_numbers],
+    )
+    for question in questions:
+        for mode in ("naive", "mix"):
+            param = QueryParam(
+                mode=mode,
+                top_k=12,
+                chunk_top_k=8,
+                max_entity_tokens=2000,
+                max_relation_tokens=2000,
+                max_total_tokens=8000,
+                enable_rerank=False,
+                include_references=True,
+                stream=False,
+                user_prompt=(
+                    "Use only retrieved evidence. State the patent publication "
+                    "number and the exact Claim number only when present in "
+                    "the evidence; quote the supporting words. Distinguish "
+                    "document facts from comparisons and inference. If the "
+                    "evidence is insufficient, say so."
+                ),
+            )
+            result = await rag.aquery_llm(question, param=param)
+            # Save full result before scoring, including:
+            # result['llm_response']['content'], result['data']['entities'],
+            # result['data']['relationships'], result['data']['chunks'],
+            # result['data']['references'], result['metadata'].
+finally:
+    await rag.finalize_storages()
+
+The matching REST route /query uses aquery_llm. /query/data instead invokes
+rag.aquery_data(question, param), which omits answer generation but may still
+need keyword extraction and embedding model calls. Do not describe /query/data
+as a model-free endpoint. For REST /query, include_references=true and
+include_chunk_content=true enrich each document reference with its chunk array.
+include_chunk_content is not a valid QueryParam field in this exact version.

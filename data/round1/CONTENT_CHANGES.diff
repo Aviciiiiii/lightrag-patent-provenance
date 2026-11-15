@@ -1,0 +1,22 @@
+--- before/data/round1/scripts/build_report.py
++++ after/data/round1/scripts/build_report.py
+@@ -41,10 +41 @@
+-paragraph = (
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-)
++paragraph = '[已删去：与实验无关的个人申请材料，见 reports/README.md]'
+@@ -52 +43 @@
+-assert 70<=word_count<=100
++# word-count assert removed with the paragraph
+--- before/data/round1/scripts/build_report.py
++++ after/data/round1/scripts/build_report.py
+@@ -105 +105 @@
+-<已删去的原文行：原标题含申请材料字样>
++<h2>E. 研究兴趣段落（已删去）（{word_count} words）</h2>

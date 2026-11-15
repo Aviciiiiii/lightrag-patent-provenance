@@ -1,0 +1,929 @@
+{
+  "node_id": "Event",
+  "entity_type": "concept",
+  "graph_source_chunks": [
+    "US11423041B2-chunk-000",
+    "US11423041B2-chunk-001",
+    "US9118735B1-chunk-000",
+    "US9118735B1-chunk-001"
+  ],
+  "entity_chunk_store_sources": [
+    "US11423041B2-chunk-000",
+    "US11423041B2-chunk-001",
+    "US9118735B1-chunk-000",
+    "US9118735B1-chunk-001"
+  ],
+  "all_source_chunks": [
+    "US11423041B2-chunk-000",
+    "US11423041B2-chunk-001",
+    "US9118735B1-chunk-000",
+    "US9118735B1-chunk-001"
+  ],
+  "canonical_publications": [
+    "US11423041B2",
+    "US9118735B1"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US11423041B2.txt",
+    "US9118735B1.txt"
+  ],
+  "graph_file_paths": [
+    "US9118735B1.txt",
+    "US11423041B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US11423041B2",
+    "US9118735B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US11423041B2-chunk-000",
+    "US11423041B2-chunk-001",
+    "US9118735B1-chunk-000",
+    "US9118735B1-chunk-001"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US11423041B2-chunk-000",
+    "US11423041B2-chunk-001",
+    "US9118735B1-chunk-000",
+    "US9118735B1-chunk-001"
+  ],
+  "graph_node": {
+    "entity_id": "Event",
+    "entity_type": "concept",
+    "description": "An occurrence that a connecting person has identified himself or herself as being at, used to determine the last-known location.<SEP>An occurrence that a user, such as the third user, has identified himself or herself as being at, which may be the same event as the first user's location.<SEP>A condition registered for monitoring with regard to a history object, triggered when stored information describing an ETL process's performance satisfies specified criteria, causing a subscribed ETL process to be performed.<SEP>An event registered for monitoring with regard to the history object, triggered when the performance of the first ETL process satisfies criteria, and subscribed to by the second ETL process.",
+    "source_id": "US9118735B1-chunk-000<SEP>US9118735B1-chunk-001<SEP>US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+    "file_path": "US9118735B1.txt<SEP>US11423041B2.txt",
+    "created_at": 1793284675,
+    "truncate": "",
+    "id": "Event"
+  },
+  "incident_edge_count": 9,
+  "audit_id": "N016",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US11423041B2",
+      "file_paths": [
+        "US11423041B2.txt"
+      ],
+      "source_chunks": [
+        "US11423041B2-chunk-000",
+        "US11423041B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US11423041B2",
+          "full_doc_id": "US11423041B2",
+          "file_path": "US11423041B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6231,
+          "content": "Publication number: US11423041B2\nTitle: Maintaining data lineage to detect data events\n\nABSTRACT\nHistory for data objects may be maintained to detect data events. An indication of an Extract, Transform, Load (ETL) process applied to one or more source data objects to generate one or more transformed data objects may be received. History for the source data objects may be updated to include the transformed data objects and the ETL process that generated the transformed data objects. An evaluation of the update may be performed to determine whether an event associated with the data lineage is triggered. If the event is triggered, a notification of the event may be sent to one or more subscribers for the event.\n\nCLAIMS\nWhat is claimed is: 1. A system, comprising: at least one processor; and a memory, storing program instructions that when executed by the at least one processor, cause the at least one processor to implement a data catalog for an Extract, Transform, Load (ETL) service, the data catalog configured to: receive, at the data catalog, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; store, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluate, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed. 2. The system of claim 1 , wherein a second history object is created in the history data structure, and wherein the data catalog is further configured to: receive, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; store, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluate, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to the determination that the performance of the third ETL process satisfies the criteria for triggering the different event, cause the fourth ETL process to be performed. 3. The system of claim 1 , wherein the data catalog service is further configured to: further in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, send a notification of the event to another subscriber different than the second ETL process. 4. The system of claim 1 , wherein the second ETL process is applied to the one or more transformed data objects. 5. The system of claim 1 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service. 6. The system of claim 1 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service. 7. The system of claim 1 , wherein the criteria is one of a plurality of different alternative criteria registered for triggering the event. 8. A method, comprising: receiving, at a data catalog for an Extract, Transform, Load (ETL) service, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; storing, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluating, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, causing the second ETL process to be performed. 9. The method of claim 8 , wherein a second history object is created in the history data structure, and wherein the method further comprises: receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluating, in the data catalog,",
+          "llm_cache_list": [
+            "default:extract:1e1a93c1cf0ca690619d59a6d323f13d"
+          ],
+          "chunk_id": "US11423041B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US11423041B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "2d35c6a87218b8d1dd892bd5459737ec3437ac6d7bbe616a0a0bcedd8ebcb94a"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+              "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 9,
+              "raw_line": "entity<|#|>Event<|#|>Concept<|#|>A condition registered for monitoring with regard to a history object, triggered when stored information describing an ETL process's performance satisfies specified criteria, causing a subscribed ETL process to be performed.",
+              "fields": [
+                "entity",
+                "Event",
+                "Concept",
+                "A condition registered for monitoring with regard to a history object, triggered when stored information describing an ETL process's performance satisfies specified criteria, causing a subscribed ETL process to be performed."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+              "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 23,
+              "raw_line": "relation<|#|>Criteria<|#|>Event<|#|>triggers<|#|>Satisfying the criteria for triggering an event causes the event to be triggered.",
+              "fields": [
+                "relation",
+                "Criteria",
+                "Event",
+                "triggers",
+                "Satisfying the criteria for triggering an event causes the event to be triggered."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+              "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 24,
+              "raw_line": "relation<|#|>Event<|#|>ETL Process<|#|>subscribed to, causes performance of<|#|>A second ETL process subscribed to the event is caused to be performed when the event is triggered.",
+              "fields": [
+                "relation",
+                "Event",
+                "ETL Process",
+                "subscribed to, causes performance of",
+                "A second ETL process subscribed to the event is caused to be performed when the event is triggered."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+              "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Event<|#|>History Object<|#|>registered for monitoring with regard to<|#|>The event is registered for monitoring with regard to the history object.",
+              "fields": [
+                "relation",
+                "Event",
+                "History Object",
+                "registered for monitoring with regard to",
+                "The event is registered for monitoring with regard to the history object."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+              "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 26,
+              "raw_line": "relation<|#|>Event<|#|>Subscriber<|#|>notifies<|#|>A notification of the event is sent to one or more subscribers for the event.",
+              "fields": [
+                "relation",
+                "Event",
+                "Subscriber",
+                "notifies",
+                "A notification of the event is sent to one or more subscribers for the event."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 325,
+              "text": "Publication number: US11423041B2\nTitle: Maintaining data lineage to detect data events\n\nABSTRACT\nHistory for data objects may be maintained to detect data events. An indication of an Extract, Transform, Load (ETL) process applied to one or more source data objects to generate one or more transformed data objects may be rece"
+            },
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 400,
+              "text": "Publication number: US11423041B2\nTitle: Maintaining data lineage to detect data events\n\nABSTRACT\nHistory for data objects may be maintained to detect data events. An indication of an Extract, Transform, Load (ETL) process applied to one or more source data objects to generate one or more transformed data objects may be received. History for the source data objects may be updated to include the tra"
+            },
+            {
+              "chunk_char_start": 376,
+              "chunk_char_end": 801,
+              "text": "dated to include the transformed data objects and the ETL process that generated the transformed data objects. An evaluation of the update may be performed to determine whether an event associated with the data lineage is triggered. If the event is triggered, a notification of the event may be sent to one or more subscribers for the event.\n\nCLAIMS\nWhat is claimed is: 1. A system, comprising: at least one processor; and a "
+            },
+            {
+              "chunk_char_start": 436,
+              "chunk_char_end": 861,
+              "text": "ocess that generated the transformed data objects. An evaluation of the update may be performed to determine whether an event associated with the data lineage is triggered. If the event is triggered, a notification of the event may be sent to one or more subscribers for the event.\n\nCLAIMS\nWhat is claimed is: 1. A system, comprising: at least one processor; and a memory, storing program instructions that when executed by t"
+            },
+            {
+              "chunk_char_start": 478,
+              "chunk_char_end": 903,
+              "text": "objects. An evaluation of the update may be performed to determine whether an event associated with the data lineage is triggered. If the event is triggered, a notification of the event may be sent to one or more subscribers for the event.\n\nCLAIMS\nWhat is claimed is: 1. A system, comprising: at least one processor; and a memory, storing program instructions that when executed by the at least one processor, cause the at le"
+            },
+            {
+              "chunk_char_start": 531,
+              "chunk_char_end": 956,
+              "text": " to determine whether an event associated with the data lineage is triggered. If the event is triggered, a notification of the event may be sent to one or more subscribers for the event.\n\nCLAIMS\nWhat is claimed is: 1. A system, comprising: at least one processor; and a memory, storing program instructions that when executed by the at least one processor, cause the at least one processor to implement a data catalog for an "
+            },
+            {
+              "chunk_char_start": 1549,
+              "chunk_char_end": 1974,
+              "text": "n the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and "
+            },
+            {
+              "chunk_char_start": 1605,
+              "chunk_char_end": 2030,
+              "text": "s the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to the determination that the performance of"
+            },
+            {
+              "chunk_char_start": 1712,
+              "chunk_char_end": 2137,
+              "text": "or triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be "
+            },
+            {
+              "chunk_char_start": 1723,
+              "chunk_char_end": 2148,
+              "text": "ng an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed. "
+            },
+            {
+              "chunk_char_start": 1915,
+              "chunk_char_end": 2340,
+              "text": "ered for monitoring with regard to the history object; and in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed. 2. The system of claim 1 , wherein a second history object is created in the history data structure, and wherein the data catalog is further configured to: receive, at the data catalog, an ind"
+            },
+            {
+              "chunk_char_start": 2836,
+              "chunk_char_end": 3261,
+              "text": "og, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second his"
+            }
+          ],
+          "lexical_occurrence_count": 24
+        },
+        {
+          "publication_number": "US11423041B2",
+          "full_doc_id": "US11423041B2",
+          "file_path": "US11423041B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 1147,
+          "content_sha256": "8f3d13a18781a5fb01b8d2de56b03acd746fc3ace6168e4b910162e77bfec7fb",
+          "exact_doc_char_start": 5690,
+          "exact_doc_char_end": 11698,
+          "content": "receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluating, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL process to be performed. 10. The method of claim 8 , further comprising: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL process. 11. The method of claim 8 , wherein the second ETL process is applied to the one or more transformed data objects. 12. The method of claim 8 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service. 13. The method of claim 8 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service. 14. The method of claim 8 , wherein the criteria is one of a plurality of different alternative criteria registered for triggering the event. 15. One or more non-transitory, computer-readable storage media, storing program instructions that when executed on or across one or more computing devices, cause the one or more computing devices to implement: receiving, at a data catalog for an Extract, Transform, Load (ETL) service, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; storing, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluating, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, causing the second ETL process to be performed. 16. The one or more non-transitory, computer-readable storage media of claim 15 , wherein a second history object is created in the history data structure, and wherein the one or more non-transitory, computer-readable storage media store further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluating, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL process to be performed. 17. The one or more non-transitory, computer-readable storage media of claim 15 , storing further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL process. 18. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the second ETL process is applied to the one or more transformed data objects. 19. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service. 20. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "llm_cache_list": [
+            "default:extract:7ff7beec3b2319e673503a0f9278ffb2"
+          ],
+          "chunk_id": "US11423041B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US11423041B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "ce7ec20d762fc03a6dbf15a47676d5d280cab51146efab3b27b210b0f378a5ce"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 14,
+              "raw_line": "entity<|#|>Event<|#|>Concept<|#|>An event registered for monitoring with regard to the history object, triggered when the performance of the first ETL process satisfies criteria, and subscribed to by the second ETL process.",
+              "fields": [
+                "entity",
+                "Event",
+                "Concept",
+                "An event registered for monitoring with regard to the history object, triggered when the performance of the first ETL process satisfies criteria, and subscribed to by the second ETL process."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 36,
+              "raw_line": "relation<|#|>Event<|#|>History Object<|#|>registered for monitoring with regard to<|#|>The event is registered for monitoring with regard to the history object.",
+              "fields": [
+                "relation",
+                "Event",
+                "History Object",
+                "registered for monitoring with regard to",
+                "The event is registered for monitoring with regard to the history object."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 38,
+              "raw_line": "relation<|#|>Event<|#|>Second ETL Process<|#|>subscribed to by<|#|>The second ETL process is subscribed to the event to be performed when the event is triggered.",
+              "fields": [
+                "relation",
+                "Event",
+                "Second ETL Process",
+                "subscribed to by",
+                "The second ETL process is subscribed to the event to be performed when the event is triggered."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 40,
+              "raw_line": "relation<|#|>Criteria<|#|>Event<|#|>triggers<|#|>The criteria are evaluated to determine whether the event should be triggered.",
+              "fields": [
+                "relation",
+                "Criteria",
+                "Event",
+                "triggers",
+                "The criteria are evaluated to determine whether the event should be triggered."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 44,
+              "raw_line": "relation<|#|>Data Catalog<|#|>Event<|#|>determines triggering of<|#|>The data catalog determines that the performance of the first ETL process satisfies the criteria for triggering the event.",
+              "fields": [
+                "relation",
+                "Data Catalog",
+                "Event",
+                "determines triggering of",
+                "The data catalog determines that the performance of the first ETL process satisfies the criteria for triggering the event."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 49,
+              "raw_line": "relation<|#|>Notification<|#|>Event<|#|>notifies of<|#|>The notification communicates the event to another subscriber.",
+              "fields": [
+                "relation",
+                "Notification",
+                "Event",
+                "notifies of",
+                "The notification communicates the event to another subscriber."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 538,
+              "chunk_char_end": 963,
+              "text": "og, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second his"
+            },
+            {
+              "chunk_char_start": 604,
+              "chunk_char_end": 1029,
+              "text": "hird ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance o"
+            },
+            {
+              "chunk_char_start": 711,
+              "chunk_char_end": 1136,
+              "text": "ferent event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL p"
+            },
+            {
+              "chunk_char_start": 722,
+              "chunk_char_end": 1147,
+              "text": "t to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL process to b"
+            },
+            {
+              "chunk_char_start": 925,
+              "chunk_char_end": 1350,
+              "text": "nitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL process to be performed. 10. The method of claim 8 , further comprising: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a no"
+            },
+            {
+              "chunk_char_start": 1151,
+              "chunk_char_end": 1576,
+              "text": "rformed. 10. The method of claim 8 , further comprising: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL process. 11. The method of claim 8 , wherein the second ETL process is applied to the one or more transformed data objects. 12. The method of claim 8 "
+            },
+            {
+              "chunk_char_start": 1188,
+              "chunk_char_end": 1613,
+              "text": "further comprising: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL process. 11. The method of claim 8 , wherein the second ETL process is applied to the one or more transformed data objects. 12. The method of claim 8 , wherein the first ETL process is pe"
+            },
+            {
+              "chunk_char_start": 1830,
+              "chunk_char_end": 2255,
+              "text": "ETL process is performed by the ETL service. 14. The method of claim 8 , wherein the criteria is one of a plurality of different alternative criteria registered for triggering the event. 15. One or more non-transitory, computer-readable storage media, storing program instructions that when executed on or across one or more computing devices, cause the one or more computing devices to implement: receiving, at a data catalo"
+            },
+            {
+              "chunk_char_start": 2799,
+              "chunk_char_end": 3224,
+              "text": "n the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and "
+            },
+            {
+              "chunk_char_start": 2855,
+              "chunk_char_end": 3280,
+              "text": "s the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to determining that the performance of the f"
+            },
+            {
+              "chunk_char_start": 2962,
+              "chunk_char_end": 3387,
+              "text": "or triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, causing the second ETL process to be perf"
+            },
+            {
+              "chunk_char_start": 2973,
+              "chunk_char_end": 3398,
+              "text": "ng an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, causing the second ETL process to be performed. 16. "
+            }
+          ],
+          "lexical_occurrence_count": 20
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "A second ETL process subscribed to the event is caused to be performed when the event is triggered.",
+          "keywords": "causes performance of,subscribed to",
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "ETL Process",
+          "edge_index": 240,
+          "source_chunks": [
+            "US11423041B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The event is registered for monitoring with regard to the history object.",
+          "keywords": "registered for monitoring with regard to",
+          "source_id": "US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "History Object",
+          "edge_index": 241,
+          "source_chunks": [
+            "US11423041B2-chunk-000",
+            "US11423041B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A notification of the event is sent to one or more subscribers for the event.",
+          "keywords": "notifies",
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "Subscriber",
+          "edge_index": 242,
+          "source_chunks": [
+            "US11423041B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "Satisfying the criteria for triggering an event causes the event to be triggered.<SEP>The criteria are evaluated to determine whether the event should be triggered.",
+          "keywords": "triggers",
+          "source_id": "US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "Criteria",
+          "edge_index": 243,
+          "source_chunks": [
+            "US11423041B2-chunk-000",
+            "US11423041B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The second ETL process is subscribed to the event to be performed when the event is triggered.",
+          "keywords": "subscribed to by",
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "Second ETL Process",
+          "edge_index": 244,
+          "source_chunks": [
+            "US11423041B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data catalog determines that the performance of the first ETL process satisfies the criteria for triggering the event.",
+          "keywords": "determines triggering of",
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "Data Catalog",
+          "edge_index": 245,
+          "source_chunks": [
+            "US11423041B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The notification communicates the event to another subscriber.",
+          "keywords": "notifies of",
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "Notification",
+          "edge_index": 246,
+          "source_chunks": [
+            "US11423041B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9118735B1",
+      "file_paths": [
+        "US9118735B1.txt"
+      ],
+      "source_chunks": [
+        "US9118735B1-chunk-000",
+        "US9118735B1-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9118735B1",
+          "full_doc_id": "US9118735B1",
+          "file_path": "US9118735B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "309f82082f5c546ffbe04ef4427e7a3f66cfb4e51a0abfd0cc60e2913ad83997",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6404,
+          "content": "Publication number: US9118735B1\nTitle: Finding people using social networks\n\nABSTRACT\nEmbodiments are described for assisting a first person in finding a second person using a social network. A person may send a request to a server that identifies that person, the person he or she is looking for, and the requestor's location. The server may then traverse that person's social network to identify someone who is in a similar location and who knows the person being sought. The server may send an identification of this person who knows the person being sought to the requestor. Various privacy mechanisms are also disclosed, including anonymizing identifying information, and encrypting communications.\n\nCLAIMS\nWhat is claimed is: 1. A system for assisting a requesting person in finding a target person using social networks, comprising: a memory bearing instructions that, upon execution by a processor, cause the system to at least: receive an identification associated with the requesting person, an identification associated with the target person, and a location of the requesting person; determine a social network of the requesting person based on the identification of the requesting person, the social network comprising information from at least one social network service; determine an identifier associated with a connecting person in the social network of the requesting person who is likely to connect the social network of the requesting person with a social network of the target person, and who has a last-known location within a predetermined distance from the location of the requesting person, wherein the requesting person and connecting person have a number of degrees of separation and a type of relationship; determine that the connecting person has opted-in to sharing information about his or her identity, social network, or location with people of at least as many degrees of separation as the number of degrees of separation for the type of relationship that the requesting person and connecting person have; and send an identifier associated with the connecting person, or a response based on a response from a computer of the connecting person, or a possible location of the target person to a computer of the requesting person. 2. The system of claim 1 , wherein the instructions that, upon execution by the processor cause the system to at least determine that the connecting person has opted-in further cause the system to at least: determine that the connecting person has opted-in in response to sending the computer of the connecting person information identifying the requesting person, the target person, the location of the requesting person or a person in the social network of the requesting person that connects the requesting person and the connecting person. 3. The system of claim 1 , wherein the memory further bears instructions that, upon execution by the processor, cause the system to at least: determine an identifier associated with a second connecting person; and wherein the processor-executable instructions that, when executed on the processor cause the system to at least send the response based on the response from the computer of the connecting person further cause the system to at least: send the response based on the response from the computer of the connecting person based on determining that the response from the computer of the connecting person has a higher priority than a response from a computer of the second person. 4. A method for assisting a first user in finding a second user using a social network, comprising: determining a social network of a first user; determining an identifier associated with a third user in the social network of the first user, the third user being a user that is likely to connect the social network of the first user with a social network of the second user, and who has a last-known location within a predetermined distance from the location of the first user, wherein the first user and third user have a number of degrees of separation and a type of relationship; determine that the third user has opted-in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship that the first user and third user have; and sending an identifier associated with the third user, or a response based on a response from a computer of the third user, or a possible location of the second user to a computer of the first user. 5. The method of claim 4 , further comprising: determining an identifier associated with a fourth user that is likely to connect the social network of the first user with the social network of the second user; and wherein sending the response based on the response from a computer of the third user comprises: sending the response based on a combination of the response from the computer of the third user and a response from a computer of the fourth user. 6. The method of claim 5 , wherein a format of the response from the computer of the connecting person differs from a format of the response from the computer of the second connecting person, and wherein sending the response based on a combination of the response from the computer of the third user and a response from a computer of the fourth user comprises: converting the response from the computer of the third user and the response from the computer of the fourth user to a common format; and combining the response from the computer of the third user and the response from the computer of the fourth user while in the common format. 7. The method of claim 4 , wherein determining the third user who has the last-known location within the predetermined distance from the location of the first user comprises: determining the last-known location of the third user based on a wireless network to which the computer of the third user is connected, a geolocation provided by the computer of the third user, a venue that the third user has identified himself or herself as being at, or an event that the third user has identified himself or herself as being at. 8. The method of claim 4 , further comprising: receiving an identifier associated with the first user, an identifier associated with the second user, and a location of the first user. 9. The method of claim 8 , wherein the",
+          "llm_cache_list": [
+            "default:extract:afaee09cfcca806052fdf575db5fb6c8"
+          ],
+          "chunk_id": "US9118735B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9118735B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "0cd3b7c032fa42610e5beda377ed24005a65cf9feb9fb210e2f29fad94ce1eb7"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 16,
+              "raw_line": "entity<|#|>Event<|#|>Event<|#|>An occurrence that a connecting person has identified himself or herself as being at, used to determine the last-known location.",
+              "fields": [
+                "entity",
+                "Event",
+                "Event",
+                "An occurrence that a connecting person has identified himself or herself as being at, used to determine the last-known location."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 36,
+              "raw_line": "relation<|#|>Last-Known Location<|#|>Event<|#|>Determined Based On<|#|>The last-known location of the connecting person may be determined based on an event the connecting person has identified himself or herself as being at.",
+              "fields": [
+                "relation",
+                "Last-Known Location",
+                "Event",
+                "Determined Based On",
+                "The last-known location of the connecting person may be determined based on an event the connecting person has identified himself or herself as being at."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 5929,
+              "chunk_char_end": 6354,
+              "text": "computer of the third user is connected, a geolocation provided by the computer of the third user, a venue that the third user has identified himself or herself as being at, or an event that the third user has identified himself or herself as being at. 8. The method of claim 4 , further comprising: receiving an identifier associated with the first user, an identifier associated with the second user, and a location of the "
+            }
+          ],
+          "lexical_occurrence_count": 1
+        },
+        {
+          "publication_number": "US9118735B1",
+          "full_doc_id": "US9118735B1",
+          "file_path": "US9118735B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 956,
+          "content_sha256": "b3448c0610adb75d41d0e719be9b14b65e384183af67e7f82dd178abc42f6404",
+          "exact_doc_char_start": 5938,
+          "exact_doc_char_end": 10873,
+          "content": "of the third user is connected, a geolocation provided by the computer of the third user, a venue that the third user has identified himself or herself as being at, or an event that the third user has identified himself or herself as being at. 8. The method of claim 4 , further comprising: receiving an identifier associated with the first user, an identifier associated with the second user, and a location of the first user. 9. The method of claim 8 , wherein the location of the first user is a geographic location. 10. The method of claim 8 , wherein determining the social network of the first user comprises: determining the social network of the first user based on the identifier associated with the first user. 11. The method of claim 4 , wherein determining the social network of the first user comprises: determining the social network based on combining a first social network and a second social network of the first user, the first social network being a different type of social network than the second social network. 12. The method of claim 4 , wherein determining the third user comprises: traversing the social network of the first user, using the first user as a first origin for traversing and using the second user as a second origin for traversing. 13. The method of claim 12 , wherein traversing the social network of the first user comprises: pruning the social network while traversing, based on a location of people in the social network of the first user. 14. The method of claim 4 , further comprising: anonymizing results based on replacing an identifier associated with the second user with a token, and encrypting the anonymized results. 15. The method of claim 4 , further comprising: determining not to return an identifier associated with a fourth user based on determining that the first user and the fourth user have a negative affinity. 16. A non-transitory computer-readable storage medium for assisting a first user in finding a second user using a social network, bearing computer-executable instructions that, when executed on a computer, cause the computer to perform operations comprising: receiving an identification associated with the first user, an identification associated with the second user, and a location of the first user; determining a social network of the first user based on the identification associated with the first user; determining a third user in the social network of the first user who is likely to connect the social network of the first user with a social network of the third user, and who has a last-known location within a predetermined distance from the location of the first user, wherein the first user and third user have a number of degrees of separation and a type of relationship; determine that the third user has opted-in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship that the first user and third user have; and sending an identifier associated with the third user, or a response based on a response from a computer of the third user, or a possible location of the second user to a computer of the first user. 17. The computer-readable storage medium of claim 16 , wherein determining the third user who has the last-known location within a predetermined distance from the location of the first user comprises: determining that the last-known location of the third user and the location of the first user are a same event or venue. 18. The computer-readable storage medium of claim 16 , further bearing computer-executable instructions that, when executed on the computer, cause the computer to perform operations comprising: determining to withhold sending an identifier associated with a fourth user or a response based on a response from a computer of the fourth user to the computer of the first user in response to determining that a time associated with a last-known location of the fourth user is older than a threshold amount of time. 19. The computer-readable storage medium of claim 16 , wherein receiving the location of the first user comprises: receiving the identifier associated with the first user at a kiosk having a pre-determined location. 20. The computer-readable storage medium of claim 16 , wherein the third user has at least two degrees of separation from the first user with a fourth user connecting the first and third users, and wherein determining the third user comprises: sending the third user an indication that the fourth user is requesting information on another user's behalf. 21. The computer-readable storage medium of claim 16 , wherein the identifier associated with the third user comprises a name, image, or location of the third user, a relationship between the first user and the third user, or a relationship between the second user and the third user.",
+          "llm_cache_list": [
+            "default:extract:428466472288172ce1196a08a08e71c2"
+          ],
+          "chunk_id": "US9118735B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US9118735B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "04ec90befb1d9d4518415e218f5d1bb37ec016f2a9ce280273b4d899afdbeb03"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 8,
+              "raw_line": "entity<|#|>Event<|#|>Event<|#|>An occurrence that a user, such as the third user, has identified himself or herself as being at, which may be the same event as the first user's location.",
+              "fields": [
+                "entity",
+                "Event",
+                "Event",
+                "An occurrence that a user, such as the third user, has identified himself or herself as being at, which may be the same event as the first user's location."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 29,
+              "raw_line": "relation<|#|>Third User<|#|>Event<|#|>Presence<|#|>The third user may have identified himself or herself as being at an event.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Event",
+                "Presence",
+                "The third user may have identified himself or herself as being at an event."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 416,
+              "text": "of the third user is connected, a geolocation provided by the computer of the third user, a venue that the third user has identified himself or herself as being at, or an event that the third user has identified himself or herself as being at. 8. The method of claim 4 , further comprising: receiving an identifier associated with the first user, an identifier associated with the second user, and a location of the "
+            },
+            {
+              "chunk_char_start": 3374,
+              "chunk_char_end": 3799,
+              "text": "in a predetermined distance from the location of the first user comprises: determining that the last-known location of the third user and the location of the first user are a same event or venue. 18. The computer-readable storage medium of claim 16 , further bearing computer-executable instructions that, when executed on the computer, cause the computer to perform operations comprising: determining to withhold sending an "
+            }
+          ],
+          "lexical_occurrence_count": 2
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The third user may have identified himself or herself as being at an event.",
+          "keywords": "Presence",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Event",
+          "edge_index": 201,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The last-known location of the connecting person may be determined based on an event the connecting person has identified himself or herself as being at.",
+          "keywords": "Determined Based On",
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Last-Known Location",
+          "target": "Event",
+          "edge_index": 239,
+          "source_chunks": [
+            "US9118735B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "The third user may have identified himself or herself as being at an event.",
+      "keywords": "Presence",
+      "source_id": "US9118735B1-chunk-001",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Third User",
+      "target": "Event",
+      "edge_index": 201,
+      "source_chunks": [
+        "US9118735B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The last-known location of the connecting person may be determined based on an event the connecting person has identified himself or herself as being at.",
+      "keywords": "Determined Based On",
+      "source_id": "US9118735B1-chunk-000",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Last-Known Location",
+      "target": "Event",
+      "edge_index": 239,
+      "source_chunks": [
+        "US9118735B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "A second ETL process subscribed to the event is caused to be performed when the event is triggered.",
+      "keywords": "causes performance of,subscribed to",
+      "source_id": "US11423041B2-chunk-000",
+      "file_path": "US11423041B2.txt",
+      "created_at": 1793284678,
+      "truncate": "",
+      "source": "Event",
+      "target": "ETL Process",
+      "edge_index": 240,
+      "source_chunks": [
+        "US11423041B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US11423041B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The event is registered for monitoring with regard to the history object.",
+      "keywords": "registered for monitoring with regard to",
+      "source_id": "US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+      "file_path": "US11423041B2.txt",
+      "created_at": 1793284678,
+      "truncate": "",
+      "source": "Event",
+      "target": "History Object",
+      "edge_index": 241,
+      "source_chunks": [
+        "US11423041B2-chunk-000",
+        "US11423041B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US11423041B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "A notification of the event is sent to one or more subscribers for the event.",
+      "keywords": "notifies",
+      "source_id": "US11423041B2-chunk-000",
+      "file_path": "US11423041B2.txt",
+      "created_at": 1793284678,
+      "truncate": "",
+      "source": "Event",
+      "target": "Subscriber",
+      "edge_index": 242,
+      "source_chunks": [
+        "US11423041B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US11423041B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "Satisfying the criteria for triggering an event causes the event to be triggered.<SEP>The criteria are evaluated to determine whether the event should be triggered.",
+      "keywords": "triggers",
+      "source_id": "US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+      "file_path": "US11423041B2.txt",
+      "created_at": 1793284678,
+      "truncate": "",
+      "source": "Event",
+      "target": "Criteria",
+      "edge_index": 243,
+      "source_chunks": [
+        "US11423041B2-chunk-000",
+        "US11423041B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US11423041B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The second ETL process is subscribed to the event to be performed when the event is triggered.",
+      "keywords": "subscribed to by",
+      "source_id": "US11423041B2-chunk-001",
+      "file_path": "US11423041B2.txt",
+      "created_at": 1793284678,
+      "truncate": "",
+      "source": "Event",
+      "target": "Second ETL Process",
+      "edge_index": 244,
+      "source_chunks": [
+        "US11423041B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US11423041B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data catalog determines that the performance of the first ETL process satisfies the criteria for triggering the event.",
+      "keywords": "determines triggering of",
+      "source_id": "US11423041B2-chunk-001",
+      "file_path": "US11423041B2.txt",
+      "created_at": 1793284678,
+      "truncate": "",
+      "source": "Event",
+      "target": "Data Catalog",
+      "edge_index": 245,
+      "source_chunks": [
+        "US11423041B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US11423041B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The notification communicates the event to another subscriber.",
+      "keywords": "notifies of",
+      "source_id": "US11423041B2-chunk-001",
+      "file_path": "US11423041B2.txt",
+      "created_at": 1793284678,
+      "truncate": "",
+      "source": "Event",
+      "target": "Notification",
+      "edge_index": 246,
+      "source_chunks": [
+        "US11423041B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US11423041B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

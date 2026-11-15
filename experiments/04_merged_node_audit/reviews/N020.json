@@ -1,0 +1,723 @@
+{
+  "audit_id": "N020",
+  "node_id": "Memory",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "已逐一审阅 5 篇、6 个来源块。Memory 均为系统/装置中与处理元件相联的计算机存储组件；四篇明确存指令/程序，US9514120B1 Claim 18 仅明确 memory 与 processing device 的耦合。因此共同类是存储组件，不扩张为五篇都明确具有相同存储内容或同一内存实例。",
+  "class_instance_interpretation_zh": "共享内存/存储部件类，不是跨专利同一对象。不同存储程序只是局部用途；US9514120B1 未明确的内容不由其他来源补足。",
+  "source_assessments": [
+    {
+      "publication_number": "US11423041B2",
+      "evidence_quote": "a memory, storing program instructions that when executed by the at least one processor",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "存储实现数据目录的程序指令。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US11423041B2-chunk-000"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US11423041B2-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US11423041B2.json",
+        "claim_file_sha256": "0356d98469cafed1e4867806dcbfc7cc87bc83f274757db009123e4522083e2c",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "原抽取描述与 Claim 1 一致。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US11423041B2-chunk-000",
+            "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 14,
+            "raw_line": "entity<|#|>Memory<|#|>Artifact<|#|>A memory storing program instructions that when executed by the at least one processor cause the processor to implement the data catalog.",
+            "fields": [
+              "entity",
+              "Memory",
+              "Artifact",
+              "A memory storing program instructions that when executed by the at least one processor cause the processor to implement the data catalog."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US11423041B2-chunk-000",
+            "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 29,
+            "raw_line": "relation<|#|>Processor<|#|>Memory<|#|>executes instructions from<|#|>The at least one processor executes program instructions stored in the memory.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Memory",
+              "executes instructions from",
+              "The at least one processor executes program instructions stored in the memory."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 1
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 4.0,
+          "description": "The memory is operatively connected to the processor.<SEP>The processor is coupled to memory and programmed by program code stored in the memory.<SEP>The at least one processor executes program instructions stored in the memory.<SEP>The processor is in communication with the memory for executing the instructions.",
+          "keywords": "coupling,executes instructions from,in communication with,operatively connected,program code storage",
+          "source_id": "US8095432B1-chunk-001<SEP>US8719408B2-chunk-001<SEP>US11423041B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US8095432B1.txt<SEP>US8719408B2.txt<SEP>US11423041B2.txt<SEP>US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Memory",
+          "edge_index": 303,
+          "source_chunks": [
+            "US8095432B1-chunk-001",
+            "US8719408B2-chunk-001",
+            "US11423041B2-chunk-000",
+            "US9589231B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2",
+            "US8095432B1",
+            "US8719408B2",
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US11423041B2-chunk-000",
+          "sha256": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65",
+          "characters": 6231
+        }
+      ]
+    },
+    {
+      "publication_number": "US8095432B1",
+      "evidence_quote": "a memory operatively connected to the processor",
+      "claim_or_section": "Claim 16",
+      "claim_number": 16,
+      "role_zh": "与处理器相连且驻留推荐应用的内存。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8095432B1-chunk-000",
+        "US8095432B1-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8095432B1-chunk-000",
+        "US8095432B1-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8095432B1.json",
+        "claim_file_sha256": "d1aeb116b21db2124fd894640e5cdc35ae864c3dcd09f3574124493022707585",
+        "claim_number": 16
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claim 16 的内存声明和 resident in memory 在两个来源块重叠，原抽取没有另造一处内存。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 12,
+            "raw_line": "entity<|#|>Memory<|#|>Artifact<|#|>A storage component operatively connected to the processor in which the recommendation application resides.",
+            "fields": [
+              "entity",
+              "Memory",
+              "Artifact",
+              "A storage component operatively connected to the processor in which the recommendation application resides."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-001",
+            "raw_record_id": "default:extract:004573bea56cbff3fdf6b77458b89786",
+            "cache_key": "default:extract:004573bea56cbff3fdf6b77458b89786",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 3,
+            "raw_line": "entity<|#|>Memory<|#|>Artifact<|#|>A storage component operatively connected to the processor in which the recommendation application resides.",
+            "fields": [
+              "entity",
+              "Memory",
+              "Artifact",
+              "A storage component operatively connected to the processor in which the recommendation application resides."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 31,
+            "raw_line": "relation<|#|>Recommendation Application<|#|>Memory<|#|>resident in<|#|>The recommendation application is resident in memory operatively connected to the processor.",
+            "fields": [
+              "relation",
+              "Recommendation Application",
+              "Memory",
+              "resident in",
+              "The recommendation application is resident in memory operatively connected to the processor."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-001",
+            "raw_record_id": "default:extract:004573bea56cbff3fdf6b77458b89786",
+            "cache_key": "default:extract:004573bea56cbff3fdf6b77458b89786",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 22,
+            "raw_line": "relation<|#|>Recommendation Application<|#|>Memory<|#|>resident in, stored in<|#|>The recommendation application is resident in the memory.",
+            "fields": [
+              "relation",
+              "Recommendation Application",
+              "Memory",
+              "resident in, stored in",
+              "The recommendation application is resident in the memory."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-001",
+            "raw_record_id": "default:extract:004573bea56cbff3fdf6b77458b89786",
+            "cache_key": "default:extract:004573bea56cbff3fdf6b77458b89786",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 23,
+            "raw_line": "relation<|#|>Processor<|#|>Memory<|#|>operatively connected<|#|>The memory is operatively connected to the processor.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Memory",
+              "operatively connected",
+              "The memory is operatively connected to the processor."
+            ]
+          }
+        ],
+        "raw_entity_count": 2,
+        "raw_relation_endpoint_count": 3
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 4.0,
+          "description": "The memory is operatively connected to the processor.<SEP>The processor is coupled to memory and programmed by program code stored in the memory.<SEP>The at least one processor executes program instructions stored in the memory.<SEP>The processor is in communication with the memory for executing the instructions.",
+          "keywords": "coupling,executes instructions from,in communication with,operatively connected,program code storage",
+          "source_id": "US8095432B1-chunk-001<SEP>US8719408B2-chunk-001<SEP>US11423041B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US8095432B1.txt<SEP>US8719408B2.txt<SEP>US11423041B2.txt<SEP>US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Memory",
+          "edge_index": 303,
+          "source_chunks": [
+            "US8095432B1-chunk-001",
+            "US8719408B2-chunk-001",
+            "US11423041B2-chunk-000",
+            "US9589231B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2",
+            "US8095432B1",
+            "US8719408B2",
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The recommendation application is resident in the memory.<SEP>The recommendation application is resident in memory operatively connected to the processor.",
+          "keywords": "resident in,stored in",
+          "source_id": "US8095432B1-chunk-000<SEP>US8095432B1-chunk-001",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Memory",
+          "target": "Recommendation Application",
+          "edge_index": 323,
+          "source_chunks": [
+            "US8095432B1-chunk-000",
+            "US8095432B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8095432B1-chunk-000",
+          "sha256": "870959f01fdf22e55223e95ba2ca5f25438debf5d1fc2aec28abb31eac4e2c83",
+          "characters": 6336
+        },
+        {
+          "chunk_id": "US8095432B1-chunk-001",
+          "sha256": "4e2287011be7023b7feb214f57a86aa9b40e2f5fdf57cef3bf400c7635c63bbb",
+          "characters": 5492
+        }
+      ]
+    },
+    {
+      "publication_number": "US8719408B2",
+      "evidence_quote": "a processor coupled to memory, the processor programmed by program code stored in the memory",
+      "claim_or_section": "Claim 17",
+      "claim_number": 17,
+      "role_zh": "存储媒体过滤装置程序代码并耦合处理器的内存。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8719408B2-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8719408B2-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8719408B2.json",
+        "claim_file_sha256": "8fbed8d352cb99d08004c35b1932e38a5b60e8d80c7aba212348f23e534fa87f",
+        "claim_number": 17
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claim 17 直接支持原实体及 apparatus/processor 邻边。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 9,
+            "raw_line": "entity<|#|>Memory<|#|>Artifact<|#|>Memory coupled to the processor that stores program code programming the processor.",
+            "fields": [
+              "entity",
+              "Memory",
+              "Artifact",
+              "Memory coupled to the processor that stores program code programming the processor."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 30,
+            "raw_line": "relation<|#|>Apparatus For Automated Digital Media Content Filtration<|#|>Memory<|#|>comprises, coupling<|#|>The apparatus comprises memory coupled to the processor.",
+            "fields": [
+              "relation",
+              "Apparatus For Automated Digital Media Content Filtration",
+              "Memory",
+              "comprises, coupling",
+              "The apparatus comprises memory coupled to the processor."
+            ]
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 31,
+            "raw_line": "relation<|#|>Processor<|#|>Memory<|#|>coupling, program code storage<|#|>The processor is coupled to memory and programmed by program code stored in the memory.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Memory",
+              "coupling, program code storage",
+              "The processor is coupled to memory and programmed by program code stored in the memory."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 4.0,
+          "description": "The memory is operatively connected to the processor.<SEP>The processor is coupled to memory and programmed by program code stored in the memory.<SEP>The at least one processor executes program instructions stored in the memory.<SEP>The processor is in communication with the memory for executing the instructions.",
+          "keywords": "coupling,executes instructions from,in communication with,operatively connected,program code storage",
+          "source_id": "US8095432B1-chunk-001<SEP>US8719408B2-chunk-001<SEP>US11423041B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US8095432B1.txt<SEP>US8719408B2.txt<SEP>US11423041B2.txt<SEP>US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Memory",
+          "edge_index": 303,
+          "source_chunks": [
+            "US8095432B1-chunk-001",
+            "US8719408B2-chunk-001",
+            "US11423041B2-chunk-000",
+            "US9589231B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2",
+            "US8095432B1",
+            "US8719408B2",
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The apparatus comprises memory coupled to the processor.",
+          "keywords": "comprises,coupling",
+          "source_id": "US8719408B2-chunk-001",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "Memory",
+          "target": "Apparatus For Automated Digital Media Content Filtration",
+          "edge_index": 325,
+          "source_chunks": [
+            "US8719408B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8719408B2-chunk-001",
+          "sha256": "dcd5540204015d2851b60923695a591f918c1aa150e91fd42d534817a881c085",
+          "characters": 4976
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "evidence_quote": "An apparatus comprising: a memory; a processing device operatively coupled to the memory",
+      "claim_or_section": "Claim 18",
+      "claim_number": 18,
+      "role_zh": "拼写反馈装置中与处理设备耦合的内存。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9514120B1-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9514120B1-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9514120B1.json",
+        "claim_file_sha256": "8346fa36328fdfbabb59a6e1b894c45fb7d867deac3a02966169ba752bd06d81",
+        "claim_number": 18
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "原实体仅声称组件和耦合，未声称此 Claim 明确把某程序存入内存；这种保守抽取有支持。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9514120B1-chunk-001",
+            "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+            "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 11,
+            "raw_line": "entity<|#|>Memory<|#|>Artifact<|#|>A component of the apparatus operatively coupled to the processing device.",
+            "fields": [
+              "entity",
+              "Memory",
+              "Artifact",
+              "A component of the apparatus operatively coupled to the processing device."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9514120B1-chunk-001",
+            "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+            "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 34,
+            "raw_line": "relation<|#|>Apparatus<|#|>Memory<|#|>comprises<|#|>The apparatus comprises a memory operatively coupled to the processing device.",
+            "fields": [
+              "relation",
+              "Apparatus",
+              "Memory",
+              "comprises",
+              "The apparatus comprises a memory operatively coupled to the processing device."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 1
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The apparatus comprises a memory operatively coupled to the processing device.",
+          "keywords": "comprises",
+          "source_id": "US9514120B1-chunk-001",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Memory",
+          "target": "Apparatus",
+          "edge_index": 324,
+          "source_chunks": [
+            "US9514120B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9514120B1-chunk-001",
+          "sha256": "7dd8efe9e014ee9e28d8ff4d1c7090dfcca115a354cf7d985cc95448a9241a74",
+          "characters": 6473
+        }
+      ]
+    },
+    {
+      "publication_number": "US9589231B2",
+      "evidence_quote": "memory which stores instructions for: receiving a request for a query from a requester",
+      "claim_or_section": "Claim 20",
+      "claim_number": 20,
+      "role_zh": "存储诊断辅助查询、嵌入和返回子集等指令。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9589231B2-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9589231B2-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9589231B2.json",
+        "claim_file_sha256": "6ffab90b44ab1b42f178a3876033f97c0a2a5b30908b21046af4aed39e994d6b",
+        "claim_number": 20
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claim 20 以及跨边界的 Claim 19 支持原描述与实际邻边。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9589231B2-chunk-001",
+            "raw_record_id": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "cache_key": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 10,
+            "raw_line": "entity<|#|>Memory<|#|>Artifact<|#|>A component that stores instructions for receiving queries, embedding cases, providing query types, and returning subsets.",
+            "fields": [
+              "entity",
+              "Memory",
+              "Artifact",
+              "A component that stores instructions for receiving queries, embedding cases, providing query types, and returning subsets."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9589231B2-chunk-001",
+            "raw_record_id": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "cache_key": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 26,
+            "raw_line": "relation<|#|>Processor<|#|>Memory<|#|>in communication with<|#|>The processor is in communication with the memory for executing the instructions.",
+            "fields": [
+              "relation",
+              "Processor",
+              "Memory",
+              "in communication with",
+              "The processor is in communication with the memory for executing the instructions."
+            ]
+          },
+          {
+            "chunk_id": "US9589231B2-chunk-001",
+            "raw_record_id": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "cache_key": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 27,
+            "raw_line": "relation<|#|>Diagnosis Assistance System<|#|>Memory<|#|>comprises<|#|>The diagnosis assistance system comprises memory that stores instructions.",
+            "fields": [
+              "relation",
+              "Diagnosis Assistance System",
+              "Memory",
+              "comprises",
+              "The diagnosis assistance system comprises memory that stores instructions."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 4.0,
+          "description": "The memory is operatively connected to the processor.<SEP>The processor is coupled to memory and programmed by program code stored in the memory.<SEP>The at least one processor executes program instructions stored in the memory.<SEP>The processor is in communication with the memory for executing the instructions.",
+          "keywords": "coupling,executes instructions from,in communication with,operatively connected,program code storage",
+          "source_id": "US8095432B1-chunk-001<SEP>US8719408B2-chunk-001<SEP>US11423041B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US8095432B1.txt<SEP>US8719408B2.txt<SEP>US11423041B2.txt<SEP>US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Memory",
+          "edge_index": 303,
+          "source_chunks": [
+            "US8095432B1-chunk-001",
+            "US8719408B2-chunk-001",
+            "US11423041B2-chunk-000",
+            "US9589231B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2",
+            "US8095432B1",
+            "US8719408B2",
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The diagnosis assistance system comprises memory that stores instructions.",
+          "keywords": "comprises",
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Memory",
+          "target": "Diagnosis Assistance System",
+          "edge_index": 326,
+          "source_chunks": [
+            "US9589231B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9589231B2-chunk-001",
+          "sha256": "6c471f8c23a679d6965872da70a3167aecd6312380e16ae9ba071b3f71d90f8c",
+          "characters": 3236
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 5,
+    "observed_unsupported_edge": false,
+    "details_zh": "已逐条审阅实际邻边及其 source_id。未确认一条缺少其自身来源支持的边；合并后的跨文档邻接不能当成已发生错误边传播的证据。",
+    "edge_indices": [
+      303,
+      323,
+      324,
+      325,
+      326
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 303,
+        "source_id": "US8095432B1-chunk-001<SEP>US8719408B2-chunk-001<SEP>US11423041B2-chunk-000<SEP>US9589231B2-chunk-001",
+        "canonical_publications": [
+          "US11423041B2",
+          "US8095432B1",
+          "US8719408B2",
+          "US9589231B2"
+        ],
+        "assessment": "locally_supported_with_qualification",
+        "source_evidence_claims": "US8095432B1 Claim 16; US8719408B2 Claim 17; US11423041B2 Claim 1; US9589231B2 Claims 19,20",
+        "details_zh": "此边保留四篇来源；每篇支持各自的处理器/内存角色，不保证单个来源支持全部合并措辞或跨篇实例同一。"
+      },
+      {
+        "edge_index": 323,
+        "source_id": "US8095432B1-chunk-000<SEP>US8095432B1-chunk-001",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8095432B1 Claim 16",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 324,
+        "source_id": "US9514120B1-chunk-001",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9514120B1 Claim 18",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 325,
+        "source_id": "US8719408B2-chunk-001",
+        "canonical_publications": [
+          "US8719408B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8719408B2 Claim 17",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 326,
+        "source_id": "US9589231B2-chunk-001",
+        "canonical_publications": [
+          "US9589231B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9589231B2 Claim 20",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      }
+    ],
+    "retrieval_or_generation_propagation_tested": false
+  },
+  "limitations_zh": [
+    "这是 AI 辅助原文/抽取/图结构审阅，非独立人工标注 gold、非新的模型评判 API 实验。",
+    "仅审核当前保存的第二轮图快照与其来源块；概念合并不等于实例 sameAs，也没有进行跨专利路径检索或答案生成传播实验。",
+    "原文为已索引摘要及 Claims；没有用外部说明书填补缺失事实。原始文本中的格式缺陷保持原样。",
+    "边的端点顺序来自保存的无向图；语义方向按原关系描述核对，不把 source/target 字段顺序当作因果方向。",
+    "observed_unsupported_edge=false 表示本次检查未确认无原文支持的实际边，不是证明全图无误；关键词粒度/局部实施例范围的警示另记。",
+    "未给定显式类/实例 ontology。类别是基于具体词义及作用域的审阅标签，contextual_conflation 数量不是错误边数或代码 bug 率；Event/Network 的宽类解释可改变类别。",
+    "缓存提取行未保存 finish_reason 时不推定完整或截断；本审核只对实际保存的实体/关系行与当前已入图事实作语义核验。"
+  ],
+  "ontology_sensitivity": {
+    "explicit_ontology_available": false,
+    "alternative_shared_broad_class_plausible": false,
+    "interpretation_zh": "类别只描述现有证据下的概念语义，未断言跨专利实例相同或已发生错误推理。"
+  },
+  "review_method": {
+    "reviewer": "AI-assisted Codex content review",
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "all_source_publications_reviewed": 5,
+    "all_source_chunks_reviewed": 6,
+    "all_actual_incident_edges_reviewed": 5,
+    "raw_input_kind": "saved extraction rows; no new extraction",
+    "review_protocol_sha256": "bbed066b8051df60997798d319549164d750797ebef3d7c1e86d69ffc6092255",
+    "dossier_sha256": "e0883a92e082208e7bd0bebe51e10543da25697085213be6c0af316f2440cdb5",
+    "generated_utc": "2026-10-30T08:21:11.049855+00:00"
+  },
+  "graph_node_description_reviewed": "A storage component operatively connected to the processor in which the recommendation application resides.<SEP>A component of the apparatus operatively coupled to the processing device.<SEP>Memory coupled to the processor that stores program code programming the processor.<SEP>A memory storing program instructions that when executed by the at least one processor cause the processor to implement the data catalog.<SEP>A component that stores instructions for receiving queries, embedding cases, providing query types, and returning subsets."
+}

@@ -1,0 +1,1279 @@
+{
+  "node_id": "Server",
+  "entity_type": "artifact",
+  "graph_source_chunks": [
+    "US10778629B2-chunk-000",
+    "US10778629B2-chunk-001",
+    "US8509827B2-chunk-000",
+    "US8509827B2-chunk-001",
+    "US9118735B1-chunk-000",
+    "US9374411B1-chunk-000",
+    "US9514120B1-chunk-000"
+  ],
+  "entity_chunk_store_sources": [
+    "US10778629B2-chunk-000",
+    "US10778629B2-chunk-001",
+    "US8509827B2-chunk-000",
+    "US8509827B2-chunk-001",
+    "US9118735B1-chunk-000",
+    "US9374411B1-chunk-000",
+    "US9514120B1-chunk-000"
+  ],
+  "all_source_chunks": [
+    "US10778629B2-chunk-000",
+    "US10778629B2-chunk-001",
+    "US8509827B2-chunk-000",
+    "US8509827B2-chunk-001",
+    "US9118735B1-chunk-000",
+    "US9374411B1-chunk-000",
+    "US9514120B1-chunk-000"
+  ],
+  "canonical_publications": [
+    "US10778629B2",
+    "US8509827B2",
+    "US9118735B1",
+    "US9374411B1",
+    "US9514120B1"
+  ],
+  "publication_count": 5,
+  "actual_chunk_file_paths": [
+    "US10778629B2.txt",
+    "US8509827B2.txt",
+    "US9118735B1.txt",
+    "US9374411B1.txt",
+    "US9514120B1.txt"
+  ],
+  "graph_file_paths": [
+    "US8509827B2.txt",
+    "US9118735B1.txt",
+    "US9514120B1.txt",
+    "US9374411B1.txt",
+    "US10778629B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US10778629B2",
+    "US8509827B2",
+    "US9118735B1",
+    "US9374411B1",
+    "US9514120B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US10778629B2-chunk-000",
+    "US10778629B2-chunk-001",
+    "US8509827B2-chunk-000",
+    "US8509827B2-chunk-001",
+    "US9118735B1-chunk-000",
+    "US9374411B1-chunk-000",
+    "US9514120B1-chunk-000"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US10778629B2-chunk-000",
+    "US10778629B2-chunk-001",
+    "US8509827B2-chunk-000",
+    "US8509827B2-chunk-001",
+    "US9118735B1-chunk-000",
+    "US9374411B1-chunk-000",
+    "US9514120B1-chunk-000"
+  ],
+  "graph_node": {
+    "entity_id": "Server",
+    "entity_type": "artifact",
+    "description": "At least one server associated with a context-data provider used to collect a set of context-data.<SEP>A computing system that receives short messages from mobile devices, determines context-data types, identifies and ranks context-data sources, and generates requests for context data.<SEP>A computing system that receives requests, traverses social networks to identify connecting persons, and sends identifiers or responses to the requesting person's computer.<SEP>A server hosted by the computing device that performs the typographical error classification operations.<SEP>A computing system that streams video content features to a client.<SEP>A server that receives data comprising characteristics of e-mail exchanges from the interaction database, assigns weights to characteristics, and transfers data to a processor.<SEP>A server that receives data comprising characteristics of e-mail exchanges, assigns weights to characteristics, and transfers data to a processor for generating relationship data.",
+    "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001<SEP>US9118735B1-chunk-000<SEP>US9514120B1-chunk-000<SEP>US9374411B1-chunk-000<SEP>US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+    "file_path": "US8509827B2.txt<SEP>US9118735B1.txt<SEP>US9514120B1.txt<SEP>US9374411B1.txt<SEP>US10778629B2.txt",
+    "created_at": 1793284708,
+    "truncate": "",
+    "id": "Server"
+  },
+  "incident_edge_count": 12,
+  "audit_id": "N003",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US10778629B2",
+      "file_paths": [
+        "US10778629B2.txt"
+      ],
+      "source_chunks": [
+        "US10778629B2-chunk-000",
+        "US10778629B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US10778629B2",
+          "full_doc_id": "US10778629B2",
+          "file_path": "US10778629B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "4186cbfdf5ae0546a6a2e816d9f4dec6c2a2dab527fc6cb34fce62150374f67a",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6584,
+          "content": "Publication number: US10778629B2\nTitle: Systems and methods for collation, translation, and analysis of passively created digital interaction and relationship data\n\nABSTRACT\nA method of modeling relationships between e-mail users. The method includes extracting a record of e-mail exchanges between the users. The record is extracted from at least one of an e-mail server and an e-mail transfer agent. The data is extracted through a direct internet access protocol. The method includes filtering the record to produce relevant interaction data based on the e-mail exchanges between two users. Relevant interaction data includes a number of e-mail exchanges between the users and includes a ratio of source to target and target to source interactions. The method includes loading the relevant interaction data into a relationship modeling program, which assigns a weight to each of a plurality of characteristics of the relevant interaction data and provides a model of relationships between the e-mail users based at least in part on the weight of each characteristic. The plurality of characteristics comprises interaction volume.\n\nCLAIMS\nWhat is claimed is: 1. A non-transitory computer readable medium containing executable instructions that when executed perform a method of modeling relationships between a plurality of e-mail users comprising: extracting a record of e-mail exchanges between the plurality of users, wherein the record is extracted from a database of e-mail exchanges between pairs of users, wherein the data is extracted through a direct internet access protocol; filtering the record to produce relevant interaction data based on the e-mail exchanges between the plurality of users, wherein the relevant interaction data includes a number of e-mail exchanges between each pair of the plurality of users; loading the relevant interaction data into a relationship modeling program, wherein the relationship modeling program assigns a weight to each of a plurality of characteristics of the relevant interaction data for each pair of the plurality of users, the plurality of characteristics comprising a time since a first interaction, a time since a last interaction, interaction volume between the two users, and a ratio of source to target versus target to source interactions, wherein the plurality of characteristics are further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone, wherein the relationship modeling program provides a model of relationships between each pair of the plurality of e-mail users by determining a relationship strength between each pair of the plurality of e-mail users based at least in part on the weight assigned to each of the plurality of characteristics; and displaying the model of relationships on a user interface. 2. The non-transitory computer readable medium of claim 1 further comprising populating an interaction database by monitoring e-mail exchanges and extracting relevant e-mail exchanges. 3. The non-transitory computer readable medium of claim 1 , wherein a characteristic of the plurality of characteristics is selected from a group consisting of interaction frequency, interaction type, number of communication participants. 4. The non-transitory computer readable medium of claim 1 , wherein the plurality of characteristics comprises a time between interactions. 5. The non-transitory computer readable medium of claim 1 , wherein the data associated with the e-mail exchanges between the plurality of users is obtained from an e-mail field selected from a group consisting of SMTP, IMAP4, POP3, MIME, RFC 2046, RFC 2822, RFC 3156, and RFC 5322. 6. The non-transitory computer readable medium of claim 1 , wherein the data associated with the e-mail exchanges between the plurality of users of the e-mail system is obtained from a mail server, mail archives, and a log file. 7. The non-transitory computer readable medium of claim 1 , wherein the data associated with the e-mail exchanges between the plurality of users of the e-mail system is obtained from a spam filtering system based e-mail headers. 8. The non-transitory computer readable medium of claim 1 , wherein the model of relationship includes strength of the relationship based on intimacy of conversations, frequency of communications, and historical age of the relationship. 9. The non-transitory computer readable medium of claim 1 , wherein the interaction data is further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone. 10. A method of processing relationship data in a server, the method comprising: receiving, at the server, data comprising a plurality of characteristics of e-mail exchanges between pairs of users of an e-mail system, wherein the data is transferred to the server from an interaction database of e-mail exchanges between pairs of users of the email system, and wherein the interaction database is populated through a direct internet access protocol, wherein the plurality of characteristics comprise a time since a first interaction, a time since a last interaction, interaction volume between the pair of users, and a ratio of source to target versus target to source interactions, and the plurality of characteristics are further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone; assigning a weight to each of the plurality of characteristics for each pair of users; transferring, from the server, the data to a processor for generating relationship data by determining a relationship strength associated with each pair of users; and displaying the relationship data on a user interface. 11. The method of claim 10 , wherein the displaying of the relationship data on the user interface comprises providing a graphical representation of the relationship strength associated with each pair of. 12. The method of claim 10 , wherein the interaction database is populated by monitoring e-mail exchanges and extracting relevant e-mail exchanges. 13. The method of claim 10 , wherein the characteristic comprises at least one selected from a group consisting of interaction frequency, interaction type, and number of communication participants. 14. The method of claim 10 , wherein the characteristic comprises a time between interactions. 15. The method of claim 10 , wherein the data associated with the e-mail exchanges between the",
+          "llm_cache_list": [
+            "default:extract:7fdbcba60fac32a73f614af840f640c4"
+          ],
+          "chunk_id": "US10778629B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US10778629B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "3cd58423533f8a782883c1e931d98775ebe7f6264ea90c67d2f12e74cb453dfc"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 8,
+              "raw_line": "entity<|#|>Server<|#|>Artifact<|#|>A server that receives data comprising characteristics of e-mail exchanges, assigns weights to characteristics, and transfers data to a processor for generating relationship data.",
+              "fields": [
+                "entity",
+                "Server",
+                "Artifact",
+                "A server that receives data comprising characteristics of e-mail exchanges, assigns weights to characteristics, and transfers data to a processor for generating relationship data."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 42,
+              "raw_line": "relation<|#|>Server<|#|>Interaction Database<|#|>data transfer<|#|>Data comprising characteristics of e-mail exchanges is transferred to the server from an interaction database.",
+              "fields": [
+                "relation",
+                "Server",
+                "Interaction Database",
+                "data transfer",
+                "Data comprising characteristics of e-mail exchanges is transferred to the server from an interaction database."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 43,
+              "raw_line": "relation<|#|>Server<|#|>Processor<|#|>data transfer<|#|>The server transfers data to a processor for generating relationship data.",
+              "fields": [
+                "relation",
+                "Server",
+                "Processor",
+                "data transfer",
+                "The server transfers data to a processor for generating relationship data."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 45,
+              "raw_line": "relation<|#|>Server<|#|>User Interface<|#|>displaying<|#|>Relationship data is displayed on a user interface.",
+              "fields": [
+                "relation",
+                "Server",
+                "User Interface",
+                "displaying",
+                "Relationship data is displayed on a user interface."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 185,
+              "chunk_char_end": 611,
+              "text": " modeling relationships between e-mail users. The method includes extracting a record of e-mail exchanges between the users. The record is extracted from at least one of an e-mail server and an e-mail transfer agent. The data is extracted through a direct internet access protocol. The method includes filtering the record to produce relevant interaction data based on the e-mail exchanges between two users. Relevant interact"
+            },
+            {
+              "chunk_char_start": 3729,
+              "chunk_char_end": 4155,
+              "text": "-transitory computer readable medium of claim 1 , wherein the data associated with the e-mail exchanges between the plurality of users of the e-mail system is obtained from a mail server, mail archives, and a log file. 7. The non-transitory computer readable medium of claim 1 , wherein the data associated with the e-mail exchanges between the plurality of users of the e-mail system is obtained from a spam filtering system "
+            },
+            {
+              "chunk_char_start": 4529,
+              "chunk_char_end": 4955,
+              "text": " at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone. 10. A method of processing relationship data in a server, the method comprising: receiving, at the server, data comprising a plurality of characteristics of e-mail exchanges between pairs of users of an e-mail system, wherein the data is transferred to the server from an interaction database of "
+            },
+            {
+              "chunk_char_start": 4578,
+              "chunk_char_end": 5004,
+              "text": "selected from a group consisting of calendar, instant messaging, SMS, and phone. 10. A method of processing relationship data in a server, the method comprising: receiving, at the server, data comprising a plurality of characteristics of e-mail exchanges between pairs of users of an e-mail system, wherein the data is transferred to the server from an interaction database of e-mail exchanges between pairs of users of the em"
+            },
+            {
+              "chunk_char_start": 4736,
+              "chunk_char_end": 5162,
+              "text": "ng: receiving, at the server, data comprising a plurality of characteristics of e-mail exchanges between pairs of users of an e-mail system, wherein the data is transferred to the server from an interaction database of e-mail exchanges between pairs of users of the email system, and wherein the interaction database is populated through a direct internet access protocol, wherein the plurality of characteristics comprise a t"
+            },
+            {
+              "chunk_char_start": 5466,
+              "chunk_char_end": 5892,
+              "text": "om a group consisting of calendar, instant messaging, SMS, and phone; assigning a weight to each of the plurality of characteristics for each pair of users; transferring, from the server, the data to a processor for generating relationship data by determining a relationship strength associated with each pair of users; and displaying the relationship data on a user interface. 11. The method of claim 10 , wherein the display"
+            }
+          ],
+          "lexical_occurrence_count": 6
+        },
+        {
+          "publication_number": "US10778629B2",
+          "full_doc_id": "US10778629B2",
+          "file_path": "US10778629B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 749,
+          "content_sha256": "9c08affa61a10a781ad7e194ca432d33e618652662386c29953015f69b28cc9c",
+          "exact_doc_char_start": 6053,
+          "exact_doc_char_end": 10078,
+          "content": "The method of claim 10 , wherein the interaction database is populated by monitoring e-mail exchanges and extracting relevant e-mail exchanges. 13. The method of claim 10 , wherein the characteristic comprises at least one selected from a group consisting of interaction frequency, interaction type, and number of communication participants. 14. The method of claim 10 , wherein the characteristic comprises a time between interactions. 15. The method of claim 10 , wherein the data associated with the e-mail exchanges between the pairs of users of the e-mail system is obtained from an e-mail field selected from a group consisting of SMTP, IMAP4, POP3, MIME, RFC 2046, RFC 2822, RFC 3156, and RFC 5322. 16. The method of claim 10 , wherein the data associated with the e-mail exchanges between the pairs of users of the e-mail system is obtained from a mail server, mail archives, and a log file. 17. The method of claim 10 , wherein the data associated with the e-mail exchanges between the pairs of users of the e-mail system is obtained from a spam filtering system based e-mail headers. 18. The method of claim 10 , wherein the strength of the relationship is based on intimacy of conversations, frequency of communications, and historical age of the relationship. 19. The method of claim 10 , wherein the characteristic of e-mail exchanges between pairs of users is further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone. 20. A non-transitory computer readable medium containing executable instructions that when executed perform a method of generating relationship data, comprising: accessing an interaction database of e-mail exchanges between pairs of users of an e-mail system; obtaining a plurality of characteristics of e-mail exchanges between the pairs of users and wherein the plurality of characteristics of e-mail exchanges fare further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone, wherein the plurality of characteristics are stored in the interaction database and wherein the data is obtained through a direct internet access protocol, wherein the plurality of characteristics comprise a time since a first interaction, a time since a last interaction, interaction volume between the pair of users, and a ratio of source to target versus target to source interactions; assigning a weight to each of the plurality of characteristics for each pair of users; generating relationship data by determining a relationship strength of associated with each pair of users based on the weight assigned to each of the plurality of characteristics for each pair of users; and displaying the relationship data on a user interface. 21. A system for processing relationship data, the system comprising: an e-mail system; an interaction database of e-mail exchanges between pairs of users of the e-mail system; a server to: receive data comprising a plurality of characteristics of e-mail exchanges between pairs of users of the e-mail system, wherein the data is transferred to the server from the interaction database, and wherein the interaction database is populated through a direct internet access protocol, wherein the plurality of characteristics comprise a time since a first interaction, a time since a last interaction, interaction volume between the pair of users, and a ratio of source to target versus target to source interactions, and the plurality of characteristics are further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone; assign a weight to each of the plurality of characteristics for each pair of users; and transfer the data to a processor for generating relationship data by determining a relationship strength associated with each pair of users; and a user interface to display the relationship data.",
+          "llm_cache_list": [
+            "default:extract:68e0aceddbed721b768da83212200673"
+          ],
+          "chunk_id": "US10778629B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US10778629B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "6c749b744a83628fddbaa1a9bb77f7366bbe6eebfa40f3edd8a4ae981fa6dc4b"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 9,
+              "raw_line": "entity<|#|>Server<|#|>Artifact<|#|>A server that receives data comprising characteristics of e-mail exchanges from the interaction database, assigns weights to characteristics, and transfers data to a processor.",
+              "fields": [
+                "entity",
+                "Server",
+                "Artifact",
+                "A server that receives data comprising characteristics of e-mail exchanges from the interaction database, assigns weights to characteristics, and transfers data to a processor."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 36,
+              "raw_line": "relation<|#|>Server<|#|>Interaction Database<|#|>receives data from<|#|>The server receives data comprising characteristics of e-mail exchanges transferred from the interaction database.",
+              "fields": [
+                "relation",
+                "Server",
+                "Interaction Database",
+                "receives data from",
+                "The server receives data comprising characteristics of e-mail exchanges transferred from the interaction database."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 37,
+              "raw_line": "relation<|#|>Server<|#|>Weight<|#|>assigns<|#|>The server assigns a weight to each of the plurality of characteristics for each pair of users.",
+              "fields": [
+                "relation",
+                "Server",
+                "Weight",
+                "assigns",
+                "The server assigns a weight to each of the plurality of characteristics for each pair of users."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 38,
+              "raw_line": "relation<|#|>Server<|#|>Processor<|#|>transfers data to<|#|>The server transfers the data to a processor for generating relationship data.",
+              "fields": [
+                "relation",
+                "Server",
+                "Processor",
+                "transfers data to",
+                "The server transfers the data to a processor for generating relationship data."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 681,
+              "chunk_char_end": 1107,
+              "text": " RFC 3156, and RFC 5322. 16. The method of claim 10 , wherein the data associated with the e-mail exchanges between the pairs of users of the e-mail system is obtained from a mail server, mail archives, and a log file. 17. The method of claim 10 , wherein the data associated with the e-mail exchanges between the pairs of users of the e-mail system is obtained from a spam filtering system based e-mail headers. 18. The metho"
+            },
+            {
+              "chunk_char_start": 2834,
+              "chunk_char_end": 3260,
+              "text": " 21. A system for processing relationship data, the system comprising: an e-mail system; an interaction database of e-mail exchanges between pairs of users of the e-mail system; a server to: receive data comprising a plurality of characteristics of e-mail exchanges between pairs of users of the e-mail system, wherein the data is transferred to the server from the interaction database, and wherein the interaction database i"
+            },
+            {
+              "chunk_char_start": 3004,
+              "chunk_char_end": 3430,
+              "text": "system; a server to: receive data comprising a plurality of characteristics of e-mail exchanges between pairs of users of the e-mail system, wherein the data is transferred to the server from the interaction database, and wherein the interaction database is populated through a direct internet access protocol, wherein the plurality of characteristics comprise a time since a first interaction, a time since a last interaction"
+            }
+          ],
+          "lexical_occurrence_count": 3
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "The server receives data comprising characteristics of e-mail exchanges transferred from the interaction database.<SEP>Data comprising characteristics of e-mail exchanges is transferred to the server from an interaction database.",
+          "keywords": "data transfer,receives data from",
+          "source_id": "US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Server",
+          "target": "Interaction Database",
+          "edge_index": 90,
+          "source_chunks": [
+            "US10778629B2-chunk-000",
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The server transfers the data to a processor for generating relationship data.<SEP>The server transfers data to a processor for generating relationship data.",
+          "keywords": "data transfer,transfers data to",
+          "source_id": "US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Server",
+          "target": "Processor",
+          "edge_index": 91,
+          "source_chunks": [
+            "US10778629B2-chunk-000",
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Relationship data is displayed on a user interface.",
+          "keywords": "displaying",
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Server",
+          "target": "User Interface",
+          "edge_index": 92,
+          "source_chunks": [
+            "US10778629B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The server assigns a weight to each of the plurality of characteristics for each pair of users.",
+          "keywords": "assigns",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Server",
+          "target": "Weight",
+          "edge_index": 93,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8509827B2",
+      "file_paths": [
+        "US8509827B2.txt"
+      ],
+      "source_chunks": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8509827B2",
+          "full_doc_id": "US8509827B2",
+          "file_path": "US8509827B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "6773cf78665bbb35e2353f276d6c19b21d69539b45a17c7fb0645c99c7afd791",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6249,
+          "content": "Publication number: US8509827B2\nTitle: Methods and apparatus of context-data acquisition and ranking\n\nABSTRACT\nDisclosed are a system, method, and article of manufacture of a context-data acquisition and ranking. A context-data type is determined from a query. At least one context-data source that provides the context-data type is identified. A request for a context data of the context-data type is generated from the at least one context data source. A received context data from the at least one context data source according a specified parameter may be ranked. The received context data may be provided to the device that generated a short message. The received context data may be provided to a recipient mobile device. The received context data may be associated with a component of a short message generated by a device that generated the query. The received context data may be appended to the short message.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: receiving a short message from a mobile device with a server; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type from the at least one context data source. 2. The method of claim further comprising: providing the received context data to the device that generated a short message. 3. The method of claim further comprising: providing the received context data to a recipient mobile device, 4. The method of claim 3 , wherein providing the received context data to the recipient mobile device further comprises: associating the received context data with a component of a short message generated by a device that generated the query. 5. The method of claim 4 , wherein providing the received context data to the mobile device further comprises: appending the received context data to the short message. 6. The method of claim 5 further comprising: forwarding the short message and the received context data to the recipient mobile device. 7. The method of claim 4 , wherein providing the received context data to the mobile device further comprises: encoding the received context data into the short message with a markup language. 8. The method of claim 1 , wherein providing the request for the context data of the context-data type to the at least one context data source further comprises: providing the request for the context data of the context-data type to a plurality of context-data sources. 9. The method of claim 1 further comprising: storing the received context data in a database available to a recipient mobile device, 10. The method of claim 9 further comprising: forwarding a Uniform Resource Identifier (URI) of a database server to the receiving mobile device, 11. The method of claim 9 further comprising: appending metadata instructions to query the database for the received context data in the short message. 12. The method of claim 1 , wherein the specified parameter comprises a state of the receiving mobile device. 13. The method of claim 1 , wherein the specified parameter comprises a state of an available communication network. 14. The method of claim 1 , wherein the specified parameter comprises a cost value of the context data as provided by the context-data source. 15. The method of claim 1 , wherein the context-data type provides information about a context of the device that generated the short message. 16. The method of claim 15 , wherein the mobile device that generated the short message comprises a smart phone. 17. The method of claim 1 , further comprising a computer readable medium comprising computer-executable instructions adapted to perform the method of claim 1 . 18. A computerized-apparatus comprising: at least one memory having program instructions, and at least one processor configured to execute the program instructions to perform the operations of: receiving a short message from a mobile device; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type to the at least one context data source. 19. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of rendering a context data from the at least one context-data source for communication through a communication network to a mobile device. 20. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of appending the context data from the at least one context-data source to a short message generated by the mobile device. 21. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of selecting the context-data. from a list of context-data elements weighted according to at least one metric. 22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the context-data is obtained by a physical sensor;",
+          "llm_cache_list": [
+            "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e"
+          ],
+          "chunk_id": "US8509827B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US8509827B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "3269f5ba7724a2383297188a787e202de357355c0830407a79fdedbe8d5d6974"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+              "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 7,
+              "raw_line": "entity<|#|>Server<|#|>Artifact<|#|>A computing system that receives short messages from mobile devices, determines context-data types, identifies and ranks context-data sources, and generates requests for context data.",
+              "fields": [
+                "entity",
+                "Server",
+                "Artifact",
+                "A computing system that receives short messages from mobile devices, determines context-data types, identifies and ranks context-data sources, and generates requests for context data."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+              "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Context-Data Acquisition And Ranking<|#|>Server<|#|>Executes On<|#|>The method is performed with a server that receives short messages and generates requests for context data.",
+              "fields": [
+                "relation",
+                "Context-Data Acquisition And Ranking",
+                "Server",
+                "Executes On",
+                "The method is performed with a server that receives short messages and generates requests for context data."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+              "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 46,
+              "raw_line": "relation<|#|>Context-Data Provider<|#|>Server<|#|>Collected By<|#|>A set of context data is collected from the context-data provider with at least one server.",
+              "fields": [
+                "relation",
+                "Context-Data Provider",
+                "Server",
+                "Collected By",
+                "A set of context data is collected from the context-data provider with at least one server."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 846,
+              "chunk_char_end": 1272,
+              "text": "he query. The received context data may be appended to the short message.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: receiving a short message from a mobile device with a server; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; id"
+            },
+            {
+              "chunk_char_start": 2993,
+              "chunk_char_end": 3419,
+              "text": "eived context data in a database available to a recipient mobile device, 10. The method of claim 9 further comprising: forwarding a Uniform Resource Identifier (URI) of a database server to the receiving mobile device, 11. The method of claim 9 further comprising: appending metadata instructions to query the database for the received context data in the short message. 12. The method of claim 1 , wherein the specified param"
+            },
+            {
+              "chunk_char_start": 5782,
+              "chunk_char_end": 6208,
+              "text": "ntext-data elements weighted according to at least one metric. 22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the conte"
+            }
+          ],
+          "lexical_occurrence_count": 3
+        },
+        {
+          "publication_number": "US8509827B2",
+          "full_doc_id": "US8509827B2",
+          "file_path": "US8509827B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 226,
+          "content_sha256": "5a69c19d4d793958af4570ac5edb0a3d06dce47d9b48d21e3314d72b39575031",
+          "exact_doc_char_start": 5734,
+          "exact_doc_char_end": 6895,
+          "content": "of selecting the context-data. from a list of context-data elements weighted according to at least one metric. 22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the context-data is obtained by a physical sensor; linking the relevant context data to the short message; and formatting the relevant context data and the short message according to a communication protocol. 23. The method of claim 22 , wherein the communication protocol comprises a cellular network short message protocol. 24. The method of claim 22 , wherein the communication protocol comprises an internet communication protocol. 25. The method of claim 22 , wherein the at least one context-data provider is allowed to provide a cost of the context-data. 26. The method of claim 22 , wherein the context data is related to a physical context of the device that generated the short message.",
+          "llm_cache_list": [
+            "default:extract:5232641f0d541aaebc65d8d321b4057c"
+          ],
+          "chunk_id": "US8509827B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US8509827B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "e4c0257f24da7b89114a8188775ccdc3399d3e9d9dcd5a8987fe64d16d599112"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:5232641f0d541aaebc65d8d321b4057c",
+              "cache_key": "default:extract:5232641f0d541aaebc65d8d321b4057c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 10,
+              "raw_line": "entity<|#|>Server<|#|>Artifact<|#|>At least one server associated with a context-data provider used to collect a set of context-data.",
+              "fields": [
+                "entity",
+                "Server",
+                "Artifact",
+                "At least one server associated with a context-data provider used to collect a set of context-data."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:5232641f0d541aaebc65d8d321b4057c",
+              "cache_key": "default:extract:5232641f0d541aaebc65d8d321b4057c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 23,
+              "raw_line": "relation<|#|>Server<|#|>Context-Data Provider<|#|>associated with<|#|>At least one server is associated with the context-data provider.",
+              "fields": [
+                "relation",
+                "Server",
+                "Context-Data Provider",
+                "associated with",
+                "At least one server is associated with the context-data provider."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 48,
+              "chunk_char_end": 474,
+              "text": "ntext-data elements weighted according to at least one metric. 22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the conte"
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The method is performed with a server that receives short messages and generates requests for context data.",
+          "keywords": "Executes On",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793284125,
+          "truncate": "",
+          "source": "Context-Data Acquisition And Ranking",
+          "target": "Server",
+          "edge_index": 53,
+          "source_chunks": [
+            "US8509827B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8509827B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "At least one server is associated with the context-data provider.<SEP>A set of context data is collected from the context-data provider with at least one server.",
+          "keywords": "Collected By,associated with",
+          "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793284125,
+          "truncate": "",
+          "source": "Server",
+          "target": "Context-Data Provider",
+          "edge_index": 83,
+          "source_chunks": [
+            "US8509827B2-chunk-000",
+            "US8509827B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8509827B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9118735B1",
+      "file_paths": [
+        "US9118735B1.txt"
+      ],
+      "source_chunks": [
+        "US9118735B1-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9118735B1",
+          "full_doc_id": "US9118735B1",
+          "file_path": "US9118735B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "309f82082f5c546ffbe04ef4427e7a3f66cfb4e51a0abfd0cc60e2913ad83997",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6404,
+          "content": "Publication number: US9118735B1\nTitle: Finding people using social networks\n\nABSTRACT\nEmbodiments are described for assisting a first person in finding a second person using a social network. A person may send a request to a server that identifies that person, the person he or she is looking for, and the requestor's location. The server may then traverse that person's social network to identify someone who is in a similar location and who knows the person being sought. The server may send an identification of this person who knows the person being sought to the requestor. Various privacy mechanisms are also disclosed, including anonymizing identifying information, and encrypting communications.\n\nCLAIMS\nWhat is claimed is: 1. A system for assisting a requesting person in finding a target person using social networks, comprising: a memory bearing instructions that, upon execution by a processor, cause the system to at least: receive an identification associated with the requesting person, an identification associated with the target person, and a location of the requesting person; determine a social network of the requesting person based on the identification of the requesting person, the social network comprising information from at least one social network service; determine an identifier associated with a connecting person in the social network of the requesting person who is likely to connect the social network of the requesting person with a social network of the target person, and who has a last-known location within a predetermined distance from the location of the requesting person, wherein the requesting person and connecting person have a number of degrees of separation and a type of relationship; determine that the connecting person has opted-in to sharing information about his or her identity, social network, or location with people of at least as many degrees of separation as the number of degrees of separation for the type of relationship that the requesting person and connecting person have; and send an identifier associated with the connecting person, or a response based on a response from a computer of the connecting person, or a possible location of the target person to a computer of the requesting person. 2. The system of claim 1 , wherein the instructions that, upon execution by the processor cause the system to at least determine that the connecting person has opted-in further cause the system to at least: determine that the connecting person has opted-in in response to sending the computer of the connecting person information identifying the requesting person, the target person, the location of the requesting person or a person in the social network of the requesting person that connects the requesting person and the connecting person. 3. The system of claim 1 , wherein the memory further bears instructions that, upon execution by the processor, cause the system to at least: determine an identifier associated with a second connecting person; and wherein the processor-executable instructions that, when executed on the processor cause the system to at least send the response based on the response from the computer of the connecting person further cause the system to at least: send the response based on the response from the computer of the connecting person based on determining that the response from the computer of the connecting person has a higher priority than a response from a computer of the second person. 4. A method for assisting a first user in finding a second user using a social network, comprising: determining a social network of a first user; determining an identifier associated with a third user in the social network of the first user, the third user being a user that is likely to connect the social network of the first user with a social network of the second user, and who has a last-known location within a predetermined distance from the location of the first user, wherein the first user and third user have a number of degrees of separation and a type of relationship; determine that the third user has opted-in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship that the first user and third user have; and sending an identifier associated with the third user, or a response based on a response from a computer of the third user, or a possible location of the second user to a computer of the first user. 5. The method of claim 4 , further comprising: determining an identifier associated with a fourth user that is likely to connect the social network of the first user with the social network of the second user; and wherein sending the response based on the response from a computer of the third user comprises: sending the response based on a combination of the response from the computer of the third user and a response from a computer of the fourth user. 6. The method of claim 5 , wherein a format of the response from the computer of the connecting person differs from a format of the response from the computer of the second connecting person, and wherein sending the response based on a combination of the response from the computer of the third user and a response from a computer of the fourth user comprises: converting the response from the computer of the third user and the response from the computer of the fourth user to a common format; and combining the response from the computer of the third user and the response from the computer of the fourth user while in the common format. 7. The method of claim 4 , wherein determining the third user who has the last-known location within the predetermined distance from the location of the first user comprises: determining the last-known location of the third user based on a wireless network to which the computer of the third user is connected, a geolocation provided by the computer of the third user, a venue that the third user has identified himself or herself as being at, or an event that the third user has identified himself or herself as being at. 8. The method of claim 4 , further comprising: receiving an identifier associated with the first user, an identifier associated with the second user, and a location of the first user. 9. The method of claim 8 , wherein the",
+          "llm_cache_list": [
+            "default:extract:afaee09cfcca806052fdf575db5fb6c8"
+          ],
+          "chunk_id": "US9118735B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9118735B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "0cd3b7c032fa42610e5beda377ed24005a65cf9feb9fb210e2f29fad94ce1eb7"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 5,
+              "raw_line": "entity<|#|>Server<|#|>Artifact<|#|>A computing system that receives requests, traverses social networks to identify connecting persons, and sends identifiers or responses to the requesting person's computer.",
+              "fields": [
+                "entity",
+                "Server",
+                "Artifact",
+                "A computing system that receives requests, traverses social networks to identify connecting persons, and sends identifiers or responses to the requesting person's computer."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 20,
+              "raw_line": "relation<|#|>US9118735B1<|#|>Server<|#|>Patent Document, Subject Matter<|#|>The patent document describes a server that receives requests and traverses social networks to identify connecting persons.",
+              "fields": [
+                "relation",
+                "US9118735B1",
+                "Server",
+                "Patent Document, Subject Matter",
+                "The patent document describes a server that receives requests and traverses social networks to identify connecting persons."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 23,
+              "raw_line": "relation<|#|>Requesting Person<|#|>Server<|#|>Sends Request<|#|>The requesting person sends a request to the server identifying himself or herself, the target person, and the requestor's location.",
+              "fields": [
+                "relation",
+                "Requesting Person",
+                "Server",
+                "Sends Request",
+                "The requesting person sends a request to the server identifying himself or herself, the target person, and the requestor's location."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 24,
+              "raw_line": "relation<|#|>Server<|#|>Social Network<|#|>Traverses<|#|>The server traverses the requesting person's social network to identify a connecting person.",
+              "fields": [
+                "relation",
+                "Server",
+                "Social Network",
+                "Traverses",
+                "The server traverses the requesting person's social network to identify a connecting person."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Server<|#|>Connecting Person<|#|>Identifies, Determines<|#|>The server determines an identifier associated with a connecting person in the requesting person's social network.",
+              "fields": [
+                "relation",
+                "Server",
+                "Connecting Person",
+                "Identifies, Determines",
+                "The server determines an identifier associated with a connecting person in the requesting person's social network."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 26,
+              "raw_line": "relation<|#|>Server<|#|>Requesting Person<|#|>Sends Identifier, Sends Response<|#|>The server sends an identifier associated with the connecting person, a response based on the connecting person's response, or a possible location of the target person to the requesting person's computer.",
+              "fields": [
+                "relation",
+                "Server",
+                "Requesting Person",
+                "Sends Identifier, Sends Response",
+                "The server sends an identifier associated with the connecting person, a response based on the connecting person's response, or a possible location of the target person to the requesting person's computer."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 45,
+              "chunk_char_end": 471,
+              "text": "g people using social networks\n\nABSTRACT\nEmbodiments are described for assisting a first person in finding a second person using a social network. A person may send a request to a server that identifies that person, the person he or she is looking for, and the requestor's location. The server may then traverse that person's social network to identify someone who is in a similar location and who knows the person being sough"
+            },
+            {
+              "chunk_char_start": 152,
+              "chunk_char_end": 578,
+              "text": "a second person using a social network. A person may send a request to a server that identifies that person, the person he or she is looking for, and the requestor's location. The server may then traverse that person's social network to identify someone who is in a similar location and who knows the person being sought. The server may send an identification of this person who knows the person being sought to the requestor."
+            },
+            {
+              "chunk_char_start": 298,
+              "chunk_char_end": 724,
+              "text": "and the requestor's location. The server may then traverse that person's social network to identify someone who is in a similar location and who knows the person being sought. The server may send an identification of this person who knows the person being sought to the requestor. Various privacy mechanisms are also disclosed, including anonymizing identifying information, and encrypting communications.\n\nCLAIMS\nWhat is clai"
+            }
+          ],
+          "lexical_occurrence_count": 3
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The patent document describes a server that receives requests and traverses social networks to identify connecting persons.",
+          "keywords": "Patent Document,Subject Matter",
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Server",
+          "target": "US9118735B1",
+          "edge_index": 84,
+          "source_chunks": [
+            "US9118735B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The server sends an identifier associated with the connecting person, a response based on the connecting person's response, or a possible location of the target person to the requesting person's computer.<SEP>The requesting person sends a request to the server identifying himself or herself, the target person, and the requestor's location.",
+          "keywords": "Sends Identifier,Sends Request,Sends Response",
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Server",
+          "target": "Requesting Person",
+          "edge_index": 85,
+          "source_chunks": [
+            "US9118735B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The server traverses the requesting person's social network to identify a connecting person.",
+          "keywords": "Traverses",
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Server",
+          "target": "Social Network",
+          "edge_index": 86,
+          "source_chunks": [
+            "US9118735B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The server determines an identifier associated with a connecting person in the requesting person's social network.",
+          "keywords": "Determines,Identifies",
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Server",
+          "target": "Connecting Person",
+          "edge_index": 87,
+          "source_chunks": [
+            "US9118735B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "file_paths": [
+        "US9374411B1.txt"
+      ],
+      "source_chunks": [
+        "US9374411B1-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9374411B1",
+          "full_doc_id": "US9374411B1",
+          "file_path": "US9374411B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1199,
+          "content_sha256": "1c6ddec8304601845ddead7675e8d25ffe813f0a1d7087766b31ededcbd9a1cc",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6777,
+          "content": "Publication number: US9374411B1\nTitle: Content recommendations using deep data\n\nABSTRACT\nDisclosed are various embodiments for recommending content for users. A user is associated with a user preferred character that is represented in a first network content. A library is referenced to identify a recommended character based at least upon the user preferred character, the recommended character being represented in a second network content, the library associating the preferred character to the recommended character according to a relationship score. A recommendation is sent for presentation of the second network content.\n\nCLAIMS\nTherefore, the following is claimed: 1. A non-transitory computer-readable medium having a plurality of computer instructions executable by at least one computing device, wherein, upon execution, the plurality of computer instructions cause the at least one computing device to: stream a first video content feature from at least one server to a client associated with a user; cause the first video content feature to be rendered in a user interface for display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtain second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; associate a preferred character with the user based at least upon the second user interaction data, the preferred character being represented by a corresponding first cast member of the first video content feature; reference a library to identify a recommended character based at least upon the preferred character, the recommended character being represented by a corresponding second cast member of a second video content feature, the library associating the preferred character to the recommended character according to a relationship score, the relationship score being calculated based at least in part upon a proportion of users who have expressed a preference towards both the preferred character and the recommended character; and send to the user a recommendation to play the second video content feature. 2. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: obtain additional user interaction data from the user based at least upon an interaction with the second video content feature; and update the relationship score based at least upon the additional user interaction data. 3. The non-transitory computer-readable medium of claim 2 , wherein the additional user interaction data comprises user feedback expressing that the user favors at least one scene associated with the second video content feature. 4. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: identify an attribute associated with the recommended character; and send the attribute to the client to indicate a basis for the recommendation to the user. 5. The non-transitory computer-readable medium of claim 1 , wherein the user interaction data is obtained during a playback of the first video content feature via the client. 6. A system, comprising: at least one computing device; and at least one application executable in the at least one computing device, the at least one application causing the at least one computing device to: cause a first video content feature to be rendered in a user interface for display on a client; determine that a user prefers a first character based at least upon a first interaction data, the first character being represented by a corresponding first cast member of the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first interaction data; obtain second user interaction data from the client based at least in part upon an interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; determine that the user prefers a second character based at least upon the second interaction data, the second character being represented by a corresponding second cast member of a second video content feature; determine a relationship score based at least upon the first interaction data and the second interaction data, the relationship score quantifying a degree of commonality between the first character and the second character and being calculated based at least in part upon a proportion of users who have expressed a preference towards both the first character and the second character; and generate a recommendation to play at least one of the first video content feature or the second video content feature based at least upon the relationship score. 7. The system of claim 6 , wherein the at least one application further causes the at least one computing device to: store a first set of attributes associated with the first character; store a second set of attributes associated with the second character; and compare the first set of attributes to the second set of attributes. 8. The system of claim 6 , wherein the first interaction data comprises explicit user feedback expressing that the user favors the first character. 9. The system of claim 6 , wherein the first interaction data comprises at least one of consumption history data relating to a product associated with the first character or browse history data relating to a product associated with the first character. 10. The system of claim 6 , wherein the first interaction data comprises user feedback expressing that the user favors at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim",
+          "llm_cache_list": [
+            "default:extract:4a665eb9b6325343afd5a73cbd168366"
+          ],
+          "chunk_id": "US9374411B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9374411B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "c86c537652ef009d655d7cad38ff0880a71b88ff4bcca89a5d9d2d11f9f7d645"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 11,
+              "raw_line": "entity<|#|>Server<|#|>Artifact<|#|>A computing system that streams video content features to a client.",
+              "fields": [
+                "entity",
+                "Server",
+                "Artifact",
+                "A computing system that streams video content features to a client."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 39,
+              "raw_line": "relation<|#|>Server<|#|>Client<|#|>streams content to<|#|>The server streams the first video content feature to the client associated with the user.",
+              "fields": [
+                "relation",
+                "Server",
+                "Client",
+                "streams content to",
+                "The server streams the first video content feature to the client associated with the user."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 790,
+              "chunk_char_end": 1216,
+              "text": "omputing device, wherein, upon execution, the plurality of computer instructions cause the at least one computing device to: stream a first video content feature from at least one server to a client associated with a user; cause the first video content feature to be rendered in a user interface for display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with"
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The server streams the first video content feature to the client associated with the user.",
+          "keywords": "streams content to",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Server",
+          "target": "Client",
+          "edge_index": 89,
+          "source_chunks": [
+            "US9374411B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "file_paths": [
+        "US9514120B1.txt"
+      ],
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9514120B1",
+          "full_doc_id": "US9514120B1",
+          "file_path": "US9514120B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "0b094b66650820aadeb8cf681dbb275f6e8339dfd53ea0886553a1ad1e7e9a0e",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6477,
+          "content": "Publication number: US9514120B1\nTitle: Classification of a string as a typographical error based on feedback\n\nABSTRACT\nA computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference. The computing device sends data indicative of the presence of the potential typographical errors to users. The computing device collects feedback for the work from the users. The feedback for the work indicates whether the potential typographical errors are author-intended strings. The computing device combines the user feedback for the work with user feedback for other works and sorts the combined user feedback based on one or more selected parameters. The computing device determines, based on the sorted user feedback, that one or more of the potential typographical errors includes an acceptable string and updates the initial reference to include the acceptable string.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: identifying, by a processing device, a potential typographical error in a work using an initial reference, wherein the work comprises a plurality of words; sending, by the processing device, data indicative of presence of the potential typographical error in the work to a plurality of users; receiving, by the processing device, feedback for the work from the plurality of users, the feedback comprising an indicator that specifies that the potential typographical error is an author-intended string for the work, wherein the author-intended string comprises at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; combining, by the processing device, the feedback from the plurality of users for the work with feedback for a plurality of additional works to generate a combined feedback; sorting, by the processing device, the combined feedback based on one or more selected parameters associated with the work to generate a sorted feedback, wherein the one or more selected parameters comprises at least one of an author associated with the work, a title associated the work, a topic associated with the work, or a publisher associated with the work; determining, by the processing device and based on the sorted feedback, that the potential typographical error comprises an acceptable string; and updating, by the processing device, the initial reference to include the acceptable string. 2. The method of claim 1 , wherein determining that the potential typographical error comprises an acceptable string comprises: determining a percentage of the sorted feedback that identifies the potential typographical error as an author-intended string; determining that the percentage exceeds a threshold percentage; and identifying the potential typographical error as an acceptable string. 3. The method of claim 2 , further comprising: determining that the percentage does not exceed the threshold percentage; identifying the potential typographical error as an actual error; and associating an alternative string with the actual error. 4. The method of claim 1 , further comprising: generating one or more parameter-specific references based, at least in part, on the acceptable string. 5. The method of claim 4 , wherein generating one or more parameter-specific references comprises: determining, based on the sorted feedback, one or more parameters that are associated with the acceptable string; identifying a parameter-specific reference that corresponds to each of the one or more parameters associated with the acceptable string, wherein the one or more parameter-specific references comprises at least one of an author-specific reference, a title-specific reference, a topic-specific reference, or a publisher-specific reference. 6. The method of claim 1 , wherein updating the initial reference comprises: adding a string to the initial reference to represent the acceptable string. 7. The method of claim 1 , wherein the feedback for the work comprises at least one of a user identifier, a work identifier, at least one string identified as a potential typographical error, a position of the at least one string in a work, a decision indicating whether a corresponding string is an author-intended string, a confidence level of the decision, or at least one parameter associated with the corresponding string. 8. The method of claim 1 , wherein determining that the potential typographical error comprises an acceptable string comprises: compiling, based on the sorted feedback, one or more parameter-specific statistics; determining that at least one of the one or more parameter-specific statistics exceeds a threshold; and identifying the potential typographical error as an acceptable string. 9. The method of claim 8 , wherein the one or more parameter-specific statistics comprises at least one of a number of times users mark a potential typographical error as an author-intended string, a total number of times a potential typographical error is marked as an author-intended string, a percentage of feedback that marked the potential typographical error as an author-intended string, a percentage of users that marked the potential typographical error as an author-intended string, or a number of times the one or more potential typographical errors are marked as an author-intended string for a parameter. 10. A non-transitory computer-readable medium having instructions stored thereon which, when executed by a processing device, cause the processing device to perform operations comprising: receiving, by the processing device, feedback from a plurality of users for one or more potential typographical errors identified in a work, the feedback comprising an indicator that specifies that at least one of the one or more potential typographical errors are author-intended strings for the work, wherein the work comprises a plurality of words and wherein the author-intended strings comprise at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; determining, by the processing device and based at least in part on the indicator received in the feedback for the work, that one or more of the potential typographical errors is an author-intended string; combining, by the processing device, the feedback from",
+          "llm_cache_list": [
+            "default:extract:d59fe2a8e8eb522668e862aa852ac51f"
+          ],
+          "chunk_id": "US9514120B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9514120B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "4fe04b755a3773900247f241ed3834154557d16eacb219db1ebf120bb60459d7"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 3,
+              "raw_line": "entity<|#|>Server<|#|>Artifact<|#|>A server hosted by the computing device that performs the typographical error classification operations.",
+              "fields": [
+                "entity",
+                "Server",
+                "Artifact",
+                "A server hosted by the computing device that performs the typographical error classification operations."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Computing Device<|#|>Server<|#|>hosts<|#|>The computing device hosts a server that performs typographical error classification.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "Server",
+                "hosts",
+                "The computing device hosts a server that performs typographical error classification."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 394,
+              "text": "Publication number: US9514120B1\nTitle: Classification of a string as a typographical error based on feedback\n\nABSTRACT\nA computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference. The computing device sends data indicative of the presence of the potential typographical errors to users. The computing device collects feedback f"
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The computing device hosts a server that performs typographical error classification.",
+          "keywords": "hosts",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Server",
+          "target": "Computing Device",
+          "edge_index": 88,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "The method is performed with a server that receives short messages and generates requests for context data.",
+      "keywords": "Executes On",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1793284125,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Server",
+      "edge_index": 53,
+      "source_chunks": [
+        "US8509827B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8509827B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "At least one server is associated with the context-data provider.<SEP>A set of context data is collected from the context-data provider with at least one server.",
+      "keywords": "Collected By,associated with",
+      "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1793284125,
+      "truncate": "",
+      "source": "Server",
+      "target": "Context-Data Provider",
+      "edge_index": 83,
+      "source_chunks": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8509827B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The patent document describes a server that receives requests and traverses social networks to identify connecting persons.",
+      "keywords": "Patent Document,Subject Matter",
+      "source_id": "US9118735B1-chunk-000",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Server",
+      "target": "US9118735B1",
+      "edge_index": 84,
+      "source_chunks": [
+        "US9118735B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The server sends an identifier associated with the connecting person, a response based on the connecting person's response, or a possible location of the target person to the requesting person's computer.<SEP>The requesting person sends a request to the server identifying himself or herself, the target person, and the requestor's location.",
+      "keywords": "Sends Identifier,Sends Request,Sends Response",
+      "source_id": "US9118735B1-chunk-000",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Server",
+      "target": "Requesting Person",
+      "edge_index": 85,
+      "source_chunks": [
+        "US9118735B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The server traverses the requesting person's social network to identify a connecting person.",
+      "keywords": "Traverses",
+      "source_id": "US9118735B1-chunk-000",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Server",
+      "target": "Social Network",
+      "edge_index": 86,
+      "source_chunks": [
+        "US9118735B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The server determines an identifier associated with a connecting person in the requesting person's social network.",
+      "keywords": "Determines,Identifies",
+      "source_id": "US9118735B1-chunk-000",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Server",
+      "target": "Connecting Person",
+      "edge_index": 87,
+      "source_chunks": [
+        "US9118735B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing device hosts a server that performs typographical error classification.",
+      "keywords": "hosts",
+      "source_id": "US9514120B1-chunk-000",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "Server",
+      "target": "Computing Device",
+      "edge_index": 88,
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The server streams the first video content feature to the client associated with the user.",
+      "keywords": "streams content to",
+      "source_id": "US9374411B1-chunk-000",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "Server",
+      "target": "Client",
+      "edge_index": 89,
+      "source_chunks": [
+        "US9374411B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The server receives data comprising characteristics of e-mail exchanges transferred from the interaction database.<SEP>Data comprising characteristics of e-mail exchanges is transferred to the server from an interaction database.",
+      "keywords": "data transfer,receives data from",
+      "source_id": "US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+      "file_path": "US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "Server",
+      "target": "Interaction Database",
+      "edge_index": 90,
+      "source_chunks": [
+        "US10778629B2-chunk-000",
+        "US10778629B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US10778629B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The server transfers the data to a processor for generating relationship data.<SEP>The server transfers data to a processor for generating relationship data.",
+      "keywords": "data transfer,transfers data to",
+      "source_id": "US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+      "file_path": "US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "Server",
+      "target": "Processor",
+      "edge_index": 91,
+      "source_chunks": [
+        "US10778629B2-chunk-000",
+        "US10778629B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US10778629B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Relationship data is displayed on a user interface.",
+      "keywords": "displaying",
+      "source_id": "US10778629B2-chunk-000",
+      "file_path": "US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "Server",
+      "target": "User Interface",
+      "edge_index": 92,
+      "source_chunks": [
+        "US10778629B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US10778629B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The server assigns a weight to each of the plurality of characteristics for each pair of users.",
+      "keywords": "assigns",
+      "source_id": "US10778629B2-chunk-001",
+      "file_path": "US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "Server",
+      "target": "Weight",
+      "edge_index": 93,
+      "source_chunks": [
+        "US10778629B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US10778629B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

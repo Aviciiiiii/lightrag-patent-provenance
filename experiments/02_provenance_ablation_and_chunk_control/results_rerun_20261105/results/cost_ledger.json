@@ -1,0 +1,599 @@
+{
+  "run_start_utc": "2026-11-05T15:11:48.204443+00:00",
+  "currency": "CNY",
+  "hard_cap_cny": 10.0,
+  "budget_conversion_cny_per_usd": 4,
+  "note": "Conservative price estimate, not provider invoice. Peak rates; no cache discount. Unknown outcomes retain reservation.",
+  "estimated_observed_cost_cny": 0.65218,
+  "reserved_unknown_cny": 0,
+  "calls": [
+    {
+      "id": 1,
+      "stage": "ablation_A_r1",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:11:48.311149+00:00",
+      "reservation_cny": 0.593672,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:11:57.087797+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1526,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 28360,
+        "completion_tokens": 394,
+        "total_tokens": 28754,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 28360
+      },
+      "estimated_cost_upper_cny": 0.059872,
+      "cumulative_estimated_and_reserved_cny": 0.059872
+    },
+    {
+      "id": 2,
+      "stage": "ablation_B_r1",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:11:57.093626+00:00",
+      "reservation_cny": 0.614664,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:12:03.089328+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1445,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 31966,
+        "completion_tokens": 317,
+        "total_tokens": 32283,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 6144
+        },
+        "prompt_cache_hit_tokens": 6144,
+        "prompt_cache_miss_tokens": 25822
+      },
+      "estimated_cost_upper_cny": 0.066468,
+      "cumulative_estimated_and_reserved_cny": 0.12634
+    },
+    {
+      "id": 3,
+      "stage": "ablation_C_r1",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:12:03.095019+00:00",
+      "reservation_cny": 0.619782,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:12:08.833366+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1472,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 32445,
+        "completion_tokens": 284,
+        "total_tokens": 32729,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 31744
+        },
+        "prompt_cache_hit_tokens": 31744,
+        "prompt_cache_miss_tokens": 701
+      },
+      "estimated_cost_upper_cny": 0.067162,
+      "cumulative_estimated_and_reserved_cny": 0.193502
+    },
+    {
+      "id": 4,
+      "stage": "ablation_B_r2",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:12:08.839266+00:00",
+      "reservation_cny": 0.614664,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:12:15.170490+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1343,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 31966,
+        "completion_tokens": 292,
+        "total_tokens": 32258,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 31872
+        },
+        "prompt_cache_hit_tokens": 31872,
+        "prompt_cache_miss_tokens": 94
+      },
+      "estimated_cost_upper_cny": 0.066268,
+      "cumulative_estimated_and_reserved_cny": 0.25977
+    },
+    {
+      "id": 5,
+      "stage": "ablation_C_r2",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:12:15.175586+00:00",
+      "reservation_cny": 0.619782,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:12:20.623584+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1365,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 32445,
+        "completion_tokens": 264,
+        "total_tokens": 32709,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 32384
+        },
+        "prompt_cache_hit_tokens": 32384,
+        "prompt_cache_miss_tokens": 61
+      },
+      "estimated_cost_upper_cny": 0.067002,
+      "cumulative_estimated_and_reserved_cny": 0.326772
+    },
+    {
+      "id": 6,
+      "stage": "ablation_A_r2",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:12:20.629629+00:00",
+      "reservation_cny": 0.593672,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:12:28.372283+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1459,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 28360,
+        "completion_tokens": 366,
+        "total_tokens": 28726,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 28288
+        },
+        "prompt_cache_hit_tokens": 28288,
+        "prompt_cache_miss_tokens": 72
+      },
+      "estimated_cost_upper_cny": 0.059648,
+      "cumulative_estimated_and_reserved_cny": 0.38642
+    },
+    {
+      "id": 7,
+      "stage": "ablation_C_r3",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:12:28.376939+00:00",
+      "reservation_cny": 0.619782,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:12:36.427444+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1769,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 32445,
+        "completion_tokens": 332,
+        "total_tokens": 32777,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 32445
+      },
+      "estimated_cost_upper_cny": 0.067546,
+      "cumulative_estimated_and_reserved_cny": 0.453966
+    },
+    {
+      "id": 8,
+      "stage": "ablation_A_r3",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:12:36.432747+00:00",
+      "reservation_cny": 0.593672,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:12:43.239968+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1385,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 28360,
+        "completion_tokens": 304,
+        "total_tokens": 28664,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 28288
+        },
+        "prompt_cache_hit_tokens": 28288,
+        "prompt_cache_miss_tokens": 72
+      },
+      "estimated_cost_upper_cny": 0.059152,
+      "cumulative_estimated_and_reserved_cny": 0.513118
+    },
+    {
+      "id": 9,
+      "stage": "ablation_B_r3",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:12:43.245564+00:00",
+      "reservation_cny": 0.614664,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:12:48.482583+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1526,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 31966,
+        "completion_tokens": 325,
+        "total_tokens": 32291,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 31872
+        },
+        "prompt_cache_hit_tokens": 31872,
+        "prompt_cache_miss_tokens": 94
+      },
+      "estimated_cost_upper_cny": 0.066532,
+      "cumulative_estimated_and_reserved_cny": 0.57965
+    },
+    {
+      "id": 10,
+      "stage": "chunk_SAME_r1_c0",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:13:37.600665+00:00",
+      "reservation_cny": 0.349378,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:13:43.642389+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1857,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 1878,
+        "completion_tokens": 458,
+        "total_tokens": 2336,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1878
+      },
+      "estimated_cost_upper_cny": 0.00742,
+      "cumulative_estimated_and_reserved_cny": 0.58707
+    },
+    {
+      "id": 11,
+      "stage": "chunk_SAME_r1_c1",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:13:43.645850+00:00",
+      "reservation_cny": 0.348926,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:13:47.743439+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1077,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 1843,
+        "completion_tokens": 302,
+        "total_tokens": 2145,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1843
+      },
+      "estimated_cost_upper_cny": 0.006102,
+      "cumulative_estimated_and_reserved_cny": 0.593172
+    },
+    {
+      "id": 12,
+      "stage": "chunk_CROSS_r1_c0",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:13:47.747513+00:00",
+      "reservation_cny": 0.34926,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:13:53.044275+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1102,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 1870,
+        "completion_tokens": 286,
+        "total_tokens": 2156,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1870
+      },
+      "estimated_cost_upper_cny": 0.006028,
+      "cumulative_estimated_and_reserved_cny": 0.5992000000000001
+    },
+    {
+      "id": 13,
+      "stage": "chunk_CROSS_r1_c1",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:13:53.048813+00:00",
+      "reservation_cny": 0.349044,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:13:55.905363+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 501,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 1852,
+        "completion_tokens": 132,
+        "total_tokens": 1984,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1852
+      },
+      "estimated_cost_upper_cny": 0.00476,
+      "cumulative_estimated_and_reserved_cny": 0.60396
+    },
+    {
+      "id": 14,
+      "stage": "chunk_CROSS_r2_c0",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:13:55.908469+00:00",
+      "reservation_cny": 0.34926,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:14:02.088368+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1371,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 1870,
+        "completion_tokens": 349,
+        "total_tokens": 2219,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 78
+      },
+      "estimated_cost_upper_cny": 0.006532,
+      "cumulative_estimated_and_reserved_cny": 0.610492
+    },
+    {
+      "id": 15,
+      "stage": "chunk_CROSS_r2_c1",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:14:02.092699+00:00",
+      "reservation_cny": 0.349044,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:14:08.747682+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 755,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 1852,
+        "completion_tokens": 207,
+        "total_tokens": 2059,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1852
+      },
+      "estimated_cost_upper_cny": 0.00536,
+      "cumulative_estimated_and_reserved_cny": 0.6158520000000001
+    },
+    {
+      "id": 16,
+      "stage": "chunk_SAME_r2_c0",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:14:08.750282+00:00",
+      "reservation_cny": 0.349378,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:14:13.621825+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1578,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 1878,
+        "completion_tokens": 401,
+        "total_tokens": 2279,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1878
+      },
+      "estimated_cost_upper_cny": 0.006964,
+      "cumulative_estimated_and_reserved_cny": 0.622816
+    },
+    {
+      "id": 17,
+      "stage": "chunk_SAME_r2_c1",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:14:13.624594+00:00",
+      "reservation_cny": 0.348926,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:14:17.193616+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 819,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 1843,
+        "completion_tokens": 240,
+        "total_tokens": 2083,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1843
+      },
+      "estimated_cost_upper_cny": 0.005606,
+      "cumulative_estimated_and_reserved_cny": 0.628422
+    },
+    {
+      "id": 18,
+      "stage": "chunk_SAME_r3_c0",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:14:17.196413+00:00",
+      "reservation_cny": 0.349378,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:14:22.484441+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1877,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 1878,
+        "completion_tokens": 468,
+        "total_tokens": 2346,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 86
+      },
+      "estimated_cost_upper_cny": 0.0075,
+      "cumulative_estimated_and_reserved_cny": 0.635922
+    },
+    {
+      "id": 19,
+      "stage": "chunk_SAME_r3_c1",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:14:22.487290+00:00",
+      "reservation_cny": 0.348926,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:14:25.691053+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 803,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 1843,
+        "completion_tokens": 226,
+        "total_tokens": 2069,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1843
+      },
+      "estimated_cost_upper_cny": 0.005494,
+      "cumulative_estimated_and_reserved_cny": 0.641416
+    },
+    {
+      "id": 20,
+      "stage": "chunk_CROSS_r3_c0",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:14:25.695000+00:00",
+      "reservation_cny": 0.34926,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:14:30.839500+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 1107,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 1870,
+        "completion_tokens": 285,
+        "total_tokens": 2155,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 78
+      },
+      "estimated_cost_upper_cny": 0.00602,
+      "cumulative_estimated_and_reserved_cny": 0.647436
+    },
+    {
+      "id": 21,
+      "stage": "chunk_CROSS_r3_c1",
+      "kind": "llm",
+      "started_utc": "2026-11-05T15:14:30.842791+00:00",
+      "reservation_cny": 0.349044,
+      "state": "success",
+      "finished_utc": "2026-11-05T15:14:33.953676+00:00",
+      "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "finish_reason": "stop",
+      "output_chars": 497,
+      "reasoning_content_present": false,
+      "usage": {
+        "prompt_tokens": 1852,
+        "completion_tokens": 130,
+        "total_tokens": 1982,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1852
+      },
+      "estimated_cost_upper_cny": 0.004744,
+      "cumulative_estimated_and_reserved_cny": 0.65218
+    }
+  ]
+}

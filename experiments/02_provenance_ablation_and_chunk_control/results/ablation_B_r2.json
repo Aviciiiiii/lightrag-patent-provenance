@@ -1,0 +1,27 @@
+{
+  "condition": "B",
+  "repeat": 2,
+  "call_id": 4,
+  "request_exact_match": true,
+  "messages_sha256": "cbf774bfbb141af7dfbe71e85a6204a5943be9280b8fdb3e2ee3ee80fcc986a5",
+  "response": {
+    "id": 4,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "I do not have enough information to answer this query. The provided **Context** does not contain the text of Claim 1 or Claim 27 of US7991757B2.\n\n**What the evidence does show:** US7991757B2 appears only in the Knowledge Graph relationships, not in the Document Chunks. Those relationships state that \"Registration submissions are operative to request registration of recommenders\" and that \"The registration module provides functionality for registering an external recommender with the recommendations service,\" with the registration module \"configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.\" These are document-level descriptions, not claim language, and no claim numbers are associated with them.\n\n**What is missing:**\n- The actual wording of Claim 1 of US7991757B2.\n- The actual wording of Claim 27 of US7991757B2.\n- Any statement of Claim 27's dependency (e.g., \"The method of claim 1, further comprising...\").\n\nBecause the claim text is absent, I cannot quote the supporting wording from each claim, cannot verify the dependency, and cannot reliably distinguish explicit claim evidence from inference. Any answer about the specific registration capability in Claim 1 or the added capability in Claim 27 would require inventing content not present in the Context.\n\n### References\n\n- [1] US10867122B1.txt\n- [2] US9374411B1.txt\n- [3] US8655901B1.txt\n- [4] US7756837B2.txt\n- [5] US8095432B1.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 31966,
+      "completion_tokens": 333,
+      "total_tokens": 32299,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 31872
+      },
+      "prompt_cache_hit_tokens": 31872,
+      "prompt_cache_miss_tokens": 94
+    },
+    "reasoning_content_present": false
+  }
+}

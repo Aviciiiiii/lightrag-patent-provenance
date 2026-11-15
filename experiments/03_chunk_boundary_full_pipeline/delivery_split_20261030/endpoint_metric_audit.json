@@ -1,0 +1,554 @@
+{
+  "audit_utc": "2026-10-30T04:05:43.574292+00:00",
+  "scope": "Read-only delivery-stage audit of saved report/evaluations/actual graphs. No new experiment, API call or re-scoring of all facts. Original files unchanged.",
+  "metric_status": {
+    "unified_pre_frozen_exact_endpoint_metric_completed": false,
+    "reason_zh": "各组冻结的是原文技术谓词与局部身份核验要求，接受关系描述、组合角色或组件路径；没有全组统一预先冻结的精确实体端点、别名等价表与严格边匹配算法。不能把现有主指标称为统一精确端点边召回。",
+    "audit_inventory_status": "post_hoc saved-output inventory; not preregistered endpoint scoring"
+  },
+  "report_audit": {
+    "path": "report/LightRAG_patent_provenance_report_zh.html",
+    "sha256": "04ccbd962b2bc0cc0519e8a740ada6654aa7c3d656ff40dbec22a6c60718913e",
+    "adequate_disclosures": [
+      "Section C explicitly distinguishes relationship-description predicates from specified direct endpoints.",
+      "F01 scope and case explicitly state A3 is not three direct endpoint edges.",
+      "F05 case explains different filter IDs and alternate ClassificationModel path."
+    ],
+    "remaining_gaps_zh": [
+      "HTML没有明确列出F05同一目标filter ID链A0/3、B3/3。",
+      "HTML没有统一精确端点指标的完成表；F04共同成本/参数端点身份仅在JSON逐次给出，不能把主谓词3/3解释为严格拓扑链3/3。"
+    ]
+  },
+  "F01": {
+    "primary_metric": "Three semantic predicates retained in explicit relation records, allowing a combined-role description.",
+    "primary_observed_counts": {
+      "A": 3,
+      "B": 0
+    },
+    "clean_pairs": 1,
+    "exact_direct_existing_case_and_expert_to_ontology_edges": {
+      "F01_A_r1": {
+        "eligible_nontruncated": false,
+        "edges": {
+          "R_case": true,
+          "R_expert": true
+        }
+      },
+      "F01_B_r1": {
+        "eligible_nontruncated": true,
+        "edges": {
+          "R_case": false,
+          "R_expert": false
+        }
+      },
+      "F01_B_r2": {
+        "eligible_nontruncated": true,
+        "edges": {
+          "R_case": false,
+          "R_expert": false
+        }
+      },
+      "F01_A_r2": {
+        "eligible_nontruncated": false,
+        "edges": {
+          "R_case": true,
+          "R_expert": true
+        }
+      },
+      "F01_A_r3": {
+        "eligible_nontruncated": true,
+        "edges": {
+          "R_case": false,
+          "R_expert": false
+        }
+      },
+      "F01_B_r3": {
+        "eligible_nontruncated": true,
+        "edges": {
+          "R_case": false,
+          "R_expert": false
+        }
+      }
+    },
+    "A3_actual_edges": [
+      {
+        "edge_index": 9,
+        "source": "Diagnosis Assistance Method",
+        "target": "Medical Ontology",
+        "description": "The embedding of the new medical case, existing medical cases, and experts is based on a medical ontology.",
+        "source_id": "US9589231B2-chunk-000",
+        "file_path": "US9589231B2.txt",
+        "both_endpoint_nodes_exist": true
+      },
+      {
+        "edge_index": 40,
+        "source": "Medical Ontology",
+        "target": "Unified Medical Language System",
+        "description": "The medical ontology is based on the Unified Medical Language System.",
+        "source_id": "US9589231B2-chunk-000",
+        "file_path": "US9589231B2.txt",
+        "both_endpoint_nodes_exist": true
+      }
+    ],
+    "interpretation_zh": "A3以Method→Ontology边描述同时表达existing cases和experts；没有两条直接主体→Ontology边。唯一干净r3对照显示关系记录谓词表示差异，不证明两条精确主体边因边界消失；A1/A2虽有主体边却截断。",
+    "evidence": [
+      "evidence/F01_scoring_protocol.json",
+      "evidence/F01_evaluation.json:runs[].direct_subject_endpoint_edges / primary_metric_endpoint_limit / merged_support",
+      "results/F01_A_r3/merged_graph.json",
+      "results/F01_B_r3/merged_graph.json"
+    ]
+  },
+  "F04": {
+    "primary_metric": "P1 ranking/selection uses cost; P2 source/provider supplies cost, in faithful relation descriptions with flexible endpoints.",
+    "primary_counts": {
+      "A": 3,
+      "B": 3
+    },
+    "common_cost_or_parameter_endpoint_secondary": {
+      "F04_A_r1": {
+        "present": true,
+        "ids": [
+          "Specified Parameter"
+        ],
+        "target_record_endpoints": {
+          "P1_witnesses": [
+            {
+              "source": "Context-Data Acquisition And Ranking",
+              "target": "Specified Parameter",
+              "source_id": "US8509827B2-chunk-000"
+            },
+            {
+              "source": "Context-Data Acquisition And Ranking",
+              "target": "Metric",
+              "source_id": "US8509827B2-chunk-000"
+            },
+            {
+              "source": "Context-Data Source",
+              "target": "Metric",
+              "source_id": "US8509827B2-chunk-000"
+            },
+            {
+              "source": "Context-Data",
+              "target": "Monetary Cost",
+              "source_id": "US8509827B2-chunk-001"
+            }
+          ],
+          "P2_witnesses": [
+            {
+              "source": "Context-Data Source",
+              "target": "Specified Parameter",
+              "source_id": "US8509827B2-chunk-000"
+            },
+            {
+              "source": "Context-Data Provider",
+              "target": "Context-Data",
+              "source_id": "US8509827B2-chunk-001"
+            }
+          ]
+        }
+      },
+      "F04_B_r1": {
+        "present": true,
+        "ids": [
+          "Specified Parameter"
+        ],
+        "target_record_endpoints": {
+          "P1_witnesses": [
+            {
+              "source": "Context Data",
+              "target": "Specified Parameter",
+              "source_id": "US8509827B2-chunk-001<SEP>US8509827B2-chunk-002"
+            },
+            {
+              "source": "Context Data",
+              "target": "Metric",
+              "source_id": "US8509827B2-chunk-002"
+            },
+            {
+              "source": "Specified Parameter",
+              "target": "Pecuniary Cost",
+              "source_id": "US8509827B2-chunk-000"
+            }
+          ],
+          "P2_witnesses": [
+            {
+              "source": "Context Data",
+              "target": "Specified Parameter",
+              "source_id": "US8509827B2-chunk-001<SEP>US8509827B2-chunk-002"
+            },
+            {
+              "source": "Context-Data Provider",
+              "target": "Cost Of The Context-Data",
+              "source_id": "US8509827B2-chunk-003"
+            }
+          ]
+        }
+      },
+      "F04_B_r2": {
+        "present": true,
+        "ids": [
+          "Specified Parameter"
+        ],
+        "target_record_endpoints": {
+          "P1_witnesses": [
+            {
+              "source": "Specified Parameter",
+              "target": "Pecuniary Cost",
+              "source_id": "US8509827B2-chunk-000"
+            },
+            {
+              "source": "Specified Parameter",
+              "target": "Context Data",
+              "source_id": "US8509827B2-chunk-001<SEP>US8509827B2-chunk-002"
+            },
+            {
+              "source": "Context Data",
+              "target": "Metric",
+              "source_id": "US8509827B2-chunk-002"
+            }
+          ],
+          "P2_witnesses": [
+            {
+              "source": "Specified Parameter",
+              "target": "Context Data",
+              "source_id": "US8509827B2-chunk-001<SEP>US8509827B2-chunk-002"
+            },
+            {
+              "source": "Context-Data Provider",
+              "target": "Context-Data",
+              "source_id": "US8509827B2-chunk-003"
+            }
+          ]
+        }
+      },
+      "F04_A_r2": {
+        "present": false,
+        "ids": [],
+        "target_record_endpoints": {
+          "P1_witnesses": [
+            {
+              "source": "Context-Data Source",
+              "target": "Pecuniary Cost",
+              "source_id": "US8509827B2-chunk-000"
+            },
+            {
+              "source": "Specified Parameter",
+              "target": "Pecuniary Cost",
+              "source_id": "US8509827B2-chunk-000"
+            },
+            {
+              "source": "Metric",
+              "target": "Context Data",
+              "source_id": "US8509827B2-chunk-000"
+            },
+            {
+              "source": "Metric",
+              "target": "Monetary Cost",
+              "source_id": "US8509827B2-chunk-001"
+            }
+          ],
+          "P2_witnesses": [
+            {
+              "source": "Context-Data Provider",
+              "target": "Context-Data",
+              "source_id": "US8509827B2-chunk-001"
+            }
+          ]
+        }
+      },
+      "F04_A_r3": {
+        "present": false,
+        "ids": [],
+        "target_record_endpoints": {
+          "P1_witnesses": [
+            {
+              "source": "Context-Data Source",
+              "target": "Pecuniary Cost",
+              "source_id": "US8509827B2-chunk-000"
+            },
+            {
+              "source": "Specified Parameter",
+              "target": "Pecuniary Cost",
+              "source_id": "US8509827B2-chunk-000"
+            },
+            {
+              "source": "Pecuniary Cost",
+              "target": "Metric",
+              "source_id": "US8509827B2-chunk-000"
+            },
+            {
+              "source": "Metric",
+              "target": "Monetary Cost",
+              "source_id": "US8509827B2-chunk-001"
+            }
+          ],
+          "P2_witnesses": [
+            {
+              "source": "Context-Data Provider",
+              "target": "Context-Data",
+              "source_id": "US8509827B2-chunk-001"
+            }
+          ]
+        }
+      },
+      "F04_B_r3": {
+        "present": true,
+        "ids": [
+          "Specified Parameter"
+        ],
+        "target_record_endpoints": {
+          "P1_witnesses": [
+            {
+              "source": "Context Data",
+              "target": "Specified Parameter",
+              "source_id": "US8509827B2-chunk-001<SEP>US8509827B2-chunk-002"
+            },
+            {
+              "source": "Context Data",
+              "target": "Metric",
+              "source_id": "US8509827B2-chunk-002"
+            },
+            {
+              "source": "Specified Parameter",
+              "target": "Pecuniary Cost",
+              "source_id": "US8509827B2-chunk-000"
+            }
+          ],
+          "P2_witnesses": [
+            {
+              "source": "Context Data",
+              "target": "Specified Parameter",
+              "source_id": "US8509827B2-chunk-001<SEP>US8509827B2-chunk-002"
+            },
+            {
+              "source": "Context-Data Provider",
+              "target": "Context-Data",
+              "source_id": "US8509827B2-chunk-003"
+            }
+          ]
+        }
+      }
+    },
+    "shared_cost_parameter_counts": {
+      "A": 1,
+      "B": 3
+    },
+    "interpretation_zh": "共同成本/参数端点A1/3、B3/3是保存记录的次级身份库存，不等于预注册的完整Source→Cost→Ranking严格路径；同一关系描述有时支撑两谓词，端点不必就是语义主体。无共同成本端点不能自动判dedup错误。",
+    "evidence": [
+      "evidence/F04_frozen_evaluation_rubric.json:predicates / joint_edge_criterion",
+      "evidence/F04_evaluation.json:runs[].merged_graph",
+      "results/F04_*/merged_graph.json"
+    ]
+  },
+  "F05": {
+    "primary_metric": "Three component predicates plus exclusivity retained; main totals do not require P1 and P2 to share the exact filter node ID.",
+    "primary_counts": {
+      "A": 3,
+      "B": 3
+    },
+    "exact_target_filter_id_chain_secondary_counts": {
+      "A": 0,
+      "B": 3
+    },
+    "actual_A_endpoints": [
+      [
+        "Multi-Pass Ad-Hoc Spam Message Filter",
+        "Naive Bayes Classifier"
+      ],
+      [
+        "Multi-Pass Message Filter",
+        "Second Classification Data"
+      ],
+      [
+        "Second Classification Data",
+        "Non-Persistent Memory Store"
+      ]
+    ],
+    "actual_B_endpoints": [
+      [
+        "Multi-Pass Message Filter",
+        "Naive Bayes Classifier"
+      ],
+      [
+        "Multi-Pass Message Filter",
+        "Second Classification Data"
+      ],
+      [
+        "Second Classification Data",
+        "Non-Persistent Memory Store"
+      ]
+    ],
+    "identity_inventory": {
+      "F05_A_r1": {
+        "P1_filter_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+        "P2_filter_id": "Multi-Pass Message Filter",
+        "exact_filter_id_shared_with_SecondClassificationData_path": false,
+        "alternate_ClassificationModel_chain_edges": [
+          {
+            "record_index": 0,
+            "weight": 1.0,
+            "description": "The multi-pass message filter generates a classification model during the first pass based on the first pass analysis.",
+            "keywords": "generates,trains",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331213,
+            "truncate": "",
+            "source": "Multi-Pass Ad-Hoc Spam Message Filter",
+            "target": "Classification Model"
+          },
+          {
+            "record_index": 13,
+            "weight": 1.0,
+            "description": "The generated classification model is configured to reside exclusively in a non-persistent memory location.",
+            "keywords": "resides in",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331213,
+            "truncate": "",
+            "source": "Classification Model",
+            "target": "Non-Persistent Memory Location"
+          }
+        ],
+        "alternate_model_chain_present": true,
+        "not_a_semantic_merge_equivalence_proof": true
+      },
+      "F05_B_r1": {
+        "P1_filter_id": "Multi-Pass Message Filter",
+        "P2_filter_id": "Multi-Pass Message Filter",
+        "exact_filter_id_shared_with_SecondClassificationData_path": true,
+        "alternate_ClassificationModel_chain_edges": [
+          {
+            "record_index": 9,
+            "weight": 1.0,
+            "description": "The generated classification model is configured to reside exclusively in a non-persistent memory location.",
+            "keywords": "resides exclusively in",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331266,
+            "truncate": "",
+            "source": "Classification Model",
+            "target": "Non-Persistent Memory Location"
+          }
+        ],
+        "alternate_model_chain_present": false,
+        "not_a_semantic_merge_equivalence_proof": true
+      },
+      "F05_B_r2": {
+        "P1_filter_id": "Multi-Pass Message Filter",
+        "P2_filter_id": "Multi-Pass Message Filter",
+        "exact_filter_id_shared_with_SecondClassificationData_path": true,
+        "alternate_ClassificationModel_chain_edges": [
+          {
+            "record_index": 9,
+            "weight": 1.0,
+            "description": "The generated classification model is configured to reside exclusively in a non-persistent memory location.",
+            "keywords": "resides in",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331316,
+            "truncate": "",
+            "source": "Classification Model",
+            "target": "Non-Persistent Memory Location"
+          }
+        ],
+        "alternate_model_chain_present": false,
+        "not_a_semantic_merge_equivalence_proof": true
+      },
+      "F05_A_r2": {
+        "P1_filter_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+        "P2_filter_id": "Multi-Pass Message Filter",
+        "exact_filter_id_shared_with_SecondClassificationData_path": false,
+        "alternate_ClassificationModel_chain_edges": [
+          {
+            "record_index": 1,
+            "weight": 1.0,
+            "description": "The multi-pass message filter generates a classification model during a first pass analysis.",
+            "keywords": "generates,trains",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331357,
+            "truncate": "",
+            "source": "Multi-Pass Ad-Hoc Spam Message Filter",
+            "target": "Classification Model"
+          },
+          {
+            "record_index": 14,
+            "weight": 1.0,
+            "description": "The generated classification model resides exclusively in a non-persistent memory location.",
+            "keywords": "resides exclusively in",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331357,
+            "truncate": "",
+            "source": "Classification Model",
+            "target": "Non-Persistent Memory Location"
+          }
+        ],
+        "alternate_model_chain_present": true,
+        "not_a_semantic_merge_equivalence_proof": true
+      },
+      "F05_A_r3": {
+        "P1_filter_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+        "P2_filter_id": "Multi-Pass Message Filter",
+        "exact_filter_id_shared_with_SecondClassificationData_path": false,
+        "alternate_ClassificationModel_chain_edges": [
+          {
+            "record_index": 1,
+            "weight": 1.0,
+            "description": "The multi-pass message filter generates a classification model during the first pass based on the first pass analysis.",
+            "keywords": "generates,trains",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331393,
+            "truncate": "",
+            "source": "Multi-Pass Ad-Hoc Spam Message Filter",
+            "target": "Classification Model"
+          },
+          {
+            "record_index": 14,
+            "weight": 2.0,
+            "description": "The generated classification model is configured to reside exclusively in a non-persistent memory location.<SEP>The generated classification model is purged from the non-persistent memory location after use.",
+            "keywords": "purged from,resides in",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331393,
+            "truncate": "",
+            "source": "Classification Model",
+            "target": "Non-Persistent Memory"
+          }
+        ],
+        "alternate_model_chain_present": true,
+        "not_a_semantic_merge_equivalence_proof": true
+      },
+      "F05_B_r3": {
+        "P1_filter_id": "Multi-Pass Message Filter",
+        "P2_filter_id": "Multi-Pass Message Filter",
+        "exact_filter_id_shared_with_SecondClassificationData_path": true,
+        "alternate_ClassificationModel_chain_edges": [
+          {
+            "record_index": 6,
+            "weight": 1.0,
+            "description": "The generated classification model resides exclusively in a non-persistent memory location.",
+            "keywords": "resides in",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331444,
+            "truncate": "",
+            "source": "Classification Model",
+            "target": "Non-Persistent Memory Location"
+          }
+        ],
+        "alternate_model_chain_present": false,
+        "not_a_semantic_merge_equivalence_proof": true
+      }
+    },
+    "actual_graph_validation": "All 18 target edge records and endpoint nodes independently checked against six merged_graph.json files; match saved record_index witnesses.",
+    "interpretation_zh": "A组件谓词保留但目标filter ID分裂；B共享同一filter ID。A替代ClassificationModel路径存在，不证明ClassificationModel等于SecondClassificationData，也不证明别名已合并。既有rubric有实际连接身份核验意图，仍未冻结统一精确节点/别名算法；0/3与3/3属次级身份检查，不能伪称统一预注册精确边指标。",
+    "evidence": [
+      "evidence/F05_frozen_evaluation_rubric.json:strict_chain_success / predicates",
+      "evidence/F05_evaluation.json:summary.*.exact_target_filter_id_chain / runs[].shared_identity_secondary / runs[].predicates",
+      "results/F05_*/merged_graph.json"
+    ]
+  },
+  "remaining_work_zh": "若未来要比较严格图保真，应在新输出前统一冻结主体/客体语义身份、允许别名和路径、谓词方向及逐边成功判据，再分别报告谓词文本、精确端点边和连通路径；本次不补写成预注册。"
+}

@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-29T13:28:51.259783+00:00",
+  "actions": [
+    {
+      "pid": 19759,
+      "command": "/Library/Frameworks/Python.framework/Versions/3.10/Resources/Python.app/Contents/MacOS/Python -m pip freeze",
+      "cwd": "<DOT_WORKDIR>",
+      "action": "SIGTERM experiment-only stalled pip command"
+    },
+    {
+      "pid": 24003,
+      "action": "SIGTERM experiment-only stalled packaging command",
+      "utc": "2026-10-29T13:39:02.751333+00:00"
+    }
+  ]
+}

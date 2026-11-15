@@ -1,0 +1,604 @@
+{
+  "audit_id": "N025",
+  "node_id": "User Interface",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "三个来源都把 User Interface 用作用户输入、内容显示或反馈收集的人机交互界面。展示邮件关系、接收好友输入、展示内容/采集角色反馈是同一宽类的不同实例用途；并无界面一词变成非交互技术对象的证据。因此不能仅凭角色不同判为上下文混并。",
+  "class_instance_interpretation_zh": "按共享概念类别解释成立；不是跨专利同一个体身份声明。图中一个 ID 汇集多个文档内实例/功能描述，后续推理仍须保留每条边和原文的专利作用域。",
+  "source_assessments": [
+    {
+      "publication_number": "US10778629B2",
+      "evidence_quote": "a user interface to display the relationship data.",
+      "claim_or_section": "Claim 21",
+      "source_chunk_ids": [
+        "US10778629B2-chunk-000",
+        "US10778629B2-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US10778629B2-chunk-001"
+      ],
+      "evidence_verification": {
+        "publication_number": "US10778629B2",
+        "claim_or_section": "Claim 21",
+        "quote": "a user interface to display the relationship data.",
+        "source_chunk_ids": [
+          "US10778629B2-chunk-001"
+        ],
+        "exact_full_doc_char_start": 10028,
+        "exact_contiguous_quote_verified": true,
+        "saved_claims_file_verified": true
+      },
+      "role_zh": "显示电子邮件用户关系模型／关系数据的界面。",
+      "extraction_description_support": {
+        "assessment_zh": "两个实体行与 Claims 1、10、11、20、21 的关系模型／数据可视化相符；不表示该界面同时属于其他两项专利。",
+        "all_raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US10778629B2-chunk-000",
+            "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "line_number": 7,
+            "raw_line": "entity<|#|>User Interface<|#|>Artifact<|#|>A user interface on which the model of relationships or relationship data is displayed, optionally providing a graphical representation of relationship strength."
+          },
+          {
+            "chunk_id": "US10778629B2-chunk-001",
+            "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+            "line_number": 8,
+            "raw_line": "entity<|#|>User Interface<|#|>Artifact<|#|>An interface that displays the generated relationship data."
+          }
+        ],
+        "all_raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US10778629B2-chunk-000",
+            "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "line_number": 38,
+            "raw_line": "relation<|#|>Relationship Modeling Program<|#|>User Interface<|#|>displaying<|#|>The model of relationships produced by the relationship modeling program is displayed on a user interface."
+          },
+          {
+            "chunk_id": "US10778629B2-chunk-000",
+            "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+            "line_number": 45,
+            "raw_line": "relation<|#|>Server<|#|>User Interface<|#|>displaying<|#|>Relationship data is displayed on a user interface."
+          },
+          {
+            "chunk_id": "US10778629B2-chunk-001",
+            "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+            "line_number": 35,
+            "raw_line": "relation<|#|>User Interface<|#|>Relationship Data<|#|>displays<|#|>The user interface displays the relationship data."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "edge_index": 92,
+          "endpoints": [
+            "Server",
+            "User Interface"
+          ],
+          "source_chunk_ids": [
+            "US10778629B2-chunk-000"
+          ],
+          "publication_numbers": [
+            "US10778629B2"
+          ]
+        },
+        {
+          "edge_index": 441,
+          "endpoints": [
+            "User Interface",
+            "Relationship Modeling Program"
+          ],
+          "source_chunk_ids": [
+            "US10778629B2-chunk-000"
+          ],
+          "publication_numbers": [
+            "US10778629B2"
+          ]
+        },
+        {
+          "edge_index": 442,
+          "endpoints": [
+            "User Interface",
+            "Relationship Data"
+          ],
+          "source_chunk_ids": [
+            "US10778629B2-chunk-001"
+          ],
+          "publication_numbers": [
+            "US10778629B2"
+          ]
+        }
+      ]
+    },
+    {
+      "publication_number": "US8917913B2",
+      "evidence_quote": "wherein the application provides a user interface",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "evidence_verification": {
+        "publication_number": "US8917913B2",
+        "claim_or_section": "Claim 1",
+        "quote": "wherein the application provides a user interface",
+        "source_chunk_ids": [
+          "US8917913B2-chunk-000",
+          "US8917913B2-chunk-001"
+        ],
+        "exact_full_doc_char_start": 1237,
+        "exact_contiguous_quote_verified": true,
+        "saved_claims_file_verified": true
+      },
+      "role_zh": "接收搜索词、好友标识及好友层级输入的移动应用界面。",
+      "extraction_description_support": {
+        "assessment_zh": "两个实体行区分搜索输入与好友输入，分别可核对 Claims 1、10、16；接口的具体输入功能不同，但仍是用户输入/显示这一共享大类。",
+        "all_raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8917913B2-chunk-000",
+            "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+            "line_number": 13,
+            "raw_line": "entity<|#|>User Interface<|#|>Artifact<|#|>An interface provided by the application that receives at least one search term or friend identifier from the user."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-001",
+            "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+            "line_number": 8,
+            "raw_line": "entity<|#|>User Interface<|#|>Artifact<|#|>An interface provided by the application through which a user supplies at least one friend identifier and optionally a friend level indicator."
+          }
+        ],
+        "all_raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8917913B2-chunk-000",
+            "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+            "line_number": 22,
+            "raw_line": "relation<|#|>Application<|#|>User Interface<|#|>provides<|#|>The application provides a user interface and receives search terms or friend identifiers from it."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-000",
+            "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+            "line_number": 38,
+            "raw_line": "relation<|#|>Search Term<|#|>User Interface<|#|>received from<|#|>The search term is received from the user interface of the application."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-000",
+            "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+            "line_number": 39,
+            "raw_line": "relation<|#|>Friend Identifier<|#|>User Interface<|#|>received from<|#|>The friend identifier is received from the user interface of the application."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-001",
+            "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+            "line_number": 25,
+            "raw_line": "relation<|#|>Application<|#|>User Interface<|#|>provision, data reception<|#|>The application provides a user interface and receives friend identifiers and friend level indicators from it."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "edge_index": 427,
+          "endpoints": [
+            "Application",
+            "User Interface"
+          ],
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "publication_numbers": [
+            "US8917913B2"
+          ]
+        },
+        {
+          "edge_index": 437,
+          "endpoints": [
+            "Search Term",
+            "User Interface"
+          ],
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000"
+          ],
+          "publication_numbers": [
+            "US8917913B2"
+          ]
+        },
+        {
+          "edge_index": 438,
+          "endpoints": [
+            "User Interface",
+            "Friend Identifier"
+          ],
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000"
+          ],
+          "publication_numbers": [
+            "US8917913B2"
+          ]
+        }
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "evidence_quote": "obtain explicit user feedback expressing that the user favors the first fictional character via a user interface.",
+      "claim_or_section": "Claim 23",
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-002"
+      ],
+      "quote_source_chunk_ids": [
+        "US9374411B1-chunk-002"
+      ],
+      "evidence_verification": {
+        "publication_number": "US9374411B1",
+        "claim_or_section": "Claim 23",
+        "quote": "obtain explicit user feedback expressing that the user favors the first fictional character via a user interface.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-002"
+        ],
+        "exact_full_doc_char_start": 12684,
+        "exact_contiguous_quote_verified": true,
+        "saved_claims_file_verified": true
+      },
+      "role_zh": "显示内容并获取虚构角色偏好反馈的界面。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000 的实体行对应 Claim 1/6 的内容显示界面；chunk002 对应 Claim 23 的反馈界面。两个实例角色都属于用户交互接口，不要求它们是同一实例。",
+        "all_raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "line_number": 13,
+            "raw_line": "entity<|#|>User Interface<|#|>Artifact<|#|>An interface rendered on a client for displaying video content features and receiving user interactions."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-002",
+            "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+            "line_number": 8,
+            "raw_line": "entity<|#|>User Interface<|#|>Artifact<|#|>An interface through which explicit user feedback favoring the first fictional character is obtained."
+          }
+        ],
+        "all_raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "line_number": 41,
+            "raw_line": "relation<|#|>First Video Content Feature<|#|>User Interface<|#|>rendered in<|#|>The first video content feature is caused to be rendered in a user interface for display on the client."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-002",
+            "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+            "line_number": 17,
+            "raw_line": "relation<|#|>User Feedback<|#|>User Interface<|#|>obtained via, expresses<|#|>The explicit user feedback is obtained via a user interface."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "edge_index": 439,
+          "endpoints": [
+            "User Interface",
+            "First Video Content Feature"
+          ],
+          "source_chunk_ids": [
+            "US9374411B1-chunk-000"
+          ],
+          "publication_numbers": [
+            "US9374411B1"
+          ]
+        },
+        {
+          "edge_index": 440,
+          "endpoints": [
+            "User Interface",
+            "User Feedback"
+          ],
+          "source_chunk_ids": [
+            "US9374411B1-chunk-002"
+          ],
+          "publication_numbers": [
+            "US9374411B1"
+          ]
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "all_actual_incident_edges_read": true,
+    "incident_edge_count": 8,
+    "all_incident_edge_indices": [
+      92,
+      427,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442
+    ],
+    "edge_checks": [
+      {
+        "edge_index": 92,
+        "endpoints": [
+          "Server",
+          "User Interface"
+        ],
+        "actual_description": "Relationship data is displayed on a user interface.",
+        "source_chunk_ids": [
+          "US10778629B2-chunk-000"
+        ],
+        "publication_numbers": [
+          "US10778629B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "contextual_association_only",
+        "evidence": {
+          "publication_number": "US10778629B2",
+          "claim_or_section": "Claim 10",
+          "quote": "displaying the relationship data on a user interface.",
+          "source_chunk_ids": [
+            "US10778629B2-chunk-000"
+          ],
+          "exact_full_doc_char_start": 5790,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "Claim 10 是在服务器中处理关系数据的方法，最后列界面显示；边的描述仅说数据显示于界面，未说明 Server 如何直接驱动/渲染 UI。该宽泛关联不能扩写为具体服务器渲染机制，也不是跨专利传播证据。"
+      },
+      {
+        "edge_index": 427,
+        "endpoints": [
+          "Application",
+          "User Interface"
+        ],
+        "actual_description": "The application provides a user interface and receives friend identifiers and friend level indicators from it.<SEP>The application provides a user interface and receives search terms or friend identifiers from it.",
+        "source_chunk_ids": [
+          "US8917913B2-chunk-000",
+          "US8917913B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US8917913B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US8917913B2",
+          "claim_or_section": "Claim 1",
+          "quote": "wherein the application provides a user interface",
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "exact_full_doc_char_start": 1237,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "提供接口、获取搜索词见 Claim 1；好友标识见 Claim 10，好友层级见 Claim 16。"
+      },
+      {
+        "edge_index": 437,
+        "endpoints": [
+          "Search Term",
+          "User Interface"
+        ],
+        "actual_description": "The search term is received from the user interface of the application.",
+        "source_chunk_ids": [
+          "US8917913B2-chunk-000"
+        ],
+        "publication_numbers": [
+          "US8917913B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US8917913B2",
+          "claim_or_section": "Claim 1",
+          "quote": "wherein the application receives from the user interface at least one search term",
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000"
+          ],
+          "exact_full_doc_char_start": 1288,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "搜索词来自应用用户界面。"
+      },
+      {
+        "edge_index": 438,
+        "endpoints": [
+          "User Interface",
+          "Friend Identifier"
+        ],
+        "actual_description": "The friend identifier is received from the user interface of the application.",
+        "source_chunk_ids": [
+          "US8917913B2-chunk-000"
+        ],
+        "publication_numbers": [
+          "US8917913B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US8917913B2",
+          "claim_or_section": "Claim 10",
+          "quote": "wherein the application receives from the user interface at least one friend identifier",
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000"
+          ],
+          "exact_full_doc_char_start": 6044,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "好友标识来自界面；Claim 10 的这段文字在 chunk000 可见。"
+      },
+      {
+        "edge_index": 439,
+        "endpoints": [
+          "User Interface",
+          "First Video Content Feature"
+        ],
+        "actual_description": "The first video content feature is caused to be rendered in a user interface for display on the client.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-000"
+        ],
+        "publication_numbers": [
+          "US9374411B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9374411B1",
+          "claim_or_section": "Claim 1",
+          "quote": "cause the first video content feature to be rendered in a user interface for display on the client",
+          "source_chunk_ids": [
+            "US9374411B1-chunk-000"
+          ],
+          "exact_full_doc_char_start": 1013,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "内容呈现于界面有直接证据。"
+      },
+      {
+        "edge_index": 440,
+        "endpoints": [
+          "User Interface",
+          "User Feedback"
+        ],
+        "actual_description": "The explicit user feedback is obtained via a user interface.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-002"
+        ],
+        "publication_numbers": [
+          "US9374411B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9374411B1",
+          "claim_or_section": "Claim 23",
+          "quote": "obtain explicit user feedback expressing that the user favors the first fictional character via a user interface.",
+          "source_chunk_ids": [
+            "US9374411B1-chunk-002"
+          ],
+          "exact_full_doc_char_start": 12684,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "偏好反馈经用户界面获取有直接证据。"
+      },
+      {
+        "edge_index": 441,
+        "endpoints": [
+          "User Interface",
+          "Relationship Modeling Program"
+        ],
+        "actual_description": "The model of relationships produced by the relationship modeling program is displayed on a user interface.",
+        "source_chunk_ids": [
+          "US10778629B2-chunk-000"
+        ],
+        "publication_numbers": [
+          "US10778629B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US10778629B2",
+          "claim_or_section": "Claim 1",
+          "quote": "displaying the model of relationships on a user interface.",
+          "source_chunk_ids": [
+            "US10778629B2-chunk-000"
+          ],
+          "exact_full_doc_char_start": 2813,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "建模程序产生关系模型并在界面显示，是文档内的数据流关联。"
+      },
+      {
+        "edge_index": 442,
+        "endpoints": [
+          "User Interface",
+          "Relationship Data"
+        ],
+        "actual_description": "The user interface displays the relationship data.",
+        "source_chunk_ids": [
+          "US10778629B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US10778629B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US10778629B2",
+          "claim_or_section": "Claim 21",
+          "quote": "a user interface to display the relationship data.",
+          "source_chunk_ids": [
+            "US10778629B2-chunk-001"
+          ],
+          "exact_full_doc_char_start": 10028,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "界面显示关系数据有直接证据。"
+      }
+    ],
+    "observed_unsupported_cross_document_edge": false,
+    "observed_wrong_retrieval_or_generation_propagation": false,
+    "potential_unscoped_path_composition": {
+      "path": [
+        "Friend Identifier",
+        "User Interface",
+        "Relationship Modeling Program"
+      ],
+      "edge_indices": [
+        438,
+        441
+      ],
+      "publications": [
+        "US8917913B2",
+        "US10778629B2"
+      ],
+      "interpretation_zh": "共享接口节点使好友标识与邮件关系建模程序图上两步相邻；原文没有跨专利的数据输入链。未据此认定已有检索/生成传播错误。"
+    },
+    "note_zh": "实际边均保留其文档来源；跨文档共享邻接或可组合路径不等于原文支持跨专利关系，也不等于已观察到系统回答受污染。 Server—User Interface 的关联语义较宽，不能扩写为直接渲染机制。",
+    "reviewed_incident_edge_count": 8,
+    "edge_indices": [
+      92,
+      427,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442
+    ]
+  },
+  "limitations_zh": [
+    "本结果是助手逐文内容审阅，不是独立人类金标准，也未调用新的模型评判 API。",
+    "共享宽类不保证所有合并描述适用于每个来源，也不验证物理/软件实例身份相等。",
+    "未运行新的检索和生成实验，不能据邻接路径推定已发生错误传播。",
+    "缓存行未保存 finish_reason；本评审不从缓存缺该字段推定响应完整或截断。"
+  ],
+  "review_coverage": {
+    "full_source_chunks_read": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-002"
+    ],
+    "raw_entity_rows_read": 6,
+    "raw_relation_endpoint_rows_read": 9,
+    "actual_incident_edges_read": 8,
+    "claim_number_source": "data/claims/<publication_number>.json; Abstract explicitly labeled",
+    "updated_dossier_sha256": "8c6da68b1a018eb30f7f6e587c30de44b293e39acc930560ac4fb9b135974519",
+    "review_protocol": "round2_multisource_audit/evidence/review_protocol.json"
+  },
+  "reviewed_utc": "2026-10-30T08:14:23.465064+00:00",
+  "reviewer": "AI-assisted content review by round4_guard; expanded assignment approved by root",
+  "external_model_api_calls": 0,
+  "credentials_read": false
+}

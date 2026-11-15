@@ -1,0 +1,585 @@
+{
+  "audit_utc": "2026-10-30T08:05:26.482799+00:00",
+  "scope": "Read-only schema/source integrity audit of existing round2 20-patent storage; no new classification, API calls, model executions or index mutation.",
+  "inputs_root": "<DOT_WORKDIR>/round2",
+  "official_version": "1.5.7",
+  "source_commit": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+  "input_hashes": {
+    "kv_store_text_chunks.json": {
+      "bytes": 258931,
+      "sha256": "c3d55a105cebbe177d259d1820e2f47192a010aabef300e01b435dd9b1908906"
+    },
+    "kv_store_entity_chunks.json": {
+      "bytes": 131083,
+      "sha256": "d9a5f265e9f9feffd103ddc8855d01d3584de725ebb34d874f7c624fda743b85"
+    },
+    "kv_store_relation_chunks.json": {
+      "bytes": 246693,
+      "sha256": "73d1b92e9b1f5274d35e39be5e135b9e75498793d86bbcbcf402e06e4445314f"
+    },
+    "kv_store_full_docs.json": {
+      "bytes": 236378,
+      "sha256": "38f81b633b3ab5ed3b9b69fa5d3c3d708812bc8846014eced8590fc3c1991a2c"
+    },
+    "kv_store_full_entities.json": {
+      "bytes": 21719,
+      "sha256": "b8c3019495809989df7eb781e5fcf220e4ff54242d728f49d159e3ce355ccf3c"
+    },
+    "kv_store_full_relations.json": {
+      "bytes": 79100,
+      "sha256": "664f27d860827acea045c39cd314b0ae589294d4edc8820645e43d4170cfb4fb"
+    },
+    "kv_store_doc_status.json": {
+      "bytes": 24516,
+      "sha256": "fd0169d3dc00b0dd7ed11a47ccfaa91590c0182e724d3b0a9579a87548fc7ff7"
+    },
+    "graph_chunk_entity_relation.graphml": {
+      "bytes": 804244,
+      "sha256": "5d551e39fdc045a956303a68d0b587ade881426ab0bb1bd1710a5f0473d4362b"
+    }
+  },
+  "source_archive": "round2/evidence/official_core_v1.5.7.tar.gz",
+  "archived_code_hashes": {
+    "lightrag/constants.py": {
+      "sha256": "295f3e46121b111ead3e164231ff363a4a6b0231c9bd530c370b88346157b3b7",
+      "bytes": 44787
+    },
+    "lightrag/operate.py": {
+      "sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047",
+      "bytes": 287289
+    },
+    "lightrag/utils.py": {
+      "sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc",
+      "bytes": 318614
+    },
+    "lightrag/lightrag.py": {
+      "sha256": "ff118d8d197b7f5ab899a2190157fa88782dc6be897c59ab47a42cab52ac45b9",
+      "bytes": 324144
+    },
+    "lightrag/_version.py": {
+      "sha256": "6dd9edee78ddd7c0c7822a79214d9db424cb2cc18ca3b61136cc84a71868840a",
+      "bytes": 124
+    }
+  },
+  "counts": {
+    "documents": 20,
+    "text_chunks": 48,
+    "graph_nodes": 612,
+    "graph_edges": 994,
+    "entity_tracking_rows": 612,
+    "relation_tracking_rows": 994,
+    "document_entity_recovery_rows": 20,
+    "document_relation_recovery_rows": 20,
+    "chunks_with_any_entity_or_relation_tracking": 48,
+    "chunks_without_any_tracking": []
+  },
+  "field_schema": {
+    "graph.source_id": "String of chunk IDs joined by literal <SEP>; identifiers resolve via kv_store_text_chunks keys.",
+    "graph.file_path": "Deduplicated file paths joined by <SEP>, for display. Not a positional array aligned with source IDs; several chunks may share a document path.",
+    "kv_store_entity_chunks": "Key is exact entity name; chunk_ids list is full tracked source set, count is list length.",
+    "kv_store_relation_chunks": "Key is <SEP>.join(sorted((src,tgt))); undirected endpoints, not a directed predicate identifier.",
+    "kv_store_text_chunks": "Key is chunk ID, full_doc_id links to full_docs key, file_path records original filename, content is persisted chunk text.",
+    "kv_store_full_docs": "Key is original publication_number here; file_path and header independently preserve it.",
+    "kv_store_full_entities_and_full_relations": "Document-keyed write-ahead candidate/recovery indexes; cross-check ownership with source tracking and graph. They are candidate supersets in general."
+  },
+  "per_kind": {
+    "node": {
+      "graph_count": 612,
+      "tracking_rows": 612,
+      "graph_source_chunk_incidences": 976,
+      "tracking_chunk_incidences": 976,
+      "max_source_chunks": 14,
+      "max_file_paths": 9,
+      "max_resolved_documents": 9,
+      "source_chunk_count_histogram": {
+        "1": 362,
+        "2": 190,
+        "3": 35,
+        "4": 15,
+        "5": 4,
+        "6": 2,
+        "7": 2,
+        "9": 1,
+        "14": 1
+      },
+      "file_path_count_histogram": {
+        "1": 574,
+        "2": 28,
+        "3": 6,
+        "5": 3,
+        "9": 1
+      },
+      "resolved_document_count_histogram": {
+        "1": 574,
+        "2": 28,
+        "3": 6,
+        "5": 3,
+        "9": 1
+      },
+      "source_truncate_fields": [],
+      "filepath_truncation_placeholders": []
+    },
+    "edge": {
+      "graph_count": 994,
+      "tracking_rows": 994,
+      "graph_source_chunk_incidences": 1155,
+      "tracking_chunk_incidences": 1155,
+      "max_source_chunks": 4,
+      "max_file_paths": 4,
+      "max_resolved_documents": 4,
+      "source_chunk_count_histogram": {
+        "1": 851,
+        "2": 128,
+        "3": 12,
+        "4": 3
+      },
+      "file_path_count_histogram": {
+        "1": 990,
+        "2": 3,
+        "4": 1
+      },
+      "resolved_document_count_histogram": {
+        "1": 990,
+        "2": 3,
+        "4": 1
+      },
+      "source_truncate_fields": [],
+      "filepath_truncation_placeholders": []
+    }
+  },
+  "mapping_problem_counts": {
+    "chunk_missing_full_document": 0,
+    "chunk_doc_filepath_mismatch": 0,
+    "chunk_not_literal_substring_of_document": 0,
+    "chunk_internal_id_mismatch": 0,
+    "chunk_id_naming_inconsistent": 0,
+    "document_internal_id_mismatch": 0,
+    "document_publication_filepath_mismatch": 0,
+    "document_publication_header_mismatch": 0,
+    "document_missing_status": 0,
+    "document_not_processed": 0,
+    "document_status_chunk_mapping_mismatch": 0,
+    "document_status_chunk_count_mismatch": 0,
+    "document_has_no_chunks": 0,
+    "chunk_only_document_id": 0,
+    "node_entity_id_mismatch": 0,
+    "edge_missing_endpoint": 0,
+    "node_missing_tracking_row": 0,
+    "node_invalid_tracking_schema": 0,
+    "node_empty_graph_source_id": 0,
+    "node_empty_tracking_source_ids": 0,
+    "node_duplicate_graph_source_ids": 0,
+    "node_duplicate_tracking_source_ids": 0,
+    "node_tracking_count_mismatch": 0,
+    "node_unsplit_joined_tracking_id": 0,
+    "node_missing_graph_source_chunks": 0,
+    "node_missing_tracking_chunks": 0,
+    "node_graph_source_vs_full_tracking_mismatch": 0,
+    "node_filepath_vs_chunk_mapping_mismatch": 0,
+    "node_duplicate_graph_file_paths": 0,
+    "node_orphan_tracking_row": 0,
+    "node_recovery_unknown_document": 0,
+    "node_recovery_count_mismatch": 0,
+    "node_recovery_candidate_absent_from_graph": 0,
+    "node_tracking_document_vs_recovery_mismatch": 0,
+    "node_document_missing_recovery_row": 0,
+    "edge_missing_tracking_row": 0,
+    "edge_invalid_tracking_schema": 0,
+    "edge_empty_graph_source_id": 0,
+    "edge_empty_tracking_source_ids": 0,
+    "edge_duplicate_graph_source_ids": 0,
+    "edge_duplicate_tracking_source_ids": 0,
+    "edge_tracking_count_mismatch": 0,
+    "edge_unsplit_joined_tracking_id": 0,
+    "edge_missing_graph_source_chunks": 0,
+    "edge_missing_tracking_chunks": 0,
+    "edge_graph_source_vs_full_tracking_mismatch": 0,
+    "edge_filepath_vs_chunk_mapping_mismatch": 0,
+    "edge_duplicate_graph_file_paths": 0,
+    "edge_orphan_tracking_row": 0,
+    "edge_recovery_unknown_document": 0,
+    "edge_recovery_count_mismatch": 0,
+    "edge_recovery_candidate_absent_from_graph": 0,
+    "edge_tracking_document_vs_recovery_mismatch": 0,
+    "edge_document_missing_recovery_row": 0
+  },
+  "mapping_problems": {},
+  "multidocument_mapping_examples_for_schema_only": {
+    "node": [
+      {
+        "id": "Processor",
+        "chunk_ids": [
+          "US8095432B1-chunk-000",
+          "US8095432B1-chunk-001",
+          "US8880423B2-chunk-000",
+          "US8069128B2-chunk-000",
+          "US7756837B2-chunk-000",
+          "US7756837B2-chunk-001",
+          "US7756837B2-chunk-002",
+          "US8719408B2-chunk-000",
+          "US8719408B2-chunk-001",
+          "US8655901B1-chunk-000",
+          "US11423041B2-chunk-000",
+          "US10778629B2-chunk-000",
+          "US10778629B2-chunk-001",
+          "US9589231B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US10778629B2",
+          "US11423041B2",
+          "US7756837B2",
+          "US8069128B2",
+          "US8095432B1",
+          "US8655901B1",
+          "US8719408B2",
+          "US8880423B2",
+          "US9589231B2"
+        ],
+        "file_paths": [
+          "US10778629B2.txt",
+          "US11423041B2.txt",
+          "US7756837B2.txt",
+          "US8069128B2.txt",
+          "US8095432B1.txt",
+          "US8655901B1.txt",
+          "US8719408B2.txt",
+          "US8880423B2.txt",
+          "US9589231B2.txt"
+        ]
+      },
+      {
+        "id": "Memory",
+        "chunk_ids": [
+          "US8095432B1-chunk-000",
+          "US8095432B1-chunk-001",
+          "US9514120B1-chunk-001",
+          "US8719408B2-chunk-001",
+          "US11423041B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US11423041B2",
+          "US8095432B1",
+          "US8719408B2",
+          "US9514120B1",
+          "US9589231B2"
+        ],
+        "file_paths": [
+          "US11423041B2.txt",
+          "US8095432B1.txt",
+          "US8719408B2.txt",
+          "US9514120B1.txt",
+          "US9589231B2.txt"
+        ]
+      },
+      {
+        "id": "Server",
+        "chunk_ids": [
+          "US8509827B2-chunk-000",
+          "US8509827B2-chunk-001",
+          "US9118735B1-chunk-000",
+          "US9514120B1-chunk-000",
+          "US9374411B1-chunk-000",
+          "US10778629B2-chunk-000",
+          "US10778629B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US10778629B2",
+          "US8509827B2",
+          "US9118735B1",
+          "US9374411B1",
+          "US9514120B1"
+        ],
+        "file_paths": [
+          "US10778629B2.txt",
+          "US8509827B2.txt",
+          "US9118735B1.txt",
+          "US9374411B1.txt",
+          "US9514120B1.txt"
+        ]
+      },
+      {
+        "id": "User",
+        "chunk_ids": [
+          "US8880423B2-chunk-000",
+          "US9514120B1-chunk-001",
+          "US8069128B2-chunk-000",
+          "US8069128B2-chunk-001",
+          "US9374411B1-chunk-000",
+          "US9374411B1-chunk-001",
+          "US9374411B1-chunk-002",
+          "US8719408B2-chunk-000",
+          "US8719408B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US8069128B2",
+          "US8719408B2",
+          "US8880423B2",
+          "US9374411B1",
+          "US9514120B1"
+        ],
+        "file_paths": [
+          "US8069128B2.txt",
+          "US8719408B2.txt",
+          "US8880423B2.txt",
+          "US9374411B1.txt",
+          "US9514120B1.txt"
+        ]
+      },
+      {
+        "id": "Computing Device",
+        "chunk_ids": [
+          "US9514120B1-chunk-000",
+          "US9374411B1-chunk-000",
+          "US9374411B1-chunk-001",
+          "US9374411B1-chunk-002",
+          "US9218390B2-chunk-002"
+        ],
+        "publication_numbers": [
+          "US9218390B2",
+          "US9374411B1",
+          "US9514120B1"
+        ],
+        "file_paths": [
+          "US9218390B2.txt",
+          "US9374411B1.txt",
+          "US9514120B1.txt"
+        ]
+      },
+      {
+        "id": "Database",
+        "chunk_ids": [
+          "US8509827B2-chunk-000",
+          "US9304738B1-chunk-000",
+          "US9304738B1-chunk-001",
+          "US7756837B2-chunk-000",
+          "US7756837B2-chunk-001",
+          "US7756837B2-chunk-002",
+          "US7756837B2-chunk-003"
+        ],
+        "publication_numbers": [
+          "US7756837B2",
+          "US8509827B2",
+          "US9304738B1"
+        ],
+        "file_paths": [
+          "US7756837B2.txt",
+          "US8509827B2.txt",
+          "US9304738B1.txt"
+        ]
+      },
+      {
+        "id": "System",
+        "chunk_ids": [
+          "US9514753B2-chunk-001",
+          "US8655901B1-chunk-000",
+          "US10867122B1-chunk-001",
+          "US10867122B1-chunk-002"
+        ],
+        "publication_numbers": [
+          "US10867122B1",
+          "US8655901B1",
+          "US9514753B2"
+        ],
+        "file_paths": [
+          "US10867122B1.txt",
+          "US8655901B1.txt",
+          "US9514753B2.txt"
+        ]
+      },
+      {
+        "id": "Token",
+        "chunk_ids": [
+          "US9118735B1-chunk-001",
+          "US9218390B2-chunk-002",
+          "US8655901B1-chunk-000"
+        ],
+        "publication_numbers": [
+          "US8655901B1",
+          "US9118735B1",
+          "US9218390B2"
+        ],
+        "file_paths": [
+          "US8655901B1.txt",
+          "US9118735B1.txt",
+          "US9218390B2.txt"
+        ]
+      },
+      {
+        "id": "User Interface",
+        "chunk_ids": [
+          "US8917913B2-chunk-000",
+          "US8917913B2-chunk-001",
+          "US9374411B1-chunk-000",
+          "US9374411B1-chunk-002",
+          "US10778629B2-chunk-000",
+          "US10778629B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US10778629B2",
+          "US8917913B2",
+          "US9374411B1"
+        ],
+        "file_paths": [
+          "US10778629B2.txt",
+          "US8917913B2.txt",
+          "US9374411B1.txt"
+        ]
+      },
+      {
+        "id": "Weight",
+        "chunk_ids": [
+          "US9304738B1-chunk-000",
+          "US9304738B1-chunk-001",
+          "US7991757B2-chunk-000",
+          "US10778629B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US10778629B2",
+          "US7991757B2",
+          "US9304738B1"
+        ],
+        "file_paths": [
+          "US10778629B2.txt",
+          "US7991757B2.txt",
+          "US9304738B1.txt"
+        ]
+      }
+    ],
+    "edge": [
+      {
+        "id": "Memory<SEP>Processor",
+        "chunk_ids": [
+          "US8095432B1-chunk-001",
+          "US8719408B2-chunk-001",
+          "US11423041B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US11423041B2",
+          "US8095432B1",
+          "US8719408B2",
+          "US9589231B2"
+        ],
+        "file_paths": [
+          "US11423041B2.txt",
+          "US8095432B1.txt",
+          "US8719408B2.txt",
+          "US9589231B2.txt"
+        ]
+      },
+      {
+        "id": "Characteristic<SEP>Weight",
+        "chunk_ids": [
+          "US9304738B1-chunk-000",
+          "US10778629B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US10778629B2",
+          "US9304738B1"
+        ],
+        "file_paths": [
+          "US10778629B2.txt",
+          "US9304738B1.txt"
+        ]
+      },
+      {
+        "id": "Label<SEP>Token",
+        "chunk_ids": [
+          "US9218390B2-chunk-002",
+          "US8655901B1-chunk-000"
+        ],
+        "publication_numbers": [
+          "US8655901B1",
+          "US9218390B2"
+        ],
+        "file_paths": [
+          "US8655901B1.txt",
+          "US9218390B2.txt"
+        ]
+      },
+      {
+        "id": "Labels<SEP>Tokens",
+        "chunk_ids": [
+          "US9218390B2-chunk-000",
+          "US8655901B1-chunk-001"
+        ],
+        "publication_numbers": [
+          "US8655901B1",
+          "US9218390B2"
+        ],
+        "file_paths": [
+          "US8655901B1.txt",
+          "US9218390B2.txt"
+        ]
+      }
+    ]
+  },
+  "code_mechanisms": [
+    {
+      "source": "lightrag/constants.py",
+      "line": 49,
+      "finding": "GRAPH_FIELD_SEP is <SEP>; source IDs, descriptions and relation keys share this delimiter."
+    },
+    {
+      "source": "lightrag/utils.py",
+      "line": 6423,
+      "finding": "merge_source_ids splits joined strings, trims whitespace, deduplicates by first-seen order. Joining is not a lossless per-description attribution structure."
+    },
+    {
+      "source": "lightrag/operate.py",
+      "line": 2489,
+      "finding": "Entity merge prefers structurally valid entity_chunks tracking, writes full merged chunk IDs before limiting graph.source_id. An empty but present chunk_ids list is authoritative; graph fallback only when tracking schema is absent."
+    },
+    {
+      "source": "lightrag/operate.py",
+      "line": 2855,
+      "finding": "Relation merge uses the same full-tracking-before-limit pattern; excludes historical UNKNOWN/manual_creation placeholders as non-evidence."
+    },
+    {
+      "source": "lightrag/utils.py",
+      "line": 6484,
+      "finding": "source_id cap keeps oldest first-N in KEEP mode or newest last-N in FIFO mode. Defaults are 200 per entity and 200 per relation; graph/VDB can therefore omit sources while full KV tracking retains them."
+    },
+    {
+      "source": "lightrag/operate.py",
+      "line": 2633,
+      "finding": "Entity file_path unions old/new paths, deduplicates, drops old placeholder while rebuilding; applies count cap (default75). KEEP keeps earliest paths; FIFO newest, adds ...truncated...(KEEP Old/FIFO). Stored path union is separate from source-id order."
+    },
+    {
+      "source": "lightrag/operate.py",
+      "line": 2698,
+      "finding": "Node truncate records source-ID limiting (KEEP Old or FIFO kept/total). This field differs from generation finish_reason=length."
+    },
+    {
+      "source": "lightrag/operate.py",
+      "line": 3160,
+      "finding": "Absent relation endpoints may be created as UNKNOWN nodes and inherit relation evidence; source membership is not proof that the entity was separately explicitly extracted."
+    },
+    {
+      "source": "lightrag/operate.py",
+      "line": 3665,
+      "finding": "full_entities/full_relations write candidate supersets before graph mutation; candidates alone do not prove a final graph object or supported relation."
+    },
+    {
+      "source": "lightrag/utils.py",
+      "line": 6623,
+      "finding": "make_relation_chunk_key sorts endpoints then joins with <SEP>; it loses direction by design because graph stores undirected entity-pair relations."
+    }
+  ],
+  "configuration_caveat": "Saved full_settings does not record resolved max_source_ids/max_file_paths/limit_method, and run_experiment.py supplies no explicit override. Values200/200/75/KEEP above are official defaults, not a reconstructed secret/environment configuration. Actual completeness is established by persisted-set comparisons, independently of assumed defaults.",
+  "authoritative_mapping_recommendation": [
+    "For a node, use exact entity name -> kv_store_entity_chunks.chunk_ids -> kv_store_text_chunks[chunk_id].full_doc_id -> kv_store_full_docs[full_doc_id], and verify file_path/header.",
+    "For an edge, use sorted endpoint pair -> kv_store_relation_chunks.chunk_ids -> text_chunks -> full_docs. Track full source sets even when graph.source_id or file_path is truncated.",
+    "Use document recovery indexes as corroboration, not sole authoritative evidence. Never zip source_id tokens with file_path tokens positionally.",
+    "Read original chunk/document content to assign individual descriptive statements, predicates or Claim numbers. Membership only records that a graph object was sourced from those chunks, not that every merged description clause is supported by every source."
+  ],
+  "limits": [
+    "This audit checks mapping integrity, not semantic correctness of entity resolution or merged descriptions.",
+    "A complete mapping does not establish explicit Claim structure; source_id identifies chunks, not Claim numbers or exact evidence spans.",
+    "Current node/edge summaries can combine multiple descriptions without a clause-to-source linkage; text-level manual verification remains necessary.",
+    "Truncation risks described are code mechanisms; empirical truncation presence/absence is reported separately from hypothetical future scale."
+  ],
+  "snapshot_preservation": "Original files opened read-only; output and script are confined to round2_multisource_audit. No secret file, API, FOT, AutoDL or process action.",
+  "status": "mapping_complete_with_no_detected_schema_mismatches"
+}

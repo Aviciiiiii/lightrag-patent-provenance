@@ -1,0 +1,1705 @@
+{
+  "method": "normal official imported parser replay, timestamp0",
+  "records": [
+    {
+      "call_id": 122,
+      "chunk_id": "US8069128B2-chunk-000",
+      "file_path": "US8069128B2.txt",
+      "finish_reason": "stop",
+      "completion_tokens": 2151,
+      "completion_delimiter_present": true,
+      "nodes": {
+        "US8069128B2": [
+          {
+            "entity_name": "US8069128B2",
+            "entity_type": "content",
+            "description": "A patent document titled \"Real-time ad-hoc spam filtering of email\" describing a multi-pass ad-hoc spam message filtering approach.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Multi-Pass Ad-Hoc Spam Message Filtering": [
+          {
+            "entity_name": "Multi-Pass Ad-Hoc Spam Message Filtering",
+            "entity_type": "method",
+            "description": "A filtering approach that dynamically generates a temporary classifier during a first pass based on results of a previously applied message filter that sorts messages into folders, then uses the classifier in a second pass to retrospectively inspect messages.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Classification Model": [
+          {
+            "entity_name": "Classification Model",
+            "entity_type": "data",
+            "description": "A model generated during the first pass analysis based on message folder placement and message attributes, used to score and identify misclassified messages; it resides exclusively in non-persistent memory and is purged after use.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "First Message Filter": [
+          {
+            "entity_name": "First Message Filter",
+            "entity_type": "method",
+            "description": "A previously applied message filter that sorts messages into a plurality of different message folders and stores first classification data in a persistent store.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Second Multi-Pass Message Filter": [
+          {
+            "entity_name": "Second Multi-Pass Message Filter",
+            "entity_type": "method",
+            "description": "A filter configured to generate a classification model based on a first pass analysis, perform a second pass on sorted messages to identify misclassifications, and purge the model from non-persistent memory.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Network Device": [
+          {
+            "entity_name": "Network Device",
+            "entity_type": "artifact",
+            "description": "A device comprising a transceiver to send and receive data over a network and a processor operative to perform first and second pass analyses, display misclassification identifications, and purge the classification model from non-persistent memory.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Transceiver": [
+          {
+            "entity_name": "Transceiver",
+            "entity_type": "artifact",
+            "description": "A component of the network device that sends and receives data over a network.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Processor": [
+          {
+            "entity_name": "Processor",
+            "entity_type": "artifact",
+            "description": "A component of the network device operative to perform actions including first pass analysis, second pass analysis, displaying misclassification identifications, and purging the classification model.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message Folders": [
+          {
+            "entity_name": "Message Folders",
+            "entity_type": "concept",
+            "description": "A plurality of different folders into which messages are sorted by the first message filter, used as a basis for training and generating the classification model.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Misclassification Identification": [
+          {
+            "entity_name": "Misclassification Identification",
+            "entity_type": "data",
+            "description": "A generated identification of sorted messages that might be misclassified, displayed so that at least one misclassified message can be moved to a different message folder.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Non-Persistent Memory Location": [
+          {
+            "entity_name": "Non-Persistent Memory Location",
+            "entity_type": "concept",
+            "description": "A memory-resident-only location where the generated classification model resides exclusively, not stored on disk or in another persistent data store, and from which the model is purged.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Persistent Store": [
+          {
+            "entity_name": "Persistent Store",
+            "entity_type": "concept",
+            "description": "A data store where the first message filter stores first classification data.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Processor Readable Storage Medium": [
+          {
+            "entity_name": "Processor Readable Storage Medium",
+            "entity_type": "artifact",
+            "description": "A medium including data and instructions whose execution on a computing device provides for managing messages.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Client Device": [
+          {
+            "entity_name": "Client Device",
+            "entity_type": "artifact",
+            "description": "A user's device on which the classification model is maintained in memory and on which the first and second passes of the multi-pass message filter may occur entirely.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Address Book": [
+          {
+            "entity_name": "Address Book",
+            "entity_type": "data",
+            "description": "A book associated with a recipient that is associated with the message folders, used in analysis to determine whether a message sender's address is present.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message Header": [
+          {
+            "entity_name": "Message Header",
+            "entity_type": "data",
+            "description": "A header of a message, including a subject and originating network address, read during the first pass analysis.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message Content": [
+          {
+            "entity_name": "Message Content",
+            "entity_type": "data",
+            "description": "The contents of a message read during the first pass analysis and used in generating the classification model.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message Attachments": [
+          {
+            "entity_name": "Message Attachments",
+            "entity_type": "data",
+            "description": "Attachments of messages read during the first pass analysis.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Sender Information": [
+          {
+            "entity_name": "Sender Information",
+            "entity_type": "data",
+            "description": "Information about the sender of a message, read during the first pass analysis.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message Score": [
+          {
+            "entity_name": "Message Score",
+            "entity_type": "data",
+            "description": "A score assigned to each message during the second pass using the second classification data, used to identify messages sorted into an incorrect message folder.",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ]
+      },
+      "edges": [
+        {
+          "endpoints": [
+            "US8069128B2",
+            "Multi-Pass Ad-Hoc Spam Message Filtering"
+          ],
+          "records": [
+            {
+              "src_id": "US8069128B2",
+              "tgt_id": "Multi-Pass Ad-Hoc Spam Message Filtering",
+              "weight": 1.0,
+              "description": "The patent document US8069128B2 describes a multi-pass ad-hoc spam message filtering approach.",
+              "keywords": "describes",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Multi-Pass Ad-Hoc Spam Message Filtering",
+            "Classification Model"
+          ],
+          "records": [
+            {
+              "src_id": "Multi-Pass Ad-Hoc Spam Message Filtering",
+              "tgt_id": "Classification Model",
+              "weight": 1.0,
+              "description": "The multi-pass ad-hoc spam message filtering approach dynamically generates a temporary classification model during a first pass.",
+              "keywords": "generates",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Multi-Pass Ad-Hoc Spam Message Filtering",
+            "First Message Filter"
+          ],
+          "records": [
+            {
+              "src_id": "Multi-Pass Ad-Hoc Spam Message Filtering",
+              "tgt_id": "First Message Filter",
+              "weight": 1.0,
+              "description": "The multi-pass filtering approach generates the classifier based on results of the previously applied first message filter that sorts messages into folders.",
+              "keywords": "based on, uses",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Second Multi-Pass Message Filter",
+            "Classification Model"
+          ],
+          "records": [
+            {
+              "src_id": "Second Multi-Pass Message Filter",
+              "tgt_id": "Classification Model",
+              "weight": 1.0,
+              "description": "The second multi-pass message filter generates the classification model based on the first pass analysis and uses it in the second pass.",
+              "keywords": "generates, uses",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Second Multi-Pass Message Filter",
+            "Message Folders"
+          ],
+          "records": [
+            {
+              "src_id": "Second Multi-Pass Message Filter",
+              "tgt_id": "Message Folders",
+              "weight": 1.0,
+              "description": "The second multi-pass message filter performs first and second pass analyses on messages sorted into the message folders and is trained based on which folder each message resides.",
+              "keywords": "analyzes, trains on",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Second Multi-Pass Message Filter",
+            "Misclassification Identification"
+          ],
+          "records": [
+            {
+              "src_id": "Second Multi-Pass Message Filter",
+              "tgt_id": "Misclassification Identification",
+              "weight": 1.0,
+              "description": "The second multi-pass message filter uses the classification model to perform a second pass and generate a misclassification identification of sorted messages.",
+              "keywords": "generates",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Classification Model",
+            "Non-Persistent Memory Location"
+          ],
+          "records": [
+            {
+              "src_id": "Classification Model",
+              "tgt_id": "Non-Persistent Memory Location",
+              "weight": 1.0,
+              "description": "The generated classification model is configured to reside exclusively in a non-persistent memory location.",
+              "keywords": "resides in",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Classification Model",
+            "Client Device"
+          ],
+          "records": [
+            {
+              "src_id": "Classification Model",
+              "tgt_id": "Client Device",
+              "weight": 1.0,
+              "description": "The classification model is maintained within memory on a user's client device as memory resident only.",
+              "keywords": "maintained on",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Network Device",
+            "Transceiver"
+          ],
+          "records": [
+            {
+              "src_id": "Network Device",
+              "tgt_id": "Transceiver",
+              "weight": 1.0,
+              "description": "The network device comprises a transceiver to send and receive data over a network.",
+              "keywords": "comprises",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Network Device",
+            "Processor"
+          ],
+          "records": [
+            {
+              "src_id": "Network Device",
+              "tgt_id": "Processor",
+              "weight": 1.0,
+              "description": "The network device comprises a processor operative to perform the filtering actions.",
+              "keywords": "comprises",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Processor",
+            "Second Multi-Pass Message Filter"
+          ],
+          "records": [
+            {
+              "src_id": "Processor",
+              "tgt_id": "Second Multi-Pass Message Filter",
+              "weight": 1.0,
+              "description": "The processor is operative to perform first and second pass analyses using the second multi-pass message filter.",
+              "keywords": "performs actions of",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Processor",
+            "Classification Model"
+          ],
+          "records": [
+            {
+              "src_id": "Processor",
+              "tgt_id": "Classification Model",
+              "weight": 1.0,
+              "description": "The processor purges the generated classification model from the non-persistent memory location.",
+              "keywords": "purges",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Processor",
+            "Misclassification Identification"
+          ],
+          "records": [
+            {
+              "src_id": "Processor",
+              "tgt_id": "Misclassification Identification",
+              "weight": 1.0,
+              "description": "The processor displays the misclassification identification of sorted messages so misclassified messages can be moved.",
+              "keywords": "displays",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "First Message Filter",
+            "Message Folders"
+          ],
+          "records": [
+            {
+              "src_id": "First Message Filter",
+              "tgt_id": "Message Folders",
+              "weight": 1.0,
+              "description": "The first message filter sorts the plurality of messages into a plurality of different message folders.",
+              "keywords": "sorts into",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "First Message Filter",
+            "Persistent Store"
+          ],
+          "records": [
+            {
+              "src_id": "First Message Filter",
+              "tgt_id": "Persistent Store",
+              "weight": 1.0,
+              "description": "The first message filter is configured to store first classification data in a persistent store.",
+              "keywords": "stores data in",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Processor Readable Storage Medium",
+            "Client Device"
+          ],
+          "records": [
+            {
+              "src_id": "Processor Readable Storage Medium",
+              "tgt_id": "Client Device",
+              "weight": 1.0,
+              "description": "Execution of the instructions on a computing device such as a client device provides for managing messages.",
+              "keywords": "executes on",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Second Multi-Pass Message Filter",
+            "Client Device"
+          ],
+          "records": [
+            {
+              "src_id": "Second Multi-Pass Message Filter",
+              "tgt_id": "Client Device",
+              "weight": 1.0,
+              "description": "Executing the first and second passes of the multi-pass message filter occurs entirely on a client device.",
+              "keywords": "executes on",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "First Message Filter",
+            "Network Device"
+          ],
+          "records": [
+            {
+              "src_id": "First Message Filter",
+              "tgt_id": "Network Device",
+              "weight": 1.0,
+              "description": "The first message filter is configured to execute on a network device distinct from a client device.",
+              "keywords": "executes on",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Classification Model",
+            "Address Book"
+          ],
+          "records": [
+            {
+              "src_id": "Classification Model",
+              "tgt_id": "Address Book",
+              "weight": 1.0,
+              "description": "The classification model is generated based on analysis of whether a message sender's address is in an address book associated with a recipient.",
+              "keywords": "generated based on",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Classification Model",
+            "Message Header"
+          ],
+          "records": [
+            {
+              "src_id": "Classification Model",
+              "tgt_id": "Message Header",
+              "weight": 1.0,
+              "description": "The classification model is generated based on analysis of a header of a message.",
+              "keywords": "generated based on",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Classification Model",
+            "Message Content"
+          ],
+          "records": [
+            {
+              "src_id": "Classification Model",
+              "tgt_id": "Message Content",
+              "weight": 1.0,
+              "description": "The classification model is generated based on analysis of message content.",
+              "keywords": "generated based on",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Classification Model",
+            "Message Folders"
+          ],
+          "records": [
+            {
+              "src_id": "Classification Model",
+              "tgt_id": "Message Folders",
+              "weight": 1.0,
+              "description": "The classification model is generated based on an analysis of at least which message folder a message currently resides.",
+              "keywords": "generated based on",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Message Score",
+            "Misclassification Identification"
+          ],
+          "records": [
+            {
+              "src_id": "Message Score",
+              "tgt_id": "Misclassification Identification",
+              "weight": 1.0,
+              "description": "Each message's respective score is used to identify messages sorted into an incorrect message folder.",
+              "keywords": "used to identify",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Message Header",
+            "Sender Information"
+          ],
+          "records": [
+            {
+              "src_id": "Message Header",
+              "tgt_id": "Sender Information",
+              "weight": 1.0,
+              "description": "The message header includes sender information such as a subject and an originating network address.",
+              "keywords": "includes",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "call_id": 123,
+      "chunk_id": "US8069128B2-chunk-001",
+      "file_path": "US8069128B2.txt",
+      "finish_reason": "stop",
+      "completion_tokens": 1141,
+      "completion_delimiter_present": true,
+      "nodes": {
+        "Multi-Pass Message Filter": [
+          {
+            "entity_name": "Multi-Pass Message Filter",
+            "entity_type": "method",
+            "description": "A message filtering method that executes in multiple passes, including a first pass on a client device to train the filter by generating second classification data, and employs a Naive Bayes classifier.",
+            "source_id": "US8069128B2-chunk-001",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "First Message Filter": [
+          {
+            "entity_name": "First Message Filter",
+            "entity_type": "method",
+            "description": "A message filter configured to sort messages into different message folders and store first classification data in a persistent store; it may execute on a network device distinct from a client device.",
+            "source_id": "US8069128B2-chunk-001",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Naive Bayes Classifier": [
+          {
+            "entity_name": "Naive Bayes Classifier",
+            "entity_type": "method",
+            "description": "A classifier employed by the multi-pass message filter for classifying messages.",
+            "source_id": "US8069128B2-chunk-001",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Client Device": [
+          {
+            "entity_name": "Client Device",
+            "entity_type": "artifact",
+            "description": "A device on which the first and second passes of the multi-pass message filter may execute entirely, and on which the first pass is executed to train the multi-pass message filter.",
+            "source_id": "US8069128B2-chunk-001",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Network Device": [
+          {
+            "entity_name": "Network Device",
+            "entity_type": "artifact",
+            "description": "A device distinct from a client device on which the first message filter is configured to execute.",
+            "source_id": "US8069128B2-chunk-001",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Persistent Store": [
+          {
+            "entity_name": "Persistent Store",
+            "entity_type": "artifact",
+            "description": "A storage location where the first message filter stores first classification data.",
+            "source_id": "US8069128B2-chunk-001",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "First Classification Data": [
+          {
+            "entity_name": "First Classification Data",
+            "entity_type": "data",
+            "description": "Data stored in a persistent store by the first message filter.",
+            "source_id": "US8069128B2-chunk-001",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Second Classification Data": [
+          {
+            "entity_name": "Second Classification Data",
+            "entity_type": "data",
+            "description": "Data generated during the first pass of the multi-pass message filter to train the filter, and which can be deleted such that it is no longer accessible.",
+            "source_id": "US8069128B2-chunk-001",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Second Classification Model": [
+          {
+            "entity_name": "Second Classification Model",
+            "entity_type": "concept",
+            "description": "A model generated based on an analysis of at least which message folder a message currently resides.",
+            "source_id": "US8069128B2-chunk-001",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message Folder": [
+          {
+            "entity_name": "Message Folder",
+            "entity_type": "concept",
+            "description": "One of a plurality of different folders into which messages are sorted, and whose current residence of a message is analyzed to generate the second classification model.",
+            "source_id": "US8069128B2-chunk-001",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Processor Readable Storage Medium": [
+          {
+            "entity_name": "Processor Readable Storage Medium",
+            "entity_type": "artifact",
+            "description": "A storage medium readable by a processor that stores instructions for executing the multi-pass message filter and related operations.",
+            "source_id": "US8069128B2-chunk-001",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message Delivery Management Method": [
+          {
+            "entity_name": "Message Delivery Management Method",
+            "entity_type": "method",
+            "description": "A method for managing message delivery comprising receiving messages, sorting them into folders using a first message filter, and executing a first pass of a multi-pass message filter on a client device.",
+            "source_id": "US8069128B2-chunk-001",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ]
+      },
+      "edges": [
+        {
+          "endpoints": [
+            "Multi-Pass Message Filter",
+            "Naive Bayes Classifier"
+          ],
+          "records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Naive Bayes Classifier",
+              "weight": 1.0,
+              "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+              "keywords": "employs, uses",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Multi-Pass Message Filter",
+            "Client Device"
+          ],
+          "records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Client Device",
+              "weight": 1.0,
+              "description": "Executing the first and second passes of the multi-pass message filter occurs entirely on a client device.",
+              "keywords": "executes on, runs on",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "First Message Filter",
+            "Network Device"
+          ],
+          "records": [
+            {
+              "src_id": "First Message Filter",
+              "tgt_id": "Network Device",
+              "weight": 1.0,
+              "description": "The first message filter is configured to execute on a network device distinct from a client device.",
+              "keywords": "executes on, configured to run on",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "First Message Filter",
+            "Persistent Store"
+          ],
+          "records": [
+            {
+              "src_id": "First Message Filter",
+              "tgt_id": "Persistent Store",
+              "weight": 1.0,
+              "description": "The first message filter is configured to store first classification data in a persistent store.",
+              "keywords": "stores data in",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "First Message Filter",
+            "First Classification Data"
+          ],
+          "records": [
+            {
+              "src_id": "First Message Filter",
+              "tgt_id": "First Classification Data",
+              "weight": 1.0,
+              "description": "The first message filter stores first classification data in a persistent store.",
+              "keywords": "stores, produces",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Multi-Pass Message Filter",
+            "Second Classification Data"
+          ],
+          "records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Second Classification Data",
+              "weight": 1.0,
+              "description": "The first pass of the multi-pass message filter generates second classification data to train the filter.",
+              "keywords": "generates, trains with",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Second Classification Data",
+            "Second Classification Model"
+          ],
+          "records": [
+            {
+              "src_id": "Second Classification Data",
+              "tgt_id": "Second Classification Model",
+              "weight": 1.0,
+              "description": "The second classification data is used in generating the second classification model.",
+              "keywords": "used to generate",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Second Classification Model",
+            "Message Folder"
+          ],
+          "records": [
+            {
+              "src_id": "Second Classification Model",
+              "tgt_id": "Message Folder",
+              "weight": 1.0,
+              "description": "The second classification model is generated based on an analysis of at least which message folder a message currently resides.",
+              "keywords": "generated based on analysis of",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Processor Readable Storage Medium",
+            "Multi-Pass Message Filter"
+          ],
+          "records": [
+            {
+              "src_id": "Processor Readable Storage Medium",
+              "tgt_id": "Multi-Pass Message Filter",
+              "weight": 1.0,
+              "description": "The processor readable storage medium stores instructions for executing the multi-pass message filter.",
+              "keywords": "stores instructions for",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Message Delivery Management Method",
+            "First Message Filter"
+          ],
+          "records": [
+            {
+              "src_id": "Message Delivery Management Method",
+              "tgt_id": "First Message Filter",
+              "weight": 1.0,
+              "description": "The method sorts messages into different message folders using a first message filter.",
+              "keywords": "uses, sorts with",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Message Delivery Management Method",
+            "Multi-Pass Message Filter"
+          ],
+          "records": [
+            {
+              "src_id": "Message Delivery Management Method",
+              "tgt_id": "Multi-Pass Message Filter",
+              "weight": 1.0,
+              "description": "The method executes, on a client device, a first pass of a multi-pass message filter on the sorted messages.",
+              "keywords": "executes first pass of",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Message Delivery Management Method",
+            "Client Device"
+          ],
+          "records": [
+            {
+              "src_id": "Message Delivery Management Method",
+              "tgt_id": "Client Device",
+              "weight": 1.0,
+              "description": "The method executes the first pass of the multi-pass message filter on a client device.",
+              "keywords": "executes on",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "call_id": 124,
+      "chunk_id": "US8069128B2-chunk-002",
+      "file_path": "US8069128B2.txt",
+      "finish_reason": "stop",
+      "completion_tokens": 2132,
+      "completion_delimiter_present": true,
+      "nodes": {
+        "Message Delivery Management Method": [
+          {
+            "entity_name": "Message Delivery Management Method",
+            "entity_type": "method",
+            "description": "A method for managing message delivery that involves receiving messages, sorting them into folders using a first message filter, and executing a multi-pass message filter on a client device to identify messages sorted into incorrect folders.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Multi-Pass Message Filter": [
+          {
+            "entity_name": "Multi-Pass Message Filter",
+            "entity_type": "method",
+            "description": "A message filter executed in multiple passes on a client device; a first pass trains the filter by generating second classification data, and a second pass scores each message to identify mis-sorted messages.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "First Message Filter": [
+          {
+            "entity_name": "First Message Filter",
+            "entity_type": "method",
+            "description": "A message filter configured to sort messages into different message folders and to store first classification data in a persistent store.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "First Classification Data": [
+          {
+            "entity_name": "First Classification Data",
+            "entity_type": "data",
+            "description": "Classification data generated by the first message filter and stored in a persistent store.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Second Classification Data": [
+          {
+            "entity_name": "Second Classification Data",
+            "entity_type": "data",
+            "description": "Classification data generated during the first pass of the multi-pass message filter, configured to reside exclusively in a non-persistent memory store and deleted from the client device upon providing the display of information.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Client Device": [
+          {
+            "entity_name": "Client Device",
+            "entity_type": "artifact",
+            "description": "A device that executes the passes of the multi-pass message filter, generates second classification data in non-persistent memory, scores messages, identifies mis-sorted messages, and provides a display of information enabling a user to move messages.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Persistent Store": [
+          {
+            "entity_name": "Persistent Store",
+            "entity_type": "artifact",
+            "description": "A storage location where the first message filter stores first classification data.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Non-Persistent Memory Store": [
+          {
+            "entity_name": "Non-Persistent Memory Store",
+            "entity_type": "artifact",
+            "description": "A memory store at the client device where the second classification data resides exclusively.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message Folders": [
+          {
+            "entity_name": "Message Folders",
+            "entity_type": "concept",
+            "description": "Different folders into which messages are sorted by the first message filter and to which identified messages may be moved by a user.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message": [
+          {
+            "entity_name": "Message",
+            "entity_type": "data",
+            "description": "A message received and sorted into message folders, scored by the multi-pass message filter, and potentially identified as stored in an incorrect folder.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message Score": [
+          {
+            "entity_name": "Message Score",
+            "entity_type": "data",
+            "description": "A score assigned to each message by the second pass of the multi-pass message filter, used to indicate whether a message is sorted into an incorrect message folder.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Incorrect Message Folder": [
+          {
+            "entity_name": "Incorrect Message Folder",
+            "entity_type": "concept",
+            "description": "A message folder into which a message has been incorrectly sorted, as indicated by the message's score.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "User": [
+          {
+            "entity_name": "User",
+            "entity_type": "person",
+            "description": "A person enabled to move an identified message to another message folder and able to select execution of the multi-pass message filter through an interface on the client device.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Interface": [
+          {
+            "entity_name": "Interface",
+            "entity_type": "artifact",
+            "description": "An interface on the client device through which a user can select execution of the multi-pass message filter.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Network Device": [
+          {
+            "entity_name": "Network Device",
+            "entity_type": "artifact",
+            "description": "A device configured to receive messages, assign them to message folders using the first message filter, and communicate the messages over a network to the message folders.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Network": [
+          {
+            "entity_name": "Network",
+            "entity_type": "concept",
+            "description": "A network over which the network device communicates messages to the message folders.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Communications System": [
+          {
+            "entity_name": "Communications System",
+            "entity_type": "organization",
+            "description": "A system for enabling communications over a network, comprising a network device and a client device.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Address Book": [
+          {
+            "entity_name": "Address Book",
+            "entity_type": "data",
+            "description": "An address book associated with a recipient that is associated with the message folders, whose sender addresses may be analyzed to generate second classification data.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message Header": [
+          {
+            "entity_name": "Message Header",
+            "entity_type": "data",
+            "description": "A header of a message that may be analyzed to generate second classification data.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message Content": [
+          {
+            "entity_name": "Message Content",
+            "entity_type": "data",
+            "description": "The content of a message that may be analyzed to generate second classification data.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ],
+        "Message State": [
+          {
+            "entity_name": "Message State",
+            "entity_type": "data",
+            "description": "A state of a message that may be analyzed to generate second classification data.",
+            "source_id": "US8069128B2-chunk-002",
+            "file_path": "US8069128B2.txt",
+            "timestamp": 0
+          }
+        ]
+      },
+      "edges": [
+        {
+          "endpoints": [
+            "Message Delivery Management Method",
+            "Multi-Pass Message Filter"
+          ],
+          "records": [
+            {
+              "src_id": "Message Delivery Management Method",
+              "tgt_id": "Multi-Pass Message Filter",
+              "weight": 1.0,
+              "description": "The message delivery management method comprises executing a multi-pass message filter on a client device.",
+              "keywords": "comprises, executes",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Message Delivery Management Method",
+            "First Message Filter"
+          ],
+          "records": [
+            {
+              "src_id": "Message Delivery Management Method",
+              "tgt_id": "First Message Filter",
+              "weight": 1.0,
+              "description": "The message delivery management method sorts messages into folders using a first message filter.",
+              "keywords": "comprises, uses",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "First Message Filter",
+            "First Classification Data"
+          ],
+          "records": [
+            {
+              "src_id": "First Message Filter",
+              "tgt_id": "First Classification Data",
+              "weight": 1.0,
+              "description": "The first message filter is configured to store first classification data in a persistent store.",
+              "keywords": "stores, generates",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "First Classification Data",
+            "Persistent Store"
+          ],
+          "records": [
+            {
+              "src_id": "First Classification Data",
+              "tgt_id": "Persistent Store",
+              "weight": 1.0,
+              "description": "The first classification data is stored in a persistent store.",
+              "keywords": "stored in",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Multi-Pass Message Filter",
+            "Second Classification Data"
+          ],
+          "records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Second Classification Data",
+              "weight": 1.0,
+              "description": "The first pass of the multi-pass message filter trains the filter by generating second classification data.",
+              "keywords": "generates, trains",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Second Classification Data",
+            "Non-Persistent Memory Store"
+          ],
+          "records": [
+            {
+              "src_id": "Second Classification Data",
+              "tgt_id": "Non-Persistent Memory Store",
+              "weight": 1.0,
+              "description": "The second classification data is configured to reside exclusively in a non-persistent memory store.",
+              "keywords": "resides in",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Client Device",
+            "Multi-Pass Message Filter"
+          ],
+          "records": [
+            {
+              "src_id": "Client Device",
+              "tgt_id": "Multi-Pass Message Filter",
+              "weight": 1.0,
+              "description": "The client device executes the first and second passes of the multi-pass message filter.",
+              "keywords": "executes",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Client Device",
+            "Second Classification Data"
+          ],
+          "records": [
+            {
+              "src_id": "Client Device",
+              "tgt_id": "Second Classification Data",
+              "weight": 1.0,
+              "description": "The client device generates second classification data residing in non-persistent memory and deletes it upon providing the display of information.",
+              "keywords": "generates, stores",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Multi-Pass Message Filter",
+            "Message Score"
+          ],
+          "records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Message Score",
+              "weight": 1.0,
+              "description": "The second pass of the multi-pass message filter scores each message using the second classification data.",
+              "keywords": "scores, generates",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Message Score",
+            "Incorrect Message Folder"
+          ],
+          "records": [
+            {
+              "src_id": "Message Score",
+              "tgt_id": "Incorrect Message Folder",
+              "weight": 1.0,
+              "description": "A message's score indicates whether the message is sorted into an incorrect message folder.",
+              "keywords": "indicates",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Message",
+            "Message Score"
+          ],
+          "records": [
+            {
+              "src_id": "Message",
+              "tgt_id": "Message Score",
+              "weight": 1.0,
+              "description": "Each message is scored by the second pass of the multi-pass message filter.",
+              "keywords": "scored by",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Message",
+            "Message Folders"
+          ],
+          "records": [
+            {
+              "src_id": "Message",
+              "tgt_id": "Message Folders",
+              "weight": 1.0,
+              "description": "Messages are sorted into different message folders.",
+              "keywords": "sorted into",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Message",
+            "Incorrect Message Folder"
+          ],
+          "records": [
+            {
+              "src_id": "Message",
+              "tgt_id": "Incorrect Message Folder",
+              "weight": 1.0,
+              "description": "A message may be identified as sorted into an incorrect message folder based on its score.",
+              "keywords": "identified in",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "User",
+            "Message"
+          ],
+          "records": [
+            {
+              "src_id": "User",
+              "tgt_id": "Message",
+              "weight": 1.0,
+              "description": "A user is enabled to move an identified message to another message folder.",
+              "keywords": "moves",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "User",
+            "Interface"
+          ],
+          "records": [
+            {
+              "src_id": "User",
+              "tgt_id": "Interface",
+              "weight": 1.0,
+              "description": "A user can select execution of the multi-pass message filter through an interface on the client device.",
+              "keywords": "uses, selects",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Interface",
+            "Client Device"
+          ],
+          "records": [
+            {
+              "src_id": "Interface",
+              "tgt_id": "Client Device",
+              "weight": 1.0,
+              "description": "The interface is on the client device.",
+              "keywords": "located on",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Network Device",
+            "Message"
+          ],
+          "records": [
+            {
+              "src_id": "Network Device",
+              "tgt_id": "Message",
+              "weight": 1.0,
+              "description": "The network device receives messages and assigns them to message folders.",
+              "keywords": "receives, assigns",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Network Device",
+            "First Message Filter"
+          ],
+          "records": [
+            {
+              "src_id": "Network Device",
+              "tgt_id": "First Message Filter",
+              "weight": 1.0,
+              "description": "The network device assigns messages to folders using the first message filter.",
+              "keywords": "uses",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Network Device",
+            "Network"
+          ],
+          "records": [
+            {
+              "src_id": "Network Device",
+              "tgt_id": "Network",
+              "weight": 1.0,
+              "description": "The network device communicates messages over the network to the message folders.",
+              "keywords": "communicates over",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Network Device",
+            "Message Folders"
+          ],
+          "records": [
+            {
+              "src_id": "Network Device",
+              "tgt_id": "Message Folders",
+              "weight": 1.0,
+              "description": "The network device communicates messages over the network to the different message folders.",
+              "keywords": "communicates to",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Communications System",
+            "Network Device"
+          ],
+          "records": [
+            {
+              "src_id": "Communications System",
+              "tgt_id": "Network Device",
+              "weight": 1.0,
+              "description": "The communications system comprises a network device.",
+              "keywords": "comprises",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Communications System",
+            "Client Device"
+          ],
+          "records": [
+            {
+              "src_id": "Communications System",
+              "tgt_id": "Client Device",
+              "weight": 1.0,
+              "description": "The communications system comprises a client device.",
+              "keywords": "comprises",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Second Classification Data",
+            "Message State"
+          ],
+          "records": [
+            {
+              "src_id": "Second Classification Data",
+              "tgt_id": "Message State",
+              "weight": 1.0,
+              "description": "The second classification data is generated based on an analysis of a state of a message.",
+              "keywords": "generated based on",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Second Classification Data",
+            "Address Book"
+          ],
+          "records": [
+            {
+              "src_id": "Second Classification Data",
+              "tgt_id": "Address Book",
+              "weight": 1.0,
+              "description": "The second classification data is generated based on whether a message sender's address is in an address book associated with a recipient.",
+              "keywords": "generated based on",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Second Classification Data",
+            "Message Header"
+          ],
+          "records": [
+            {
+              "src_id": "Second Classification Data",
+              "tgt_id": "Message Header",
+              "weight": 1.0,
+              "description": "The second classification data is generated based on an analysis of a message header.",
+              "keywords": "generated based on",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Second Classification Data",
+            "Message Content"
+          ],
+          "records": [
+            {
+              "src_id": "Second Classification Data",
+              "tgt_id": "Message Content",
+              "weight": 1.0,
+              "description": "The second classification data is generated based on an analysis of message content.",
+              "keywords": "generated based on",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        },
+        {
+          "endpoints": [
+            "Second Classification Data",
+            "Message Folders"
+          ],
+          "records": [
+            {
+              "src_id": "Second Classification Data",
+              "tgt_id": "Message Folders",
+              "weight": 1.0,
+              "description": "The second classification data is generated based on which folder each message resides.",
+              "keywords": "generated based on",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "timestamp": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

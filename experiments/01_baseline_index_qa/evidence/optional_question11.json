@@ -1,0 +1,52 @@
+{
+  "id": "Q11_supplementary",
+  "optional": true,
+  "within_original10": false,
+  "status": "not_run",
+  "category": "D_natural_cross_chunk_dependency_probe",
+  "question": "In US7991757B2, what registration capability is specified in Claim1 and what additional capability does Claim27 add? Explain the dependency and quote the supporting wording from each claim. Distinguish explicit evidence from inference.",
+  "question_zh": "US7991757B2的Claim1规定什么注册能力，Claim27又增加什么能力？说明依赖并分别引用原文。",
+  "correct_publication_numbers": [
+    "US7991757B2"
+  ],
+  "required_claims": [
+    1,
+    27
+  ],
+  "expected_answer_zh": "Claim1定义注册外部推荐器到推荐服务的registration module；Claim27依赖Claim1，并允许外部推荐器提供方提供该推荐器的machine readable descriptions。",
+  "evidence": [
+    {
+      "claim_number": 1,
+      "full_claim": "1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.",
+      "source_span": [
+        494,
+        2433
+      ],
+      "full_claim_in_chunk_indices": [
+        0
+      ]
+    },
+    {
+      "claim_number": 27,
+      "full_claim": "27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+      "source_span": [
+        10570,
+        10823
+      ],
+      "full_claim_in_chunk_indices": [
+        1
+      ]
+    }
+  ],
+  "actual_official_chunks_at1200_100": {
+    "Claim1": [
+      0
+    ],
+    "Claim27": [
+      1
+    ]
+  },
+  "interpretation": "Natural unmodified source-boundary probe, not manually imposed splitting and not proof of extraction loss. Claim27 repeats registration-module/entity wording, so separation of complete Claims does not make the target relation necessarily unrecoverable.",
+  "causal_chunking_failure_established": false,
+  "run_only_if": "Both main modes completed for original10 and time/cost budget remains; use identical settings."
+}

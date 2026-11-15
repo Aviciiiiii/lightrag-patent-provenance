@@ -1,0 +1,619 @@
+{
+  "nodes": [
+    {
+      "entity_id": "US8509827B2",
+      "entity_type": "content",
+      "description": "A patent publication titled \"Methods and apparatus of context-data acquisition and ranking\" that discloses a system, method, and article of manufacture for acquiring and ranking context data based on a query derived from a short message.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "US8509827B2"
+    },
+    {
+      "entity_id": "Context-Data Acquisition And Ranking",
+      "entity_type": "method",
+      "description": "A method of determining a context-data type from a query, identifying context-data sources providing that type, generating requests for context data, and ranking received context data according to a specified parameter.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Context-Data Acquisition And Ranking"
+    },
+    {
+      "entity_id": "Context-Data Type",
+      "entity_type": "concept",
+      "description": "A classification of context data determined algorithmically from the meaning of a term of a short message, providing information about the environment or context of the mobile device.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Context-Data Type"
+    },
+    {
+      "entity_id": "Context-Data Source",
+      "entity_type": "other",
+      "description": "A provider that supplies context data of a particular context-data type, which can be identified, ranked, and requested from by the system.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Context-Data Source"
+    },
+    {
+      "entity_id": "Short Message",
+      "entity_type": "content",
+      "description": "A message content whose meaning the context-data is related to, and to which relevant context data is linked and formatted according to a communication protocol.<SEP>A message received from a mobile device whose terms are analyzed to determine a context-data type; context data may be associated with, appended to, encoded into, or forwarded with the short message.",
+      "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Short Message"
+    },
+    {
+      "entity_id": "Mobile Device",
+      "entity_type": "artifact",
+      "description": "A device such as a smart phone that generates a short message and a query, and to which received context data may be provided.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Mobile Device"
+    },
+    {
+      "entity_id": "Server",
+      "entity_type": "artifact",
+      "description": "A computing device associated with the context-data provider that collects the set of context-data.<SEP>A computing system that receives short messages from mobile devices, determines context-data types, identifies and ranks context-data sources, and generates requests for context data.",
+      "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Server"
+    },
+    {
+      "entity_id": "Specified Parameter",
+      "entity_type": "concept",
+      "description": "A criterion used to rank context-data sources, which may include a pecuniary cost to acquire context data, a state of the receiving mobile device, a state of an available communication network, or a cost value of the context data.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Specified Parameter"
+    },
+    {
+      "entity_id": "Recipient Mobile Device",
+      "entity_type": "artifact",
+      "description": "A mobile device that receives context data, possibly associated with or appended to a short message, or a URI of a database server.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Recipient Mobile Device"
+    },
+    {
+      "entity_id": "Database",
+      "entity_type": "artifact",
+      "description": "A storage system available to a recipient mobile device in which received context data may be stored and queried via metadata instructions.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Database"
+    },
+    {
+      "entity_id": "Uniform Resource Identifier",
+      "entity_type": "concept",
+      "description": "An identifier of a database server that may be forwarded to a receiving mobile device to access stored context data.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Uniform Resource Identifier"
+    },
+    {
+      "entity_id": "Markup Language",
+      "entity_type": "concept",
+      "description": "A language used to encode received context data into a short message.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Markup Language"
+    },
+    {
+      "entity_id": "Computerized Apparatus",
+      "entity_type": "artifact",
+      "description": "An apparatus comprising at least one memory with program instructions and at least one processor configured to execute operations for context-data acquisition and ranking.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Computerized Apparatus"
+    },
+    {
+      "entity_id": "Computer Readable Medium",
+      "entity_type": "artifact",
+      "description": "A medium comprising computer-executable instructions adapted to perform the context-data acquisition and ranking method.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Computer Readable Medium"
+    },
+    {
+      "entity_id": "Context-Data Provider",
+      "entity_type": "other",
+      "description": "An entity with at least one server that collects and provides a set of context-data, and is allowed to provide a cost of the context-data.<SEP>A source from which a set of context data related to the meaning of short message content is collected by a server.",
+      "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Context-Data Provider"
+    },
+    {
+      "entity_id": "Physical Sensor",
+      "entity_type": "artifact",
+      "description": "A device by which the context-data is obtained.<SEP>A device by which context data is obtained, related to the meaning of short message content.",
+      "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Physical Sensor"
+    },
+    {
+      "entity_id": "Metric",
+      "entity_type": "concept",
+      "description": "A measure used to algorithmically select relevant context data, comprising a monetary cost of the context-data.<SEP>A measure used to algorithmically select relevant context data, which may include a monetary cost of the context data.",
+      "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Metric"
+    },
+    {
+      "entity_id": "Smart Phone",
+      "entity_type": "artifact",
+      "description": "A type of mobile device that may generate the short message.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Smart Phone"
+    },
+    {
+      "entity_id": "Communication Network",
+      "entity_type": "artifact",
+      "description": "A network through which context data is rendered for communication to a mobile device, and whose state may serve as a specified parameter.",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Communication Network"
+    },
+    {
+      "entity_id": "Context-Data",
+      "entity_type": "data",
+      "description": "Data elements related to the meaning of a short message content, collected from context-data providers and obtained by a physical sensor, weighted and selected according to at least one metric.",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Context-Data"
+    },
+    {
+      "entity_id": "Monetary Cost",
+      "entity_type": "concept",
+      "description": "The cost of the context-data, used as a metric for selecting relevant context data.",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Monetary Cost"
+    },
+    {
+      "entity_id": "Communication Protocol",
+      "entity_type": "concept",
+      "description": "A protocol according to which the relevant context data and the short message are formatted, such as a cellular network short message protocol or an internet communication protocol.",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Communication Protocol"
+    },
+    {
+      "entity_id": "Cellular Network Short Message Protocol",
+      "entity_type": "concept",
+      "description": "A type of communication protocol used for formatting the relevant context data and the short message.",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Cellular Network Short Message Protocol"
+    },
+    {
+      "entity_id": "Internet Communication Protocol",
+      "entity_type": "concept",
+      "description": "A type of communication protocol used for formatting the relevant context data and the short message.",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Internet Communication Protocol"
+    },
+    {
+      "entity_id": "Device",
+      "entity_type": "artifact",
+      "description": "A device that generated the short message and has a physical context to which the context data is related.",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "id": "Device"
+    }
+  ],
+  "edges": [
+    {
+      "weight": 1.0,
+      "description": "The patent publication US8509827B2 discloses a system, method, and article of manufacture of context-data acquisition and ranking.",
+      "keywords": "describes,discloses",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "US8509827B2",
+      "target": "Context-Data Acquisition And Ranking"
+    },
+    {
+      "weight": 1.0,
+      "description": "The method algorithmically determines a context-data type from the meaning of a term of a short message.",
+      "keywords": "determines,uses",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Context-Data Type"
+    },
+    {
+      "weight": 1.0,
+      "description": "The method identifies at least one context-data source providing the context-data type, ranks it according to a specified parameter, and generates a request for context data from it.",
+      "keywords": "identifies,ranks,requests",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Context-Data Source"
+    },
+    {
+      "weight": 1.0,
+      "description": "The method receives and analyzes a short message from a mobile device to determine the context-data type.",
+      "keywords": "analyzes,processes",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Short Message"
+    },
+    {
+      "weight": 1.0,
+      "description": "The method receives a short message from a mobile device and provides received context data to the device that generated the short message.",
+      "keywords": "provides to,receives from",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Mobile Device"
+    },
+    {
+      "weight": 1.0,
+      "description": "The method is performed with a server that receives the short message and generates requests for context data.",
+      "keywords": "executed by,performed with",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Server"
+    },
+    {
+      "weight": 1.0,
+      "description": "The method ranks context-data sources according to a specified parameter such as pecuniary cost, device state, or network state.",
+      "keywords": "ranks according to",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Specified Parameter"
+    },
+    {
+      "weight": 1.0,
+      "description": "The method provides received context data to a recipient mobile device.",
+      "keywords": "provides to",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Recipient Mobile Device"
+    },
+    {
+      "weight": 1.0,
+      "description": "The method stores received context data in a database available to a recipient mobile device.",
+      "keywords": "stores in",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Database"
+    },
+    {
+      "weight": 1.0,
+      "description": "The method forwards a Uniform Resource Identifier of a database server to the receiving mobile device.",
+      "keywords": "forwards",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Uniform Resource Identifier"
+    },
+    {
+      "weight": 1.0,
+      "description": "The method encodes received context data into the short message with a markup language.",
+      "keywords": "encodes with",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Markup Language"
+    },
+    {
+      "weight": 1.0,
+      "description": "The computerized apparatus with memory and processor performs the operations of context-data acquisition and ranking.",
+      "keywords": "performed by",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Computerized Apparatus"
+    },
+    {
+      "weight": 1.0,
+      "description": "A computer readable medium comprises computer-executable instructions adapted to perform the method.",
+      "keywords": "embodied in",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Computer Readable Medium"
+    },
+    {
+      "weight": 1.0,
+      "description": "The method collects a set of context data from at least one context-data provider with at least one server.",
+      "keywords": "collects from",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Context-Data Provider"
+    },
+    {
+      "weight": 1.0,
+      "description": "The method algorithmically selects relevant context data according to a metric comprising a monetary cost.",
+      "keywords": "selects according to",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Metric"
+    },
+    {
+      "weight": 1.0,
+      "description": "The context data is obtained by a physical sensor.",
+      "keywords": "obtains via",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Acquisition And Ranking",
+      "target": "Physical Sensor"
+    },
+    {
+      "weight": 1.0,
+      "description": "The context-data source provides the context-data type.",
+      "keywords": "provides",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Type",
+      "target": "Context-Data Source"
+    },
+    {
+      "weight": 1.0,
+      "description": "The context-data source is ranked according to a specified parameter.",
+      "keywords": "ranked by",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Source",
+      "target": "Specified Parameter"
+    },
+    {
+      "weight": 1.0,
+      "description": "The short message and received context data are forwarded to the recipient mobile device.",
+      "keywords": "forwarded to",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Short Message",
+      "target": "Recipient Mobile Device"
+    },
+    {
+      "weight": 1.0,
+      "description": "The context-data is related to the meaning of the short message content, and relevant context data is linked to the short message.",
+      "keywords": "linked to,related to",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Short Message",
+      "target": "Context-Data"
+    },
+    {
+      "weight": 1.0,
+      "description": "The relevant context data and the short message are formatted according to a communication protocol.",
+      "keywords": "formatted according to",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Short Message",
+      "target": "Communication Protocol"
+    },
+    {
+      "weight": 1.0,
+      "description": "The mobile device that generated the short message may comprise a smart phone.",
+      "keywords": "is a type of",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Mobile Device",
+      "target": "Smart Phone"
+    },
+    {
+      "weight": 2.0,
+      "description": "The context-data provider has at least one server used to collect the set of context-data.<SEP>The set of context data is collected from the context-data provider with at least one server.",
+      "keywords": "collected by,has",
+      "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Server",
+      "target": "Context-Data Provider"
+    },
+    {
+      "weight": 1.0,
+      "description": "The state of an available communication network may serve as a specified parameter.",
+      "keywords": "state used as",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Specified Parameter",
+      "target": "Communication Network"
+    },
+    {
+      "weight": 1.0,
+      "description": "The database storing received context data is available to the recipient mobile device.",
+      "keywords": "available to",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Recipient Mobile Device",
+      "target": "Database"
+    },
+    {
+      "weight": 1.0,
+      "description": "The context-data provider, with at least one server, collects and provides a set of context-data related to the meaning of a short message content.",
+      "keywords": "collects,provides",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Provider",
+      "target": "Context-Data"
+    },
+    {
+      "weight": 1.0,
+      "description": "The context-data provider is allowed to provide a cost of the context-data.",
+      "keywords": "allowed to provide",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data Provider",
+      "target": "Monetary Cost"
+    },
+    {
+      "weight": 1.0,
+      "description": "The context-data is obtained by a physical sensor.",
+      "keywords": "obtained by",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Physical Sensor",
+      "target": "Context-Data"
+    },
+    {
+      "weight": 1.0,
+      "description": "The metric comprises a monetary cost of the context-data.",
+      "keywords": "comprises",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Metric",
+      "target": "Monetary Cost"
+    },
+    {
+      "weight": 1.0,
+      "description": "The context-data is weighted and algorithmically selected according to at least one metric.",
+      "keywords": "selected according to,weighted by",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Metric",
+      "target": "Context-Data"
+    },
+    {
+      "weight": 1.0,
+      "description": "The context data is related to a physical context of the device that generated the short message.",
+      "keywords": "related to physical context of",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Context-Data",
+      "target": "Device"
+    },
+    {
+      "weight": 1.0,
+      "description": "The communication protocol comprises a cellular network short message protocol.",
+      "keywords": "comprises",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Communication Protocol",
+      "target": "Cellular Network Short Message Protocol"
+    },
+    {
+      "weight": 1.0,
+      "description": "The communication protocol comprises an internet communication protocol.",
+      "keywords": "comprises",
+      "source_id": "US8509827B2-chunk-001",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1794713935,
+      "truncate": "",
+      "source": "Communication Protocol",
+      "target": "Internet Communication Protocol"
+    }
+  ]
+}

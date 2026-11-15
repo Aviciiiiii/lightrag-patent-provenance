@@ -1,0 +1,27 @@
+{
+  "condition": "A",
+  "repeat": 1,
+  "call_id": 1,
+  "request_exact_match": true,
+  "messages_sha256": "2fca4d69c1c5554b570ff04a57ccc8ae1c8af87862bae14e46a5f755a4a3490e",
+  "response": {
+    "id": 1,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "I do not have enough information to answer this query. The provided **Context** does not contain any document, knowledge-graph entity, or document chunk for **US7991757B2**. The patent publication number US7991757B2 does not appear anywhere in the supplied evidence, so I cannot quote Claim 1 or Claim 27 of that patent, nor explain their dependency.\n\n**What is missing:**\n- Any text of US7991757B2 (abstract, claims, or description).\n- The wording of Claim 1 and Claim 27 of that patent.\n- Any evidence establishing a dependency between those claims.\n\n**Related but non-substitutable evidence:** The Context does describe a \"Registration Module\" and \"Registration Submission\" concepts (e.g., a module \"configured to provide functionality for registering an external recommender with a recommendations service,\" and submissions \"operative to request registration of recommenders\"). However, these are not tied to US7991757B2 in the evidence, and I must not infer a link between that patent and these concepts. Doing so would be speculation rather than document fact.\n\nTo answer accurately, please provide the text of US7991757B2 (at minimum Claims 1 and 27), or confirm the correct publication number if it was mistyped.\n\n### References\n\n- [1] US10867122B1.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 28360,
+      "completion_tokens": 278,
+      "total_tokens": 28638,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 28360
+    },
+    "reasoning_content_present": false
+  }
+}

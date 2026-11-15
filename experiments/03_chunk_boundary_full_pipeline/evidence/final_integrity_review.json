@@ -1,0 +1,6232 @@
+{
+  "audited_utc": "2026-10-30T03:51:43.205851+00:00",
+  "status": "passed_execution_integrity_with_truncation_and_parser_warnings",
+  "scope": "Existing full-group execution integrity only; no credential reads, APIs, environment imports or process actions. Old partial round4 and environment smoke are separate and never substitute full-group cells. Technical-gold scoring is reviewed by other agents.",
+  "issues": [],
+  "calls": {
+    "attempts": 364,
+    "counts_by_kind_and_state": {
+      "llm/success": 117,
+      "embedding/success": 247
+    },
+    "tokens_by_kind": {
+      "llm": {
+        "prompt": 275739,
+        "completion": 97386,
+        "cached": 125952,
+        "reasoning": 0
+      },
+      "embedding": {
+        "prompt": 95761,
+        "completion": 0,
+        "cached": 0,
+        "reasoning": 0
+      }
+    },
+    "llm_unique_provider_ids": 117,
+    "extraction_calls": 45,
+    "extraction_system_prompt_sha256_counts": {
+      "abd2c2c7f243bbff5dd33122c336eafdce076d8533c8f5a46ca5ec29adef379c": 45
+    },
+    "all_llm_fixed_model_temperature0_max3500_thinking_disabled": true,
+    "length_finish_call_ids": [
+      1,
+      56
+    ],
+    "reasoning_tokens": 0,
+    "unknown_reservations": 0,
+    "per_call_usage_and_cost": [
+      {
+        "call_id": 1,
+        "stage": "F01_A_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 3014,
+        "completion_tokens": 3500,
+        "cached_input_tokens": 1792,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.03051568,
+        "no_cache_cny": 0.034028,
+        "provider_id": "01a18ad97473a49178f1aa8e0f67665a",
+        "finish_reason": "length"
+      },
+      {
+        "call_id": 2,
+        "stage": "F01_A_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2430,
+        "completion_tokens": 1778,
+        "cached_input_tokens": 1792,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.015571680000000001,
+        "no_cache_cny": 0.019084,
+        "provider_id": "01a18ad97457a5cfd50823f2e7746ab4",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 3,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 496,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 4,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 415,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 5,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 247,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 6,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 262,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 7,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 293,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 8,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 130,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 4
+      },
+      {
+        "call_id": 9,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 425,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 10,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 411,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 11,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 241,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 12,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 254,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 13,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 272,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 14,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 221,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 15,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 276,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 16,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 26,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 17,
+        "stage": "F01_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 2225,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 18,
+        "stage": "F01_A_r1_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 690,
+        "completion_tokens": 74,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001972,
+        "no_cache_cny": 0.001972,
+        "provider_id": "01a18ada1fbb87c794d10ecb2de638c9",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 19,
+        "stage": "F01_A_r1_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 126,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 20,
+        "stage": "F01_A_r1_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 4760,
+        "completion_tokens": 354,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.012352,
+        "no_cache_cny": 0.012352,
+        "provider_id": "01a18ada2cc5090e9eb59fcbd72995fc",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 21,
+        "stage": "F01_A_r1_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 828,
+        "completion_tokens": 269,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.003808,
+        "no_cache_cny": 0.003808,
+        "provider_id": "01a18ada525a1c99d6fed859f801ba1f",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 22,
+        "stage": "F01_B_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2450,
+        "completion_tokens": 1921,
+        "cached_input_tokens": 2432,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.015501280000000001,
+        "no_cache_cny": 0.020268,
+        "provider_id": "01a18ad9f92a99fe1d4dccd7bb92d042",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 23,
+        "stage": "F01_B_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2990,
+        "completion_tokens": 2270,
+        "cached_input_tokens": 1792,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.02062768,
+        "no_cache_cny": 0.02414,
+        "provider_id": "01a18ada6838cf4b5ce37507a05a76b2",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 24,
+        "stage": "F01_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 462,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 25,
+        "stage": "F01_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 453,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 26,
+        "stage": "F01_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 241,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 27,
+        "stage": "F01_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 215,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 28,
+        "stage": "F01_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 96,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 4
+      },
+      {
+        "call_id": 29,
+        "stage": "F01_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 352,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 30,
+        "stage": "F01_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 338,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 31,
+        "stage": "F01_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 246,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 32,
+        "stage": "F01_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 247,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 33,
+        "stage": "F01_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 246,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 34,
+        "stage": "F01_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 135,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 5
+      },
+      {
+        "call_id": 35,
+        "stage": "F01_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 2208,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 36,
+        "stage": "F01_B_r1_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 690,
+        "completion_tokens": 74,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001972,
+        "no_cache_cny": 0.001972,
+        "provider_id": "01a18ada73d651af1498f1e719844004",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 37,
+        "stage": "F01_B_r1_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 126,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 38,
+        "stage": "F01_B_r1_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 4596,
+        "completion_tokens": 388,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.012296,
+        "no_cache_cny": 0.012296,
+        "provider_id": "01a18adaec3a4c687f6fcefe16e4279d",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 39,
+        "stage": "F01_B_r1_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 828,
+        "completion_tokens": 266,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.003784,
+        "no_cache_cny": 0.003784,
+        "provider_id": "01a18adb196e3432f64ff20f324a36e4",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 40,
+        "stage": "F01_B_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2450,
+        "completion_tokens": 1741,
+        "cached_input_tokens": 2432,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01406128,
+        "no_cache_cny": 0.018828,
+        "provider_id": "01a18adb2b7653d70c5873d2fdbd5f3d",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 41,
+        "stage": "F01_B_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2990,
+        "completion_tokens": 2096,
+        "cached_input_tokens": 2944,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.016977759999999998,
+        "no_cache_cny": 0.022748,
+        "provider_id": "01a18adb2f59131521edd82235d9e485",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 42,
+        "stage": "F01_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 517,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 43,
+        "stage": "F01_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 513,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 44,
+        "stage": "F01_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 242,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 45,
+        "stage": "F01_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 131,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 4
+      },
+      {
+        "call_id": 46,
+        "stage": "F01_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 383,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 47,
+        "stage": "F01_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 424,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 48,
+        "stage": "F01_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 220,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 49,
+        "stage": "F01_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 327,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 50,
+        "stage": "F01_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 250,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 7
+      },
+      {
+        "call_id": 51,
+        "stage": "F01_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 2208,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 52,
+        "stage": "F01_B_r2_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 690,
+        "completion_tokens": 69,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001932,
+        "no_cache_cny": 0.001932,
+        "provider_id": "01a18adb2cb65374c934169abd873d49",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 53,
+        "stage": "F01_B_r2_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 122,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 54,
+        "stage": "F01_B_r2_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 4930,
+        "completion_tokens": 336,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.012548,
+        "no_cache_cny": 0.012548,
+        "provider_id": "01a18adb3693cb1dad35ae72a9742fe7",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 55,
+        "stage": "F01_B_r2_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 828,
+        "completion_tokens": 298,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.00404,
+        "no_cache_cny": 0.00404,
+        "provider_id": "01a18adb5135cd34fe18f42f55b74697",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 56,
+        "stage": "F01_A_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 3014,
+        "completion_tokens": 3500,
+        "cached_input_tokens": 2944,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.02825776,
+        "no_cache_cny": 0.034028,
+        "provider_id": "01a18adbd192064f50023b809f4fd440",
+        "finish_reason": "length"
+      },
+      {
+        "call_id": 57,
+        "stage": "F01_A_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2430,
+        "completion_tokens": 1909,
+        "cached_input_tokens": 2304,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01561616,
+        "no_cache_cny": 0.020132,
+        "provider_id": "01a18adb69ca93f655c83c92165adee6",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 58,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 528,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 59,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 407,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 60,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 199,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 61,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 262,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 62,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 280,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 63,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 105,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 4
+      },
+      {
+        "call_id": 64,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 582,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 65,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 262,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 66,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 292,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 67,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 272,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 68,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 297,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 69,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 258,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 70,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 227,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 71,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 80,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 72,
+        "stage": "F01_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 2225,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 73,
+        "stage": "F01_A_r2_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 690,
+        "completion_tokens": 77,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001996,
+        "no_cache_cny": 0.001996,
+        "provider_id": "01a18adc0877ce7057d637d285448827",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 74,
+        "stage": "F01_A_r2_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 131,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 75,
+        "stage": "F01_A_r2_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 5339,
+        "completion_tokens": 342,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.013414,
+        "no_cache_cny": 0.013414,
+        "provider_id": "01a18adc133fd897344e22bbf7aeaa8a",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 76,
+        "stage": "F01_A_r2_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 828,
+        "completion_tokens": 282,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.003912,
+        "no_cache_cny": 0.003912,
+        "provider_id": "01a18adc9c07ba9dafe87aff02bec2a6",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 77,
+        "stage": "F01_A_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 3014,
+        "completion_tokens": 2715,
+        "cached_input_tokens": 2944,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.02197776,
+        "no_cache_cny": 0.027748,
+        "provider_id": "01a18adcb0791a82e4fb0fe306d5fe52",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 78,
+        "stage": "F01_A_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2430,
+        "completion_tokens": 1598,
+        "cached_input_tokens": 2304,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01312816,
+        "no_cache_cny": 0.017644,
+        "provider_id": "01a18adcb5983f583fb18b58daaf7363",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 79,
+        "stage": "F01_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 551,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 80,
+        "stage": "F01_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 475,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 81,
+        "stage": "F01_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 310,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 82,
+        "stage": "F01_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 218,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 83,
+        "stage": "F01_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 455,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 84,
+        "stage": "F01_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 348,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 85,
+        "stage": "F01_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 284,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 86,
+        "stage": "F01_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 294,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 87,
+        "stage": "F01_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 290,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 88,
+        "stage": "F01_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 222,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 89,
+        "stage": "F01_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 2225,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 90,
+        "stage": "F01_A_r3_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 690,
+        "completion_tokens": 68,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001924,
+        "no_cache_cny": 0.001924,
+        "provider_id": "01a18adcc69ebb623f54cb9f4d342846",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 91,
+        "stage": "F01_A_r3_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 121,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 92,
+        "stage": "F01_A_r3_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 4853,
+        "completion_tokens": 399,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.012898,
+        "no_cache_cny": 0.012898,
+        "provider_id": "01a18adcd0da4de1a0055acd23d2355a",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 93,
+        "stage": "F01_A_r3_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 828,
+        "completion_tokens": 306,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.004104,
+        "no_cache_cny": 0.004104,
+        "provider_id": "01a18adceb84a4c388fb2188aaa04aaf",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 94,
+        "stage": "F01_B_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2450,
+        "completion_tokens": 1990,
+        "cached_input_tokens": 2432,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01605328,
+        "no_cache_cny": 0.02082,
+        "provider_id": "01a18add02c2a842d92bc0ab9240d43c",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 95,
+        "stage": "F01_B_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2990,
+        "completion_tokens": 1865,
+        "cached_input_tokens": 2944,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01512976,
+        "no_cache_cny": 0.0209,
+        "provider_id": "01a18add094e9dc392dbad163b3ab941",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 96,
+        "stage": "F01_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 509,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 97,
+        "stage": "F01_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 508,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 98,
+        "stage": "F01_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 219,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 99,
+        "stage": "F01_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 112,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 4
+      },
+      {
+        "call_id": 100,
+        "stage": "F01_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 320,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 101,
+        "stage": "F01_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 505,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 102,
+        "stage": "F01_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 241,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 103,
+        "stage": "F01_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 271,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 104,
+        "stage": "F01_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 230,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 7
+      },
+      {
+        "call_id": 105,
+        "stage": "F01_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 2208,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 106,
+        "stage": "F01_B_r3_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 690,
+        "completion_tokens": 71,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001948,
+        "no_cache_cny": 0.001948,
+        "provider_id": "01a18add8066d49d5240ae53f5fa4ab3",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 107,
+        "stage": "F01_B_r3_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 123,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 108,
+        "stage": "F01_B_r3_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 4836,
+        "completion_tokens": 313,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.012176,
+        "no_cache_cny": 0.012176,
+        "provider_id": "01a18addf6dcc15d727ccf4a4aa95e52",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 109,
+        "stage": "F01_B_r3_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 828,
+        "completion_tokens": 268,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0038,
+        "no_cache_cny": 0.0038,
+        "provider_id": "01a18ade0bae85737f9eb36efb22ee25",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 110,
+        "stage": "F05_A_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 3017,
+        "completion_tokens": 2180,
+        "cached_input_tokens": 1792,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01996168,
+        "no_cache_cny": 0.023474,
+        "provider_id": "01a18ade9eb8d4861a6a583c200d7731",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 111,
+        "stage": "F05_A_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2362,
+        "completion_tokens": 1696,
+        "cached_input_tokens": 1792,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01477968,
+        "no_cache_cny": 0.018292,
+        "provider_id": "01a18ade9deb426308cf6e7ce961d3cb",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 112,
+        "stage": "F05_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 429,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 113,
+        "stage": "F05_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 367,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 114,
+        "stage": "F05_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 281,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 115,
+        "stage": "F05_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 206,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 6
+      },
+      {
+        "call_id": 116,
+        "stage": "F05_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 309,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 117,
+        "stage": "F05_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 285,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 118,
+        "stage": "F05_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 265,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 119,
+        "stage": "F05_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 338,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 120,
+        "stage": "F05_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 264,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 121,
+        "stage": "F05_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 142,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 122,
+        "stage": "F05_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 1999,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 123,
+        "stage": "F05_A_r1_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 685,
+        "completion_tokens": 59,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001842,
+        "no_cache_cny": 0.001842,
+        "provider_id": "01a18adf092c682540df79d2724b54fc",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 124,
+        "stage": "F05_A_r1_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 104,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 125,
+        "stage": "F05_A_r1_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 5028,
+        "completion_tokens": 269,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.012208,
+        "no_cache_cny": 0.012208,
+        "provider_id": "01a18adf123a09dfcc3ef84c38aad8d3",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 126,
+        "stage": "F05_A_r1_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 982,
+        "completion_tokens": 234,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.003836,
+        "no_cache_cny": 0.003836,
+        "provider_id": "01a18adf241b90d7ceb75a096626c89a",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 127,
+        "stage": "F05_B_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2702,
+        "completion_tokens": 2318,
+        "cached_input_tokens": 2688,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01867952,
+        "no_cache_cny": 0.023948,
+        "provider_id": "01a18aded262717630f8a53dce74c3a3",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 128,
+        "stage": "F05_B_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2053,
+        "completion_tokens": 1058,
+        "cached_input_tokens": 1792,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.00905768,
+        "no_cache_cny": 0.01257,
+        "provider_id": "01a18aded60a9c44352e1edada4b8d59",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 129,
+        "stage": "F05_B_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2538,
+        "completion_tokens": 1676,
+        "cached_input_tokens": 1792,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.014971680000000001,
+        "no_cache_cny": 0.018484,
+        "provider_id": "01a18adf0ab079da98fed6e856f03f8b",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 130,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 460,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 131,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 421,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 132,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 346,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 133,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 298,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 134,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 22,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 135,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 359,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 136,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 268,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 137,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 284,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 138,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 351,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 139,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 285,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 140,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 249,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 141,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 223,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 6
+      },
+      {
+        "call_id": 142,
+        "stage": "F05_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 2127,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 143,
+        "stage": "F05_B_r1_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 685,
+        "completion_tokens": 59,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001842,
+        "no_cache_cny": 0.001842,
+        "provider_id": "01a18adfe073a6650eb3321e8b24dcff",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 144,
+        "stage": "F05_B_r1_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 104,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 145,
+        "stage": "F05_B_r1_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 5412,
+        "completion_tokens": 260,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.012904,
+        "no_cache_cny": 0.012904,
+        "provider_id": "01a18adfeb011cfe72b7af651cc6cca3",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 146,
+        "stage": "F05_B_r1_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 982,
+        "completion_tokens": 243,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.003908,
+        "no_cache_cny": 0.003908,
+        "provider_id": "01a18adfa1587d49abc0719e2c53ed2b",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 147,
+        "stage": "F05_B_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2702,
+        "completion_tokens": 2165,
+        "cached_input_tokens": 2688,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.017455520000000002,
+        "no_cache_cny": 0.022724,
+        "provider_id": "01a18adfb1cdb00dc7c42202ab3264d6",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 148,
+        "stage": "F05_B_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2053,
+        "completion_tokens": 1000,
+        "cached_input_tokens": 2048,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.00809192,
+        "no_cache_cny": 0.012106,
+        "provider_id": "01a18adfb5bce2f53f28cd69b772833c",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 149,
+        "stage": "F05_B_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2538,
+        "completion_tokens": 1453,
+        "cached_input_tokens": 2432,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.011933280000000001,
+        "no_cache_cny": 0.0167,
+        "provider_id": "01a18ae04da95d32d2e83aac51614f19",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 150,
+        "stage": "F05_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 470,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 151,
+        "stage": "F05_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 429,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 152,
+        "stage": "F05_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 368,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 153,
+        "stage": "F05_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 247,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 154,
+        "stage": "F05_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 366,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 155,
+        "stage": "F05_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 258,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 156,
+        "stage": "F05_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 280,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 157,
+        "stage": "F05_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 367,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 158,
+        "stage": "F05_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 294,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 159,
+        "stage": "F05_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 228,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 7
+      },
+      {
+        "call_id": 160,
+        "stage": "F05_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 2127,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 161,
+        "stage": "F05_B_r2_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 685,
+        "completion_tokens": 60,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.00185,
+        "no_cache_cny": 0.00185,
+        "provider_id": "01a18ae0a23d0c36aaa369d2a8761091",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 162,
+        "stage": "F05_B_r2_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 105,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 163,
+        "stage": "F05_B_r2_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 5238,
+        "completion_tokens": 323,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01306,
+        "no_cache_cny": 0.01306,
+        "provider_id": "01a18ae050260365e3c16f434d650e66",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 164,
+        "stage": "F05_B_r2_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 982,
+        "completion_tokens": 210,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.003644,
+        "no_cache_cny": 0.003644,
+        "provider_id": "01a18ae0d3ba2e573e7bdf654741862e",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 165,
+        "stage": "F05_A_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 3017,
+        "completion_tokens": 1739,
+        "cached_input_tokens": 2944,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01417576,
+        "no_cache_cny": 0.019946,
+        "provider_id": "01a18ae0e3cf79b0d2531688ec94140e",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 166,
+        "stage": "F05_A_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2362,
+        "completion_tokens": 1695,
+        "cached_input_tokens": 2304,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01376816,
+        "no_cache_cny": 0.018284,
+        "provider_id": "01a18ae0e7b5665764bc882f671d8f2b",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 167,
+        "stage": "F05_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 540,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 168,
+        "stage": "F05_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 280,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 169,
+        "stage": "F05_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 299,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 170,
+        "stage": "F05_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 23,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 171,
+        "stage": "F05_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 322,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 172,
+        "stage": "F05_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 307,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 173,
+        "stage": "F05_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 319,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 174,
+        "stage": "F05_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 222,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 175,
+        "stage": "F05_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 208,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 6
+      },
+      {
+        "call_id": 176,
+        "stage": "F05_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 1999,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 177,
+        "stage": "F05_A_r2_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 685,
+        "completion_tokens": 60,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.00185,
+        "no_cache_cny": 0.00185,
+        "provider_id": "01a18ae13c940aa42df8455c0df21077",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 178,
+        "stage": "F05_A_r2_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 105,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 179,
+        "stage": "F05_A_r2_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 4891,
+        "completion_tokens": 356,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01263,
+        "no_cache_cny": 0.01263,
+        "provider_id": "01a18ae1460d4f5151543eb7be689af4",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 180,
+        "stage": "F05_A_r2_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 982,
+        "completion_tokens": 248,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.003948,
+        "no_cache_cny": 0.003948,
+        "provider_id": "01a18ae0ef8b07d80f44a0fbcaa5da8d",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 181,
+        "stage": "F05_A_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 3017,
+        "completion_tokens": 1691,
+        "cached_input_tokens": 2944,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01379176,
+        "no_cache_cny": 0.019562,
+        "provider_id": "01a18ae16bf9326c8e5cfac61ef1d280",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 182,
+        "stage": "F05_A_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2362,
+        "completion_tokens": 1599,
+        "cached_input_tokens": 2304,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01300016,
+        "no_cache_cny": 0.017516,
+        "provider_id": "01a18ae103df9c5c0dabd8909eacb79e",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 183,
+        "stage": "F05_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 420,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 184,
+        "stage": "F05_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 410,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 185,
+        "stage": "F05_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 285,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 186,
+        "stage": "F05_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 295,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 187,
+        "stage": "F05_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 314,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 188,
+        "stage": "F05_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 329,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 189,
+        "stage": "F05_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 223,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 190,
+        "stage": "F05_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 178,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 5
+      },
+      {
+        "call_id": 191,
+        "stage": "F05_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 1999,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 192,
+        "stage": "F05_A_r3_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 685,
+        "completion_tokens": 62,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001866,
+        "no_cache_cny": 0.001866,
+        "provider_id": "01a18ae15d0093fe98c7b5bea193b382",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 193,
+        "stage": "F05_A_r3_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 107,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 194,
+        "stage": "F05_A_r3_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 4587,
+        "completion_tokens": 329,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.011806,
+        "no_cache_cny": 0.011806,
+        "provider_id": "01a18ae1673635ccdd69f1bdf982076d",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 195,
+        "stage": "F05_A_r3_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 982,
+        "completion_tokens": 244,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.003916,
+        "no_cache_cny": 0.003916,
+        "provider_id": "01a18ae17c8ace1514936aa80f252f77",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 196,
+        "stage": "F05_B_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2702,
+        "completion_tokens": 2088,
+        "cached_input_tokens": 2688,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01683952,
+        "no_cache_cny": 0.022108,
+        "provider_id": "01a18ae18cefb1c99632b78a81605bca",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 197,
+        "stage": "F05_B_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2053,
+        "completion_tokens": 1044,
+        "cached_input_tokens": 2048,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.00844392,
+        "no_cache_cny": 0.012458,
+        "provider_id": "01a18ae19019c12566ae224c75763d40",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 198,
+        "stage": "F05_B_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2538,
+        "completion_tokens": 1732,
+        "cached_input_tokens": 2432,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01416528,
+        "no_cache_cny": 0.018932,
+        "provider_id": "01a18ae1beb0e66554b7124584cd710f",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 199,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 476,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 200,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 415,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 201,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 296,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 202,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 308,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 203,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 109,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 4
+      },
+      {
+        "call_id": 204,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 327,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 205,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 257,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 206,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 279,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 207,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 377,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 208,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 246,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 209,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 242,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 210,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 62,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 211,
+        "stage": "F05_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 2127,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 212,
+        "stage": "F05_B_r3_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 685,
+        "completion_tokens": 59,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001842,
+        "no_cache_cny": 0.001842,
+        "provider_id": "01a18ae22aceee83e6b25f743667adad",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 213,
+        "stage": "F05_B_r3_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 104,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 214,
+        "stage": "F05_B_r3_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 5242,
+        "completion_tokens": 281,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.012732,
+        "no_cache_cny": 0.012732,
+        "provider_id": "01a18ae2a22dac31fe68f1e70ed02430",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 215,
+        "stage": "F05_B_r3_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 982,
+        "completion_tokens": 228,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.003788,
+        "no_cache_cny": 0.003788,
+        "provider_id": "01a18ae24a8cd7829dc3c38d56b39ae8",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 216,
+        "stage": "F04_A_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 3011,
+        "completion_tokens": 2102,
+        "cached_input_tokens": 1792,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01932568,
+        "no_cache_cny": 0.022838,
+        "provider_id": "01a18ae30494654cf945c24b77927ce8",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 217,
+        "stage": "F04_A_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2040,
+        "completion_tokens": 901,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.011288,
+        "no_cache_cny": 0.011288,
+        "provider_id": "01a18ae303f35e9d2a84533704f38957",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 218,
+        "stage": "F04_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 383,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 219,
+        "stage": "F04_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 293,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 220,
+        "stage": "F04_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 201,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 7
+      },
+      {
+        "call_id": 221,
+        "stage": "F04_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 360,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 222,
+        "stage": "F04_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 298,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 223,
+        "stage": "F04_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 231,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 224,
+        "stage": "F04_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 270,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 225,
+        "stage": "F04_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 122,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 5
+      },
+      {
+        "call_id": 226,
+        "stage": "F04_A_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 1557,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 227,
+        "stage": "F04_A_r1_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 685,
+        "completion_tokens": 66,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001898,
+        "no_cache_cny": 0.001898,
+        "provider_id": "01a18ae3d7d0ec966f6d0580284a6219",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 228,
+        "stage": "F04_A_r1_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 102,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 229,
+        "stage": "F04_A_r1_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 4244,
+        "completion_tokens": 336,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.011176,
+        "no_cache_cny": 0.011176,
+        "provider_id": "01a18ae377a341fe0eb7195c78b939f6",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 230,
+        "stage": "F04_A_r1_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 1206,
+        "completion_tokens": 248,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.004396,
+        "no_cache_cny": 0.004396,
+        "provider_id": "01a18ae403bce165f2d6b360bd80bc83",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 231,
+        "stage": "F04_B_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2525,
+        "completion_tokens": 2155,
+        "cached_input_tokens": 2432,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01752328,
+        "no_cache_cny": 0.02229,
+        "provider_id": "01a18ae3a7b83685399d284365426814",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 232,
+        "stage": "F04_B_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2129,
+        "completion_tokens": 1402,
+        "cached_input_tokens": 1792,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01196168,
+        "no_cache_cny": 0.015474,
+        "provider_id": "01a18ae416964618dc9c4978d9bb299c",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 233,
+        "stage": "F04_B_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2271,
+        "completion_tokens": 1819,
+        "cached_input_tokens": 1792,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01558168,
+        "no_cache_cny": 0.019094,
+        "provider_id": "01a18ae3e3fdfb511b6dafd9051dd5d5",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 234,
+        "stage": "F04_B_r1_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 1957,
+        "completion_tokens": 743,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.009858,
+        "no_cache_cny": 0.009858,
+        "provider_id": "01a18ae403d17160e9f0f2e630b8b02c",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 235,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 742,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 236,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 347,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 237,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 331,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 238,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 295,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 239,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 24,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 240,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 359,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 241,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 275,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 242,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 339,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 243,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 321,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 244,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 258,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 245,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 287,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 246,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 266,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 247,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 225,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 248,
+        "stage": "F04_B_r1_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 1768,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 4
+      },
+      {
+        "call_id": 249,
+        "stage": "F04_B_r1_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 685,
+        "completion_tokens": 66,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001898,
+        "no_cache_cny": 0.001898,
+        "provider_id": "01a18ae44b95d71f092237bc9670e94c",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 250,
+        "stage": "F04_B_r1_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 102,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 251,
+        "stage": "F04_B_r1_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 5275,
+        "completion_tokens": 354,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.013382,
+        "no_cache_cny": 0.013382,
+        "provider_id": "01a18ae45ad863917300c08c4b796274",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 252,
+        "stage": "F04_B_r1_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 1206,
+        "completion_tokens": 384,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.005484,
+        "no_cache_cny": 0.005484,
+        "provider_id": "01a18ae470b8d2fa48a8d7c6d696e009",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 253,
+        "stage": "F04_B_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2525,
+        "completion_tokens": 1645,
+        "cached_input_tokens": 2432,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01344328,
+        "no_cache_cny": 0.01821,
+        "provider_id": "01a18ae486f0a86566264fefe0c39410",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 254,
+        "stage": "F04_B_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2129,
+        "completion_tokens": 1304,
+        "cached_input_tokens": 2048,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01067592,
+        "no_cache_cny": 0.01469,
+        "provider_id": "01a18ae48ed64ec217ea380ce6fd313d",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 255,
+        "stage": "F04_B_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2271,
+        "completion_tokens": 1850,
+        "cached_input_tokens": 2176,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.015077040000000002,
+        "no_cache_cny": 0.019342,
+        "provider_id": "01a18ae52ec108a648b1a5eddef75dd0",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 256,
+        "stage": "F04_B_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 1957,
+        "completion_tokens": 665,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.009234,
+        "no_cache_cny": 0.009234,
+        "provider_id": "01a18ae4c8a2cf794fc3ab8f7d319b6d",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 257,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 565,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 258,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 325,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 259,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 303,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 260,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 296,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 261,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 24,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 262,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 330,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 263,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 326,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 264,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 286,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 265,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 349,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 266,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 295,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 267,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 243,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 268,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 108,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 4
+      },
+      {
+        "call_id": 269,
+        "stage": "F04_B_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 1768,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 4
+      },
+      {
+        "call_id": 270,
+        "stage": "F04_B_r2_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 685,
+        "completion_tokens": 66,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001898,
+        "no_cache_cny": 0.001898,
+        "provider_id": "01a18ae527be075e95246881e88f36cb",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 271,
+        "stage": "F04_B_r2_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 102,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 272,
+        "stage": "F04_B_r2_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 5014,
+        "completion_tokens": 363,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.012932,
+        "no_cache_cny": 0.012932,
+        "provider_id": "01a18ae531f724a4fa579dfb271cf391",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 273,
+        "stage": "F04_B_r2_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 1206,
+        "completion_tokens": 273,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.004596,
+        "no_cache_cny": 0.004596,
+        "provider_id": "01a18ae550e1591f023f295ddb37a1ca",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 274,
+        "stage": "F04_A_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 3011,
+        "completion_tokens": 2590,
+        "cached_input_tokens": 2944,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.02097176,
+        "no_cache_cny": 0.026742,
+        "provider_id": "01a18ae5cdb79ac67c4e15179b5fd0ac",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 275,
+        "stage": "F04_A_r2_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2040,
+        "completion_tokens": 1003,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.012104,
+        "no_cache_cny": 0.012104,
+        "provider_id": "01a18ae56621092b2ecc0d1bac6f8bec",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 276,
+        "stage": "F04_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 432,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 277,
+        "stage": "F04_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 263,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 278,
+        "stage": "F04_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 327,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 279,
+        "stage": "F04_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 123,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 5
+      },
+      {
+        "call_id": 280,
+        "stage": "F04_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 361,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 281,
+        "stage": "F04_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 245,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 282,
+        "stage": "F04_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 264,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 283,
+        "stage": "F04_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 237,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 284,
+        "stage": "F04_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 238,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 285,
+        "stage": "F04_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 92,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 4
+      },
+      {
+        "call_id": 286,
+        "stage": "F04_A_r2_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 1557,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 287,
+        "stage": "F04_A_r2_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 685,
+        "completion_tokens": 66,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001898,
+        "no_cache_cny": 0.001898,
+        "provider_id": "01a18ae5e65a9daaca388387927cc95b",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 288,
+        "stage": "F04_A_r2_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 102,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 289,
+        "stage": "F04_A_r2_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 4421,
+        "completion_tokens": 345,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.011602,
+        "no_cache_cny": 0.011602,
+        "provider_id": "01a18ae5f0a66903bee8a5e94e7ce8c9",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 290,
+        "stage": "F04_A_r2_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 1206,
+        "completion_tokens": 386,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0055,
+        "no_cache_cny": 0.0055,
+        "provider_id": "01a18ae671e1f282f42cc0fdcf2c4139",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 291,
+        "stage": "F04_A_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 3011,
+        "completion_tokens": 1994,
+        "cached_input_tokens": 2944,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01620376,
+        "no_cache_cny": 0.021974,
+        "provider_id": "01a18ae68868d3e20e3d21b0c19e574b",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 292,
+        "stage": "F04_A_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2040,
+        "completion_tokens": 977,
+        "cached_input_tokens": 1920,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0081328,
+        "no_cache_cny": 0.011896,
+        "provider_id": "01a18ae621650161264e44d146cc44e8",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 293,
+        "stage": "F04_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 408,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 294,
+        "stage": "F04_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 265,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 295,
+        "stage": "F04_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 308,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 296,
+        "stage": "F04_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 24,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 297,
+        "stage": "F04_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 356,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 298,
+        "stage": "F04_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 267,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 299,
+        "stage": "F04_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 297,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 300,
+        "stage": "F04_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 213,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 301,
+        "stage": "F04_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 19,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 302,
+        "stage": "F04_A_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 1557,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 2
+      },
+      {
+        "call_id": 303,
+        "stage": "F04_A_r3_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 685,
+        "completion_tokens": 66,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001898,
+        "no_cache_cny": 0.001898,
+        "provider_id": "01a18ae68a1dc90fe324c82e23b178e7",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 304,
+        "stage": "F04_A_r3_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 102,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 305,
+        "stage": "F04_A_r3_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 4121,
+        "completion_tokens": 321,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01081,
+        "no_cache_cny": 0.01081,
+        "provider_id": "01a18ae6ffe79b7f5a60f935b4755c82",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 306,
+        "stage": "F04_A_r3_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 1206,
+        "completion_tokens": 369,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.005364,
+        "no_cache_cny": 0.005364,
+        "provider_id": "01a18ae71363191db9dea3eeb9e96dbb",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 307,
+        "stage": "F04_B_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2525,
+        "completion_tokens": 2163,
+        "cached_input_tokens": 2432,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01758728,
+        "no_cache_cny": 0.022354,
+        "provider_id": "01a18ae72ad911fe2b08d59f14cff5fb",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 308,
+        "stage": "F04_B_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2129,
+        "completion_tokens": 1318,
+        "cached_input_tokens": 2048,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01078792,
+        "no_cache_cny": 0.014802,
+        "provider_id": "01a18ae6c01e64eb61bd52b6393e53b7",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 309,
+        "stage": "F04_B_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2271,
+        "completion_tokens": 2064,
+        "cached_input_tokens": 2176,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.01678904,
+        "no_cache_cny": 0.021054,
+        "provider_id": "01a18ae6f992956ee4ee92a8cf6aaf70",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 310,
+        "stage": "F04_B_r3_index",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 1957,
+        "completion_tokens": 672,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.00929,
+        "no_cache_cny": 0.00929,
+        "provider_id": "01a18ae785b87aba8c6daa10b8f28489",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 311,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 683,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 312,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 372,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 313,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 297,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 314,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 311,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 315,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 131,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 4
+      },
+      {
+        "call_id": 316,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 367,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 317,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 339,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 318,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 343,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 319,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 259,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 320,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 339,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 321,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 244,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 322,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 242,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 8
+      },
+      {
+        "call_id": 323,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 143,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 5
+      },
+      {
+        "call_id": 324,
+        "stage": "F04_B_r3_index",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 1768,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 4
+      },
+      {
+        "call_id": 325,
+        "stage": "F04_B_r3_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 685,
+        "completion_tokens": 66,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.001898,
+        "no_cache_cny": 0.001898,
+        "provider_id": "01a18ae7d49741202c764015f663336a",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 326,
+        "stage": "F04_B_r3_natural_mix",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 102,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 3
+      },
+      {
+        "call_id": 327,
+        "stage": "F04_B_r3_natural_mix",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 4681,
+        "completion_tokens": 289,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.011674,
+        "no_cache_cny": 0.011674,
+        "provider_id": "01a18ae7deac31cd75368eb51660ea0c",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 328,
+        "stage": "F04_B_r3_forced_diagnostic",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 1206,
+        "completion_tokens": 293,
+        "cached_input_tokens": 1152,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0024980799999999997,
+        "no_cache_cny": 0.004756,
+        "provider_id": "01a18ae784b8d0149de59e631d730dd3",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 329,
+        "stage": "F01_A_r1_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 66,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 330,
+        "stage": "F01_A_r1_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2620,
+        "completion_tokens": 331,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.007888,
+        "no_cache_cny": 0.007888,
+        "provider_id": "01a18ae88f78c3fe1d0f47efe586998d",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 331,
+        "stage": "F01_B_r1_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 66,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 332,
+        "stage": "F01_B_r1_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2616,
+        "completion_tokens": 303,
+        "cached_input_tokens": 1280,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0051472,
+        "no_cache_cny": 0.007656,
+        "provider_id": "01a18ae913d305fcb2dd99087db08402",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 333,
+        "stage": "F01_B_r2_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 66,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 334,
+        "stage": "F01_B_r2_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2616,
+        "completion_tokens": 392,
+        "cached_input_tokens": 2560,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0033504,
+        "no_cache_cny": 0.008368,
+        "provider_id": "01a18ae8c2dcd0bbe0421aa533e54d70",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 335,
+        "stage": "F01_A_r2_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 66,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 336,
+        "stage": "F01_A_r2_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2620,
+        "completion_tokens": 324,
+        "cached_input_tokens": 2560,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0028144,
+        "no_cache_cny": 0.007832,
+        "provider_id": "01a18ae94bf4245fc4758f2103fafb29",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 337,
+        "stage": "F01_A_r3_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 66,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 338,
+        "stage": "F01_A_r3_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2620,
+        "completion_tokens": 322,
+        "cached_input_tokens": 2560,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0027984,
+        "no_cache_cny": 0.007816,
+        "provider_id": "01a18ae9023fd83996f0f3606c572834",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 339,
+        "stage": "F01_B_r3_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 66,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 340,
+        "stage": "F01_B_r3_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2616,
+        "completion_tokens": 319,
+        "cached_input_tokens": 2560,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0027664,
+        "no_cache_cny": 0.007784,
+        "provider_id": "01a18ae91d52ac7e21a5a3748ee7ad08",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 341,
+        "stage": "F04_A_r1_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 55,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 342,
+        "stage": "F04_A_r1_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2223,
+        "completion_tokens": 367,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.007382,
+        "no_cache_cny": 0.007382,
+        "provider_id": "01a18ae939be8397befb5bcbb4e0d2e0",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 343,
+        "stage": "F04_B_r1_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 55,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 344,
+        "stage": "F04_B_r1_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2446,
+        "completion_tokens": 320,
+        "cached_input_tokens": 1408,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.00469232,
+        "no_cache_cny": 0.007452,
+        "provider_id": "01a18ae9c66400fceb2e8d989f880e54",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 345,
+        "stage": "F04_B_r2_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 55,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 346,
+        "stage": "F04_B_r2_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2446,
+        "completion_tokens": 332,
+        "cached_input_tokens": 2432,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.00278128,
+        "no_cache_cny": 0.007548,
+        "provider_id": "01a18ae9e1c0f1ac506f3f2aab935812",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 347,
+        "stage": "F04_A_r2_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 55,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 348,
+        "stage": "F04_A_r2_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2223,
+        "completion_tokens": 400,
+        "cached_input_tokens": 2176,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.00338104,
+        "no_cache_cny": 0.007646,
+        "provider_id": "01a18ae9fbe2cd8a5773ecce412d773e",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 349,
+        "stage": "F04_A_r3_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 55,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 350,
+        "stage": "F04_A_r3_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2223,
+        "completion_tokens": 411,
+        "cached_input_tokens": 2176,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.00346904,
+        "no_cache_cny": 0.007734,
+        "provider_id": "01a18ae9abbd0ad740e1053110836802",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 351,
+        "stage": "F04_B_r3_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 55,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 352,
+        "stage": "F04_B_r3_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2446,
+        "completion_tokens": 329,
+        "cached_input_tokens": 2432,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0027572800000000004,
+        "no_cache_cny": 0.007524,
+        "provider_id": "01a18ae9c8986a7851dccd812352b5f2",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 353,
+        "stage": "F05_A_r1_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 60,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 354,
+        "stage": "F05_A_r1_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2550,
+        "completion_tokens": 338,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.007804,
+        "no_cache_cny": 0.007804,
+        "provider_id": "01a18aea4d44fa981dfed08025a5ec31",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 355,
+        "stage": "F05_B_r1_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 60,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 356,
+        "stage": "F05_B_r1_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2661,
+        "completion_tokens": 217,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.007058,
+        "no_cache_cny": 0.007058,
+        "provider_id": "01a18aea04a86d6abd0c07bdc575959d",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 357,
+        "stage": "F05_B_r2_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 60,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 358,
+        "stage": "F05_B_r2_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2661,
+        "completion_tokens": 239,
+        "cached_input_tokens": 2560,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0022164,
+        "no_cache_cny": 0.007234,
+        "provider_id": "01a18aea15134d8fb0c6e893e09a822e",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 359,
+        "stage": "F05_A_r2_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 60,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 360,
+        "stage": "F05_A_r2_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2550,
+        "completion_tokens": 284,
+        "cached_input_tokens": 2432,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0026052799999999997,
+        "no_cache_cny": 0.007372,
+        "provider_id": "01a18aea932cd84985e5f696460430db",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 361,
+        "stage": "F05_A_r3_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 60,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 362,
+        "stage": "F05_A_r3_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2550,
+        "completion_tokens": 309,
+        "cached_input_tokens": 2432,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.00280528,
+        "no_cache_cny": 0.007572,
+        "provider_id": "01a18aeaa71b646b6fb8d2c32718432d",
+        "finish_reason": "stop"
+      },
+      {
+        "call_id": 363,
+        "stage": "F05_B_r3_natural_naive",
+        "kind": "embedding",
+        "state": "success",
+        "prompt_tokens": 60,
+        "completion_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0,
+        "no_cache_cny": 0,
+        "embedding_texts": 1
+      },
+      {
+        "call_id": 364,
+        "stage": "F05_B_r3_natural_naive",
+        "kind": "llm",
+        "state": "success",
+        "prompt_tokens": 2661,
+        "completion_tokens": 270,
+        "cached_input_tokens": 2560,
+        "reasoning_tokens": 0,
+        "cache_aware_cny": 0.0024644000000000003,
+        "no_cache_cny": 0.007482,
+        "provider_id": "01a18aea504c4afa4831a089980e2816",
+        "finish_reason": "stop"
+      }
+    ]
+  },
+  "cost": {
+    "currency": "CNY",
+    "rates_per_million": {
+      "input": 2,
+      "cached_input": 0.04,
+      "output": 8,
+      "BAAI/bge-m3": 0
+    },
+    "price_scope": "Previously verified provider prices; no new web/API calls in this audit. Estimates from returned usage, not invoice.",
+    "new_confirmed_usage_cache_aware_cny": 1.08370008,
+    "new_confirmed_usage_no_cache_upper_cny": 1.330566,
+    "new_unknown_reservation_cny": 0,
+    "prior_components": [
+      {
+        "directory": "round4",
+        "confirmed_usage_cache_aware_cny": 0.12982048,
+        "confirmed_usage_no_cache_cny": 0.155912,
+        "unconfirmed_reservation_cny": 0,
+        "not_invoice": true
+      },
+      {
+        "directory": "env_diagnostics_20261030",
+        "confirmed_usage_cache_aware_cny": 0.02665392,
+        "confirmed_usage_no_cache_cny": 0.030668,
+        "unconfirmed_reservation_cny": 0.31551800000000013,
+        "not_invoice": true
+      }
+    ],
+    "combined_confirmed_usage_cache_aware_cny": 1.24017448,
+    "combined_confirmed_usage_no_cache_cny": 1.517146,
+    "prior_unconfirmed_reservation_cny": 0.31551800000000013,
+    "combined_budget_upper_including_unknown_reservation_cny": 1.832664,
+    "maximum_budget_bound_cny": 4.502098,
+    "reservation_caveat": "The prior 0.315518 reservation is not confirmed spend. Failed calls with no returned usage are not proof of zero billing."
+  },
+  "runs": [
+    {
+      "run_id": "F01_A_r1",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F01_A_r1/patent_r4_f01_a_r1",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        619
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [
+        "US9589231B2-chunk-000"
+      ],
+      "parsed_extraction_call_ids": [
+        1,
+        2
+      ],
+      "truncated_extraction_call_ids": [
+        1
+      ],
+      "boundary_causal_eligible": false,
+      "graph_counts": {
+        "nodes": 44,
+        "edges": 57
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            18,
+            20
+          ],
+          "chunks": 2,
+          "entities": 19,
+          "relationships": 31,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            330
+          ],
+          "chunks": 2,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 21,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F01_A_r2",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F01_A_r2/patent_r4_f01_a_r2",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        619
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [
+        "US9589231B2-chunk-000"
+      ],
+      "parsed_extraction_call_ids": [
+        56,
+        57
+      ],
+      "truncated_extraction_call_ids": [
+        56
+      ],
+      "boundary_causal_eligible": false,
+      "graph_counts": {
+        "nodes": 44,
+        "edges": 59
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            73,
+            75
+          ],
+          "chunks": 2,
+          "entities": 18,
+          "relationships": 42,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            336
+          ],
+          "chunks": 2,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 76,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F01_A_r3",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F01_A_r3/patent_r4_f01_a_r3",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        619
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [
+        "US9589231B2-chunk-000"
+      ],
+      "parsed_extraction_call_ids": [
+        77,
+        78
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 32,
+        "edges": 48
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            90,
+            92
+          ],
+          "chunks": 2,
+          "entities": 18,
+          "relationships": 29,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            338
+          ],
+          "chunks": 2,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 93,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F01_B_r1",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F01_B_r1/patent_r4_f01_b_r1",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        636,
+        1183
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [],
+      "parsed_extraction_call_ids": [
+        22,
+        23
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 36,
+        "edges": 45
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            36,
+            38
+          ],
+          "chunks": 2,
+          "entities": 16,
+          "relationships": 30,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            332
+          ],
+          "chunks": 2,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 39,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F01_B_r2",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F01_B_r2/patent_r4_f01_b_r2",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        636,
+        1183
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [],
+      "parsed_extraction_call_ids": [
+        40,
+        41
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 28,
+        "edges": 39
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            52,
+            54
+          ],
+          "chunks": 2,
+          "entities": 18,
+          "relationships": 30,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            334
+          ],
+          "chunks": 2,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 55,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F01_B_r3",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F01_B_r3/patent_r4_f01_b_r3",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        636,
+        1183
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [],
+      "parsed_extraction_call_ids": [
+        94,
+        95
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 28,
+        "edges": 39
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            106,
+            108
+          ],
+          "chunks": 2,
+          "entities": 17,
+          "relationships": 30,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            340
+          ],
+          "chunks": 2,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 109,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F04_A_r1",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F04_A_r1/patent_r4_f04_a_r1",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        226
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001"
+      ],
+      "parsed_extraction_call_ids": [
+        216,
+        217
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 23,
+        "edges": 37
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            227,
+            229
+          ],
+          "chunks": 2,
+          "entities": 14,
+          "relationships": 31,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            342
+          ],
+          "chunks": 2,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 230,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F04_A_r2",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F04_A_r2/patent_r4_f04_a_r2",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        226
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001"
+      ],
+      "parsed_extraction_call_ids": [
+        274,
+        275
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 29,
+        "edges": 44
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            287,
+            289
+          ],
+          "chunks": 2,
+          "entities": 15,
+          "relationships": 33,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            348
+          ],
+          "chunks": 2,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 290,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F04_A_r3",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F04_A_r3/patent_r4_f04_a_r3",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        226
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001"
+      ],
+      "parsed_extraction_call_ids": [
+        291,
+        292
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 25,
+        "edges": 33
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            303,
+            305
+          ],
+          "chunks": 2,
+          "entities": 13,
+          "relationships": 27,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            350
+          ],
+          "chunks": 2,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 306,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F04_B_r1",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F04_B_r1/patent_r4_f04_b_r1",
+      "chunk_count": 4,
+      "chunk_lengths": [
+        712,
+        315,
+        456,
+        143
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [],
+      "parsed_extraction_call_ids": [
+        231,
+        232,
+        233,
+        234
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 33,
+        "edges": 64
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            249,
+            251
+          ],
+          "chunks": 4,
+          "entities": 15,
+          "relationships": 39,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            344
+          ],
+          "chunks": 4,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 252,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F04_B_r2",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F04_B_r2/patent_r4_f04_b_r2",
+      "chunk_count": 4,
+      "chunk_lengths": [
+        712,
+        315,
+        456,
+        143
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [],
+      "parsed_extraction_call_ids": [
+        253,
+        254,
+        255,
+        256
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 33,
+        "edges": 52
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            270,
+            272
+          ],
+          "chunks": 4,
+          "entities": 16,
+          "relationships": 34,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            346
+          ],
+          "chunks": 4,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 273,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F04_B_r3",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F04_B_r3/patent_r4_f04_b_r3",
+      "chunk_count": 4,
+      "chunk_lengths": [
+        712,
+        315,
+        456,
+        143
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [],
+      "parsed_extraction_call_ids": [
+        307,
+        308,
+        309,
+        310
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 36,
+        "edges": 61
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            325,
+            327
+          ],
+          "chunks": 4,
+          "entities": 16,
+          "relationships": 25,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            352
+          ],
+          "chunks": 4,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 328,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F05_A_r1",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F05_A_r1/patent_r4_f05_a_r1",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        545
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [
+        "US8069128B2-chunk-000"
+      ],
+      "parsed_extraction_call_ids": [
+        110,
+        111
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 30,
+        "edges": 43
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            123,
+            125
+          ],
+          "chunks": 2,
+          "entities": 18,
+          "relationships": 32,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            354
+          ],
+          "chunks": 2,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 126,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F05_A_r2",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F05_A_r2/patent_r4_f05_a_r2",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        545
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [
+        "US8069128B2-chunk-000"
+      ],
+      "parsed_extraction_call_ids": [
+        165,
+        166
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 25,
+        "edges": 38
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            177,
+            179
+          ],
+          "chunks": 2,
+          "entities": 18,
+          "relationships": 30,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            360
+          ],
+          "chunks": 2,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 180,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F05_A_r3",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F05_A_r3/patent_r4_f05_a_r3",
+      "chunk_count": 2,
+      "chunk_lengths": [
+        1200,
+        545
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [
+        "US8069128B2-chunk-000"
+      ],
+      "parsed_extraction_call_ids": [
+        181,
+        182
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 24,
+        "edges": 37
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            192,
+            194
+          ],
+          "chunks": 2,
+          "entities": 14,
+          "relationships": 29,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            362
+          ],
+          "chunks": 2,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 195,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F05_B_r1",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F05_B_r1/patent_r4_f05_b_r1",
+      "chunk_count": 3,
+      "chunk_lengths": [
+        886,
+        239,
+        720
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [],
+      "parsed_extraction_call_ids": [
+        127,
+        128,
+        129
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 33,
+        "edges": 54
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            143,
+            145
+          ],
+          "chunks": 3,
+          "entities": 17,
+          "relationships": 38,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            356
+          ],
+          "chunks": 3,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 146,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F05_B_r2",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F05_B_r2/patent_r4_f05_b_r2",
+      "chunk_count": 3,
+      "chunk_lengths": [
+        886,
+        239,
+        720
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [],
+      "parsed_extraction_call_ids": [
+        147,
+        148,
+        149
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 32,
+        "edges": 47
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            161,
+            163
+          ],
+          "chunks": 3,
+          "entities": 18,
+          "relationships": 32,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            358
+          ],
+          "chunks": 3,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 164,
+      "naive_core_hashes_before_after_current_match": true
+    },
+    {
+      "run_id": "F05_B_r3",
+      "status": "completed",
+      "storage": "<DOT_WORKDIR>/round4_full_20261030/storage/F05_B_r3/patent_r4_f05_b_r3",
+      "chunk_count": 3,
+      "chunk_lengths": [
+        886,
+        239,
+        720
+      ],
+      "frozen_content_matches": true,
+      "literal_joint_target_chunks": [],
+      "parsed_extraction_call_ids": [
+        196,
+        197,
+        198
+      ],
+      "truncated_extraction_call_ids": [],
+      "boundary_causal_eligible": true,
+      "graph_counts": {
+        "nodes": 36,
+        "edges": 50
+      },
+      "retrieval": {
+        "mix": {
+          "actual_llm_calls": [
+            212,
+            214
+          ],
+          "chunks": 3,
+          "entities": 20,
+          "relationships": 33,
+          "references": 1,
+          "status": "success"
+        },
+        "naive": {
+          "actual_llm_calls": [
+            364
+          ],
+          "chunks": 3,
+          "entities": 0,
+          "relationships": 0,
+          "references": 1,
+          "status": "success"
+        }
+      },
+      "forced_diagnostic_call_id": 215,
+      "naive_core_hashes_before_after_current_match": true
+    }
+  ],
+  "parsed_mapping": {
+    "records": 45,
+    "all_45_extraction_calls_mapped_once_to_real_persisted_chunks": true,
+    "graph_rows_checked": 1418,
+    "parser_reexecution_in_this_audit": false,
+    "method": "Validate saved official parser records against raw request fenced chunk, response finish metadata and source fields; no model or official parser import in this audit."
+  },
+  "cache_integrity": {
+    "unique_index_directories": 18,
+    "application_response_reuse_observed": false,
+    "evidence": "Fresh-directory runner refuses existing storage; each extraction and each mix/naive/forced answer has a distinct actual provider response and sequential ledger ID. Same request text may recur legitimately across repetitions. Query-only naive reopens its own index, never other repetitions. Provider cached input tokens are prefix-cache billing, not application answer reuse.",
+    "embedding_cache_reused": false,
+    "seed_limitation": "No seed request recorded. Temperature 0 does not guarantee deterministic provider behavior."
+  },
+  "scope_limits": [
+    "Full document means the original second-round indexed title+abstract+claims; no specification or 20-document background corpus in each independent index.",
+    "Frozen boundary matches and literal anchor noncooccurrence are checked; this does not prove exhaustive semantic-equivalent absence.",
+    "F01_A_r1 and F01_A_r2 are excluded from untruncated boundary-causal comparisons; successful transport and completed index do not remove truncation confounding.",
+    "M01 status not_run_by_scope_update, zero new M01 calls or indexes. Earlier partial AST experiment and environment diagnosis smoke are preserved separately."
+  ],
+  "official_source": {
+    "version": "1.5.7",
+    "commit": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+    "selected_current_files_vs_prior_materialization_manifest": [
+      {
+        "path": "lightrag/__init__.py",
+        "current_sha256": "fa653125d5ad2d215ffabea25d24be0d8ffb732959c73c91ac6ba635a47355b7",
+        "manifest_sha256": "fa653125d5ad2d215ffabea25d24be0d8ffb732959c73c91ac6ba635a47355b7",
+        "matches": true
+      },
+      {
+        "path": "lightrag/_version.py",
+        "current_sha256": "6dd9edee78ddd7c0c7822a79214d9db424cb2cc18ca3b61136cc84a71868840a",
+        "manifest_sha256": "6dd9edee78ddd7c0c7822a79214d9db424cb2cc18ca3b61136cc84a71868840a",
+        "matches": true
+      },
+      {
+        "path": "lightrag/lightrag.py",
+        "current_sha256": "ff118d8d197b7f5ab899a2190157fa88782dc6be897c59ab47a42cab52ac45b9",
+        "manifest_sha256": "ff118d8d197b7f5ab899a2190157fa88782dc6be897c59ab47a42cab52ac45b9",
+        "matches": true
+      },
+      {
+        "path": "lightrag/operate.py",
+        "current_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047",
+        "manifest_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047",
+        "matches": true
+      },
+      {
+        "path": "lightrag/utils.py",
+        "current_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc",
+        "manifest_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc",
+        "matches": true
+      },
+      {
+        "path": "lightrag/prompt.py",
+        "current_sha256": "db0cf2d0f5d420a8372fac2b33043d8b4f14c84ec0a60653862e4e53a27047e1",
+        "manifest_sha256": "db0cf2d0f5d420a8372fac2b33043d8b4f14c84ec0a60653862e4e53a27047e1",
+        "matches": true
+      },
+      {
+        "path": "lightrag/constants.py",
+        "current_sha256": "295f3e46121b111ead3e164231ff363a4a6b0231c9bd530c370b88346157b3b7",
+        "manifest_sha256": "295f3e46121b111ead3e164231ff363a4a6b0231c9bd530c370b88346157b3b7",
+        "matches": true
+      }
+    ],
+    "independently_rehashed_entire_repository": false
+  },
+  "old_round2_indices": [
+    {
+      "path": "round2/storage_full/patent_r2_full/vdb_chunks.json",
+      "expected_sha256": "a5392f28b25c995c1595a138afabbad64c34ba5bba547905cfb07fc80b114107",
+      "actual_sha256": "a5392f28b25c995c1595a138afabbad64c34ba5bba547905cfb07fc80b114107",
+      "unchanged": true
+    },
+    {
+      "path": "round2/storage_full/patent_r2_full/kv_store_text_chunks.json",
+      "expected_sha256": "c3d55a105cebbe177d259d1820e2f47192a010aabef300e01b435dd9b1908906",
+      "actual_sha256": "c3d55a105cebbe177d259d1820e2f47192a010aabef300e01b435dd9b1908906",
+      "unchanged": true
+    },
+    {
+      "path": "round2/storage_full/patent_r2_full/graph_chunk_entity_relation.graphml",
+      "expected_sha256": "5d551e39fdc045a956303a68d0b587ade881426ab0bb1bd1710a5f0473d4362b",
+      "actual_sha256": "5d551e39fdc045a956303a68d0b587ade881426ab0bb1bd1710a5f0473d4362b",
+      "unchanged": true
+    }
+  ],
+  "watchdogs": [
+    {
+      "name": "F01",
+      "group": "F01",
+      "started_utc": "2026-10-30T03:27:30.504991+00:00",
+      "finished_utc": "2026-10-30T03:32:37.809508+00:00",
+      "status": "completed",
+      "exit_code": 0,
+      "pid": 14951,
+      "child_alive": false,
+      "timeout_seconds": 720
+    },
+    {
+      "name": "F04",
+      "group": "F04",
+      "started_utc": "2026-10-30T03:38:24.569864+00:00",
+      "finished_utc": "2026-10-30T03:43:28.324959+00:00",
+      "status": "completed",
+      "exit_code": 0,
+      "pid": 20497,
+      "child_alive": false,
+      "timeout_seconds": 720
+    },
+    {
+      "name": "F05",
+      "group": "F05",
+      "started_utc": "2026-10-30T03:33:08.725354+00:00",
+      "finished_utc": "2026-10-30T03:37:43.579998+00:00",
+      "status": "completed",
+      "exit_code": 0,
+      "pid": 18119,
+      "child_alive": false,
+      "timeout_seconds": 720
+    },
+    {
+      "name": "naive",
+      "started_utc": "2026-10-30T03:44:26.280896+00:00",
+      "ended_utc": "2026-10-30T03:46:29.416967+00:00",
+      "status": "completed",
+      "pid": 23914,
+      "exit_code": 0,
+      "child_alive": false,
+      "timeout_seconds": 600
+    }
+  ],
+  "audit_script": "scripts/final_integrity_audit.py",
+  "persisted_storage_checks": [
+    {
+      "run_id": "F01_A_r1",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 44,
+        "edges": 57
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F01_A_r2",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 44,
+        "edges": 59
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F01_A_r3",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 32,
+        "edges": 48
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F01_B_r1",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 36,
+        "edges": 45
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F01_B_r2",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 28,
+        "edges": 39
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F01_B_r3",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 28,
+        "edges": 39
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F04_A_r1",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 23,
+        "edges": 37
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F04_A_r2",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 29,
+        "edges": 44
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F04_A_r3",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 25,
+        "edges": 33
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F04_B_r1",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 33,
+        "edges": 64
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F04_B_r2",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 33,
+        "edges": 52
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F04_B_r3",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 36,
+        "edges": 61
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F05_A_r1",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 30,
+        "edges": 43
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F05_A_r2",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 25,
+        "edges": 38
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F05_A_r3",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 24,
+        "edges": 37
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F05_B_r1",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 33,
+        "edges": 54
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F05_B_r2",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 32,
+        "edges": 47
+      },
+      "saved_graph_counts_match": true
+    },
+    {
+      "run_id": "F05_B_r3",
+      "persisted_chunk_dictionary_matches_snapshot": true,
+      "persisted_graphml_counts": {
+        "nodes": 36,
+        "edges": 50
+      },
+      "saved_graph_counts_match": true
+    }
+  ],
+  "persisted_storage_checks_method": "Read current kv_store_text_chunks.json and standard-library XML graphml counts once per new run; compare exported snapshots. Core hashes separately verify naive did not change these stores.",
+  "completed_run_log_warnings": [
+    {
+      "file": "F01_pipeline.log",
+      "line": 26,
+      "message": "WARNING: Skipping LLM cache write for truncated extract response (finish_reason=length, chunk_id=US9589231B2-chunk-000)"
+    },
+    {
+      "file": "F01_pipeline.log",
+      "line": 27,
+      "message": "WARNING: Token-limit truncation during initial entity extraction for chunk US9589231B2-chunk-000 in US9589231B2.txt"
+    },
+    {
+      "file": "F01_pipeline.log",
+      "line": 28,
+      "message": "WARNING: US9589231B2-chunk-000: Complete delimiter can not be found in extraction result (response was truncated by the model's output token limit)"
+    },
+    {
+      "file": "F01_pipeline.log",
+      "line": 30,
+      "message": "WARNING: Warning: token-limit truncation hit 1 of 2 chunks during entity extraction (initial: 1); extracted knowledge may be incomplete"
+    },
+    {
+      "file": "F01_pipeline.log",
+      "line": 103,
+      "message": "WARNING: US9589231B2-chunk-000: Complete delimiter can not be found in extraction result (response was truncated by the model's output token limit)"
+    },
+    {
+      "file": "F01_pipeline.log",
+      "line": 354,
+      "message": "WARNING: Skipping LLM cache write for truncated extract response (finish_reason=length, chunk_id=US9589231B2-chunk-000)"
+    },
+    {
+      "file": "F01_pipeline.log",
+      "line": 355,
+      "message": "WARNING: Token-limit truncation during initial entity extraction for chunk US9589231B2-chunk-000 in US9589231B2.txt"
+    },
+    {
+      "file": "F01_pipeline.log",
+      "line": 356,
+      "message": "WARNING: US9589231B2-chunk-000: Complete delimiter can not be found in extraction result (response was truncated by the model's output token limit)"
+    },
+    {
+      "file": "F01_pipeline.log",
+      "line": 357,
+      "message": "WARNING: US9589231B2-chunk-000: LLM output format error; found 2/5 fields on RELATION `US9589231B2<`~`N/A`"
+    },
+    {
+      "file": "F01_pipeline.log",
+      "line": 359,
+      "message": "WARNING: Warning: token-limit truncation hit 1 of 2 chunks during entity extraction (initial: 1); extracted knowledge may be incomplete"
+    },
+    {
+      "file": "F01_pipeline.log",
+      "line": 434,
+      "message": "WARNING: US9589231B2-chunk-000: Complete delimiter can not be found in extraction result (response was truncated by the model's output token limit)"
+    },
+    {
+      "file": "F01_pipeline.log",
+      "line": 435,
+      "message": "WARNING: US9589231B2-chunk-000: LLM output format error; found 2/5 fields on RELATION `US9589231B2<`~`N/A`"
+    },
+    {
+      "file": "F04_pipeline.log",
+      "line": 254,
+      "message": "WARNING: US8509827B2-chunk-000: LLM output format error; found 4/5 fields on RELATION `Short Message`~`generated by`"
+    },
+    {
+      "file": "F04_pipeline.log",
+      "line": 255,
+      "message": "WARNING: US8509827B2-chunk-000: LLM output format error; found 4/5 fields on RELATION `Recipient Mobile Device`~`receives forwarded`"
+    },
+    {
+      "file": "F04_pipeline.log",
+      "line": 256,
+      "message": "WARNING: US8509827B2-chunk-000: LLM output format error; found 4/5 fields on RELATION `Database`~`accessed by`"
+    },
+    {
+      "file": "F04_pipeline.log",
+      "line": 329,
+      "message": "WARNING: US8509827B2-chunk-000: LLM output format error; found 4/5 fields on RELATION `Short Message`~`generated by`"
+    },
+    {
+      "file": "F04_pipeline.log",
+      "line": 330,
+      "message": "WARNING: US8509827B2-chunk-000: LLM output format error; found 4/5 fields on RELATION `Recipient Mobile Device`~`receives forwarded`"
+    },
+    {
+      "file": "F04_pipeline.log",
+      "line": 331,
+      "message": "WARNING: US8509827B2-chunk-000: LLM output format error; found 4/5 fields on RELATION `Database`~`accessed by`"
+    }
+  ],
+  "parser_warnings_note": "Two F01 length responses have missing completion delimiters; call56 also has an incomplete relation. Separately F04_B_r2 call253 ends normally (stop) but three four-field relation records lack a target-entity field and are rejected by the official parser; warnings repeat during parser replay. No ERROR-level lines in completed-run logs. Earlier pre-index setup failure is separate. Full API success does not mean all extraction records parsed successfully. Other typo delimiters may be repaired by official parsing and are not automatically rejected edges.",
+  "nontruncated_parser_failures": [
+    {
+      "run_id": "F04_B_r2",
+      "call_id": 253,
+      "finish_reason": "stop",
+      "malformed_four_field_relations": [
+        "Short Message / generated by",
+        "Recipient Mobile Device / receives forwarded",
+        "Database / accessed by"
+      ],
+      "unique_malformed_records": 3,
+      "warning_lines_in_F04_pipeline_log": [
+        254,
+        255,
+        256,
+        329,
+        330,
+        331
+      ],
+      "warning_repetition": "Three during insertion, three during saved-parser replay; not six distinct malformed records.",
+      "causal_scope": "Extraction-output formatting/parser rejection. Target gold effect must be evaluated separately; cannot label this a pure boundary omission solely from warning presence."
+    }
+  ]
+}

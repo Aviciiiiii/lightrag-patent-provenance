@@ -1,0 +1,191 @@
+{
+  "audit_utc": "2026-10-29T14:32:36.794931+00:00",
+  "scope": "Completed two-document smoke index only; no reads of mutable full index; no API calls or secret reads.",
+  "official_version": "1.5.7",
+  "commit": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+  "publication_number": "US7991757B2",
+  "claims": [
+    {
+      "claim_number": 1,
+      "text": "1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.",
+      "document_character_span": [
+        494,
+        2433
+      ],
+      "full_claim_contained_in_actual_chunk_ids": [
+        "US7991757B2-chunk-000"
+      ],
+      "source_url": "https://patents.google.com/patent/US7991757B2/en"
+    },
+    {
+      "claim_number": 27,
+      "text": "27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+      "document_character_span": [
+        10570,
+        10823
+      ],
+      "full_claim_contained_in_actual_chunk_ids": [
+        "US7991757B2-chunk-001"
+      ],
+      "source_url": "https://patents.google.com/patent/US7991757B2/en"
+    }
+  ],
+  "actual_chunks": [
+    {
+      "chunk_id": "US7991757B2-chunk-000",
+      "tokens": 1200,
+      "chunk_order_index": 0,
+      "file_path": "US7991757B2.txt",
+      "full_doc_id": "US7991757B2",
+      "document_character_span": [
+        0,
+        6819
+      ],
+      "content_sha256": "44d14ac28f58ce1923e60c3a11843fe0f1dac0d16d0d7febf9882ad01fe17259",
+      "extractions": [
+        {
+          "cache_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+          "cache_type": "extract",
+          "chunk_id": "US7991757B2-chunk-000",
+          "relevant_exact_extraction_lines": [
+            "entity<|#|>Registration Module<|#|>Artifact<|#|>A module configured to provide functionality for registering an external recommender with a recommendations service.",
+            "entity<|#|>Computer System<|#|>Artifact<|#|>A system comprising computer hardware programmed to implement the network service interface, event data repository, registration module, data interface, recommendations service, and optimization module.",
+            "relation<|#|>Registration Module<|#|>External Recommender<|#|>registers<|#|>The registration module provides functionality for registering an external recommender with the recommendations service."
+          ],
+          "explicit_claim_word_present_in_entire_extraction": false,
+          "full_extraction_sha256": "feb61530679371f1459b3db0b48697c83323cbcbf38fe2289d41fdf10938fe54",
+          "original_prompt_contains_exact_chunk_content": true
+        }
+      ]
+    },
+    {
+      "chunk_id": "US7991757B2-chunk-001",
+      "tokens": 828,
+      "chunk_order_index": 1,
+      "file_path": "US7991757B2.txt",
+      "full_doc_id": "US7991757B2",
+      "document_character_span": [
+        6237,
+        10953
+      ],
+      "content_sha256": "e47c6e4c92c4b2d8567f8a01218a71a0dfe0ef1d353d28abc5f8acac2212e6f3",
+      "extractions": [
+        {
+          "cache_id": "default:extract:05373d30b4b333298413a8a1419224e5",
+          "cache_type": "extract",
+          "chunk_id": "US7991757B2-chunk-001",
+          "relevant_exact_extraction_lines": [
+            "entity<|#|>Registration Module<|#|>Artifact<|#|>A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "entity<|#|>External Recommender<|#|>Artifact<|#|>A recommender external to the system, associated with a plurality of external recommenders, whose provider may provide machine readable descriptions of it.",
+            "entity<|#|>Machine Readable Descriptions<|#|>Data<|#|>Descriptions of an external recommender provided by its provider in machine readable form.",
+            "relation<|#|>Registration Module<|#|>External Recommender<|#|>allows descriptions<|#|>The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "relation<|#|>External Recommender<|#|>Machine Readable Descriptions<|#|>described by<|#|>A provider of an external recommender may provide machine readable descriptions of the external recommender."
+          ],
+          "explicit_claim_word_present_in_entire_extraction": false,
+          "full_extraction_sha256": "41d798f07af69745811de67b2e25496cc49efd34b011f72201768da69af06278",
+          "original_prompt_contains_exact_chunk_content": true
+        }
+      ]
+    }
+  ],
+  "selected_merged_graph_nodes": [
+    {
+      "entity_id": "External Recommender",
+      "entity_type": "artifact",
+      "description": "A recommender registered with the recommendations service and provided by one or more entities that differ from the provider of the recommendations service, operated by different operators than the personalization network service operator.<SEP>A recommender external to the system, associated with a plurality of external recommenders, whose provider may provide machine readable descriptions of it.",
+      "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793283941,
+      "truncate": "",
+      "id": "External Recommender"
+    },
+    {
+      "entity_id": "Registration Module",
+      "entity_type": "artifact",
+      "description": "A module configured to provide functionality for registering an external recommender with a recommendations service.<SEP>A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+      "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793283941,
+      "truncate": "",
+      "id": "Registration Module"
+    },
+    {
+      "entity_id": "Machine Readable Descriptions",
+      "entity_type": "data",
+      "description": "Descriptions of an external recommender provided by its provider in machine readable form.",
+      "source_id": "US7991757B2-chunk-001",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793283941,
+      "truncate": "",
+      "id": "Machine Readable Descriptions"
+    }
+  ],
+  "selected_merged_graph_edges": [
+    {
+      "weight": 2.0,
+      "description": "The registration module provides functionality for registering an external recommender with the recommendations service.<SEP>The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+      "keywords": "allows descriptions,registers",
+      "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793283941,
+      "truncate": "",
+      "source": "External Recommender",
+      "target": "Registration Module"
+    },
+    {
+      "weight": 1.0,
+      "description": "A provider of an external recommender may provide machine readable descriptions of the external recommender.",
+      "keywords": "described by",
+      "source_id": "US7991757B2-chunk-001",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793283941,
+      "truncate": "",
+      "source": "External Recommender",
+      "target": "Machine Readable Descriptions"
+    }
+  ],
+  "findings": [
+    {
+      "stage": "source_and_chunking",
+      "finding": "Claim1 and Claim27 are complete in distinct actual persisted chunks000 and001. Claim27 explicitly says The system of claim1. Natural boundaries were not adjusted.",
+      "status": "verified"
+    },
+    {
+      "stage": "raw_extraction",
+      "finding": "Chunk000 extracts RegistrationModule registers ExternalRecommender. Chunk001 extracts RegistrationModule allows provider descriptions and ExternalRecommender is described by MachineReadableDescriptions. Technical capability is retained in both extraction outputs.",
+      "status": "verified"
+    },
+    {
+      "stage": "graph_merge",
+      "finding": "RegistrationModule and ExternalRecommender nodes merge descriptions and retain both chunk source IDs; their graph edge has weight2 and includes both the registration and description capabilities. ExternalRecommender to MachineReadableDescriptions also survives from chunk001.",
+      "status": "verified_success"
+    },
+    {
+      "stage": "claim_dependency_representation",
+      "finding": "Neither selected raw extraction contains the word claim, and the complete smoke graph has no Claim-named nodes. The explicit legal-reference relation Claim27 depends on Claim1 is not materialized as an explicit Claim-to-Claim graph edge in this run.",
+      "status": "observed_representation_omission"
+    },
+    {
+      "stage": "causal_attribution",
+      "finding": "For the explicit Claim-reference abstraction, omission is already visible in raw extraction; there is no evidence of it being extracted then dropped during indexing. This is not proof of a code defect, an extraction failure against a Claim-aware schema, or a chunk-boundary causal effect. The source chunks still preserve the dependency text.",
+      "status": "limited_attribution"
+    },
+    {
+      "stage": "retrieval_and_answer",
+      "finding": "No query specific to this Claim27/Claim1 question was included in this smoke run. Do not claim query failure or successful claim-level answering from this trace.",
+      "status": "not_tested_in_smoke"
+    }
+  ],
+  "technical_cross_chunk_relation_loss_established": false,
+  "explicit_claim_reference_graph_representation_present": false,
+  "chunking_causality_established": false,
+  "retrieval_generation_failure_established": false,
+  "review_method": "AI-assisted exact source/extraction/graph audit; not independent human gold standard",
+  "source_files": {
+    "data/documents/US7991757B2.txt": "8d6d3c38c198d6e9ddba783716e45d230ec597d4c2c7a4699c34a7167b7510e9",
+    "data/claims/US7991757B2.json": "0ced9d1ec3872c98f02cad189cca345cc584f993bad73ab4d45fa1bc31e834dc",
+    "round2/storage_smoke/patent_r2_smoke/kv_store_text_chunks.json": "d264ada0d73f472dc0cd5eb231c3256987d306eedceadfb175788da2d14c150b",
+    "round2/storage_smoke/patent_r2_smoke/kv_store_llm_response_cache.json": "e2941e452c809230f2cceba2b016dbf49b5d02034d08ae6e435054118819f3fa",
+    "round2/results/smoke_graph.json": "77cc7a3f79b59a57006e14c5a0b7d9678281d80dcd9464f391e8f373c1c8a5bb"
+  }
+}

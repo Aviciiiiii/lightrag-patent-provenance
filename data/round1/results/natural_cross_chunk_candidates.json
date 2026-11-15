@@ -1,0 +1,607 @@
+{
+  "status": "source_structure_only_no_rag_query",
+  "official_source_commit": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+  "official_version": "1.5.7",
+  "chunk_size": 1200,
+  "overlap": 100,
+  "documents_scanned": 20,
+  "heuristic": "Parse numbered claims; detect an explicit single claim reference within the first90 characters; check whether any actual chunk fully contains both claim texts. Scan is a structural screen, not exhaustive legal dependency parsing.",
+  "explicit_single_parent_dependencies_screened": 364,
+  "screened_pairs_without_complete_text_co_location": 54,
+  "screened_pairs": [
+    {
+      "publication_number": "US10778629B2",
+      "dependent_claim": 15,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US10778629B2",
+      "dependent_claim": 16,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US10778629B2",
+      "dependent_claim": 17,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US10778629B2",
+      "dependent_claim": 18,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US10778629B2",
+      "dependent_claim": 19,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US10867122B1",
+      "dependent_claim": 7,
+      "parent_claim": 6,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US10867122B1",
+      "dependent_claim": 8,
+      "parent_claim": 6,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US10867122B1",
+      "dependent_claim": 9,
+      "parent_claim": 6,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US10867122B1",
+      "dependent_claim": 10,
+      "parent_claim": 6,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US11423041B2",
+      "dependent_claim": 9,
+      "parent_claim": 8,
+      "dependent_full_claim_containing_chunks": [],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US11423041B2",
+      "dependent_claim": 10,
+      "parent_claim": 8,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US11423041B2",
+      "dependent_claim": 11,
+      "parent_claim": 8,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US11423041B2",
+      "dependent_claim": 12,
+      "parent_claim": 8,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US11423041B2",
+      "dependent_claim": 13,
+      "parent_claim": 8,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US11423041B2",
+      "dependent_claim": 14,
+      "parent_claim": 8,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US7991757B2",
+      "dependent_claim": 26,
+      "parent_claim": 1,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US7991757B2",
+      "dependent_claim": 27,
+      "parent_claim": 1,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US7991757B2",
+      "dependent_claim": 28,
+      "parent_claim": 3,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US8069128B2",
+      "dependent_claim": 14,
+      "parent_claim": 12,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US8069128B2",
+      "dependent_claim": 15,
+      "parent_claim": 12,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US8069128B2",
+      "dependent_claim": 16,
+      "parent_claim": 12,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US8095432B1",
+      "dependent_claim": 17,
+      "parent_claim": 16,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US8095432B1",
+      "dependent_claim": 18,
+      "parent_claim": 16,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US8095432B1",
+      "dependent_claim": 19,
+      "parent_claim": 16,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US8655901B1",
+      "dependent_claim": 12,
+      "parent_claim": 8,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US8655901B1",
+      "dependent_claim": 13,
+      "parent_claim": 8,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US8655901B1",
+      "dependent_claim": 14,
+      "parent_claim": 8,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US8719408B2",
+      "dependent_claim": 14,
+      "parent_claim": 9,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US8719408B2",
+      "dependent_claim": 15,
+      "parent_claim": 9,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US8719408B2",
+      "dependent_claim": 16,
+      "parent_claim": 9,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US8917913B2",
+      "dependent_claim": 11,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US8917913B2",
+      "dependent_claim": 12,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US8917913B2",
+      "dependent_claim": 13,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US8917913B2",
+      "dependent_claim": 14,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US8917913B2",
+      "dependent_claim": 15,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US8917913B2",
+      "dependent_claim": 16,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US8917913B2",
+      "dependent_claim": 17,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US9118735B1",
+      "dependent_claim": 11,
+      "parent_claim": 4,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US9118735B1",
+      "dependent_claim": 12,
+      "parent_claim": 4,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US9118735B1",
+      "dependent_claim": 14,
+      "parent_claim": 4,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US9118735B1",
+      "dependent_claim": 15,
+      "parent_claim": 4,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US9218390B2",
+      "dependent_claim": 10,
+      "parent_claim": 1,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "dependent_claim": 12,
+      "parent_claim": 1,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "dependent_claim": 19,
+      "parent_claim": 18,
+      "dependent_full_claim_containing_chunks": [
+        2
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US9374411B1",
+      "dependent_claim": 13,
+      "parent_claim": 6,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "dependent_claim": 24,
+      "parent_claim": 21,
+      "dependent_full_claim_containing_chunks": [
+        2
+      ],
+      "parent_full_claim_containing_chunks": [
+        1
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "dependent_claim": 25,
+      "parent_claim": 21,
+      "dependent_full_claim_containing_chunks": [
+        2
+      ],
+      "parent_full_claim_containing_chunks": [
+        1
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "dependent_claim": 11,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US9514120B1",
+      "dependent_claim": 14,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US9514120B1",
+      "dependent_claim": 15,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US9514120B1",
+      "dependent_claim": 16,
+      "parent_claim": 10,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": []
+    },
+    {
+      "publication_number": "US9514120B1",
+      "dependent_claim": 19,
+      "parent_claim": 18,
+      "dependent_full_claim_containing_chunks": [
+        2
+      ],
+      "parent_full_claim_containing_chunks": [
+        1
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "dependent_claim": 20,
+      "parent_claim": 18,
+      "dependent_full_claim_containing_chunks": [
+        2
+      ],
+      "parent_full_claim_containing_chunks": [
+        1
+      ]
+    },
+    {
+      "publication_number": "US9514753B2",
+      "dependent_claim": 15,
+      "parent_claim": 1,
+      "dependent_full_claim_containing_chunks": [
+        1
+      ],
+      "parent_full_claim_containing_chunks": [
+        0
+      ]
+    }
+  ],
+  "selected_verified_candidate": {
+    "publication_number": "US7991757B2",
+    "status": "supplementary_natural_chunk_structure_probe_no_model_query",
+    "dependency": "Claim27 explicitly depends on Claim1",
+    "evidence": [
+      {
+        "claim_number": 1,
+        "full_claim": "1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.",
+        "source_span": [
+          494,
+          2433
+        ],
+        "full_claim_in_chunk_indices": [
+          0
+        ]
+      },
+      {
+        "claim_number": 27,
+        "full_claim": "27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+        "source_span": [
+          10570,
+          10823
+        ],
+        "full_claim_in_chunk_indices": [
+          1
+        ]
+      }
+    ],
+    "common_chunk_indices": [],
+    "interpretation": "Source dependency text is separated across official chunks. This does NOT establish any lost entity/relation or retrieval failure.",
+    "source_url": "https://patents.google.com/patent/US7991757B2/en",
+    "selected_without_changing_chunk_parameters": true
+  },
+  "failure_established": false,
+  "notes": [
+    "Q08 and Q09 retained unchanged as co-resident dependency examples.",
+    "No manual boundary manipulation.",
+    "Text separated across chunks does not prove extraction loss; repeated wording or subsequent retrieval can still recover a fact.",
+    "Selected candidate is US7991757B2 Claim27→1: machine-readable external recommender descriptions extend the registration module from claim1."
+  ]
+}

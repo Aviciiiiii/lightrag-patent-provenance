@@ -1,0 +1,461 @@
+{
+  "node_id": "Score",
+  "entity_type": "data",
+  "graph_source_chunks": [
+    "US7991757B2-chunk-000",
+    "US8069128B2-chunk-001"
+  ],
+  "entity_chunk_store_sources": [
+    "US7991757B2-chunk-000",
+    "US8069128B2-chunk-001"
+  ],
+  "all_source_chunks": [
+    "US7991757B2-chunk-000",
+    "US8069128B2-chunk-001"
+  ],
+  "canonical_publications": [
+    "US7991757B2",
+    "US8069128B2"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US7991757B2.txt",
+    "US8069128B2.txt"
+  ],
+  "graph_file_paths": [
+    "US7991757B2.txt",
+    "US8069128B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US7991757B2",
+    "US8069128B2"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US7991757B2-chunk-000",
+    "US8069128B2-chunk-001"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US7991757B2-chunk-000",
+    "US8069128B2-chunk-001"
+  ],
+  "graph_node": {
+    "entity_id": "Score",
+    "entity_type": "data",
+    "description": "A value associated with a recommendation received from a recommender, which may be normalized and combined with weights to produce overall scores.<SEP>A value assigned to each message by the second pass of the multi-pass message filter, used to indicate whether the message is sorted into an incorrect message folder.",
+    "source_id": "US7991757B2-chunk-000<SEP>US8069128B2-chunk-001",
+    "file_path": "US7991757B2.txt<SEP>US8069128B2.txt",
+    "created_at": 1793284411,
+    "truncate": "",
+    "id": "Score"
+  },
+  "incident_edge_count": 4,
+  "audit_id": "N031",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US7991757B2",
+      "file_paths": [
+        "US7991757B2.txt"
+      ],
+      "source_chunks": [
+        "US7991757B2-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US7991757B2",
+          "full_doc_id": "US7991757B2",
+          "file_path": "US7991757B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "44d14ac28f58ce1923e60c3a11843fe0f1dac0d16d0d7febf9882ad01fe17259",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6819,
+          "content": "Publication number: US7991757B2\nTitle: System for obtaining recommendations from multiple recommenders\n\nABSTRACT\nA personalization network service enables developers to develop recommenders that can be made available to content site operators for providing recommendations to end users. The personalization network service may also be capable of optimizing the use and selection of the recommenders for different end users, groups or segments of end users, content sites, and the like.\n\nCLAIMS\n1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site. 2. The system of claim 1 , wherein the optimization module is further configured to optimize the recommendations based at least in part on user-generated events responsive to previous recommendations results and a number of previous content site requests served by the external recommenders. 3. The system of claim 2 , wherein the optimization module is further operative to assign weights to the external recommenders. 4. A computer-implemented method of optimizing recommender results, the method comprising: by a computer system comprising computer hardware: receiving a request from a content site for item recommendations, the request being received with a personalization network service; in response to the request from the content site, requesting recommendations from a plurality of recommenders, wherein the plurality of recommenders comprise external recommenders that are operated by different operators than an operator of the personalization network service; receiving recommendations and corresponding scores from the recommenders; applying weights to each of the recommenders; combining the scores with the weights to produce overall scores; selecting a subset of the recommendations based on the overall scores to provide to the content site; and adjusting the weights for each of the recommenders based at least in part on user-generated events responsive to the recommendations. 5. The method of claim 4 , wherein applying the weights to each of the recommenders comprises applying the weights based at least in part on user-generated events responsive to previous recommendations results. 6. The method of claim 5 , wherein the user-generated events comprise one or more of purchase events, item viewing events, and item rating events. 7. The method of claim 4 , wherein applying the weights to each of the recommenders comprises applying site-specific weights to at least some of the recommenders. 8. The method of claim 4 , wherein applying the weights to each of the recommenders comprises applying user-specific weights to at least some of the recommenders. 9. The method of claim 4 , wherein applying the weights to each of the recommenders comprises applying user segment-specific weights to at least some of the recommenders. 10. The method of claim 4 , wherein applying the weights to each of the recommenders comprises applying a default weight to one or more of the recommenders. 11. The method of claim 4 , further comprising normalizing the scores provided by each of the recommenders to produce normalized scores. 12. The method of claim 11 , wherein combining the scores with the weights to produce overall scores comprises combining the normalized scores with the weights to produce the overall scores. 13. The method of claim 4 , wherein at least some of the recommenders are operated by recommender providers separate from an operator of the personalization network service. 14. A computer-implemented method of optimizing recommender results, the method comprising: by a computer system comprising computer hardware: receiving a request from a content site for item recommendations over a network; requesting recommendations from a plurality of recommenders in response to the request from the content site, wherein the plurality of recommenders comprise external recommenders that are operated by different operators than an operator of the personalization network service; receiving recommendations results from the recommenders; adjusting the recommendations results based at least in part on one or more of user-generated events responsive to previous recommendations results and a number of previous content site requests served by the recommenders; and selecting a subset of the adjusted recommendations results to provide to the content site. 15. The method of claim 14 , wherein the user-generated events comprise one or more of purchase events, item viewing events, and item rating events. 16. The method of claim 14 , wherein adjusting the recommendations results comprises applying weights to the recommendations results. 17. A computer-implemented method of providing a network service to content sites, the method comprising: by a computer system comprising computer hardware: receiving registration submissions for recommenders from a plurality of recommender providers, the registration submissions operative to request registration",
+          "llm_cache_list": [
+            "default:extract:165fbd694545aca044d0d459a62fd0cb"
+          ],
+          "chunk_id": "US7991757B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US7991757B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "5d76ff542ec3100d50d47293821b56e0a9509d93a97136f4dc97f3c2023c387e"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+              "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 16,
+              "raw_line": "entity<|#|>Score<|#|>Data<|#|>A value associated with a recommendation received from a recommender, which may be normalized and combined with weights to produce overall scores.",
+              "fields": [
+                "entity",
+                "Score",
+                "Data",
+                "A value associated with a recommendation received from a recommender, which may be normalized and combined with weights to produce overall scores."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+              "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 36,
+              "raw_line": "relation<|#|>Optimization Module<|#|>Score<|#|>normalizes<|#|>The optimization module normalizes the associated scores.",
+              "fields": [
+                "relation",
+                "Optimization Module",
+                "Score",
+                "normalizes",
+                "The optimization module normalizes the associated scores."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+              "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 39,
+              "raw_line": "relation<|#|>Score<|#|>Weight<|#|>combined with<|#|>Scores are combined with weights to produce overall scores.",
+              "fields": [
+                "relation",
+                "Score",
+                "Weight",
+                "combined with",
+                "Scores are combined with weights to produce overall scores."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+              "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 40,
+              "raw_line": "relation<|#|>Score<|#|>Overall Score<|#|>produces<|#|>Combining scores with weights produces overall scores.",
+              "fields": [
+                "relation",
+                "Score",
+                "Overall Score",
+                "produces",
+                "Combining scores with weights produces overall scores."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 1802,
+              "chunk_char_end": 2227,
+              "text": "nd request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normaliz"
+            },
+            {
+              "chunk_char_start": 2064,
+              "chunk_char_end": 2489,
+              "text": "the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site. 2. The system of claim 1 , wherein the optimization mod"
+            },
+            {
+              "chunk_char_start": 2214,
+              "chunk_char_end": 2639,
+              "text": "d to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site. 2. The system of claim 1 , wherein the optimization module is further configured to optimize the recommendations based at least in part on user-generated events responsive to previous recommendations resul"
+            },
+            {
+              "chunk_char_start": 3271,
+              "chunk_char_end": 3696,
+              "text": "enders comprise external recommenders that are operated by different operators than an operator of the personalization network service; receiving recommendations and corresponding scores from the recommenders; applying weights to each of the recommenders; combining the scores with the weights to produce overall scores; selecting a subset of the recommendations based on the overall scores to provide to the content site; an"
+            },
+            {
+              "chunk_char_start": 3361,
+              "chunk_char_end": 3786,
+              "text": "rator of the personalization network service; receiving recommendations and corresponding scores from the recommenders; applying weights to each of the recommenders; combining the scores with the weights to produce overall scores; selecting a subset of the recommendations based on the overall scores to provide to the content site; and adjusting the weights for each of the recommenders based at least in part on user-genera"
+            },
+            {
+              "chunk_char_start": 3404,
+              "chunk_char_end": 3829,
+              "text": "e; receiving recommendations and corresponding scores from the recommenders; applying weights to each of the recommenders; combining the scores with the weights to produce overall scores; selecting a subset of the recommendations based on the overall scores to provide to the content site; and adjusting the weights for each of the recommenders based at least in part on user-generated events responsive to the recommendation"
+            },
+            {
+              "chunk_char_start": 3475,
+              "chunk_char_end": 3900,
+              "text": "ders; applying weights to each of the recommenders; combining the scores with the weights to produce overall scores; selecting a subset of the recommendations based on the overall scores to provide to the content site; and adjusting the weights for each of the recommenders based at least in part on user-generated events responsive to the recommendations. 5. The method of claim 4 , wherein applying the weights to each of t"
+            },
+            {
+              "chunk_char_start": 4727,
+              "chunk_char_end": 5152,
+              "text": "ying the weights to each of the recommenders comprises applying a default weight to one or more of the recommenders. 11. The method of claim 4 , further comprising normalizing the scores provided by each of the recommenders to produce normalized scores. 12. The method of claim 11 , wherein combining the scores with the weights to produce overall scores comprises combining the normalized scores with the weights to produce "
+            },
+            {
+              "chunk_char_start": 4793,
+              "chunk_char_end": 5218,
+              "text": "default weight to one or more of the recommenders. 11. The method of claim 4 , further comprising normalizing the scores provided by each of the recommenders to produce normalized scores. 12. The method of claim 11 , wherein combining the scores with the weights to produce overall scores comprises combining the normalized scores with the weights to produce the overall scores. 13. The method of claim 4 , wherein at least s"
+            },
+            {
+              "chunk_char_start": 4852,
+              "chunk_char_end": 5277,
+              "text": "method of claim 4 , further comprising normalizing the scores provided by each of the recommenders to produce normalized scores. 12. The method of claim 11 , wherein combining the scores with the weights to produce overall scores comprises combining the normalized scores with the weights to produce the overall scores. 13. The method of claim 4 , wherein at least some of the recommenders are operated by recommender provide"
+            },
+            {
+              "chunk_char_start": 4895,
+              "chunk_char_end": 5320,
+              "text": "alizing the scores provided by each of the recommenders to produce normalized scores. 12. The method of claim 11 , wherein combining the scores with the weights to produce overall scores comprises combining the normalized scores with the weights to produce the overall scores. 13. The method of claim 4 , wherein at least some of the recommenders are operated by recommender providers separate from an operator of the persona"
+            },
+            {
+              "chunk_char_start": 4937,
+              "chunk_char_end": 5362,
+              "text": " recommenders to produce normalized scores. 12. The method of claim 11 , wherein combining the scores with the weights to produce overall scores comprises combining the normalized scores with the weights to produce the overall scores. 13. The method of claim 4 , wherein at least some of the recommenders are operated by recommender providers separate from an operator of the personalization network service. 14. A computer-i"
+            }
+          ],
+          "lexical_occurrence_count": 13
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "Scores are combined with weights to produce overall scores.",
+          "keywords": "combined with",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284383,
+          "truncate": "",
+          "source": "Weight",
+          "target": "Score",
+          "edge_index": 177,
+          "source_chunks": [
+            "US7991757B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The optimization module normalizes the associated scores.",
+          "keywords": "normalizes",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284383,
+          "truncate": "",
+          "source": "Optimization Module",
+          "target": "Score",
+          "edge_index": 556,
+          "source_chunks": [
+            "US7991757B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Combining scores with weights produces overall scores.",
+          "keywords": "produces",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284383,
+          "truncate": "",
+          "source": "Score",
+          "target": "Overall Score",
+          "edge_index": 558,
+          "source_chunks": [
+            "US7991757B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8069128B2",
+      "file_paths": [
+        "US8069128B2.txt"
+      ],
+      "source_chunks": [
+        "US8069128B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8069128B2",
+          "full_doc_id": "US8069128B2",
+          "file_path": "US8069128B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 545,
+          "content_sha256": "5f3c413a5144fe5d3a95802edf16f3f070a0a6b7d0c00a2440d10ace81083b2e",
+          "exact_doc_char_start": 6097,
+          "exact_doc_char_end": 9043,
+          "content": "associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 13. The method of claim 12 , wherein the second classification data is deleted from the client device upon providing the display of information. 14. The method of claim 12 , wherein the multi-pass message filter is selectable for execution by a user through an interface on the client device; and wherein the first message filter is automatically executed independent of a user action. 15. The method of claim 12 , wherein the second classification data is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content. 16. The method of claim 12 , wherein the second classification data is generated based on which folder each of the plurality of messages resides. 17. A system for enabling a communications over a network, comprising: a network device configured to perform actions, including: receiving a plurality of messages; assigning the plurality of messages to a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; and communicating the messages over the network to the plurality of different message folders; and a client device configured to perform actions, including: executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store at the client device; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 18. The system of claim 17 , wherein the second classification data is deleted from the client device upon providing the display of information. 19. The system of claim 17 , wherein execution of the multi-pass message filter is user selectable. 20. The system of claim 17 , wherein the second classification data is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content.",
+          "llm_cache_list": [
+            "default:extract:0a9b3ee0b43aab318811b9838cc3fba4"
+          ],
+          "chunk_id": "US8069128B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US8069128B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "20a4c3ded32f36dca72d7e0e52d7c5a264c15da3a1996ddc5c9436555a02655e"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 17,
+              "raw_line": "entity<|#|>Score<|#|>Data<|#|>A value assigned to each message by the second pass of the multi-pass message filter, used to indicate whether the message is sorted into an incorrect message folder.",
+              "fields": [
+                "entity",
+                "Score",
+                "Data",
+                "A value assigned to each message by the second pass of the multi-pass message filter, used to indicate whether the message is sorted into an incorrect message folder."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 27,
+              "raw_line": "relation<|#|>Score<|#|>Message<|#|>indicates sorting of<|#|>Each message's respective score indicates whether the message is sorted into an incorrect message folder.",
+              "fields": [
+                "relation",
+                "Score",
+                "Message",
+                "indicates sorting of",
+                "Each message's respective score indicates whether the message is sorted into an incorrect message folder."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 1809,
+              "chunk_char_end": 2234,
+              "text": "persistent memory store at the client device; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with a"
+            },
+            {
+              "chunk_char_start": 1921,
+              "chunk_char_end": 2346,
+              "text": "he multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the ident"
+            }
+          ],
+          "lexical_occurrence_count": 2
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "Each message's respective score indicates whether the message is sorted into an incorrect message folder.",
+          "keywords": "indicates sorting of",
+          "source_id": "US8069128B2-chunk-001",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "Score",
+          "target": "Message",
+          "edge_index": 559,
+          "source_chunks": [
+            "US8069128B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "Scores are combined with weights to produce overall scores.",
+      "keywords": "combined with",
+      "source_id": "US7991757B2-chunk-000",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793284383,
+      "truncate": "",
+      "source": "Weight",
+      "target": "Score",
+      "edge_index": 177,
+      "source_chunks": [
+        "US7991757B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US7991757B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The optimization module normalizes the associated scores.",
+      "keywords": "normalizes",
+      "source_id": "US7991757B2-chunk-000",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793284383,
+      "truncate": "",
+      "source": "Optimization Module",
+      "target": "Score",
+      "edge_index": 556,
+      "source_chunks": [
+        "US7991757B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US7991757B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Combining scores with weights produces overall scores.",
+      "keywords": "produces",
+      "source_id": "US7991757B2-chunk-000",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793284383,
+      "truncate": "",
+      "source": "Score",
+      "target": "Overall Score",
+      "edge_index": 558,
+      "source_chunks": [
+        "US7991757B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US7991757B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Each message's respective score indicates whether the message is sorted into an incorrect message folder.",
+      "keywords": "indicates sorting of",
+      "source_id": "US8069128B2-chunk-001",
+      "file_path": "US8069128B2.txt",
+      "created_at": 1793284415,
+      "truncate": "",
+      "source": "Score",
+      "target": "Message",
+      "edge_index": 559,
+      "source_chunks": [
+        "US8069128B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8069128B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

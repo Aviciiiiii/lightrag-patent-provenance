@@ -1,0 +1,16 @@
+{
+  "generated_utc": "2026-10-29T16:15:52.858229+00:00",
+  "calls_total": 21,
+  "llm_calls": 21,
+  "embedding_calls": 0,
+  "prompt_tokens": 300642,
+  "completion_tokens": 6454,
+  "cached_input_tokens": 254848,
+  "reasoning_tokens": 0,
+  "upper_price_estimate_cny": 0.652916,
+  "cache_aware_price_estimate_cny": 0.15341391999999998,
+  "not_invoice": true,
+  "reserved_unknown_cny": 0,
+  "failed_calls": [],
+  "truncated_calls": []
+}

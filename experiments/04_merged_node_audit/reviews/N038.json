@@ -1,0 +1,263 @@
+{
+  "audit_id": "N038",
+  "node_id": "Computing Devices",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两来源均指执行计算/程序操作的一台或多台设备；ETL历史事件触发与查询翻译属于不同应用，不能据此判设备概念误并。",
+  "class_instance_interpretation_zh": "共同计算设备类；ETL服务中的设备集合与query翻译系统中的设备集合是各自文档局部实例，不表示同一部署或同一机器。",
+  "concept_class_vs_local_instance": "shared_class; document-local instances remain distinct",
+  "source_assessments": [
+    {
+      "publication_number": "US11423041B2",
+      "evidence_quote": "storing program instructions that when executed on or across one or more computing devices, cause the one or more computing devices to implement:",
+      "claim_or_section": "Claim 15",
+      "source_chunk_ids": [
+        "US11423041B2-chunk-001"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US11423041B2-chunk-001"
+      ],
+      "claim_number": 15,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 65,
+        "indexed_document_char_offset": 7772
+      },
+      "role_zh": "执行数据目录记录、条件评估及ETL事件触发指令的一台或多台设备。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk001实体和存储介质边直接对应Claim15，并由Claim16/17延续。",
+        "raw_records": [
+          {
+            "chunk_id": "US11423041B2-chunk-001",
+            "content_sha256": "8f3d13a18781a5fb01b8d2de56b03acd746fc3ace6168e4b910162e77bfec7fb",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+                "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 20,
+                "raw_line": "entity<|#|>Computing Devices<|#|>Artifact<|#|>One or more devices on or across which the stored program instructions are executed.",
+                "fields": [
+                  "entity",
+                  "Computing Devices",
+                  "Artifact",
+                  "One or more devices on or across which the stored program instructions are executed."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+                "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 50,
+                "raw_line": "relation<|#|>Non-Transitory Computer-Readable Storage Media<|#|>Computing Devices<|#|>executed on<|#|>The program instructions stored on the storage media are executed on or across the computing devices.",
+                "fields": [
+                  "relation",
+                  "Non-Transitory Computer-Readable Storage Media",
+                  "Computing Devices",
+                  "executed on",
+                  "The program instructions stored on the storage media are executed on or across the computing devices."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US11423041B2-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "ce7ec20d762fc03a6dbf15a47676d5d280cab51146efab3b27b210b0f378a5ce"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The program instructions stored on the storage media are executed on or across the computing devices.",
+          "keywords": "executed on",
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Computing Devices",
+          "target": "Non-Transitory Computer-Readable Storage Media",
+          "edge_index": 849,
+          "source_chunks": [
+            "US11423041B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8655901B1",
+      "evidence_quote": "translating, with a system comprising one or more computing devices, the collection of annotated queries in the first language into a translated collection of queries in a second language;",
+      "claim_or_section": "Claim 15",
+      "source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ],
+      "claim_number": 15,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 1132,
+        "indexed_document_char_offset": 8282
+      },
+      "role_zh": "构成系统来翻译已标注query集合的计算设备。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk001实体和Query关系直接对应Claim15。",
+        "raw_records": [
+          {
+            "chunk_id": "US8655901B1-chunk-001",
+            "content_sha256": "5d0d79edafe5af7919f82cb1ee8099a3dec6b156ad11326e2bf75e47dad3f315",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 15,
+                "raw_line": "entity<|#|>Computing Devices<|#|>Artifact<|#|>One or more devices forming a system that translates the collection of annotated queries.",
+                "fields": [
+                  "entity",
+                  "Computing Devices",
+                  "Artifact",
+                  "One or more devices forming a system that translates the collection of annotated queries."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 32,
+                "raw_line": "relation<|#|>Computing Devices<|#|>Query<|#|>translation<|#|>A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries.",
+                "fields": [
+                  "relation",
+                  "Computing Devices",
+                  "Query",
+                  "translation",
+                  "A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US8655901B1-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "316996f6608a19543149f869b202a0f90c851b294a1aea1e4f2b52f923f5462b"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries.",
+          "keywords": "translation",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Computing Devices",
+          "edge_index": 776,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 2,
+    "observed_unsupported_edge": false,
+    "observed_unsupported_edge_definition": "true仅用于依据原文明确不支持的实际关系；类级概括/端点角色候选单列，不自动计入。",
+    "details_zh": "已逐条检查全部实际邻边及其source_id/file_path；各关系在所属专利中有对应陈述，未发现将另一专利特征直接写入本专利边描述的确证。共同节点容许潜在无作用域路径组合，但本审计没有执行或观察该传播。",
+    "edge_indices": [
+      776,
+      849
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 776,
+        "source": "Query",
+        "target": "Computing Devices",
+        "source_id": "US8655901B1-chunk-001",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries.",
+        "claim_or_section": "US8655901B1 Claim15",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 849,
+        "source": "Computing Devices",
+        "target": "Non-Transitory Computer-Readable Storage Media",
+        "source_id": "US11423041B2-chunk-001",
+        "file_path": "US11423041B2.txt",
+        "canonical_publications": [
+          "US11423041B2"
+        ],
+        "actual_description": "The program instructions stored on the storage media are executed on or across the computing devices.",
+        "claim_or_section": "US11423041B2 Claims15–17",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      }
+    ],
+    "observed_cross_publication_unsupported_edge": false
+  },
+  "limitations_zh": [
+    "本结果为AI辅助逐来源语义审阅，不是独立人工金标准；分类依赖所声明的类/实例粒度。",
+    "只审计第二轮既有20篇索引中的可见原chunk、原抽取与实际图邻边；原文范围为已索引的标题、摘要及Claims，未额外读取完整说明书或新语料，未调用模型API，也未进行新的检索/生成传播测试。",
+    "共享节点产生跨专利邻接不等于已观察到错误跨文档推理；边的source_id和file_path应保持作用域。"
+  ],
+  "review_method": "AI-assisted source-by-source reading; deterministic quote/coverage validation; no external model API",
+  "reviewed_utc": "2026-10-30T08:17:48.987604+00:00",
+  "dossier_sha256": "6bf696fd8cbda9cd25c2561fe6b39e9f56dfba8fcd6f387c78b9282e87cc4983",
+  "input_sha256": {
+    "round2_multisource_audit/dossiers/N038.json": "6bf696fd8cbda9cd25c2561fe6b39e9f56dfba8fcd6f387c78b9282e87cc4983",
+    "data/claims/US11423041B2.json": "0356d98469cafed1e4867806dcbfc7cc87bc83f274757db009123e4522083e2c",
+    "data/documents/US11423041B2.txt": "a0d9b984a960b410bc5cd730ae780285148b8066143065c16b49da9e8c18016f",
+    "data/claims/US8655901B1.json": "3c4320d6d4a3603680fed5c9a62944142f5443962d5efd343277600f79f8ce75",
+    "data/documents/US8655901B1.txt": "7d17f8090a784af8ad8372cd2c9c958ed21e29ac1078c9c368ef53f49d0632ad"
+  },
+  "source_and_raw_review_coverage": {
+    "publication_count": 2,
+    "source_chunk_ids_reviewed": [
+      "US11423041B2-chunk-001",
+      "US8655901B1-chunk-001"
+    ],
+    "all_source_chunks_read": true,
+    "all_raw_entity_and_relation_endpoint_rows_read": true,
+    "all_actual_incident_edges_reviewed": true
+  }
+}

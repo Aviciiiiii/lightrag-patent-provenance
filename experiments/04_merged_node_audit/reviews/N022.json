@@ -1,0 +1,341 @@
+{
+  "audit_id": "N022",
+  "node_id": "Network",
+  "category": "contextual_conflation",
+  "confidence": "medium",
+  "reason_zh": "US8095432B1 Claim 3 以朋友在内、非朋友在外来界定询问成员的社交关系网络；US9589231B2 Claim 20 则将 network 明确组成定义为诊断辅助系统和连接请求者/专家的用户设备集合。原实体描述沿用这两个不同的成员域，最终单节点却同时承载好友关系邻边与设备/系统组成邻边。两者可抽象为相互连接的集合，因此分类保留中等置信度；但这种极宽上位类没有表达当前具体 member network 与 device/system network 的不同语义约束。",
+  "class_instance_interpretation_zh": "当前标签混合了社交成员网络与系统/设备网络两个上下文意义。可以显式定义 Network 为相互连接的集合这一上位类并保留子类/实例范围；在这种 ontology 下，shared_broad_class 也是合理解释。当前图没有给定正式 ontology，C3 不是已证明的语义错误或 bug；本审核不把一个全局标签自动解释成同一物理网络或同一组织。",
+  "source_assessments": [
+    {
+      "publication_number": "US8095432B1",
+      "evidence_quote": "friends of the inquiring member are within a network of the inquiring member",
+      "claim_or_section": "Claim 3",
+      "claim_number": 3,
+      "role_zh": "按朋友/非朋友内外边界划分的社交成员网络。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8095432B1-chunk-000"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8095432B1-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8095432B1.json",
+        "claim_file_sha256": "d1aeb116b21db2124fd894640e5cdc35ae864c3dcd09f3574124493022707585",
+        "claim_number": 3
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "原实体 Concept 描述为 set of members，与 Claim 3 一致。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 24,
+            "raw_line": "entity<|#|>Network<|#|>Concept<|#|>The set of members connected to the inquiring member, within which friends reside and outside of which non-friends reside.",
+            "fields": [
+              "entity",
+              "Network",
+              "Concept",
+              "The set of members connected to the inquiring member, within which friends reside and outside of which non-friends reside."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 41,
+            "raw_line": "relation<|#|>Relationship Proximity<|#|>Network<|#|>friends within, non-friends outside<|#|>Relationship proximity is closer for friends within the network and farther for non-friends outside the network.",
+            "fields": [
+              "relation",
+              "Relationship Proximity",
+              "Network",
+              "friends within, non-friends outside",
+              "Relationship proximity is closer for friends within the network and farther for non-friends outside the network."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 50,
+            "raw_line": "relation<|#|>Inquiring Member<|#|>Network<|#|>has<|#|>The inquiring member has a network within which friends reside.",
+            "fields": [
+              "relation",
+              "Inquiring Member",
+              "Network",
+              "has",
+              "The inquiring member has a network within which friends reside."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The inquiring member has a network within which friends reside.",
+          "keywords": "has",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Inquiring Member",
+          "target": "Network",
+          "edge_index": 273,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Relationship proximity is closer for friends within the network and farther for non-friends outside the network.",
+          "keywords": "friends within,non-friends outside",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Relationship Proximity",
+          "target": "Network",
+          "edge_index": 283,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8095432B1-chunk-000",
+          "sha256": "870959f01fdf22e55223e95ba2ca5f25438debf5d1fc2aec28abb31eac4e2c83",
+          "characters": 6336
+        }
+      ]
+    },
+    {
+      "publication_number": "US9589231B2",
+      "evidence_quote": "A network comprising a system for diagnosis assistance and a set of user devices for linking requesters and experts with the system",
+      "claim_or_section": "Claim 20",
+      "claim_number": 20,
+      "role_zh": "由诊断辅助系统和用户设备构成、连接请求者与专家的系统网络。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9589231B2-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9589231B2-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9589231B2.json",
+        "claim_file_sha256": "6ffab90b44ab1b42f178a3876033f97c0a2a5b30908b21046af4aed39e994d6b",
+        "claim_number": 20
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "原实体将其标为 Organization，原文更直接支持系统架构；实体类型选择不能单独证明语义混并，但组成边和原文与社交成员域确实不同。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9589231B2-chunk-001",
+            "raw_record_id": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "cache_key": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 12,
+            "raw_line": "entity<|#|>Network<|#|>Organization<|#|>A network comprising a diagnosis assistance system and a set of user devices linking requesters and experts with the system.",
+            "fields": [
+              "entity",
+              "Network",
+              "Organization",
+              "A network comprising a diagnosis assistance system and a set of user devices linking requesters and experts with the system."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9589231B2-chunk-001",
+            "raw_record_id": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "cache_key": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 29,
+            "raw_line": "relation<|#|>Network<|#|>Diagnosis Assistance System<|#|>comprises<|#|>The network comprises a system for diagnosis assistance.",
+            "fields": [
+              "relation",
+              "Network",
+              "Diagnosis Assistance System",
+              "comprises",
+              "The network comprises a system for diagnosis assistance."
+            ]
+          },
+          {
+            "chunk_id": "US9589231B2-chunk-001",
+            "raw_record_id": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "cache_key": "default:extract:9a5bb334338ff1d19c20cbf0a96445bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 30,
+            "raw_line": "relation<|#|>Network<|#|>User Devices<|#|>comprises<|#|>The network comprises a set of user devices.",
+            "fields": [
+              "relation",
+              "Network",
+              "User Devices",
+              "comprises",
+              "The network comprises a set of user devices."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The network comprises a set of user devices.",
+          "keywords": "comprises",
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Network",
+          "target": "User Devices",
+          "edge_index": 336,
+          "source_chunks": [
+            "US9589231B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The network comprises a system for diagnosis assistance.",
+          "keywords": "comprises",
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Network",
+          "target": "Diagnosis Assistance System",
+          "edge_index": 337,
+          "source_chunks": [
+            "US9589231B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9589231B2-chunk-001",
+          "sha256": "6c471f8c23a679d6965872da70a3167aecd6312380e16ae9ba071b3f71d90f8c",
+          "characters": 3236
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 4,
+    "observed_unsupported_edge": false,
+    "details_zh": "4 条实际邻边按各自 source_id 都有本地支持。未发现实际边宣称社交好友是诊断系统设备，亦未做任何会造成这种解释的检索/生成运行；仅记录未分词义节点可能产生的跨来源邻接。",
+    "edge_indices": [
+      273,
+      283,
+      336,
+      337
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 273,
+        "source_id": "US8095432B1-chunk-000",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8095432B1 Claim 3",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 283,
+        "source_id": "US8095432B1-chunk-000",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8095432B1 Claim 3",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 336,
+        "source_id": "US9589231B2-chunk-001",
+        "canonical_publications": [
+          "US9589231B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9589231B2 Claim 20",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 337,
+        "source_id": "US9589231B2-chunk-001",
+        "canonical_publications": [
+          "US9589231B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9589231B2 Claim 20",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      }
+    ],
+    "retrieval_or_generation_propagation_tested": false
+  },
+  "limitations_zh": [
+    "这是 AI 辅助原文/抽取/图结构审阅，非独立人工标注 gold、非新的模型评判 API 实验。",
+    "仅审核当前保存的第二轮图快照与其来源块；概念合并不等于实例 sameAs，也没有进行跨专利路径检索或答案生成传播实验。",
+    "原文为已索引摘要及 Claims；没有用外部说明书填补缺失事实。原始文本中的格式缺陷保持原样。",
+    "边的端点顺序来自保存的无向图；语义方向按原关系描述核对，不把 source/target 字段顺序当作因果方向。",
+    "observed_unsupported_edge=false 表示本次检查未确认无原文支持的实际边，不是证明全图无误；关键词粒度/局部实施例范围的警示另记。",
+    "未给定显式类/实例 ontology。类别是基于具体词义及作用域的审阅标签，contextual_conflation 数量不是错误边数或代码 bug 率；Event/Network 的宽类解释可改变类别。",
+    "缓存提取行未保存 finish_reason 时不推定完整或截断；本审核只对实际保存的实体/关系行与当前已入图事实作语义核验。"
+  ],
+  "ontology_sensitivity": {
+    "explicit_ontology_available": false,
+    "alternative_shared_broad_class_plausible": true,
+    "interpretation_zh": "若全局节点被明确规定为足够宽的 occurrence/network 类，并保留文档内谓词范围，宽类解释可以成立；本次 C3 仅记录具体词义/角色范围折叠。"
+  },
+  "review_method": {
+    "reviewer": "AI-assisted Codex content review",
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "all_source_publications_reviewed": 2,
+    "all_source_chunks_reviewed": 2,
+    "all_actual_incident_edges_reviewed": 4,
+    "raw_input_kind": "saved extraction rows; no new extraction",
+    "review_protocol_sha256": "bbed066b8051df60997798d319549164d750797ebef3d7c1e86d69ffc6092255",
+    "dossier_sha256": "d9f43295358caa3d8d61dc78f86df3765fd6b0ee49965b5177e430557a630c6e",
+    "generated_utc": "2026-10-30T08:21:11.051430+00:00"
+  },
+  "graph_node_description_reviewed": "The set of members connected to the inquiring member, within which friends reside and outside of which non-friends reside.<SEP>A network comprising a diagnosis assistance system and a set of user devices linking requesters and experts with the system."
+}

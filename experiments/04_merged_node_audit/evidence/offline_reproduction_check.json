@@ -1,0 +1,54 @@
+{
+  "checked_utc": "2026-10-30T08:35:06.421447+00:00",
+  "temporary_extraction_root": "<TMP>/lightrag_round2_readonly_repro_nw9iqho_",
+  "all_steps_passed": true,
+  "reviewed_nodes": 38,
+  "source_memberships": 98,
+  "validation_errors": [],
+  "category_counts": {
+    "shared_specific_concept": 3,
+    "shared_broad_class": 29,
+    "contextual_conflation": 6,
+    "insufficient_evidence": 0
+  },
+  "new_model_api_calls": 0,
+  "secret_configuration_read": false,
+  "steps": [
+    {
+      "script": "verify_package_contents.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"verified_files\": 170,\n  \"errors\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "round2_multisource_audit/scripts/build_inventory.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"created_utc\": \"2026-10-30T08:35:06.211184+00:00\",\n  \"scope\": \"round2 baseline\",\n  \"nodes\": 612,\n  \"edges\": 994,\n  \"documents\": 20,\n  \"chunks\": 48,\n  \"multisource_nodes\": 38,\n  \"multisource_fraction\": 0.06209150326797386,\n  \"multi_node_source_memberships\": 98,\n  \"max_publication_count\": 9,\n  \"publication_count_histogram\": {\n    \"2\": 28,\n    \"3\": 6,\n    \"5\": 3,\n    \"9\": 1\n  },\n  \"missing_doc_mappings\": [],\n  \"mapping_conflicts\": [],\n  \"unmapped_node_source_ids\": [],\n  \"graph_vs_entity_store_source_differences\": [],\n  \"node_filepath_vs_chunk_publication_differences\": [],\n  \"graph_field_only_multi_node_count\": 38,\n  \"exact_chunk_in_doc_matches\": 48,\n  \"new_model_calls\": 0,\n  \"new_embedding_calls\": 0,\n  \"credentials_read\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "round2_multisource_audit/scripts/validate_reviews.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"checked_utc\": \"2026-10-30T08:35:06.257491+00:00\",\n  \"expected_nodes\": 38,\n  \"reviewed_nodes\": 38,\n  \"pending_nodes\": [],\n  \"reviewed_source_memberships\": 98,\n  \"unique_incident_edges\": 266,\n  \"incident_edge_visits\": 307,\n  \"errors\": [],\n  \"original_inputs_changed\": [],\n  \"structural_quote_validation_only\": \"Passing verifies coverage, exact source quotes and graph endpoint identifiers, not truth of semantic judgements.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "round2_multisource_audit/source_mapping_audit.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"mapping_complete_with_no_detected_schema_mismatches\",\n  \"counts\": {\n    \"documents\": 20,\n    \"text_chunks\": 48,\n    \"graph_nodes\": 612,\n    \"graph_edges\": 994,\n    \"entity_tracking_rows\": 612,\n    \"relation_tracking_rows\": 994,\n    \"document_entity_recovery_rows\": 20,\n    \"document_relation_recovery_rows\": 20,\n    \"chunks_with_any_entity_or_relation_tracking\": 48,\n    \"chunks_without_any_tracking\": []\n  },\n  \"nonzero_mapping_problems\": {},\n  \"per_kind\": {\n    \"node\": {\n      \"graph_count\": 612,\n      \"tracking_rows\": 612,\n      \"graph_source_chunk_incidences\": 976,\n      \"tracking_chunk_incidences\": 976,\n      \"max_source_chunks\": 14,\n      \"max_file_paths\": 9,\n      \"max_resolved_documents\": 9,\n      \"source_chunk_count_histogram\": {\n        \"1\": 362,\n        \"2\": 190,\n        \"3\": 35,\n        \"4\": 15,\n        \"5\": 4,\n        \"6\": 2,\n        \"7\": 2,\n        \"9\": 1,\n        \"14\": 1\n      },\n      \"file_path_count_histogram\": {\n        \"1\": 574,\n        \"2\": 28,\n        \"3\": 6,\n        \"5\": 3,\n        \"9\": 1\n      },\n      \"resolved_document_count_histogram\": {\n        \"1\": 574,\n        \"2\": 28,\n        \"3\": 6,\n        \"5\": 3,\n        \"9\": 1\n      },\n      \"source_truncate_fields\": [],\n      \"filepath_truncation_placeholders\": []\n    },\n    \"edge\": {\n      \"graph_count\": 994,\n      \"tracking_rows\": 994,\n      \"graph_source_chunk_incidences\": 1155,\n      \"tracking_chunk_incidences\": 1155,\n      \"max_source_chunks\": 4,\n      \"max_file_paths\": 4,\n      \"max_resolved_documents\": 4,\n      \"source_chunk_count_histogram\": {\n        \"1\": 851,\n        \"2\": 128,\n        \"3\": 12,\n        \"4\": 3\n      },\n      \"file_path_count_histogram\": {\n        \"1\": 990,\n        \"2\": 3,\n        \"4\": 1\n      },\n      \"resolved_document_count_histogram\": {\n        \"1\": 990,\n        \"2\": 3,\n        \"4\": 1\n      },\n      \"source_truncate_fields\": [],\n      \"filepath_truncation_placeholders\": []\n    }\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "round2_multisource_audit/scripts/check_original_documents.py",
+      "exit_code": 0,
+      "stdout": "{\"documents\": 20, \"all_byte_exact_equal\": false, \"all_equal_after_removing_one_terminal_LF\": true, \"interpretation\": \"Each saved original document has one terminal newline removed in the indexed full-doc text. No interior/content difference; no original file was changed. Quoted Claim/chunk coordinates refer to the indexed full-doc text.\"}\n",
+      "stderr": ""
+    },
+    {
+      "script": "round2_multisource_audit/scripts/build_report.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"created_utc\": \"2026-10-30T08:35:06.388520+00:00\",\n  \"category_counts\": {\n    \"shared_broad_class\": 29,\n    \"contextual_conflation\": 6,\n    \"shared_specific_concept\": 3\n  },\n  \"records\": 38,\n  \"source_records\": 98,\n  \"report_files\": [\n    {\n      \"name\": \"LightRAG_round2_multisource_node_audit_zh.html\",\n      \"bytes\": 207886,\n      \"sha256\": \"3e92c2484142a41bb37c67041f6c36b266f2c42537b5f6cdf0db23d8262224c4\"\n    },\n    {\n      \"name\": \"round2_multisource_nodes.csv\",\n      \"bytes\": 106424,\n      \"sha256\": \"bc5f0e060d0727852ba5f2f77dd08bd0876b478355016685f212b3f5777b36bf\"\n    },\n    {\n      \"name\": \"round2_multisource_nodes.json\",\n      \"bytes\": 1604134,\n      \"sha256\": \"3082530032e82be44cf37456a4ace18f3682612572ed8baae26afbf1571fd8c2\"\n    },\n    {\n      \"name\": \"round2_multisource_sources.csv\",\n      \"bytes\": 383542,\n      \"sha256\": \"90711d7c3121aa74a0e6531600fe612efe2c9ea997c5dd4844207e3a155e473a\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,1406 @@
+{
+  "node_id": "Data Processing System",
+  "entity_type": "artifact",
+  "graph_source_chunks": [
+    "US9298709B2-chunk-000",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001"
+  ],
+  "entity_chunk_store_sources": [
+    "US9298709B2-chunk-000",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001"
+  ],
+  "all_source_chunks": [
+    "US9298709B2-chunk-000",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001"
+  ],
+  "canonical_publications": [
+    "US9298709B2",
+    "US9304738B1"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US9298709B2.txt",
+    "US9304738B1.txt"
+  ],
+  "graph_file_paths": [
+    "US9298709B2.txt",
+    "US9304738B1.txt"
+  ],
+  "graph_file_path_publications": [
+    "US9298709B2",
+    "US9304738B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US9298709B2-chunk-000",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US9298709B2-chunk-000",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001"
+  ],
+  "graph_node": {
+    "entity_id": "Data Processing System",
+    "entity_type": "artifact",
+    "description": "A computer system (10) that visualizes data from an IP rights database as a geographic map with a viewable area, generating and updating data visualizations based on the current map coordinates and restriction criteria.<SEP>A system having one or more processors and memory configured to evaluate information via a computer network, including receiving user interest indications, determining keyword weights, ranking keywords, and selecting advertisements.<SEP>A computer-based system that detects user interest, identifies keywords, determines keyword weights, receives content requests, ranks keywords, and selects content for display with information resources.",
+    "source_id": "US9298709B2-chunk-000<SEP>US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+    "file_path": "US9298709B2.txt<SEP>US9304738B1.txt",
+    "created_at": 1793284192,
+    "truncate": "",
+    "id": "Data Processing System"
+  },
+  "incident_edge_count": 19,
+  "audit_id": "N001",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US9298709B2",
+      "file_paths": [
+        "US9298709B2.txt"
+      ],
+      "source_chunks": [
+        "US9298709B2-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9298709B2",
+          "full_doc_id": "US9298709B2",
+          "file_path": "US9298709B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "8fe0cc191a15103560ecc685a97b69c5cc54731822d7f184591eb321f59192bf",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6353,
+          "content": "Publication number: US9298709B2\nTitle: Computer system to visualize data from an IP rights database\n\nABSTRACT\nA system ( 10 ) to visualize data from an IP rights database as a geographic map having a viewable area. A map display change monitor ( 23 ) receives a map change message in relation to a change in the viewable area of the geographic map and generates a display change notification, which includes the geographic coordinates of the current viewable area of the geographic map. An IP rights generator ( 37 ) generates a list of IP rights from the IP rights database, in which the geographic address of at least one owner of each IP right is within the geographic area defined by the current map coordinates and also restricts the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights. An information display generator ( 26 ) generates and displays one or more data visualizations derived from the restricted list of IP rights and updates data visualizations upon receiving each successive display change notification.\n\nCLAIMS\nThe invention claimed is: 1. A data processing system to visualise data from an IP rights database comprising: a geographic map display interface to display a geographic map having a viewable area; a map display change monitor to: receive and store at least recent geographic co-ordinates of the viewable area of the geographic map, compare current geographic co-ordinates with immediate previously stored geographic co-ordinates, and generate a display change notification when the current geographic co-ordinates do not match immediate previously stored geographic co-ordinates, wherein the map display change monitor generates the display change notification after a pre-defined time period elapses and there has been no change in the viewable area of the geographic map; a restriction criteria interface to ascertain one or more restriction criteria related to the IP rights; an IP rights list generator to generate a list of IP rights, from the IP rights database, in which a geographic address of at least one owner of each IP right is within a geographic area defined by geographic co-ordinates of the current viewable area of the geographic map, and restrict the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights; and an information display generator to generate and display an information pane containing one or more data visualizations derived from the restricted list of IP rights; wherein, in use, upon receiving each successive display change notification, the information display generator generates or updates each data visualization displayed in the information pane. 2. A system according to claim 1 , wherein the map display change monitor stores the geographic co-ordinates of the viewable area of the geographic map for an entire session, or multiple sessions, to thereby provide a user history of use of the system. 3. A system according to claim 1 , wherein the one or more restriction criteria comprises a default setting of restriction criteria, or one or more user-selectable restriction criteria. 4. A system according to claim 1 , wherein the restriction criteria include at least one criterion from the following group: IP jurisdiction of the IP rights; type of IP right; technology type; industry type; filing date of the IP right; the number of applications for IP rights that an IP right owner has filed; whether the IP right owner is an individual or a corporation; whether a representative is listed for the IP right; patent IP rights that are classified in one or more defined IPC classes; trademark IP rights that are classified in a given number of classes; and trademark IP rights classified in one or more defined classes. 5. A system according to claim 1 , wherein the one or more data visualizations comprise a default setting of data visualizations based on a default setting of the restriction criteria, or user-selectable data visualizations based on the restriction criteria. 6. A system according to claim 1 , wherein it further comprises a data visualization selector to allow the user to select one or more data visualizations based on the restriction criteria. 7. A system according to claim 1 , wherein the data visualizations include at least one data visualization from the following group: a chart of the types of technology to which the IP rights relate; a chart of the types of industries to which the IP rights relate; a filing trend analysis chart for the IP rights; an IP rights owner filing size chart. 8. A computer system to visualise data from an IP rights database comprising: a geographic map display interface to display a geographic map having a viewable area; a map display change monitor to: receive a map change message in relation to a change in the viewable area of the geographic map, obtain geographic co-ordinates of a current viewable area of the geographic map, and generate a display change notification including the geographic co-ordinates of the current viewable area of the geographic map, wherein the display change notification is generated after a pre-defined time period elapses and there has been no change in the viewable area of the geographic map; a restriction criteria interface to ascertain one or more restriction criteria related to the IP rights; an IP rights list generator to generate a list of IP rights, from the IP rights database, in which a geographic address of at least one owner of each IP right is within a geographic area defined by geographic co-ordinates of the current viewable area of the geographic map, and restrict the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights; and an information display generator to generate and display an information pane containing one or more data visualizations derived from the restricted list of IP rights; wherein, in use, upon receiving each successive display change notification, the information display generator generates or updates each data visualization displayed in the information pane based on the geographic co-ordinates of the current viewable area of the geographic map display corresponding to each successive display change notification",
+          "llm_cache_list": [
+            "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b"
+          ],
+          "chunk_id": "US9298709B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9298709B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "5775e20224f308a402976d5f7e41e8462349fac1d1c84220f3cd37607141aaaa"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 2,
+              "raw_line": "entity<|#|>Data Processing System<|#|>Artifact<|#|>A computer system (10) that visualizes data from an IP rights database as a geographic map with a viewable area, generating and updating data visualizations based on the current map coordinates and restriction criteria.",
+              "fields": [
+                "entity",
+                "Data Processing System",
+                "Artifact",
+                "A computer system (10) that visualizes data from an IP rights database as a geographic map with a viewable area, generating and updating data visualizations based on the current map coordinates and restriction criteria."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 21,
+              "raw_line": "relation<|#|>Data Processing System<|#|>IP Rights Database<|#|>data source, visualization<|#|>The data processing system visualizes data from the IP rights database.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "IP Rights Database",
+                "data source, visualization",
+                "The data processing system visualizes data from the IP rights database."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 22,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Geographic Map<|#|>display, visualization<|#|>The data processing system displays a geographic map having a viewable area.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Geographic Map",
+                "display, visualization",
+                "The data processing system displays a geographic map having a viewable area."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 23,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Map Display Change Monitor<|#|>component, comprises<|#|>The data processing system comprises the map display change monitor.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Map Display Change Monitor",
+                "component, comprises",
+                "The data processing system comprises the map display change monitor."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 24,
+              "raw_line": "relation<|#|>Data Processing System<|#|>IP Rights List Generator<|#|>component, comprises<|#|>The data processing system comprises the IP rights list generator.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "IP Rights List Generator",
+                "component, comprises",
+                "The data processing system comprises the IP rights list generator."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Information Display Generator<|#|>component, comprises<|#|>The data processing system comprises the information display generator.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Information Display Generator",
+                "component, comprises",
+                "The data processing system comprises the information display generator."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 26,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Restriction Criteria Interface<|#|>component, comprises<|#|>The data processing system comprises the restriction criteria interface.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Restriction Criteria Interface",
+                "component, comprises",
+                "The data processing system comprises the restriction criteria interface."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 27,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Geographic Map Display Interface<|#|>component, comprises<|#|>The data processing system comprises the geographic map display interface.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Geographic Map Display Interface",
+                "component, comprises",
+                "The data processing system comprises the geographic map display interface."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 28,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Data Visualization Selector<|#|>component, comprises<|#|>The data processing system further comprises a data visualization selector.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Data Visualization Selector",
+                "component, comprises",
+                "The data processing system further comprises a data visualization selector."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 47,
+              "raw_line": "relation<|#|>US9298709B2<|#|>Data Processing System<|#|>describes, discloses<|#|>The patent publication US9298709B2 describes a data processing system to visualize data from an IP rights database.",
+              "fields": [
+                "relation",
+                "US9298709B2",
+                "Data Processing System",
+                "describes, discloses",
+                "The patent publication US9298709B2 describes a data processing system to visualize data from an IP rights database."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 956,
+              "chunk_char_end": 1398,
+              "text": "ns derived from the restricted list of IP rights and updates data visualizations upon receiving each successive display change notification.\n\nCLAIMS\nThe invention claimed is: 1. A data processing system to visualise data from an IP rights database comprising: a geographic map display interface to display a geographic map having a viewable area; a map display change monitor to: receive and store at least recent geographic co-ordinates of t"
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The patent publication US9298709B2 describes a data processing system to visualize data from an IP rights database.",
+          "keywords": "describes,discloses",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "US9298709B2",
+          "target": "Data Processing System",
+          "edge_index": 0,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system visualizes data from the IP rights database.",
+          "keywords": "data source,visualization",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "IP Rights Database",
+          "edge_index": 1,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system displays a geographic map having a viewable area.",
+          "keywords": "display,visualization",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Geographic Map",
+          "edge_index": 2,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system comprises the map display change monitor.",
+          "keywords": "component,comprises",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Map Display Change Monitor",
+          "edge_index": 3,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system comprises the IP rights list generator.",
+          "keywords": "component,comprises",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "IP Rights List Generator",
+          "edge_index": 4,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system comprises the information display generator.",
+          "keywords": "component,comprises",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Information Display Generator",
+          "edge_index": 5,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system comprises the restriction criteria interface.",
+          "keywords": "component,comprises",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Restriction Criteria Interface",
+          "edge_index": 6,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system comprises the geographic map display interface.",
+          "keywords": "component,comprises",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Geographic Map Display Interface",
+          "edge_index": 7,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system further comprises a data visualization selector.",
+          "keywords": "component,comprises",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Data Visualization Selector",
+          "edge_index": 8,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "file_paths": [
+        "US9304738B1.txt"
+      ],
+      "source_chunks": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9304738B1",
+          "full_doc_id": "US9304738B1",
+          "file_path": "US9304738B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "bf269ef3cfec2756c71ada433b655ddffc3b98b38e15a717a03facdb173d7546",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6516,
+          "content": "Publication number: US9304738B1\nTitle: Systems and methods for selecting content using weighted terms\n\nABSTRACT\nSystems and methods for evaluating information via a computer network using weighted terms are provided. A data processing system can detect an indication of user interest in subject matter of an information resource, and can identify a plurality of keywords associated with the subject matter. The data processing system can determine a weight for each of the plurality of keywords for the information resource. The data processing system can receive a request for content to provide for display with the information resource, and can evaluate the weight of each of the plurality of keywords associated with the information resource to determine one or more keywords to use for content selection. The data processing system can select content to provide for display with the information resource based at least in part on the selected keyword(s) or the weight associated with the selected keyword(s).\n\nCLAIMS\nWhat is claimed is: 1. A computer implemented method of evaluating information via a computer network, comprising: receiving, by a data processing system via the computer network, an indication of user interest of a first user in a first advertisement displayed on a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identifying, by the data processing system from a database, a plurality of keywords of the first advertisement using the unique identifier of the parked domain web page; determining, by the data processing system, for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement displayed on the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receiving, by the data processing system, an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determining, by the data processing system, a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receiving, by the data processing system, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; ranking, by the data processing system, the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and selecting, by the data processing system, a third advertisement to provide for display with the parked domain web page based at least in part on the first keyword selected as the highest ranked keyword, wherein the third advertisement is different from the first advertisement and the second advertisement. 2. The method of claim 1 , wherein the third advertisement includes a first content having the first keyword and a second content having the first keyword. 3. The method of claim 1 , further comprising: ranking, for the parked domain web page, the plurality of keywords based on the weight of each of the plurality of keywords; and wherein the first keyword has a top ranking of the plurality of keywords. 4. The method of claim 1 , wherein the plurality of keywords includes the first keyword associated with the first advertisement displayed on the parked domain web page and a third keyword associated with the third advertisement displayed on the parked domain web page. 5. The method of claim 1 , further comprising: receiving an indication of user interest in a fourth advertisement displayed on the parked domain web page, the fourth advertisement associated with the first keyword. 6. The method of claim 1 , further comprising: determining the weight of each of the plurality of keywords based on a characteristic associated with the user interest of the first user in the first advertisement display on the parked domain web page, the characteristic including at least one of a temporal characteristic, a day characteristic, a web page content slot characteristic, a monetary characteristic, and a performance characteristic. 7. The method of claim 1 , wherein the user interest of the first user includes the click. 8. The method of claim 1 , wherein the weight of each of the plurality of keywords associated with the first advertisement displayed on the parked domain web page is specific to the parked domain web page. 9. The method of claim 1 , further comprising: selecting the second keyword based on the weight of each of the plurality of keywords, wherein the first advertisement is associated with the first keyword and the second keyword. 10. The method of claim 1 , further comprising: assigning the weight to each of the plurality of keywords based on a number of user interactions with corresponding advertisements when the corresponding advertisements were previously displayed on the parked domain web page having the unique identifier. 11. The method of claim 1 , further comprising: receiving the indication of user interaction with the first advertisement displayed on the parked domain web page having the unique identifier, the first advertisement corresponding to the first keyword of the plurality of keywords; responsive to the indication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords with the parked domain web page having the unique identifier. 12. The method of claim 1 , further comprising: responsive to receiving the request for content, accessing the database storing",
+          "llm_cache_list": [
+            "default:extract:8f267c1e1e92c895ba038e71099892c6"
+          ],
+          "chunk_id": "US9304738B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9304738B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "21acc4a419571a4e62cda9bb681542631b8c56457d7bc8ce53809ac0c075d793"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 2,
+              "raw_line": "entity<|#|>Data Processing System<|#|>Artifact<|#|>A computer-based system that detects user interest, identifies keywords, determines keyword weights, receives content requests, ranks keywords, and selects content for display with information resources.",
+              "fields": [
+                "entity",
+                "Data Processing System",
+                "Artifact",
+                "A computer-based system that detects user interest, identifies keywords, determines keyword weights, receives content requests, ranks keywords, and selects content for display with information resources."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 29,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Parked Domain Web Page<|#|>content provision, advertisement display<|#|>The data processing system provides content and advertisements for display with the parked domain web page.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Parked Domain Web Page",
+                "content provision, advertisement display",
+                "The data processing system provides content and advertisements for display with the parked domain web page."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 30,
+              "raw_line": "relation<|#|>Data Processing System<|#|>User Interest Indication<|#|>detection, receiving<|#|>The data processing system receives indications of user interest in advertisements displayed on the parked domain web page.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "User Interest Indication",
+                "detection, receiving",
+                "The data processing system receives indications of user interest in advertisements displayed on the parked domain web page."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 31,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Keyword<|#|>identification, weighting<|#|>The data processing system identifies keywords of advertisements and determines a weight for each keyword.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Keyword",
+                "identification, weighting",
+                "The data processing system identifies keywords of advertisements and determines a weight for each keyword."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 32,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Database<|#|>accessing, storing<|#|>The data processing system identifies keywords from the database and associates increased keyword weights with the parked domain web page in the database.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Database",
+                "accessing, storing",
+                "The data processing system identifies keywords from the database and associates increased keyword weights with the parked domain web page in the database."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 33,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Content Request<|#|>receiving<|#|>The data processing system receives a request for content to provide for display with the parked domain web page.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Content Request",
+                "receiving",
+                "The data processing system receives a request for content to provide for display with the parked domain web page."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 34,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Keyword Ranking<|#|>performing<|#|>The data processing system ranks keywords based on their weights to select a highest ranked keyword.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Keyword Ranking",
+                "performing",
+                "The data processing system ranks keywords based on their weights to select a highest ranked keyword."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 35,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Content Selection<|#|>performing<|#|>The data processing system selects an advertisement to provide for display based on the highest ranked keyword.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Content Selection",
+                "performing",
+                "The data processing system selects an advertisement to provide for display based on the highest ranked keyword."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 39,
+              "chunk_char_end": 481,
+              "text": "Systems and methods for selecting content using weighted terms\n\nABSTRACT\nSystems and methods for evaluating information via a computer network using weighted terms are provided. A data processing system can detect an indication of user interest in subject matter of an information resource, and can identify a plurality of keywords associated with the subject matter. The data processing system can determine a weight for each of the pluralit"
+            },
+            {
+              "chunk_char_start": 231,
+              "chunk_char_end": 673,
+              "text": "ing system can detect an indication of user interest in subject matter of an information resource, and can identify a plurality of keywords associated with the subject matter. The data processing system can determine a weight for each of the plurality of keywords for the information resource. The data processing system can receive a request for content to provide for display with the information resource, and can evaluate the weight of ea"
+            },
+            {
+              "chunk_char_start": 349,
+              "chunk_char_end": 791,
+              "text": "plurality of keywords associated with the subject matter. The data processing system can determine a weight for each of the plurality of keywords for the information resource. The data processing system can receive a request for content to provide for display with the information resource, and can evaluate the weight of each of the plurality of keywords associated with the information resource to determine one or more keywords to use for "
+            },
+            {
+              "chunk_char_start": 634,
+              "chunk_char_end": 1076,
+              "text": "urce, and can evaluate the weight of each of the plurality of keywords associated with the information resource to determine one or more keywords to use for content selection. The data processing system can select content to provide for display with the information resource based at least in part on the selected keyword(s) or the weight associated with the selected keyword(s).\n\nCLAIMS\nWhat is claimed is: 1. A computer implemented method o"
+            },
+            {
+              "chunk_char_start": 973,
+              "chunk_char_end": 1415,
+              "text": "associated with the selected keyword(s).\n\nCLAIMS\nWhat is claimed is: 1. A computer implemented method of evaluating information via a computer network, comprising: receiving, by a data processing system via the computer network, an indication of user interest of a first user in a first advertisement displayed on a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than conte"
+            },
+            {
+              "chunk_char_start": 1255,
+              "chunk_char_end": 1697,
+              "text": "irst advertisement displayed on a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identifying, by the data processing system from a database, a plurality of keywords of the first advertiseme"
+            },
+            {
+              "chunk_char_start": 1429,
+              "chunk_char_end": 1871,
+              "text": "a the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identifying, by the data processing system from a database, a plurality of keywords of the first advertisement using the unique identifier of the parked domain web page; determining, by the data processing system, for the parked domain web page, a weight of each of the plurality of"
+            },
+            {
+              "chunk_char_start": 1599,
+              "chunk_char_end": 2041,
+              "text": "g, by the data processing system from a database, a plurality of keywords of the first advertisement using the unique identifier of the parked domain web page; determining, by the data processing system, for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement displayed on the parked domain web page, and also based on historic perfor"
+            },
+            {
+              "chunk_char_start": 2213,
+              "chunk_char_end": 2655,
+              "text": "ord of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receiving, by the data processing system, an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determining, by the data processing"
+            },
+            {
+              "chunk_char_start": 2460,
+              "chunk_char_end": 2902,
+              "text": "user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determining, by the data processing system, a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receiving, by the data processing system, for a third user different from the first user and the second user, a"
+            },
+            {
+              "chunk_char_start": 2629,
+              "chunk_char_end": 3071,
+              "text": "ng, by the data processing system, a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receiving, by the data processing system, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; ranking, by the data processing system, the first keyword of the plurality of keywords and t"
+            },
+            {
+              "chunk_char_start": 2815,
+              "chunk_char_end": 3257,
+              "text": "rocessing system, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; ranking, by the data processing system, the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking hi"
+            }
+          ],
+          "lexical_occurrence_count": 13
+        },
+        {
+          "publication_number": "US9304738B1",
+          "full_doc_id": "US9304738B1",
+          "file_path": "US9304738B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 1200,
+          "content_sha256": "886071717df3356cda9c51bbd4b7299b9087e0e835cf5f86a477e6df3d50296d",
+          "exact_doc_char_start": 5970,
+          "exact_doc_char_end": 12622,
+          "content": "having the unique identifier, the first advertisement corresponding to the first keyword of the plurality of keywords; responsive to the indication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords with the parked domain web page having the unique identifier. 12. The method of claim 1 , further comprising: responsive to receiving the request for content, accessing the database storing the plurality of keywords and a second plurality of keywords corresponding to advertisements previously displayed on the parked domain web page; determining, for each of the second plurality of keywords, a weight based on a performance of the corresponding advertisement previously displayed on the parked domain web page having the unique identifier; comparing, for the parked domain web page, the weight for each of the second plurality of keywords and the plurality of keywords to select a highest weighted keyword, a weight of the highest weighted keyword satisfying the threshold weight; and using the highest weighted keyword to select the second advertisement to provide for display with the parked domain web page having the unique identifier. 13. A system to evaluate information via a computer network, comprising: a data processing system having one or more processors and memory, the data processing system configured to: receive an indication of user interest of a first user in a first advertisement displayed with a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identify a plurality of keywords associated with the first advertisement using the unique identifier of the parked domain web page; determine for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement of the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and select a third advertisement to provide for display with the parked domain web page based at least in part on the first keyword selected as the highest ranked keyword, wherein the third advertisement is different from the first advertisement and the second advertisement. 14. The system of claim 13 , wherein the data processing system is further configured to: rank, for the parked domain web page, the plurality of keywords based on the weight of each of the plurality of keywords; and evaluate the plurality of keywords to select the first keyword, wherein the first keyword has a top ranking of the plurality of keywords. 15. The system of claim 13 , wherein the plurality of keywords includes the first keyword associated with the first advertisement of the parked domain web page and a third keyword associated with the third advertisement of the parked domain web page. 16. The system of claim 13 , wherein the data processing system is further configured to: receive an indication of user interest in a fourth advertisement of the parked domain web page, the fourth advertisement associated with a third keyword of the plurality of keywords; determine a third weight of the third keyword; and identify one of the first keyword and the third keyword as the highest ranked keyword. 17. The system of claim 13 , wherein the data processing system is further configured to: receive the indication of user interest in the first advertisement, the first advertisement associated with the first keyword; and receive an indication of user interest in a third advertisement, the third advertisement associated with the first keyword. 18. A non-transitory computer readable medium having instructions to evaluate information, the instructions comprising instructions to: receive an indication of user interest of a first user in a first advertisement displayed with a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identify a plurality of keywords associated with the first advertisement using the unique identifier of the parked domain web page; determine for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement of the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user",
+          "llm_cache_list": [
+            "default:extract:01a1996f64d5c8dab6d049de495fe47c"
+          ],
+          "chunk_id": "US9304738B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US9304738B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "67aa8ef7561687895e22a86257706574a7ec37aba9fac32867efafbf1155f530"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 6,
+              "raw_line": "entity<|#|>Data Processing System<|#|>Artifact<|#|>A system having one or more processors and memory configured to evaluate information via a computer network, including receiving user interest indications, determining keyword weights, ranking keywords, and selecting advertisements.",
+              "fields": [
+                "entity",
+                "Data Processing System",
+                "Artifact",
+                "A system having one or more processors and memory configured to evaluate information via a computer network, including receiving user interest indications, determining keyword weights, ranking keywords, and selecting advertisements."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 23,
+              "raw_line": "relation<|#|>Data Processing System<|#|>User Interest Indication<|#|>receives, processes<|#|>The data processing system receives an indication of user interest of a user in an advertisement displayed with a parked domain web page.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "User Interest Indication",
+                "receives, processes",
+                "The data processing system receives an indication of user interest of a user in an advertisement displayed with a parked domain web page."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 24,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Keyword<|#|>identifies, determines weight<|#|>The data processing system identifies a plurality of keywords associated with an advertisement using the unique identifier and determines a weight of each keyword.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Keyword",
+                "identifies, determines weight",
+                "The data processing system identifies a plurality of keywords associated with an advertisement using the unique identifier and determines a weight of each keyword."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Advertisement<|#|>selects, provides for display<|#|>The data processing system selects an advertisement to provide for display with the parked domain web page based on the highest ranked keyword.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Advertisement",
+                "selects, provides for display",
+                "The data processing system selects an advertisement to provide for display with the parked domain web page based on the highest ranked keyword."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 26,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Database<|#|>accesses, stores<|#|>The data processing system accesses the database storing keywords and their weights.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Database",
+                "accesses, stores",
+                "The data processing system accesses the database storing keywords and their weights."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 27,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Parked Domain Web Page<|#|>provides content for<|#|>The data processing system provides content for display with the parked domain web page.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Parked Domain Web Page",
+                "provides content for",
+                "The data processing system provides content for display with the parked domain web page."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 49,
+              "raw_line": "relation<|#|>Non-Transitory Computer Readable Medium<|#|>Data Processing System<|#|>instructions for<|#|>The non-transitory computer readable medium has instructions to evaluate information performed by the data processing system.",
+              "fields": [
+                "relation",
+                "Non-Transitory Computer Readable Medium",
+                "Data Processing System",
+                "instructions for",
+                "The non-transitory computer readable medium has instructions to evaluate information performed by the data processing system."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 50,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Computer Network<|#|>evaluates information via<|#|>The data processing system evaluates information via a computer network.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Computer Network",
+                "evaluates information via",
+                "The data processing system evaluates information via a computer network."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 1194,
+              "chunk_char_end": 1636,
+              "text": "econd advertisement to provide for display with the parked domain web page having the unique identifier. 13. A system to evaluate information via a computer network, comprising: a data processing system having one or more processors and memory, the data processing system configured to: receive an indication of user interest of a first user in a first advertisement displayed with a parked domain web page having a unique identifier, the par"
+            },
+            {
+              "chunk_char_start": 1263,
+              "chunk_char_end": 1705,
+              "text": " page having the unique identifier. 13. A system to evaluate information via a computer network, comprising: a data processing system having one or more processors and memory, the data processing system configured to: receive an indication of user interest of a first user in a first advertisement displayed with a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than conten"
+            },
+            {
+              "chunk_char_start": 1544,
+              "chunk_char_end": 1986,
+              "text": "st advertisement displayed with a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identify a plurality of keywords associated with the first advertisement using the unique identifier of the "
+            },
+            {
+              "chunk_char_start": 3542,
+              "chunk_char_end": 3984,
+              "text": "ted as the highest ranked keyword, wherein the third advertisement is different from the first advertisement and the second advertisement. 14. The system of claim 13 , wherein the data processing system is further configured to: rank, for the parked domain web page, the plurality of keywords based on the weight of each of the plurality of keywords; and evaluate the plurality of keywords to select the first keyword, wherein the first keywo"
+            },
+            {
+              "chunk_char_start": 4147,
+              "chunk_char_end": 4589,
+              "text": "rst advertisement of the parked domain web page and a third keyword associated with the third advertisement of the parked domain web page. 16. The system of claim 13 , wherein the data processing system is further configured to: receive an indication of user interest in a fourth advertisement of the parked domain web page, the fourth advertisement associated with a third keyword of the plurality of keywords; determine a third weight of th"
+            },
+            {
+              "chunk_char_start": 4558,
+              "chunk_char_end": 5000,
+              "text": " determine a third weight of the third keyword; and identify one of the first keyword and the third keyword as the highest ranked keyword. 17. The system of claim 13 , wherein the data processing system is further configured to: receive the indication of user interest in the first advertisement, the first advertisement associated with the first keyword; and receive an indication of user interest in a third advertisement, the third adverti"
+            },
+            {
+              "chunk_char_start": 5241,
+              "chunk_char_end": 5683,
+              "text": "st advertisement displayed with a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identify a plurality of keywords associated with the first advertisement using the unique identifier of the "
+            }
+          ],
+          "lexical_occurrence_count": 7
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "The data processing system provides content for display with the parked domain web page.<SEP>The data processing system provides content and advertisements for display with the parked domain web page.",
+          "keywords": "advertisement display,content provision,provides content for",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Parked Domain Web Page",
+          "edge_index": 9,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The data processing system receives an indication of user interest of a user in an advertisement displayed with a parked domain web page.<SEP>The data processing system receives indications of user interest in advertisements displayed on the parked domain web page.",
+          "keywords": "detection,processes,receives,receiving",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "User Interest Indication",
+          "edge_index": 10,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The data processing system identifies a plurality of keywords associated with an advertisement using the unique identifier and determines a weight of each keyword.<SEP>The data processing system identifies keywords of advertisements and determines a weight for each keyword.",
+          "keywords": "determines weight,identification,identifies,weighting",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Keyword",
+          "edge_index": 11,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The data processing system accesses the database storing keywords and their weights.<SEP>The data processing system identifies keywords from the database and associates increased keyword weights with the parked domain web page in the database.",
+          "keywords": "accesses,accessing,stores,storing",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Database",
+          "edge_index": 12,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system receives a request for content to provide for display with the parked domain web page.",
+          "keywords": "receiving",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Content Request",
+          "edge_index": 13,
+          "source_chunks": [
+            "US9304738B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system ranks keywords based on their weights to select a highest ranked keyword.",
+          "keywords": "performing",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Keyword Ranking",
+          "edge_index": 14,
+          "source_chunks": [
+            "US9304738B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system selects an advertisement to provide for display based on the highest ranked keyword.",
+          "keywords": "performing",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Content Selection",
+          "edge_index": 15,
+          "source_chunks": [
+            "US9304738B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system selects an advertisement to provide for display with the parked domain web page based on the highest ranked keyword.",
+          "keywords": "provides for display,selects",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Advertisement",
+          "edge_index": 16,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The non-transitory computer readable medium has instructions to evaluate information performed by the data processing system.",
+          "keywords": "instructions for",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Non-Transitory Computer Readable Medium",
+          "edge_index": 17,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system evaluates information via a computer network.",
+          "keywords": "evaluates information via",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Computer Network",
+          "edge_index": 18,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "The patent publication US9298709B2 describes a data processing system to visualize data from an IP rights database.",
+      "keywords": "describes,discloses",
+      "source_id": "US9298709B2-chunk-000",
+      "file_path": "US9298709B2.txt",
+      "created_at": 1793284105,
+      "truncate": "",
+      "source": "US9298709B2",
+      "target": "Data Processing System",
+      "edge_index": 0,
+      "source_chunks": [
+        "US9298709B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9298709B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system visualizes data from the IP rights database.",
+      "keywords": "data source,visualization",
+      "source_id": "US9298709B2-chunk-000",
+      "file_path": "US9298709B2.txt",
+      "created_at": 1793284105,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "IP Rights Database",
+      "edge_index": 1,
+      "source_chunks": [
+        "US9298709B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9298709B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system displays a geographic map having a viewable area.",
+      "keywords": "display,visualization",
+      "source_id": "US9298709B2-chunk-000",
+      "file_path": "US9298709B2.txt",
+      "created_at": 1793284105,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Geographic Map",
+      "edge_index": 2,
+      "source_chunks": [
+        "US9298709B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9298709B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system comprises the map display change monitor.",
+      "keywords": "component,comprises",
+      "source_id": "US9298709B2-chunk-000",
+      "file_path": "US9298709B2.txt",
+      "created_at": 1793284105,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Map Display Change Monitor",
+      "edge_index": 3,
+      "source_chunks": [
+        "US9298709B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9298709B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system comprises the IP rights list generator.",
+      "keywords": "component,comprises",
+      "source_id": "US9298709B2-chunk-000",
+      "file_path": "US9298709B2.txt",
+      "created_at": 1793284105,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "IP Rights List Generator",
+      "edge_index": 4,
+      "source_chunks": [
+        "US9298709B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9298709B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system comprises the information display generator.",
+      "keywords": "component,comprises",
+      "source_id": "US9298709B2-chunk-000",
+      "file_path": "US9298709B2.txt",
+      "created_at": 1793284105,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Information Display Generator",
+      "edge_index": 5,
+      "source_chunks": [
+        "US9298709B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9298709B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system comprises the restriction criteria interface.",
+      "keywords": "component,comprises",
+      "source_id": "US9298709B2-chunk-000",
+      "file_path": "US9298709B2.txt",
+      "created_at": 1793284105,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Restriction Criteria Interface",
+      "edge_index": 6,
+      "source_chunks": [
+        "US9298709B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9298709B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system comprises the geographic map display interface.",
+      "keywords": "component,comprises",
+      "source_id": "US9298709B2-chunk-000",
+      "file_path": "US9298709B2.txt",
+      "created_at": 1793284105,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Geographic Map Display Interface",
+      "edge_index": 7,
+      "source_chunks": [
+        "US9298709B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9298709B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system further comprises a data visualization selector.",
+      "keywords": "component,comprises",
+      "source_id": "US9298709B2-chunk-000",
+      "file_path": "US9298709B2.txt",
+      "created_at": 1793284105,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Data Visualization Selector",
+      "edge_index": 8,
+      "source_chunks": [
+        "US9298709B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9298709B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The data processing system provides content for display with the parked domain web page.<SEP>The data processing system provides content and advertisements for display with the parked domain web page.",
+      "keywords": "advertisement display,content provision,provides content for",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Parked Domain Web Page",
+      "edge_index": 9,
+      "source_chunks": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The data processing system receives an indication of user interest of a user in an advertisement displayed with a parked domain web page.<SEP>The data processing system receives indications of user interest in advertisements displayed on the parked domain web page.",
+      "keywords": "detection,processes,receives,receiving",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "User Interest Indication",
+      "edge_index": 10,
+      "source_chunks": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The data processing system identifies a plurality of keywords associated with an advertisement using the unique identifier and determines a weight of each keyword.<SEP>The data processing system identifies keywords of advertisements and determines a weight for each keyword.",
+      "keywords": "determines weight,identification,identifies,weighting",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Keyword",
+      "edge_index": 11,
+      "source_chunks": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The data processing system accesses the database storing keywords and their weights.<SEP>The data processing system identifies keywords from the database and associates increased keyword weights with the parked domain web page in the database.",
+      "keywords": "accesses,accessing,stores,storing",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Database",
+      "edge_index": 12,
+      "source_chunks": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system receives a request for content to provide for display with the parked domain web page.",
+      "keywords": "receiving",
+      "source_id": "US9304738B1-chunk-000",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Content Request",
+      "edge_index": 13,
+      "source_chunks": [
+        "US9304738B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system ranks keywords based on their weights to select a highest ranked keyword.",
+      "keywords": "performing",
+      "source_id": "US9304738B1-chunk-000",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Keyword Ranking",
+      "edge_index": 14,
+      "source_chunks": [
+        "US9304738B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system selects an advertisement to provide for display based on the highest ranked keyword.",
+      "keywords": "performing",
+      "source_id": "US9304738B1-chunk-000",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Content Selection",
+      "edge_index": 15,
+      "source_chunks": [
+        "US9304738B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system selects an advertisement to provide for display with the parked domain web page based on the highest ranked keyword.",
+      "keywords": "provides for display,selects",
+      "source_id": "US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Advertisement",
+      "edge_index": 16,
+      "source_chunks": [
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The non-transitory computer readable medium has instructions to evaluate information performed by the data processing system.",
+      "keywords": "instructions for",
+      "source_id": "US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Non-Transitory Computer Readable Medium",
+      "edge_index": 17,
+      "source_chunks": [
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The data processing system evaluates information via a computer network.",
+      "keywords": "evaluates information via",
+      "source_id": "US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Computer Network",
+      "edge_index": 18,
+      "source_chunks": [
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

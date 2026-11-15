@@ -1,0 +1,2149 @@
+{
+  "evaluated_utc": "2026-10-30T03:46:43.808074+00:00",
+  "group": "F01",
+  "publication_number": "US9589231B2",
+  "method": "Deterministic evidence inventory followed by AI-assisted researcher manual reading of matched raw/parsed/graph records and all answers; no judge-model API; not independent human annotation. Strict existing-case predicate requires explicit existing-case role; generic medical-case representation alone is flagged as partial/ambiguous, not automatically sufficient.",
+  "scoring_protocol": "evidence/F01_scoring_protocol.json",
+  "complete_six_runs": true,
+  "summary": {
+    "A": {
+      "completed": 3,
+      "nontruncated": 1,
+      "truncated": 2,
+      "observed_all_three_merged_predicates": 3,
+      "nontruncated_all_three_merged_predicates": 1,
+      "observed_both_original_target_quotes_retrieved": 3,
+      "raw_relation_counts": {
+        "R_case": 3,
+        "R_expert": 3,
+        "R_umls": 3
+      }
+    },
+    "B": {
+      "completed": 3,
+      "nontruncated": 3,
+      "truncated": 0,
+      "observed_all_three_merged_predicates": 0,
+      "nontruncated_all_three_merged_predicates": 0,
+      "observed_both_original_target_quotes_retrieved": 3,
+      "raw_relation_counts": {
+        "R_case": 0,
+        "R_expert": 0,
+        "R_umls": 3
+      }
+    },
+    "paired_nontruncated_comparisons": 1,
+    "natural_core_answer_correct": 6,
+    "forced_core_answer_correct": 6,
+    "natural_evidence_both_quotes": 6,
+    "default_graph_claim_dependency_edges": 0,
+    "naive_completed": 6,
+    "naive_core_answer_correct": 6,
+    "naive_source_quotes": 6,
+    "naive_all_conclusions_supported": 5,
+    "naive_incorrect_claim_dependency_extra": 1,
+    "naive_unmarked_quote_omission": 1
+  },
+  "runs": [
+    {
+      "run_id": "F01_A_r1",
+      "status": "completed",
+      "condition": "A",
+      "repeat": 1,
+      "eligible": false,
+      "truncated_extraction_ids": [
+        1
+      ],
+      "graph_counts": {
+        "nodes": 44,
+        "edges": 57
+      },
+      "parser_checks": [
+        {
+          "call_id": 1,
+          "chunk_id": "US9589231B2-chunk-000",
+          "finish_reason": "length",
+          "completion_tokens": 3500,
+          "completion_delimiter_present": false,
+          "raw_entity_rows": 36,
+          "raw_relation_rows": 41,
+          "parsed_entity_records": 36,
+          "parsed_relation_records": 41
+        },
+        {
+          "call_id": 2,
+          "chunk_id": "US9589231B2-chunk-001",
+          "finish_reason": "stop",
+          "completion_tokens": 1778,
+          "completion_delimiter_present": true,
+          "raw_entity_rows": 17,
+          "raw_relation_rows": 24,
+          "parsed_entity_records": 17,
+          "parsed_relation_records": 24
+        }
+      ],
+      "raw_relation_retention": {
+        "R_case": true,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "raw_entity_description_retention": {
+        "R_case": false,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "parsed_relation_retention": {
+        "R_case": true,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "merged_relation_retention": {
+        "R_case": true,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "merged_entity_description_retention": {
+        "R_case": false,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "merged_target_entity_presence": {
+        "existing_case_entity": true,
+        "expert_entity": true,
+        "medical_ontology_entity": true,
+        "umls_entity": true
+      },
+      "all_three_merged_predicates": true,
+      "shared_ontology_actual_graph_ids": [
+        "Medical Ontology"
+      ],
+      "shared_ontology_chain_retained": true,
+      "explicit_claim8_to_claim4_graph_dependency": false,
+      "claim_structure_evidence": {
+        "nodes": [],
+        "edges": []
+      },
+      "raw_support": {
+        "R_case": [
+          {
+            "call_id": 1,
+            "chunk_id": "US9589231B2-chunk-000",
+            "row": "relation<|#|>Medical Ontology<|#|>Existing Medical Cases<|#|>basis for embedding<|#|>The embedding of existing medical cases is based on the medical ontology."
+          }
+        ],
+        "R_expert": [
+          {
+            "call_id": 1,
+            "chunk_id": "US9589231B2-chunk-000",
+            "row": "relation<|#|>Medical Ontology<|#|>Experts<|#|>basis for embedding<|#|>The embedding of the set of experts is based on the medical ontology."
+          }
+        ],
+        "R_umls": [
+          {
+            "call_id": 1,
+            "chunk_id": "US9589231B2-chunk-000",
+            "row": "relation<|#|>Medical Ontology<|#|>Unified Medical Language System<|#|>based on<|#|>The medical ontology is based on the Unified Medical Language System."
+          }
+        ]
+      },
+      "parsed_support": {
+        "R_case": [
+          {
+            "src_id": "Medical Ontology",
+            "tgt_id": "Existing Medical Cases",
+            "description": "The embedding of existing medical cases is based on the medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "basis for embedding",
+            "call_id": 1
+          }
+        ],
+        "R_expert": [
+          {
+            "src_id": "Medical Ontology",
+            "tgt_id": "Experts",
+            "description": "The embedding of the set of experts is based on the medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "basis for embedding",
+            "call_id": 1
+          }
+        ],
+        "R_umls": [
+          {
+            "src_id": "Medical Ontology",
+            "tgt_id": "Unified Medical Language System",
+            "description": "The medical ontology is based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "based on",
+            "call_id": 1
+          }
+        ]
+      },
+      "merged_support": {
+        "R_case": [
+          {
+            "source": "Existing Medical Cases",
+            "target": "Medical Ontology",
+            "description": "The embedding of existing medical cases is based on the medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "basis for embedding"
+          }
+        ],
+        "R_expert": [
+          {
+            "source": "Experts",
+            "target": "Medical Ontology",
+            "description": "The embedding of the set of experts is based on the medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "basis for embedding"
+          }
+        ],
+        "R_umls": [
+          {
+            "source": "Medical Ontology",
+            "target": "Unified Medical Language System",
+            "description": "The medical ontology is based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "based on"
+          }
+        ]
+      },
+      "entity_description_support": {
+        "R_case": [],
+        "R_expert": [
+          {
+            "entity_id": "Medical Ontology",
+            "id": "Medical Ontology",
+            "description": "An ontology comprising a set of medical concepts joined by links, used to compute multidimensional representations of medical cases and experts, with each concept corresponding to a dimension.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "R_umls": [
+          {
+            "entity_id": "Unified Medical Language System",
+            "id": "Unified Medical Language System",
+            "description": "The medical ontology on which the medical ontology used for embedding is based.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt"
+          }
+        ]
+      },
+      "natural": {
+        "status": "success",
+        "llm_generated": true,
+        "retrieved_chunk_ids": [
+          "US9589231B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "original_target_quote_chunks": {
+          "A": [
+            "US9589231B2-chunk-000"
+          ],
+          "B": [
+            "US9589231B2-chunk-000"
+          ]
+        },
+        "both_original_target_quotes_retrieved": true,
+        "retrieved_relationship_retention": {
+          "R_case": true,
+          "R_expert": true,
+          "R_umls": true
+        },
+        "retrieved_entity_description_retention": {
+          "R_case": false,
+          "R_expert": true,
+          "R_umls": false
+        },
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "answer": "In US9589231B2, the embedding of both existing medical cases and the set of experts is based on a medical ontology, the same ontology used to embed the new medical case. Claim 4 states that \"the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Claim 5 adds that \"the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.\"\n\nThe named terminology system underlying the ontology is the Unified Medical Language System: Claim 8 recites \"wherein the medical ontology is based on the Unified Medical Language System.\" Claim 7 further specifies the ontology \"includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.\"\n\n**Explicit technical chain (document facts):** new case → multidimensional representation based on the medical ontology → ontology concepts as dimensions (Claim 5) → ontology based on the Unified Medical Language System (Claim 8). The same ontology basis is expressly extended to existing cases and experts in Claim 4.\n\n**Inferred shortcut relation (not explicit):** the evidence does not state that existing cases and experts are embedded *via the Unified Medical Language System* directly; that link is only an inference by transitivity through the shared ontology. The claims support \"based on the medical ontology\" for all three, and separately that the ontology \"is based on\" the Unified Medical Language System—no claim expressly joins experts or existing cases to the Unified Medical Language System by name.\n\n### References\n\n- [1] US9589231B2.txt",
+        "answer_mentions_both_supporting_claims": true,
+        "answer_publication_correct": true,
+        "answer_names_umls": true,
+        "answer_existing_cases_and_experts": true
+      },
+      "forced": {
+        "call_id": 21,
+        "not_natural_score": true,
+        "answer": "Based on the evidence in US9589231B2, the embedding of existing medical cases and the set of experts is tied to a medical ontology, and that ontology is based on a named terminology system.\n\n**Explicit technical chain (as stated):**\n- Claim 4 states that embedding the new medical case \"comprises computing a multidimensional representation of the medical case based on a medical ontology,\" and that \"the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\"\n- Claim 8 states that \"the medical ontology is based on the Unified Medical Language System.\"\n\nSo the explicit chain is: existing cases and experts → embedded based on a medical ontology → that ontology is based on the Unified Medical Language System (UMLS).\n\n**Inferred shortcut relation (not stated):**\nThe evidence does not explicitly say that the existing cases and experts are embedded \"with respect to UMLS\" directly. That would be an inference chaining Claim 4 (ontology-based embedding) to Claim 8 (ontology based on UMLS). The documents only establish the ontology as the intermediate link; a direct UMLS-embedding statement is absent.\n\n**Supporting claims:** Claim 4 and Claim 8 of US9589231B2.\n\n### References\n\n- [1] US9589231B2.txt",
+        "both_claims_mentioned": true
+      },
+      "source_evidence": {
+        "query": "In US9589231B2, how are the existing medical cases and the set of experts embedded with respect to an ontology, and what named terminology system underlies that ontology? Identify the supporting claims and distinguish the explicit technical chain from an inferred shortcut relation.",
+        "claims": [
+          {
+            "claim_number": 4,
+            "text": "4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology."
+          },
+          {
+            "claim_number": 8,
+            "text": "8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System."
+          }
+        ],
+        "input_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391"
+      },
+      "attribution_preliminary": [
+        {
+          "stage": "output_truncation_confounded",
+          "qualification": "Exclude this run from clean boundary comparison even if target predicates survive."
+        }
+      ],
+      "manual_answer_review": {
+        "natural_core_predicates_correct": true,
+        "natural_supporting_claim4_and8_correct": true,
+        "natural_publication_and_reference_mapping_correct": true,
+        "natural_distinguishes_explicit_chain_from_inferred_shortcut": true,
+        "forced_core_predicates_correct": true,
+        "forced_claim_and_source_correct": true,
+        "forced_not_counted_as_natural": true,
+        "unsupported_target_conclusion_found": false,
+        "explicit_claim8_depends_claim4_statement_in_natural_answer": false,
+        "absence_of_explicit_dependency_answer_is_not_scored_wrong": "The frozen query asks supporting claims, not an explicit legal-dependency sentence. All raw retrievedtext contains Claim8 ofClaim4.",
+        "non_target_extra_answer_review": "Additional Claims5–7 technical details are supported in naturally retrieved source. B1 says exact phrase common embedding space is outside claims; exact phrase occurs only inabstract.",
+        "quote_caution": "Core source wording is supported; punctuation, ellipsis or bracket inflection may differ. No blanket byte-exact quote claim."
+      },
+      "node_description_metric_caution": "Boolean matcher fields are lexical candidate inventory, not standalone semantic gold. Generic medical-case wording does not establish explicit existing-case role. Primary outcome is manually checked explicit relation records plus target entity identity presence.",
+      "direct_subject_endpoint_edges": {
+        "R_case": true,
+        "R_expert": true
+      },
+      "primary_metric_endpoint_limit": "Primary semantic predicate-retention counts explicit subject roles in relationship descriptions; it is not identical to direct subject→ontology endpoint topology. Report direct_subject_endpoint_edges separately.",
+      "naive": {
+        "status": "completed",
+        "mode": "naive",
+        "core_answer_correct": true,
+        "core_definition": "Only frozen existing-case/expert ontology-basis and ontology-UMLS predicates, not all ancillary claims or quotation exactness.",
+        "source_publication_correct": true,
+        "supporting_claim4_claim8_correct": true,
+        "claim_dependency_extra_correct": true,
+        "all_conclusions_supported": true,
+        "distinguishes_explicit_chain_and_inference": true,
+        "original_target_quote_chunks": {
+          "A": [
+            "US9589231B2-chunk-000"
+          ],
+          "B": [
+            "US9589231B2-chunk-000"
+          ]
+        },
+        "both_original_target_quotes_retrieved": true,
+        "chunk_ids": [
+          "US9589231B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "entities_count": 0,
+        "relationships_count": 0,
+        "answer": "The patent describes embedding both existing medical cases and experts using a multidimensional representation based on a medical ontology. Claim 4 states that \"the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Claim 5 adds that \"the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.\" Claim 7 lists ontology content: \"parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.\"\n\nThe named terminology system is the Unified Medical Language System: Claim 8 states \"the medical ontology is based on the Unified Medical Language System.\"\n\n**Explicit technical chain (document facts):** ontology → concepts joined by links, each concept a dimension (Claim 5) → multidimensional representation of new case, existing cases, and experts (Claim 4) → similarity computed between representations, with \"a matrix of proximities ... applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology\" (Claim 6).\n\n**Inferred shortcut relation (not explicit):** The patent does not state that experts are embedded from ontology concepts directly; Claim 9 instead says experts \"are each embedded based on information associated with the expert\" such as profile, coded procedures, authored articles, or linked cases. Any claim that ontology dimensions alone define expert embeddings is an inference, not a document fact.\n\n### References\n\n- [1] US9589231B2.txt",
+        "actual_new_answer_call": true,
+        "core_index_unchanged": true,
+        "call_id_range": [
+          329,
+          330
+        ],
+        "quote_audit": [
+          {
+            "quote": "the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "the medical ontology is based on the Unified Medical Language System.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "a matrix of proximities ... applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology",
+            "byte_exact_original_substring": false,
+            "contains_marked_ellipsis_or_brackets": true
+          },
+          {
+            "quote": "are each embedded based on information associated with the expert",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          }
+        ],
+        "extras_and_support": [],
+        "manual_review": "All6actualnaiveanswers manually read against the full original Claims and matching retrievalchunks; no judge API. Added Claims5–7 andClaim9 descriptions supported; A1 markedellipsis accepted as abbreviated quote; B2 terminalpunctuation normalization separate fromits dependency error.",
+        "not_forced": true
+      }
+    },
+    {
+      "run_id": "F01_B_r1",
+      "status": "completed",
+      "condition": "B",
+      "repeat": 1,
+      "eligible": true,
+      "truncated_extraction_ids": [],
+      "graph_counts": {
+        "nodes": 36,
+        "edges": 45
+      },
+      "parser_checks": [
+        {
+          "call_id": 22,
+          "chunk_id": "US9589231B2-chunk-000",
+          "finish_reason": "stop",
+          "completion_tokens": 1921,
+          "completion_delimiter_present": true,
+          "raw_entity_rows": 20,
+          "raw_relation_rows": 23,
+          "parsed_entity_records": 20,
+          "parsed_relation_records": 23
+        },
+        {
+          "call_id": 23,
+          "chunk_id": "US9589231B2-chunk-001",
+          "finish_reason": "stop",
+          "completion_tokens": 2270,
+          "completion_delimiter_present": true,
+          "raw_entity_rows": 26,
+          "raw_relation_rows": 27,
+          "parsed_entity_records": 26,
+          "parsed_relation_records": 27
+        }
+      ],
+      "raw_relation_retention": {
+        "R_case": false,
+        "R_expert": false,
+        "R_umls": true
+      },
+      "raw_entity_description_retention": {
+        "R_case": false,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "parsed_relation_retention": {
+        "R_case": false,
+        "R_expert": false,
+        "R_umls": true
+      },
+      "merged_relation_retention": {
+        "R_case": false,
+        "R_expert": false,
+        "R_umls": true
+      },
+      "merged_entity_description_retention": {
+        "R_case": false,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "merged_target_entity_presence": {
+        "existing_case_entity": true,
+        "expert_entity": true,
+        "medical_ontology_entity": true,
+        "umls_entity": true
+      },
+      "all_three_merged_predicates": false,
+      "shared_ontology_actual_graph_ids": [],
+      "shared_ontology_chain_retained": false,
+      "explicit_claim8_to_claim4_graph_dependency": false,
+      "claim_structure_evidence": {
+        "nodes": [],
+        "edges": []
+      },
+      "raw_support": {
+        "R_case": [],
+        "R_expert": [],
+        "R_umls": [
+          {
+            "call_id": 23,
+            "chunk_id": "US9589231B2-chunk-001",
+            "row": "relation<|#|>Medical Ontology<|#|>Unified Medical Language System<|#|>based on<|#|>The medical ontology is based on the Unified Medical Language System."
+          }
+        ]
+      },
+      "parsed_support": {
+        "R_case": [],
+        "R_expert": [],
+        "R_umls": [
+          {
+            "src_id": "Medical Ontology",
+            "tgt_id": "Unified Medical Language System",
+            "description": "The medical ontology is based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "keywords": "based on",
+            "call_id": 23
+          }
+        ]
+      },
+      "merged_support": {
+        "R_case": [],
+        "R_expert": [],
+        "R_umls": [
+          {
+            "source": "Medical Ontology",
+            "target": "Unified Medical Language System",
+            "description": "The medical ontology is based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "keywords": "based on"
+          }
+        ]
+      },
+      "entity_description_support": {
+        "R_case": [],
+        "R_expert": [
+          {
+            "entity_id": "Medical Ontology",
+            "id": "Medical Ontology",
+            "description": "An ontology comprising a set of medical concepts joined by links, used to compute multidimensional representations of medical cases and experts.<SEP>An ontology that includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof, and may be based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "R_umls": [
+          {
+            "entity_id": "Medical Ontology",
+            "id": "Medical Ontology",
+            "description": "An ontology comprising a set of medical concepts joined by links, used to compute multidimensional representations of medical cases and experts.<SEP>An ontology that includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof, and may be based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt"
+          },
+          {
+            "entity_id": "Unified Medical Language System",
+            "id": "Unified Medical Language System",
+            "description": "A medical ontology system on which the medical ontology used in the method is based.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt"
+          }
+        ]
+      },
+      "natural": {
+        "status": "success",
+        "llm_generated": true,
+        "retrieved_chunk_ids": [
+          "US9589231B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "original_target_quote_chunks": {
+          "A": [
+            "US9589231B2-chunk-000"
+          ],
+          "B": [
+            "US9589231B2-chunk-001"
+          ]
+        },
+        "both_original_target_quotes_retrieved": true,
+        "retrieved_relationship_retention": {
+          "R_case": false,
+          "R_expert": false,
+          "R_umls": true
+        },
+        "retrieved_entity_description_retention": {
+          "R_case": false,
+          "R_expert": true,
+          "R_umls": true
+        },
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "answer": "In US9589231B2, the embedding of existing medical cases and experts is tied to a medical ontology. Claim 4 states that embedding the new medical case \"comprises computing a multidimensional representation of the medical case based on a medical ontology,\" and adds that \"the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Claim 5 further specifies that \"the medical ontology comprises a set of medical concepts joined by links,\" with \"each of the medical concepts correspond[ing] to a respective dimension in the representation.\"\n\nThe named terminology system is identified in Claim 8: \"the medical ontology is based on the Unified Medical Language System.\" Claim 7 adds that the ontology \"includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.\"\n\nThe explicit technical chain is therefore: ontology → set of linked medical concepts, each mapped to a dimension → multidimensional representations of cases and experts → similarity computation (with Claim 6 adding that \"a matrix of proximities is applied\" to account for \"relationships between concepts in the ontology\"). This is stated directly in the claims.\n\nBy contrast, the description's characterization of the embedding space as a \"common embedding space\" in which cases and experts are jointly embedded is a document-level framing; the claims themselves do not use that phrase, so treating it as a claim-level limitation would be an inference rather than an explicit claim recitation. Similarly, the claim language supports that experts are embedded \"based on the medical ontology\" (Claim 4), but the specific expert-embedding inputs are separately recited in Claim 9 (\"a profile of the expert; coded medical procedures...; articles authored by the expert; stored medical cases linked to the expert\"), so conflating ontology-based embedding with those profile inputs would be an inferred shortcut not stated as such.\n\n### References\n\n- [1] US9589231B2.txt",
+        "answer_mentions_both_supporting_claims": true,
+        "answer_publication_correct": true,
+        "answer_names_umls": true,
+        "answer_existing_cases_and_experts": true
+      },
+      "forced": {
+        "call_id": 39,
+        "not_natural_score": true,
+        "answer": "Based on the provided evidence from US9589231B2, the embedding of existing medical cases and the set of experts is tied to a medical ontology, and that ontology is based on a named terminology system.\n\n**Explicit technical chain (as stated in the claims):**\n\n- Claim 4 states that embedding the new medical case \"comprises computing a multidimensional representation of the medical case based on a medical ontology,\" and that \"the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" This directly links the existing cases and the expert set to the same medical ontology.\n- Claim 8 states that \"the medical ontology is based on the Unified Medical Language System.\"\n\n**Named terminology system:** The Unified Medical Language System (UMLS), per Claim 8.\n\n**Distinguishing explicit facts from inference:** The document explicitly establishes the chain: existing cases and experts → embedded based on a medical ontology → ontology based on UMLS. What is *not* explicitly stated is any direct shortcut claim that the existing cases and experts are embedded \"in UMLS\" itself; that would be an inferred shortcut. The evidence supports only that their embeddings are based on a medical ontology, which in turn is based on UMLS.\n\n### References\n\n- [1] US9589231B2.txt",
+        "both_claims_mentioned": true
+      },
+      "source_evidence": {
+        "query": "In US9589231B2, how are the existing medical cases and the set of experts embedded with respect to an ontology, and what named terminology system underlies that ontology? Identify the supporting claims and distinguish the explicit technical chain from an inferred shortcut relation.",
+        "claims": [
+          {
+            "claim_number": 4,
+            "text": "4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology."
+          },
+          {
+            "claim_number": 8,
+            "text": "8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System."
+          }
+        ],
+        "input_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391"
+      },
+      "attribution_preliminary": [
+        {
+          "predicate": "R_case",
+          "stage": "raw_extraction_explicit_relation_omission",
+          "qualification": "Not necessarily total fact loss; inspect node descriptions and generic/multi-edge alternatives. Boundary cause not established merely by this omission."
+        },
+        {
+          "predicate": "R_expert",
+          "stage": "raw_extraction_explicit_relation_omission",
+          "qualification": "Not necessarily total fact loss; inspect node descriptions and generic/multi-edge alternatives. Boundary cause not established merely by this omission."
+        }
+      ],
+      "manual_answer_review": {
+        "natural_core_predicates_correct": true,
+        "natural_supporting_claim4_and8_correct": true,
+        "natural_publication_and_reference_mapping_correct": true,
+        "natural_distinguishes_explicit_chain_from_inferred_shortcut": true,
+        "forced_core_predicates_correct": true,
+        "forced_claim_and_source_correct": true,
+        "forced_not_counted_as_natural": true,
+        "unsupported_target_conclusion_found": false,
+        "explicit_claim8_depends_claim4_statement_in_natural_answer": false,
+        "absence_of_explicit_dependency_answer_is_not_scored_wrong": "The frozen query asks supporting claims, not an explicit legal-dependency sentence. All raw retrievedtext contains Claim8 ofClaim4.",
+        "non_target_extra_answer_review": "Additional Claims5–7 technical details are supported in naturally retrieved source. B1 says exact phrase common embedding space is outside claims; exact phrase occurs only inabstract.",
+        "quote_caution": "Core source wording is supported; punctuation, ellipsis or bracket inflection may differ. No blanket byte-exact quote claim."
+      },
+      "node_description_metric_caution": "Boolean matcher fields are lexical candidate inventory, not standalone semantic gold. Generic medical-case wording does not establish explicit existing-case role. Primary outcome is manually checked explicit relation records plus target entity identity presence.",
+      "direct_subject_endpoint_edges": {
+        "R_case": false,
+        "R_expert": false
+      },
+      "primary_metric_endpoint_limit": "Primary semantic predicate-retention counts explicit subject roles in relationship descriptions; it is not identical to direct subject→ontology endpoint topology. Report direct_subject_endpoint_edges separately.",
+      "manual_relation_failure": {
+        "missing": [
+          "R_case",
+          "R_expert"
+        ],
+        "first_observed_stage": "raw relation generation",
+        "parser_loss_of_target_relation": false,
+        "merge_loss_of_target_relation": false,
+        "all_original_target_evidence_retrieved": true,
+        "generation_core_error": false,
+        "fact_not_totally_lost": "Medical Ontology entitydescription still mentions medical cases and experts; naturalchunks retain exact Claim4/8. Generic medical cases does not explicitly distinguish existing vsnew cases.",
+        "boundary_attribution_limit": "The omitted Claim4 predicates are intact within B chunk0; they do not require Claim8 to be in the same chunk. This is boundary/context-sensitive explicit relation representation under the chosen settings, not proof of necessary cross-chunk joint-reasoning failure."
+      },
+      "naive": {
+        "status": "completed",
+        "mode": "naive",
+        "core_answer_correct": true,
+        "core_definition": "Only frozen existing-case/expert ontology-basis and ontology-UMLS predicates, not all ancillary claims or quotation exactness.",
+        "source_publication_correct": true,
+        "supporting_claim4_claim8_correct": true,
+        "claim_dependency_extra_correct": true,
+        "all_conclusions_supported": true,
+        "distinguishes_explicit_chain_and_inference": true,
+        "original_target_quote_chunks": {
+          "A": [
+            "US9589231B2-chunk-000"
+          ],
+          "B": [
+            "US9589231B2-chunk-001"
+          ]
+        },
+        "both_original_target_quotes_retrieved": true,
+        "chunk_ids": [
+          "US9589231B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "entities_count": 0,
+        "relationships_count": 0,
+        "answer": "The patent describes embedding both existing medical cases and experts in a common embedding space, with the embedding tied to a medical ontology. Claim 4 states that \"the embedding of the new medical case comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Claim 5 adds that \"the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.\" Claim 7 specifies the ontology \"includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.\"\n\nThe named terminology system is identified in Claim 8: \"the medical ontology is based on the Unified Medical Language System.\"\n\n**Explicit technical chain (document facts):** Claim 4 → Claim 5 → Claim 8 establishes that the ontology is concept-and-link based, each concept maps to a dimension, and the ontology is based on the Unified Medical Language System. Claim 6 further notes that \"a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.\"\n\n**Inferred shortcut relation:** The evidence does not explicitly state that the Unified Medical Language System itself supplies the concept-link structure or the proximity matrix; that connection is an inference, not a stated fact. The claims present these as separate features.\n\n### References\n\n- [1] US9589231B2.txt",
+        "actual_new_answer_call": true,
+        "core_index_unchanged": true,
+        "call_id_range": [
+          331,
+          332
+        ],
+        "quote_audit": [
+          {
+            "quote": "the embedding of the new medical case comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.",
+            "byte_exact_original_substring": false,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "the medical ontology is based on the Unified Medical Language System.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          }
+        ],
+        "extras_and_support": [
+          {
+            "stage": "generation_quotation",
+            "type": "unmarked_omission_inside_quote",
+            "finding": "The Claim4 quotation drops in the embedding space between new medical case and comprises without an ellipsis. Core technical proposition remains supported, but this is not a byte-exact quotation.",
+            "original_omitted_words": "in the embedding space"
+          }
+        ],
+        "manual_review": "All6actualnaiveanswers manually read against the full original Claims and matching retrievalchunks; no judge API. Added Claims5–7 andClaim9 descriptions supported; A1 markedellipsis accepted as abbreviated quote; B2 terminalpunctuation normalization separate fromits dependency error.",
+        "not_forced": true
+      }
+    },
+    {
+      "run_id": "F01_B_r2",
+      "status": "completed",
+      "condition": "B",
+      "repeat": 2,
+      "eligible": true,
+      "truncated_extraction_ids": [],
+      "graph_counts": {
+        "nodes": 28,
+        "edges": 39
+      },
+      "parser_checks": [
+        {
+          "call_id": 40,
+          "chunk_id": "US9589231B2-chunk-000",
+          "finish_reason": "stop",
+          "completion_tokens": 1741,
+          "completion_delimiter_present": true,
+          "raw_entity_rows": 19,
+          "raw_relation_rows": 21,
+          "parsed_entity_records": 19,
+          "parsed_relation_records": 21
+        },
+        {
+          "call_id": 41,
+          "chunk_id": "US9589231B2-chunk-001",
+          "finish_reason": "stop",
+          "completion_tokens": 2096,
+          "completion_delimiter_present": true,
+          "raw_entity_rows": 19,
+          "raw_relation_rows": 24,
+          "parsed_entity_records": 19,
+          "parsed_relation_records": 24
+        }
+      ],
+      "raw_relation_retention": {
+        "R_case": false,
+        "R_expert": false,
+        "R_umls": true
+      },
+      "raw_entity_description_retention": {
+        "R_case": false,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "parsed_relation_retention": {
+        "R_case": false,
+        "R_expert": false,
+        "R_umls": true
+      },
+      "merged_relation_retention": {
+        "R_case": false,
+        "R_expert": false,
+        "R_umls": true
+      },
+      "merged_entity_description_retention": {
+        "R_case": false,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "merged_target_entity_presence": {
+        "existing_case_entity": true,
+        "expert_entity": true,
+        "medical_ontology_entity": true,
+        "umls_entity": true
+      },
+      "all_three_merged_predicates": false,
+      "shared_ontology_actual_graph_ids": [],
+      "shared_ontology_chain_retained": false,
+      "explicit_claim8_to_claim4_graph_dependency": false,
+      "claim_structure_evidence": {
+        "nodes": [],
+        "edges": []
+      },
+      "raw_support": {
+        "R_case": [],
+        "R_expert": [],
+        "R_umls": [
+          {
+            "call_id": 41,
+            "chunk_id": "US9589231B2-chunk-001",
+            "row": "relation<|#|>Medical Ontology<|#|>Unified Medical Language System<|#|>based on<|#|>The medical ontology is based on the Unified Medical Language System."
+          }
+        ]
+      },
+      "parsed_support": {
+        "R_case": [],
+        "R_expert": [],
+        "R_umls": [
+          {
+            "src_id": "Medical Ontology",
+            "tgt_id": "Unified Medical Language System",
+            "description": "The medical ontology is based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "keywords": "based on",
+            "call_id": 41
+          }
+        ]
+      },
+      "merged_support": {
+        "R_case": [],
+        "R_expert": [],
+        "R_umls": [
+          {
+            "source": "Medical Ontology",
+            "target": "Unified Medical Language System",
+            "description": "The medical ontology is based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "keywords": "based on"
+          }
+        ]
+      },
+      "entity_description_support": {
+        "R_case": [],
+        "R_expert": [
+          {
+            "entity_id": "Medical Ontology",
+            "id": "Medical Ontology",
+            "description": "A set of medical concepts joined by links, used to compute multidimensional representations of medical cases and experts, where each concept corresponds to a dimension.<SEP>An ontology that includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof, and may be based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "R_umls": [
+          {
+            "entity_id": "Medical Ontology",
+            "id": "Medical Ontology",
+            "description": "A set of medical concepts joined by links, used to compute multidimensional representations of medical cases and experts, where each concept corresponds to a dimension.<SEP>An ontology that includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof, and may be based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt"
+          },
+          {
+            "entity_id": "Unified Medical Language System",
+            "id": "Unified Medical Language System",
+            "description": "A medical ontology system on which the medical ontology used in the method is based.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt"
+          }
+        ]
+      },
+      "natural": {
+        "status": "success",
+        "llm_generated": true,
+        "retrieved_chunk_ids": [
+          "US9589231B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "original_target_quote_chunks": {
+          "A": [
+            "US9589231B2-chunk-000"
+          ],
+          "B": [
+            "US9589231B2-chunk-001"
+          ]
+        },
+        "both_original_target_quotes_retrieved": true,
+        "retrieved_relationship_retention": {
+          "R_case": false,
+          "R_expert": false,
+          "R_umls": true
+        },
+        "retrieved_entity_description_retention": {
+          "R_case": false,
+          "R_expert": true,
+          "R_umls": true
+        },
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "answer": "In US9589231B2, the embedding of existing medical cases and experts is tied to the same medical ontology used for the new case. Claim 4 states that embedding the new case “comprises computing a multidimensional representation of the medical case based on a medical ontology,” and adds that “the embedding of the existing medical cases and the set of experts being also based on the medical ontology.” Claim 5 further specifies that “the medical ontology comprises a set of medical concepts joined by links,” with “each of the medical concepts correspond[ing] to a respective dimension in the representation.”\n\nThe named terminology system is the **Unified Medical Language System**. Claim 8 states: “the medical ontology is based on the Unified Medical Language System.” Claim 7 also lists ontology content: “parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.”\n\nThe explicit technical chain is therefore: medical ontology → set of linked medical concepts, each mapped to a dimension → multidimensional representations of new cases, existing cases, and experts → similarity computation in the embedding space. Claim 6 adds that “a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.”\n\nAn inferred shortcut would be to say that the Unified Medical Language System directly supplies the multidimensional representations or the similarity measure. The claims do not state that; they state only that the ontology is “based on” that system. The direct embedding and similarity steps are attributed to the medical ontology and its concept-dimension structure, not expressly to the Unified Medical Language System itself.\n\n### References\n\n- [1] US9589231B2.txt",
+        "answer_mentions_both_supporting_claims": true,
+        "answer_publication_correct": true,
+        "answer_names_umls": true,
+        "answer_existing_cases_and_experts": true
+      },
+      "forced": {
+        "call_id": 55,
+        "not_natural_score": true,
+        "answer": "## Embedding Relative to an Ontology in US9589231B2\n\n**Explicit technical chain (document facts).** Claim 4 of US9589231B2 states that embedding the new medical case in the embedding space \"comprises computing a multidimensional representation of the medical case based on a medical ontology,\" and adds that \"the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Thus, per the claim wording, the existing cases and the expert set are embedded on the same ontology basis as the new case.\n\n**Named terminology system.** Claim 8, which depends on claim 4, specifies: \"the medical ontology is based on the Unified Medical Language System.\" So the named terminology system underlying the ontology is the Unified Medical Language System (UMLS).\n\n**Explicit chain vs. inferred shortcut.** The explicit chain is: claim 4 → multidimensional representation computed from a medical ontology → existing cases and experts also ontology-based → claim 8 → ontology based on UMLS. What the evidence does *not* state is any direct link between the expert set and UMLS itself, or that the existing cases and experts are embedded in an identical manner to the new case. Treating \"experts are UMLS-embedded\" as a direct relation would be an inferred shortcut, not an explicit claim recitation; the claims only establish a shared ontology basis.\n\n### References\n\n- [1] US9589231B2.txt",
+        "both_claims_mentioned": true
+      },
+      "source_evidence": {
+        "query": "In US9589231B2, how are the existing medical cases and the set of experts embedded with respect to an ontology, and what named terminology system underlies that ontology? Identify the supporting claims and distinguish the explicit technical chain from an inferred shortcut relation.",
+        "claims": [
+          {
+            "claim_number": 4,
+            "text": "4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology."
+          },
+          {
+            "claim_number": 8,
+            "text": "8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System."
+          }
+        ],
+        "input_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391"
+      },
+      "attribution_preliminary": [
+        {
+          "predicate": "R_case",
+          "stage": "raw_extraction_explicit_relation_omission",
+          "qualification": "Not necessarily total fact loss; inspect node descriptions and generic/multi-edge alternatives. Boundary cause not established merely by this omission."
+        },
+        {
+          "predicate": "R_expert",
+          "stage": "raw_extraction_explicit_relation_omission",
+          "qualification": "Not necessarily total fact loss; inspect node descriptions and generic/multi-edge alternatives. Boundary cause not established merely by this omission."
+        }
+      ],
+      "manual_answer_review": {
+        "natural_core_predicates_correct": true,
+        "natural_supporting_claim4_and8_correct": true,
+        "natural_publication_and_reference_mapping_correct": true,
+        "natural_distinguishes_explicit_chain_from_inferred_shortcut": true,
+        "forced_core_predicates_correct": true,
+        "forced_claim_and_source_correct": true,
+        "forced_not_counted_as_natural": true,
+        "unsupported_target_conclusion_found": false,
+        "explicit_claim8_depends_claim4_statement_in_natural_answer": false,
+        "absence_of_explicit_dependency_answer_is_not_scored_wrong": "The frozen query asks supporting claims, not an explicit legal-dependency sentence. All raw retrievedtext contains Claim8 ofClaim4.",
+        "non_target_extra_answer_review": "Additional Claims5–7 technical details are supported in naturally retrieved source. B1 says exact phrase common embedding space is outside claims; exact phrase occurs only inabstract.",
+        "quote_caution": "Core source wording is supported; punctuation, ellipsis or bracket inflection may differ. No blanket byte-exact quote claim."
+      },
+      "node_description_metric_caution": "Boolean matcher fields are lexical candidate inventory, not standalone semantic gold. Generic medical-case wording does not establish explicit existing-case role. Primary outcome is manually checked explicit relation records plus target entity identity presence.",
+      "direct_subject_endpoint_edges": {
+        "R_case": false,
+        "R_expert": false
+      },
+      "primary_metric_endpoint_limit": "Primary semantic predicate-retention counts explicit subject roles in relationship descriptions; it is not identical to direct subject→ontology endpoint topology. Report direct_subject_endpoint_edges separately.",
+      "manual_relation_failure": {
+        "missing": [
+          "R_case",
+          "R_expert"
+        ],
+        "first_observed_stage": "raw relation generation",
+        "parser_loss_of_target_relation": false,
+        "merge_loss_of_target_relation": false,
+        "all_original_target_evidence_retrieved": true,
+        "generation_core_error": false,
+        "fact_not_totally_lost": "Medical Ontology entitydescription still mentions medical cases and experts; naturalchunks retain exact Claim4/8. Generic medical cases does not explicitly distinguish existing vsnew cases.",
+        "boundary_attribution_limit": "The omitted Claim4 predicates are intact within B chunk0; they do not require Claim8 to be in the same chunk. This is boundary/context-sensitive explicit relation representation under the chosen settings, not proof of necessary cross-chunk joint-reasoning failure."
+      },
+      "naive": {
+        "status": "completed",
+        "mode": "naive",
+        "core_answer_correct": true,
+        "core_definition": "Only frozen existing-case/expert ontology-basis and ontology-UMLS predicates, not all ancillary claims or quotation exactness.",
+        "source_publication_correct": true,
+        "supporting_claim4_claim8_correct": true,
+        "claim_dependency_extra_correct": false,
+        "all_conclusions_supported": false,
+        "distinguishes_explicit_chain_and_inference": true,
+        "original_target_quote_chunks": {
+          "A": [
+            "US9589231B2-chunk-000"
+          ],
+          "B": [
+            "US9589231B2-chunk-001"
+          ]
+        },
+        "both_original_target_quotes_retrieved": true,
+        "chunk_ids": [
+          "US9589231B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "entities_count": 0,
+        "relationships_count": 0,
+        "answer": "The patent describes embedding both existing cases and experts in a common embedding space built on a medical ontology. Claim 1 recites \"embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded.\" Claim 4 specifies that embedding the new case \"comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Claim 5 adds that the ontology \"comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.\" Claim 6 states that in \"computing the similarity measure between the representation of the new case and representations of the existing cases or experts, a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.\" Claim 7 lists ontology content: \"parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.\"\n\nThe named terminology system is the **Unified Medical Language System**: Claim 8 recites \"wherein the medical ontology is based on the Unified Medical Language System.\"\n\n**Explicit technical chain (document facts):** Claim 4 → Claim 5 (concepts as dimensions) → Claim 6 (proximity matrix for similarity) → Claim 8 (UMLS basis). This is the stated sequence of dependencies.\n\n**Inferred shortcut relation:** The evidence does not expressly state that the UMLS ontology itself supplies the proximity matrix or the concept-link structure used in Claim 6; that link is an inference, not an explicit claim recitation. The document also does not state that experts' embeddings use ontology dimensions in the same manner as cases beyond Claim 4's shared \"based on the medical ontology\" wording.\n\n### References\n\n- [1] US9589231B2.txt",
+        "actual_new_answer_call": true,
+        "core_index_unchanged": true,
+        "call_id_range": [
+          333,
+          334
+        ],
+        "quote_audit": [
+          {
+            "quote": "embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded.",
+            "byte_exact_original_substring": false,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "computing the similarity measure between the representation of the new case and representations of the existing cases or experts, a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "wherein the medical ontology is based on the Unified Medical Language System.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "based on the medical ontology",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          }
+        ],
+        "extras_and_support": [
+          {
+            "stage": "generation",
+            "type": "incorrect_claim_dependency_chain",
+            "answer_excerpt": "Claim 4 → Claim 5 (concepts as dimensions) → Claim 6 (proximity matrix for similarity) → Claim 8 (UMLS basis). This is the stated sequence of dependencies.",
+            "original_counterevidence": "8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System.",
+            "finding": "Claim8 directly depends onClaim4, notClaim6. The stated sequence is wrong if presented as claim dependency; the technical feature list itself remains supported.",
+            "retrieval_complete": true,
+            "attribution": "Generation/claim-structure attribution error, not retrieval or extraction failure."
+          }
+        ],
+        "manual_review": "All6actualnaiveanswers manually read against the full original Claims and matching retrievalchunks; no judge API. Added Claims5–7 andClaim9 descriptions supported; A1 markedellipsis accepted as abbreviated quote; B2 terminalpunctuation normalization separate fromits dependency error.",
+        "not_forced": true
+      }
+    },
+    {
+      "run_id": "F01_A_r2",
+      "status": "completed",
+      "condition": "A",
+      "repeat": 2,
+      "eligible": false,
+      "truncated_extraction_ids": [
+        56
+      ],
+      "graph_counts": {
+        "nodes": 44,
+        "edges": 59
+      },
+      "parser_checks": [
+        {
+          "call_id": 56,
+          "chunk_id": "US9589231B2-chunk-000",
+          "finish_reason": "length",
+          "completion_tokens": 3500,
+          "completion_delimiter_present": false,
+          "raw_entity_rows": 38,
+          "raw_relation_rows": 41,
+          "parsed_entity_records": 38,
+          "parsed_relation_records": 40
+        },
+        {
+          "call_id": 57,
+          "chunk_id": "US9589231B2-chunk-001",
+          "finish_reason": "stop",
+          "completion_tokens": 1909,
+          "completion_delimiter_present": true,
+          "raw_entity_rows": 18,
+          "raw_relation_rows": 26,
+          "parsed_entity_records": 18,
+          "parsed_relation_records": 26
+        }
+      ],
+      "raw_relation_retention": {
+        "R_case": true,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "raw_entity_description_retention": {
+        "R_case": false,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "parsed_relation_retention": {
+        "R_case": true,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "merged_relation_retention": {
+        "R_case": true,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "merged_entity_description_retention": {
+        "R_case": true,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "merged_target_entity_presence": {
+        "existing_case_entity": true,
+        "expert_entity": true,
+        "medical_ontology_entity": true,
+        "umls_entity": true
+      },
+      "all_three_merged_predicates": true,
+      "shared_ontology_actual_graph_ids": [
+        "Medical Ontology"
+      ],
+      "shared_ontology_chain_retained": true,
+      "explicit_claim8_to_claim4_graph_dependency": false,
+      "claim_structure_evidence": {
+        "nodes": [],
+        "edges": []
+      },
+      "raw_support": {
+        "R_case": [
+          {
+            "call_id": 56,
+            "chunk_id": "US9589231B2-chunk-000",
+            "row": "relation<|#|>Existing Medical Cases<|#|>Medical Ontology<|#|>embedded based on<|#|>The embedding of the existing medical cases is based on the medical ontology."
+          }
+        ],
+        "R_expert": [
+          {
+            "call_id": 56,
+            "chunk_id": "US9589231B2-chunk-000",
+            "row": "relation<|#|>Experts<|#|>Medical Ontology<|#|>embedded based on<|#|>The embedding of the set of experts is based on the medical ontology."
+          }
+        ],
+        "R_umls": [
+          {
+            "call_id": 56,
+            "chunk_id": "US9589231B2-chunk-000",
+            "row": "relation<|#|>Medical Ontology<|#|>Unified Medical Language System<|#|>based on<|#|>The medical ontology is based on the Unified Medical Language System."
+          }
+        ]
+      },
+      "parsed_support": {
+        "R_case": [
+          {
+            "src_id": "Existing Medical Cases",
+            "tgt_id": "Medical Ontology",
+            "description": "The embedding of the existing medical cases is based on the medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "embedded based on",
+            "call_id": 56
+          }
+        ],
+        "R_expert": [
+          {
+            "src_id": "Experts",
+            "tgt_id": "Medical Ontology",
+            "description": "The embedding of the set of experts is based on the medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "embedded based on",
+            "call_id": 56
+          }
+        ],
+        "R_umls": [
+          {
+            "src_id": "Medical Ontology",
+            "tgt_id": "Unified Medical Language System",
+            "description": "The medical ontology is based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "based on",
+            "call_id": 56
+          }
+        ]
+      },
+      "merged_support": {
+        "R_case": [
+          {
+            "source": "Existing Medical Cases",
+            "target": "Medical Ontology",
+            "description": "The embedding of the existing medical cases is based on the medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "embedded based on"
+          }
+        ],
+        "R_expert": [
+          {
+            "source": "Experts",
+            "target": "Medical Ontology",
+            "description": "The embedding of the set of experts is based on the medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "embedded based on"
+          }
+        ],
+        "R_umls": [
+          {
+            "source": "Medical Ontology",
+            "target": "Unified Medical Language System",
+            "description": "The medical ontology is based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "based on"
+          }
+        ]
+      },
+      "entity_description_support": {
+        "R_case": [
+          {
+            "entity_id": "Multidimensional Representation",
+            "id": "Multidimensional Representation",
+            "description": "A representation generated in the embedding space for each existing case, each expert, and the new case.<SEP>A representation of a medical case computed based on a medical ontology, used for embedding in the embedding space.",
+            "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "R_expert": [
+          {
+            "entity_id": "Medical Ontology",
+            "id": "Medical Ontology",
+            "description": "A set of medical concepts joined by links, each concept corresponding to a dimension in the multidimensional representation, used to embed cases and experts.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt"
+          },
+          {
+            "entity_id": "Multidimensional Representation",
+            "id": "Multidimensional Representation",
+            "description": "A representation generated in the embedding space for each existing case, each expert, and the new case.<SEP>A representation of a medical case computed based on a medical ontology, used for embedding in the embedding space.",
+            "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "R_umls": [
+          {
+            "entity_id": "Unified Medical Language System",
+            "id": "Unified Medical Language System",
+            "description": "A system on which the medical ontology is based.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt"
+          }
+        ]
+      },
+      "natural": {
+        "status": "success",
+        "llm_generated": true,
+        "retrieved_chunk_ids": [
+          "US9589231B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "original_target_quote_chunks": {
+          "A": [
+            "US9589231B2-chunk-000"
+          ],
+          "B": [
+            "US9589231B2-chunk-000"
+          ]
+        },
+        "both_original_target_quotes_retrieved": true,
+        "retrieved_relationship_retention": {
+          "R_case": true,
+          "R_expert": true,
+          "R_umls": true
+        },
+        "retrieved_entity_description_retention": {
+          "R_case": true,
+          "R_expert": true,
+          "R_umls": true
+        },
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "answer": "In US9589231B2, the existing medical cases and the set of experts are embedded in the same embedding space as the new case, and that embedding is based on a medical ontology. Claim 4 states: \"the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Claim 5 adds that the ontology \"comprises a set of medical concepts joined by links,\" with \"each of the medical concepts correspond[ing] to a respective dimension in the representation.\"\n\nThe named terminology system is the **Unified Medical Language System**. Claim 8 states: \"the medical ontology is based on the Unified Medical Language System.\" Claim 7 further notes the ontology \"includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.\"\n\n**Explicit technical chain (document facts):** new case → multidimensional representation computed based on a medical ontology → ontology concepts as dimensions (Claim 5) → ontology based on the Unified Medical Language System (Claim 8); the same ontology basis is expressly stated for existing cases and experts (Claim 4).\n\n**Inferred shortcut relation (not explicit):** It is tempting to state directly that \"existing cases and experts are embedded using the Unified Medical Language System.\" The document does not say this in one step; it only links them through the intermediate ontology. The UMLS connection to cases/experts is therefore an inference via Claim 4 plus Claim 8, not an express recitation.\n\n### References\n\n- [1] US9589231B2.txt",
+        "answer_mentions_both_supporting_claims": true,
+        "answer_publication_correct": true,
+        "answer_names_umls": true,
+        "answer_existing_cases_and_experts": true
+      },
+      "forced": {
+        "call_id": 76,
+        "not_natural_score": true,
+        "answer": "Based on the evidence in US9589231B2, the embedding of existing medical cases and the set of experts is tied to a medical ontology. Claim 4 states that embedding the new medical case \"comprises computing a multidimensional representation of the medical case based on a medical ontology,\" and that \"the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" This establishes an explicit technical chain: the same medical ontology underlies the multidimensional representation of the new case, the existing cases, and the expert set.\n\nClaim 8 then identifies the named terminology system underlying that ontology: \"the medical ontology is based on the Unified Medical Language System.\"\n\n**Explicit chain (document fact):** medical ontology → multidimensional representation → embeddings of new case, existing cases, and experts; ontology → Unified Medical Language System (Claims 4 and 8).\n\n**Inferred shortcut (not stated):** that the existing cases and experts are embedded *directly in* the Unified Medical Language System itself. The evidence only says their embeddings are \"based on the medical ontology,\" and that the ontology \"is based on\" UMLS—it does not state that UMLS is the embedding space or that the cases/experts are embedded in UMLS directly. That link would be an inference, not an explicit disclosure.\n\n### References\n\n- [1] US9589231B2.txt",
+        "both_claims_mentioned": true
+      },
+      "source_evidence": {
+        "query": "In US9589231B2, how are the existing medical cases and the set of experts embedded with respect to an ontology, and what named terminology system underlies that ontology? Identify the supporting claims and distinguish the explicit technical chain from an inferred shortcut relation.",
+        "claims": [
+          {
+            "claim_number": 4,
+            "text": "4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology."
+          },
+          {
+            "claim_number": 8,
+            "text": "8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System."
+          }
+        ],
+        "input_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391"
+      },
+      "attribution_preliminary": [
+        {
+          "stage": "output_truncation_confounded",
+          "qualification": "Exclude this run from clean boundary comparison even if target predicates survive."
+        }
+      ],
+      "manual_answer_review": {
+        "natural_core_predicates_correct": true,
+        "natural_supporting_claim4_and8_correct": true,
+        "natural_publication_and_reference_mapping_correct": true,
+        "natural_distinguishes_explicit_chain_from_inferred_shortcut": true,
+        "forced_core_predicates_correct": true,
+        "forced_claim_and_source_correct": true,
+        "forced_not_counted_as_natural": true,
+        "unsupported_target_conclusion_found": false,
+        "explicit_claim8_depends_claim4_statement_in_natural_answer": false,
+        "absence_of_explicit_dependency_answer_is_not_scored_wrong": "The frozen query asks supporting claims, not an explicit legal-dependency sentence. All raw retrievedtext contains Claim8 ofClaim4.",
+        "non_target_extra_answer_review": "Additional Claims5–7 technical details are supported in naturally retrieved source. B1 says exact phrase common embedding space is outside claims; exact phrase occurs only inabstract.",
+        "quote_caution": "Core source wording is supported; punctuation, ellipsis or bracket inflection may differ. No blanket byte-exact quote claim."
+      },
+      "node_description_metric_caution": "Boolean matcher fields are lexical candidate inventory, not standalone semantic gold. Generic medical-case wording does not establish explicit existing-case role. Primary outcome is manually checked explicit relation records plus target entity identity presence.",
+      "direct_subject_endpoint_edges": {
+        "R_case": true,
+        "R_expert": true
+      },
+      "primary_metric_endpoint_limit": "Primary semantic predicate-retention counts explicit subject roles in relationship descriptions; it is not identical to direct subject→ontology endpoint topology. Report direct_subject_endpoint_edges separately.",
+      "parser_truncation_detail": {
+        "raw_relation_rows_in_first_chunk": 41,
+        "parsed_relation_records": 40,
+        "last_raw_row": "relation<|#|>US9589231B2<",
+        "reason": "Incomplete last row at3500-token output cutoff; target predicates survived before cutoff; exclude run from clean causal pair."
+      },
+      "naive": {
+        "status": "completed",
+        "mode": "naive",
+        "core_answer_correct": true,
+        "core_definition": "Only frozen existing-case/expert ontology-basis and ontology-UMLS predicates, not all ancillary claims or quotation exactness.",
+        "source_publication_correct": true,
+        "supporting_claim4_claim8_correct": true,
+        "claim_dependency_extra_correct": true,
+        "all_conclusions_supported": true,
+        "distinguishes_explicit_chain_and_inference": true,
+        "original_target_quote_chunks": {
+          "A": [
+            "US9589231B2-chunk-000"
+          ],
+          "B": [
+            "US9589231B2-chunk-000"
+          ]
+        },
+        "both_original_target_quotes_retrieved": true,
+        "chunk_ids": [
+          "US9589231B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "entities_count": 0,
+        "relationships_count": 0,
+        "answer": "The patent describes embedding both existing medical cases and experts using a multidimensional representation based on a medical ontology. Claim 4 states that \"the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Claim 5 adds that \"the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.\" Claim 7 lists ontology content: \"parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.\"\n\nThe named terminology system is the Unified Medical Language System: Claim 8 states \"wherein the medical ontology is based on the Unified Medical Language System.\"\n\n**Explicit technical chain (document facts):** Claim 4 → Claim 5 → Claim 8 establishes ontology-based multidimensional representations, concept-per-dimension structure, and UMLS as the ontology basis. Claim 6 further notes that \"a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.\"\n\n**Inferred shortcut relation (not explicit):** The claims do not state that experts' embeddings are computed via UMLS concept dimensions in the same manner as cases; Claim 9 instead lists expert embedding inputs (profile, coded procedures, authored articles, linked cases). Treating expert embeddings as directly ontology-dimensioned is therefore an inference, not an explicit claim limitation.\n\n### References\n\n- [1] US9589231B2.txt",
+        "actual_new_answer_call": true,
+        "core_index_unchanged": true,
+        "call_id_range": [
+          335,
+          336
+        ],
+        "quote_audit": [
+          {
+            "quote": "the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "wherein the medical ontology is based on the Unified Medical Language System.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          }
+        ],
+        "extras_and_support": [],
+        "manual_review": "All6actualnaiveanswers manually read against the full original Claims and matching retrievalchunks; no judge API. Added Claims5–7 andClaim9 descriptions supported; A1 markedellipsis accepted as abbreviated quote; B2 terminalpunctuation normalization separate fromits dependency error.",
+        "not_forced": true
+      }
+    },
+    {
+      "run_id": "F01_A_r3",
+      "status": "completed",
+      "condition": "A",
+      "repeat": 3,
+      "eligible": true,
+      "truncated_extraction_ids": [],
+      "graph_counts": {
+        "nodes": 32,
+        "edges": 48
+      },
+      "parser_checks": [
+        {
+          "call_id": 77,
+          "chunk_id": "US9589231B2-chunk-000",
+          "finish_reason": "stop",
+          "completion_tokens": 2715,
+          "completion_delimiter_present": true,
+          "raw_entity_rows": 25,
+          "raw_relation_rows": 28,
+          "parsed_entity_records": 25,
+          "parsed_relation_records": 28
+        },
+        {
+          "call_id": 78,
+          "chunk_id": "US9589231B2-chunk-001",
+          "finish_reason": "stop",
+          "completion_tokens": 1598,
+          "completion_delimiter_present": true,
+          "raw_entity_rows": 16,
+          "raw_relation_rows": 22,
+          "parsed_entity_records": 16,
+          "parsed_relation_records": 22
+        }
+      ],
+      "raw_relation_retention": {
+        "R_case": true,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "raw_entity_description_retention": {
+        "R_case": false,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "parsed_relation_retention": {
+        "R_case": true,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "merged_relation_retention": {
+        "R_case": true,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "merged_entity_description_retention": {
+        "R_case": false,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "merged_target_entity_presence": {
+        "existing_case_entity": true,
+        "expert_entity": true,
+        "medical_ontology_entity": true,
+        "umls_entity": true
+      },
+      "all_three_merged_predicates": true,
+      "shared_ontology_actual_graph_ids": [
+        "Medical Ontology"
+      ],
+      "shared_ontology_chain_retained": true,
+      "explicit_claim8_to_claim4_graph_dependency": false,
+      "claim_structure_evidence": {
+        "nodes": [],
+        "edges": []
+      },
+      "raw_support": {
+        "R_case": [
+          {
+            "call_id": 77,
+            "chunk_id": "US9589231B2-chunk-000",
+            "row": "relation<|#|>Diagnosis Assistance Method<|#|>Medical Ontology<|#|>embeds based on<|#|>The embedding of the new medical case, existing medical cases, and experts is based on a medical ontology."
+          }
+        ],
+        "R_expert": [
+          {
+            "call_id": 77,
+            "chunk_id": "US9589231B2-chunk-000",
+            "row": "relation<|#|>Diagnosis Assistance Method<|#|>Medical Ontology<|#|>embeds based on<|#|>The embedding of the new medical case, existing medical cases, and experts is based on a medical ontology."
+          }
+        ],
+        "R_umls": [
+          {
+            "call_id": 77,
+            "chunk_id": "US9589231B2-chunk-000",
+            "row": "relation<|#|>Medical Ontology<|#|>Unified Medical Language System<|#|>based on<|#|>The medical ontology is based on the Unified Medical Language System."
+          }
+        ]
+      },
+      "parsed_support": {
+        "R_case": [
+          {
+            "src_id": "Diagnosis Assistance Method",
+            "tgt_id": "Medical Ontology",
+            "description": "The embedding of the new medical case, existing medical cases, and experts is based on a medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "embeds based on",
+            "call_id": 77
+          }
+        ],
+        "R_expert": [
+          {
+            "src_id": "Diagnosis Assistance Method",
+            "tgt_id": "Medical Ontology",
+            "description": "The embedding of the new medical case, existing medical cases, and experts is based on a medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "embeds based on",
+            "call_id": 77
+          }
+        ],
+        "R_umls": [
+          {
+            "src_id": "Medical Ontology",
+            "tgt_id": "Unified Medical Language System",
+            "description": "The medical ontology is based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "based on",
+            "call_id": 77
+          }
+        ]
+      },
+      "merged_support": {
+        "R_case": [
+          {
+            "source": "Diagnosis Assistance Method",
+            "target": "Medical Ontology",
+            "description": "The embedding of the new medical case, existing medical cases, and experts is based on a medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "embeds based on"
+          }
+        ],
+        "R_expert": [
+          {
+            "source": "Diagnosis Assistance Method",
+            "target": "Medical Ontology",
+            "description": "The embedding of the new medical case, existing medical cases, and experts is based on a medical ontology.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "embeds based on"
+          }
+        ],
+        "R_umls": [
+          {
+            "source": "Medical Ontology",
+            "target": "Unified Medical Language System",
+            "description": "The medical ontology is based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt",
+            "keywords": "based on"
+          }
+        ]
+      },
+      "entity_description_support": {
+        "R_case": [],
+        "R_expert": [
+          {
+            "entity_id": "Medical Ontology",
+            "id": "Medical Ontology",
+            "description": "A structure comprising a set of medical concepts joined by links, each concept corresponding to a dimension in the multidimensional representation, used as the basis for embedding cases and experts.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt"
+          },
+          {
+            "entity_id": "Unified Medical Language System",
+            "id": "Unified Medical Language System",
+            "description": "A medical ontology on which the embedding of medical cases and experts is based.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt"
+          },
+          {
+            "entity_id": "Multidimensional Representation",
+            "id": "Multidimensional Representation",
+            "description": "A representation of a medical case or expert generated in the embedding space.<SEP>A computed representation of a medical case based on a medical ontology, used to embed the case in the embedding space.",
+            "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "R_umls": [
+          {
+            "entity_id": "Unified Medical Language System",
+            "id": "Unified Medical Language System",
+            "description": "A medical ontology on which the embedding of medical cases and experts is based.",
+            "source_id": "US9589231B2-chunk-000",
+            "file_path": "US9589231B2.txt"
+          }
+        ]
+      },
+      "natural": {
+        "status": "success",
+        "llm_generated": true,
+        "retrieved_chunk_ids": [
+          "US9589231B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "original_target_quote_chunks": {
+          "A": [
+            "US9589231B2-chunk-000"
+          ],
+          "B": [
+            "US9589231B2-chunk-000"
+          ]
+        },
+        "both_original_target_quotes_retrieved": true,
+        "retrieved_relationship_retention": {
+          "R_case": true,
+          "R_expert": true,
+          "R_umls": true
+        },
+        "retrieved_entity_description_retention": {
+          "R_case": false,
+          "R_expert": true,
+          "R_umls": true
+        },
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "answer": "## Embedding Relative to the Ontology\n\nIn US9589231B2, the embedding of the new medical case is defined by **Claim 4**, which states that embedding \"comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Thus all three — the new case, the existing cases, and the experts — are embedded on the same ontology basis.\n\n**Claim 5** specifies the ontology's structure: it \"comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.\" **Claim 6** adds that in computing similarity, \"a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.\" **Claim 7** lists ontology content: \"parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.\"\n\n## Named Terminology System\n\n**Claim 8** states: \"the medical ontology is based on the Unified Medical Language System.\" This is the only named terminology system in the evidence.\n\n## Explicit Chain vs. Inferred Shortcut\n\nThe explicit technical chain in the claims is: medical ontology (UMLS-based, per Claim 8) → concepts as dimensions (Claim 5) → multidimensional representation of cases and experts (Claim 4) → proximity matrix applied for similarity (Claim 6). Each link is stated in claim language.\n\nAn **inferred shortcut** would be treating \"UMLS\" as directly defining the embedding space or the similarity computation. The evidence does not say this: UMLS underlies the *ontology* (Claim 8), and the ontology in turn underlies the *representations* (Claim 4). The intermediate ontology-and-dimension steps should not be collapsed.\n\n### References\n\n- [1] US9589231B2.txt",
+        "answer_mentions_both_supporting_claims": true,
+        "answer_publication_correct": true,
+        "answer_names_umls": true,
+        "answer_existing_cases_and_experts": true
+      },
+      "forced": {
+        "call_id": 93,
+        "not_natural_score": true,
+        "answer": "Based on the provided evidence from US9589231B2, the embedding of existing medical cases and the set of experts is tied to a medical ontology, and that ontology is based on a named terminology system.\n\n**Explicit technical chain (as stated in the claims):**\n\n- Claim 4 states that embedding the new medical case in the embedding space \"comprises computing a multidimensional representation of the medical case based on a medical ontology,\" and adds that \"the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" This directly links the existing cases and the expert set to the same medical ontology.\n- Claim 8 states that \"the medical ontology is based on the Unified Medical Language System.\" This identifies the named terminology system underlying the ontology.\n\n**Distinguishing document facts from inference:**\n\nThe document facts are limited to the above wording: the existing cases and experts are embedded based on a medical ontology (Claim 4), and that ontology is based on the Unified Medical Language System (Claim 8). The evidence does not explicitly describe the mechanics of how the existing cases or experts are embedded beyond being \"based on the medical ontology.\" Any claim that the existing cases and experts are embedded *in the same multidimensional representation computed for the new case* would be an inferred shortcut relation, not an explicit statement in the provided evidence. The claims establish a shared ontological basis, not a stated identity of embedding computation across all three elements.\n\n### References\n\n- [1] US9589231B2.txt",
+        "both_claims_mentioned": true
+      },
+      "source_evidence": {
+        "query": "In US9589231B2, how are the existing medical cases and the set of experts embedded with respect to an ontology, and what named terminology system underlies that ontology? Identify the supporting claims and distinguish the explicit technical chain from an inferred shortcut relation.",
+        "claims": [
+          {
+            "claim_number": 4,
+            "text": "4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology."
+          },
+          {
+            "claim_number": 8,
+            "text": "8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System."
+          }
+        ],
+        "input_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391"
+      },
+      "attribution_preliminary": [],
+      "manual_answer_review": {
+        "natural_core_predicates_correct": true,
+        "natural_supporting_claim4_and8_correct": true,
+        "natural_publication_and_reference_mapping_correct": true,
+        "natural_distinguishes_explicit_chain_from_inferred_shortcut": true,
+        "forced_core_predicates_correct": true,
+        "forced_claim_and_source_correct": true,
+        "forced_not_counted_as_natural": true,
+        "unsupported_target_conclusion_found": false,
+        "explicit_claim8_depends_claim4_statement_in_natural_answer": false,
+        "absence_of_explicit_dependency_answer_is_not_scored_wrong": "The frozen query asks supporting claims, not an explicit legal-dependency sentence. All raw retrievedtext contains Claim8 ofClaim4.",
+        "non_target_extra_answer_review": "Additional Claims5–7 technical details are supported in naturally retrieved source. B1 says exact phrase common embedding space is outside claims; exact phrase occurs only inabstract.",
+        "quote_caution": "Core source wording is supported; punctuation, ellipsis or bracket inflection may differ. No blanket byte-exact quote claim."
+      },
+      "node_description_metric_caution": "Boolean matcher fields are lexical candidate inventory, not standalone semantic gold. Generic medical-case wording does not establish explicit existing-case role. Primary outcome is manually checked explicit relation records plus target entity identity presence.",
+      "direct_subject_endpoint_edges": {
+        "R_case": false,
+        "R_expert": false
+      },
+      "primary_metric_endpoint_limit": "Primary semantic predicate-retention counts explicit subject roles in relationship descriptions; it is not identical to direct subject→ontology endpoint topology. Report direct_subject_endpoint_edges separately.",
+      "combined_predicate_relation_note": "The actual edge is Diagnosis Assistance Method→Medical Ontology; its description explicitly states the ontology basis for newcase/existingcases/experts together. This satisfies frozen combined-role semantic criterion, but does not create direct ExistingCases→Ontology or Experts→Ontology endpoint edges.",
+      "entity_semantic_shortcut_note": {
+        "source": "raw extraction call77, preserved inmerged Unified Medical Language System node",
+        "description": "A medical ontology on which the embedding of medical cases and experts is based.",
+        "classification": "compressed/inferred chain presented inentitydescription without qualification; not used as explicit ontology-to-UMLS predicate evidence.",
+        "explicit_relation_and_answer": "The actual MedicalOntology→UMLS relation is correct; naturalanswer expressly preserves the intermediate ontology."
+      },
+      "naive": {
+        "status": "completed",
+        "mode": "naive",
+        "core_answer_correct": true,
+        "core_definition": "Only frozen existing-case/expert ontology-basis and ontology-UMLS predicates, not all ancillary claims or quotation exactness.",
+        "source_publication_correct": true,
+        "supporting_claim4_claim8_correct": true,
+        "claim_dependency_extra_correct": true,
+        "all_conclusions_supported": true,
+        "distinguishes_explicit_chain_and_inference": true,
+        "original_target_quote_chunks": {
+          "A": [
+            "US9589231B2-chunk-000"
+          ],
+          "B": [
+            "US9589231B2-chunk-000"
+          ]
+        },
+        "both_original_target_quotes_retrieved": true,
+        "chunk_ids": [
+          "US9589231B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "entities_count": 0,
+        "relationships_count": 0,
+        "answer": "The patent describes embedding both existing medical cases and experts using a multidimensional representation based on a medical ontology. Claim 4 states that \"the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Claim 5 adds that \"the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.\" Claim 7 lists ontology content: \"parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.\"\n\nThe named terminology system is the Unified Medical Language System: Claim 8 recites \"wherein the medical ontology is based on the Unified Medical Language System.\"\n\n**Explicit technical chain (document facts):** Claim 4 → ontology-based multidimensional representation for new cases, existing cases, and experts; Claim 5 → concepts as dimensions linked by ontology links; Claim 8 → ontology based on the Unified Medical Language System. Claim 6 further notes that \"a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.\"\n\n**Inferred shortcut relation (not explicit):** The claims do not state that the Unified Medical Language System itself supplies the concept-to-dimension mapping or the proximity matrix; that link is an inference, not a recited fact. The evidence does not specify how the ontology is derived from that system.\n\n### References\n\n- [1] US9589231B2.txt",
+        "actual_new_answer_call": true,
+        "core_index_unchanged": true,
+        "call_id_range": [
+          337,
+          338
+        ],
+        "quote_audit": [
+          {
+            "quote": "the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "wherein the medical ontology is based on the Unified Medical Language System.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          }
+        ],
+        "extras_and_support": [],
+        "manual_review": "All6actualnaiveanswers manually read against the full original Claims and matching retrievalchunks; no judge API. Added Claims5–7 andClaim9 descriptions supported; A1 markedellipsis accepted as abbreviated quote; B2 terminalpunctuation normalization separate fromits dependency error.",
+        "not_forced": true
+      }
+    },
+    {
+      "run_id": "F01_B_r3",
+      "status": "completed",
+      "condition": "B",
+      "repeat": 3,
+      "eligible": true,
+      "truncated_extraction_ids": [],
+      "graph_counts": {
+        "nodes": 28,
+        "edges": 39
+      },
+      "parser_checks": [
+        {
+          "call_id": 94,
+          "chunk_id": "US9589231B2-chunk-000",
+          "finish_reason": "stop",
+          "completion_tokens": 1990,
+          "completion_delimiter_present": true,
+          "raw_entity_rows": 20,
+          "raw_relation_rows": 24,
+          "parsed_entity_records": 20,
+          "parsed_relation_records": 24
+        },
+        {
+          "call_id": 95,
+          "chunk_id": "US9589231B2-chunk-001",
+          "finish_reason": "stop",
+          "completion_tokens": 1865,
+          "completion_delimiter_present": true,
+          "raw_entity_rows": 18,
+          "raw_relation_rows": 22,
+          "parsed_entity_records": 18,
+          "parsed_relation_records": 22
+        }
+      ],
+      "raw_relation_retention": {
+        "R_case": false,
+        "R_expert": false,
+        "R_umls": true
+      },
+      "raw_entity_description_retention": {
+        "R_case": false,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "parsed_relation_retention": {
+        "R_case": false,
+        "R_expert": false,
+        "R_umls": true
+      },
+      "merged_relation_retention": {
+        "R_case": false,
+        "R_expert": false,
+        "R_umls": true
+      },
+      "merged_entity_description_retention": {
+        "R_case": false,
+        "R_expert": true,
+        "R_umls": true
+      },
+      "merged_target_entity_presence": {
+        "existing_case_entity": true,
+        "expert_entity": true,
+        "medical_ontology_entity": true,
+        "umls_entity": true
+      },
+      "all_three_merged_predicates": false,
+      "shared_ontology_actual_graph_ids": [],
+      "shared_ontology_chain_retained": false,
+      "explicit_claim8_to_claim4_graph_dependency": false,
+      "claim_structure_evidence": {
+        "nodes": [],
+        "edges": []
+      },
+      "raw_support": {
+        "R_case": [],
+        "R_expert": [],
+        "R_umls": [
+          {
+            "call_id": 95,
+            "chunk_id": "US9589231B2-chunk-001",
+            "row": "relation<|#|>Medical Ontology<|#|>Unified Medical Language System<|#|>based on<|#|>The medical ontology is based on the Unified Medical Language System."
+          }
+        ]
+      },
+      "parsed_support": {
+        "R_case": [],
+        "R_expert": [],
+        "R_umls": [
+          {
+            "src_id": "Medical Ontology",
+            "tgt_id": "Unified Medical Language System",
+            "description": "The medical ontology is based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "keywords": "based on",
+            "call_id": 95
+          }
+        ]
+      },
+      "merged_support": {
+        "R_case": [],
+        "R_expert": [],
+        "R_umls": [
+          {
+            "source": "Medical Ontology",
+            "target": "Unified Medical Language System",
+            "description": "The medical ontology is based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt",
+            "keywords": "based on"
+          }
+        ]
+      },
+      "entity_description_support": {
+        "R_case": [],
+        "R_expert": [
+          {
+            "entity_id": "Medical Ontology",
+            "id": "Medical Ontology",
+            "description": "An ontology comprising a set of medical concepts joined by links, used to compute multidimensional representations of medical cases and experts.<SEP>An ontology that includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof, and may be based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "R_umls": [
+          {
+            "entity_id": "Medical Ontology",
+            "id": "Medical Ontology",
+            "description": "An ontology comprising a set of medical concepts joined by links, used to compute multidimensional representations of medical cases and experts.<SEP>An ontology that includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof, and may be based on the Unified Medical Language System.",
+            "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt"
+          },
+          {
+            "entity_id": "Unified Medical Language System",
+            "id": "Unified Medical Language System",
+            "description": "A medical ontology system on which the medical ontology used in the method is based.",
+            "source_id": "US9589231B2-chunk-001",
+            "file_path": "US9589231B2.txt"
+          }
+        ]
+      },
+      "natural": {
+        "status": "success",
+        "llm_generated": true,
+        "retrieved_chunk_ids": [
+          "US9589231B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "original_target_quote_chunks": {
+          "A": [
+            "US9589231B2-chunk-000"
+          ],
+          "B": [
+            "US9589231B2-chunk-001"
+          ]
+        },
+        "both_original_target_quotes_retrieved": true,
+        "retrieved_relationship_retention": {
+          "R_case": false,
+          "R_expert": false,
+          "R_umls": true
+        },
+        "retrieved_entity_description_retention": {
+          "R_case": false,
+          "R_expert": true,
+          "R_umls": true
+        },
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "answer": "In US9589231B2, the embedding of existing medical cases and experts is tied to the same medical ontology used for the new case. Claim 4 states that “the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.” Claim 5 adds that “the medical ontology comprises a set of medical concepts joined by links,” with each concept corresponding to “a respective dimension in the representation.”\n\nThe named terminology system is the **Unified Medical Language System**. Claim 8 recites: “wherein the medical ontology is based on the Unified Medical Language System.”\n\nThe explicit technical chain is therefore: medical ontology → set of linked medical concepts, each mapped to a dimension → multidimensional representations of existing cases and experts → embedding in the common space. Claim 6 further states that similarity computation applies “a matrix of proximities … that accounts for relationships between concepts in the ontology.” Claim 7 lists ontology content including “parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.”\n\nAn inferred shortcut would be to say that the Unified Medical Language System directly defines the embedding space or similarity metric. The claims do not state that; they state only that the ontology is “based on” that system. The direct link from the named system to the embedding is therefore an inference, not an explicit claim limitation.\n\n### References\n\n- [1] US9589231B2.txt",
+        "answer_mentions_both_supporting_claims": true,
+        "answer_publication_correct": true,
+        "answer_names_umls": true,
+        "answer_existing_cases_and_experts": true
+      },
+      "forced": {
+        "call_id": 109,
+        "not_natural_score": true,
+        "answer": "Based on the evidence in US9589231B2, the embedding of existing medical cases and the set of experts is tied to a medical ontology. Claim 4 states that embedding the new medical case \"comprises computing a multidimensional representation of the medical case based on a medical ontology,\" and adds that \"the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Thus, all three—the new case, existing cases, and experts—share the same ontology basis.\n\nThe named terminology system underlying that ontology is identified in Claim 8, which states: \"the medical ontology is based on the Unified Medical Language System.\"\n\n**Explicit technical chain (as claimed):**\n- Claim 4: multidimensional representation → based on a medical ontology → existing cases and experts also based on that ontology.\n- Claim 8: the medical ontology → based on the Unified Medical Language System.\n\n**Inferred shortcut (not explicit):** One might shortcut this to \"existing cases and experts are embedded in the Unified Medical Language System.\" The evidence does not state that directly; it only establishes the chain through the medical ontology, which is itself based on UMLS. The direct link between the embeddings and UMLS is an inference, not claimed wording.\n\n### References\n\n- [1] US9589231B2.txt",
+        "both_claims_mentioned": true
+      },
+      "source_evidence": {
+        "query": "In US9589231B2, how are the existing medical cases and the set of experts embedded with respect to an ontology, and what named terminology system underlies that ontology? Identify the supporting claims and distinguish the explicit technical chain from an inferred shortcut relation.",
+        "claims": [
+          {
+            "claim_number": 4,
+            "text": "4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology."
+          },
+          {
+            "claim_number": 8,
+            "text": "8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System."
+          }
+        ],
+        "input_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391"
+      },
+      "attribution_preliminary": [
+        {
+          "predicate": "R_case",
+          "stage": "raw_extraction_explicit_relation_omission",
+          "qualification": "Not necessarily total fact loss; inspect node descriptions and generic/multi-edge alternatives. Boundary cause not established merely by this omission."
+        },
+        {
+          "predicate": "R_expert",
+          "stage": "raw_extraction_explicit_relation_omission",
+          "qualification": "Not necessarily total fact loss; inspect node descriptions and generic/multi-edge alternatives. Boundary cause not established merely by this omission."
+        }
+      ],
+      "manual_answer_review": {
+        "natural_core_predicates_correct": true,
+        "natural_supporting_claim4_and8_correct": true,
+        "natural_publication_and_reference_mapping_correct": true,
+        "natural_distinguishes_explicit_chain_from_inferred_shortcut": true,
+        "forced_core_predicates_correct": true,
+        "forced_claim_and_source_correct": true,
+        "forced_not_counted_as_natural": true,
+        "unsupported_target_conclusion_found": false,
+        "explicit_claim8_depends_claim4_statement_in_natural_answer": false,
+        "absence_of_explicit_dependency_answer_is_not_scored_wrong": "The frozen query asks supporting claims, not an explicit legal-dependency sentence. All raw retrievedtext contains Claim8 ofClaim4.",
+        "non_target_extra_answer_review": "Additional Claims5–7 technical details are supported in naturally retrieved source. B1 says exact phrase common embedding space is outside claims; exact phrase occurs only inabstract.",
+        "quote_caution": "Core source wording is supported; punctuation, ellipsis or bracket inflection may differ. No blanket byte-exact quote claim."
+      },
+      "node_description_metric_caution": "Boolean matcher fields are lexical candidate inventory, not standalone semantic gold. Generic medical-case wording does not establish explicit existing-case role. Primary outcome is manually checked explicit relation records plus target entity identity presence.",
+      "direct_subject_endpoint_edges": {
+        "R_case": false,
+        "R_expert": false
+      },
+      "primary_metric_endpoint_limit": "Primary semantic predicate-retention counts explicit subject roles in relationship descriptions; it is not identical to direct subject→ontology endpoint topology. Report direct_subject_endpoint_edges separately.",
+      "manual_relation_failure": {
+        "missing": [
+          "R_case",
+          "R_expert"
+        ],
+        "first_observed_stage": "raw relation generation",
+        "parser_loss_of_target_relation": false,
+        "merge_loss_of_target_relation": false,
+        "all_original_target_evidence_retrieved": true,
+        "generation_core_error": false,
+        "fact_not_totally_lost": "Medical Ontology entitydescription still mentions medical cases and experts; naturalchunks retain exact Claim4/8. Generic medical cases does not explicitly distinguish existing vsnew cases.",
+        "boundary_attribution_limit": "The omitted Claim4 predicates are intact within B chunk0; they do not require Claim8 to be in the same chunk. This is boundary/context-sensitive explicit relation representation under the chosen settings, not proof of necessary cross-chunk joint-reasoning failure."
+      },
+      "naive": {
+        "status": "completed",
+        "mode": "naive",
+        "core_answer_correct": true,
+        "core_definition": "Only frozen existing-case/expert ontology-basis and ontology-UMLS predicates, not all ancillary claims or quotation exactness.",
+        "source_publication_correct": true,
+        "supporting_claim4_claim8_correct": true,
+        "claim_dependency_extra_correct": true,
+        "all_conclusions_supported": true,
+        "distinguishes_explicit_chain_and_inference": true,
+        "original_target_quote_chunks": {
+          "A": [
+            "US9589231B2-chunk-000"
+          ],
+          "B": [
+            "US9589231B2-chunk-001"
+          ]
+        },
+        "both_original_target_quotes_retrieved": true,
+        "chunk_ids": [
+          "US9589231B2-chunk-000",
+          "US9589231B2-chunk-001"
+        ],
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US9589231B2.txt"
+          }
+        ],
+        "entities_count": 0,
+        "relationships_count": 0,
+        "answer": "The patent describes embedding both existing cases and experts in a common embedding space built on a medical ontology. Claim 4 states that embedding the new case \"comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\" Claim 5 adds that the ontology \"comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.\" Claim 7 lists ontology content: \"parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.\"\n\nThe named terminology system is the Unified Medical Language System: Claim 8 recites \"wherein the medical ontology is based on the Unified Medical Language System.\"\n\nThe explicit technical chain is: ontology → concepts as dimensions (Claim 5) → multidimensional representation of new case, existing cases, and experts (Claim 4) → similarity computation, where \"a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology\" (Claim 6). Expert embeddings may also draw on expert-specific information such as profiles, coded procedures, authored articles, and linked cases (Claim 9).\n\nAn inferred shortcut relation would be treating the ontology as directly producing expert similarity; the claims instead specify ontology-based representations plus a proximity matrix for similarity computation. The evidence does not state that the ontology alone determines expert matching, so that link should not be assumed.\n\n### References\n\n- [1] US9589231B2.txt",
+        "actual_new_answer_call": true,
+        "core_index_unchanged": true,
+        "call_id_range": [
+          339,
+          340
+        ],
+        "quote_audit": [
+          {
+            "quote": "comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "wherein the medical ontology is based on the Unified Medical Language System.",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          },
+          {
+            "quote": "a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology",
+            "byte_exact_original_substring": true,
+            "contains_marked_ellipsis_or_brackets": false
+          }
+        ],
+        "extras_and_support": [],
+        "manual_review": "All6actualnaiveanswers manually read against the full original Claims and matching retrievalchunks; no judge API. Added Claims5–7 andClaim9 descriptions supported; A1 markedellipsis accepted as abbreviated quote; B2 terminalpunctuation normalization separate fromits dependency error.",
+        "not_forced": true
+      }
+    }
+  ],
+  "manual_review_status": "complete: all6 raw/parsed/merged target records and all6 natural+forced answers read against frozen original claims",
+  "causal_conclusion": "In this frozen F01 control, explicit case/expert ontology-basis predicates within relationship records are present in all3 Aoutputs and absent in all3 Boutputs, with omission already inraw relations. Two A runs are truncated; onlyr3 is a clean paired comparison. ExactClaim4/8 evidence is retrieved and coreanswers correct inall6, so graph representation loss is not equivalent to end-to-end factual loss. The omitted predicates are self-contained inBchunk0, and no general cross-chunk knowledge-loss claim is justified.",
+  "paired_comparison": [
+    {
+      "repeat": 1,
+      "A_nontruncated": false,
+      "B_nontruncated": true,
+      "clean_pair": false,
+      "A_observed_three_predicates": true,
+      "B_observed_three_predicates": false,
+      "notes": "r1/r2 A truncated, descriptive observations only"
+    },
+    {
+      "repeat": 2,
+      "A_nontruncated": false,
+      "B_nontruncated": true,
+      "clean_pair": false,
+      "A_observed_three_predicates": true,
+      "B_observed_three_predicates": false,
+      "notes": "r1/r2 A truncated, descriptive observations only"
+    },
+    {
+      "repeat": 3,
+      "A_nontruncated": true,
+      "B_nontruncated": true,
+      "clean_pair": true,
+      "A_observed_three_predicates": true,
+      "B_observed_three_predicates": false,
+      "notes": "One clean pair: A retains3predicates, B retainsonlyontology→UMLS; alloriginalevidence naturally retrieved inboth"
+    }
+  ],
+  "boundary_control_notes": {
+    "A_global_token_spans": [
+      [
+        0,
+        1200
+      ],
+      [
+        1100,
+        1719
+      ]
+    ],
+    "B_global_token_spans": [
+      [
+        0,
+        636
+      ],
+      [
+        536,
+        1719
+      ]
+    ],
+    "both_chunk_count": 2,
+    "both_total_processed_source_tokens": 1819,
+    "overlap_tokens": 100,
+    "same_full_input_hash": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391",
+    "unavoidable_difference": "Per-chunk length/context distribution changes while full text, order, chunk count and source-token sum are identical.",
+    "anchor_status": "B nochunkcontains bothliteralanchor families; semantic-inference alternatives not exhaustivelyexcluded."
+  }
+}

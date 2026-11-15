@@ -1,0 +1,30 @@
+{
+  "started_utc": "2026-11-05T12:27:51.502724+00:00",
+  "configuration": {
+    "provider": "SiliconFlow",
+    "host": "https://api.siliconflow.cn/v1",
+    "llm_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "embedding_model": "BAAI/bge-m3",
+    "embedding_dim": 1024,
+    "embedding_token_limit": 8192,
+    "client_max_retries": 0,
+    "enable_thinking": false,
+    "start_utc": "2026-11-05T12:27:50.908280+00:00",
+    "query_deadline_utc": "2026-11-05T13:27:50.908280+00:00",
+    "deadline_utc": "2026-11-05T14:27:50.908280+00:00",
+    "hard_cap_cny": 10.0
+  },
+  "llm": {
+    "success": true,
+    "actual_content": "OK"
+  },
+  "embedding": {
+    "success": true,
+    "shape": [
+      1,
+      1024
+    ],
+    "norm": 1.0
+  },
+  "finished_utc": "2026-11-05T12:27:56.748129+00:00"
+}

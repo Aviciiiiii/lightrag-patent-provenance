@@ -1,0 +1,14 @@
+{
+  "before": {
+    "vdb_chunks.json": "d74c4012a3782c669bc034722bf8c8a59eaadd62e094b2bdb155107a289c1559",
+    "kv_store_text_chunks.json": "3fc1f500fd170f7b742f1de760836296443d749fa359e565aab00f5b8265e241",
+    "graph_chunk_entity_relation.graphml": "ea5604eec112e41fd6964131aa695f34d7bbc8f640f07398d5537895a9bf44be"
+  },
+  "after": {
+    "vdb_chunks.json": "d74c4012a3782c669bc034722bf8c8a59eaadd62e094b2bdb155107a289c1559",
+    "kv_store_text_chunks.json": "3fc1f500fd170f7b742f1de760836296443d749fa359e565aab00f5b8265e241",
+    "graph_chunk_entity_relation.graphml": "ea5604eec112e41fd6964131aa695f34d7bbc8f640f07398d5537895a9bf44be"
+  },
+  "unchanged": true,
+  "finished_utc": "2026-11-05T13:30:31.359480+00:00"
+}

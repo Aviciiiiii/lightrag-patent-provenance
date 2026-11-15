@@ -1,0 +1,61 @@
+{
+  "generated_utc": "2026-11-05T14:58:34.969698+00:00",
+  "original_api_call_id": 392,
+  "original_request": "round2/logs/api_0392_request.json",
+  "retrieved_result": "round2/results/supplement_budget_Q11_supplementary_mix.json",
+  "A": "Exact replay of original API392 payload, excluding only log-envelope id/stage fields.",
+  "B": "Add only publication_numbers, original file_path, and original source_id to each of all 82 pre-existing relationship JSON records. Entity records, descriptions, order, retrieved chunks, reference list, user query and system instructions unchanged.",
+  "C": "B plus exact original Claim1 and Claim27 in a separate Original Claim Evidence section. Diagnostic adds semantic evidence, not a pure provenance-field ablation.",
+  "relationship_count": 82,
+  "entity_count_unchanged": 82,
+  "document_chunk_count_unchanged": 20,
+  "reference_count_unchanged": 13,
+  "new_reference_ids": [],
+  "citation_limitation": "US7991757B2 is absent from the unchanged reference-ID list in all conditions. Correct prose attribution and formal reference-list ID compliance must be assessed separately. C's supplied Claim source labels have no new reference ID.",
+  "source_id_meaning": "IDs of persisted text chunks, joined by <SEP> for merged provenance. Each ID was independently looked up and verified against full_doc_id, file_path and an exact original-document character span. No source_id/file_path lists were arbitrarily zipped; aggregation does not establish one-to-one attribution of description sentences or Claim numbers.",
+  "source_document_normalization": "Persisted full_docs equals each original local document with its single terminal newline removed; no inner text normalization accepted. Chunk and Claim character spans match the original local document exactly.",
+  "checks": {
+    "A_payload_values_exact": true,
+    "B_reversible_to_A": true,
+    "existing_relationship_fields_unchanged": true,
+    "all_relationship_sources_validated": true,
+    "C_reversible_to_B": true,
+    "C_claims_exact_original_matches": true,
+    "user_query_identical": true,
+    "system_instructions_identical": true,
+    "reference_list_identical": true
+  },
+  "statistics": {
+    "A": {
+      "system_characters": 146853,
+      "system_utf8_bytes": 146908,
+      "system_sha256": "c9a135b30eaf5ae5a2f9451356483e3ba02faee4b3c7c36d1fbef528d5ae260c",
+      "user_sha256": "040db0f08fbe81b0ab6664f4c31e551c61b1e18b8d593eccc2f513da636557ee",
+      "token_count": null,
+      "token_count_note": "Not guessed; runner/API usage will provide exact charged prompt-token count."
+    },
+    "B": {
+      "system_characters": 156363,
+      "system_utf8_bytes": 156418,
+      "system_sha256": "965b530795df239435b8d35515a20617ec6f77a23647392ec133c6c2affd591c",
+      "user_sha256": "040db0f08fbe81b0ab6664f4c31e551c61b1e18b8d593eccc2f513da636557ee",
+      "token_count": null,
+      "token_count_note": "Not guessed; runner/API usage will provide exact charged prompt-token count."
+    },
+    "C": {
+      "system_characters": 158879,
+      "system_utf8_bytes": 158934,
+      "system_sha256": "b0110963dffcd47a5b30dbcf11920e7a69ca1e2f52dd94c19d407555c6c113ad",
+      "user_sha256": "040db0f08fbe81b0ab6664f4c31e551c61b1e18b8d593eccc2f513da636557ee",
+      "token_count": null,
+      "token_count_note": "Not guessed; runner/API usage will provide exact charged prompt-token count."
+    }
+  },
+  "evaluation_recommendation": {
+    "primary": "Wrong positive source attribution/exclusion: says retrieved registration capabilities belong to another patent/family, do not belong to US7991757B2, or cites another patent as their actual support. Neutral lack-of-source abstention is distinct, not this error.",
+    "document_attribution": "Recognizes US7991757B2 as provenance of the registration relationship. B can establish document attribution but cannot establish Claim1/27 assignment from source_id alone.",
+    "claim_dependency": "Correct Claim27 depends on Claim1, registration vs machine-readable-description capability, supported by provided claim text. A/B have no explicit Claim evidence for this attribution; guesses remain unsupported even when true externally.",
+    "quotes": "Exact supporting claim wording only in C; a graph paraphrase must not be labeled a direct original-Claim quotation.",
+    "repeat_design": "3 matched repeats per condition, interleaved/rotated order, same parameters. Record no seed if unsupported and report observed counts without population/sole-cause claims."
+  }
+}

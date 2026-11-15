@@ -1,0 +1,1442 @@
+{
+  "audit_id": "N023",
+  "node_id": "User",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "5 篇、9 个来源块均将 user 作为使用系统/消费或反馈内容的人：邮件使用者、媒体读者、搜索用户、内容偏好表达者、拼写反馈者。原合并摘要逐一用 in the context of 区分局部角色，没有证据宣称为同一个人；角色不同不足以认定词义混并。",
+  "class_instance_interpretation_zh": "共享系统用户这一人的角色类。不是五篇中的同一自然人，也不将角色偏好、邮件操作及错误反馈绑定到同一用户实例。",
+  "source_assessments": [
+    {
+      "publication_number": "US8069128B2",
+      "evidence_quote": "such that a user is enabled to move the identified message to another message folder",
+      "claim_or_section": "Claim 6",
+      "claim_number": 6,
+      "role_zh": "查看误分类提示、移动消息并可手动选择多遍过滤器的用户。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8069128B2-chunk-000",
+        "US8069128B2-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8069128B2-chunk-000",
+        "US8069128B2-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8069128B2.json",
+        "claim_file_sha256": "931e4f61d8ac862d3c8a094a127cd10ede2d79a1b78d6a6b73f6f40282d8e053",
+        "claim_number": 6
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claims 6,12,14,17 支持两个来源块的描述及客户端/文件夹/界面等邻边。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8069128B2-chunk-000",
+            "raw_record_id": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+            "cache_key": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 19,
+            "raw_line": "entity<|#|>User<|#|>Person<|#|>A person for whom messages are sorted into folders and who is enabled to move identified misclassified messages to another folder.",
+            "fields": [
+              "entity",
+              "User",
+              "Person",
+              "A person for whom messages are sorted into folders and who is enabled to move identified misclassified messages to another folder."
+            ]
+          },
+          {
+            "chunk_id": "US8069128B2-chunk-001",
+            "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+            "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 11,
+            "raw_line": "entity<|#|>User<|#|>Person<|#|>A person enabled to move an identified message to another message folder, who may select the multi-pass message filter for execution through an interface on the client device.",
+            "fields": [
+              "entity",
+              "User",
+              "Person",
+              "A person enabled to move an identified message to another message folder, who may select the multi-pass message filter for execution through an interface on the client device."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8069128B2-chunk-000",
+            "raw_record_id": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+            "cache_key": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 39,
+            "raw_line": "relation<|#|>Misclassification Identification<|#|>User<|#|>displayed to<|#|>The misclassification identification is displayed to the user so a misclassified message can be moved.",
+            "fields": [
+              "relation",
+              "Misclassification Identification",
+              "User",
+              "displayed to",
+              "The misclassification identification is displayed to the user so a misclassified message can be moved."
+            ]
+          },
+          {
+            "chunk_id": "US8069128B2-chunk-000",
+            "raw_record_id": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+            "cache_key": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 40,
+            "raw_line": "relation<|#|>User<|#|>Message Folders<|#|>moves messages between<|#|>The user is enabled to move an identified misclassified message to a different message folder.",
+            "fields": [
+              "relation",
+              "User",
+              "Message Folders",
+              "moves messages between",
+              "The user is enabled to move an identified misclassified message to a different message folder."
+            ]
+          },
+          {
+            "chunk_id": "US8069128B2-chunk-000",
+            "raw_record_id": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+            "cache_key": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 58,
+            "raw_line": "relation<|#|>User<|#|>Interface<|#|>selects filter through<|#|>The multi-pass message filter is selectable for execution by a user through an interface on the client device.",
+            "fields": [
+              "relation",
+              "User",
+              "Interface",
+              "selects filter through",
+              "The multi-pass message filter is selectable for execution by a user through an interface on the client device."
+            ]
+          },
+          {
+            "chunk_id": "US8069128B2-chunk-001",
+            "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+            "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 29,
+            "raw_line": "relation<|#|>Client Device<|#|>User<|#|>provides display enabling<|#|>The client device provides a display of information associated with incorrectly sorted messages, such that a user is enabled to move the identified message to another message folder.",
+            "fields": [
+              "relation",
+              "Client Device",
+              "User",
+              "provides display enabling",
+              "The client device provides a display of information associated with incorrectly sorted messages, such that a user is enabled to move the identified message to another message folder."
+            ]
+          },
+          {
+            "chunk_id": "US8069128B2-chunk-001",
+            "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+            "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 30,
+            "raw_line": "relation<|#|>User<|#|>Message Folder<|#|>moves message to<|#|>A user is enabled to move the identified message to another message folder.",
+            "fields": [
+              "relation",
+              "User",
+              "Message Folder",
+              "moves message to",
+              "A user is enabled to move the identified message to another message folder."
+            ]
+          },
+          {
+            "chunk_id": "US8069128B2-chunk-001",
+            "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+            "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 31,
+            "raw_line": "relation<|#|>User<|#|>Multi-Pass Message Filter<|#|>selects for execution<|#|>The multi-pass message filter is selectable for execution by a user through an interface on the client device.",
+            "fields": [
+              "relation",
+              "User",
+              "Multi-Pass Message Filter",
+              "selects for execution",
+              "The multi-pass message filter is selectable for execution by a user through an interface on the client device."
+            ]
+          },
+          {
+            "chunk_id": "US8069128B2-chunk-001",
+            "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+            "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 32,
+            "raw_line": "relation<|#|>User<|#|>Interface<|#|>uses<|#|>The user selects the multi-pass message filter for execution through an interface on the client device.",
+            "fields": [
+              "relation",
+              "User",
+              "Interface",
+              "uses",
+              "The user selects the multi-pass message filter for execution through an interface on the client device."
+            ]
+          },
+          {
+            "chunk_id": "US8069128B2-chunk-001",
+            "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+            "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 33,
+            "raw_line": "relation<|#|>First Message Filter<|#|>User<|#|>executed independent of<|#|>The first message filter is automatically executed independent of a user action.",
+            "fields": [
+              "relation",
+              "First Message Filter",
+              "User",
+              "executed independent of",
+              "The first message filter is automatically executed independent of a user action."
+            ]
+          }
+        ],
+        "raw_entity_count": 2,
+        "raw_relation_endpoint_count": 8
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The misclassification identification is displayed to the user so a misclassified message can be moved.",
+          "keywords": "displayed to",
+          "source_id": "US8069128B2-chunk-000",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "Misclassification Identification",
+          "edge_index": 384,
+          "source_chunks": [
+            "US8069128B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The user is enabled to move an identified misclassified message to a different message folder.",
+          "keywords": "moves messages between",
+          "source_id": "US8069128B2-chunk-000",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "Message Folders",
+          "edge_index": 385,
+          "source_chunks": [
+            "US8069128B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The user selects the multi-pass message filter for execution through an interface on the client device.<SEP>The multi-pass message filter is selectable for execution by a user through an interface on the client device.",
+          "keywords": "selects filter through,uses",
+          "source_id": "US8069128B2-chunk-000<SEP>US8069128B2-chunk-001",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "Interface",
+          "edge_index": 386,
+          "source_chunks": [
+            "US8069128B2-chunk-000",
+            "US8069128B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A user is enabled to move the identified message to another message folder.",
+          "keywords": "moves message to",
+          "source_id": "US8069128B2-chunk-001",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "Message Folder",
+          "edge_index": 387,
+          "source_chunks": [
+            "US8069128B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The client device provides a display of information associated with incorrectly sorted messages, such that a user is enabled to move the identified message to another message folder.",
+          "keywords": "provides display enabling",
+          "source_id": "US8069128B2-chunk-001",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "Client Device",
+          "edge_index": 388,
+          "source_chunks": [
+            "US8069128B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The multi-pass message filter is selectable for execution by a user through an interface on the client device.",
+          "keywords": "selects for execution",
+          "source_id": "US8069128B2-chunk-001",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "Multi-Pass Message Filter",
+          "edge_index": 389,
+          "source_chunks": [
+            "US8069128B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The first message filter is automatically executed independent of a user action.",
+          "keywords": "executed independent of",
+          "source_id": "US8069128B2-chunk-001",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "First Message Filter",
+          "edge_index": 390,
+          "source_chunks": [
+            "US8069128B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8069128B2-chunk-000",
+          "sha256": "03d27b9af9a95fc99659dae87ae86cc8134f0f4319687342b04ae8d524454c1c",
+          "characters": 6639
+        },
+        {
+          "chunk_id": "US8069128B2-chunk-001",
+          "sha256": "5f3c413a5144fe5d3a95802edf16f3f070a0a6b7d0c00a2440d10ace81083b2e",
+          "characters": 2946
+        }
+      ]
+    },
+    {
+      "publication_number": "US8719408B2",
+      "evidence_quote": "each user relationship based on monitoring an online association between a user and a content producer",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "与内容发布者存在在线关系、接收按关联权重过滤内容的用户。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8719408B2-chunk-000",
+        "US8719408B2-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8719408B2-chunk-000",
+        "US8719408B2-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8719408B2.json",
+        "claim_file_sha256": "8fbed8d352cb99d08004c35b1932e38a5b60e8d80c7aba212348f23e534fa87f",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claims 1–4 和17–20 支持两个来源块的用户关系、媒体聚合档案和共同兴趣角色。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8719408B2-chunk-000",
+            "raw_record_id": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 3,
+            "raw_line": "entity<|#|>User<|#|>Person<|#|>An individual for whom user relationships are established and to whom filtered digital media content is presented with priority based on relevancy weights.",
+            "fields": [
+              "entity",
+              "User",
+              "Person",
+              "An individual for whom user relationships are established and to whom filtered digital media content is presented with priority based on relevancy weights."
+            ]
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 16,
+            "raw_line": "entity<|#|>User<|#|>Person<|#|>A user who has relationships with content producers, has a user profile, and receives presented digital media content.",
+            "fields": [
+              "entity",
+              "User",
+              "Person",
+              "A user who has relationships with content producers, has a user profile, and receives presented digital media content."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8719408B2-chunk-000",
+            "raw_record_id": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 30,
+            "raw_line": "relation<|#|>User Relationship<|#|>User<|#|>involves<|#|>A user relationship is established between a user and a content producer and involves the user.",
+            "fields": [
+              "relation",
+              "User Relationship",
+              "User",
+              "involves",
+              "A user relationship is established between a user and a content producer and involves the user."
+            ]
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-000",
+            "raw_record_id": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 47,
+            "raw_line": "relation<|#|>Media Aggregator Profile<|#|>User<|#|>associated with<|#|>The media aggregator profile is associated with the user.",
+            "fields": [
+              "relation",
+              "Media Aggregator Profile",
+              "User",
+              "associated with",
+              "The media aggregator profile is associated with the user."
+            ]
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-000",
+            "raw_record_id": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 54,
+            "raw_line": "relation<|#|>Mutual Interest<|#|>User<|#|>shared by<|#|>Mutual interests exist between the user and the content producer that published the digital media content.",
+            "fields": [
+              "relation",
+              "Mutual Interest",
+              "User",
+              "shared by",
+              "Mutual interests exist between the user and the content producer that published the digital media content."
+            ]
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 40,
+            "raw_line": "relation<|#|>User Relationship<|#|>User<|#|>involves<|#|>Each user relationship involves a user.",
+            "fields": [
+              "relation",
+              "User Relationship",
+              "User",
+              "involves",
+              "Each user relationship involves a user."
+            ]
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 58,
+            "raw_line": "relation<|#|>Media Aggregator Profile<|#|>User<|#|>associated with<|#|>The media aggregator profile is associated with the user.",
+            "fields": [
+              "relation",
+              "Media Aggregator Profile",
+              "User",
+              "associated with",
+              "The media aggregator profile is associated with the user."
+            ]
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 65,
+            "raw_line": "relation<|#|>Mutual Interests<|#|>User<|#|>between<|#|>The mutual interests are between the user and the content producer.",
+            "fields": [
+              "relation",
+              "Mutual Interests",
+              "User",
+              "between",
+              "The mutual interests are between the user and the content producer."
+            ]
+          }
+        ],
+        "raw_entity_count": 2,
+        "raw_relation_endpoint_count": 6
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "A user relationship is established between a user and a content producer and involves the user.<SEP>Each user relationship involves a user.",
+          "keywords": "involves",
+          "source_id": "US8719408B2-chunk-000<SEP>US8719408B2-chunk-001",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "User",
+          "target": "User Relationship",
+          "edge_index": 396,
+          "source_chunks": [
+            "US8719408B2-chunk-000",
+            "US8719408B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The media aggregator profile is associated with the user.",
+          "keywords": "associated with",
+          "source_id": "US8719408B2-chunk-000<SEP>US8719408B2-chunk-001",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "User",
+          "target": "Media Aggregator Profile",
+          "edge_index": 397,
+          "source_chunks": [
+            "US8719408B2-chunk-000",
+            "US8719408B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Mutual interests exist between the user and the content producer that published the digital media content.",
+          "keywords": "shared by",
+          "source_id": "US8719408B2-chunk-000",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "User",
+          "target": "Mutual Interest",
+          "edge_index": 398,
+          "source_chunks": [
+            "US8719408B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The mutual interests are between the user and the content producer.",
+          "keywords": "between",
+          "source_id": "US8719408B2-chunk-001",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "User",
+          "target": "Mutual Interests",
+          "edge_index": 399,
+          "source_chunks": [
+            "US8719408B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8719408B2-chunk-000",
+          "sha256": "e303c7516b50f0904a4432e14df56d76382064de207d1bbaba9d60f88fef0554",
+          "characters": 7208
+        },
+        {
+          "chunk_id": "US8719408B2-chunk-001",
+          "sha256": "dcd5540204015d2851b60923695a591f918c1aa150e91fd42d534817a881c085",
+          "characters": 4976
+        }
+      ]
+    },
+    {
+      "publication_number": "US8880423B2",
+      "evidence_quote": "the search keywords based on search keywords previously submitted by a plurality of users",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "历史查询和浏览行为产生搜索库存估计输入的用户。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8880423B2-chunk-000"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8880423B2-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8880423B2.json",
+        "claim_file_sha256": "629f0de77be165ab196fc2dacd7d1db59be8d8cbdeb0f35e05b7c12a2c9c8f7e",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claim 1 与 Abstract 支持原实体和 submitted/viewed 关系；不主张这些人与其他文档用户身份相同。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8880423B2-chunk-000",
+            "raw_record_id": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "cache_key": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 17,
+            "raw_line": "entity<|#|>User<|#|>Person<|#|>Individuals who previously submitted search keywords and viewed pages, providing the history used for inventory estimation.",
+            "fields": [
+              "entity",
+              "User",
+              "Person",
+              "Individuals who previously submitted search keywords and viewed pages, providing the history used for inventory estimation."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8880423B2-chunk-000",
+            "raw_record_id": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "cache_key": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 39,
+            "raw_line": "relation<|#|>Search Keyword<|#|>User<|#|>submitted by<|#|>Search keywords were previously submitted by a plurality of users.",
+            "fields": [
+              "relation",
+              "Search Keyword",
+              "User",
+              "submitted by",
+              "Search keywords were previously submitted by a plurality of users."
+            ]
+          },
+          {
+            "chunk_id": "US8880423B2-chunk-000",
+            "raw_record_id": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "cache_key": "default:extract:a882d3dbe8cd44d74c944da929627768",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 40,
+            "raw_line": "relation<|#|>Viewed Page<|#|>User<|#|>viewed by<|#|>Viewed pages are pages previously viewed by users.",
+            "fields": [
+              "relation",
+              "Viewed Page",
+              "User",
+              "viewed by",
+              "Viewed pages are pages previously viewed by users."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "Viewed pages are pages previously viewed by users.",
+          "keywords": "viewed by",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793284282,
+          "truncate": "",
+          "source": "Viewed Page",
+          "target": "User",
+          "edge_index": 361,
+          "source_chunks": [
+            "US8880423B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8880423B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Search keywords were previously submitted by a plurality of users.",
+          "keywords": "submitted by",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793284282,
+          "truncate": "",
+          "source": "Search Keyword",
+          "target": "User",
+          "edge_index": 366,
+          "source_chunks": [
+            "US8880423B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8880423B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8880423B2-chunk-000",
+          "sha256": "9a6a83a5aac470476df10e59c8227d9d42ff76b2b03646c94d6fae0828e241c0",
+          "characters": 6866
+        }
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "evidence_quote": "associate a preferred character with the user based at least upon the second user interaction data",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "通过内容交互表达角色偏好并接收内容推荐的用户。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001",
+        "US9374411B1-chunk-002"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9374411B1-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9374411B1.json",
+        "claim_file_sha256": "0a477135e7ff698cddc3d74095c31506212dd525bec8ad9fb5529a6a658955e4",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claims 1,6,11,14,23 支持三个来源块的用户角色；末块原实体没有直接新增关系行，不能虚构额外邻边。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 3,
+            "raw_line": "entity<|#|>User<|#|>Person<|#|>A person associated with a client who interacts with video content features and expresses preferences toward characters, receiving content recommendations.",
+            "fields": [
+              "entity",
+              "User",
+              "Person",
+              "A person associated with a client who interacts with video content features and expresses preferences toward characters, receiving content recommendations."
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 7,
+            "raw_line": "entity<|#|>User<|#|>Person<|#|>An individual who interacts with network content and expresses preferences toward characters.",
+            "fields": [
+              "entity",
+              "User",
+              "Person",
+              "An individual who interacts with network content and expresses preferences toward characters."
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-002",
+            "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+            "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 6,
+            "raw_line": "entity<|#|>User<|#|>Person<|#|>A user who interacts with a user interface and may express explicit feedback favoring a fictional character.",
+            "fields": [
+              "entity",
+              "User",
+              "Person",
+              "A user who interacts with a user interface and may express explicit feedback favoring a fictional character."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 26,
+            "raw_line": "relation<|#|>Content Recommendation System<|#|>User<|#|>recommends content to<|#|>The content recommendation system recommends network content to users based on character preferences and relationship scores.",
+            "fields": [
+              "relation",
+              "Content Recommendation System",
+              "User",
+              "recommends content to",
+              "The content recommendation system recommends network content to users based on character preferences and relationship scores."
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 27,
+            "raw_line": "relation<|#|>User<|#|>Preferred Character<|#|>associated with, prefers<|#|>The user is associated with a preferred character based on user interaction data expressing a preference toward that character.",
+            "fields": [
+              "relation",
+              "User",
+              "Preferred Character",
+              "associated with, prefers",
+              "The user is associated with a preferred character based on user interaction data expressing a preference toward that character."
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 38,
+            "raw_line": "relation<|#|>Recommendation<|#|>User<|#|>sent to<|#|>The recommendation to play the second video content feature is sent to the user.",
+            "fields": [
+              "relation",
+              "Recommendation",
+              "User",
+              "sent to",
+              "The recommendation to play the second video content feature is sent to the user."
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 40,
+            "raw_line": "relation<|#|>Client<|#|>User<|#|>associated with<|#|>The client is associated with the user.",
+            "fields": [
+              "relation",
+              "Client",
+              "User",
+              "associated with",
+              "The client is associated with the user."
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 31,
+            "raw_line": "relation<|#|>Recommendation<|#|>User<|#|>generation, targeting<|#|>The recommendation is generated for another user in response to the user specifying a preference for a character.",
+            "fields": [
+              "relation",
+              "Recommendation",
+              "User",
+              "generation, targeting",
+              "The recommendation is generated for another user in response to the user specifying a preference for a character."
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 32,
+            "raw_line": "relation<|#|>User<|#|>First Character<|#|>preference<|#|>The user may specify a preference for the first character.",
+            "fields": [
+              "relation",
+              "User",
+              "First Character",
+              "preference",
+              "The user may specify a preference for the first character."
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 33,
+            "raw_line": "relation<|#|>User<|#|>Second Character<|#|>preference<|#|>The user may specify a preference for the second character.",
+            "fields": [
+              "relation",
+              "User",
+              "Second Character",
+              "preference",
+              "The user may specify a preference for the second character."
+            ]
+          }
+        ],
+        "raw_entity_count": 3,
+        "raw_relation_endpoint_count": 7
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The recommendation to play the second video content feature is sent to the user.<SEP>The recommendation is generated for another user in response to the user specifying a preference for a character.",
+          "keywords": "generation,sent to,targeting",
+          "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Recommendation",
+          "target": "User",
+          "edge_index": 293,
+          "source_chunks": [
+            "US9374411B1-chunk-000",
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The content recommendation system recommends network content to users based on character preferences and relationship scores.",
+          "keywords": "recommends content to",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User",
+          "target": "Content Recommendation System",
+          "edge_index": 391,
+          "source_chunks": [
+            "US9374411B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The user is associated with a preferred character based on user interaction data expressing a preference toward that character.",
+          "keywords": "associated with,prefers",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User",
+          "target": "Preferred Character",
+          "edge_index": 392,
+          "source_chunks": [
+            "US9374411B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The client is associated with the user.",
+          "keywords": "associated with",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User",
+          "target": "Client",
+          "edge_index": 393,
+          "source_chunks": [
+            "US9374411B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The user may specify a preference for the second character.",
+          "keywords": "preference",
+          "source_id": "US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User",
+          "target": "Second Character",
+          "edge_index": 394,
+          "source_chunks": [
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The user may specify a preference for the first character.",
+          "keywords": "preference",
+          "source_id": "US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User",
+          "target": "First Character",
+          "edge_index": 395,
+          "source_chunks": [
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9374411B1-chunk-000",
+          "sha256": "1c6ddec8304601845ddead7675e8d25ffe813f0a1d7087766b31ededcbd9a1cc",
+          "characters": 6777
+        },
+        {
+          "chunk_id": "US9374411B1-chunk-001",
+          "sha256": "bbe6f2f25b0f58e297204d0c91d3cd176e3a59c7a39ef03093c9724efe2d9fe0",
+          "characters": 6667
+        },
+        {
+          "chunk_id": "US9374411B1-chunk-002",
+          "sha256": "b5779b04614e5a41d1a3eb710fae56a98a1d9153d5b676b056c38b64dd24a8be",
+          "characters": 875
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "evidence_quote": "provide data indicative of presence of a potential typographical error in a work to a user via a graphical user interface",
+      "claim_or_section": "Claim 18",
+      "claim_number": 18,
+      "role_zh": "通过图形界面反馈潜在排版/拼写错误是否为作者原意的用户。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9514120B1-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9514120B1-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9514120B1.json",
+        "claim_file_sha256": "8346fa36328fdfbabb59a6e1b894c45fb7d867deac3a02966169ba752bd06d81",
+        "claim_number": 18
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claim 18 的提示、用户输入以及多用户反馈合并语境支持原抽取。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9514120B1-chunk-001",
+            "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+            "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 13,
+            "raw_line": "entity<|#|>User<|#|>Person<|#|>An individual who provides feedback on potential typographical errors in a work via a graphical user interface.",
+            "fields": [
+              "entity",
+              "User",
+              "Person",
+              "An individual who provides feedback on potential typographical errors in a work via a graphical user interface."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9514120B1-chunk-001",
+            "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+            "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 29,
+            "raw_line": "relation<|#|>User<|#|>Feedback<|#|>provides<|#|>Users provide feedback on potential typographical errors in a work.",
+            "fields": [
+              "relation",
+              "User",
+              "Feedback",
+              "provides",
+              "Users provide feedback on potential typographical errors in a work."
+            ]
+          },
+          {
+            "chunk_id": "US9514120B1-chunk-001",
+            "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+            "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 30,
+            "raw_line": "relation<|#|>User<|#|>Graphical User Interface<|#|>interacts with<|#|>A user receives data indicative of potential typographical errors via a graphical user interface.",
+            "fields": [
+              "relation",
+              "User",
+              "Graphical User Interface",
+              "interacts with",
+              "A user receives data indicative of potential typographical errors via a graphical user interface."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "Users provide feedback on potential typographical errors in a work.",
+          "keywords": "provides",
+          "source_id": "US9514120B1-chunk-001",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "User",
+          "target": "Feedback",
+          "edge_index": 382,
+          "source_chunks": [
+            "US9514120B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A user receives data indicative of potential typographical errors via a graphical user interface.",
+          "keywords": "interacts with",
+          "source_id": "US9514120B1-chunk-001",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "User",
+          "target": "Graphical User Interface",
+          "edge_index": 383,
+          "source_chunks": [
+            "US9514120B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9514120B1-chunk-001",
+          "sha256": "7dd8efe9e014ee9e28d8ff4d1c7090dfcca115a354cf7d985cc95448a9241a74",
+          "characters": 6473
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 21,
+    "observed_unsupported_edge": false,
+    "details_zh": "已逐条审阅实际邻边及其 source_id。未确认一条缺少其自身来源支持的边；合并后的跨文档邻接不能当成已发生错误边传播的证据。",
+    "edge_indices": [
+      293,
+      361,
+      366,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 293,
+        "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9374411B1 Claims 1,11",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 361,
+        "source_id": "US8880423B2-chunk-000",
+        "canonical_publications": [
+          "US8880423B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8880423B2 Abstract, Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 366,
+        "source_id": "US8880423B2-chunk-000",
+        "canonical_publications": [
+          "US8880423B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8880423B2 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 382,
+        "source_id": "US9514120B1-chunk-001",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9514120B1 Claim 18",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 383,
+        "source_id": "US9514120B1-chunk-001",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9514120B1 Claim 18",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 384,
+        "source_id": "US8069128B2-chunk-000",
+        "canonical_publications": [
+          "US8069128B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8069128B2 Claim 6",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 385,
+        "source_id": "US8069128B2-chunk-000",
+        "canonical_publications": [
+          "US8069128B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8069128B2 Claim 6",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 386,
+        "source_id": "US8069128B2-chunk-000<SEP>US8069128B2-chunk-001",
+        "canonical_publications": [
+          "US8069128B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8069128B2 Claim 14",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 387,
+        "source_id": "US8069128B2-chunk-001",
+        "canonical_publications": [
+          "US8069128B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8069128B2 Claims 12,17",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 388,
+        "source_id": "US8069128B2-chunk-001",
+        "canonical_publications": [
+          "US8069128B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8069128B2 Claim 17",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 389,
+        "source_id": "US8069128B2-chunk-001",
+        "canonical_publications": [
+          "US8069128B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8069128B2 Claims 14,19",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 390,
+        "source_id": "US8069128B2-chunk-001",
+        "canonical_publications": [
+          "US8069128B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8069128B2 Claim 14",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 391,
+        "source_id": "US9374411B1-chunk-000",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9374411B1 Abstract, Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 392,
+        "source_id": "US9374411B1-chunk-000",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9374411B1 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 393,
+        "source_id": "US9374411B1-chunk-000",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9374411B1 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 394,
+        "source_id": "US9374411B1-chunk-001",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9374411B1 Claims 6,11",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 395,
+        "source_id": "US9374411B1-chunk-001",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9374411B1 Claims 6,11",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 396,
+        "source_id": "US8719408B2-chunk-000<SEP>US8719408B2-chunk-001",
+        "canonical_publications": [
+          "US8719408B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8719408B2 Claims 1,17",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 397,
+        "source_id": "US8719408B2-chunk-000<SEP>US8719408B2-chunk-001",
+        "canonical_publications": [
+          "US8719408B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8719408B2 Claims 2,18",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 398,
+        "source_id": "US8719408B2-chunk-000",
+        "canonical_publications": [
+          "US8719408B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8719408B2 Claim 4",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 399,
+        "source_id": "US8719408B2-chunk-001",
+        "canonical_publications": [
+          "US8719408B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8719408B2 Claim 20",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      }
+    ],
+    "retrieval_or_generation_propagation_tested": false
+  },
+  "limitations_zh": [
+    "这是 AI 辅助原文/抽取/图结构审阅，非独立人工标注 gold、非新的模型评判 API 实验。",
+    "仅审核当前保存的第二轮图快照与其来源块；概念合并不等于实例 sameAs，也没有进行跨专利路径检索或答案生成传播实验。",
+    "原文为已索引摘要及 Claims；没有用外部说明书填补缺失事实。原始文本中的格式缺陷保持原样。",
+    "边的端点顺序来自保存的无向图；语义方向按原关系描述核对，不把 source/target 字段顺序当作因果方向。",
+    "observed_unsupported_edge=false 表示本次检查未确认无原文支持的实际边，不是证明全图无误；关键词粒度/局部实施例范围的警示另记。",
+    "未给定显式类/实例 ontology。类别是基于具体词义及作用域的审阅标签，contextual_conflation 数量不是错误边数或代码 bug 率；Event/Network 的宽类解释可改变类别。",
+    "缓存提取行未保存 finish_reason 时不推定完整或截断；本审核只对实际保存的实体/关系行与当前已入图事实作语义核验。"
+  ],
+  "ontology_sensitivity": {
+    "explicit_ontology_available": false,
+    "alternative_shared_broad_class_plausible": false,
+    "interpretation_zh": "类别只描述现有证据下的概念语义，未断言跨专利实例相同或已发生错误推理。"
+  },
+  "review_method": {
+    "reviewer": "AI-assisted Codex content review",
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "all_source_publications_reviewed": 5,
+    "all_source_chunks_reviewed": 9,
+    "all_actual_incident_edges_reviewed": 21,
+    "raw_input_kind": "saved extraction rows; no new extraction",
+    "review_protocol_sha256": "bbed066b8051df60997798d319549164d750797ebef3d7c1e86d69ffc6092255",
+    "dossier_sha256": "f2698835a96df6aabe8c052663437e56352b08708b4ba7c09305afb377faaf02",
+    "generated_utc": "2026-10-30T08:21:11.052491+00:00"
+  },
+  "graph_node_description_reviewed": "The term \"User\" refers to an individual who interacts with various systems, interfaces, and content across multiple contexts. In the context of search and inventory systems, a User is an individual who has previously submitted search keywords and viewed pages, thereby providing the history used for inventory estimation. In the context of error reporting, a User is an individual who provides feedback on potential typographical errors in a work via a graphical user interface. In messaging systems, a User is a person enabled to move an identified message to another message folder and who may select the multi-pass message filter for execution through an interface on the client device; relatedly, a User is a person for whom messages are sorted into folders and who is enabled to move identified misclassified messages to another folder.\n\nIn the context of media and content consumption, a User is a person associated with a client who interacts with video content features and expresses preferences toward characters, receiving content recommendations. Similarly, a User is an individual who interacts with network content and expresses preferences toward characters, and a User who interacts with a user interface and may express explicit feedback favoring a fictional character. In the context of digital media distribution and relationships, a User is an individual for whom user relationships are established and to whom filtered digital media content is presented with priority based on relevancy weights. Finally, a User is a user who has relationships with content producers, has a user profile, and receives presented digital media content."
+}

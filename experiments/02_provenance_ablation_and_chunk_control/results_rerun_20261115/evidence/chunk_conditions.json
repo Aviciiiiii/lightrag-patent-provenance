@@ -1,0 +1,411 @@
+{
+  "experiment": "artificial boundary-only extraction control; not the natural 1200/100 corpus chunking",
+  "publication_number": "US7991757B2",
+  "source_path": "data/selected_raw/US7991757B2.json",
+  "source_field": "claims",
+  "source_claims": [
+    26,
+    27,
+    28
+  ],
+  "source_excerpt": "26. The system of claim 1 , wherein the computer system comprises multiple physical computing devices. 27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender. 28. The system of claim 3 , wherein the content site selects at least some of the weights to assign to the external recommenders.",
+  "source_excerpt_sha256": "6d492edf22c0d19b6d21d700c35bb0f6ca55c523433a38015a6705969ce74dc9",
+  "raw_claims_char_span": [
+    9973,
+    10459
+  ],
+  "full_document_char_span": [
+    10467,
+    10953
+  ],
+  "full_document_claims_offset": 494,
+  "source_excerpt_tokens": 93,
+  "tokenizer": "o200k_base; also used by round2 gpt-4o-mini tokenizer setting",
+  "span_semantics": "Zero-based half-open Unicode character, UTF-8 byte and tokenizer-token spans. Token start/end index the whole named source sequence only when aligned_to_whole_sequence is true; otherwise they denote independently encoded prefix length plus chunk length and must not be treated as whole-sequence slices. Exact global token boundaries and enclosing token spans are also computed from the official tokenizer's per-token bytes. The last full-document endpoint falls within a token that also includes a trailing newline; the original raw-claims and excerpt ranges align exactly.",
+  "official_version": "1.5.7",
+  "official_commit": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+  "prompt_api": "Unmodified lightrag.prompt.PROMPTS entity_extraction_system_prompt / entity_extraction_user_prompt read as AST literals. Entity type guidance and examples reused verbatim from real round2 API0003; reconstructed official system prompt asserted byte-identical. This avoids importing unrelated YAML/data dependencies during preparation.",
+  "parser_api": "await lightrag.operate._process_extraction_result(response, chunk_id, timestamp, file_path, tuple_delimiter='<|#|>', completion_delimiter='<|COMPLETE|>')",
+  "system_prompt_sha256": "abd2c2c7f243bbff5dd33122c336eafdce076d8533c8f5a46ca5ec29adef379c",
+  "system_prompt_byte_exact_round2_api_0003": true,
+  "generation_settings": {
+    "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "temperature": 0,
+    "max_tokens": 8192,
+    "stream": false,
+    "enable_thinking": false,
+    "gleaning": 0,
+    "seed": null
+  },
+  "quantity_limits": {
+    "total_records": 100,
+    "entities": 40
+  },
+  "controls": {
+    "calls_per_condition_per_repeat": 2,
+    "overlap": 0,
+    "input_text_order_identical": true,
+    "total_original_source_bytes_identical": true,
+    "same_system_prompt": true,
+    "same_user_prompt_template": true,
+    "heading_context": "",
+    "joint_cross_chunk_reextraction": false,
+    "index_rebuild": false
+  },
+  "conditions": {
+    "SAME": {
+      "boundary_in_raw_claims": 10329,
+      "boundary_in_excerpt": 356,
+      "boundary_label": "between Claim27 and Claim28",
+      "chunks": [
+        {
+          "chunk_id": "controlled-US7991757B2-same-000",
+          "chunk_order_index": 0,
+          "file_path": "US7991757B2.txt",
+          "content": "26. The system of claim 1 , wherein the computer system comprises multiple physical computing devices. 27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+          "sha256": "53e0b10b4694c259b4abcbd33a97066592821e84c6551cec2bc758ffcc320ca7",
+          "utf8_bytes": 356,
+          "tokens": 64,
+          "excerpt_char_span": [
+            0,
+            356
+          ],
+          "raw_claims_char_span": [
+            9973,
+            10329
+          ],
+          "full_document_char_span": [
+            10467,
+            10823
+          ],
+          "excerpt_token_span": {
+            "start": 0,
+            "end": 64,
+            "aligned_to_whole_sequence": true,
+            "utf8_byte_span": [
+              0,
+              356
+            ],
+            "whole_sequence_exact_start_token_boundary": 0,
+            "whole_sequence_exact_end_token_boundary": 64,
+            "whole_sequence_enclosing_token_span": [
+              0,
+              64
+            ],
+            "end_byte_offset_inside_final_enclosing_token": 0
+          },
+          "raw_claims_token_span": {
+            "start": 1745,
+            "end": 1809,
+            "aligned_to_whole_sequence": true,
+            "utf8_byte_span": [
+              9973,
+              10329
+            ],
+            "whole_sequence_exact_start_token_boundary": 1745,
+            "whole_sequence_exact_end_token_boundary": 1809,
+            "whole_sequence_enclosing_token_span": [
+              1745,
+              1809
+            ],
+            "end_byte_offset_inside_final_enclosing_token": 0
+          },
+          "full_document_token_span": {
+            "start": 1835,
+            "end": 1899,
+            "aligned_to_whole_sequence": true,
+            "utf8_byte_span": [
+              10467,
+              10823
+            ],
+            "whole_sequence_exact_start_token_boundary": 1835,
+            "whole_sequence_exact_end_token_boundary": 1899,
+            "whole_sequence_enclosing_token_span": [
+              1835,
+              1899
+            ],
+            "end_byte_offset_inside_final_enclosing_token": 0
+          },
+          "messages": [
+            {
+              "role": "system",
+              "content": "---Role---\nYou are a Knowledge Graph Specialist responsible for extracting entities and relationships from the `---Input Text---` section of user prompt.\n\n---Instructions---\n1. **Entity Extraction:**\n  - Identify clearly defined and meaningful entities only in the current user prompt's fenced `---Input Text---` section.\n  - For each entity, extract:\n    - `entity_name`: The name of the entity. If the entity name is case-insensitive, capitalize the first letter of each significant word (title case). Ensure **consistent naming** across the entire extraction process.\n    - `entity_type`: Categorize the entity using the type guidance provided in the `---Entity Types---` section below. If none of the provided entity types apply, classify it as `Other`.\n    - `entity_description`: Provide a concise yet comprehensive description of the entity's attributes and activities, based *solely* on the information present in the input text.\n\n2. **Relationship Extraction:**\n  - Identify direct, clearly stated, and meaningful relationships between previously extracted entities.\n  - If a single statement describes a relationship involving more than two entities, decompose it into multiple binary relationships.\n  - For each binary relationship, extract:\n    - `source_entity`: The name of the source entity. Ensure **consistent naming** with entity extraction. Capitalize the first letter of each significant word (title case) if the name is case-insensitive.\n    - `target_entity`: The name of the target entity. Ensure **consistent naming** with entity extraction. Capitalize the first letter of each significant word (title case) if the name is case-insensitive.\n    - `relationship_keywords`: One or more high-level keywords summarizing the relationship. Multiple keywords within this field must be separated by a comma `,`. **DO NOT use `<|#|>` for separating multiple keywords within this field.**\n    - `relationship_description`: A concise explanation of the nature of the relationship between the source and target entities.\n\n3. **Record Types:**\n  - `entity` is used only for entity rows and those rows always contain exactly 4 tuple parts total.\n  - `relation` is used only for relationship rows and those rows always contain exactly 5 tuple parts total.\n  - A row with two entity names plus relationship keywords and a relationship description must start with `relation`, never `entity`.\n  - After the last entity row, switch prefixes to `relation` for every relationship row.\n\n4. **Output Format:**\n  - Entity row: `entity<|#|>entity_name<|#|>entity_type<|#|>entity_description`\n  - Relation row: `relation<|#|>source_entity<|#|>target_entity<|#|>relationship_keywords<|#|>relationship_description`\n  - Wrong: `entity<|#|><source_entity><|#|><target_entity><|#|><relationship_keywords><|#|><relationship_description>`\n  - Correct: `relation<|#|><source_entity><|#|><target_entity><|#|><relationship_keywords><|#|><relationship_description>`\n\n5. **Delimiter Usage:**\n  - The `<|#|>` is a complete, atomic marker and **must not be filled with content**. It serves strictly as a field separator.\n  - Incorrect: `entity<|#|><entity_name><|entity_type|><entity_description>`\n  - Correct: `entity<|#|><entity_name><|#|><entity_type><|#|><entity_description>`\n\n6. **Output Order & Deduplication:**\n  - Output all extracted entities first, followed by all extracted relationships.\n  - Output at most 100 total rows across entities and relationships in this response.\n  - Output at most 40 entity rows in this response.\n  - Output fewer rows if fewer high-value items are present. Do not try to fill the limit.\n  - Only output relationship rows whose source and target entities are both included in the selected entity rows for this response.\n  - If the limit is reached, stop adding new rows immediately and output `<|COMPLETE|>`.\n  - Treat all relationships as **undirected** unless explicitly stated otherwise. Swapping the source and target entities for an undirected relationship does not constitute a new relationship.\n  - Avoid outputting duplicate relationships.\n  - Within the list of relationships, output the relationships that are **most significant** to the core meaning of the input text first.\n\n7. **Context & Language:**\n  - If the user prompt contains a `---Section Context---` section, it gives the document's section hierarchy (e.g. `h1 → h2 → h3`) that the input text belongs to. Use it **only as background** to disambiguate references and ground entity and relationship descriptions in the correct context. **Do NOT** extract entities or relationships from the section heading text itself, and do not mention the headings unless they also appear in the input text.\n  - Ensure all entity names and descriptions are written in the **third person**.\n  - Explicitly name the subject or object; **avoid using pronouns** such as `this article`, `this paper`, `our company`, `I`, `you`, and `he/she`.\n  - The entire output (entity names, keywords, and descriptions) must be written in `English`.\n  - Proper nouns (e.g., personal names, place names, organization names) should be retained in their original language if a proper, widely accepted translation is not available or would cause ambiguity.\n\n8. **Output Format Template Safety:**\n  - The `---Output Format Template---` section contains output format templates only. It is never source text.\n  - Do not extract, infer, or copy entities or relationships from the output format template.\n  - Angle-bracket tokens such as `<entity_name>` are placeholders. Replace them with values extracted from the current `---Input Text---` section and never output the placeholders literally.\n\n9. **Completion Signal:** Output the literal string `<|COMPLETE|>` only after all entities and relationships have been completely extracted and outputted.\n\n---Entity Types---\nClassify each entity using one of the following types. If no type fits, use `Other`.\n\n- Person: Human individuals, real or fictional\n- Creature: Non-human living beings (animals, mythical beings, etc.)\n- Organization: Companies, institutions, government bodies, groups\n- Location: Geographic places (cities, countries, buildings, regions)\n- Event: Occurrences, incidents, ceremonies, meetings\n- Concept: Abstract ideas, theories, principles, beliefs\n- Method: Procedures, techniques, algorithms, workflows\n- Content: Creative or informational works (books, articles, films, reports)\n- Data: Quantitative or structured information (statistics, datasets, measurements)\n- Artifact: Physical or digital objects created by humans (tools, software, devices)\n- NaturalObject: Natural non-living objects (minerals, celestial bodies, chemical compounds)\n\n---Output Format Template---\nThe following content is an output format template only. It is not source text and must never be used as extraction content.\n\nentity<|#|><entity_name><|#|><entity_type><|#|><entity_description>\nrelation<|#|><source_entity><|#|><target_entity><|#|><relationship_keywords><|#|><relationship_description>\n<|COMPLETE|>"
+            },
+            {
+              "role": "user",
+              "content": "---Task---\nExtract entities and relationships from the `---Input Text---` section below.\n\n---Instructions---\n1. **Strict Adherence to Format:** Strictly adhere to all format requirements for entity and relationship lists, including output order, field delimiters, and proper noun handling, as specified in the system prompt.\n2. **Quantity Limits:** In this response, output at most 100 total rows and at most 40 entity rows. Output fewer rows if fewer high-value items are present. Only output relationship rows whose source and target entities are both included in this response.\n3. **Output Content Only:** Output *only* the extracted list of entities and relationships. Do not include any introductory or concluding remarks, explanations, or additional text before or after the list.\n4. **Completion Signal:** Output `<|COMPLETE|>` as the final line after all relevant entities and relationships have been extracted and presented. If the row limit is reached, output `<|COMPLETE|>` immediately after the last allowed row.\n5. **Output Language:** Ensure the output language is English. Proper nouns (e.g., personal names, place names, organization names) must be kept in their original language and not translated.\n\n---Input Text---\n```\n26. The system of claim 1 , wherein the computer system comprises multiple physical computing devices. 27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.\n```\n\n---Output---\n"
+            }
+          ],
+          "user_prompt_sha256": "f1aea352432a1e2b238acec702ff4a002d9adf7627adc83e4994f0877a40d502"
+        },
+        {
+          "chunk_id": "controlled-US7991757B2-same-001",
+          "chunk_order_index": 1,
+          "file_path": "US7991757B2.txt",
+          "content": " 28. The system of claim 3 , wherein the content site selects at least some of the weights to assign to the external recommenders.",
+          "sha256": "a490dd8380bda24b09e3af96635129d2e7aec546c792981dc8715f4536a6cbfe",
+          "utf8_bytes": 130,
+          "tokens": 29,
+          "excerpt_char_span": [
+            356,
+            486
+          ],
+          "raw_claims_char_span": [
+            10329,
+            10459
+          ],
+          "full_document_char_span": [
+            10823,
+            10953
+          ],
+          "excerpt_token_span": {
+            "start": 64,
+            "end": 93,
+            "aligned_to_whole_sequence": true,
+            "utf8_byte_span": [
+              356,
+              486
+            ],
+            "whole_sequence_exact_start_token_boundary": 64,
+            "whole_sequence_exact_end_token_boundary": 93,
+            "whole_sequence_enclosing_token_span": [
+              64,
+              93
+            ],
+            "end_byte_offset_inside_final_enclosing_token": 0
+          },
+          "raw_claims_token_span": {
+            "start": 1809,
+            "end": 1838,
+            "aligned_to_whole_sequence": true,
+            "utf8_byte_span": [
+              10329,
+              10459
+            ],
+            "whole_sequence_exact_start_token_boundary": 1809,
+            "whole_sequence_exact_end_token_boundary": 1838,
+            "whole_sequence_enclosing_token_span": [
+              1809,
+              1838
+            ],
+            "end_byte_offset_inside_final_enclosing_token": 0
+          },
+          "full_document_token_span": {
+            "start": 1899,
+            "end": 1928,
+            "aligned_to_whole_sequence": false,
+            "utf8_byte_span": [
+              10823,
+              10953
+            ],
+            "whole_sequence_exact_start_token_boundary": 1899,
+            "whole_sequence_exact_end_token_boundary": null,
+            "whole_sequence_enclosing_token_span": [
+              1899,
+              1928
+            ],
+            "end_byte_offset_inside_final_enclosing_token": 1
+          },
+          "messages": [
+            {
+              "role": "system",
+              "content": "---Role---\nYou are a Knowledge Graph Specialist responsible for extracting entities and relationships from the `---Input Text---` section of user prompt.\n\n---Instructions---\n1. **Entity Extraction:**\n  - Identify clearly defined and meaningful entities only in the current user prompt's fenced `---Input Text---` section.\n  - For each entity, extract:\n    - `entity_name`: The name of the entity. If the entity name is case-insensitive, capitalize the first letter of each significant word (title case). Ensure **consistent naming** across the entire extraction process.\n    - `entity_type`: Categorize the entity using the type guidance provided in the `---Entity Types---` section below. If none of the provided entity types apply, classify it as `Other`.\n    - `entity_description`: Provide a concise yet comprehensive description of the entity's attributes and activities, based *solely* on the information present in the input text.\n\n2. **Relationship Extraction:**\n  - Identify direct, clearly stated, and meaningful relationships between previously extracted entities.\n  - If a single statement describes a relationship involving more than two entities, decompose it into multiple binary relationships.\n  - For each binary relationship, extract:\n    - `source_entity`: The name of the source entity. Ensure **consistent naming** with entity extraction. Capitalize the first letter of each significant word (title case) if the name is case-insensitive.\n    - `target_entity`: The name of the target entity. Ensure **consistent naming** with entity extraction. Capitalize the first letter of each significant word (title case) if the name is case-insensitive.\n    - `relationship_keywords`: One or more high-level keywords summarizing the relationship. Multiple keywords within this field must be separated by a comma `,`. **DO NOT use `<|#|>` for separating multiple keywords within this field.**\n    - `relationship_description`: A concise explanation of the nature of the relationship between the source and target entities.\n\n3. **Record Types:**\n  - `entity` is used only for entity rows and those rows always contain exactly 4 tuple parts total.\n  - `relation` is used only for relationship rows and those rows always contain exactly 5 tuple parts total.\n  - A row with two entity names plus relationship keywords and a relationship description must start with `relation`, never `entity`.\n  - After the last entity row, switch prefixes to `relation` for every relationship row.\n\n4. **Output Format:**\n  - Entity row: `entity<|#|>entity_name<|#|>entity_type<|#|>entity_description`\n  - Relation row: `relation<|#|>source_entity<|#|>target_entity<|#|>relationship_keywords<|#|>relationship_description`\n  - Wrong: `entity<|#|><source_entity><|#|><target_entity><|#|><relationship_keywords><|#|><relationship_description>`\n  - Correct: `relation<|#|><source_entity><|#|><target_entity><|#|><relationship_keywords><|#|><relationship_description>`\n\n5. **Delimiter Usage:**\n  - The `<|#|>` is a complete, atomic marker and **must not be filled with content**. It serves strictly as a field separator.\n  - Incorrect: `entity<|#|><entity_name><|entity_type|><entity_description>`\n  - Correct: `entity<|#|><entity_name><|#|><entity_type><|#|><entity_description>`\n\n6. **Output Order & Deduplication:**\n  - Output all extracted entities first, followed by all extracted relationships.\n  - Output at most 100 total rows across entities and relationships in this response.\n  - Output at most 40 entity rows in this response.\n  - Output fewer rows if fewer high-value items are present. Do not try to fill the limit.\n  - Only output relationship rows whose source and target entities are both included in the selected entity rows for this response.\n  - If the limit is reached, stop adding new rows immediately and output `<|COMPLETE|>`.\n  - Treat all relationships as **undirected** unless explicitly stated otherwise. Swapping the source and target entities for an undirected relationship does not constitute a new relationship.\n  - Avoid outputting duplicate relationships.\n  - Within the list of relationships, output the relationships that are **most significant** to the core meaning of the input text first.\n\n7. **Context & Language:**\n  - If the user prompt contains a `---Section Context---` section, it gives the document's section hierarchy (e.g. `h1 → h2 → h3`) that the input text belongs to. Use it **only as background** to disambiguate references and ground entity and relationship descriptions in the correct context. **Do NOT** extract entities or relationships from the section heading text itself, and do not mention the headings unless they also appear in the input text.\n  - Ensure all entity names and descriptions are written in the **third person**.\n  - Explicitly name the subject or object; **avoid using pronouns** such as `this article`, `this paper`, `our company`, `I`, `you`, and `he/she`.\n  - The entire output (entity names, keywords, and descriptions) must be written in `English`.\n  - Proper nouns (e.g., personal names, place names, organization names) should be retained in their original language if a proper, widely accepted translation is not available or would cause ambiguity.\n\n8. **Output Format Template Safety:**\n  - The `---Output Format Template---` section contains output format templates only. It is never source text.\n  - Do not extract, infer, or copy entities or relationships from the output format template.\n  - Angle-bracket tokens such as `<entity_name>` are placeholders. Replace them with values extracted from the current `---Input Text---` section and never output the placeholders literally.\n\n9. **Completion Signal:** Output the literal string `<|COMPLETE|>` only after all entities and relationships have been completely extracted and outputted.\n\n---Entity Types---\nClassify each entity using one of the following types. If no type fits, use `Other`.\n\n- Person: Human individuals, real or fictional\n- Creature: Non-human living beings (animals, mythical beings, etc.)\n- Organization: Companies, institutions, government bodies, groups\n- Location: Geographic places (cities, countries, buildings, regions)\n- Event: Occurrences, incidents, ceremonies, meetings\n- Concept: Abstract ideas, theories, principles, beliefs\n- Method: Procedures, techniques, algorithms, workflows\n- Content: Creative or informational works (books, articles, films, reports)\n- Data: Quantitative or structured information (statistics, datasets, measurements)\n- Artifact: Physical or digital objects created by humans (tools, software, devices)\n- NaturalObject: Natural non-living objects (minerals, celestial bodies, chemical compounds)\n\n---Output Format Template---\nThe following content is an output format template only. It is not source text and must never be used as extraction content.\n\nentity<|#|><entity_name><|#|><entity_type><|#|><entity_description>\nrelation<|#|><source_entity><|#|><target_entity><|#|><relationship_keywords><|#|><relationship_description>\n<|COMPLETE|>"
+            },
+            {
+              "role": "user",
+              "content": "---Task---\nExtract entities and relationships from the `---Input Text---` section below.\n\n---Instructions---\n1. **Strict Adherence to Format:** Strictly adhere to all format requirements for entity and relationship lists, including output order, field delimiters, and proper noun handling, as specified in the system prompt.\n2. **Quantity Limits:** In this response, output at most 100 total rows and at most 40 entity rows. Output fewer rows if fewer high-value items are present. Only output relationship rows whose source and target entities are both included in this response.\n3. **Output Content Only:** Output *only* the extracted list of entities and relationships. Do not include any introductory or concluding remarks, explanations, or additional text before or after the list.\n4. **Completion Signal:** Output `<|COMPLETE|>` as the final line after all relevant entities and relationships have been extracted and presented. If the row limit is reached, output `<|COMPLETE|>` immediately after the last allowed row.\n5. **Output Language:** Ensure the output language is English. Proper nouns (e.g., personal names, place names, organization names) must be kept in their original language and not translated.\n\n---Input Text---\n```\n 28. The system of claim 3 , wherein the content site selects at least some of the weights to assign to the external recommenders.\n```\n\n---Output---\n"
+            }
+          ],
+          "user_prompt_sha256": "a7b9b1f4e2072868eb8a6d9ac027c1d9dba6365a2fb9e2954f43de23063d3d78"
+        }
+      ],
+      "joined_text_sha256": "6d492edf22c0d19b6d21d700c35bb0f6ca55c523433a38015a6705969ce74dc9",
+      "total_chunk_tokens": 93
+    },
+    "CROSS": {
+      "boundary_in_raw_claims": 10270,
+      "boundary_in_excerpt": 297,
+      "boundary_label": "inside Claim27, immediately before machine-readable descriptions object",
+      "chunks": [
+        {
+          "chunk_id": "controlled-US7991757B2-cross-000",
+          "chunk_order_index": 0,
+          "file_path": "US7991757B2.txt",
+          "content": "26. The system of claim 1 , wherein the computer system comprises multiple physical computing devices. 27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide",
+          "sha256": "155184f2143252f1f3e2c32ad5b745e9614956e0a80b35fd46b11a37cdb2e428",
+          "utf8_bytes": 297,
+          "tokens": 55,
+          "excerpt_char_span": [
+            0,
+            297
+          ],
+          "raw_claims_char_span": [
+            9973,
+            10270
+          ],
+          "full_document_char_span": [
+            10467,
+            10764
+          ],
+          "excerpt_token_span": {
+            "start": 0,
+            "end": 55,
+            "aligned_to_whole_sequence": true,
+            "utf8_byte_span": [
+              0,
+              297
+            ],
+            "whole_sequence_exact_start_token_boundary": 0,
+            "whole_sequence_exact_end_token_boundary": 55,
+            "whole_sequence_enclosing_token_span": [
+              0,
+              55
+            ],
+            "end_byte_offset_inside_final_enclosing_token": 0
+          },
+          "raw_claims_token_span": {
+            "start": 1745,
+            "end": 1800,
+            "aligned_to_whole_sequence": true,
+            "utf8_byte_span": [
+              9973,
+              10270
+            ],
+            "whole_sequence_exact_start_token_boundary": 1745,
+            "whole_sequence_exact_end_token_boundary": 1800,
+            "whole_sequence_enclosing_token_span": [
+              1745,
+              1800
+            ],
+            "end_byte_offset_inside_final_enclosing_token": 0
+          },
+          "full_document_token_span": {
+            "start": 1835,
+            "end": 1890,
+            "aligned_to_whole_sequence": true,
+            "utf8_byte_span": [
+              10467,
+              10764
+            ],
+            "whole_sequence_exact_start_token_boundary": 1835,
+            "whole_sequence_exact_end_token_boundary": 1890,
+            "whole_sequence_enclosing_token_span": [
+              1835,
+              1890
+            ],
+            "end_byte_offset_inside_final_enclosing_token": 0
+          },
+          "messages": [
+            {
+              "role": "system",
+              "content": "---Role---\nYou are a Knowledge Graph Specialist responsible for extracting entities and relationships from the `---Input Text---` section of user prompt.\n\n---Instructions---\n1. **Entity Extraction:**\n  - Identify clearly defined and meaningful entities only in the current user prompt's fenced `---Input Text---` section.\n  - For each entity, extract:\n    - `entity_name`: The name of the entity. If the entity name is case-insensitive, capitalize the first letter of each significant word (title case). Ensure **consistent naming** across the entire extraction process.\n    - `entity_type`: Categorize the entity using the type guidance provided in the `---Entity Types---` section below. If none of the provided entity types apply, classify it as `Other`.\n    - `entity_description`: Provide a concise yet comprehensive description of the entity's attributes and activities, based *solely* on the information present in the input text.\n\n2. **Relationship Extraction:**\n  - Identify direct, clearly stated, and meaningful relationships between previously extracted entities.\n  - If a single statement describes a relationship involving more than two entities, decompose it into multiple binary relationships.\n  - For each binary relationship, extract:\n    - `source_entity`: The name of the source entity. Ensure **consistent naming** with entity extraction. Capitalize the first letter of each significant word (title case) if the name is case-insensitive.\n    - `target_entity`: The name of the target entity. Ensure **consistent naming** with entity extraction. Capitalize the first letter of each significant word (title case) if the name is case-insensitive.\n    - `relationship_keywords`: One or more high-level keywords summarizing the relationship. Multiple keywords within this field must be separated by a comma `,`. **DO NOT use `<|#|>` for separating multiple keywords within this field.**\n    - `relationship_description`: A concise explanation of the nature of the relationship between the source and target entities.\n\n3. **Record Types:**\n  - `entity` is used only for entity rows and those rows always contain exactly 4 tuple parts total.\n  - `relation` is used only for relationship rows and those rows always contain exactly 5 tuple parts total.\n  - A row with two entity names plus relationship keywords and a relationship description must start with `relation`, never `entity`.\n  - After the last entity row, switch prefixes to `relation` for every relationship row.\n\n4. **Output Format:**\n  - Entity row: `entity<|#|>entity_name<|#|>entity_type<|#|>entity_description`\n  - Relation row: `relation<|#|>source_entity<|#|>target_entity<|#|>relationship_keywords<|#|>relationship_description`\n  - Wrong: `entity<|#|><source_entity><|#|><target_entity><|#|><relationship_keywords><|#|><relationship_description>`\n  - Correct: `relation<|#|><source_entity><|#|><target_entity><|#|><relationship_keywords><|#|><relationship_description>`\n\n5. **Delimiter Usage:**\n  - The `<|#|>` is a complete, atomic marker and **must not be filled with content**. It serves strictly as a field separator.\n  - Incorrect: `entity<|#|><entity_name><|entity_type|><entity_description>`\n  - Correct: `entity<|#|><entity_name><|#|><entity_type><|#|><entity_description>`\n\n6. **Output Order & Deduplication:**\n  - Output all extracted entities first, followed by all extracted relationships.\n  - Output at most 100 total rows across entities and relationships in this response.\n  - Output at most 40 entity rows in this response.\n  - Output fewer rows if fewer high-value items are present. Do not try to fill the limit.\n  - Only output relationship rows whose source and target entities are both included in the selected entity rows for this response.\n  - If the limit is reached, stop adding new rows immediately and output `<|COMPLETE|>`.\n  - Treat all relationships as **undirected** unless explicitly stated otherwise. Swapping the source and target entities for an undirected relationship does not constitute a new relationship.\n  - Avoid outputting duplicate relationships.\n  - Within the list of relationships, output the relationships that are **most significant** to the core meaning of the input text first.\n\n7. **Context & Language:**\n  - If the user prompt contains a `---Section Context---` section, it gives the document's section hierarchy (e.g. `h1 → h2 → h3`) that the input text belongs to. Use it **only as background** to disambiguate references and ground entity and relationship descriptions in the correct context. **Do NOT** extract entities or relationships from the section heading text itself, and do not mention the headings unless they also appear in the input text.\n  - Ensure all entity names and descriptions are written in the **third person**.\n  - Explicitly name the subject or object; **avoid using pronouns** such as `this article`, `this paper`, `our company`, `I`, `you`, and `he/she`.\n  - The entire output (entity names, keywords, and descriptions) must be written in `English`.\n  - Proper nouns (e.g., personal names, place names, organization names) should be retained in their original language if a proper, widely accepted translation is not available or would cause ambiguity.\n\n8. **Output Format Template Safety:**\n  - The `---Output Format Template---` section contains output format templates only. It is never source text.\n  - Do not extract, infer, or copy entities or relationships from the output format template.\n  - Angle-bracket tokens such as `<entity_name>` are placeholders. Replace them with values extracted from the current `---Input Text---` section and never output the placeholders literally.\n\n9. **Completion Signal:** Output the literal string `<|COMPLETE|>` only after all entities and relationships have been completely extracted and outputted.\n\n---Entity Types---\nClassify each entity using one of the following types. If no type fits, use `Other`.\n\n- Person: Human individuals, real or fictional\n- Creature: Non-human living beings (animals, mythical beings, etc.)\n- Organization: Companies, institutions, government bodies, groups\n- Location: Geographic places (cities, countries, buildings, regions)\n- Event: Occurrences, incidents, ceremonies, meetings\n- Concept: Abstract ideas, theories, principles, beliefs\n- Method: Procedures, techniques, algorithms, workflows\n- Content: Creative or informational works (books, articles, films, reports)\n- Data: Quantitative or structured information (statistics, datasets, measurements)\n- Artifact: Physical or digital objects created by humans (tools, software, devices)\n- NaturalObject: Natural non-living objects (minerals, celestial bodies, chemical compounds)\n\n---Output Format Template---\nThe following content is an output format template only. It is not source text and must never be used as extraction content.\n\nentity<|#|><entity_name><|#|><entity_type><|#|><entity_description>\nrelation<|#|><source_entity><|#|><target_entity><|#|><relationship_keywords><|#|><relationship_description>\n<|COMPLETE|>"
+            },
+            {
+              "role": "user",
+              "content": "---Task---\nExtract entities and relationships from the `---Input Text---` section below.\n\n---Instructions---\n1. **Strict Adherence to Format:** Strictly adhere to all format requirements for entity and relationship lists, including output order, field delimiters, and proper noun handling, as specified in the system prompt.\n2. **Quantity Limits:** In this response, output at most 100 total rows and at most 40 entity rows. Output fewer rows if fewer high-value items are present. Only output relationship rows whose source and target entities are both included in this response.\n3. **Output Content Only:** Output *only* the extracted list of entities and relationships. Do not include any introductory or concluding remarks, explanations, or additional text before or after the list.\n4. **Completion Signal:** Output `<|COMPLETE|>` as the final line after all relevant entities and relationships have been extracted and presented. If the row limit is reached, output `<|COMPLETE|>` immediately after the last allowed row.\n5. **Output Language:** Ensure the output language is English. Proper nouns (e.g., personal names, place names, organization names) must be kept in their original language and not translated.\n\n---Input Text---\n```\n26. The system of claim 1 , wherein the computer system comprises multiple physical computing devices. 27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide\n```\n\n---Output---\n"
+            }
+          ],
+          "user_prompt_sha256": "c28ec9f2c83e5d14ae2f773dd72599b7675368390b228de8f97c4019545c237b"
+        },
+        {
+          "chunk_id": "controlled-US7991757B2-cross-001",
+          "chunk_order_index": 1,
+          "file_path": "US7991757B2.txt",
+          "content": " machine readable descriptions of the external recommender. 28. The system of claim 3 , wherein the content site selects at least some of the weights to assign to the external recommenders.",
+          "sha256": "2d26a783514b642346f3abc7b892728d57bf55b90ff6ba44d865ba380b3017ab",
+          "utf8_bytes": 189,
+          "tokens": 38,
+          "excerpt_char_span": [
+            297,
+            486
+          ],
+          "raw_claims_char_span": [
+            10270,
+            10459
+          ],
+          "full_document_char_span": [
+            10764,
+            10953
+          ],
+          "excerpt_token_span": {
+            "start": 55,
+            "end": 93,
+            "aligned_to_whole_sequence": true,
+            "utf8_byte_span": [
+              297,
+              486
+            ],
+            "whole_sequence_exact_start_token_boundary": 55,
+            "whole_sequence_exact_end_token_boundary": 93,
+            "whole_sequence_enclosing_token_span": [
+              55,
+              93
+            ],
+            "end_byte_offset_inside_final_enclosing_token": 0
+          },
+          "raw_claims_token_span": {
+            "start": 1800,
+            "end": 1838,
+            "aligned_to_whole_sequence": true,
+            "utf8_byte_span": [
+              10270,
+              10459
+            ],
+            "whole_sequence_exact_start_token_boundary": 1800,
+            "whole_sequence_exact_end_token_boundary": 1838,
+            "whole_sequence_enclosing_token_span": [
+              1800,
+              1838
+            ],
+            "end_byte_offset_inside_final_enclosing_token": 0
+          },
+          "full_document_token_span": {
+            "start": 1890,
+            "end": 1928,
+            "aligned_to_whole_sequence": false,
+            "utf8_byte_span": [
+              10764,
+              10953
+            ],
+            "whole_sequence_exact_start_token_boundary": 1890,
+            "whole_sequence_exact_end_token_boundary": null,
+            "whole_sequence_enclosing_token_span": [
+              1890,
+              1928
+            ],
+            "end_byte_offset_inside_final_enclosing_token": 1
+          },
+          "messages": [
+            {
+              "role": "system",
+              "content": "---Role---\nYou are a Knowledge Graph Specialist responsible for extracting entities and relationships from the `---Input Text---` section of user prompt.\n\n---Instructions---\n1. **Entity Extraction:**\n  - Identify clearly defined and meaningful entities only in the current user prompt's fenced `---Input Text---` section.\n  - For each entity, extract:\n    - `entity_name`: The name of the entity. If the entity name is case-insensitive, capitalize the first letter of each significant word (title case). Ensure **consistent naming** across the entire extraction process.\n    - `entity_type`: Categorize the entity using the type guidance provided in the `---Entity Types---` section below. If none of the provided entity types apply, classify it as `Other`.\n    - `entity_description`: Provide a concise yet comprehensive description of the entity's attributes and activities, based *solely* on the information present in the input text.\n\n2. **Relationship Extraction:**\n  - Identify direct, clearly stated, and meaningful relationships between previously extracted entities.\n  - If a single statement describes a relationship involving more than two entities, decompose it into multiple binary relationships.\n  - For each binary relationship, extract:\n    - `source_entity`: The name of the source entity. Ensure **consistent naming** with entity extraction. Capitalize the first letter of each significant word (title case) if the name is case-insensitive.\n    - `target_entity`: The name of the target entity. Ensure **consistent naming** with entity extraction. Capitalize the first letter of each significant word (title case) if the name is case-insensitive.\n    - `relationship_keywords`: One or more high-level keywords summarizing the relationship. Multiple keywords within this field must be separated by a comma `,`. **DO NOT use `<|#|>` for separating multiple keywords within this field.**\n    - `relationship_description`: A concise explanation of the nature of the relationship between the source and target entities.\n\n3. **Record Types:**\n  - `entity` is used only for entity rows and those rows always contain exactly 4 tuple parts total.\n  - `relation` is used only for relationship rows and those rows always contain exactly 5 tuple parts total.\n  - A row with two entity names plus relationship keywords and a relationship description must start with `relation`, never `entity`.\n  - After the last entity row, switch prefixes to `relation` for every relationship row.\n\n4. **Output Format:**\n  - Entity row: `entity<|#|>entity_name<|#|>entity_type<|#|>entity_description`\n  - Relation row: `relation<|#|>source_entity<|#|>target_entity<|#|>relationship_keywords<|#|>relationship_description`\n  - Wrong: `entity<|#|><source_entity><|#|><target_entity><|#|><relationship_keywords><|#|><relationship_description>`\n  - Correct: `relation<|#|><source_entity><|#|><target_entity><|#|><relationship_keywords><|#|><relationship_description>`\n\n5. **Delimiter Usage:**\n  - The `<|#|>` is a complete, atomic marker and **must not be filled with content**. It serves strictly as a field separator.\n  - Incorrect: `entity<|#|><entity_name><|entity_type|><entity_description>`\n  - Correct: `entity<|#|><entity_name><|#|><entity_type><|#|><entity_description>`\n\n6. **Output Order & Deduplication:**\n  - Output all extracted entities first, followed by all extracted relationships.\n  - Output at most 100 total rows across entities and relationships in this response.\n  - Output at most 40 entity rows in this response.\n  - Output fewer rows if fewer high-value items are present. Do not try to fill the limit.\n  - Only output relationship rows whose source and target entities are both included in the selected entity rows for this response.\n  - If the limit is reached, stop adding new rows immediately and output `<|COMPLETE|>`.\n  - Treat all relationships as **undirected** unless explicitly stated otherwise. Swapping the source and target entities for an undirected relationship does not constitute a new relationship.\n  - Avoid outputting duplicate relationships.\n  - Within the list of relationships, output the relationships that are **most significant** to the core meaning of the input text first.\n\n7. **Context & Language:**\n  - If the user prompt contains a `---Section Context---` section, it gives the document's section hierarchy (e.g. `h1 → h2 → h3`) that the input text belongs to. Use it **only as background** to disambiguate references and ground entity and relationship descriptions in the correct context. **Do NOT** extract entities or relationships from the section heading text itself, and do not mention the headings unless they also appear in the input text.\n  - Ensure all entity names and descriptions are written in the **third person**.\n  - Explicitly name the subject or object; **avoid using pronouns** such as `this article`, `this paper`, `our company`, `I`, `you`, and `he/she`.\n  - The entire output (entity names, keywords, and descriptions) must be written in `English`.\n  - Proper nouns (e.g., personal names, place names, organization names) should be retained in their original language if a proper, widely accepted translation is not available or would cause ambiguity.\n\n8. **Output Format Template Safety:**\n  - The `---Output Format Template---` section contains output format templates only. It is never source text.\n  - Do not extract, infer, or copy entities or relationships from the output format template.\n  - Angle-bracket tokens such as `<entity_name>` are placeholders. Replace them with values extracted from the current `---Input Text---` section and never output the placeholders literally.\n\n9. **Completion Signal:** Output the literal string `<|COMPLETE|>` only after all entities and relationships have been completely extracted and outputted.\n\n---Entity Types---\nClassify each entity using one of the following types. If no type fits, use `Other`.\n\n- Person: Human individuals, real or fictional\n- Creature: Non-human living beings (animals, mythical beings, etc.)\n- Organization: Companies, institutions, government bodies, groups\n- Location: Geographic places (cities, countries, buildings, regions)\n- Event: Occurrences, incidents, ceremonies, meetings\n- Concept: Abstract ideas, theories, principles, beliefs\n- Method: Procedures, techniques, algorithms, workflows\n- Content: Creative or informational works (books, articles, films, reports)\n- Data: Quantitative or structured information (statistics, datasets, measurements)\n- Artifact: Physical or digital objects created by humans (tools, software, devices)\n- NaturalObject: Natural non-living objects (minerals, celestial bodies, chemical compounds)\n\n---Output Format Template---\nThe following content is an output format template only. It is not source text and must never be used as extraction content.\n\nentity<|#|><entity_name><|#|><entity_type><|#|><entity_description>\nrelation<|#|><source_entity><|#|><target_entity><|#|><relationship_keywords><|#|><relationship_description>\n<|COMPLETE|>"
+            },
+            {
+              "role": "user",
+              "content": "---Task---\nExtract entities and relationships from the `---Input Text---` section below.\n\n---Instructions---\n1. **Strict Adherence to Format:** Strictly adhere to all format requirements for entity and relationship lists, including output order, field delimiters, and proper noun handling, as specified in the system prompt.\n2. **Quantity Limits:** In this response, output at most 100 total rows and at most 40 entity rows. Output fewer rows if fewer high-value items are present. Only output relationship rows whose source and target entities are both included in this response.\n3. **Output Content Only:** Output *only* the extracted list of entities and relationships. Do not include any introductory or concluding remarks, explanations, or additional text before or after the list.\n4. **Completion Signal:** Output `<|COMPLETE|>` as the final line after all relevant entities and relationships have been extracted and presented. If the row limit is reached, output `<|COMPLETE|>` immediately after the last allowed row.\n5. **Output Language:** Ensure the output language is English. Proper nouns (e.g., personal names, place names, organization names) must be kept in their original language and not translated.\n\n---Input Text---\n```\n machine readable descriptions of the external recommender. 28. The system of claim 3 , wherein the content site selects at least some of the weights to assign to the external recommenders.\n```\n\n---Output---\n"
+            }
+          ],
+          "user_prompt_sha256": "657778e2ed9e451bb73a8ace5f9762eabcec20c60c50e8ae09a77771b73a329f"
+        }
+      ],
+      "joined_text_sha256": "6d492edf22c0d19b6d21d700c35bb0f6ca55c523433a38015a6705969ce74dc9",
+      "total_chunk_tokens": 93
+    }
+  },
+  "preregistered_evaluation": {
+    "primary_technical_proposition": "The registration module allows a provider of an external recommender to provide machine readable descriptions of that recommender.",
+    "primary_edge_evidence": "Count a condition successful if at least one officially parsed relation in either chunk explicitly supports the primary proposition through its endpoint labels and/or relation description. Registration Module--External Recommender/Provider edges whose description expressly states the machine-readable-description function qualify; exact endpoint equality is not required.",
+    "strict_edge_secondary": "Record whether a parsed direct edge joins Registration Module and Machine Readable Descriptions (case, hyphen and plural normalization allowed; inspect description to reject merely co-occurring labels). This is secondary, because the official extractor may use another faithful binary decomposition.",
+    "entity_description_secondary": "Separately record whether an entity description retains the complete primary proposition. Entity-only retention is not a parsed relation success but prevents overstating total factual loss.",
+    "local_fragment_secondary": "Record surviving fragments such as module--provider and descriptions--external recommender. A union path alone is not an explicit cross-chunk proposition; do not claim all information disappeared when fragments survive.",
+    "legal_dependency_exploratory": "Claim27 explicitly says The system of claim1. Record a parsed Claim27--Claim1 dependency only if those claim entities and dependency relation actually occur. The default entity-type guidance does not require a patent claim ontology. Do not infer technical relation loss from absent legal dependency edges; full Claim1 text is outside this controlled excerpt in both conditions.",
+    "truncation_rule": "Check raw finish_reason, completion usage and completion delimiter for every response. If output-length truncation affects a condition, mark its boundary-only comparison inconclusive; do not attribute a cut-off row to chunking. Keep same 8192 output cap in every call.",
+    "comparison_rule": "Three paired repeats, interleaved condition order. Compare each matched repeat and all raw outputs. No seed is requested; temperature0 does not ensure deterministic hosted outputs. Do not generalize one patent/one imposed boundary to corpus-wide failure rates."
+  },
+  "limitations": [
+    "Only the original boundary placement changes; lengths and semantic completeness of individual chunks necessarily change.",
+    "Both conditions make two separate stateless extraction calls and repeat the same prompt overhead, controlling call count and total source text. No cross-chunk LLM merge or full-graph reconstruction is performed.",
+    "This tests an artificial split inside one Claim27 sentence, not the natural separation of complete Claim1 and Claim27. Claim27 names the module and external recommender explicitly, so simply separating whole Claims1/27 is not a clean test of this technical relation.",
+    "The excerpt excludes Claims1-25 by the same rule in both conditions; nothing is inserted, paraphrased or shuffled inside the retained contiguous source span."
+  ]
+}

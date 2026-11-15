@@ -1,0 +1,27 @@
+{
+  "condition": "A",
+  "repeat": 2,
+  "call_id": 6,
+  "request_exact_match": true,
+  "messages_sha256": "2fca4d69c1c5554b570ff04a57ccc8ae1c8af87862bae14e46a5f755a4a3490e",
+  "response": {
+    "id": 6,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "I do not have enough information to answer this query. The provided **Context** does not contain any document chunk, knowledge-graph entity, or reference entry for **US7991757B2**. The reference list includes documents such as US10867122B1, US9374411B1, US8655901B1, US7756837B2, US8095432B1, US9514120B1, US8719408B2, US8069128B2, US11423041B2, US9304738B1, US9218390B2, US9514753B2, and US9118735B1, but none of these is US7991757B2.\n\nBecause the patent is absent, I cannot quote Claim 1 or Claim 27, cannot state the registration capability specified in Claim 1, cannot identify the additional capability added by Claim 27, and cannot explain their dependency. Any such answer would require inference beyond the retrieved evidence, which the instructions prohibit.\n\n**What is missing:** the text of US7991757B2, specifically its Claim 1 and Claim 27, plus any claim-dependency wording (e.g., \"The method of claim 1, further comprising…\"). Related context does mention a \"Registration Module\" configured to allow a provider of an external recommender to provide \"machine readable descriptions,\" and \"Registration Submissions\" operative to \"request registration of recommenders,\" but these facts are not tied to US7991757B2 and cannot be used to answer about its claims.\n\n### References\n\n- [1] US10867122B1.txt\n- [4] US7756837B2.txt\n- [5] US8095432B1.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 28360,
+      "completion_tokens": 361,
+      "total_tokens": 28721,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 28288
+      },
+      "prompt_cache_hit_tokens": 28288,
+      "prompt_cache_miss_tokens": 72
+    },
+    "reasoning_content_present": false
+  }
+}

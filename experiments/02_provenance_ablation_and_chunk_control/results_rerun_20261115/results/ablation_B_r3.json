@@ -1,0 +1,27 @@
+{
+  "condition": "B",
+  "repeat": 3,
+  "call_id": 9,
+  "request_exact_match": true,
+  "messages_sha256": "cbf774bfbb141af7dfbe71e85a6204a5943be9280b8fdb3e2ee3ee80fcc986a5",
+  "response": {
+    "id": 9,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "I do not have enough information to answer this query. The provided **Context** does not contain the text of US7991757B2's claims. The only evidence relating to that patent is Knowledge Graph relationship data describing a \"Registration Module\" and \"Registration Submissions\" (e.g., \"The registration module provides functionality for registering an external recommender with the recommendations service\"), but no Claim 1 or Claim 27 wording, and no claim dependency, is present in the Document Chunks or Reference Document List.\n\nBecause the instructions require quoting the exact supporting wording from each claim, and no such wording exists in the evidence, I cannot state what Claim 1 specifies, what Claim 27 adds, or explain their dependency. Any answer would be inference rather than document fact, which is not permitted here.\n\nWhat is missing: the full claim text of US7991757B2 (at minimum Claims 1 and 27), which is not among the retrieved chunks.\n\n### References\n\n- [5] US8095432B1.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 31966,
+      "completion_tokens": 209,
+      "total_tokens": 32175,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 31872
+      },
+      "prompt_cache_hit_tokens": 31872,
+      "prompt_cache_miss_tokens": 94
+    },
+    "reasoning_content_present": false
+  }
+}

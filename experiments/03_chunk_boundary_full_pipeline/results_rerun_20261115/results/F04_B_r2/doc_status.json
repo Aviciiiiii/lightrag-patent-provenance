@@ -1,0 +1,30 @@
+{
+  "status": "processed",
+  "content_summary": "Publication number: US8509827B2\nTitle: Methods and apparatus of context-data acquisition and ranking\n\nABSTRACT\nDisclosed are a system, method, and article of manufacture of a context-data acquisition and ranking. A context-data type is determined fro...",
+  "content_length": 6895,
+  "created_at": "2026-11-15T03:39:51.503450+00:00",
+  "updated_at": "2026-11-15T03:40:21.016661+00:00",
+  "file_path": "US8509827B2.txt",
+  "track_id": "insert_20261114_193951_f0ca1fd8",
+  "content_hash": "a1a9f174956842467096c5278406fa6c",
+  "metadata": {
+    "parse_start_time": 1794713991,
+    "parse_stage_skipped": true,
+    "parse_format": "raw",
+    "parse_engine": "legacy",
+    "analyzing_start_time": 1794713991,
+    "analyzing_stage_skipped": true,
+    "kg_write_state": "graph_mutation_started",
+    "process_start_time": 1794713991,
+    "process_end_time": 1794714021,
+    "chunk_method": "legacy_chunking_func",
+    "chunk_opts": "size=1200, split_only=False, overlap=100"
+  },
+  "chunks_count": 4,
+  "chunks_list": [
+    "US8509827B2-chunk-000",
+    "US8509827B2-chunk-001",
+    "US8509827B2-chunk-002",
+    "US8509827B2-chunk-003"
+  ]
+}

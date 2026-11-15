@@ -1,0 +1,122 @@
+[
+  {
+    "claim_number": 1,
+    "start_char_in_raw_claims": 20,
+    "end_char_in_raw_claims": 1572,
+    "text": "1. A method comprising: identifying, by a processing device, a potential typographical error in a work using an initial reference, wherein the work comprises a plurality of words; sending, by the processing device, data indicative of presence of the potential typographical error in the work to a plurality of users; receiving, by the processing device, feedback for the work from the plurality of users, the feedback comprising an indicator that specifies that the potential typographical error is an author-intended string for the work, wherein the author-intended string comprises at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; combining, by the processing device, the feedback from the plurality of users for the work with feedback for a plurality of additional works to generate a combined feedback; sorting, by the processing device, the combined feedback based on one or more selected parameters associated with the work to generate a sorted feedback, wherein the one or more selected parameters comprises at least one of an author associated with the work, a title associated the work, a topic associated with the work, or a publisher associated with the work; determining, by the processing device and based on the sorted feedback, that the potential typographical error comprises an acceptable string; and updating, by the processing device, the initial reference to include the acceptable string."
+  },
+  {
+    "claim_number": 2,
+    "start_char_in_raw_claims": 1572,
+    "end_char_in_raw_claims": 1967,
+    "text": "2. The method of claim 1 , wherein determining that the potential typographical error comprises an acceptable string comprises: determining a percentage of the sorted feedback that identifies the potential typographical error as an author-intended string; determining that the percentage exceeds a threshold percentage; and identifying the potential typographical error as an acceptable string."
+  },
+  {
+    "claim_number": 3,
+    "start_char_in_raw_claims": 1967,
+    "end_char_in_raw_claims": 2215,
+    "text": "3. The method of claim 2 , further comprising: determining that the percentage does not exceed the threshold percentage; identifying the potential typographical error as an actual error; and associating an alternative string with the actual error."
+  },
+  {
+    "claim_number": 4,
+    "start_char_in_raw_claims": 2215,
+    "end_char_in_raw_claims": 2366,
+    "text": "4. The method of claim 1 , further comprising: generating one or more parameter-specific references based, at least in part, on the acceptable string."
+  },
+  {
+    "claim_number": 5,
+    "start_char_in_raw_claims": 2366,
+    "end_char_in_raw_claims": 2917,
+    "text": "5. The method of claim 4 , wherein generating one or more parameter-specific references comprises: determining, based on the sorted feedback, one or more parameters that are associated with the acceptable string; identifying a parameter-specific reference that corresponds to each of the one or more parameters associated with the acceptable string, wherein the one or more parameter-specific references comprises at least one of an author-specific reference, a title-specific reference, a topic-specific reference, or a publisher-specific reference."
+  },
+  {
+    "claim_number": 6,
+    "start_char_in_raw_claims": 2917,
+    "end_char_in_raw_claims": 3071,
+    "text": "6. The method of claim 1 , wherein updating the initial reference comprises: adding a string to the initial reference to represent the acceptable string."
+  },
+  {
+    "claim_number": 7,
+    "start_char_in_raw_claims": 3071,
+    "end_char_in_raw_claims": 3499,
+    "text": "7. The method of claim 1 , wherein the feedback for the work comprises at least one of a user identifier, a work identifier, at least one string identified as a potential typographical error, a position of the at least one string in a work, a decision indicating whether a corresponding string is an author-intended string, a confidence level of the decision, or at least one parameter associated with the corresponding string."
+  },
+  {
+    "claim_number": 8,
+    "start_char_in_raw_claims": 3499,
+    "end_char_in_raw_claims": 3886,
+    "text": "8. The method of claim 1 , wherein determining that the potential typographical error comprises an acceptable string comprises: compiling, based on the sorted feedback, one or more parameter-specific statistics; determining that at least one of the one or more parameter-specific statistics exceeds a threshold; and identifying the potential typographical error as an acceptable string."
+  },
+  {
+    "claim_number": 9,
+    "start_char_in_raw_claims": 3886,
+    "end_char_in_raw_claims": 4504,
+    "text": "9. The method of claim 8 , wherein the one or more parameter-specific statistics comprises at least one of a number of times users mark a potential typographical error as an author-intended string, a total number of times a potential typographical error is marked as an author-intended string, a percentage of feedback that marked the potential typographical error as an author-intended string, a percentage of users that marked the potential typographical error as an author-intended string, or a number of times the one or more potential typographical errors are marked as an author-intended string for a parameter."
+  },
+  {
+    "claim_number": 10,
+    "start_char_in_raw_claims": 4504,
+    "end_char_in_raw_claims": 6176,
+    "text": "10. A non-transitory computer-readable medium having instructions stored thereon which, when executed by a processing device, cause the processing device to perform operations comprising: receiving, by the processing device, feedback from a plurality of users for one or more potential typographical errors identified in a work, the feedback comprising an indicator that specifies that at least one of the one or more potential typographical errors are author-intended strings for the work, wherein the work comprises a plurality of words and wherein the author-intended strings comprise at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; determining, by the processing device and based at least in part on the indicator received in the feedback for the work, that one or more of the potential typographical errors is an author-intended string; combining, by the processing device, the feedback from the plurality of users for the work with feedback for a plurality of additional works to generate a combined feedback; sorting, by the processing device, the combined feedback based on one or more selected parameters associated with the work to generate a sorted feedback, wherein the one or more selected parameters comprises at least one of an author associated with the work, a title associated the work, a topic associated with the work, or a publisher associated with the work; and updating, by the processing device and based on the sorted feedback, one or more parameter-specific references using the author-intended string."
+  },
+  {
+    "claim_number": 11,
+    "start_char_in_raw_claims": 6176,
+    "end_char_in_raw_claims": 6805,
+    "text": "11. The non-transitory computer-readable medium of claim 10 , wherein updating one or more parameter-specific references using the author-intended string comprises: determining, based on the sorted feedback, a first percentage of the feedback that identifies a first potential typographical error of the one or more potential typographical errors as an author-intended string; determining that the first percentage exceeds a threshold percentage; identifying the first potential typographical error as an acceptable string; and adding a string to the one or more parameter-specific references to represent the acceptable string."
+  },
+  {
+    "claim_number": 12,
+    "start_char_in_raw_claims": 6805,
+    "end_char_in_raw_claims": 7243,
+    "text": "12. The non-transitory computer-readable medium of claim 11 , wherein adding a string to the one or more parameter-specific references comprises: for each acceptable string, determining, based on the combined sorted feedback, one or more parameters that are associated with the acceptable string; and identifying a parameter-specific reference that corresponds to each of the one or more parameters associated with the acceptable string."
+  },
+  {
+    "claim_number": 13,
+    "start_char_in_raw_claims": 7243,
+    "end_char_in_raw_claims": 7769,
+    "text": "13. The non-transitory computer-readable medium of claim 11 , the operations further comprising: determining, based on the sorted feedback, a second percentage of the feedback that identifies a second potential typographical error of the one or more potential typographical errors as an author-intended string; determining that the second percentage does not exceed the threshold percentage; identifying the second potential typographical error as an actual error; and associating an alternative string with the actual error."
+  },
+  {
+    "claim_number": 14,
+    "start_char_in_raw_claims": 7769,
+    "end_char_in_raw_claims": 8032,
+    "text": "14. The non-transitory computer-readable medium of claim 10 , wherein the one or more parameter-specific references comprises at least one of an author-specific reference, a title-specific reference, a topic-specific reference, or a publisher-specific reference."
+  },
+  {
+    "claim_number": 15,
+    "start_char_in_raw_claims": 8032,
+    "end_char_in_raw_claims": 8495,
+    "text": "15. The non-transitory computer-readable medium of claim 10 , wherein the feedback for the work comprises at least one of a user identifier, a work identifier, at least one string identified as a potential typographical error, a position of the at least one string in a work, a decision indicating whether a corresponding string is an author-intended string, a confidence level of the decision, or at least one parameter associated with the corresponding string."
+  },
+  {
+    "claim_number": 16,
+    "start_char_in_raw_claims": 8495,
+    "end_char_in_raw_claims": 8973,
+    "text": "16. The non-transitory computer-readable medium of claim 10 , wherein updating one or more parameter-specific references using the author-intended string comprises: compiling, based on the sorted feedback, one or more parameter-specific statistics; determining that at least one of the one or more parameter-specific statistics exceeds a threshold; and identifying a first potential typographical error of the one or more potential typographical errors as an acceptable string."
+  },
+  {
+    "claim_number": 17,
+    "start_char_in_raw_claims": 8973,
+    "end_char_in_raw_claims": 9613,
+    "text": "17. The non-transitory computer-readable medium of claim 16 , wherein the parameter-specific statistics comprise at least one of a number of times users mark a potential typographical error as an author-intended string, a total number of times a potential typographical error is marked as an author-intended string, a percentage of feedback that marked the potential typographical error as an author-intended string, a percentage of users that marked the potential typographical error as an author-intended string, or a number of times the one or more potential typographical errors are marked as an author-intended string for a parameter."
+  },
+  {
+    "claim_number": 18,
+    "start_char_in_raw_claims": 9613,
+    "end_char_in_raw_claims": 11289,
+    "text": "18. An apparatus comprising: a memory; a processing device operatively coupled to the memory, the processing device to: provide data indicative of presence of a potential typographical error in a work to a user via a graphical user interface, wherein the work comprises a plurality of words; receive input identifying the potential typographical error that is an author-intended string for the work, the input comprising an indicator that specifies that the potential typographical error is an author-intended string for the work, wherein the author-intended string comprises at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; determine one or more parameters to associate with the author-intended string, wherein the one or more parameters comprises at least one of an author associated with the work, a title associated the work, a topic associated with the work, or a publisher associated with the work; and provide feedback for the work to a server computing machine, the feedback comprising identification of the author-intended string and the one or more parameters associated with the author-intended string, wherein the server computing machine is to: combine the feedback with additional feedback from a plurality of users for the work and one or more additional works to generate a combined feedback; sort the combined feedback based on the one or more parameters associated with the author-intended string to generate a sorted feedback; and update, based on the sorted feedback, a reference using the author-intended string."
+  },
+  {
+    "claim_number": 19,
+    "start_char_in_raw_claims": 11289,
+    "end_char_in_raw_claims": 11708,
+    "text": "19. The apparatus of claim 18 , wherein the input comprises at least one of a user identifier, a work identifier, at least one string identified as a potential typographical error, a position of the at least one string in the work, a decision indicating whether a corresponding string is an author-intended string, a confidence level of the decision, or at least one parameter associated with the corresponding string."
+  },
+  {
+    "claim_number": 20,
+    "start_char_in_raw_claims": 11708,
+    "end_char_in_raw_claims": 11983,
+    "text": "20. The apparatus of claim 18 , wherein the data indicative of the presence of the potential typographical error comprises at least one of a string identified as the potential typographical error, a position of the string in the work, or a context for the string in the work."
+  }
+]

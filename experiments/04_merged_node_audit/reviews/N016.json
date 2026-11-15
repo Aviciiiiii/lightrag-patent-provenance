@@ -1,0 +1,649 @@
+{
+  "audit_id": "N016",
+  "node_id": "Event",
+  "category": "contextual_conflation",
+  "confidence": "medium",
+  "reason_zh": "原文明确呈现两种 event 语义：US11423041B2 中是注册到历史对象、按条件触发并使 ETL 作业执行的数据处理事件；US9118735B1 中是用户声称正在参加、可据以定位的活动/事件。当前单一 Event ID 的描述并列了这两种角色，邻边也将地理位置/人员出席与订阅/触发关系接在同一节点。它们可以同属极抽象的“发生事项”，但这个上位类不足以支持当前具体关系角色的互换；本分类是语义区分需求，非已有错误推理证明。",
+  "class_instance_interpretation_zh": "可以显式建立 occurrence/event 上位类，并保留数据处理事件与人参加的活动这两个上下文意义或子类。图中没有给定正式 ontology，因而 C3 表示当前单 ID 中具体意义/作用域被折叠的审阅判断，不等于证明类合并错误；若预设节点即宽类，则 shared_broad_class 也是合理解释。不主张任一专利内多个事件是同一实例，也不将跨来源邻接视为人物参加 ETL 事件的事实。",
+  "source_assessments": [
+    {
+      "publication_number": "US11423041B2",
+      "evidence_quote": "criteria for triggering an event to perform a second ETL process subscribed to the event",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "历史对象的被监控触发事件，触发订阅的 ETL 处理并可发送通知。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US11423041B2-chunk-000",
+        "US11423041B2-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US11423041B2-chunk-000",
+        "US11423041B2-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US11423041B2.json",
+        "claim_file_sha256": "0356d98469cafed1e4867806dcbfc7cc87bc83f274757db009123e4522083e2c",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "两个来源块的原实体行均描述注册/触发/订阅语义，和 Claims 1,8,15 一致。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US11423041B2-chunk-000",
+            "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 9,
+            "raw_line": "entity<|#|>Event<|#|>Concept<|#|>A condition registered for monitoring with regard to a history object, triggered when stored information describing an ETL process's performance satisfies specified criteria, causing a subscribed ETL process to be performed.",
+            "fields": [
+              "entity",
+              "Event",
+              "Concept",
+              "A condition registered for monitoring with regard to a history object, triggered when stored information describing an ETL process's performance satisfies specified criteria, causing a subscribed ETL process to be performed."
+            ]
+          },
+          {
+            "chunk_id": "US11423041B2-chunk-001",
+            "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+            "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 14,
+            "raw_line": "entity<|#|>Event<|#|>Concept<|#|>An event registered for monitoring with regard to the history object, triggered when the performance of the first ETL process satisfies criteria, and subscribed to by the second ETL process.",
+            "fields": [
+              "entity",
+              "Event",
+              "Concept",
+              "An event registered for monitoring with regard to the history object, triggered when the performance of the first ETL process satisfies criteria, and subscribed to by the second ETL process."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US11423041B2-chunk-000",
+            "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 23,
+            "raw_line": "relation<|#|>Criteria<|#|>Event<|#|>triggers<|#|>Satisfying the criteria for triggering an event causes the event to be triggered.",
+            "fields": [
+              "relation",
+              "Criteria",
+              "Event",
+              "triggers",
+              "Satisfying the criteria for triggering an event causes the event to be triggered."
+            ]
+          },
+          {
+            "chunk_id": "US11423041B2-chunk-000",
+            "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 24,
+            "raw_line": "relation<|#|>Event<|#|>ETL Process<|#|>subscribed to, causes performance of<|#|>A second ETL process subscribed to the event is caused to be performed when the event is triggered.",
+            "fields": [
+              "relation",
+              "Event",
+              "ETL Process",
+              "subscribed to, causes performance of",
+              "A second ETL process subscribed to the event is caused to be performed when the event is triggered."
+            ]
+          },
+          {
+            "chunk_id": "US11423041B2-chunk-000",
+            "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 25,
+            "raw_line": "relation<|#|>Event<|#|>History Object<|#|>registered for monitoring with regard to<|#|>The event is registered for monitoring with regard to the history object.",
+            "fields": [
+              "relation",
+              "Event",
+              "History Object",
+              "registered for monitoring with regard to",
+              "The event is registered for monitoring with regard to the history object."
+            ]
+          },
+          {
+            "chunk_id": "US11423041B2-chunk-000",
+            "raw_record_id": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "cache_key": "default:extract:1e1a93c1cf0ca690619d59a6d323f13d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 26,
+            "raw_line": "relation<|#|>Event<|#|>Subscriber<|#|>notifies<|#|>A notification of the event is sent to one or more subscribers for the event.",
+            "fields": [
+              "relation",
+              "Event",
+              "Subscriber",
+              "notifies",
+              "A notification of the event is sent to one or more subscribers for the event."
+            ]
+          },
+          {
+            "chunk_id": "US11423041B2-chunk-001",
+            "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+            "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 36,
+            "raw_line": "relation<|#|>Event<|#|>History Object<|#|>registered for monitoring with regard to<|#|>The event is registered for monitoring with regard to the history object.",
+            "fields": [
+              "relation",
+              "Event",
+              "History Object",
+              "registered for monitoring with regard to",
+              "The event is registered for monitoring with regard to the history object."
+            ]
+          },
+          {
+            "chunk_id": "US11423041B2-chunk-001",
+            "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+            "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 38,
+            "raw_line": "relation<|#|>Event<|#|>Second ETL Process<|#|>subscribed to by<|#|>The second ETL process is subscribed to the event to be performed when the event is triggered.",
+            "fields": [
+              "relation",
+              "Event",
+              "Second ETL Process",
+              "subscribed to by",
+              "The second ETL process is subscribed to the event to be performed when the event is triggered."
+            ]
+          },
+          {
+            "chunk_id": "US11423041B2-chunk-001",
+            "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+            "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 40,
+            "raw_line": "relation<|#|>Criteria<|#|>Event<|#|>triggers<|#|>The criteria are evaluated to determine whether the event should be triggered.",
+            "fields": [
+              "relation",
+              "Criteria",
+              "Event",
+              "triggers",
+              "The criteria are evaluated to determine whether the event should be triggered."
+            ]
+          },
+          {
+            "chunk_id": "US11423041B2-chunk-001",
+            "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+            "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 44,
+            "raw_line": "relation<|#|>Data Catalog<|#|>Event<|#|>determines triggering of<|#|>The data catalog determines that the performance of the first ETL process satisfies the criteria for triggering the event.",
+            "fields": [
+              "relation",
+              "Data Catalog",
+              "Event",
+              "determines triggering of",
+              "The data catalog determines that the performance of the first ETL process satisfies the criteria for triggering the event."
+            ]
+          },
+          {
+            "chunk_id": "US11423041B2-chunk-001",
+            "raw_record_id": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+            "cache_key": "default:extract:7ff7beec3b2319e673503a0f9278ffb2",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 49,
+            "raw_line": "relation<|#|>Notification<|#|>Event<|#|>notifies of<|#|>The notification communicates the event to another subscriber.",
+            "fields": [
+              "relation",
+              "Notification",
+              "Event",
+              "notifies of",
+              "The notification communicates the event to another subscriber."
+            ]
+          }
+        ],
+        "raw_entity_count": 2,
+        "raw_relation_endpoint_count": 9
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "A second ETL process subscribed to the event is caused to be performed when the event is triggered.",
+          "keywords": "causes performance of,subscribed to",
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "ETL Process",
+          "edge_index": 240,
+          "source_chunks": [
+            "US11423041B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The event is registered for monitoring with regard to the history object.",
+          "keywords": "registered for monitoring with regard to",
+          "source_id": "US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "History Object",
+          "edge_index": 241,
+          "source_chunks": [
+            "US11423041B2-chunk-000",
+            "US11423041B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A notification of the event is sent to one or more subscribers for the event.",
+          "keywords": "notifies",
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "Subscriber",
+          "edge_index": 242,
+          "source_chunks": [
+            "US11423041B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "Satisfying the criteria for triggering an event causes the event to be triggered.<SEP>The criteria are evaluated to determine whether the event should be triggered.",
+          "keywords": "triggers",
+          "source_id": "US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "Criteria",
+          "edge_index": 243,
+          "source_chunks": [
+            "US11423041B2-chunk-000",
+            "US11423041B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The second ETL process is subscribed to the event to be performed when the event is triggered.",
+          "keywords": "subscribed to by",
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "Second ETL Process",
+          "edge_index": 244,
+          "source_chunks": [
+            "US11423041B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data catalog determines that the performance of the first ETL process satisfies the criteria for triggering the event.",
+          "keywords": "determines triggering of",
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "Data Catalog",
+          "edge_index": 245,
+          "source_chunks": [
+            "US11423041B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The notification communicates the event to another subscriber.",
+          "keywords": "notifies of",
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1793284678,
+          "truncate": "",
+          "source": "Event",
+          "target": "Notification",
+          "edge_index": 246,
+          "source_chunks": [
+            "US11423041B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US11423041B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US11423041B2-chunk-000",
+          "sha256": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65",
+          "characters": 6231
+        },
+        {
+          "chunk_id": "US11423041B2-chunk-001",
+          "sha256": "8f3d13a18781a5fb01b8d2de56b03acd746fc3ace6168e4b910162e77bfec7fb",
+          "characters": 6008
+        }
+      ]
+    },
+    {
+      "publication_number": "US9118735B1",
+      "evidence_quote": "an event that the third user has identified himself or herself as being at",
+      "claim_or_section": "Claim 7",
+      "claim_number": 7,
+      "role_zh": "用户所处/参加的活动，作为 last-known location 的依据。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9118735B1-chunk-000",
+        "US9118735B1-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9118735B1-chunk-000",
+        "US9118735B1-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9118735B1.json",
+        "claim_file_sha256": "1fd4df31aac1196b4399ade27a6cc43837b73da9fdf588b6785fd4a606e47265",
+        "claim_number": 7
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "两块原抽取均描述人在某活动的出席/位置语义。Claim 7 在两块重叠；Claim 17 另说明 same event or venue。抽取中的 connecting person 是全文另一实施例术语，不能因此把两篇 event 视为同义。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9118735B1-chunk-000",
+            "raw_record_id": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+            "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 16,
+            "raw_line": "entity<|#|>Event<|#|>Event<|#|>An occurrence that a connecting person has identified himself or herself as being at, used to determine the last-known location.",
+            "fields": [
+              "entity",
+              "Event",
+              "Event",
+              "An occurrence that a connecting person has identified himself or herself as being at, used to determine the last-known location."
+            ]
+          },
+          {
+            "chunk_id": "US9118735B1-chunk-001",
+            "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+            "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 8,
+            "raw_line": "entity<|#|>Event<|#|>Event<|#|>An occurrence that a user, such as the third user, has identified himself or herself as being at, which may be the same event as the first user's location.",
+            "fields": [
+              "entity",
+              "Event",
+              "Event",
+              "An occurrence that a user, such as the third user, has identified himself or herself as being at, which may be the same event as the first user's location."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9118735B1-chunk-000",
+            "raw_record_id": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+            "cache_key": "default:extract:afaee09cfcca806052fdf575db5fb6c8",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 36,
+            "raw_line": "relation<|#|>Last-Known Location<|#|>Event<|#|>Determined Based On<|#|>The last-known location of the connecting person may be determined based on an event the connecting person has identified himself or herself as being at.",
+            "fields": [
+              "relation",
+              "Last-Known Location",
+              "Event",
+              "Determined Based On",
+              "The last-known location of the connecting person may be determined based on an event the connecting person has identified himself or herself as being at."
+            ]
+          },
+          {
+            "chunk_id": "US9118735B1-chunk-001",
+            "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+            "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 29,
+            "raw_line": "relation<|#|>Third User<|#|>Event<|#|>Presence<|#|>The third user may have identified himself or herself as being at an event.",
+            "fields": [
+              "relation",
+              "Third User",
+              "Event",
+              "Presence",
+              "The third user may have identified himself or herself as being at an event."
+            ]
+          }
+        ],
+        "raw_entity_count": 2,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The third user may have identified himself or herself as being at an event.",
+          "keywords": "Presence",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Event",
+          "edge_index": 201,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The last-known location of the connecting person may be determined based on an event the connecting person has identified himself or herself as being at.",
+          "keywords": "Determined Based On",
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Last-Known Location",
+          "target": "Event",
+          "edge_index": 239,
+          "source_chunks": [
+            "US9118735B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9118735B1-chunk-000",
+          "sha256": "309f82082f5c546ffbe04ef4427e7a3f66cfb4e51a0abfd0cc60e2913ad83997",
+          "characters": 6404
+        },
+        {
+          "chunk_id": "US9118735B1-chunk-001",
+          "sha256": "b3448c0610adb75d41d0e719be9b14b65e384183af67e7f82dd178abc42f6404",
+          "characters": 4935
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 9,
+    "observed_unsupported_edge": false,
+    "details_zh": "9 条邻边按自己的来源都可找到对应陈述。未发现实际的“Third User 触发 ETL”或“ETL Event 是地理场所”边；这种路径只可能在忽略上下文后被组合，未运行检索/生成验证。",
+    "edge_indices": [
+      201,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 201,
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9118735B1 Claims 7,17",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 239,
+        "source_id": "US9118735B1-chunk-000",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9118735B1 Claim 7",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 240,
+        "source_id": "US11423041B2-chunk-000",
+        "canonical_publications": [
+          "US11423041B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US11423041B2 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 241,
+        "source_id": "US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+        "canonical_publications": [
+          "US11423041B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US11423041B2 Claims 1,8,15",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 242,
+        "source_id": "US11423041B2-chunk-000",
+        "canonical_publications": [
+          "US11423041B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US11423041B2 Abstract, Claim 3",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 243,
+        "source_id": "US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+        "canonical_publications": [
+          "US11423041B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US11423041B2 Claims 1,8,15",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 244,
+        "source_id": "US11423041B2-chunk-001",
+        "canonical_publications": [
+          "US11423041B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US11423041B2 Claim 15",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 245,
+        "source_id": "US11423041B2-chunk-001",
+        "canonical_publications": [
+          "US11423041B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US11423041B2 Claims 8,15",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 246,
+        "source_id": "US11423041B2-chunk-001",
+        "canonical_publications": [
+          "US11423041B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US11423041B2 Claims 10,17",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      }
+    ],
+    "retrieval_or_generation_propagation_tested": false
+  },
+  "limitations_zh": [
+    "这是 AI 辅助原文/抽取/图结构审阅，非独立人工标注 gold、非新的模型评判 API 实验。",
+    "仅审核当前保存的第二轮图快照与其来源块；概念合并不等于实例 sameAs，也没有进行跨专利路径检索或答案生成传播实验。",
+    "原文为已索引摘要及 Claims；没有用外部说明书填补缺失事实。原始文本中的格式缺陷保持原样。",
+    "边的端点顺序来自保存的无向图；语义方向按原关系描述核对，不把 source/target 字段顺序当作因果方向。",
+    "observed_unsupported_edge=false 表示本次检查未确认无原文支持的实际边，不是证明全图无误；关键词粒度/局部实施例范围的警示另记。",
+    "未给定显式类/实例 ontology。类别是基于具体词义及作用域的审阅标签，contextual_conflation 数量不是错误边数或代码 bug 率；Event/Network 的宽类解释可改变类别。",
+    "缓存提取行未保存 finish_reason 时不推定完整或截断；本审核只对实际保存的实体/关系行与当前已入图事实作语义核验。"
+  ],
+  "ontology_sensitivity": {
+    "explicit_ontology_available": false,
+    "alternative_shared_broad_class_plausible": true,
+    "interpretation_zh": "若全局节点被明确规定为足够宽的 occurrence/network 类，并保留文档内谓词范围，宽类解释可以成立；本次 C3 仅记录具体词义/角色范围折叠。"
+  },
+  "review_method": {
+    "reviewer": "AI-assisted Codex content review",
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "all_source_publications_reviewed": 2,
+    "all_source_chunks_reviewed": 4,
+    "all_actual_incident_edges_reviewed": 9,
+    "raw_input_kind": "saved extraction rows; no new extraction",
+    "review_protocol_sha256": "bbed066b8051df60997798d319549164d750797ebef3d7c1e86d69ffc6092255",
+    "dossier_sha256": "90864e1b1aedde5cb45783a55c711297f2a5aede3de917d013eebfed8188a0f2",
+    "generated_utc": "2026-10-30T08:21:11.043458+00:00"
+  },
+  "graph_node_description_reviewed": "An occurrence that a connecting person has identified himself or herself as being at, used to determine the last-known location.<SEP>An occurrence that a user, such as the third user, has identified himself or herself as being at, which may be the same event as the first user's location.<SEP>A condition registered for monitoring with regard to a history object, triggered when stored information describing an ETL process's performance satisfies specified criteria, causing a subscribed ETL process to be performed.<SEP>An event registered for monitoring with regard to the history object, triggered when the performance of the first ETL process satisfies criteria, and subscribed to by the second ETL process."
+}

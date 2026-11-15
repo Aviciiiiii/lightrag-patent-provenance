@@ -1,0 +1,28 @@
+{
+  "continued_utc": "2026-10-30T03:24:55.572695+00:00",
+  "original_round4_start": "2026-10-30T02:11:08+00:00",
+  "hard_deadline": "2026-10-30T04:11:08+00:00",
+  "no_new_deadline_extension": true,
+  "compute_soft_stop": "2026-10-30T03:53:08+00:00",
+  "prior_partial": "round4",
+  "diagnostic_smoke_not_counted": true,
+  "new_root": "<DOT_WORKDIR>/round4_full_20261030",
+  "python": "<TMP>/lightrag-envdiag-20261030/venv/bin/python",
+  "source": "<TMP>/lightrag-envdiag-20261030/official_source",
+  "source_commit": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+  "continued_cost_cap_cny": 4.0,
+  "prior_round4_plus_diag_and_unknown_reservation_cny": 0.502098,
+  "total_max_budget_bound_cny": 4.502098,
+  "frozen_groups_sha256": "6e19c671647ab590dc04350feaa43d4e063d4b0cb35b74c19520e65f78d2d071",
+  "plan_priority": [
+    "F01",
+    "F05",
+    "F04",
+    "M01"
+  ],
+  "notes": [
+    "Full groups use all title+abstract+claims of target original second-round indexed document, not specification.",
+    "Fresh isolated official index per condition/repetition; no application extraction/answer cache reuse; no embedding cache reuse.",
+    "This continuation fills only actual observed cells; diagnostic smoke cannot substitute."
+  ]
+}

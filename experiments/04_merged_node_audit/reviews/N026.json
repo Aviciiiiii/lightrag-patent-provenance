@@ -1,0 +1,995 @@
+{
+  "audit_id": "N026",
+  "node_id": "Computing Device",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "三个来源的 Computing Device 都指执行指令或软件操作的计算硬件类；地理查询解析、内容推荐和拼写反馈分类是不同应用负载，不是互斥词义。可把它们视为同一宽类，但没有证据证明为同一物理设备或允许把每项负载移植为其他专利已声明的功能。",
+  "class_instance_interpretation_zh": "按共享概念类别解释成立；不是跨专利同一个体身份声明。图中一个 ID 汇集多个文档内实例/功能描述，后续推理仍须保留每条边和原文的专利作用域。",
+  "source_assessments": [
+    {
+      "publication_number": "US9218390B2",
+      "evidence_quote": "which instructions, when executed by one or more computing devices, cause the one or more computing devices to:",
+      "claim_or_section": "Claim 18",
+      "source_chunk_ids": [
+        "US9218390B2-chunk-002"
+      ],
+      "quote_source_chunk_ids": [
+        "US9218390B2-chunk-002"
+      ],
+      "evidence_verification": {
+        "publication_number": "US9218390B2",
+        "claim_or_section": "Claim 18",
+        "quote": "which instructions, when executed by one or more computing devices, cause the one or more computing devices to:",
+        "source_chunk_ids": [
+          "US9218390B2-chunk-002"
+        ],
+        "exact_full_doc_char_start": 11310,
+        "exact_contiguous_quote_verified": true,
+        "saved_claims_file_verified": true
+      },
+      "role_zh": "执行机器可读指令、实现地理查询解析和消歧的计算设备。",
+      "extraction_description_support": {
+        "assessment_zh": "实体行及 Computing Device—Non-Transitory Machine-Readable Media 原始关系均与 Claim 18 指令执行表述一致。",
+        "all_raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9218390B2-chunk-002",
+            "raw_record_id": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+            "line_number": 20,
+            "raw_line": "entity<|#|>Computing Device<|#|>Artifact<|#|>One or more devices that execute machine-readable instructions to perform the described operations."
+          }
+        ],
+        "all_raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9218390B2-chunk-002",
+            "raw_record_id": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+            "line_number": 44,
+            "raw_line": "relation<|#|>Computing Device<|#|>Non-Transitory Machine-Readable Media<|#|>executes instructions from<|#|>The computing devices execute machine-readable instructions on the non-transitory machine-readable media."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "edge_index": 459,
+          "endpoints": [
+            "Computing Device",
+            "Non-Transitory Machine-Readable Media"
+          ],
+          "source_chunk_ids": [
+            "US9218390B2-chunk-002"
+          ],
+          "publication_numbers": [
+            "US9218390B2"
+          ]
+        }
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "evidence_quote": "at least one application executable in the at least one computing device",
+      "claim_or_section": "Claim 6",
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001",
+        "US9374411B1-chunk-002"
+      ],
+      "quote_source_chunk_ids": [
+        "US9374411B1-chunk-000"
+      ],
+      "evidence_verification": {
+        "publication_number": "US9374411B1",
+        "claim_or_section": "Claim 6",
+        "quote": "at least one application executable in the at least one computing device",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-000"
+        ],
+        "exact_full_doc_char_start": 3714,
+        "exact_contiguous_quote_verified": true,
+        "saved_claims_file_verified": true
+      },
+      "role_zh": "执行内容推荐应用和计算机指令的设备。",
+      "extraction_description_support": {
+        "assessment_zh": "三个实体行分别位于内容推荐、网络内容方法及依赖 Claim 23 的指令上下文。chunk002 的“device comprising at least one computing device”表述冗余，原文支持指令由设备执行，不支持把不同专利设备视为同一台。",
+        "all_raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "line_number": 12,
+            "raw_line": "entity<|#|>Computing Device<|#|>Artifact<|#|>A device that executes computer instructions and applications to perform content recommendation functions."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "line_number": 1,
+            "raw_line": "entity<|#|>Computing Device<|#|>Artifact<|#|>A device that executes an application to render content, obtain interaction data, identify characters, calculate relationship scores, and generate recommendations."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-002",
+            "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+            "line_number": 4,
+            "raw_line": "entity<|#|>Computing Device<|#|>Artifact<|#|>A device comprising at least one computing device that executes the plurality of computer instructions stored on the non-transitory computer-readable medium."
+          }
+        ],
+        "all_raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "line_number": 50,
+            "raw_line": "relation<|#|>Non-Transitory Computer-Readable Medium<|#|>Computing Device<|#|>executed by<|#|>The non-transitory computer-readable medium has computer instructions executable by a computing device."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "line_number": 51,
+            "raw_line": "relation<|#|>Application<|#|>Computing Device<|#|>executable in<|#|>The application is executable in the computing device and causes it to perform content recommendation functions."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "line_number": 28,
+            "raw_line": "relation<|#|>Application<|#|>Computing Device<|#|>execution, causation<|#|>The application is executed by the computing device and causes it to perform various operations."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "line_number": 29,
+            "raw_line": "relation<|#|>Computing Device<|#|>First Video Content Feature<|#|>rendering, processing<|#|>The computing device processes the first video content feature and identifies the first character in its scene."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "line_number": 37,
+            "raw_line": "relation<|#|>Computing Device<|#|>First Network Content<|#|>rendering<|#|>The computing device causes the first network content to be rendered in a user interface for display on a client."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "line_number": 38,
+            "raw_line": "relation<|#|>Computing Device<|#|>User Interaction Data<|#|>obtaining<|#|>The computing device obtains user interaction data from the client based on interactions with content."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "line_number": 40,
+            "raw_line": "relation<|#|>Computing Device<|#|>Timeline User Interface<|#|>rendering, causation<|#|>The computing device causes the timeline user interface to be rendered in response to obtaining interaction data."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "line_number": 43,
+            "raw_line": "relation<|#|>Computing Device<|#|>Library<|#|>referencing<|#|>The computing device references the library to identify a recommended character."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "line_number": 47,
+            "raw_line": "relation<|#|>Computing Device<|#|>Recommendation<|#|>sending, generation<|#|>The computing device sends a recommendation for presentation of the second network content."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "line_number": 61,
+            "raw_line": "relation<|#|>Non-Transitory Computer-Readable Medium<|#|>Computing Device<|#|>execution, instruction<|#|>The computer instructions on the medium are executable by the computing device to cause it to perform operations."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-002",
+            "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+            "line_number": 14,
+            "raw_line": "relation<|#|>Computer Instructions<|#|>Computing Device<|#|>causes, executes<|#|>The plurality of computer instructions causes the at least one computing device to perform operations."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "edge_index": 294,
+          "endpoints": [
+            "Recommendation",
+            "Computing Device"
+          ],
+          "source_chunk_ids": [
+            "US9374411B1-chunk-001"
+          ],
+          "publication_numbers": [
+            "US9374411B1"
+          ]
+        },
+        {
+          "edge_index": 431,
+          "endpoints": [
+            "Application",
+            "Computing Device"
+          ],
+          "source_chunk_ids": [
+            "US9374411B1-chunk-000",
+            "US9374411B1-chunk-001"
+          ],
+          "publication_numbers": [
+            "US9374411B1"
+          ]
+        },
+        {
+          "edge_index": 452,
+          "endpoints": [
+            "Computing Device",
+            "Non-Transitory Computer-Readable Medium"
+          ],
+          "source_chunk_ids": [
+            "US9374411B1-chunk-000",
+            "US9374411B1-chunk-001"
+          ],
+          "publication_numbers": [
+            "US9374411B1"
+          ]
+        },
+        {
+          "edge_index": 453,
+          "endpoints": [
+            "Computing Device",
+            "First Video Content Feature"
+          ],
+          "source_chunk_ids": [
+            "US9374411B1-chunk-001"
+          ],
+          "publication_numbers": [
+            "US9374411B1"
+          ]
+        },
+        {
+          "edge_index": 454,
+          "endpoints": [
+            "Computing Device",
+            "First Network Content"
+          ],
+          "source_chunk_ids": [
+            "US9374411B1-chunk-001"
+          ],
+          "publication_numbers": [
+            "US9374411B1"
+          ]
+        },
+        {
+          "edge_index": 455,
+          "endpoints": [
+            "Computing Device",
+            "User Interaction Data"
+          ],
+          "source_chunk_ids": [
+            "US9374411B1-chunk-001"
+          ],
+          "publication_numbers": [
+            "US9374411B1"
+          ]
+        },
+        {
+          "edge_index": 456,
+          "endpoints": [
+            "Computing Device",
+            "Timeline User Interface"
+          ],
+          "source_chunk_ids": [
+            "US9374411B1-chunk-001"
+          ],
+          "publication_numbers": [
+            "US9374411B1"
+          ]
+        },
+        {
+          "edge_index": 457,
+          "endpoints": [
+            "Computing Device",
+            "Library"
+          ],
+          "source_chunk_ids": [
+            "US9374411B1-chunk-001"
+          ],
+          "publication_numbers": [
+            "US9374411B1"
+          ]
+        },
+        {
+          "edge_index": 458,
+          "endpoints": [
+            "Computing Device",
+            "Computer Instructions"
+          ],
+          "source_chunk_ids": [
+            "US9374411B1-chunk-002"
+          ],
+          "publication_numbers": [
+            "US9374411B1"
+          ]
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "evidence_quote": "A computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference.",
+      "claim_or_section": "Abstract",
+      "source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ],
+      "quote_source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ],
+      "evidence_verification": {
+        "publication_number": "US9514120B1",
+        "claim_or_section": "Abstract",
+        "quote": "A computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference.",
+        "source_chunk_ids": [
+          "US9514120B1-chunk-000"
+        ],
+        "exact_full_doc_char_start": 119,
+        "exact_contiguous_quote_verified": true,
+        "saved_claims_file_verified": false
+      },
+      "role_zh": "承载服务器并汇总用户反馈、分类拼写错误的计算设备。",
+      "extraction_description_support": {
+        "assessment_zh": "实体行主要依据摘要；Claims 1/10 使用 processing device，不能把摘要中的 computing device 词面伪标为 Claim 1 原词。原始 Work 关系有 <|#||> 分隔符拼写，实际图已保留正确的 Computing Device—Work 边，不能据此声称关系丢失。",
+        "all_raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9514120B1-chunk-000",
+            "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+            "line_number": 2,
+            "raw_line": "entity<|#|>Computing Device<|#|>Artifact<|#|>A device hosting a server that identifies potential typographical errors in a work, sends data to users, collects and combines feedback, sorts the feedback, and updates an initial reference."
+          }
+        ],
+        "all_raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9514120B1-chunk-000",
+            "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+            "line_number": 25,
+            "raw_line": "relation<|#|>Computing Device<|#|>Server<|#|>hosts<|#|>The computing device hosts a server that performs typographical error classification."
+          },
+          {
+            "chunk_id": "US9514120B1-chunk-000",
+            "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+            "line_number": 26,
+            "raw_line": "relation<|#|>Computing Device<|#|>Initial Reference<|#|>uses, updates<|#|>The computing device identifies potential typographical errors using an initial reference and updates the initial reference to include acceptable strings."
+          },
+          {
+            "chunk_id": "US9514120B1-chunk-000",
+            "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+            "line_number": 27,
+            "raw_line": "relation<|#|>Computing Device<|#|>Work<|#||>identifies errors in<|#|>The computing device identifies potential typographical errors in a work."
+          },
+          {
+            "chunk_id": "US9514120B1-chunk-000",
+            "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+            "line_number": 28,
+            "raw_line": "relation<|#|>Computing Device<|#|>User Feedback<|#|>collects, combines, sorts<|#|>The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback."
+          },
+          {
+            "chunk_id": "US9514120B1-chunk-000",
+            "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+            "line_number": 29,
+            "raw_line": "relation<|#|>Computing Device<|#|>Users<|#|>sends data to, collects feedback from<|#|>The computing device sends data indicative of potential typographical errors to users and collects feedback from them."
+          },
+          {
+            "chunk_id": "US9514120B1-chunk-000",
+            "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+            "line_number": 54,
+            "raw_line": "relation<|#|>US9514120B1<|#|>Computing Device<|#|>describes<|#|>The patent document describes operations performed by a computing device for classifying typographical errors."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "edge_index": 88,
+          "endpoints": [
+            "Server",
+            "Computing Device"
+          ],
+          "source_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "publication_numbers": [
+            "US9514120B1"
+          ]
+        },
+        {
+          "edge_index": 446,
+          "endpoints": [
+            "US9514120B1",
+            "Computing Device"
+          ],
+          "source_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "publication_numbers": [
+            "US9514120B1"
+          ]
+        },
+        {
+          "edge_index": 448,
+          "endpoints": [
+            "Computing Device",
+            "Initial Reference"
+          ],
+          "source_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "publication_numbers": [
+            "US9514120B1"
+          ]
+        },
+        {
+          "edge_index": 449,
+          "endpoints": [
+            "Computing Device",
+            "Work"
+          ],
+          "source_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "publication_numbers": [
+            "US9514120B1"
+          ]
+        },
+        {
+          "edge_index": 450,
+          "endpoints": [
+            "Computing Device",
+            "User Feedback"
+          ],
+          "source_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "publication_numbers": [
+            "US9514120B1"
+          ]
+        },
+        {
+          "edge_index": 451,
+          "endpoints": [
+            "Computing Device",
+            "Users"
+          ],
+          "source_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "publication_numbers": [
+            "US9514120B1"
+          ]
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "all_actual_incident_edges_read": true,
+    "incident_edge_count": 16,
+    "all_incident_edge_indices": [
+      88,
+      294,
+      431,
+      446,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459
+    ],
+    "edge_checks": [
+      {
+        "edge_index": 88,
+        "endpoints": [
+          "Server",
+          "Computing Device"
+        ],
+        "actual_description": "The computing device hosts a server that performs typographical error classification.",
+        "source_chunk_ids": [
+          "US9514120B1-chunk-000"
+        ],
+        "publication_numbers": [
+          "US9514120B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9514120B1",
+          "claim_or_section": "Abstract",
+          "quote": "A computing device hosting a server",
+          "source_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "exact_full_doc_char_start": 119,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": false
+        },
+        "assessment_zh": "摘要明确设备承载服务器。"
+      },
+      {
+        "edge_index": 294,
+        "endpoints": [
+          "Recommendation",
+          "Computing Device"
+        ],
+        "actual_description": "The computing device sends a recommendation for presentation of the second network content.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-001"
+        ],
+        "publication_numbers": [
+          "US9374411B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9374411B1",
+          "claim_or_section": "Claim 14",
+          "quote": "sending, by the at least one computing device, a recommendation for presentation of the second network content.",
+          "source_chunk_ids": [
+            "US9374411B1-chunk-001"
+          ],
+          "exact_full_doc_char_start": 9049,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "设备发送网络内容推荐。"
+      },
+      {
+        "edge_index": 431,
+        "endpoints": [
+          "Application",
+          "Computing Device"
+        ],
+        "actual_description": "The application is executable in the computing device and causes it to perform content recommendation functions.<SEP>The application is executed by the computing device and causes it to perform various operations.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-000",
+          "US9374411B1-chunk-001"
+        ],
+        "publication_numbers": [
+          "US9374411B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9374411B1",
+          "claim_or_section": "Claim 6",
+          "quote": "at least one application executable in the at least one computing device",
+          "source_chunk_ids": [
+            "US9374411B1-chunk-000"
+          ],
+          "exact_full_doc_char_start": 3714,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "执行应用及推荐操作有 Claim 6 支持；后续依赖 Claims 10–12 延续该设备。"
+      },
+      {
+        "edge_index": 446,
+        "endpoints": [
+          "US9514120B1",
+          "Computing Device"
+        ],
+        "actual_description": "The patent document describes operations performed by a computing device for classifying typographical errors.",
+        "source_chunk_ids": [
+          "US9514120B1-chunk-000"
+        ],
+        "publication_numbers": [
+          "US9514120B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9514120B1",
+          "claim_or_section": "Abstract",
+          "quote": "A computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference.",
+          "source_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "exact_full_doc_char_start": 119,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": false
+        },
+        "assessment_zh": "专利文档描述该设备执行的分类操作。"
+      },
+      {
+        "edge_index": 448,
+        "endpoints": [
+          "Computing Device",
+          "Initial Reference"
+        ],
+        "actual_description": "The computing device identifies potential typographical errors using an initial reference and updates the initial reference to include acceptable strings.",
+        "source_chunk_ids": [
+          "US9514120B1-chunk-000"
+        ],
+        "publication_numbers": [
+          "US9514120B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9514120B1",
+          "claim_or_section": "Abstract",
+          "quote": "updates the initial reference to include the acceptable string.",
+          "source_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "exact_full_doc_char_start": 862,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": false
+        },
+        "assessment_zh": "摘要同时记载以初始参考识别和更新初始参考。"
+      },
+      {
+        "edge_index": 449,
+        "endpoints": [
+          "Computing Device",
+          "Work"
+        ],
+        "actual_description": "The computing device identifies potential typographical errors in a work.",
+        "source_chunk_ids": [
+          "US9514120B1-chunk-000"
+        ],
+        "publication_numbers": [
+          "US9514120B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9514120B1",
+          "claim_or_section": "Abstract",
+          "quote": "identifies one or more potential typographical errors in a work using an initial reference.",
+          "source_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "exact_full_doc_char_start": 155,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": false
+        },
+        "assessment_zh": "Work 边有摘要直接证据；实际图存在该边，原始分隔符拼写不构成已丢边。"
+      },
+      {
+        "edge_index": 450,
+        "endpoints": [
+          "Computing Device",
+          "User Feedback"
+        ],
+        "actual_description": "The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback.",
+        "source_chunk_ids": [
+          "US9514120B1-chunk-000"
+        ],
+        "publication_numbers": [
+          "US9514120B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9514120B1",
+          "claim_or_section": "Abstract",
+          "quote": "The computing device collects feedback for the work from the users.",
+          "source_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "exact_full_doc_char_start": 354,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": false
+        },
+        "assessment_zh": "摘要随后明确合并其他作品反馈并排序，完整支持边内操作。"
+      },
+      {
+        "edge_index": 451,
+        "endpoints": [
+          "Computing Device",
+          "Users"
+        ],
+        "actual_description": "The computing device sends data indicative of potential typographical errors to users and collects feedback from them.",
+        "source_chunk_ids": [
+          "US9514120B1-chunk-000"
+        ],
+        "publication_numbers": [
+          "US9514120B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9514120B1",
+          "claim_or_section": "Abstract",
+          "quote": "The computing device sends data indicative of the presence of the potential typographical errors to users.",
+          "source_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "exact_full_doc_char_start": 247,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": false
+        },
+        "assessment_zh": "同段下一句明确向用户收集反馈。"
+      },
+      {
+        "edge_index": 452,
+        "endpoints": [
+          "Computing Device",
+          "Non-Transitory Computer-Readable Medium"
+        ],
+        "actual_description": "The non-transitory computer-readable medium has computer instructions executable by a computing device.<SEP>The computer instructions on the medium are executable by the computing device to cause it to perform operations.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-000",
+          "US9374411B1-chunk-001"
+        ],
+        "publication_numbers": [
+          "US9374411B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9374411B1",
+          "claim_or_section": "Claim 1",
+          "quote": "computer instructions executable by at least one computing device",
+          "source_chunk_ids": [
+            "US9374411B1-chunk-000",
+            "US9374411B1-chunk-001"
+          ],
+          "exact_full_doc_char_start": 740,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "非暂态介质承载可由计算设备执行的指令；Claim 21 复现这一结构。"
+      },
+      {
+        "edge_index": 453,
+        "endpoints": [
+          "Computing Device",
+          "First Video Content Feature"
+        ],
+        "actual_description": "The computing device processes the first video content feature and identifies the first character in its scene.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-001"
+        ],
+        "publication_numbers": [
+          "US9374411B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9374411B1",
+          "claim_or_section": "Claim 10",
+          "quote": "the at least one computing device to identify the first character in the at least one scene.",
+          "source_chunk_ids": [
+            "US9374411B1-chunk-001"
+          ],
+          "exact_full_doc_char_start": 6378,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "设备执行角色识别有直接证据。"
+      },
+      {
+        "edge_index": 454,
+        "endpoints": [
+          "Computing Device",
+          "First Network Content"
+        ],
+        "actual_description": "The computing device causes the first network content to be rendered in a user interface for display on a client.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-001"
+        ],
+        "publication_numbers": [
+          "US9374411B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9374411B1",
+          "claim_or_section": "Claim 14",
+          "quote": "causing, by at least one computing device, a first network content to be rendered in a user interface",
+          "source_chunk_ids": [
+            "US9374411B1-chunk-001"
+          ],
+          "exact_full_doc_char_start": 7432,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "设备使网络内容呈现于界面。"
+      },
+      {
+        "edge_index": 455,
+        "endpoints": [
+          "Computing Device",
+          "User Interaction Data"
+        ],
+        "actual_description": "The computing device obtains user interaction data from the client based on interactions with content.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-001"
+        ],
+        "publication_numbers": [
+          "US9374411B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9374411B1",
+          "claim_or_section": "Claim 14",
+          "quote": "obtaining, by the at least one computing device, first user interaction data from the client",
+          "source_chunk_ids": [
+            "US9374411B1-chunk-001"
+          ],
+          "exact_full_doc_char_start": 7559,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "设备从客户端获取交互数据。"
+      },
+      {
+        "edge_index": 456,
+        "endpoints": [
+          "Computing Device",
+          "Timeline User Interface"
+        ],
+        "actual_description": "The computing device causes the timeline user interface to be rendered in response to obtaining interaction data.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-001"
+        ],
+        "publication_numbers": [
+          "US9374411B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9374411B1",
+          "claim_or_section": "Claim 14",
+          "quote": "causing, by the at least one computing device, a timeline user interface",
+          "source_chunk_ids": [
+            "US9374411B1-chunk-001"
+          ],
+          "exact_full_doc_char_start": 7922,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "时间线界面呈现由该设备引发。"
+      },
+      {
+        "edge_index": 457,
+        "endpoints": [
+          "Computing Device",
+          "Library"
+        ],
+        "actual_description": "The computing device references the library to identify a recommended character.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-001"
+        ],
+        "publication_numbers": [
+          "US9374411B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9374411B1",
+          "claim_or_section": "Claim 14",
+          "quote": "referencing, by the at least one computing device, a library to identify a recommended character",
+          "source_chunk_ids": [
+            "US9374411B1-chunk-001"
+          ],
+          "exact_full_doc_char_start": 8481,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "设备查阅库以确定推荐角色。"
+      },
+      {
+        "edge_index": 458,
+        "endpoints": [
+          "Computing Device",
+          "Computer Instructions"
+        ],
+        "actual_description": "The plurality of computer instructions causes the at least one computing device to perform operations.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-002"
+        ],
+        "publication_numbers": [
+          "US9374411B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9374411B1",
+          "claim_or_section": "Claim 23",
+          "quote": "the plurality of computer instructions further causes the at least one computing device to obtain explicit user feedback",
+          "source_chunk_ids": [
+            "US9374411B1-chunk-002"
+          ],
+          "exact_full_doc_char_start": 12593,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "依赖 Claim 23 明确指令使设备执行反馈获取操作。"
+      },
+      {
+        "edge_index": 459,
+        "endpoints": [
+          "Computing Device",
+          "Non-Transitory Machine-Readable Media"
+        ],
+        "actual_description": "The computing devices execute machine-readable instructions on the non-transitory machine-readable media.",
+        "source_chunk_ids": [
+          "US9218390B2-chunk-002"
+        ],
+        "publication_numbers": [
+          "US9218390B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9218390B2",
+          "claim_or_section": "Claim 18",
+          "quote": "which instructions, when executed by one or more computing devices",
+          "source_chunk_ids": [
+            "US9218390B2-chunk-002"
+          ],
+          "exact_full_doc_char_start": 11310,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "指令与设备的执行关系有直接证据。"
+      }
+    ],
+    "observed_unsupported_cross_document_edge": false,
+    "observed_wrong_retrieval_or_generation_propagation": false,
+    "potential_unscoped_path_composition": {
+      "path": [
+        "Initial Reference",
+        "Computing Device",
+        "Non-Transitory Machine-Readable Media"
+      ],
+      "edge_indices": [
+        448,
+        459
+      ],
+      "publications": [
+        "US9514120B1",
+        "US9218390B2"
+      ],
+      "interpretation_zh": "图上两步路径跨拼写分类与地理查询解析专利；不能把共用计算设备类解释为同一设备或共同执行链。未观察到对应错误系统输出。"
+    },
+    "note_zh": "实际边均保留其文档来源；跨文档共享邻接或可组合路径不等于原文支持跨专利关系，也不等于已观察到系统回答受污染。",
+    "reviewed_incident_edge_count": 16,
+    "edge_indices": [
+      88,
+      294,
+      431,
+      446,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459
+    ]
+  },
+  "limitations_zh": [
+    "本结果是助手逐文内容审阅，不是独立人类金标准，也未调用新的模型评判 API。",
+    "共享宽类不保证所有合并描述适用于每个来源，也不验证物理/软件实例身份相等。",
+    "未运行新的检索和生成实验，不能据邻接路径推定已发生错误传播。",
+    "缓存行未保存 finish_reason；本评审不从缓存缺该字段推定响应完整或截断。",
+    "US9514120B1 的 computing device 主要引用摘要，权利要求采用 processing device，不混标 Claim 来源。"
+  ],
+  "review_coverage": {
+    "full_source_chunks_read": [
+      "US9218390B2-chunk-002",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000"
+    ],
+    "raw_entity_rows_read": 5,
+    "raw_relation_endpoint_rows_read": 18,
+    "actual_incident_edges_read": 16,
+    "claim_number_source": "data/claims/<publication_number>.json; Abstract explicitly labeled",
+    "updated_dossier_sha256": "3268798bfe2e5dc4426caef6f22ee36a775f0f816ba833d5b4da3a486b24ad4a",
+    "review_protocol": "round2_multisource_audit/evidence/review_protocol.json"
+  },
+  "reviewed_utc": "2026-10-30T08:14:23.465909+00:00",
+  "reviewer": "AI-assisted content review by round4_guard; expanded assignment approved by root",
+  "external_model_api_calls": 0,
+  "credentials_read": false
+}

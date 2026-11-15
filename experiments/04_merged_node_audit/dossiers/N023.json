@@ -1,0 +1,2145 @@
+{
+  "node_id": "User",
+  "entity_type": "person",
+  "graph_source_chunks": [
+    "US8069128B2-chunk-000",
+    "US8069128B2-chunk-001",
+    "US8719408B2-chunk-000",
+    "US8719408B2-chunk-001",
+    "US8880423B2-chunk-000",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001",
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-001"
+  ],
+  "entity_chunk_store_sources": [
+    "US8069128B2-chunk-000",
+    "US8069128B2-chunk-001",
+    "US8719408B2-chunk-000",
+    "US8719408B2-chunk-001",
+    "US8880423B2-chunk-000",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001",
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-001"
+  ],
+  "all_source_chunks": [
+    "US8069128B2-chunk-000",
+    "US8069128B2-chunk-001",
+    "US8719408B2-chunk-000",
+    "US8719408B2-chunk-001",
+    "US8880423B2-chunk-000",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001",
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-001"
+  ],
+  "canonical_publications": [
+    "US8069128B2",
+    "US8719408B2",
+    "US8880423B2",
+    "US9374411B1",
+    "US9514120B1"
+  ],
+  "publication_count": 5,
+  "actual_chunk_file_paths": [
+    "US8069128B2.txt",
+    "US8719408B2.txt",
+    "US8880423B2.txt",
+    "US9374411B1.txt",
+    "US9514120B1.txt"
+  ],
+  "graph_file_paths": [
+    "US8880423B2.txt",
+    "US9514120B1.txt",
+    "US8069128B2.txt",
+    "US9374411B1.txt",
+    "US8719408B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US8069128B2",
+    "US8719408B2",
+    "US8880423B2",
+    "US9374411B1",
+    "US9514120B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US8069128B2-chunk-000",
+    "US8069128B2-chunk-001",
+    "US8719408B2-chunk-000",
+    "US8719408B2-chunk-001",
+    "US8880423B2-chunk-000",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001",
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-001"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US8069128B2-chunk-000",
+    "US8069128B2-chunk-001",
+    "US8719408B2-chunk-000",
+    "US8719408B2-chunk-001",
+    "US8880423B2-chunk-000",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001",
+    "US9514120B1-chunk-001"
+  ],
+  "graph_node": {
+    "entity_id": "User",
+    "entity_type": "person",
+    "description": "The term \"User\" refers to an individual who interacts with various systems, interfaces, and content across multiple contexts. In the context of search and inventory systems, a User is an individual who has previously submitted search keywords and viewed pages, thereby providing the history used for inventory estimation. In the context of error reporting, a User is an individual who provides feedback on potential typographical errors in a work via a graphical user interface. In messaging systems, a User is a person enabled to move an identified message to another message folder and who may select the multi-pass message filter for execution through an interface on the client device; relatedly, a User is a person for whom messages are sorted into folders and who is enabled to move identified misclassified messages to another folder.\n\nIn the context of media and content consumption, a User is a person associated with a client who interacts with video content features and expresses preferences toward characters, receiving content recommendations. Similarly, a User is an individual who interacts with network content and expresses preferences toward characters, and a User who interacts with a user interface and may express explicit feedback favoring a fictional character. In the context of digital media distribution and relationships, a User is an individual for whom user relationships are established and to whom filtered digital media content is presented with priority based on relevancy weights. Finally, a User is a user who has relationships with content producers, has a user profile, and receives presented digital media content.",
+    "source_id": "US8880423B2-chunk-000<SEP>US9514120B1-chunk-001<SEP>US8069128B2-chunk-000<SEP>US8069128B2-chunk-001<SEP>US9374411B1-chunk-000<SEP>US9374411B1-chunk-001<SEP>US9374411B1-chunk-002<SEP>US8719408B2-chunk-000<SEP>US8719408B2-chunk-001",
+    "file_path": "US8880423B2.txt<SEP>US9514120B1.txt<SEP>US8069128B2.txt<SEP>US9374411B1.txt<SEP>US8719408B2.txt",
+    "created_at": 1793284592,
+    "truncate": "",
+    "id": "User"
+  },
+  "incident_edge_count": 21,
+  "audit_id": "N023",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US8069128B2",
+      "file_paths": [
+        "US8069128B2.txt"
+      ],
+      "source_chunks": [
+        "US8069128B2-chunk-000",
+        "US8069128B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8069128B2",
+          "full_doc_id": "US8069128B2",
+          "file_path": "US8069128B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "03d27b9af9a95fc99659dae87ae86cc8134f0f4319687342b04ae8d524454c1c",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6639,
+          "content": "Publication number: US8069128B2\nTitle: Real-time ad-hoc spam filtering of email\n\nABSTRACT\nEmbodiments are directed towards employing a multi-pass ad-hoc spam message filtering approach that dynamically generates a temporary classifier during a first pass based on a result of a previously applied message filter that sorts messages into various folders for a user. The first pass scans messages in a user's mail folders, and reads various information within the messages, including, but not limited to sender information, headers, including a subject, an originating network address, message contents, attachments, and the like. After creating a classification model, the classifier with its model is used in a second pass on the message folders to retrospectively inspect the messages and present to the user a list of messages that might be misclassified. The classification model is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.\n\nCLAIMS\n1. A network device to manage a delivery of a message over a network, comprising: a transceiver to send and receive data over a network; and a processor that is operative to perform actions, comprising: performing a first pass analysis on a plurality of messages, which have been previously sorted into a plurality of different message folders by a first message filter, using a second, multi-pass message filter that is configured to generate a classification model based on the first pass analysis, wherein the generated classification model is configured to reside exclusively in a non-persistent memory location; using the generated classification model with the second, multi-pass message filter to perform a second pass on the sorted plurality of messages, to generate a misclassification identification of sorted messages; displaying the misclassification identification of sorted messages such that at least one misclassified message can be moved to a different message folder based on the misclassification identification; and purging the generated classification model from non-persistent memory location. 2. The network device of claim 1 , wherein performing a first pass analysis on the sorted plurality of messages is configured to train the second, multi-pass message filter based on which folder each of the plurality of messages resides. 3. The network device of claim 1 , wherein the generated classification model is generated based on an analysis of at least which message folder a message currently resides. 4. The network device of claim 1 , wherein the classification model is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content. 5. The network device of claim 1 , wherein access to the generated classification model is restricted. 6. A processor readable storage medium that includes data and instructions, wherein the execution of the instructions on a computing device provides for managing messages by enabling actions, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 7. The processor readable storage medium of claim 6 , wherein the instructions enable actions, further comprising deleting second classification data such that it is no longer accessible. 8. The processor readable storage medium of claim 6 , wherein executing the first pass and the second pass of the multi-pass message filter occurs entirely on a client device. 9. The processor readable storage medium of claim 6 , wherein the first message filter is configured to execute on a network device distinct from a client device. 10. The processor readable storage medium of claim 6 , wherein the multi-pass message filter employs a Naive Bayes classifier. 11. The processor readable storage medium of claim 6 , wherein the generated second classification model is generated based on an analysis of at least which message folder a message currently resides. 12. A method for managing a message delivery, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing, on a client device, a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store; using the second classification data, executing on the client device a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 13. The method of claim 12 , wherein the second classification data is deleted from the client device upon providing the display of information. 14. The method of claim 12 , wherein the multi-pass message filter is selectable for execution by a user through an interface on the client device; and wherein the first message filter is automatically executed independent of a",
+          "llm_cache_list": [
+            "default:extract:1bdb0b1dee541091933957f5f8a17e3a"
+          ],
+          "chunk_id": "US8069128B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US8069128B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "b3366673911a5b148dff9311a0dee0f03792d110ba0bfa65edaa1a5ce502273d"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+              "cache_key": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 19,
+              "raw_line": "entity<|#|>User<|#|>Person<|#|>A person for whom messages are sorted into folders and who is enabled to move identified misclassified messages to another folder.",
+              "fields": [
+                "entity",
+                "User",
+                "Person",
+                "A person for whom messages are sorted into folders and who is enabled to move identified misclassified messages to another folder."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+              "cache_key": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 39,
+              "raw_line": "relation<|#|>Misclassification Identification<|#|>User<|#|>displayed to<|#|>The misclassification identification is displayed to the user so a misclassified message can be moved.",
+              "fields": [
+                "relation",
+                "Misclassification Identification",
+                "User",
+                "displayed to",
+                "The misclassification identification is displayed to the user so a misclassified message can be moved."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+              "cache_key": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 40,
+              "raw_line": "relation<|#|>User<|#|>Message Folders<|#|>moves messages between<|#|>The user is enabled to move an identified misclassified message to a different message folder.",
+              "fields": [
+                "relation",
+                "User",
+                "Message Folders",
+                "moves messages between",
+                "The user is enabled to move an identified misclassified message to a different message folder."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+              "cache_key": "default:extract:1bdb0b1dee541091933957f5f8a17e3a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 58,
+              "raw_line": "relation<|#|>User<|#|>Interface<|#|>selects filter through<|#|>The multi-pass message filter is selectable for execution by a user through an interface on the client device.",
+              "fields": [
+                "relation",
+                "User",
+                "Interface",
+                "selects filter through",
+                "The multi-pass message filter is selectable for execution by a user through an interface on the client device."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 179,
+              "chunk_char_end": 603,
+              "text": "roach that dynamically generates a temporary classifier during a first pass based on a result of a previously applied message filter that sorts messages into various folders for a user. The first pass scans messages in a user's mail folders, and reads various information within the messages, including, but not limited to sender information, headers, including a subject, an originating network address, message contents, a"
+            },
+            {
+              "chunk_char_start": 220,
+              "chunk_char_end": 644,
+              "text": "ary classifier during a first pass based on a result of a previously applied message filter that sorts messages into various folders for a user. The first pass scans messages in a user's mail folders, and reads various information within the messages, including, but not limited to sender information, headers, including a subject, an originating network address, message contents, attachments, and the like. After creating "
+            },
+            {
+              "chunk_char_start": 625,
+              "chunk_char_end": 1049,
+              "text": "ke. After creating a classification model, the classifier with its model is used in a second pass on the message folders to retrospectively inspect the messages and present to the user a list of messages that might be misclassified. The classification model is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.\n\nCLAIMS\n1. A networ"
+            },
+            {
+              "chunk_char_start": 736,
+              "chunk_char_end": 1160,
+              "text": "e folders to retrospectively inspect the messages and present to the user a list of messages that might be misclassified. The classification model is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.\n\nCLAIMS\n1. A network device to manage a delivery of a message over a network, comprising: a transceiver to send and receive data o"
+            },
+            {
+              "chunk_char_start": 3996,
+              "chunk_char_end": 4420,
+              "text": " is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 7. The processor readable storage medium of claim 6 , wherein the instructions enable actions, further comprising deleting second classification data such that it is no l"
+            },
+            {
+              "chunk_char_start": 6013,
+              "chunk_char_end": 6437,
+              "text": " is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 13. The method of claim 12 , wherein the second classification data is deleted from the client device upon providing the display of information. 14. The method of claim 1"
+            },
+            {
+              "chunk_char_start": 6332,
+              "chunk_char_end": 6639,
+              "text": "ta is deleted from the client device upon providing the display of information. 14. The method of claim 12 , wherein the multi-pass message filter is selectable for execution by a user through an interface on the client device; and wherein the first message filter is automatically executed independent of a"
+            }
+          ],
+          "lexical_occurrence_count": 7
+        },
+        {
+          "publication_number": "US8069128B2",
+          "full_doc_id": "US8069128B2",
+          "file_path": "US8069128B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 545,
+          "content_sha256": "5f3c413a5144fe5d3a95802edf16f3f070a0a6b7d0c00a2440d10ace81083b2e",
+          "exact_doc_char_start": 6097,
+          "exact_doc_char_end": 9043,
+          "content": "associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 13. The method of claim 12 , wherein the second classification data is deleted from the client device upon providing the display of information. 14. The method of claim 12 , wherein the multi-pass message filter is selectable for execution by a user through an interface on the client device; and wherein the first message filter is automatically executed independent of a user action. 15. The method of claim 12 , wherein the second classification data is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content. 16. The method of claim 12 , wherein the second classification data is generated based on which folder each of the plurality of messages resides. 17. A system for enabling a communications over a network, comprising: a network device configured to perform actions, including: receiving a plurality of messages; assigning the plurality of messages to a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; and communicating the messages over the network to the plurality of different message folders; and a client device configured to perform actions, including: executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store at the client device; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 18. The system of claim 17 , wherein the second classification data is deleted from the client device upon providing the display of information. 19. The system of claim 17 , wherein execution of the multi-pass message filter is user selectable. 20. The system of claim 17 , wherein the second classification data is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that is associated with the message folders, a header of a message, or a message content.",
+          "llm_cache_list": [
+            "default:extract:0a9b3ee0b43aab318811b9838cc3fba4"
+          ],
+          "chunk_id": "US8069128B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US8069128B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "20a4c3ded32f36dca72d7e0e52d7c5a264c15da3a1996ddc5c9436555a02655e"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 11,
+              "raw_line": "entity<|#|>User<|#|>Person<|#|>A person enabled to move an identified message to another message folder, who may select the multi-pass message filter for execution through an interface on the client device.",
+              "fields": [
+                "entity",
+                "User",
+                "Person",
+                "A person enabled to move an identified message to another message folder, who may select the multi-pass message filter for execution through an interface on the client device."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 29,
+              "raw_line": "relation<|#|>Client Device<|#|>User<|#|>provides display enabling<|#|>The client device provides a display of information associated with incorrectly sorted messages, such that a user is enabled to move the identified message to another message folder.",
+              "fields": [
+                "relation",
+                "Client Device",
+                "User",
+                "provides display enabling",
+                "The client device provides a display of information associated with incorrectly sorted messages, such that a user is enabled to move the identified message to another message folder."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 30,
+              "raw_line": "relation<|#|>User<|#|>Message Folder<|#|>moves message to<|#|>A user is enabled to move the identified message to another message folder.",
+              "fields": [
+                "relation",
+                "User",
+                "Message Folder",
+                "moves message to",
+                "A user is enabled to move the identified message to another message folder."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 31,
+              "raw_line": "relation<|#|>User<|#|>Multi-Pass Message Filter<|#|>selects for execution<|#|>The multi-pass message filter is selectable for execution by a user through an interface on the client device.",
+              "fields": [
+                "relation",
+                "User",
+                "Multi-Pass Message Filter",
+                "selects for execution",
+                "The multi-pass message filter is selectable for execution by a user through an interface on the client device."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 32,
+              "raw_line": "relation<|#|>User<|#|>Interface<|#|>uses<|#|>The user selects the multi-pass message filter for execution through an interface on the client device.",
+              "fields": [
+                "relation",
+                "User",
+                "Interface",
+                "uses",
+                "The user selects the multi-pass message filter for execution through an interface on the client device."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "cache_key": "default:extract:0a9b3ee0b43aab318811b9838cc3fba4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 33,
+              "raw_line": "relation<|#|>First Message Filter<|#|>User<|#|>executed independent of<|#|>The first message filter is automatically executed independent of a user action.",
+              "fields": [
+                "relation",
+                "First Message Filter",
+                "User",
+                "executed independent of",
+                "The first message filter is automatically executed independent of a user action."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 340,
+              "text": "associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 13. The method of claim 12 , wherein the second classification data is deleted from the client device upon providing the display of information. 14. The method of claim 1"
+            },
+            {
+              "chunk_char_start": 235,
+              "chunk_char_end": 659,
+              "text": "ta is deleted from the client device upon providing the display of information. 14. The method of claim 12 , wherein the multi-pass message filter is selectable for execution by a user through an interface on the client device; and wherein the first message filter is automatically executed independent of a user action. 15. The method of claim 12 , wherein the second classification data is generated based on an analysis o"
+            },
+            {
+              "chunk_char_start": 363,
+              "chunk_char_end": 787,
+              "text": "ass message filter is selectable for execution by a user through an interface on the client device; and wherein the first message filter is automatically executed independent of a user action. 15. The method of claim 12 , wherein the second classification data is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient that i"
+            },
+            {
+              "chunk_char_start": 2133,
+              "chunk_char_end": 2557,
+              "text": " is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder. 18. The system of claim 17 , wherein the second classification data is deleted from the client device upon providing the display of information. 19. The system of claim 1"
+            },
+            {
+              "chunk_char_start": 2435,
+              "chunk_char_end": 2859,
+              "text": "classification data is deleted from the client device upon providing the display of information. 19. The system of claim 17 , wherein execution of the multi-pass message filter is user selectable. 20. The system of claim 17 , wherein the second classification data is generated based on an analysis of at least one of a state of a message, whether a message sender's address in an address book associated with a recipient th"
+            }
+          ],
+          "lexical_occurrence_count": 5
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The misclassification identification is displayed to the user so a misclassified message can be moved.",
+          "keywords": "displayed to",
+          "source_id": "US8069128B2-chunk-000",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "Misclassification Identification",
+          "edge_index": 384,
+          "source_chunks": [
+            "US8069128B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The user is enabled to move an identified misclassified message to a different message folder.",
+          "keywords": "moves messages between",
+          "source_id": "US8069128B2-chunk-000",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "Message Folders",
+          "edge_index": 385,
+          "source_chunks": [
+            "US8069128B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The user selects the multi-pass message filter for execution through an interface on the client device.<SEP>The multi-pass message filter is selectable for execution by a user through an interface on the client device.",
+          "keywords": "selects filter through,uses",
+          "source_id": "US8069128B2-chunk-000<SEP>US8069128B2-chunk-001",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "Interface",
+          "edge_index": 386,
+          "source_chunks": [
+            "US8069128B2-chunk-000",
+            "US8069128B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A user is enabled to move the identified message to another message folder.",
+          "keywords": "moves message to",
+          "source_id": "US8069128B2-chunk-001",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "Message Folder",
+          "edge_index": 387,
+          "source_chunks": [
+            "US8069128B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The client device provides a display of information associated with incorrectly sorted messages, such that a user is enabled to move the identified message to another message folder.",
+          "keywords": "provides display enabling",
+          "source_id": "US8069128B2-chunk-001",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "Client Device",
+          "edge_index": 388,
+          "source_chunks": [
+            "US8069128B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The multi-pass message filter is selectable for execution by a user through an interface on the client device.",
+          "keywords": "selects for execution",
+          "source_id": "US8069128B2-chunk-001",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "Multi-Pass Message Filter",
+          "edge_index": 389,
+          "source_chunks": [
+            "US8069128B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The first message filter is automatically executed independent of a user action.",
+          "keywords": "executed independent of",
+          "source_id": "US8069128B2-chunk-001",
+          "file_path": "US8069128B2.txt",
+          "created_at": 1793284415,
+          "truncate": "",
+          "source": "User",
+          "target": "First Message Filter",
+          "edge_index": 390,
+          "source_chunks": [
+            "US8069128B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8069128B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8719408B2",
+      "file_paths": [
+        "US8719408B2.txt"
+      ],
+      "source_chunks": [
+        "US8719408B2-chunk-000",
+        "US8719408B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8719408B2",
+          "full_doc_id": "US8719408B2",
+          "file_path": "US8719408B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "e303c7516b50f0904a4432e14df56d76382064de207d1bbaba9d60f88fef0554",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 7208,
+          "content": "Publication number: US8719408B2\nTitle: Automated digital media content filtration based on relationship monitoring\n\nABSTRACT\nAutomated digital media content filtration is performed by establishing automatically, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer. Filtration is also performed by monitoring determined user relationships, interacting with a plurality of independent servers to identify digital media content published by content producers having a user relationship with the user and determining a relevancy weight for each published digital media content item, the relevancy based on a strength factor. Filtration is still further performed by presenting the digital media content published by one or more of the content producers to the user such that digital media content having a greater relevancy weight receives a higher priority than other digital media content available to the user from the plurality of content producers.\n\nCLAIMS\nWhat is claimed is: 1. A method for automated digital media content filtration based on relationship monitoring, the method comprising: establishing automatically, by a processor, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer; monitoring determined user relationships for relationship interactions; interacting with a plurality of independent servers as a third party to identify digital media content published by content producers having one of the user relationships with the user from the plurality of user relationships, the digital media content comprising at least one digital media content item; determining a relevancy weight for each published digital media content item, the relevancy based on a strength factor derived on monitored relationship interactions between the user and the content producer that published the published digital media content; and presenting the digital media content published by one or more of the content producers to the user such that digital media content having a greater relevancy weight receives a higher priority than other digital media content available to the user from the plurality of content producers. 2. The method of claim 1 wherein presenting the digital media content further comprises pushing a set of published digital media content items to a media aggregator based on the relevancy weight of each digital media content item and a user-configurable relevancy threshold, the media aggregator and user-configurable relevancy threshold defined in a media aggregator profile associated with the user. 3. The method of claim 1 wherein monitoring determined user relationships further comprises detecting profile compatibility between a user profile and a content producer profile and modifying the associated user relationship to reflect the profile compatibility. 4. The method of claim 3 wherein detecting profile compatibility further comprises detecting profile compatibility based at least in part on one or more mutual interests between the user and the content producer that published the published digital media content. 5. The method of claim 1 wherein presenting the digital media content further comprises filtering a set of published digital media content items based on the relevancy weight of each digital media content item and a user-configurable relevancy threshold. 6. The method of claim 1 wherein presenting the digital media content further comprises ranking a set of published digital media content items based on the relevancy weight of each digital media content items. 7. The method of claim 1 wherein establishing a plurality of user relationships comprises establishing a plurality of user relationships defined within a social networking internet site. 8. The method of claim 1 wherein determining a relevancy weight for each published digital media content item based on a strength factor comprises deriving the strength factor at least in part from user-configurable weighing criteria. 9. A computer-readable storage device with an executable program stored thereon, wherein the program instructs a processor to perform: establishing automatically, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer; monitoring determined user relationships for relationship interactions; interacting with a plurality of independent servers as a third party, to identify digital media content published by content producers having one of the user relationships with the user from the plurality of user relationships, the digital media content comprising at least one digital media content item; determining a relevancy weight for each published digital media content item, the relevancy based on a strength factor derived on monitored relationship interactions between the user and the content producer that published the published digital media content; and presenting the digital media content published by one or more of the content producers to the user such that digital media content having a greater relevancy weight receives a higher priority than other digital media content available to the user from the plurality of content producers. 10. The computer-readable storage device of claim 9 wherein the executable program for presenting the digital media content further comprises executable program code for pushing a set of published digital media content items to a media aggregator based on the relevancy weight of each digital media content item and a user-configurable relevancy threshold, the media aggregator and user-configurable relevancy threshold defined in a media aggregator profile associated with the user. 11. The computer-readable storage device of claim 9 wherein the executable program for monitoring determined user relationships further comprises executable program code for detecting profile compatibility between a user profile and a content producer profile and modifying the associated user relationship to reflect the profile compatibility. 12. The computer-readable storage device of claim 11 wherein the executable program for detecting profile compatibility further comprises executable program code for detecting profile compatibility based at least in part on one or more mutual interests between the user and the content producer that published the published digital media content. 13. The computer-readable storage device of claim 9 wherein the executable program for presenting the digital media content further comprises executable program code for filtering a set of published digital media content items based on the relevancy weight of each digital media content item and a user-configurable relevancy threshold. 14. The computer-readable storage device of claim 9 wherein the executable program for presenting the digital media content further comprises executable program code for ranking a set of published digital media content items based on the relevancy",
+          "llm_cache_list": [
+            "default:extract:0c951a119f5bdc919309d6beda7b15bd"
+          ],
+          "chunk_id": "US8719408B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US8719408B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "87d36d04b542615e6aee995ef095e385ccd6896674945753ce1148492db116d0"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+              "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 3,
+              "raw_line": "entity<|#|>User<|#|>Person<|#|>An individual for whom user relationships are established and to whom filtered digital media content is presented with priority based on relevancy weights.",
+              "fields": [
+                "entity",
+                "User",
+                "Person",
+                "An individual for whom user relationships are established and to whom filtered digital media content is presented with priority based on relevancy weights."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+              "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 30,
+              "raw_line": "relation<|#|>User Relationship<|#|>User<|#|>involves<|#|>A user relationship is established between a user and a content producer and involves the user.",
+              "fields": [
+                "relation",
+                "User Relationship",
+                "User",
+                "involves",
+                "A user relationship is established between a user and a content producer and involves the user."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+              "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 47,
+              "raw_line": "relation<|#|>Media Aggregator Profile<|#|>User<|#|>associated with<|#|>The media aggregator profile is associated with the user.",
+              "fields": [
+                "relation",
+                "Media Aggregator Profile",
+                "User",
+                "associated with",
+                "The media aggregator profile is associated with the user."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+              "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 54,
+              "raw_line": "relation<|#|>Mutual Interest<|#|>User<|#|>shared by<|#|>Mutual interests exist between the user and the content producer that published the digital media content.",
+              "fields": [
+                "relation",
+                "Mutual Interest",
+                "User",
+                "shared by",
+                "Mutual interests exist between the user and the content producer that published the digital media content."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 83,
+              "chunk_char_end": 507,
+              "text": "ased on relationship monitoring\n\nABSTRACT\nAutomated digital media content filtration is performed by establishing automatically, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer. Filtration is also performed by monitoring determined user relationships, interacting with a plurality of independent se"
+            },
+            {
+              "chunk_char_start": 108,
+              "chunk_char_end": 532,
+              "text": "toring\n\nABSTRACT\nAutomated digital media content filtration is performed by establishing automatically, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer. Filtration is also performed by monitoring determined user relationships, interacting with a plurality of independent servers to identify digital"
+            },
+            {
+              "chunk_char_start": 178,
+              "chunk_char_end": 602,
+              "text": "ed by establishing automatically, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer. Filtration is also performed by monitoring determined user relationships, interacting with a plurality of independent servers to identify digital media content published by content producers having a user relationsh"
+            },
+            {
+              "chunk_char_start": 261,
+              "chunk_char_end": 685,
+              "text": "f user relationships, each user relationship based on monitoring an online association between a user and a content producer. Filtration is also performed by monitoring determined user relationships, interacting with a plurality of independent servers to identify digital media content published by content producers having a user relationship with the user and determining a relevancy weight for each published digital medi"
+            },
+            {
+              "chunk_char_start": 407,
+              "chunk_char_end": 831,
+              "text": "erformed by monitoring determined user relationships, interacting with a plurality of independent servers to identify digital media content published by content producers having a user relationship with the user and determining a relevancy weight for each published digital media content item, the relevancy based on a strength factor. Filtration is still further performed by presenting the digital media content published "
+            },
+            {
+              "chunk_char_start": 434,
+              "chunk_char_end": 858,
+              "text": "rmined user relationships, interacting with a plurality of independent servers to identify digital media content published by content producers having a user relationship with the user and determining a relevancy weight for each published digital media content item, the relevancy based on a strength factor. Filtration is still further performed by presenting the digital media content published by one or more of the conte"
+            },
+            {
+              "chunk_char_start": 698,
+              "chunk_char_end": 1122,
+              "text": "m, the relevancy based on a strength factor. Filtration is still further performed by presenting the digital media content published by one or more of the content producers to the user such that digital media content having a greater relevancy weight receives a higher priority than other digital media content available to the user from the plurality of content producers.\n\nCLAIMS\nWhat is claimed is: 1. A method for automa"
+            },
+            {
+              "chunk_char_start": 846,
+              "chunk_char_end": 1270,
+              "text": "of the content producers to the user such that digital media content having a greater relevancy weight receives a higher priority than other digital media content available to the user from the plurality of content producers.\n\nCLAIMS\nWhat is claimed is: 1. A method for automated digital media content filtration based on relationship monitoring, the method comprising: establishing automatically, by a processor, according "
+            },
+            {
+              "chunk_char_start": 1131,
+              "chunk_char_end": 1555,
+              "text": "al media content filtration based on relationship monitoring, the method comprising: establishing automatically, by a processor, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer; monitoring determined user relationships for relationship interactions; interacting with a plurality of independent serv"
+            },
+            {
+              "chunk_char_start": 1156,
+              "chunk_char_end": 1580,
+              "text": "on based on relationship monitoring, the method comprising: establishing automatically, by a processor, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer; monitoring determined user relationships for relationship interactions; interacting with a plurality of independent servers as a third party to i"
+            },
+            {
+              "chunk_char_start": 1226,
+              "chunk_char_end": 1650,
+              "text": "ng automatically, by a processor, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer; monitoring determined user relationships for relationship interactions; interacting with a plurality of independent servers as a third party to identify digital media content published by content producers having on"
+            },
+            {
+              "chunk_char_start": 1277,
+              "chunk_char_end": 1701,
+              "text": "lerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer; monitoring determined user relationships for relationship interactions; interacting with a plurality of independent servers as a third party to identify digital media content published by content producers having one of the user relationships with the user from the "
+            }
+          ],
+          "lexical_occurrence_count": 47
+        },
+        {
+          "publication_number": "US8719408B2",
+          "full_doc_id": "US8719408B2",
+          "file_path": "US8719408B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 819,
+          "content_sha256": "dcd5540204015d2851b60923695a591f918c1aa150e91fd42d534817a881c085",
+          "exact_doc_char_start": 6624,
+          "exact_doc_char_end": 11600,
+          "content": "13. The computer-readable storage device of claim 9 wherein the executable program for presenting the digital media content further comprises executable program code for filtering a set of published digital media content items based on the relevancy weight of each digital media content item and a user-configurable relevancy threshold. 14. The computer-readable storage device of claim 9 wherein the executable program for presenting the digital media content further comprises executable program code for ranking a set of published digital media content items based on the relevancy weight of each digital media content items. 15. The computer-readable storage device of claim 9 wherein the executable program for establishing a plurality of user relationships comprises executable program code for establishing a plurality of user relationships defined within a social networking internet site. 16. The computer-readable storage device of claim 9 wherein the executable program for determining a relevancy weight for each published digital media content item based on a strength factor comprises executable program code for deriving the strength factor at least in part from user-configurable weighing criteria. 17. An apparatus for automated digital media content filtration based on relationship monitoring, the apparatus comprising: a processor coupled to memory, the processor programmed by program code stored in the memory to implement: a relationship module configured to establish automatically, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer; a monitoring module configured to monitor determined user relationships for relationship interactions; a detection module configured to interact with a plurality of independent servers as a third party, to identify digital media content published by content producers having one of the user relationships with the user from the plurality of user relationships, the digital media content comprising at least one digital media content item; a determination module configured to determine a relevancy weight for each published digital media content item, the relevancy based on a strength factor derived on monitored relationship interactions between the user and the content producer that published the published digital media content; and a presentation module configured to present the digital media content published by one or more of the content producers to the user such that digital media content having a greater relevancy weight receives a higher priority than other digital media content available to the user from the plurality of content producers. 18. The apparatus of claim 17 wherein the executable program for presenting the digital media content further comprises executable program code for pushing a set of published digital media content items to a media aggregator based on the relevancy weight of each digital media content item and a user-configurable relevancy threshold, the media aggregator and user-configurable relevancy threshold defined in a media aggregator profile associated with the user. 19. The apparatus of claim 17 wherein the executable program for monitoring determined user relationships further comprises executable program code for detecting profile compatibility between a user profile and a content producer profile and modifying the associated user relationship to reflect the profile compatibility. 20. The apparatus of claim 19 wherein the executable program for detecting profile compatibility further comprises executable program code for detecting profile compatibility based at least in part on one or more mutual interests between the user and the content producer that published the published digital media content. 21. The apparatus of claim 17 wherein the executable program for presenting the digital media content further comprises executable program code for filtering a set of published digital media content items based on the relevancy weight of each digital media content item and a user-configurable relevancy threshold. 22. The apparatus of claim 17 wherein the executable program for presenting the digital media content further comprises executable program code for ranking a set of published digital media content items based on the relevancy weight of each digital media content items. 23. The apparatus of claim 17 wherein the executable program for establishing a plurality of user relationships comprises executable program code for establishing a plurality of user relationships defined within a social networking internet site. 24. The apparatus of claim 17 wherein the executable program for determining a relevancy weight for each published digital media content item based on a strength factor comprises executable program code for deriving the strength factor at least in part from user-configurable weighing criteria.",
+          "llm_cache_list": [
+            "default:extract:66f13198bb030d0ce817c0aa6c9b72b1"
+          ],
+          "chunk_id": "US8719408B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US8719408B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "695a73f973cf034886d7ad6d68c74318f279ce11f1874d58ae8f85824521a66d"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+              "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 16,
+              "raw_line": "entity<|#|>User<|#|>Person<|#|>A user who has relationships with content producers, has a user profile, and receives presented digital media content.",
+              "fields": [
+                "entity",
+                "User",
+                "Person",
+                "A user who has relationships with content producers, has a user profile, and receives presented digital media content."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+              "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 40,
+              "raw_line": "relation<|#|>User Relationship<|#|>User<|#|>involves<|#|>Each user relationship involves a user.",
+              "fields": [
+                "relation",
+                "User Relationship",
+                "User",
+                "involves",
+                "Each user relationship involves a user."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+              "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 58,
+              "raw_line": "relation<|#|>Media Aggregator Profile<|#|>User<|#|>associated with<|#|>The media aggregator profile is associated with the user.",
+              "fields": [
+                "relation",
+                "Media Aggregator Profile",
+                "User",
+                "associated with",
+                "The media aggregator profile is associated with the user."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+              "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 65,
+              "raw_line": "relation<|#|>Mutual Interests<|#|>User<|#|>between<|#|>The mutual interests are between the user and the content producer.",
+              "fields": [
+                "relation",
+                "Mutual Interests",
+                "User",
+                "between",
+                "The mutual interests are between the user and the content producer."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 118,
+              "chunk_char_end": 542,
+              "text": "ntent further comprises executable program code for filtering a set of published digital media content items based on the relevancy weight of each digital media content item and a user-configurable relevancy threshold. 14. The computer-readable storage device of claim 9 wherein the executable program for presenting the digital media content further comprises executable program code for ranking a set of published digital "
+            },
+            {
+              "chunk_char_start": 564,
+              "chunk_char_end": 988,
+              "text": "sed on the relevancy weight of each digital media content items. 15. The computer-readable storage device of claim 9 wherein the executable program for establishing a plurality of user relationships comprises executable program code for establishing a plurality of user relationships defined within a social networking internet site. 16. The computer-readable storage device of claim 9 wherein the executable program for det"
+            },
+            {
+              "chunk_char_start": 649,
+              "chunk_char_end": 1073,
+              "text": "dable storage device of claim 9 wherein the executable program for establishing a plurality of user relationships comprises executable program code for establishing a plurality of user relationships defined within a social networking internet site. 16. The computer-readable storage device of claim 9 wherein the executable program for determining a relevancy weight for each published digital media content item based on a "
+            },
+            {
+              "chunk_char_start": 998,
+              "chunk_char_end": 1422,
+              "text": " relevancy weight for each published digital media content item based on a strength factor comprises executable program code for deriving the strength factor at least in part from user-configurable weighing criteria. 17. An apparatus for automated digital media content filtration based on relationship monitoring, the apparatus comprising: a processor coupled to memory, the processor programmed by program code stored in t"
+            },
+            {
+              "chunk_char_start": 1378,
+              "chunk_char_end": 1802,
+              "text": "essor programmed by program code stored in the memory to implement: a relationship module configured to establish automatically, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer; a monitoring module configured to monitor determined user relationships for relationship interactions; a detection modul"
+            },
+            {
+              "chunk_char_start": 1403,
+              "chunk_char_end": 1827,
+              "text": "am code stored in the memory to implement: a relationship module configured to establish automatically, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer; a monitoring module configured to monitor determined user relationships for relationship interactions; a detection module configured to interact "
+            },
+            {
+              "chunk_char_start": 1473,
+              "chunk_char_end": 1897,
+              "text": "gured to establish automatically, according to a tolerance parameter, a plurality of user relationships, each user relationship based on monitoring an online association between a user and a content producer; a monitoring module configured to monitor determined user relationships for relationship interactions; a detection module configured to interact with a plurality of independent servers as a third party, to identify "
+            },
+            {
+              "chunk_char_start": 1555,
+              "chunk_char_end": 1979,
+              "text": "of user relationships, each user relationship based on monitoring an online association between a user and a content producer; a monitoring module configured to monitor determined user relationships for relationship interactions; a detection module configured to interact with a plurality of independent servers as a third party, to identify digital media content published by content producers having one of the user relati"
+            },
+            {
+              "chunk_char_start": 1788,
+              "chunk_char_end": 2212,
+              "text": "etection module configured to interact with a plurality of independent servers as a third party, to identify digital media content published by content producers having one of the user relationships with the user from the plurality of user relationships, the digital media content comprising at least one digital media content item; a determination module configured to determine a relevancy weight for each published digita"
+            },
+            {
+              "chunk_char_start": 1816,
+              "chunk_char_end": 2240,
+              "text": "o interact with a plurality of independent servers as a third party, to identify digital media content published by content producers having one of the user relationships with the user from the plurality of user relationships, the digital media content comprising at least one digital media content item; a determination module configured to determine a relevancy weight for each published digital media content item, the re"
+            },
+            {
+              "chunk_char_start": 1843,
+              "chunk_char_end": 2267,
+              "text": " of independent servers as a third party, to identify digital media content published by content producers having one of the user relationships with the user from the plurality of user relationships, the digital media content comprising at least one digital media content item; a determination module configured to determine a relevancy weight for each published digital media content item, the relevancy based on a strength"
+            },
+            {
+              "chunk_char_start": 2154,
+              "chunk_char_end": 2578,
+              "text": " to determine a relevancy weight for each published digital media content item, the relevancy based on a strength factor derived on monitored relationship interactions between the user and the content producer that published the published digital media content; and a presentation module configured to present the digital media content published by one or more of the content producers to the user such that digital media co"
+            }
+          ],
+          "lexical_occurrence_count": 25
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "A user relationship is established between a user and a content producer and involves the user.<SEP>Each user relationship involves a user.",
+          "keywords": "involves",
+          "source_id": "US8719408B2-chunk-000<SEP>US8719408B2-chunk-001",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "User",
+          "target": "User Relationship",
+          "edge_index": 396,
+          "source_chunks": [
+            "US8719408B2-chunk-000",
+            "US8719408B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The media aggregator profile is associated with the user.",
+          "keywords": "associated with",
+          "source_id": "US8719408B2-chunk-000<SEP>US8719408B2-chunk-001",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "User",
+          "target": "Media Aggregator Profile",
+          "edge_index": 397,
+          "source_chunks": [
+            "US8719408B2-chunk-000",
+            "US8719408B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Mutual interests exist between the user and the content producer that published the digital media content.",
+          "keywords": "shared by",
+          "source_id": "US8719408B2-chunk-000",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "User",
+          "target": "Mutual Interest",
+          "edge_index": 398,
+          "source_chunks": [
+            "US8719408B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The mutual interests are between the user and the content producer.",
+          "keywords": "between",
+          "source_id": "US8719408B2-chunk-001",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "User",
+          "target": "Mutual Interests",
+          "edge_index": 399,
+          "source_chunks": [
+            "US8719408B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8880423B2",
+      "file_paths": [
+        "US8880423B2.txt"
+      ],
+      "source_chunks": [
+        "US8880423B2-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8880423B2",
+          "full_doc_id": "US8880423B2",
+          "file_path": "US8880423B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "9a6a83a5aac470476df10e59c8227d9d42ff76b2b03646c94d6fae0828e241c0",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6866,
+          "content": "Publication number: US8880423B2\nTitle: Inventory estimation for search retargeting\n\nABSTRACT\nTechniques for estimating advertisement inventory for search retargeting segments are provided. A total inventory for each cluster of a plurality of clusters is estimated based on a history of previously viewed pages and previously used search keywords that were submitted by users is searches performed prior to accessing the previously viewed pages. A search retargeting (SRT) segment is received that includes a set of search keywords. The SRT segment is received in a request for deliverable advertisement inventory for advertisements associated with the SRT segment. A deliverable inventory for the received SRT segment is estimated based on the estimated total inventories for the clusters.\n\nCLAIMS\nWhat is claimed is: 1. A method for estimating advertisement inventory, comprising: clustering, using a processor, a plurality of viewed pages into a plurality of clusters to generate a plurality of page view probability vectors that includes a page view probability vector for each viewed page, said clustering based on a frequency of search keywords present in the viewed pages; clustering by the processor, a plurality of search keywords into the plurality of clusters to generate a plurality of keyword probability vectors that includes a keyword probability vector for each search keyword, the search keywords based on search keywords previously submitted by a plurality of users, and the plurality of viewed pages including previously viewed pages corresponding to the previously submitted search keywords; clustering the plurality of viewed pages into a plurality of clusters based on a time-decaying weighted frequency of the search keywords and an intensity value of the search keywords, present in the viewed pages; and estimating by the processor, a plurality of total inventories that includes an estimated total inventory for each cluster of the plurality of clusters. 2. The method of claim 1 , wherein said clustering the plurality of viewed pages into a plurality of clusters based on a frequency of search keywords present in the viewed pages comprises: clustering the plurality of viewed pages into a plurality of clusters based on a time-decaying weighted frequency of search keywords present in the viewed pages. 3. The method of claim 1 , further comprising: limiting the plurality of search keywords to at least one of a predetermined maximum number of search keywords or search keywords submitted in a predetermined time period. 4. The method of claim 1 , wherein said estimating a total inventory for each cluster of the plurality of clusters comprises: for each cluster, summing the probabilities included in the plurality of page view probability vectors for the cluster to generate the estimated total inventory for the cluster. 5. The method of claim 1 , further comprising: receiving a search retargeting segment that includes a set of search keywords; and estimating a deliverable inventory for the segment. 6. The method of claim 5 , wherein said estimating a deliverable inventory for the segment comprises: determining a deliverable inventory estimate for the segment for each cluster to generate a plurality of cluster-specific deliverable inventory estimates; and summing the plurality of cluster-specific deliverable inventory estimates. 7. The method of claim 6 , wherein said determining a deliverable inventory estimate for the segment for each cluster to generate a plurality of cluster-specific deliverable inventory estimates comprises: for each cluster, summing the probabilities of the search keywords included in the segment that are included in the plurality of keyword probability vectors for the cluster, and multiplying the summed probabilities for the cluster by the estimated total inventory for the cluster to determine the cluster-specific deliverable inventory estimate for the cluster. 8. A method for estimating advertisement inventory, comprising: receiving, by a processor, a search retargeting segment that includes a set of search keywords; clustering, using a processor, a plurality of viewed pages into a plurality of clusters to generate a plurality of page view probability vectors that includes a page view probability vector for each viewed page, said clustering based on a frequency of search keywords present in the viewed pages, the search keywords based on keywords previously submitted by a plurality of users, and the plurality of view pages including previously viewed pages corresponding to the previously submitted keywords; clustering the plurality of viewed pages into a plurality of clusters based on a time-decaying weighted frequency of the search keywords and an intensity value of the keywords, present in the viewed pages; and estimating, using the processor, a deliverable inventory for the segment. 9. The method of claim 8 , wherein said estimating a deliverable inventory for the segment comprises: receiving an indication of a plurality of clusters; receiving a plurality of page view probability vectors that includes a page view probability vector for each viewed page of a plurality of previously viewed pages, each page view probability vector indicating probabilities of a corresponding viewed page being included in each of the clusters; determining a deliverable inventory estimate for the segment for each cluster to generate a plurality of cluster-specific deliverable inventory estimates; and summing the plurality of cluster-specific deliverable inventory estimates. 10. The method of claim 9 , wherein said determining a deliverable inventory estimate for the segment for each cluster to generate a plurality of cluster-specific deliverable inventory estimates comprises: receiving a plurality of keyword probability vectors that includes a keyword probability vector for each of a plurality of previously submitted search keywords, each keyword probability vector indicating probabilities of a corresponding keyword being included in each of the clusters; and for each cluster, summing the probabilities of the search keywords included in the segment that are included in the plurality of keyword probability vectors for the cluster, and multiplying the summed probabilities for the cluster by the estimated total inventory for the cluster to determine the cluster-specific deliverable inventory estimate for the cluster. 11. A system for estimating advertisement inventory, stored in a non-transitory medium executable by a processor, comprising: a cluster probability vector processor configured to cluster a plurality of viewed pages into a plurality of clusters to generate a plurality of page view probability vectors that includes a page view probability vector for each viewed page, said clustering based on a frequency of search keywords present in the viewed",
+          "llm_cache_list": [
+            "default:extract:a882d3dbe8cd44d74c944da929627768"
+          ],
+          "chunk_id": "US8880423B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US8880423B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "161dec78376c88a31cc91dc559ceb9f1475f10b78367ef91b3c19e36e224f9ea"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:a882d3dbe8cd44d74c944da929627768",
+              "cache_key": "default:extract:a882d3dbe8cd44d74c944da929627768",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 17,
+              "raw_line": "entity<|#|>User<|#|>Person<|#|>Individuals who previously submitted search keywords and viewed pages, providing the history used for inventory estimation.",
+              "fields": [
+                "entity",
+                "User",
+                "Person",
+                "Individuals who previously submitted search keywords and viewed pages, providing the history used for inventory estimation."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:a882d3dbe8cd44d74c944da929627768",
+              "cache_key": "default:extract:a882d3dbe8cd44d74c944da929627768",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 39,
+              "raw_line": "relation<|#|>Search Keyword<|#|>User<|#|>submitted by<|#|>Search keywords were previously submitted by a plurality of users.",
+              "fields": [
+                "relation",
+                "Search Keyword",
+                "User",
+                "submitted by",
+                "Search keywords were previously submitted by a plurality of users."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:a882d3dbe8cd44d74c944da929627768",
+              "cache_key": "default:extract:a882d3dbe8cd44d74c944da929627768",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 40,
+              "raw_line": "relation<|#|>Viewed Page<|#|>User<|#|>viewed by<|#|>Viewed pages are pages previously viewed by users.",
+              "fields": [
+                "relation",
+                "Viewed Page",
+                "User",
+                "viewed by",
+                "Viewed pages are pages previously viewed by users."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 189,
+              "chunk_char_end": 613,
+              "text": "A total inventory for each cluster of a plurality of clusters is estimated based on a history of previously viewed pages and previously used search keywords that were submitted by users is searches performed prior to accessing the previously viewed pages. A search retargeting (SRT) segment is received that includes a set of search keywords. The SRT segment is received in a request for deliverable advertisement inventory "
+            },
+            {
+              "chunk_char_start": 1297,
+              "chunk_char_end": 1721,
+              "text": "keyword probability vectors that includes a keyword probability vector for each search keyword, the search keywords based on search keywords previously submitted by a plurality of users, and the plurality of viewed pages including previously viewed pages corresponding to the previously submitted search keywords; clustering the plurality of viewed pages into a plurality of clusters based on a time-decaying weighted freque"
+            },
+            {
+              "chunk_char_start": 4293,
+              "chunk_char_end": 4717,
+              "text": "each viewed page, said clustering based on a frequency of search keywords present in the viewed pages, the search keywords based on keywords previously submitted by a plurality of users, and the plurality of view pages including previously viewed pages corresponding to the previously submitted keywords; clustering the plurality of viewed pages into a plurality of clusters based on a time-decaying weighted frequency of th"
+            }
+          ],
+          "lexical_occurrence_count": 3
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "Viewed pages are pages previously viewed by users.",
+          "keywords": "viewed by",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793284282,
+          "truncate": "",
+          "source": "Viewed Page",
+          "target": "User",
+          "edge_index": 361,
+          "source_chunks": [
+            "US8880423B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8880423B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Search keywords were previously submitted by a plurality of users.",
+          "keywords": "submitted by",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793284282,
+          "truncate": "",
+          "source": "Search Keyword",
+          "target": "User",
+          "edge_index": 366,
+          "source_chunks": [
+            "US8880423B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8880423B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "file_paths": [
+        "US9374411B1.txt"
+      ],
+      "source_chunks": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001",
+        "US9374411B1-chunk-002"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9374411B1",
+          "full_doc_id": "US9374411B1",
+          "file_path": "US9374411B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1199,
+          "content_sha256": "1c6ddec8304601845ddead7675e8d25ffe813f0a1d7087766b31ededcbd9a1cc",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6777,
+          "content": "Publication number: US9374411B1\nTitle: Content recommendations using deep data\n\nABSTRACT\nDisclosed are various embodiments for recommending content for users. A user is associated with a user preferred character that is represented in a first network content. A library is referenced to identify a recommended character based at least upon the user preferred character, the recommended character being represented in a second network content, the library associating the preferred character to the recommended character according to a relationship score. A recommendation is sent for presentation of the second network content.\n\nCLAIMS\nTherefore, the following is claimed: 1. A non-transitory computer-readable medium having a plurality of computer instructions executable by at least one computing device, wherein, upon execution, the plurality of computer instructions cause the at least one computing device to: stream a first video content feature from at least one server to a client associated with a user; cause the first video content feature to be rendered in a user interface for display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtain second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; associate a preferred character with the user based at least upon the second user interaction data, the preferred character being represented by a corresponding first cast member of the first video content feature; reference a library to identify a recommended character based at least upon the preferred character, the recommended character being represented by a corresponding second cast member of a second video content feature, the library associating the preferred character to the recommended character according to a relationship score, the relationship score being calculated based at least in part upon a proportion of users who have expressed a preference towards both the preferred character and the recommended character; and send to the user a recommendation to play the second video content feature. 2. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: obtain additional user interaction data from the user based at least upon an interaction with the second video content feature; and update the relationship score based at least upon the additional user interaction data. 3. The non-transitory computer-readable medium of claim 2 , wherein the additional user interaction data comprises user feedback expressing that the user favors at least one scene associated with the second video content feature. 4. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: identify an attribute associated with the recommended character; and send the attribute to the client to indicate a basis for the recommendation to the user. 5. The non-transitory computer-readable medium of claim 1 , wherein the user interaction data is obtained during a playback of the first video content feature via the client. 6. A system, comprising: at least one computing device; and at least one application executable in the at least one computing device, the at least one application causing the at least one computing device to: cause a first video content feature to be rendered in a user interface for display on a client; determine that a user prefers a first character based at least upon a first interaction data, the first character being represented by a corresponding first cast member of the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first interaction data; obtain second user interaction data from the client based at least in part upon an interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; determine that the user prefers a second character based at least upon the second interaction data, the second character being represented by a corresponding second cast member of a second video content feature; determine a relationship score based at least upon the first interaction data and the second interaction data, the relationship score quantifying a degree of commonality between the first character and the second character and being calculated based at least in part upon a proportion of users who have expressed a preference towards both the first character and the second character; and generate a recommendation to play at least one of the first video content feature or the second video content feature based at least upon the relationship score. 7. The system of claim 6 , wherein the at least one application further causes the at least one computing device to: store a first set of attributes associated with the first character; store a second set of attributes associated with the second character; and compare the first set of attributes to the second set of attributes. 8. The system of claim 6 , wherein the first interaction data comprises explicit user feedback expressing that the user favors the first character. 9. The system of claim 6 , wherein the first interaction data comprises at least one of consumption history data relating to a product associated with the first character or browse history data relating to a product associated with the first character. 10. The system of claim 6 , wherein the first interaction data comprises user feedback expressing that the user favors at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim",
+          "llm_cache_list": [
+            "default:extract:4a665eb9b6325343afd5a73cbd168366"
+          ],
+          "chunk_id": "US9374411B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9374411B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "c86c537652ef009d655d7cad38ff0880a71b88ff4bcca89a5d9d2d11f9f7d645"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 3,
+              "raw_line": "entity<|#|>User<|#|>Person<|#|>A person associated with a client who interacts with video content features and expresses preferences toward characters, receiving content recommendations.",
+              "fields": [
+                "entity",
+                "User",
+                "Person",
+                "A person associated with a client who interacts with video content features and expresses preferences toward characters, receiving content recommendations."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 26,
+              "raw_line": "relation<|#|>Content Recommendation System<|#|>User<|#|>recommends content to<|#|>The content recommendation system recommends network content to users based on character preferences and relationship scores.",
+              "fields": [
+                "relation",
+                "Content Recommendation System",
+                "User",
+                "recommends content to",
+                "The content recommendation system recommends network content to users based on character preferences and relationship scores."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 27,
+              "raw_line": "relation<|#|>User<|#|>Preferred Character<|#|>associated with, prefers<|#|>The user is associated with a preferred character based on user interaction data expressing a preference toward that character.",
+              "fields": [
+                "relation",
+                "User",
+                "Preferred Character",
+                "associated with, prefers",
+                "The user is associated with a preferred character based on user interaction data expressing a preference toward that character."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 38,
+              "raw_line": "relation<|#|>Recommendation<|#|>User<|#|>sent to<|#|>The recommendation to play the second video content feature is sent to the user.",
+              "fields": [
+                "relation",
+                "Recommendation",
+                "User",
+                "sent to",
+                "The recommendation to play the second video content feature is sent to the user."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 40,
+              "raw_line": "relation<|#|>Client<|#|>User<|#|>associated with<|#|>The client is associated with the user.",
+              "fields": [
+                "relation",
+                "Client",
+                "User",
+                "associated with",
+                "The client is associated with the user."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 396,
+              "text": "Publication number: US9374411B1\nTitle: Content recommendations using deep data\n\nABSTRACT\nDisclosed are various embodiments for recommending content for users. A user is associated with a user preferred character that is represented in a first network content. A library is referenced to identify a recommended character based at least upon the user preferred character, the recommended character "
+            },
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 405,
+              "text": "Publication number: US9374411B1\nTitle: Content recommendations using deep data\n\nABSTRACT\nDisclosed are various embodiments for recommending content for users. A user is associated with a user preferred character that is represented in a first network content. A library is referenced to identify a recommended character based at least upon the user preferred character, the recommended character being rep"
+            },
+            {
+              "chunk_char_start": 7,
+              "chunk_char_end": 431,
+              "text": "tion number: US9374411B1\nTitle: Content recommendations using deep data\n\nABSTRACT\nDisclosed are various embodiments for recommending content for users. A user is associated with a user preferred character that is represented in a first network content. A library is referenced to identify a recommended character based at least upon the user preferred character, the recommended character being represented in a second netwo"
+            },
+            {
+              "chunk_char_start": 164,
+              "chunk_char_end": 588,
+              "text": "r is associated with a user preferred character that is represented in a first network content. A library is referenced to identify a recommended character based at least upon the user preferred character, the recommended character being represented in a second network content, the library associating the preferred character to the recommended character according to a relationship score. A recommendation is sent for pres"
+            },
+            {
+              "chunk_char_start": 827,
+              "chunk_char_end": 1251,
+              "text": "ion, the plurality of computer instructions cause the at least one computing device to: stream a first video content feature from at least one server to a client associated with a user; cause the first video content feature to be rendered in a user interface for display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with the first video content feature; c"
+            },
+            {
+              "chunk_char_start": 891,
+              "chunk_char_end": 1315,
+              "text": "ne computing device to: stream a first video content feature from at least one server to a client associated with a user; cause the first video content feature to be rendered in a user interface for display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with the first video content feature; cause a timeline user interface that segments the first video con"
+            },
+            {
+              "chunk_char_start": 946,
+              "chunk_char_end": 1370,
+              "text": "ature from at least one server to a client associated with a user; cause the first video content feature to be rendered in a user interface for display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered "
+            },
+            {
+              "chunk_char_start": 1087,
+              "chunk_char_end": 1511,
+              "text": "or display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtain second user interaction data from the client based at least in part upon a s"
+            },
+            {
+              "chunk_char_start": 1225,
+              "chunk_char_end": 1649,
+              "text": "t video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtain second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedb"
+            },
+            {
+              "chunk_char_start": 1262,
+              "chunk_char_end": 1686,
+              "text": "line user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtain second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a"
+            },
+            {
+              "chunk_char_start": 1421,
+              "chunk_char_end": 1845,
+              "text": " data; obtain second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; associate a preferred character with the user based at least upon the second user interaction data, the pre"
+            },
+            {
+              "chunk_char_start": 1599,
+              "chunk_char_end": 2023,
+              "text": "e user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; associate a preferred character with the user based at least upon the second user interaction data, the preferred character being represented by a corresponding first cast member of the first video content feature; reference a library to identify a recommended character based at least"
+            }
+          ],
+          "lexical_occurrence_count": 36
+        },
+        {
+          "publication_number": "US9374411B1",
+          "full_doc_id": "US9374411B1",
+          "file_path": "US9374411B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 1200,
+          "content_sha256": "bbe6f2f25b0f58e297204d0c91d3cd176e3a59c7a39ef03093c9724efe2d9fe0",
+          "exact_doc_char_start": 6254,
+          "exact_doc_char_end": 12921,
+          "content": "at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim 11 , wherein the at least one application further causes the at least one computing device to: obtain additional user interaction data from the another user, the additional user interaction data being associated with a playback of at least one of the first video content feature or the second video content feature; and update the relationship score based at least upon the additional user interaction data. 13. The system of claim 6 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expressed a preference towards both the first character and the second character. 14. A method, comprising: causing, by at least one computing device, a first network content to be rendered in a user interface for display on a client; obtaining, by the at least one computing device, first user interaction data from the client based at least in part upon a first interaction with the first network content; associating, by the at least one computing device, a user with a user preferred character represented in a first network content based at least in part upon the first user interaction data; causing, by the at least one computing device, a timeline user interface that segments the first network content into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtaining, by the at least one computing device, second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene among the plurality of scenes; referencing, by the at least one computing device, a library to identify a recommended character based at least upon the user preferred character and the second interaction data, the recommended character being represented in a second network content, the library associating the user preferred character to the recommended character according to a relationship score, the relationship score being calculated based at least in part upon a proportion of users who have expressed a preference towards both the user preferred character and the recommended character; and sending, by the at least one computing device, a recommendation for presentation of the second network content. 15. The method of claim 14 , wherein the user preferred character is a preferred fictional character and wherein the recommended character is a recommended fictional character. 16. The method of claim 14 , wherein the second network content comprises a video content feature, an electronic book (e-book), or an audio book. 17. The method of claim 14 , wherein associating the user with the user preferred character comprises obtaining explicit user feedback expressing that the user favors the user preferred character. 18. The method of claim 14 , further comprising obtaining, by the at least one computing device, user interaction data from the user based at least upon the presentation of the second network content. 19. The method of claim 18 , further comprising updating, by the at least one computing device, the relationship score based at least upon the user interaction data. 20. The method of claim 14 , further comprising: storing, by the at least one computing device, a first set of attributes associated with the user preferred character; and storing, by the at least one computing device, a second set of attributes associated with the recommended character; and determining, by the at least one computing device, the relationship score based at least upon a comparison between the first set of attributes and the second set of attributes. 21. A non-transitory computer-readable medium having a plurality of computer instructions executable by at least one computing device, wherein upon execution, the plurality of computer instructions cause the at least one computing device to: cause a first media content to be rendered in a user interface for display on a client; obtain first interaction data from the client based at least upon a first interaction with the first media content; determine that a user prefers a first fictional character based at least upon the first interaction data, the first fictional character being associated with the first media content; cause a timeline user interface that segments the first media content into a plurality of scenes to be rendered in response to obtaining the first interaction data; obtain second interaction data from the client based at least upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; determine that the user prefers a second fictional character based at least upon the second interaction data, the second fictional character being associated with a second media content; determine a relationship score based at least upon the first interaction data and the second interaction data, the relationship score quantifying a degree of commonality between the first fictional character and the second fictional character and being calculated based at least in part upon a proportion of users who have expressed a preference towards both the first fictional character and the second fictional character; and generate a recommendation to present at least one of the first media content or the second media content to another user based at least upon the relationship score. 22. The non-transitory computer-readable medium of claim 21 , wherein the first media content comprises an electronic book (e-book). 23. The non-transitory computer-readable medium of claim 21 , wherein the plurality of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at",
+          "llm_cache_list": [
+            "default:extract:fc07aa368ab1fc09d1e01381471bcdbc"
+          ],
+          "chunk_id": "US9374411B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US9374411B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "3deebe5a4f4731377e367025201bb18e9f1a104d6efd17f64930a9d99b9b4a17"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 7,
+              "raw_line": "entity<|#|>User<|#|>Person<|#|>An individual who interacts with network content and expresses preferences toward characters.",
+              "fields": [
+                "entity",
+                "User",
+                "Person",
+                "An individual who interacts with network content and expresses preferences toward characters."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 31,
+              "raw_line": "relation<|#|>Recommendation<|#|>User<|#|>generation, targeting<|#|>The recommendation is generated for another user in response to the user specifying a preference for a character.",
+              "fields": [
+                "relation",
+                "Recommendation",
+                "User",
+                "generation, targeting",
+                "The recommendation is generated for another user in response to the user specifying a preference for a character."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 32,
+              "raw_line": "relation<|#|>User<|#|>First Character<|#|>preference<|#|>The user may specify a preference for the first character.",
+              "fields": [
+                "relation",
+                "User",
+                "First Character",
+                "preference",
+                "The user may specify a preference for the first character."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 33,
+              "raw_line": "relation<|#|>User<|#|>Second Character<|#|>preference<|#|>The user may specify a preference for the second character.",
+              "fields": [
+                "relation",
+                "User",
+                "Second Character",
+                "preference",
+                "The user may specify a preference for the second character."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 194,
+              "chunk_char_end": 618,
+              "text": "he at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim 11 , wherein the at least one application further causes the at least one computing device to:"
+            },
+            {
+              "chunk_char_start": 226,
+              "chunk_char_end": 650,
+              "text": "ystem of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim 11 , wherein the at least one application further causes the at least one computing device to: obtain additional user interact"
+            },
+            {
+              "chunk_char_start": 457,
+              "chunk_char_end": 881,
+              "text": "e first character or the second character. 12. The system of claim 11 , wherein the at least one application further causes the at least one computing device to: obtain additional user interaction data from the another user, the additional user interaction data being associated with a playback of at least one of the first video content feature or the second video content feature; and update the relationship score based a"
+            },
+            {
+              "chunk_char_start": 496,
+              "chunk_char_end": 920,
+              "text": "er. 12. The system of claim 11 , wherein the at least one application further causes the at least one computing device to: obtain additional user interaction data from the another user, the additional user interaction data being associated with a playback of at least one of the first video content feature or the second video content feature; and update the relationship score based at least upon the additional user intera"
+            },
+            {
+              "chunk_char_start": 517,
+              "chunk_char_end": 941,
+              "text": " claim 11 , wherein the at least one application further causes the at least one computing device to: obtain additional user interaction data from the another user, the additional user interaction data being associated with a playback of at least one of the first video content feature or the second video content feature; and update the relationship score based at least upon the additional user interaction data. 13. The s"
+            },
+            {
+              "chunk_char_start": 729,
+              "chunk_char_end": 1153,
+              "text": "ciated with a playback of at least one of the first video content feature or the second video content feature; and update the relationship score based at least upon the additional user interaction data. 13. The system of claim 6 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expressed a preference towards both the first character and the second character. 1"
+            },
+            {
+              "chunk_char_start": 875,
+              "chunk_char_end": 1299,
+              "text": "ased at least upon the additional user interaction data. 13. The system of claim 6 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expressed a preference towards both the first character and the second character. 14. A method, comprising: causing, by at least one computing device, a first network content to be rendered in a user interface for display on a cl"
+            },
+            {
+              "chunk_char_start": 1085,
+              "chunk_char_end": 1509,
+              "text": "ference towards both the first character and the second character. 14. A method, comprising: causing, by at least one computing device, a first network content to be rendered in a user interface for display on a client; obtaining, by the at least one computing device, first user interaction data from the client based at least in part upon a first interaction with the first network content; associating, by the at least on"
+            },
+            {
+              "chunk_char_start": 1180,
+              "chunk_char_end": 1604,
+              "text": "using, by at least one computing device, a first network content to be rendered in a user interface for display on a client; obtaining, by the at least one computing device, first user interaction data from the client based at least in part upon a first interaction with the first network content; associating, by the at least one computing device, a user with a user preferred character represented in a first network conte"
+            },
+            {
+              "chunk_char_start": 1351,
+              "chunk_char_end": 1775,
+              "text": "e, first user interaction data from the client based at least in part upon a first interaction with the first network content; associating, by the at least one computing device, a user with a user preferred character represented in a first network content based at least in part upon the first user interaction data; causing, by the at least one computing device, a timeline user interface that segments the first network co"
+            },
+            {
+              "chunk_char_start": 1363,
+              "chunk_char_end": 1787,
+              "text": "r interaction data from the client based at least in part upon a first interaction with the first network content; associating, by the at least one computing device, a user with a user preferred character represented in a first network content based at least in part upon the first user interaction data; causing, by the at least one computing device, a timeline user interface that segments the first network content into a"
+            },
+            {
+              "chunk_char_start": 1465,
+              "chunk_char_end": 1889,
+              "text": "ork content; associating, by the at least one computing device, a user with a user preferred character represented in a first network content based at least in part upon the first user interaction data; causing, by the at least one computing device, a timeline user interface that segments the first network content into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtainin"
+            }
+          ],
+          "lexical_occurrence_count": 40
+        },
+        {
+          "publication_number": "US9374411B1",
+          "full_doc_id": "US9374411B1",
+          "file_path": "US9374411B1.txt",
+          "chunk_order_index": 2,
+          "tokens": 161,
+          "content_sha256": "b5779b04614e5a41d1a3eb710fae56a98a1d9153d5b676b056c38b64dd24a8be",
+          "exact_doc_char_start": 12390,
+          "exact_doc_char_end": 13265,
+          "content": "22. The non-transitory computer-readable medium of claim 21 , wherein the first media content comprises an electronic book (e-book). 23. The non-transitory computer-readable medium of claim 21 , wherein the plurality of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expressed a preference towards the first fictional character. 25. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is based at least in part upon whether the first fictional character and the second fictional character are associated with a similar genre.",
+          "llm_cache_list": [
+            "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf"
+          ],
+          "chunk_id": "US9374411B1-chunk-002",
+          "extraction_records": [
+            {
+              "chunk_id": "US9374411B1-chunk-002",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "55d66deeaf26058f9f185573d9c9eb15b74dc404982847d9df7aa98c8df82ed7"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 6,
+              "raw_line": "entity<|#|>User<|#|>Person<|#|>A user who interacts with a user interface and may express explicit feedback favoring a fictional character.",
+              "fields": [
+                "entity",
+                "User",
+                "Person",
+                "A user who interacts with a user interface and may express explicit feedback favoring a fictional character."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 130,
+              "chunk_char_end": 554,
+              "text": "). 23. The non-transitory computer-readable medium of claim 21 , wherein the plurality of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at least in part upon a q"
+            },
+            {
+              "chunk_char_start": 164,
+              "chunk_char_end": 588,
+              "text": "-readable medium of claim 21 , wherein the plurality of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expresse"
+            },
+            {
+              "chunk_char_start": 212,
+              "chunk_char_end": 636,
+              "text": "lity of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expressed a preference towards the first fictional chara"
+            },
+            {
+              "chunk_char_start": 385,
+              "chunk_char_end": 809,
+              "text": " via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expressed a preference towards the first fictional character. 25. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is based at least in part upon whether the first fictional character and t"
+            }
+          ],
+          "lexical_occurrence_count": 4
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "The recommendation to play the second video content feature is sent to the user.<SEP>The recommendation is generated for another user in response to the user specifying a preference for a character.",
+          "keywords": "generation,sent to,targeting",
+          "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Recommendation",
+          "target": "User",
+          "edge_index": 293,
+          "source_chunks": [
+            "US9374411B1-chunk-000",
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The content recommendation system recommends network content to users based on character preferences and relationship scores.",
+          "keywords": "recommends content to",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User",
+          "target": "Content Recommendation System",
+          "edge_index": 391,
+          "source_chunks": [
+            "US9374411B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The user is associated with a preferred character based on user interaction data expressing a preference toward that character.",
+          "keywords": "associated with,prefers",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User",
+          "target": "Preferred Character",
+          "edge_index": 392,
+          "source_chunks": [
+            "US9374411B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The client is associated with the user.",
+          "keywords": "associated with",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User",
+          "target": "Client",
+          "edge_index": 393,
+          "source_chunks": [
+            "US9374411B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The user may specify a preference for the second character.",
+          "keywords": "preference",
+          "source_id": "US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User",
+          "target": "Second Character",
+          "edge_index": 394,
+          "source_chunks": [
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The user may specify a preference for the first character.",
+          "keywords": "preference",
+          "source_id": "US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User",
+          "target": "First Character",
+          "edge_index": 395,
+          "source_chunks": [
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "file_paths": [
+        "US9514120B1.txt"
+      ],
+      "source_chunks": [
+        "US9514120B1-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9514120B1",
+          "full_doc_id": "US9514120B1",
+          "file_path": "US9514120B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 1200,
+          "content_sha256": "7dd8efe9e014ee9e28d8ff4d1c7090dfcca115a354cf7d985cc95448a9241a74",
+          "exact_doc_char_start": 5971,
+          "exact_doc_char_end": 12444,
+          "content": "words and wherein the author-intended strings comprise at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; determining, by the processing device and based at least in part on the indicator received in the feedback for the work, that one or more of the potential typographical errors is an author-intended string; combining, by the processing device, the feedback from the plurality of users for the work with feedback for a plurality of additional works to generate a combined feedback; sorting, by the processing device, the combined feedback based on one or more selected parameters associated with the work to generate a sorted feedback, wherein the one or more selected parameters comprises at least one of an author associated with the work, a title associated the work, a topic associated with the work, or a publisher associated with the work; and updating, by the processing device and based on the sorted feedback, one or more parameter-specific references using the author-intended string. 11. The non-transitory computer-readable medium of claim 10 , wherein updating one or more parameter-specific references using the author-intended string comprises: determining, based on the sorted feedback, a first percentage of the feedback that identifies a first potential typographical error of the one or more potential typographical errors as an author-intended string; determining that the first percentage exceeds a threshold percentage; identifying the first potential typographical error as an acceptable string; and adding a string to the one or more parameter-specific references to represent the acceptable string. 12. The non-transitory computer-readable medium of claim 11 , wherein adding a string to the one or more parameter-specific references comprises: for each acceptable string, determining, based on the combined sorted feedback, one or more parameters that are associated with the acceptable string; and identifying a parameter-specific reference that corresponds to each of the one or more parameters associated with the acceptable string. 13. The non-transitory computer-readable medium of claim 11 , the operations further comprising: determining, based on the sorted feedback, a second percentage of the feedback that identifies a second potential typographical error of the one or more potential typographical errors as an author-intended string; determining that the second percentage does not exceed the threshold percentage; identifying the second potential typographical error as an actual error; and associating an alternative string with the actual error. 14. The non-transitory computer-readable medium of claim 10 , wherein the one or more parameter-specific references comprises at least one of an author-specific reference, a title-specific reference, a topic-specific reference, or a publisher-specific reference. 15. The non-transitory computer-readable medium of claim 10 , wherein the feedback for the work comprises at least one of a user identifier, a work identifier, at least one string identified as a potential typographical error, a position of the at least one string in a work, a decision indicating whether a corresponding string is an author-intended string, a confidence level of the decision, or at least one parameter associated with the corresponding string. 16. The non-transitory computer-readable medium of claim 10 , wherein updating one or more parameter-specific references using the author-intended string comprises: compiling, based on the sorted feedback, one or more parameter-specific statistics; determining that at least one of the one or more parameter-specific statistics exceeds a threshold; and identifying a first potential typographical error of the one or more potential typographical errors as an acceptable string. 17. The non-transitory computer-readable medium of claim 16 , wherein the parameter-specific statistics comprise at least one of a number of times users mark a potential typographical error as an author-intended string, a total number of times a potential typographical error is marked as an author-intended string, a percentage of feedback that marked the potential typographical error as an author-intended string, a percentage of users that marked the potential typographical error as an author-intended string, or a number of times the one or more potential typographical errors are marked as an author-intended string for a parameter. 18. An apparatus comprising: a memory; a processing device operatively coupled to the memory, the processing device to: provide data indicative of presence of a potential typographical error in a work to a user via a graphical user interface, wherein the work comprises a plurality of words; receive input identifying the potential typographical error that is an author-intended string for the work, the input comprising an indicator that specifies that the potential typographical error is an author-intended string for the work, wherein the author-intended string comprises at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; determine one or more parameters to associate with the author-intended string, wherein the one or more parameters comprises at least one of an author associated with the work, a title associated the work, a topic associated with the work, or a publisher associated with the work; and provide feedback for the work to a server computing machine, the feedback comprising identification of the author-intended string and the one or more parameters associated with the author-intended string, wherein the server computing machine is to: combine the feedback with additional feedback from a plurality of users for the work and one or more additional works to generate a combined feedback; sort the combined feedback based on the one or more parameters associated with the author-intended string to generate a sorted feedback; and update, based on the sorted feedback, a reference using the author-intended string. 19. The apparatus of claim 18 , wherein the input comprises at least one of a user identifier, a work identifier, at least one string identified as a potential typographical error, a position of the at least one string in",
+          "llm_cache_list": [
+            "default:extract:a37ca561034040ded08355639b284ba3"
+          ],
+          "chunk_id": "US9514120B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US9514120B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "e2a17dd1b57fec60d1eec1c6fc994018925ddd4ee71f362dc3af059e4ac24208"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+              "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 13,
+              "raw_line": "entity<|#|>User<|#|>Person<|#|>An individual who provides feedback on potential typographical errors in a work via a graphical user interface.",
+              "fields": [
+                "entity",
+                "User",
+                "Person",
+                "An individual who provides feedback on potential typographical errors in a work via a graphical user interface."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+              "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 29,
+              "raw_line": "relation<|#|>User<|#|>Feedback<|#|>provides<|#|>Users provide feedback on potential typographical errors in a work.",
+              "fields": [
+                "relation",
+                "User",
+                "Feedback",
+                "provides",
+                "Users provide feedback on potential typographical errors in a work."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+              "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 30,
+              "raw_line": "relation<|#|>User<|#|>Graphical User Interface<|#|>interacts with<|#|>A user receives data indicative of potential typographical errors via a graphical user interface.",
+              "fields": [
+                "relation",
+                "User",
+                "Graphical User Interface",
+                "interacts with",
+                "A user receives data indicative of potential typographical errors via a graphical user interface."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 344,
+              "chunk_char_end": 768,
+              "text": "feedback for the work, that one or more of the potential typographical errors is an author-intended string; combining, by the processing device, the feedback from the plurality of users for the work with feedback for a plurality of additional works to generate a combined feedback; sorting, by the processing device, the combined feedback based on one or more selected parameters associated with the work to generate a sorte"
+            },
+            {
+              "chunk_char_start": 2939,
+              "chunk_char_end": 3363,
+              "text": "-specific reference, or a publisher-specific reference. 15. The non-transitory computer-readable medium of claim 10 , wherein the feedback for the work comprises at least one of a user identifier, a work identifier, at least one string identified as a potential typographical error, a position of the at least one string in a work, a decision indicating whether a corresponding string is an author-intended string, a confide"
+            },
+            {
+              "chunk_char_start": 3903,
+              "chunk_char_end": 4327,
+              "text": " errors as an acceptable string. 17. The non-transitory computer-readable medium of claim 16 , wherein the parameter-specific statistics comprise at least one of a number of times users mark a potential typographical error as an author-intended string, a total number of times a potential typographical error is marked as an author-intended string, a percentage of feedback that marked the potential typographical error as a"
+            },
+            {
+              "chunk_char_start": 4189,
+              "chunk_char_end": 4613,
+              "text": "al typographical error is marked as an author-intended string, a percentage of feedback that marked the potential typographical error as an author-intended string, a percentage of users that marked the potential typographical error as an author-intended string, or a number of times the one or more potential typographical errors are marked as an author-intended string for a parameter. 18. An apparatus comprising: a memory"
+            },
+            {
+              "chunk_char_start": 4602,
+              "chunk_char_end": 5026,
+              "text": "g: a memory; a processing device operatively coupled to the memory, the processing device to: provide data indicative of presence of a potential typographical error in a work to a user via a graphical user interface, wherein the work comprises a plurality of words; receive input identifying the potential typographical error that is an author-intended string for the work, the input comprising an indicator that specifies t"
+            },
+            {
+              "chunk_char_start": 4623,
+              "chunk_char_end": 5047,
+              "text": "sing device operatively coupled to the memory, the processing device to: provide data indicative of presence of a potential typographical error in a work to a user via a graphical user interface, wherein the work comprises a plurality of words; receive input identifying the potential typographical error that is an author-intended string for the work, the input comprising an indicator that specifies that the potential typ"
+            },
+            {
+              "chunk_char_start": 5762,
+              "chunk_char_end": 6186,
+              "text": "he one or more parameters associated with the author-intended string, wherein the server computing machine is to: combine the feedback with additional feedback from a plurality of users for the work and one or more additional works to generate a combined feedback; sort the combined feedback based on the one or more parameters associated with the author-intended string to generate a sorted feedback; and update, based on t"
+            },
+            {
+              "chunk_char_start": 6150,
+              "chunk_char_end": 6473,
+              "text": "ted feedback; and update, based on the sorted feedback, a reference using the author-intended string. 19. The apparatus of claim 18 , wherein the input comprises at least one of a user identifier, a work identifier, at least one string identified as a potential typographical error, a position of the at least one string in"
+            }
+          ],
+          "lexical_occurrence_count": 8
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "Users provide feedback on potential typographical errors in a work.",
+          "keywords": "provides",
+          "source_id": "US9514120B1-chunk-001",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "User",
+          "target": "Feedback",
+          "edge_index": 382,
+          "source_chunks": [
+            "US9514120B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A user receives data indicative of potential typographical errors via a graphical user interface.",
+          "keywords": "interacts with",
+          "source_id": "US9514120B1-chunk-001",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "User",
+          "target": "Graphical User Interface",
+          "edge_index": 383,
+          "source_chunks": [
+            "US9514120B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 2.0,
+      "description": "The recommendation to play the second video content feature is sent to the user.<SEP>The recommendation is generated for another user in response to the user specifying a preference for a character.",
+      "keywords": "generation,sent to,targeting",
+      "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "Recommendation",
+      "target": "User",
+      "edge_index": 293,
+      "source_chunks": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Viewed pages are pages previously viewed by users.",
+      "keywords": "viewed by",
+      "source_id": "US8880423B2-chunk-000",
+      "file_path": "US8880423B2.txt",
+      "created_at": 1793284282,
+      "truncate": "",
+      "source": "Viewed Page",
+      "target": "User",
+      "edge_index": 361,
+      "source_chunks": [
+        "US8880423B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8880423B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Search keywords were previously submitted by a plurality of users.",
+      "keywords": "submitted by",
+      "source_id": "US8880423B2-chunk-000",
+      "file_path": "US8880423B2.txt",
+      "created_at": 1793284282,
+      "truncate": "",
+      "source": "Search Keyword",
+      "target": "User",
+      "edge_index": 366,
+      "source_chunks": [
+        "US8880423B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8880423B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Users provide feedback on potential typographical errors in a work.",
+      "keywords": "provides",
+      "source_id": "US9514120B1-chunk-001",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "User",
+      "target": "Feedback",
+      "edge_index": 382,
+      "source_chunks": [
+        "US9514120B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "A user receives data indicative of potential typographical errors via a graphical user interface.",
+      "keywords": "interacts with",
+      "source_id": "US9514120B1-chunk-001",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "User",
+      "target": "Graphical User Interface",
+      "edge_index": 383,
+      "source_chunks": [
+        "US9514120B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The misclassification identification is displayed to the user so a misclassified message can be moved.",
+      "keywords": "displayed to",
+      "source_id": "US8069128B2-chunk-000",
+      "file_path": "US8069128B2.txt",
+      "created_at": 1793284415,
+      "truncate": "",
+      "source": "User",
+      "target": "Misclassification Identification",
+      "edge_index": 384,
+      "source_chunks": [
+        "US8069128B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8069128B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The user is enabled to move an identified misclassified message to a different message folder.",
+      "keywords": "moves messages between",
+      "source_id": "US8069128B2-chunk-000",
+      "file_path": "US8069128B2.txt",
+      "created_at": 1793284415,
+      "truncate": "",
+      "source": "User",
+      "target": "Message Folders",
+      "edge_index": 385,
+      "source_chunks": [
+        "US8069128B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8069128B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The user selects the multi-pass message filter for execution through an interface on the client device.<SEP>The multi-pass message filter is selectable for execution by a user through an interface on the client device.",
+      "keywords": "selects filter through,uses",
+      "source_id": "US8069128B2-chunk-000<SEP>US8069128B2-chunk-001",
+      "file_path": "US8069128B2.txt",
+      "created_at": 1793284415,
+      "truncate": "",
+      "source": "User",
+      "target": "Interface",
+      "edge_index": 386,
+      "source_chunks": [
+        "US8069128B2-chunk-000",
+        "US8069128B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8069128B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "A user is enabled to move the identified message to another message folder.",
+      "keywords": "moves message to",
+      "source_id": "US8069128B2-chunk-001",
+      "file_path": "US8069128B2.txt",
+      "created_at": 1793284415,
+      "truncate": "",
+      "source": "User",
+      "target": "Message Folder",
+      "edge_index": 387,
+      "source_chunks": [
+        "US8069128B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8069128B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The client device provides a display of information associated with incorrectly sorted messages, such that a user is enabled to move the identified message to another message folder.",
+      "keywords": "provides display enabling",
+      "source_id": "US8069128B2-chunk-001",
+      "file_path": "US8069128B2.txt",
+      "created_at": 1793284415,
+      "truncate": "",
+      "source": "User",
+      "target": "Client Device",
+      "edge_index": 388,
+      "source_chunks": [
+        "US8069128B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8069128B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The multi-pass message filter is selectable for execution by a user through an interface on the client device.",
+      "keywords": "selects for execution",
+      "source_id": "US8069128B2-chunk-001",
+      "file_path": "US8069128B2.txt",
+      "created_at": 1793284415,
+      "truncate": "",
+      "source": "User",
+      "target": "Multi-Pass Message Filter",
+      "edge_index": 389,
+      "source_chunks": [
+        "US8069128B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8069128B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The first message filter is automatically executed independent of a user action.",
+      "keywords": "executed independent of",
+      "source_id": "US8069128B2-chunk-001",
+      "file_path": "US8069128B2.txt",
+      "created_at": 1793284415,
+      "truncate": "",
+      "source": "User",
+      "target": "First Message Filter",
+      "edge_index": 390,
+      "source_chunks": [
+        "US8069128B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8069128B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The content recommendation system recommends network content to users based on character preferences and relationship scores.",
+      "keywords": "recommends content to",
+      "source_id": "US9374411B1-chunk-000",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "User",
+      "target": "Content Recommendation System",
+      "edge_index": 391,
+      "source_chunks": [
+        "US9374411B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The user is associated with a preferred character based on user interaction data expressing a preference toward that character.",
+      "keywords": "associated with,prefers",
+      "source_id": "US9374411B1-chunk-000",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "User",
+      "target": "Preferred Character",
+      "edge_index": 392,
+      "source_chunks": [
+        "US9374411B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The client is associated with the user.",
+      "keywords": "associated with",
+      "source_id": "US9374411B1-chunk-000",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "User",
+      "target": "Client",
+      "edge_index": 393,
+      "source_chunks": [
+        "US9374411B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The user may specify a preference for the second character.",
+      "keywords": "preference",
+      "source_id": "US9374411B1-chunk-001",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "User",
+      "target": "Second Character",
+      "edge_index": 394,
+      "source_chunks": [
+        "US9374411B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The user may specify a preference for the first character.",
+      "keywords": "preference",
+      "source_id": "US9374411B1-chunk-001",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "User",
+      "target": "First Character",
+      "edge_index": 395,
+      "source_chunks": [
+        "US9374411B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "A user relationship is established between a user and a content producer and involves the user.<SEP>Each user relationship involves a user.",
+      "keywords": "involves",
+      "source_id": "US8719408B2-chunk-000<SEP>US8719408B2-chunk-001",
+      "file_path": "US8719408B2.txt",
+      "created_at": 1793284597,
+      "truncate": "",
+      "source": "User",
+      "target": "User Relationship",
+      "edge_index": 396,
+      "source_chunks": [
+        "US8719408B2-chunk-000",
+        "US8719408B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8719408B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The media aggregator profile is associated with the user.",
+      "keywords": "associated with",
+      "source_id": "US8719408B2-chunk-000<SEP>US8719408B2-chunk-001",
+      "file_path": "US8719408B2.txt",
+      "created_at": 1793284597,
+      "truncate": "",
+      "source": "User",
+      "target": "Media Aggregator Profile",
+      "edge_index": 397,
+      "source_chunks": [
+        "US8719408B2-chunk-000",
+        "US8719408B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8719408B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Mutual interests exist between the user and the content producer that published the digital media content.",
+      "keywords": "shared by",
+      "source_id": "US8719408B2-chunk-000",
+      "file_path": "US8719408B2.txt",
+      "created_at": 1793284597,
+      "truncate": "",
+      "source": "User",
+      "target": "Mutual Interest",
+      "edge_index": 398,
+      "source_chunks": [
+        "US8719408B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8719408B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The mutual interests are between the user and the content producer.",
+      "keywords": "between",
+      "source_id": "US8719408B2-chunk-001",
+      "file_path": "US8719408B2.txt",
+      "created_at": 1793284597,
+      "truncate": "",
+      "source": "User",
+      "target": "Mutual Interests",
+      "edge_index": 399,
+      "source_chunks": [
+        "US8719408B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8719408B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

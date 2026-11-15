@@ -1,0 +1,12 @@
+{
+  "provider": "SiliconFlow",
+  "host": "https://api.siliconflow.cn/v1",
+  "llm_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "embedding_model": "BAAI/bge-m3",
+  "embedding_dim": 1024,
+  "embedding_token_limit": 8192,
+  "client_max_retries": 0,
+  "enable_thinking": false,
+  "deadline_utc": "2026-10-29T16:13:44+00:00",
+  "hard_cap_cny": 10.0
+}

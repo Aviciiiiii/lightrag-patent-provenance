@@ -1,0 +1,37 @@
+{
+  "frozen_utc": "2026-10-30T03:37:25.780374+00:00",
+  "group": "M01",
+  "scope": "Official complete pipeline on identical clipped original Claim1+Claim27; not full patent and not old partial AST records or diagnostic smoke",
+  "outputs_seen_before_protocol": false,
+  "source": "round4_full_20261030/conditions/frozen_groups.json M01",
+  "predicates": [
+    {
+      "id": "R1",
+      "statement": "The Registration Module provides functionality for registering an external recommender with a recommendations service.",
+      "source_claim": 1,
+      "source_anchor": "R1_registration",
+      "edge_success": "A parsed or merged relation explicitly supports module-mediated registration of an external recommender with the service. Endpoints may be Module\u2013External Recommender or Module\u2013Recommendations Service if the full registration predicate is faithfully retained in its description.",
+      "node_success": "A Registration Module entity description explicitly retains the same registration capability."
+    },
+    {
+      "id": "R2",
+      "statement": "The same Registration Module allows a provider of an external recommender to provide machine readable descriptions of that recommender.",
+      "source_claim": 27,
+      "source_anchor": "R2_machine_readable_descriptions",
+      "edge_success": "A parsed or merged relation explicitly supports module-mediated allowance for the provider to provide machine-readable descriptions. Module\u2013Provider is valid if its description retains the complete function; a fixed Module\u2013Descriptions endpoint pair is not required.",
+      "node_success": "A Registration Module entity description explicitly retains the same allowance and machine-readable-description object.",
+      "control_note": "R2 is fully and explicitly stated in Claim27, which remains intact in a B chunk; R2 alone is a self-contained positive control, not a relationship requiring cross-Claim inference."
+    }
+  ],
+  "primary_joint_criterion": "Report R1 and R2 node retention and edge retention separately. Joint technical co-retention succeeds when both supported predicates remain linked to the same actual Registration Module graph identity after merge; preserve actual node IDs and distinguish semantic aliases from a real node merge. Do not require one invented edge connecting registration to descriptions.",
+  "legal_dependency_secondary": "Score an explicit Claim27\u2192Claim1 dependency edge only if actual graph Claim entities and an explicit dependency relation exist. Its absence may be default ontology/representation scope, not technical relation loss. Claim27 contains the words The system of claim1 in both conditions.",
+  "identity_rule": "Semantic retention is separate from graph identity. Joint endpoint co-retention requires actual same RegistrationModule graph node ID supporting both predicates; aliases are reported and not silently equated as merged. A description mentioning the module without an actual endpoint is text support, not proof of graph connectivity.",
+  "raw_and_parser": "Check actual raw relation/entity rows and official imported parser records; no AST substitute. Truncated extraction sample excluded from clean paired comparison and still descriptively inventoried.",
+  "retrieval": "Check complete target clauses, full Claim1/Claim27, and explicit The system of claim1 dependency wording in natural chunks. Forced evidence is separate.",
+  "answer": "R1 registration capability, R2 provider-description capability, Claim1 and27 attribution, Claim27 depends on1, publication/source mapping, no invented registration-uses-descriptions mechanism.",
+  "limitations": [
+    "R2 is fully self-contained inClaim27 inBchunk1.",
+    "Same clipped text order butB processes100overlapextra tokens and2calls vsA1call.",
+    "No general/full-patent cross-chunk loss claim."
+  ]
+}

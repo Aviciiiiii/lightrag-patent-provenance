@@ -1,0 +1,18 @@
+--- before/experiments/01_baseline_index_qa/scripts/build_report.py
++++ after/experiments/01_baseline_index_qa/scripts/build_report.py
+@@ -22,8 +22,2 @@
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-<已删去的原文行，不在仓库中保留>
+-words=len(paragraph.split());assert 70<=words<=100,words
++paragraph='[已删去：与实验无关的个人申请材料，见 reports/README.md]'
++words=len(paragraph.split())  # word-count assert removed with the paragraph
+--- before/experiments/01_baseline_index_qa/scripts/build_report.py
++++ after/experiments/01_baseline_index_qa/scripts/build_report.py
+@@ -113 +113 @@
+-<已删去的原文行：原标题含申请材料字样>
++<h2>E. 研究兴趣段落（已删去）（{words} words）</h2>

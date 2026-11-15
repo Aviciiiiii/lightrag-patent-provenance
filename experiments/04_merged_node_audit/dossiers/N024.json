@@ -1,0 +1,869 @@
+{
+  "node_id": "Application",
+  "entity_type": "artifact",
+  "graph_source_chunks": [
+    "US8917913B2-chunk-000",
+    "US8917913B2-chunk-001",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001"
+  ],
+  "entity_chunk_store_sources": [
+    "US8917913B2-chunk-000",
+    "US8917913B2-chunk-001",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001"
+  ],
+  "all_source_chunks": [
+    "US8917913B2-chunk-000",
+    "US8917913B2-chunk-001",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001"
+  ],
+  "canonical_publications": [
+    "US8917913B2",
+    "US9374411B1"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US8917913B2.txt",
+    "US9374411B1.txt"
+  ],
+  "graph_file_paths": [
+    "US8917913B2.txt",
+    "US9374411B1.txt"
+  ],
+  "graph_file_path_publications": [
+    "US8917913B2",
+    "US9374411B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US8917913B2-chunk-000",
+    "US8917913B2-chunk-001",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US8917913B2-chunk-000",
+    "US8917913B2-chunk-001",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-001"
+  ],
+  "graph_node": {
+    "entity_id": "Application",
+    "entity_type": "artifact",
+    "description": "An application associated with the mobile device that is in operative communication with the camera, provides a user interface, receives search terms and source images, and communicates with the search service.<SEP>Software associated with the mobile device that is in operative communication with the camera, provides a user interface, receives friend identifiers and source images, and displays results on the screen.<SEP>Software executable in a computing device that causes the device to perform content recommendation functions.<SEP>Software executed by a computing device that causes it to perform content rendering, character identification, and recommendation generation.",
+    "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001<SEP>US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+    "file_path": "US8917913B2.txt<SEP>US9374411B1.txt",
+    "created_at": 1793284456,
+    "truncate": "",
+    "id": "Application"
+  },
+  "incident_edge_count": 7,
+  "audit_id": "N024",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US8917913B2",
+      "file_paths": [
+        "US8917913B2.txt"
+      ],
+      "source_chunks": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8917913B2",
+          "full_doc_id": "US8917913B2",
+          "file_path": "US8917913B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "6d67cb50bcf0a48da8ae11e36b05d1af01b1fc47cc847884499fd725f56cad52",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6237,
+          "content": "Publication number: US8917913B2\nTitle: Searching with face recognition and social networking profiles\n\nABSTRACT\nSystems for performing on-line searching, and particularly, to searching with face recognition and social networking profiles. In one example, one or more systems may be provided with regard to searching with face recognition and social networking profiles.\n\nCLAIMS\nWhat is claimed is: 1. A computer-implemented system for interacting with a social networking service using a mobile device, wherein the social networking service has associated therewith a plurality of member profiles corresponding to a respective plurality of members, wherein each of the member profiles includes at least one member descriptor associated with a respective member, wherein each of the member profiles includes at least one member image associated with a respective member, wherein each member image includes a representation of a face of the respective member, and wherein the mobile device includes at least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one search term, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plurality of faces; and an Internet access mechanism associated with the mobile device, wherein the Internet access mechanism is in operative communication with the application and wherein the Internet access mechanism provides at least the search term and at least some of the representations of the faces in the source image to the search service; wherein the search service is in operative communication with the social networking service, wherein the search service compares the search term to at least some of the member descriptors; wherein the search service compares at least one of the representations of the faces in the source image to at least some of the representations of the faces in the member images, and wherein the search service provides at least one result identifying at least one member who has: (a) a member descriptor that is a match to the search term; and (b) a member image including a representation of a face that is a match to a representation of a face in the source image; wherein the search service sends the result back to the mobile device via at least the Internet access mechanism of the mobile device; wherein the result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least one indicium identifying the at least one member who has: (a) a member descriptor that is a match to the search term; and (b) a member image including a representation of a face that is a match to a representation of a face in the source image: and wherein: the search service provides at least a first result identifying at least a first member who has: (a) a member descriptor that is a match to the search term from the mobile device; and (b) a member image including a representation of a face that is a match to a first one of the representation of faces in the source image; and the search service provides at least a second result identifying at least a second member who has: (a) a member descriptor that is a match to the search term from the mobile device; and (b) a member image including a representation of a face that is a match to a second one of the representation of faces in the source image. 2. The system of claim 1 , wherein: the first result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least a first indicium identifying the first member; and the second result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least a second indicium identifying the second member. 3. The system of claim 1 , wherein the search service is integrated into the social networking service. 4. The system of claim 1 , wherein a member descriptor that is a match to the search term from the mobile device is an essentially exact match to the search term. 5. The system of claim 1 , wherein a member descriptor that is a match to the search term from the mobile device is a match to the search term that is an approximate match within a degree of confidence. 6. The system of claim 1 , wherein a representation of a face in a member image that is a match to a representation of a face in the source image is an essentially exact match. 7. The system of claim 1 , wherein a representation of a face in a member image that is a match to a representation of a face in the source image is an approximate match within a degree of confidence. 8. The system of claim 1 , wherein the search term comprises a plurality of search terms. 9. The system of claim 1 , wherein the mobile device is selected from the group consisting of: (a) a mobile phone, (b) a tablet, (c) a PDA, and (d) a dedicated camera. 10. A computer-implemented system for interacting with a social networking service using a mobile device, wherein the social networking service has associated therewith a plurality of member profiles corresponding to a respective plurality of members, wherein each of the member profiles includes at least one member image associated with a respective member, wherein each member image includes a representation of a face of the respective member, and wherein the mobile device includes at least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image",
+          "llm_cache_list": [
+            "default:extract:958acb32aa3144daf63e3c4a201f570c"
+          ],
+          "chunk_id": "US8917913B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US8917913B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "139772556021347f0244c07e4158f9567f5c4f06007227c77af206c622a9388f"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 5,
+              "raw_line": "entity<|#|>Application<|#|>Artifact<|#|>An application associated with the mobile device that is in operative communication with the camera, provides a user interface, receives search terms and source images, and communicates with the search service.",
+              "fields": [
+                "entity",
+                "Application",
+                "Artifact",
+                "An application associated with the mobile device that is in operative communication with the camera, provides a user interface, receives search terms and source images, and communicates with the search service."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 20,
+              "raw_line": "relation<|#|>Application<|#|>Mobile Device<|#|>association<|#|>The application is associated with the mobile device and is in operative communication with its camera.",
+              "fields": [
+                "relation",
+                "Application",
+                "Mobile Device",
+                "association",
+                "The application is associated with the mobile device and is in operative communication with its camera."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 21,
+              "raw_line": "relation<|#|>Application<|#|>Camera<|#|>operative communication<|#|>The application is in operative communication with the camera and receives source images from it.",
+              "fields": [
+                "relation",
+                "Application",
+                "Camera",
+                "operative communication",
+                "The application is in operative communication with the camera and receives source images from it."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 22,
+              "raw_line": "relation<|#|>Application<|#|>User Interface<|#|>provides<|#|>The application provides a user interface and receives search terms or friend identifiers from it.",
+              "fields": [
+                "relation",
+                "Application",
+                "User Interface",
+                "provides",
+                "The application provides a user interface and receives search terms or friend identifiers from it."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 24,
+              "raw_line": "relation<|#|>Internet Access Mechanism<|#|>Application<|#|>operative communication<|#|>The Internet access mechanism is in operative communication with the application.",
+              "fields": [
+                "relation",
+                "Internet Access Mechanism",
+                "Application",
+                "operative communication",
+                "The Internet access mechanism is in operative communication with the application."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 939,
+              "chunk_char_end": 1370,
+              "text": "respective member, and wherein the mobile device includes at least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one search term,"
+            },
+            {
+              "chunk_char_start": 998,
+              "chunk_char_end": 1429,
+              "text": "t least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one search term, wherein the application receives from the camera at least "
+            },
+            {
+              "chunk_char_start": 1069,
+              "chunk_char_end": 1500,
+              "text": "associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one search term, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of "
+            },
+            {
+              "chunk_char_start": 1120,
+              "chunk_char_end": 1551,
+              "text": "pplication associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one search term, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plurality of faces; and an Int"
+            },
+            {
+              "chunk_char_start": 1203,
+              "chunk_char_end": 1634,
+              "text": "ve communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one search term, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plurality of faces; and an Internet access mechanism associated with the mobile device, wherein the Internet acce"
+            },
+            {
+              "chunk_char_start": 1506,
+              "chunk_char_end": 1937,
+              "text": "entations of a plurality of faces; and an Internet access mechanism associated with the mobile device, wherein the Internet access mechanism is in operative communication with the application and wherein the Internet access mechanism provides at least the search term and at least some of the representations of the faces in the source image to the search service; wherein the search service is in operative communication with the "
+            },
+            {
+              "chunk_char_start": 5695,
+              "chunk_char_end": 6126,
+              "text": "respective member, and wherein the mobile device includes at least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend ident"
+            },
+            {
+              "chunk_char_start": 5754,
+              "chunk_char_end": 6185,
+              "text": "t least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at "
+            },
+            {
+              "chunk_char_start": 5825,
+              "chunk_char_end": 6237,
+              "text": "associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image"
+            },
+            {
+              "chunk_char_start": 5876,
+              "chunk_char_end": 6237,
+              "text": "pplication associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image"
+            },
+            {
+              "chunk_char_start": 5965,
+              "chunk_char_end": 6237,
+              "text": "munication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image"
+            }
+          ],
+          "lexical_occurrence_count": 11
+        },
+        {
+          "publication_number": "US8917913B2",
+          "full_doc_id": "US8917913B2",
+          "file_path": "US8917913B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 845,
+          "content_sha256": "5cb21156d0ae55d42ff0fbb93c20e4a6750c33ae1335d9c90ce7ee6cb5e41ba7",
+          "exact_doc_char_start": 5639,
+          "exact_doc_char_end": 10117,
+          "content": "member image includes a representation of a face of the respective member, and wherein the mobile device includes at least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plurality of faces; and an Internet access mechanism associated with the mobile device, wherein the Internet access mechanism is in operative communication with the application and wherein the Internet access mechanism provides at least the friend identifier and at least some of the representations of the faces in the source image to the search service; wherein the search service is in operative communication with the social networking service, wherein the search service compares at least one of the representations of the faces in the source image to at least some of the representations of the faces in the member images associated with members who are indicated in the social networking service as friends of the member identified by the friend identifier, and wherein the search service provides at least one result identifying at least one member who is indicated in the social networking service as a friend of the member identified by the friend identifier and who has a member image including a representation of a face that is a match to a representation of a face in the source image; wherein the search service sends the result back to the mobile device via at least the Internet access mechanism of the mobile device; wherein the result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least one indicium identifying the at least one member who is indicated in the social networking service as a friend of the member identified by the friend identifier and who has a member image including a representation of a face that is a match to a representation of a face in the source image; and wherein: the search service provides at least a first result identifying at least a first member who is indicated in the social networking service as a friend of the member identified by the friend identifier and who has a member image including a representation of a face that is a match to a representation of a face in the source image; and the search service provides at least a second result identifying at least a second member who is indicated in the social networking service as a friend of the member identified by the friend identifier and who has a member image including a representation of a face that is a match to a representation of a face in the source image. 11. The system of claim 10 , wherein: the first result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least a first indicium identifying the first member; and the second result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least a second indicium identifying the second member. 12. The system of claim 10 , wherein the search service is integrated into the social networking service. 13. The system of claim 10 , wherein a representation of a face in a member image that is a match to a representation of a face in the source image is an essentially exact match. 14. The system of claim 10 , wherein a representation of a face in a member image that is a match to a representation of a face in the source image is an approximate match within a degree of confidence. 15. The system of claim 10 , wherein the friend identifier comprises a plurality of friend identifiers. 16. The system of claim 10 , wherein: the application further receives from the user interface a friend level indicator; and the search service performs iterative searching of friends-of-friends based at least in part upon the friend level indicator and the friend identifier. 17. The system of claim 10 , wherein the mobile device is selected from the group consisting of: (a) a mobile phone, (b) a tablet, (c) a PDA, and (d) a dedicated camera.",
+          "llm_cache_list": [
+            "default:extract:7182907f22ae09a0de65a3da1b71fb0a"
+          ],
+          "chunk_id": "US8917913B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US8917913B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "9fbc0b6c464f80a5e3bfbb84bfdbbbab7bf53bde435f5ae8f46078855b57d5db"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 4,
+              "raw_line": "entity<|#|>Application<|#|>Artifact<|#|>Software associated with the mobile device that is in operative communication with the camera, provides a user interface, receives friend identifiers and source images, and displays results on the screen.",
+              "fields": [
+                "entity",
+                "Application",
+                "Artifact",
+                "Software associated with the mobile device that is in operative communication with the camera, provides a user interface, receives friend identifiers and source images, and displays results on the screen."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 23,
+              "raw_line": "relation<|#|>Application<|#|>Mobile Device<|#|>association<|#|>The application is associated with the mobile device.",
+              "fields": [
+                "relation",
+                "Application",
+                "Mobile Device",
+                "association",
+                "The application is associated with the mobile device."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 24,
+              "raw_line": "relation<|#|>Application<|#|>Camera<|#|>operative communication, image reception<|#|>The application is in operative communication with the camera and receives source images from it.",
+              "fields": [
+                "relation",
+                "Application",
+                "Camera",
+                "operative communication, image reception",
+                "The application is in operative communication with the camera and receives source images from it."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Application<|#|>User Interface<|#|>provision, data reception<|#|>The application provides a user interface and receives friend identifiers and friend level indicators from it.",
+              "fields": [
+                "relation",
+                "Application",
+                "User Interface",
+                "provision, data reception",
+                "The application provides a user interface and receives friend identifiers and friend level indicators from it."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 26,
+              "raw_line": "relation<|#|>Application<|#|>Friend Identifier<|#|>reception<|#|>The application receives at least one friend identifier from the user interface.",
+              "fields": [
+                "relation",
+                "Application",
+                "Friend Identifier",
+                "reception",
+                "The application receives at least one friend identifier from the user interface."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 27,
+              "raw_line": "relation<|#|>Application<|#|>Source Image<|#|>reception<|#|>The application receives at least one source image from the camera.",
+              "fields": [
+                "relation",
+                "Application",
+                "Source Image",
+                "reception",
+                "The application receives at least one source image from the camera."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 29,
+              "raw_line": "relation<|#|>Internet Access Mechanism<|#|>Application<|#|>operative communication<|#|>The Internet access mechanism is in operative communication with the application.",
+              "fields": [
+                "relation",
+                "Internet Access Mechanism",
+                "Application",
+                "operative communication",
+                "The Internet access mechanism is in operative communication with the application."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 56,
+              "chunk_char_end": 487,
+              "text": "respective member, and wherein the mobile device includes at least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend ident"
+            },
+            {
+              "chunk_char_start": 115,
+              "chunk_char_end": 546,
+              "text": "t least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at "
+            },
+            {
+              "chunk_char_start": 186,
+              "chunk_char_end": 617,
+              "text": "associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurali"
+            },
+            {
+              "chunk_char_start": 237,
+              "chunk_char_end": 668,
+              "text": "pplication associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plurality of faces; and "
+            },
+            {
+              "chunk_char_start": 326,
+              "chunk_char_end": 757,
+              "text": "munication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plurality of faces; and an Internet access mechanism associated with the mobile device, wherein the Internet acce"
+            },
+            {
+              "chunk_char_start": 629,
+              "chunk_char_end": 1060,
+              "text": "entations of a plurality of faces; and an Internet access mechanism associated with the mobile device, wherein the Internet access mechanism is in operative communication with the application and wherein the Internet access mechanism provides at least the friend identifier and at least some of the representations of the faces in the source image to the search service; wherein the search service is in operative communication wit"
+            },
+            {
+              "chunk_char_start": 3894,
+              "chunk_char_end": 4325,
+              "text": "ch within a degree of confidence. 15. The system of claim 10 , wherein the friend identifier comprises a plurality of friend identifiers. 16. The system of claim 10 , wherein: the application further receives from the user interface a friend level indicator; and the search service performs iterative searching of friends-of-friends based at least in part upon the friend level indicator and the friend identifier. 17. The system o"
+            }
+          ],
+          "lexical_occurrence_count": 7
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "The application is associated with the mobile device and is in operative communication with its camera.<SEP>The application is associated with the mobile device.",
+          "keywords": "association",
+          "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284306,
+          "truncate": "",
+          "source": "Mobile Device",
+          "target": "Application",
+          "edge_index": 73,
+          "source_chunks": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The application is in operative communication with the camera and receives source images from it.",
+          "keywords": "image reception,operative communication",
+          "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "Application",
+          "target": "Camera",
+          "edge_index": 426,
+          "source_chunks": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The application provides a user interface and receives friend identifiers and friend level indicators from it.<SEP>The application provides a user interface and receives search terms or friend identifiers from it.",
+          "keywords": "data reception,provides,provision",
+          "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "Application",
+          "target": "User Interface",
+          "edge_index": 427,
+          "source_chunks": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The Internet access mechanism is in operative communication with the application.",
+          "keywords": "operative communication",
+          "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "Application",
+          "target": "Internet Access Mechanism",
+          "edge_index": 428,
+          "source_chunks": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The application receives at least one friend identifier from the user interface.",
+          "keywords": "reception",
+          "source_id": "US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "Application",
+          "target": "Friend Identifier",
+          "edge_index": 429,
+          "source_chunks": [
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The application receives at least one source image from the camera.",
+          "keywords": "reception",
+          "source_id": "US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "Application",
+          "target": "Source Image",
+          "edge_index": 430,
+          "source_chunks": [
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "file_paths": [
+        "US9374411B1.txt"
+      ],
+      "source_chunks": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9374411B1",
+          "full_doc_id": "US9374411B1",
+          "file_path": "US9374411B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1199,
+          "content_sha256": "1c6ddec8304601845ddead7675e8d25ffe813f0a1d7087766b31ededcbd9a1cc",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6777,
+          "content": "Publication number: US9374411B1\nTitle: Content recommendations using deep data\n\nABSTRACT\nDisclosed are various embodiments for recommending content for users. A user is associated with a user preferred character that is represented in a first network content. A library is referenced to identify a recommended character based at least upon the user preferred character, the recommended character being represented in a second network content, the library associating the preferred character to the recommended character according to a relationship score. A recommendation is sent for presentation of the second network content.\n\nCLAIMS\nTherefore, the following is claimed: 1. A non-transitory computer-readable medium having a plurality of computer instructions executable by at least one computing device, wherein, upon execution, the plurality of computer instructions cause the at least one computing device to: stream a first video content feature from at least one server to a client associated with a user; cause the first video content feature to be rendered in a user interface for display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtain second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; associate a preferred character with the user based at least upon the second user interaction data, the preferred character being represented by a corresponding first cast member of the first video content feature; reference a library to identify a recommended character based at least upon the preferred character, the recommended character being represented by a corresponding second cast member of a second video content feature, the library associating the preferred character to the recommended character according to a relationship score, the relationship score being calculated based at least in part upon a proportion of users who have expressed a preference towards both the preferred character and the recommended character; and send to the user a recommendation to play the second video content feature. 2. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: obtain additional user interaction data from the user based at least upon an interaction with the second video content feature; and update the relationship score based at least upon the additional user interaction data. 3. The non-transitory computer-readable medium of claim 2 , wherein the additional user interaction data comprises user feedback expressing that the user favors at least one scene associated with the second video content feature. 4. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: identify an attribute associated with the recommended character; and send the attribute to the client to indicate a basis for the recommendation to the user. 5. The non-transitory computer-readable medium of claim 1 , wherein the user interaction data is obtained during a playback of the first video content feature via the client. 6. A system, comprising: at least one computing device; and at least one application executable in the at least one computing device, the at least one application causing the at least one computing device to: cause a first video content feature to be rendered in a user interface for display on a client; determine that a user prefers a first character based at least upon a first interaction data, the first character being represented by a corresponding first cast member of the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first interaction data; obtain second user interaction data from the client based at least in part upon an interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; determine that the user prefers a second character based at least upon the second interaction data, the second character being represented by a corresponding second cast member of a second video content feature; determine a relationship score based at least upon the first interaction data and the second interaction data, the relationship score quantifying a degree of commonality between the first character and the second character and being calculated based at least in part upon a proportion of users who have expressed a preference towards both the first character and the second character; and generate a recommendation to play at least one of the first video content feature or the second video content feature based at least upon the relationship score. 7. The system of claim 6 , wherein the at least one application further causes the at least one computing device to: store a first set of attributes associated with the first character; store a second set of attributes associated with the second character; and compare the first set of attributes to the second set of attributes. 8. The system of claim 6 , wherein the first interaction data comprises explicit user feedback expressing that the user favors the first character. 9. The system of claim 6 , wherein the first interaction data comprises at least one of consumption history data relating to a product associated with the first character or browse history data relating to a product associated with the first character. 10. The system of claim 6 , wherein the first interaction data comprises user feedback expressing that the user favors at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim",
+          "llm_cache_list": [
+            "default:extract:4a665eb9b6325343afd5a73cbd168366"
+          ],
+          "chunk_id": "US9374411B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9374411B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "c86c537652ef009d655d7cad38ff0880a71b88ff4bcca89a5d9d2d11f9f7d645"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 23,
+              "raw_line": "entity<|#|>Application<|#|>Artifact<|#|>Software executable in a computing device that causes the device to perform content recommendation functions.",
+              "fields": [
+                "entity",
+                "Application",
+                "Artifact",
+                "Software executable in a computing device that causes the device to perform content recommendation functions."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 51,
+              "raw_line": "relation<|#|>Application<|#|>Computing Device<|#|>executable in<|#|>The application is executable in the computing device and causes it to perform content recommendation functions.",
+              "fields": [
+                "relation",
+                "Application",
+                "Computing Device",
+                "executable in",
+                "The application is executable in the computing device and causes it to perform content recommendation functions."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 3547,
+              "chunk_char_end": 3978,
+              "text": "the user interaction data is obtained during a playback of the first video content feature via the client. 6. A system, comprising: at least one computing device; and at least one application executable in the at least one computing device, the at least one application causing the at least one computing device to: cause a first video content feature to be rendered in a user interface for display on a client; determine that a us"
+            },
+            {
+              "chunk_char_start": 3625,
+              "chunk_char_end": 4056,
+              "text": "tent feature via the client. 6. A system, comprising: at least one computing device; and at least one application executable in the at least one computing device, the at least one application causing the at least one computing device to: cause a first video content feature to be rendered in a user interface for display on a client; determine that a user prefers a first character based at least upon a first interaction data, the"
+            },
+            {
+              "chunk_char_start": 5276,
+              "chunk_char_end": 5707,
+              "text": "at least one of the first video content feature or the second video content feature based at least upon the relationship score. 7. The system of claim 6 , wherein the at least one application further causes the at least one computing device to: store a first set of attributes associated with the first character; store a second set of attributes associated with the second character; and compare the first set of attributes to the"
+            },
+            {
+              "chunk_char_start": 6171,
+              "chunk_char_end": 6602,
+              "text": "the first interaction data comprises user feedback expressing that the user favors at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the r"
+            },
+            {
+              "chunk_char_start": 6344,
+              "chunk_char_end": 6775,
+              "text": "st one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of cla"
+            }
+          ],
+          "lexical_occurrence_count": 5
+        },
+        {
+          "publication_number": "US9374411B1",
+          "full_doc_id": "US9374411B1",
+          "file_path": "US9374411B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 1200,
+          "content_sha256": "bbe6f2f25b0f58e297204d0c91d3cd176e3a59c7a39ef03093c9724efe2d9fe0",
+          "exact_doc_char_start": 6254,
+          "exact_doc_char_end": 12921,
+          "content": "at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim 11 , wherein the at least one application further causes the at least one computing device to: obtain additional user interaction data from the another user, the additional user interaction data being associated with a playback of at least one of the first video content feature or the second video content feature; and update the relationship score based at least upon the additional user interaction data. 13. The system of claim 6 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expressed a preference towards both the first character and the second character. 14. A method, comprising: causing, by at least one computing device, a first network content to be rendered in a user interface for display on a client; obtaining, by the at least one computing device, first user interaction data from the client based at least in part upon a first interaction with the first network content; associating, by the at least one computing device, a user with a user preferred character represented in a first network content based at least in part upon the first user interaction data; causing, by the at least one computing device, a timeline user interface that segments the first network content into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtaining, by the at least one computing device, second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene among the plurality of scenes; referencing, by the at least one computing device, a library to identify a recommended character based at least upon the user preferred character and the second interaction data, the recommended character being represented in a second network content, the library associating the user preferred character to the recommended character according to a relationship score, the relationship score being calculated based at least in part upon a proportion of users who have expressed a preference towards both the user preferred character and the recommended character; and sending, by the at least one computing device, a recommendation for presentation of the second network content. 15. The method of claim 14 , wherein the user preferred character is a preferred fictional character and wherein the recommended character is a recommended fictional character. 16. The method of claim 14 , wherein the second network content comprises a video content feature, an electronic book (e-book), or an audio book. 17. The method of claim 14 , wherein associating the user with the user preferred character comprises obtaining explicit user feedback expressing that the user favors the user preferred character. 18. The method of claim 14 , further comprising obtaining, by the at least one computing device, user interaction data from the user based at least upon the presentation of the second network content. 19. The method of claim 18 , further comprising updating, by the at least one computing device, the relationship score based at least upon the user interaction data. 20. The method of claim 14 , further comprising: storing, by the at least one computing device, a first set of attributes associated with the user preferred character; and storing, by the at least one computing device, a second set of attributes associated with the recommended character; and determining, by the at least one computing device, the relationship score based at least upon a comparison between the first set of attributes and the second set of attributes. 21. A non-transitory computer-readable medium having a plurality of computer instructions executable by at least one computing device, wherein upon execution, the plurality of computer instructions cause the at least one computing device to: cause a first media content to be rendered in a user interface for display on a client; obtain first interaction data from the client based at least upon a first interaction with the first media content; determine that a user prefers a first fictional character based at least upon the first interaction data, the first fictional character being associated with the first media content; cause a timeline user interface that segments the first media content into a plurality of scenes to be rendered in response to obtaining the first interaction data; obtain second interaction data from the client based at least upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; determine that the user prefers a second fictional character based at least upon the second interaction data, the second fictional character being associated with a second media content; determine a relationship score based at least upon the first interaction data and the second interaction data, the relationship score quantifying a degree of commonality between the first fictional character and the second fictional character and being calculated based at least in part upon a proportion of users who have expressed a preference towards both the first fictional character and the second fictional character; and generate a recommendation to present at least one of the first media content or the second media content to another user based at least upon the relationship score. 22. The non-transitory computer-readable medium of claim 21 , wherein the first media content comprises an electronic book (e-book). 23. The non-transitory computer-readable medium of claim 21 , wherein the plurality of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at",
+          "llm_cache_list": [
+            "default:extract:fc07aa368ab1fc09d1e01381471bcdbc"
+          ],
+          "chunk_id": "US9374411B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US9374411B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "3deebe5a4f4731377e367025201bb18e9f1a104d6efd17f64930a9d99b9b4a17"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 2,
+              "raw_line": "entity<|#|>Application<|#|>Artifact<|#|>Software executed by a computing device that causes it to perform content rendering, character identification, and recommendation generation.",
+              "fields": [
+                "entity",
+                "Application",
+                "Artifact",
+                "Software executed by a computing device that causes it to perform content rendering, character identification, and recommendation generation."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 28,
+              "raw_line": "relation<|#|>Application<|#|>Computing Device<|#|>execution, causation<|#|>The application is executed by the computing device and causes it to perform various operations.",
+              "fields": [
+                "relation",
+                "Application",
+                "Computing Device",
+                "execution, causation",
+                "The application is executed by the computing device and causes it to perform various operations."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 348,
+              "text": "at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the r"
+            },
+            {
+              "chunk_char_start": 90,
+              "chunk_char_end": 521,
+              "text": "st one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of cla"
+            },
+            {
+              "chunk_char_start": 374,
+              "chunk_char_end": 805,
+              "text": "user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim 11 , wherein the at least one application further causes the at least one computing device to: obtain additional user interaction data from the another user, the additional user interaction data being associated with a playback of at least one of the first video content feature or"
+            }
+          ],
+          "lexical_occurrence_count": 3
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "The application is executable in the computing device and causes it to perform content recommendation functions.<SEP>The application is executed by the computing device and causes it to perform various operations.",
+          "keywords": "causation,executable in,execution",
+          "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Application",
+          "target": "Computing Device",
+          "edge_index": 431,
+          "source_chunks": [
+            "US9374411B1-chunk-000",
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 2.0,
+      "description": "The application is associated with the mobile device and is in operative communication with its camera.<SEP>The application is associated with the mobile device.",
+      "keywords": "association",
+      "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+      "file_path": "US8917913B2.txt",
+      "created_at": 1793284306,
+      "truncate": "",
+      "source": "Mobile Device",
+      "target": "Application",
+      "edge_index": 73,
+      "source_chunks": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8917913B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The application is in operative communication with the camera and receives source images from it.",
+      "keywords": "image reception,operative communication",
+      "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+      "file_path": "US8917913B2.txt",
+      "created_at": 1793284309,
+      "truncate": "",
+      "source": "Application",
+      "target": "Camera",
+      "edge_index": 426,
+      "source_chunks": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8917913B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The application provides a user interface and receives friend identifiers and friend level indicators from it.<SEP>The application provides a user interface and receives search terms or friend identifiers from it.",
+      "keywords": "data reception,provides,provision",
+      "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+      "file_path": "US8917913B2.txt",
+      "created_at": 1793284309,
+      "truncate": "",
+      "source": "Application",
+      "target": "User Interface",
+      "edge_index": 427,
+      "source_chunks": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8917913B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The Internet access mechanism is in operative communication with the application.",
+      "keywords": "operative communication",
+      "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+      "file_path": "US8917913B2.txt",
+      "created_at": 1793284309,
+      "truncate": "",
+      "source": "Application",
+      "target": "Internet Access Mechanism",
+      "edge_index": 428,
+      "source_chunks": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8917913B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The application receives at least one friend identifier from the user interface.",
+      "keywords": "reception",
+      "source_id": "US8917913B2-chunk-001",
+      "file_path": "US8917913B2.txt",
+      "created_at": 1793284309,
+      "truncate": "",
+      "source": "Application",
+      "target": "Friend Identifier",
+      "edge_index": 429,
+      "source_chunks": [
+        "US8917913B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8917913B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The application receives at least one source image from the camera.",
+      "keywords": "reception",
+      "source_id": "US8917913B2-chunk-001",
+      "file_path": "US8917913B2.txt",
+      "created_at": 1793284309,
+      "truncate": "",
+      "source": "Application",
+      "target": "Source Image",
+      "edge_index": 430,
+      "source_chunks": [
+        "US8917913B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8917913B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The application is executable in the computing device and causes it to perform content recommendation functions.<SEP>The application is executed by the computing device and causes it to perform various operations.",
+      "keywords": "causation,executable in,execution",
+      "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "Application",
+      "target": "Computing Device",
+      "edge_index": 431,
+      "source_chunks": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

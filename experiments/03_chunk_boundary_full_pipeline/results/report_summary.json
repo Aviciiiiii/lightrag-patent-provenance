@@ -1,0 +1,17 @@
+{
+  "generated_utc": "2026-10-30T03:51:03.902510+00:00",
+  "path": "<DOT_WORKDIR>/round4_full_20261030/report/LightRAG_patent_provenance_report_zh.html",
+  "sha256": "04ccbd962b2bc0cc0519e8a740ada6654aa7c3d656ff40dbec22a6c60718913e",
+  "bytes": 258236,
+  "completed_indexes": 18,
+  "mix_queries": 18,
+  "naive_queries": 18,
+  "forced_diagnostics": 18,
+  "expected_indexes": 18,
+  "all_runtime_components_completed": true,
+  "truncated_runs": 2,
+  "clean_paired_comparisons": 7,
+  "english_words": 88,
+  "new_M01_runs": 0,
+  "historical_M01_not_repeated": true
+}

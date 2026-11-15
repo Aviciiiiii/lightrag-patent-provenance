@@ -1,0 +1,295 @@
+{
+  "audit_id": "N021",
+  "node_id": "Payment",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两篇 payment 都是经济报酬/款项支付，一篇与商品购买或点击相关，另一篇为专家诊断报酬。收付双方和触发条件不同，但共同货币支付类有直接原文支持，不能因交易场景不同判为语义冲突。",
+  "class_instance_interpretation_zh": "共享支付类；各篇付款行为、付款人、收款人及触发条件保持独立。",
+  "source_assessments": [
+    {
+      "publication_number": "US8095432B1",
+      "evidence_quote": "receiving a payment upon a purchase of the item from the inquiring member",
+      "claim_or_section": "Claim 13",
+      "claim_number": 13,
+      "role_zh": "商品购买/点击关联的款项。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8095432B1-chunk-000"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8095432B1-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8095432B1.json",
+        "claim_file_sha256": "d1aeb116b21db2124fd894640e5cdc35ae864c3dcd09f3574124493022707585",
+        "claim_number": 13
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claims 13,14 直接支持原实体及 Payment—Item/Inquiring Member 邻边。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 21,
+            "raw_line": "entity<|#|>Payment<|#|>Concept<|#|>Money received upon a purchase of an item or for each click associated with an item.",
+            "fields": [
+              "entity",
+              "Payment",
+              "Concept",
+              "Money received upon a purchase of an item or for each click associated with an item."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 52,
+            "raw_line": "relation<|#|>Inquiring Member<|#|>Payment<|#|>provides<|#|>A payment is received upon a purchase of the item from the inquiring member.",
+            "fields": [
+              "relation",
+              "Inquiring Member",
+              "Payment",
+              "provides",
+              "A payment is received upon a purchase of the item from the inquiring member."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 58,
+            "raw_line": "relation<|#|>Payment<|#|>Item<|#|>for purchase or click<|#|>Payment is received upon purchase of the item or for each click associated with the item.",
+            "fields": [
+              "relation",
+              "Payment",
+              "Item",
+              "for purchase or click",
+              "Payment is received upon purchase of the item or for each click associated with the item."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "A payment is received upon a purchase of the item from the inquiring member.",
+          "keywords": "provides",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Inquiring Member",
+          "target": "Payment",
+          "edge_index": 275,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Payment is received upon purchase of the item or for each click associated with the item.",
+          "keywords": "for purchase or click",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Item",
+          "target": "Payment",
+          "edge_index": 301,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8095432B1-chunk-000",
+          "sha256": "870959f01fdf22e55223e95ba2ca5f25438debf5d1fc2aec28abb31eac4e2c83",
+          "characters": 6336
+        }
+      ]
+    },
+    {
+      "publication_number": "US9589231B2",
+      "evidence_quote": "providing for making a payment to the expert for formulating the diagnosis",
+      "claim_or_section": "Claim 13",
+      "claim_number": 13,
+      "role_zh": "选择专家查询时为诊断专家付费。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9589231B2-chunk-000"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9589231B2-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9589231B2.json",
+        "claim_file_sha256": "6ffab90b44ab1b42f178a3876033f97c0a2a5b30908b21046af4aed39e994d6b",
+        "claim_number": 13
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "Claim 13 明确给出专家报酬条件，原抽取忠实。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9589231B2-chunk-000",
+            "raw_record_id": "default:extract:5755060403a52e2ec1fe0d15204b9eff",
+            "cache_key": "default:extract:5755060403a52e2ec1fe0d15204b9eff",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 17,
+            "raw_line": "entity<|#|>Payment<|#|>Concept<|#|>A payment made to an expert for formulating a diagnosis when the query-for-experts is selected.",
+            "fields": [
+              "entity",
+              "Payment",
+              "Concept",
+              "A payment made to an expert for formulating a diagnosis when the query-for-experts is selected."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9589231B2-chunk-000",
+            "raw_record_id": "default:extract:5755060403a52e2ec1fe0d15204b9eff",
+            "cache_key": "default:extract:5755060403a52e2ec1fe0d15204b9eff",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 39,
+            "raw_line": "relation<|#|>Query-For-Experts<|#|>Payment<|#|>provides for<|#|>When query-for-experts is selected, provision is made for making a payment to the expert for formulating the diagnosis.",
+            "fields": [
+              "relation",
+              "Query-For-Experts",
+              "Payment",
+              "provides for",
+              "When query-for-experts is selected, provision is made for making a payment to the expert for formulating the diagnosis."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 1
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "When query-for-experts is selected, provision is made for making a payment to the expert for formulating the diagnosis.",
+          "keywords": "provides for",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Payment",
+          "target": "Query-For-Experts",
+          "edge_index": 335,
+          "source_chunks": [
+            "US9589231B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9589231B2-chunk-000",
+          "sha256": "4b8801b6f9af5b47586773582b57626a8b88aa3adcf5641b0301ea63536f59d7",
+          "characters": 6070
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 3,
+    "observed_unsupported_edge": false,
+    "details_zh": "已逐条审阅实际邻边及其 source_id。未确认一条缺少其自身来源支持的边；合并后的跨文档邻接不能当成已发生错误边传播的证据。",
+    "edge_indices": [
+      275,
+      301,
+      335
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 275,
+        "source_id": "US8095432B1-chunk-000",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8095432B1 Claim 13",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 301,
+        "source_id": "US8095432B1-chunk-000",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8095432B1 Claims 13,14",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 335,
+        "source_id": "US9589231B2-chunk-000",
+        "canonical_publications": [
+          "US9589231B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9589231B2 Claim 13",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      }
+    ],
+    "retrieval_or_generation_propagation_tested": false
+  },
+  "limitations_zh": [
+    "这是 AI 辅助原文/抽取/图结构审阅，非独立人工标注 gold、非新的模型评判 API 实验。",
+    "仅审核当前保存的第二轮图快照与其来源块；概念合并不等于实例 sameAs，也没有进行跨专利路径检索或答案生成传播实验。",
+    "原文为已索引摘要及 Claims；没有用外部说明书填补缺失事实。原始文本中的格式缺陷保持原样。",
+    "边的端点顺序来自保存的无向图；语义方向按原关系描述核对，不把 source/target 字段顺序当作因果方向。",
+    "observed_unsupported_edge=false 表示本次检查未确认无原文支持的实际边，不是证明全图无误；关键词粒度/局部实施例范围的警示另记。",
+    "未给定显式类/实例 ontology。类别是基于具体词义及作用域的审阅标签，contextual_conflation 数量不是错误边数或代码 bug 率；Event/Network 的宽类解释可改变类别。",
+    "缓存提取行未保存 finish_reason 时不推定完整或截断；本审核只对实际保存的实体/关系行与当前已入图事实作语义核验。"
+  ],
+  "ontology_sensitivity": {
+    "explicit_ontology_available": false,
+    "alternative_shared_broad_class_plausible": false,
+    "interpretation_zh": "类别只描述现有证据下的概念语义，未断言跨专利实例相同或已发生错误推理。"
+  },
+  "review_method": {
+    "reviewer": "AI-assisted Codex content review",
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "all_source_publications_reviewed": 2,
+    "all_source_chunks_reviewed": 2,
+    "all_actual_incident_edges_reviewed": 3,
+    "raw_input_kind": "saved extraction rows; no new extraction",
+    "review_protocol_sha256": "bbed066b8051df60997798d319549164d750797ebef3d7c1e86d69ffc6092255",
+    "dossier_sha256": "57bfc2307be3b1f9f9440fa6bda1e3646613cc730a9cd6b87e9307bc5d40f227",
+    "generated_utc": "2026-10-30T08:21:11.050688+00:00"
+  },
+  "graph_node_description_reviewed": "Money received upon a purchase of an item or for each click associated with an item.<SEP>A payment made to an expert for formulating a diagnosis when the query-for-experts is selected."
+}

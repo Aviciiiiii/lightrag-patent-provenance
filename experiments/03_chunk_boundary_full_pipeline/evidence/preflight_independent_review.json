@@ -1,0 +1,933 @@
+{
+  "reviewed_utc": "2026-10-30T03:26:15.403652+00:00",
+  "reviewer": "round4_full_preflight independent offline audit",
+  "status": "passed_all_three_frozen_full_document_pairs",
+  "source_frozen_sha256": "6e19c671647ab590dc04350feaa43d4e063d4b0cb35b74c19520e65f78d2d071",
+  "candidate_file_sha256": "1f87d3cbf84b9ffc9486d4d8ebac3e8b926b7367528dceb2030415c5f9c68b94",
+  "candidate_file_matches_manual_review": true,
+  "tokenizer": "o200k_base",
+  "python": "<TMP>/lightrag-envdiag-20261030/venv/bin/python",
+  "rows": [
+    {
+      "id": "F01",
+      "publication_number": "US9589231B2",
+      "status": "passed_offline_preflight",
+      "source_scope": "Complete second-round indexed publication/title/abstract/all-Claims document, not full patent specification",
+      "source_path": "data/documents/US9589231B2.txt",
+      "content_sha256": "c4fcb632f7dfcb1f9b2fcadf4af1b951f6e735c604f10a9f3f18aa2816d75391",
+      "total_tokens": 1719,
+      "checks": {
+        "content_matches_complete_original_indexed_document_after_recorded_strip": true,
+        "content_sha_matches_frozen": true,
+        "raw_sha_matches_frozen": true,
+        "full_token_roundtrip_identical": true,
+        "total_tokens_match": true,
+        "forced_diagnostic_contains_only_original_claims": true,
+        "B_has_no_partial_joint_frozen_anchor": true
+      },
+      "conditions": {
+        "A": {
+          "chunk_count": 2,
+          "lengths": [
+            1200,
+            619
+          ],
+          "global_spans": [
+            [
+              0,
+              1200
+            ],
+            [
+              1100,
+              1719
+            ]
+          ],
+          "source_sequence_reconstruction_identical": true,
+          "all_chunks_at_most1200": true,
+          "all_adjacent_global_overlap_exactly100": true,
+          "each_anchor_wholly_available": true,
+          "dual_partial_anchor_chunk_indices": [
+            0
+          ],
+          "source_tokens_processed": 1819,
+          "chunks": [
+            {
+              "index": 0,
+              "token_span": [
+                0,
+                1200
+              ],
+              "char_span": [
+                0,
+                6070
+              ],
+              "actual_tokens": 1200,
+              "partial_intersections": {
+                "A": [
+                  [
+                    2389,
+                    2492
+                  ]
+                ],
+                "B": [
+                  [
+                    3247,
+                    3311
+                  ]
+                ]
+              },
+              "has_partial_both_families": true,
+              "sha256": "4b8801b6f9af5b47586773582b57626a8b88aa3adcf5641b0301ea63536f59d7"
+            },
+            {
+              "index": 1,
+              "token_span": [
+                1100,
+                1719
+              ],
+              "char_span": [
+                5562,
+                8799
+              ],
+              "actual_tokens": 619,
+              "partial_intersections": {
+                "A": [],
+                "B": []
+              },
+              "has_partial_both_families": false,
+              "sha256": "6bb9b206968b403b673bc1d7e93903a48337262f6585224c5f82feb173cd3b3e"
+            }
+          ]
+        },
+        "B": {
+          "chunk_count": 2,
+          "lengths": [
+            636,
+            1183
+          ],
+          "global_spans": [
+            [
+              0,
+              636
+            ],
+            [
+              536,
+              1719
+            ]
+          ],
+          "source_sequence_reconstruction_identical": true,
+          "all_chunks_at_most1200": true,
+          "all_adjacent_global_overlap_exactly100": true,
+          "each_anchor_wholly_available": true,
+          "dual_partial_anchor_chunk_indices": [],
+          "source_tokens_processed": 1819,
+          "chunks": [
+            {
+              "index": 0,
+              "token_span": [
+                0,
+                636
+              ],
+              "char_span": [
+                0,
+                3246
+              ],
+              "actual_tokens": 636,
+              "partial_intersections": {
+                "A": [
+                  [
+                    2389,
+                    2492
+                  ]
+                ],
+                "B": []
+              },
+              "has_partial_both_families": false,
+              "sha256": "cfd47fe431c7d05c00ada24b8df8db5d7e4515f8b30ac8b4020dd7623ed89dca"
+            },
+            {
+              "index": 1,
+              "token_span": [
+                536,
+                1719
+              ],
+              "char_span": [
+                2711,
+                8799
+              ],
+              "actual_tokens": 1183,
+              "partial_intersections": {
+                "A": [],
+                "B": [
+                  [
+                    3247,
+                    3311
+                  ]
+                ]
+              },
+              "has_partial_both_families": false,
+              "sha256": "ccff9ea5af7719e1ca76d82dd645c1c64ad561376bc23a0cfae8fa97e7e39e8a"
+            }
+          ]
+        }
+      },
+      "anchors": [
+        {
+          "family": "A",
+          "char_span": [
+            2389,
+            2492
+          ],
+          "token_span": [
+            473,
+            491
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "embedding of the existing medical cases and the set of experts being also based on the medical ontology"
+        },
+        {
+          "family": "B",
+          "char_span": [
+            3247,
+            3311
+          ],
+          "token_span": [
+            636,
+            646
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "medical ontology is based on the Unified Medical Language System"
+        }
+      ],
+      "frozen_query": "In US9589231B2, how are the existing medical cases and the set of experts embedded with respect to an ontology, and what named terminology system underlies that ontology? Identify the supporting claims and distinguish the explicit technical chain from an inferred shortcut relation.",
+      "frozen_technical_predicate": "Existing Medical Cases and the Set of Experts are embedded based on Medical Ontology; Medical Ontology is based on Unified Medical Language System. Require both existing-case and expert roles (or an explicit combined role) plus the ontology-to-UMLS predicate. Do not substitute a new-case-only relation; a direct expert/case-to-UMLS shortcut is optional and inferential.",
+      "required_component_predicates": [
+        "Existing medical cases are embedded based on Medical Ontology (explicitClaim4).",
+        "Set of Experts is embedded based on Medical Ontology (sameexplicitClaim4clause).",
+        "Medical Ontology is based on Unified Medical Language System (Claim8, expressly ofClaim4)."
+      ],
+      "forbidden_inferred_required_edge": "Do not require direct existing-case/expert-to-UMLS shortcut. A new-case-only ontology edge does not satisfy the existing-case/expert target.",
+      "forced_diagnostic_original_text": "4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology.\n\n8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System.",
+      "forced_diagnostic_claims": [
+        4,
+        8
+      ],
+      "manually_reviewed_claims": [
+        4,
+        6,
+        8
+      ],
+      "semantic_limitation": "Claim6 references existing-case/expert representations for comparison but applies its ontology-concept proximity matrix specifically to the NEW case. It is relatedcontext, not another explicit ontology-basis statement for existing-case/expert embeddings. Broader inference remains possible; no universal semantic-isolation guarantee.",
+      "semantic_equivalence_exhaustively_excluded": false,
+      "requires_same_chunk_to_exist_logically": false
+    },
+    {
+      "id": "F04",
+      "publication_number": "US8509827B2",
+      "status": "passed_offline_preflight",
+      "source_scope": "Complete second-round indexed publication/title/abstract/all-Claims document, not full patent specification",
+      "source_path": "data/documents/US8509827B2.txt",
+      "content_sha256": "5a71bb3859364643cc26928be54a07c3bb4c84945dcae928532de56441f3aa0a",
+      "total_tokens": 1326,
+      "checks": {
+        "content_matches_complete_original_indexed_document_after_recorded_strip": true,
+        "content_sha_matches_frozen": true,
+        "raw_sha_matches_frozen": true,
+        "full_token_roundtrip_identical": true,
+        "total_tokens_match": true,
+        "forced_diagnostic_contains_only_original_claims": true,
+        "B_has_no_partial_joint_frozen_anchor": true
+      },
+      "conditions": {
+        "A": {
+          "chunk_count": 2,
+          "lengths": [
+            1200,
+            226
+          ],
+          "global_spans": [
+            [
+              0,
+              1200
+            ],
+            [
+              1100,
+              1326
+            ]
+          ],
+          "source_sequence_reconstruction_identical": true,
+          "all_chunks_at_most1200": true,
+          "all_adjacent_global_overlap_exactly100": true,
+          "each_anchor_wholly_available": true,
+          "dual_partial_anchor_chunk_indices": [
+            0,
+            1
+          ],
+          "source_tokens_processed": 1426,
+          "chunks": [
+            {
+              "index": 0,
+              "token_span": [
+                0,
+                1200
+              ],
+              "char_span": [
+                0,
+                6249
+              ],
+              "actual_tokens": 1200,
+              "partial_intersections": {
+                "A": [
+                  [
+                    1458,
+                    1504
+                  ],
+                  [
+                    4817,
+                    4863
+                  ],
+                  [
+                    6133,
+                    6165
+                  ]
+                ],
+                "B": [
+                  [
+                    3663,
+                    3732
+                  ]
+                ]
+              },
+              "has_partial_both_families": true,
+              "sha256": "6773cf78665bbb35e2353f276d6c19b21d69539b45a17c7fb0645c99c7afd791"
+            },
+            {
+              "index": 1,
+              "token_span": [
+                1100,
+                1326
+              ],
+              "char_span": [
+                5733,
+                6895
+              ],
+              "actual_tokens": 226,
+              "partial_intersections": {
+                "A": [
+                  [
+                    6133,
+                    6165
+                  ]
+                ],
+                "B": [
+                  [
+                    6689,
+                    6759
+                  ]
+                ]
+              },
+              "has_partial_both_families": true,
+              "sha256": "f0129c4580519fb3d8fb0d51b61a5a90a1a2c5f87e22d7aaf91e2c0152a11371"
+            }
+          ]
+        },
+        "B": {
+          "chunk_count": 4,
+          "lengths": [
+            712,
+            315,
+            456,
+            143
+          ],
+          "global_spans": [
+            [
+              0,
+              712
+            ],
+            [
+              612,
+              927
+            ],
+            [
+              827,
+              1283
+            ],
+            [
+              1183,
+              1326
+            ]
+          ],
+          "source_sequence_reconstruction_identical": true,
+          "all_chunks_at_most1200": true,
+          "all_adjacent_global_overlap_exactly100": true,
+          "each_anchor_wholly_available": true,
+          "dual_partial_anchor_chunk_indices": [],
+          "source_tokens_processed": 1626,
+          "chunks": [
+            {
+              "index": 0,
+              "token_span": [
+                0,
+                712
+              ],
+              "char_span": [
+                0,
+                3662
+              ],
+              "actual_tokens": 712,
+              "partial_intersections": {
+                "A": [
+                  [
+                    1458,
+                    1504
+                  ]
+                ],
+                "B": []
+              },
+              "has_partial_both_families": false,
+              "sha256": "177a26f82458f6073aa1b8fe1829c7fa526c94c2229f4caf6ca97cc1f5f53125"
+            },
+            {
+              "index": 1,
+              "token_span": [
+                612,
+                927
+              ],
+              "char_span": [
+                3163,
+                4816
+              ],
+              "actual_tokens": 315,
+              "partial_intersections": {
+                "A": [],
+                "B": [
+                  [
+                    3663,
+                    3732
+                  ]
+                ]
+              },
+              "has_partial_both_families": false,
+              "sha256": "53aad6550b1418ce89080c814401d4a9a7d582aba6b81f4f933072c5ce916e2c"
+            },
+            {
+              "index": 2,
+              "token_span": [
+                827,
+                1283
+              ],
+              "char_span": [
+                4239,
+                6688
+              ],
+              "actual_tokens": 456,
+              "partial_intersections": {
+                "A": [
+                  [
+                    4817,
+                    4863
+                  ],
+                  [
+                    6133,
+                    6165
+                  ]
+                ],
+                "B": []
+              },
+              "has_partial_both_families": false,
+              "sha256": "fa409cfc253169bf5c4aaa66a52cd969d2488f3afbc2d1969f8ec903d48bf420"
+            },
+            {
+              "index": 3,
+              "token_span": [
+                1183,
+                1326
+              ],
+              "char_span": [
+                6165,
+                6895
+              ],
+              "actual_tokens": 143,
+              "partial_intersections": {
+                "A": [],
+                "B": [
+                  [
+                    6689,
+                    6759
+                  ]
+                ]
+              },
+              "has_partial_both_families": false,
+              "sha256": "0e2c7de944d3f57998bb252c3b3a5dd16e4bf70602a6246c5c0ea45c4d558366"
+            }
+          ]
+        }
+      },
+      "anchors": [
+        {
+          "family": "A",
+          "char_span": [
+            1458,
+            1504
+          ],
+          "token_span": [
+            276,
+            284
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "specified parameter comprises a pecuniary cost"
+        },
+        {
+          "family": "A",
+          "char_span": [
+            4817,
+            4863
+          ],
+          "token_span": [
+            927,
+            935
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "specified parameter comprises a pecuniary cost"
+        },
+        {
+          "family": "A",
+          "char_span": [
+            6133,
+            6165
+          ],
+          "token_span": [
+            1178,
+            1183
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "metric comprises a monetary cost"
+        },
+        {
+          "family": "B",
+          "char_span": [
+            3663,
+            3732
+          ],
+          "token_span": [
+            712,
+            725
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "cost value of the context data as provided by the context-data source"
+        },
+        {
+          "family": "B",
+          "char_span": [
+            6689,
+            6759
+          ],
+          "token_span": [
+            1283,
+            1296
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "context-data provider is allowed to provide a cost of the context-data"
+        }
+      ],
+      "frozen_query": "In US8509827B2, how does monetary cost enter context-data selection or ranking, and which source or provider can supply the cost value? Identify the supporting claims and keep separate the ranking criterion and the supplier of that criterion.",
+      "frozen_technical_predicate": "Context-data Ranking/Selection uses a monetary/pecuniary Cost criterion; Context-data Source/Provider supplies the Cost value. Claim14 expressly depends on Claim1; score these explicit component edges joined through Cost, not a mandatory inferred provider-to-ranking shortcut.",
+      "required_component_predicates": [
+        "Context-data ranking/selection uses a pecuniary/monetary cost criterion (Claims1/18/22).",
+        "Cost value is provided by context-data source/provider (Claims14/25); Claim14 expressly depends on1."
+      ],
+      "forbidden_inferred_required_edge": "Do not require a provider-to-ranking shortcut or infer a specific pricing algorithm.",
+      "forced_diagnostic_original_text": "1. A method comprising: receiving a short message from a mobile device with a server; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type from the at least one context data source.\n\n14. The method of claim 1 , wherein the specified parameter comprises a cost value of the context data as provided by the context-data source.\n\n18. A computerized-apparatus comprising: at least one memory having program instructions, and at least one processor configured to execute the program instructions to perform the operations of: receiving a short message from a mobile device; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type to the at least one context data source.\n\n22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the context-data is obtained by a physical sensor; linking the relevant context data to the short message; and formatting the relevant context data and the short message according to a communication protocol.\n\n25. The method of claim 22 , wherein the at least one context-data provider is allowed to provide a cost of the context-data.",
+      "forced_diagnostic_claims": [
+        1,
+        14,
+        18,
+        22,
+        25
+      ],
+      "manually_reviewed_claims": [
+        1,
+        14,
+        18,
+        22,
+        25
+      ],
+      "semantic_limitation": "Claim14 itself describes supplier-provided cost as the specified parameter; thus B retains semantic parameter/cost information in its supplier anchor. This is a component-chain/redundancy control, not a clean necessary-two-fragment relation-loss test.",
+      "semantic_equivalence_exhaustively_excluded": false,
+      "requires_same_chunk_to_exist_logically": false
+    },
+    {
+      "id": "F05",
+      "publication_number": "US8069128B2",
+      "status": "passed_offline_preflight",
+      "source_scope": "Complete second-round indexed publication/title/abstract/all-Claims document, not full patent specification",
+      "source_path": "data/documents/US8069128B2.txt",
+      "content_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+      "total_tokens": 1645,
+      "checks": {
+        "content_matches_complete_original_indexed_document_after_recorded_strip": true,
+        "content_sha_matches_frozen": true,
+        "raw_sha_matches_frozen": true,
+        "full_token_roundtrip_identical": true,
+        "total_tokens_match": true,
+        "forced_diagnostic_contains_only_original_claims": true,
+        "B_has_no_partial_joint_frozen_anchor": true
+      },
+      "conditions": {
+        "A": {
+          "chunk_count": 2,
+          "lengths": [
+            1200,
+            545
+          ],
+          "global_spans": [
+            [
+              0,
+              1200
+            ],
+            [
+              1100,
+              1645
+            ]
+          ],
+          "source_sequence_reconstruction_identical": true,
+          "all_chunks_at_most1200": true,
+          "all_adjacent_global_overlap_exactly100": true,
+          "each_anchor_wholly_available": true,
+          "dual_partial_anchor_chunk_indices": [
+            0
+          ],
+          "source_tokens_processed": 1745,
+          "chunks": [
+            {
+              "index": 0,
+              "token_span": [
+                0,
+                1200
+              ],
+              "char_span": [
+                0,
+                6639
+              ],
+              "actual_tokens": 1200,
+              "partial_intersections": {
+                "A": [
+                  [
+                    941,
+                    961
+                  ],
+                  [
+                    1599,
+                    1653
+                  ],
+                  [
+                    3665,
+                    3716
+                  ],
+                  [
+                    5661,
+                    5712
+                  ]
+                ],
+                "B": [
+                  [
+                    4880,
+                    4902
+                  ]
+                ]
+              },
+              "has_partial_both_families": true,
+              "sha256": "03d27b9af9a95fc99659dae87ae86cc8134f0f4319687342b04ae8d524454c1c"
+            },
+            {
+              "index": 1,
+              "token_span": [
+                1100,
+                1645
+              ],
+              "char_span": [
+                6096,
+                9043
+              ],
+              "actual_tokens": 545,
+              "partial_intersections": {
+                "A": [
+                  [
+                    7878,
+                    7929
+                  ]
+                ],
+                "B": []
+              },
+              "has_partial_both_families": false,
+              "sha256": "7fc3128dd12c094caa0580486185fd8a2142eb5035430a24748442afaa30e32b"
+            }
+          ]
+        },
+        "B": {
+          "chunk_count": 3,
+          "lengths": [
+            886,
+            239,
+            720
+          ],
+          "global_spans": [
+            [
+              0,
+              886
+            ],
+            [
+              786,
+              1025
+            ],
+            [
+              925,
+              1645
+            ]
+          ],
+          "source_sequence_reconstruction_identical": true,
+          "all_chunks_at_most1200": true,
+          "all_adjacent_global_overlap_exactly100": true,
+          "each_anchor_wholly_available": true,
+          "dual_partial_anchor_chunk_indices": [],
+          "source_tokens_processed": 1845,
+          "chunks": [
+            {
+              "index": 0,
+              "token_span": [
+                0,
+                886
+              ],
+              "char_span": [
+                0,
+                4879
+              ],
+              "actual_tokens": 886,
+              "partial_intersections": {
+                "A": [
+                  [
+                    941,
+                    961
+                  ],
+                  [
+                    1599,
+                    1653
+                  ],
+                  [
+                    3665,
+                    3716
+                  ]
+                ],
+                "B": []
+              },
+              "has_partial_both_families": false,
+              "sha256": "26ccb51ae867067fef8169d9d6b1724bea58a114f14675eb36c0cdd801de9b7d"
+            },
+            {
+              "index": 1,
+              "token_span": [
+                786,
+                1025
+              ],
+              "char_span": [
+                4363,
+                5660
+              ],
+              "actual_tokens": 239,
+              "partial_intersections": {
+                "A": [],
+                "B": [
+                  [
+                    4880,
+                    4902
+                  ]
+                ]
+              },
+              "has_partial_both_families": false,
+              "sha256": "48da639ca2fc9afaac543b6407ec73df83cb43377ce3a96c10d3e839ac0c49f9"
+            },
+            {
+              "index": 2,
+              "token_span": [
+                925,
+                1645
+              ],
+              "char_span": [
+                5085,
+                9043
+              ],
+              "actual_tokens": 720,
+              "partial_intersections": {
+                "A": [
+                  [
+                    5661,
+                    5712
+                  ],
+                  [
+                    7878,
+                    7929
+                  ]
+                ],
+                "B": []
+              },
+              "has_partial_both_families": false,
+              "sha256": "0053d7ad1618d79a4e75849aadf60d1a0669ab8eda1022f4384dfa1f3a3d8a23"
+            }
+          ]
+        }
+      },
+      "anchors": [
+        {
+          "family": "A",
+          "char_span": [
+            941,
+            961
+          ],
+          "token_span": [
+            176,
+            179
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "memory resident only"
+        },
+        {
+          "family": "A",
+          "char_span": [
+            1599,
+            1653
+          ],
+          "token_span": [
+            298,
+            307
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "reside exclusively in a non-persistent memory location"
+        },
+        {
+          "family": "A",
+          "char_span": [
+            3665,
+            3716
+          ],
+          "token_span": [
+            665,
+            674
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "reside exclusively in a non-persistent memory store"
+        },
+        {
+          "family": "A",
+          "char_span": [
+            5661,
+            5712
+          ],
+          "token_span": [
+            1025,
+            1034
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "reside exclusively in a non-persistent memory store"
+        },
+        {
+          "family": "A",
+          "char_span": [
+            7878,
+            7929
+          ],
+          "token_span": [
+            1426,
+            1435
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "reside exclusively in a non-persistent memory store"
+        },
+        {
+          "family": "B",
+          "char_span": [
+            4880,
+            4902
+          ],
+          "token_span": [
+            886,
+            891
+          ],
+          "quote_exactly_matches_span": true,
+          "all_exact_occurrences_accounted": true,
+          "original_span_text": "Naive Bayes classifier"
+        }
+      ],
+      "frozen_query": "In US8069128B2, which classifier can the multi-pass message filter employ, and where does its generated second classification data reside? Identify the supporting claims and distinguish the original persistent first-filter data from the temporary second-filter data.",
+      "frozen_technical_predicate": "Multi-pass Message Filter employs Naive Bayes Classifier (Claim10); the filter generates Second Classification Data residing exclusively in Non-persistent Memory (Claim6). Accept explicit linked component edges through the multi-pass filter/data, not a required inferred NaiveBayes-to-memory shortcut.",
+      "required_component_predicates": [
+        "Multi-pass Message Filter employs Naive Bayes Classifier (Claim10).",
+        "Multi-pass filter generates Second Classification Data (Claim6).",
+        "Second Classification Data resides exclusively in Non-persistent Memory (Claim6)."
+      ],
+      "forbidden_inferred_required_edge": "Do not require an inferred direct NaiveBayes-to-memory shortcut. Do not conflate first-filter persistent classification data with second-filter nonpersistent data.",
+      "forced_diagnostic_original_text": "6. A processor readable storage medium that includes data and instructions, wherein the execution of the instructions on a computing device provides for managing messages by enabling actions, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder.\n\n10. The processor readable storage medium of claim 6 , wherein the multi-pass message filter employs a Naive Bayes classifier.",
+      "forced_diagnostic_claims": [
+        6,
+        10
+      ],
+      "manually_reviewed_claims": [
+        1,
+        6,
+        7,
+        10,
+        11,
+        12,
+        17
+      ],
+      "semantic_limitation": "Claim7 deletion/inaccessibility and Claim11 model-generation information may remain nearNaiveBayes; these are related cues but not explicit exclusive memory-residency statements. No proof of semantic-equivalence completeness claimed.",
+      "semantic_equivalence_exhaustively_excluded": false,
+      "requires_same_chunk_to_exist_logically": false
+    }
+  ],
+  "minimum_control_exclusion": {
+    "publication_number": "US7991757B2",
+    "claim_pair": [
+      1,
+      27
+    ],
+    "full_document_anchor_enclosing_tokens": 1677,
+    "max_tokens": 1200,
+    "full_document_same_chunk_eligible": false,
+    "minimal_clipped_pair_remains_separate": true
+  },
+  "excluded_candidates": [
+    {
+      "id": "F02",
+      "publication_number": "US9514753B2",
+      "exclusion_reason": "Strict partial-anchor segregation impossible with100-token overlap: at leastoneanchor family approaches within100tokens of the other."
+    },
+    {
+      "id": "F03",
+      "publication_number": "US11423041B2",
+      "exclusion_reason": "Strict partial-anchor segregation impossible with100-token overlap: at leastoneanchor family approaches within100tokens of the other."
+    }
+  ],
+  "model_api_calls": 0,
+  "secret_reads": 0,
+  "original_file_writes": 0,
+  "review_limits": [
+    "Frozen literal anchors and all their exact occurrences are separated; does not prove every inferential or semantically equivalent cue is absent.",
+    "Gold is original-text grounded researcher-style AI-assisted criteria, not independent human annotation or model self-scoring.",
+    "Component-predicate co-retention and graph chaining are valid targets; no direct shortcut relation is required.",
+    "A/B have different local chunk lengths, potentially counts and total repeated tokens; compare these explicitly.",
+    "This audit does not certify any model run, parser success, merged graph or answer; verify actual runtime chunk audits and raw requests after execution.",
+    "The custom chunker receives only original content and numeric ranges; no gold predicates enter that callback. Actual extraction prompts require later inspection."
+  ]
+}

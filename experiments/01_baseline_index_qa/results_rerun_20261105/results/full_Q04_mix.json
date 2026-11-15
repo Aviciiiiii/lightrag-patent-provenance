@@ -1,0 +1,490 @@
+{
+  "question_id": "Q04",
+  "mode": "mix",
+  "question": "In US9514753B2, which claim explicitly specifies locality sensitive hash functions, and what exact wording supports this? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+  "started_utc": "2026-11-05T12:56:59.285547+00:00",
+  "finished_utc": "2026-11-05T12:57:07.353840+00:00",
+  "api_call_id_range": [
+    342,
+    344
+  ],
+  "result": {
+    "status": "success",
+    "message": "Query processed successfully",
+    "data": {
+      "entities": [
+        {
+          "entity_name": "Speaker Identification Using Hash-Based Indexing",
+          "entity_type": "content",
+          "description": "A patent (US9514753B2) describing methods, systems, and apparatus for performing speaker identification using hash-based indexing of speaker vectors.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882787
+        },
+        {
+          "entity_name": "Hash Functions",
+          "entity_type": "method",
+          "description": "Multiple different functions used to compute hash values; may include locality sensitive hash functions or functions based on positions of vectors with respect to hyperplanes.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882787
+        },
+        {
+          "entity_name": "Social Medical Network For Diagnosis Assistance",
+          "entity_type": "content",
+          "description": "The title of patent US9589231B2, referring to a network-based approach for assisting diagnosis through similarity matching of medical cases and experts.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        },
+        {
+          "entity_name": "Locality Sensitive Hash Functions",
+          "entity_type": "method",
+          "description": "A type of hash function used to determine hash values for vectors in the speaker identification method.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882787
+        },
+        {
+          "entity_name": "US9589231B2",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Social medical network for diagnosis assistance\" describing a method and system for assisting medical diagnosis by exploiting similarity between new medical cases and existing cases and experts in a common embedding space.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        },
+        {
+          "entity_name": "Hash Values",
+          "entity_type": "data",
+          "description": "Values determined for an utterance vector or speaker vector according to multiple different hash functions, used to look up speaker vectors in hash tables.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882787
+        },
+        {
+          "entity_name": "US9298709B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Computer system to visualize data from an IP rights database\" describing a system for visualizing IP rights data as a geographic map.",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "entity_name": "US9374411B1",
+          "entity_type": "content",
+          "description": "A patent document titled \"Content recommendations using deep data\" that discloses various embodiments for recommending content to users based on preferred characters and relationship scores.",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793883089
+        },
+        {
+          "entity_name": "Hash Tables",
+          "entity_type": "data",
+          "description": "A plurality of tables storing speaker vectors indexed by hash values, from which a set of speaker vectors is determined.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882787
+        },
+        {
+          "entity_name": "US7756837B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Methods and apparatus for searching backup data based on content and attributes\" that discloses transparent bridging of backup storage devices and extraction of management data from backup data-streams.",
+          "source_id": "US7756837B2-chunk-000",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793883179
+        },
+        {
+          "entity_name": "Search Retargeting Segment",
+          "entity_type": "concept",
+          "description": "A segment that includes a set of search keywords and for which a deliverable inventory is estimated.<SEP>A segment that includes a set of search keywords, received in a request for deliverable advertisement inventory for advertisements associated with the segment.",
+          "source_id": "US8880423B2-chunk-000<SEP>US8880423B2-chunk-001",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882917
+        },
+        {
+          "entity_name": "US8509827B2",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Methods and apparatus of context-data acquisition and ranking\" that discloses a system, method, and article of manufacture for acquiring and ranking context data based on a query derived from a short message.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793882765
+        },
+        {
+          "entity_name": "US8880423B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Inventory estimation for search retargeting\" that describes techniques for estimating advertisement inventory for search retargeting segments.",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882917
+        },
+        {
+          "entity_name": "US10778629B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Systems and methods for collation, translation, and analysis of passively created digital interaction and relationship data,\" describing methods for modeling relationships between e-mail users.",
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793883322
+        },
+        {
+          "entity_name": "Speaker Identity",
+          "entity_type": "concept",
+          "description": "The identity of a speaker determined based on associations between speaker vectors and respective speakers, corresponding to a selected speaker vector.<SEP>The identity of a speaker determined from the selected speaker vector and output as data.",
+          "source_id": "US9514753B2-chunk-000<SEP>US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882787
+        },
+        {
+          "entity_name": "US9304738B1",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Systems and methods for selecting content using weighted terms,\" describing techniques for evaluating information via a computer network using weighted keywords to select content for display.",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793882829
+        },
+        {
+          "entity_name": "Face Recognition",
+          "entity_type": "concept",
+          "description": "The technique of comparing representations of faces in a source image to representations of faces in member images to identify matching members.",
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793882952
+        },
+        {
+          "entity_name": "US8917913B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Searching with face recognition and social networking profiles\" describing systems for on-line searching using face recognition combined with social networking profiles.",
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793882952
+        },
+        {
+          "entity_name": "Inventory Estimation For Search Retargeting",
+          "entity_type": "content",
+          "description": "The title of the patent US8880423B2, referring to techniques for estimating advertisement inventory for search retargeting segments.",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882917
+        },
+        {
+          "entity_name": "Speaker Vector",
+          "entity_type": "data",
+          "description": "A vector derived from one or more utterances of a respective speaker, used to represent characteristics of that speaker's speech.<SEP>A vector derived from one or more utterances of a respective speaker, stored in hash tables and compared against an utterance vector to identify a speaker.",
+          "source_id": "US9514753B2-chunk-000<SEP>US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882787
+        },
+        {
+          "entity_name": "US8655901B1",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Translation-based query pattern mining\" describing technologies relating to search systems.",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793883238
+        },
+        {
+          "entity_name": "Utterance Vector",
+          "entity_type": "data",
+          "description": "A vector derived from an utterance, used as a query to compare against speaker vectors.<SEP>A vector derived from an utterance, used as the query representation in speaker identification; may be an i-vector or based on deep neural network activations.",
+          "source_id": "US9514753B2-chunk-000<SEP>US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882787
+        },
+        {
+          "entity_name": "Non-Transitory Computer Readable Medium",
+          "entity_type": "artifact",
+          "description": "A medium having instructions to evaluate information, comprising instructions to perform keyword identification, weight determination, ranking, and advertisement selection.<SEP>A computer readable medium storing instructions, referenced in claim 18 and claim 19.<SEP>A medium containing executable instructions that when executed perform a method of generating relationship data.<SEP>A medium containing executable instructions that when executed perform a method of modeling relationships between e-mail users.",
+          "source_id": "US9304738B1-chunk-001<SEP>US9304738B1-chunk-002<SEP>US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+          "file_path": "US9304738B1.txt<SEP>US10778629B2.txt",
+          "created_at": 1793883322
+        },
+        {
+          "entity_name": "Parked Domain Web Page",
+          "entity_type": "content",
+          "description": "A web page with a unique identifier that lacks content having keywords other than content provided via the data processing system; it displays advertisements and serves as the context for keyword weighting and advertisement selection.<SEP>A web page with a unique identifier that lacks content having keywords other than content provided via the data processing system, used as the information resource on which advertisements are displayed and evaluated.<SEP>A web page associated with a parked domain on which advertisements and keywords are displayed; keyword weights are specific to this page.",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001<SEP>US9304738B1-chunk-002",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793882829
+        },
+        {
+          "entity_name": "Data Processing System",
+          "entity_type": "artifact",
+          "description": "A computer system (10) that visualizes data from an IP rights database as a geographic map with a viewable area, comprising a map display change monitor, an IP rights list generator, and an information display generator.<SEP>A system with one or more processors and memory configured to evaluate information via a computer network, performing keyword identification, weight determination, ranking, and advertisement selection.<SEP>A computer-based system that detects user interest, identifies keywords, determines keyword weights, receives content requests, ranks keywords, and selects content such as advertisements for display with information resources.",
+          "source_id": "US9298709B2-chunk-000<SEP>US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9298709B2.txt<SEP>US9304738B1.txt",
+          "created_at": 1793882829
+        },
+        {
+          "entity_name": "Translation-Based Query Pattern Mining",
+          "entity_type": "concept",
+          "description": "A technique for mining query patterns across languages by translating annotated queries from a first language into a second language and extracting a translated query pattern from the aligned translated collection.",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793883236
+        }
+      ],
+      "relationships": [
+        {
+          "src_id": "Speaker Identification Using Hash-Based Indexing",
+          "tgt_id": "Speaker Vector",
+          "description": "The patent describes comparing speaker vectors in the set with the utterance vector and selecting a speaker vector.",
+          "keywords": "describes,uses",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882788
+        },
+        {
+          "src_id": "Hash Functions",
+          "tgt_id": "Locality Sensitive Hash Functions",
+          "description": "The hash functions may include one or more locality sensitive hash functions.",
+          "keywords": "includes",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882788
+        },
+        {
+          "src_id": "Data Processing System",
+          "tgt_id": "US9298709B2",
+          "description": "The patent document describes a data processing system to visualize data from an IP rights database.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793882742
+        },
+        {
+          "src_id": "Hash Values",
+          "tgt_id": "Speaker Identification Using Hash-Based Indexing",
+          "description": "The patent describes determining hash values for the utterance vector according to multiple different hash functions.",
+          "keywords": "describes,uses",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882788
+        },
+        {
+          "src_id": "Data Processing System",
+          "tgt_id": "US9304738B1",
+          "description": "The patent publication describes systems and methods involving the data processing system for selecting content using weighted terms.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793882829
+        },
+        {
+          "src_id": "Hash Tables",
+          "tgt_id": "Speaker Identification Using Hash-Based Indexing",
+          "description": "The patent describes determining a set of speaker vectors from a plurality of hash tables using the hash values.",
+          "keywords": "describes,uses",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882788
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "US8509827B2",
+          "description": "The patent publication US8509827B2 discloses a system, method, and article of manufacture of context-data acquisition and ranking.",
+          "keywords": "describes,discloses",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793882766
+        },
+        {
+          "src_id": "Search Retargeting Segment",
+          "tgt_id": "US8880423B2",
+          "description": "The patent describes techniques for estimating advertisement inventory for search retargeting segments.",
+          "keywords": "describes,relates to",
+          "weight": 1.0,
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882922
+        },
+        {
+          "src_id": "Speaker Identification Using Hash-Based Indexing",
+          "tgt_id": "Utterance Vector",
+          "description": "The patent describes obtaining an utterance vector derived from an utterance as part of speaker identification.",
+          "keywords": "describes,uses",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882787
+        },
+        {
+          "src_id": "Speaker Identification Using Hash-Based Indexing",
+          "tgt_id": "Speaker Identity",
+          "description": "The patent describes determining a speaker identity corresponding to the selected speaker vector and outputting data indicating the speaker identity.",
+          "keywords": "describes,outputs",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882788
+        },
+        {
+          "src_id": "Face Recognition",
+          "tgt_id": "US8917913B2",
+          "description": "The patent document describes searching with face recognition and social networking profiles.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793882952
+        },
+        {
+          "src_id": "Diagnosis Assistance Method",
+          "tgt_id": "US9589231B2",
+          "description": "The patent US9589231B2 describes a method for diagnosis assistance exploiting similarity between new medical cases and existing cases and experts.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        },
+        {
+          "src_id": "Inventory Estimation For Search Retargeting",
+          "tgt_id": "US8880423B2",
+          "description": "The patent US8880423B2 has the title \"Inventory estimation for search retargeting\" and describes techniques for estimating advertisement inventory.",
+          "keywords": "describes,has title",
+          "weight": 1.0,
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882919
+        },
+        {
+          "src_id": "Relationship Modeling Program",
+          "tgt_id": "US10778629B2",
+          "description": "The patent document describes a relationship modeling program that assigns weights to characteristics of interaction data and provides a model of relationships between e-mail users.",
+          "keywords": "describes,discloses",
+          "weight": 1.0,
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793883322
+        },
+        {
+          "src_id": "Non-Transitory Computer Readable Medium",
+          "tgt_id": "Parked Domain Web Page",
+          "description": "The non-transitory computer readable medium of claim 18 relates to keyword weights specific to the parked domain web page.",
+          "keywords": "claim reference",
+          "weight": 1.0,
+          "source_id": "US9304738B1-chunk-002",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793882829
+        },
+        {
+          "src_id": "Content Recommendation System",
+          "tgt_id": "US9374411B1",
+          "description": "The patent document discloses various embodiments of the content recommendation system for recommending content for users.",
+          "keywords": "discloses",
+          "weight": 1.0,
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793883091
+        },
+        {
+          "src_id": "Social Networking Service",
+          "tgt_id": "US8917913B2",
+          "description": "The patent document describes systems interacting with a social networking service.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793882952
+        },
+        {
+          "src_id": "Translation-Based Query Pattern Mining",
+          "tgt_id": "US8655901B1",
+          "description": "The patent publication US8655901B1 is titled \"Translation-based query pattern mining\" and describes this technique.",
+          "keywords": "describes,title",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793883238
+        },
+        {
+          "src_id": "Social Medical Network For Diagnosis Assistance",
+          "tgt_id": "US9589231B2",
+          "description": "US9589231B2 is the publication number of the patent titled \"Social Medical Network for Diagnosis Assistance\".",
+          "keywords": "has title",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        }
+      ],
+      "chunks": [
+        {
+          "reference_id": "1",
+          "content": "Publication number: US9514753B2\nTitle: Speaker identification using hash-based indexing\n\nABSTRACT\nMethods, systems, and apparatus, including computer programs encoded on a computer storage medium, for performing speaker identification. In some implementations, an utterance vector that is derived from an utterance is obtained. Hash values are determined for the utterance vector according to multiple different hash functions. A set of speaker vectors from a plurality of hash tables is determined using the hash values, where each speaker vector was derived from one or more utterances of a respective speaker. The speaker vectors in the set are compared with the utterance vector. A speaker vector is selected based on comparing the speaker vectors in the set with the utterance vector.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: obtaining an utterance vector that is derived from an utterance; determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity. 2. The method of claim 1 , wherein obtaining the utterance vector comprises obtaining an utterance i-vector for the utterance, the utterance i-vector comprising parameters determined using multivariate factor analysis of the utterance; and wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises determining a set of speaker i-vectors from the plurality of hash tables, each speaker i-vector comprising parameters determined using multivariate factor analysis of one or more utterances of a respective speaker. 3. The method of claim 1 , wherein obtaining the utterance vector comprises obtaining an utterance vector comprising parameters determined based on deep neural network activations that occur in response to information about the utterance being provided to the deep neural network; and wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises determining a set of speaker vectors in which each speaker vector comprises parameters determined based on deep neural network activations that occur in response to information about one or more utterances of a respective speaker being provided to the deep neural network. 4. The method of claim 1 , further comprising: identifying one or more media items that include utterances of a speaker corresponding to the selected speaker vector; and outputting data indicating the identified one or more media items. 5. The method of claim 1 , further comprising: determining that the selected speaker vector corresponds to a particular user; and based at least in part on the determining that the selected speaker vector corresponds to a particular user identity, authenticating the particular user. 6. The method of claim 1 , wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions. 7. The method of claim 1 , wherein determining the hash values comprises determining the hash values based on a position of the utterance vector with respect to different hyperplanes. 8. The method of claim 1 , wherein determining the hash values comprises: determining first hash values for the utterance vector based on a first set of hash functions; and determining second hash values as different combinations of two or more of the first hash values; wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises determining the set of speaker vectors from the plurality of hash tables using the second hash values. 9. The method of claim 1 , wherein comparing the speaker vectors in the set with the utterance vector comprises determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set; and wherein selecting a speaker vector comprises selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector. 10. The method of claim 9 , wherein determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set comprises determining a cosine distance between the utterance vector and each of the speaker vectors in the set. 11. The method of claim 10 , wherein selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector comprises: identifying a smallest cosine distance from among the determined cosine distances; determining that the smallest cosine distance is less than a maximum distance threshold value; and based on determining that the smallest cosine distance is less than the maximum distance threshold value, selecting the speaker vector corresponding to the smallest cosine distance. 12. The method of claim 1 , wherein each of the speaker vectors corresponds to a different speaker; and wherein the method further comprises providing data indicating that the speaker corresponding to the selected speaker vector is the speaker of the utterance. 13. The method of claim 1 , further comprising: obtaining multiple speaker vectors that each indicate characteristics of speech of a respective speaker; and for each particular speaker vector of the multiple speaker vectors: determining hash values for the particular speaker vector according to each of the multiple different hash functions; and inserting the particular speaker vector into each of the plurality of hash tables based on the hash values. 14. The method of claim 1 , wherein obtaining multiple speaker vectors that each indicate characteristics of speech of a respective speaker comprises: accessing a set of multiple video resources; and generating a speaker vector for each of the multiple video resources. 15. The method of claim 1 , wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises: determining a different speaker vector for each of the plurality of hash tables, wherein each of the different speaker vectors is determined using (i) a different hash value of the determined hash values and (",
+          "file_path": "US9514753B2.txt",
+          "chunk_id": "US9514753B2-chunk-000"
+        },
+        {
+          "reference_id": "2",
+          "content": "geographic location token and a search term token in an input query. 4. The method of claim 1 , further comprising: establishing the semi-supervised conditional random fields via one of a rule-based finite state machine model and a statistics-based conditional random field model. 5. The method of claim 4 , wherein the semi-supervised conditional random fields are established via utilizing systematic geographic parsing with the one of the rule-based finite state machine model and the statistics-based conditional random field model. 6. The method of claim 4 , wherein the statistics-based conditional random field model is utilized with class transition features learned from a labeled set of features and extracting at least one high-level language model as a state feature, thereby allowing at least one learned language model to be learned from at least one large-scale class-based log. 7. The method of claim 4 , wherein the rule based finite state machine model is utilized with a phrase level grammar to construct a phrase level grammar composition. 8. The method of claim 7 , further comprising: constructing the phrase level grammar, via the query parser derivation computing device, using a context free grammar composition. 9. The method of claim 4 , wherein the semi-supervised conditional random fields are utilized in a linear-chain Markov random field model. 10. The method of claim 1 , wherein for each label in L = argmax L â¢ â¢ P ( L â¢ ï Q ) . 11. The method of claim 10 , wherein the creating the conditional random field model comprises: characterizing, via the query parser derivation computing device, a conditional random field model of Q and L as a set of feature functions fk, each having a corresponding weight Î»k and computing via the query parser derivation computing device, the conditional probability P ( L â¢ ï Q ) = 1 Z S â¢ exp â¡ ( â t = 1 T â¢ â k â¢ Î» k * f k â¡ ( l t - 1 , l t , Q , t ) ) where fk (ltâ1, lt, Q, t) is a feature function, representing one of a state transition feature, including fk (ltâ1, lt, Q), and an output state feature, including fk (lt, Q), for a given input sequence. 12. A method comprising: deriving a query parser, via a query parser derivation computing device, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens; calculating the most probable label sequence for the input query; assigning one or more sentences from a plurality of sentences to each label based at least in part on the most probable label sequence for the input query, wherein: the one or more sentences are different from the labels; and the one or more sentences are assigned so that the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information; creating a conditional random field model based at least in part on i) the tokens, ii) the labels, iii) characterizing a set of one or more feature functions, wherein: the set of one or more feature functions represent a state transition feature and/or one or more features of an output state for an input sequence; and a conditional probability is computed based in part on the set of one or more feature functions; training the one or more state transition features and the one or more output state features on a labeled set, wherein learning the state transition feature is limited on learning the one or more features of the output state; and utilizing an unstructured local geographical web-based query in local domain by applying a learned model parser, which is based at least in part on the training, to the query, wherein the utilizing the conditional random fields to produce the structured information comprises: parsing the unstructured geographic web-search query to produce the structured information from the unstructured geographic web-search query; determining that the parsing the unstructured geographic web-search query results in a multiple interpretation condition, where the parsing identifies at least a first interpretation of the unstructured geographic web-search query corresponding to first parsing results and a second interpretation of the unstructured geographic web-search query corresponding to second parsing results; and based at least in part on user behavior data, disambiguate the first parsing results and the second parsing results to select the first parsing results corresponding to the first interpretation of the unstructured geographic web-search query. 13. The method of claim 12 , wherein the learned model parser uses at least one class-based query log from a form-based query system. 14. The method of claim 13 , wherein the learned model parser comprises at least one class-level multi-token language model-based feature harvested from a structured query log. 15. The method of claim 14 , wherein the structured query log comprises a class-based log from a form-based query system. 16. The method of claim 12 , wherein the learned model parser comprises a learning statistical conditional random field parser. 17. The method of claim 16 , wherein the learning statistical conditional random field parser performs at least one of segmenting and labeling query sequence data. 18. One or more non-transitory, machine-readable media having machine-readable instructions thereon, which instructions, when executed by one or more computing devices, cause the one or more computing devices to: derive a query parser for parsing an unstructured geographic web-search query into a field-based format, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each",
+          "file_path": "US9218390B2.txt",
+          "chunk_id": "US9218390B2-chunk-001"
+        },
+        {
+          "reference_id": "1",
+          "content": "that each indicate characteristics of speech of a respective speaker comprises: accessing a set of multiple video resources; and generating a speaker vector for each of the multiple video resources. 15. The method of claim 1 , wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises: determining a different speaker vector for each of the plurality of hash tables, wherein each of the different speaker vectors is determined using (i) a different hash value of the determined hash values and (ii) a different hash table of the plurality of hash tables. 16. A computer-readable storage device storing instructions that, when executed by one or more computers, cause the one or more computers to perform operations comprising: obtaining an utterance vector that is derived from an utterance; determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; and selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector. 17. The storage device of claim 16 , wherein the operations further comprise: accessing data indicating associations between the speaker vectors and respective speakers; determining, based on the data indicating the associations between the speaker vectors and the respective speakers, a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity. 18. A system comprising: one or more computers; and a computer-readable storage device storing instructions that, when executed by the one or more computers, cause the one or more computers to perform operations comprising: obtaining an utterance vector that is derived from an utterance; determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; and selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector. 19. The system of claim 18 , wherein obtaining the utterance vector comprises obtaining an utterance i-vector for the utterance, the utterance i-vector comprising parameters determined using multivariate factor analysis of the utterance; and wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises determining a set of speaker i-vectors from the plurality of hash tables, each speaker i-vector comprising parameters determined using multivariate factor analysis of one or more utterances of a respective speaker. 20. The system of claim 18 , wherein the operations further comprise: accessing data indicating associations between the speaker vectors and respective speakers; determining, based on the data indicating the associations between the speaker vectors and the respective speakers, a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "file_path": "US9514753B2.txt",
+          "chunk_id": "US9514753B2-chunk-001"
+        },
+        {
+          "reference_id": "3",
+          "content": "Publication number: US8655901B1\nTitle: Translation-based query pattern mining\n\nABSTRACT\nThis specification describes technologies relating to search systems. In general, one aspect of the subject matter described in this specification can be embodied in methods that include the actions of receiving a query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern; annotating each query of the collection of queries with one or more labels; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; aligning the translated collection of queries including identifying a most common term in the translated collection of queries and determining the corresponding positions of the annotations relative to the translated query terms; and extracting a translated query pattern from the aligned translated collection of queries.\n\nCLAIMS\nWhat is claimed: 1. A method comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying, with a system comprising one or more computing devices, a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern. 2. The method of claim 1 , further comprising: using the translated query pattern to interpret received queries in the second language matching the translated query pattern. 3. The method of claim 2 , where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 4. The method of claim 1 , further comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 5. The method of claim 1 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern. 6. The method of claim 1 , where annotating each query includes labeling portions of the query according to the first query pattern. 7. The method of claim 1 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold. 8. A system comprising: one or more processors configured to interact with a computer-readable medium in order to perform operations comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern. 9. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to interpret received queries in the second language matching the translated query pattern. 10. The system of claim 9 , where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 12. The system of claim 8 , where identifying a collection of",
+          "file_path": "US8655901B1.txt",
+          "chunk_id": "US8655901B1-chunk-000"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9514753B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9218390B2.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US8655901B1.txt"
+        }
+      ]
+    },
+    "metadata": {
+      "query_mode": "mix",
+      "keywords": {
+        "high_level": [
+          "patent claim analysis",
+          "locality sensitive hash functions",
+          "claim wording evidence"
+        ],
+        "low_level": [
+          "US9514753B2",
+          "claim number",
+          "locality sensitive hash functions",
+          "exact supporting wording",
+          "patent publication number"
+        ]
+      },
+      "processing_info": {
+        "total_entities_found": 26,
+        "total_relations_found": 19,
+        "entities_after_truncation": 26,
+        "relations_after_truncation": 19,
+        "merged_chunks_count": 18,
+        "final_chunks_count": 4
+      }
+    },
+    "llm_response": {
+      "content": "**Stated fact (from the patent text):** In US9514753B2, the claim that explicitly specifies locality sensitive hash functions is **claim 6**. The exact supporting wording is: \"wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.\"\n\n**Context:** Claim 6 depends from claim 1, which recites \"determining hash values for the utterance vector according to multiple different hash functions.\" Claim 6 narrows that step to use of \"one or more locality sensitive hash functions.\"\n\n**Inference (not stated in the text):** Because claim 6 is a dependent claim, the locality sensitive hash feature is an optional narrowing of the claim 1 method rather than a requirement of the independent claim itself. This is my inference from the claim structure, not an express statement in the document.\n\n**Missing/insufficient evidence:** The provided text does not state whether other claims (e.g., claim 7 on hyperplane positions) are also considered locality sensitive hash functions; that link is not expressly made in the quoted wording.\n\n### References\n\n- [1] US9514753B2.txt",
+      "response_iterator": null,
+      "is_streaming": false,
+      "llm_generated": true
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "archives": [
+    {
+      "part": 1,
+      "path": "<DOT_WORKDIR>/round4_full_20261030/delivery_split_20261030/LightRAG_evidence_1_report_scripts_and_calls.zip",
+      "bytes": 8948945,
+      "sha256": "9f681429606accea50e76fd70d50a0c59ea798a2f8e178f2dbff746518dde711",
+      "payload_entries": 422,
+      "crc_passed": true,
+      "sha256_passed": true
+    },
+    {
+      "part": 2,
+      "path": "<DOT_WORKDIR>/round4_full_20261030/delivery_split_20261030/LightRAG_evidence_2_graphs_and_indexes.zip",
+      "bytes": 8584566,
+      "sha256": "bfe2b8160d10a4c18198c3bb520217e3b691403703011f388c9bd7bca89c23ab",
+      "payload_entries": 216,
+      "crc_passed": true,
+      "sha256_passed": true
+    },
+    {
+      "part": 3,
+      "path": "<DOT_WORKDIR>/round4_full_20261030/delivery_split_20261030/LightRAG_evidence_3_remaining_calls.zip",
+      "bytes": 8985971,
+      "sha256": "dc73d0309fcc5d1dd069499bc89889faee9cb13f6a13e5301059cf1449ea9a4f",
+      "payload_entries": 686,
+      "crc_passed": true,
+      "sha256_passed": true
+    }
+  ],
+  "original_unchanged": true,
+  "original_sha256": "db4d11eae19ad74dd74f4d267ad08e869f8f2d5272b10fb8eaef4cb5e3837a7b",
+  "original_entries_reconstructed": 1321,
+  "total_payload_entries": 1324,
+  "credential_matches": 0,
+  "new_model_api_calls": 0
+}

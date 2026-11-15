@@ -1,0 +1,326 @@
+{
+  "audit_id": "N008",
+  "node_id": "Keyword",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两篇都以keyword表示与内容相关、用于索引/选择的词项。一篇是备份文件管理元数据中的索引关键词，另一篇是带页面特定权重的广告关键词；共同词项类别有原文依据，未显示不相容含义。",
+  "class_instance_interpretation_zh": "共享的是内容描述/检索词项类别；不把某一备份文件的关键词集合与某广告的关键词集合视作相同实例。广告权重不是所有关键词的普遍属性。",
+  "source_assessments": [
+    {
+      "publication_number": "US7756837B2",
+      "evidence_quote": "keywords of the data files of the data-stream",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US7756837B2-chunk-000"
+      ],
+      "additional_evidence_quotes": [
+        {
+          "evidence_quote": "indexing at least one of the types of data to obtain keywords thereof.",
+          "claim_or_section": "Claim 9",
+          "source_chunk_ids": [
+            "US7756837B2-chunk-000"
+          ]
+        }
+      ],
+      "claim_verification_path": "data/claims/US7756837B2.json",
+      "role_zh": "数据流文件的内容关键词，作为可检索管理数据；对数据类型索引产生。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取实体描述的该专利用途可由已读Claims支持；不能将合并后其他专利用途一并归给本专利。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US7756837B2-chunk-000",
+            "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+            "line_number": 19,
+            "description": "Keywords of the data files of the data-stream, obtained by indexing types of data, included in the management data."
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US7756837B2-chunk-000",
+            "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+            "line_number": 41,
+            "raw_line": "relation<|#|>Management Data<|#|>Keyword<|#|>Includes<|#|>The management data includes keywords of the data files of the data-stream."
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-000",
+            "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+            "line_number": 50,
+            "raw_line": "relation<|#|>Indexing<|#|>Keyword<|#|>Obtains<|#|>Indexing at least one of the types of data obtains keywords thereof."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The management data includes keywords of the data files of the data-stream.",
+          "keywords": "Includes",
+          "source_id": "US7756837B2-chunk-000",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Keyword",
+          "target": "Management Data",
+          "edge_index": 170,
+          "source_chunks": [
+            "US7756837B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Indexing at least one of the types of data obtains keywords thereof.",
+          "keywords": "Obtains",
+          "source_id": "US7756837B2-chunk-000",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Keyword",
+          "target": "Indexing",
+          "edge_index": 171,
+          "source_chunks": [
+            "US7756837B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "all_source_chunk_ids_reviewed": [
+        "US7756837B2-chunk-000"
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "evidence_quote": "a plurality of keywords of the first advertisement using the unique identifier of the parked domain web page",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000"
+      ],
+      "additional_evidence_quotes": [
+        {
+          "evidence_quote": "the weight of each of the plurality of keywords associated with the first advertisement displayed on the parked domain web page is specific to the parked domain web page.",
+          "claim_or_section": "Claim 8",
+          "source_chunk_ids": [
+            "US9304738B1-chunk-000"
+          ]
+        }
+      ],
+      "claim_verification_path": "data/claims/US9304738B1.json",
+      "role_zh": "广告/信息资源关联词项，按页面的用户兴趣与历史表现赋权，用于广告选择。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取实体描述的该专利用途可由已读Claims支持；不能将合并后其他专利用途一并归给本专利。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9304738B1-chunk-000",
+            "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+            "line_number": 4,
+            "description": "A term associated with subject matter of an information resource or advertisement, assigned a weight used for content selection."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "line_number": 2,
+            "description": "A term associated with advertisements displayed on a parked domain web page, having a weight determined based on user interest and historic performance."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-002",
+            "cache_key": "default:extract:7aaccba95e58a8dae5414b328138389c",
+            "line_number": 2,
+            "description": "A term from a plurality of keywords that carries a weight on the parked domain web page and a different weight on a second information resource, and is used for ranking and advertisement selection."
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9304738B1-chunk-000",
+            "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+            "line_number": 31,
+            "raw_line": "relation<|#|>Data Processing System<|#|>Keyword<|#|>identification, weighting<|#|>The data processing system identifies keywords of advertisements and determines a weight for each keyword."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-000",
+            "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+            "line_number": 36,
+            "raw_line": "relation<|#|>Keyword<|#|>Weight<|#|>assigned weight<|#|>Each keyword is assigned a weight determined based on user interest indications and historic performance."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-000",
+            "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+            "line_number": 37,
+            "raw_line": "relation<|#|>Keyword<|#|>Parked Domain Web Page<|#|>association, weighting<|#|>Keywords are associated with the parked domain web page and have weights specific to that page."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-000",
+            "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+            "line_number": 38,
+            "raw_line": "relation<|#|>Keyword<|#|>Advertisement<|#|>association<|#|>Keywords are associated with advertisements displayed on the parked domain web page."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "line_number": 24,
+            "raw_line": "relation<|#|>Data Processing System<|#|>Keyword<|#|>identifies, determines weight<|#|>The data processing system identifies a plurality of keywords associated with an advertisement using the unique identifier and determines a weight of each keyword."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "line_number": 28,
+            "raw_line": "relation<|#|>Keyword<|#|>Weight<|#|>has, is assigned<|#|>Each keyword has a weight determined based on user interest indications and historic performance."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "line_number": 31,
+            "raw_line": "relation<|#|>Keyword<|#|>Parked Domain Web Page<|#|>associated with, displayed on<|#|>Keywords are associated with advertisements displayed on the parked domain web page."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "line_number": 32,
+            "raw_line": "relation<|#|>Advertisement<|#|>Keyword<|#|>associated with<|#|>An advertisement is associated with one or more keywords of the plurality of keywords."
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "line_number": 35,
+            "raw_line": "relation<|#|>Database<|#|>Keyword<|#|>stores<|#|>The database stores a plurality of keywords and their weights."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The data processing system identifies a plurality of keywords associated with an advertisement using the unique identifier and determines a weight of each keyword.<SEP>The data processing system identifies keywords of advertisements and determines a weight for each keyword.",
+          "keywords": "determines weight,identification,identifies,weighting",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Keyword",
+          "edge_index": 11,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The database stores a plurality of keywords and their weights.",
+          "keywords": "stores",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Database",
+          "target": "Keyword",
+          "edge_index": 98,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "Keywords are associated with advertisements displayed on the parked domain web page.<SEP>Keywords are associated with the parked domain web page and have weights specific to that page.",
+          "keywords": "associated with,association,displayed on,weighting",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Parked Domain Web Page",
+          "target": "Keyword",
+          "edge_index": 160,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "Each keyword has a weight determined based on user interest indications and historic performance.<SEP>Each keyword is assigned a weight determined based on user interest indications and historic performance.",
+          "keywords": "assigned weight,has,is assigned",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Keyword",
+          "target": "Weight",
+          "edge_index": 168,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "An advertisement is associated with one or more keywords of the plurality of keywords.<SEP>Keywords are associated with advertisements displayed on the parked domain web page.",
+          "keywords": "associated with,association",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Keyword",
+          "target": "Advertisement",
+          "edge_index": 169,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "all_source_chunk_ids_reviewed": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 7,
+    "observed_unsupported_edge": false,
+    "details_zh": "全部7条邻边已核对：11/98/160/168/169为广告识别、存储、页面关联、权重和广告关联；170/171为备份management data与indexing。所有边按source_id可回到相应专利，未见把备份关键词直接断言为广告关键词的无依据边。跨两侧进行无来源约束路径拼接是风险，但本审阅未运行检索、未观察其传播。",
+    "edge_indices": [
+      11,
+      98,
+      160,
+      168,
+      169,
+      170,
+      171
+    ],
+    "unsupported_edge_indices": [],
+    "all_actual_incident_edges_reviewed": true
+  },
+  "limitations_zh": [
+    "AI辅助逐条审阅，不是独立人工gold；分类是概念/实例解释，不是LightRAG本体声明。",
+    "只审查已保存来源、抽取记录和实际邻边；没有新查询或生成，不能推断潜在跨文档路径已经引起答案污染。",
+    "相同source_id需结合原round2工作空间解释；合并description每个片段的细粒度来源需回查原抽取行。"
+  ],
+  "review_method": "Read all dossier source chunks, target raw entity/relation rows and all actual incident edges; check exact contiguous quotes against saved claim JSON and actual chunk content. No model API.",
+  "reviewed_utc": "2026-10-30T08:11:05.427617+00:00",
+  "external_model_api_calls": 0,
+  "credentials_read": false
+}

@@ -1,0 +1,609 @@
+{
+  "audit_id": "N018",
+  "node_id": "Recommendation",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "一篇处理社交成员对商品的推荐并排序，另一篇基于角色偏好生成观看内容的推荐。来源对象和生成主体不同，但均支持“建议/推荐某项内容或物品”这个共同类。原文没有证明这些推荐是同一对象，当前描述也不要求该等同性，故不能仅因人工推荐与算法推荐不同而判同名错合并。",
+  "class_instance_interpretation_zh": "共享推荐信息这一宽类；保留成员作出的推荐和系统生成的内容推荐的子角色与各自实例。",
+  "source_assessments": [
+    {
+      "publication_number": "US8095432B1",
+      "evidence_quote": "obtaining a first recommendation for the item from a first member of a social networking utility",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "社交成员针对商品给出的推荐，按与询问成员的关系接近程度排序。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8095432B1-chunk-000"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8095432B1-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8095432B1.json",
+        "claim_file_sha256": "d1aeb116b21db2124fd894640e5cdc35ae864c3dcd09f3574124493022707585",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "原抽取 opinion/endorsement 是对 recommendation 的解释性概括；Claims 1,2,8 支持来源、排序、接收者和库存关联。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 8,
+            "raw_line": "entity<|#|>Recommendation<|#|>Concept<|#|>An opinion or endorsement of an item provided by a member of the social networking utility.",
+            "fields": [
+              "entity",
+              "Recommendation",
+              "Concept",
+              "An opinion or endorsement of an item provided by a member of the social networking utility."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 33,
+            "raw_line": "relation<|#|>Recommendation Application<|#|>Recommendation<|#|>obtains<|#|>The recommendation application obtains first and second recommendations for an item from members.",
+            "fields": [
+              "relation",
+              "Recommendation Application",
+              "Recommendation",
+              "obtains",
+              "The recommendation application obtains first and second recommendations for an item from members."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 42,
+            "raw_line": "relation<|#|>Recommendation<|#|>Item<|#|>about<|#|>Each recommendation is an endorsement of the item provided by a member.",
+            "fields": [
+              "relation",
+              "Recommendation",
+              "Item",
+              "about",
+              "Each recommendation is an endorsement of the item provided by a member."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 43,
+            "raw_line": "relation<|#|>Recommendation List<|#|>Recommendation<|#|>comprises, ranks<|#|>The recommendation list comprises the first and second recommendations, with the first ranked higher than the second.",
+            "fields": [
+              "relation",
+              "Recommendation List",
+              "Recommendation",
+              "comprises, ranks",
+              "The recommendation list comprises the first and second recommendations, with the first ranked higher than the second."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 54,
+            "raw_line": "relation<|#|>Inventory Details<|#|>Recommendation<|#|>associated with<|#|>The inventory details are associated with the first and second recommendations.",
+            "fields": [
+              "relation",
+              "Inventory Details",
+              "Recommendation",
+              "associated with",
+              "The inventory details are associated with the first and second recommendations."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 59,
+            "raw_line": "relation<|#|>Interests<|#|>Recommendation<|#|>basis for ranking<|#|>Common and differing interests are compared when ranking recommendations of members.",
+            "fields": [
+              "relation",
+              "Interests",
+              "Recommendation",
+              "basis for ranking",
+              "Common and differing interests are compared when ranking recommendations of members."
+            ]
+          },
+          {
+            "chunk_id": "US8095432B1-chunk-000",
+            "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 60,
+            "raw_line": "relation<|#|>Third Member<|#|>Recommendation<|#|>receives, provides<|#|>The third member may receive a third recommendation of the item from the inquiring member and provides a third recommendation.",
+            "fields": [
+              "relation",
+              "Third Member",
+              "Recommendation",
+              "receives, provides",
+              "The third member may receive a third recommendation of the item from the inquiring member and provides a third recommendation."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 6
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The third member may receive a third recommendation of the item from the inquiring member and provides a third recommendation.",
+          "keywords": "provides,receives",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Third Member",
+          "target": "Recommendation",
+          "edge_index": 281,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The recommendation application obtains first and second recommendations for an item from members.",
+          "keywords": "obtains",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Recommendation",
+          "target": "Recommendation Application",
+          "edge_index": 287,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Each recommendation is an endorsement of the item provided by a member.",
+          "keywords": "about",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Recommendation",
+          "target": "Item",
+          "edge_index": 288,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The recommendation list comprises the first and second recommendations, with the first ranked higher than the second.",
+          "keywords": "comprises,ranks",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Recommendation",
+          "target": "Recommendation List",
+          "edge_index": 289,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The inventory details are associated with the first and second recommendations.",
+          "keywords": "associated with",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Recommendation",
+          "target": "Inventory Details",
+          "edge_index": 290,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Common and differing interests are compared when ranking recommendations of members.",
+          "keywords": "basis for ranking",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Recommendation",
+          "target": "Interests",
+          "edge_index": 291,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8095432B1-chunk-000",
+          "sha256": "870959f01fdf22e55223e95ba2ca5f25438debf5d1fc2aec28abb31eac4e2c83",
+          "characters": 6336
+        }
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "evidence_quote": "send to the user a recommendation to play the second video content feature",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "根据角色偏好和关系分数给用户生成/发送内容观看推荐。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9374411B1-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9374411B1.json",
+        "claim_file_sha256": "0a477135e7ff698cddc3d74095c31506212dd525bec8ad9fb5529a6a658955e4",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "chunk000 Claim 1 与 chunk001 Claims 11,14 支持发送与生成；不是社交商品推荐的同一实例。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 21,
+            "raw_line": "entity<|#|>Recommendation<|#|>Concept<|#|>A suggestion sent to a user to play a second video content feature based on the relationship score.",
+            "fields": [
+              "entity",
+              "Recommendation",
+              "Concept",
+              "A suggestion sent to a user to play a second video content feature based on the relationship score."
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 6,
+            "raw_line": "entity<|#|>Recommendation<|#|>Concept<|#|>A generated suggestion presented to another user for content or characters, based on preferences and relationship scores.",
+            "fields": [
+              "entity",
+              "Recommendation",
+              "Concept",
+              "A generated suggestion presented to another user for content or characters, based on preferences and relationship scores."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 37,
+            "raw_line": "relation<|#|>Recommendation<|#|>Second Video Content Feature<|#|>recommends playing<|#|>The recommendation is sent to the user to play the second video content feature.",
+            "fields": [
+              "relation",
+              "Recommendation",
+              "Second Video Content Feature",
+              "recommends playing",
+              "The recommendation is sent to the user to play the second video content feature."
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 38,
+            "raw_line": "relation<|#|>Recommendation<|#|>User<|#|>sent to<|#|>The recommendation to play the second video content feature is sent to the user.",
+            "fields": [
+              "relation",
+              "Recommendation",
+              "User",
+              "sent to",
+              "The recommendation to play the second video content feature is sent to the user."
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 31,
+            "raw_line": "relation<|#|>Recommendation<|#|>User<|#|>generation, targeting<|#|>The recommendation is generated for another user in response to the user specifying a preference for a character.",
+            "fields": [
+              "relation",
+              "Recommendation",
+              "User",
+              "generation, targeting",
+              "The recommendation is generated for another user in response to the user specifying a preference for a character."
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 47,
+            "raw_line": "relation<|#|>Computing Device<|#|>Recommendation<|#|>sending, generation<|#|>The computing device sends a recommendation for presentation of the second network content.",
+            "fields": [
+              "relation",
+              "Computing Device",
+              "Recommendation",
+              "sending, generation",
+              "The computing device sends a recommendation for presentation of the second network content."
+            ]
+          }
+        ],
+        "raw_entity_count": 2,
+        "raw_relation_endpoint_count": 4
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The recommendation is sent to the user to play the second video content feature.",
+          "keywords": "recommends playing",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Recommendation",
+          "target": "Second Video Content Feature",
+          "edge_index": 292,
+          "source_chunks": [
+            "US9374411B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The recommendation to play the second video content feature is sent to the user.<SEP>The recommendation is generated for another user in response to the user specifying a preference for a character.",
+          "keywords": "generation,sent to,targeting",
+          "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Recommendation",
+          "target": "User",
+          "edge_index": 293,
+          "source_chunks": [
+            "US9374411B1-chunk-000",
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computing device sends a recommendation for presentation of the second network content.",
+          "keywords": "generation,sending",
+          "source_id": "US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Recommendation",
+          "target": "Computing Device",
+          "edge_index": 294,
+          "source_chunks": [
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9374411B1-chunk-000",
+          "sha256": "1c6ddec8304601845ddead7675e8d25ffe813f0a1d7087766b31ededcbd9a1cc",
+          "characters": 6777
+        },
+        {
+          "chunk_id": "US9374411B1-chunk-001",
+          "sha256": "bbe6f2f25b0f58e297204d0c91d3cd176e3a59c7a39ef03093c9724efe2d9fe0",
+          "characters": 6667
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 9,
+    "observed_unsupported_edge": false,
+    "details_zh": "已逐条审阅实际邻边及其 source_id。未确认一条缺少其自身来源支持的边；合并后的跨文档邻接不能当成已发生错误边传播的证据。",
+    "edge_indices": [
+      281,
+      287,
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 281,
+        "source_id": "US8095432B1-chunk-000",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported_with_qualification",
+        "source_evidence_claims": "US8095432B1 Claims 1,2",
+        "details_zh": "Claim 1 的 third member 和 Claim 2 的 third member 各自有不同从属语境；边的并列描述不证明是同一具体成员。此为文内作用域注意点，并非跨专利错误传播。"
+      },
+      {
+        "edge_index": 287,
+        "source_id": "US8095432B1-chunk-000",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8095432B1 Claims 1,16",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 288,
+        "source_id": "US8095432B1-chunk-000",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8095432B1 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 289,
+        "source_id": "US8095432B1-chunk-000",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8095432B1 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 290,
+        "source_id": "US8095432B1-chunk-000",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8095432B1 Claim 8",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 291,
+        "source_id": "US8095432B1-chunk-000",
+        "canonical_publications": [
+          "US8095432B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8095432B1 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 292,
+        "source_id": "US9374411B1-chunk-000",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9374411B1 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 293,
+        "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9374411B1 Claims 1,11",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 294,
+        "source_id": "US9374411B1-chunk-001",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9374411B1 Claim 14",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      }
+    ],
+    "retrieval_or_generation_propagation_tested": false
+  },
+  "limitations_zh": [
+    "这是 AI 辅助原文/抽取/图结构审阅，非独立人工标注 gold、非新的模型评判 API 实验。",
+    "仅审核当前保存的第二轮图快照与其来源块；概念合并不等于实例 sameAs，也没有进行跨专利路径检索或答案生成传播实验。",
+    "原文为已索引摘要及 Claims；没有用外部说明书填补缺失事实。原始文本中的格式缺陷保持原样。",
+    "边的端点顺序来自保存的无向图；语义方向按原关系描述核对，不把 source/target 字段顺序当作因果方向。",
+    "observed_unsupported_edge=false 表示本次检查未确认无原文支持的实际边，不是证明全图无误；关键词粒度/局部实施例范围的警示另记。",
+    "未给定显式类/实例 ontology。类别是基于具体词义及作用域的审阅标签，contextual_conflation 数量不是错误边数或代码 bug 率；Event/Network 的宽类解释可改变类别。",
+    "缓存提取行未保存 finish_reason 时不推定完整或截断；本审核只对实际保存的实体/关系行与当前已入图事实作语义核验。"
+  ],
+  "ontology_sensitivity": {
+    "explicit_ontology_available": false,
+    "alternative_shared_broad_class_plausible": false,
+    "interpretation_zh": "类别只描述现有证据下的概念语义，未断言跨专利实例相同或已发生错误推理。"
+  },
+  "review_method": {
+    "reviewer": "AI-assisted Codex content review",
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "all_source_publications_reviewed": 2,
+    "all_source_chunks_reviewed": 3,
+    "all_actual_incident_edges_reviewed": 9,
+    "raw_input_kind": "saved extraction rows; no new extraction",
+    "review_protocol_sha256": "bbed066b8051df60997798d319549164d750797ebef3d7c1e86d69ffc6092255",
+    "dossier_sha256": "4b7ef09c940e037f43937b33b501a7aaf6b87c3a6b32d059b6d2e11a1e4287bc",
+    "generated_utc": "2026-10-30T08:21:11.045610+00:00"
+  },
+  "graph_node_description_reviewed": "An opinion or endorsement of an item provided by a member of the social networking utility.<SEP>A suggestion sent to a user to play a second video content feature based on the relationship score.<SEP>A generated suggestion presented to another user for content or characters, based on preferences and relationship scores."
+}

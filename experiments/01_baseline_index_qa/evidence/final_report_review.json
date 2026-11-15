@@ -1,0 +1,44 @@
+{
+  "reviewed_utc": "2026-10-29T15:09:41.394616+00:00",
+  "review_method": "Read-only factual/scope cross-check against saved report, run status, cost ledger summary, baseline audits, supplemental audit and final graph/chunks; no API or credential access.",
+  "report_sha256": "592d5d35fce9fb1052a413d21eac3477150a7073827c69713aed03758e4cfd8a",
+  "status": "pass_after_minor_wording_corrections",
+  "major_issues": [],
+  "verified": {
+    "documents": 20,
+    "chunks": 48,
+    "nodes": 612,
+    "edges": 994,
+    "main_questions": 10,
+    "main_answers": 20,
+    "core_completion_per_mode": "9/10; not all-assertion correctness",
+    "q01_mix_scope_overreach_disclosed": true,
+    "q06_baseline_incomplete_and_sensitivity_recovery_separated": true,
+    "q11_source_attribution_not_family_ontology_claim": true,
+    "truncation191_specific_edge_not_whole_fact_loss": true,
+    "no_causal_cross_chunk_loss_claim": true,
+    "price_estimate_not_invoice": true,
+    "estimated_cny_range": [
+      1.55893424,
+      1.7664120000000003
+    ],
+    "english_words": 91,
+    "first_round_local_report_exists": true
+  },
+  "minor_wording_corrections": [
+    {
+      "text": "每次 API 的无密钥请求/响应都保留",
+      "reason": "Embedding logs preserve input text, usage, shape and returned-model metadata, not every full embedding response/query vector. Index vectors are persisted separately. The current sentence may overstate raw-response retention.",
+      "suggestion": "LLM 的请求、生成响应与 usage，以及 Embedding 的输入/返回元数据和已持久化索引向量均保留。"
+    },
+    {
+      "text": "所有阶段断言版本 1.5.7",
+      "reason": "run_experiment.py explicitly asserts the version, while supplemental scripts reuse the fixed source import path without a separate assertion. Actual version attribution is supported; the assertion scope is slightly overstated.",
+      "suggestion": "索引与基线阶段显式断言版本 1.5.7；补充阶段复用同一固定源码导入路径。"
+    }
+  ],
+  "nonblocking_clarification": "The 8192-token limit in the combined LLM/Embedding row refers to each embedding input, not the LLM context window; optional wording clarification improves precision.",
+  "minor_corrections_applied": true,
+  "final_report_sha256": "501423413d7bfa3ff22a1912d2f1148eadb23db898f4e7eb2c5d735e702bbd9a",
+  "corrected_utc": "2026-10-29T15:11:29.364680+00:00"
+}

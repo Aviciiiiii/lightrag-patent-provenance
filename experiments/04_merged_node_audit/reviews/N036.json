@@ -1,0 +1,313 @@
+{
+  "audit_id": "N036",
+  "node_id": "Non-Transitory Computer Storage Medium",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两来源明确描述非暂态计算机存储介质编码程序指令，分别用于知识面板内容处理和query pattern翻译。相同的存储载体类可共享，应用程序功能差异不是媒介词义混并。",
+  "class_instance_interpretation_zh": "共同存储介质类；两篇中的程序和实际存储实例分别限定，不应解释成同一载体上必然安装两套程序。",
+  "concept_class_vs_local_instance": "shared_class; document-local instances remain distinct",
+  "source_assessments": [
+    {
+      "publication_number": "US10867122B1",
+      "evidence_quote": "A non-transitory computer storage medium encoded with computer program instructions that, when executed by one or more processors, cause a computer device to perform operations comprising:",
+      "claim_or_section": "Claim 6",
+      "source_chunk_ids": [
+        "US10867122B1-chunk-000",
+        "US10867122B1-chunk-001"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US10867122B1-chunk-000"
+      ],
+      "claim_number": 6,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 3,
+        "indexed_document_char_offset": 4420
+      },
+      "role_zh": "编码用于内容接收、事实实体识别和知识面板/界面呈现操作的指令。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000为Claim6开头；chunk001的Claim7–10继承该介质，描述对应同一类的应用程序。",
+        "raw_records": [
+          {
+            "chunk_id": "US10867122B1-chunk-000",
+            "content_sha256": "cdb9a31ce359fcaf09cc018de814c284abb820d41aa8a4684e6518a413fe7162",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+                "cache_key": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 10,
+                "raw_line": "entity<|#|>Non-Transitory Computer Storage Medium<|#|>Artifact<|#|>A storage medium encoded with computer program instructions that, when executed by processors, cause a computer device to perform operations for determining factual entities and displaying knowledge panel content.",
+                "fields": [
+                  "entity",
+                  "Non-Transitory Computer Storage Medium",
+                  "Artifact",
+                  "A storage medium encoded with computer program instructions that, when executed by processors, cause a computer device to perform operations for determining factual entities and displaying knowledge panel content."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+                "cache_key": "default:extract:90a6084cf6306c9e73b570be657dce5c",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 23,
+                "raw_line": "relation<|#|>Non-Transitory Computer Storage Medium<|#|>Computer Program Instructions<|#|>encoded with<|#|>The non-transitory computer storage medium is encoded with computer program instructions.",
+                "fields": [
+                  "relation",
+                  "Non-Transitory Computer Storage Medium",
+                  "Computer Program Instructions",
+                  "encoded with",
+                  "The non-transitory computer storage medium is encoded with computer program instructions."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US10867122B1-chunk-000",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "e5391ee125d0af11d24e7f861f449819339379f3b291416aa3d7cf9747d0aafe"
+              }
+            ]
+          },
+          {
+            "chunk_id": "US10867122B1-chunk-001",
+            "content_sha256": "5dc22e43a86f2857a02ec24570aa4c188da80a599ce2a759c648cd304b3af0a8",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:e4a3e399bef66acd82eec1d8ea32fbc3",
+                "cache_key": "default:extract:e4a3e399bef66acd82eec1d8ea32fbc3",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 11,
+                "raw_line": "entity<|#|>Non-Transitory Computer Storage Medium<|#|>Artifact<|#|>A computer storage medium encoded with computer program instructions that cause a computer device to perform operations for determining factual entities and displaying related content.",
+                "fields": [
+                  "entity",
+                  "Non-Transitory Computer Storage Medium",
+                  "Artifact",
+                  "A computer storage medium encoded with computer program instructions that cause a computer device to perform operations for determining factual entities and displaying related content."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:e4a3e399bef66acd82eec1d8ea32fbc3",
+                "cache_key": "default:extract:e4a3e399bef66acd82eec1d8ea32fbc3",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 38,
+                "raw_line": "relation<|#|>Non-Transitory Computer Storage Medium<|#|>Computer Program Instructions<|#|>encoded with<|#|>The non-transitory computer storage medium is encoded with computer program instructions causing a computer device to perform operations.",
+                "fields": [
+                  "relation",
+                  "Non-Transitory Computer Storage Medium",
+                  "Computer Program Instructions",
+                  "encoded with",
+                  "The non-transitory computer storage medium is encoded with computer program instructions causing a computer device to perform operations."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US10867122B1-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "96914d019eef024a415c78d9b7cb1e8fc827a574dcc6535c365c642c6d9cc57f"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The non-transitory computer storage medium is encoded with computer program instructions.<SEP>The non-transitory computer storage medium is encoded with computer program instructions causing a computer device to perform operations.",
+          "keywords": "encoded with",
+          "source_id": "US10867122B1-chunk-000<SEP>US10867122B1-chunk-001",
+          "file_path": "US10867122B1.txt",
+          "created_at": 1793284649,
+          "truncate": "",
+          "source": "Non-Transitory Computer Storage Medium",
+          "target": "Computer Program Instructions",
+          "edge_index": 845,
+          "source_chunks": [
+            "US10867122B1-chunk-000",
+            "US10867122B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10867122B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8655901B1",
+      "evidence_quote": "A non-transitory computer storage medium encoded with a computer program, the program comprising instructions that when executed by data processing apparatus cause the data processing apparatus to perform operations comprising:",
+      "claim_or_section": "Claim 15",
+      "source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ],
+      "claim_number": 15,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 4,
+        "indexed_document_char_offset": 7154
+      },
+      "role_zh": "编码执行查询模式标注与翻译操作的程序。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk001实体及与Data Processing Apparatus的关系直接由Claim15支持。",
+        "raw_records": [
+          {
+            "chunk_id": "US8655901B1-chunk-001",
+            "content_sha256": "5d0d79edafe5af7919f82cb1ee8099a3dec6b156ad11326e2bf75e47dad3f315",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 13,
+                "raw_line": "entity<|#|>Non-Transitory Computer Storage Medium<|#|>Artifact<|#|>A storage medium encoded with a computer program whose instructions cause data processing apparatus to perform query pattern translation operations.",
+                "fields": [
+                  "entity",
+                  "Non-Transitory Computer Storage Medium",
+                  "Artifact",
+                  "A storage medium encoded with a computer program whose instructions cause data processing apparatus to perform query pattern translation operations."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 31,
+                "raw_line": "relation<|#|>Non-Transitory Computer Storage Medium<|#|>Data Processing Apparatus<|#|>program instructions, execution<|#|>The storage medium is encoded with a computer program whose instructions, when executed by data processing apparatus, cause the apparatus to perform operations.",
+                "fields": [
+                  "relation",
+                  "Non-Transitory Computer Storage Medium",
+                  "Data Processing Apparatus",
+                  "program instructions, execution",
+                  "The storage medium is encoded with a computer program whose instructions, when executed by data processing apparatus, cause the apparatus to perform operations."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US8655901B1-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "316996f6608a19543149f869b202a0f90c851b294a1aea1e4f2b52f923f5462b"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The storage medium is encoded with a computer program whose instructions, when executed by data processing apparatus, cause the apparatus to perform operations.",
+          "keywords": "execution,program instructions",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Non-Transitory Computer Storage Medium",
+          "target": "Data Processing Apparatus",
+          "edge_index": 844,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 2,
+    "observed_unsupported_edge": false,
+    "observed_unsupported_edge_definition": "true仅用于依据原文明确不支持的实际关系；类级概括/端点角色候选单列，不自动计入。",
+    "details_zh": "已逐条检查全部实际邻边及其source_id/file_path；各关系在所属专利中有对应陈述，未发现将另一专利特征直接写入本专利边描述的确证。共同节点容许潜在无作用域路径组合，但本审计没有执行或观察该传播。",
+    "edge_indices": [
+      844,
+      845
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 844,
+        "source": "Non-Transitory Computer Storage Medium",
+        "target": "Data Processing Apparatus",
+        "source_id": "US8655901B1-chunk-001",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "The storage medium is encoded with a computer program whose instructions, when executed by data processing apparatus, cause the apparatus to perform operations.",
+        "claim_or_section": "US8655901B1 Claim15",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 845,
+        "source": "Non-Transitory Computer Storage Medium",
+        "target": "Computer Program Instructions",
+        "source_id": "US10867122B1-chunk-000<SEP>US10867122B1-chunk-001",
+        "file_path": "US10867122B1.txt",
+        "canonical_publications": [
+          "US10867122B1"
+        ],
+        "actual_description": "The non-transitory computer storage medium is encoded with computer program instructions.<SEP>The non-transitory computer storage medium is encoded with computer program instructions causing a computer device to perform operations.",
+        "claim_or_section": "US10867122B1 Claim6及从属Claims7–10",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      }
+    ],
+    "observed_cross_publication_unsupported_edge": false
+  },
+  "limitations_zh": [
+    "本结果为AI辅助逐来源语义审阅，不是独立人工金标准；分类依赖所声明的类/实例粒度。",
+    "只审计第二轮既有20篇索引中的可见原chunk、原抽取与实际图邻边；原文范围为已索引的标题、摘要及Claims，未额外读取完整说明书或新语料，未调用模型API，也未进行新的检索/生成传播测试。",
+    "共享节点产生跨专利邻接不等于已观察到错误跨文档推理；边的source_id和file_path应保持作用域。"
+  ],
+  "review_method": "AI-assisted source-by-source reading; deterministic quote/coverage validation; no external model API",
+  "reviewed_utc": "2026-10-30T08:17:45.606540+00:00",
+  "dossier_sha256": "7eeaef9297a2ac7977d6945feda016ef1b70e4c95086b0216bfdc2c4a16492c5",
+  "input_sha256": {
+    "round2_multisource_audit/dossiers/N036.json": "7eeaef9297a2ac7977d6945feda016ef1b70e4c95086b0216bfdc2c4a16492c5",
+    "data/claims/US10867122B1.json": "ad31efe1069840c103b75fb277ff7579fb4500c838425b02fedd9262504f2895",
+    "data/documents/US10867122B1.txt": "8f7e555fc3859383efea70b0e43190a6124f4588de941cc2238100c5c80a741a",
+    "data/claims/US8655901B1.json": "3c4320d6d4a3603680fed5c9a62944142f5443962d5efd343277600f79f8ce75",
+    "data/documents/US8655901B1.txt": "7d17f8090a784af8ad8372cd2c9c958ed21e29ac1078c9c368ef53f49d0632ad"
+  },
+  "source_and_raw_review_coverage": {
+    "publication_count": 2,
+    "source_chunk_ids_reviewed": [
+      "US10867122B1-chunk-000",
+      "US10867122B1-chunk-001",
+      "US8655901B1-chunk-001"
+    ],
+    "all_source_chunks_read": true,
+    "all_raw_entity_and_relation_endpoint_rows_read": true,
+    "all_actual_incident_edges_reviewed": true
+  }
+}

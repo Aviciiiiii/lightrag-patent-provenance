@@ -1,0 +1,71 @@
+{
+  "checked_utc": "2026-10-29T14:35:41.038054+00:00",
+  "scope": "Static review of experiment wrappers only; no secret configuration read; no API calls; official source unchanged by reviewer.",
+  "files": {
+    "round2/scripts/safe_api.py": "e0775e4733ec8619d68543bf988cd5a6b6b58797146d1ca7e31cfa848d43d9d9",
+    "round2/scripts/run_experiment.py": "8bc4d386927f53ded94f912bbe5a27db539c2eec4331170529f52e4b6cf2e729",
+    "round2/evidence/safe_api_full_runtime_snapshot.py": "363f9c0ead3418c6550b6fba9d598cade2c7be88f916d1c1227b0e33cfeeec0b"
+  },
+  "findings": [
+    {
+      "id": "smoke_query_deadline",
+      "status": "resolved",
+      "evidence": "run_experiment.py bounds smoke aquery_llm timeout by QUERY_DEADLINE and only writes passed gate while now()<QUERY_DEADLINE."
+    },
+    {
+      "id": "incomplete_usage",
+      "status": "resolved",
+      "evidence": "safe_api.py requires both prompt_tokens and completion_tokens nonnegative numeric values before LLM reservation release; otherwise retains reservation."
+    },
+    {
+      "id": "priced_model_identity",
+      "status": "resolved",
+      "evidence": "safe_api.py pins deepseek-ai/DeepSeek-V4.1-Flash and BAAI/bge-m3 before using fixed peak/free rates."
+    },
+    {
+      "id": "unexpected_reasoning",
+      "status": "resolved_in_current_artifact",
+      "evidence": "Current safe_api.py additionally sets stop_reason for reasoning_content_present independently of usage validity. reserve() refuses all later calls once stop_reason is set."
+    }
+  ],
+  "budget": {
+    "hard_cap_cny": 10,
+    "conservative_internal_cny_per_usd": 4,
+    "conservative_usd_equivalent": 2.5,
+    "user_usd_limit": 5,
+    "conversion_is_actual_fx": false,
+    "price_basis": "Peak CNY2 input/CNY8 output per million tokens; ignore cache discount; BAAI/bge-m3 free; unknown outcomes retain reservation.",
+    "fx_context": "pricing_sources.json records CFETS midpoint USD/CNY6.7147 for 2026-10-29; this is not the actual payment/billing exchange rate."
+  },
+  "confirmed_controls": [
+    "No configured credential values serialized by wrappers",
+    "Configured HTTPS host constrained; redirects disabled",
+    "SDK max_retries=0",
+    "enable_thinking=false requested",
+    "Cumulative ledger reservations and usage reconciliation",
+    "Hard experiment deadline and process alarm",
+    "Successful RAG gate requires processed docs, actual generated answer and retrieved chunks"
+  ],
+  "operational_condition": "Ledger lock is process-local. Parent confirms full starts only after smoke exits0, with no concurrent runner processes. No cross-process safety guarantee is claimed.",
+  "review_limits": "Static code inspection plus read-only sanitized cost ledger inspection. No secret configuration read, source changes, runtime assertions or model/API calls by reviewer.",
+  "overall": "All four fixes verified in current source artifact; full-run imported snapshot differs by the documented final corner-case fix.",
+  "runtime_snapshot_distinction": {
+    "snapshot": "round2/evidence/safe_api_full_runtime_snapshot.py",
+    "reason": "Full run had already imported the earlier wrapper when the final content-present/missing-usage corner patch was applied.",
+    "difference": "Earlier snapshot sets reasoning stop in valid-usage branch; current artifact also checks content-present outside it.",
+    "impact_scope": "Only content-present responses with missing/incomplete usage would differ. This review found no observed occurrence in the ledger at review time.",
+    "recommendation": "Preserve snapshot and disclose chronology; no restart or extra model calls are warranted solely for this unobserved branch."
+  },
+  "observed_ledger_snapshot": {
+    "observed_utc": "2026-10-29T14:35:41.038054+00:00",
+    "all_api_attempts": 217,
+    "successful_llm_calls": 40,
+    "reasoning_content_present_count": 0,
+    "positive_reasoning_token_count": 0,
+    "incomplete_usage_flags": 0,
+    "failed_or_uncertain_calls": 0,
+    "estimated_observed_cost_cny": 0.8324719999999998,
+    "reserved_unknown_cny": 0.6416840000000001,
+    "note": "Live partial ledger snapshot, not final cost or provider invoice; in-flight reservations are expected."
+  }
+}

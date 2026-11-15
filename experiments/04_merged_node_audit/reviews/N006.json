@@ -1,0 +1,266 @@
+{
+  "audit_id": "N006",
+  "node_id": "Computer-Readable Storage Device",
+  "category": "shared_specific_concept",
+  "confidence": "high",
+  "reason_zh": "两篇原文均明确为存储可执行程序/指令、经计算设备执行以实现操作的computer-readable storage device；技术概念一致。所存程序分别用于内容过滤及说话人识别，属于概念的不同实现。",
+  "class_instance_interpretation_zh": "共同概念是可承载计算机可执行指令的存储设备类。这里的specific相对于泛称System，绝不主张同一介质实例、同一程序或同一任务。",
+  "source_assessments": [
+    {
+      "publication_number": "US8719408B2",
+      "evidence_quote": "A computer-readable storage device with an executable program stored thereon",
+      "claim_or_section": "Claim 9",
+      "source_chunk_ids": [
+        "US8719408B2-chunk-000"
+      ],
+      "additional_evidence_quotes": [
+        {
+          "evidence_quote": "executable program code for filtering a set of published digital media content items",
+          "claim_or_section": "Claim 13",
+          "source_chunk_ids": [
+            "US8719408B2-chunk-000",
+            "US8719408B2-chunk-001"
+          ]
+        }
+      ],
+      "claim_verification_path": "data/claims/US8719408B2.json",
+      "role_zh": "存储对内容生产者关系进行监测并过滤/呈现数字媒体的可执行程序。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取实体描述的该专利用途可由已读Claims支持；不能将合并后其他专利用途一并归给本专利。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8719408B2-chunk-000",
+            "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "line_number": 24,
+            "description": "A storage device with an executable program stored thereon that instructs a processor to perform the filtration method."
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "line_number": 1,
+            "description": "A storage device containing executable program code for presenting digital media content, establishing user relationships, and determining relevancy weights, as described in claims 13-16."
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8719408B2-chunk-000",
+            "cache_key": "default:extract:0c951a119f5bdc919309d6beda7b15bd",
+            "line_number": 58,
+            "raw_line": "relation<|#|>Computer-Readable Storage Device<|#|>Executable Program<|#|>stores<|#|>The computer-readable storage device stores an executable program thereon."
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "line_number": 67,
+            "raw_line": "relation<|#|>Computer-Readable Storage Device<|#|>Digital Media Content<|#|>presents, program code<|#|>The storage device contains executable program code for presenting digital media content."
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "line_number": 68,
+            "raw_line": "relation<|#|>Computer-Readable Storage Device<|#|>User Relationship<|#|>establishes, program code<|#|>The storage device contains executable program code for establishing a plurality of user relationships."
+          },
+          {
+            "chunk_id": "US8719408B2-chunk-001",
+            "cache_key": "default:extract:66f13198bb030d0ce817c0aa6c9b72b1",
+            "line_number": 69,
+            "raw_line": "relation<|#|>Computer-Readable Storage Device<|#|>Relevancy Weight<|#|>determines, program code<|#|>The storage device contains executable program code for determining a relevancy weight for each published digital media content item."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The computer-readable storage device stores an executable program thereon.",
+          "keywords": "stores",
+          "source_id": "US8719408B2-chunk-000",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "Computer-Readable Storage Device",
+          "target": "Executable Program",
+          "edge_index": 148,
+          "source_chunks": [
+            "US8719408B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The storage device contains executable program code for presenting digital media content.",
+          "keywords": "presents,program code",
+          "source_id": "US8719408B2-chunk-001",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "Computer-Readable Storage Device",
+          "target": "Digital Media Content",
+          "edge_index": 149,
+          "source_chunks": [
+            "US8719408B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The storage device contains executable program code for establishing a plurality of user relationships.",
+          "keywords": "establishes,program code",
+          "source_id": "US8719408B2-chunk-001",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "Computer-Readable Storage Device",
+          "target": "User Relationship",
+          "edge_index": 150,
+          "source_chunks": [
+            "US8719408B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The storage device contains executable program code for determining a relevancy weight for each published digital media content item.",
+          "keywords": "determines,program code",
+          "source_id": "US8719408B2-chunk-001",
+          "file_path": "US8719408B2.txt",
+          "created_at": 1793284597,
+          "truncate": "",
+          "source": "Computer-Readable Storage Device",
+          "target": "Relevancy Weight",
+          "edge_index": 151,
+          "source_chunks": [
+            "US8719408B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8719408B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "all_source_chunk_ids_reviewed": [
+        "US8719408B2-chunk-000",
+        "US8719408B2-chunk-001"
+      ]
+    },
+    {
+      "publication_number": "US9514753B2",
+      "evidence_quote": "A computer-readable storage device storing instructions that, when executed by one or more computers",
+      "claim_or_section": "Claim 16",
+      "source_chunk_ids": [
+        "US9514753B2-chunk-001"
+      ],
+      "additional_evidence_quotes": [
+        {
+          "evidence_quote": "obtaining an utterance vector that is derived from an utterance;",
+          "claim_or_section": "Claim 16",
+          "source_chunk_ids": [
+            "US9514753B2-chunk-001"
+          ]
+        }
+      ],
+      "claim_verification_path": "data/claims/US9514753B2.json",
+      "role_zh": "存储执行话语向量哈希、候选说话人向量比较等识别操作的指令；也是Claim18系统组成。",
+      "extraction_description_support": {
+        "assessment_zh": "原抽取实体描述的该专利用途可由已读Claims支持；不能将合并后其他专利用途一并归给本专利。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9514753B2-chunk-001",
+            "cache_key": "default:extract:01d28ddc0f0554b0a28e043f6f9db994",
+            "line_number": 12,
+            "description": "A device storing instructions that, when executed by one or more computers, cause the computers to perform operations for speaker identification."
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9514753B2-chunk-001",
+            "cache_key": "default:extract:01d28ddc0f0554b0a28e043f6f9db994",
+            "line_number": 26,
+            "raw_line": "relation<|#|>Computer-Readable Storage Device<|#|>Computer<|#|>instruction execution<|#|>The storage device stores instructions that, when executed by one or more computers, cause the computers to perform operations."
+          },
+          {
+            "chunk_id": "US9514753B2-chunk-001",
+            "cache_key": "default:extract:01d28ddc0f0554b0a28e043f6f9db994",
+            "line_number": 28,
+            "raw_line": "relation<|#|>System<|#|>Computer-Readable Storage Device<|#|>composition<|#|>The system comprises a computer-readable storage device storing instructions."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The storage device stores instructions that, when executed by one or more computers, cause the computers to perform operations.",
+          "keywords": "instruction execution",
+          "source_id": "US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793284149,
+          "truncate": "",
+          "source": "Computer-Readable Storage Device",
+          "target": "Computer",
+          "edge_index": 146,
+          "source_chunks": [
+            "US9514753B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514753B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The system comprises a computer-readable storage device storing instructions.",
+          "keywords": "composition",
+          "source_id": "US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793284149,
+          "truncate": "",
+          "source": "Computer-Readable Storage Device",
+          "target": "System",
+          "edge_index": 147,
+          "source_chunks": [
+            "US9514753B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514753B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "all_source_chunk_ids_reviewed": [
+        "US9514753B2-chunk-001"
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 6,
+    "observed_unsupported_edge": false,
+    "details_zh": "全部6条实际邻边按来源核对：146/147属于说话人识别系统的指令执行及组成；148–151属于内容过滤程序的存储、呈现、关系建立和相关性权重计算。各边描述保留program code/指令层作用，没有实际边声称一个专利的存储设备运行另一专利全部算法。",
+    "edge_indices": [
+      146,
+      147,
+      148,
+      149,
+      150,
+      151
+    ],
+    "unsupported_edge_indices": [],
+    "all_actual_incident_edges_reviewed": true
+  },
+  "limitations_zh": [
+    "AI辅助逐条审阅，不是独立人工gold；分类是概念/实例解释，不是LightRAG本体声明。",
+    "只审查已保存来源、抽取记录和实际邻边；没有新查询或生成，不能推断潜在跨文档路径已经引起答案污染。",
+    "相同source_id需结合原round2工作空间解释；合并description每个片段的细粒度来源需回查原抽取行。"
+  ],
+  "review_method": "Read all dossier source chunks, target raw entity/relation rows and all actual incident edges; check exact contiguous quotes against saved claim JSON and actual chunk content. No model API.",
+  "reviewed_utc": "2026-10-30T08:11:05.426271+00:00",
+  "external_model_api_calls": 0,
+  "credentials_read": false
+}

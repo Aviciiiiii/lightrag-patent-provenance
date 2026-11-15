@@ -1,0 +1,314 @@
+{
+  "schema_version": "2.0",
+  "prepared_utc": "2026-10-29T14:19:38.688124+00:00",
+  "source_questions_path": "results/questions.json",
+  "source_questions_sha256": "cce1dc86369670b8b2897dec045fbda437acd2242ec0fdd2cbe40b9483fcb115",
+  "original_question_count": 10,
+  "original_questions_modified": false,
+  "review_method": "AI-assisted source and runtime trace review with mechanical exact-substring checks; not an independent human gold standard",
+  "execution_states": [
+    "not_run",
+    "running",
+    "completed",
+    "api_failed",
+    "budget_stopped",
+    "deadline_stopped",
+    "index_not_ready"
+  ],
+  "eligibility": "Only completed real official queries enter answer-quality denominators. Report execution failure and missing traces separately; never score not_run as0.",
+  "dimensions": {
+    "patent_answer": {
+      "values": [
+        "all_correct",
+        "partially_correct",
+        "wrong",
+        "omitted",
+        "not_scored"
+      ],
+      "rule": "Check publication numbers linked to substantive assertions. A question-explicit patent echoed without evidence is not retrieval success."
+    },
+    "patent_retrieval": {
+      "values": [
+        "all_required_present",
+        "some_required_present",
+        "none_present",
+        "trace_missing"
+      ],
+      "rule": "Inspect same-call retained chunks and reference file_paths. For cross-document questions require both patents. Record chunk IDs; list membership does not establish answer entailment."
+    },
+    "claim_attribution": {
+      "values": [
+        "all_correct",
+        "partially_correct",
+        "wrong",
+        "omitted",
+        "not_applicable",
+        "not_scored"
+      ],
+      "rule": "Verify each claimed fact against the specific cited Claim, including dependent-claim inheritance. Explicit text in a dependent Claim must not be called a verbatim requirement of its parent."
+    },
+    "quote_exactness": {
+      "values": [
+        "exact",
+        "whitespace_normalized_exact",
+        "substantively_faithful_paraphrase",
+        "misquoted",
+        "not_quoted",
+        "not_scored"
+      ],
+      "rule": "Exact first; then only collapse whitespace. Do not silently normalize substantive mathematical symbols/numbers/negation. Faithful paraphrase is acceptable factual support but not an exact quotation."
+    },
+    "answer_support": {
+      "values": [
+        "fully_supported",
+        "partially_supported",
+        "unsupported_assertion",
+        "contradicted",
+        "abstained",
+        "not_scored"
+      ],
+      "rule": "Split answer into atomic factual assertions; attach original patent/claim/character-span evidence. Mark comparative interpretation separately. Never treat polite hedging as evidence."
+    },
+    "citation_attribution": {
+      "values": [
+        "all_supported",
+        "partially_supported",
+        "wrong_reference",
+        "missing_inline_citation",
+        "unresolvable_reference",
+        "not_scored"
+      ],
+      "rule": "Resolve each actual inline citation through same-call reference mapping and retrieved chunk text; assess whether that source supports the associated assertion. A correct document in an unconnected reference list is only source availability."
+    },
+    "unsupported_conclusions": {
+      "record": [
+        "verbatim_answer_span",
+        "why_unsupported",
+        "nearest_source_evidence",
+        "severity"
+      ],
+      "rule": "Distinguish no evidence from contradiction. Scope negative interoperability statements to reviewed passages."
+    },
+    "retrieval_evidence_coverage": {
+      "values": [
+        "all_required_evidence_retained",
+        "some_retained",
+        "none_retained",
+        "trace_missing"
+      ],
+      "rule": "Search retained raw chunk content for source evidence clauses, then manually inspect semantic equivalents. Graph descriptions can be useful but are not verbatim primary evidence."
+    }
+  },
+  "stage_attribution_rules": [
+    {
+      "stage": "data",
+      "minimum_evidence": "Missing/malformed fact demonstrable in indexed source before chunking; compare dataset source and patent page. Keep upstream defects separate from pipeline errors."
+    },
+    {
+      "stage": "chunking_context",
+      "minimum_evidence": "Verify natural exact chunk boundaries and that jointly necessary evidence is separated. This proves only separation. Attribute a loss causally to chunking only with matched extraction controls/model settings/repeated output and alternative explanations addressed."
+    },
+    {
+      "stage": "extraction",
+      "minimum_evidence": "Source evidence is in the actual extractor input, but relevant entity/relation absent or incorrect in saved raw extraction output after normalization inspection. If extraction output is unavailable, mark unable_to_attribute."
+    },
+    {
+      "stage": "graph_indexing_or_deduplication",
+      "minimum_evidence": "Required entity/relation appears in saved parsed extraction output but is absent/mismerged in committed graph/KV/vector stores. Check endpoint normalization, merged labels, doc status and source IDs before classification."
+    },
+    {
+      "stage": "retrieval",
+      "minimum_evidence": "Relevant evidence/entity/relation is verifiably indexed yet absent from same-call retained retrieval context. Distinguish vector candidate absence, candidate filtering, and context truncation when available. Vector retrieval miss alone is not extraction failure."
+    },
+    {
+      "stage": "generation",
+      "minimum_evidence": "Sufficient supporting source evidence is in same-call model context but generated factual answer is wrong, contradicted or unjustifiably omitted. Separate factual error from merely incomplete response."
+    },
+    {
+      "stage": "citation_attribution",
+      "minimum_evidence": "Answer content may be correct but linked reference/Claim does not support it, is missing, or is unresolvable. Do not reclassify this as extraction error."
+    },
+    {
+      "stage": "unable_to_attribute",
+      "minimum_evidence": "Use whenever required intermediate trace is missing or multiple causes remain plausible. Record exactly which trace is unavailable."
+    }
+  ],
+  "per_query_required_fields": [
+    "question_id",
+    "mode",
+    "run_id",
+    "execution_state",
+    "question_verbatim",
+    "source_evidence",
+    "model_answer_verbatim",
+    "inline_citations",
+    "same_call_references",
+    "same_call_entities",
+    "same_call_relationships",
+    "same_call_chunks",
+    "relevant_extraction_records_or_missing",
+    "relevant_graph_records_or_missing",
+    "scores_by_dimension",
+    "atomic_assertion_notes",
+    "possible_failure_stages",
+    "attribution_confidence",
+    "trace_paths"
+  ],
+  "comparison_rules": [
+    "Use identical question text, LLM, embedding, corpus snapshot and total context budget for naive/mix. Record graph-vs-text allocation differences and actual context lengths.",
+    "Do not use a later separate retrieval run to stand in for the contexts that produced an earlier answer.",
+    "Do not compute or imply statistically generalizable failure rates from this purposive20-patent sample.",
+    "Treat omitted genuine dependency chains from both query modes as exploratory outcomes; model stochasticity and budget/truncation remain possible confounders."
+  ],
+  "question_checks": [
+    {
+      "id": "Q01",
+      "required_patents": [
+        "US9514753B2"
+      ],
+      "required_claims_or_alternatives": {
+        "US9514753B2": [
+          1
+        ]
+      },
+      "expected_answer_zh": "US9514753B2，Claim 1：对utterance vector计算多个hash values，用hash tables取得speaker vectors，比较、选择后输出speaker identity。",
+      "note": "Verify against source and actual same-call retrieved evidence."
+    },
+    {
+      "id": "Q02",
+      "required_patents": [
+        "US11423041B2"
+      ],
+      "required_claims_or_alternatives": {
+        "US11423041B2": [
+          1
+        ]
+      },
+      "expected_answer_zh": "US11423041B2，Claim 1：在history object中记录首个ETL过程，按事件条件评估并执行第二个ETL过程。",
+      "note": "Verify against source and actual same-call retrieved evidence."
+    },
+    {
+      "id": "Q03",
+      "required_patents": [
+        "US8509827B2"
+      ],
+      "required_claims_or_alternatives": {
+        "US8509827B2": [
+          [
+            1
+          ],
+          [
+            18
+          ]
+        ]
+      },
+      "expected_answer_zh": "Claim 1明确规定按specified parameter排序context data source，该参数包括pecuniary cost。Claim 18也有平行装置表达，若答案同时指出也应接受。",
+      "note": "Claim1 or Claim18 alone can answer the unqualified which-claim question because the same feature is verified in both; a complete answer may list both. Do not mark Claim18 wrong merely because original ground truth quotes Claim1."
+    },
+    {
+      "id": "Q04",
+      "required_patents": [
+        "US9514753B2"
+      ],
+      "required_claims_or_alternatives": {
+        "US9514753B2": [
+          6
+        ]
+      },
+      "expected_answer_zh": "Claim 6，要求使用one or more locality sensitive hash functions确定hash values。",
+      "note": "Verify against source and actual same-call retrieved evidence."
+    },
+    {
+      "id": "Q05",
+      "required_patents": [
+        "US8655901B1"
+      ],
+      "required_claims_or_alternatives": {
+        "US8655901B1": [
+          7
+        ]
+      },
+      "expected_answer_zh": "方法Claim 7（系统Claim 14有平行表达）：cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold。",
+      "note": "Method Claim7 is required. Claim14 is a valid parallel system claim only when labeled system; Claim14 alone does not answer which method claim."
+    },
+    {
+      "id": "Q06",
+      "required_patents": [
+        "US7991757B2",
+        "US8095432B1"
+      ],
+      "required_claims_or_alternatives": {
+        "US7991757B2": [
+          1
+        ],
+        "US8095432B1": [
+          1
+        ]
+      },
+      "expected_answer_zh": "前者Claim 1从外部recommenders取得scores，经normalize后选subset；后者Claim 1依据社交relationship proximity排序，朋友的rank高于非朋友。两者共享推荐排序主题是本次比较归纳；所引Claims没有声称两专利系统互操作，不能推断两专利绝无其他关联。",
+      "note": "Only conclude that the quoted Claims do not state interoperability; absence in these passages does not prove patents or implementations have no relationship."
+    },
+    {
+      "id": "Q07",
+      "required_patents": [
+        "US8509827B2",
+        "US10867122B1"
+      ],
+      "required_claims_or_alternatives": {
+        "US8509827B2": [
+          1
+        ],
+        "US10867122B1": [
+          1
+        ]
+      },
+      "expected_answer_zh": "US8509827B2 Claim 1按包括获取成本的参数排序context-data sources；US10867122B1 Claim 1请求与first和second factual entity均相关的UI内容。共同的上下文内容获取主题是比较，不是原文声明的专利间链接。",
+      "note": "Verify against source and actual same-call retrieved evidence."
+    },
+    {
+      "id": "Q08",
+      "required_patents": [
+        "US9514753B2"
+      ],
+      "required_claims_or_alternatives": {
+        "US9514753B2": [
+          1,
+          9,
+          10,
+          11
+        ]
+      },
+      "expected_answer_zh": "Claim 11依赖10，10依赖9，9依赖1；1以hash values从hash tables取得speaker vectors，9按similarity scores选most similar，10用cosine distance，11要求smallest cosine distance低于maximum distance threshold。这里是原文依赖链，不应把余弦距离最小条件错误归为Claim 1的逐字要求。",
+      "note": "At actual1200/100 boundaries, the full chain co-resides in chunk0. This is a same-chunk dependency control, not a natural cross-chunk-loss test."
+    },
+    {
+      "id": "Q09",
+      "required_patents": [
+        "US9298709B2"
+      ],
+      "required_claims_or_alternatives": {
+        "US9298709B2": [
+          10,
+          16,
+          17
+        ]
+      },
+      "expected_answer_zh": "Claim 17依赖16，16依赖10；10生成地理范围及限制条件筛选后的IP可视化，16规定user initiated command之后更新，17指定pressing of an on-screen button。应保留10→16→17的从属关系。",
+      "note": "At actual1200/100 boundaries, the full chain co-resides in chunk1. This is a same-chunk dependency control, not a natural cross-chunk-loss test."
+    },
+    {
+      "id": "Q10",
+      "required_patents": [
+        "US11423041B2"
+      ],
+      "required_claims_or_alternatives": {
+        "US11423041B2": [
+          5,
+          6
+        ]
+      },
+      "expected_answer_zh": "Claim 5：first external、second by service；Claim 6：first和second都由ETL service执行。这是不同从属实施限定，不能把二者同时强加于同一个实施。",
+      "note": "Claims5and6 are distinct dependent alternatives. Do not combine first-ETL external and first-ETL service-executed into one mandatory implementation."
+    }
+  ]
+}

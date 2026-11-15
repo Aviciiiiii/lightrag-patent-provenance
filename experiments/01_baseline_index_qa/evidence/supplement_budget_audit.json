@@ -1,0 +1,652 @@
+{
+  "reviewed_utc": "2026-10-29T14:59:17.876278+00:00",
+  "review_method": "Read-only independent AI-assisted audit with exact source/trace checks; no API calls or secret reads.",
+  "scope": "Four separate retrieval-budget sensitivity queries; do not replace baseline20 answer results or pool denominators.",
+  "settings_control": {
+    "same_question_text": true,
+    "same_models_and_index_reported": true,
+    "index_hashes_verified_unchanged": true,
+    "index_integrity_evidence": {
+      "before": {
+        "vdb_chunks.json": "a5392f28b25c995c1595a138afabbad64c34ba5bba547905cfb07fc80b114107",
+        "kv_store_text_chunks.json": "c3d55a105cebbe177d259d1820e2f47192a010aabef300e01b435dd9b1908906",
+        "graph_chunk_entity_relation.graphml": "5d551e39fdc045a956303a68d0b587ade881426ab0bb1bd1710a5f0473d4362b"
+      },
+      "after": {
+        "vdb_chunks.json": "a5392f28b25c995c1595a138afabbad64c34ba5bba547905cfb07fc80b114107",
+        "kv_store_text_chunks.json": "c3d55a105cebbe177d259d1820e2f47192a010aabef300e01b435dd9b1908906",
+        "graph_chunk_entity_relation.graphml": "5d551e39fdc045a956303a68d0b587ade881426ab0bb1bd1710a5f0473d4362b"
+      },
+      "unchanged": true,
+      "finished_utc": "2026-10-29T14:52:26.070833+00:00"
+    },
+    "parameters_changed_together": [
+      "top_k12to40",
+      "chunk_top_k8to20",
+      "entity_budget2000to6000",
+      "relation_budget2000to8000",
+      "total_budget8000to30000"
+    ],
+    "causal_isolation_limit": "Several retrieval/context budgets changed together; model output can vary even attemperature0. The intervention demonstrates sensitivity/recovery, not proof that one parameter or one formatting change is the sole cause."
+  },
+  "summary_zh": "Q06两模式在较大预算下找回US7991757B2并完成有来源的比较；Q11仍缺目标原文。Q11mix却取回来自该专利的RegistrationModule图描述，并无依据地称其属于另一专利族；该来源断言与保存的原文和图记录相矛盾。",
+  "rows": [
+    {
+      "question_id": "Q06",
+      "mode": "naive",
+      "question_verbatim": "Compare how US7991757B2 and US8095432B1 select or rank recommendations. Does either claim say the two systems interoperate? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "settings": {
+        "supplement_only": true,
+        "same_questions_and_models": true,
+        "top_k": 40,
+        "chunk_top_k": 20,
+        "max_entity_tokens": 6000,
+        "max_relation_tokens": 8000,
+        "max_total_tokens": 30000,
+        "enable_rerank": false,
+        "note": "Retrieval budgets match source defaults; rerank remains disabled, same custom models and base index. Not a rerun of the main20 answers."
+      },
+      "model_answer_verbatim": "## How US7991757B2 Selects/Ranks Recommendations\n\nUS7991757B2 describes a personalization network service that queries multiple external recommenders. In **claim 1**, the system \"query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders.\" Selection is score-based: \"an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores.\"\n\n**Claim 4** adds weighting: \"applying weights to each of the recommenders; combining the scores with the weights to produce overall scores; selecting a subset of the recommendations based on the overall scores.\" **Claim 3** states the optimization module is \"further operative to assign weights to the external recommenders.\"\n\n## How US8095432B1 Selects/Ranks Recommendations\n\nUS8095432B1 ranks by social relationship proximity. **Claim 1** recites \"ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank.\" The list ordering follows rank: \"the first recommendation is higher on the recommendation list than the second recommendation based on the first rank exceeding the second rank.\" Claim 1 also compares interest similarity: \"determining that the first member comprises a plurality of interests in common with the inquiring member\" and \"determining that the first rank is higher than the third rank.\"\n\n## Interoperation\n\nNeither claim states the two systems interoperate. US7991757B2 claim 1 refers only to \"external recommenders\" generally, without naming US8095432B1. US8095432B1 claim 1 contains no multi-recommender or external-service element.\n\n**Inference (not stated):** US8095432B1's proximity-ranked engine could conceptually serve as one \"external recommender\" under US7991757B2's architecture, but no claim wording supports this link.\n\n### References\n\n- [1] US8095432B1.txt\n- [6] US7991757B2.txt",
+      "verdict": {
+        "core_question_completed": true,
+        "patent_attribution": "correct",
+        "claim_attribution": "source_verified",
+        "citation_mapping": "correct",
+        "answer_support": "supported_with_explicit_speculation",
+        "unsupported_source_attribution": false,
+        "baseline_recovery_observed": true,
+        "cause": "retrieval_budget_sensitivity_observed; not a unique causal ablation of all changed parameters"
+      },
+      "review_notes": [
+        "Both requested patents are present in final primary chunks, unlike baseline.",
+        "Core score-normalization/weighted aggregation versus social-relationship proximity comparison is correct.",
+        "Claim1,3,4 ofUS799 are verified for naive; Claim17and4 are verified for mix. The question does not mandate Claim1, so source-valid Claim17 is an acceptable independent-method alternative.",
+        "Several excerpts replace clause-ending punctuation or stop before remaining claim text. Technically faithful excerpts, not all byte-exact quotations.",
+        "Speculation that one system could feed another is explicitly labeled inference and denied source support; do not present it as an observed patent link."
+      ],
+      "target_primary_chunk_ids": [
+        "US7991757B2-chunk-001",
+        "US7991757B2-chunk-000"
+      ],
+      "target_graph_records": {
+        "entities": [],
+        "relationships": []
+      },
+      "same_call_reference_map": {
+        "1": "US8095432B1.txt",
+        "2": "US9514120B1.txt",
+        "3": "US9374411B1.txt",
+        "4": "US9304738B1.txt",
+        "5": "US8655901B1.txt",
+        "6": "US7991757B2.txt",
+        "7": "US9589231B2.txt",
+        "8": "US9118735B1.txt",
+        "9": "US8917913B2.txt",
+        "10": "US10867122B1.txt",
+        "11": "US8509827B2.txt",
+        "12": "US7756837B2.txt",
+        "13": "US8719408B2.txt"
+      },
+      "actual_reference_checks": [
+        {
+          "id": "1",
+          "label": "US8095432B1.txt",
+          "actual_file": "US8095432B1.txt",
+          "matches": true
+        },
+        {
+          "id": "6",
+          "label": "US7991757B2.txt",
+          "actual_file": "US7991757B2.txt",
+          "matches": true
+        }
+      ],
+      "chunks_returned": 20,
+      "entities_returned": 0,
+      "relationships_returned": 0,
+      "api_call_id_range": [
+        385,
+        386
+      ],
+      "source_result_file": "round2/results/supplement_budget_Q06_naive.json"
+    },
+    {
+      "question_id": "Q06",
+      "mode": "mix",
+      "question_verbatim": "Compare how US7991757B2 and US8095432B1 select or rank recommendations. Does either claim say the two systems interoperate? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "settings": {
+        "supplement_only": true,
+        "same_questions_and_models": true,
+        "top_k": 40,
+        "chunk_top_k": 20,
+        "max_entity_tokens": 6000,
+        "max_relation_tokens": 8000,
+        "max_total_tokens": 30000,
+        "enable_rerank": false,
+        "note": "Retrieval budgets match source defaults; rerank remains disabled, same custom models and base index. Not a rerun of the main20 answers."
+      },
+      "model_answer_verbatim": "## How Each Patent Selects or Ranks Recommendations\n\n**US7991757B2** ranks/selects by combining scores from multiple external recommenders. Claim 17 recites: \"normalizing scores provided by the recommenders to produce normalized scores; applying weights to each of the recommenders; and combining the normalized scores with the weights to generate overall scores to be used in selecting recommendations.\" Claim 4 similarly recites \"applying weights to each of the recommenders; combining the scores with the weights to produce overall scores; selecting a subset of the recommendations based on the overall scores.\"\n\n**US8095432B1** ranks by relationship proximity within a social network. Claim 1 recites: \"ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank.\" The abstract adds that proximity \"is closest for friends of the inquiring member, and farthest for strangers.\"\n\n## Do Either Claims Say the Systems Interoperate?\n\nNo. Neither claim references the other patent, its system, or any cross-system interoperability. US7991757B2 claim 17 addresses a \"network service to content sites\" using registered external recommenders; US8095432B1 claim 1 addresses a \"social networking utility\" and member relationship proximities. No claim wording in the provided evidence links the two.\n\n## Inference (Not Stated Fact)\n\nBoth concern recommendation selection, but on different bases—weighted score aggregation versus social-graph proximity. Any suggestion that one could feed the other is my inference only; the evidence does not support it.\n\n### References\n\n- [6] US7991757B2.txt\n- [1] US8095432B1.txt",
+      "verdict": {
+        "core_question_completed": true,
+        "patent_attribution": "correct",
+        "claim_attribution": "source_verified",
+        "citation_mapping": "correct",
+        "answer_support": "supported_with_explicit_speculation",
+        "unsupported_source_attribution": false,
+        "baseline_recovery_observed": true,
+        "cause": "retrieval_budget_sensitivity_observed; not a unique causal ablation of all changed parameters"
+      },
+      "review_notes": [
+        "Both requested patents are present in final primary chunks, unlike baseline.",
+        "Core score-normalization/weighted aggregation versus social-relationship proximity comparison is correct.",
+        "Claim1,3,4 ofUS799 are verified for naive; Claim17and4 are verified for mix. The question does not mandate Claim1, so source-valid Claim17 is an acceptable independent-method alternative.",
+        "Several excerpts replace clause-ending punctuation or stop before remaining claim text. Technically faithful excerpts, not all byte-exact quotations.",
+        "Speculation that one system could feed another is explicitly labeled inference and denied source support; do not present it as an observed patent link."
+      ],
+      "target_primary_chunk_ids": [
+        "US7991757B2-chunk-001",
+        "US7991757B2-chunk-000"
+      ],
+      "target_graph_records": {
+        "entities": [
+          {
+            "entity_name": "Recommendations System",
+            "entity_type": "artifact",
+            "description": "A computer-implemented system that registers recommenders from recommender providers, stores access information for the recommenders, receives requests from content sites for item recommendations, causes the recommenders to provide recommendations, normalizes scores, applies weights, and combines scores to generate overall scores for selecting recommendations.",
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "entity_name": "Recommender",
+            "entity_type": "artifact",
+            "description": "A software component that generates item recommendations; recommenders may be external and operated by entities different from the personalization network service provider.<SEP>A component or service provided by a recommender provider that uses collected event data regarding user-generated events to select particular items to recommend to users, and provides scores that are normalized and weighted by the recommendations system.",
+            "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "entity_name": "Uniform Resource Indicators",
+            "entity_type": "data",
+            "description": "Information for accessing the recommenders with the recommendations system, comprising uniform resource indicators.",
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "entity_name": "Access Information",
+            "entity_type": "data",
+            "description": "Information for accessing the recommenders with the recommendations system, stored in computer storage.",
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "entity_name": "Registration Submissions",
+            "entity_type": "data",
+            "description": "Submissions received from recommender providers that are operative to request registration of the recommenders with the recommendations system.",
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "entity_name": "Content Site",
+            "entity_type": "organization",
+            "description": "A site that requests event data storage and item recommendations from the personalization network service over a computer network.<SEP>A site that requests item recommendations from the recommendations system over a computer network via a network service interface, and that may provide recommender selections and weighting selections.",
+            "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "entity_name": "Recommendations Retriever",
+            "entity_type": "artifact",
+            "description": "A component operative to query external recommenders over the computer network for recommendations and receive recommendations and associated scores.",
+            "source_id": "US7991757B2-chunk-000",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          }
+        ],
+        "relationships": [
+          {
+            "src_id": "Recommendations System",
+            "tgt_id": "Recommender",
+            "description": "The recommendations system registers recommenders, stores access information for accessing them, and causes them to provide recommendations for content sites.",
+            "keywords": "access,invocation,registration",
+            "weight": 1.0,
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "src_id": "Content Site",
+            "tgt_id": "Recommendations System",
+            "description": "Content sites send requests for item recommendations to the recommendations system over a computer network via a network service interface.<SEP>The recommendations system provides recommendations to content sites in response to their requests.",
+            "keywords": "provides recommendations,request for recommendations",
+            "weight": 2.0,
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "src_id": "Recommendations System",
+            "tgt_id": "Weights",
+            "description": "The recommendations system applies weights to each of the recommenders.",
+            "keywords": "applies weights",
+            "weight": 1.0,
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "src_id": "External Recommender",
+            "tgt_id": "Recommendations Retriever",
+            "description": "The recommendations retriever queries external recommenders over the computer network and receives recommendations and associated scores.",
+            "keywords": "queries,receives recommendations",
+            "weight": 1.0,
+            "source_id": "US7991757B2-chunk-000",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "src_id": "Recommendations System",
+            "tgt_id": "Recommender Provider",
+            "description": "Recommender providers submit registration submissions to request registration of their recommenders with the recommendations system, and are different entities than the provider of the recommendations system.",
+            "keywords": "registration submission",
+            "weight": 1.0,
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "src_id": "Normalized Scores",
+            "tgt_id": "Recommendations System",
+            "description": "The recommendations system normalizes scores provided by the recommenders to produce normalized scores.",
+            "keywords": "normalizes scores",
+            "weight": 1.0,
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "src_id": "Recommendations Retriever",
+            "tgt_id": "Recommendations Service",
+            "description": "The recommendations service comprises a recommendations retriever.",
+            "keywords": "comprises",
+            "weight": 1.0,
+            "source_id": "US7991757B2-chunk-000",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "src_id": "Access Information",
+            "tgt_id": "Uniform Resource Indicators",
+            "description": "The access information for accessing the recommenders comprises uniform resource indicators.",
+            "keywords": "comprises",
+            "weight": 1.0,
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          }
+        ]
+      },
+      "same_call_reference_map": {
+        "1": "US8095432B1.txt",
+        "2": "US9514120B1.txt",
+        "3": "US9374411B1.txt",
+        "4": "US9304738B1.txt",
+        "5": "US8655901B1.txt",
+        "6": "US7991757B2.txt",
+        "7": "US9589231B2.txt",
+        "8": "US9118735B1.txt",
+        "9": "US8917913B2.txt",
+        "10": "US10867122B1.txt",
+        "11": "US8509827B2.txt"
+      },
+      "actual_reference_checks": [
+        {
+          "id": "6",
+          "label": "US7991757B2.txt",
+          "actual_file": "US7991757B2.txt",
+          "matches": true
+        },
+        {
+          "id": "1",
+          "label": "US8095432B1.txt",
+          "actual_file": "US8095432B1.txt",
+          "matches": true
+        }
+      ],
+      "chunks_returned": 18,
+      "entities_returned": 78,
+      "relationships_returned": 105,
+      "api_call_id_range": [
+        387,
+        388
+      ],
+      "source_result_file": "round2/results/supplement_budget_Q06_mix.json"
+    },
+    {
+      "question_id": "Q11_supplementary",
+      "mode": "naive",
+      "question_verbatim": "In US7991757B2, what registration capability is specified in Claim1 and what additional capability does Claim27 add? Explain the dependency and quote the supporting wording from each claim. Distinguish explicit evidence from inference.",
+      "settings": {
+        "supplement_only": true,
+        "same_questions_and_models": true,
+        "top_k": 40,
+        "chunk_top_k": 20,
+        "max_entity_tokens": 6000,
+        "max_relation_tokens": 8000,
+        "max_total_tokens": 30000,
+        "enable_rerank": false,
+        "note": "Retrieval budgets match source defaults; rerank remains disabled, same custom models and base index. Not a rerun of the main20 answers."
+      },
+      "model_answer_verbatim": "I do not have enough information to answer this query. The patent **US7991757B2** does not appear anywhere in the provided Context or Reference Document List, so I cannot quote Claim 1 or Claim 27 from it, nor explain their dependency.\n\nThe available documents are:\n\n- [1] US10867122B1\n- [2] US9374411B1\n- [3] US8655901B1\n- [4] US7756837B2\n- [5] US8095432B1\n- [6] US9514120B1\n- [7] US8719408B2\n- [8] US8069128B2\n- [9] US11423041B2\n- [10] US9304738B1\n- [11] US9218390B2\n- [12] US9514753B2\n- [13] US9118735B1\n\n**What is missing:** the text of US7991757B2, including its Claim 1 and Claim 27. Without that evidence, any statement about a \"registration capability\" or an added capability would be inference rather than document fact, which the instructions prohibit. Please provide the relevant claims or confirm the correct publication number.\n\n### References\n\n- [1] US10867122B1.txt\n- [2] US9374411B1.txt\n- [3] US8655901B1.txt\n- [4] US7756837B2.txt\n- [5] US8095432B1.txt",
+      "verdict": {
+        "core_question_completed": false,
+        "safe_abstention": true,
+        "retrieval_target_primary_chunks_missing": true,
+        "unsupported_source_attribution": false,
+        "cause": "target vector ranks29/30 remain beyond20-chunk cutoff in separate diagnostic; no cross-chunk-loss conclusion"
+      },
+      "review_notes": [
+        "Target primary chunks remain absent.",
+        "The answer appropriately refuses to quote unavailable Claims1and27.",
+        "No positive false technical or patent-family attribution observed."
+      ],
+      "target_primary_chunk_ids": [],
+      "target_graph_records": {
+        "entities": [],
+        "relationships": []
+      },
+      "same_call_reference_map": {
+        "1": "US10867122B1.txt",
+        "2": "US9374411B1.txt",
+        "3": "US8655901B1.txt",
+        "4": "US7756837B2.txt",
+        "5": "US8095432B1.txt",
+        "6": "US9514120B1.txt",
+        "7": "US8719408B2.txt",
+        "8": "US8069128B2.txt",
+        "9": "US11423041B2.txt",
+        "10": "US9304738B1.txt",
+        "11": "US9218390B2.txt",
+        "12": "US9514753B2.txt",
+        "13": "US9118735B1.txt"
+      },
+      "actual_reference_checks": [
+        {
+          "id": "1",
+          "label": "US10867122B1.txt",
+          "actual_file": "US10867122B1.txt",
+          "matches": true
+        },
+        {
+          "id": "2",
+          "label": "US9374411B1.txt",
+          "actual_file": "US9374411B1.txt",
+          "matches": true
+        },
+        {
+          "id": "3",
+          "label": "US8655901B1.txt",
+          "actual_file": "US8655901B1.txt",
+          "matches": true
+        },
+        {
+          "id": "4",
+          "label": "US7756837B2.txt",
+          "actual_file": "US7756837B2.txt",
+          "matches": true
+        },
+        {
+          "id": "5",
+          "label": "US8095432B1.txt",
+          "actual_file": "US8095432B1.txt",
+          "matches": true
+        }
+      ],
+      "chunks_returned": 20,
+      "entities_returned": 0,
+      "relationships_returned": 0,
+      "api_call_id_range": [
+        389,
+        390
+      ],
+      "source_result_file": "round2/results/supplement_budget_Q11_supplementary_naive.json"
+    },
+    {
+      "question_id": "Q11_supplementary",
+      "mode": "mix",
+      "question_verbatim": "In US7991757B2, what registration capability is specified in Claim1 and what additional capability does Claim27 add? Explain the dependency and quote the supporting wording from each claim. Distinguish explicit evidence from inference.",
+      "settings": {
+        "supplement_only": true,
+        "same_questions_and_models": true,
+        "top_k": 40,
+        "chunk_top_k": 20,
+        "max_entity_tokens": 6000,
+        "max_relation_tokens": 8000,
+        "max_total_tokens": 30000,
+        "enable_rerank": false,
+        "note": "Retrieval budgets match source defaults; rerank remains disabled, same custom models and base index. Not a rerun of the main20 answers."
+      },
+      "model_answer_verbatim": "I do not have enough information to answer this query. The provided **Context** does not contain any document, chunk, or knowledge-graph entity for **US7991757B2**, so I cannot quote Claim 1 or Claim 27 of that patent, nor describe their dependency.\n\n**What is present (explicit evidence):** The context does describe a *registration* capability, but in a different patent family. The knowledge graph states that a \"Registration Module\" is \"configured to provide functionality for registering an external recommender with a recommendations service\" and is \"configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.\" It also states that \"Registration submissions are operative to request registration of recommenders\" and are \"received from a plurality of recommender providers.\" However, none of the document chunks in the context contain claim text tied to US7991757B2, and no claim numbers 1 or 27 for that publication appear.\n\n**What is missing:** (1) The text of US7991757B2 Claim 1; (2) the text of Claim 27; (3) any statement of Claim 27's dependency (e.g., \"The method of claim 1, further comprising…\"). Without these, any description of the added capability or the dependency relationship would be inference rather than evidence, which I will not supply.\n\n**Inference vs. evidence:** It would be an unsupported inference to assume the registration language above belongs to US7991757B2 or that Claim 27 depends from Claim 1. To answer, please provide the claims of US7991757B2 or a document chunk containing them.\n\n### References\n\n- [1] US10867122B1.txt",
+      "verdict": {
+        "core_question_completed": false,
+        "safe_abstention_for_claim_text": true,
+        "retrieval_target_primary_chunks_missing": true,
+        "target_graph_capabilities_retrieved": true,
+        "unsupported_source_attribution": true,
+        "contradicted_by_recorded_provenance": true,
+        "cause": "generation/attribution error under missing primary chunks and origin-stripped graph context; causal contribution of formatting not isolated"
+      },
+      "review_notes": [
+        "The answer refuses to provide the specific claims, which are absent from retained primary chunks.",
+        "However, it positively places the registration capability in a different patent family. The same-call graph records and raw source show the quoted capabilities originate inUS7991757B2 Claims1/27.",
+        "The actual answering prompt includes these entity/relation descriptions but omits their file_path/source_id; it containsUS7991757B2 only in the user question.",
+        "No patent-family metadata or genealogy was supplied or checked. The defensible failure is incorrect/unsupported source exclusion and attribution, not a finding about patent-family membership.",
+        "The only final reference isUS10867122B1. It resolves as a document reference, but cannot support attribution of the quoted registration capabilities.",
+        "Metadata omission is observed and plausibly relevant; sole causal responsibility cannot be assigned without a matched provenance-restoration ablation or repeated controls."
+      ],
+      "target_primary_chunk_ids": [],
+      "target_graph_records": {
+        "entities": [
+          {
+            "entity_name": "Registration Submission",
+            "entity_type": "data",
+            "description": "A submission received from recommender providers that is operative to request registration of recommenders.",
+            "source_id": "US7991757B2-chunk-000",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "entity_name": "Registration Submissions",
+            "entity_type": "data",
+            "description": "Submissions received from recommender providers that are operative to request registration of the recommenders with the recommendations system.",
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "entity_name": "Weight",
+            "entity_type": "concept",
+            "description": "A value assigned to a keyword based on user interest indications and historic performance, used to rank and select keywords.<SEP>A value determined for each keyword of an information resource based on user interest indications and historic performance, used to rank and select keywords.<SEP>A value applied to each recommender, which may be site-specific, user-specific, user segment-specific, or default, and is adjusted based on user-generated events.<SEP>A value assigned to each of the plurality of characteristics for each pair of users, used to determine relationship strength.",
+            "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001<SEP>US7991757B2-chunk-000<SEP>US10778629B2-chunk-001",
+            "file_path": "US9304738B1.txt<SEP>US7991757B2.txt<SEP>US10778629B2.txt",
+            "created_at": 1793284708
+          },
+          {
+            "entity_name": "Registration Module",
+            "entity_type": "artifact",
+            "description": "A module configured to provide functionality for registering an external recommender with a recommendations service.<SEP>A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "entity_name": "Machine Readable Descriptions",
+            "entity_type": "data",
+            "description": "Descriptions of an external recommender provided by the provider of the external recommender.",
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          }
+        ],
+        "relationships": [
+          {
+            "src_id": "Recommender",
+            "tgt_id": "Registration Submission",
+            "description": "Registration submissions are operative to request registration of recommenders.",
+            "keywords": "requests registration of",
+            "weight": 1.0,
+            "source_id": "US7991757B2-chunk-000",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "src_id": "External Recommender",
+            "tgt_id": "Registration Module",
+            "description": "The registration module provides functionality for registering an external recommender with the recommendations service.<SEP>The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+            "keywords": "allows descriptions,registers",
+            "weight": 2.0,
+            "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "src_id": "External Recommender",
+            "tgt_id": "Machine Readable Descriptions",
+            "description": "Machine readable descriptions describe the external recommender and are provided by its provider.",
+            "keywords": "described by",
+            "weight": 1.0,
+            "source_id": "US7991757B2-chunk-001",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          },
+          {
+            "src_id": "Recommender Provider",
+            "tgt_id": "Registration Submission",
+            "description": "Registration submissions for recommenders are received from a plurality of recommender providers.",
+            "keywords": "received from",
+            "weight": 1.0,
+            "source_id": "US7991757B2-chunk-000",
+            "file_path": "US7991757B2.txt",
+            "created_at": 1793284383
+          }
+        ]
+      },
+      "same_call_reference_map": {
+        "1": "US10867122B1.txt",
+        "2": "US9374411B1.txt",
+        "3": "US8655901B1.txt",
+        "4": "US7756837B2.txt",
+        "5": "US8095432B1.txt",
+        "6": "US9514120B1.txt",
+        "7": "US8719408B2.txt",
+        "8": "US8069128B2.txt",
+        "9": "US11423041B2.txt",
+        "10": "US9304738B1.txt",
+        "11": "US9218390B2.txt",
+        "12": "US9514753B2.txt",
+        "13": "US9118735B1.txt"
+      },
+      "actual_reference_checks": [
+        {
+          "id": "1",
+          "label": "US10867122B1.txt",
+          "actual_file": "US10867122B1.txt",
+          "matches": true
+        }
+      ],
+      "chunks_returned": 20,
+      "entities_returned": 82,
+      "relationships_returned": 82,
+      "api_call_id_range": [
+        391,
+        392
+      ],
+      "source_result_file": "round2/results/supplement_budget_Q11_supplementary_mix.json"
+    }
+  ],
+  "diagnostic_target_vector_ranks": {
+    "Q06": [
+      {
+        "rank": 9,
+        "chunk_id": "US7991757B2-chunk-001",
+        "similarity": "0.54943776"
+      },
+      {
+        "rank": 11,
+        "chunk_id": "US7991757B2-chunk-000",
+        "similarity": "0.5467961"
+      }
+    ],
+    "Q11_supplementary": [
+      {
+        "rank": 29,
+        "chunk_id": "US7991757B2-chunk-000",
+        "similarity": "0.51691717"
+      },
+      {
+        "rank": 30,
+        "chunk_id": "US7991757B2-chunk-001",
+        "similarity": "0.51170284"
+      }
+    ]
+  },
+  "concrete_attribution_failure": {
+    "question": "Q11_supplementary",
+    "mode": "mix",
+    "answer_span": "The context does describe a registration capability, but in a different patent family.",
+    "verbatim_answer_sentence": "The context does describe a *registration* capability, but in a different patent family.",
+    "actual_patent": "US7991757B2",
+    "claim1_exact_source_clause": "a registration module configured to provide functionality for registering an external recommender with a recommendations service",
+    "claim27_exact_source_clause": "wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender",
+    "claim27_explicit_dependency_prefix": "27. The system of claim 1 ,",
+    "same_call_registration_entity": {
+      "entity_name": "Registration Module",
+      "entity_type": "artifact",
+      "description": "A module configured to provide functionality for registering an external recommender with a recommendations service.<SEP>A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+      "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793284383
+    },
+    "same_call_registration_relation": {
+      "src_id": "External Recommender",
+      "tgt_id": "Registration Module",
+      "description": "The registration module provides functionality for registering an external recommender with the recommendations service.<SEP>The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+      "keywords": "allows descriptions,registers",
+      "weight": 2.0,
+      "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793284383
+    },
+    "actual_answer_prompt_file": "round2/logs/api_0392_request.json",
+    "rendered_graph_lines": [
+      "{\"entity\": \"Registration Module\", \"type\": \"artifact\", \"description\": \"A module configured to provide functionality for registering an external recommender with a recommendations service.<SEP>A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.\"}",
+      "{\"entity1\": \"External Recommender\", \"entity2\": \"Registration Module\", \"description\": \"The registration module provides functionality for registering an external recommender with the recommendations service.<SEP>The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.\"}"
+    ],
+    "target_patent_occurrences_in_system_context": 0,
+    "target_patent_occurrences_in_user_question": 1,
+    "source_metadata_present_in_structured_records": true,
+    "source_metadata_missing_from_rendered_relevant_graph_lines": true,
+    "family_metadata_available": false,
+    "family_membership_was_not_independently_investigated": true,
+    "classification": [
+      "unsupported_and_provenance_contradicted_generation_attribution_assertion",
+      "required_primary_evidence_not_retrieved",
+      "observed_graph_provenance_field_omission_in_answer_prompt"
+    ],
+    "not_established": [
+      "extraction_or_graph_indexing_loss",
+      "causal_cross_chunk_relation_loss",
+      "sole_causality_of_metadata_omission",
+      "formal_patent_family_membership"
+    ]
+  },
+  "sha256": {
+    "round2/results/supplement_budget_Q11_supplementary_mix.json": "fb02ac46535f4efe4685aa36600b61cd322e6322b9e89878c126886df48e58db",
+    "round2/logs/api_0392_request.json": "785d3adc6f41eaaad1b08b94f821a8c480f4674bc44c8311bbdab4395fd121cf",
+    "round2/evidence/budget_sensitivity_index_integrity.json": "dbc76232e51db52f1c01417ed61ced223e79d483c4cc9ceb65bf5a1a67c85445",
+    "round2/evidence/retrieval_rank_probe.json": "f2ea686346cecc18b00faa31c1264a50c4999e0aed38619be38417af3576afac"
+  }
+}

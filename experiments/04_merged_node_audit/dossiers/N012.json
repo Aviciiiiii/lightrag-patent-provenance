@@ -1,0 +1,961 @@
+{
+  "node_id": "Third User",
+  "entity_type": "person",
+  "graph_source_chunks": [
+    "US9118735B1-chunk-001",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001",
+    "US9304738B1-chunk-002"
+  ],
+  "entity_chunk_store_sources": [
+    "US9118735B1-chunk-001",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001",
+    "US9304738B1-chunk-002"
+  ],
+  "all_source_chunks": [
+    "US9118735B1-chunk-001",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001",
+    "US9304738B1-chunk-002"
+  ],
+  "canonical_publications": [
+    "US9118735B1",
+    "US9304738B1"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US9118735B1.txt",
+    "US9304738B1.txt"
+  ],
+  "graph_file_paths": [
+    "US9304738B1.txt",
+    "US9118735B1.txt"
+  ],
+  "graph_file_path_publications": [
+    "US9118735B1",
+    "US9304738B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US9118735B1-chunk-001",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001",
+    "US9304738B1-chunk-002"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US9118735B1-chunk-001",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001",
+    "US9304738B1-chunk-002"
+  ],
+  "graph_node": {
+    "entity_id": "Third User",
+    "entity_type": "person",
+    "description": "A user, different from the first user and the second user, who requests content to provide for display with the parked domain web page.<SEP>A user different from the first and second users who requests content to provide for display with the parked domain web page.<SEP>A user in the first user's social network who is likely to connect the first user's social network with the third user's own social network and whose last-known location is within a predetermined distance from the first user's location; the third user may opt in to sharing identity, social network, or location information.",
+    "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001<SEP>US9304738B1-chunk-002<SEP>US9118735B1-chunk-001",
+    "file_path": "US9304738B1.txt<SEP>US9118735B1.txt",
+    "created_at": 1793284215,
+    "truncate": "",
+    "id": "Third User"
+  },
+  "incident_edge_count": 11,
+  "audit_id": "N012",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US9118735B1",
+      "file_paths": [
+        "US9118735B1.txt"
+      ],
+      "source_chunks": [
+        "US9118735B1-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9118735B1",
+          "full_doc_id": "US9118735B1",
+          "file_path": "US9118735B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 956,
+          "content_sha256": "b3448c0610adb75d41d0e719be9b14b65e384183af67e7f82dd178abc42f6404",
+          "exact_doc_char_start": 5938,
+          "exact_doc_char_end": 10873,
+          "content": "of the third user is connected, a geolocation provided by the computer of the third user, a venue that the third user has identified himself or herself as being at, or an event that the third user has identified himself or herself as being at. 8. The method of claim 4 , further comprising: receiving an identifier associated with the first user, an identifier associated with the second user, and a location of the first user. 9. The method of claim 8 , wherein the location of the first user is a geographic location. 10. The method of claim 8 , wherein determining the social network of the first user comprises: determining the social network of the first user based on the identifier associated with the first user. 11. The method of claim 4 , wherein determining the social network of the first user comprises: determining the social network based on combining a first social network and a second social network of the first user, the first social network being a different type of social network than the second social network. 12. The method of claim 4 , wherein determining the third user comprises: traversing the social network of the first user, using the first user as a first origin for traversing and using the second user as a second origin for traversing. 13. The method of claim 12 , wherein traversing the social network of the first user comprises: pruning the social network while traversing, based on a location of people in the social network of the first user. 14. The method of claim 4 , further comprising: anonymizing results based on replacing an identifier associated with the second user with a token, and encrypting the anonymized results. 15. The method of claim 4 , further comprising: determining not to return an identifier associated with a fourth user based on determining that the first user and the fourth user have a negative affinity. 16. A non-transitory computer-readable storage medium for assisting a first user in finding a second user using a social network, bearing computer-executable instructions that, when executed on a computer, cause the computer to perform operations comprising: receiving an identification associated with the first user, an identification associated with the second user, and a location of the first user; determining a social network of the first user based on the identification associated with the first user; determining a third user in the social network of the first user who is likely to connect the social network of the first user with a social network of the third user, and who has a last-known location within a predetermined distance from the location of the first user, wherein the first user and third user have a number of degrees of separation and a type of relationship; determine that the third user has opted-in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship that the first user and third user have; and sending an identifier associated with the third user, or a response based on a response from a computer of the third user, or a possible location of the second user to a computer of the first user. 17. The computer-readable storage medium of claim 16 , wherein determining the third user who has the last-known location within a predetermined distance from the location of the first user comprises: determining that the last-known location of the third user and the location of the first user are a same event or venue. 18. The computer-readable storage medium of claim 16 , further bearing computer-executable instructions that, when executed on the computer, cause the computer to perform operations comprising: determining to withhold sending an identifier associated with a fourth user or a response based on a response from a computer of the fourth user to the computer of the first user in response to determining that a time associated with a last-known location of the fourth user is older than a threshold amount of time. 19. The computer-readable storage medium of claim 16 , wherein receiving the location of the first user comprises: receiving the identifier associated with the first user at a kiosk having a pre-determined location. 20. The computer-readable storage medium of claim 16 , wherein the third user has at least two degrees of separation from the first user with a fourth user connecting the first and third users, and wherein determining the third user comprises: sending the third user an indication that the fourth user is requesting information on another user's behalf. 21. The computer-readable storage medium of claim 16 , wherein the identifier associated with the third user comprises a name, image, or location of the third user, a relationship between the first user and the third user, or a relationship between the second user and the third user.",
+          "llm_cache_list": [
+            "default:extract:428466472288172ce1196a08a08e71c2"
+          ],
+          "chunk_id": "US9118735B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US9118735B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "04ec90befb1d9d4518415e218f5d1bb37ec016f2a9ce280273b4d899afdbeb03"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 3,
+              "raw_line": "entity<|#|>Third User<|#|>Person<|#|>A user in the first user's social network who is likely to connect the first user's social network with the third user's own social network and whose last-known location is within a predetermined distance from the first user's location; the third user may opt in to sharing identity, social network, or location information.",
+              "fields": [
+                "entity",
+                "Third User",
+                "Person",
+                "A user in the first user's social network who is likely to connect the first user's social network with the third user's own social network and whose last-known location is within a predetermined distance from the first user's location; the third user may opt in to sharing identity, social network, or location information."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 21,
+              "raw_line": "relation<|#|>Third User<|#|>Social Network<|#|>Membership, Connection<|#|>The third user is in the social network of the first user and is likely to connect the first user's social network with the third user's own social network.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Social Network",
+                "Membership, Connection",
+                "The third user is in the social network of the first user and is likely to connect the first user's social network with the third user's own social network."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 22,
+              "raw_line": "relation<|#|>Third User<|#|>First User<|#|>Proximity, Degrees Of Separation<|#|>The third user has a last-known location within a predetermined distance from the first user's location and has a number of degrees of separation and a type of relationship with the first user.",
+              "fields": [
+                "relation",
+                "Third User",
+                "First User",
+                "Proximity, Degrees Of Separation",
+                "The third user has a last-known location within a predetermined distance from the first user's location and has a number of degrees of separation and a type of relationship with the first user."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 23,
+              "raw_line": "relation<|#|>Third User<|#|>Opt-In<|#|>Consent<|#|>The third user has opted in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship with the first user.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Opt-In",
+                "Consent",
+                "The third user has opted in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship with the first user."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Fourth User<|#|>Third User<|#|>Connection<|#|>The fourth user connects the first and third users, and the third user has at least two degrees of separation from the first user with the fourth user connecting them.",
+              "fields": [
+                "relation",
+                "Fourth User",
+                "Third User",
+                "Connection",
+                "The fourth user connects the first and third users, and the third user has at least two degrees of separation from the first user with the fourth user connecting them."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 27,
+              "raw_line": "relation<|#|>Third User<|#|>Geolocation<|#|>Location Provision<|#|>A geolocation may be provided by the computer of the third user.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Geolocation",
+                "Location Provision",
+                "A geolocation may be provided by the computer of the third user."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 28,
+              "raw_line": "relation<|#|>Third User<|#|>Venue<|#|>Presence<|#|>The third user may have identified himself or herself as being at a venue.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Venue",
+                "Presence",
+                "The third user may have identified himself or herself as being at a venue."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 29,
+              "raw_line": "relation<|#|>Third User<|#|>Event<|#|>Presence<|#|>The third user may have identified himself or herself as being at an event.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Event",
+                "Presence",
+                "The third user may have identified himself or herself as being at an event."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 30,
+              "raw_line": "relation<|#|>Third User<|#|>First User<|#|>Same Event Or Venue<|#|>The last-known location of the third user and the location of the first user may be determined to be the same event or venue.",
+              "fields": [
+                "relation",
+                "Third User",
+                "First User",
+                "Same Event Or Venue",
+                "The last-known location of the third user and the location of the first user may be determined to be the same event or venue."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 37,
+              "raw_line": "relation<|#|>Third User<|#|>Identifier<|#|>Identification<|#|>The identifier associated with the third user may comprise a name, image, or location of the third user, a relationship between the first user and the third user, or a relationship between the second user and the third user.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Identifier",
+                "Identification",
+                "The identifier associated with the third user may comprise a name, image, or location of the third user, a relationship between the first user and the third user, or a relationship between the second user and the third user."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 257,
+              "text": "of the third user is connected, a geolocation provided by the computer of the third user, a venue that the third user has identified himself or herself as being at, or an event that the third user has identified himself or herself as being at. 8. The method"
+            },
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 328,
+              "text": "of the third user is connected, a geolocation provided by the computer of the third user, a venue that the third user has identified himself or herself as being at, or an event that the third user has identified himself or herself as being at. 8. The method of claim 4 , further comprising: receiving an identifier associated wi"
+            },
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 357,
+              "text": "of the third user is connected, a geolocation provided by the computer of the third user, a venue that the third user has identified himself or herself as being at, or an event that the third user has identified himself or herself as being at. 8. The method of claim 4 , further comprising: receiving an identifier associated with the first user, an identif"
+            },
+            {
+              "chunk_char_start": 6,
+              "chunk_char_end": 436,
+              "text": " third user is connected, a geolocation provided by the computer of the third user, a venue that the third user has identified himself or herself as being at, or an event that the third user has identified himself or herself as being at. 8. The method of claim 4 , further comprising: receiving an identifier associated with the first user, an identifier associated with the second user, and a location of the first user. 9. The m"
+            },
+            {
+              "chunk_char_start": 907,
+              "chunk_char_end": 1337,
+              "text": "al network of the first user, the first social network being a different type of social network than the second social network. 12. The method of claim 4 , wherein determining the third user comprises: traversing the social network of the first user, using the first user as a first origin for traversing and using the second user as a second origin for traversing. 13. The method of claim 12 , wherein traversing the social netwo"
+            },
+            {
+              "chunk_char_start": 2221,
+              "chunk_char_end": 2651,
+              "text": "ed with the second user, and a location of the first user; determining a social network of the first user based on the identification associated with the first user; determining a third user in the social network of the first user who is likely to connect the social network of the first user with a social network of the third user, and who has a last-known location within a predetermined distance from the location of the first"
+            },
+            {
+              "chunk_char_start": 2363,
+              "chunk_char_end": 2793,
+              "text": "ed with the first user; determining a third user in the social network of the first user who is likely to connect the social network of the first user with a social network of the third user, and who has a last-known location within a predetermined distance from the location of the first user, wherein the first user and third user have a number of degrees of separation and a type of relationship; determine that the third user "
+            },
+            {
+              "chunk_char_start": 2505,
+              "chunk_char_end": 2935,
+              "text": "rst user with a social network of the third user, and who has a last-known location within a predetermined distance from the location of the first user, wherein the first user and third user have a number of degrees of separation and a type of relationship; determine that the third user has opted-in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separatio"
+            },
+            {
+              "chunk_char_start": 2602,
+              "chunk_char_end": 3032,
+              "text": "etermined distance from the location of the first user, wherein the first user and third user have a number of degrees of separation and a type of relationship; determine that the third user has opted-in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship that the first user and thi"
+            },
+            {
+              "chunk_char_start": 2849,
+              "chunk_char_end": 3279,
+              "text": "ntity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship that the first user and third user have; and sending an identifier associated with the third user, or a response based on a response from a computer of the third user, or a possible location of the second user to a computer of the first user. 17. The computer-readable stora"
+            },
+            {
+              "chunk_char_start": 2912,
+              "chunk_char_end": 3342,
+              "text": "ny degrees of separation as the number of degrees of separation for the type of relationship that the first user and third user have; and sending an identifier associated with the third user, or a response based on a response from a computer of the third user, or a possible location of the second user to a computer of the first user. 17. The computer-readable storage medium of claim 16 , wherein determining the third user who "
+            },
+            {
+              "chunk_char_start": 2981,
+              "chunk_char_end": 3411,
+              "text": "he type of relationship that the first user and third user have; and sending an identifier associated with the third user, or a response based on a response from a computer of the third user, or a possible location of the second user to a computer of the first user. 17. The computer-readable storage medium of claim 16 , wherein determining the third user who has the last-known location within a predetermined distance from the "
+            }
+          ],
+          "lexical_occurrence_count": 22
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "The third user has a last-known location within a predetermined distance from the first user's location and has a number of degrees of separation and a type of relationship with the first user.<SEP>The last-known location of the third user and the location of the first user may be determined to be the same event or venue.",
+          "keywords": "Degrees Of Separation,Proximity,Same Event Or Venue",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "First User",
+          "target": "Third User",
+          "edge_index": 190,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The third user is in the social network of the first user and is likely to connect the first user's social network with the third user's own social network.",
+          "keywords": "Connection,Membership",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Social Network",
+          "edge_index": 196,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The third user has opted in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship with the first user.",
+          "keywords": "Consent",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Opt-In",
+          "edge_index": 197,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The fourth user connects the first and third users, and the third user has at least two degrees of separation from the first user with the fourth user connecting them.",
+          "keywords": "Connection",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Fourth User",
+          "edge_index": 198,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A geolocation may be provided by the computer of the third user.",
+          "keywords": "Location Provision",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Geolocation",
+          "edge_index": 199,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The third user may have identified himself or herself as being at a venue.",
+          "keywords": "Presence",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Venue",
+          "edge_index": 200,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The third user may have identified himself or herself as being at an event.",
+          "keywords": "Presence",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Event",
+          "edge_index": 201,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The identifier associated with the third user may comprise a name, image, or location of the third user, a relationship between the first user and the third user, or a relationship between the second user and the third user.",
+          "keywords": "Identification",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Identifier",
+          "edge_index": 202,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "file_paths": [
+        "US9304738B1.txt"
+      ],
+      "source_chunks": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9304738B1",
+          "full_doc_id": "US9304738B1",
+          "file_path": "US9304738B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "bf269ef3cfec2756c71ada433b655ddffc3b98b38e15a717a03facdb173d7546",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6516,
+          "content": "Publication number: US9304738B1\nTitle: Systems and methods for selecting content using weighted terms\n\nABSTRACT\nSystems and methods for evaluating information via a computer network using weighted terms are provided. A data processing system can detect an indication of user interest in subject matter of an information resource, and can identify a plurality of keywords associated with the subject matter. The data processing system can determine a weight for each of the plurality of keywords for the information resource. The data processing system can receive a request for content to provide for display with the information resource, and can evaluate the weight of each of the plurality of keywords associated with the information resource to determine one or more keywords to use for content selection. The data processing system can select content to provide for display with the information resource based at least in part on the selected keyword(s) or the weight associated with the selected keyword(s).\n\nCLAIMS\nWhat is claimed is: 1. A computer implemented method of evaluating information via a computer network, comprising: receiving, by a data processing system via the computer network, an indication of user interest of a first user in a first advertisement displayed on a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identifying, by the data processing system from a database, a plurality of keywords of the first advertisement using the unique identifier of the parked domain web page; determining, by the data processing system, for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement displayed on the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receiving, by the data processing system, an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determining, by the data processing system, a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receiving, by the data processing system, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; ranking, by the data processing system, the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and selecting, by the data processing system, a third advertisement to provide for display with the parked domain web page based at least in part on the first keyword selected as the highest ranked keyword, wherein the third advertisement is different from the first advertisement and the second advertisement. 2. The method of claim 1 , wherein the third advertisement includes a first content having the first keyword and a second content having the first keyword. 3. The method of claim 1 , further comprising: ranking, for the parked domain web page, the plurality of keywords based on the weight of each of the plurality of keywords; and wherein the first keyword has a top ranking of the plurality of keywords. 4. The method of claim 1 , wherein the plurality of keywords includes the first keyword associated with the first advertisement displayed on the parked domain web page and a third keyword associated with the third advertisement displayed on the parked domain web page. 5. The method of claim 1 , further comprising: receiving an indication of user interest in a fourth advertisement displayed on the parked domain web page, the fourth advertisement associated with the first keyword. 6. The method of claim 1 , further comprising: determining the weight of each of the plurality of keywords based on a characteristic associated with the user interest of the first user in the first advertisement display on the parked domain web page, the characteristic including at least one of a temporal characteristic, a day characteristic, a web page content slot characteristic, a monetary characteristic, and a performance characteristic. 7. The method of claim 1 , wherein the user interest of the first user includes the click. 8. The method of claim 1 , wherein the weight of each of the plurality of keywords associated with the first advertisement displayed on the parked domain web page is specific to the parked domain web page. 9. The method of claim 1 , further comprising: selecting the second keyword based on the weight of each of the plurality of keywords, wherein the first advertisement is associated with the first keyword and the second keyword. 10. The method of claim 1 , further comprising: assigning the weight to each of the plurality of keywords based on a number of user interactions with corresponding advertisements when the corresponding advertisements were previously displayed on the parked domain web page having the unique identifier. 11. The method of claim 1 , further comprising: receiving the indication of user interaction with the first advertisement displayed on the parked domain web page having the unique identifier, the first advertisement corresponding to the first keyword of the plurality of keywords; responsive to the indication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords with the parked domain web page having the unique identifier. 12. The method of claim 1 , further comprising: responsive to receiving the request for content, accessing the database storing",
+          "llm_cache_list": [
+            "default:extract:8f267c1e1e92c895ba038e71099892c6"
+          ],
+          "chunk_id": "US9304738B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9304738B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "21acc4a419571a4e62cda9bb681542631b8c56457d7bc8ce53809ac0c075d793"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 13,
+              "raw_line": "entity<|#|>Third User<|#|>Person<|#|>A user different from the first and second users who requests content to provide for display with the parked domain web page.",
+              "fields": [
+                "entity",
+                "Third User",
+                "Person",
+                "A user different from the first and second users who requests content to provide for display with the parked domain web page."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 41,
+              "raw_line": "relation<|#|>Third User<|#|>Content Request<|#|>requesting content<|#|>The third user requests content to provide for display with the parked domain web page.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Content Request",
+                "requesting content",
+                "The third user requests content to provide for display with the parked domain web page."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 2659,
+              "chunk_char_end": 3089,
+              "text": "tem, a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receiving, by the data processing system, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; ranking, by the data processing system, the first keyword of the plurality of keywords and the second keyword "
+            }
+          ],
+          "lexical_occurrence_count": 1
+        },
+        {
+          "publication_number": "US9304738B1",
+          "full_doc_id": "US9304738B1",
+          "file_path": "US9304738B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 1200,
+          "content_sha256": "886071717df3356cda9c51bbd4b7299b9087e0e835cf5f86a477e6df3d50296d",
+          "exact_doc_char_start": 5970,
+          "exact_doc_char_end": 12622,
+          "content": "having the unique identifier, the first advertisement corresponding to the first keyword of the plurality of keywords; responsive to the indication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords with the parked domain web page having the unique identifier. 12. The method of claim 1 , further comprising: responsive to receiving the request for content, accessing the database storing the plurality of keywords and a second plurality of keywords corresponding to advertisements previously displayed on the parked domain web page; determining, for each of the second plurality of keywords, a weight based on a performance of the corresponding advertisement previously displayed on the parked domain web page having the unique identifier; comparing, for the parked domain web page, the weight for each of the second plurality of keywords and the plurality of keywords to select a highest weighted keyword, a weight of the highest weighted keyword satisfying the threshold weight; and using the highest weighted keyword to select the second advertisement to provide for display with the parked domain web page having the unique identifier. 13. A system to evaluate information via a computer network, comprising: a data processing system having one or more processors and memory, the data processing system configured to: receive an indication of user interest of a first user in a first advertisement displayed with a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identify a plurality of keywords associated with the first advertisement using the unique identifier of the parked domain web page; determine for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement of the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and select a third advertisement to provide for display with the parked domain web page based at least in part on the first keyword selected as the highest ranked keyword, wherein the third advertisement is different from the first advertisement and the second advertisement. 14. The system of claim 13 , wherein the data processing system is further configured to: rank, for the parked domain web page, the plurality of keywords based on the weight of each of the plurality of keywords; and evaluate the plurality of keywords to select the first keyword, wherein the first keyword has a top ranking of the plurality of keywords. 15. The system of claim 13 , wherein the plurality of keywords includes the first keyword associated with the first advertisement of the parked domain web page and a third keyword associated with the third advertisement of the parked domain web page. 16. The system of claim 13 , wherein the data processing system is further configured to: receive an indication of user interest in a fourth advertisement of the parked domain web page, the fourth advertisement associated with a third keyword of the plurality of keywords; determine a third weight of the third keyword; and identify one of the first keyword and the third keyword as the highest ranked keyword. 17. The system of claim 13 , wherein the data processing system is further configured to: receive the indication of user interest in the first advertisement, the first advertisement associated with the first keyword; and receive an indication of user interest in a third advertisement, the third advertisement associated with the first keyword. 18. A non-transitory computer readable medium having instructions to evaluate information, the instructions comprising instructions to: receive an indication of user interest of a first user in a first advertisement displayed with a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identify a plurality of keywords associated with the first advertisement using the unique identifier of the parked domain web page; determine for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement of the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user",
+          "llm_cache_list": [
+            "default:extract:01a1996f64d5c8dab6d049de495fe47c"
+          ],
+          "chunk_id": "US9304738B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US9304738B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "67aa8ef7561687895e22a86257706574a7ec37aba9fac32867efafbf1155f530"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 11,
+              "raw_line": "entity<|#|>Third User<|#|>Person<|#|>A user, different from the first user and the second user, who requests content to provide for display with the parked domain web page.",
+              "fields": [
+                "entity",
+                "Third User",
+                "Person",
+                "A user, different from the first user and the second user, who requests content to provide for display with the parked domain web page."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 39,
+              "raw_line": "relation<|#|>Third User<|#|>Parked Domain Web Page<|#|>requests content for<|#|>The third user requests content to provide for display with the parked domain web page.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Parked Domain Web Page",
+                "requests content for",
+                "The third user requests content to provide for display with the parked domain web page."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 2765,
+              "chunk_char_end": 3195,
+              "text": " the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based "
+            },
+            {
+              "chunk_char_start": 6462,
+              "chunk_char_end": 6652,
+              "text": " the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user"
+            }
+          ],
+          "lexical_occurrence_count": 2
+        },
+        {
+          "publication_number": "US9304738B1",
+          "full_doc_id": "US9304738B1",
+          "file_path": "US9304738B1.txt",
+          "chunk_order_index": 2,
+          "tokens": 265,
+          "content_sha256": "5068046fde0e59f40e0ae450831aa70f5f1383b362efb5455d0ec0cf6d409520",
+          "exact_doc_char_start": 12067,
+          "exact_doc_char_end": 13508,
+          "content": "wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and select a third advertisement to provide for display with the parked domain web page based at least in part on the first keyword selected as the highest ranked keyword, wherein the third advertisement is different from the first advertisement and the second advertisement. 19. The non-transitory computer readable medium of claim 18 , wherein the weight of each of the plurality of keywords is specific to the parked domain web page.",
+          "llm_cache_list": [
+            "default:extract:7aaccba95e58a8dae5414b328138389c"
+          ],
+          "chunk_id": "US9304738B1-chunk-002",
+          "extraction_records": [
+            {
+              "chunk_id": "US9304738B1-chunk-002",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "d34ab8d11741f354126aaf9572f2eac83f2ff733886b2ed14f1b7569c2d4e557"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "cache_key": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 13,
+              "raw_line": "entity<|#|>Third User<|#|>Person<|#|>A user different from the first and second users who requests content to provide for display with the parked domain web page.",
+              "fields": [
+                "entity",
+                "Third User",
+                "Person",
+                "A user different from the first and second users who requests content to provide for display with the parked domain web page."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "cache_key": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 23,
+              "raw_line": "relation<|#|>Third User<|#|>Request For Content<|#|>content request<|#|>The third user submits a request for content to provide for display with the parked domain web page.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Request For Content",
+                "content request",
+                "The third user submits a request for content to provide for display with the parked domain web page."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 365,
+              "chunk_char_end": 795,
+              "text": " the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based "
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The third user requests content to provide for display with the parked domain web page.",
+          "keywords": "requests content for",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Parked Domain Web Page",
+          "target": "Third User",
+          "edge_index": 163,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The third user requests content to provide for display with the parked domain web page.",
+          "keywords": "requesting content",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Content Request",
+          "edge_index": 194,
+          "source_chunks": [
+            "US9304738B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The third user submits a request for content to provide for display with the parked domain web page.",
+          "keywords": "content request",
+          "source_id": "US9304738B1-chunk-002",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Request For Content",
+          "edge_index": 195,
+          "source_chunks": [
+            "US9304738B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "The third user requests content to provide for display with the parked domain web page.",
+      "keywords": "requests content for",
+      "source_id": "US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Parked Domain Web Page",
+      "target": "Third User",
+      "edge_index": 163,
+      "source_chunks": [
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The third user has a last-known location within a predetermined distance from the first user's location and has a number of degrees of separation and a type of relationship with the first user.<SEP>The last-known location of the third user and the location of the first user may be determined to be the same event or venue.",
+      "keywords": "Degrees Of Separation,Proximity,Same Event Or Venue",
+      "source_id": "US9118735B1-chunk-001",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "First User",
+      "target": "Third User",
+      "edge_index": 190,
+      "source_chunks": [
+        "US9118735B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The third user requests content to provide for display with the parked domain web page.",
+      "keywords": "requesting content",
+      "source_id": "US9304738B1-chunk-000",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Third User",
+      "target": "Content Request",
+      "edge_index": 194,
+      "source_chunks": [
+        "US9304738B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The third user submits a request for content to provide for display with the parked domain web page.",
+      "keywords": "content request",
+      "source_id": "US9304738B1-chunk-002",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Third User",
+      "target": "Request For Content",
+      "edge_index": 195,
+      "source_chunks": [
+        "US9304738B1-chunk-002"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The third user is in the social network of the first user and is likely to connect the first user's social network with the third user's own social network.",
+      "keywords": "Connection,Membership",
+      "source_id": "US9118735B1-chunk-001",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Third User",
+      "target": "Social Network",
+      "edge_index": 196,
+      "source_chunks": [
+        "US9118735B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The third user has opted in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship with the first user.",
+      "keywords": "Consent",
+      "source_id": "US9118735B1-chunk-001",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Third User",
+      "target": "Opt-In",
+      "edge_index": 197,
+      "source_chunks": [
+        "US9118735B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The fourth user connects the first and third users, and the third user has at least two degrees of separation from the first user with the fourth user connecting them.",
+      "keywords": "Connection",
+      "source_id": "US9118735B1-chunk-001",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Third User",
+      "target": "Fourth User",
+      "edge_index": 198,
+      "source_chunks": [
+        "US9118735B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "A geolocation may be provided by the computer of the third user.",
+      "keywords": "Location Provision",
+      "source_id": "US9118735B1-chunk-001",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Third User",
+      "target": "Geolocation",
+      "edge_index": 199,
+      "source_chunks": [
+        "US9118735B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The third user may have identified himself or herself as being at a venue.",
+      "keywords": "Presence",
+      "source_id": "US9118735B1-chunk-001",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Third User",
+      "target": "Venue",
+      "edge_index": 200,
+      "source_chunks": [
+        "US9118735B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The third user may have identified himself or herself as being at an event.",
+      "keywords": "Presence",
+      "source_id": "US9118735B1-chunk-001",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Third User",
+      "target": "Event",
+      "edge_index": 201,
+      "source_chunks": [
+        "US9118735B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The identifier associated with the third user may comprise a name, image, or location of the third user, a relationship between the first user and the third user, or a relationship between the second user and the third user.",
+      "keywords": "Identification",
+      "source_id": "US9118735B1-chunk-001",
+      "file_path": "US9118735B1.txt",
+      "created_at": 1793284218,
+      "truncate": "",
+      "source": "Third User",
+      "target": "Identifier",
+      "edge_index": 202,
+      "source_chunks": [
+        "US9118735B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9118735B1"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

@@ -1,0 +1,201 @@
+<!-- 由 tools/html_to_md.py 从 00_data_and_chunk_probe_report_zh.html 生成；表格与正文完整，HTML 中折叠/内嵌的历史快照未转换。 -->
+
+实验开始：2026-10-29 13:08:42 UTC · 报告生成：13:34:53 UTC · 已用 26.2 分钟
+
+# LightRAG 专利证据溯源
+限时验证记录与未完成说明
+
+**核心结果：未完成官方 LightRAG 的真实索引与问答，不能声称实验跑通。**
+ 已取得并核验真实数据、固定官方发布版，并实际运行其确定性分块器。当前执行环境未发现已配置且可用的获授权 LLM/Embedding 服务；已询问现有服务位置，未取得配置。按“环境问题不持续耗时”的约束提前结束模型阶段，不等待或突破 60/120 分钟上限。没有用本助手的回答代替模型调用，没有使用 mock 模型，也没有开通收费服务。
+
+**20**真实英文专利
+
+**438**编号 Claims
+
+**48**实际官方分块
+
+**0 / $0**模型调用 / 新增费用
+
+## A. 实际完成情况
+
+在本 Mac 的独立目录执行；未访问 AutoDL，未修改 FOT、已有进程、模型权重、隧道或代理。数据于 13:14:56 UTC 前满足规模和字段要求，早于 13:38:42 数据门槛。官方查询门槛为 14:08:42、总截止为 15:08:42；本次因模型服务缺失提前停止，不是等到截止后继续尝试。
+
+数据来源为 [Dis2Pat](https://huggingface.co/datasets/lj408/Dis2Pat)，仅通过 Dataset Viewer 下载 train 前 100 行（约 6.75 MB），按公开号去重后目的性选取信息检索、推荐、上下文排序、数据索引方向 20 篇。数据集记录 revision 为 `eda4a497291e9e8b898639881c34f158524732fc`；原始 API 响应及 SHA256 已保留。抽样不是随机样本，不能推断总体错误率。
+
+每篇输入包含完整原始公开号、标题、摘要和 Claims；文件名为公开号。specification 保存在原始文件中，本次未加入分块输入；生成的 disclosure 完全排除。20 篇均无 Viewer 截断，摘要全部与 Google Patents 完整匹配；19/20 篇 Claims 在仅规范空白后完整匹配。异常：US8509827B2 Claims 2/3 的父 Claim 号码在来源页面本就缺失；US9218390B2 Claims 10/11 的公式有编码乱码。未改写原文，测试证据避开受影响内容。
+
+| 项目 | 实际状态 / 设置 |
+|---|---|
+| 官方代码 | 最新正式发布 v1.5.7，API 0344；commit `28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c`。分块从该源码目录直接导入；源码无修改。 |
+| 版本隔离 | 先安装了官方 main 声明 1.5.8 的包及依赖，随后改用固定 v1.5.7 源码。发布包安装切换遇构建/超时问题而停止修复，installed distribution 元数据仍为 1.5.8；实际分块的导入路径和声明版本 1.5.7 已记录。不能把该环境称为完成了稳定版端到端部署。 |
+| 实际分块 | 官方 chunking_by_token_size；size=1200、overlap=100；Tiktoken gpt-4o-mini/o200k_base 仅作为 tokenizer 标识，不代表调用过该 LLM。输入 42,087 tokens，48 块。开启 _emit_source_span 仅用于输出诊断坐标，逐块校验来源文本精确一致。 |
+| LLM / Embedding | 均未配置、未调用。常见模型环境变量未设置；本机 11434、1234 端口拒绝连接。没有读取或展示任何 API Key。 |
+| 查询与预算 | 实体抽取、图索引、naive/mix、生成、增量更新均未执行；检索上下文预算不适用。此前示例的 top_k/预算仅是未执行参考，绝非实际设置。实际成本 $0；未产生待结算调用。 |
+
+## B. 逐问题记录
+
+以下 10 题基于真实 Claims。20 段精确引文均通过原始文本子串及所属 Claim 校验；审阅为 **AI 辅助逐条原文审阅**，不是独立人工金标准。缺失回答不计为检索失败，未计算准确率、引用正确率或 naive/mix 差异。
+
+| ID / 类别 | 问题 | 已核验正确证据 | 系统回答与引用 | 错误分类 |
+|---|---|---|---|---|
+| Q01<br>A | 哪篇专利用多个哈希函数及哈希表选择说话人向量并输出身份？ | **US9514753B2 Claim 1**<br>US9514753B2，Claim 1：对utterance vector计算多个hash values，用hash tables取得speaker vectors，比较、选择后输出speaker identity。 | naive：未运行<br>mix：未运行<br>无回答、引用或检索结果 | 未测，不能判错或归因 |
+| Q02<br>A | 哪篇专利用数据目录中的history object记录首个ETL过程，并触发订阅事件的第二个ETL过程？ | **US11423041B2 Claim 1**<br>US11423041B2，Claim 1：在history object中记录首个ETL过程，按事件条件评估并执行第二个ETL过程。 | naive：未运行<br>mix：未运行<br>无回答、引用或检索结果 | 未测，不能判错或归因 |
+| Q03<br>B | US8509827B2哪一Claim明确按获取上下文数据的货币成本排序数据源？ | **US8509827B2 Claim 1**<br>Claim 1明确规定按specified parameter排序context data source，该参数包括pecuniary cost。Claim 18也有平行装置表达，若答案同时指出也应接受。 | naive：未运行<br>mix：未运行<br>无回答、引用或检索结果 | 未测，不能判错或归因 |
+| Q04<br>B | US9514753B2哪一Claim明确指定locality sensitive hash functions？ | **US9514753B2 Claim 6**<br>Claim 6，要求使用one or more locality sensitive hash functions确定hash values。 | naive：未运行<br>mix：未运行<br>无回答、引用或检索结果 | 未测，不能判错或归因 |
+| Q05<br>B | US8655901B1哪一方法Claim要求按出现次数阈值，以查询日志交叉验证翻译后的查询模式？ | **US8655901B1 Claim 7**<br>方法Claim 7（系统Claim 14有平行表达）：cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold。 | naive：未运行<br>mix：未运行<br>无回答、引用或检索结果 | 未测，不能判错或归因 |
+| Q06<br>C | 比较US7991757B2与US8095432B1的推荐选择/排序依据；原文是否说两个系统互操作？ | **US7991757B2 Claim 1; US8095432B1 Claim 1**<br>前者Claim 1从外部recommenders取得scores，经normalize后选subset；后者Claim 1依据社交relationship proximity排序，朋友的rank高于非朋友。两者共享推荐排序主题是本次比较归纳；所引Claims没有声称两专利系统互操作，不能推断两专利绝无其他关联。 | naive：未运行<br>mix：未运行<br>无回答、引用或检索结果 | 未测，不能判错或归因 |
+| Q07<br>C | 比较US8509827B2的数据源选择标准与US10867122B1的实体驱动内容请求，两者各自明确要求什么？ | **US8509827B2 Claim 1; US10867122B1 Claim 1**<br>US8509827B2 Claim 1按包括获取成本的参数排序context-data sources；US10867122B1 Claim 1请求与first和second factual entity均相关的UI内容。共同的上下文内容获取主题是比较，不是原文声明的专利间链接。 | naive：未运行<br>mix：未运行<br>无回答、引用或检索结果 | 未测，不能判错或归因 |
+| Q08<br>D | 追踪US9514753B2从哈希表候选说话人到按最小余弦距离及最大阈值选取说话人的Claim依赖链。 | **US9514753B2 Claim 1; US9514753B2 Claim 9; US9514753B2 Claim 10; US9514753B2 Claim 11**<br>Claim 11依赖10，10依赖9，9依赖1；1以hash values从hash tables取得speaker vectors，9按similarity scores选most similar，10用cosine distance，11要求smallest cosine distance低于maximum distance threshold。这里是原文依赖链，不应把余弦距离最小条件错误归为Claim 1的逐字要求。 | naive：未运行<br>mix：未运行<br>无回答、引用或检索结果 | 未测，不能判错或归因 |
+| Q09<br>D | 追踪US9298709B2地图范围内IP权利可视化流程与屏幕按钮触发更新条件之间的Claim依赖。 | **US9298709B2 Claim 10; US9298709B2 Claim 16; US9298709B2 Claim 17**<br>Claim 17依赖16，16依赖10；10生成地理范围及限制条件筛选后的IP可视化，16规定user initiated command之后更新，17指定pressing of an on-screen button。应保留10→16→17的从属关系。 | naive：未运行<br>mix：未运行<br>无回答、引用或检索结果 | 未测，不能判错或归因 |
+| Q10<br>B | US11423041B2哪一从属系统Claim规定首个ETL过程在服务外执行、第二个由服务执行？与下一Claim有何区别？ | **US11423041B2 Claim 5; US11423041B2 Claim 6**<br>Claim 5：first external、second by service；Claim 6：first和second都由ETL service执行。这是不同从属实施限定，不能把二者同时强加于同一个实施。 | naive：未运行<br>mix：未运行<br>无回答、引用或检索结果 | 未测，不能判错或归因 |
+
+A=实体；B=Claim 证据；C=跨文档比较；D=自然跨块候选。实际分块后 Q08、Q09 的依赖链各自完整共处一块，因此这两题不能用于声称跨块缺失。另已找到下节所示的真实自然分离样本。
+
+Q01 原文证据
+
+**US9514753B2 / Claim 1**
+determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values [原始页面](https://patents.google.com/patent/US9514753B2/en)
+
+**US9514753B2 / Claim 1**
+determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity. [原始页面](https://patents.google.com/patent/US9514753B2/en)
+
+Q02 原文证据
+
+**US11423041B2 / Claim 1**
+the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object [原始页面](https://patents.google.com/patent/US11423041B2/en)
+
+**US11423041B2 / Claim 1**
+in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed. [原始页面](https://patents.google.com/patent/US11423041B2/en)
+
+Q03 原文证据
+
+**US8509827B2 / Claim 1**
+algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source [原始页面](https://patents.google.com/patent/US8509827B2/en)
+
+Q04 原文证据
+
+**US9514753B2 / Claim 6**
+6. The method of claim 1 , wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions. [原始页面](https://patents.google.com/patent/US9514753B2/en)
+
+Q05 原文证据
+
+**US8655901B1 / Claim 7**
+7. The method of claim 1 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold. [原始页面](https://patents.google.com/patent/US8655901B1/en)
+
+Q06 原文证据
+
+**US7991757B2 / Claim 1**
+an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site. [原始页面](https://patents.google.com/patent/US7991757B2/en)
+
+**US8095432B1 / Claim 1**
+ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank [原始页面](https://patents.google.com/patent/US8095432B1/en)
+
+Q07 原文证据
+
+**US8509827B2 / Claim 1**
+algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source [原始页面](https://patents.google.com/patent/US8509827B2/en)
+
+**US10867122B1 / Claim 1**
+requesting, for a user interface element, content that is related to both the first factual entity and the second factual entity, wherein the user interface element provides a collection of content related to the first factual entity and the second factual entity within the display environment [原始页面](https://patents.google.com/patent/US10867122B1/en)
+
+Q08 原文证据
+
+**US9514753B2 / Claim 1**
+determining a set of speaker vectors from a plurality of hash tables using the hash values [原始页面](https://patents.google.com/patent/US9514753B2/en)
+
+**US9514753B2 / Claim 9**
+9. The method of claim 1 , wherein comparing the speaker vectors in the set with the utterance vector comprises determining similarity scores [原始页面](https://patents.google.com/patent/US9514753B2/en)
+
+**US9514753B2 / Claim 10**
+10. The method of claim 9 , wherein determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set comprises determining a cosine distance between the utterance vector and each of the speaker vectors in the set. [原始页面](https://patents.google.com/patent/US9514753B2/en)
+
+**US9514753B2 / Claim 11**
+11. The method of claim 10 , wherein selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector comprises: identifying a smallest cosine distance from among the determined cosine distances; determining that the smallest cosine distance is less than a maximum distance threshold value; and based on determining that the smallest cosine distance is less than the maximum distance threshold value, selecting the speaker vector corresponding to the smallest cosine distance. [原始页面](https://patents.google.com/patent/US9514753B2/en)
+
+Q09 原文证据
+
+**US9298709B2 / Claim 10**
+restricting the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights, generating and displaying an information pane containing one or more data visualizations related to the restricted list of IP rights [原始页面](https://patents.google.com/patent/US9298709B2/en)
+
+**US9298709B2 / Claim 16**
+16. A process according to claim 10 , wherein generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic coordinates of the current viewable area of the geographic map display occurs following a user initiated command. [原始页面](https://patents.google.com/patent/US9298709B2/en)
+
+**US9298709B2 / Claim 17**
+17. A process according to claim 16 , wherein the user initiated command comprises the pressing of an on-screen button. [原始页面](https://patents.google.com/patent/US9298709B2/en)
+
+Q10 原文证据
+
+**US11423041B2 / Claim 5**
+5. The system of claim 1 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service. [原始页面](https://patents.google.com/patent/US11423041B2/en)
+
+**US11423041B2 / Claim 6**
+6. The system of claim 1 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service. [原始页面](https://patents.google.com/patent/US11423041B2/en)
+
+## C. 两个最有价值的已观察案例
+
+**没有可提交的 RAG 问答成功或失败案例。**以下是实际数据/分块观察，不是检索结果，也不是模型回答。
+
+### 案例 1：跨块假设被实际边界否定
+
+[US9514753B2](https://patents.google.com/patent/US9514753B2/en)：Claim 11→10→9→1 的完整依赖链全部处于同一实际 chunk 0（块编号从 0 开始）。Claim 1 涉及哈希表候选说话人；Claim 10 出现 cosine distance；Claim 11 要求 smallest cosine distance 与 maximum distance threshold。在本配置下，不能说这条关系因跨块而丢失。边界预检成功，抽取/检索/引用正确性仍未测。
+
+### 案例 2：真实依赖证据自然分散，但尚未证明信息丢失
+
+[US7991757B2](https://patents.google.com/patent/US7991757B2/en)：Claim 1 的完整文本位于 chunk 0，文档字符区间 [494,2433)；Claim 27 的完整文本位于 chunk 1，区间 [10570,10823)。Claim 1 定义外部推荐器注册模块；Claim 27 明确依赖 Claim 1，并增加 machine readable descriptions of the external recommender 的限定。没有任何一个块包含两条完整 Claim，且没有人为调整分块边界。
+
+Claim 27 自身重复了实体名称和部分关系，因此仅凭完整 Claims 不同块，仍不能证明抽取失败。需要实际核查抽取输出、图节点/边、检索上下文和回答才能归因。结构筛查共识别 364 个明确单父引用，其中 54 对完整 Claim 文本不共处一块；这是启发式候选数量，**不是 54 个关系丢失，更不是错误率**。
+
+本次可明确定位的问题属于输入数据：父 Claim 号码缺失与公式编码乱码。未证实 LightRAG 的 Extraction、Indexing、Retrieval、Generation 或 Citation 缺陷。
+
+## D. 研究判断与版本边界
+
+| 研究问题 | 本次可以支持的判断 |
+|---|---|
+| 文档级溯源？ | 当前正式版源码提供 file_paths→reference_id 的文档映射；naive 为文本块检索，mix 结合实体、关系和文本块。尚无运行证据可判断回答引用的实际正确率。 |
+| 可靠的 Claim 级溯源？ | 尚未验证。当前格式化查询结果含 chunk_id/content/file_path/reference_id，没有显式 Claim ID 或字符偏移；内部 chunker/pipeline 已有 source-span 支持，不能说系统完全没有 span provenance。文档引用存在也不等于回答被某条 Claim 蕴涵。 |
+| 复现跨块关系丢失？ | 没有。已复现自然的 Claim 证据分离，并否定两项最初的跨块候选；没有抽取/图/检索/生成中间结果，无法归因任何关系丢失。 |
+| 缺陷还是实验限制？ | 已确认的是数据质量问题、返回 schema 的粒度和本次模型服务缺失；没有证实当前代码缺陷。未执行增量插入，不能判断合并一致性。 |
+| 值得继续的问题？ | Claim 依赖感知的证据组织；让实体/关系/回答保留可核验原文区间；分阶段测量事实保留率；跨文档比较中显式区分事实与推断；增量实体合并后的来源一致性。它们是待验证研究方向，不是本次已证明的缺陷。 |
+
+接口核对：`aquery_llm` 可在同一次调用保存回答与 entities/relationships/chunks/references；`/query/data` 调用 `aquery_data`，无答案生成但仍可能需要关键词模型和 embedding。核心 `QueryParam.include_references` 默认 false，REST 默认 true；`include_chunk_content` 是 REST 参数，不可误传给 QueryParam。
+
+论文 [v3](https://arxiv.org/pdf/2410.05779v3) 日期为 2025-04-28，Figure 1 已展示原始 chunk IDs；当前 README 将 citations 记录在 2025-03。不能声称论文时代完全没有引用功能。本次采用 2026 年正式发布代码，不是复现论文时期固定 artifact，也不把当前行为倒推给论文。
+
+源码依据：[格式化 chunks 与文档引用](https://github.com/HKUDS/LightRAG/blob/28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c/lightrag/utils.py#L6936)；[REST 参数](https://github.com/HKUDS/LightRAG/blob/28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c/lightrag/api/routers/query_routes.py#L144)；[官方分块器](https://github.com/HKUDS/LightRAG/blob/28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c/lightrag/chunker/token_size.py#L133)；[正式发布记录](https://github.com/HKUDS/LightRAG/releases/tag/v1.5.7)。逐项行号、源码摘录和哈希见 evidence/official_stable_audit.json。
+
+## （已删去）
+
+此处删去一段与实验无关的个人申请材料（研究兴趣段落）。
+
+## 复核与文件清单
+
+打开 evidence/question_ground_truth.txt 可逐题核对原文；results/questions.json 中 naive/mix 均为 null；results/chunk_probe.json 保留全部实际块；results/question_chunk_mapping.json 和 natural_cross_chunk_candidates.json 记录边界映射；data/manifest.json、source_verification.json 与 data_quality_flags.json 记录抽样和源页比对。
+
+源码归档为 evidence/official_LightRAG_v1.5.7_source.tar.gz，依赖清单为 evidence/requirements_installed.json。脚本 scripts/data_*.py 可复现数据过程；scripts/chunk_probe.py 直接导入固定正式版源码、30 秒运行上限；scripts/build_questions.py 与 map_question_chunks.py 可复核证据。所有模型过程均未运行，没有后台模型/训练任务。没有遗留待支付或结果不确定的 API 请求。
+
+20 篇抽样清单
+
+| Publication | Title | Claims |
+|---|---|---|
+| US9298709B2 | Computer system to visualize data from an IP rights database | 17 |
+| US8509827B2 | Methods and apparatus of context-data acquisition and ranking | 26 |
+| US9514753B2 | Speaker identification using hash-based indexing | 20 |
+| US9304738B1 | Systems and methods for selecting content using weighted terms | 19 |
+| US9118735B1 | Finding people using social networks | 21 |
+| US8095432B1 | Recommendation engine for social networks | 24 |
+| US8880423B2 | Inventory estimation for search retargeting | 17 |
+| US8917913B2 | Searching with face recognition and social networking profiles | 17 |
+| US9514120B1 | Classification of a string as a typographical error based on feedback | 20 |
+| US7991757B2 | System for obtaining recommendations from multiple recommenders | 28 |
+| US8069128B2 | Real-time ad-hoc spam filtering of email | 20 |
+| US9374411B1 | Content recommendations using deep data | 25 |
+| US9218390B2 | Query parser derivation computing device and method for making a query parser for parsing unstructured search queries | 18 |
+| US7756837B2 | Methods and apparatus for searching backup data based on content and attributes | 49 |
+| US8719408B2 | Automated digital media content filtration based on relationship monitoring | 24 |
+| US8655901B1 | Translation-based query pattern mining | 15 |
+| US10867122B1 | Contextually relevant knowledge panels in an application environment | 15 |
+| US11423041B2 | Maintaining data lineage to detect data events | 20 |
+| US10778629B2 | Systems and methods for collation, translation, and analysis of passively created digital interaction and relationship data | 21 |
+| US9589231B2 | Social medical network for diagnosis assistance | 22 |
+
+本报告为提前停止的探索性验证记录。它保留可复查证据，同时明确未完成部分。

@@ -1,0 +1,534 @@
+{
+  "validated_utc": "2026-10-30T08:11:45.683086+00:00",
+  "scope": "N001-N013 assigned review structural and exact-quote checks; complements AI-assisted semantic readings, not independent human gold",
+  "node_count": 13,
+  "source_assessments": 32,
+  "incident_edge_reviews_including_shared_edges_multiple_times": 117,
+  "errors": [],
+  "checks": [
+    {
+      "audit_id": "N001",
+      "node_id": "Data Processing System",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "source_count": 2,
+      "incident_edges_reviewed": 19,
+      "quote_checks": [
+        {
+          "publication_number": "US9298709B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9298709B2-chunk-000"
+          ],
+          "saved_claim_matches": [
+            1
+          ],
+          "claim_or_section": "Claim 1"
+        },
+        {
+          "publication_number": "US9304738B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9304738B1-chunk-001"
+          ],
+          "saved_claim_matches": [
+            13
+          ],
+          "claim_or_section": "Claim 13"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "audit_id": "N002",
+      "node_id": "Mobile Device",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "source_count": 2,
+      "incident_edges_reviewed": 13,
+      "quote_checks": [
+        {
+          "publication_number": "US8509827B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US8509827B2-chunk-000"
+          ],
+          "saved_claim_matches": [
+            1
+          ],
+          "claim_or_section": "Claim 1"
+        },
+        {
+          "publication_number": "US8917913B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "saved_claim_matches": [
+            1,
+            10
+          ],
+          "claim_or_section": "Claim 1"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "audit_id": "N003",
+      "node_id": "Server",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "source_count": 5,
+      "incident_edges_reviewed": 12,
+      "quote_checks": [
+        {
+          "publication_number": "US10778629B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US10778629B2-chunk-001"
+          ],
+          "saved_claim_matches": [
+            21
+          ],
+          "claim_or_section": "Claim 21"
+        },
+        {
+          "publication_number": "US8509827B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US8509827B2-chunk-000"
+          ],
+          "saved_claim_matches": [
+            1
+          ],
+          "claim_or_section": "Claim 1"
+        },
+        {
+          "publication_number": "US9118735B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9118735B1-chunk-000"
+          ],
+          "saved_claim_matches": [],
+          "claim_or_section": "ABSTRACT"
+        },
+        {
+          "publication_number": "US9374411B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9374411B1-chunk-000"
+          ],
+          "saved_claim_matches": [
+            1
+          ],
+          "claim_or_section": "Claim 1"
+        },
+        {
+          "publication_number": "US9514120B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9514120B1-chunk-000"
+          ],
+          "saved_claim_matches": [],
+          "claim_or_section": "ABSTRACT"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "audit_id": "N004",
+      "node_id": "Database",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "source_count": 3,
+      "incident_edges_reviewed": 9,
+      "quote_checks": [
+        {
+          "publication_number": "US7756837B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US7756837B2-chunk-000",
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-002",
+            "US7756837B2-chunk-003"
+          ],
+          "saved_claim_matches": [
+            1,
+            13,
+            16,
+            31,
+            32,
+            47,
+            48,
+            49
+          ],
+          "claim_or_section": "Claim 1"
+        },
+        {
+          "publication_number": "US8509827B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US8509827B2-chunk-000"
+          ],
+          "saved_claim_matches": [
+            9
+          ],
+          "claim_or_section": "Claim 9"
+        },
+        {
+          "publication_number": "US9304738B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9304738B1-chunk-001"
+          ],
+          "saved_claim_matches": [
+            12
+          ],
+          "claim_or_section": "Claim 12"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "audit_id": "N005",
+      "node_id": "Communication Network",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "source_count": 2,
+      "incident_edges_reviewed": 4,
+      "quote_checks": [
+        {
+          "publication_number": "US7756837B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US7756837B2-chunk-000",
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-002"
+          ],
+          "saved_claim_matches": [
+            14,
+            29,
+            45
+          ],
+          "claim_or_section": "Claim 14"
+        },
+        {
+          "publication_number": "US8509827B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US8509827B2-chunk-000"
+          ],
+          "saved_claim_matches": [
+            13
+          ],
+          "claim_or_section": "Claim 13"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "audit_id": "N006",
+      "node_id": "Computer-Readable Storage Device",
+      "category": "shared_specific_concept",
+      "confidence": "high",
+      "source_count": 2,
+      "incident_edges_reviewed": 6,
+      "quote_checks": [
+        {
+          "publication_number": "US8719408B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US8719408B2-chunk-000"
+          ],
+          "saved_claim_matches": [
+            9
+          ],
+          "claim_or_section": "Claim 9"
+        },
+        {
+          "publication_number": "US9514753B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9514753B2-chunk-001"
+          ],
+          "saved_claim_matches": [
+            16
+          ],
+          "claim_or_section": "Claim 16"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "audit_id": "N007",
+      "node_id": "System",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "source_count": 3,
+      "incident_edges_reviewed": 9,
+      "quote_checks": [
+        {
+          "publication_number": "US10867122B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US10867122B1-chunk-001"
+          ],
+          "saved_claim_matches": [
+            11
+          ],
+          "claim_or_section": "Claim 11"
+        },
+        {
+          "publication_number": "US8655901B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US8655901B1-chunk-000"
+          ],
+          "saved_claim_matches": [
+            8
+          ],
+          "claim_or_section": "Claim 8"
+        },
+        {
+          "publication_number": "US9514753B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9514753B2-chunk-001"
+          ],
+          "saved_claim_matches": [
+            18
+          ],
+          "claim_or_section": "Claim 18"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "audit_id": "N008",
+      "node_id": "Keyword",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "source_count": 2,
+      "incident_edges_reviewed": 7,
+      "quote_checks": [
+        {
+          "publication_number": "US7756837B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US7756837B2-chunk-000"
+          ],
+          "saved_claim_matches": [
+            1,
+            16,
+            31,
+            32,
+            47,
+            48,
+            49
+          ],
+          "claim_or_section": "Claim 1"
+        },
+        {
+          "publication_number": "US9304738B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9304738B1-chunk-000"
+          ],
+          "saved_claim_matches": [
+            1
+          ],
+          "claim_or_section": "Claim 1"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "audit_id": "N009",
+      "node_id": "Weight",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "source_count": 3,
+      "incident_edges_reviewed": 12,
+      "quote_checks": [
+        {
+          "publication_number": "US10778629B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US10778629B2-chunk-001"
+          ],
+          "saved_claim_matches": [
+            10,
+            20
+          ],
+          "claim_or_section": "Claim 20"
+        },
+        {
+          "publication_number": "US7991757B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US7991757B2-chunk-000"
+          ],
+          "saved_claim_matches": [
+            4
+          ],
+          "claim_or_section": "Claim 4"
+        },
+        {
+          "publication_number": "US9304738B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9304738B1-chunk-000"
+          ],
+          "saved_claim_matches": [
+            10
+          ],
+          "claim_or_section": "Claim 10"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "audit_id": "N010",
+      "node_id": "First User",
+      "category": "contextual_conflation",
+      "confidence": "medium",
+      "source_count": 2,
+      "incident_edges_reviewed": 6,
+      "quote_checks": [
+        {
+          "publication_number": "US9118735B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9118735B1-chunk-001"
+          ],
+          "saved_claim_matches": [
+            4,
+            16
+          ],
+          "claim_or_section": "Claim 16"
+        },
+        {
+          "publication_number": "US9304738B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9304738B1-chunk-000"
+          ],
+          "saved_claim_matches": [
+            1
+          ],
+          "claim_or_section": "Claim 1"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "audit_id": "N011",
+      "node_id": "Second User",
+      "category": "contextual_conflation",
+      "confidence": "medium",
+      "source_count": 2,
+      "incident_edges_reviewed": 3,
+      "quote_checks": [
+        {
+          "publication_number": "US9118735B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9118735B1-chunk-001"
+          ],
+          "saved_claim_matches": [
+            4,
+            16
+          ],
+          "claim_or_section": "Claim 16"
+        },
+        {
+          "publication_number": "US9304738B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001",
+            "US9304738B1-chunk-002"
+          ],
+          "saved_claim_matches": [
+            1,
+            13,
+            18
+          ],
+          "claim_or_section": "Claim 1"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "audit_id": "N012",
+      "node_id": "Third User",
+      "category": "contextual_conflation",
+      "confidence": "medium",
+      "source_count": 2,
+      "incident_edges_reviewed": 11,
+      "quote_checks": [
+        {
+          "publication_number": "US9118735B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9118735B1-chunk-001"
+          ],
+          "saved_claim_matches": [
+            16
+          ],
+          "claim_or_section": "Claim 16"
+        },
+        {
+          "publication_number": "US9304738B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001",
+            "US9304738B1-chunk-002"
+          ],
+          "saved_claim_matches": [
+            1,
+            13,
+            18
+          ],
+          "claim_or_section": "Claim 1"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "audit_id": "N013",
+      "node_id": "Characteristic",
+      "category": "shared_broad_class",
+      "confidence": "high",
+      "source_count": 2,
+      "incident_edges_reviewed": 6,
+      "quote_checks": [
+        {
+          "publication_number": "US10778629B2",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US10778629B2-chunk-001"
+          ],
+          "saved_claim_matches": [
+            13
+          ],
+          "claim_or_section": "Claim 13"
+        },
+        {
+          "publication_number": "US9304738B1",
+          "quote_contiguous_in_source_chunk": true,
+          "containing_chunk_ids": [
+            "US9304738B1-chunk-000"
+          ],
+          "saved_claim_matches": [
+            6
+          ],
+          "claim_or_section": "Claim 6"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

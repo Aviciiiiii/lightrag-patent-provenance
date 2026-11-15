@@ -1,0 +1,27 @@
+{
+  "condition": "C",
+  "repeat": 3,
+  "call_id": 7,
+  "request_exact_match": true,
+  "messages_sha256": "2206db34c3147b68040fba5aded3384b370174c241cb89dc9f2a9c3a6a1f3a2b",
+  "response": {
+    "id": 7,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "**US7991757B2 — Registration Capability in Claims 1 and 27**\n\n**Claim 1 (explicit evidence).** Claim 1 recites a system comprising a \"registration module configured to provide functionality for registering an external recommender with a recommendations service.\" The same claim also requires a \"data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service,\" where those recommenders are \"provided by one or more entities that differ from a provider of the recommendations service.\" So Claim 1's registration capability is the module-level function of registering an external recommender with the service.\n\n**Claim 27 (explicit evidence).** Claim 27 depends from Claim 1 (\"The system of claim 1\") and adds a further configuration of that same module: \"wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.\"\n\n**Dependency and added capability.** The dependency is express — Claim 27 incorporates all limitations of Claim 1 and narrows the registration module. The additional capability is that the external recommender's *provider* can supply *machine readable descriptions* of that recommender, rather than registration being only a generic registering function.\n\n**Explicit evidence vs. inference.** The quoted wording above is explicit document evidence. Any statement that Claim 27's machine-readable descriptions are used to configure, parameterize, or invoke the recommenders would be inference, since neither quoted claim states that use; the evidence supports only the capability to provide such descriptions.\n\n### References\n\n- [1] US7991757B2.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 32445,
+      "completion_tokens": 343,
+      "total_tokens": 32788,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 32384
+      },
+      "prompt_cache_hit_tokens": 32384,
+      "prompt_cache_miss_tokens": 61
+    },
+    "reasoning_content_present": false
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "documents": 20,
+  "all_byte_exact_equal": false,
+  "all_equal_after_removing_one_terminal_LF": true,
+  "interpretation": "Each saved original document has one terminal newline removed in the indexed full-doc text. No interior/content difference; no original file was changed. Quoted Claim/chunk coordinates refer to the indexed full-doc text.",
+  "rows": [
+    {
+      "publication_number": "US8509827B2",
+      "path": "data/documents/US8509827B2.txt",
+      "sha256": "d7a3132bec41157308cab9bfeed67860d89ee8e0e7a80e7a11b5db2c9b43b3c1",
+      "original_chars": 6896,
+      "indexed_chars": 6895,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US9514120B1",
+      "path": "data/documents/US9514120B1.txt",
+      "sha256": "5e38f1308be15b55022afd8d84a90bafe735903cca172069ef79854d9fe26057",
+      "original_chars": 12918,
+      "indexed_chars": 12917,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US10778629B2",
+      "path": "data/documents/US10778629B2.txt",
+      "sha256": "773907c9b771cdcbd478a335051170ae634ec9cb274cac9c3d7c540bdf9fc2a8",
+      "original_chars": 10079,
+      "indexed_chars": 10078,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US9118735B1",
+      "path": "data/documents/US9118735B1.txt",
+      "sha256": "5e6f53ecc30444efec236a45bbdabaa216c899a81f3483f06e065cc8dede6826",
+      "original_chars": 10874,
+      "indexed_chars": 10873,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US11423041B2",
+      "path": "data/documents/US11423041B2.txt",
+      "sha256": "a0d9b984a960b410bc5cd730ae780285148b8066143065c16b49da9e8c18016f",
+      "original_chars": 11699,
+      "indexed_chars": 11698,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US9218390B2",
+      "path": "data/documents/US9218390B2.txt",
+      "sha256": "1950b9f4a425e92894efd822f018ff718f11c7b3a43d14bb5cc69cf68748291f",
+      "original_chars": 13991,
+      "indexed_chars": 13990,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US9298709B2",
+      "path": "data/documents/US9298709B2.txt",
+      "sha256": "1aa89b7bd2e440f809659beb36d8346e00ef4c59051ce456f3ae4a2963ca8846",
+      "original_chars": 10982,
+      "indexed_chars": 10981,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US7991757B2",
+      "path": "data/documents/US7991757B2.txt",
+      "sha256": "8d6d3c38c198d6e9ddba783716e45d230ec597d4c2c7a4699c34a7167b7510e9",
+      "original_chars": 10954,
+      "indexed_chars": 10953,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US10867122B1",
+      "path": "data/documents/US10867122B1.txt",
+      "sha256": "8f7e555fc3859383efea70b0e43190a6124f4588de941cc2238100c5c80a741a",
+      "original_chars": 12654,
+      "indexed_chars": 12653,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US9304738B1",
+      "path": "data/documents/US9304738B1.txt",
+      "sha256": "4e95111192b3c541c280288a3369549e890ed9da1ffb9f781ab9e2f7b25beecd",
+      "original_chars": 13509,
+      "indexed_chars": 13508,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US8917913B2",
+      "path": "data/documents/US8917913B2.txt",
+      "sha256": "ca7057755204228d179f584702b92e2aa031b8ccad48b0ae255dc3a8f8e3cdee",
+      "original_chars": 10118,
+      "indexed_chars": 10117,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US8880423B2",
+      "path": "data/documents/US8880423B2.txt",
+      "sha256": "095ce54c2f69d41cf36d33c6a2386874a351a3ae300f5e7108fc4418bec836e7",
+      "original_chars": 9598,
+      "indexed_chars": 9597,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US9374411B1",
+      "path": "data/documents/US9374411B1.txt",
+      "sha256": "7c866dd365c48e58b42236245779b90e15862f6d0861f15b30182a49980bda19",
+      "original_chars": 13266,
+      "indexed_chars": 13265,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US8095432B1",
+      "path": "data/documents/US8095432B1.txt",
+      "sha256": "16e129baa05bb2c2c3f0bd7170c93af9baec01505f5b467ac110ccb7d7060c85",
+      "original_chars": 11259,
+      "indexed_chars": 11258,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US8069128B2",
+      "path": "data/documents/US8069128B2.txt",
+      "sha256": "3251f41d985e233f6ce1f3904a7d47d2057fcce8744a1fb7bf7167be9be27c06",
+      "original_chars": 9044,
+      "indexed_chars": 9043,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US8655901B1",
+      "path": "data/documents/US8655901B1.txt",
+      "sha256": "7d17f8090a784af8ad8372cd2c9c958ed21e29ac1078c9c368ef53f49d0632ad",
+      "original_chars": 9171,
+      "indexed_chars": 9170,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US9589231B2",
+      "path": "data/documents/US9589231B2.txt",
+      "sha256": "e1d2e5eeb5a025370f0e9deecdfb65c3ea5391c2c7ab597b283248742aaf2493",
+      "original_chars": 8800,
+      "indexed_chars": 8799,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US8719408B2",
+      "path": "data/documents/US8719408B2.txt",
+      "sha256": "27e3584f2157c2d581d4d3a90c9078b915f07d7fdaf5c2027d7783c7aebf1da8",
+      "original_chars": 11601,
+      "indexed_chars": 11600,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US7756837B2",
+      "path": "data/documents/US7756837B2.txt",
+      "sha256": "766052ff1cb06a44e8a2bd6ff0b37d1e77aaf9de3aaf817fe8de7aac9db7e2db",
+      "original_chars": 20107,
+      "indexed_chars": 20106,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    },
+    {
+      "publication_number": "US9514753B2",
+      "path": "data/documents/US9514753B2.txt",
+      "sha256": "ea8ea620da4ac18dfb5486a8a7b89f00f8ef60981f27512342aefa9c7d6b14dc",
+      "original_chars": 9478,
+      "indexed_chars": 9477,
+      "exact_equal": false,
+      "only_difference_one_terminal_LF": true,
+      "strip_equal": true
+    }
+  ]
+}

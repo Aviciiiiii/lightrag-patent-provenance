@@ -1,0 +1,632 @@
+{
+  "node_id": "Characteristic",
+  "entity_type": "concept",
+  "graph_source_chunks": [
+    "US10778629B2-chunk-001",
+    "US9304738B1-chunk-000"
+  ],
+  "entity_chunk_store_sources": [
+    "US10778629B2-chunk-001",
+    "US9304738B1-chunk-000"
+  ],
+  "all_source_chunks": [
+    "US10778629B2-chunk-001",
+    "US9304738B1-chunk-000"
+  ],
+  "canonical_publications": [
+    "US10778629B2",
+    "US9304738B1"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US10778629B2.txt",
+    "US9304738B1.txt"
+  ],
+  "graph_file_paths": [
+    "US9304738B1.txt",
+    "US10778629B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US10778629B2",
+    "US9304738B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US10778629B2-chunk-001",
+    "US9304738B1-chunk-000"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US10778629B2-chunk-001",
+    "US9304738B1-chunk-000"
+  ],
+  "graph_node": {
+    "entity_id": "Characteristic",
+    "entity_type": "concept",
+    "description": "An attribute associated with user interest used in determining keyword weights, including temporal, day, web page content slot, monetary, and performance characteristics.<SEP>Attributes of e-mail exchanges between pairs of users, including interaction frequency, interaction type, number of communication participants, time between interactions, time since first interaction, time since last interaction, interaction volume, and ratio of source to target versus target to source interactions.",
+    "source_id": "US9304738B1-chunk-000<SEP>US10778629B2-chunk-001",
+    "file_path": "US9304738B1.txt<SEP>US10778629B2.txt",
+    "created_at": 1793284708,
+    "truncate": "",
+    "id": "Characteristic"
+  },
+  "incident_edge_count": 6,
+  "audit_id": "N013",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US10778629B2",
+      "file_paths": [
+        "US10778629B2.txt"
+      ],
+      "source_chunks": [
+        "US10778629B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US10778629B2",
+          "full_doc_id": "US10778629B2",
+          "file_path": "US10778629B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 749,
+          "content_sha256": "9c08affa61a10a781ad7e194ca432d33e618652662386c29953015f69b28cc9c",
+          "exact_doc_char_start": 6053,
+          "exact_doc_char_end": 10078,
+          "content": "The method of claim 10 , wherein the interaction database is populated by monitoring e-mail exchanges and extracting relevant e-mail exchanges. 13. The method of claim 10 , wherein the characteristic comprises at least one selected from a group consisting of interaction frequency, interaction type, and number of communication participants. 14. The method of claim 10 , wherein the characteristic comprises a time between interactions. 15. The method of claim 10 , wherein the data associated with the e-mail exchanges between the pairs of users of the e-mail system is obtained from an e-mail field selected from a group consisting of SMTP, IMAP4, POP3, MIME, RFC 2046, RFC 2822, RFC 3156, and RFC 5322. 16. The method of claim 10 , wherein the data associated with the e-mail exchanges between the pairs of users of the e-mail system is obtained from a mail server, mail archives, and a log file. 17. The method of claim 10 , wherein the data associated with the e-mail exchanges between the pairs of users of the e-mail system is obtained from a spam filtering system based e-mail headers. 18. The method of claim 10 , wherein the strength of the relationship is based on intimacy of conversations, frequency of communications, and historical age of the relationship. 19. The method of claim 10 , wherein the characteristic of e-mail exchanges between pairs of users is further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone. 20. A non-transitory computer readable medium containing executable instructions that when executed perform a method of generating relationship data, comprising: accessing an interaction database of e-mail exchanges between pairs of users of an e-mail system; obtaining a plurality of characteristics of e-mail exchanges between the pairs of users and wherein the plurality of characteristics of e-mail exchanges fare further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone, wherein the plurality of characteristics are stored in the interaction database and wherein the data is obtained through a direct internet access protocol, wherein the plurality of characteristics comprise a time since a first interaction, a time since a last interaction, interaction volume between the pair of users, and a ratio of source to target versus target to source interactions; assigning a weight to each of the plurality of characteristics for each pair of users; generating relationship data by determining a relationship strength of associated with each pair of users based on the weight assigned to each of the plurality of characteristics for each pair of users; and displaying the relationship data on a user interface. 21. A system for processing relationship data, the system comprising: an e-mail system; an interaction database of e-mail exchanges between pairs of users of the e-mail system; a server to: receive data comprising a plurality of characteristics of e-mail exchanges between pairs of users of the e-mail system, wherein the data is transferred to the server from the interaction database, and wherein the interaction database is populated through a direct internet access protocol, wherein the plurality of characteristics comprise a time since a first interaction, a time since a last interaction, interaction volume between the pair of users, and a ratio of source to target versus target to source interactions, and the plurality of characteristics are further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone; assign a weight to each of the plurality of characteristics for each pair of users; and transfer the data to a processor for generating relationship data by determining a relationship strength associated with each pair of users; and a user interface to display the relationship data.",
+          "llm_cache_list": [
+            "default:extract:68e0aceddbed721b768da83212200673"
+          ],
+          "chunk_id": "US10778629B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US10778629B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "6c749b744a83628fddbaa1a9bb77f7366bbe6eebfa40f3edd8a4ae981fa6dc4b"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 6,
+              "raw_line": "entity<|#|>Characteristic<|#|>Concept<|#|>Attributes of e-mail exchanges between pairs of users, including interaction frequency, interaction type, number of communication participants, time between interactions, time since first interaction, time since last interaction, interaction volume, and ratio of source to target versus target to source interactions.",
+              "fields": [
+                "entity",
+                "Characteristic",
+                "Concept",
+                "Attributes of e-mail exchanges between pairs of users, including interaction frequency, interaction type, number of communication participants, time between interactions, time since first interaction, time since last interaction, interaction volume, and ratio of source to target versus target to source interactions."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 31,
+              "raw_line": "relation<|#|>Characteristic<|#|>E-Mail Exchange<|#|>describes<|#|>The characteristics are attributes of e-mail exchanges between pairs of users, such as interaction frequency, interaction type, and time between interactions.",
+              "fields": [
+                "relation",
+                "Characteristic",
+                "E-Mail Exchange",
+                "describes",
+                "The characteristics are attributes of e-mail exchanges between pairs of users, such as interaction frequency, interaction type, and time between interactions."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 32,
+              "raw_line": "relation<|#|>Weight<|#|>Characteristic<|#|>assigned to<|#|>A weight is assigned to each of the plurality of characteristics for each pair of users.",
+              "fields": [
+                "relation",
+                "Weight",
+                "Characteristic",
+                "assigned to",
+                "A weight is assigned to each of the plurality of characteristics for each pair of users."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 54,
+              "raw_line": "relation<|#|>Characteristic<|#|>Calendar<|#|>associated with<|#|>Characteristics of e-mail exchanges between pairs of users may be further associated with the calendar medium.",
+              "fields": [
+                "relation",
+                "Characteristic",
+                "Calendar",
+                "associated with",
+                "Characteristics of e-mail exchanges between pairs of users may be further associated with the calendar medium."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 55,
+              "raw_line": "relation<|#|>Characteristic<|#|>Instant Messaging<|#|>associated with<|#|>Characteristics of e-mail exchanges between pairs of users may be further associated with the instant messaging medium.",
+              "fields": [
+                "relation",
+                "Characteristic",
+                "Instant Messaging",
+                "associated with",
+                "Characteristics of e-mail exchanges between pairs of users may be further associated with the instant messaging medium."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 56,
+              "raw_line": "relation<|#|>Characteristic<|#|>SMS<|#|>associated with<|#|>Characteristics of e-mail exchanges between pairs of users may be further associated with the SMS medium.",
+              "fields": [
+                "relation",
+                "Characteristic",
+                "SMS",
+                "associated with",
+                "Characteristics of e-mail exchanges between pairs of users may be further associated with the SMS medium."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 57,
+              "raw_line": "relation<|#|>Characteristic<|#|>Phone<|#|>associated with<|#|>Characteristics of e-mail exchanges between pairs of users may be further associated with the phone medium.",
+              "fields": [
+                "relation",
+                "Characteristic",
+                "Phone",
+                "associated with",
+                "Characteristics of e-mail exchanges between pairs of users may be further associated with the phone medium."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 5,
+              "chunk_char_end": 439,
+              "text": "ethod of claim 10 , wherein the interaction database is populated by monitoring e-mail exchanges and extracting relevant e-mail exchanges. 13. The method of claim 10 , wherein the characteristic comprises at least one selected from a group consisting of interaction frequency, interaction type, and number of communication participants. 14. The method of claim 10 , wherein the characteristic comprises a time between interactions. 15"
+            },
+            {
+              "chunk_char_start": 203,
+              "chunk_char_end": 637,
+              "text": "prises at least one selected from a group consisting of interaction frequency, interaction type, and number of communication participants. 14. The method of claim 10 , wherein the characteristic comprises a time between interactions. 15. The method of claim 10 , wherein the data associated with the e-mail exchanges between the pairs of users of the e-mail system is obtained from an e-mail field selected from a group consisting of "
+            },
+            {
+              "chunk_char_start": 1133,
+              "chunk_char_end": 1567,
+              "text": "e strength of the relationship is based on intimacy of conversations, frequency of communications, and historical age of the relationship. 19. The method of claim 10 , wherein the characteristic of e-mail exchanges between pairs of users is further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone. 20. A non-transitory computer readable m"
+            },
+            {
+              "chunk_char_start": 1632,
+              "chunk_char_end": 2066,
+              "text": "rm a method of generating relationship data, comprising: accessing an interaction database of e-mail exchanges between pairs of users of an e-mail system; obtaining a plurality of characteristics of e-mail exchanges between the pairs of users and wherein the plurality of characteristics of e-mail exchanges fare further associated with at least one other digital communication medium selected from a group consisting of calendar, ins"
+            },
+            {
+              "chunk_char_start": 1724,
+              "chunk_char_end": 2158,
+              "text": "f e-mail exchanges between pairs of users of an e-mail system; obtaining a plurality of characteristics of e-mail exchanges between the pairs of users and wherein the plurality of characteristics of e-mail exchanges fare further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone, wherein the plurality of characteristics are stored in the i"
+            },
+            {
+              "chunk_char_start": 1943,
+              "chunk_char_end": 2377,
+              "text": "e further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone, wherein the plurality of characteristics are stored in the interaction database and wherein the data is obtained through a direct internet access protocol, wherein the plurality of characteristics comprise a time since a first interaction, a time since a last interaction, intera"
+            },
+            {
+              "chunk_char_start": 2099,
+              "chunk_char_end": 2533,
+              "text": "herein the plurality of characteristics are stored in the interaction database and wherein the data is obtained through a direct internet access protocol, wherein the plurality of characteristics comprise a time since a first interaction, a time since a last interaction, interaction volume between the pair of users, and a ratio of source to target versus target to source interactions; assigning a weight to each of the plurality of"
+            },
+            {
+              "chunk_char_start": 2354,
+              "chunk_char_end": 2788,
+              "text": "ast interaction, interaction volume between the pair of users, and a ratio of source to target versus target to source interactions; assigning a weight to each of the plurality of characteristics for each pair of users; generating relationship data by determining a relationship strength of associated with each pair of users based on the weight assigned to each of the plurality of characteristics for each pair of users; and display"
+            },
+            {
+              "chunk_char_start": 2557,
+              "chunk_char_end": 2991,
+              "text": "h pair of users; generating relationship data by determining a relationship strength of associated with each pair of users based on the weight assigned to each of the plurality of characteristics for each pair of users; and displaying the relationship data on a user interface. 21. A system for processing relationship data, the system comprising: an e-mail system; an interaction database of e-mail exchanges between pairs of users o"
+            },
+            {
+              "chunk_char_start": 2884,
+              "chunk_char_end": 3318,
+              "text": "e system comprising: an e-mail system; an interaction database of e-mail exchanges between pairs of users of the e-mail system; a server to: receive data comprising a plurality of characteristics of e-mail exchanges between pairs of users of the e-mail system, wherein the data is transferred to the server from the interaction database, and wherein the interaction database is populated through a direct internet access protocol, whe"
+            },
+            {
+              "chunk_char_start": 3160,
+              "chunk_char_end": 3594,
+              "text": "a is transferred to the server from the interaction database, and wherein the interaction database is populated through a direct internet access protocol, wherein the plurality of characteristics comprise a time since a first interaction, a time since a last interaction, interaction volume between the pair of users, and a ratio of source to target versus target to source interactions, and the plurality of characteristics are furth"
+            },
+            {
+              "chunk_char_start": 3389,
+              "chunk_char_end": 3823,
+              "text": "eraction, a time since a last interaction, interaction volume between the pair of users, and a ratio of source to target versus target to source interactions, and the plurality of characteristics are further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone; assign a weight to each of the plurality of characteristics for each pair of user"
+            }
+          ],
+          "lexical_occurrence_count": 13
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics.<SEP>A weight is assigned to each of the plurality of characteristics for each pair of users.",
+          "keywords": "assigned to,based on",
+          "source_id": "US9304738B1-chunk-000<SEP>US10778629B2-chunk-001",
+          "file_path": "US9304738B1.txt<SEP>US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Weight",
+          "target": "Characteristic",
+          "edge_index": 173,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2",
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The characteristics are attributes of e-mail exchanges between pairs of users, such as interaction frequency, interaction type, and time between interactions.",
+          "keywords": "describes",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Characteristic",
+          "target": "E-Mail Exchange",
+          "edge_index": 211,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Characteristics of e-mail exchanges between pairs of users may be further associated with the calendar medium.",
+          "keywords": "associated with",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Characteristic",
+          "target": "Calendar",
+          "edge_index": 212,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Characteristics of e-mail exchanges between pairs of users may be further associated with the instant messaging medium.",
+          "keywords": "associated with",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Characteristic",
+          "target": "Instant Messaging",
+          "edge_index": 213,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Characteristics of e-mail exchanges between pairs of users may be further associated with the SMS medium.",
+          "keywords": "associated with",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Characteristic",
+          "target": "SMS",
+          "edge_index": 214,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Characteristics of e-mail exchanges between pairs of users may be further associated with the phone medium.",
+          "keywords": "associated with",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Characteristic",
+          "target": "Phone",
+          "edge_index": 215,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "file_paths": [
+        "US9304738B1.txt"
+      ],
+      "source_chunks": [
+        "US9304738B1-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9304738B1",
+          "full_doc_id": "US9304738B1",
+          "file_path": "US9304738B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "bf269ef3cfec2756c71ada433b655ddffc3b98b38e15a717a03facdb173d7546",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6516,
+          "content": "Publication number: US9304738B1\nTitle: Systems and methods for selecting content using weighted terms\n\nABSTRACT\nSystems and methods for evaluating information via a computer network using weighted terms are provided. A data processing system can detect an indication of user interest in subject matter of an information resource, and can identify a plurality of keywords associated with the subject matter. The data processing system can determine a weight for each of the plurality of keywords for the information resource. The data processing system can receive a request for content to provide for display with the information resource, and can evaluate the weight of each of the plurality of keywords associated with the information resource to determine one or more keywords to use for content selection. The data processing system can select content to provide for display with the information resource based at least in part on the selected keyword(s) or the weight associated with the selected keyword(s).\n\nCLAIMS\nWhat is claimed is: 1. A computer implemented method of evaluating information via a computer network, comprising: receiving, by a data processing system via the computer network, an indication of user interest of a first user in a first advertisement displayed on a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identifying, by the data processing system from a database, a plurality of keywords of the first advertisement using the unique identifier of the parked domain web page; determining, by the data processing system, for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement displayed on the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receiving, by the data processing system, an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determining, by the data processing system, a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receiving, by the data processing system, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; ranking, by the data processing system, the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and selecting, by the data processing system, a third advertisement to provide for display with the parked domain web page based at least in part on the first keyword selected as the highest ranked keyword, wherein the third advertisement is different from the first advertisement and the second advertisement. 2. The method of claim 1 , wherein the third advertisement includes a first content having the first keyword and a second content having the first keyword. 3. The method of claim 1 , further comprising: ranking, for the parked domain web page, the plurality of keywords based on the weight of each of the plurality of keywords; and wherein the first keyword has a top ranking of the plurality of keywords. 4. The method of claim 1 , wherein the plurality of keywords includes the first keyword associated with the first advertisement displayed on the parked domain web page and a third keyword associated with the third advertisement displayed on the parked domain web page. 5. The method of claim 1 , further comprising: receiving an indication of user interest in a fourth advertisement displayed on the parked domain web page, the fourth advertisement associated with the first keyword. 6. The method of claim 1 , further comprising: determining the weight of each of the plurality of keywords based on a characteristic associated with the user interest of the first user in the first advertisement display on the parked domain web page, the characteristic including at least one of a temporal characteristic, a day characteristic, a web page content slot characteristic, a monetary characteristic, and a performance characteristic. 7. The method of claim 1 , wherein the user interest of the first user includes the click. 8. The method of claim 1 , wherein the weight of each of the plurality of keywords associated with the first advertisement displayed on the parked domain web page is specific to the parked domain web page. 9. The method of claim 1 , further comprising: selecting the second keyword based on the weight of each of the plurality of keywords, wherein the first advertisement is associated with the first keyword and the second keyword. 10. The method of claim 1 , further comprising: assigning the weight to each of the plurality of keywords based on a number of user interactions with corresponding advertisements when the corresponding advertisements were previously displayed on the parked domain web page having the unique identifier. 11. The method of claim 1 , further comprising: receiving the indication of user interaction with the first advertisement displayed on the parked domain web page having the unique identifier, the first advertisement corresponding to the first keyword of the plurality of keywords; responsive to the indication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords with the parked domain web page having the unique identifier. 12. The method of claim 1 , further comprising: responsive to receiving the request for content, accessing the database storing",
+          "llm_cache_list": [
+            "default:extract:8f267c1e1e92c895ba038e71099892c6"
+          ],
+          "chunk_id": "US9304738B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9304738B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "21acc4a419571a4e62cda9bb681542631b8c56457d7bc8ce53809ac0c075d793"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 27,
+              "raw_line": "entity<|#|>Characteristic<|#|>Concept<|#|>An attribute associated with user interest used in determining keyword weights, including temporal, day, web page content slot, monetary, and performance characteristics.",
+              "fields": [
+                "entity",
+                "Characteristic",
+                "Concept",
+                "An attribute associated with user interest used in determining keyword weights, including temporal, day, web page content slot, monetary, and performance characteristics."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 53,
+              "raw_line": "relation<|#|>Weight<|#|>Characteristic<|#|>based on<|#|>Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics.",
+              "fields": [
+                "relation",
+                "Weight",
+                "Characteristic",
+                "based on",
+                "Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 4473,
+              "chunk_char_end": 4907,
+              "text": ", the fourth advertisement associated with the first keyword. 6. The method of claim 1 , further comprising: determining the weight of each of the plurality of keywords based on a characteristic associated with the user interest of the first user in the first advertisement display on the parked domain web page, the characteristic including at least one of a temporal characteristic, a day characteristic, a web page content slot cha"
+            },
+            {
+              "chunk_char_start": 4610,
+              "chunk_char_end": 5044,
+              "text": "ch of the plurality of keywords based on a characteristic associated with the user interest of the first user in the first advertisement display on the parked domain web page, the characteristic including at least one of a temporal characteristic, a day characteristic, a web page content slot characteristic, a monetary characteristic, and a performance characteristic. 7. The method of claim 1 , wherein the user interest of the fir"
+            },
+            {
+              "chunk_char_start": 4662,
+              "chunk_char_end": 5096,
+              "text": "istic associated with the user interest of the first user in the first advertisement display on the parked domain web page, the characteristic including at least one of a temporal characteristic, a day characteristic, a web page content slot characteristic, a monetary characteristic, and a performance characteristic. 7. The method of claim 1 , wherein the user interest of the first user includes the click. 8. The method of claim 1"
+            },
+            {
+              "chunk_char_start": 4684,
+              "chunk_char_end": 5118,
+              "text": "the user interest of the first user in the first advertisement display on the parked domain web page, the characteristic including at least one of a temporal characteristic, a day characteristic, a web page content slot characteristic, a monetary characteristic, and a performance characteristic. 7. The method of claim 1 , wherein the user interest of the first user includes the click. 8. The method of claim 1 , wherein the weight "
+            },
+            {
+              "chunk_char_start": 4724,
+              "chunk_char_end": 5158,
+              "text": "he first advertisement display on the parked domain web page, the characteristic including at least one of a temporal characteristic, a day characteristic, a web page content slot characteristic, a monetary characteristic, and a performance characteristic. 7. The method of claim 1 , wherein the user interest of the first user includes the click. 8. The method of claim 1 , wherein the weight of each of the plurality of keywords ass"
+            },
+            {
+              "chunk_char_start": 4751,
+              "chunk_char_end": 5185,
+              "text": "lay on the parked domain web page, the characteristic including at least one of a temporal characteristic, a day characteristic, a web page content slot characteristic, a monetary characteristic, and a performance characteristic. 7. The method of claim 1 , wherein the user interest of the first user includes the click. 8. The method of claim 1 , wherein the weight of each of the plurality of keywords associated with the first adve"
+            },
+            {
+              "chunk_char_start": 4785,
+              "chunk_char_end": 5219,
+              "text": " the characteristic including at least one of a temporal characteristic, a day characteristic, a web page content slot characteristic, a monetary characteristic, and a performance characteristic. 7. The method of claim 1 , wherein the user interest of the first user includes the click. 8. The method of claim 1 , wherein the weight of each of the plurality of keywords associated with the first advertisement displayed on the parked "
+            }
+          ],
+          "lexical_occurrence_count": 7
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics.<SEP>A weight is assigned to each of the plurality of characteristics for each pair of users.",
+          "keywords": "assigned to,based on",
+          "source_id": "US9304738B1-chunk-000<SEP>US10778629B2-chunk-001",
+          "file_path": "US9304738B1.txt<SEP>US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Weight",
+          "target": "Characteristic",
+          "edge_index": 173,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2",
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 2.0,
+      "description": "Keyword weights are determined based on a characteristic associated with user interest, such as temporal, day, content slot, monetary, or performance characteristics.<SEP>A weight is assigned to each of the plurality of characteristics for each pair of users.",
+      "keywords": "assigned to,based on",
+      "source_id": "US9304738B1-chunk-000<SEP>US10778629B2-chunk-001",
+      "file_path": "US9304738B1.txt<SEP>US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "Weight",
+      "target": "Characteristic",
+      "edge_index": 173,
+      "source_chunks": [
+        "US9304738B1-chunk-000",
+        "US10778629B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US10778629B2",
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The characteristics are attributes of e-mail exchanges between pairs of users, such as interaction frequency, interaction type, and time between interactions.",
+      "keywords": "describes",
+      "source_id": "US10778629B2-chunk-001",
+      "file_path": "US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "Characteristic",
+      "target": "E-Mail Exchange",
+      "edge_index": 211,
+      "source_chunks": [
+        "US10778629B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US10778629B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Characteristics of e-mail exchanges between pairs of users may be further associated with the calendar medium.",
+      "keywords": "associated with",
+      "source_id": "US10778629B2-chunk-001",
+      "file_path": "US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "Characteristic",
+      "target": "Calendar",
+      "edge_index": 212,
+      "source_chunks": [
+        "US10778629B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US10778629B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Characteristics of e-mail exchanges between pairs of users may be further associated with the instant messaging medium.",
+      "keywords": "associated with",
+      "source_id": "US10778629B2-chunk-001",
+      "file_path": "US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "Characteristic",
+      "target": "Instant Messaging",
+      "edge_index": 213,
+      "source_chunks": [
+        "US10778629B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US10778629B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Characteristics of e-mail exchanges between pairs of users may be further associated with the SMS medium.",
+      "keywords": "associated with",
+      "source_id": "US10778629B2-chunk-001",
+      "file_path": "US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "Characteristic",
+      "target": "SMS",
+      "edge_index": 214,
+      "source_chunks": [
+        "US10778629B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US10778629B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Characteristics of e-mail exchanges between pairs of users may be further associated with the phone medium.",
+      "keywords": "associated with",
+      "source_id": "US10778629B2-chunk-001",
+      "file_path": "US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "Characteristic",
+      "target": "Phone",
+      "edge_index": 215,
+      "source_chunks": [
+        "US10778629B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US10778629B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

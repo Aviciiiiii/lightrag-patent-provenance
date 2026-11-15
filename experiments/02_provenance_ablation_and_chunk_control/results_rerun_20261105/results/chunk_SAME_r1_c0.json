@@ -1,0 +1,31 @@
+{
+  "condition": "SAME",
+  "repeat": 1,
+  "chunk_index": 0,
+  "chunk_id": "controlled-US7991757B2-same-000",
+  "file_path": "US7991757B2.txt",
+  "call_id": 10,
+  "request_messages_exact_match": true,
+  "response": {
+    "id": 10,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "entity<|#|>Computer System<|#|>Artifact<|#|>A computing system that, in the context of the claims, may comprise multiple physical computing devices.\nentity<|#|>Registration Module<|#|>Artifact<|#|>A module of the system that is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.\nentity<|#|>External Recommender<|#|>Artifact<|#|>A recommender external to the system, one of a plurality of external recommenders, whose provider may provide machine readable descriptions of it via the registration module.\nentity<|#|>Provider<|#|>Person<|#|>A provider of an external recommender associated with the plurality of external recommenders, allowed by the registration module to provide machine readable descriptions of the external recommender.\nentity<|#|>Machine Readable Descriptions<|#|>Data<|#|>Machine readable descriptions of an external recommender that a provider of the external recommender is allowed to provide.\nrelation<|#|>Computer System<|#|>Registration Module<|#|>comprises, component<|#|>The computer system comprises the registration module.\nrelation<|#|>Registration Module<|#|>Provider<|#|>allows, configuration<|#|>The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.\nrelation<|#|>Provider<|#|>External Recommender<|#|>provides, associated with<|#|>The provider is a provider of an external recommender associated with the plurality of external recommenders.\nrelation<|#|>Provider<|#|>Machine Readable Descriptions<|#|>provides<|#|>The provider is allowed to provide machine readable descriptions of the external recommender.\nrelation<|#|>Machine Readable Descriptions<|#|>External Recommender<|#|>describes<|#|>The machine readable descriptions describe the external recommender.\n<|COMPLETE|>",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1878,
+      "completion_tokens": 458,
+      "total_tokens": 2336,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1878
+    },
+    "reasoning_content_present": false
+  },
+  "completion_delimiter_present": true,
+  "valid_nontruncated": true
+}

@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-30T03:27:30.485832+00:00",
+  "failure": "Runner omitted storage parent directory creation; failed before index initialization or model dispatch",
+  "repair": "Standalone experimental runner storage.mkdir(parents=True); no official-source edit",
+  "api_calls_before_failure": 0,
+  "preserved_log": "logs/F01_pipeline_setup_failure.log",
+  "preserved_empty_result_dir": "results/F01_A_r1_preindex_setup_failure",
+  "not_an_extraction_or_retrieval_result": true
+}

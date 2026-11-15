@@ -1,0 +1,2861 @@
+{
+  "evaluated_utc": "2026-10-30T03:41:30.990463+00:00",
+  "group": "F05",
+  "publication_number": "US8069128B2",
+  "original_claims": [
+    {
+      "claim_number": 6,
+      "text": "6. A processor readable storage medium that includes data and instructions, wherein the execution of the instructions on a computing device provides for managing messages by enabling actions, comprising: receiving a plurality of messages; sorting the plurality of messages into a plurality of different message folders using a first message filter, wherein the first message filter is configured to store first classification data in a persistent store; executing a first pass of a multi-pass message filter on the sorted plurality of messages to train the multi-pass message filter by generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store; using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message; identifying any message in the plurality of messages that based on the message's respective score indicates that the message is sorted into an incorrect message folder; and providing a display of information associated with any message identified as stored into the incorrect message folder, such that a user is enabled to move the identified message to another message folder."
+    },
+    {
+      "claim_number": 10,
+      "text": "10. The processor readable storage medium of claim 6 , wherein the multi-pass message filter employs a Naive Bayes classifier."
+    }
+  ],
+  "rubric": "evidence/F05_frozen_evaluation_rubric.json",
+  "method": "Read-only original-text and raw-response/official-parser/actual-graph/retrieval-context/answer review; deterministic matching collects manually reviewed specific predicates. No LLM self-grading or API calls. Source quotation audit is exact substring plus separately labeled punctuation/whitespace normalization.",
+  "summary": {
+    "A": {
+      "runs_completed": 3,
+      "untruncated_runs": 3,
+      "raw_all_three_component_predicates": 3,
+      "merged_all_three_component_predicates": 3,
+      "natural_graph_all_three_component_predicates": 3,
+      "explicit_exclusivity_retained": 3,
+      "natural_both_target_claims_retrieved": 3,
+      "natural_core_answer_claims_source_correct": 3,
+      "forced_core_answer_claims_source_correct": 3,
+      "exact_target_filter_id_chain": 0,
+      "all_natural_quotes_byte_exact": 0,
+      "all_natural_quote_word_sequences_supported_after_punctuation": 1,
+      "claim10_to6_graph_edge": 0
+    },
+    "B": {
+      "runs_completed": 3,
+      "untruncated_runs": 3,
+      "raw_all_three_component_predicates": 3,
+      "merged_all_three_component_predicates": 3,
+      "natural_graph_all_three_component_predicates": 3,
+      "explicit_exclusivity_retained": 3,
+      "natural_both_target_claims_retrieved": 3,
+      "natural_core_answer_claims_source_correct": 3,
+      "forced_core_answer_claims_source_correct": 3,
+      "exact_target_filter_id_chain": 3,
+      "all_natural_quotes_byte_exact": 0,
+      "all_natural_quote_word_sequences_supported_after_punctuation": 3,
+      "claim10_to6_graph_edge": 0
+    }
+  },
+  "paired_valid_repeats": 3,
+  "runs": [
+    {
+      "run_id": "F05_A_r1",
+      "condition": "A",
+      "repeat": 1,
+      "status": "completed",
+      "valid_untruncated_extraction_run": true,
+      "extraction_calls": [
+        {
+          "call_id": 110,
+          "chunk_id": "US8069128B2-chunk-000",
+          "finish_reason": "stop",
+          "completion_tokens": 2180
+        },
+        {
+          "call_id": 111,
+          "chunk_id": "US8069128B2-chunk-001",
+          "finish_reason": "stop",
+          "completion_tokens": 1696
+        }
+      ],
+      "actual_chunking": {
+        "source_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+        "source_tokens": 1645,
+        "chunks": [
+          {
+            "chunk_order_index": 0,
+            "global_token_span": [
+              0,
+              1200
+            ],
+            "source_char_span": [
+              0,
+              6639
+            ],
+            "actual_tokens": 1200,
+            "content_sha256": "03d27b9af9a95fc99659dae87ae86cc8134f0f4319687342b04ae8d524454c1c",
+            "overlap_previous_global_tokens": 0
+          },
+          {
+            "chunk_order_index": 1,
+            "global_token_span": [
+              1100,
+              1645
+            ],
+            "source_char_span": [
+              6096,
+              9043
+            ],
+            "actual_tokens": 545,
+            "content_sha256": "7fc3128dd12c094caa0580486185fd8a2142eb5035430a24748442afaa30e32b",
+            "overlap_previous_global_tokens": 100
+          }
+        ]
+      },
+      "graph_counts": {
+        "nodes": 30,
+        "edges": 43
+      },
+      "predicates": {
+        "P1": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 110,
+              "chunk_id": "US8069128B2-chunk-000",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+                "tgt_id": "Naive Bayes Classifier",
+                "weight": 1.0,
+                "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+                "keywords": "employs",
+                "source_id": "US8069128B2-chunk-000",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 38,
+                  "text": "relation<|#|>Multi-Pass Ad-Hoc Spam Message Filter<|#|>Naive Bayes Classifier<|#|>employs<|#|>The multi-pass message filter employs a Naive Bayes classifier."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 5,
+              "weight": 1.0,
+              "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+              "keywords": "employs",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331213,
+              "truncate": "",
+              "source": "Multi-Pass Ad-Hoc Spam Message Filter",
+              "target": "Naive Bayes Classifier"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+              "entity_type": "method",
+              "description": "A filtering approach that dynamically generates a temporary classifier during a first pass based on results of a previously applied message filter, then uses it in a second pass to retrospectively inspect messages for misclassification.",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331213,
+              "truncate": "",
+              "id": "Multi-Pass Ad-Hoc Spam Message Filter"
+            },
+            {
+              "entity_id": "Naive Bayes Classifier",
+              "entity_type": "method",
+              "description": "A classifier employed by the multi-pass message filter.",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331213,
+              "truncate": "",
+              "id": "Naive Bayes Classifier"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+              "tgt_id": "Naive Bayes Classifier",
+              "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+              "keywords": "employs",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331213
+            }
+          ]
+        },
+        "P2": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 111,
+              "chunk_id": "US8069128B2-chunk-001",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Message Filter",
+                "tgt_id": "Second Classification Data",
+                "weight": 1.0,
+                "description": "The first pass of the multi-pass message filter trains the filter by generating second classification data, and the second pass uses the second classification data to score each message.",
+                "keywords": "generates, trains with",
+                "source_id": "US8069128B2-chunk-001",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 16,
+                  "text": "relation<|#|>Multi-Pass Message Filter<|#|>Second Classification Data<|#|>generates, trains with<|#|>The first pass of the multi-pass message filter trains the filter by generating second classification data, and the second pass uses the second classification data to score each message."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 38,
+              "weight": 1.0,
+              "description": "The first pass of the multi-pass message filter trains the filter by generating second classification data, and the second pass uses the second classification data to score each message.",
+              "keywords": "generates,trains with",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331213,
+              "truncate": "",
+              "source": "Multi-Pass Message Filter",
+              "target": "Second Classification Data"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Multi-Pass Message Filter",
+              "entity_type": "method",
+              "description": "A message filter executed in multiple passes on sorted messages; a first pass trains the filter by generating second classification data, and a second pass uses that data to score each message and identify messages sorted into incorrect message folders.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331213,
+              "truncate": "",
+              "id": "Multi-Pass Message Filter"
+            },
+            {
+              "entity_id": "Second Classification Data",
+              "entity_type": "data",
+              "description": "Classification data generated by the first pass of the multi-pass message filter to train it; it resides exclusively in a non-persistent memory store at the client device and is deleted upon providing the display of information.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331213,
+              "truncate": "",
+              "id": "Second Classification Data"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Second Classification Data",
+              "description": "The first pass of the multi-pass message filter trains the filter by generating second classification data, and the second pass uses the second classification data to score each message.",
+              "keywords": "generates,trains with",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331213
+            }
+          ]
+        },
+        "P3": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 111,
+              "chunk_id": "US8069128B2-chunk-001",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Second Classification Data",
+                "tgt_id": "Non-Persistent Memory Store",
+                "weight": 1.0,
+                "description": "The second classification data is configured to reside exclusively in a non-persistent memory store at the client device.",
+                "keywords": "resides in, stored in",
+                "source_id": "US8069128B2-chunk-001",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 17,
+                  "text": "relation<|#|>Second Classification Data<|#|>Non-Persistent Memory Store<|#|>resides in, stored in<|#|>The second classification data is configured to reside exclusively in a non-persistent memory store at the client device."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 40,
+              "weight": 1.0,
+              "description": "The second classification data is configured to reside exclusively in a non-persistent memory store at the client device.",
+              "keywords": "resides in,stored in",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331213,
+              "truncate": "",
+              "source": "Second Classification Data",
+              "target": "Non-Persistent Memory Store"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Second Classification Data",
+              "entity_type": "data",
+              "description": "Classification data generated by the first pass of the multi-pass message filter to train it; it resides exclusively in a non-persistent memory store at the client device and is deleted upon providing the display of information.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331213,
+              "truncate": "",
+              "id": "Second Classification Data"
+            },
+            {
+              "entity_id": "Non-Persistent Memory Store",
+              "entity_type": "artifact",
+              "description": "A memory store at the client device where second classification data resides exclusively.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331213,
+              "truncate": "",
+              "id": "Non-Persistent Memory Store"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Non-Persistent Memory Store",
+              "tgt_id": "Second Classification Data",
+              "description": "The second classification data is configured to reside exclusively in a non-persistent memory store at the client device.",
+              "keywords": "resides in,stored in",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331213
+            }
+          ],
+          "exclusive_qualifier_in_merged_relation": true
+        }
+      },
+      "all_three_component_predicates_retained_raw_graph_and_natural_graph_context": true,
+      "P3_exclusive_qualifier_retained": true,
+      "shared_identity_secondary": {
+        "P1_filter_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+        "P2_filter_id": "Multi-Pass Message Filter",
+        "exact_filter_id_shared_with_SecondClassificationData_path": false,
+        "alternate_ClassificationModel_chain_edges": [
+          {
+            "record_index": 0,
+            "weight": 1.0,
+            "description": "The multi-pass message filter generates a classification model during the first pass based on the first pass analysis.",
+            "keywords": "generates,trains",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331213,
+            "truncate": "",
+            "source": "Multi-Pass Ad-Hoc Spam Message Filter",
+            "target": "Classification Model"
+          },
+          {
+            "record_index": 13,
+            "weight": 1.0,
+            "description": "The generated classification model is configured to reside exclusively in a non-persistent memory location.",
+            "keywords": "resides in",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331213,
+            "truncate": "",
+            "source": "Classification Model",
+            "target": "Non-Persistent Memory Location"
+          }
+        ],
+        "alternate_model_chain_present": true,
+        "not_a_semantic_merge_equivalence_proof": true
+      },
+      "claim_structure_secondary": {
+        "claim6_or_claim10_graph_nodes": [],
+        "explicit_claim10_to6_edge": false,
+        "interpretation": "No Claim nodes/dependency edges represented by this default extraction. Supporting-Claim accuracy is evaluated separately. Natural query did not explicitly request the legal dependency."
+      },
+      "natural_retrieval": {
+        "status": "success",
+        "chunks": 2,
+        "entities": 18,
+        "relationships": 32,
+        "full_original_claim_chunks": {
+          "6": [
+            0
+          ],
+          "10": [
+            0
+          ]
+        },
+        "both_target_claims_available": true,
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US8069128B2.txt"
+          }
+        ]
+      },
+      "natural_answer": {
+        "core_classifier_correct": true,
+        "second_data_memory_and_exclusivity_correct": true,
+        "first_vs_second_data_not_conflated": true,
+        "supporting_claim6_and10_correct": true,
+        "publication_and_reference_mapping_correct": true,
+        "explicit_claim_dependency_assertion_present": false,
+        "material_unsupported_technical_conclusion_found": false,
+        "quotes": [
+          {
+            "quote": "wherein the multi-pass message filter employs a Naive Bayes classifier.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "the second classification data is configured to reside exclusively in a non-persistent memory store,",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "the second classification data is deleted from the client device upon providing the display of information,",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "deleting second classification data such that it is no longer accessible.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to store first classification data in a persistent store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "executing the first pass and the second pass of the multi-pass message filter occurs entirely on a client device,",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to execute on a network device distinct from a client device.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          }
+        ],
+        "content": "In US8069128B2, the multi-pass message filter can employ a **Naive Bayes classifier**, as stated in claim 10: “wherein the multi-pass message filter employs a Naive Bayes classifier.”\n\nThe generated second classification data resides **exclusively in a non-persistent memory store**. Claim 6 recites that “the second classification data is configured to reside exclusively in a non-persistent memory store,” and claim 12 similarly states this for execution on a client device. Claim 13 adds that “the second classification data is deleted from the client device upon providing the display of information,” while claim 7 covers “deleting second classification data such that it is no longer accessible.”\n\nThis is distinct from the first message filter’s data: claim 6 states that the first message filter “is configured to store first classification data in a persistent store.” Thus, the first-filter classification data is persistent, whereas the second-filter classification data is temporary and non-persistent. Claim 8 further notes that “executing the first pass and the second pass of the multi-pass message filter occurs entirely on a client device,” and claim 9 states the first message filter “is configured to execute on a network device distinct from a client device.”\n\n### References\n\n- [1] US8069128B2.txt"
+      },
+      "forced_diagnostic": {
+        "supplied_only_original_claim6_and10": true,
+        "not_natural_retrieval_score": true,
+        "core_answer_and_claims_correct": true,
+        "publication_and_reference_mapping_correct": true,
+        "quotes": [
+          {
+            "quote": "wherein the multi-pass message filter employs a Naive Bayes classifier.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "generating second classification data.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to store first classification data in a persistent store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "to score each message.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          }
+        ],
+        "content": "Based on the evidence in US8069128B2, the multi-pass message filter can employ a **Naive Bayes classifier**, as stated in claim 10: \"wherein the multi-pass message filter employs a Naive Bayes classifier.\"\n\nRegarding where the generated second classification data resides, claim 6 specifies that the second classification data \"is configured to reside exclusively in a non-persistent memory store.\" This is generated during the first pass of the multi-pass message filter, which trains the filter by \"generating second classification data.\"\n\nThe distinction between the two data types is explicit in claim 6:\n\n- **First classification data (persistent):** The first message filter \"is configured to store first classification data in a persistent store.\"\n- **Second classification data (temporary):** The multi-pass filter's second classification data \"is configured to reside exclusively in a non-persistent memory store.\"\n\nThus, the original first-filter data is persistently stored, while the second-filter data is confined to non-persistent memory. The second pass then uses this second classification data \"to score each message.\"\n\n### References\n\n- [1] US8069128B2.txt"
+      },
+      "findings": [
+        {
+          "kind": "entity_naming_variation_carried_through_merge",
+          "stage": "raw entity naming plus graph identity representation",
+          "evidence": {
+            "P1_filter_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+            "P2_filter_id": "Multi-Pass Message Filter"
+          },
+          "interpretation": "These are distinct stored identities. Component facts survive, and an alternative ClassificationModel path exists. Do not label this alone a deduplication bug or technical relation loss."
+        },
+        {
+          "kind": "natural_answer_non_verbatim_quotation",
+          "stage": "generation/quotation fidelity",
+          "interpretation": "Supported original evidence was retrieved. Most differences are punctuation; A2/A3 additionally change occurs to occur in a Claim8 quote. Core technical answers remain correct.",
+          "non_word_exact": []
+        }
+      ],
+      "failure_attribution": "No target-component extraction, graph retention or retrieval loss observed; quotation fidelity deviations occur after correct original evidence retrieval. Identity naming variation is separately reported, not assigned as a chunk-loss mechanism."
+    },
+    {
+      "run_id": "F05_B_r1",
+      "condition": "B",
+      "repeat": 1,
+      "status": "completed",
+      "valid_untruncated_extraction_run": true,
+      "extraction_calls": [
+        {
+          "call_id": 127,
+          "chunk_id": "US8069128B2-chunk-000",
+          "finish_reason": "stop",
+          "completion_tokens": 2318
+        },
+        {
+          "call_id": 128,
+          "chunk_id": "US8069128B2-chunk-001",
+          "finish_reason": "stop",
+          "completion_tokens": 1058
+        },
+        {
+          "call_id": 129,
+          "chunk_id": "US8069128B2-chunk-002",
+          "finish_reason": "stop",
+          "completion_tokens": 1676
+        }
+      ],
+      "actual_chunking": {
+        "source_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+        "source_tokens": 1645,
+        "chunks": [
+          {
+            "chunk_order_index": 0,
+            "global_token_span": [
+              0,
+              886
+            ],
+            "source_char_span": [
+              0,
+              4879
+            ],
+            "actual_tokens": 886,
+            "content_sha256": "26ccb51ae867067fef8169d9d6b1724bea58a114f14675eb36c0cdd801de9b7d",
+            "overlap_previous_global_tokens": 0
+          },
+          {
+            "chunk_order_index": 1,
+            "global_token_span": [
+              786,
+              1025
+            ],
+            "source_char_span": [
+              4363,
+              5660
+            ],
+            "actual_tokens": 239,
+            "content_sha256": "48da639ca2fc9afaac543b6407ec73df83cb43377ce3a96c10d3e839ac0c49f9",
+            "overlap_previous_global_tokens": 100
+          },
+          {
+            "chunk_order_index": 2,
+            "global_token_span": [
+              925,
+              1645
+            ],
+            "source_char_span": [
+              5085,
+              9043
+            ],
+            "actual_tokens": 720,
+            "content_sha256": "0053d7ad1618d79a4e75849aadf60d1a0669ab8eda1022f4384dfa1f3a3d8a23",
+            "overlap_previous_global_tokens": 100
+          }
+        ]
+      },
+      "graph_counts": {
+        "nodes": 33,
+        "edges": 54
+      },
+      "predicates": {
+        "P1": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 128,
+              "chunk_id": "US8069128B2-chunk-001",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Message Filter",
+                "tgt_id": "Naive Bayes Classifier",
+                "weight": 1.0,
+                "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+                "keywords": "employs, uses",
+                "source_id": "US8069128B2-chunk-001",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 13,
+                  "text": "relation<|#|>Multi-Pass Message Filter<|#|>Naive Bayes Classifier<|#|>employs, uses<|#|>The multi-pass message filter employs a Naive Bayes classifier."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 46,
+              "weight": 1.0,
+              "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+              "keywords": "employs,uses",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331266,
+              "truncate": "",
+              "source": "Multi-Pass Message Filter",
+              "target": "Naive Bayes Classifier"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Multi-Pass Message Filter",
+              "entity_type": "method",
+              "description": "A message filtering technique that executes a first pass and a second pass, can employ a Naive Bayes classifier, and is trained by generating second classification data.<SEP>A message filter executed in multiple passes on a client device; a first pass trains the filter by generating second classification data, and a second pass uses that data to score each message.",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331266,
+              "truncate": "",
+              "id": "Multi-Pass Message Filter"
+            },
+            {
+              "entity_id": "Naive Bayes Classifier",
+              "entity_type": "method",
+              "description": "A classifier that the multi-pass message filter may employ.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331266,
+              "truncate": "",
+              "id": "Naive Bayes Classifier"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Naive Bayes Classifier",
+              "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+              "keywords": "employs,uses",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331266
+            }
+          ]
+        },
+        "P2": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 128,
+              "chunk_id": "US8069128B2-chunk-001",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Message Filter",
+                "tgt_id": "Second Classification Data",
+                "weight": 1.0,
+                "description": "Executing the first pass of the multi-pass message filter trains the filter by generating second classification data.",
+                "keywords": "generates, trains with",
+                "source_id": "US8069128B2-chunk-001",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 14,
+                  "text": "relation<|#|>Multi-Pass Message Filter<|#|>Second Classification Data<|#|>generates, trains with<|#|>Executing the first pass of the multi-pass message filter trains the filter by generating second classification data."
+                }
+              ]
+            },
+            {
+              "call_id": 129,
+              "chunk_id": "US8069128B2-chunk-002",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Message Filter",
+                "tgt_id": "Second Classification Data",
+                "weight": 1.0,
+                "description": "The first pass of the multi-pass message filter generates second classification data, and the second pass uses it to score each message.",
+                "keywords": "generates, uses",
+                "source_id": "US8069128B2-chunk-002",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 17,
+                  "text": "relation<|#|>Multi-Pass Message Filter<|#|>Second Classification Data<|#|>generates, uses<|#|>The first pass of the multi-pass message filter generates second classification data, and the second pass uses it to score each message."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 47,
+              "weight": 2.0,
+              "description": "Executing the first pass of the multi-pass message filter trains the filter by generating second classification data.<SEP>The first pass of the multi-pass message filter generates second classification data, and the second pass uses it to score each message.",
+              "keywords": "generates,trains with,uses",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331266,
+              "truncate": "",
+              "source": "Multi-Pass Message Filter",
+              "target": "Second Classification Data"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Multi-Pass Message Filter",
+              "entity_type": "method",
+              "description": "A message filtering technique that executes a first pass and a second pass, can employ a Naive Bayes classifier, and is trained by generating second classification data.<SEP>A message filter executed in multiple passes on a client device; a first pass trains the filter by generating second classification data, and a second pass uses that data to score each message.",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331266,
+              "truncate": "",
+              "id": "Multi-Pass Message Filter"
+            },
+            {
+              "entity_id": "Second Classification Data",
+              "entity_type": "data",
+              "description": "Classification data generated during the first pass of the multi-pass message filter to train the filter, and which can be deleted so it is no longer accessible.<SEP>Classification data generated by the first pass of the multi-pass message filter to train the filter; it resides exclusively in a non-persistent memory store and is used to score messages.",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331266,
+              "truncate": "",
+              "id": "Second Classification Data"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Second Classification Data",
+              "description": "Executing the first pass of the multi-pass message filter trains the filter by generating second classification data.<SEP>The first pass of the multi-pass message filter generates second classification data, and the second pass uses it to score each message.",
+              "keywords": "generates,trains with,uses",
+              "weight": 2.0,
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331266
+            }
+          ]
+        },
+        "P3": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 129,
+              "chunk_id": "US8069128B2-chunk-002",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Second Classification Data",
+                "tgt_id": "Non-Persistent Memory Store",
+                "weight": 1.0,
+                "description": "The second classification data is configured to reside exclusively in a non-persistent memory store at the client device.",
+                "keywords": "resides in",
+                "source_id": "US8069128B2-chunk-002",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 18,
+                  "text": "relation<|#|>Second Classification Data<|#|>Non-Persistent Memory Store<|#|>resides in<|#|>The second classification data is configured to reside exclusively in a non-persistent memory store at the client device."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 51,
+              "weight": 1.0,
+              "description": "The second classification data is configured to reside exclusively in a non-persistent memory store at the client device.",
+              "keywords": "resides in",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331266,
+              "truncate": "",
+              "source": "Second Classification Data",
+              "target": "Non-Persistent Memory Store"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Second Classification Data",
+              "entity_type": "data",
+              "description": "Classification data generated during the first pass of the multi-pass message filter to train the filter, and which can be deleted so it is no longer accessible.<SEP>Classification data generated by the first pass of the multi-pass message filter to train the filter; it resides exclusively in a non-persistent memory store and is used to score messages.",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331266,
+              "truncate": "",
+              "id": "Second Classification Data"
+            },
+            {
+              "entity_id": "Non-Persistent Memory Store",
+              "entity_type": "artifact",
+              "description": "A memory store at the client device where second classification data resides exclusively.",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331266,
+              "truncate": "",
+              "id": "Non-Persistent Memory Store"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Non-Persistent Memory Store",
+              "tgt_id": "Second Classification Data",
+              "description": "The second classification data is configured to reside exclusively in a non-persistent memory store at the client device.",
+              "keywords": "resides in",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331266
+            }
+          ],
+          "exclusive_qualifier_in_merged_relation": true
+        }
+      },
+      "all_three_component_predicates_retained_raw_graph_and_natural_graph_context": true,
+      "P3_exclusive_qualifier_retained": true,
+      "shared_identity_secondary": {
+        "P1_filter_id": "Multi-Pass Message Filter",
+        "P2_filter_id": "Multi-Pass Message Filter",
+        "exact_filter_id_shared_with_SecondClassificationData_path": true,
+        "alternate_ClassificationModel_chain_edges": [
+          {
+            "record_index": 9,
+            "weight": 1.0,
+            "description": "The generated classification model is configured to reside exclusively in a non-persistent memory location.",
+            "keywords": "resides exclusively in",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331266,
+            "truncate": "",
+            "source": "Classification Model",
+            "target": "Non-Persistent Memory Location"
+          }
+        ],
+        "alternate_model_chain_present": false,
+        "not_a_semantic_merge_equivalence_proof": true
+      },
+      "claim_structure_secondary": {
+        "claim6_or_claim10_graph_nodes": [],
+        "explicit_claim10_to6_edge": false,
+        "interpretation": "No Claim nodes/dependency edges represented by this default extraction. Supporting-Claim accuracy is evaluated separately. Natural query did not explicitly request the legal dependency."
+      },
+      "natural_retrieval": {
+        "status": "success",
+        "chunks": 3,
+        "entities": 17,
+        "relationships": 38,
+        "full_original_claim_chunks": {
+          "6": [
+            1
+          ],
+          "10": [
+            0
+          ]
+        },
+        "both_target_claims_available": true,
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US8069128B2.txt"
+          }
+        ]
+      },
+      "natural_answer": {
+        "core_classifier_correct": true,
+        "second_data_memory_and_exclusivity_correct": true,
+        "first_vs_second_data_not_conflated": true,
+        "supporting_claim6_and10_correct": true,
+        "publication_and_reference_mapping_correct": true,
+        "explicit_claim_dependency_assertion_present": false,
+        "material_unsupported_technical_conclusion_found": false,
+        "quotes": [
+          {
+            "quote": "wherein the multi-pass message filter employs a Naive Bayes classifier.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "wherein the second classification data is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to store first classification data in a persistent store",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "such that it is no longer accessible",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory location",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          }
+        ],
+        "content": "In US8069128B2, the multi-pass message filter may employ a **Naive Bayes classifier**, as recited in claim 10: “wherein the multi-pass message filter employs a Naive Bayes classifier.” The generated second classification data is configured to reside **exclusively in a non-persistent memory store** at the client device, per claim 6: “wherein the second classification data is configured to reside exclusively in a non-persistent memory store.”\n\nThe patent distinguishes two data sets. The **first message filter** sorts messages into folders and “is configured to store first classification data in a persistent store” (claim 6). By contrast, the **second classification data** is generated by the first pass of the multi-pass filter to train it and is held only in non-persistent memory (claim 6); it may later be deleted “such that it is no longer accessible” (claim 7). Similarly, the classification model of claim 1 “is configured to reside exclusively in a non-persistent memory location” and is purged after the second pass.\n\nThus, the persistent first-filter data and the temporary second-filter data are expressly separated by storage location and lifecycle in the claims.\n\n### References\n\n- [1] US8069128B2.txt"
+      },
+      "forced_diagnostic": {
+        "supplied_only_original_claim6_and10": true,
+        "not_natural_retrieval_score": true,
+        "core_answer_and_claims_correct": true,
+        "publication_and_reference_mapping_correct": true,
+        "quotes": [
+          {
+            "quote": "wherein the multi-pass message filter employs a Naive Bayes classifier.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to store first classification data in a persistent store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          }
+        ],
+        "content": "Based on the evidence in US8069128B2, the multi-pass message filter can employ a **Naive Bayes classifier**, as stated in Claim 10: \"wherein the multi-pass message filter employs a Naive Bayes classifier.\"\n\nRegarding where the generated second classification data resides, Claim 6 specifies that the second classification data \"is configured to reside exclusively in a non-persistent memory store.\" This is generated during the first pass of the multi-pass message filter, which trains the filter.\n\nThe document distinguishes the two data types as follows:\n\n- **First-filter (persistent) data:** The first message filter \"is configured to store first classification data in a persistent store.\"\n- **Second-filter (temporary) data:** The second classification data \"is configured to reside exclusively in a non-persistent memory store.\"\n\nThus, the original first-filter classification data is held in persistent storage, while the second classification data generated by the multi-pass filter's first pass is kept exclusively in non-persistent memory. The supporting claims are Claim 6 (for the data residency distinction) and Claim 10 (for the Naive Bayes classifier).\n\n### References\n\n- [1] US8069128B2.txt"
+      },
+      "findings": [
+        {
+          "kind": "natural_answer_non_verbatim_quotation",
+          "stage": "generation/quotation fidelity",
+          "interpretation": "Supported original evidence was retrieved. Most differences are punctuation; A2/A3 additionally change occurs to occur in a Claim8 quote. Core technical answers remain correct.",
+          "non_word_exact": []
+        }
+      ],
+      "failure_attribution": "No target-component extraction, graph retention or retrieval loss observed; quotation fidelity deviations occur after correct original evidence retrieval. Identity naming variation is separately reported, not assigned as a chunk-loss mechanism."
+    },
+    {
+      "run_id": "F05_B_r2",
+      "condition": "B",
+      "repeat": 2,
+      "status": "completed",
+      "valid_untruncated_extraction_run": true,
+      "extraction_calls": [
+        {
+          "call_id": 147,
+          "chunk_id": "US8069128B2-chunk-000",
+          "finish_reason": "stop",
+          "completion_tokens": 2165
+        },
+        {
+          "call_id": 148,
+          "chunk_id": "US8069128B2-chunk-001",
+          "finish_reason": "stop",
+          "completion_tokens": 1000
+        },
+        {
+          "call_id": 149,
+          "chunk_id": "US8069128B2-chunk-002",
+          "finish_reason": "stop",
+          "completion_tokens": 1453
+        }
+      ],
+      "actual_chunking": {
+        "source_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+        "source_tokens": 1645,
+        "chunks": [
+          {
+            "chunk_order_index": 0,
+            "global_token_span": [
+              0,
+              886
+            ],
+            "source_char_span": [
+              0,
+              4879
+            ],
+            "actual_tokens": 886,
+            "content_sha256": "26ccb51ae867067fef8169d9d6b1724bea58a114f14675eb36c0cdd801de9b7d",
+            "overlap_previous_global_tokens": 0
+          },
+          {
+            "chunk_order_index": 1,
+            "global_token_span": [
+              786,
+              1025
+            ],
+            "source_char_span": [
+              4363,
+              5660
+            ],
+            "actual_tokens": 239,
+            "content_sha256": "48da639ca2fc9afaac543b6407ec73df83cb43377ce3a96c10d3e839ac0c49f9",
+            "overlap_previous_global_tokens": 100
+          },
+          {
+            "chunk_order_index": 2,
+            "global_token_span": [
+              925,
+              1645
+            ],
+            "source_char_span": [
+              5085,
+              9043
+            ],
+            "actual_tokens": 720,
+            "content_sha256": "0053d7ad1618d79a4e75849aadf60d1a0669ab8eda1022f4384dfa1f3a3d8a23",
+            "overlap_previous_global_tokens": 100
+          }
+        ]
+      },
+      "graph_counts": {
+        "nodes": 32,
+        "edges": 47
+      },
+      "predicates": {
+        "P1": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 148,
+              "chunk_id": "US8069128B2-chunk-001",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Message Filter",
+                "tgt_id": "Naive Bayes Classifier",
+                "weight": 1.0,
+                "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+                "keywords": "employs, uses",
+                "source_id": "US8069128B2-chunk-001",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 13,
+                  "text": "relation<|#|>Multi-Pass Message Filter<|#|>Naive Bayes Classifier<|#|>employs, uses<|#|>The multi-pass message filter employs a Naive Bayes classifier."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 40,
+              "weight": 1.0,
+              "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+              "keywords": "employs,uses",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331316,
+              "truncate": "",
+              "source": "Multi-Pass Message Filter",
+              "target": "Naive Bayes Classifier"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Multi-Pass Message Filter",
+              "entity_type": "method",
+              "description": "A message filtering system that operates in multiple passes, employing a Naive Bayes classifier and generating classification data to sort messages into folders.<SEP>A message filter executed in multiple passes on a client device; a first pass trains the filter by generating second classification data, and a second pass uses that data to score each message.",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331316,
+              "truncate": "",
+              "id": "Multi-Pass Message Filter"
+            },
+            {
+              "entity_id": "Naive Bayes Classifier",
+              "entity_type": "method",
+              "description": "A classifier employed by the multi-pass message filter for classifying messages.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331316,
+              "truncate": "",
+              "id": "Naive Bayes Classifier"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Naive Bayes Classifier",
+              "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+              "keywords": "employs,uses",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331316
+            }
+          ]
+        },
+        "P2": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 148,
+              "chunk_id": "US8069128B2-chunk-001",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Message Filter",
+                "tgt_id": "Second Classification Data",
+                "weight": 1.0,
+                "description": "Executing the first pass of the multi-pass message filter generates second classification data to train the filter.",
+                "keywords": "generates, trains on",
+                "source_id": "US8069128B2-chunk-001",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 16,
+                  "text": "relation<|#|>Multi-Pass Message Filter<|#|>Second Classification Data<|#|>generates, trains on<|#|>Executing the first pass of the multi-pass message filter generates second classification data to train the filter."
+                }
+              ]
+            },
+            {
+              "call_id": 149,
+              "chunk_id": "US8069128B2-chunk-002",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Message Filter",
+                "tgt_id": "Second Classification Data",
+                "weight": 1.0,
+                "description": "The first pass of the multi-pass message filter trains the filter by generating the second classification data.",
+                "keywords": "generates, training",
+                "source_id": "US8069128B2-chunk-002",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 16,
+                  "text": "relation<|#|>Multi-Pass Message Filter<|#|>Second Classification Data<|#|>generates, training<|#|>The first pass of the multi-pass message filter trains the filter by generating the second classification data."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 41,
+              "weight": 2.0,
+              "description": "Executing the first pass of the multi-pass message filter generates second classification data to train the filter.<SEP>The first pass of the multi-pass message filter trains the filter by generating the second classification data.",
+              "keywords": "generates,training,trains on",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331316,
+              "truncate": "",
+              "source": "Multi-Pass Message Filter",
+              "target": "Second Classification Data"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Multi-Pass Message Filter",
+              "entity_type": "method",
+              "description": "A message filtering system that operates in multiple passes, employing a Naive Bayes classifier and generating classification data to sort messages into folders.<SEP>A message filter executed in multiple passes on a client device; a first pass trains the filter by generating second classification data, and a second pass uses that data to score each message.",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331316,
+              "truncate": "",
+              "id": "Multi-Pass Message Filter"
+            },
+            {
+              "entity_id": "Second Classification Data",
+              "entity_type": "data",
+              "description": "Classification data generated during the first pass of the multi-pass message filter to train the filter, and which can be deleted so it is no longer accessible.<SEP>Classification data generated by the first pass of the multi-pass message filter, configured to reside exclusively in a non-persistent memory store and deleted from the client device upon providing the display of information.",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331316,
+              "truncate": "",
+              "id": "Second Classification Data"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Second Classification Data",
+              "description": "Executing the first pass of the multi-pass message filter generates second classification data to train the filter.<SEP>The first pass of the multi-pass message filter trains the filter by generating the second classification data.",
+              "keywords": "generates,training,trains on",
+              "weight": 2.0,
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331316
+            }
+          ]
+        },
+        "P3": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 149,
+              "chunk_id": "US8069128B2-chunk-002",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Second Classification Data",
+                "tgt_id": "Non-Persistent Memory Store",
+                "weight": 1.0,
+                "description": "The second classification data is configured to reside exclusively in the non-persistent memory store.",
+                "keywords": "resides in",
+                "source_id": "US8069128B2-chunk-002",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 21,
+                  "text": "relation<|#|>Second Classification Data<|#|>Non-Persistent Memory Store<|#|>resides in<|#|>The second classification data is configured to reside exclusively in the non-persistent memory store."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 45,
+              "weight": 1.0,
+              "description": "The second classification data is configured to reside exclusively in the non-persistent memory store.",
+              "keywords": "resides in",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331316,
+              "truncate": "",
+              "source": "Second Classification Data",
+              "target": "Non-Persistent Memory Store"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Second Classification Data",
+              "entity_type": "data",
+              "description": "Classification data generated during the first pass of the multi-pass message filter to train the filter, and which can be deleted so it is no longer accessible.<SEP>Classification data generated by the first pass of the multi-pass message filter, configured to reside exclusively in a non-persistent memory store and deleted from the client device upon providing the display of information.",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331316,
+              "truncate": "",
+              "id": "Second Classification Data"
+            },
+            {
+              "entity_id": "Non-Persistent Memory Store",
+              "entity_type": "artifact",
+              "description": "A memory store on the client device where the second classification data resides exclusively.",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331316,
+              "truncate": "",
+              "id": "Non-Persistent Memory Store"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Non-Persistent Memory Store",
+              "tgt_id": "Second Classification Data",
+              "description": "The second classification data is configured to reside exclusively in the non-persistent memory store.",
+              "keywords": "resides in",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331316
+            }
+          ],
+          "exclusive_qualifier_in_merged_relation": true
+        }
+      },
+      "all_three_component_predicates_retained_raw_graph_and_natural_graph_context": true,
+      "P3_exclusive_qualifier_retained": true,
+      "shared_identity_secondary": {
+        "P1_filter_id": "Multi-Pass Message Filter",
+        "P2_filter_id": "Multi-Pass Message Filter",
+        "exact_filter_id_shared_with_SecondClassificationData_path": true,
+        "alternate_ClassificationModel_chain_edges": [
+          {
+            "record_index": 9,
+            "weight": 1.0,
+            "description": "The generated classification model is configured to reside exclusively in a non-persistent memory location.",
+            "keywords": "resides in",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331316,
+            "truncate": "",
+            "source": "Classification Model",
+            "target": "Non-Persistent Memory Location"
+          }
+        ],
+        "alternate_model_chain_present": false,
+        "not_a_semantic_merge_equivalence_proof": true
+      },
+      "claim_structure_secondary": {
+        "claim6_or_claim10_graph_nodes": [],
+        "explicit_claim10_to6_edge": false,
+        "interpretation": "No Claim nodes/dependency edges represented by this default extraction. Supporting-Claim accuracy is evaluated separately. Natural query did not explicitly request the legal dependency."
+      },
+      "natural_retrieval": {
+        "status": "success",
+        "chunks": 3,
+        "entities": 18,
+        "relationships": 32,
+        "full_original_claim_chunks": {
+          "6": [
+            1
+          ],
+          "10": [
+            0
+          ]
+        },
+        "both_target_claims_available": true,
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US8069128B2.txt"
+          }
+        ]
+      },
+      "natural_answer": {
+        "core_classifier_correct": true,
+        "second_data_memory_and_exclusivity_correct": true,
+        "first_vs_second_data_not_conflated": true,
+        "supporting_claim6_and10_correct": true,
+        "publication_and_reference_mapping_correct": true,
+        "explicit_claim_dependency_assertion_present": false,
+        "material_unsupported_technical_conclusion_found": false,
+        "quotes": [
+          {
+            "quote": "wherein the multi-pass message filter employs a Naive Bayes classifier.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "wherein the second classification data is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "the second classification data is deleted from the client device upon providing the display of information.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to store first classification data in a persistent store",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "entirely on a client device,",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          }
+        ],
+        "content": "In US8069128B2, the multi-pass message filter can employ a **Naive Bayes classifier**, as recited in claim 10: \"wherein the multi-pass message filter employs a Naive Bayes classifier.\" The generated second classification data is configured to reside **exclusively in a non-persistent memory store** on the client device, per claim 6: \"wherein the second classification data is configured to reside exclusively in a non-persistent memory store.\" Claim 13 adds that \"the second classification data is deleted from the client device upon providing the display of information.\"\n\nThe patent distinguishes two data sets. The **first message filter** sorts messages into folders and \"is configured to store first classification data in a persistent store\" (claim 6). By contrast, the **second classification data** is generated by the first pass of the multi-pass filter to train it, and is kept only in non-persistent memory (claim 6), then deleted (claim 13). The abstract likewise states the classification model \"is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.\"\n\nThus, the persistent first-filter data is durable classification data from the prior sorting filter, while the second-filter data is temporary, memory-resident, and purged after use. Claim 8 notes the first and second passes may occur \"entirely on a client device,\" while claim 9 states the first message filter may execute on a separate network device.\n\n### References\n\n- [1] US8069128B2.txt"
+      },
+      "forced_diagnostic": {
+        "supplied_only_original_claim6_and10": true,
+        "not_natural_retrieval_score": true,
+        "core_answer_and_claims_correct": true,
+        "publication_and_reference_mapping_correct": true,
+        "quotes": [
+          {
+            "quote": "the multi-pass message filter employs a Naive Bayes classifier.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to store first classification data in a persistent store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          }
+        ],
+        "content": "Based on the provided evidence from US8069128B2:\n\n**Classifier employed**\nClaim 10 states that \"the multi-pass message filter employs a Naive Bayes classifier.\"\n\n**Where the second classification data resides**\nClaim 6 specifies that the second classification data \"is configured to reside exclusively in a non-persistent memory store.\" This data is generated during the first pass of the multi-pass message filter, which trains the filter.\n\n**Distinguishing the two data types**\n- **First-filter data (persistent):** The first message filter \"is configured to store first classification data in a persistent store.\"\n- **Second-filter data (temporary):** The second classification data, generated by the multi-pass filter's first pass, \"is configured to reside exclusively in a non-persistent memory store.\"\n\nThus, the original first-filter classification data is held persistently, while the second classification data produced by the multi-pass filter is kept only in non-persistent memory.\n\n### References\n\n- [1] US8069128B2.txt"
+      },
+      "findings": [
+        {
+          "kind": "natural_answer_non_verbatim_quotation",
+          "stage": "generation/quotation fidelity",
+          "interpretation": "Supported original evidence was retrieved. Most differences are punctuation; A2/A3 additionally change occurs to occur in a Claim8 quote. Core technical answers remain correct.",
+          "non_word_exact": []
+        }
+      ],
+      "failure_attribution": "No target-component extraction, graph retention or retrieval loss observed; quotation fidelity deviations occur after correct original evidence retrieval. Identity naming variation is separately reported, not assigned as a chunk-loss mechanism."
+    },
+    {
+      "run_id": "F05_A_r2",
+      "condition": "A",
+      "repeat": 2,
+      "status": "completed",
+      "valid_untruncated_extraction_run": true,
+      "extraction_calls": [
+        {
+          "call_id": 165,
+          "chunk_id": "US8069128B2-chunk-000",
+          "finish_reason": "stop",
+          "completion_tokens": 1739
+        },
+        {
+          "call_id": 166,
+          "chunk_id": "US8069128B2-chunk-001",
+          "finish_reason": "stop",
+          "completion_tokens": 1695
+        }
+      ],
+      "actual_chunking": {
+        "source_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+        "source_tokens": 1645,
+        "chunks": [
+          {
+            "chunk_order_index": 0,
+            "global_token_span": [
+              0,
+              1200
+            ],
+            "source_char_span": [
+              0,
+              6639
+            ],
+            "actual_tokens": 1200,
+            "content_sha256": "03d27b9af9a95fc99659dae87ae86cc8134f0f4319687342b04ae8d524454c1c",
+            "overlap_previous_global_tokens": 0
+          },
+          {
+            "chunk_order_index": 1,
+            "global_token_span": [
+              1100,
+              1645
+            ],
+            "source_char_span": [
+              6096,
+              9043
+            ],
+            "actual_tokens": 545,
+            "content_sha256": "7fc3128dd12c094caa0580486185fd8a2142eb5035430a24748442afaa30e32b",
+            "overlap_previous_global_tokens": 100
+          }
+        ]
+      },
+      "graph_counts": {
+        "nodes": 25,
+        "edges": 38
+      },
+      "predicates": {
+        "P1": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 165,
+              "chunk_id": "US8069128B2-chunk-000",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+                "tgt_id": "Naive Bayes Classifier",
+                "weight": 1.0,
+                "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+                "keywords": "employs",
+                "source_id": "US8069128B2-chunk-000",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 33,
+                  "text": "relation<|#|>Multi-Pass Ad-Hoc Spam Message Filter<|#|>Naive Bayes Classifier<|#|>employs<|#|>The multi-pass message filter employs a Naive Bayes classifier."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 6,
+              "weight": 1.0,
+              "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+              "keywords": "employs",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331357,
+              "truncate": "",
+              "source": "Multi-Pass Ad-Hoc Spam Message Filter",
+              "target": "Naive Bayes Classifier"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+              "entity_type": "method",
+              "description": "A filtering approach that dynamically generates a temporary classifier during a first pass based on results of a previously applied message filter, then uses it in a second pass to retrospectively inspect messages for misclassification.",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331357,
+              "truncate": "",
+              "id": "Multi-Pass Ad-Hoc Spam Message Filter"
+            },
+            {
+              "entity_id": "Naive Bayes Classifier",
+              "entity_type": "method",
+              "description": "A classifier employed by the multi-pass message filter.",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331357,
+              "truncate": "",
+              "id": "Naive Bayes Classifier"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+              "tgt_id": "Naive Bayes Classifier",
+              "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+              "keywords": "employs",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331357
+            }
+          ]
+        },
+        "P2": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 166,
+              "chunk_id": "US8069128B2-chunk-001",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Message Filter",
+                "tgt_id": "Second Classification Data",
+                "weight": 1.0,
+                "description": "The first pass of the multi-pass message filter trains the filter by generating second classification data.",
+                "keywords": "generates, trains with",
+                "source_id": "US8069128B2-chunk-001",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 17,
+                  "text": "relation<|#|>Multi-Pass Message Filter<|#|>Second Classification Data<|#|>generates, trains with<|#|>The first pass of the multi-pass message filter trains the filter by generating second classification data."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 33,
+              "weight": 1.0,
+              "description": "The first pass of the multi-pass message filter trains the filter by generating second classification data.",
+              "keywords": "generates,trains with",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331357,
+              "truncate": "",
+              "source": "Multi-Pass Message Filter",
+              "target": "Second Classification Data"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Multi-Pass Message Filter",
+              "entity_type": "method",
+              "description": "A message filter executed in multiple passes on sorted messages; a first pass trains the filter by generating second classification data, and a second pass uses that data to score each message and identify messages sorted into incorrect message folders.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331357,
+              "truncate": "",
+              "id": "Multi-Pass Message Filter"
+            },
+            {
+              "entity_id": "Second Classification Data",
+              "entity_type": "data",
+              "description": "Data generated by the first pass of the multi-pass message filter to train it; it resides exclusively in a non-persistent memory store at the client device and is deleted upon providing the display of information.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331357,
+              "truncate": "",
+              "id": "Second Classification Data"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Second Classification Data",
+              "description": "The first pass of the multi-pass message filter trains the filter by generating second classification data.",
+              "keywords": "generates,trains with",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331357
+            }
+          ]
+        },
+        "P3": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 166,
+              "chunk_id": "US8069128B2-chunk-001",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Second Classification Data",
+                "tgt_id": "Non-Persistent Memory Store",
+                "weight": 1.0,
+                "description": "The second classification data is configured to reside exclusively in a non-persistent memory store at the client device.",
+                "keywords": "resides in",
+                "source_id": "US8069128B2-chunk-001",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 23,
+                  "text": "relation<|#|>Second Classification Data<|#|>Non-Persistent Memory Store<|#|>resides in<|#|>The second classification data is configured to reside exclusively in a non-persistent memory store at the client device."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 34,
+              "weight": 1.0,
+              "description": "The second classification data is configured to reside exclusively in a non-persistent memory store at the client device.",
+              "keywords": "resides in",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331357,
+              "truncate": "",
+              "source": "Second Classification Data",
+              "target": "Non-Persistent Memory Store"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Second Classification Data",
+              "entity_type": "data",
+              "description": "Data generated by the first pass of the multi-pass message filter to train it; it resides exclusively in a non-persistent memory store at the client device and is deleted upon providing the display of information.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331357,
+              "truncate": "",
+              "id": "Second Classification Data"
+            },
+            {
+              "entity_id": "Non-Persistent Memory Store",
+              "entity_type": "artifact",
+              "description": "A memory store at the client device where the second classification data resides exclusively.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331357,
+              "truncate": "",
+              "id": "Non-Persistent Memory Store"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Non-Persistent Memory Store",
+              "tgt_id": "Second Classification Data",
+              "description": "The second classification data is configured to reside exclusively in a non-persistent memory store at the client device.",
+              "keywords": "resides in",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331357
+            }
+          ],
+          "exclusive_qualifier_in_merged_relation": true
+        }
+      },
+      "all_three_component_predicates_retained_raw_graph_and_natural_graph_context": true,
+      "P3_exclusive_qualifier_retained": true,
+      "shared_identity_secondary": {
+        "P1_filter_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+        "P2_filter_id": "Multi-Pass Message Filter",
+        "exact_filter_id_shared_with_SecondClassificationData_path": false,
+        "alternate_ClassificationModel_chain_edges": [
+          {
+            "record_index": 1,
+            "weight": 1.0,
+            "description": "The multi-pass message filter generates a classification model during a first pass analysis.",
+            "keywords": "generates,trains",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331357,
+            "truncate": "",
+            "source": "Multi-Pass Ad-Hoc Spam Message Filter",
+            "target": "Classification Model"
+          },
+          {
+            "record_index": 14,
+            "weight": 1.0,
+            "description": "The generated classification model resides exclusively in a non-persistent memory location.",
+            "keywords": "resides exclusively in",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331357,
+            "truncate": "",
+            "source": "Classification Model",
+            "target": "Non-Persistent Memory Location"
+          }
+        ],
+        "alternate_model_chain_present": true,
+        "not_a_semantic_merge_equivalence_proof": true
+      },
+      "claim_structure_secondary": {
+        "claim6_or_claim10_graph_nodes": [],
+        "explicit_claim10_to6_edge": false,
+        "interpretation": "No Claim nodes/dependency edges represented by this default extraction. Supporting-Claim accuracy is evaluated separately. Natural query did not explicitly request the legal dependency."
+      },
+      "natural_retrieval": {
+        "status": "success",
+        "chunks": 2,
+        "entities": 18,
+        "relationships": 30,
+        "full_original_claim_chunks": {
+          "6": [
+            0
+          ],
+          "10": [
+            0
+          ]
+        },
+        "both_target_claims_available": true,
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US8069128B2.txt"
+          }
+        ]
+      },
+      "natural_answer": {
+        "core_classifier_correct": true,
+        "second_data_memory_and_exclusivity_correct": true,
+        "first_vs_second_data_not_conflated": true,
+        "supporting_claim6_and10_correct": true,
+        "publication_and_reference_mapping_correct": true,
+        "explicit_claim_dependency_assertion_present": false,
+        "material_unsupported_technical_conclusion_found": false,
+        "quotes": [
+          {
+            "quote": "wherein the multi-pass message filter employs a Naive Bayes classifier.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "the second classification data is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "on a client device",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "the second classification data is deleted from the client device upon providing the display of information,",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "deleting second classification data such that it is no longer accessible.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to store first classification data in a persistent store",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is automatically executed independent of a user action.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "configured to reside exclusively in a non-persistent memory store",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "occur entirely on a client device.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": false
+          }
+        ],
+        "content": "Based on US8069128B2, the multi-pass message filter can employ a **Naive Bayes classifier**, as stated in Claim 10: \"wherein the multi-pass message filter employs a Naive Bayes classifier.\"\n\nRegarding where the generated second classification data resides, Claim 6 specifies that \"the second classification data is configured to reside exclusively in a non-persistent memory store.\" Claim 12 similarly recites executing the first pass \"on a client device\" to generate second classification data \"configured to reside exclusively in a non-persistent memory store.\" Claim 13 adds that \"the second classification data is deleted from the client device upon providing the display of information,\" and Claim 7 covers \"deleting second classification data such that it is no longer accessible.\"\n\n**Distinguishing the two data types:**\n\n- **First classification data (persistent):** Produced by the first message filter, which \"is configured to store first classification data in a persistent store\" (Claims 6 and 12). This filter sorts messages into folders and, per Claim 14, \"is automatically executed independent of a user action.\"\n- **Second classification data (temporary):** Generated by the first pass of the multi-pass filter to train it, and \"configured to reside exclusively in a non-persistent memory store\" (Claims 6, 12, 17), later deleted (Claims 7, 13, 18).\n\nThe abstract confirms the model \"is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.\" Claim 8 further notes both passes \"occur entirely on a client device.\"\n\n### References\n\n- [1] US8069128B2.txt"
+      },
+      "forced_diagnostic": {
+        "supplied_only_original_claim6_and10": true,
+        "not_natural_retrieval_score": true,
+        "core_answer_and_claims_correct": true,
+        "publication_and_reference_mapping_correct": true,
+        "quotes": [
+          {
+            "quote": "wherein the multi-pass message filter employs a Naive Bayes classifier.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to store first classification data in a persistent store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          }
+        ],
+        "content": "Based on the evidence in US8069128B2, the multi-pass message filter can employ a **Naive Bayes classifier**, as stated in claim 10: \"wherein the multi-pass message filter employs a Naive Bayes classifier.\"\n\nRegarding where the generated second classification data resides, claim 6 specifies that the second classification data \"is configured to reside exclusively in a non-persistent memory store.\" This is generated during the first pass of the multi-pass message filter, which trains the filter.\n\nThe evidence distinguishes the two data types as follows:\n\n- **First-filter (persistent) data:** The first message filter \"is configured to store first classification data in a persistent store.\"\n- **Second-filter (temporary) data:** The second classification data, generated by the multi-pass filter's first pass, \"is configured to reside exclusively in a non-persistent memory store.\"\n\nThus, the original first-filter classification data is held in persistent storage, while the second classification data is confined to non-persistent memory. The supporting claims are **claim 6** (for the data residency distinction) and **claim 10** (for the Naive Bayes classifier).\n\n### References\n\n- [1] US8069128B2.txt"
+      },
+      "findings": [
+        {
+          "kind": "entity_naming_variation_carried_through_merge",
+          "stage": "raw entity naming plus graph identity representation",
+          "evidence": {
+            "P1_filter_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+            "P2_filter_id": "Multi-Pass Message Filter"
+          },
+          "interpretation": "These are distinct stored identities. Component facts survive, and an alternative ClassificationModel path exists. Do not label this alone a deduplication bug or technical relation loss."
+        },
+        {
+          "kind": "natural_answer_non_verbatim_quotation",
+          "stage": "generation/quotation fidelity",
+          "interpretation": "Supported original evidence was retrieved. Most differences are punctuation; A2/A3 additionally change occurs to occur in a Claim8 quote. Core technical answers remain correct.",
+          "non_word_exact": [
+            {
+              "quote": "occur entirely on a client device.",
+              "byte_exact_substring": false,
+              "word_sequence_supported_after_punctuation_whitespace_normalization": false
+            }
+          ]
+        }
+      ],
+      "failure_attribution": "No target-component extraction, graph retention or retrieval loss observed; quotation fidelity deviations occur after correct original evidence retrieval. Identity naming variation is separately reported, not assigned as a chunk-loss mechanism."
+    },
+    {
+      "run_id": "F05_A_r3",
+      "condition": "A",
+      "repeat": 3,
+      "status": "completed",
+      "valid_untruncated_extraction_run": true,
+      "extraction_calls": [
+        {
+          "call_id": 181,
+          "chunk_id": "US8069128B2-chunk-000",
+          "finish_reason": "stop",
+          "completion_tokens": 1691
+        },
+        {
+          "call_id": 182,
+          "chunk_id": "US8069128B2-chunk-001",
+          "finish_reason": "stop",
+          "completion_tokens": 1599
+        }
+      ],
+      "actual_chunking": {
+        "source_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+        "source_tokens": 1645,
+        "chunks": [
+          {
+            "chunk_order_index": 0,
+            "global_token_span": [
+              0,
+              1200
+            ],
+            "source_char_span": [
+              0,
+              6639
+            ],
+            "actual_tokens": 1200,
+            "content_sha256": "03d27b9af9a95fc99659dae87ae86cc8134f0f4319687342b04ae8d524454c1c",
+            "overlap_previous_global_tokens": 0
+          },
+          {
+            "chunk_order_index": 1,
+            "global_token_span": [
+              1100,
+              1645
+            ],
+            "source_char_span": [
+              6096,
+              9043
+            ],
+            "actual_tokens": 545,
+            "content_sha256": "7fc3128dd12c094caa0580486185fd8a2142eb5035430a24748442afaa30e32b",
+            "overlap_previous_global_tokens": 100
+          }
+        ]
+      },
+      "graph_counts": {
+        "nodes": 24,
+        "edges": 37
+      },
+      "predicates": {
+        "P1": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 181,
+              "chunk_id": "US8069128B2-chunk-000",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+                "tgt_id": "Naive Bayes Classifier",
+                "weight": 1.0,
+                "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+                "keywords": "employs",
+                "source_id": "US8069128B2-chunk-000",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 30,
+                  "text": "relation<|#|>Multi-Pass Ad-Hoc Spam Message Filter<|#|>Naive Bayes Classifier<|#|>employs<|#|>The multi-pass message filter employs a Naive Bayes classifier."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 5,
+              "weight": 1.0,
+              "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+              "keywords": "employs",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331393,
+              "truncate": "",
+              "source": "Multi-Pass Ad-Hoc Spam Message Filter",
+              "target": "Naive Bayes Classifier"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+              "entity_type": "method",
+              "description": "A message filter that dynamically generates a temporary classifier during a first pass based on results of a previously applied message filter, then uses the classifier in a second pass to retrospectively inspect messages for misclassification.",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331393,
+              "truncate": "",
+              "id": "Multi-Pass Ad-Hoc Spam Message Filter"
+            },
+            {
+              "entity_id": "Naive Bayes Classifier",
+              "entity_type": "method",
+              "description": "A classifier employed by the multi-pass message filter.",
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331393,
+              "truncate": "",
+              "id": "Naive Bayes Classifier"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+              "tgt_id": "Naive Bayes Classifier",
+              "description": "The multi-pass message filter employs a Naive Bayes classifier.",
+              "keywords": "employs",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-000",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331393
+            }
+          ]
+        },
+        "P2": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 182,
+              "chunk_id": "US8069128B2-chunk-001",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Message Filter",
+                "tgt_id": "Second Classification Data",
+                "weight": 1.0,
+                "description": "The first pass of the multi-pass message filter trains the filter by generating second classification data.",
+                "keywords": "generation, training",
+                "source_id": "US8069128B2-chunk-001",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 16,
+                  "text": "relation<|#|>Multi-Pass Message Filter<|#|>Second Classification Data<|#|>generation, training<|#|>The first pass of the multi-pass message filter trains the filter by generating second classification data."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 32,
+              "weight": 1.0,
+              "description": "The first pass of the multi-pass message filter trains the filter by generating second classification data.",
+              "keywords": "generation,training",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331393,
+              "truncate": "",
+              "source": "Multi-Pass Message Filter",
+              "target": "Second Classification Data"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Multi-Pass Message Filter",
+              "entity_type": "method",
+              "description": "A message filter executed in multiple passes on sorted messages; a first pass trains the filter by generating second classification data, and a second pass uses that data to score each message.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331393,
+              "truncate": "",
+              "id": "Multi-Pass Message Filter"
+            },
+            {
+              "entity_id": "Second Classification Data",
+              "entity_type": "data",
+              "description": "Classification data generated by the first pass of the multi-pass message filter, residing exclusively in a non-persistent memory store at the client device and deleted upon providing the display of information.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331393,
+              "truncate": "",
+              "id": "Second Classification Data"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Second Classification Data",
+              "description": "The first pass of the multi-pass message filter trains the filter by generating second classification data.",
+              "keywords": "generation,training",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331393
+            }
+          ]
+        },
+        "P3": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 182,
+              "chunk_id": "US8069128B2-chunk-001",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Second Classification Data",
+                "tgt_id": "Non-Persistent Memory Store",
+                "weight": 1.0,
+                "description": "The second classification data is configured to reside exclusively in a non-persistent memory store at the client device.",
+                "keywords": "storage, residing",
+                "source_id": "US8069128B2-chunk-001",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 17,
+                  "text": "relation<|#|>Second Classification Data<|#|>Non-Persistent Memory Store<|#|>storage, residing<|#|>The second classification data is configured to reside exclusively in a non-persistent memory store at the client device."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 34,
+              "weight": 1.0,
+              "description": "The second classification data is configured to reside exclusively in a non-persistent memory store at the client device.",
+              "keywords": "residing,storage",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331393,
+              "truncate": "",
+              "source": "Second Classification Data",
+              "target": "Non-Persistent Memory Store"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Second Classification Data",
+              "entity_type": "data",
+              "description": "Classification data generated by the first pass of the multi-pass message filter, residing exclusively in a non-persistent memory store at the client device and deleted upon providing the display of information.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331393,
+              "truncate": "",
+              "id": "Second Classification Data"
+            },
+            {
+              "entity_id": "Non-Persistent Memory Store",
+              "entity_type": "artifact",
+              "description": "A memory store at the client device where second classification data resides exclusively.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331393,
+              "truncate": "",
+              "id": "Non-Persistent Memory Store"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Non-Persistent Memory Store",
+              "tgt_id": "Second Classification Data",
+              "description": "The second classification data is configured to reside exclusively in a non-persistent memory store at the client device.",
+              "keywords": "residing,storage",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331393
+            }
+          ],
+          "exclusive_qualifier_in_merged_relation": true
+        }
+      },
+      "all_three_component_predicates_retained_raw_graph_and_natural_graph_context": true,
+      "P3_exclusive_qualifier_retained": true,
+      "shared_identity_secondary": {
+        "P1_filter_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+        "P2_filter_id": "Multi-Pass Message Filter",
+        "exact_filter_id_shared_with_SecondClassificationData_path": false,
+        "alternate_ClassificationModel_chain_edges": [
+          {
+            "record_index": 1,
+            "weight": 1.0,
+            "description": "The multi-pass message filter generates a classification model during the first pass based on the first pass analysis.",
+            "keywords": "generates,trains",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331393,
+            "truncate": "",
+            "source": "Multi-Pass Ad-Hoc Spam Message Filter",
+            "target": "Classification Model"
+          },
+          {
+            "record_index": 14,
+            "weight": 2.0,
+            "description": "The generated classification model is configured to reside exclusively in a non-persistent memory location.<SEP>The generated classification model is purged from the non-persistent memory location after use.",
+            "keywords": "purged from,resides in",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331393,
+            "truncate": "",
+            "source": "Classification Model",
+            "target": "Non-Persistent Memory"
+          }
+        ],
+        "alternate_model_chain_present": true,
+        "not_a_semantic_merge_equivalence_proof": true
+      },
+      "claim_structure_secondary": {
+        "claim6_or_claim10_graph_nodes": [],
+        "explicit_claim10_to6_edge": false,
+        "interpretation": "No Claim nodes/dependency edges represented by this default extraction. Supporting-Claim accuracy is evaluated separately. Natural query did not explicitly request the legal dependency."
+      },
+      "natural_retrieval": {
+        "status": "success",
+        "chunks": 2,
+        "entities": 14,
+        "relationships": 29,
+        "full_original_claim_chunks": {
+          "6": [
+            0
+          ],
+          "10": [
+            0
+          ]
+        },
+        "both_target_claims_available": true,
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US8069128B2.txt"
+          }
+        ]
+      },
+      "natural_answer": {
+        "core_classifier_correct": true,
+        "second_data_memory_and_exclusivity_correct": true,
+        "first_vs_second_data_not_conflated": true,
+        "supporting_claim6_and10_correct": true,
+        "publication_and_reference_mapping_correct": true,
+        "explicit_claim_dependency_assertion_present": false,
+        "material_unsupported_technical_conclusion_found": false,
+        "quotes": [
+          {
+            "quote": "wherein the multi-pass message filter employs a Naive Bayes classifier.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "the second classification data is deleted from the client device upon providing the display of information,",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "deleting second classification data such that it is no longer accessible.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to store first classification data in a persistent store",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is automatically executed independent of a user action.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "occur entirely on a client device.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": false
+          }
+        ],
+        "content": "Based on US8069128B2, the multi-pass message filter can employ a **Naive Bayes classifier**, as stated in Claim 10: \"wherein the multi-pass message filter employs a Naive Bayes classifier.\"\n\nRegarding storage, the generated second classification data is configured to reside **exclusively in a non-persistent memory store**. Claim 6 recites: \"generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store.\" Claim 13 adds that \"the second classification data is deleted from the client device upon providing the display of information,\" and Claim 7 covers \"deleting second classification data such that it is no longer accessible.\"\n\n**Distinguishing the two data types:**\n\n- **First classification data (persistent):** Produced by the first message filter, which \"is configured to store first classification data in a persistent store\" (Claim 6). This filter sorts messages into folders and, per Claim 14, \"is automatically executed independent of a user action.\"\n- **Second classification data (temporary):** Produced by the first pass of the multi-pass filter to train it, and held only in non-persistent memory (Claim 6), then deleted (Claims 7, 13).\n\nThe abstract confirms the model \"is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.\" Claim 8 further notes the first and second passes \"occur entirely on a client device.\"\n\n### References\n\n- [1] US8069128B2.txt"
+      },
+      "forced_diagnostic": {
+        "supplied_only_original_claim6_and10": true,
+        "not_natural_retrieval_score": true,
+        "core_answer_and_claims_correct": true,
+        "publication_and_reference_mapping_correct": true,
+        "quotes": [
+          {
+            "quote": "wherein the multi-pass message filter employs a Naive Bayes classifier.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to store first classification data in a persistent store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          }
+        ],
+        "content": "Based on the provided evidence from US8069128B2, the multi-pass message filter can employ a **Naive Bayes classifier**, as stated in claim 10: \"wherein the multi-pass message filter employs a Naive Bayes classifier.\"\n\nRegarding where the generated second classification data resides, claim 6 specifies that the second classification data \"is configured to reside exclusively in a non-persistent memory store.\" This is generated during the first pass of the multi-pass message filter, which trains the filter.\n\nThe evidence distinguishes the two data types as follows:\n\n- **First-filter data (persistent):** The first message filter \"is configured to store first classification data in a persistent store.\"\n- **Second-filter data (temporary):** The second classification data \"is configured to reside exclusively in a non-persistent memory store.\"\n\nThus, the original first-filter classification data is held in persistent storage, while the second classification data generated by the multi-pass filter's first pass is kept exclusively in non-persistent memory. The supporting claims are claim 6 (for the data residency distinction) and claim 10 (for the Naive Bayes classifier).\n\n### References\n\n- [1] US8069128B2.txt"
+      },
+      "findings": [
+        {
+          "kind": "entity_naming_variation_carried_through_merge",
+          "stage": "raw entity naming plus graph identity representation",
+          "evidence": {
+            "P1_filter_id": "Multi-Pass Ad-Hoc Spam Message Filter",
+            "P2_filter_id": "Multi-Pass Message Filter"
+          },
+          "interpretation": "These are distinct stored identities. Component facts survive, and an alternative ClassificationModel path exists. Do not label this alone a deduplication bug or technical relation loss."
+        },
+        {
+          "kind": "natural_answer_non_verbatim_quotation",
+          "stage": "generation/quotation fidelity",
+          "interpretation": "Supported original evidence was retrieved. Most differences are punctuation; A2/A3 additionally change occurs to occur in a Claim8 quote. Core technical answers remain correct.",
+          "non_word_exact": [
+            {
+              "quote": "occur entirely on a client device.",
+              "byte_exact_substring": false,
+              "word_sequence_supported_after_punctuation_whitespace_normalization": false
+            }
+          ]
+        }
+      ],
+      "failure_attribution": "No target-component extraction, graph retention or retrieval loss observed; quotation fidelity deviations occur after correct original evidence retrieval. Identity naming variation is separately reported, not assigned as a chunk-loss mechanism."
+    },
+    {
+      "run_id": "F05_B_r3",
+      "condition": "B",
+      "repeat": 3,
+      "status": "completed",
+      "valid_untruncated_extraction_run": true,
+      "extraction_calls": [
+        {
+          "call_id": 196,
+          "chunk_id": "US8069128B2-chunk-000",
+          "finish_reason": "stop",
+          "completion_tokens": 2088
+        },
+        {
+          "call_id": 197,
+          "chunk_id": "US8069128B2-chunk-001",
+          "finish_reason": "stop",
+          "completion_tokens": 1044
+        },
+        {
+          "call_id": 198,
+          "chunk_id": "US8069128B2-chunk-002",
+          "finish_reason": "stop",
+          "completion_tokens": 1732
+        }
+      ],
+      "actual_chunking": {
+        "source_sha256": "2e64096d1391472df5527d4785b9387a7cb0da5a3e56b34dfaa895fde3e0ed2f",
+        "source_tokens": 1645,
+        "chunks": [
+          {
+            "chunk_order_index": 0,
+            "global_token_span": [
+              0,
+              886
+            ],
+            "source_char_span": [
+              0,
+              4879
+            ],
+            "actual_tokens": 886,
+            "content_sha256": "26ccb51ae867067fef8169d9d6b1724bea58a114f14675eb36c0cdd801de9b7d",
+            "overlap_previous_global_tokens": 0
+          },
+          {
+            "chunk_order_index": 1,
+            "global_token_span": [
+              786,
+              1025
+            ],
+            "source_char_span": [
+              4363,
+              5660
+            ],
+            "actual_tokens": 239,
+            "content_sha256": "48da639ca2fc9afaac543b6407ec73df83cb43377ce3a96c10d3e839ac0c49f9",
+            "overlap_previous_global_tokens": 100
+          },
+          {
+            "chunk_order_index": 2,
+            "global_token_span": [
+              925,
+              1645
+            ],
+            "source_char_span": [
+              5085,
+              9043
+            ],
+            "actual_tokens": 720,
+            "content_sha256": "0053d7ad1618d79a4e75849aadf60d1a0669ab8eda1022f4384dfa1f3a3d8a23",
+            "overlap_previous_global_tokens": 100
+          }
+        ]
+      },
+      "graph_counts": {
+        "nodes": 36,
+        "edges": 50
+      },
+      "predicates": {
+        "P1": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 197,
+              "chunk_id": "US8069128B2-chunk-001",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Message Filter",
+                "tgt_id": "Naive Bayes Classifier",
+                "weight": 1.0,
+                "description": "The multi-pass message filter may employ a Naive Bayes classifier.",
+                "keywords": "employs, uses",
+                "source_id": "US8069128B2-chunk-001",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 13,
+                  "text": "relation<|#|>Multi-Pass Message Filter<|#|>Naive Bayes Classifier<|#|>employs, uses<|#|>The multi-pass message filter may employ a Naive Bayes classifier."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 39,
+              "weight": 1.0,
+              "description": "The multi-pass message filter may employ a Naive Bayes classifier.",
+              "keywords": "employs,uses",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331444,
+              "truncate": "",
+              "source": "Multi-Pass Message Filter",
+              "target": "Naive Bayes Classifier"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Multi-Pass Message Filter",
+              "entity_type": "method",
+              "description": "A message filtering system that executes a first pass and a second pass to classify messages, optionally employing a Naive Bayes classifier.<SEP>A message filter executed in multiple passes on a client device; a first pass trains the filter by generating second classification data, and a second pass uses that data to score each message.",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331444,
+              "truncate": "",
+              "id": "Multi-Pass Message Filter"
+            },
+            {
+              "entity_id": "Naive Bayes Classifier",
+              "entity_type": "method",
+              "description": "A classifier that the multi-pass message filter may employ.",
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331444,
+              "truncate": "",
+              "id": "Naive Bayes Classifier"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Naive Bayes Classifier",
+              "description": "The multi-pass message filter may employ a Naive Bayes classifier.",
+              "keywords": "employs,uses",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-001",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331444
+            }
+          ]
+        },
+        "P2": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 197,
+              "chunk_id": "US8069128B2-chunk-001",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Message Filter",
+                "tgt_id": "Second Classification Data",
+                "weight": 1.0,
+                "description": "Executing the first pass of the multi-pass message filter generates second classification data to train the filter.",
+                "keywords": "generates, trains on",
+                "source_id": "US8069128B2-chunk-001",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 16,
+                  "text": "relation<|#|>Multi-Pass Message Filter<|#|>Second Classification Data<|#|>generates, trains on<|#|>Executing the first pass of the multi-pass message filter generates second classification data to train the filter."
+                }
+              ]
+            },
+            {
+              "call_id": 198,
+              "chunk_id": "US8069128B2-chunk-002",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Multi-Pass Message Filter",
+                "tgt_id": "Second Classification Data",
+                "weight": 1.0,
+                "description": "The first pass of the multi-pass message filter generates second classification data, and the second pass uses the second classification data to score each message.",
+                "keywords": "generation, usage",
+                "source_id": "US8069128B2-chunk-002",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 19,
+                  "text": "relation<|#|>Multi-Pass Message Filter<|#|>Second Classification Data<|#|>generation, usage<|#|>The first pass of the multi-pass message filter generates second classification data, and the second pass uses the second classification data to score each message."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 40,
+              "weight": 2.0,
+              "description": "Executing the first pass of the multi-pass message filter generates second classification data to train the filter.<SEP>The first pass of the multi-pass message filter generates second classification data, and the second pass uses the second classification data to score each message.",
+              "keywords": "generates,generation,trains on,usage",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331444,
+              "truncate": "",
+              "source": "Multi-Pass Message Filter",
+              "target": "Second Classification Data"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Multi-Pass Message Filter",
+              "entity_type": "method",
+              "description": "A message filtering system that executes a first pass and a second pass to classify messages, optionally employing a Naive Bayes classifier.<SEP>A message filter executed in multiple passes on a client device; a first pass trains the filter by generating second classification data, and a second pass uses that data to score each message.",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331444,
+              "truncate": "",
+              "id": "Multi-Pass Message Filter"
+            },
+            {
+              "entity_id": "Second Classification Data",
+              "entity_type": "data",
+              "description": "Classification data generated during the first pass of the multi-pass message filter to train the filter, and which can be deleted so it is no longer accessible.<SEP>Classification data generated by the first pass of the multi-pass message filter to train it; it resides exclusively in a non-persistent memory store and is deleted upon providing the display of information.",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331444,
+              "truncate": "",
+              "id": "Second Classification Data"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Multi-Pass Message Filter",
+              "tgt_id": "Second Classification Data",
+              "description": "Executing the first pass of the multi-pass message filter generates second classification data to train the filter.<SEP>The first pass of the multi-pass message filter generates second classification data, and the second pass uses the second classification data to score each message.",
+              "keywords": "generates,generation,trains on,usage",
+              "weight": 2.0,
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331444
+            }
+          ]
+        },
+        "P3": {
+          "raw_relation_present": true,
+          "raw_target_rows_located_verbatim": true,
+          "raw_relation_records": [
+            {
+              "call_id": 198,
+              "chunk_id": "US8069128B2-chunk-002",
+              "finish_reason": "stop",
+              "edge": {
+                "src_id": "Second Classification Data",
+                "tgt_id": "Non-Persistent Memory Store",
+                "weight": 1.0,
+                "description": "The second classification data is configured to reside exclusively in a non-persistent memory store.",
+                "keywords": "storage",
+                "source_id": "US8069128B2-chunk-002",
+                "file_path": "US8069128B2.txt",
+                "timestamp": 0
+              },
+              "raw_tuple_lines": [
+                {
+                  "line": 20,
+                  "text": "relation<|#|>Second Classification Data<|#|>Non-Persistent Memory Store<|#|>storage<|#|>The second classification data is configured to reside exclusively in a non-persistent memory store."
+                }
+              ]
+            }
+          ],
+          "merged_relation_present": true,
+          "merged_relation_records": [
+            {
+              "record_index": 44,
+              "weight": 1.0,
+              "description": "The second classification data is configured to reside exclusively in a non-persistent memory store.",
+              "keywords": "storage",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331444,
+              "truncate": "",
+              "source": "Second Classification Data",
+              "target": "Non-Persistent Memory Store"
+            }
+          ],
+          "merged_endpoint_nodes_present": true,
+          "merged_endpoint_nodes": [
+            {
+              "entity_id": "Second Classification Data",
+              "entity_type": "data",
+              "description": "Classification data generated during the first pass of the multi-pass message filter to train the filter, and which can be deleted so it is no longer accessible.<SEP>Classification data generated by the first pass of the multi-pass message filter to train it; it resides exclusively in a non-persistent memory store and is deleted upon providing the display of information.",
+              "source_id": "US8069128B2-chunk-001<SEP>US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331444,
+              "truncate": "",
+              "id": "Second Classification Data"
+            },
+            {
+              "entity_id": "Non-Persistent Memory Store",
+              "entity_type": "artifact",
+              "description": "A memory store on the client device where the second classification data resides exclusively.",
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331444,
+              "truncate": "",
+              "id": "Non-Persistent Memory Store"
+            }
+          ],
+          "natural_graph_relation_present": true,
+          "natural_graph_relation_records": [
+            {
+              "src_id": "Non-Persistent Memory Store",
+              "tgt_id": "Second Classification Data",
+              "description": "The second classification data is configured to reside exclusively in a non-persistent memory store.",
+              "keywords": "storage",
+              "weight": 1.0,
+              "source_id": "US8069128B2-chunk-002",
+              "file_path": "US8069128B2.txt",
+              "created_at": 1793331444
+            }
+          ],
+          "exclusive_qualifier_in_merged_relation": true
+        }
+      },
+      "all_three_component_predicates_retained_raw_graph_and_natural_graph_context": true,
+      "P3_exclusive_qualifier_retained": true,
+      "shared_identity_secondary": {
+        "P1_filter_id": "Multi-Pass Message Filter",
+        "P2_filter_id": "Multi-Pass Message Filter",
+        "exact_filter_id_shared_with_SecondClassificationData_path": true,
+        "alternate_ClassificationModel_chain_edges": [
+          {
+            "record_index": 6,
+            "weight": 1.0,
+            "description": "The generated classification model resides exclusively in a non-persistent memory location.",
+            "keywords": "resides in",
+            "source_id": "US8069128B2-chunk-000",
+            "file_path": "US8069128B2.txt",
+            "created_at": 1793331444,
+            "truncate": "",
+            "source": "Classification Model",
+            "target": "Non-Persistent Memory Location"
+          }
+        ],
+        "alternate_model_chain_present": false,
+        "not_a_semantic_merge_equivalence_proof": true
+      },
+      "claim_structure_secondary": {
+        "claim6_or_claim10_graph_nodes": [],
+        "explicit_claim10_to6_edge": false,
+        "interpretation": "No Claim nodes/dependency edges represented by this default extraction. Supporting-Claim accuracy is evaluated separately. Natural query did not explicitly request the legal dependency."
+      },
+      "natural_retrieval": {
+        "status": "success",
+        "chunks": 3,
+        "entities": 20,
+        "relationships": 33,
+        "full_original_claim_chunks": {
+          "6": [
+            1
+          ],
+          "10": [
+            0
+          ]
+        },
+        "both_target_claims_available": true,
+        "references": [
+          {
+            "reference_id": "1",
+            "file_path": "US8069128B2.txt"
+          }
+        ]
+      },
+      "natural_answer": {
+        "core_classifier_correct": true,
+        "second_data_memory_and_exclusivity_correct": true,
+        "first_vs_second_data_not_conflated": true,
+        "supporting_claim6_and10_correct": true,
+        "publication_and_reference_mapping_correct": true,
+        "explicit_claim_dependency_assertion_present": false,
+        "material_unsupported_technical_conclusion_found": false,
+        "quotes": [
+          {
+            "quote": "wherein the multi-pass message filter employs a Naive Bayes classifier.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "on a client device",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "the second classification data is deleted from the client device upon providing the display of information.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "the first message filter is configured to store first classification data in a persistent store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          }
+        ],
+        "content": "In US8069128B2, the multi-pass message filter may employ a **Naive Bayes classifier**, as recited in **claim 10**: “wherein the multi-pass message filter employs a Naive Bayes classifier.”\n\nThe generated second classification data resides **exclusively in a non-persistent memory store**. **Claim 6** states: “generating second classification data, wherein the second classification data is configured to reside exclusively in a non-persistent memory store.” **Claim 12** similarly recites executing the first pass “on a client device” with the second classification data “configured to reside exclusively in a non-persistent memory store.” **Claim 13** adds that “the second classification data is deleted from the client device upon providing the display of information.”\n\nThe original first-filter data is distinct: **claim 6** recites that “the first message filter is configured to store first classification data in a persistent store.” Thus, the first message filter’s classification data is persistent, while the second classification data generated by the multi-pass filter’s first pass is non-persistent and may be deleted. The abstract further states the classification model “is maintained within memory on a user's client device, as memory resident only, and is not stored on disk or within another persistent data store.”\n\n### References\n\n- [1] US8069128B2.txt"
+      },
+      "forced_diagnostic": {
+        "supplied_only_original_claim6_and10": true,
+        "not_natural_retrieval_score": true,
+        "core_answer_and_claims_correct": true,
+        "publication_and_reference_mapping_correct": true,
+        "quotes": [
+          {
+            "quote": "the multi-pass message filter employs a Naive Bayes classifier.",
+            "byte_exact_substring": true,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to store first classification data in a persistent store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          },
+          {
+            "quote": "is configured to reside exclusively in a non-persistent memory store.",
+            "byte_exact_substring": false,
+            "word_sequence_supported_after_punctuation_whitespace_normalization": true
+          }
+        ],
+        "content": "Based on the provided evidence from US8069128B2:\n\n**Classifier employed:** Claim 10 states that \"the multi-pass message filter employs a Naive Bayes classifier.\"\n\n**Where the second classification data resides:** Claim 6 specifies that the second classification data \"is configured to reside exclusively in a non-persistent memory store.\" This data is generated during the first pass of the multi-pass message filter, which trains the filter.\n\n**Distinguishing the two data types:**\n- **First-filter data (persistent):** The first message filter \"is configured to store first classification data in a persistent store.\" This filter is used to sort messages into different message folders.\n- **Second-filter data (temporary):** The second classification data, generated by the multi-pass filter's first pass, \"is configured to reside exclusively in a non-persistent memory store.\" It is then used in a second pass to score each message.\n\nThus, the original first-filter classification data is persistent, while the second-filter classification data is temporary (non-persistent).\n\n### References\n\n- [1] US8069128B2.txt"
+      },
+      "findings": [
+        {
+          "kind": "natural_answer_non_verbatim_quotation",
+          "stage": "generation/quotation fidelity",
+          "interpretation": "Supported original evidence was retrieved. Most differences are punctuation; A2/A3 additionally change occurs to occur in a Claim8 quote. Core technical answers remain correct.",
+          "non_word_exact": []
+        }
+      ],
+      "failure_attribution": "No target-component extraction, graph retention or retrieval loss observed; quotation fidelity deviations occur after correct original evidence retrieval. Identity naming variation is separately reported, not assigned as a chunk-loss mechanism."
+    }
+  ],
+  "conclusion_zh": "三个无截断配对重复中，A/B均保留所有三个显式技术组件关系及exclusivity，并检索到Claim6/10，核心回答与来源均正确；未观察到目标跨块技术关系损失。A条件存在filter/model命名分裂，但同时有原文支持的ClassificationModel路径，不能仅按名称差异判关系丢失或dedup缺陷。",
+  "limits": [
+    "Single patent and three repeats per condition; B has3chunks versusA2, so extraction-call count/repeated source budget differ.",
+    "The tested target is explicit component co-retention, not an irreducible two-fragment relation. Deletion/dependency clues and repeated residency statements remain.",
+    "All queries index only this target document; context budget retrieves every chunk, making document retrieval easy.",
+    "Entity naming equivalence was not enforced through external ontology; no new alias links were added.",
+    "Quoted answers are not uniformly verbatim: A2/A3 change occurs to occur in a peripheral Claim8 quote; this does not change the target technical conclusion.",
+    "Default absence of legal Claim edges is different from technical relation loss."
+  ],
+  "api_calls": 0,
+  "secrets_read": false
+}

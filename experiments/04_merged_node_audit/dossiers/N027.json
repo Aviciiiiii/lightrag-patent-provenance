@@ -1,0 +1,575 @@
+{
+  "node_id": "User Feedback",
+  "entity_type": "data",
+  "graph_source_chunks": [
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-000"
+  ],
+  "entity_chunk_store_sources": [
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-000"
+  ],
+  "all_source_chunks": [
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-000"
+  ],
+  "canonical_publications": [
+    "US9374411B1",
+    "US9514120B1"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US9374411B1.txt",
+    "US9514120B1.txt"
+  ],
+  "graph_file_paths": [
+    "US9514120B1.txt",
+    "US9374411B1.txt"
+  ],
+  "graph_file_path_publications": [
+    "US9374411B1",
+    "US9514120B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-000"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US9374411B1-chunk-002",
+    "US9514120B1-chunk-000"
+  ],
+  "graph_node": {
+    "entity_id": "User Feedback",
+    "entity_type": "data",
+    "description": "Feedback collected from users for a work indicating whether potential typographical errors are author-intended strings, comprising user identifier, work identifier, string, position, decision, confidence level, and parameters.<SEP>Explicit user feedback expressing that the user favors the first fictional character, obtained via a user interface as described in claim 23.",
+    "source_id": "US9514120B1-chunk-000<SEP>US9374411B1-chunk-002",
+    "file_path": "US9514120B1.txt<SEP>US9374411B1.txt",
+    "created_at": 1793284456,
+    "truncate": "",
+    "id": "User Feedback"
+  },
+  "incident_edge_count": 7,
+  "audit_id": "N027",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US9374411B1",
+      "file_paths": [
+        "US9374411B1.txt"
+      ],
+      "source_chunks": [
+        "US9374411B1-chunk-002"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9374411B1",
+          "full_doc_id": "US9374411B1",
+          "file_path": "US9374411B1.txt",
+          "chunk_order_index": 2,
+          "tokens": 161,
+          "content_sha256": "b5779b04614e5a41d1a3eb710fae56a98a1d9153d5b676b056c38b64dd24a8be",
+          "exact_doc_char_start": 12390,
+          "exact_doc_char_end": 13265,
+          "content": "22. The non-transitory computer-readable medium of claim 21 , wherein the first media content comprises an electronic book (e-book). 23. The non-transitory computer-readable medium of claim 21 , wherein the plurality of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expressed a preference towards the first fictional character. 25. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is based at least in part upon whether the first fictional character and the second fictional character are associated with a similar genre.",
+          "llm_cache_list": [
+            "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf"
+          ],
+          "chunk_id": "US9374411B1-chunk-002",
+          "extraction_records": [
+            {
+              "chunk_id": "US9374411B1-chunk-002",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "55d66deeaf26058f9f185573d9c9eb15b74dc404982847d9df7aa98c8df82ed7"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 7,
+              "raw_line": "entity<|#|>User Feedback<|#|>Data<|#|>Explicit user feedback expressing that the user favors the first fictional character, obtained via a user interface as described in claim 23.",
+              "fields": [
+                "entity",
+                "User Feedback",
+                "Data",
+                "Explicit user feedback expressing that the user favors the first fictional character, obtained via a user interface as described in claim 23."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 16,
+              "raw_line": "relation<|#|>Computer Instructions<|#|>User Feedback<|#|>obtains, causes<|#|>The computer instructions cause the computing device to obtain explicit user feedback expressing that the user favors the first fictional character.",
+              "fields": [
+                "relation",
+                "Computer Instructions",
+                "User Feedback",
+                "obtains, causes",
+                "The computer instructions cause the computing device to obtain explicit user feedback expressing that the user favors the first fictional character."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 17,
+              "raw_line": "relation<|#|>User Feedback<|#|>User Interface<|#|>obtained via, expresses<|#|>The explicit user feedback is obtained via a user interface.",
+              "fields": [
+                "relation",
+                "User Feedback",
+                "User Interface",
+                "obtained via, expresses",
+                "The explicit user feedback is obtained via a user interface."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 18,
+              "raw_line": "relation<|#|>User Feedback<|#|>First Fictional Character<|#|>favors, expresses preference<|#|>The user feedback expresses that the user favors the first fictional character.",
+              "fields": [
+                "relation",
+                "User Feedback",
+                "First Fictional Character",
+                "favors, expresses preference",
+                "The user feedback expresses that the user favors the first fictional character."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 130,
+              "chunk_char_end": 563,
+              "text": "). 23. The non-transitory computer-readable medium of claim 21 , wherein the plurality of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at least in part upon a quantity o"
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The explicit user feedback is obtained via a user interface.",
+          "keywords": "expresses,obtained via",
+          "source_id": "US9374411B1-chunk-002",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User Interface",
+          "target": "User Feedback",
+          "edge_index": 440,
+          "source_chunks": [
+            "US9374411B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The computer instructions cause the computing device to obtain explicit user feedback expressing that the user favors the first fictional character.",
+          "keywords": "causes,obtains",
+          "source_id": "US9374411B1-chunk-002",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User Feedback",
+          "target": "Computer Instructions",
+          "edge_index": 491,
+          "source_chunks": [
+            "US9374411B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The user feedback expresses that the user favors the first fictional character.",
+          "keywords": "expresses preference,favors",
+          "source_id": "US9374411B1-chunk-002",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User Feedback",
+          "target": "First Fictional Character",
+          "edge_index": 492,
+          "source_chunks": [
+            "US9374411B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "file_paths": [
+        "US9514120B1.txt"
+      ],
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9514120B1",
+          "full_doc_id": "US9514120B1",
+          "file_path": "US9514120B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "0b094b66650820aadeb8cf681dbb275f6e8339dfd53ea0886553a1ad1e7e9a0e",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6477,
+          "content": "Publication number: US9514120B1\nTitle: Classification of a string as a typographical error based on feedback\n\nABSTRACT\nA computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference. The computing device sends data indicative of the presence of the potential typographical errors to users. The computing device collects feedback for the work from the users. The feedback for the work indicates whether the potential typographical errors are author-intended strings. The computing device combines the user feedback for the work with user feedback for other works and sorts the combined user feedback based on one or more selected parameters. The computing device determines, based on the sorted user feedback, that one or more of the potential typographical errors includes an acceptable string and updates the initial reference to include the acceptable string.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: identifying, by a processing device, a potential typographical error in a work using an initial reference, wherein the work comprises a plurality of words; sending, by the processing device, data indicative of presence of the potential typographical error in the work to a plurality of users; receiving, by the processing device, feedback for the work from the plurality of users, the feedback comprising an indicator that specifies that the potential typographical error is an author-intended string for the work, wherein the author-intended string comprises at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; combining, by the processing device, the feedback from the plurality of users for the work with feedback for a plurality of additional works to generate a combined feedback; sorting, by the processing device, the combined feedback based on one or more selected parameters associated with the work to generate a sorted feedback, wherein the one or more selected parameters comprises at least one of an author associated with the work, a title associated the work, a topic associated with the work, or a publisher associated with the work; determining, by the processing device and based on the sorted feedback, that the potential typographical error comprises an acceptable string; and updating, by the processing device, the initial reference to include the acceptable string. 2. The method of claim 1 , wherein determining that the potential typographical error comprises an acceptable string comprises: determining a percentage of the sorted feedback that identifies the potential typographical error as an author-intended string; determining that the percentage exceeds a threshold percentage; and identifying the potential typographical error as an acceptable string. 3. The method of claim 2 , further comprising: determining that the percentage does not exceed the threshold percentage; identifying the potential typographical error as an actual error; and associating an alternative string with the actual error. 4. The method of claim 1 , further comprising: generating one or more parameter-specific references based, at least in part, on the acceptable string. 5. The method of claim 4 , wherein generating one or more parameter-specific references comprises: determining, based on the sorted feedback, one or more parameters that are associated with the acceptable string; identifying a parameter-specific reference that corresponds to each of the one or more parameters associated with the acceptable string, wherein the one or more parameter-specific references comprises at least one of an author-specific reference, a title-specific reference, a topic-specific reference, or a publisher-specific reference. 6. The method of claim 1 , wherein updating the initial reference comprises: adding a string to the initial reference to represent the acceptable string. 7. The method of claim 1 , wherein the feedback for the work comprises at least one of a user identifier, a work identifier, at least one string identified as a potential typographical error, a position of the at least one string in a work, a decision indicating whether a corresponding string is an author-intended string, a confidence level of the decision, or at least one parameter associated with the corresponding string. 8. The method of claim 1 , wherein determining that the potential typographical error comprises an acceptable string comprises: compiling, based on the sorted feedback, one or more parameter-specific statistics; determining that at least one of the one or more parameter-specific statistics exceeds a threshold; and identifying the potential typographical error as an acceptable string. 9. The method of claim 8 , wherein the one or more parameter-specific statistics comprises at least one of a number of times users mark a potential typographical error as an author-intended string, a total number of times a potential typographical error is marked as an author-intended string, a percentage of feedback that marked the potential typographical error as an author-intended string, a percentage of users that marked the potential typographical error as an author-intended string, or a number of times the one or more potential typographical errors are marked as an author-intended string for a parameter. 10. A non-transitory computer-readable medium having instructions stored thereon which, when executed by a processing device, cause the processing device to perform operations comprising: receiving, by the processing device, feedback from a plurality of users for one or more potential typographical errors identified in a work, the feedback comprising an indicator that specifies that at least one of the one or more potential typographical errors are author-intended strings for the work, wherein the work comprises a plurality of words and wherein the author-intended strings comprise at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; determining, by the processing device and based at least in part on the indicator received in the feedback for the work, that one or more of the potential typographical errors is an author-intended string; combining, by the processing device, the feedback from",
+          "llm_cache_list": [
+            "default:extract:d59fe2a8e8eb522668e862aa852ac51f"
+          ],
+          "chunk_id": "US9514120B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9514120B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "4fe04b755a3773900247f241ed3834154557d16eacb219db1ebf120bb60459d7"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 12,
+              "raw_line": "entity<|#|>User Feedback<|#|>Data<|#|>Feedback collected from users for a work indicating whether potential typographical errors are author-intended strings, comprising user identifier, work identifier, string, position, decision, confidence level, and parameters.",
+              "fields": [
+                "entity",
+                "User Feedback",
+                "Data",
+                "Feedback collected from users for a work indicating whether potential typographical errors are author-intended strings, comprising user identifier, work identifier, string, position, decision, confidence level, and parameters."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 28,
+              "raw_line": "relation<|#|>Computing Device<|#|>User Feedback<|#|>collects, combines, sorts<|#|>The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "User Feedback",
+                "collects, combines, sorts",
+                "The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 31,
+              "raw_line": "relation<|#|>Processing Device<|#|>User Feedback<|#|>receives, combines, sorts<|#|>The processing device receives feedback from users, combines it with feedback for additional works, and sorts the combined feedback.",
+              "fields": [
+                "relation",
+                "Processing Device",
+                "User Feedback",
+                "receives, combines, sorts",
+                "The processing device receives feedback from users, combines it with feedback for additional works, and sorts the combined feedback."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 38,
+              "raw_line": "relation<|#|>User Feedback<|#|>Author-Intended String<|#|>indicates<|#|>User feedback indicates whether potential typographical errors are author-intended strings.",
+              "fields": [
+                "relation",
+                "User Feedback",
+                "Author-Intended String",
+                "indicates",
+                "User feedback indicates whether potential typographical errors are author-intended strings."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 39,
+              "raw_line": "relation<|#|>User Feedback<|#|>Combined Feedback<|#|>combined into<|#|>Feedback for a work is combined with feedback for additional works to generate combined feedback.",
+              "fields": [
+                "relation",
+                "User Feedback",
+                "Combined Feedback",
+                "combined into",
+                "Feedback for a work is combined with feedback for additional works to generate combined feedback."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 384,
+              "chunk_char_end": 817,
+              "text": "feedback for the work from the users. The feedback for the work indicates whether the potential typographical errors are author-intended strings. The computing device combines the user feedback for the work with user feedback for other works and sorts the combined user feedback based on one or more selected parameters. The computing device determines, based on the sorted user feedback, that one or more of the potential typographi"
+            },
+            {
+              "chunk_char_start": 416,
+              "chunk_char_end": 849,
+              "text": "sers. The feedback for the work indicates whether the potential typographical errors are author-intended strings. The computing device combines the user feedback for the work with user feedback for other works and sorts the combined user feedback based on one or more selected parameters. The computing device determines, based on the sorted user feedback, that one or more of the potential typographical errors includes an acceptabl"
+            },
+            {
+              "chunk_char_start": 469,
+              "chunk_char_end": 902,
+              "text": " potential typographical errors are author-intended strings. The computing device combines the user feedback for the work with user feedback for other works and sorts the combined user feedback based on one or more selected parameters. The computing device determines, based on the sorted user feedback, that one or more of the potential typographical errors includes an acceptable string and updates the initial reference to include"
+            },
+            {
+              "chunk_char_start": 578,
+              "chunk_char_end": 1011,
+              "text": "for the work with user feedback for other works and sorts the combined user feedback based on one or more selected parameters. The computing device determines, based on the sorted user feedback, that one or more of the potential typographical errors includes an acceptable string and updates the initial reference to include the acceptable string.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: identifying, by a processing devi"
+            }
+          ],
+          "lexical_occurrence_count": 4
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback.",
+          "keywords": "collects,combines,sorts",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "User Feedback",
+          "edge_index": 450,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processing device receives feedback from users, combines it with feedback for additional works, and sorts the combined feedback.",
+          "keywords": "combines,receives,sorts",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Processing Device",
+          "target": "User Feedback",
+          "edge_index": 461,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "User feedback indicates whether potential typographical errors are author-intended strings.",
+          "keywords": "indicates",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Author-Intended String",
+          "target": "User Feedback",
+          "edge_index": 480,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Feedback for a work is combined with feedback for additional works to generate combined feedback.",
+          "keywords": "combined into",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "User Feedback",
+          "target": "Combined Feedback",
+          "edge_index": 490,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "The explicit user feedback is obtained via a user interface.",
+      "keywords": "expresses,obtained via",
+      "source_id": "US9374411B1-chunk-002",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "User Interface",
+      "target": "User Feedback",
+      "edge_index": 440,
+      "source_chunks": [
+        "US9374411B1-chunk-002"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computing device collects feedback from users, combines it with feedback for other works, and sorts the combined feedback.",
+      "keywords": "collects,combines,sorts",
+      "source_id": "US9514120B1-chunk-000",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "User Feedback",
+      "edge_index": 450,
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The processing device receives feedback from users, combines it with feedback for additional works, and sorts the combined feedback.",
+      "keywords": "combines,receives,sorts",
+      "source_id": "US9514120B1-chunk-000",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "Processing Device",
+      "target": "User Feedback",
+      "edge_index": 461,
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "User feedback indicates whether potential typographical errors are author-intended strings.",
+      "keywords": "indicates",
+      "source_id": "US9514120B1-chunk-000",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "Author-Intended String",
+      "target": "User Feedback",
+      "edge_index": 480,
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Feedback for a work is combined with feedback for additional works to generate combined feedback.",
+      "keywords": "combined into",
+      "source_id": "US9514120B1-chunk-000",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "User Feedback",
+      "target": "Combined Feedback",
+      "edge_index": 490,
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The computer instructions cause the computing device to obtain explicit user feedback expressing that the user favors the first fictional character.",
+      "keywords": "causes,obtains",
+      "source_id": "US9374411B1-chunk-002",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "User Feedback",
+      "target": "Computer Instructions",
+      "edge_index": 491,
+      "source_chunks": [
+        "US9374411B1-chunk-002"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The user feedback expresses that the user favors the first fictional character.",
+      "keywords": "expresses preference,favors",
+      "source_id": "US9374411B1-chunk-002",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "User Feedback",
+      "target": "First Fictional Character",
+      "edge_index": 492,
+      "source_chunks": [
+        "US9374411B1-chunk-002"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

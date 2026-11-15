@@ -1,0 +1,19 @@
+{
+  "analysis_and_offline_reproduction_completed_utc": "2026-10-30T08:36:24.378882+00:00",
+  "authorized_start_utc": "2026-10-30T07:58:00+00:00",
+  "elapsed_minutes": 38.4063147,
+  "hard_deadline_utc": "2026-10-30T09:58:00+00:00",
+  "scope": "round2 original baseline only",
+  "nodes_reviewed": 38,
+  "source_memberships_reviewed": 98,
+  "unique_incident_edges_reviewed": 266,
+  "new_model_api_calls": 0,
+  "new_embedding_api_calls": 0,
+  "new_api_cost_usd": 0,
+  "credentials_read": false,
+  "original_input_hashes_unchanged": true,
+  "background_jobs_started": 0,
+  "audit_subprocesses_all_observed_exit": true,
+  "fot_autodl_ssh_proxy_accessed_or_modified": false,
+  "delivery_status": "artifacts complete; Library save follows"
+}

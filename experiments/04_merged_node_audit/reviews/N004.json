@@ -1,0 +1,597 @@
+{
+  "audit_id": "N004",
+  "node_id": "Database",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "三来源都指可存储/查询数据的数据库：分别存备份管理数据、接收的上下文数据、广告关键词及权重。所存数据不同没有改变database的共同存储类意义，不能仅因邻居不同判定混并。",
+  "class_instance_interpretation_zh": "共同数据库类别，非同一数据库实例、表或schema。所有数据类型不会因此自动属于每一专利的本地数据库；Artifact/Data类型标签差异属抽取类型粒度差异，未见异义。",
+  "concept_class_vs_local_instance": "shared class; distinct or unspecified document-local implementations; no same-individual assertion established",
+  "source_assessments": [
+    {
+      "publication_number": "US7756837B2",
+      "evidence_quote": "storing the management data in a searchable format in a database",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002",
+        "US7756837B2-chunk-003"
+      ],
+      "quote_source_chunk_ids": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002",
+        "US7756837B2-chunk-003"
+      ],
+      "quote_validation": {
+        "exact_contiguous_substring": true,
+        "claims_json_path": "data/claims/US7756837B2.json",
+        "claim_numbers_containing_quote": [
+          1,
+          13,
+          16,
+          31,
+          32,
+          47,
+          48,
+          49
+        ],
+        "selected_claim_checked": 1,
+        "abstract_section_checked": false
+      },
+      "role_zh": "存储从备份数据流提取的management data，便于后续检索与查询的数据库。",
+      "extraction_description_support": {
+        "assessment_zh": "四chunk原实体描述均为searchable database；Claims1、13、16、31、32、47–49反复支持存储步骤及processor/apparatus/method邻接。",
+        "reviewed_raw_records": [
+          {
+            "chunk_id": "US7756837B2-chunk-000",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+                "line_number": 6,
+                "description": "A searchable storage repository in which extracted management data is stored for subsequent review and query by users and administrators."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+                "line_number": 34,
+                "source": "Management Data",
+                "target": "Database",
+                "description": "The management data is stored in a searchable format in a database for subsequent review and query."
+              }
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "line_number": 4,
+                "description": "A searchable database in which management data is stored in a searchable format."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "line_number": 24,
+                "source": "Processor",
+                "target": "Database",
+                "description": "The processor stores the management data in a searchable format in a database."
+              },
+              {
+                "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "line_number": 40,
+                "source": "Apparatus",
+                "target": "Database",
+                "description": "The apparatus comprises means for storing the management data in a searchable format in a database."
+              }
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-002",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "line_number": 4,
+                "description": "A searchable storage system in which management data is stored."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "line_number": 30,
+                "source": "Management Data",
+                "target": "Database",
+                "description": "Management data is stored in a searchable format in the database."
+              }
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-003",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:af77c0c0ced5933edcc16c99fbd35ead",
+                "line_number": 4,
+                "description": "A searchable database in which the management data is stored in a searchable format."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:af77c0c0ced5933edcc16c99fbd35ead",
+                "line_number": 15,
+                "source": "Management Data",
+                "target": "Database",
+                "description": "The management data is stored in a searchable format in the database."
+              },
+              {
+                "cache_key": "default:extract:af77c0c0ced5933edcc16c99fbd35ead",
+                "line_number": 23,
+                "source": "Apparatus",
+                "target": "Database",
+                "description": "The apparatus comprises means for storing the management data in a searchable format in a database."
+              },
+              {
+                "cache_key": "default:extract:af77c0c0ced5933edcc16c99fbd35ead",
+                "line_number": 26,
+                "source": "Method",
+                "target": "Database",
+                "description": "The method comprises storing the management data in a searchable format in a database."
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 3.0,
+          "description": "The management data is stored in a searchable format in a database for subsequent review and query.<SEP>The management data is stored in a searchable format in the database.<SEP>Management data is stored in a searchable format in the database.",
+          "keywords": "Searchable Format,Stored In,searchable format,storage",
+          "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-002<SEP>US7756837B2-chunk-003",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Database",
+          "target": "Management Data",
+          "edge_index": 100,
+          "source_chunks": [
+            "US7756837B2-chunk-000",
+            "US7756837B2-chunk-002",
+            "US7756837B2-chunk-003"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor stores the management data in a searchable format in a database.",
+          "keywords": "stores management data in",
+          "source_id": "US7756837B2-chunk-001",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Database",
+          "target": "Processor",
+          "edge_index": 101,
+          "source_chunks": [
+            "US7756837B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The apparatus comprises means for storing the management data in a searchable format in a database.",
+          "keywords": "means for storing in,storage",
+          "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-003",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Database",
+          "target": "Apparatus",
+          "edge_index": 102,
+          "source_chunks": [
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-003"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The method comprises storing the management data in a searchable format in a database.",
+          "keywords": "storage",
+          "source_id": "US7756837B2-chunk-003",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Database",
+          "target": "Method",
+          "edge_index": 103,
+          "source_chunks": [
+            "US7756837B2-chunk-003"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8509827B2",
+      "evidence_quote": "storing the received context data in a database available to a recipient mobile device",
+      "claim_or_section": "Claim 9",
+      "source_chunk_ids": [
+        "US8509827B2-chunk-000"
+      ],
+      "quote_source_chunk_ids": [
+        "US8509827B2-chunk-000"
+      ],
+      "quote_validation": {
+        "exact_contiguous_substring": true,
+        "claims_json_path": "data/claims/US8509827B2.json",
+        "claim_numbers_containing_quote": [
+          9
+        ],
+        "selected_claim_checked": 9,
+        "abstract_section_checked": false
+      },
+      "role_zh": "接收移动设备可访问的上下文数据存储库，配合URI及元数据查询指令。",
+      "extraction_description_support": {
+        "assessment_zh": "Claims9–11支持存储、可访问及query；原抽取没有把备份管理数据或广告权重放入这一专利的来源边。",
+        "reviewed_raw_records": [
+          {
+            "chunk_id": "US8509827B2-chunk-000",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+                "line_number": 10,
+                "description": "A storage system available to a recipient mobile device in which received context data may be stored and queried via metadata instructions."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+                "line_number": 28,
+                "source": "Context-Data Acquisition And Ranking",
+                "target": "Database",
+                "description": "The method stores received context data in a database available to a recipient mobile device."
+              },
+              {
+                "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+                "line_number": 43,
+                "source": "Recipient Mobile Device",
+                "target": "Database",
+                "description": "The database is available to the recipient mobile device for storing and querying received context data."
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The method stores received context data in a database available to a recipient mobile device.",
+          "keywords": "Stores In",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793284125,
+          "truncate": "",
+          "source": "Context-Data Acquisition And Ranking",
+          "target": "Database",
+          "edge_index": 56,
+          "source_chunks": [
+            "US8509827B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8509827B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The database is available to the recipient mobile device for storing and querying received context data.",
+          "keywords": "Accesses",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793284125,
+          "truncate": "",
+          "source": "Recipient Mobile Device",
+          "target": "Database",
+          "edge_index": 96,
+          "source_chunks": [
+            "US8509827B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8509827B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "evidence_quote": "accessing the database storing the plurality of keywords and a second plurality of keywords corresponding to advertisements previously displayed on the parked domain web page",
+      "claim_or_section": "Claim 12",
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US9304738B1-chunk-001"
+      ],
+      "quote_validation": {
+        "exact_contiguous_substring": true,
+        "claims_json_path": "data/claims/US9304738B1.json",
+        "claim_numbers_containing_quote": [
+          12
+        ],
+        "selected_claim_checked": 12,
+        "abstract_section_checked": false
+      },
+      "role_zh": "将停放域名页面关联到广告关键词、权重等信息的数据库。",
+      "extraction_description_support": {
+        "assessment_zh": "Claims1、11–12支持关键词查找、权重更新和数据库访问；两chunk的Artifact/Data标签不同，描述仍指同一类存储用途。",
+        "reviewed_raw_records": [
+          {
+            "chunk_id": "US9304738B1-chunk-000",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+                "line_number": 17,
+                "description": "A storage system from which keywords of advertisements are identified using the unique identifier of the parked domain web page and in which increased keyword weights are associated with the parked domain web page."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+                "line_number": 32,
+                "source": "Data Processing System",
+                "target": "Database",
+                "description": "The data processing system identifies keywords from the database and associates increased keyword weights with the parked domain web page in the database."
+              }
+            ]
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+                "line_number": 7,
+                "description": "A storage that holds a plurality of keywords and their associated weights, associated with a parked domain web page having a unique identifier."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+                "line_number": 26,
+                "source": "Data Processing System",
+                "target": "Database",
+                "description": "The data processing system accesses the database storing keywords and their weights."
+              },
+              {
+                "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+                "line_number": 35,
+                "source": "Database",
+                "target": "Keyword",
+                "description": "The database stores a plurality of keywords and their weights."
+              },
+              {
+                "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+                "line_number": 36,
+                "source": "Database",
+                "target": "Weight",
+                "description": "The database associates the increased weight of a keyword with the parked domain web page having the unique identifier."
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The data processing system accesses the database storing keywords and their weights.<SEP>The data processing system identifies keywords from the database and associates increased keyword weights with the parked domain web page in the database.",
+          "keywords": "accesses,accessing,stores,storing",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Database",
+          "edge_index": 12,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The database stores a plurality of keywords and their weights.",
+          "keywords": "stores",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Database",
+          "target": "Keyword",
+          "edge_index": 98,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The database associates the increased weight of a keyword with the parked domain web page having the unique identifier.",
+          "keywords": "associates,stores",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Database",
+          "target": "Weight",
+          "edge_index": 99,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 9,
+    "observed_unsupported_edge": false,
+    "details_zh": "9条实际邻边已全部核查：12、98、99的关键词/权重来源是US9304738B1；56、96上下文数据来源US8509827B2；100–103管理数据/processor/apparatus/method来源US7756837B2。未见明确把一种数据放到另一专利数据库的实际错误边；只有共享上位类节点的跨文档邻接。",
+    "edge_indices": [
+      12,
+      56,
+      96,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103
+    ],
+    "per_edge_review": [
+      {
+        "edge_index": 12,
+        "source": "Data Processing System",
+        "target": "Database",
+        "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 56,
+        "source": "Context-Data Acquisition And Ranking",
+        "target": "Database",
+        "source_id": "US8509827B2-chunk-000",
+        "canonical_publications": [
+          "US8509827B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 96,
+        "source": "Recipient Mobile Device",
+        "target": "Database",
+        "source_id": "US8509827B2-chunk-000",
+        "canonical_publications": [
+          "US8509827B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 98,
+        "source": "Database",
+        "target": "Keyword",
+        "source_id": "US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 99,
+        "source": "Database",
+        "target": "Weight",
+        "source_id": "US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 100,
+        "source": "Database",
+        "target": "Management Data",
+        "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-002<SEP>US7756837B2-chunk-003",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 101,
+        "source": "Database",
+        "target": "Processor",
+        "source_id": "US7756837B2-chunk-001",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 102,
+        "source": "Database",
+        "target": "Apparatus",
+        "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-003",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 103,
+        "source": "Database",
+        "target": "Method",
+        "source_id": "US7756837B2-chunk-003",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      }
+    ],
+    "scope_warning_edge_indices": [],
+    "observed_cross_document_wrong_edge_propagation": false,
+    "retrieval_or_generation_propagation_evaluated": false
+  },
+  "limitations_zh": [
+    "此为AI辅助逐条原文审阅，非独立人类gold，不使用模型评判API。",
+    "类别判断针对共同概念/角色意义；原文没有给出跨专利实例等同或全部成员共享属性的本体断言。",
+    "共享节点可能允许无来源约束的路径组合，但本审计未运行检索/生成，也不能把潜在风险报告成已发生的答案污染。",
+    "抽取句的全部细粒度法律限定不在此四节点语义分类的穷尽验证范围；已记录的端点精度警示不等于确定错误。"
+  ],
+  "review_metadata": {
+    "reviewed_utc": "2026-10-30T08:11:08.446471+00:00",
+    "protocol": "evidence/review_protocol.json",
+    "dossier_sha256": "3a986cba24306c9ec798b68b51a560853bc3bc1f32b38dfe57e572efb69c26f5",
+    "source_documents_reviewed": 3,
+    "source_chunks_reviewed": 7,
+    "raw_entity_rows_reviewed": 7,
+    "raw_relation_rows_reviewed": 13,
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "original_round2_modified": false
+  }
+}

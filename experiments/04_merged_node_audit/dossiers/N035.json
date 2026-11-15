@@ -1,0 +1,1332 @@
+{
+  "node_id": "Query",
+  "entity_type": "concept",
+  "graph_source_chunks": [
+    "US7756837B2-chunk-000",
+    "US7756837B2-chunk-001",
+    "US7756837B2-chunk-002",
+    "US8655901B1-chunk-000",
+    "US8655901B1-chunk-001"
+  ],
+  "entity_chunk_store_sources": [
+    "US7756837B2-chunk-000",
+    "US7756837B2-chunk-001",
+    "US7756837B2-chunk-002",
+    "US8655901B1-chunk-000",
+    "US8655901B1-chunk-001"
+  ],
+  "all_source_chunks": [
+    "US7756837B2-chunk-000",
+    "US7756837B2-chunk-001",
+    "US7756837B2-chunk-002",
+    "US8655901B1-chunk-000",
+    "US8655901B1-chunk-001"
+  ],
+  "canonical_publications": [
+    "US7756837B2",
+    "US8655901B1"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US7756837B2.txt",
+    "US8655901B1.txt"
+  ],
+  "graph_file_paths": [
+    "US7756837B2.txt",
+    "US8655901B1.txt"
+  ],
+  "graph_file_path_publications": [
+    "US7756837B2",
+    "US8655901B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US7756837B2-chunk-000",
+    "US7756837B2-chunk-001",
+    "US7756837B2-chunk-002",
+    "US8655901B1-chunk-000",
+    "US8655901B1-chunk-001"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US7756837B2-chunk-000",
+    "US7756837B2-chunk-001",
+    "US7756837B2-chunk-002",
+    "US8655901B1-chunk-000",
+    "US8655901B1-chunk-001"
+  ],
+  "graph_node": {
+    "entity_id": "Query",
+    "entity_type": "concept",
+    "description": "A query received from a party concerning the archived data-stream, used to formulate responses based on analysis of stored management data.<SEP>A request received from a party concerning archived data-streams, answered by analyzing the management data stored in the database.<SEP>A query received from a party concerning the archived data-stream, used to formulate responses.<SEP>A search query in a first or second language that is segmented into tokens, annotated, translated, and searched against indexes.<SEP>A search request that is segmented into tokens, annotated with labels, and translated as part of the query pattern mining process.",
+    "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002<SEP>US8655901B1-chunk-000<SEP>US8655901B1-chunk-001",
+    "file_path": "US7756837B2.txt<SEP>US8655901B1.txt",
+    "created_at": 1793284618,
+    "truncate": "",
+    "id": "Query"
+  },
+  "incident_edge_count": 14,
+  "audit_id": "N035",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US7756837B2",
+      "file_paths": [
+        "US7756837B2.txt"
+      ],
+      "source_chunks": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ],
+      "sources": [
+        {
+          "publication_number": "US7756837B2",
+          "full_doc_id": "US7756837B2",
+          "file_path": "US7756837B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "816fc9cf05223956b4e376ef0f6e135985e9f900de35575a229b3fb046a5e544",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 5990,
+          "content": "Publication number: US7756837B2\nTitle: Methods and apparatus for searching backup data based on content and attributes\n\nABSTRACT\nMethods and apparatus are disclosed that permit the transparent bridging of a broad range of backup storage devices, such that backup software will identify an intermediate device as a one of those storage devices and will transparently send their backup data-stream thereto as part of the existing standard backup process. Upon receipt of a backup data-stream from the backup software, the methods and apparatus provide for analysis of the data elements in the data-stream, collection of management information about those data elements, and storage of the management information in an easily accessible format for subsequent review and query by users and administrators of the original data. The same backup data-stream is stored on any standard backup storage device, including the imitated backup storage device.\n\nCLAIMS\n1. A method, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and storing the management data in a searchable format in a database, wherein the method is carried out by a device that is transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 2. The method of claim 1 , further comprising one of: (i) passing the data-stream to the backup storage device before the extraction step; (ii) passing the data-stream to the backup storage device substantially simultaneously with the extraction step; and (iii) passing the data-stream to the backup storage device after the extraction step. 3. The method of claim 2 , further comprising: reading back data from the backup storage device after the data-stream has been passed to the backup storage device to re-create the data-stream; and performing the extraction step on the re-created data-stream. 4. The method of claim 1 , wherein the source is taken from the group consisting of a computer server, a desktop computer, a laptop computer, a notebook computer, a personal digital assistant, and a source database, when the management data includes the identifier of the source of the data-stream. 5. The method of claim 1 , wherein the volume is taken from the group consisting of computer disk drives and computer sub-drives, when the management data includes the volume information. 6. The method of claim 1 , wherein a plurality of data-streams adhere to the same or different protocols, the method further comprising converting the different protocols to a protocol supported by the backup storage device. 7. The method of claim 1 , wherein the extraction step includes at least one of: (i) separating distinct data sets from the data-stream; and (ii) segregating types of data within the data sets into data groups. 8. The method of claim 7 , wherein: the distinct data sets include at least one of file folders, data files, and types of data files; and the types of data include at least one of: text data, image data, audio data, graphic data, tabular data, hyperlink data, and executable data. 9. The method of claim 8 , further comprising indexing at least one of the types of data to obtain keywords thereof. 10. The method of claim 7 , further comprising using a predetermined rule set to recognize the distinct data sets of the data-stream. 11. The method of claim 10 , wherein the predetermined rule set is based on a data-stream protocol of a third party backup data product intended to be used to store the data-stream on the backup storage device. 12. The method of claim 10 , wherein the predetermined rule set is taken from a group of pre-determined rule sets, each set based on a data-stream protocol of a third party backup data product. 13. A method, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data being descriptive of the data of the data-stream; storing the management data in a searchable format in a database; receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party, wherein the method is carried out by a device that is transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 14. The method of claim 13 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 15. The method of claim 14 , wherein the communication network is the Internet. 16. A processor operable to execute a software program, the software program causing the processor to perform steps, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data",
+          "llm_cache_list": [
+            "default:extract:dd4cc38c8b4390407aeadd85a7ef3593"
+          ],
+          "chunk_id": "US7756837B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US7756837B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "cfcb05ec28398152d92adf72b59710da1ed619ca1dcfc1423fdd2c8d5980b6f0"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 10,
+              "raw_line": "entity<|#|>Query<|#|>Concept<|#|>A request received from a party concerning archived data-streams, answered by analyzing the management data stored in the database.",
+              "fields": [
+                "entity",
+                "Query",
+                "Concept",
+                "A request received from a party concerning archived data-streams, answered by analyzing the management data stored in the database."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 51,
+              "raw_line": "relation<|#|>Query<|#|>Management Data<|#|>Analyzed Against<|#|>Responses to the query are formulated based on an analysis of the management data stored in the database.",
+              "fields": [
+                "relation",
+                "Query",
+                "Management Data",
+                "Analyzed Against",
+                "Responses to the query are formulated based on an analysis of the management data stored in the database."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 52,
+              "raw_line": "relation<|#|>Party<|#|>Query<|#|>Submits<|#|>The party submits a query concerning the archived data-stream.",
+              "fields": [
+                "relation",
+                "Party",
+                "Query",
+                "Submits",
+                "The party submits a query concerning the archived data-stream."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 587,
+              "chunk_char_end": 1012,
+              "text": "the data-stream, collection of management information about those data elements, and storage of the management information in an easily accessible format for subsequent review and query by users and administrators of the original data. The same backup data-stream is stored on any standard backup storage device, including the imitated backup storage device.\n\nCLAIMS\n1. A method, comprising: receiving at least one data-strea"
+            },
+            {
+              "chunk_char_start": 4749,
+              "chunk_char_end": 5174,
+              "text": "rom the data-stream, the management data being descriptive of the data of the data-stream; storing the management data in a searchable format in a database; receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party, wherein the method i"
+            },
+            {
+              "chunk_char_start": 4846,
+              "chunk_char_end": 5271,
+              "text": "g the management data in a searchable format in a database; receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party, wherein the method is carried out by a device that is transparent to a source producing the data-stream such that it "
+            },
+            {
+              "chunk_char_start": 5226,
+              "chunk_char_end": 5651,
+              "text": "ource producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 14. The method of claim 13 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 15. The method of claim 14 , wherein the communication network is the Interne"
+            }
+          ],
+          "lexical_occurrence_count": 4
+        },
+        {
+          "publication_number": "US7756837B2",
+          "full_doc_id": "US7756837B2",
+          "file_path": "US7756837B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 1200,
+          "content_sha256": "8b1a94961ae323fa62890371b8df43eadff7e06ff68633f58c71a9050db94c86",
+          "exact_doc_char_start": 5468,
+          "exact_doc_char_end": 11353,
+          "content": "and the one or more responses are transmitted electronically to the party over the communication network. 15. The method of claim 14 , wherein the communication network is the Internet. 16. A processor operable to execute a software program, the software program causing the processor to perform steps, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and storing the management data in a searchable format in a database wherein the steps carried out by the processor are such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 17. The processor of claim 16 , further comprising one of: (i) passing the data-stream to the backup storage device before the extraction step; (ii) passing the data-stream to the backup storage device substantially simultaneously with the extraction step; and (iii) passing the data-stream to the backup storage device after the extraction step. 18. The processor of claim 17 , further comprising: reading back data from the backup storage device after the data-stream has been passed to the backup storage device to re-create the data-stream; and performing the extraction step on the re-created data-stream. 19. The processor of claim 16 , wherein the source is taken from the group consisting of a computer server, a desktop computer, a laptop computer, a notebook computer, a personal digital assistant, and a source database, when the management data includes the identifier of the source of the data-stream. 20. The processor of claim 16 , wherein the volume is taken from the group consisting of computer disk drives and computer sub-drives, when the management data includes the volume information. 21. The processor of claim 16 , wherein a plurality of data-streams adhere to the same or different protocols, the steps further include converting the different protocols to a protocol supported by the backup storage device. 22. The processor of claim 16 , wherein the extraction step includes at least one of: (i) separating distinct data sets from the data-stream; and (ii) segregating types of data within the data sets into data groups. 23. The processor of claim 22 , wherein: the distinct data sets include at least one of file folders, data files, and types of data files; and the types of data include at least one of: text data, image data, audio data, graphic data, tabular data, hyperlink data, and executable data. 24. The processor of claim 23 , further comprising indexing at least one of the types of data to obtain keywords thereof. 25. The processor of claim 22 , further comprising using a predetermined rule set to recognize the distinct data sets of the data-stream. 26. The processor of claim 25 , wherein the predetermined rule set is based on a data-stream protocol of a third party backup data product intended to be used to store the data-stream on the backup storage device. 27. The processor of claim 25 , wherein the predetermined rule set is taken from a group of pre-determined rule sets, each set based on a data-stream protocol of a third party backup data product. 28. The processor of claim 16 , further comprising: receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party. 29. The processor of claim 28 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 30. The processor of claim 29 , wherein the communication network is the Internet. 31. An apparatus, comprising: means for receiving at least one data-stream intended for archiving on a backup storage device; means for extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and means for storing the management data in a searchable format in a database wherein the receiving, extracting, and storing actions are carried out such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 32. A storage medium",
+          "llm_cache_list": [
+            "default:extract:a234af18887941703cfa00cdc75f7444"
+          ],
+          "chunk_id": "US7756837B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US7756837B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "4d3c83871d912887d1d45e4c226af68edf1390b619d2df1afce23ca479d93d32"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 11,
+              "raw_line": "entity<|#|>Query<|#|>Data<|#|>A query received from a party concerning the archived data-stream, used to formulate responses based on analysis of stored management data.",
+              "fields": [
+                "entity",
+                "Query",
+                "Data",
+                "A query received from a party concerning the archived data-stream, used to formulate responses based on analysis of stored management data."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 32,
+              "raw_line": "relation<|#|>Processor<|#|>Query<|#|>receives, formulates responses to<|#|>The processor receives a query from a party and formulates responses based on analysis of the management data stored in the database.",
+              "fields": [
+                "relation",
+                "Processor",
+                "Query",
+                "receives, formulates responses to",
+                "The processor receives a query from a party and formulates responses based on analysis of the management data stored in the database."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 33,
+              "raw_line": "relation<|#|>Query<|#|>Party<|#|>received from<|#|>The query is received from a party concerning the archived data-stream.",
+              "fields": [
+                "relation",
+                "Query",
+                "Party",
+                "received from",
+                "The query is received from a party concerning the archived data-stream."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 34,
+              "raw_line": "relation<|#|>Query<|#|>Communication Network<|#|>received over<|#|>The query is received electronically over a communication network.",
+              "fields": [
+                "relation",
+                "Query",
+                "Communication Network",
+                "received over",
+                "The query is received electronically over a communication network."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 3901,
+              "chunk_char_end": 4326,
+              "text": "pre-determined rule sets, each set based on a data-stream protocol of a third party backup data product. 28. The processor of claim 16 , further comprising: receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party. 29. The processor of"
+            },
+            {
+              "chunk_char_start": 3998,
+              "chunk_char_end": 4423,
+              "text": "roduct. 28. The processor of claim 16 , further comprising: receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party. 29. The processor of claim 28 , wherein the query is received electronically over a communication network and the one"
+            },
+            {
+              "chunk_char_start": 4170,
+              "chunk_char_end": 4595,
+              "text": " to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party. 29. The processor of claim 28 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 30. The processor of claim 29 , wherein the communication network is the Inte"
+            }
+          ],
+          "lexical_occurrence_count": 3
+        },
+        {
+          "publication_number": "US7756837B2",
+          "full_doc_id": "US7756837B2",
+          "file_path": "US7756837B2.txt",
+          "chunk_order_index": 2,
+          "tokens": 1200,
+          "content_sha256": "c301fb50a9bcd91ff8802abcebcecf3db19cbcb3773547c471bfbded65e67e9c",
+          "exact_doc_char_start": 10847,
+          "exact_doc_char_end": 16739,
+          "content": "or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and means for storing the management data in a searchable format in a database wherein the receiving, extracting, and storing actions are carried out such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 32. A storage medium containing a software program, the program being capable of causing a processor to carry out actions, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and storing the management data in a searchable format in a database wherein the steps carried out by the processor such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 33. The storage medium of claim 32 , further comprising one of: (i) passing the data-stream to the backup storage device before the extraction step; (ii) passing the data-stream to the backup storage device substantially simultaneously with the extraction step; and (iii) passing the data-stream to the backup storage device after the extraction step. 34. The storage medium of claim 33 , further comprising: reading back data from the backup storage device after the data-stream has been passed to the backup storage device to re-create the data-stream; and performing the extraction step on the re-created data-stream. 35. The storage medium of claim 32 , wherein the source is taken from the group consisting of a computer server, a desktop computer, a laptop computer, a notebook computer, a personal digital assistant, and a source database, when the management data includes the identifier of the source of the data-stream. 36. The storage medium of claim 32 , wherein the volume is taken from the group consisting of computer disk drives and computer sub-drives, when the management data includes the volume information. 37. The storage medium of claim 32 , wherein a plurality of data-streams adhere to the same or different protocols, the actions include converting the different protocols to a protocol supported by the backup storage device. 38. The storage medium of claim 32 , wherein the extraction step includes at least one of: (i) separating distinct data sets from the data-stream; and (ii) segregating types of data within the data sets into data groups. 39. The storage medium of claim 38 , wherein: the distinct data sets include at least one of file folders, data files, and types of data files; and the types of data include at least one of: text data, image data, audio data, graphic data, tabular data, hyperlink data, and executable data. 40. The storage medium of claim 39 , further comprising indexing at least one of the types of data to obtain keywords thereof. 41. The storage medium of claim 38 , further comprising using a predetermined rule set to recognize the distinct data sets of the data-stream. 42. The storage medium of claim 41 , wherein the predetermined rule set is based on a data-stream protocol of a third party backup data product intended to be used to store the data-stream on the backup storage device. 43. The storage medium of claim 41 , wherein the predetermined rule set is taken from a group of pre-determined rule sets, each set based on a data-stream protocol of a third party backup data product. 44. The storage medium of claim 32 , further comprising: receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party. 45. The storage medium of claim 44 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 46. The storage medium of claim 45 , wherein the communication network is the Internet. 47. An apparatus, comprising: means for receiving at least one data-stream from one or more sources, the data-stream intended for archiving on a backup storage device; means for carrying out a storage router function as between the sources and the backup storage device; means for extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or",
+          "llm_cache_list": [
+            "default:extract:64f8f02b9ec1461411eea00af38a5684"
+          ],
+          "chunk_id": "US7756837B2-chunk-002",
+          "extraction_records": [
+            {
+              "chunk_id": "US7756837B2-chunk-002",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "eb197a0cf78cf463212ad664302636f45f8a193d53d7b3e5587313d1e72d1d57"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+              "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 13,
+              "raw_line": "entity<|#|>Query<|#|>Data<|#|>A query received from a party concerning the archived data-stream, used to formulate responses.",
+              "fields": [
+                "entity",
+                "Query",
+                "Data",
+                "A query received from a party concerning the archived data-stream, used to formulate responses."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+              "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 39,
+              "raw_line": "relation<|#|>Query<|#|>Management Data<|#|>analysis<|#|>Responses to the query are formulated based on an analysis of the management data stored in the database.",
+              "fields": [
+                "relation",
+                "Query",
+                "Management Data",
+                "analysis",
+                "Responses to the query are formulated based on an analysis of the management data stored in the database."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+              "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 40,
+              "raw_line": "relation<|#|>Query<|#|>Communication Network<|#|>electronic transmission<|#|>The query is received electronically over the communication network and responses are transmitted electronically over it.",
+              "fields": [
+                "relation",
+                "Query",
+                "Communication Network",
+                "electronic transmission",
+                "The query is received electronically over the communication network and responses are transmitted electronically over it."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 4257,
+              "chunk_char_end": 4682,
+              "text": "etermined rule sets, each set based on a data-stream protocol of a third party backup data product. 44. The storage medium of claim 32 , further comprising: receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party. 45. The storage medi"
+            },
+            {
+              "chunk_char_start": 4354,
+              "chunk_char_end": 4779,
+              "text": "t. 44. The storage medium of claim 32 , further comprising: receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party. 45. The storage medium of claim 44 , wherein the query is received electronically over a communication network and th"
+            },
+            {
+              "chunk_char_start": 4531,
+              "chunk_char_end": 4956,
+              "text": "he query based on an analysis of the management data stored in the database; and providing the one or more responses to the party. 45. The storage medium of claim 44 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 46. The storage medium of claim 45 , wherein the communication network is the"
+            }
+          ],
+          "lexical_occurrence_count": 3
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "The query is received electronically over a communication network.<SEP>The query is received electronically over the communication network and responses are transmitted electronically over it.",
+          "keywords": "electronic transmission,received over",
+          "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Communication Network",
+          "target": "Query",
+          "edge_index": 112,
+          "source_chunks": [
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The processor receives a query from a party and formulates responses based on analysis of the management data stored in the database.",
+          "keywords": "formulates responses to,receives",
+          "source_id": "US7756837B2-chunk-001",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Processor",
+          "target": "Query",
+          "edge_index": 313,
+          "source_chunks": [
+            "US7756837B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "Responses to the query are formulated based on an analysis of the management data stored in the database.",
+          "keywords": "Analyzed Against,analysis",
+          "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-002",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Management Data",
+          "target": "Query",
+          "edge_index": 758,
+          "source_chunks": [
+            "US7756837B2-chunk-000",
+            "US7756837B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The query is received from a party concerning the archived data-stream.<SEP>The party submits a query concerning the archived data-stream.",
+          "keywords": "Submits,received from",
+          "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-001",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Query",
+          "target": "Party",
+          "edge_index": 769,
+          "source_chunks": [
+            "US7756837B2-chunk-000",
+            "US7756837B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8655901B1",
+      "file_paths": [
+        "US8655901B1.txt"
+      ],
+      "source_chunks": [
+        "US8655901B1-chunk-000",
+        "US8655901B1-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8655901B1",
+          "full_doc_id": "US8655901B1",
+          "file_path": "US8655901B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "0bab0caa8c0462609609b9037c577b4201a3af3034b28331edefba06b1dee6e8",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6722,
+          "content": "Publication number: US8655901B1\nTitle: Translation-based query pattern mining\n\nABSTRACT\nThis specification describes technologies relating to search systems. In general, one aspect of the subject matter described in this specification can be embodied in methods that include the actions of receiving a query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern; annotating each query of the collection of queries with one or more labels; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; aligning the translated collection of queries including identifying a most common term in the translated collection of queries and determining the corresponding positions of the annotations relative to the translated query terms; and extracting a translated query pattern from the aligned translated collection of queries.\n\nCLAIMS\nWhat is claimed: 1. A method comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying, with a system comprising one or more computing devices, a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern. 2. The method of claim 1 , further comprising: using the translated query pattern to interpret received queries in the second language matching the translated query pattern. 3. The method of claim 2 , where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 4. The method of claim 1 , further comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 5. The method of claim 1 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern. 6. The method of claim 1 , where annotating each query includes labeling portions of the query according to the first query pattern. 7. The method of claim 1 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold. 8. A system comprising: one or more processors configured to interact with a computer-readable medium in order to perform operations comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern. 9. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to interpret received queries in the second language matching the translated query pattern. 10. The system of claim 9 , where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 12. The system of claim 8 , where identifying a collection of",
+          "llm_cache_list": [
+            "default:extract:1689f97449c8ea224bf62a4088b56f4b"
+          ],
+          "chunk_id": "US8655901B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US8655901B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "4ab90cd0cdefac132bfd091382e77c707d3fb713357bef9e84686fe397b5760d"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+              "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 7,
+              "raw_line": "entity<|#|>Query<|#|>Concept<|#|>A search request that is segmented into tokens, annotated with labels, and translated as part of the query pattern mining process.",
+              "fields": [
+                "entity",
+                "Query",
+                "Concept",
+                "A search request that is segmented into tokens, annotated with labels, and translated as part of the query pattern mining process."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+              "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 19,
+              "raw_line": "relation<|#|>Translation-Based Query Pattern Mining<|#|>Query<|#|>identifies, annotates, translates<|#|>The method identifies a collection of queries, segments and annotates each query with labels, and translates the annotated queries into a second language.",
+              "fields": [
+                "relation",
+                "Translation-Based Query Pattern Mining",
+                "Query",
+                "identifies, annotates, translates",
+                "The method identifies a collection of queries, segments and annotates each query with labels, and translates the annotated queries into a second language."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+              "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 22,
+              "raw_line": "relation<|#|>Query<|#|>First Language<|#|>in<|#|>The collection of queries matching the query pattern is in the first language.",
+              "fields": [
+                "relation",
+                "Query",
+                "First Language",
+                "in",
+                "The collection of queries matching the query pattern is in the first language."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+              "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 23,
+              "raw_line": "relation<|#|>Query<|#|>Token<|#|>segmented into<|#|>A given query among the collection is segmented into one or more tokens in the first language.",
+              "fields": [
+                "relation",
+                "Query",
+                "Token",
+                "segmented into",
+                "A given query among the collection is segmented into one or more tokens in the first language."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+              "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 26,
+              "raw_line": "relation<|#|>Query<|#|>Second Language<|#|>translated into<|#|>The collection of annotated queries in the first language is translated into a translated collection of queries in a second language.",
+              "fields": [
+                "relation",
+                "Query",
+                "Second Language",
+                "translated into",
+                "The collection of annotated queries in the first language is translated into a translated collection of queries in a second language."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+              "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 28,
+              "raw_line": "relation<|#|>Translated Query Pattern<|#|>Query<|#|>used to interpret, applied to<|#|>The translated query pattern is used to interpret received queries in the second language and applied to a received query to identify query splits.",
+              "fields": [
+                "relation",
+                "Translated Query Pattern",
+                "Query",
+                "used to interpret, applied to",
+                "The translated query pattern is used to interpret received queries in the second language and applied to a received query to identify query splits."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 302,
+              "text": "Publication number: US8655901B1\nTitle: Translation-based query pattern mining\n\nABSTRACT\nThis specification describes technologies relating to search systems. In general, one aspect of the subject matter described in this specification can be embodied in methods that include the actions of receiving a "
+            },
+            {
+              "chunk_char_start": 122,
+              "chunk_char_end": 547,
+              "text": "ologies relating to search systems. In general, one aspect of the subject matter described in this specification can be embodied in methods that include the actions of receiving a query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern; annotating"
+            },
+            {
+              "chunk_char_start": 141,
+              "chunk_char_end": 566,
+              "text": " search systems. In general, one aspect of the subject matter described in this specification can be embodied in methods that include the actions of receiving a query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern; annotating each query of the "
+            },
+            {
+              "chunk_char_start": 219,
+              "chunk_char_end": 644,
+              "text": "s specification can be embodied in methods that include the actions of receiving a query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern; annotating each query of the collection of queries with one or more labels; translating the collection of a"
+            },
+            {
+              "chunk_char_start": 230,
+              "chunk_char_end": 655,
+              "text": "tion can be embodied in methods that include the actions of receiving a query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern; annotating each query of the collection of queries with one or more labels; translating the collection of annotated qu"
+            },
+            {
+              "chunk_char_start": 342,
+              "chunk_char_end": 767,
+              "text": "ying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern; annotating each query of the collection of queries with one or more labels; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; aligning the translate"
+            },
+            {
+              "chunk_char_start": 373,
+              "chunk_char_end": 798,
+              "text": "pret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern; annotating each query of the collection of queries with one or more labels; translating the collection of annotated queries in the first language into a translated collection of queries in a second language; aligning the translated collection of queries includi"
+            },
+            {
+              "chunk_char_start": 782,
+              "chunk_char_end": 1207,
+              "text": " queries including identifying a most common term in the translated collection of queries and determining the corresponding positions of the annotations relative to the translated query terms; and extracting a translated query pattern from the aligned translated collection of queries.\n\nCLAIMS\nWhat is claimed: 1. A method comprising: receiving a first query pattern, the query pattern identifying a particular rule to interp"
+            },
+            {
+              "chunk_char_start": 823,
+              "chunk_char_end": 1248,
+              "text": "mon term in the translated collection of queries and determining the corresponding positions of the annotations relative to the translated query terms; and extracting a translated query pattern from the aligned translated collection of queries.\n\nCLAIMS\nWhat is claimed: 1. A method comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query"
+            },
+            {
+              "chunk_char_start": 955,
+              "chunk_char_end": 1380,
+              "text": "slated query terms; and extracting a translated query pattern from the aligned translated collection of queries.\n\nCLAIMS\nWhat is claimed: 1. A method comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying, with a system comprising one or more computing devices, a collection of queries in "
+            },
+            {
+              "chunk_char_start": 974,
+              "chunk_char_end": 1399,
+              "text": " and extracting a translated query pattern from the aligned translated collection of queries.\n\nCLAIMS\nWhat is claimed: 1. A method comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying, with a system comprising one or more computing devices, a collection of queries in the first language "
+            },
+            {
+              "chunk_char_start": 1052,
+              "chunk_char_end": 1477,
+              "text": "ion of queries.\n\nCLAIMS\nWhat is claimed: 1. A method comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying, with a system comprising one or more computing devices, a collection of queries in the first language matching the query pattern by determining which queries in a query log match t"
+            }
+          ],
+          "lexical_occurrence_count": 83
+        },
+        {
+          "publication_number": "US8655901B1",
+          "full_doc_id": "US8655901B1",
+          "file_path": "US8655901B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 532,
+          "content_sha256": "5d0d79edafe5af7919f82cb1ee8099a3dec6b156ad11326e2bf75e47dad3f315",
+          "exact_doc_char_start": 6164,
+          "exact_doc_char_end": 9170,
+          "content": ", where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 12. The system of claim 8 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern. 13. The system of claim 8 , where annotating each query includes labeling portions of the query according to the first query pattern. 14. The system of claim 8 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold. 15. A non-transitory computer storage medium encoded with a computer program, the program comprising instructions that when executed by data processing apparatus cause the data processing apparatus to perform operations comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating, with a system comprising one or more computing devices, the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern.",
+          "llm_cache_list": [
+            "default:extract:c20f6f1580eec63f6eb8020610ec1b05"
+          ],
+          "chunk_id": "US8655901B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US8655901B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "316996f6608a19543149f869b202a0f90c851b294a1aea1e4f2b52f923f5462b"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 4,
+              "raw_line": "entity<|#|>Query<|#|>Concept<|#|>A search query in a first or second language that is segmented into tokens, annotated, translated, and searched against indexes.",
+              "fields": [
+                "entity",
+                "Query",
+                "Concept",
+                "A search query in a first or second language that is segmented into tokens, annotated, translated, and searched against indexes."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 16,
+              "raw_line": "relation<|#|>Translated Query Pattern<|#|>Query<|#|>application, query splitting<|#|>The translated query pattern is applied to a received query to identify query splits into query components.",
+              "fields": [
+                "relation",
+                "Translated Query Pattern",
+                "Query",
+                "application, query splitting",
+                "The translated query pattern is applied to a received query to identify query splits into query components."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 20,
+              "raw_line": "relation<|#|>Query Log<|#|>Query<|#|>matching, identification<|#|>Identifying a collection of queries includes identifying queries from a query log that match the first query pattern.",
+              "fields": [
+                "relation",
+                "Query Log",
+                "Query",
+                "matching, identification",
+                "Identifying a collection of queries includes identifying queries from a query log that match the first query pattern."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 21,
+              "raw_line": "relation<|#|>Query<|#|>Labels<|#|>annotation, labeling<|#|>Annotating each query includes labeling portions of the query according to the first query pattern.",
+              "fields": [
+                "relation",
+                "Query",
+                "Labels",
+                "annotation, labeling",
+                "Annotating each query includes labeling portions of the query according to the first query pattern."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 24,
+              "raw_line": "relation<|#|>Query Pattern<|#|>Query<|#|>matching, interpretation<|#|>The query pattern identifies a particular rule to interpret a particular type of query, and a collection of queries matching the query pattern is identified.",
+              "fields": [
+                "relation",
+                "Query Pattern",
+                "Query",
+                "matching, interpretation",
+                "The query pattern identifies a particular rule to interpret a particular type of query, and a collection of queries matching the query pattern is identified."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Query<|#|>Tokens<|#|>segmentation<|#|>A given query among the collection is segmented into one or more tokens in the first language.",
+              "fields": [
+                "relation",
+                "Query",
+                "Tokens",
+                "segmentation",
+                "A given query among the collection is segmented into one or more tokens in the first language."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 28,
+              "raw_line": "relation<|#|>Query<|#|>Second Language<|#|>translation<|#|>The collection of annotated queries in the first language is translated into a translated collection of queries in a second language.",
+              "fields": [
+                "relation",
+                "Query",
+                "Second Language",
+                "translation",
+                "The collection of annotated queries in the first language is translated into a translated collection of queries in a second language."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 32,
+              "raw_line": "relation<|#|>Computing Devices<|#|>Query<|#|>translation<|#|>A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries.",
+              "fields": [
+                "relation",
+                "Computing Devices",
+                "Query",
+                "translation",
+                "A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 274,
+              "text": ", where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. "
+            },
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 321,
+              "text": ", where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured "
+            },
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 349,
+              "text": ", where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations compri"
+            },
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 388,
+              "text": ", where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query patter"
+            },
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 406,
+              "text": ", where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for re"
+            },
+            {
+              "chunk_char_start": 22,
+              "chunk_char_end": 447,
+              "text": "slated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in t"
+            },
+            {
+              "chunk_char_start": 77,
+              "chunk_char_end": 502,
+              "text": "uery pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 12. T"
+            },
+            {
+              "chunk_char_start": 196,
+              "chunk_char_end": 621,
+              "text": "lting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 12. The system of claim 8 , where identifying a collection of queries includes identifying queries from a query log that mat"
+            },
+            {
+              "chunk_char_start": 257,
+              "chunk_char_end": 682,
+              "text": "query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 12. The system of claim 8 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern. 13. The system of claim 8 , where"
+            },
+            {
+              "chunk_char_start": 423,
+              "chunk_char_end": 848,
+              "text": "to a received query in the second language and presenting search results. 12. The system of claim 8 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern. 13. The system of claim 8 , where annotating each query includes labeling portions of the query according to the first query pattern. 14. The system of claim 8 , where extracting a translated query p"
+            },
+            {
+              "chunk_char_start": 454,
+              "chunk_char_end": 879,
+              "text": "nd language and presenting search results. 12. The system of claim 8 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern. 13. The system of claim 8 , where annotating each query includes labeling portions of the query according to the first query pattern. 14. The system of claim 8 , where extracting a translated query pattern further comprises cross-"
+            },
+            {
+              "chunk_char_start": 519,
+              "chunk_char_end": 944,
+              "text": "m 8 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern. 13. The system of claim 8 , where annotating each query includes labeling portions of the query according to the first query pattern. 14. The system of claim 8 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with res"
+            }
+          ],
+          "lexical_occurrence_count": 39
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "A given query among the collection is segmented into one or more tokens in the first language.",
+          "keywords": "segmented into",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Token",
+          "target": "Query",
+          "edge_index": 253,
+          "source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A given query among the collection is segmented into one or more tokens in the first language.",
+          "keywords": "segmentation",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Tokens",
+          "target": "Query",
+          "edge_index": 706,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Annotating each query includes labeling portions of the query according to the first query pattern.",
+          "keywords": "annotation,labeling",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Labels",
+          "target": "Query",
+          "edge_index": 709,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The method identifies a collection of queries, segments and annotates each query with labels, and translates the annotated queries into a second language.",
+          "keywords": "annotates,identifies,translates",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Translation-Based Query Pattern Mining",
+          "edge_index": 770,
+          "source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The collection of queries matching the query pattern is in the first language.",
+          "keywords": "in",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "First Language",
+          "edge_index": 771,
+          "source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The collection of annotated queries in the first language is translated into a translated collection of queries in a second language.",
+          "keywords": "translated into,translation",
+          "source_id": "US8655901B1-chunk-000<SEP>US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Second Language",
+          "edge_index": 772,
+          "source_chunks": [
+            "US8655901B1-chunk-000",
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The translated query pattern is applied to a received query to identify query splits into query components.<SEP>The translated query pattern is used to interpret received queries in the second language and applied to a received query to identify query splits.",
+          "keywords": "application,applied to,query splitting,used to interpret",
+          "source_id": "US8655901B1-chunk-000<SEP>US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Translated Query Pattern",
+          "edge_index": 773,
+          "source_chunks": [
+            "US8655901B1-chunk-000",
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Identifying a collection of queries includes identifying queries from a query log that match the first query pattern.",
+          "keywords": "identification,matching",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Query Log",
+          "edge_index": 774,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The query pattern identifies a particular rule to interpret a particular type of query, and a collection of queries matching the query pattern is identified.",
+          "keywords": "interpretation,matching",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Query Pattern",
+          "edge_index": 775,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries.",
+          "keywords": "translation",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Query",
+          "target": "Computing Devices",
+          "edge_index": 776,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 2.0,
+      "description": "The query is received electronically over a communication network.<SEP>The query is received electronically over the communication network and responses are transmitted electronically over it.",
+      "keywords": "electronic transmission,received over",
+      "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+      "file_path": "US7756837B2.txt",
+      "created_at": 1793284552,
+      "truncate": "",
+      "source": "Communication Network",
+      "target": "Query",
+      "edge_index": 112,
+      "source_chunks": [
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ],
+      "canonical_publications": [
+        "US7756837B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "A given query among the collection is segmented into one or more tokens in the first language.",
+      "keywords": "segmented into",
+      "source_id": "US8655901B1-chunk-000",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Token",
+      "target": "Query",
+      "edge_index": 253,
+      "source_chunks": [
+        "US8655901B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The processor receives a query from a party and formulates responses based on analysis of the management data stored in the database.",
+      "keywords": "formulates responses to,receives",
+      "source_id": "US7756837B2-chunk-001",
+      "file_path": "US7756837B2.txt",
+      "created_at": 1793284552,
+      "truncate": "",
+      "source": "Processor",
+      "target": "Query",
+      "edge_index": 313,
+      "source_chunks": [
+        "US7756837B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US7756837B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "A given query among the collection is segmented into one or more tokens in the first language.",
+      "keywords": "segmentation",
+      "source_id": "US8655901B1-chunk-001",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Tokens",
+      "target": "Query",
+      "edge_index": 706,
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Annotating each query includes labeling portions of the query according to the first query pattern.",
+      "keywords": "annotation,labeling",
+      "source_id": "US8655901B1-chunk-001",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Labels",
+      "target": "Query",
+      "edge_index": 709,
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "Responses to the query are formulated based on an analysis of the management data stored in the database.",
+      "keywords": "Analyzed Against,analysis",
+      "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-002",
+      "file_path": "US7756837B2.txt",
+      "created_at": 1793284552,
+      "truncate": "",
+      "source": "Management Data",
+      "target": "Query",
+      "edge_index": 758,
+      "source_chunks": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-002"
+      ],
+      "canonical_publications": [
+        "US7756837B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The query is received from a party concerning the archived data-stream.<SEP>The party submits a query concerning the archived data-stream.",
+      "keywords": "Submits,received from",
+      "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-001",
+      "file_path": "US7756837B2.txt",
+      "created_at": 1793284552,
+      "truncate": "",
+      "source": "Query",
+      "target": "Party",
+      "edge_index": 769,
+      "source_chunks": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US7756837B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The method identifies a collection of queries, segments and annotates each query with labels, and translates the annotated queries into a second language.",
+      "keywords": "annotates,identifies,translates",
+      "source_id": "US8655901B1-chunk-000",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Query",
+      "target": "Translation-Based Query Pattern Mining",
+      "edge_index": 770,
+      "source_chunks": [
+        "US8655901B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The collection of queries matching the query pattern is in the first language.",
+      "keywords": "in",
+      "source_id": "US8655901B1-chunk-000",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Query",
+      "target": "First Language",
+      "edge_index": 771,
+      "source_chunks": [
+        "US8655901B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The collection of annotated queries in the first language is translated into a translated collection of queries in a second language.",
+      "keywords": "translated into,translation",
+      "source_id": "US8655901B1-chunk-000<SEP>US8655901B1-chunk-001",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Query",
+      "target": "Second Language",
+      "edge_index": 772,
+      "source_chunks": [
+        "US8655901B1-chunk-000",
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The translated query pattern is applied to a received query to identify query splits into query components.<SEP>The translated query pattern is used to interpret received queries in the second language and applied to a received query to identify query splits.",
+      "keywords": "application,applied to,query splitting,used to interpret",
+      "source_id": "US8655901B1-chunk-000<SEP>US8655901B1-chunk-001",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Query",
+      "target": "Translated Query Pattern",
+      "edge_index": 773,
+      "source_chunks": [
+        "US8655901B1-chunk-000",
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Identifying a collection of queries includes identifying queries from a query log that match the first query pattern.",
+      "keywords": "identification,matching",
+      "source_id": "US8655901B1-chunk-001",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Query",
+      "target": "Query Log",
+      "edge_index": 774,
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The query pattern identifies a particular rule to interpret a particular type of query, and a collection of queries matching the query pattern is identified.",
+      "keywords": "interpretation,matching",
+      "source_id": "US8655901B1-chunk-001",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Query",
+      "target": "Query Pattern",
+      "edge_index": 775,
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "A system comprising one or more computing devices translates the collection of annotated queries into a translated collection of queries.",
+      "keywords": "translation",
+      "source_id": "US8655901B1-chunk-001",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Query",
+      "target": "Computing Devices",
+      "edge_index": 776,
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

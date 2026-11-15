@@ -1,0 +1,502 @@
+{
+  "audit_id": "N033",
+  "node_id": "Labels",
+  "category": "shared_specific_concept",
+  "confidence": "medium",
+  "reason_zh": "两来源都将Labels作为query token/片段的语义标注：一处表示查询模式组件，一处表示搜索词、地理表达等查询解析类别。作为查询token语义标签概念可共享；各自完整标签集合和学习机制不相同，不能把一个来源的具体枚举强加给另一来源。",
+  "class_instance_interpretation_zh": "共享查询token语义标签概念；不同专利标签schema及每个token上的标签赋值是局部对象。共同节点不能证明相同label ID或枚举。",
+  "concept_class_vs_local_instance": "shared_class; document-local instances remain distinct",
+  "source_assessments": [
+    {
+      "publication_number": "US8655901B1",
+      "evidence_quote": "annotating the one or more tokens with labels for the corresponding components of the first query pattern;",
+      "claim_or_section": "Claim 15",
+      "source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ],
+      "claim_number": 15,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 1025,
+        "indexed_document_char_offset": 1967
+      },
+      "role_zh": "查询模式组件的标注，用其对应次序抽取翻译后query pattern。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk001实体、查询标注、token标注和翻译模式次序关系均有Claim13/15支持。",
+        "raw_records": [
+          {
+            "chunk_id": "US8655901B1-chunk-001",
+            "content_sha256": "5d0d79edafe5af7919f82cb1ee8099a3dec6b156ad11326e2bf75e47dad3f315",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 7,
+                "raw_line": "entity<|#|>Labels<|#|>Concept<|#|>Annotations identifying the parts of each query, associated with corresponding components of the first query pattern.",
+                "fields": [
+                  "entity",
+                  "Labels",
+                  "Concept",
+                  "Annotations identifying the parts of each query, associated with corresponding components of the first query pattern."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 21,
+                "raw_line": "relation<|#|>Query<|#|>Labels<|#|>annotation, labeling<|#|>Annotating each query includes labeling portions of the query according to the first query pattern.",
+                "fields": [
+                  "relation",
+                  "Query",
+                  "Labels",
+                  "annotation, labeling",
+                  "Annotating each query includes labeling portions of the query according to the first query pattern."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 27,
+                "raw_line": "relation<|#|>Tokens<|#|>Labels<|#|>annotation<|#|>The tokens are annotated with labels for the corresponding components of the first query pattern.",
+                "fields": [
+                  "relation",
+                  "Tokens",
+                  "Labels",
+                  "annotation",
+                  "The tokens are annotated with labels for the corresponding components of the first query pattern."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 30,
+                "raw_line": "relation<|#|>Translated Query Pattern<|#|>Labels<|#|>correspondence, extraction<|#|>The translated query pattern is extracted from the order in which labels for the components of the first query pattern correspond to the translated terms.",
+                "fields": [
+                  "relation",
+                  "Translated Query Pattern",
+                  "Labels",
+                  "correspondence, extraction",
+                  "The translated query pattern is extracted from the order in which labels for the components of the first query pattern correspond to the translated terms."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US8655901B1-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "316996f6608a19543149f869b202a0f90c851b294a1aea1e4f2b52f923f5462b"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "A label is assigned to each of a plurality of the tokens.<SEP>The tokens are annotated with labels for the corresponding components of the first query pattern.",
+          "keywords": "annotation,assigned",
+          "source_id": "US9218390B2-chunk-000<SEP>US8655901B1-chunk-001",
+          "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Tokens",
+          "target": "Labels",
+          "edge_index": 704,
+          "source_chunks": [
+            "US9218390B2-chunk-000",
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1",
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Annotating each query includes labeling portions of the query according to the first query pattern.",
+          "keywords": "annotation,labeling",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Labels",
+          "target": "Query",
+          "edge_index": 709,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The translated query pattern is extracted from the order in which labels for the components of the first query pattern correspond to the translated terms.",
+          "keywords": "correspondence,extraction",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Labels",
+          "target": "Translated Query Pattern",
+          "edge_index": 710,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9218390B2",
+      "evidence_quote": "the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information;",
+      "claim_or_section": "Claim 12",
+      "source_chunk_ids": [
+        "US9218390B2-chunk-000",
+        "US9218390B2-chunk-001"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US9218390B2-chunk-000",
+        "US9218390B2-chunk-001"
+      ],
+      "claim_number": 12,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 618,
+        "indexed_document_char_offset": 1906
+      },
+      "role_zh": "地理查询解析的语义类别标签；句子被关联到标签以标识其意义。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000完整可见实体及关系来自length截断的原api_0191日志；chunk001独立保存的实体/关系由Claim12支持。标签与sentence在原文明说不同，图亦分别建节点。",
+        "raw_records": [
+          {
+            "chunk_id": "US9218390B2-chunk-000",
+            "content_sha256": "7a73db91316653f79b50b327f19f59f747f43106e5cf0f44c5a0db631d7b203e",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "raw_log:round2/logs/api_0191_response.json",
+                "cache_key": null,
+                "response_file": "round2/logs/api_0191_response.json",
+                "finish_reason": "length",
+                "line_number": 16,
+                "raw_line": "entity<|#|>Labels<|#|>Data<|#|>Labels assigned to tokens of the input query, identifying them as corresponding to a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information.",
+                "fields": [
+                  "entity",
+                  "Labels",
+                  "Data",
+                  "Labels assigned to tokens of the input query, identifying them as corresponding to a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "raw_log:round2/logs/api_0191_response.json",
+                "cache_key": null,
+                "response_file": "round2/logs/api_0191_response.json",
+                "finish_reason": "length",
+                "line_number": 57,
+                "raw_line": "relation<|#|>Tokens<|#|>Labels<|#|>assigned<|#|>A label is assigned to each of a plurality of the tokens.",
+                "fields": [
+                  "relation",
+                  "Tokens",
+                  "Labels",
+                  "assigned",
+                  "A label is assigned to each of a plurality of the tokens."
+                ]
+              },
+              {
+                "raw_record_id": "raw_log:round2/logs/api_0191_response.json",
+                "cache_key": null,
+                "response_file": "round2/logs/api_0191_response.json",
+                "finish_reason": "length",
+                "line_number": 59,
+                "raw_line": "relation<|#|>Labels<|#|>Sentences<|#|>assigned<|#|>One or more sentences are assigned to each label based at least in part on the most probable label sequence.",
+                "fields": [
+                  "relation",
+                  "Labels",
+                  "Sentences",
+                  "assigned",
+                  "One or more sentences are assigned to each label based at least in part on the most probable label sequence."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9218390B2-chunk-000",
+                "origin": "saved_raw_response",
+                "finish_reason": "length",
+                "response_file": "round2/logs/api_0191_response.json",
+                "request_file": "round2/logs/api_0191_request.json",
+                "content_sha256": "4fc33a0a27d2be76ea9ce900f3922c2a75e9c411c85cb476387d883b293b95bc"
+              }
+            ]
+          },
+          {
+            "chunk_id": "US9218390B2-chunk-001",
+            "content_sha256": "e801d5ed7f21fb39be88a47c0dfc43607dff1ecd392bb9cad9f8ee8c0d0d5f44",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:14fee2407d55e25956ada7ecc76674f0",
+                "cache_key": "default:extract:14fee2407d55e25956ada7ecc76674f0",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 13,
+                "raw_line": "entity<|#|>Labels<|#|>Data<|#|>Labels assigned to tokens of the input query, corresponding to a search term, geographic expression, geographic expression relation indication, and/or uninteresting information.",
+                "fields": [
+                  "entity",
+                  "Labels",
+                  "Data",
+                  "Labels assigned to tokens of the input query, corresponding to a search term, geographic expression, geographic expression relation indication, and/or uninteresting information."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:14fee2407d55e25956ada7ecc76674f0",
+                "cache_key": "default:extract:14fee2407d55e25956ada7ecc76674f0",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 38,
+                "raw_line": "relation<|#|>Query Parser Derivation Computing Device<|#|>Labels<|#|>assigns<|#|>The query parser derivation computing device assigns a label to each of a plurality of the tokens.",
+                "fields": [
+                  "relation",
+                  "Query Parser Derivation Computing Device",
+                  "Labels",
+                  "assigns",
+                  "The query parser derivation computing device assigns a label to each of a plurality of the tokens."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:14fee2407d55e25956ada7ecc76674f0",
+                "cache_key": "default:extract:14fee2407d55e25956ada7ecc76674f0",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 40,
+                "raw_line": "relation<|#|>Labels<|#|>Sentences<|#|>assigned to<|#|>One or more sentences are assigned to each label so that the respective sentence identifies the respective label.",
+                "fields": [
+                  "relation",
+                  "Labels",
+                  "Sentences",
+                  "assigned to",
+                  "One or more sentences are assigned to each label so that the respective sentence identifies the respective label."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9218390B2-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "f48e7bfda1d2e045d77fb5220ddd7bac41e13c53c241b791a136dd595b232d24"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The query parser derivation computing device assigns a label to each of a plurality of the tokens.",
+          "keywords": "assigns",
+          "source_id": "US9218390B2-chunk-001",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1793284503,
+          "truncate": "",
+          "source": "Query Parser Derivation Computing Device",
+          "target": "Labels",
+          "edge_index": 673,
+          "source_chunks": [
+            "US9218390B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "A label is assigned to each of a plurality of the tokens.<SEP>The tokens are annotated with labels for the corresponding components of the first query pattern.",
+          "keywords": "annotation,assigned",
+          "source_id": "US9218390B2-chunk-000<SEP>US8655901B1-chunk-001",
+          "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Tokens",
+          "target": "Labels",
+          "edge_index": 704,
+          "source_chunks": [
+            "US9218390B2-chunk-000",
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1",
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "One or more sentences are assigned to each label so that the respective sentence identifies the respective label.<SEP>One or more sentences are assigned to each label based at least in part on the most probable label sequence.",
+          "keywords": "assigned,assigned to",
+          "source_id": "US9218390B2-chunk-000<SEP>US9218390B2-chunk-001",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1793284503,
+          "truncate": "",
+          "source": "Labels",
+          "target": "Sentences",
+          "edge_index": 708,
+          "source_chunks": [
+            "US9218390B2-chunk-000",
+            "US9218390B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 5,
+    "observed_unsupported_edge": false,
+    "observed_unsupported_edge_definition": "true仅用于依据原文明确不支持的实际关系；类级概括/端点角色候选单列，不自动计入。",
+    "details_zh": "已逐条检查全部实际邻边及其source_id/file_path；各关系在所属专利中有对应陈述，未发现将另一专利特征直接写入本专利边描述的确证。共同节点容许潜在无作用域路径组合，但本审计没有执行或观察该传播。 跨来源合并的token-label边保留两种标注语境及各source_id，未声明两套标签枚举相同。",
+    "edge_indices": [
+      673,
+      704,
+      708,
+      709,
+      710
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 673,
+        "source": "Query Parser Derivation Computing Device",
+        "target": "Labels",
+        "source_id": "US9218390B2-chunk-001",
+        "file_path": "US9218390B2.txt",
+        "canonical_publications": [
+          "US9218390B2"
+        ],
+        "actual_description": "The query parser derivation computing device assigns a label to each of a plurality of the tokens.",
+        "claim_or_section": "US9218390B2 Claim12",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 704,
+        "source": "Tokens",
+        "target": "Labels",
+        "source_id": "US9218390B2-chunk-000<SEP>US8655901B1-chunk-001",
+        "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1",
+          "US9218390B2"
+        ],
+        "actual_description": "A label is assigned to each of a plurality of the tokens.<SEP>The tokens are annotated with labels for the corresponding components of the first query pattern.",
+        "claim_or_section": "US9218390B2 Claim1; US8655901B1 Claim15",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 708,
+        "source": "Labels",
+        "target": "Sentences",
+        "source_id": "US9218390B2-chunk-000<SEP>US9218390B2-chunk-001",
+        "file_path": "US9218390B2.txt",
+        "canonical_publications": [
+          "US9218390B2"
+        ],
+        "actual_description": "One or more sentences are assigned to each label so that the respective sentence identifies the respective label.<SEP>One or more sentences are assigned to each label based at least in part on the most probable label sequence.",
+        "claim_or_section": "US9218390B2 Claims1,12",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 709,
+        "source": "Labels",
+        "target": "Query",
+        "source_id": "US8655901B1-chunk-001",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "Annotating each query includes labeling portions of the query according to the first query pattern.",
+        "claim_or_section": "US8655901B1 Claims13,15",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 710,
+        "source": "Labels",
+        "target": "Translated Query Pattern",
+        "source_id": "US8655901B1-chunk-001",
+        "file_path": "US8655901B1.txt",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "actual_description": "The translated query pattern is extracted from the order in which labels for the components of the first query pattern correspond to the translated terms.",
+        "claim_or_section": "US8655901B1 Claim15",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      }
+    ],
+    "observed_cross_publication_unsupported_edge": false
+  },
+  "limitations_zh": [
+    "本结果为AI辅助逐来源语义审阅，不是独立人工金标准；分类依赖所声明的类/实例粒度。",
+    "只审计第二轮既有20篇索引中的可见原chunk、原抽取与实际图邻边；原文范围为已索引的标题、摘要及Claims，未额外读取完整说明书或新语料，未调用模型API，也未进行新的检索/生成传播测试。",
+    "共享节点产生跨专利邻接不等于已观察到错误跨文档推理；边的source_id和file_path应保持作用域。",
+    "shared_specific_concept的粒度限定为查询token语义标签，不包括两个具体标签集等价。",
+    "US9218390B2-chunk-000的原抽取响应finish_reason=length，已见完整条目可核验，但不能作无遗漏保证。"
+  ],
+  "review_method": "AI-assisted source-by-source reading; deterministic quote/coverage validation; no external model API",
+  "reviewed_utc": "2026-10-30T08:17:41.956245+00:00",
+  "dossier_sha256": "7cd5d934bb4b12a3d6aed0f8c34d10a513a67762eb6552485fbec2bdafedc41b",
+  "input_sha256": {
+    "round2_multisource_audit/dossiers/N033.json": "7cd5d934bb4b12a3d6aed0f8c34d10a513a67762eb6552485fbec2bdafedc41b",
+    "data/claims/US8655901B1.json": "3c4320d6d4a3603680fed5c9a62944142f5443962d5efd343277600f79f8ce75",
+    "data/documents/US8655901B1.txt": "7d17f8090a784af8ad8372cd2c9c958ed21e29ac1078c9c368ef53f49d0632ad",
+    "data/claims/US9218390B2.json": "b2eb952ccee3cfb211bd336b4fdc4020a99a0ae9fab19e5e7cfa2096eb763735",
+    "data/documents/US9218390B2.txt": "1950b9f4a425e92894efd822f018ff718f11c7b3a43d14bb5cc69cf68748291f"
+  },
+  "source_and_raw_review_coverage": {
+    "publication_count": 2,
+    "source_chunk_ids_reviewed": [
+      "US8655901B1-chunk-001",
+      "US9218390B2-chunk-000",
+      "US9218390B2-chunk-001"
+    ],
+    "all_source_chunks_read": true,
+    "all_raw_entity_and_relation_endpoint_rows_read": true,
+    "all_actual_incident_edges_reviewed": true
+  }
+}

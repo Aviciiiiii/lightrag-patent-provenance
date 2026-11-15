@@ -1,0 +1,353 @@
+{
+  "node_id": "Payment",
+  "entity_type": "concept",
+  "graph_source_chunks": [
+    "US8095432B1-chunk-000",
+    "US9589231B2-chunk-000"
+  ],
+  "entity_chunk_store_sources": [
+    "US8095432B1-chunk-000",
+    "US9589231B2-chunk-000"
+  ],
+  "all_source_chunks": [
+    "US8095432B1-chunk-000",
+    "US9589231B2-chunk-000"
+  ],
+  "canonical_publications": [
+    "US8095432B1",
+    "US9589231B2"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US8095432B1.txt",
+    "US9589231B2.txt"
+  ],
+  "graph_file_paths": [
+    "US8095432B1.txt",
+    "US9589231B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US8095432B1",
+    "US9589231B2"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US8095432B1-chunk-000",
+    "US9589231B2-chunk-000"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US8095432B1-chunk-000",
+    "US9589231B2-chunk-000"
+  ],
+  "graph_node": {
+    "entity_id": "Payment",
+    "entity_type": "concept",
+    "description": "Money received upon a purchase of an item or for each click associated with an item.<SEP>A payment made to an expert for formulating a diagnosis when the query-for-experts is selected.",
+    "source_id": "US8095432B1-chunk-000<SEP>US9589231B2-chunk-000",
+    "file_path": "US8095432B1.txt<SEP>US9589231B2.txt",
+    "created_at": 1793284737,
+    "truncate": "",
+    "id": "Payment"
+  },
+  "incident_edge_count": 3,
+  "audit_id": "N021",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US8095432B1",
+      "file_paths": [
+        "US8095432B1.txt"
+      ],
+      "source_chunks": [
+        "US8095432B1-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8095432B1",
+          "full_doc_id": "US8095432B1",
+          "file_path": "US8095432B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "870959f01fdf22e55223e95ba2ca5f25438debf5d1fc2aec28abb31eac4e2c83",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6336,
+          "content": "Publication number: US8095432B1\nTitle: Recommendation engine for social networks\n\nABSTRACT\nA method for making a recommendation, comprising obtaining a plurality of recommendations for a plurality of items from a plurality of members of a social networking utility, ranking the plurality of recommendations based on a relationship proximity of the plurality of members to an inquiring member within the social networking utility, wherein the relationship proximity is closest for friends of the inquiring member, and farthest for strangers to the inquiring member, wherein friends of the inquiring member are within a network of the inquiring member, and strangers of the inquiring member are outside of the network of the inquiring network, performing a search for one of the plurality of items, and displaying the plurality of recommendations associated with one of the plurality of items in an order defined by the ranking.\n\nCLAIMS\n1. A method for generating a recommendation list for an item, comprising: obtaining a first recommendation for the item from a first member of a social networking utility, wherein the first member of the social networking utility is a friend of an inquiring member within the social networking utility; obtaining a second recommendation for the item from a second member of the social networking utility, wherein the second member of the social networking utility is a non-friend of the inquiring member within the social networking utility; determining, using a processor, a first relationship proximity of the first member with the inquiring member; determining, using the processor, a second relationship proximity of the second member with the inquiring member; ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank; receiving, from the inquiring member, a request to search for the item in the social networking utility; performing, based on the request from the inquiring member, a search for the item within the social networking utility; generating, using the processor, a recommendation list for the item comprising the first recommendation and the second recommendation, wherein the first recommendation is higher on the recommendation list than the second recommendation based on the first rank exceeding the second rank; determining that the first member comprises a plurality of interests in common with the inquiring member; determining that a third member of the social networking utility comprises a plurality of different interests than the inquiring member; comparing the first rank of the first recommendation of the first member with a third rank of a third recommendation of the third member; and determining that the first rank is higher than the third rank. 2. The method of claim 1 , further comprising: receiving, from the inquiring member, a third recommendation of the item; and transmitting the third recommendation of the item to a third member of the social networking utility, wherein the third member of the social networking utility is a third friend of the inquiring member within the social networking utility. 3. The method of claim 1 , wherein the relationship proximity of group members of the inquiring member is closer than the relationship proximity of non-group members of the inquiring member, wherein the relationship proximity is closer for friends of the inquiring member, and farther for non-friends to the inquiring member, wherein friends of the inquiring member are within a network of the inquiring member, and wherein non-friends of the inquiring member are outside of the network of the inquiring member. 4. The method of claim 1 , further comprising: receiving a request for a plurality of recommendations associated with a random item of a plurality of items; and displaying the plurality of recommendations associated with the random item. 5. The method of claim 1 , further comprising: receiving a request to purchase the item; and performing a purchase transaction for the item. 6. The method of claim 1 , wherein the search is filtered by a network of the inquiring member. 7. The method of claim 1 , further comprising: identifying a plurality of favorite items of the inquiring member; and sharing the plurality of favorite items with a network of the inquiring member. 8. The method of claim 1 , further comprising: receiving a plurality of inventory details associated with the item; and associating the plurality of inventory details with the first recommendation and the second recommendation. 9. The method of claim 8 , wherein the plurality of inventory details is received from an inventory management system. 10. The method of claim 1 , further comprising: generating receiving a plurality of inventory management reports for the item. 11. The method of claim 1 , further comprising: generating a plurality of searchable tags for the item; and associating the plurality of searchable tags with the item. 12. The method of claim 1 , further comprising: receiving a reduced a price for the item; modifying a price of the item to the reduced price; and updating a news feed of the inquiring member to include the reduced price and the price. 13. The method of claim 1 , further comprising: receiving a payment upon a purchase of the item from the inquiring member. 14. The method of claim 1 , further comprising: receiving a payment for each click associated with the item within plurality of items from the social networking utility. 15. The method of claim 1 , further comprising: adding the inquiring member to a fan group associated with the item. 16. A system for generating a recommendation list for an item, comprising: a processor; a memory operatively connected to the processor; and a recommendation application executing on the processor, resident in memory, and configured to: obtain a first recommendation for the item from a first member of a social networking utility, wherein the first member of the social networking utility is a friend of an inquiring member within the social networking utility; obtain a second recommendation for the item from a second member of the social networking utility, wherein the second member",
+          "llm_cache_list": [
+            "default:extract:6b668502bf7dd50e10cafd1563578293"
+          ],
+          "chunk_id": "US8095432B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US8095432B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "51097818e9952017290bc32f842697faaf1cd83d27993ddb537ccf616d8df712"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+              "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 21,
+              "raw_line": "entity<|#|>Payment<|#|>Concept<|#|>Money received upon a purchase of an item or for each click associated with an item.",
+              "fields": [
+                "entity",
+                "Payment",
+                "Concept",
+                "Money received upon a purchase of an item or for each click associated with an item."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+              "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 52,
+              "raw_line": "relation<|#|>Inquiring Member<|#|>Payment<|#|>provides<|#|>A payment is received upon a purchase of the item from the inquiring member.",
+              "fields": [
+                "relation",
+                "Inquiring Member",
+                "Payment",
+                "provides",
+                "A payment is received upon a purchase of the item from the inquiring member."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:6b668502bf7dd50e10cafd1563578293",
+              "cache_key": "default:extract:6b668502bf7dd50e10cafd1563578293",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 58,
+              "raw_line": "relation<|#|>Payment<|#|>Item<|#|>for purchase or click<|#|>Payment is received upon purchase of the item or for each click associated with the item.",
+              "fields": [
+                "relation",
+                "Payment",
+                "Item",
+                "for purchase or click",
+                "Payment is received upon purchase of the item or for each click associated with the item."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 5219,
+              "chunk_char_end": 5646,
+              "text": "item to the reduced price; and updating a news feed of the inquiring member to include the reduced price and the price. 13. The method of claim 1 , further comprising: receiving a payment upon a purchase of the item from the inquiring member. 14. The method of claim 1 , further comprising: receiving a payment for each click associated with the item within plurality of items from the social networking utility. 15. The method"
+            },
+            {
+              "chunk_char_start": 5342,
+              "chunk_char_end": 5769,
+              "text": " The method of claim 1 , further comprising: receiving a payment upon a purchase of the item from the inquiring member. 14. The method of claim 1 , further comprising: receiving a payment for each click associated with the item within plurality of items from the social networking utility. 15. The method of claim 1 , further comprising: adding the inquiring member to a fan group associated with the item. 16. A system for gen"
+            }
+          ],
+          "lexical_occurrence_count": 2
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "A payment is received upon a purchase of the item from the inquiring member.",
+          "keywords": "provides",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Inquiring Member",
+          "target": "Payment",
+          "edge_index": 275,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Payment is received upon purchase of the item or for each click associated with the item.",
+          "keywords": "for purchase or click",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793284251,
+          "truncate": "",
+          "source": "Item",
+          "target": "Payment",
+          "edge_index": 301,
+          "source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8095432B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9589231B2",
+      "file_paths": [
+        "US9589231B2.txt"
+      ],
+      "source_chunks": [
+        "US9589231B2-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9589231B2",
+          "full_doc_id": "US9589231B2",
+          "file_path": "US9589231B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "4b8801b6f9af5b47586773582b57626a8b88aa3adcf5641b0301ea63536f59d7",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6070,
+          "content": "Publication number: US9589231B2\nTitle: Social medical network for diagnosis assistance\n\nABSTRACT\nA method for diagnosis assistance exploits similarity between a new medical case and existing medical cases and experts when embedded in a common embedding space. Different types of queries are provided for, including a query-by-cases and a query-by-experts. These may be associated with different cost structures that encourage the requester to use the query-by-cases first and seek expert assistance if this proves unsuccessful. Depending on whether the query-by-cases or query-by-experts is requested, a subset of the existing cases or experts is identified based on the similarity of their representations, in the embedding space, with a representation of the new case in the embedding space. There may then be provision for communicating the new case to a selected one or more of the subset of experts for the expert to attempt to provide a diagnosis.\n\nCLAIMS\nWhat is claimed is: 1. A method for diagnosis assistance comprising: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts wherein at least one of the embedding, providing, returning the subset of the cases, returning the subset of the experts, and computing the query cost are performed with a computer processor. 2. The method of claim 1 , further comprising computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases. 3. The method of claim 2 , wherein the computed query cost is higher for a query-for-experts than for a query-for-cases. 4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology. 5. The method of claim 4 , wherein the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation. 6. The method of claim 5 , wherein the computing the similarity measure between the representation of the new case and representations of the existing cases or experts, a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology. 7. The method of claim 4 , wherein the ontology includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof. 8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System. 9. The method of claim 1 , wherein the experts in the set of experts are each embedded based on information associated with the expert selected from the group consisting of: a profile of the expert; coded medical procedures which have been performed by the expert; articles authored by the expert; stored medical cases linked to the expert; and combinations thereof. 10. The method of claim 1 , wherein when the query-for-experts is selected, the returning of the subset of the experts is also based on at least one of: an availability of the expert; a rating of the expert; and a number of followers of the expert among users of the system. 11. The method of claim 1 , further comprising, when the query-for-cases is selected, returning documents from a public database based on a computed similarity between the embedded new case and documents embedded in the embedding space. 12. The method of claim 1 , wherein when the query-for-experts is selected, providing the new case to a selected one of the subset of experts for formulating a diagnosis. 13. The method of claim 12 , wherein when the query-for-experts is selected, providing for making a payment to the expert for formulating the diagnosis. 14. The method of claim 1 , wherein the new medical case comprises a plurality of records relating to a specific patient. 15. The method of claim 1 , wherein the plurality of records comprises records selected from the group consisting of laboratory test results, images, descriptions of symptoms, results of patient monitors, diagnoses, prescribed medications and treatments, and combinations thereof. 16. The method of claim 1 , further comprising when the query-by-cases is selected, providing for a query-by-experts to be performed subsequent to the query-by-cases. 17. A system comprising memory storing instructions for performing the method of claim 1 and a processor in communication with the memory for executing the instructions. 18. A computer program product comprising a non-transitory recording medium storing instructions, which when executed on a computer causes the computer to perform the method of claim 1 . 19. A system for diagnosis assistance comprising: memory which stores instructions for: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-ex",
+          "llm_cache_list": [
+            "default:extract:5755060403a52e2ec1fe0d15204b9eff"
+          ],
+          "chunk_id": "US9589231B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9589231B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "66fc8d89631008f5af0e91a6c4757e3f710065791733d197bffc9a9a002a26ef"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:5755060403a52e2ec1fe0d15204b9eff",
+              "cache_key": "default:extract:5755060403a52e2ec1fe0d15204b9eff",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 17,
+              "raw_line": "entity<|#|>Payment<|#|>Concept<|#|>A payment made to an expert for formulating a diagnosis when the query-for-experts is selected.",
+              "fields": [
+                "entity",
+                "Payment",
+                "Concept",
+                "A payment made to an expert for formulating a diagnosis when the query-for-experts is selected."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:5755060403a52e2ec1fe0d15204b9eff",
+              "cache_key": "default:extract:5755060403a52e2ec1fe0d15204b9eff",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 39,
+              "raw_line": "relation<|#|>Query-For-Experts<|#|>Payment<|#|>provides for<|#|>When query-for-experts is selected, provision is made for making a payment to the expert for formulating the diagnosis.",
+              "fields": [
+                "relation",
+                "Query-For-Experts",
+                "Payment",
+                "provides for",
+                "When query-for-experts is selected, provision is made for making a payment to the expert for formulating the diagnosis."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 4283,
+              "chunk_char_end": 4710,
+              "text": "ew case to a selected one of the subset of experts for formulating a diagnosis. 13. The method of claim 12 , wherein when the query-for-experts is selected, providing for making a payment to the expert for formulating the diagnosis. 14. The method of claim 1 , wherein the new medical case comprises a plurality of records relating to a specific patient. 15. The method of claim 1 , wherein the plurality of records comprises r"
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "When query-for-experts is selected, provision is made for making a payment to the expert for formulating the diagnosis.",
+          "keywords": "provides for",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793284741,
+          "truncate": "",
+          "source": "Payment",
+          "target": "Query-For-Experts",
+          "edge_index": 335,
+          "source_chunks": [
+            "US9589231B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9589231B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "A payment is received upon a purchase of the item from the inquiring member.",
+      "keywords": "provides",
+      "source_id": "US8095432B1-chunk-000",
+      "file_path": "US8095432B1.txt",
+      "created_at": 1793284251,
+      "truncate": "",
+      "source": "Inquiring Member",
+      "target": "Payment",
+      "edge_index": 275,
+      "source_chunks": [
+        "US8095432B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8095432B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Payment is received upon purchase of the item or for each click associated with the item.",
+      "keywords": "for purchase or click",
+      "source_id": "US8095432B1-chunk-000",
+      "file_path": "US8095432B1.txt",
+      "created_at": 1793284251,
+      "truncate": "",
+      "source": "Item",
+      "target": "Payment",
+      "edge_index": 301,
+      "source_chunks": [
+        "US8095432B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8095432B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "When query-for-experts is selected, provision is made for making a payment to the expert for formulating the diagnosis.",
+      "keywords": "provides for",
+      "source_id": "US9589231B2-chunk-000",
+      "file_path": "US9589231B2.txt",
+      "created_at": 1793284741,
+      "truncate": "",
+      "source": "Payment",
+      "target": "Query-For-Experts",
+      "edge_index": 335,
+      "source_chunks": [
+        "US9589231B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9589231B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

@@ -1,0 +1,147 @@
+{
+  "reviewed_utc": "2026-10-29T16:25:57.378100+00:00",
+  "status": "pass_runtime_and_indexes_with_git_verification_limitation",
+  "review_scope": "Read-only source/log/ledger/index review; no API calls, credential reads, or process termination.",
+  "api_calls": 21,
+  "llm_calls": 21,
+  "embedding_calls": 0,
+  "all_states_success": true,
+  "all_finish_reasons_stop": true,
+  "reasoning_content_observed": false,
+  "usage_present_and_consistent": true,
+  "all_original_ablation_request_parameters_and_messages_preserved": true,
+  "chunk_outputs_at_consistent_8192_limit": true,
+  "full_provider_json_response_files": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "provider_json_payloads_match_summarized_responses": true,
+  "provider_json_top_level_header_secret_fields_absent": true,
+  "credential_value_scan_performed": false,
+  "prompt_tokens": 300642,
+  "completion_tokens": 6454,
+  "reasoning_tokens": 0,
+  "cached_input_tokens": 254848,
+  "upper_price_estimate_cny": 0.652916,
+  "cache_aware_price_estimate_cny": 0.15341391999999998,
+  "reserved_unknown_cny": 0,
+  "not_invoice": true,
+  "index_hashes_before": {
+    "round2/storage_full/patent_r2_full/vdb_chunks.json": "a5392f28b25c995c1595a138afabbad64c34ba5bba547905cfb07fc80b114107",
+    "round2/storage_full/patent_r2_full/kv_store_text_chunks.json": "c3d55a105cebbe177d259d1820e2f47192a010aabef300e01b435dd9b1908906",
+    "round2/storage_full/patent_r2_full/graph_chunk_entity_relation.graphml": "5d551e39fdc045a956303a68d0b587ade881426ab0bb1bd1710a5f0473d4362b"
+  },
+  "index_hashes_after": {
+    "round2/storage_full/patent_r2_full/vdb_chunks.json": "a5392f28b25c995c1595a138afabbad64c34ba5bba547905cfb07fc80b114107",
+    "round2/storage_full/patent_r2_full/kv_store_text_chunks.json": "c3d55a105cebbe177d259d1820e2f47192a010aabef300e01b435dd9b1908906",
+    "round2/storage_full/patent_r2_full/graph_chunk_entity_relation.graphml": "5d551e39fdc045a956303a68d0b587ade881426ab0bb1bd1710a5f0473d4362b"
+  },
+  "all_three_round2_index_files_unchanged": true,
+  "safe_api_sha256": "e0acc99efcacbf1188c2eb6ed3445bf7222a27c74e9a4657040daf8b281dec34",
+  "official_tracked_source_git_check": {
+    "status": "inconclusive",
+    "command": "git status --porcelain --untracked-files=no",
+    "observed": "Object pack read timed out; error said pack file too short. Exit0 is not accepted as verification.",
+    "scope_caveat": "Could be filesystem availability; this result alone is not evidence that tracked source changed."
+  },
+  "official_core_archive_comparison": {
+    "snapshot": "round2/evidence/official_core_v1.5.7.tar.gz",
+    "archived_regular_files": 197,
+    "matched_count": 24,
+    "different": [],
+    "missing": [],
+    "error": {
+      "type": "TimeoutError",
+      "message": "bounded file-read comparison incomplete; no source modification inferred"
+    },
+    "all_archived_core_files_match": false,
+    "matched_paths": [
+      "AGENTS.md",
+      "LICENSE",
+      "MANIFEST.in",
+      "README.md",
+      "lightrag/__init__.py",
+      "lightrag/_version.py",
+      "lightrag/addon_params.py",
+      "lightrag/api/.env.aoi.example",
+      "lightrag/api/.gitignore",
+      "lightrag/api/__init__.py",
+      "lightrag/api/admission.py",
+      "lightrag/api/admission_middleware.py",
+      "lightrag/api/asgi_helpers.py",
+      "lightrag/api/auth.py",
+      "lightrag/api/body_limit_middleware.py",
+      "lightrag/api/config.py",
+      "lightrag/api/gunicorn_config.py",
+      "lightrag/api/gunicorn_worker.py",
+      "lightrag/api/input_limits.py",
+      "lightrag/api/lightrag_server.py",
+      "lightrag/api/login_rate_limit.py",
+      "lightrag/api/passwords.py",
+      "lightrag/api/routers/__init__.py",
+      "lightrag/api/routers/document_routes.py"
+    ]
+  },
+  "official_used_source_comparison": {
+    "snapshot": "round2/evidence/official_core_v1.5.7.tar.gz",
+    "files": [
+      {
+        "path": "lightrag/operate.py",
+        "status": "match",
+        "actual_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047",
+        "snapshot_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047"
+      },
+      {
+        "path": "lightrag/utils.py",
+        "status": "match",
+        "actual_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc",
+        "snapshot_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+      },
+      {
+        "path": "lightrag/prompt.py",
+        "status": "match",
+        "actual_sha256": "db0cf2d0f5d420a8372fac2b33043d8b4f14c84ec0a60653862e4e53a27047e1",
+        "snapshot_sha256": "db0cf2d0f5d420a8372fac2b33043d8b4f14c84ec0a60653862e4e53a27047e1"
+      },
+      {
+        "path": "lightrag/constants.py",
+        "status": "match",
+        "actual_sha256": "295f3e46121b111ead3e164231ff363a4a6b0231c9bd530c370b88346157b3b7",
+        "snapshot_sha256": "295f3e46121b111ead3e164231ff363a4a6b0231c9bd530c370b88346157b3b7"
+      },
+      {
+        "path": "lightrag/__init__.py",
+        "status": "match",
+        "actual_sha256": "fa653125d5ad2d215ffabea25d24be0d8ffb732959c73c91ac6ba635a47355b7",
+        "snapshot_sha256": "fa653125d5ad2d215ffabea25d24be0d8ffb732959c73c91ac6ba635a47355b7"
+      },
+      {
+        "path": "lightrag/_version.py",
+        "status": "match",
+        "actual_sha256": "6dd9edee78ddd7c0c7822a79214d9db424cb2cc18ca3b61136cc84a71868840a",
+        "snapshot_sha256": "6dd9edee78ddd7c0c7822a79214d9db424cb2cc18ca3b61136cc84a71868840a"
+      }
+    ],
+    "all_six_match": true,
+    "bounded_per_file_seconds": 4
+  }
+}

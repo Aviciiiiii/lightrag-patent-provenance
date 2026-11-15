@@ -1,0 +1,939 @@
+{
+  "node_id": "User Interface",
+  "entity_type": "artifact",
+  "graph_source_chunks": [
+    "US10778629B2-chunk-000",
+    "US10778629B2-chunk-001",
+    "US8917913B2-chunk-000",
+    "US8917913B2-chunk-001",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-002"
+  ],
+  "entity_chunk_store_sources": [
+    "US10778629B2-chunk-000",
+    "US10778629B2-chunk-001",
+    "US8917913B2-chunk-000",
+    "US8917913B2-chunk-001",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-002"
+  ],
+  "all_source_chunks": [
+    "US10778629B2-chunk-000",
+    "US10778629B2-chunk-001",
+    "US8917913B2-chunk-000",
+    "US8917913B2-chunk-001",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-002"
+  ],
+  "canonical_publications": [
+    "US10778629B2",
+    "US8917913B2",
+    "US9374411B1"
+  ],
+  "publication_count": 3,
+  "actual_chunk_file_paths": [
+    "US10778629B2.txt",
+    "US8917913B2.txt",
+    "US9374411B1.txt"
+  ],
+  "graph_file_paths": [
+    "US8917913B2.txt",
+    "US9374411B1.txt",
+    "US10778629B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US10778629B2",
+    "US8917913B2",
+    "US9374411B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US10778629B2-chunk-000",
+    "US10778629B2-chunk-001",
+    "US8917913B2-chunk-000",
+    "US8917913B2-chunk-001",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-002"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US10778629B2-chunk-000",
+    "US10778629B2-chunk-001",
+    "US8917913B2-chunk-000",
+    "US8917913B2-chunk-001",
+    "US9374411B1-chunk-000",
+    "US9374411B1-chunk-002"
+  ],
+  "graph_node": {
+    "entity_id": "User Interface",
+    "entity_type": "artifact",
+    "description": "An interface provided by the application through which a user supplies at least one friend identifier and optionally a friend level indicator.<SEP>An interface provided by the application that receives at least one search term or friend identifier from the user.<SEP>An interface rendered on a client for displaying video content features and receiving user interactions.<SEP>An interface through which explicit user feedback favoring the first fictional character is obtained.<SEP>An interface that displays the generated relationship data.<SEP>A user interface on which the model of relationships or relationship data is displayed, optionally providing a graphical representation of relationship strength.",
+    "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001<SEP>US9374411B1-chunk-000<SEP>US9374411B1-chunk-002<SEP>US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+    "file_path": "US8917913B2.txt<SEP>US9374411B1.txt<SEP>US10778629B2.txt",
+    "created_at": 1793284708,
+    "truncate": "",
+    "id": "User Interface"
+  },
+  "incident_edge_count": 8,
+  "audit_id": "N025",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US10778629B2",
+      "file_paths": [
+        "US10778629B2.txt"
+      ],
+      "source_chunks": [
+        "US10778629B2-chunk-000",
+        "US10778629B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US10778629B2",
+          "full_doc_id": "US10778629B2",
+          "file_path": "US10778629B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "4186cbfdf5ae0546a6a2e816d9f4dec6c2a2dab527fc6cb34fce62150374f67a",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6584,
+          "content": "Publication number: US10778629B2\nTitle: Systems and methods for collation, translation, and analysis of passively created digital interaction and relationship data\n\nABSTRACT\nA method of modeling relationships between e-mail users. The method includes extracting a record of e-mail exchanges between the users. The record is extracted from at least one of an e-mail server and an e-mail transfer agent. The data is extracted through a direct internet access protocol. The method includes filtering the record to produce relevant interaction data based on the e-mail exchanges between two users. Relevant interaction data includes a number of e-mail exchanges between the users and includes a ratio of source to target and target to source interactions. The method includes loading the relevant interaction data into a relationship modeling program, which assigns a weight to each of a plurality of characteristics of the relevant interaction data and provides a model of relationships between the e-mail users based at least in part on the weight of each characteristic. The plurality of characteristics comprises interaction volume.\n\nCLAIMS\nWhat is claimed is: 1. A non-transitory computer readable medium containing executable instructions that when executed perform a method of modeling relationships between a plurality of e-mail users comprising: extracting a record of e-mail exchanges between the plurality of users, wherein the record is extracted from a database of e-mail exchanges between pairs of users, wherein the data is extracted through a direct internet access protocol; filtering the record to produce relevant interaction data based on the e-mail exchanges between the plurality of users, wherein the relevant interaction data includes a number of e-mail exchanges between each pair of the plurality of users; loading the relevant interaction data into a relationship modeling program, wherein the relationship modeling program assigns a weight to each of a plurality of characteristics of the relevant interaction data for each pair of the plurality of users, the plurality of characteristics comprising a time since a first interaction, a time since a last interaction, interaction volume between the two users, and a ratio of source to target versus target to source interactions, wherein the plurality of characteristics are further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone, wherein the relationship modeling program provides a model of relationships between each pair of the plurality of e-mail users by determining a relationship strength between each pair of the plurality of e-mail users based at least in part on the weight assigned to each of the plurality of characteristics; and displaying the model of relationships on a user interface. 2. The non-transitory computer readable medium of claim 1 further comprising populating an interaction database by monitoring e-mail exchanges and extracting relevant e-mail exchanges. 3. The non-transitory computer readable medium of claim 1 , wherein a characteristic of the plurality of characteristics is selected from a group consisting of interaction frequency, interaction type, number of communication participants. 4. The non-transitory computer readable medium of claim 1 , wherein the plurality of characteristics comprises a time between interactions. 5. The non-transitory computer readable medium of claim 1 , wherein the data associated with the e-mail exchanges between the plurality of users is obtained from an e-mail field selected from a group consisting of SMTP, IMAP4, POP3, MIME, RFC 2046, RFC 2822, RFC 3156, and RFC 5322. 6. The non-transitory computer readable medium of claim 1 , wherein the data associated with the e-mail exchanges between the plurality of users of the e-mail system is obtained from a mail server, mail archives, and a log file. 7. The non-transitory computer readable medium of claim 1 , wherein the data associated with the e-mail exchanges between the plurality of users of the e-mail system is obtained from a spam filtering system based e-mail headers. 8. The non-transitory computer readable medium of claim 1 , wherein the model of relationship includes strength of the relationship based on intimacy of conversations, frequency of communications, and historical age of the relationship. 9. The non-transitory computer readable medium of claim 1 , wherein the interaction data is further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone. 10. A method of processing relationship data in a server, the method comprising: receiving, at the server, data comprising a plurality of characteristics of e-mail exchanges between pairs of users of an e-mail system, wherein the data is transferred to the server from an interaction database of e-mail exchanges between pairs of users of the email system, and wherein the interaction database is populated through a direct internet access protocol, wherein the plurality of characteristics comprise a time since a first interaction, a time since a last interaction, interaction volume between the pair of users, and a ratio of source to target versus target to source interactions, and the plurality of characteristics are further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone; assigning a weight to each of the plurality of characteristics for each pair of users; transferring, from the server, the data to a processor for generating relationship data by determining a relationship strength associated with each pair of users; and displaying the relationship data on a user interface. 11. The method of claim 10 , wherein the displaying of the relationship data on the user interface comprises providing a graphical representation of the relationship strength associated with each pair of. 12. The method of claim 10 , wherein the interaction database is populated by monitoring e-mail exchanges and extracting relevant e-mail exchanges. 13. The method of claim 10 , wherein the characteristic comprises at least one selected from a group consisting of interaction frequency, interaction type, and number of communication participants. 14. The method of claim 10 , wherein the characteristic comprises a time between interactions. 15. The method of claim 10 , wherein the data associated with the e-mail exchanges between the",
+          "llm_cache_list": [
+            "default:extract:7fdbcba60fac32a73f614af840f640c4"
+          ],
+          "chunk_id": "US10778629B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US10778629B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "3cd58423533f8a782883c1e931d98775ebe7f6264ea90c67d2f12e74cb453dfc"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 7,
+              "raw_line": "entity<|#|>User Interface<|#|>Artifact<|#|>A user interface on which the model of relationships or relationship data is displayed, optionally providing a graphical representation of relationship strength.",
+              "fields": [
+                "entity",
+                "User Interface",
+                "Artifact",
+                "A user interface on which the model of relationships or relationship data is displayed, optionally providing a graphical representation of relationship strength."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 38,
+              "raw_line": "relation<|#|>Relationship Modeling Program<|#|>User Interface<|#|>displaying<|#|>The model of relationships produced by the relationship modeling program is displayed on a user interface.",
+              "fields": [
+                "relation",
+                "Relationship Modeling Program",
+                "User Interface",
+                "displaying",
+                "The model of relationships produced by the relationship modeling program is displayed on a user interface."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "cache_key": "default:extract:7fdbcba60fac32a73f614af840f640c4",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 45,
+              "raw_line": "relation<|#|>Server<|#|>User Interface<|#|>displaying<|#|>Relationship data is displayed on a user interface.",
+              "fields": [
+                "relation",
+                "Server",
+                "User Interface",
+                "displaying",
+                "Relationship data is displayed on a user interface."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 2676,
+              "chunk_char_end": 3110,
+              "text": "ach pair of the plurality of e-mail users based at least in part on the weight assigned to each of the plurality of characteristics; and displaying the model of relationships on a user interface. 2. The non-transitory computer readable medium of claim 1 further comprising populating an interaction database by monitoring e-mail exchanges and extracting relevant e-mail exchanges. 3. The non-transitory computer readable medium of cla"
+            },
+            {
+              "chunk_char_start": 5648,
+              "chunk_char_end": 6082,
+              "text": "rver, the data to a processor for generating relationship data by determining a relationship strength associated with each pair of users; and displaying the relationship data on a user interface. 11. The method of claim 10 , wherein the displaying of the relationship data on the user interface comprises providing a graphical representation of the relationship strength associated with each pair of. 12. The method of claim 10 , wher"
+            },
+            {
+              "chunk_char_start": 5748,
+              "chunk_char_end": 6182,
+              "text": "h associated with each pair of users; and displaying the relationship data on a user interface. 11. The method of claim 10 , wherein the displaying of the relationship data on the user interface comprises providing a graphical representation of the relationship strength associated with each pair of. 12. The method of claim 10 , wherein the interaction database is populated by monitoring e-mail exchanges and extracting relevant e-m"
+            }
+          ],
+          "lexical_occurrence_count": 3
+        },
+        {
+          "publication_number": "US10778629B2",
+          "full_doc_id": "US10778629B2",
+          "file_path": "US10778629B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 749,
+          "content_sha256": "9c08affa61a10a781ad7e194ca432d33e618652662386c29953015f69b28cc9c",
+          "exact_doc_char_start": 6053,
+          "exact_doc_char_end": 10078,
+          "content": "The method of claim 10 , wherein the interaction database is populated by monitoring e-mail exchanges and extracting relevant e-mail exchanges. 13. The method of claim 10 , wherein the characteristic comprises at least one selected from a group consisting of interaction frequency, interaction type, and number of communication participants. 14. The method of claim 10 , wherein the characteristic comprises a time between interactions. 15. The method of claim 10 , wherein the data associated with the e-mail exchanges between the pairs of users of the e-mail system is obtained from an e-mail field selected from a group consisting of SMTP, IMAP4, POP3, MIME, RFC 2046, RFC 2822, RFC 3156, and RFC 5322. 16. The method of claim 10 , wherein the data associated with the e-mail exchanges between the pairs of users of the e-mail system is obtained from a mail server, mail archives, and a log file. 17. The method of claim 10 , wherein the data associated with the e-mail exchanges between the pairs of users of the e-mail system is obtained from a spam filtering system based e-mail headers. 18. The method of claim 10 , wherein the strength of the relationship is based on intimacy of conversations, frequency of communications, and historical age of the relationship. 19. The method of claim 10 , wherein the characteristic of e-mail exchanges between pairs of users is further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone. 20. A non-transitory computer readable medium containing executable instructions that when executed perform a method of generating relationship data, comprising: accessing an interaction database of e-mail exchanges between pairs of users of an e-mail system; obtaining a plurality of characteristics of e-mail exchanges between the pairs of users and wherein the plurality of characteristics of e-mail exchanges fare further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone, wherein the plurality of characteristics are stored in the interaction database and wherein the data is obtained through a direct internet access protocol, wherein the plurality of characteristics comprise a time since a first interaction, a time since a last interaction, interaction volume between the pair of users, and a ratio of source to target versus target to source interactions; assigning a weight to each of the plurality of characteristics for each pair of users; generating relationship data by determining a relationship strength of associated with each pair of users based on the weight assigned to each of the plurality of characteristics for each pair of users; and displaying the relationship data on a user interface. 21. A system for processing relationship data, the system comprising: an e-mail system; an interaction database of e-mail exchanges between pairs of users of the e-mail system; a server to: receive data comprising a plurality of characteristics of e-mail exchanges between pairs of users of the e-mail system, wherein the data is transferred to the server from the interaction database, and wherein the interaction database is populated through a direct internet access protocol, wherein the plurality of characteristics comprise a time since a first interaction, a time since a last interaction, interaction volume between the pair of users, and a ratio of source to target versus target to source interactions, and the plurality of characteristics are further associated with at least one other digital communication medium selected from a group consisting of calendar, instant messaging, SMS, and phone; assign a weight to each of the plurality of characteristics for each pair of users; and transfer the data to a processor for generating relationship data by determining a relationship strength associated with each pair of users; and a user interface to display the relationship data.",
+          "llm_cache_list": [
+            "default:extract:68e0aceddbed721b768da83212200673"
+          ],
+          "chunk_id": "US10778629B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US10778629B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "6c749b744a83628fddbaa1a9bb77f7366bbe6eebfa40f3edd8a4ae981fa6dc4b"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 8,
+              "raw_line": "entity<|#|>User Interface<|#|>Artifact<|#|>An interface that displays the generated relationship data.",
+              "fields": [
+                "entity",
+                "User Interface",
+                "Artifact",
+                "An interface that displays the generated relationship data."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:68e0aceddbed721b768da83212200673",
+              "cache_key": "default:extract:68e0aceddbed721b768da83212200673",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 35,
+              "raw_line": "relation<|#|>User Interface<|#|>Relationship Data<|#|>displays<|#|>The user interface displays the relationship data.",
+              "fields": [
+                "relation",
+                "User Interface",
+                "Relationship Data",
+                "displays",
+                "The user interface displays the relationship data."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 2639,
+              "chunk_char_end": 3073,
+              "text": "th of associated with each pair of users based on the weight assigned to each of the plurality of characteristics for each pair of users; and displaying the relationship data on a user interface. 21. A system for processing relationship data, the system comprising: an e-mail system; an interaction database of e-mail exchanges between pairs of users of the e-mail system; a server to: receive data comprising a plurality of character"
+            },
+            {
+              "chunk_char_start": 3797,
+              "chunk_char_end": 4025,
+              "text": "tics for each pair of users; and transfer the data to a processor for generating relationship data by determining a relationship strength associated with each pair of users; and a user interface to display the relationship data."
+            }
+          ],
+          "lexical_occurrence_count": 2
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "Relationship data is displayed on a user interface.",
+          "keywords": "displaying",
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "Server",
+          "target": "User Interface",
+          "edge_index": 92,
+          "source_chunks": [
+            "US10778629B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The model of relationships produced by the relationship modeling program is displayed on a user interface.",
+          "keywords": "displaying",
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "User Interface",
+          "target": "Relationship Modeling Program",
+          "edge_index": 441,
+          "source_chunks": [
+            "US10778629B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The user interface displays the relationship data.",
+          "keywords": "displays",
+          "source_id": "US10778629B2-chunk-001",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793284713,
+          "truncate": "",
+          "source": "User Interface",
+          "target": "Relationship Data",
+          "edge_index": 442,
+          "source_chunks": [
+            "US10778629B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US10778629B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8917913B2",
+      "file_paths": [
+        "US8917913B2.txt"
+      ],
+      "source_chunks": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8917913B2",
+          "full_doc_id": "US8917913B2",
+          "file_path": "US8917913B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "6d67cb50bcf0a48da8ae11e36b05d1af01b1fc47cc847884499fd725f56cad52",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6237,
+          "content": "Publication number: US8917913B2\nTitle: Searching with face recognition and social networking profiles\n\nABSTRACT\nSystems for performing on-line searching, and particularly, to searching with face recognition and social networking profiles. In one example, one or more systems may be provided with regard to searching with face recognition and social networking profiles.\n\nCLAIMS\nWhat is claimed is: 1. A computer-implemented system for interacting with a social networking service using a mobile device, wherein the social networking service has associated therewith a plurality of member profiles corresponding to a respective plurality of members, wherein each of the member profiles includes at least one member descriptor associated with a respective member, wherein each of the member profiles includes at least one member image associated with a respective member, wherein each member image includes a representation of a face of the respective member, and wherein the mobile device includes at least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one search term, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plurality of faces; and an Internet access mechanism associated with the mobile device, wherein the Internet access mechanism is in operative communication with the application and wherein the Internet access mechanism provides at least the search term and at least some of the representations of the faces in the source image to the search service; wherein the search service is in operative communication with the social networking service, wherein the search service compares the search term to at least some of the member descriptors; wherein the search service compares at least one of the representations of the faces in the source image to at least some of the representations of the faces in the member images, and wherein the search service provides at least one result identifying at least one member who has: (a) a member descriptor that is a match to the search term; and (b) a member image including a representation of a face that is a match to a representation of a face in the source image; wherein the search service sends the result back to the mobile device via at least the Internet access mechanism of the mobile device; wherein the result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least one indicium identifying the at least one member who has: (a) a member descriptor that is a match to the search term; and (b) a member image including a representation of a face that is a match to a representation of a face in the source image: and wherein: the search service provides at least a first result identifying at least a first member who has: (a) a member descriptor that is a match to the search term from the mobile device; and (b) a member image including a representation of a face that is a match to a first one of the representation of faces in the source image; and the search service provides at least a second result identifying at least a second member who has: (a) a member descriptor that is a match to the search term from the mobile device; and (b) a member image including a representation of a face that is a match to a second one of the representation of faces in the source image. 2. The system of claim 1 , wherein: the first result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least a first indicium identifying the first member; and the second result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least a second indicium identifying the second member. 3. The system of claim 1 , wherein the search service is integrated into the social networking service. 4. The system of claim 1 , wherein a member descriptor that is a match to the search term from the mobile device is an essentially exact match to the search term. 5. The system of claim 1 , wherein a member descriptor that is a match to the search term from the mobile device is a match to the search term that is an approximate match within a degree of confidence. 6. The system of claim 1 , wherein a representation of a face in a member image that is a match to a representation of a face in the source image is an essentially exact match. 7. The system of claim 1 , wherein a representation of a face in a member image that is a match to a representation of a face in the source image is an approximate match within a degree of confidence. 8. The system of claim 1 , wherein the search term comprises a plurality of search terms. 9. The system of claim 1 , wherein the mobile device is selected from the group consisting of: (a) a mobile phone, (b) a tablet, (c) a PDA, and (d) a dedicated camera. 10. A computer-implemented system for interacting with a social networking service using a mobile device, wherein the social networking service has associated therewith a plurality of member profiles corresponding to a respective plurality of members, wherein each of the member profiles includes at least one member image associated with a respective member, wherein each member image includes a representation of a face of the respective member, and wherein the mobile device includes at least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image",
+          "llm_cache_list": [
+            "default:extract:958acb32aa3144daf63e3c4a201f570c"
+          ],
+          "chunk_id": "US8917913B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US8917913B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "139772556021347f0244c07e4158f9567f5c4f06007227c77af206c622a9388f"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 13,
+              "raw_line": "entity<|#|>User Interface<|#|>Artifact<|#|>An interface provided by the application that receives at least one search term or friend identifier from the user.",
+              "fields": [
+                "entity",
+                "User Interface",
+                "Artifact",
+                "An interface provided by the application that receives at least one search term or friend identifier from the user."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 22,
+              "raw_line": "relation<|#|>Application<|#|>User Interface<|#|>provides<|#|>The application provides a user interface and receives search terms or friend identifiers from it.",
+              "fields": [
+                "relation",
+                "Application",
+                "User Interface",
+                "provides",
+                "The application provides a user interface and receives search terms or friend identifiers from it."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 38,
+              "raw_line": "relation<|#|>Search Term<|#|>User Interface<|#|>received from<|#|>The search term is received from the user interface of the application.",
+              "fields": [
+                "relation",
+                "Search Term",
+                "User Interface",
+                "received from",
+                "The search term is received from the user interface of the application."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 39,
+              "raw_line": "relation<|#|>Friend Identifier<|#|>User Interface<|#|>received from<|#|>The friend identifier is received from the user interface of the application.",
+              "fields": [
+                "relation",
+                "Friend Identifier",
+                "User Interface",
+                "received from",
+                "The friend identifier is received from the user interface of the application."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 1092,
+              "chunk_char_end": 1526,
+              "text": "ial networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one search term, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plura"
+            },
+            {
+              "chunk_char_start": 1150,
+              "chunk_char_end": 1584,
+              "text": " mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one search term, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plurality of faces; and an Internet access mechanism associated"
+            },
+            {
+              "chunk_char_start": 5848,
+              "chunk_char_end": 6237,
+              "text": "ial networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image"
+            },
+            {
+              "chunk_char_start": 5906,
+              "chunk_char_end": 6237,
+              "text": " mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image"
+            }
+          ],
+          "lexical_occurrence_count": 4
+        },
+        {
+          "publication_number": "US8917913B2",
+          "full_doc_id": "US8917913B2",
+          "file_path": "US8917913B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 845,
+          "content_sha256": "5cb21156d0ae55d42ff0fbb93c20e4a6750c33ae1335d9c90ce7ee6cb5e41ba7",
+          "exact_doc_char_start": 5639,
+          "exact_doc_char_end": 10117,
+          "content": "member image includes a representation of a face of the respective member, and wherein the mobile device includes at least a camera and a screen, the system comprising: a search service associated with the social networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plurality of faces; and an Internet access mechanism associated with the mobile device, wherein the Internet access mechanism is in operative communication with the application and wherein the Internet access mechanism provides at least the friend identifier and at least some of the representations of the faces in the source image to the search service; wherein the search service is in operative communication with the social networking service, wherein the search service compares at least one of the representations of the faces in the source image to at least some of the representations of the faces in the member images associated with members who are indicated in the social networking service as friends of the member identified by the friend identifier, and wherein the search service provides at least one result identifying at least one member who is indicated in the social networking service as a friend of the member identified by the friend identifier and who has a member image including a representation of a face that is a match to a representation of a face in the source image; wherein the search service sends the result back to the mobile device via at least the Internet access mechanism of the mobile device; wherein the result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least one indicium identifying the at least one member who is indicated in the social networking service as a friend of the member identified by the friend identifier and who has a member image including a representation of a face that is a match to a representation of a face in the source image; and wherein: the search service provides at least a first result identifying at least a first member who is indicated in the social networking service as a friend of the member identified by the friend identifier and who has a member image including a representation of a face that is a match to a representation of a face in the source image; and the search service provides at least a second result identifying at least a second member who is indicated in the social networking service as a friend of the member identified by the friend identifier and who has a member image including a representation of a face that is a match to a representation of a face in the source image. 11. The system of claim 10 , wherein: the first result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least a first indicium identifying the first member; and the second result that is sent back to the mobile device is displayed on the screen of the mobile device by augmenting the source image with at least a second indicium identifying the second member. 12. The system of claim 10 , wherein the search service is integrated into the social networking service. 13. The system of claim 10 , wherein a representation of a face in a member image that is a match to a representation of a face in the source image is an essentially exact match. 14. The system of claim 10 , wherein a representation of a face in a member image that is a match to a representation of a face in the source image is an approximate match within a degree of confidence. 15. The system of claim 10 , wherein the friend identifier comprises a plurality of friend identifiers. 16. The system of claim 10 , wherein: the application further receives from the user interface a friend level indicator; and the search service performs iterative searching of friends-of-friends based at least in part upon the friend level indicator and the friend identifier. 17. The system of claim 10 , wherein the mobile device is selected from the group consisting of: (a) a mobile phone, (b) a tablet, (c) a PDA, and (d) a dedicated camera.",
+          "llm_cache_list": [
+            "default:extract:7182907f22ae09a0de65a3da1b71fb0a"
+          ],
+          "chunk_id": "US8917913B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US8917913B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "9fbc0b6c464f80a5e3bfbb84bfdbbbab7bf53bde435f5ae8f46078855b57d5db"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 8,
+              "raw_line": "entity<|#|>User Interface<|#|>Artifact<|#|>An interface provided by the application through which a user supplies at least one friend identifier and optionally a friend level indicator.",
+              "fields": [
+                "entity",
+                "User Interface",
+                "Artifact",
+                "An interface provided by the application through which a user supplies at least one friend identifier and optionally a friend level indicator."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Application<|#|>User Interface<|#|>provision, data reception<|#|>The application provides a user interface and receives friend identifiers and friend level indicators from it.",
+              "fields": [
+                "relation",
+                "Application",
+                "User Interface",
+                "provision, data reception",
+                "The application provides a user interface and receives friend identifiers and friend level indicators from it."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 209,
+              "chunk_char_end": 643,
+              "text": "ial networking service; an application associated with the mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a"
+            },
+            {
+              "chunk_char_start": 267,
+              "chunk_char_end": 701,
+              "text": " mobile device, wherein the application is in operative communication with the camera, wherein the application provides a user interface, wherein the application receives from the user interface at least one friend identifier, wherein the application receives from the camera at least one source image, and wherein the source image includes a plurality of representations of a plurality of faces; and an Internet access mechanism asso"
+            },
+            {
+              "chunk_char_start": 3932,
+              "chunk_char_end": 4366,
+              "text": "The system of claim 10 , wherein the friend identifier comprises a plurality of friend identifiers. 16. The system of claim 10 , wherein: the application further receives from the user interface a friend level indicator; and the search service performs iterative searching of friends-of-friends based at least in part upon the friend level indicator and the friend identifier. 17. The system of claim 10 , wherein the mobile device is"
+            }
+          ],
+          "lexical_occurrence_count": 3
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "The application provides a user interface and receives friend identifiers and friend level indicators from it.<SEP>The application provides a user interface and receives search terms or friend identifiers from it.",
+          "keywords": "data reception,provides,provision",
+          "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "Application",
+          "target": "User Interface",
+          "edge_index": 427,
+          "source_chunks": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The search term is received from the user interface of the application.",
+          "keywords": "received from",
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "Search Term",
+          "target": "User Interface",
+          "edge_index": 437,
+          "source_chunks": [
+            "US8917913B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The friend identifier is received from the user interface of the application.",
+          "keywords": "received from",
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "User Interface",
+          "target": "Friend Identifier",
+          "edge_index": 438,
+          "source_chunks": [
+            "US8917913B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "file_paths": [
+        "US9374411B1.txt"
+      ],
+      "source_chunks": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-002"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9374411B1",
+          "full_doc_id": "US9374411B1",
+          "file_path": "US9374411B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1199,
+          "content_sha256": "1c6ddec8304601845ddead7675e8d25ffe813f0a1d7087766b31ededcbd9a1cc",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6777,
+          "content": "Publication number: US9374411B1\nTitle: Content recommendations using deep data\n\nABSTRACT\nDisclosed are various embodiments for recommending content for users. A user is associated with a user preferred character that is represented in a first network content. A library is referenced to identify a recommended character based at least upon the user preferred character, the recommended character being represented in a second network content, the library associating the preferred character to the recommended character according to a relationship score. A recommendation is sent for presentation of the second network content.\n\nCLAIMS\nTherefore, the following is claimed: 1. A non-transitory computer-readable medium having a plurality of computer instructions executable by at least one computing device, wherein, upon execution, the plurality of computer instructions cause the at least one computing device to: stream a first video content feature from at least one server to a client associated with a user; cause the first video content feature to be rendered in a user interface for display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtain second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; associate a preferred character with the user based at least upon the second user interaction data, the preferred character being represented by a corresponding first cast member of the first video content feature; reference a library to identify a recommended character based at least upon the preferred character, the recommended character being represented by a corresponding second cast member of a second video content feature, the library associating the preferred character to the recommended character according to a relationship score, the relationship score being calculated based at least in part upon a proportion of users who have expressed a preference towards both the preferred character and the recommended character; and send to the user a recommendation to play the second video content feature. 2. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: obtain additional user interaction data from the user based at least upon an interaction with the second video content feature; and update the relationship score based at least upon the additional user interaction data. 3. The non-transitory computer-readable medium of claim 2 , wherein the additional user interaction data comprises user feedback expressing that the user favors at least one scene associated with the second video content feature. 4. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: identify an attribute associated with the recommended character; and send the attribute to the client to indicate a basis for the recommendation to the user. 5. The non-transitory computer-readable medium of claim 1 , wherein the user interaction data is obtained during a playback of the first video content feature via the client. 6. A system, comprising: at least one computing device; and at least one application executable in the at least one computing device, the at least one application causing the at least one computing device to: cause a first video content feature to be rendered in a user interface for display on a client; determine that a user prefers a first character based at least upon a first interaction data, the first character being represented by a corresponding first cast member of the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first interaction data; obtain second user interaction data from the client based at least in part upon an interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; determine that the user prefers a second character based at least upon the second interaction data, the second character being represented by a corresponding second cast member of a second video content feature; determine a relationship score based at least upon the first interaction data and the second interaction data, the relationship score quantifying a degree of commonality between the first character and the second character and being calculated based at least in part upon a proportion of users who have expressed a preference towards both the first character and the second character; and generate a recommendation to play at least one of the first video content feature or the second video content feature based at least upon the relationship score. 7. The system of claim 6 , wherein the at least one application further causes the at least one computing device to: store a first set of attributes associated with the first character; store a second set of attributes associated with the second character; and compare the first set of attributes to the second set of attributes. 8. The system of claim 6 , wherein the first interaction data comprises explicit user feedback expressing that the user favors the first character. 9. The system of claim 6 , wherein the first interaction data comprises at least one of consumption history data relating to a product associated with the first character or browse history data relating to a product associated with the first character. 10. The system of claim 6 , wherein the first interaction data comprises user feedback expressing that the user favors at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim",
+          "llm_cache_list": [
+            "default:extract:4a665eb9b6325343afd5a73cbd168366"
+          ],
+          "chunk_id": "US9374411B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9374411B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "c86c537652ef009d655d7cad38ff0880a71b88ff4bcca89a5d9d2d11f9f7d645"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 13,
+              "raw_line": "entity<|#|>User Interface<|#|>Artifact<|#|>An interface rendered on a client for displaying video content features and receiving user interactions.",
+              "fields": [
+                "entity",
+                "User Interface",
+                "Artifact",
+                "An interface rendered on a client for displaying video content features and receiving user interactions."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 41,
+              "raw_line": "relation<|#|>First Video Content Feature<|#|>User Interface<|#|>rendered in<|#|>The first video content feature is caused to be rendered in a user interface for display on the client.",
+              "fields": [
+                "relation",
+                "First Video Content Feature",
+                "User Interface",
+                "rendered in",
+                "The first video content feature is caused to be rendered in a user interface for display on the client."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 891,
+              "chunk_char_end": 1325,
+              "text": "ne computing device to: stream a first video content feature from at least one server to a client associated with a user; cause the first video content feature to be rendered in a user interface for display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with the first video content feature; cause a timeline user interface that segments the first video content featu"
+            },
+            {
+              "chunk_char_start": 1087,
+              "chunk_char_end": 1521,
+              "text": "or display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtain second user interaction data from the client based at least in part upon a second inte"
+            },
+            {
+              "chunk_char_start": 1421,
+              "chunk_char_end": 1855,
+              "text": " data; obtain second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; associate a preferred character with the user based at least upon the second user interaction data, the preferred cha"
+            },
+            {
+              "chunk_char_start": 3739,
+              "chunk_char_end": 4173,
+              "text": "executable in the at least one computing device, the at least one application causing the at least one computing device to: cause a first video content feature to be rendered in a user interface for display on a client; determine that a user prefers a first character based at least upon a first interaction data, the first character being represented by a corresponding first cast member of the first video content feature; cause a t"
+            },
+            {
+              "chunk_char_start": 4001,
+              "chunk_char_end": 4435,
+              "text": "acter based at least upon a first interaction data, the first character being represented by a corresponding first cast member of the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first interaction data; obtain second user interaction data from the client based at least in part upon an interaction wit"
+            },
+            {
+              "chunk_char_start": 4324,
+              "chunk_char_end": 4758,
+              "text": "action data; obtain second user interaction data from the client based at least in part upon an interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; determine that the user prefers a second character based at least upon the second interaction data, the second charac"
+            }
+          ],
+          "lexical_occurrence_count": 6
+        },
+        {
+          "publication_number": "US9374411B1",
+          "full_doc_id": "US9374411B1",
+          "file_path": "US9374411B1.txt",
+          "chunk_order_index": 2,
+          "tokens": 161,
+          "content_sha256": "b5779b04614e5a41d1a3eb710fae56a98a1d9153d5b676b056c38b64dd24a8be",
+          "exact_doc_char_start": 12390,
+          "exact_doc_char_end": 13265,
+          "content": "22. The non-transitory computer-readable medium of claim 21 , wherein the first media content comprises an electronic book (e-book). 23. The non-transitory computer-readable medium of claim 21 , wherein the plurality of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expressed a preference towards the first fictional character. 25. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is based at least in part upon whether the first fictional character and the second fictional character are associated with a similar genre.",
+          "llm_cache_list": [
+            "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf"
+          ],
+          "chunk_id": "US9374411B1-chunk-002",
+          "extraction_records": [
+            {
+              "chunk_id": "US9374411B1-chunk-002",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "55d66deeaf26058f9f185573d9c9eb15b74dc404982847d9df7aa98c8df82ed7"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 8,
+              "raw_line": "entity<|#|>User Interface<|#|>Artifact<|#|>An interface through which explicit user feedback favoring the first fictional character is obtained.",
+              "fields": [
+                "entity",
+                "User Interface",
+                "Artifact",
+                "An interface through which explicit user feedback favoring the first fictional character is obtained."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 17,
+              "raw_line": "relation<|#|>User Feedback<|#|>User Interface<|#|>obtained via, expresses<|#|>The explicit user feedback is obtained via a user interface.",
+              "fields": [
+                "relation",
+                "User Feedback",
+                "User Interface",
+                "obtained via, expresses",
+                "The explicit user feedback is obtained via a user interface."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 212,
+              "chunk_char_end": 646,
+              "text": "lity of computer instructions further causes the at least one computing device to obtain explicit user feedback expressing that the user favors the first fictional character via a user interface. 24. The non-transitory computer-readable medium of claim 21 , wherein the relationship score is further calculated based at least in part upon a quantity of users who have expressed a preference towards the first fictional character. 25. "
+            }
+          ],
+          "lexical_occurrence_count": 1
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The first video content feature is caused to be rendered in a user interface for display on the client.",
+          "keywords": "rendered in",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User Interface",
+          "target": "First Video Content Feature",
+          "edge_index": 439,
+          "source_chunks": [
+            "US9374411B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The explicit user feedback is obtained via a user interface.",
+          "keywords": "expresses,obtained via",
+          "source_id": "US9374411B1-chunk-002",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "User Interface",
+          "target": "User Feedback",
+          "edge_index": 440,
+          "source_chunks": [
+            "US9374411B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "Relationship data is displayed on a user interface.",
+      "keywords": "displaying",
+      "source_id": "US10778629B2-chunk-000",
+      "file_path": "US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "Server",
+      "target": "User Interface",
+      "edge_index": 92,
+      "source_chunks": [
+        "US10778629B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US10778629B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The application provides a user interface and receives friend identifiers and friend level indicators from it.<SEP>The application provides a user interface and receives search terms or friend identifiers from it.",
+      "keywords": "data reception,provides,provision",
+      "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+      "file_path": "US8917913B2.txt",
+      "created_at": 1793284309,
+      "truncate": "",
+      "source": "Application",
+      "target": "User Interface",
+      "edge_index": 427,
+      "source_chunks": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8917913B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The search term is received from the user interface of the application.",
+      "keywords": "received from",
+      "source_id": "US8917913B2-chunk-000",
+      "file_path": "US8917913B2.txt",
+      "created_at": 1793284309,
+      "truncate": "",
+      "source": "Search Term",
+      "target": "User Interface",
+      "edge_index": 437,
+      "source_chunks": [
+        "US8917913B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8917913B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The friend identifier is received from the user interface of the application.",
+      "keywords": "received from",
+      "source_id": "US8917913B2-chunk-000",
+      "file_path": "US8917913B2.txt",
+      "created_at": 1793284309,
+      "truncate": "",
+      "source": "User Interface",
+      "target": "Friend Identifier",
+      "edge_index": 438,
+      "source_chunks": [
+        "US8917913B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8917913B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The first video content feature is caused to be rendered in a user interface for display on the client.",
+      "keywords": "rendered in",
+      "source_id": "US9374411B1-chunk-000",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "User Interface",
+      "target": "First Video Content Feature",
+      "edge_index": 439,
+      "source_chunks": [
+        "US9374411B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The explicit user feedback is obtained via a user interface.",
+      "keywords": "expresses,obtained via",
+      "source_id": "US9374411B1-chunk-002",
+      "file_path": "US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "source": "User Interface",
+      "target": "User Feedback",
+      "edge_index": 440,
+      "source_chunks": [
+        "US9374411B1-chunk-002"
+      ],
+      "canonical_publications": [
+        "US9374411B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The model of relationships produced by the relationship modeling program is displayed on a user interface.",
+      "keywords": "displaying",
+      "source_id": "US10778629B2-chunk-000",
+      "file_path": "US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "User Interface",
+      "target": "Relationship Modeling Program",
+      "edge_index": 441,
+      "source_chunks": [
+        "US10778629B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US10778629B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The user interface displays the relationship data.",
+      "keywords": "displays",
+      "source_id": "US10778629B2-chunk-001",
+      "file_path": "US10778629B2.txt",
+      "created_at": 1793284713,
+      "truncate": "",
+      "source": "User Interface",
+      "target": "Relationship Data",
+      "edge_index": 442,
+      "source_chunks": [
+        "US10778629B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US10778629B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

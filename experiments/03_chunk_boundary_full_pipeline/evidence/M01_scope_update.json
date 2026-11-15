@@ -1,0 +1,10 @@
+{
+  "updated_utc": "2026-10-30T03:43:24.699676+00:00",
+  "group": "M01",
+  "status": "not_run_by_scope_update",
+  "reason": "Parent conveyed latest user scope: preserve previously completed Claim1/27 minimal experiment; do not repeat it. No new official M01 full-pipeline calls were started.",
+  "preserved": "M01_scoring_protocol.json and prepared evaluation script retained as unexecuted future rubric. Earlier round4 partial AST and envdiag smoke remain separate.",
+  "new_M01_api_calls": 0,
+  "new_M01_indexes": 0,
+  "do_not_substitute_old_results": true
+}

@@ -1,0 +1,80 @@
+--- dot/scripts/build_questions.py
++++ repo/scripts/build_questions.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -5 +7 @@
+-BASE = Path(__file__).resolve().parents[1]
++BASE = legacy_root()
+--- dot/scripts/build_report.py
++++ repo/scripts/build_report.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -9 +11 @@
+-ROOT = Path(__file__).resolve().parents[1]
++ROOT = legacy_root()
+--- dot/scripts/chunk_probe.py
++++ repo/scripts/chunk_probe.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -11 +13 @@
+-ROOT = Path(__file__).resolve().parents[1]
++ROOT = legacy_root()
+--- dot/scripts/data_fetch.py
++++ repo/scripts/data_fetch.py
+@@ -0,0 +1,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -2 +4 @@
+-base=pathlib.Path('<DOT_WORKDIR>/data')
++base=(legacy_root()/'data')
+--- dot/scripts/data_sourcecheck.py
++++ repo/scripts/data_sourcecheck.py
+@@ -0,0 +1,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -2 +4 @@
+-base=pathlib.Path('<DOT_WORKDIR>/data');(base/'source_checks').mkdir(exist_ok=True)
++base=(legacy_root()/'data');(base/'source_checks').mkdir(exist_ok=True)
+--- dot/scripts/data_validate.py
++++ repo/scripts/data_validate.py
+@@ -0,0 +1,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -2 +4 @@
+-base=pathlib.Path('<DOT_WORKDIR>/data')
++base=(legacy_root()/'data')
+--- dot/scripts/data_verify_sources.py
++++ repo/scripts/data_verify_sources.py
+@@ -0,0 +1,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -2 +4 @@
+-base=pathlib.Path('<DOT_WORKDIR>/data');m=json.loads((base/'manifest.json').read_text());ctx=ssl.create_default_context(cafile=certifi.where());norm=lambda x:re.sub(r'\s+',' ',x).strip()
++base=(legacy_root()/'data');m=json.loads((base/'manifest.json').read_text());ctx=ssl.create_default_context(cafile=certifi.where());norm=lambda x:re.sub(r'\s+',' ',x).strip()
+--- dot/scripts/map_question_chunks.py
++++ repo/scripts/map_question_chunks.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4 +6 @@
+-BASE=Path(__file__).resolve().parents[1]
++BASE=legacy_root()
+--- dot/scripts/package_evidence.py
++++ repo/scripts/package_evidence.py
+@@ -0,0 +1,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -6 +8 @@
+-root = Path(__file__).resolve().parents[1]
++root = legacy_root()
+--- dot/scripts/package_small_evidence.py
++++ repo/scripts/package_small_evidence.py
+@@ -0,0 +1,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4 +6 @@
+-r=Path(__file__).resolve().parents[1]
++r=legacy_root()

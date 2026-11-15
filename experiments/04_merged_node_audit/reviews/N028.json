@@ -1,0 +1,448 @@
+{
+  "audit_id": "N028",
+  "node_id": "Non-Transitory Computer-Readable Medium",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两篇都使用非暂态计算机可读介质承载可执行指令的共同存储载体类；指令分别完成内容推荐和排版错误反馈处理。应用功能不同不足以证明介质概念异义。",
+  "class_instance_interpretation_zh": "介质是共同类；各独立权利要求中的具体指令集和介质实施例具有各自专利作用域，不能断言同一实际介质同时执行全部功能。",
+  "concept_class_vs_local_instance": "shared_class; document-local instances remain distinct",
+  "source_assessments": [
+    {
+      "publication_number": "US9374411B1",
+      "evidence_quote": "A non-transitory computer-readable medium having a plurality of computer instructions executable by at least one computing device",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001",
+        "US9374411B1-chunk-002"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001"
+      ],
+      "claim_number": 1,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 3,
+        "indexed_document_char_offset": 676
+      },
+      "role_zh": "承载内容呈现、角色偏好及推荐流程的指令介质。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000/001对应独立Claim1/21；chunk002引用Claim21的从属Claim22–25，其存储指令含义需继承母项，不是独立新增介质实例。",
+        "raw_records": [
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "content_sha256": "1c6ddec8304601845ddead7675e8d25ffe813f0a1d7087766b31ededcbd9a1cc",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+                "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 22,
+                "raw_line": "entity<|#|>Non-Transitory Computer-Readable Medium<|#|>Artifact<|#|>A medium having computer instructions executable by a computing device to perform content recommendation functions.",
+                "fields": [
+                  "entity",
+                  "Non-Transitory Computer-Readable Medium",
+                  "Artifact",
+                  "A medium having computer instructions executable by a computing device to perform content recommendation functions."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+                "cache_key": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 50,
+                "raw_line": "relation<|#|>Non-Transitory Computer-Readable Medium<|#|>Computing Device<|#|>executed by<|#|>The non-transitory computer-readable medium has computer instructions executable by a computing device.",
+                "fields": [
+                  "relation",
+                  "Non-Transitory Computer-Readable Medium",
+                  "Computing Device",
+                  "executed by",
+                  "The non-transitory computer-readable medium has computer instructions executable by a computing device."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9374411B1-chunk-000",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "c86c537652ef009d655d7cad38ff0880a71b88ff4bcca89a5d9d2d11f9f7d645"
+              }
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "content_sha256": "bbe6f2f25b0f58e297204d0c91d3cd176e3a59c7a39ef03093c9724efe2d9fe0",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+                "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 27,
+                "raw_line": "entity<|#|>Non-Transitory Computer-Readable Medium<|#|>Artifact<|#|>A medium having computer instructions executable by a computing device to perform content rendering, character preference determination, and recommendation generation.",
+                "fields": [
+                  "entity",
+                  "Non-Transitory Computer-Readable Medium",
+                  "Artifact",
+                  "A medium having computer instructions executable by a computing device to perform content rendering, character preference determination, and recommendation generation."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+                "cache_key": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 61,
+                "raw_line": "relation<|#|>Non-Transitory Computer-Readable Medium<|#|>Computing Device<|#|>execution, instruction<|#|>The computer instructions on the medium are executable by the computing device to cause it to perform operations.",
+                "fields": [
+                  "relation",
+                  "Non-Transitory Computer-Readable Medium",
+                  "Computing Device",
+                  "execution, instruction",
+                  "The computer instructions on the medium are executable by the computing device to cause it to perform operations."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9374411B1-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "3deebe5a4f4731377e367025201bb18e9f1a104d6efd17f64930a9d99b9b4a17"
+              }
+            ]
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-002",
+            "content_sha256": "b5779b04614e5a41d1a3eb710fae56a98a1d9153d5b676b056c38b64dd24a8be",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+                "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 1,
+                "raw_line": "entity<|#|>Non-Transitory Computer-Readable Medium<|#|>Artifact<|#|>A non-transitory computer-readable medium storing computer instructions, referenced in claims 22-25, that causes a computing device to perform operations related to media content and fictional character relationship scoring.",
+                "fields": [
+                  "entity",
+                  "Non-Transitory Computer-Readable Medium",
+                  "Artifact",
+                  "A non-transitory computer-readable medium storing computer instructions, referenced in claims 22-25, that causes a computing device to perform operations related to media content and fictional character relationship scoring."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+                "cache_key": "default:extract:93c31a0de1b73cab29adeee0b4e2fcbf",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 13,
+                "raw_line": "relation<|#|>Non-Transitory Computer-Readable Medium<|#|>Computer Instructions<|#|>stores, comprises<|#|>The non-transitory computer-readable medium stores a plurality of computer instructions.",
+                "fields": [
+                  "relation",
+                  "Non-Transitory Computer-Readable Medium",
+                  "Computer Instructions",
+                  "stores, comprises",
+                  "The non-transitory computer-readable medium stores a plurality of computer instructions."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9374411B1-chunk-002",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "55d66deeaf26058f9f185573d9c9eb15b74dc404982847d9df7aa98c8df82ed7"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The non-transitory computer-readable medium has computer instructions executable by a computing device.<SEP>The computer instructions on the medium are executable by the computing device to cause it to perform operations.",
+          "keywords": "executed by,execution,instruction",
+          "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "Non-Transitory Computer-Readable Medium",
+          "edge_index": 452,
+          "source_chunks": [
+            "US9374411B1-chunk-000",
+            "US9374411B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The non-transitory computer-readable medium stores a plurality of computer instructions.",
+          "keywords": "comprises,stores",
+          "source_id": "US9374411B1-chunk-002",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793284456,
+          "truncate": "",
+          "source": "Non-Transitory Computer-Readable Medium",
+          "target": "Computer Instructions",
+          "edge_index": 512,
+          "source_chunks": [
+            "US9374411B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9374411B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "evidence_quote": "A non-transitory computer-readable medium having instructions stored thereon which, when executed by a processing device, cause the processing device to perform operations comprising:",
+      "claim_or_section": "Claim 10",
+      "source_chunk_ids": [
+        "US9514120B1-chunk-000",
+        "US9514120B1-chunk-001"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ],
+      "claim_number": 10,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 4,
+        "indexed_document_char_offset": 5442
+      },
+      "role_zh": "承载判别作者意图字符串、反馈组合及参考更新操作的指令介质。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000包含Claim10开头，chunk001续接其操作及从属项；抽取均与同一介质权利要求一致。",
+        "raw_records": [
+          {
+            "chunk_id": "US9514120B1-chunk-000",
+            "content_sha256": "0b094b66650820aadeb8cf681dbb275f6e8339dfd53ea0886553a1ad1e7e9a0e",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 23,
+                "raw_line": "entity<|#|>Non-Transitory Computer-Readable Medium<|#|>Artifact<|#|>A medium having instructions stored thereon that, when executed by a processing device, cause the processing device to perform operations for classifying typographical errors.",
+                "fields": [
+                  "entity",
+                  "Non-Transitory Computer-Readable Medium",
+                  "Artifact",
+                  "A medium having instructions stored thereon that, when executed by a processing device, cause the processing device to perform operations for classifying typographical errors."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 33,
+                "raw_line": "relation<|#|>Processing Device<|#|>Non-Transitory Computer-Readable Medium<|#|>executes instructions from<|#|>The processing device executes instructions stored on the non-transitory computer-readable medium.",
+                "fields": [
+                  "relation",
+                  "Processing Device",
+                  "Non-Transitory Computer-Readable Medium",
+                  "executes instructions from",
+                  "The processing device executes instructions stored on the non-transitory computer-readable medium."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9514120B1-chunk-000",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "4fe04b755a3773900247f241ed3834154557d16eacb219db1ebf120bb60459d7"
+              }
+            ]
+          },
+          {
+            "chunk_id": "US9514120B1-chunk-001",
+            "content_sha256": "7dd8efe9e014ee9e28d8ff4d1c7090dfcca115a354cf7d985cc95448a9241a74",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+                "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 21,
+                "raw_line": "entity<|#|>Non-Transitory Computer-Readable Medium<|#|>Artifact<|#|>A medium storing instructions that, when executed, cause operations for determining author-intended strings, combining and sorting feedback, and updating parameter-specific references.",
+                "fields": [
+                  "entity",
+                  "Non-Transitory Computer-Readable Medium",
+                  "Artifact",
+                  "A medium storing instructions that, when executed, cause operations for determining author-intended strings, combining and sorting feedback, and updating parameter-specific references."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+                "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 48,
+                "raw_line": "relation<|#|>Non-Transitory Computer-Readable Medium<|#|>Processing Device<|#|>instructions for<|#|>The non-transitory computer-readable medium stores instructions that cause the processing device to perform operations.",
+                "fields": [
+                  "relation",
+                  "Non-Transitory Computer-Readable Medium",
+                  "Processing Device",
+                  "instructions for",
+                  "The non-transitory computer-readable medium stores instructions that cause the processing device to perform operations."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9514120B1-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "e2a17dd1b57fec60d1eec1c6fc994018925ddd4ee71f362dc3af059e4ac24208"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The processing device executes instructions stored on the non-transitory computer-readable medium.<SEP>The non-transitory computer-readable medium stores instructions that cause the processing device to perform operations.",
+          "keywords": "executes instructions from,instructions for",
+          "source_id": "US9514120B1-chunk-000<SEP>US9514120B1-chunk-001",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Processing Device",
+          "target": "Non-Transitory Computer-Readable Medium",
+          "edge_index": 463,
+          "source_chunks": [
+            "US9514120B1-chunk-000",
+            "US9514120B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 3,
+    "observed_unsupported_edge": false,
+    "observed_unsupported_edge_definition": "true仅用于依据原文明确不支持的实际关系；类级概括/端点角色候选单列，不自动计入。",
+    "details_zh": "已逐条检查全部实际邻边及其source_id/file_path；各关系在所属专利中有对应陈述，未发现将另一专利特征直接写入本专利边描述的确证。共同节点容许潜在无作用域路径组合，但本审计没有执行或观察该传播。",
+    "edge_indices": [
+      452,
+      463,
+      512
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 452,
+        "source": "Computing Device",
+        "target": "Non-Transitory Computer-Readable Medium",
+        "source_id": "US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+        "file_path": "US9374411B1.txt",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "actual_description": "The non-transitory computer-readable medium has computer instructions executable by a computing device.<SEP>The computer instructions on the medium are executable by the computing device to cause it to perform operations.",
+        "claim_or_section": "US9374411B1 Claims1,21",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 463,
+        "source": "Processing Device",
+        "target": "Non-Transitory Computer-Readable Medium",
+        "source_id": "US9514120B1-chunk-000<SEP>US9514120B1-chunk-001",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The processing device executes instructions stored on the non-transitory computer-readable medium.<SEP>The non-transitory computer-readable medium stores instructions that cause the processing device to perform operations.",
+        "claim_or_section": "US9514120B1 Claim10",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 512,
+        "source": "Non-Transitory Computer-Readable Medium",
+        "target": "Computer Instructions",
+        "source_id": "US9374411B1-chunk-002",
+        "file_path": "US9374411B1.txt",
+        "canonical_publications": [
+          "US9374411B1"
+        ],
+        "actual_description": "The non-transitory computer-readable medium stores a plurality of computer instructions.",
+        "claim_or_section": "US9374411B1 Claim23继承Claim21",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      }
+    ],
+    "observed_cross_publication_unsupported_edge": false
+  },
+  "limitations_zh": [
+    "本结果为AI辅助逐来源语义审阅，不是独立人工金标准；分类依赖所声明的类/实例粒度。",
+    "只审计第二轮既有20篇索引中的可见原chunk、原抽取与实际图邻边；原文范围为已索引的标题、摘要及Claims，未额外读取完整说明书或新语料，未调用模型API，也未进行新的检索/生成传播测试。",
+    "共享节点产生跨专利邻接不等于已观察到错误跨文档推理；边的source_id和file_path应保持作用域。",
+    "介质—计算设备边是“介质上指令由设备执行”的简写，不能将其读为物理介质本体被执行。"
+  ],
+  "review_method": "AI-assisted source-by-source reading; deterministic quote/coverage validation; no external model API",
+  "reviewed_utc": "2026-10-30T08:17:26.138012+00:00",
+  "dossier_sha256": "6e7bc58229a6d859dd70c1277ea910cba60dd371e6099daece54604363220224",
+  "input_sha256": {
+    "round2_multisource_audit/dossiers/N028.json": "6e7bc58229a6d859dd70c1277ea910cba60dd371e6099daece54604363220224",
+    "data/claims/US9374411B1.json": "0a477135e7ff698cddc3d74095c31506212dd525bec8ad9fb5529a6a658955e4",
+    "data/documents/US9374411B1.txt": "7c866dd365c48e58b42236245779b90e15862f6d0861f15b30182a49980bda19",
+    "data/claims/US9514120B1.json": "8346fa36328fdfbabb59a6e1b894c45fb7d867deac3a02966169ba752bd06d81",
+    "data/documents/US9514120B1.txt": "5e38f1308be15b55022afd8d84a90bafe735903cca172069ef79854d9fe26057"
+  },
+  "source_and_raw_review_coverage": {
+    "publication_count": 2,
+    "source_chunk_ids_reviewed": [
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000",
+      "US9514120B1-chunk-001"
+    ],
+    "all_source_chunks_read": true,
+    "all_raw_entity_and_relation_endpoint_rows_read": true,
+    "all_actual_incident_edges_reviewed": true
+  }
+}

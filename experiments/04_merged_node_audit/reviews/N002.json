@@ -1,0 +1,646 @@
+{
+  "audit_id": "N002",
+  "node_id": "Mobile Device",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两来源均使用移动终端类：一个产生短消息/查询并接收上下文数据，另一个带相机和屏幕进行社交人脸搜索。硬件配置与任务不同，但仍属于共同移动设备上位类，没有互斥词义或同一设备身份断言。",
+  "class_instance_interpretation_zh": "共享移动设备类别，不代表两篇专利的设备实例相同，也不意味着全部移动设备必带相机。Smart Phone及Tablet等邻接应保留来源限定。",
+  "concept_class_vs_local_instance": "shared class; distinct or unspecified document-local implementations; no same-individual assertion established",
+  "source_assessments": [
+    {
+      "publication_number": "US8509827B2",
+      "evidence_quote": "receiving a short message from a mobile device with a server;",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US8509827B2-chunk-000"
+      ],
+      "quote_source_chunk_ids": [
+        "US8509827B2-chunk-000"
+      ],
+      "quote_validation": {
+        "exact_contiguous_substring": true,
+        "claims_json_path": "data/claims/US8509827B2.json",
+        "claim_numbers_containing_quote": [
+          1
+        ],
+        "selected_claim_checked": 1,
+        "abstract_section_checked": false
+      },
+      "role_zh": "产生短消息的移动终端；上下文类型描述其环境，Claim16允许该终端为智能手机。",
+      "extraction_description_support": {
+        "assessment_zh": "生成消息、接收上下文及smart phone的概括分别由Claims1–7、15–16支持；此处不把另一专利的相机/屏幕属性迁移过来。",
+        "reviewed_raw_records": [
+          {
+            "chunk_id": "US8509827B2-chunk-000",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+                "line_number": 6,
+                "description": "A device that generates a short message and a query, and to which received context data may be provided; may be a smart phone."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+                "line_number": 24,
+                "source": "Context-Data Acquisition And Ranking",
+                "target": "Mobile Device",
+                "description": "The method provides received context data to the mobile device that generated the short message or query."
+              },
+              {
+                "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+                "line_number": 37,
+                "source": "Context-Data Type",
+                "target": "Mobile Device",
+                "description": "The context-data type provides information about the environment or context of the mobile device."
+              },
+              {
+                "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+                "line_number": 42,
+                "source": "Mobile Device",
+                "target": "Smart Phone",
+                "description": "The mobile device that generated the short message may be a smart phone."
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The method provides received context data to the mobile device that generated the short message or query.",
+          "keywords": "Provides Data To",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793284125,
+          "truncate": "",
+          "source": "Context-Data Acquisition And Ranking",
+          "target": "Mobile Device",
+          "edge_index": 52,
+          "source_chunks": [
+            "US8509827B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8509827B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The context-data type provides information about the environment or context of the mobile device.",
+          "keywords": "Describes Environment Of",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793284125,
+          "truncate": "",
+          "source": "Context-Data Type",
+          "target": "Mobile Device",
+          "edge_index": 65,
+          "source_chunks": [
+            "US8509827B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8509827B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The mobile device that generated the short message may be a smart phone.",
+          "keywords": "Is A",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793284125,
+          "truncate": "",
+          "source": "Mobile Device",
+          "target": "Smart Phone",
+          "edge_index": 72,
+          "source_chunks": [
+            "US8509827B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8509827B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8917913B2",
+      "evidence_quote": "wherein the mobile device includes at least a camera and a screen",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "quote_validation": {
+        "exact_contiguous_substring": true,
+        "claims_json_path": "data/claims/US8917913B2.json",
+        "claim_numbers_containing_quote": [
+          1,
+          10
+        ],
+        "selected_claim_checked": 1,
+        "abstract_section_checked": false
+      },
+      "role_zh": "带相机、屏幕、应用和互联网接入的移动终端，向社交搜索服务发送输入并显示返回结果。",
+      "extraction_description_support": {
+        "assessment_zh": "Claims1、10支持相机/屏幕、应用和网络接入；Claims9、17列手机、平板、PDA、专用相机等可选设备。两chunk的原抽取描述相容。",
+        "reviewed_raw_records": [
+          {
+            "chunk_id": "US8917913B2-chunk-000",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+                "line_number": 3,
+                "description": "A device including at least a camera and a screen, used to interact with a social networking service; may be a mobile phone, tablet, PDA, or dedicated camera."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+                "line_number": 20,
+                "source": "Application",
+                "target": "Mobile Device",
+                "description": "The application is associated with the mobile device and is in operative communication with its camera."
+              },
+              {
+                "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+                "line_number": 23,
+                "source": "Internet Access Mechanism",
+                "target": "Mobile Device",
+                "description": "The Internet access mechanism is associated with the mobile device."
+              },
+              {
+                "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+                "line_number": 30,
+                "source": "Search Service",
+                "target": "Mobile Device",
+                "description": "The search service sends results back to the mobile device via the Internet access mechanism."
+              },
+              {
+                "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+                "line_number": 40,
+                "source": "Mobile Device",
+                "target": "Screen",
+                "description": "The mobile device includes at least a screen."
+              },
+              {
+                "cache_key": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+                "line_number": 41,
+                "source": "Mobile Device",
+                "target": "Camera",
+                "description": "The mobile device includes at least a camera."
+              }
+            ]
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-001",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+                "line_number": 3,
+                "description": "A portable device including at least a camera and a screen, running an application in operative communication with the camera and an Internet access mechanism. It may be a mobile phone, tablet, PDA, or dedicated camera."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+                "line_number": 23,
+                "source": "Application",
+                "target": "Mobile Device",
+                "description": "The application is associated with the mobile device."
+              },
+              {
+                "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+                "line_number": 28,
+                "source": "Internet Access Mechanism",
+                "target": "Mobile Device",
+                "description": "The Internet access mechanism is associated with the mobile device."
+              },
+              {
+                "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+                "line_number": 34,
+                "source": "Result",
+                "target": "Mobile Device",
+                "description": "The search service sends the result back to the mobile device via the Internet access mechanism."
+              },
+              {
+                "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+                "line_number": 41,
+                "source": "Mobile Device",
+                "target": "Mobile Phone",
+                "description": "The mobile device may be selected as a mobile phone."
+              },
+              {
+                "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+                "line_number": 42,
+                "source": "Mobile Device",
+                "target": "Tablet",
+                "description": "The mobile device may be selected as a tablet."
+              },
+              {
+                "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+                "line_number": 43,
+                "source": "Mobile Device",
+                "target": "PDA",
+                "description": "The mobile device may be selected as a PDA."
+              },
+              {
+                "cache_key": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+                "line_number": 44,
+                "source": "Mobile Device",
+                "target": "Dedicated Camera",
+                "description": "The mobile device may be selected as a dedicated camera."
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The application is associated with the mobile device and is in operative communication with its camera.<SEP>The application is associated with the mobile device.",
+          "keywords": "association",
+          "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284306,
+          "truncate": "",
+          "source": "Mobile Device",
+          "target": "Application",
+          "edge_index": 73,
+          "source_chunks": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The Internet access mechanism is associated with the mobile device.",
+          "keywords": "association",
+          "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "Mobile Device",
+          "target": "Internet Access Mechanism",
+          "edge_index": 74,
+          "source_chunks": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The search service sends results back to the mobile device via the Internet access mechanism.",
+          "keywords": "sends results",
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "Mobile Device",
+          "target": "Search Service",
+          "edge_index": 75,
+          "source_chunks": [
+            "US8917913B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The mobile device includes at least a screen.",
+          "keywords": "includes",
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "Mobile Device",
+          "target": "Screen",
+          "edge_index": 76,
+          "source_chunks": [
+            "US8917913B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The mobile device includes at least a camera.",
+          "keywords": "includes",
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "Mobile Device",
+          "target": "Camera",
+          "edge_index": 77,
+          "source_chunks": [
+            "US8917913B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The search service sends the result back to the mobile device via the Internet access mechanism.",
+          "keywords": "transmission",
+          "source_id": "US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284309,
+          "truncate": "",
+          "source": "Mobile Device",
+          "target": "Result",
+          "edge_index": 78,
+          "source_chunks": [
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The mobile device may be selected as a mobile phone.",
+          "keywords": "type selection",
+          "source_id": "US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284310,
+          "truncate": "",
+          "source": "Mobile Device",
+          "target": "Mobile Phone",
+          "edge_index": 79,
+          "source_chunks": [
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The mobile device may be selected as a tablet.",
+          "keywords": "type selection",
+          "source_id": "US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284310,
+          "truncate": "",
+          "source": "Mobile Device",
+          "target": "Tablet",
+          "edge_index": 80,
+          "source_chunks": [
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The mobile device may be selected as a PDA.",
+          "keywords": "type selection",
+          "source_id": "US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284310,
+          "truncate": "",
+          "source": "Mobile Device",
+          "target": "PDA",
+          "edge_index": 81,
+          "source_chunks": [
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The mobile device may be selected as a dedicated camera.",
+          "keywords": "type selection",
+          "source_id": "US8917913B2-chunk-001",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793284310,
+          "truncate": "",
+          "source": "Mobile Device",
+          "target": "Dedicated Camera",
+          "edge_index": 82,
+          "source_chunks": [
+            "US8917913B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8917913B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 13,
+    "observed_unsupported_edge": false,
+    "details_zh": "13条邻边均已读：52、65、72对应上下文消息专利；73–82对应人脸/社交搜索专利。各边的source_id仍限定原专利，未观察到将camera属性明确标给上下文消息专利的边。",
+    "edge_indices": [
+      52,
+      65,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82
+    ],
+    "per_edge_review": [
+      {
+        "edge_index": 52,
+        "source": "Context-Data Acquisition And Ranking",
+        "target": "Mobile Device",
+        "source_id": "US8509827B2-chunk-000",
+        "canonical_publications": [
+          "US8509827B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 65,
+        "source": "Context-Data Type",
+        "target": "Mobile Device",
+        "source_id": "US8509827B2-chunk-000",
+        "canonical_publications": [
+          "US8509827B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 72,
+        "source": "Mobile Device",
+        "target": "Smart Phone",
+        "source_id": "US8509827B2-chunk-000",
+        "canonical_publications": [
+          "US8509827B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 73,
+        "source": "Mobile Device",
+        "target": "Application",
+        "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+        "canonical_publications": [
+          "US8917913B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 74,
+        "source": "Mobile Device",
+        "target": "Internet Access Mechanism",
+        "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+        "canonical_publications": [
+          "US8917913B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 75,
+        "source": "Mobile Device",
+        "target": "Search Service",
+        "source_id": "US8917913B2-chunk-000",
+        "canonical_publications": [
+          "US8917913B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 76,
+        "source": "Mobile Device",
+        "target": "Screen",
+        "source_id": "US8917913B2-chunk-000",
+        "canonical_publications": [
+          "US8917913B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 77,
+        "source": "Mobile Device",
+        "target": "Camera",
+        "source_id": "US8917913B2-chunk-000",
+        "canonical_publications": [
+          "US8917913B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 78,
+        "source": "Mobile Device",
+        "target": "Result",
+        "source_id": "US8917913B2-chunk-001",
+        "canonical_publications": [
+          "US8917913B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 79,
+        "source": "Mobile Device",
+        "target": "Mobile Phone",
+        "source_id": "US8917913B2-chunk-001",
+        "canonical_publications": [
+          "US8917913B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 80,
+        "source": "Mobile Device",
+        "target": "Tablet",
+        "source_id": "US8917913B2-chunk-001",
+        "canonical_publications": [
+          "US8917913B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 81,
+        "source": "Mobile Device",
+        "target": "PDA",
+        "source_id": "US8917913B2-chunk-001",
+        "canonical_publications": [
+          "US8917913B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 82,
+        "source": "Mobile Device",
+        "target": "Dedicated Camera",
+        "source_id": "US8917913B2-chunk-001",
+        "canonical_publications": [
+          "US8917913B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      }
+    ],
+    "scope_warning_edge_indices": [],
+    "observed_cross_document_wrong_edge_propagation": false,
+    "retrieval_or_generation_propagation_evaluated": false
+  },
+  "limitations_zh": [
+    "此为AI辅助逐条原文审阅，非独立人类gold，不使用模型评判API。",
+    "类别判断针对共同概念/角色意义；原文没有给出跨专利实例等同或全部成员共享属性的本体断言。",
+    "共享节点可能允许无来源约束的路径组合，但本审计未运行检索/生成，也不能把潜在风险报告成已发生的答案污染。",
+    "抽取句的全部细粒度法律限定不在此四节点语义分类的穷尽验证范围；已记录的端点精度警示不等于确定错误。"
+  ],
+  "review_metadata": {
+    "reviewed_utc": "2026-10-30T08:11:08.444767+00:00",
+    "protocol": "evidence/review_protocol.json",
+    "dossier_sha256": "45654caea954a0e774aef2aa0609791c37b6cb80b2b202746cde9861baee417c",
+    "source_documents_reviewed": 2,
+    "source_chunks_reviewed": 3,
+    "raw_entity_rows_reviewed": 3,
+    "raw_relation_rows_reviewed": 15,
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "original_round2_modified": false
+  }
+}

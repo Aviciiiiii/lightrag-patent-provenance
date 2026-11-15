@@ -1,0 +1,60 @@
+{
+  "started_utc": "2026-10-29T14:13:44+00:00",
+  "finished_utc": "2026-10-29T15:21:52.646039+00:00",
+  "elapsed_minutes": 68.14,
+  "hard_deadline_utc": "2026-10-29T16:13:44+00:00",
+  "official_query_gate_passed": true,
+  "all_experiment_api_calls_finished": true,
+  "own_experiment_python_processes": [],
+  "autodl_accessed": false,
+  "fot_modified": false,
+  "cost_summary": {
+    "generated_utc": "2026-10-29T15:00:49.872795+00:00",
+    "calls_total": 392,
+    "llm_calls": 95,
+    "embedding_calls": 297,
+    "llm_prompt_tokens": 421530,
+    "llm_completion_tokens": 115419,
+    "prompt_cache_hit_tokens": 105856,
+    "reasoning_tokens": 0,
+    "provider_errors": 0,
+    "missing_usage_calls": 0,
+    "truncated_call_ids": [
+      191
+    ],
+    "upper_price_estimate_cny": 1.7664120000000003,
+    "reserved_unknown_cny": 0.0,
+    "cache_aware_price_estimate_cny": 1.55893424,
+    "cny_per_usd_reference": 6.7147,
+    "internal_budget_cny": 10,
+    "not_invoice": true,
+    "sdk_max_retries": 0,
+    "estimated_usd_upper": 0.26306640654087304,
+    "estimated_usd_cache_aware": 0.23216737009844074
+  },
+  "report_delivery": {
+    "operation": "replace_library_file",
+    "status": "succeeded",
+    "library_file_id": "libfile_0c4faa8b04148191b409d015af4d8f04",
+    "file_id": "file_00000000190c81fb8313022bb1d8ec11",
+    "version": 1,
+    "file_name": "LightRAG_patent_provenance_report_zh.html",
+    "local_path": "<DOT_WORKDIR>/round2/report/LightRAG_patent_provenance_report_zh.html",
+    "local_metadata_applied": true,
+    "credential_values_checked": true,
+    "credential_matches": 0,
+    "note": "An initial overbroad filter matched the public EMBEDDING_TOKEN_LIMIT value. Exact API credential checks passed; no credential values were present."
+  },
+  "evidence_package": {
+    "finished_utc": "2026-10-29T15:16:42.311547+00:00",
+    "file": "<DOT_WORKDIR>/round2/LightRAG_patent_round2_evidence_20261029.zip",
+    "bytes": 16561565,
+    "entries": 697,
+    "sha256": "1bd2fc1e965b93311984f588afd7d2dd9f4ec105a89628e5e676163d651c479c",
+    "crc_passed": true,
+    "sha256_checks_passed": 694,
+    "credential_value_matches": 0
+  },
+  "remaining_experiment_blockers": [],
+  "note": "Final process/delivery receipt is kept separately from the already sealed evidence archive. No more experimental API calls or computation is scheduled."
+}

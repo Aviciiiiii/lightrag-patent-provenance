@@ -1,0 +1,19 @@
+{
+  "recorded_utc": "2026-10-29T16:23:59.016484+00:00",
+  "action": "Import official lightrag.operate._process_extraction_result in a fresh local Python process",
+  "target": "src/LightRAG-v1.5.7/lightrag/operate.py",
+  "status": "interrupted_before_parsing",
+  "reason": "Local dependency module reads stalled in unrelated startup imports for over five minutes. Final traceback was operate.py -> utils.py _graphml_encodable_types() -> networkx.readwrite.graphml GraphML -> networkx.classes.graphviews import. Earlier preparation imports also stalled in PyYAML and numpy.",
+  "attempt_start_approx_utc": "2026-10-29T16:15:30+00:00",
+  "interrupted_utc": "2026-10-29T16:20:39+00:00",
+  "exit_code": 130,
+  "model_calls_in_attempt": 0,
+  "approval_denied": false,
+  "network_auth_failure": false,
+  "note": "A Python signal alarm had been installed; the normal import still required manual interruption. Do not represent that alarm alone as a verified hard wall-clock process kill.",
+  "fallback": "Execute unchanged official parser AST nodes and complete helper/constant set from pinned tracked source, record hashes and source ranges, validate against saved round2 normal-import official parser replay API191. No custom parsing algorithm or official source edits.",
+  "fallback_result": "succeeded",
+  "validation": "round3/evidence/parser_validation_api191.json",
+  "manifest": "round3/evidence/parser_selective_source_manifest.json",
+  "own_stalled_preparation_and_parser_processes": "all observed exited; no background parser work remains"
+}

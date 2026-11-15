@@ -1,0 +1,890 @@
+{
+  "audit_id": "N001",
+  "node_id": "Data Processing System",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两篇都把该词用于执行数据处理的软件/计算机系统：一篇处理IP权利地理可视化，一篇依据用户兴趣与关键词权重选择广告。原文用途和局部系统不同，但计算机数据处理系统这一共同上位类足以解释同名节点；没有原文或图边证明二者是同一部署实例。",
+  "class_instance_interpretation_zh": "共同的系统类别，非同一系统实例。合并描述以<SEP>并列各自任务，不能把所有组件同时断言给任一专利中的单一系统；共享节点仅产生潜在跨文档邻接。",
+  "concept_class_vs_local_instance": "shared class; distinct or unspecified document-local implementations; no same-individual assertion established",
+  "source_assessments": [
+    {
+      "publication_number": "US9298709B2",
+      "evidence_quote": "A data processing system to visualise data from an IP rights database comprising:",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US9298709B2-chunk-000"
+      ],
+      "quote_source_chunk_ids": [
+        "US9298709B2-chunk-000"
+      ],
+      "quote_validation": {
+        "exact_contiguous_substring": true,
+        "claims_json_path": "data/claims/US9298709B2.json",
+        "claim_numbers_containing_quote": [
+          1
+        ],
+        "selected_claim_checked": 1,
+        "abstract_section_checked": false
+      },
+      "role_zh": "以IP权利数据库为数据源，在地图可视区域内筛选并更新可视化的计算机系统。",
+      "extraction_description_support": {
+        "assessment_zh": "抽取描述的地图、限制准则、显示更新均由Abstract与Claim1支持；实际邻边0–8对应本文的数据库、地图和组成接口。",
+        "reviewed_raw_records": [
+          {
+            "chunk_id": "US9298709B2-chunk-000",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+                "line_number": 2,
+                "description": "A computer system (10) that visualizes data from an IP rights database as a geographic map with a viewable area, generating and updating data visualizations based on the current map coordinates and restriction criteria."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+                "line_number": 21,
+                "source": "Data Processing System",
+                "target": "IP Rights Database",
+                "description": "The data processing system visualizes data from the IP rights database."
+              },
+              {
+                "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+                "line_number": 22,
+                "source": "Data Processing System",
+                "target": "Geographic Map",
+                "description": "The data processing system displays a geographic map having a viewable area."
+              },
+              {
+                "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+                "line_number": 23,
+                "source": "Data Processing System",
+                "target": "Map Display Change Monitor",
+                "description": "The data processing system comprises the map display change monitor."
+              },
+              {
+                "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+                "line_number": 24,
+                "source": "Data Processing System",
+                "target": "IP Rights List Generator",
+                "description": "The data processing system comprises the IP rights list generator."
+              },
+              {
+                "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+                "line_number": 25,
+                "source": "Data Processing System",
+                "target": "Information Display Generator",
+                "description": "The data processing system comprises the information display generator."
+              },
+              {
+                "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+                "line_number": 26,
+                "source": "Data Processing System",
+                "target": "Restriction Criteria Interface",
+                "description": "The data processing system comprises the restriction criteria interface."
+              },
+              {
+                "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+                "line_number": 27,
+                "source": "Data Processing System",
+                "target": "Geographic Map Display Interface",
+                "description": "The data processing system comprises the geographic map display interface."
+              },
+              {
+                "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+                "line_number": 28,
+                "source": "Data Processing System",
+                "target": "Data Visualization Selector",
+                "description": "The data processing system further comprises a data visualization selector."
+              },
+              {
+                "cache_key": "default:extract:55b8902a7e51f0956e4aa0f4f765cc5b",
+                "line_number": 47,
+                "source": "US9298709B2",
+                "target": "Data Processing System",
+                "description": "The patent publication US9298709B2 describes a data processing system to visualize data from an IP rights database."
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The patent publication US9298709B2 describes a data processing system to visualize data from an IP rights database.",
+          "keywords": "describes,discloses",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "US9298709B2",
+          "target": "Data Processing System",
+          "edge_index": 0,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system visualizes data from the IP rights database.",
+          "keywords": "data source,visualization",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "IP Rights Database",
+          "edge_index": 1,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system displays a geographic map having a viewable area.",
+          "keywords": "display,visualization",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Geographic Map",
+          "edge_index": 2,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system comprises the map display change monitor.",
+          "keywords": "component,comprises",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Map Display Change Monitor",
+          "edge_index": 3,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system comprises the IP rights list generator.",
+          "keywords": "component,comprises",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "IP Rights List Generator",
+          "edge_index": 4,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system comprises the information display generator.",
+          "keywords": "component,comprises",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Information Display Generator",
+          "edge_index": 5,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system comprises the restriction criteria interface.",
+          "keywords": "component,comprises",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Restriction Criteria Interface",
+          "edge_index": 6,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system comprises the geographic map display interface.",
+          "keywords": "component,comprises",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Geographic Map Display Interface",
+          "edge_index": 7,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system further comprises a data visualization selector.",
+          "keywords": "component,comprises",
+          "source_id": "US9298709B2-chunk-000",
+          "file_path": "US9298709B2.txt",
+          "created_at": 1793284105,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Data Visualization Selector",
+          "edge_index": 8,
+          "source_chunks": [
+            "US9298709B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9298709B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "evidence_quote": "a data processing system having one or more processors and memory, the data processing system configured to:",
+      "claim_or_section": "Claim 13",
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US9304738B1-chunk-001"
+      ],
+      "quote_validation": {
+        "exact_contiguous_substring": true,
+        "claims_json_path": "data/claims/US9304738B1.json",
+        "claim_numbers_containing_quote": [
+          13
+        ],
+        "selected_claim_checked": 13,
+        "abstract_section_checked": false
+      },
+      "role_zh": "接收广告兴趣信号、识别和加权关键词、排序并选择广告的处理系统。",
+      "extraction_description_support": {
+        "assessment_zh": "两段抽取描述分别概括方法和具有处理器/存储器的系统，与Claims1、11–14相符；边9–18属于本文。边17把Claim18介质指令与本处理系统关联，是上下文归属而非明确同一硬件实例。",
+        "reviewed_raw_records": [
+          {
+            "chunk_id": "US9304738B1-chunk-000",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+                "line_number": 2,
+                "description": "A computer-based system that detects user interest, identifies keywords, determines keyword weights, receives content requests, ranks keywords, and selects content for display with information resources."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+                "line_number": 29,
+                "source": "Data Processing System",
+                "target": "Parked Domain Web Page",
+                "description": "The data processing system provides content and advertisements for display with the parked domain web page."
+              },
+              {
+                "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+                "line_number": 30,
+                "source": "Data Processing System",
+                "target": "User Interest Indication",
+                "description": "The data processing system receives indications of user interest in advertisements displayed on the parked domain web page."
+              },
+              {
+                "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+                "line_number": 31,
+                "source": "Data Processing System",
+                "target": "Keyword",
+                "description": "The data processing system identifies keywords of advertisements and determines a weight for each keyword."
+              },
+              {
+                "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+                "line_number": 32,
+                "source": "Data Processing System",
+                "target": "Database",
+                "description": "The data processing system identifies keywords from the database and associates increased keyword weights with the parked domain web page in the database."
+              },
+              {
+                "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+                "line_number": 33,
+                "source": "Data Processing System",
+                "target": "Content Request",
+                "description": "The data processing system receives a request for content to provide for display with the parked domain web page."
+              },
+              {
+                "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+                "line_number": 34,
+                "source": "Data Processing System",
+                "target": "Keyword Ranking",
+                "description": "The data processing system ranks keywords based on their weights to select a highest ranked keyword."
+              },
+              {
+                "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+                "line_number": 35,
+                "source": "Data Processing System",
+                "target": "Content Selection",
+                "description": "The data processing system selects an advertisement to provide for display based on the highest ranked keyword."
+              }
+            ]
+          },
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "entity_rows": [
+              {
+                "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+                "line_number": 6,
+                "description": "A system having one or more processors and memory configured to evaluate information via a computer network, including receiving user interest indications, determining keyword weights, ranking keywords, and selecting advertisements."
+              }
+            ],
+            "relation_rows_reviewed": [
+              {
+                "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+                "line_number": 23,
+                "source": "Data Processing System",
+                "target": "User Interest Indication",
+                "description": "The data processing system receives an indication of user interest of a user in an advertisement displayed with a parked domain web page."
+              },
+              {
+                "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+                "line_number": 24,
+                "source": "Data Processing System",
+                "target": "Keyword",
+                "description": "The data processing system identifies a plurality of keywords associated with an advertisement using the unique identifier and determines a weight of each keyword."
+              },
+              {
+                "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+                "line_number": 25,
+                "source": "Data Processing System",
+                "target": "Advertisement",
+                "description": "The data processing system selects an advertisement to provide for display with the parked domain web page based on the highest ranked keyword."
+              },
+              {
+                "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+                "line_number": 26,
+                "source": "Data Processing System",
+                "target": "Database",
+                "description": "The data processing system accesses the database storing keywords and their weights."
+              },
+              {
+                "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+                "line_number": 27,
+                "source": "Data Processing System",
+                "target": "Parked Domain Web Page",
+                "description": "The data processing system provides content for display with the parked domain web page."
+              },
+              {
+                "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+                "line_number": 49,
+                "source": "Non-Transitory Computer Readable Medium",
+                "target": "Data Processing System",
+                "description": "The non-transitory computer readable medium has instructions to evaluate information performed by the data processing system."
+              },
+              {
+                "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+                "line_number": 50,
+                "source": "Data Processing System",
+                "target": "Computer Network",
+                "description": "The data processing system evaluates information via a computer network."
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The data processing system provides content for display with the parked domain web page.<SEP>The data processing system provides content and advertisements for display with the parked domain web page.",
+          "keywords": "advertisement display,content provision,provides content for",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Parked Domain Web Page",
+          "edge_index": 9,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The data processing system receives an indication of user interest of a user in an advertisement displayed with a parked domain web page.<SEP>The data processing system receives indications of user interest in advertisements displayed on the parked domain web page.",
+          "keywords": "detection,processes,receives,receiving",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "User Interest Indication",
+          "edge_index": 10,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The data processing system identifies a plurality of keywords associated with an advertisement using the unique identifier and determines a weight of each keyword.<SEP>The data processing system identifies keywords of advertisements and determines a weight for each keyword.",
+          "keywords": "determines weight,identification,identifies,weighting",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Keyword",
+          "edge_index": 11,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The data processing system accesses the database storing keywords and their weights.<SEP>The data processing system identifies keywords from the database and associates increased keyword weights with the parked domain web page in the database.",
+          "keywords": "accesses,accessing,stores,storing",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Database",
+          "edge_index": 12,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system receives a request for content to provide for display with the parked domain web page.",
+          "keywords": "receiving",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Content Request",
+          "edge_index": 13,
+          "source_chunks": [
+            "US9304738B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system ranks keywords based on their weights to select a highest ranked keyword.",
+          "keywords": "performing",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Keyword Ranking",
+          "edge_index": 14,
+          "source_chunks": [
+            "US9304738B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system selects an advertisement to provide for display based on the highest ranked keyword.",
+          "keywords": "performing",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Content Selection",
+          "edge_index": 15,
+          "source_chunks": [
+            "US9304738B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system selects an advertisement to provide for display with the parked domain web page based on the highest ranked keyword.",
+          "keywords": "provides for display,selects",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Advertisement",
+          "edge_index": 16,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The non-transitory computer readable medium has instructions to evaluate information performed by the data processing system.",
+          "keywords": "instructions for",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Non-Transitory Computer Readable Medium",
+          "edge_index": 17,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The data processing system evaluates information via a computer network.",
+          "keywords": "evaluates information via",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Computer Network",
+          "edge_index": 18,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 19,
+    "observed_unsupported_edge": false,
+    "details_zh": "19条邻边全部按各自source_id分组复核：0–8为IP可视化；9–18为关键词广告选择。未发现把地图组件直接归因于广告专利的实际边。共享节点允许组合路径，但没有保存查询证明发生传播。",
+    "edge_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "per_edge_review": [
+      {
+        "edge_index": 0,
+        "source": "US9298709B2",
+        "target": "Data Processing System",
+        "source_id": "US9298709B2-chunk-000",
+        "canonical_publications": [
+          "US9298709B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 1,
+        "source": "Data Processing System",
+        "target": "IP Rights Database",
+        "source_id": "US9298709B2-chunk-000",
+        "canonical_publications": [
+          "US9298709B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 2,
+        "source": "Data Processing System",
+        "target": "Geographic Map",
+        "source_id": "US9298709B2-chunk-000",
+        "canonical_publications": [
+          "US9298709B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 3,
+        "source": "Data Processing System",
+        "target": "Map Display Change Monitor",
+        "source_id": "US9298709B2-chunk-000",
+        "canonical_publications": [
+          "US9298709B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 4,
+        "source": "Data Processing System",
+        "target": "IP Rights List Generator",
+        "source_id": "US9298709B2-chunk-000",
+        "canonical_publications": [
+          "US9298709B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 5,
+        "source": "Data Processing System",
+        "target": "Information Display Generator",
+        "source_id": "US9298709B2-chunk-000",
+        "canonical_publications": [
+          "US9298709B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 6,
+        "source": "Data Processing System",
+        "target": "Restriction Criteria Interface",
+        "source_id": "US9298709B2-chunk-000",
+        "canonical_publications": [
+          "US9298709B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 7,
+        "source": "Data Processing System",
+        "target": "Geographic Map Display Interface",
+        "source_id": "US9298709B2-chunk-000",
+        "canonical_publications": [
+          "US9298709B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 8,
+        "source": "Data Processing System",
+        "target": "Data Visualization Selector",
+        "source_id": "US9298709B2-chunk-000",
+        "canonical_publications": [
+          "US9298709B2"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 9,
+        "source": "Data Processing System",
+        "target": "Parked Domain Web Page",
+        "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 10,
+        "source": "Data Processing System",
+        "target": "User Interest Indication",
+        "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 11,
+        "source": "Data Processing System",
+        "target": "Keyword",
+        "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 12,
+        "source": "Data Processing System",
+        "target": "Database",
+        "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 13,
+        "source": "Data Processing System",
+        "target": "Content Request",
+        "source_id": "US9304738B1-chunk-000",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 14,
+        "source": "Data Processing System",
+        "target": "Keyword Ranking",
+        "source_id": "US9304738B1-chunk-000",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 15,
+        "source": "Data Processing System",
+        "target": "Content Selection",
+        "source_id": "US9304738B1-chunk-000",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 16,
+        "source": "Data Processing System",
+        "target": "Advertisement",
+        "source_id": "US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      },
+      {
+        "edge_index": 17,
+        "source": "Data Processing System",
+        "target": "Non-Transitory Computer Readable Medium",
+        "source_id": "US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "scope_or_endpoint_precision_warning",
+        "details_zh": "Claim18明确介质指令的评估操作，未逐字指定Data Processing System为执行者；结合Claim13可理解为系统上下文关系，不能据此断言特定硬件或同一实例。"
+      },
+      {
+        "edge_index": 18,
+        "source": "Data Processing System",
+        "target": "Computer Network",
+        "source_id": "US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "status": "supported_in_source_context",
+        "details_zh": "在所标来源的原文和原始关系记录中具有对应组件/操作/存储/类型关系支持；端点序列是图序列化字段，不额外假定有向逻辑蕴含。"
+      }
+    ],
+    "scope_warning_edge_indices": [
+      17
+    ],
+    "observed_cross_document_wrong_edge_propagation": false,
+    "retrieval_or_generation_propagation_evaluated": false
+  },
+  "limitations_zh": [
+    "此为AI辅助逐条原文审阅，非独立人类gold，不使用模型评判API。",
+    "类别判断针对共同概念/角色意义；原文没有给出跨专利实例等同或全部成员共享属性的本体断言。",
+    "共享节点可能允许无来源约束的路径组合，但本审计未运行检索/生成，也不能把潜在风险报告成已发生的答案污染。",
+    "抽取句的全部细粒度法律限定不在此四节点语义分类的穷尽验证范围；已记录的端点精度警示不等于确定错误。"
+  ],
+  "review_metadata": {
+    "reviewed_utc": "2026-10-30T08:11:08.443941+00:00",
+    "protocol": "evidence/review_protocol.json",
+    "dossier_sha256": "c498e7bae679a77c48aec4a16d65cfc76b14f4b9777b37a3cd4eb259769275b1",
+    "source_documents_reviewed": 2,
+    "source_chunks_reviewed": 3,
+    "raw_entity_rows_reviewed": 3,
+    "raw_relation_rows_reviewed": 23,
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "original_round2_modified": false
+  }
+}

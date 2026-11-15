@@ -1,0 +1,98 @@
+{
+  "started_utc": "2026-11-15T03:42:22.846861+00:00",
+  "scope": "query-only naive followup of existing new full-group indexes; no extraction/insertion",
+  "runs": [
+    {
+      "run_id": "F01_A_r1",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F01_B_r1",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F01_B_r2",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F01_A_r2",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F01_A_r3",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F01_B_r3",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F04_A_r1",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F04_B_r1",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F04_B_r2",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F04_A_r2",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F04_A_r3",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F04_B_r3",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F05_A_r1",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F05_B_r1",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F05_B_r2",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F05_A_r2",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F05_A_r3",
+      "status": "completed",
+      "core_index_unchanged": true
+    },
+    {
+      "run_id": "F05_B_r3",
+      "status": "completed",
+      "core_index_unchanged": true
+    }
+  ],
+  "status": "completed",
+  "ended_utc": "2026-11-15T03:43:45.317844+00:00"
+}

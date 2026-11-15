@@ -1,0 +1,1074 @@
+{
+  "source": "results/chunk_probe.json",
+  "official_version": "1.5.7",
+  "source_commit": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+  "chunk_size": 1200,
+  "overlap": 100,
+  "index_convention": "zero-based within each patent; diagnostic_chunk_id is local SHA256, not a persisted LightRAG graph chunk ID",
+  "source_spans_exact_match_verified": true,
+  "questions": [
+    {
+      "question_id": "Q01",
+      "category": "A_specific_entity",
+      "evidence": [
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 1,
+          "quote": "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values",
+          "quote_doc_span": [
+            907,
+            1094
+          ],
+          "full_claim_doc_span": [
+            818,
+            1484
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 187,
+                "total_char_count": 187,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 666,
+                "total_char_count": 666,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 1,
+          "quote": "determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "quote_doc_span": [
+            1355,
+            1484
+          ],
+          "full_claim_doc_span": [
+            818,
+            1484
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 129,
+                "total_char_count": 129,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 666,
+                "total_char_count": 666,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "per_document_summary": [
+        {
+          "publication_number": "US9514753B2",
+          "chunk_indices_containing_all_required_quotes": [
+            0
+          ],
+          "chunk_indices_containing_all_required_full_claims": [
+            0
+          ],
+          "all_quotes_co_resident": true,
+          "all_full_claims_co_resident": true
+        }
+      ],
+      "natural_cross_chunk_assessment": "not_applicable",
+      "query_status": "not_run",
+      "extraction_or_retrieval_loss_established": false
+    },
+    {
+      "question_id": "Q02",
+      "category": "A_specific_entity",
+      "evidence": [
+        {
+          "publication_number": "US11423041B2",
+          "claim_number": 1,
+          "quote": "the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object",
+          "quote_doc_span": [
+            1314,
+            1536
+          ],
+          "full_claim_doc_span": [
+            746,
+            2147
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65",
+                "covered_char_count": 222,
+                "total_char_count": 222,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65",
+                "covered_char_count": 1401,
+                "total_char_count": 1401,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "publication_number": "US11423041B2",
+          "claim_number": 1,
+          "quote": "in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed.",
+          "quote_doc_span": [
+            1974,
+            2147
+          ],
+          "full_claim_doc_span": [
+            746,
+            2147
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65",
+                "covered_char_count": 173,
+                "total_char_count": 173,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65",
+                "covered_char_count": 1401,
+                "total_char_count": 1401,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "per_document_summary": [
+        {
+          "publication_number": "US11423041B2",
+          "chunk_indices_containing_all_required_quotes": [
+            0
+          ],
+          "chunk_indices_containing_all_required_full_claims": [
+            0
+          ],
+          "all_quotes_co_resident": true,
+          "all_full_claims_co_resident": true
+        }
+      ],
+      "natural_cross_chunk_assessment": "not_applicable",
+      "query_status": "not_run",
+      "extraction_or_retrieval_loss_established": false
+    },
+    {
+      "question_id": "Q03",
+      "category": "B_claim_evidence",
+      "evidence": [
+        {
+          "publication_number": "US8509827B2",
+          "claim_number": 1,
+          "quote": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source",
+          "quote_doc_span": [
+            1352,
+            1574
+          ],
+          "full_claim_doc_span": [
+            948,
+            1687
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "6773cf78665bbb35e2353f276d6c19b21d69539b45a17c7fb0645c99c7afd791",
+                "covered_char_count": 222,
+                "total_char_count": 222,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "6773cf78665bbb35e2353f276d6c19b21d69539b45a17c7fb0645c99c7afd791",
+                "covered_char_count": 739,
+                "total_char_count": 739,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "per_document_summary": [
+        {
+          "publication_number": "US8509827B2",
+          "chunk_indices_containing_all_required_quotes": [
+            0
+          ],
+          "chunk_indices_containing_all_required_full_claims": [
+            0
+          ],
+          "all_quotes_co_resident": true,
+          "all_full_claims_co_resident": true
+        }
+      ],
+      "natural_cross_chunk_assessment": "not_applicable",
+      "query_status": "not_run",
+      "extraction_or_retrieval_loss_established": false
+    },
+    {
+      "question_id": "Q04",
+      "category": "B_claim_evidence",
+      "evidence": [
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 6,
+          "quote": "6. The method of claim 1 , wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.",
+          "quote_doc_span": [
+            3245,
+            3398
+          ],
+          "full_claim_doc_span": [
+            3245,
+            3398
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 153,
+                "total_char_count": 153,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 153,
+                "total_char_count": 153,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "per_document_summary": [
+        {
+          "publication_number": "US9514753B2",
+          "chunk_indices_containing_all_required_quotes": [
+            0
+          ],
+          "chunk_indices_containing_all_required_full_claims": [
+            0
+          ],
+          "all_quotes_co_resident": true,
+          "all_full_claims_co_resident": true
+        }
+      ],
+      "natural_cross_chunk_assessment": "not_applicable",
+      "query_status": "not_run",
+      "extraction_or_retrieval_loss_established": false
+    },
+    {
+      "question_id": "Q05",
+      "category": "B_claim_evidence",
+      "evidence": [
+        {
+          "publication_number": "US8655901B1",
+          "claim_number": 7,
+          "quote": "7. The method of claim 1 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.",
+          "quote_doc_span": [
+            3852,
+            4053
+          ],
+          "full_claim_doc_span": [
+            3852,
+            4053
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "0bab0caa8c0462609609b9037c577b4201a3af3034b28331edefba06b1dee6e8",
+                "covered_char_count": 201,
+                "total_char_count": 201,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "0bab0caa8c0462609609b9037c577b4201a3af3034b28331edefba06b1dee6e8",
+                "covered_char_count": 201,
+                "total_char_count": 201,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "per_document_summary": [
+        {
+          "publication_number": "US8655901B1",
+          "chunk_indices_containing_all_required_quotes": [
+            0
+          ],
+          "chunk_indices_containing_all_required_full_claims": [
+            0
+          ],
+          "all_quotes_co_resident": true,
+          "all_full_claims_co_resident": true
+        }
+      ],
+      "natural_cross_chunk_assessment": "not_applicable",
+      "query_status": "not_run",
+      "extraction_or_retrieval_loss_established": false
+    },
+    {
+      "question_id": "Q06",
+      "category": "C_cross_document",
+      "evidence": [
+        {
+          "publication_number": "US7991757B2",
+          "claim_number": 1,
+          "quote": "an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.",
+          "quote_doc_span": [
+            2182,
+            2433
+          ],
+          "full_claim_doc_span": [
+            494,
+            2433
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "44d14ac28f58ce1923e60c3a11843fe0f1dac0d16d0d7febf9882ad01fe17259",
+                "covered_char_count": 251,
+                "total_char_count": 251,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "44d14ac28f58ce1923e60c3a11843fe0f1dac0d16d0d7febf9882ad01fe17259",
+                "covered_char_count": 1939,
+                "total_char_count": 1939,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "publication_number": "US8095432B1",
+          "claim_number": 1,
+          "quote": "ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank",
+          "quote_doc_span": [
+            1701,
+            1950
+          ],
+          "full_claim_doc_span": [
+            935,
+            2911
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "870959f01fdf22e55223e95ba2ca5f25438debf5d1fc2aec28abb31eac4e2c83",
+                "covered_char_count": 249,
+                "total_char_count": 249,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "870959f01fdf22e55223e95ba2ca5f25438debf5d1fc2aec28abb31eac4e2c83",
+                "covered_char_count": 1976,
+                "total_char_count": 1976,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "per_document_summary": [
+        {
+          "publication_number": "US7991757B2",
+          "chunk_indices_containing_all_required_quotes": [
+            0
+          ],
+          "chunk_indices_containing_all_required_full_claims": [
+            0
+          ],
+          "all_quotes_co_resident": true,
+          "all_full_claims_co_resident": true
+        },
+        {
+          "publication_number": "US8095432B1",
+          "chunk_indices_containing_all_required_quotes": [
+            0
+          ],
+          "chunk_indices_containing_all_required_full_claims": [
+            0
+          ],
+          "all_quotes_co_resident": true,
+          "all_full_claims_co_resident": true
+        }
+      ],
+      "natural_cross_chunk_assessment": "not_applicable",
+      "query_status": "not_run",
+      "extraction_or_retrieval_loss_established": false
+    },
+    {
+      "question_id": "Q07",
+      "category": "C_cross_document",
+      "evidence": [
+        {
+          "publication_number": "US8509827B2",
+          "claim_number": 1,
+          "quote": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source",
+          "quote_doc_span": [
+            1352,
+            1574
+          ],
+          "full_claim_doc_span": [
+            948,
+            1687
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "6773cf78665bbb35e2353f276d6c19b21d69539b45a17c7fb0645c99c7afd791",
+                "covered_char_count": 222,
+                "total_char_count": 222,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "6773cf78665bbb35e2353f276d6c19b21d69539b45a17c7fb0645c99c7afd791",
+                "covered_char_count": 739,
+                "total_char_count": 739,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "publication_number": "US10867122B1",
+          "claim_number": 1,
+          "quote": "requesting, for a user interface element, content that is related to both the first factual entity and the second factual entity, wherein the user interface element provides a collection of content related to the first factual entity and the second factual entity within the display environment",
+          "quote_doc_span": [
+            2163,
+            2457
+          ],
+          "full_claim_doc_span": [
+            543,
+            2742
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "cdb9a31ce359fcaf09cc018de814c284abb820d41aa8a4684e6518a413fe7162",
+                "covered_char_count": 294,
+                "total_char_count": 294,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "cdb9a31ce359fcaf09cc018de814c284abb820d41aa8a4684e6518a413fe7162",
+                "covered_char_count": 2199,
+                "total_char_count": 2199,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "per_document_summary": [
+        {
+          "publication_number": "US8509827B2",
+          "chunk_indices_containing_all_required_quotes": [
+            0
+          ],
+          "chunk_indices_containing_all_required_full_claims": [
+            0
+          ],
+          "all_quotes_co_resident": true,
+          "all_full_claims_co_resident": true
+        },
+        {
+          "publication_number": "US10867122B1",
+          "chunk_indices_containing_all_required_quotes": [
+            0
+          ],
+          "chunk_indices_containing_all_required_full_claims": [
+            0
+          ],
+          "all_quotes_co_resident": true,
+          "all_full_claims_co_resident": true
+        }
+      ],
+      "natural_cross_chunk_assessment": "not_applicable",
+      "query_status": "not_run",
+      "extraction_or_retrieval_loss_established": false
+    },
+    {
+      "question_id": "Q08",
+      "category": "D_natural_cross_chunk_candidate",
+      "evidence": [
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 1,
+          "quote": "determining a set of speaker vectors from a plurality of hash tables using the hash values",
+          "quote_doc_span": [
+            1004,
+            1094
+          ],
+          "full_claim_doc_span": [
+            818,
+            1484
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 90,
+                "total_char_count": 90,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 666,
+                "total_char_count": 666,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 9,
+          "quote": "9. The method of claim 1 , wherein comparing the speaker vectors in the set with the utterance vector comprises determining similarity scores",
+          "quote_doc_span": [
+            4070,
+            4211
+          ],
+          "full_claim_doc_span": [
+            4070,
+            4475
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 141,
+                "total_char_count": 141,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 405,
+                "total_char_count": 405,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 10,
+          "quote": "10. The method of claim 9 , wherein determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set comprises determining a cosine distance between the utterance vector and each of the speaker vectors in the set.",
+          "quote_doc_span": [
+            4476,
+            4762
+          ],
+          "full_claim_doc_span": [
+            4476,
+            4762
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 286,
+                "total_char_count": 286,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 286,
+                "total_char_count": 286,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 11,
+          "quote": "11. The method of claim 10 , wherein selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector comprises: identifying a smallest cosine distance from among the determined cosine distances; determining that the smallest cosine distance is less than a maximum distance threshold value; and based on determining that the smallest cosine distance is less than the maximum distance threshold value, selecting the speaker vector corresponding to the smallest cosine distance.",
+          "quote_doc_span": [
+            4763,
+            5279
+          ],
+          "full_claim_doc_span": [
+            4763,
+            5279
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 516,
+                "total_char_count": 516,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "f8765620eba0ff223f4de73b822406ba30a4a674d4c6ccb067d8a73935739285",
+                "covered_char_count": 516,
+                "total_char_count": 516,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "per_document_summary": [
+        {
+          "publication_number": "US9514753B2",
+          "chunk_indices_containing_all_required_quotes": [
+            0
+          ],
+          "chunk_indices_containing_all_required_full_claims": [
+            0
+          ],
+          "all_quotes_co_resident": true,
+          "all_full_claims_co_resident": true
+        }
+      ],
+      "natural_cross_chunk_assessment": "co_resident_full_dependency_chain_in_at_least_one_chunk",
+      "query_status": "not_run",
+      "extraction_or_retrieval_loss_established": false
+    },
+    {
+      "question_id": "Q09",
+      "category": "D_natural_cross_chunk_candidate",
+      "evidence": [
+        {
+          "publication_number": "US9298709B2",
+          "claim_number": 10,
+          "quote": "restricting the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights, generating and displaying an information pane containing one or more data visualizations related to the restricted list of IP rights",
+          "quote_doc_span": [
+            8208,
+            8481
+          ],
+          "full_claim_doc_span": [
+            7513,
+            8694
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              1
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 1,
+                "diagnostic_chunk_id": "dc3d46c7e159540d1fc2de2dc3682d543bec83a9cb40dded6b70b22b3d185c5a",
+                "covered_char_count": 273,
+                "total_char_count": 273,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              1
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 1,
+                "diagnostic_chunk_id": "dc3d46c7e159540d1fc2de2dc3682d543bec83a9cb40dded6b70b22b3d185c5a",
+                "covered_char_count": 1181,
+                "total_char_count": 1181,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "publication_number": "US9298709B2",
+          "claim_number": 16,
+          "quote": "16. A process according to claim 10 , wherein generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic coordinates of the current viewable area of the geographic map display occurs following a user initiated command.",
+          "quote_doc_span": [
+            10567,
+            10861
+          ],
+          "full_claim_doc_span": [
+            10567,
+            10861
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              1
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 1,
+                "diagnostic_chunk_id": "dc3d46c7e159540d1fc2de2dc3682d543bec83a9cb40dded6b70b22b3d185c5a",
+                "covered_char_count": 294,
+                "total_char_count": 294,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              1
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 1,
+                "diagnostic_chunk_id": "dc3d46c7e159540d1fc2de2dc3682d543bec83a9cb40dded6b70b22b3d185c5a",
+                "covered_char_count": 294,
+                "total_char_count": 294,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "publication_number": "US9298709B2",
+          "claim_number": 17,
+          "quote": "17. A process according to claim 16 , wherein the user initiated command comprises the pressing of an on-screen button.",
+          "quote_doc_span": [
+            10862,
+            10981
+          ],
+          "full_claim_doc_span": [
+            10862,
+            10981
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              1
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 1,
+                "diagnostic_chunk_id": "dc3d46c7e159540d1fc2de2dc3682d543bec83a9cb40dded6b70b22b3d185c5a",
+                "covered_char_count": 119,
+                "total_char_count": 119,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              1
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 1,
+                "diagnostic_chunk_id": "dc3d46c7e159540d1fc2de2dc3682d543bec83a9cb40dded6b70b22b3d185c5a",
+                "covered_char_count": 119,
+                "total_char_count": 119,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "per_document_summary": [
+        {
+          "publication_number": "US9298709B2",
+          "chunk_indices_containing_all_required_quotes": [
+            1
+          ],
+          "chunk_indices_containing_all_required_full_claims": [
+            1
+          ],
+          "all_quotes_co_resident": true,
+          "all_full_claims_co_resident": true
+        }
+      ],
+      "natural_cross_chunk_assessment": "co_resident_full_dependency_chain_in_at_least_one_chunk",
+      "query_status": "not_run",
+      "extraction_or_retrieval_loss_established": false
+    },
+    {
+      "question_id": "Q10",
+      "category": "B_claim_evidence",
+      "evidence": [
+        {
+          "publication_number": "US11423041B2",
+          "claim_number": 5,
+          "quote": "5. The system of claim 1 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "quote_doc_span": [
+            3892,
+            4057
+          ],
+          "full_claim_doc_span": [
+            3892,
+            4057
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65",
+                "covered_char_count": 165,
+                "total_char_count": 165,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65",
+                "covered_char_count": 165,
+                "total_char_count": 165,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "publication_number": "US11423041B2",
+          "claim_number": 6,
+          "quote": "6. The system of claim 1 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "quote_doc_span": [
+            4058,
+            4214
+          ],
+          "full_claim_doc_span": [
+            4058,
+            4214
+          ],
+          "quote_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65",
+                "covered_char_count": 156,
+                "total_char_count": 156,
+                "coverage_fraction": 1.0
+              }
+            ]
+          },
+          "full_claim_coverage": {
+            "fully_containing_chunk_indices": [
+              0
+            ],
+            "overlapping_chunks": [
+              {
+                "chunk_index": 0,
+                "diagnostic_chunk_id": "4d040451fd82693e134470a6f1d11ff4737894758085d91584d708ba5a186c65",
+                "covered_char_count": 156,
+                "total_char_count": 156,
+                "coverage_fraction": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "per_document_summary": [
+        {
+          "publication_number": "US11423041B2",
+          "chunk_indices_containing_all_required_quotes": [
+            0
+          ],
+          "chunk_indices_containing_all_required_full_claims": [
+            0
+          ],
+          "all_quotes_co_resident": true,
+          "all_full_claims_co_resident": true
+        }
+      ],
+      "natural_cross_chunk_assessment": "not_applicable",
+      "query_status": "not_run",
+      "extraction_or_retrieval_loss_established": false
+    }
+  ],
+  "limitation": "This measures source co-location only. No embedding, entity/relation extraction, graph indexing, retrieval, generation, or citation fidelity was executed. It cannot establish a relation-loss failure."
+}

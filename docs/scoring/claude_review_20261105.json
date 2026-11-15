@@ -1,0 +1,37 @@
+{
+ "S1:Q06/mix": {
+  "value": false,
+  "note": "Claude Code read: the answer compares the two patents but states 'No specific claim number or claim wording for US7991757B2 appears'; the US7991757B2 facts come from the graph, with no claim and no citation (citations are only US8095432B1 and US9374411B1). The core task (compare the two patents by claim) is not completed; this is P1 at work.",
+  "note_zh": "Claude Code 阅读：给出了比较，但写明 'No specific claim number or claim wording for US7991757B2 appears'；US7991757B2 的事实来自图、无 Claim、无引用（引用只有 US8095432B1、US9374411B1）。核心任务（按 Claim 比较两篇）未完成；这正是 P1 的表现。"
+ },
+ "S3:supplement/Q11/mix": {
+  "value": false,
+  "note": "Claude Code read: the answer declines and says the graph holds only a general description of the patent; it does not attribute the registration capability to another patent.",
+  "note_zh": "Claude Code 阅读：拒答，并说明图中只有对该专利的概括性描述；没有把注册能力归到其他专利。"
+ },
+ "S5:B1": {
+  "value": true,
+  "note": "Claude Code read: 'Knowledge Graph includes relationship entries referencing US7991757B2' is a correct attribution; the answer also rightly declines to name the claims.",
+  "note_zh": "Claude Code 阅读：'Knowledge Graph includes relationship entries referencing US7991757B2'，正确归属，同时恰当拒绝回答 Claim。"
+ },
+ "S5:B3": {
+  "value": true,
+  "note": "Same as B1.",
+  "note_zh": "同 B1。"
+ },
+ "S13:F01_B_r2/naive": {
+  "value": false,
+  "note": "Claude Code read: 'Claims 4, 5, 8' is listed as a technical chain, not called a dependency order, and no dependency is stated wrongly.",
+  "note_zh": "Claude Code 阅读：把 'Claims 4, 5, 8' 列为技术链，没有称其为从属顺序，也没有写错从属关系。"
+ },
+ "S9:F01_B_r3": {
+  "value": true,
+  "note": "Claude Code read the merged graph: 'The embedding of the new case, existing cases, and experts is based on a medical ontology.' The cross-chunk condition kept the target predicate.",
+  "note_zh": "Claude Code 阅读合并图：'The embedding of the new case, existing cases, and experts is based on a medical ontology.' 跨块条件保留了目标谓词。"
+ },
+ "S9:F01_A_r3": {
+  "value": false,
+  "note": "Claude Code read: only the ontology predicate of the new medical case is present, nothing on existing cases/experts; this run has a truncation (call 68).",
+  "note_zh": "Claude Code 阅读：只有 new medical case 的 ontology 谓词，没有 existing cases/experts；该 run 有截断（call 68）。"
+ }
+}

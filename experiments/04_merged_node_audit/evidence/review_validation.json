@@ -1,0 +1,3783 @@
+{
+  "checked_utc": "2026-10-30T08:21:17.703487+00:00",
+  "expected_nodes": 38,
+  "reviewed_nodes": 38,
+  "pending_nodes": [],
+  "reviewed_source_memberships": 98,
+  "unique_incident_edges": 266,
+  "incident_edge_visits": 307,
+  "errors": [],
+  "original_inputs_changed": [],
+  "quote_checks": [
+    {
+      "audit_id": "N001",
+      "node_id": "Data Processing System",
+      "publication_number": "US9298709B2",
+      "evidence_quote": "A data processing system to visualise data from an IP rights database comprising:",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 1134,
+      "first_occurrence_in_full_doc_char_end": 1215,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1134,
+          "full_doc_char_end": 1215,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9298709B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9298709B2-chunk-000",
+          "chunk_char_start": 1134,
+          "full_doc_char_start": 1134,
+          "full_doc_char_end": 1215
+        }
+      ],
+      "source_chunk_ids": [
+        "US9298709B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N001",
+      "node_id": "Data Processing System",
+      "publication_number": "US9304738B1",
+      "evidence_quote": "a data processing system having one or more processors and memory, the data processing system configured to:",
+      "claim_or_section": "Claim 13",
+      "matching_claim_numbers": [
+        13
+      ],
+      "first_occurrence_in_full_doc_char_start": 7342,
+      "first_occurrence_in_full_doc_char_end": 7450,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 13,
+          "full_doc_char_start": 7342,
+          "full_doc_char_end": 7450,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9304738B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9304738B1-chunk-001",
+          "chunk_char_start": 1372,
+          "full_doc_char_start": 7342,
+          "full_doc_char_end": 7450
+        }
+      ],
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N002",
+      "node_id": "Mobile Device",
+      "publication_number": "US8509827B2",
+      "evidence_quote": "receiving a short message from a mobile device with a server;",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 972,
+      "first_occurrence_in_full_doc_char_end": 1033,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 972,
+          "full_doc_char_end": 1033,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8509827B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8509827B2-chunk-000",
+          "chunk_char_start": 972,
+          "full_doc_char_start": 972,
+          "full_doc_char_end": 1033
+        }
+      ],
+      "source_chunk_ids": [
+        "US8509827B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N002",
+      "node_id": "Mobile Device",
+      "publication_number": "US8917913B2",
+      "evidence_quote": "wherein the mobile device includes at least a camera and a screen",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        10
+      ],
+      "first_occurrence_in_full_doc_char_start": 962,
+      "first_occurrence_in_full_doc_char_end": 1027,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 962,
+          "full_doc_char_end": 1027,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8917913B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8917913B2-chunk-000",
+          "chunk_char_start": 962,
+          "full_doc_char_start": 962,
+          "full_doc_char_end": 1027
+        },
+        {
+          "chunk_id": "US8917913B2-chunk-000",
+          "chunk_char_start": 5718,
+          "full_doc_char_start": 5718,
+          "full_doc_char_end": 5783
+        },
+        {
+          "chunk_id": "US8917913B2-chunk-001",
+          "chunk_char_start": 79,
+          "full_doc_char_start": 5718,
+          "full_doc_char_end": 5783
+        }
+      ],
+      "source_chunk_ids": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N003",
+      "node_id": "Server",
+      "publication_number": "US10778629B2",
+      "evidence_quote": "a server to: receive data comprising a plurality of characteristics of e-mail exchanges between pairs of users of the e-mail system,",
+      "claim_or_section": "Claim 21",
+      "matching_claim_numbers": [
+        21
+      ],
+      "first_occurrence_in_full_doc_char_start": 9065,
+      "first_occurrence_in_full_doc_char_end": 9197,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 21,
+          "full_doc_char_start": 9065,
+          "full_doc_char_end": 9197,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US10778629B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US10778629B2-chunk-001",
+          "chunk_char_start": 3012,
+          "full_doc_char_start": 9065,
+          "full_doc_char_end": 9197
+        }
+      ],
+      "source_chunk_ids": [
+        "US10778629B2-chunk-000",
+        "US10778629B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N003",
+      "node_id": "Server",
+      "publication_number": "US8509827B2",
+      "evidence_quote": "receiving a short message from a mobile device with a server;",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 972,
+      "first_occurrence_in_full_doc_char_end": 1033,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 972,
+          "full_doc_char_end": 1033,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8509827B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8509827B2-chunk-000",
+          "chunk_char_start": 972,
+          "full_doc_char_start": 972,
+          "full_doc_char_end": 1033
+        }
+      ],
+      "source_chunk_ids": [
+        "US8509827B2-chunk-000",
+        "US8509827B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N003",
+      "node_id": "Server",
+      "publication_number": "US9118735B1",
+      "evidence_quote": "The server may then traverse that person's social network to identify someone who is in a similar location and who knows the person being sought.",
+      "claim_or_section": "ABSTRACT",
+      "matching_claim_numbers": [],
+      "first_occurrence_in_full_doc_char_start": 328,
+      "first_occurrence_in_full_doc_char_end": 473,
+      "claim_anchored_quote_locations": [],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9118735B1-chunk-000",
+          "chunk_char_start": 328,
+          "full_doc_char_start": 328,
+          "full_doc_char_end": 473
+        }
+      ],
+      "source_chunk_ids": [
+        "US9118735B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N003",
+      "node_id": "Server",
+      "publication_number": "US9374411B1",
+      "evidence_quote": "stream a first video content feature from at least one server to a client associated with a user;",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 915,
+      "first_occurrence_in_full_doc_char_end": 1012,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 915,
+          "full_doc_char_end": 1012,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9374411B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9374411B1-chunk-000",
+          "chunk_char_start": 915,
+          "full_doc_char_start": 915,
+          "full_doc_char_end": 1012
+        }
+      ],
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N003",
+      "node_id": "Server",
+      "publication_number": "US9514120B1",
+      "evidence_quote": "A computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference.",
+      "claim_or_section": "ABSTRACT",
+      "matching_claim_numbers": [],
+      "first_occurrence_in_full_doc_char_start": 119,
+      "first_occurrence_in_full_doc_char_end": 246,
+      "claim_anchored_quote_locations": [],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9514120B1-chunk-000",
+          "chunk_char_start": 119,
+          "full_doc_char_start": 119,
+          "full_doc_char_end": 246
+        }
+      ],
+      "source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N004",
+      "node_id": "Database",
+      "publication_number": "US7756837B2",
+      "evidence_quote": "storing the management data in a searchable format in a database",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        13,
+        16,
+        31,
+        32,
+        47,
+        48,
+        49
+      ],
+      "first_occurrence_in_full_doc_char_start": 1871,
+      "first_occurrence_in_full_doc_char_end": 1935,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1871,
+          "full_doc_char_end": 1935,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US7756837B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US7756837B2-chunk-000",
+          "chunk_char_start": 1871,
+          "full_doc_char_start": 1871,
+          "full_doc_char_end": 1935
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-000",
+          "chunk_char_start": 4840,
+          "full_doc_char_start": 4840,
+          "full_doc_char_end": 4904
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-001",
+          "chunk_char_start": 1207,
+          "full_doc_char_start": 6675,
+          "full_doc_char_end": 6739
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-001",
+          "chunk_char_start": 5553,
+          "full_doc_char_start": 11021,
+          "full_doc_char_end": 11085
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-002",
+          "chunk_char_start": 174,
+          "full_doc_char_start": 11021,
+          "full_doc_char_end": 11085
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-002",
+          "chunk_char_start": 1513,
+          "full_doc_char_start": 12360,
+          "full_doc_char_end": 12424
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-003",
+          "chunk_char_start": 629,
+          "full_doc_char_start": 16911,
+          "full_doc_char_end": 16975
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-003",
+          "chunk_char_start": 2033,
+          "full_doc_char_start": 18315,
+          "full_doc_char_end": 18379
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-003",
+          "chunk_char_start": 3450,
+          "full_doc_char_start": 19732,
+          "full_doc_char_end": 19796
+        }
+      ],
+      "source_chunk_ids": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002",
+        "US7756837B2-chunk-003"
+      ]
+    },
+    {
+      "audit_id": "N004",
+      "node_id": "Database",
+      "publication_number": "US8509827B2",
+      "evidence_quote": "storing the received context data in a database available to a recipient mobile device",
+      "claim_or_section": "Claim 9",
+      "matching_claim_numbers": [
+        9
+      ],
+      "first_occurrence_in_full_doc_char_start": 2978,
+      "first_occurrence_in_full_doc_char_end": 3064,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 9,
+          "full_doc_char_start": 2978,
+          "full_doc_char_end": 3064,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8509827B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8509827B2-chunk-000",
+          "chunk_char_start": 2978,
+          "full_doc_char_start": 2978,
+          "full_doc_char_end": 3064
+        }
+      ],
+      "source_chunk_ids": [
+        "US8509827B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N004",
+      "node_id": "Database",
+      "publication_number": "US9304738B1",
+      "evidence_quote": "accessing the database storing the plurality of keywords and a second plurality of keywords corresponding to advertisements previously displayed on the parked domain web page",
+      "claim_or_section": "Claim 12",
+      "matching_claim_numbers": [
+        12
+      ],
+      "first_occurrence_in_full_doc_char_start": 6486,
+      "first_occurrence_in_full_doc_char_end": 6660,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 12,
+          "full_doc_char_start": 6486,
+          "full_doc_char_end": 6660,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9304738B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9304738B1-chunk-001",
+          "chunk_char_start": 516,
+          "full_doc_char_start": 6486,
+          "full_doc_char_end": 6660
+        }
+      ],
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N005",
+      "node_id": "Communication Network",
+      "publication_number": "US7756837B2",
+      "evidence_quote": "wherein the query is received electronically over a communication network",
+      "claim_or_section": "Claim 14",
+      "matching_claim_numbers": [
+        14,
+        29,
+        45
+      ],
+      "first_occurrence_in_full_doc_char_start": 5394,
+      "first_occurrence_in_full_doc_char_end": 5467,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 14,
+          "full_doc_char_start": 5394,
+          "full_doc_char_end": 5467,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US7756837B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US7756837B2-chunk-000",
+          "chunk_char_start": 5394,
+          "full_doc_char_start": 5394,
+          "full_doc_char_end": 5467
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-001",
+          "chunk_char_start": 4338,
+          "full_doc_char_start": 9806,
+          "full_doc_char_end": 9879
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-002",
+          "chunk_char_start": 4699,
+          "full_doc_char_start": 15546,
+          "full_doc_char_end": 15619
+        }
+      ],
+      "source_chunk_ids": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N005",
+      "node_id": "Communication Network",
+      "publication_number": "US8509827B2",
+      "evidence_quote": "wherein the specified parameter comprises a state of an available communication network.",
+      "claim_or_section": "Claim 13",
+      "matching_claim_numbers": [
+        13
+      ],
+      "first_occurrence_in_full_doc_char_start": 3502,
+      "first_occurrence_in_full_doc_char_end": 3590,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 13,
+          "full_doc_char_start": 3502,
+          "full_doc_char_end": 3590,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8509827B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8509827B2-chunk-000",
+          "chunk_char_start": 3502,
+          "full_doc_char_start": 3502,
+          "full_doc_char_end": 3590
+        }
+      ],
+      "source_chunk_ids": [
+        "US8509827B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N006",
+      "node_id": "Computer-Readable Storage Device",
+      "publication_number": "US8719408B2",
+      "evidence_quote": "A computer-readable storage device with an executable program stored thereon",
+      "claim_or_section": "Claim 9",
+      "matching_claim_numbers": [
+        9
+      ],
+      "first_occurrence_in_full_doc_char_start": 4183,
+      "first_occurrence_in_full_doc_char_end": 4259,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 9,
+          "full_doc_char_start": 4183,
+          "full_doc_char_end": 4259,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8719408B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8719408B2-chunk-000",
+          "chunk_char_start": 4183,
+          "full_doc_char_start": 4183,
+          "full_doc_char_end": 4259
+        }
+      ],
+      "source_chunk_ids": [
+        "US8719408B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N006",
+      "node_id": "Computer-Readable Storage Device",
+      "publication_number": "US9514753B2",
+      "evidence_quote": "A computer-readable storage device storing instructions that, when executed by one or more computers",
+      "claim_or_section": "Claim 16",
+      "matching_claim_numbers": [
+        16
+      ],
+      "first_occurrence_in_full_doc_char_start": 6682,
+      "first_occurrence_in_full_doc_char_end": 6782,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 16,
+          "full_doc_char_start": 6682,
+          "full_doc_char_end": 6782,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9514753B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9514753B2-chunk-001",
+          "chunk_char_start": 614,
+          "full_doc_char_start": 6682,
+          "full_doc_char_end": 6782
+        }
+      ],
+      "source_chunk_ids": [
+        "US9514753B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N007",
+      "node_id": "System",
+      "publication_number": "US10867122B1",
+      "evidence_quote": "A system comprising: one or more processors configured to execute computer program instructions;",
+      "claim_or_section": "Claim 11",
+      "matching_claim_numbers": [
+        11
+      ],
+      "first_occurrence_in_full_doc_char_start": 8558,
+      "first_occurrence_in_full_doc_char_end": 8654,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 11,
+          "full_doc_char_start": 8558,
+          "full_doc_char_end": 8654,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US10867122B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US10867122B1-chunk-001",
+          "chunk_char_start": 2527,
+          "full_doc_char_start": 8558,
+          "full_doc_char_end": 8654
+        }
+      ],
+      "source_chunk_ids": [
+        "US10867122B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N007",
+      "node_id": "System",
+      "publication_number": "US8655901B1",
+      "evidence_quote": "A system comprising: one or more processors configured to interact with a computer-readable medium",
+      "claim_or_section": "Claim 8",
+      "matching_claim_numbers": [
+        8
+      ],
+      "first_occurrence_in_full_doc_char_start": 4057,
+      "first_occurrence_in_full_doc_char_end": 4155,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 8,
+          "full_doc_char_start": 4057,
+          "full_doc_char_end": 4155,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8655901B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8655901B1-chunk-000",
+          "chunk_char_start": 4057,
+          "full_doc_char_start": 4057,
+          "full_doc_char_end": 4155
+        }
+      ],
+      "source_chunk_ids": [
+        "US8655901B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N007",
+      "node_id": "System",
+      "publication_number": "US9514753B2",
+      "evidence_quote": "A system comprising: one or more computers; and a computer-readable storage device storing instructions",
+      "claim_or_section": "Claim 18",
+      "matching_claim_numbers": [
+        18
+      ],
+      "first_occurrence_in_full_doc_char_start": 7775,
+      "first_occurrence_in_full_doc_char_end": 7878,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 18,
+          "full_doc_char_start": 7775,
+          "full_doc_char_end": 7878,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9514753B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9514753B2-chunk-001",
+          "chunk_char_start": 1707,
+          "full_doc_char_start": 7775,
+          "full_doc_char_end": 7878
+        }
+      ],
+      "source_chunk_ids": [
+        "US9514753B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N008",
+      "node_id": "Keyword",
+      "publication_number": "US7756837B2",
+      "evidence_quote": "keywords of the data files of the data-stream",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        16,
+        31,
+        32,
+        47,
+        48,
+        49
+      ],
+      "first_occurrence_in_full_doc_char_start": 1820,
+      "first_occurrence_in_full_doc_char_end": 1865,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1820,
+          "full_doc_char_end": 1865,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US7756837B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US7756837B2-chunk-000",
+          "chunk_char_start": 1820,
+          "full_doc_char_start": 1820,
+          "full_doc_char_end": 1865
+        }
+      ],
+      "source_chunk_ids": [
+        "US7756837B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N008",
+      "node_id": "Keyword",
+      "publication_number": "US9304738B1",
+      "evidence_quote": "a plurality of keywords of the first advertisement using the unique identifier of the parked domain web page",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 1649,
+      "first_occurrence_in_full_doc_char_end": 1757,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1649,
+          "full_doc_char_end": 1757,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9304738B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9304738B1-chunk-000",
+          "chunk_char_start": 1649,
+          "full_doc_char_start": 1649,
+          "full_doc_char_end": 1757
+        }
+      ],
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N009",
+      "node_id": "Weight",
+      "publication_number": "US10778629B2",
+      "evidence_quote": "assigning a weight to each of the plurality of characteristics for each pair of users;",
+      "claim_or_section": "Claim 20",
+      "matching_claim_numbers": [
+        10,
+        20
+      ],
+      "first_occurrence_in_full_doc_char_start": 5536,
+      "first_occurrence_in_full_doc_char_end": 5622,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 20,
+          "full_doc_char_start": 8540,
+          "full_doc_char_end": 8626,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US10778629B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US10778629B2-chunk-001",
+          "chunk_char_start": 2487,
+          "full_doc_char_start": 8540,
+          "full_doc_char_end": 8626
+        }
+      ],
+      "source_chunk_ids": [
+        "US10778629B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N009",
+      "node_id": "Weight",
+      "publication_number": "US7991757B2",
+      "evidence_quote": "applying weights to each of the recommenders; combining the scores with the weights to produce overall scores;",
+      "claim_or_section": "Claim 4",
+      "matching_claim_numbers": [
+        4
+      ],
+      "first_occurrence_in_full_doc_char_start": 3481,
+      "first_occurrence_in_full_doc_char_end": 3591,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 4,
+          "full_doc_char_start": 3481,
+          "full_doc_char_end": 3591,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US7991757B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US7991757B2-chunk-000",
+          "chunk_char_start": 3481,
+          "full_doc_char_start": 3481,
+          "full_doc_char_end": 3591
+        }
+      ],
+      "source_chunk_ids": [
+        "US7991757B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N009",
+      "node_id": "Weight",
+      "publication_number": "US9304738B1",
+      "evidence_quote": "assigning the weight to each of the plurality of keywords based on a number of user interactions",
+      "claim_or_section": "Claim 10",
+      "matching_claim_numbers": [
+        10
+      ],
+      "first_occurrence_in_full_doc_char_start": 5553,
+      "first_occurrence_in_full_doc_char_end": 5649,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 10,
+          "full_doc_char_start": 5553,
+          "full_doc_char_end": 5649,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9304738B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9304738B1-chunk-000",
+          "chunk_char_start": 5553,
+          "full_doc_char_start": 5553,
+          "full_doc_char_end": 5649
+        }
+      ],
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N010",
+      "node_id": "First User",
+      "publication_number": "US9118735B1",
+      "evidence_quote": "for assisting a first user in finding a second user using a social network",
+      "claim_or_section": "Claim 16",
+      "matching_claim_numbers": [
+        4,
+        16
+      ],
+      "first_occurrence_in_full_doc_char_start": 3506,
+      "first_occurrence_in_full_doc_char_end": 3580,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 16,
+          "full_doc_char_start": 7868,
+          "full_doc_char_end": 7942,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9118735B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9118735B1-chunk-001",
+          "chunk_char_start": 1930,
+          "full_doc_char_start": 7868,
+          "full_doc_char_end": 7942
+        }
+      ],
+      "source_chunk_ids": [
+        "US9118735B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N010",
+      "node_id": "First User",
+      "publication_number": "US9304738B1",
+      "evidence_quote": "an indication of user interest of a first user in a first advertisement displayed on a parked domain web page",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 1202,
+      "first_occurrence_in_full_doc_char_end": 1311,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1202,
+          "full_doc_char_end": 1311,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9304738B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9304738B1-chunk-000",
+          "chunk_char_start": 1202,
+          "full_doc_char_start": 1202,
+          "full_doc_char_end": 1311
+        }
+      ],
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N011",
+      "node_id": "Second User",
+      "publication_number": "US9118735B1",
+      "evidence_quote": "for assisting a first user in finding a second user using a social network",
+      "claim_or_section": "Claim 16",
+      "matching_claim_numbers": [
+        4,
+        16
+      ],
+      "first_occurrence_in_full_doc_char_start": 3506,
+      "first_occurrence_in_full_doc_char_end": 3580,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 16,
+          "full_doc_char_start": 7868,
+          "full_doc_char_end": 7942,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9118735B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9118735B1-chunk-001",
+          "chunk_char_start": 1930,
+          "full_doc_char_start": 7868,
+          "full_doc_char_end": 7942
+        }
+      ],
+      "source_chunk_ids": [
+        "US9118735B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N011",
+      "node_id": "Second User",
+      "publication_number": "US9304738B1",
+      "evidence_quote": "an indication of user interest of a second user in a second advertisement displayed on the parked domain web page",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        13,
+        18
+      ],
+      "first_occurrence_in_full_doc_char_start": 2417,
+      "first_occurrence_in_full_doc_char_end": 2530,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 2417,
+          "full_doc_char_end": 2530,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9304738B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9304738B1-chunk-000",
+          "chunk_char_start": 2417,
+          "full_doc_char_start": 2417,
+          "full_doc_char_end": 2530
+        },
+        {
+          "chunk_id": "US9304738B1-chunk-001",
+          "chunk_char_start": 2590,
+          "full_doc_char_start": 8560,
+          "full_doc_char_end": 8673
+        },
+        {
+          "chunk_id": "US9304738B1-chunk-001",
+          "chunk_char_start": 6287,
+          "full_doc_char_start": 12257,
+          "full_doc_char_end": 12370
+        },
+        {
+          "chunk_id": "US9304738B1-chunk-002",
+          "chunk_char_start": 190,
+          "full_doc_char_start": 12257,
+          "full_doc_char_end": 12370
+        }
+      ],
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N012",
+      "node_id": "Third User",
+      "publication_number": "US9118735B1",
+      "evidence_quote": "determining a third user in the social network of the first user who is likely to connect the social network of the first user with a social network of the third user",
+      "claim_or_section": "Claim 16",
+      "matching_claim_numbers": [
+        16
+      ],
+      "first_occurrence_in_full_doc_char_start": 8325,
+      "first_occurrence_in_full_doc_char_end": 8491,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 16,
+          "full_doc_char_start": 8325,
+          "full_doc_char_end": 8491,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9118735B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9118735B1-chunk-001",
+          "chunk_char_start": 2387,
+          "full_doc_char_start": 8325,
+          "full_doc_char_end": 8491
+        }
+      ],
+      "source_chunk_ids": [
+        "US9118735B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N012",
+      "node_id": "Third User",
+      "publication_number": "US9304738B1",
+      "evidence_quote": "for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        13,
+        18
+      ],
+      "first_occurrence_in_full_doc_char_start": 2833,
+      "first_occurrence_in_full_doc_char_end": 2977,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 2833,
+          "full_doc_char_end": 2977,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9304738B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9304738B1-chunk-000",
+          "chunk_char_start": 2833,
+          "full_doc_char_start": 2833,
+          "full_doc_char_end": 2977
+        },
+        {
+          "chunk_id": "US9304738B1-chunk-001",
+          "chunk_char_start": 2939,
+          "full_doc_char_start": 8909,
+          "full_doc_char_end": 9053
+        },
+        {
+          "chunk_id": "US9304738B1-chunk-002",
+          "chunk_char_start": 539,
+          "full_doc_char_start": 12606,
+          "full_doc_char_end": 12750
+        }
+      ],
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N013",
+      "node_id": "Characteristic",
+      "publication_number": "US10778629B2",
+      "evidence_quote": "the characteristic comprises at least one selected from a group consisting of interaction frequency, interaction type, and number of communication participants",
+      "claim_or_section": "Claim 13",
+      "matching_claim_numbers": [
+        13
+      ],
+      "first_occurrence_in_full_doc_char_start": 6234,
+      "first_occurrence_in_full_doc_char_end": 6393,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 13,
+          "full_doc_char_start": 6234,
+          "full_doc_char_end": 6393,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US10778629B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US10778629B2-chunk-001",
+          "chunk_char_start": 181,
+          "full_doc_char_start": 6234,
+          "full_doc_char_end": 6393
+        }
+      ],
+      "source_chunk_ids": [
+        "US10778629B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N013",
+      "node_id": "Characteristic",
+      "publication_number": "US9304738B1",
+      "evidence_quote": "determining the weight of each of the plurality of keywords based on a characteristic associated with the user interest of the first user",
+      "claim_or_section": "Claim 6",
+      "matching_claim_numbers": [
+        6
+      ],
+      "first_occurrence_in_full_doc_char_start": 4582,
+      "first_occurrence_in_full_doc_char_end": 4719,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 6,
+          "full_doc_char_start": 4582,
+          "full_doc_char_end": 4719,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9304738B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9304738B1-chunk-000",
+          "chunk_char_start": 4582,
+          "full_doc_char_start": 4582,
+          "full_doc_char_end": 4719
+        }
+      ],
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N014",
+      "node_id": "Computer Network",
+      "publication_number": "US7991757B2",
+      "evidence_quote": "query the plurality of external recommenders over the computer network for recommendations responsive to the second request",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 1814,
+      "first_occurrence_in_full_doc_char_end": 1937,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1814,
+          "full_doc_char_end": 1937,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US7991757B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US7991757B2-chunk-000",
+          "chunk_char_start": 1814,
+          "full_doc_char_start": 1814,
+          "full_doc_char_end": 1937
+        }
+      ],
+      "source_chunk_ids": [
+        "US7991757B2-chunk-000",
+        "US7991757B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N014",
+      "node_id": "Computer Network",
+      "publication_number": "US9304738B1",
+      "evidence_quote": "A system to evaluate information via a computer network",
+      "claim_or_section": "Claim 13",
+      "matching_claim_numbers": [
+        13
+      ],
+      "first_occurrence_in_full_doc_char_start": 7273,
+      "first_occurrence_in_full_doc_char_end": 7328,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 13,
+          "full_doc_char_start": 7273,
+          "full_doc_char_end": 7328,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9304738B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9304738B1-chunk-001",
+          "chunk_char_start": 1303,
+          "full_doc_char_start": 7273,
+          "full_doc_char_end": 7328
+        }
+      ],
+      "source_chunk_ids": [
+        "US9304738B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N015",
+      "node_id": "Non-Transitory Computer Readable Medium",
+      "publication_number": "US10778629B2",
+      "evidence_quote": "A non-transitory computer readable medium containing executable instructions that when executed perform a method of modeling relationships",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 1164,
+      "first_occurrence_in_full_doc_char_end": 1302,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1164,
+          "full_doc_char_end": 1302,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US10778629B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US10778629B2-chunk-000",
+          "chunk_char_start": 1164,
+          "full_doc_char_start": 1164,
+          "full_doc_char_end": 1302
+        }
+      ],
+      "source_chunk_ids": [
+        "US10778629B2-chunk-000",
+        "US10778629B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N015",
+      "node_id": "Non-Transitory Computer Readable Medium",
+      "publication_number": "US9304738B1",
+      "evidence_quote": "A non-transitory computer readable medium having instructions to evaluate information",
+      "claim_or_section": "Claim 18",
+      "matching_claim_numbers": [
+        18
+      ],
+      "first_occurrence_in_full_doc_char_start": 11016,
+      "first_occurrence_in_full_doc_char_end": 11101,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 18,
+          "full_doc_char_start": 11016,
+          "full_doc_char_end": 11101,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9304738B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9304738B1-chunk-001",
+          "chunk_char_start": 5046,
+          "full_doc_char_start": 11016,
+          "full_doc_char_end": 11101
+        }
+      ],
+      "source_chunk_ids": [
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N016",
+      "node_id": "Event",
+      "publication_number": "US11423041B2",
+      "evidence_quote": "criteria for triggering an event to perform a second ETL process subscribed to the event",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        8,
+        15
+      ],
+      "first_occurrence_in_full_doc_char_start": 1702,
+      "first_occurrence_in_full_doc_char_end": 1790,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1702,
+          "full_doc_char_end": 1790,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US11423041B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US11423041B2-chunk-000",
+          "chunk_char_start": 1702,
+          "full_doc_char_start": 1702,
+          "full_doc_char_end": 1790
+        },
+        {
+          "chunk_id": "US11423041B2-chunk-000",
+          "chunk_char_start": 5105,
+          "full_doc_char_start": 5105,
+          "full_doc_char_end": 5193
+        },
+        {
+          "chunk_id": "US11423041B2-chunk-001",
+          "chunk_char_start": 2952,
+          "full_doc_char_start": 8642,
+          "full_doc_char_end": 8730
+        }
+      ],
+      "source_chunk_ids": [
+        "US11423041B2-chunk-000",
+        "US11423041B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N016",
+      "node_id": "Event",
+      "publication_number": "US9118735B1",
+      "evidence_quote": "an event that the third user has identified himself or herself as being at",
+      "claim_or_section": "Claim 7",
+      "matching_claim_numbers": [
+        7
+      ],
+      "first_occurrence_in_full_doc_char_start": 6106,
+      "first_occurrence_in_full_doc_char_end": 6180,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 7,
+          "full_doc_char_start": 6106,
+          "full_doc_char_end": 6180,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9118735B1-chunk-000",
+            "US9118735B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9118735B1-chunk-000",
+          "chunk_char_start": 6106,
+          "full_doc_char_start": 6106,
+          "full_doc_char_end": 6180
+        },
+        {
+          "chunk_id": "US9118735B1-chunk-001",
+          "chunk_char_start": 168,
+          "full_doc_char_start": 6106,
+          "full_doc_char_end": 6180
+        }
+      ],
+      "source_chunk_ids": [
+        "US9118735B1-chunk-000",
+        "US9118735B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N017",
+      "node_id": "Token",
+      "publication_number": "US8655901B1",
+      "evidence_quote": "segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        8,
+        15
+      ],
+      "first_occurrence_in_full_doc_char_start": 1495,
+      "first_occurrence_in_full_doc_char_end": 1654,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1495,
+          "full_doc_char_end": 1654,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8655901B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8655901B1-chunk-000",
+          "chunk_char_start": 1495,
+          "full_doc_char_start": 1495,
+          "full_doc_char_end": 1654
+        },
+        {
+          "chunk_id": "US8655901B1-chunk-000",
+          "chunk_char_start": 4520,
+          "full_doc_char_start": 4520,
+          "full_doc_char_end": 4679
+        }
+      ],
+      "source_chunk_ids": [
+        "US8655901B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N017",
+      "node_id": "Token",
+      "publication_number": "US9118735B1",
+      "evidence_quote": "anonymizing results based on replacing an identifier associated with the second user with a token",
+      "claim_or_section": "Claim 14",
+      "matching_claim_numbers": [
+        14
+      ],
+      "first_occurrence_in_full_doc_char_start": 7471,
+      "first_occurrence_in_full_doc_char_end": 7568,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 14,
+          "full_doc_char_start": 7471,
+          "full_doc_char_end": 7568,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9118735B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9118735B1-chunk-001",
+          "chunk_char_start": 1533,
+          "full_doc_char_start": 7471,
+          "full_doc_char_end": 7568
+        }
+      ],
+      "source_chunk_ids": [
+        "US9118735B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N017",
+      "node_id": "Token",
+      "publication_number": "US9218390B2",
+      "evidence_quote": "receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens",
+      "claim_or_section": "Claim 18",
+      "matching_claim_numbers": [
+        1,
+        12,
+        18
+      ],
+      "first_occurrence_in_full_doc_char_start": 1431,
+      "first_occurrence_in_full_doc_char_end": 1565,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 18,
+          "full_doc_char_start": 11572,
+          "full_doc_char_end": 11706,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9218390B2-chunk-002"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9218390B2-chunk-002",
+          "chunk_char_start": 424,
+          "full_doc_char_start": 11572,
+          "full_doc_char_end": 11706
+        }
+      ],
+      "source_chunk_ids": [
+        "US9218390B2-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N018",
+      "node_id": "Recommendation",
+      "publication_number": "US8095432B1",
+      "evidence_quote": "obtaining a first recommendation for the item from a first member of a social networking utility",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 1009,
+      "first_occurrence_in_full_doc_char_end": 1105,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1009,
+          "full_doc_char_end": 1105,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8095432B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8095432B1-chunk-000",
+          "chunk_char_start": 1009,
+          "full_doc_char_start": 1009,
+          "full_doc_char_end": 1105
+        }
+      ],
+      "source_chunk_ids": [
+        "US8095432B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N018",
+      "node_id": "Recommendation",
+      "publication_number": "US9374411B1",
+      "evidence_quote": "send to the user a recommendation to play the second video content feature",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 2477,
+      "first_occurrence_in_full_doc_char_end": 2551,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 2477,
+          "full_doc_char_end": 2551,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9374411B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9374411B1-chunk-000",
+          "chunk_char_start": 2477,
+          "full_doc_char_start": 2477,
+          "full_doc_char_end": 2551
+        }
+      ],
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N019",
+      "node_id": "Processor",
+      "publication_number": "US10778629B2",
+      "evidence_quote": "transferring, from the server, the data to a processor for generating relationship data by determining a relationship strength associated with each pair of users",
+      "claim_or_section": "Claim 10",
+      "matching_claim_numbers": [
+        10
+      ],
+      "first_occurrence_in_full_doc_char_start": 5623,
+      "first_occurrence_in_full_doc_char_end": 5784,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 10,
+          "full_doc_char_start": 5623,
+          "full_doc_char_end": 5784,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US10778629B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US10778629B2-chunk-000",
+          "chunk_char_start": 5623,
+          "full_doc_char_start": 5623,
+          "full_doc_char_end": 5784
+        }
+      ],
+      "source_chunk_ids": [
+        "US10778629B2-chunk-000",
+        "US10778629B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N019",
+      "node_id": "Processor",
+      "publication_number": "US11423041B2",
+      "evidence_quote": "a memory, storing program instructions that when executed by the at least one processor",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 799,
+      "first_occurrence_in_full_doc_char_end": 886,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 799,
+          "full_doc_char_end": 886,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US11423041B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US11423041B2-chunk-000",
+          "chunk_char_start": 799,
+          "full_doc_char_start": 799,
+          "full_doc_char_end": 886
+        }
+      ],
+      "source_chunk_ids": [
+        "US11423041B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N019",
+      "node_id": "Processor",
+      "publication_number": "US7756837B2",
+      "evidence_quote": "A processor operable to execute a software program, the software program causing the processor to perform steps",
+      "claim_or_section": "Claim 16",
+      "matching_claim_numbers": [
+        16
+      ],
+      "first_occurrence_in_full_doc_char_start": 5658,
+      "first_occurrence_in_full_doc_char_end": 5769,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 16,
+          "full_doc_char_start": 5658,
+          "full_doc_char_end": 5769,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US7756837B2-chunk-000",
+            "US7756837B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US7756837B2-chunk-000",
+          "chunk_char_start": 5658,
+          "full_doc_char_start": 5658,
+          "full_doc_char_end": 5769
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-001",
+          "chunk_char_start": 190,
+          "full_doc_char_start": 5658,
+          "full_doc_char_end": 5769
+        }
+      ],
+      "source_chunk_ids": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N019",
+      "node_id": "Processor",
+      "publication_number": "US8069128B2",
+      "evidence_quote": "a processor that is operative to perform actions",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 1179,
+      "first_occurrence_in_full_doc_char_end": 1227,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1179,
+          "full_doc_char_end": 1227,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8069128B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8069128B2-chunk-000",
+          "chunk_char_start": 1179,
+          "full_doc_char_start": 1179,
+          "full_doc_char_end": 1227
+        }
+      ],
+      "source_chunk_ids": [
+        "US8069128B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N019",
+      "node_id": "Processor",
+      "publication_number": "US8095432B1",
+      "evidence_quote": "a recommendation application executing on the processor, resident in memory",
+      "claim_or_section": "Claim 16",
+      "matching_claim_numbers": [
+        16
+      ],
+      "first_occurrence_in_full_doc_char_start": 5890,
+      "first_occurrence_in_full_doc_char_end": 5965,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 16,
+          "full_doc_char_start": 5890,
+          "full_doc_char_end": 5965,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8095432B1-chunk-000",
+            "US8095432B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8095432B1-chunk-000",
+          "chunk_char_start": 5890,
+          "full_doc_char_start": 5890,
+          "full_doc_char_end": 5965
+        },
+        {
+          "chunk_id": "US8095432B1-chunk-001",
+          "chunk_char_start": 124,
+          "full_doc_char_start": 5890,
+          "full_doc_char_end": 5965
+        }
+      ],
+      "source_chunk_ids": [
+        "US8095432B1-chunk-000",
+        "US8095432B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N019",
+      "node_id": "Processor",
+      "publication_number": "US8655901B1",
+      "evidence_quote": "one or more processors configured to interact with a computer-readable medium in order to perform operations",
+      "claim_or_section": "Claim 8",
+      "matching_claim_numbers": [
+        8
+      ],
+      "first_occurrence_in_full_doc_char_start": 4078,
+      "first_occurrence_in_full_doc_char_end": 4186,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 8,
+          "full_doc_char_start": 4078,
+          "full_doc_char_end": 4186,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8655901B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8655901B1-chunk-000",
+          "chunk_char_start": 4078,
+          "full_doc_char_start": 4078,
+          "full_doc_char_end": 4186
+        }
+      ],
+      "source_chunk_ids": [
+        "US8655901B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N019",
+      "node_id": "Processor",
+      "publication_number": "US8719408B2",
+      "evidence_quote": "a processor coupled to memory, the processor programmed by program code stored in the memory",
+      "claim_or_section": "Claim 17",
+      "matching_claim_numbers": [
+        17
+      ],
+      "first_occurrence_in_full_doc_char_start": 7963,
+      "first_occurrence_in_full_doc_char_end": 8055,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 17,
+          "full_doc_char_start": 7963,
+          "full_doc_char_end": 8055,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8719408B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8719408B2-chunk-001",
+          "chunk_char_start": 1339,
+          "full_doc_char_start": 7963,
+          "full_doc_char_end": 8055
+        }
+      ],
+      "source_chunk_ids": [
+        "US8719408B2-chunk-000",
+        "US8719408B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N019",
+      "node_id": "Processor",
+      "publication_number": "US8880423B2",
+      "evidence_quote": "clustering, using a processor, a plurality of viewed pages into a plurality of clusters",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        8
+      ],
+      "first_occurrence_in_full_doc_char_start": 882,
+      "first_occurrence_in_full_doc_char_end": 969,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 882,
+          "full_doc_char_end": 969,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8880423B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8880423B2-chunk-000",
+          "chunk_char_start": 882,
+          "full_doc_char_start": 882,
+          "full_doc_char_end": 969
+        },
+        {
+          "chunk_id": "US8880423B2-chunk-000",
+          "chunk_char_start": 4099,
+          "full_doc_char_start": 4099,
+          "full_doc_char_end": 4186
+        }
+      ],
+      "source_chunk_ids": [
+        "US8880423B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N019",
+      "node_id": "Processor",
+      "publication_number": "US9589231B2",
+      "evidence_quote": "a processor in communication with the memory for executing the instructions",
+      "claim_or_section": "Claim 20",
+      "matching_claim_numbers": [
+        17,
+        19,
+        20
+      ],
+      "first_occurrence_in_full_doc_char_start": 5179,
+      "first_occurrence_in_full_doc_char_end": 5254,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 20,
+          "full_doc_char_start": 7290,
+          "full_doc_char_end": 7365,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9589231B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9589231B2-chunk-001",
+          "chunk_char_start": 769,
+          "full_doc_char_start": 6332,
+          "full_doc_char_end": 6407
+        },
+        {
+          "chunk_id": "US9589231B2-chunk-001",
+          "chunk_char_start": 1727,
+          "full_doc_char_start": 7290,
+          "full_doc_char_end": 7365
+        }
+      ],
+      "source_chunk_ids": [
+        "US9589231B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N020",
+      "node_id": "Memory",
+      "publication_number": "US11423041B2",
+      "evidence_quote": "a memory, storing program instructions that when executed by the at least one processor",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 799,
+      "first_occurrence_in_full_doc_char_end": 886,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 799,
+          "full_doc_char_end": 886,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US11423041B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US11423041B2-chunk-000",
+          "chunk_char_start": 799,
+          "full_doc_char_start": 799,
+          "full_doc_char_end": 886
+        }
+      ],
+      "source_chunk_ids": [
+        "US11423041B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N020",
+      "node_id": "Memory",
+      "publication_number": "US8095432B1",
+      "evidence_quote": "a memory operatively connected to the processor",
+      "claim_or_section": "Claim 16",
+      "matching_claim_numbers": [
+        16
+      ],
+      "first_occurrence_in_full_doc_char_start": 5837,
+      "first_occurrence_in_full_doc_char_end": 5884,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 16,
+          "full_doc_char_start": 5837,
+          "full_doc_char_end": 5884,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8095432B1-chunk-000",
+            "US8095432B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8095432B1-chunk-000",
+          "chunk_char_start": 5837,
+          "full_doc_char_start": 5837,
+          "full_doc_char_end": 5884
+        },
+        {
+          "chunk_id": "US8095432B1-chunk-001",
+          "chunk_char_start": 71,
+          "full_doc_char_start": 5837,
+          "full_doc_char_end": 5884
+        }
+      ],
+      "source_chunk_ids": [
+        "US8095432B1-chunk-000",
+        "US8095432B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N020",
+      "node_id": "Memory",
+      "publication_number": "US8719408B2",
+      "evidence_quote": "a processor coupled to memory, the processor programmed by program code stored in the memory",
+      "claim_or_section": "Claim 17",
+      "matching_claim_numbers": [
+        17
+      ],
+      "first_occurrence_in_full_doc_char_start": 7963,
+      "first_occurrence_in_full_doc_char_end": 8055,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 17,
+          "full_doc_char_start": 7963,
+          "full_doc_char_end": 8055,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8719408B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8719408B2-chunk-001",
+          "chunk_char_start": 1339,
+          "full_doc_char_start": 7963,
+          "full_doc_char_end": 8055
+        }
+      ],
+      "source_chunk_ids": [
+        "US8719408B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N020",
+      "node_id": "Memory",
+      "publication_number": "US9514120B1",
+      "evidence_quote": "An apparatus comprising: a memory; a processing device operatively coupled to the memory",
+      "claim_or_section": "Claim 18",
+      "matching_claim_numbers": [
+        18
+      ],
+      "first_occurrence_in_full_doc_char_start": 10551,
+      "first_occurrence_in_full_doc_char_end": 10639,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 18,
+          "full_doc_char_start": 10551,
+          "full_doc_char_end": 10639,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9514120B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9514120B1-chunk-001",
+          "chunk_char_start": 4580,
+          "full_doc_char_start": 10551,
+          "full_doc_char_end": 10639
+        }
+      ],
+      "source_chunk_ids": [
+        "US9514120B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N020",
+      "node_id": "Memory",
+      "publication_number": "US9589231B2",
+      "evidence_quote": "memory which stores instructions for: receiving a request for a query from a requester",
+      "claim_or_section": "Claim 20",
+      "matching_claim_numbers": [
+        19,
+        20
+      ],
+      "first_occurrence_in_full_doc_char_start": 5493,
+      "first_occurrence_in_full_doc_char_end": 5579,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 20,
+          "full_doc_char_start": 6569,
+          "full_doc_char_end": 6655,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9589231B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9589231B2-chunk-001",
+          "chunk_char_start": 1006,
+          "full_doc_char_start": 6569,
+          "full_doc_char_end": 6655
+        }
+      ],
+      "source_chunk_ids": [
+        "US9589231B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N021",
+      "node_id": "Payment",
+      "publication_number": "US8095432B1",
+      "evidence_quote": "receiving a payment upon a purchase of the item from the inquiring member",
+      "claim_or_section": "Claim 13",
+      "matching_claim_numbers": [
+        13
+      ],
+      "first_occurrence_in_full_doc_char_start": 5387,
+      "first_occurrence_in_full_doc_char_end": 5460,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 13,
+          "full_doc_char_start": 5387,
+          "full_doc_char_end": 5460,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8095432B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8095432B1-chunk-000",
+          "chunk_char_start": 5387,
+          "full_doc_char_start": 5387,
+          "full_doc_char_end": 5460
+        }
+      ],
+      "source_chunk_ids": [
+        "US8095432B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N021",
+      "node_id": "Payment",
+      "publication_number": "US9589231B2",
+      "evidence_quote": "providing for making a payment to the expert for formulating the diagnosis",
+      "claim_or_section": "Claim 13",
+      "matching_claim_numbers": [
+        13
+      ],
+      "first_occurrence_in_full_doc_char_start": 4440,
+      "first_occurrence_in_full_doc_char_end": 4514,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 13,
+          "full_doc_char_start": 4440,
+          "full_doc_char_end": 4514,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9589231B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9589231B2-chunk-000",
+          "chunk_char_start": 4440,
+          "full_doc_char_start": 4440,
+          "full_doc_char_end": 4514
+        }
+      ],
+      "source_chunk_ids": [
+        "US9589231B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N022",
+      "node_id": "Network",
+      "publication_number": "US8095432B1",
+      "evidence_quote": "friends of the inquiring member are within a network of the inquiring member",
+      "claim_or_section": "Claim 3",
+      "matching_claim_numbers": [
+        3
+      ],
+      "first_occurrence_in_full_doc_char_start": 573,
+      "first_occurrence_in_full_doc_char_end": 649,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 3,
+          "full_doc_char_start": 3611,
+          "full_doc_char_end": 3687,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8095432B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8095432B1-chunk-000",
+          "chunk_char_start": 573,
+          "full_doc_char_start": 573,
+          "full_doc_char_end": 649
+        },
+        {
+          "chunk_id": "US8095432B1-chunk-000",
+          "chunk_char_start": 3611,
+          "full_doc_char_start": 3611,
+          "full_doc_char_end": 3687
+        }
+      ],
+      "source_chunk_ids": [
+        "US8095432B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N022",
+      "node_id": "Network",
+      "publication_number": "US9589231B2",
+      "evidence_quote": "A network comprising a system for diagnosis assistance and a set of user devices for linking requesters and experts with the system",
+      "claim_or_section": "Claim 20",
+      "matching_claim_numbers": [
+        20
+      ],
+      "first_occurrence_in_full_doc_char_start": 6413,
+      "first_occurrence_in_full_doc_char_end": 6544,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 20,
+          "full_doc_char_start": 6413,
+          "full_doc_char_end": 6544,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9589231B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9589231B2-chunk-001",
+          "chunk_char_start": 850,
+          "full_doc_char_start": 6413,
+          "full_doc_char_end": 6544
+        }
+      ],
+      "source_chunk_ids": [
+        "US9589231B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N023",
+      "node_id": "User",
+      "publication_number": "US8069128B2",
+      "evidence_quote": "such that a user is enabled to move the identified message to another message folder",
+      "claim_or_section": "Claim 6",
+      "matching_claim_numbers": [
+        6,
+        12,
+        17
+      ],
+      "first_occurrence_in_full_doc_char_start": 4164,
+      "first_occurrence_in_full_doc_char_end": 4248,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 6,
+          "full_doc_char_start": 4164,
+          "full_doc_char_end": 4248,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8069128B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8069128B2-chunk-000",
+          "chunk_char_start": 4164,
+          "full_doc_char_start": 4164,
+          "full_doc_char_end": 4248
+        },
+        {
+          "chunk_id": "US8069128B2-chunk-000",
+          "chunk_char_start": 6181,
+          "full_doc_char_start": 6181,
+          "full_doc_char_end": 6265
+        },
+        {
+          "chunk_id": "US8069128B2-chunk-001",
+          "chunk_char_start": 84,
+          "full_doc_char_start": 6181,
+          "full_doc_char_end": 6265
+        },
+        {
+          "chunk_id": "US8069128B2-chunk-001",
+          "chunk_char_start": 2301,
+          "full_doc_char_start": 8398,
+          "full_doc_char_end": 8482
+        }
+      ],
+      "source_chunk_ids": [
+        "US8069128B2-chunk-000",
+        "US8069128B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N023",
+      "node_id": "User",
+      "publication_number": "US8719408B2",
+      "evidence_quote": "each user relationship based on monitoring an online association between a user and a content producer",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        9,
+        17
+      ],
+      "first_occurrence_in_full_doc_char_start": 283,
+      "first_occurrence_in_full_doc_char_end": 385,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1331,
+          "full_doc_char_end": 1433,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8719408B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8719408B2-chunk-000",
+          "chunk_char_start": 283,
+          "full_doc_char_start": 283,
+          "full_doc_char_end": 385
+        },
+        {
+          "chunk_id": "US8719408B2-chunk-000",
+          "chunk_char_start": 1331,
+          "full_doc_char_start": 1331,
+          "full_doc_char_end": 1433
+        },
+        {
+          "chunk_id": "US8719408B2-chunk-000",
+          "chunk_char_start": 4414,
+          "full_doc_char_start": 4414,
+          "full_doc_char_end": 4516
+        },
+        {
+          "chunk_id": "US8719408B2-chunk-001",
+          "chunk_char_start": 1578,
+          "full_doc_char_start": 8202,
+          "full_doc_char_end": 8304
+        }
+      ],
+      "source_chunk_ids": [
+        "US8719408B2-chunk-000",
+        "US8719408B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N023",
+      "node_id": "User",
+      "publication_number": "US8880423B2",
+      "evidence_quote": "the search keywords based on search keywords previously submitted by a plurality of users",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        11
+      ],
+      "first_occurrence_in_full_doc_char_start": 1393,
+      "first_occurrence_in_full_doc_char_end": 1482,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1393,
+          "full_doc_char_end": 1482,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8880423B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8880423B2-chunk-000",
+          "chunk_char_start": 1393,
+          "full_doc_char_start": 1393,
+          "full_doc_char_end": 1482
+        }
+      ],
+      "source_chunk_ids": [
+        "US8880423B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N023",
+      "node_id": "User",
+      "publication_number": "US9374411B1",
+      "evidence_quote": "associate a preferred character with the user based at least upon the second user interaction data",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 1738,
+      "first_occurrence_in_full_doc_char_end": 1836,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1738,
+          "full_doc_char_end": 1836,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9374411B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9374411B1-chunk-000",
+          "chunk_char_start": 1738,
+          "full_doc_char_start": 1738,
+          "full_doc_char_end": 1836
+        }
+      ],
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001",
+        "US9374411B1-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N023",
+      "node_id": "User",
+      "publication_number": "US9514120B1",
+      "evidence_quote": "provide data indicative of presence of a potential typographical error in a work to a user via a graphical user interface",
+      "claim_or_section": "Claim 18",
+      "matching_claim_numbers": [
+        18
+      ],
+      "first_occurrence_in_full_doc_char_start": 10667,
+      "first_occurrence_in_full_doc_char_end": 10788,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 18,
+          "full_doc_char_start": 10667,
+          "full_doc_char_end": 10788,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9514120B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9514120B1-chunk-001",
+          "chunk_char_start": 4696,
+          "full_doc_char_start": 10667,
+          "full_doc_char_end": 10788
+        }
+      ],
+      "source_chunk_ids": [
+        "US9514120B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N024",
+      "node_id": "Application",
+      "publication_number": "US8917913B2",
+      "evidence_quote": "an application associated with the mobile device, wherein the application is in operative communication with the camera",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        10
+      ],
+      "first_occurrence_in_full_doc_char_start": 1116,
+      "first_occurrence_in_full_doc_char_end": 1235,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1116,
+          "full_doc_char_end": 1235,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8917913B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8917913B2-chunk-000",
+          "chunk_char_start": 1116,
+          "full_doc_char_start": 1116,
+          "full_doc_char_end": 1235
+        },
+        {
+          "chunk_id": "US8917913B2-chunk-000",
+          "chunk_char_start": 5872,
+          "full_doc_char_start": 5872,
+          "full_doc_char_end": 5991
+        },
+        {
+          "chunk_id": "US8917913B2-chunk-001",
+          "chunk_char_start": 233,
+          "full_doc_char_start": 5872,
+          "full_doc_char_end": 5991
+        }
+      ],
+      "source_chunk_ids": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N024",
+      "node_id": "Application",
+      "publication_number": "US9374411B1",
+      "evidence_quote": "at least one application executable in the at least one computing device",
+      "claim_or_section": "Claim 6",
+      "matching_claim_numbers": [
+        6
+      ],
+      "first_occurrence_in_full_doc_char_start": 3714,
+      "first_occurrence_in_full_doc_char_end": 3786,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 6,
+          "full_doc_char_start": 3714,
+          "full_doc_char_end": 3786,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9374411B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9374411B1-chunk-000",
+          "chunk_char_start": 3714,
+          "full_doc_char_start": 3714,
+          "full_doc_char_end": 3786
+        }
+      ],
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N025",
+      "node_id": "User Interface",
+      "publication_number": "US10778629B2",
+      "evidence_quote": "a user interface to display the relationship data.",
+      "claim_or_section": "Claim 21",
+      "matching_claim_numbers": [
+        21
+      ],
+      "first_occurrence_in_full_doc_char_start": 10028,
+      "first_occurrence_in_full_doc_char_end": 10078,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 21,
+          "full_doc_char_start": 10028,
+          "full_doc_char_end": 10078,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US10778629B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US10778629B2-chunk-001",
+          "chunk_char_start": 3975,
+          "full_doc_char_start": 10028,
+          "full_doc_char_end": 10078
+        }
+      ],
+      "source_chunk_ids": [
+        "US10778629B2-chunk-000",
+        "US10778629B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N025",
+      "node_id": "User Interface",
+      "publication_number": "US8917913B2",
+      "evidence_quote": "wherein the application provides a user interface",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        10
+      ],
+      "first_occurrence_in_full_doc_char_start": 1237,
+      "first_occurrence_in_full_doc_char_end": 1286,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1237,
+          "full_doc_char_end": 1286,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8917913B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8917913B2-chunk-000",
+          "chunk_char_start": 1237,
+          "full_doc_char_start": 1237,
+          "full_doc_char_end": 1286
+        },
+        {
+          "chunk_id": "US8917913B2-chunk-000",
+          "chunk_char_start": 5993,
+          "full_doc_char_start": 5993,
+          "full_doc_char_end": 6042
+        },
+        {
+          "chunk_id": "US8917913B2-chunk-001",
+          "chunk_char_start": 354,
+          "full_doc_char_start": 5993,
+          "full_doc_char_end": 6042
+        }
+      ],
+      "source_chunk_ids": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N025",
+      "node_id": "User Interface",
+      "publication_number": "US9374411B1",
+      "evidence_quote": "obtain explicit user feedback expressing that the user favors the first fictional character via a user interface.",
+      "claim_or_section": "Claim 23",
+      "matching_claim_numbers": [
+        23
+      ],
+      "first_occurrence_in_full_doc_char_start": 12684,
+      "first_occurrence_in_full_doc_char_end": 12797,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 23,
+          "full_doc_char_start": 12684,
+          "full_doc_char_end": 12797,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9374411B1-chunk-002"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9374411B1-chunk-002",
+          "chunk_char_start": 294,
+          "full_doc_char_start": 12684,
+          "full_doc_char_end": 12797
+        }
+      ],
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N026",
+      "node_id": "Computing Device",
+      "publication_number": "US9218390B2",
+      "evidence_quote": "which instructions, when executed by one or more computing devices, cause the one or more computing devices to:",
+      "claim_or_section": "Claim 18",
+      "matching_claim_numbers": [
+        18
+      ],
+      "first_occurrence_in_full_doc_char_start": 11310,
+      "first_occurrence_in_full_doc_char_end": 11421,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 18,
+          "full_doc_char_start": 11310,
+          "full_doc_char_end": 11421,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9218390B2-chunk-002"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9218390B2-chunk-002",
+          "chunk_char_start": 162,
+          "full_doc_char_start": 11310,
+          "full_doc_char_end": 11421
+        }
+      ],
+      "source_chunk_ids": [
+        "US9218390B2-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N026",
+      "node_id": "Computing Device",
+      "publication_number": "US9374411B1",
+      "evidence_quote": "at least one application executable in the at least one computing device",
+      "claim_or_section": "Claim 6",
+      "matching_claim_numbers": [
+        6
+      ],
+      "first_occurrence_in_full_doc_char_start": 3714,
+      "first_occurrence_in_full_doc_char_end": 3786,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 6,
+          "full_doc_char_start": 3714,
+          "full_doc_char_end": 3786,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9374411B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9374411B1-chunk-000",
+          "chunk_char_start": 3714,
+          "full_doc_char_start": 3714,
+          "full_doc_char_end": 3786
+        }
+      ],
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001",
+        "US9374411B1-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N026",
+      "node_id": "Computing Device",
+      "publication_number": "US9514120B1",
+      "evidence_quote": "A computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference.",
+      "claim_or_section": "Abstract",
+      "matching_claim_numbers": [],
+      "first_occurrence_in_full_doc_char_start": 119,
+      "first_occurrence_in_full_doc_char_end": 246,
+      "claim_anchored_quote_locations": [],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9514120B1-chunk-000",
+          "chunk_char_start": 119,
+          "full_doc_char_start": 119,
+          "full_doc_char_end": 246
+        }
+      ],
+      "source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N027",
+      "node_id": "User Feedback",
+      "publication_number": "US9374411B1",
+      "evidence_quote": "obtain explicit user feedback expressing that the user favors the first fictional character via a user interface.",
+      "claim_or_section": "Claim 23",
+      "matching_claim_numbers": [
+        23
+      ],
+      "first_occurrence_in_full_doc_char_start": 12684,
+      "first_occurrence_in_full_doc_char_end": 12797,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 23,
+          "full_doc_char_start": 12684,
+          "full_doc_char_end": 12797,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9374411B1-chunk-002"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9374411B1-chunk-002",
+          "chunk_char_start": 294,
+          "full_doc_char_start": 12684,
+          "full_doc_char_end": 12797
+        }
+      ],
+      "source_chunk_ids": [
+        "US9374411B1-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N027",
+      "node_id": "User Feedback",
+      "publication_number": "US9514120B1",
+      "evidence_quote": "feedback comprising an indicator that specifies that the potential typographical error is an author-intended string for the work",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 1363,
+      "first_occurrence_in_full_doc_char_end": 1491,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1363,
+          "full_doc_char_end": 1491,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9514120B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9514120B1-chunk-000",
+          "chunk_char_start": 1363,
+          "full_doc_char_start": 1363,
+          "full_doc_char_end": 1491
+        }
+      ],
+      "source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N028",
+      "node_id": "Non-Transitory Computer-Readable Medium",
+      "publication_number": "US9374411B1",
+      "evidence_quote": "A non-transitory computer-readable medium having a plurality of computer instructions executable by at least one computing device",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        21
+      ],
+      "first_occurrence_in_full_doc_char_start": 676,
+      "first_occurrence_in_full_doc_char_end": 805,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 676,
+          "full_doc_char_end": 805,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9374411B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9374411B1-chunk-000",
+          "chunk_char_start": 676,
+          "full_doc_char_start": 676,
+          "full_doc_char_end": 805
+        },
+        {
+          "chunk_id": "US9374411B1-chunk-001",
+          "chunk_char_start": 4268,
+          "full_doc_char_start": 10522,
+          "full_doc_char_end": 10651
+        }
+      ],
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001",
+        "US9374411B1-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N028",
+      "node_id": "Non-Transitory Computer-Readable Medium",
+      "publication_number": "US9514120B1",
+      "evidence_quote": "A non-transitory computer-readable medium having instructions stored thereon which, when executed by a processing device, cause the processing device to perform operations comprising:",
+      "claim_or_section": "Claim 10",
+      "matching_claim_numbers": [
+        10
+      ],
+      "first_occurrence_in_full_doc_char_start": 5442,
+      "first_occurrence_in_full_doc_char_end": 5625,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 10,
+          "full_doc_char_start": 5442,
+          "full_doc_char_end": 5625,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9514120B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9514120B1-chunk-000",
+          "chunk_char_start": 5442,
+          "full_doc_char_start": 5442,
+          "full_doc_char_end": 5625
+        }
+      ],
+      "source_chunk_ids": [
+        "US9514120B1-chunk-000",
+        "US9514120B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N029",
+      "node_id": "Users",
+      "publication_number": "US7991757B2",
+      "evidence_quote": "A system for enabling site operators to obtain item recommendations for presentation to users",
+      "claim_or_section": "Claim 22",
+      "matching_claim_numbers": [
+        22
+      ],
+      "first_occurrence_in_full_doc_char_start": 8253,
+      "first_occurrence_in_full_doc_char_end": 8346,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 22,
+          "full_doc_char_start": 8253,
+          "full_doc_char_end": 8346,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US7991757B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US7991757B2-chunk-001",
+          "chunk_char_start": 2016,
+          "full_doc_char_start": 8253,
+          "full_doc_char_end": 8346
+        }
+      ],
+      "source_chunk_ids": [
+        "US7991757B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N029",
+      "node_id": "Users",
+      "publication_number": "US9514120B1",
+      "evidence_quote": "sending, by the processing device, data indicative of presence of the potential typographical error in the work to a plurality of users",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 1134,
+      "first_occurrence_in_full_doc_char_end": 1269,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1134,
+          "full_doc_char_end": 1269,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9514120B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9514120B1-chunk-000",
+          "chunk_char_start": 1134,
+          "full_doc_char_start": 1134,
+          "full_doc_char_end": 1269
+        }
+      ],
+      "source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N030",
+      "node_id": "Apparatus",
+      "publication_number": "US7756837B2",
+      "evidence_quote": "An apparatus, comprising: means for receiving at least one data-stream intended for archiving on a backup storage device;",
+      "claim_or_section": "Claim 31",
+      "matching_claim_numbers": [
+        31
+      ],
+      "first_occurrence_in_full_doc_char_start": 10073,
+      "first_occurrence_in_full_doc_char_end": 10194,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 31,
+          "full_doc_char_start": 10073,
+          "full_doc_char_end": 10194,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US7756837B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US7756837B2-chunk-001",
+          "chunk_char_start": 4605,
+          "full_doc_char_start": 10073,
+          "full_doc_char_end": 10194
+        }
+      ],
+      "source_chunk_ids": [
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002",
+        "US7756837B2-chunk-003"
+      ]
+    },
+    {
+      "audit_id": "N030",
+      "node_id": "Apparatus",
+      "publication_number": "US9514120B1",
+      "evidence_quote": "An apparatus comprising: a memory; a processing device operatively coupled to the memory",
+      "claim_or_section": "Claim 18",
+      "matching_claim_numbers": [
+        18
+      ],
+      "first_occurrence_in_full_doc_char_start": 10551,
+      "first_occurrence_in_full_doc_char_end": 10639,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 18,
+          "full_doc_char_start": 10551,
+          "full_doc_char_end": 10639,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9514120B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9514120B1-chunk-001",
+          "chunk_char_start": 4580,
+          "full_doc_char_start": 10551,
+          "full_doc_char_end": 10639
+        }
+      ],
+      "source_chunk_ids": [
+        "US9514120B1-chunk-001",
+        "US9514120B1-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N031",
+      "node_id": "Score",
+      "publication_number": "US7991757B2",
+      "evidence_quote": "receiving recommendations and corresponding scores from the recommenders; applying weights to each of the recommenders; combining the scores with the weights to produce overall scores;",
+      "claim_or_section": "Claim 4",
+      "matching_claim_numbers": [
+        4
+      ],
+      "first_occurrence_in_full_doc_char_start": 3407,
+      "first_occurrence_in_full_doc_char_end": 3591,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 4,
+          "full_doc_char_start": 3407,
+          "full_doc_char_end": 3591,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US7991757B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US7991757B2-chunk-000",
+          "chunk_char_start": 3407,
+          "full_doc_char_start": 3407,
+          "full_doc_char_end": 3591
+        }
+      ],
+      "source_chunk_ids": [
+        "US7991757B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N031",
+      "node_id": "Score",
+      "publication_number": "US8069128B2",
+      "evidence_quote": "using the second classification data, executing a second pass of the multi-pass message filter on the sorted plurality of messages to score each message;",
+      "claim_or_section": "Claim 17",
+      "matching_claim_numbers": [
+        6,
+        17
+      ],
+      "first_occurrence_in_full_doc_char_start": 3718,
+      "first_occurrence_in_full_doc_char_end": 3871,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 17,
+          "full_doc_char_start": 7952,
+          "full_doc_char_end": 8105,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8069128B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8069128B2-chunk-001",
+          "chunk_char_start": 1855,
+          "full_doc_char_start": 7952,
+          "full_doc_char_end": 8105
+        }
+      ],
+      "source_chunk_ids": [
+        "US8069128B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N032",
+      "node_id": "Tokens",
+      "publication_number": "US8655901B1",
+      "evidence_quote": "segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query;",
+      "claim_or_section": "Claim 15",
+      "matching_claim_numbers": [
+        1,
+        8,
+        15
+      ],
+      "first_occurrence_in_full_doc_char_start": 1495,
+      "first_occurrence_in_full_doc_char_end": 1655,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 15,
+          "full_doc_char_start": 7703,
+          "full_doc_char_end": 7863,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8655901B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8655901B1-chunk-001",
+          "chunk_char_start": 1539,
+          "full_doc_char_start": 7703,
+          "full_doc_char_end": 7863
+        }
+      ],
+      "source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N032",
+      "node_id": "Tokens",
+      "publication_number": "US9218390B2",
+      "evidence_quote": "receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens;",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        12,
+        18
+      ],
+      "first_occurrence_in_full_doc_char_start": 1431,
+      "first_occurrence_in_full_doc_char_end": 1566,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1431,
+          "full_doc_char_end": 1566,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9218390B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9218390B2-chunk-000",
+          "chunk_char_start": 1431,
+          "full_doc_char_start": 1431,
+          "full_doc_char_end": 1566
+        }
+      ],
+      "source_chunk_ids": [
+        "US9218390B2-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N033",
+      "node_id": "Labels",
+      "publication_number": "US8655901B1",
+      "evidence_quote": "annotating the one or more tokens with labels for the corresponding components of the first query pattern;",
+      "claim_or_section": "Claim 15",
+      "matching_claim_numbers": [
+        1,
+        8,
+        15
+      ],
+      "first_occurrence_in_full_doc_char_start": 1967,
+      "first_occurrence_in_full_doc_char_end": 2073,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 15,
+          "full_doc_char_start": 8175,
+          "full_doc_char_end": 8281,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8655901B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8655901B1-chunk-001",
+          "chunk_char_start": 2011,
+          "full_doc_char_start": 8175,
+          "full_doc_char_end": 8281
+        }
+      ],
+      "source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N033",
+      "node_id": "Labels",
+      "publication_number": "US9218390B2",
+      "evidence_quote": "the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information;",
+      "claim_or_section": "Claim 12",
+      "matching_claim_numbers": [
+        1,
+        12,
+        18
+      ],
+      "first_occurrence_in_full_doc_char_start": 1906,
+      "first_occurrence_in_full_doc_char_end": 2115,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 12,
+          "full_doc_char_start": 8574,
+          "full_doc_char_end": 8783,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9218390B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9218390B2-chunk-000",
+          "chunk_char_start": 1906,
+          "full_doc_char_start": 1906,
+          "full_doc_char_end": 2115
+        },
+        {
+          "chunk_id": "US9218390B2-chunk-001",
+          "chunk_char_start": 2778,
+          "full_doc_char_start": 8574,
+          "full_doc_char_end": 8783
+        }
+      ],
+      "source_chunk_ids": [
+        "US9218390B2-chunk-000",
+        "US9218390B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N034",
+      "node_id": "Label",
+      "publication_number": "US8655901B1",
+      "evidence_quote": "annotating the one or more tokens with labels for the corresponding components of the first query pattern;",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        8,
+        15
+      ],
+      "first_occurrence_in_full_doc_char_start": 1967,
+      "first_occurrence_in_full_doc_char_end": 2073,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1967,
+          "full_doc_char_end": 2073,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8655901B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8655901B1-chunk-000",
+          "chunk_char_start": 1967,
+          "full_doc_char_start": 1967,
+          "full_doc_char_end": 2073
+        },
+        {
+          "chunk_id": "US8655901B1-chunk-000",
+          "chunk_char_start": 4992,
+          "full_doc_char_start": 4992,
+          "full_doc_char_end": 5098
+        }
+      ],
+      "source_chunk_ids": [
+        "US8655901B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N034",
+      "node_id": "Label",
+      "publication_number": "US9218390B2",
+      "evidence_quote": "the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information;",
+      "claim_or_section": "Claim 18",
+      "matching_claim_numbers": [
+        1,
+        12,
+        18
+      ],
+      "first_occurrence_in_full_doc_char_start": 1906,
+      "first_occurrence_in_full_doc_char_end": 2115,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 18,
+          "full_doc_char_start": 12047,
+          "full_doc_char_end": 12256,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US9218390B2-chunk-002"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US9218390B2-chunk-002",
+          "chunk_char_start": 899,
+          "full_doc_char_start": 12047,
+          "full_doc_char_end": 12256
+        }
+      ],
+      "source_chunk_ids": [
+        "US9218390B2-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N035",
+      "node_id": "Query",
+      "publication_number": "US7756837B2",
+      "evidence_quote": "receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database;",
+      "claim_or_section": "Claim 13",
+      "matching_claim_numbers": [
+        13,
+        28,
+        44
+      ],
+      "first_occurrence_in_full_doc_char_start": 4906,
+      "first_occurrence_in_full_doc_char_end": 5099,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 13,
+          "full_doc_char_start": 4906,
+          "full_doc_char_end": 5099,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US7756837B2-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US7756837B2-chunk-000",
+          "chunk_char_start": 4906,
+          "full_doc_char_start": 4906,
+          "full_doc_char_end": 5099
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-001",
+          "chunk_char_start": 4058,
+          "full_doc_char_start": 9526,
+          "full_doc_char_end": 9719
+        },
+        {
+          "chunk_id": "US7756837B2-chunk-002",
+          "chunk_char_start": 4414,
+          "full_doc_char_start": 15261,
+          "full_doc_char_end": 15454
+        }
+      ],
+      "source_chunk_ids": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ]
+    },
+    {
+      "audit_id": "N035",
+      "node_id": "Query",
+      "publication_number": "US8655901B1",
+      "evidence_quote": "segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query;",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1,
+        8,
+        15
+      ],
+      "first_occurrence_in_full_doc_char_start": 1495,
+      "first_occurrence_in_full_doc_char_end": 1655,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 1495,
+          "full_doc_char_end": 1655,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8655901B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8655901B1-chunk-000",
+          "chunk_char_start": 1495,
+          "full_doc_char_start": 1495,
+          "full_doc_char_end": 1655
+        },
+        {
+          "chunk_id": "US8655901B1-chunk-000",
+          "chunk_char_start": 4520,
+          "full_doc_char_start": 4520,
+          "full_doc_char_end": 4680
+        },
+        {
+          "chunk_id": "US8655901B1-chunk-001",
+          "chunk_char_start": 1539,
+          "full_doc_char_start": 7703,
+          "full_doc_char_end": 7863
+        }
+      ],
+      "source_chunk_ids": [
+        "US8655901B1-chunk-000",
+        "US8655901B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N036",
+      "node_id": "Non-Transitory Computer Storage Medium",
+      "publication_number": "US10867122B1",
+      "evidence_quote": "A non-transitory computer storage medium encoded with computer program instructions that, when executed by one or more processors, cause a computer device to perform operations comprising:",
+      "claim_or_section": "Claim 6",
+      "matching_claim_numbers": [
+        6
+      ],
+      "first_occurrence_in_full_doc_char_start": 4420,
+      "first_occurrence_in_full_doc_char_end": 4608,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 6,
+          "full_doc_char_start": 4420,
+          "full_doc_char_end": 4608,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US10867122B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US10867122B1-chunk-000",
+          "chunk_char_start": 4420,
+          "full_doc_char_start": 4420,
+          "full_doc_char_end": 4608
+        }
+      ],
+      "source_chunk_ids": [
+        "US10867122B1-chunk-000",
+        "US10867122B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N036",
+      "node_id": "Non-Transitory Computer Storage Medium",
+      "publication_number": "US8655901B1",
+      "evidence_quote": "A non-transitory computer storage medium encoded with a computer program, the program comprising instructions that when executed by data processing apparatus cause the data processing apparatus to perform operations comprising:",
+      "claim_or_section": "Claim 15",
+      "matching_claim_numbers": [
+        15
+      ],
+      "first_occurrence_in_full_doc_char_start": 7154,
+      "first_occurrence_in_full_doc_char_end": 7381,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 15,
+          "full_doc_char_start": 7154,
+          "full_doc_char_end": 7381,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8655901B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8655901B1-chunk-001",
+          "chunk_char_start": 990,
+          "full_doc_char_start": 7154,
+          "full_doc_char_end": 7381
+        }
+      ],
+      "source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N037",
+      "node_id": "Data Processing Apparatus",
+      "publication_number": "US10867122B1",
+      "evidence_quote": "A method performed by a data processing apparatus, the method comprising:",
+      "claim_or_section": "Claim 1",
+      "matching_claim_numbers": [
+        1
+      ],
+      "first_occurrence_in_full_doc_char_start": 546,
+      "first_occurrence_in_full_doc_char_end": 619,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 1,
+          "full_doc_char_start": 546,
+          "full_doc_char_end": 619,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US10867122B1-chunk-000"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US10867122B1-chunk-000",
+          "chunk_char_start": 546,
+          "full_doc_char_start": 546,
+          "full_doc_char_end": 619
+        }
+      ],
+      "source_chunk_ids": [
+        "US10867122B1-chunk-000"
+      ]
+    },
+    {
+      "audit_id": "N037",
+      "node_id": "Data Processing Apparatus",
+      "publication_number": "US8655901B1",
+      "evidence_quote": "instructions that when executed by data processing apparatus cause the data processing apparatus to perform operations comprising:",
+      "claim_or_section": "Claim 15",
+      "matching_claim_numbers": [
+        15
+      ],
+      "first_occurrence_in_full_doc_char_start": 7251,
+      "first_occurrence_in_full_doc_char_end": 7381,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 15,
+          "full_doc_char_start": 7251,
+          "full_doc_char_end": 7381,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8655901B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8655901B1-chunk-001",
+          "chunk_char_start": 1087,
+          "full_doc_char_start": 7251,
+          "full_doc_char_end": 7381
+        }
+      ],
+      "source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N038",
+      "node_id": "Computing Devices",
+      "publication_number": "US11423041B2",
+      "evidence_quote": "storing program instructions that when executed on or across one or more computing devices, cause the one or more computing devices to implement:",
+      "claim_or_section": "Claim 15",
+      "matching_claim_numbers": [
+        15
+      ],
+      "first_occurrence_in_full_doc_char_start": 7772,
+      "first_occurrence_in_full_doc_char_end": 7917,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 15,
+          "full_doc_char_start": 7772,
+          "full_doc_char_end": 7917,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US11423041B2-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US11423041B2-chunk-001",
+          "chunk_char_start": 2082,
+          "full_doc_char_start": 7772,
+          "full_doc_char_end": 7917
+        }
+      ],
+      "source_chunk_ids": [
+        "US11423041B2-chunk-001"
+      ]
+    },
+    {
+      "audit_id": "N038",
+      "node_id": "Computing Devices",
+      "publication_number": "US8655901B1",
+      "evidence_quote": "translating, with a system comprising one or more computing devices, the collection of annotated queries in the first language into a translated collection of queries in a second language;",
+      "claim_or_section": "Claim 15",
+      "matching_claim_numbers": [
+        15
+      ],
+      "first_occurrence_in_full_doc_char_start": 8282,
+      "first_occurrence_in_full_doc_char_end": 8470,
+      "claim_anchored_quote_locations": [
+        {
+          "claim_number": 15,
+          "full_doc_char_start": 8282,
+          "full_doc_char_end": 8470,
+          "exact_source_chunks_containing_this_claim_occurrence": [
+            "US8655901B1-chunk-001"
+          ]
+        }
+      ],
+      "matching_source_chunks": [
+        {
+          "chunk_id": "US8655901B1-chunk-001",
+          "chunk_char_start": 2118,
+          "full_doc_char_start": 8282,
+          "full_doc_char_end": 8470
+        }
+      ],
+      "source_chunk_ids": [
+        "US8655901B1-chunk-001"
+      ]
+    }
+  ],
+  "review_hashes": [
+    {
+      "audit_id": "N001",
+      "review_sha256": "193142f0f4a42cd3b329558feaacc11a315b147494b8711fd23d1a71fc7b7b1b",
+      "dossier_sha256": "c498e7bae679a77c48aec4a16d65cfc76b14f4b9777b37a3cd4eb259769275b1"
+    },
+    {
+      "audit_id": "N002",
+      "review_sha256": "a476edef20a060ed7b3755f3aa72f4965d94490c2a189997229f6bb0c8833d53",
+      "dossier_sha256": "45654caea954a0e774aef2aa0609791c37b6cb80b2b202746cde9861baee417c"
+    },
+    {
+      "audit_id": "N003",
+      "review_sha256": "fb03c443de36764947898533eb5750b3bd3033929147551a492a93ecb632bbed",
+      "dossier_sha256": "91b449a0c49dee61b6e11e4ff8eab25d4bb0f0b23e247a09e2547370e9ab6c18"
+    },
+    {
+      "audit_id": "N004",
+      "review_sha256": "1bc01ebfa25e933edbf80cd4e9ad3a6842fe19635e52daca53673fd3b08e6fa7",
+      "dossier_sha256": "3a986cba24306c9ec798b68b51a560853bc3bc1f32b38dfe57e572efb69c26f5"
+    },
+    {
+      "audit_id": "N005",
+      "review_sha256": "9298079d9d25dd61e8ce85cbc8baf32d20f843cfb680d671d499bce1585ac0e5",
+      "dossier_sha256": "51c36c3c493c788a96f83a48465072a0f2115b9219b4d0fa212d188358eaedbb"
+    },
+    {
+      "audit_id": "N006",
+      "review_sha256": "d5358cfefef82e82d907ecd904de16141459b87b027279ec2472bae997a273b3",
+      "dossier_sha256": "6ac688acb9173c5df3fd0e2908c2e23fd38ac5866cdf50d02ff8831b54c0789b"
+    },
+    {
+      "audit_id": "N007",
+      "review_sha256": "0a52b4380d31e5cf2efbc1164d3d7f61a07908e2922490b32d1457503a520662",
+      "dossier_sha256": "0424f8b000fb0eadd997565881a631f7213e77ec90c0fb39147b6abe629b73c0"
+    },
+    {
+      "audit_id": "N008",
+      "review_sha256": "626662921c547a0472d22e51f9a04907d44d0d28a4f92d1990425f1a957271e3",
+      "dossier_sha256": "c0da837abe5a2dc9620da4cf57b7a0e7ce1cda5bbd373d1a0bf1b3370a93ece8"
+    },
+    {
+      "audit_id": "N009",
+      "review_sha256": "f07b3668cd8613e8aff2891ef7afe8fbcfbb737a50521d5397bee965cf008cb1",
+      "dossier_sha256": "ec5be13e22f3968262f78fd8c83637d18f209e3f0001b0de629e00f5f42d2f26"
+    },
+    {
+      "audit_id": "N010",
+      "review_sha256": "30c6da40cee125cdc181176ee9d2ce75eb40839f09f1660fbae89ac5752cb2a9",
+      "dossier_sha256": "e655b7cf8fe65009def2c80900d9fbc58f9a5b0a5551b80caa5179a126cc91aa"
+    },
+    {
+      "audit_id": "N011",
+      "review_sha256": "7a75e85da54331e6f4dbc5b547b8d4c2248c9868a775a5bd149188f026cff4ab",
+      "dossier_sha256": "74207c392ae9059747fa9d5b0affe4e6c2ed616df14f63f209c5ff7f93698a86"
+    },
+    {
+      "audit_id": "N012",
+      "review_sha256": "6869ee907e4a0a6fd12822d5814bb308504727baae7059a462a7b6c0cdc18ee2",
+      "dossier_sha256": "a0bc09d44ac775f10ae35ee75204b2eecdfd1e71a7f91db479b17e4e121601e8"
+    },
+    {
+      "audit_id": "N013",
+      "review_sha256": "e9bf99c4361795a611aeffa2d8366e7aa615c3727704ad2036a687280624d77d",
+      "dossier_sha256": "23db67e9845856ba23d16ac941a42fb4a0665d52756ba83e19a6999ffd39100c"
+    },
+    {
+      "audit_id": "N014",
+      "review_sha256": "1f45348f0bfb053cc83e0494df03e36a05c298596da51b58f6d6bff35c3a79f0",
+      "dossier_sha256": "87c767b3a181718bbd08e9a38c3f7085262e949a5db862e59450583b011db88f"
+    },
+    {
+      "audit_id": "N015",
+      "review_sha256": "a8af51b51694c204e1156028e2d73fdfd1dd7ae379be7a935694a505571ac387",
+      "dossier_sha256": "04ef6becf7d8abe6cde999301b2e388422da98a29e6305b343cc6fe63f92bb82"
+    },
+    {
+      "audit_id": "N016",
+      "review_sha256": "ad6c8810b0e79491aab7cba5874e138b73e5c4cf93649ed0f7e7dc0544dc04b4",
+      "dossier_sha256": "90864e1b1aedde5cb45783a55c711297f2a5aede3de917d013eebfed8188a0f2"
+    },
+    {
+      "audit_id": "N017",
+      "review_sha256": "105c641cf8230de5815244260c5637065440047471721d30ca4a9042d0ca6dee",
+      "dossier_sha256": "2ac5e4ebaf8997ca274c006feb4d997b4d99fca7a7603db9108891c1f2c83135"
+    },
+    {
+      "audit_id": "N018",
+      "review_sha256": "bad0679b3aeaf1cbea948b616db9d4ca9509eb3f194151723576af5af9a220fa",
+      "dossier_sha256": "4b7ef09c940e037f43937b33b501a7aaf6b87c3a6b32d059b6d2e11a1e4287bc"
+    },
+    {
+      "audit_id": "N019",
+      "review_sha256": "9d243baaec499731532edf540248bea35097cf150391d4a07512e3ee354f540f",
+      "dossier_sha256": "e8979d5afb41844a4cbc576cb1324562af5a237679463ea198fc0918b339b544"
+    },
+    {
+      "audit_id": "N020",
+      "review_sha256": "7c8b438f2e165a0600d317b467c384773371e5bef0a55ef6b6d70c9ca68d3cee",
+      "dossier_sha256": "e0883a92e082208e7bd0bebe51e10543da25697085213be6c0af316f2440cdb5"
+    },
+    {
+      "audit_id": "N021",
+      "review_sha256": "c294c1c6565ff6e782e51220ffb3323ff342da5471ddb88db99e372235174995",
+      "dossier_sha256": "57bfc2307be3b1f9f9440fa6bda1e3646613cc730a9cd6b87e9307bc5d40f227"
+    },
+    {
+      "audit_id": "N022",
+      "review_sha256": "57aebd007687ea509b0a8e7313ffe8f9767f464fa2e8e943fb090ea6d375bbee",
+      "dossier_sha256": "d9f43295358caa3d8d61dc78f86df3765fd6b0ee49965b5177e430557a630c6e"
+    },
+    {
+      "audit_id": "N023",
+      "review_sha256": "a319fc816547387c80c45dbf1e50cd073dc794020548d41cd88f20a6cd2f3b2c",
+      "dossier_sha256": "f2698835a96df6aabe8c052663437e56352b08708b4ba7c09305afb377faaf02"
+    },
+    {
+      "audit_id": "N024",
+      "review_sha256": "5ff4167a5f35dc8d58d0efda6eea7d03e702d593a760fe4d0b1ea401c753630a",
+      "dossier_sha256": "66748ee42f53b43b7a458e70d21efba86025314e3da88fd8ea48b55c2a5c0f22"
+    },
+    {
+      "audit_id": "N025",
+      "review_sha256": "6d4d38f6642a0e0006fd962f53a458bc753f98da3b301ab9492137ff35f409f9",
+      "dossier_sha256": "8c6da68b1a018eb30f7f6e587c30de44b293e39acc930560ac4fb9b135974519"
+    },
+    {
+      "audit_id": "N026",
+      "review_sha256": "f1c197874011a3d65eb8a4ee795def3221ee569a2105510affbbb5badbf28055",
+      "dossier_sha256": "3268798bfe2e5dc4426caef6f22ee36a775f0f816ba833d5b4da3a486b24ad4a"
+    },
+    {
+      "audit_id": "N027",
+      "review_sha256": "941f91625a42694adcdfc44da5b83e95058bb7d0624dd515c396cc742aa68c93",
+      "dossier_sha256": "e0d64c88b4cec75c44aca42184ca2086e888d4bb5a4ce9c2b6d601f377049d48"
+    },
+    {
+      "audit_id": "N028",
+      "review_sha256": "9619c844fc511c4145f5229318aae2ecd27d2dfb6f7fb05110ae38c286806ac2",
+      "dossier_sha256": "6e7bc58229a6d859dd70c1277ea910cba60dd371e6099daece54604363220224"
+    },
+    {
+      "audit_id": "N029",
+      "review_sha256": "6f45bd33f3835c46abdc064696cb11f9ab112361d9832975bd69bd384d99933e",
+      "dossier_sha256": "d6d2663adc6a400f6b3c706c002652b78dae3f552043a5907f8aa72404157514"
+    },
+    {
+      "audit_id": "N030",
+      "review_sha256": "8ac38c7d83c83661cf184c1678ecae7c3ad71b4b4ec0d626aefdab3142fbb43d",
+      "dossier_sha256": "6391cc8eb143846b5415fe30beb7b015b95bc1dc5a018dbbc94ff68ca057e8a1"
+    },
+    {
+      "audit_id": "N031",
+      "review_sha256": "001268940aaec3b3cab751c87e3139f0cb587fc22ba261d8c7ad1ed679bbda3e",
+      "dossier_sha256": "6f630f7face48ff4a49e5e69f1433055b8a5b70901248dca33dc9d911d61d7d1"
+    },
+    {
+      "audit_id": "N032",
+      "review_sha256": "6886cff21ae6200316b634dc498be6ecf361162d794a067143115138a13280ac",
+      "dossier_sha256": "4a5f2dab3308b83cd8889506b3a50baec0d7d4aa8d1e9283bcdeb534325c5520"
+    },
+    {
+      "audit_id": "N033",
+      "review_sha256": "ed4f02e90b545c3474a27c4fbc8a3a3168080a96287a1bcb9e6fcf136572e2fe",
+      "dossier_sha256": "7cd5d934bb4b12a3d6aed0f8c34d10a513a67762eb6552485fbec2bdafedc41b"
+    },
+    {
+      "audit_id": "N034",
+      "review_sha256": "a072c884c0839ca00b0c9710831b690a64f47f9595e99bbec13f01a22aaa9ae4",
+      "dossier_sha256": "779d1554589cc504e3f202a0522eff758690e280c7d0fabcf715c2cbafbe61ae"
+    },
+    {
+      "audit_id": "N035",
+      "review_sha256": "be9d7b9776a4820f82a59ee249a38da0c08cb3b0da40f5b0d8725d4720ab6c96",
+      "dossier_sha256": "c0a26be09b5fb42ab1e0915c4c1b7b4188aac61d3f84baa1beaad911ed42e320"
+    },
+    {
+      "audit_id": "N036",
+      "review_sha256": "c2ab1226535d7c4f039e253d0115017f942dd974f83eff801a8cd079a94f4926",
+      "dossier_sha256": "7eeaef9297a2ac7977d6945feda016ef1b70e4c95086b0216bfdc2c4a16492c5"
+    },
+    {
+      "audit_id": "N037",
+      "review_sha256": "765de7c675af8b3cd9d07371b14ce8ecf5f44da2b2209275b3b061f1fe2df81a",
+      "dossier_sha256": "eb76db3157185743e428cba7a7075a5ed74eaaa1ed64774ba96ee5a145edf2e1"
+    },
+    {
+      "audit_id": "N038",
+      "review_sha256": "3e3257b56877e6d760d028b35f6aa809a816d697f4c411d60b0b49732134437c",
+      "dossier_sha256": "6bf696fd8cbda9cd25c2561fe6b39e9f56dfba8fcd6f387c78b9282e87cc4983"
+    }
+  ],
+  "structural_quote_validation_only": "Passing verifies coverage, exact source quotes and graph endpoint identifiers, not truth of semantic judgements."
+}

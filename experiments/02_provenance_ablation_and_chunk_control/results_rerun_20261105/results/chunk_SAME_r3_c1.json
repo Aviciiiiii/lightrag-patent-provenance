@@ -1,0 +1,31 @@
+{
+  "condition": "SAME",
+  "repeat": 3,
+  "chunk_index": 1,
+  "chunk_id": "controlled-US7991757B2-same-001",
+  "file_path": "US7991757B2.txt",
+  "call_id": 19,
+  "request_messages_exact_match": true,
+  "response": {
+    "id": 19,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "entity<|#|>System Of Claim 3<|#|>Artifact<|#|>A system defined in claim 3 of a patent claim set, which involves assigning weights to external recommenders.\nrelation<|#|>System Of Claim 3<|#|>Content Site<|#|>weight selection, configuration<|#|>The content site selects at least some of the weights to assign to the external recommenders within the system of claim 3.\nentity<|#|>Content Site<|#|>Artifact<|#|>A site that selects at least some of the weights to assign to external recommenders.\nentity<|#|>External Recommenders<|#|>Other<|#|>Recommenders external to the content site that are assigned weights by the content site.\nrelation<|#|>Content Site<|#|>External Recommenders<|#|>weight assignment<|#|>The content site assigns at least some of the weights to the external recommenders.\n<|COMPLETE|>",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1843,
+      "completion_tokens": 226,
+      "total_tokens": 2069,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1843
+    },
+    "reasoning_content_present": false
+  },
+  "completion_delimiter_present": true,
+  "valid_nontruncated": true
+}

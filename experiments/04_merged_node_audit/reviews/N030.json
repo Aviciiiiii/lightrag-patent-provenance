@@ -1,0 +1,1241 @@
+{
+  "audit_id": "N030",
+  "node_id": "Apparatus",
+  "category": "shared_broad_class",
+  "confidence": "medium",
+  "reason_zh": "Apparatus在两来源中均是由硬件/功能模块构成的装置类：备份数据管理装置与收集文字校验反馈的装置。原文没有表示同一个装置；泛化名称本身不足以判跨专利语义混并。US9514120B1另有同专利内的操作主体粗化候选，须与跨来源类合并分开。",
+  "class_instance_interpretation_zh": "共同类为装置/设备；Claim31/47/48的备份流装置与另一专利Claim18的处理器/内存装置是局部实施例。把全部邻边无作用域地合成为同一机器能力会超出原文，但本审计未运行该种推理。",
+  "concept_class_vs_local_instance": "shared_class; document-local instances remain distinct",
+  "source_assessments": [
+    {
+      "publication_number": "US7756837B2",
+      "evidence_quote": "An apparatus, comprising: means for receiving at least one data-stream intended for archiving on a backup storage device;",
+      "claim_or_section": "Claim 31",
+      "source_chunk_ids": [
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002",
+        "US7756837B2-chunk-003"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US7756837B2-chunk-001"
+      ],
+      "claim_number": 31,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 4,
+        "indexed_document_char_offset": 10073
+      },
+      "role_zh": "透明接收备份流、提取管理数据并存储到数据库的装置；Claim47/48分别含存储路由/服务器功能。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk001/002/003实体及关系分别对应Claim31/47/48，保留具体功能差异；未发现从另一本专利移入的关系陈述。",
+        "raw_records": [
+          {
+            "chunk_id": "US7756837B2-chunk-001",
+            "content_sha256": "8b1a94961ae323fa62890371b8df43eadff7e06ff68633f58c71a9050db94c86",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 19,
+                "raw_line": "entity<|#|>Apparatus<|#|>Artifact<|#|>An apparatus comprising means for receiving a data-stream, means for extracting management data, and means for storing management data in a searchable format in a database.",
+                "fields": [
+                  "entity",
+                  "Apparatus",
+                  "Artifact",
+                  "An apparatus comprising means for receiving a data-stream, means for extracting management data, and means for storing management data in a searchable format in a database."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 38,
+                "raw_line": "relation<|#|>Apparatus<|#|>Data-Stream<|#|>means for receiving<|#|>The apparatus comprises means for receiving at least one data-stream intended for archiving on a backup storage device.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Data-Stream",
+                  "means for receiving",
+                  "The apparatus comprises means for receiving at least one data-stream intended for archiving on a backup storage device."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 39,
+                "raw_line": "relation<|#|>Apparatus<|#|>Management Data<|#|>means for extracting<|#|>The apparatus comprises means for extracting management data from the data-stream.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Management Data",
+                  "means for extracting",
+                  "The apparatus comprises means for extracting management data from the data-stream."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 40,
+                "raw_line": "relation<|#|>Apparatus<|#|>Database<|#|>means for storing in<|#|>The apparatus comprises means for storing the management data in a searchable format in a database.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Database",
+                  "means for storing in",
+                  "The apparatus comprises means for storing the management data in a searchable format in a database."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US7756837B2-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "4d3c83871d912887d1d45e4c226af68edf1390b619d2df1afce23ca479d93d32"
+              }
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-002",
+            "content_sha256": "c301fb50a9bcd91ff8802abcebcecf3db19cbcb3773547c471bfbded65e67e9c",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 19,
+                "raw_line": "entity<|#|>Apparatus<|#|>Artifact<|#|>A device comprising means for receiving data-streams, carrying out a storage router function, and extracting management data.",
+                "fields": [
+                  "entity",
+                  "Apparatus",
+                  "Artifact",
+                  "A device comprising means for receiving data-streams, carrying out a storage router function, and extracting management data."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 42,
+                "raw_line": "relation<|#|>Apparatus<|#|>Storage Router Function<|#|>carrying out<|#|>The apparatus comprises means for carrying out a storage router function between the sources and the backup storage device.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Storage Router Function",
+                  "carrying out",
+                  "The apparatus comprises means for carrying out a storage router function between the sources and the backup storage device."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 43,
+                "raw_line": "relation<|#|>Apparatus<|#|>Data-Stream<|#|>receiving<|#|>The apparatus comprises means for receiving at least one data-stream from one or more sources.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Data-Stream",
+                  "receiving",
+                  "The apparatus comprises means for receiving at least one data-stream from one or more sources."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 44,
+                "raw_line": "relation<|#|>Apparatus<|#|>Management Data<|#|>extraction<|#|>The apparatus comprises means for extracting management data from the data-stream.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Management Data",
+                  "extraction",
+                  "The apparatus comprises means for extracting management data from the data-stream."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US7756837B2-chunk-002",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "eb197a0cf78cf463212ad664302636f45f8a193d53d7b3e5587313d1e72d1d57"
+              }
+            ]
+          },
+          {
+            "chunk_id": "US7756837B2-chunk-003",
+            "content_sha256": "5ca770e817b88c8e4b61b1c1ae32cd89984a4352dc1d9ce89b5dd81f8ca2e5e1",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:af77c0c0ced5933edcc16c99fbd35ead",
+                "cache_key": "default:extract:af77c0c0ced5933edcc16c99fbd35ead",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 11,
+                "raw_line": "entity<|#|>Apparatus<|#|>Artifact<|#|>An apparatus comprising means for receiving a data-stream, carrying out a server function, extracting management data, and storing the management data in a searchable format in a database.",
+                "fields": [
+                  "entity",
+                  "Apparatus",
+                  "Artifact",
+                  "An apparatus comprising means for receiving a data-stream, carrying out a server function, extracting management data, and storing the management data in a searchable format in a database."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:af77c0c0ced5933edcc16c99fbd35ead",
+                "cache_key": "default:extract:af77c0c0ced5933edcc16c99fbd35ead",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 21,
+                "raw_line": "relation<|#|>Apparatus<|#|>Server Function<|#|>carries out<|#|>The apparatus comprises means for carrying out a server function as between the sources and the backup storage device.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Server Function",
+                  "carries out",
+                  "The apparatus comprises means for carrying out a server function as between the sources and the backup storage device."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:af77c0c0ced5933edcc16c99fbd35ead",
+                "cache_key": "default:extract:af77c0c0ced5933edcc16c99fbd35ead",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 22,
+                "raw_line": "relation<|#|>Apparatus<|#|>Management Data<|#|>extraction<|#|>The apparatus comprises means for extracting management data from the data-stream.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Management Data",
+                  "extraction",
+                  "The apparatus comprises means for extracting management data from the data-stream."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:af77c0c0ced5933edcc16c99fbd35ead",
+                "cache_key": "default:extract:af77c0c0ced5933edcc16c99fbd35ead",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 23,
+                "raw_line": "relation<|#|>Apparatus<|#|>Database<|#|>storage<|#|>The apparatus comprises means for storing the management data in a searchable format in a database.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Database",
+                  "storage",
+                  "The apparatus comprises means for storing the management data in a searchable format in a database."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US7756837B2-chunk-003",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "7a4e27de460abaed4d5a03a4d77af44f2de17216c0587da3b316f543d3ae9903"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The apparatus comprises means for storing the management data in a searchable format in a database.",
+          "keywords": "means for storing in,storage",
+          "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-003",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Database",
+          "target": "Apparatus",
+          "edge_index": 102,
+          "source_chunks": [
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-003"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The apparatus comprises means for receiving at least one data-stream intended for archiving on a backup storage device.<SEP>The apparatus comprises means for receiving at least one data-stream from one or more sources.",
+          "keywords": "means for receiving,receiving",
+          "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Apparatus",
+          "target": "Data-Stream",
+          "edge_index": 522,
+          "source_chunks": [
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 3.0,
+          "description": "The apparatus comprises means for extracting management data from the data-stream.",
+          "keywords": "extraction,means for extracting",
+          "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-002<SEP>US7756837B2-chunk-003",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Apparatus",
+          "target": "Management Data",
+          "edge_index": 523,
+          "source_chunks": [
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-002",
+            "US7756837B2-chunk-003"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The apparatus comprises means for carrying out a storage router function between the sources and the backup storage device.",
+          "keywords": "carrying out",
+          "source_id": "US7756837B2-chunk-002",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Apparatus",
+          "target": "Storage Router Function",
+          "edge_index": 524,
+          "source_chunks": [
+            "US7756837B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The apparatus comprises means for carrying out a server function as between the sources and the backup storage device.",
+          "keywords": "carries out",
+          "source_id": "US7756837B2-chunk-003",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Apparatus",
+          "target": "Server Function",
+          "edge_index": 525,
+          "source_chunks": [
+            "US7756837B2-chunk-003"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "evidence_quote": "An apparatus comprising: a memory; a processing device operatively coupled to the memory",
+      "claim_or_section": "Claim 18",
+      "source_chunk_ids": [
+        "US9514120B1-chunk-001",
+        "US9514120B1-chunk-002"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US9514120B1-chunk-001"
+      ],
+      "claim_number": 18,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 4,
+        "indexed_document_char_offset": 10551
+      },
+      "role_zh": "含内存和处理设备的装置，向用户显示疑似文字错误并向服务器提交反馈；服务器随后组合、排序及更新参考。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk001实体与Claim18前段对应；chunk002实体描述及行17–19把组合/排序/更新的主语概括为Apparatus。Claim18明确这些后续操作属于server computing machine，存在局部主体细节丢失候选，不能直接归因跨专利合并。",
+        "raw_records": [
+          {
+            "chunk_id": "US9514120B1-chunk-001",
+            "content_sha256": "7dd8efe9e014ee9e28d8ff4d1c7090dfcca115a354cf7d985cc95448a9241a74",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+                "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 10,
+                "raw_line": "entity<|#|>Apparatus<|#|>Artifact<|#|>A device comprising a memory and a processing device that provides data on potential typographical errors to users, receives input identifying author-intended strings, determines associated parameters, and provides feedback to a server computing machine.",
+                "fields": [
+                  "entity",
+                  "Apparatus",
+                  "Artifact",
+                  "A device comprising a memory and a processing device that provides data on potential typographical errors to users, receives input identifying author-intended strings, determines associated parameters, and provides feedback to a server computing machine."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+                "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 31,
+                "raw_line": "relation<|#|>Apparatus<|#|>Graphical User Interface<|#|>provides data via<|#|>The apparatus provides data indicative of potential typographical errors to a user via a graphical user interface.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Graphical User Interface",
+                  "provides data via",
+                  "The apparatus provides data indicative of potential typographical errors to a user via a graphical user interface."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+                "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 32,
+                "raw_line": "relation<|#|>Apparatus<|#|>Feedback<|#|>provides<|#|>The apparatus provides feedback for a work to a server computing machine, the feedback comprising identification of author-intended strings and associated parameters.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Feedback",
+                  "provides",
+                  "The apparatus provides feedback for a work to a server computing machine, the feedback comprising identification of author-intended strings and associated parameters."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+                "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 33,
+                "raw_line": "relation<|#|>Apparatus<|#|>Server Computing Machine<|#|>provides feedback to<|#|>The apparatus provides feedback for a work to a server computing machine.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Server Computing Machine",
+                  "provides feedback to",
+                  "The apparatus provides feedback for a work to a server computing machine."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+                "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 34,
+                "raw_line": "relation<|#|>Apparatus<|#|>Memory<|#|>comprises<|#|>The apparatus comprises a memory operatively coupled to the processing device.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Memory",
+                  "comprises",
+                  "The apparatus comprises a memory operatively coupled to the processing device."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:a37ca561034040ded08355639b284ba3",
+                "cache_key": "default:extract:a37ca561034040ded08355639b284ba3",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 35,
+                "raw_line": "relation<|#|>Apparatus<|#|>Processing Device<|#|>comprises<|#|>The apparatus comprises a processing device operatively coupled to the memory.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Processing Device",
+                  "comprises",
+                  "The apparatus comprises a processing device operatively coupled to the memory."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9514120B1-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "e2a17dd1b57fec60d1eec1c6fc994018925ddd4ee71f362dc3af059e4ac24208"
+              }
+            ]
+          },
+          {
+            "chunk_id": "US9514120B1-chunk-002",
+            "content_sha256": "acd8de2188aa5f0e351b4f28d3bc69adfe94c510abc71739d4e7b707f20b5e40",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "cache_key": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 5,
+                "raw_line": "entity<|#|>Apparatus<|#|>Artifact<|#|>A device or system referenced in claims 18, 19, and 20 that processes input, data indicative of potential typographical errors, and generates combined feedback.",
+                "fields": [
+                  "entity",
+                  "Apparatus",
+                  "Artifact",
+                  "A device or system referenced in claims 18, 19, and 20 that processes input, data indicative of potential typographical errors, and generates combined feedback."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "cache_key": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 17,
+                "raw_line": "relation<|#|>Apparatus<|#|>Combined Feedback<|#|>generation<|#|>The apparatus generates a combined feedback from one or more additional works.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Combined Feedback",
+                  "generation",
+                  "The apparatus generates a combined feedback from one or more additional works."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "cache_key": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 18,
+                "raw_line": "relation<|#|>Apparatus<|#|>Sorted Feedback<|#|>generation<|#|>The apparatus sorts the combined feedback to generate a sorted feedback.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Sorted Feedback",
+                  "generation",
+                  "The apparatus sorts the combined feedback to generate a sorted feedback."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "cache_key": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 19,
+                "raw_line": "relation<|#|>Apparatus<|#|>Reference<|#|>updating<|#|>The apparatus updates a reference based on the sorted feedback.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Reference",
+                  "updating",
+                  "The apparatus updates a reference based on the sorted feedback."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "cache_key": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 20,
+                "raw_line": "relation<|#|>Apparatus<|#|>User Identifier<|#|>input inclusion<|#|>The input to the apparatus may comprise a user identifier.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "User Identifier",
+                  "input inclusion",
+                  "The input to the apparatus may comprise a user identifier."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "cache_key": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 21,
+                "raw_line": "relation<|#|>Apparatus<|#|>Work Identifier<|#|>input inclusion<|#|>The input to the apparatus may comprise a work identifier.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Work Identifier",
+                  "input inclusion",
+                  "The input to the apparatus may comprise a work identifier."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "cache_key": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 22,
+                "raw_line": "relation<|#|>Apparatus<|#|>Potential Typographical Error<|#|>input inclusion, error detection<|#|>The input to the apparatus may comprise a string identified as a potential typographical error, and the apparatus uses data indicative of the presence of the potential typographical error.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Potential Typographical Error",
+                  "input inclusion, error detection",
+                  "The input to the apparatus may comprise a string identified as a potential typographical error, and the apparatus uses data indicative of the presence of the potential typographical error."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "cache_key": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 23,
+                "raw_line": "relation<|#|>Apparatus<|#|>Decision<|#|>input inclusion<|#|>The input to the apparatus may comprise a decision indicating whether a corresponding string is an author-intended string.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Decision",
+                  "input inclusion",
+                  "The input to the apparatus may comprise a decision indicating whether a corresponding string is an author-intended string."
+                ]
+              },
+              {
+                "raw_record_id": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "cache_key": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 24,
+                "raw_line": "relation<|#|>Apparatus<|#|>Confidence Level<|#|>input inclusion<|#|>The input to the apparatus may comprise a confidence level of the decision.",
+                "fields": [
+                  "relation",
+                  "Apparatus",
+                  "Confidence Level",
+                  "input inclusion",
+                  "The input to the apparatus may comprise a confidence level of the decision."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9514120B1-chunk-002",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "bb59517ce02b46e42c4d5e24a1e2cf8b40293e0eb7625881cbb52c87d3cddbdd"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The apparatus comprises a memory operatively coupled to the processing device.",
+          "keywords": "comprises",
+          "source_id": "US9514120B1-chunk-001",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Memory",
+          "target": "Apparatus",
+          "edge_index": 324,
+          "source_chunks": [
+            "US9514120B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The apparatus comprises a processing device operatively coupled to the memory.",
+          "keywords": "comprises",
+          "source_id": "US9514120B1-chunk-001",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Processing Device",
+          "target": "Apparatus",
+          "edge_index": 468,
+          "source_chunks": [
+            "US9514120B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The input to the apparatus may comprise a string identified as a potential typographical error, and the apparatus uses data indicative of the presence of the potential typographical error.",
+          "keywords": "error detection,input inclusion",
+          "source_id": "US9514120B1-chunk-002",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Potential Typographical Error",
+          "target": "Apparatus",
+          "edge_index": 477,
+          "source_chunks": [
+            "US9514120B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The apparatus generates a combined feedback from one or more additional works.",
+          "keywords": "generation",
+          "source_id": "US9514120B1-chunk-002",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Combined Feedback",
+          "target": "Apparatus",
+          "edge_index": 495,
+          "source_chunks": [
+            "US9514120B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The apparatus sorts the combined feedback to generate a sorted feedback.",
+          "keywords": "generation",
+          "source_id": "US9514120B1-chunk-002",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Sorted Feedback",
+          "target": "Apparatus",
+          "edge_index": 502,
+          "source_chunks": [
+            "US9514120B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The apparatus provides feedback for a work to a server computing machine, the feedback comprising identification of author-intended strings and associated parameters.",
+          "keywords": "provides",
+          "source_id": "US9514120B1-chunk-001",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Feedback",
+          "target": "Apparatus",
+          "edge_index": 514,
+          "source_chunks": [
+            "US9514120B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The apparatus provides feedback for a work to a server computing machine.",
+          "keywords": "provides feedback to",
+          "source_id": "US9514120B1-chunk-001",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Server Computing Machine",
+          "target": "Apparatus",
+          "edge_index": 515,
+          "source_chunks": [
+            "US9514120B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The apparatus provides data indicative of potential typographical errors to a user via a graphical user interface.",
+          "keywords": "provides data via",
+          "source_id": "US9514120B1-chunk-001",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Graphical User Interface",
+          "target": "Apparatus",
+          "edge_index": 516,
+          "source_chunks": [
+            "US9514120B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The apparatus updates a reference based on the sorted feedback.",
+          "keywords": "updating",
+          "source_id": "US9514120B1-chunk-002",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Apparatus",
+          "target": "Reference",
+          "edge_index": 517,
+          "source_chunks": [
+            "US9514120B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The input to the apparatus may comprise a user identifier.",
+          "keywords": "input inclusion",
+          "source_id": "US9514120B1-chunk-002",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Apparatus",
+          "target": "User Identifier",
+          "edge_index": 518,
+          "source_chunks": [
+            "US9514120B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The input to the apparatus may comprise a work identifier.",
+          "keywords": "input inclusion",
+          "source_id": "US9514120B1-chunk-002",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Apparatus",
+          "target": "Work Identifier",
+          "edge_index": 519,
+          "source_chunks": [
+            "US9514120B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The input to the apparatus may comprise a decision indicating whether a corresponding string is an author-intended string.",
+          "keywords": "input inclusion",
+          "source_id": "US9514120B1-chunk-002",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Apparatus",
+          "target": "Decision",
+          "edge_index": 520,
+          "source_chunks": [
+            "US9514120B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The input to the apparatus may comprise a confidence level of the decision.",
+          "keywords": "input inclusion",
+          "source_id": "US9514120B1-chunk-002",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Apparatus",
+          "target": "Confidence Level",
+          "edge_index": 521,
+          "source_chunks": [
+            "US9514120B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 18,
+    "observed_unsupported_edge": false,
+    "observed_unsupported_edge_definition": "true仅用于依据原文明确不支持的实际关系；类级概括/端点角色候选单列，不自动计入。",
+    "details_zh": "已逐条检查全部实际邻边及其source_id/file_path；各关系在所属专利中有对应陈述，未发现将另一专利特征直接写入本专利边描述的确证。共同节点容许潜在无作用域路径组合，但本审计没有执行或观察该传播。 另列495/502/517的局部主语粗化候选；它们均来自US9514120B1-chunk-002且原始抽取已经如此，不能归因跨专利节点合并。",
+    "edge_indices": [
+      102,
+      324,
+      468,
+      477,
+      495,
+      502,
+      514,
+      515,
+      516,
+      517,
+      518,
+      519,
+      520,
+      521,
+      522,
+      523,
+      524,
+      525
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 102,
+        "source": "Database",
+        "target": "Apparatus",
+        "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-003",
+        "file_path": "US7756837B2.txt",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "actual_description": "The apparatus comprises means for storing the management data in a searchable format in a database.",
+        "claim_or_section": "US7756837B2 Claims31,48",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 324,
+        "source": "Memory",
+        "target": "Apparatus",
+        "source_id": "US9514120B1-chunk-001",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The apparatus comprises a memory operatively coupled to the processing device.",
+        "claim_or_section": "US9514120B1 Claim18",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 468,
+        "source": "Processing Device",
+        "target": "Apparatus",
+        "source_id": "US9514120B1-chunk-001",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The apparatus comprises a processing device operatively coupled to the memory.",
+        "claim_or_section": "US9514120B1 Claim18",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 477,
+        "source": "Potential Typographical Error",
+        "target": "Apparatus",
+        "source_id": "US9514120B1-chunk-002",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The input to the apparatus may comprise a string identified as a potential typographical error, and the apparatus uses data indicative of the presence of the potential typographical error.",
+        "claim_or_section": "US9514120B1 Claims19,20",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 495,
+        "source": "Combined Feedback",
+        "target": "Apparatus",
+        "source_id": "US9514120B1-chunk-002",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The apparatus generates a combined feedback from one or more additional works.",
+        "claim_or_section": "US9514120B1 Claim18",
+        "assessment": "qualified_role_attribution_candidate",
+        "assessment_zh": "Claim18显式将combine/sort/update赋予server computing machine；chunk002原始抽取及图边以Apparatus为主语。存在局部主体粒度粗化，但若把Apparatus理解为协作整体可有概括解释，未计为已证明跨专利不支持边。"
+      },
+      {
+        "edge_index": 502,
+        "source": "Sorted Feedback",
+        "target": "Apparatus",
+        "source_id": "US9514120B1-chunk-002",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The apparatus sorts the combined feedback to generate a sorted feedback.",
+        "claim_or_section": "US9514120B1 Claim18",
+        "assessment": "qualified_role_attribution_candidate",
+        "assessment_zh": "Claim18显式将combine/sort/update赋予server computing machine；chunk002原始抽取及图边以Apparatus为主语。存在局部主体粒度粗化，但若把Apparatus理解为协作整体可有概括解释，未计为已证明跨专利不支持边。"
+      },
+      {
+        "edge_index": 514,
+        "source": "Feedback",
+        "target": "Apparatus",
+        "source_id": "US9514120B1-chunk-001",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The apparatus provides feedback for a work to a server computing machine, the feedback comprising identification of author-intended strings and associated parameters.",
+        "claim_or_section": "US9514120B1 Claim18",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 515,
+        "source": "Server Computing Machine",
+        "target": "Apparatus",
+        "source_id": "US9514120B1-chunk-001",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The apparatus provides feedback for a work to a server computing machine.",
+        "claim_or_section": "US9514120B1 Claim18",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 516,
+        "source": "Graphical User Interface",
+        "target": "Apparatus",
+        "source_id": "US9514120B1-chunk-001",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The apparatus provides data indicative of potential typographical errors to a user via a graphical user interface.",
+        "claim_or_section": "US9514120B1 Claim18",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 517,
+        "source": "Apparatus",
+        "target": "Reference",
+        "source_id": "US9514120B1-chunk-002",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The apparatus updates a reference based on the sorted feedback.",
+        "claim_or_section": "US9514120B1 Claim18",
+        "assessment": "qualified_role_attribution_candidate",
+        "assessment_zh": "Claim18显式将combine/sort/update赋予server computing machine；chunk002原始抽取及图边以Apparatus为主语。存在局部主体粒度粗化，但若把Apparatus理解为协作整体可有概括解释，未计为已证明跨专利不支持边。"
+      },
+      {
+        "edge_index": 518,
+        "source": "Apparatus",
+        "target": "User Identifier",
+        "source_id": "US9514120B1-chunk-002",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The input to the apparatus may comprise a user identifier.",
+        "claim_or_section": "US9514120B1 Claim19",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 519,
+        "source": "Apparatus",
+        "target": "Work Identifier",
+        "source_id": "US9514120B1-chunk-002",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The input to the apparatus may comprise a work identifier.",
+        "claim_or_section": "US9514120B1 Claim19",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 520,
+        "source": "Apparatus",
+        "target": "Decision",
+        "source_id": "US9514120B1-chunk-002",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The input to the apparatus may comprise a decision indicating whether a corresponding string is an author-intended string.",
+        "claim_or_section": "US9514120B1 Claim19",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 521,
+        "source": "Apparatus",
+        "target": "Confidence Level",
+        "source_id": "US9514120B1-chunk-002",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The input to the apparatus may comprise a confidence level of the decision.",
+        "claim_or_section": "US9514120B1 Claim19",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 522,
+        "source": "Apparatus",
+        "target": "Data-Stream",
+        "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+        "file_path": "US7756837B2.txt",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "actual_description": "The apparatus comprises means for receiving at least one data-stream intended for archiving on a backup storage device.<SEP>The apparatus comprises means for receiving at least one data-stream from one or more sources.",
+        "claim_or_section": "US7756837B2 Claims31,47",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 523,
+        "source": "Apparatus",
+        "target": "Management Data",
+        "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-002<SEP>US7756837B2-chunk-003",
+        "file_path": "US7756837B2.txt",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "actual_description": "The apparatus comprises means for extracting management data from the data-stream.",
+        "claim_or_section": "US7756837B2 Claims31,47,48",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 524,
+        "source": "Apparatus",
+        "target": "Storage Router Function",
+        "source_id": "US7756837B2-chunk-002",
+        "file_path": "US7756837B2.txt",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "actual_description": "The apparatus comprises means for carrying out a storage router function between the sources and the backup storage device.",
+        "claim_or_section": "US7756837B2 Claim47",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 525,
+        "source": "Apparatus",
+        "target": "Server Function",
+        "source_id": "US7756837B2-chunk-003",
+        "file_path": "US7756837B2.txt",
+        "canonical_publications": [
+          "US7756837B2"
+        ],
+        "actual_description": "The apparatus comprises means for carrying out a server function as between the sources and the backup storage device.",
+        "claim_or_section": "US7756837B2 Claim48",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      }
+    ],
+    "observed_cross_publication_unsupported_edge": false,
+    "role_attribution_candidates": [
+      {
+        "edge_indices": [
+          495,
+          502,
+          517
+        ],
+        "publication_number": "US9514120B1",
+        "claim_number": 18,
+        "original_claim_text": "18. An apparatus comprising: a memory; a processing device operatively coupled to the memory, the processing device to: provide data indicative of presence of a potential typographical error in a work to a user via a graphical user interface, wherein the work comprises a plurality of words; receive input identifying the potential typographical error that is an author-intended string for the work, the input comprising an indicator that specifies that the potential typographical error is an author-intended string for the work, wherein the author-intended string comprises at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; determine one or more parameters to associate with the author-intended string, wherein the one or more parameters comprises at least one of an author associated with the work, a title associated the work, a topic associated with the work, or a publisher associated with the work; and provide feedback for the work to a server computing machine, the feedback comprising identification of the author-intended string and the one or more parameters associated with the author-intended string, wherein the server computing machine is to: combine the feedback with additional feedback from a plurality of users for the work and one or more additional works to generate a combined feedback; sort the combined feedback based on the one or more parameters associated with the author-intended string to generate a sorted feedback; and update, based on the sorted feedback, a reference using the author-intended string.",
+        "exact_subject_clause": "wherein the server computing machine is to: combine the feedback with additional feedback from a plurality of users for the work and one or more additional works to generate a combined feedback; sort the combined feedback based on the one or more parameters associated with the author-intended string to generate a sorted feedback; and update, based on the sorted feedback, a reference using the author-intended string.",
+        "subject_clause_source_chunk": "US9514120B1-chunk-001",
+        "next_chunk_id": "US9514120B1-chunk-002",
+        "next_chunk_exact_start": "one or more additional works to generate a combined feedback; sort the combined feedback based on the one or more parameters associated with the author-intended string to generate a sorted feedback; and update, based on the sorted feedback, a reference using the author-intended s",
+        "subject_clause_present_in_next_chunk": false,
+        "raw_record_line_numbers": [
+          17,
+          18,
+          19
+        ],
+        "raw_and_graph_subject": "Apparatus",
+        "claim_explicit_subject": "server computing machine",
+        "stage_observation_zh": "主语粗化已出现在chunk002的原始实体描述及关系行，合并图保留这些行；chunk002起始位于Claim18中段且无显式server主语。边界相关的上下文不足是可见条件，不是受控因果证明。",
+        "interpretation_zh": "按Claim的显式操作执行者粒度，三边不够忠实；按整个协作装置能力粒度可能作概括。将此候选与跨专利contextual_conflation及已证实unsupported edge分开。",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "limitations_zh": [
+    "本结果为AI辅助逐来源语义审阅，不是独立人工金标准；分类依赖所声明的类/实例粒度。",
+    "只审计第二轮既有20篇索引中的可见原chunk、原抽取与实际图邻边；原文范围为已索引的标题、摘要及Claims，未额外读取完整说明书或新语料，未调用模型API，也未进行新的检索/生成传播测试。",
+    "共享节点产生跨专利邻接不等于已观察到错误跨文档推理；边的source_id和file_path应保持作用域。",
+    "是否可把server操作作为整机功能间接概括存在粒度解释空间；目前将三个显式主语不一致的边列为qualified_role_attribution_candidate，不计为已证明跨专利错误边。"
+  ],
+  "review_method": "AI-assisted source-by-source reading; deterministic quote/coverage validation; no external model API",
+  "reviewed_utc": "2026-10-30T08:17:32.125244+00:00",
+  "dossier_sha256": "6391cc8eb143846b5415fe30beb7b015b95bc1dc5a018dbbc94ff68ca057e8a1",
+  "input_sha256": {
+    "round2_multisource_audit/dossiers/N030.json": "6391cc8eb143846b5415fe30beb7b015b95bc1dc5a018dbbc94ff68ca057e8a1",
+    "data/claims/US7756837B2.json": "cac7dd86fa8b87591b2a118b599c1c485d741c6c9213422a0e3653f70fb35280",
+    "data/documents/US7756837B2.txt": "766052ff1cb06a44e8a2bd6ff0b37d1e77aaf9de3aaf817fe8de7aac9db7e2db",
+    "data/claims/US9514120B1.json": "8346fa36328fdfbabb59a6e1b894c45fb7d867deac3a02966169ba752bd06d81",
+    "data/documents/US9514120B1.txt": "5e38f1308be15b55022afd8d84a90bafe735903cca172069ef79854d9fe26057"
+  },
+  "source_and_raw_review_coverage": {
+    "publication_count": 2,
+    "source_chunk_ids_reviewed": [
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US7756837B2-chunk-003",
+      "US9514120B1-chunk-001",
+      "US9514120B1-chunk-002"
+    ],
+    "all_source_chunks_read": true,
+    "all_raw_entity_and_relation_endpoint_rows_read": true,
+    "all_actual_incident_edges_reviewed": true
+  }
+}

@@ -1,0 +1,76 @@
+Official LightRAG v1.5.7 integration notes (source audit, not model execution)
+Source commit: 28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c
+No credential files were read and no service/model calls were made for this audit.
+
+1. Import and isolate
+- Insert ROOT/src/LightRAG-v1.5.7 at sys.path[0] before importing lightrag.
+- Record lightrag.__file__ and lightrag._version.__version__; installed distribution metadata can still say1.5.8.
+- Set TIKTOKEN_CACHE_DIR to the existing ROOT/tiktoken_cache. Reuse TiktokenTokenizer('gpt-4o-mini') strictly as tokenizer, not actual LLM identity.
+- Use separate unique workspace names for smoke and full if using two instances. Separate working_dir alone does not distinguish the process-global namespace identity. Alternatively grow one graph from2 to20 docs after saving the smoke snapshot; document that design.
+- Keep secrets only in a closure/client, never llm_model_kwargs, role metadata, serialized config, or exception dumps.
+
+2. Real LLM callback contract
+async def llm(prompt, system_prompt=None, history_messages=None, **kwargs) -> str
+- Build messages as system(optional), history_messages, user prompt.
+- LightRAG injects hashing_kv and passes stage kwargs. Do not forward hashing_kv, _priority, enable_cot, keyword_extraction, entity_extraction, token_tracker, or custom budget labels to chat.completions.create.
+- Preserve response_format dict when supplied. Current keyword extraction requests {'type':'json_object'}. Compatibility-only flags keyword_extraction/entity_extraction can map to that dict if response_format was not supplied.
+- stream=False is suitable for this experiment; return message.content, not the response object. Empty content is not successful evidence.
+- Respect model usage including reasoning/cached tokens as supplied by provider. SDK max_retries=0 avoids unseen automatic retry charges; if explicit retries are allowed, budget each attempt.
+- If finish_reason=='length', return lightrag.utils.TruncatedResponse(content). This official str subclass marks partial output and prevents caching truncated extraction as complete. Preserve raw finish_reason and generated text in a sanitized per-call log.
+- Do not change LightRAG core on an endpoint/model/auth failure. Report LLM and embedding preflight separately.
+
+3. Embedding callback contract
+async def embed(texts, **kwargs) -> numpy.ndarray
+- Wrap with EmbeddingFunc(embedding_dim=1024, func=embed, max_token_size=<configured limit>, model_name='BAAI/bge-m3').
+- send_dimensions=False is the default; do not assume SiliconFlow accepts a dimensions parameter. supports_asymmetric=False removes context before callback.
+- Return N x1024 finite numeric array in original input order. Validate response index ordering, length, dimension, and nonzero norm.
+- Use modest embedding_batch_num (e.g.8 or10) and embedding_func_max_async=2. Provider rate limits/model input limits remain external constraints.
+- The configured max_token_size can force the ingestion pipeline to hard-split chunks; inspect actual persisted chunk counts instead of assuming the earlier48 chunks remain unchanged.
+
+4. Constructor and actual insertion
+LightRAG(working_dir=<isolated>, workspace=<unique>, llm_model_func=llm,
+ llm_model_name='deepseek-ai/DeepSeek-V4.1-Flash', embedding_func=embedding_func,
+ tokenizer=TiktokenTokenizer('gpt-4o-mini'), chunk_token_size=1200,
+ chunk_overlap_token_size=100, llm_model_max_async=2,
+ embedding_func_max_async=2, embedding_batch_num=8, max_parallel_insert=2,
+ default_llm_timeout=<bounded>, default_embedding_timeout=<bounded>,
+ entity_extract_max_gleaning=<explicit>)
+- Official max_gleaning default is1. If set0 for time/cost, disclose as experimental setting, not default behavior.
+- role_llm_configs recognizes extract, keyword, query, vlm. Each role gets a separate concurrency queue; a root-level semaphore/budget lock is needed for a true global cap.
+- await rag.initialize_storages() automatically initializes this workspace's pipeline_status; no extra manual initializer is required.
+- await rag.ainsert(texts, ids=publication_numbers, file_paths=[publication+'.txt', ...]).
+- ainsert returns a tracking ID; this does NOT prove each document succeeded. Inspect await rag.doc_status.get_all_status_counts() and await rag.doc_status.get_by_id(doc_id); require processed status and preserve any errors.
+- Do not count the deployment gate as passed unless a real generated answer with retained evidence is returned after successful actual indexing.
+
+5. Query APIs and result checks
+- await rag.aquery_llm(question, QueryParam(mode='naive' or 'mix', stream=False, include_references=True, enable_rerank=False, top_k=..., chunk_top_k=..., max_entity_tokens=..., max_relation_tokens=..., max_total_tokens=..., user_prompt=<same evidence rules>)).
+- QueryParam does NOT accept include_chunk_content. That is REST-only enrichment. The core result already carries data.chunks with content.
+- aquery_llm returns dict with status/message/data/metadata/llm_response. data includes entities, relationships, chunks, references. llm_response has content, is_streaming, llm_generated, response_iterator.
+- Catching a return value is not enough: aquery_llm catches exceptions and returns status='failure'. No-result canned text has llm_generated=False. Preserve and check both status and llm_generated.
+- /query/data corresponds to aquery_data: no final answer generation, but keyword/embedding calls may still cost money. Avoid a second retrieval solely for saving evidence; save aquery_llm's same-call data.
+- Keep naive/mix model and context budgets identical; set rerank=False because no reranker is configured.
+
+6. Intermediate evidence and snapshots
+- nodes=await rag.chunk_entity_relation_graph.get_all_nodes() yields id plus node properties.
+- edges=await rag.chunk_entity_relation_graph.get_all_edges() yields source,target plus edge properties.
+- Save these JSON objects after smoke and after full indexing. They retain source_id provenance; inspect rather than infer extraction failure from a citation error.
+- On default file backends expect graph_chunk_entity_relation.graphml, kv_store_text_chunks.json, kv_store_full_docs.json, kv_store_doc_status.json, kv_store_llm_response_cache.json under working_dir/workspace.
+- Cache holds raw extraction outputs and chunks have llm_cache_list; retain both to distinguish generated extraction from merged graph.
+- Actual default chunk IDs are '<doc_id>-chunk-000', '<doc_id>-chunk-001', etc. They are not the earlier local SHA256 diagnostic IDs.
+- build_chunks_dict_from_chunking_result explicitly strips _source_span before writing chunks (utils_pipeline.py:144-203). Preserve external span mapping using full_doc_id/chunk_order_index/content; match actual chunks exactly before using old diagnostic spans.
+- aexport_data exists for csv/excel/md/txt, but JSON node/edge snapshots plus original storage files are more direct and avoid extra dependencies.
+
+7. Cleanup and deadlines
+- Await rag.finalize_storages() in finally and close both AsyncOpenAI clients.
+- JSON cache namespaces flush during finalize; other writes normally commit as pipeline stages complete. Do not treat finalize as a substitute for successful processed statuses.
+- Bound each API attempt and overall indexing/query await. A returned failure status can hide an exception, so inspect every result.
+- asyncio.run cancellation handles remaining event-loop tasks at process end; verify only this experiment's processes are stopped. Do not touch existing FOT/AutoDL jobs.
+
+Source locations checked:
+lightrag/base.py:90-185 QueryParam
+lightrag/utils.py:633-774 EmbeddingFunc;4875-4898 TruncatedResponse
+lightrag/lightrag.py:631-770 callback config;1588-1641 initialize;1676-1729 finalize;1794-1872 ainsert;4211-4364 aquery_llm;6889-6917 aexport_data
+lightrag/llm_roles.py:51-57 roles;180-202 wrappers
+lightrag/llm/openai.py:405-440 compatibility kwarg handling
+lightrag/kg/networkx_impl.py:893-920 node/edge snapshots
+lightrag/utils_pipeline.py:144-203 persisted chunk construction

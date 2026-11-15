@@ -1,0 +1,18 @@
+Second-round evaluation protocol (prepared before seeing real answers)
+
+Original10 questions remain unchanged. Score only completed actual official queries. All other states are execution outcomes, not quality errors.
+
+Separate dimensions: asserted patent identity; actual retrieved patent presence; exact Claim attribution; verbatim/whitespace-only quote match; atomic factual support; inline-citation entailment. A publication echoed from the question or appearing somewhere in a reference list is not proof of retrieval fidelity.
+
+Question-specific guards:
+- Q03 accepts verified Claim1 or Claim18 because both contain pecuniary-cost ranking.
+- Q05 asks a method claim: Claim7 is required; system Claim14 can be additional but not mislabeled as method.
+- Q06 absence of interoperability in reviewed Claims does not prove the systems or patents are unrelated globally.
+- Q08/Q09 are same-chunk dependency controls at1200/100, not observed cross-chunk-loss tests.
+- Q10 Claims5/6 describe different alternatives; do not merge them into inconsistent requirements.
+
+Attribution chain: source -> actual extractor input -> raw/parsed extraction -> committed graph/vector/KV stores -> same-call retained retrieval context -> same-call generated answer -> inline-citation target. A missing link in the audit means unable to attribute, not permission to infer the earliest stage. Citation mistakes remain citation mistakes unless separate extraction evidence exists.
+
+Use source evidence spans and saved raw responses. Review is AI-assisted with mechanical checks, not independent human adjudication. Report successful and failed atomic assertions. No statistical generalization from this purposive small sample.
+
+OptionalQ11: US7991757B2 Claim27 explicitly depends on Claim1. Whole Claims reside in distinct natural chunks, but Claim27 repeats entity/relationship wording. This is a structural probe, not a proven loss and not an artificial boundary intervention.

@@ -1,0 +1,66 @@
+{
+ "S3:supplement/Q11/mix": {
+  "value": false,
+  "note_zh": "回答列举其他专利是为了说明参考列表中缺少目标专利，全文没有把注册能力归给其中任何一篇。",
+  "note_en": "No. The answer lists other patents to show that the target patent is missing from the reference list; nowhere does it attribute the registration capability to any of them.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S5:B1": {
+  "value": true,
+  "note_zh": "模型明确指出外部推荐器的注册记录来自 US7991757B2，只对该记录具体对应 Claim 1 还是 Claim 27 保留判断。",
+  "note_en": "Yes. The model states explicitly that the external-recommender registration records come from US7991757B2, and only withholds judgement on whether the record corresponds to Claim 1 or Claim 27.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S9:F01_A_r1": {
+  "value": false,
+  "note_zh": "图中记录了病例表示基于医学本体，也记录了本体与 UMLS 的关系，但没有明确记录专家的嵌入也基于该本体。",
+  "note_en": "No. The graph records that case representations are based on the medical ontology, and the relation between the ontology and UMLS, but does not explicitly record that the embedding of experts is also based on the ontology.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S9:F01_B_r1": {
+  "value": true,
+  "note_zh": "`edges[9]` 明确记录已有病例和专家的嵌入都基于医学本体，`edges[36]` 明确记录该本体基于 UMLS。",
+  "note_en": "Yes. `edges[9]` explicitly records that the embeddings of existing cases and experts are based on the medical ontology, and `edges[36]` explicitly records that the ontology is based on UMLS.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S9:F01_B_r2": {
+  "value": true,
+  "note_zh": "`edges[7]` 明确记录已有病例和专家的嵌入都基于医学本体，`edges[34]` 明确记录该本体基于 UMLS。",
+  "note_en": "Yes. `edges[7]` explicitly records that the embeddings of existing cases and experts are based on the medical ontology, and `edges[34]` explicitly records that the ontology is based on UMLS.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S9:F01_B_r3": {
+  "value": true,
+  "note_zh": "`edges[9]` 记录了已有病例和专家的嵌入都基于医学本体，`edges[43]` 记录了该本体基于 UMLS。",
+  "note_en": "Yes. `edges[9]` records that the embeddings of existing cases and experts are based on the medical ontology, and `edges[43]` records that the ontology is based on UMLS.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S13:F01_A_r2/naive": {
+  "value": false,
+  "note_zh": "`4 → 5 → 8` 的写法有歧义，但上下文逐项解释的是技术内容，没有把它表述为权利要求的从属顺序。",
+  "note_en": "No. The notation `4 → 5 → 8` is ambiguous, but the surrounding text explains the technical content item by item and does not present it as the dependency order of the claims.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ },
+ "S13:F01_B_r2/naive": {
+  "value": false,
+  "note_zh": "箭头写法有歧义，但整句说明的是三条 Claim 共同支持的技术事实，没有声称它们依次从属。",
+  "note_en": "No. The arrow notation is ambiguous, but the sentence as a whole describes technical facts jointly supported by the three claims; it does not claim that they depend on one another in sequence.",
+  "review_language": "zh",
+  "note_en_is": "translation by Claude Code; the Chinese note_zh is the original",
+  "date": "2026-11-15"
+ }
+}

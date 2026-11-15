@@ -1,0 +1,10 @@
+{
+  "amended_utc": "2026-10-29T14:32:23.142032+00:00",
+  "after_smoke_answers_seen": true,
+  "original_criteria_preserved": true,
+  "issue": "Original label missing_inline_citation could overpenalize the official final-References response convention.",
+  "source": "src/LightRAG-v1.5.7/lightrag/prompt.py:350-369,404-423",
+  "clarification": "When the answer clearly names publication and Claim and its final References correctly resolve to supporting sources, do not score absent numbered per-sentence footnotes as a citation error. Record lack of structured statement-to-span anchors separately as granularity limitation. Actual wrong/unresolvable citation mappings remain errors.",
+  "rationale": "The user requests accurate source/Claim support, and the official answer prompt explicitly asks a final References section; per-sentence numbered footnotes were not a required user constraint.",
+  "apply_consistently": "Apply to every smoke and full-query answer in both modes, not selected cases."
+}

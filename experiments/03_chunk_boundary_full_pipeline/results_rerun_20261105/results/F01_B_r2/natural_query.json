@@ -1,0 +1,520 @@
+{
+  "query": "In US9589231B2, how are the existing medical cases and the set of experts embedded with respect to an ontology, and what named terminology system underlies that ontology? Identify the supporting claims and distinguish the explicit technical chain from an inferred shortcut relation.",
+  "mode": "mix",
+  "params": {
+    "mode": "mix",
+    "stream": false,
+    "include_references": true,
+    "enable_rerank": false,
+    "top_k": 12,
+    "chunk_top_k": 8,
+    "max_entity_tokens": 2000,
+    "max_relation_tokens": 2000,
+    "max_total_tokens": 8000,
+    "user_prompt": "Use only retrieved evidence. State the patent publication number and the exact Claim number only when present in the evidence. Quote the supporting wording exactly, keeping each quotation short. Distinguish document facts from comparisons and inference. If evidence is insufficient, state what is missing. Do not invent links between patents. Answer in English in at most 350 words and preserve source references."
+  },
+  "call_id_range": [
+    47,
+    49
+  ],
+  "result": {
+    "status": "success",
+    "message": "Query processed successfully",
+    "data": {
+      "entities": [
+        {
+          "entity_name": "US9589231B2",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Social medical network for diagnosis assistance\" describing a method for diagnosis assistance using similarity between medical cases and experts in a common embedding space.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Diagnosis Assistance Method",
+          "entity_type": "method",
+          "description": "A method that exploits similarity between a new medical case and existing medical cases and experts embedded in a common embedding space to assist diagnosis.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Social Medical Network For Diagnosis Assistance",
+          "entity_type": "content",
+          "description": "The title of patent US9589231B2, referring to a network-based system for assisting medical diagnosis.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Embedding Space",
+          "entity_type": "concept",
+          "description": "A common space in which a new medical case, existing medical cases, and experts are embedded as multidimensional representations to enable similarity computation.<SEP>A multidimensional space in which existing medical cases, experts, and new medical cases are embedded as multidimensional representations.",
+          "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Medical Ontology",
+          "entity_type": "concept",
+          "description": "An ontology comprising a set of medical concepts joined by links, used to compute multidimensional representations of medical cases and experts.<SEP>An ontology that includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof, and may be based on the Unified Medical Language System.",
+          "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Existing Medical Cases",
+          "entity_type": "concept",
+          "description": "A set of previously known medical cases embedded in the embedding space, used as candidates for similarity-based retrieval.<SEP>A set of prior medical cases each having a multidimensional representation in the embedding space.",
+          "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Experts",
+          "entity_type": "person",
+          "description": "A set of medical experts embedded in the embedding space, who may be selected to attempt to provide a diagnosis for a new case.<SEP>A set of experts each embedded in the embedding space based on information such as expert profiles, coded medical procedures performed, authored articles, and linked stored medical cases.",
+          "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Medical Concepts",
+          "entity_type": "concept",
+          "description": "Concepts in the medical ontology, each corresponding to a respective dimension in the multidimensional representation.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Unified Medical Language System",
+          "entity_type": "data",
+          "description": "A medical ontology system on which the medical ontology used in the method is based.",
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "User Devices",
+          "entity_type": "artifact",
+          "description": "A set of devices in a network for linking requesters and experts with the diagnosis assistance system.",
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Network",
+          "entity_type": "artifact",
+          "description": "A network comprising a diagnosis assistance system and a set of user devices for linking requesters and experts with the system.",
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "New Medical Case",
+          "entity_type": "concept",
+          "description": "A medical case submitted by a requester as part of a query request, which is embedded in the embedding space for comparison.<SEP>A case for which a diagnosis is sought, comprising a plurality of records relating to a specific patient, such as laboratory test results, images, symptom descriptions, patient monitor results, diagnoses, and prescribed medications and treatments.",
+          "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Medical Conditions",
+          "entity_type": "concept",
+          "description": "Medical conditions included in the ontology.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Matrix Of Proximities",
+          "entity_type": "data",
+          "description": "A matrix applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology when computing similarity.<SEP>A matrix applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.",
+          "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Diagnosis Assistance System",
+          "entity_type": "artifact",
+          "description": "A system comprising memory storing instructions and a processor for executing them, which receives query requests with new medical cases, embeds them, allows selection of query types, and returns subsets of cases or experts.",
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Multidimensional Representation",
+          "entity_type": "data",
+          "description": "A representation of a medical case computed based on the medical ontology, used for embedding and similarity computation.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "entity_name": "Pharmacological Substances",
+          "entity_type": "concept",
+          "description": "Pharmacological substances included in the ontology.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        }
+      ],
+      "relationships": [
+        {
+          "src_id": "Diagnosis Assistance System",
+          "tgt_id": "Query-For-Cases",
+          "description": "The diagnosis assistance system provides for the requester to select from query types including the query-for-cases.",
+          "keywords": "provides selection of",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Diagnosis Assistance Method",
+          "tgt_id": "Embedding Space",
+          "description": "The diagnosis assistance method embeds a new medical case, existing medical cases, and experts in a common embedding space.",
+          "keywords": "embeds cases and experts,uses",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Diagnosis Assistance System",
+          "tgt_id": "Query-For-Experts",
+          "description": "The diagnosis assistance system provides for the requester to select from query types including the query-for-experts.",
+          "keywords": "provides selection of",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Embedding Space",
+          "tgt_id": "Existing Medical Cases",
+          "description": "The set of existing medical cases is embedded in the embedding space.",
+          "keywords": "embedded in",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Diagnosis Assistance System",
+          "tgt_id": "New Medical Case",
+          "description": "The diagnosis assistance system receives a request for a query including a new medical case.",
+          "keywords": "receives",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Medical Concepts",
+          "tgt_id": "Medical Ontology",
+          "description": "The medical ontology comprises a set of medical concepts joined by links.",
+          "keywords": "comprises",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Diagnosis Assistance System",
+          "tgt_id": "Requester",
+          "description": "The requester submits a request for a query to the diagnosis assistance system.",
+          "keywords": "submits query request to",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Embedding Space",
+          "tgt_id": "Experts",
+          "description": "The set of experts is embedded in the embedding space.",
+          "keywords": "embedded in",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Diagnosis Assistance System",
+          "tgt_id": "Query Cost",
+          "description": "The diagnosis assistance system computes a cost for the query, differing between query-for-experts and query-for-cases.",
+          "keywords": "computes",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Diagnosis Assistance Method",
+          "tgt_id": "Experts",
+          "description": "The method returns a subset of experts based on similarity between the embedded new case and the embedded experts.",
+          "keywords": "compares,retrieves",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Medical Ontology",
+          "tgt_id": "Multidimensional Representation",
+          "description": "The multidimensional representation of the medical case is computed based on the medical ontology.",
+          "keywords": "basis for computing",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Diagnosis Assistance Method",
+          "tgt_id": "New Medical Case",
+          "description": "The method receives a query request including a new medical case and embeds the new medical case in the embedding space.",
+          "keywords": "embeds,processes",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Matrix Of Proximities",
+          "tgt_id": "Medical Ontology",
+          "description": "The matrix of proximities accounts for relationships between concepts in the ontology.",
+          "keywords": "accounts for relationships between concepts",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Embedding Space",
+          "tgt_id": "New Medical Case",
+          "description": "The new medical case is embedded in the embedding space.",
+          "keywords": "embedded in",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Diagnosis Assistance System",
+          "tgt_id": "Network",
+          "description": "The network comprises a system for diagnosis assistance.",
+          "keywords": "comprises",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Experts",
+          "tgt_id": "Query-For-Experts",
+          "description": "When selected, the query-for-experts returns a subset of experts based on computed similarity.<SEP>When the query-for-experts is selected, a subset of the experts is returned based on a computed similarity between the embedded new case and the embedded experts.",
+          "keywords": "returns subset,returns subset based on similarity",
+          "weight": 2.0,
+          "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Diagnosis Assistance Method",
+          "tgt_id": "Existing Medical Cases",
+          "description": "The method returns a subset of existing medical cases based on similarity between the embedded new case and the embedded existing cases.",
+          "keywords": "compares,retrieves",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Medical Ontology",
+          "tgt_id": "Unified Medical Language System",
+          "description": "The medical ontology is based on the Unified Medical Language System.",
+          "keywords": "based on",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Diagnosis Assistance System",
+          "tgt_id": "Memory",
+          "description": "The diagnosis assistance system comprises memory storing instructions.",
+          "keywords": "comprises",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Medical Ontology",
+          "tgt_id": "Pharmacological Substances",
+          "description": "The ontology includes pharmacological substances.",
+          "keywords": "includes",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Diagnosis Assistance System",
+          "tgt_id": "Processor",
+          "description": "The diagnosis assistance system comprises a processor in communication with the memory for executing the instructions.",
+          "keywords": "comprises",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Computer Program Product",
+          "tgt_id": "Diagnosis Assistance System",
+          "description": "The computer program product stores instructions that when executed cause a computer to perform the method of the diagnosis assistance system.",
+          "keywords": "causes computer to perform method of",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Existing Medical Cases",
+          "tgt_id": "Query-For-Cases",
+          "description": "When selected, the query-for-cases returns a subset of existing medical cases based on computed similarity.<SEP>When the query-for-cases is selected, a subset of the cases is returned based on a computed similarity between the embedded new case and the embedded existing cases.",
+          "keywords": "returns subset,returns subset based on similarity",
+          "weight": 2.0,
+          "source_id": "US9589231B2-chunk-000<SEP>US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Human Body Parts",
+          "tgt_id": "Medical Ontology",
+          "description": "The ontology includes parts of the human body.",
+          "keywords": "includes",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Biological Functions",
+          "tgt_id": "Medical Ontology",
+          "description": "The ontology includes biological functions.",
+          "keywords": "includes",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Medical Conditions",
+          "tgt_id": "Medical Ontology",
+          "description": "The ontology includes medical conditions.",
+          "keywords": "includes",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Diagnosis Assistance Method",
+          "tgt_id": "US9589231B2",
+          "description": "The patent publication describes a method for diagnosis assistance.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Experts",
+          "tgt_id": "Payment",
+          "description": "A payment is made to the expert for formulating the diagnosis.",
+          "keywords": "made to",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Social Medical Network For Diagnosis Assistance",
+          "tgt_id": "US9589231B2",
+          "description": "The patent publication US9589231B2 bears the title \"Social medical network for diagnosis assistance\".",
+          "keywords": "titled",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        },
+        {
+          "src_id": "Network",
+          "tgt_id": "User Devices",
+          "description": "The network comprises a set of user devices for linking requesters and experts with the system.",
+          "keywords": "comprises",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-001",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793893905
+        }
+      ],
+      "chunks": [
+        {
+          "reference_id": "1",
+          "content": "Publication number: US9589231B2\nTitle: Social medical network for diagnosis assistance\n\nABSTRACT\nA method for diagnosis assistance exploits similarity between a new medical case and existing medical cases and experts when embedded in a common embedding space. Different types of queries are provided for, including a query-by-cases and a query-by-experts. These may be associated with different cost structures that encourage the requester to use the query-by-cases first and seek expert assistance if this proves unsuccessful. Depending on whether the query-by-cases or query-by-experts is requested, a subset of the existing cases or experts is identified based on the similarity of their representations, in the embedding space, with a representation of the new case in the embedding space. There may then be provision for communicating the new case to a selected one or more of the subset of experts for the expert to attempt to provide a diagnosis.\n\nCLAIMS\nWhat is claimed is: 1. A method for diagnosis assistance comprising: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts wherein at least one of the embedding, providing, returning the subset of the cases, returning the subset of the experts, and computing the query cost are performed with a computer processor. 2. The method of claim 1 , further comprising computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases. 3. The method of claim 2 , wherein the computed query cost is higher for a query-for-experts than for a query-for-cases. 4. The method of claim 1 , wherein the embedding of the new medical case in the embedding space comprises computing a multidimensional representation of the medical case based on a medical ontology, the embedding of the existing medical cases and the set of experts being also based on the medical ontology. 5. The method of claim 4 , wherein the medical ontology comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation. 6. The method of claim 5 , wherein the computing the similarity measure between the representation of the new case and representations of the existing cases or experts, a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology. 7. The method of claim 4 , wherein the ontology includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof. 8. The method of claim 4 , wherein the",
+          "file_path": "US9589231B2.txt",
+          "chunk_id": "US9589231B2-chunk-000"
+        },
+        {
+          "reference_id": "1",
+          "content": " method of claim 5 , wherein the computing the similarity measure between the representation of the new case and representations of the existing cases or experts, a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology. 7. The method of claim 4 , wherein the ontology includes parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof. 8. The method of claim 4 , wherein the medical ontology is based on the Unified Medical Language System. 9. The method of claim 1 , wherein the experts in the set of experts are each embedded based on information associated with the expert selected from the group consisting of: a profile of the expert; coded medical procedures which have been performed by the expert; articles authored by the expert; stored medical cases linked to the expert; and combinations thereof. 10. The method of claim 1 , wherein when the query-for-experts is selected, the returning of the subset of the experts is also based on at least one of: an availability of the expert; a rating of the expert; and a number of followers of the expert among users of the system. 11. The method of claim 1 , further comprising, when the query-for-cases is selected, returning documents from a public database based on a computed similarity between the embedded new case and documents embedded in the embedding space. 12. The method of claim 1 , wherein when the query-for-experts is selected, providing the new case to a selected one of the subset of experts for formulating a diagnosis. 13. The method of claim 12 , wherein when the query-for-experts is selected, providing for making a payment to the expert for formulating the diagnosis. 14. The method of claim 1 , wherein the new medical case comprises a plurality of records relating to a specific patient. 15. The method of claim 1 , wherein the plurality of records comprises records selected from the group consisting of laboratory test results, images, descriptions of symptoms, results of patient monitors, diagnoses, prescribed medications and treatments, and combinations thereof. 16. The method of claim 1 , further comprising when the query-by-cases is selected, providing for a query-by-experts to be performed subsequent to the query-by-cases. 17. A system comprising memory storing instructions for performing the method of claim 1 and a processor in communication with the memory for executing the instructions. 18. A computer program product comprising a non-transitory recording medium storing instructions, which when executed on a computer causes the computer to perform the method of claim 1 . 19. A system for diagnosis assistance comprising: memory which stores instructions for: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts; computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases; and a processor in communication with the memory for executing the instructions. 20. A network comprising a system for diagnosis assistance and a set of user devices for linking requesters and experts with the system, the system comprising: memory which stores instructions for: receiving a request for a query from a requester, the query request including a new medical case; embedding the new medical case in an embedding space in which a set of existing medical cases and a set of experts are embedded; providing for the requester to select from a plurality of query types including a query-for-cases and a query-for-experts; when the query-for-cases is selected, returning a subset of the cases based on a computed similarity between the embedded new case and the embedded existing cases; and when the query-for-experts is selected, returning a subset of the experts based on a computed similarity between the embedded new case and the embedded experts; and a processor in communication with the memory for executing the instructions. 21. The system of claim 20 wherein the instructions further comprise instructions for computing a cost for the query, the cost for a query-for-experts being different from the cost for a query-for-cases. 22. A method for diagnosis assistance comprising: for each of an existing set of medical cases, generating a multidimensional representation in an embedding space; for each of a set of experts, generating a multidimensional representation in the embedding space; receiving a new case for which a diagnosis is sought; generating a multidimensional representation of the new case in the embedding space; providing for a plurality of query types, including a query-by-cases at a first cost and a query-by-experts at a second cost, higher than the first cost; when the query-by-cases is requested, identifying a subset of the existing cases based on a similarity between the multidimensional representation of the new case and the multidimensional representations of existing cases in the set of cases; when the query-by-experts is requested, identifying a subset of the experts based on a similarity between the multidimensional representation of the new case and the multidimensional representations of experts in the set of experts, and providing for communicating the new case to one of the subset of experts for the expert to attempt to provide a diagnosis; and computing a cost for the query based on the query type requested.",
+          "file_path": "US9589231B2.txt",
+          "chunk_id": "US9589231B2-chunk-001"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9589231B2.txt"
+        }
+      ]
+    },
+    "metadata": {
+      "query_mode": "mix",
+      "keywords": {
+        "high_level": [
+          "ontology embedding",
+          "medical cases and experts",
+          "named terminology system",
+          "patent claim support",
+          "explicit technical chain vs inferred relation"
+        ],
+        "low_level": [
+          "US9589231B2",
+          "medical cases",
+          "set of experts",
+          "ontology",
+          "named terminology system"
+        ]
+      },
+      "processing_info": {
+        "total_entities_found": 17,
+        "total_relations_found": 30,
+        "entities_after_truncation": 17,
+        "relations_after_truncation": 30,
+        "merged_chunks_count": 2,
+        "final_chunks_count": 2
+      }
+    },
+    "llm_response": {
+      "content": "## Embedding of Existing Cases and Experts Relative to the Ontology\n\nIn US9589231B2, the embedding of the new medical case is described as \"computing a multidimensional representation of the medical case based on a medical ontology,\" and the same basis applies to the other entities: \"the embedding of the existing medical cases and the set of experts being also based on the medical ontology\" (Claim 4). The ontology itself \"comprises a set of medical concepts joined by links, and wherein each of the medical concepts corresponds to a respective dimension in the representation\" (Claim 5). The ontology's scope covers \"parts of the human body, biological functions, medical conditions, pharmacological substances, and combinations thereof\" (Claim 7).\n\n## Named Terminology System\n\nThe named system is the **Unified Medical Language System**: \"wherein the medical ontology is based on the Unified Medical Language System\" (Claim 8).\n\n## Explicit Technical Chain (Document Facts)\n\nThe claims state a direct chain: ontology → multidimensional representation → embedding of cases and experts → similarity computation. Claim 6 adds that \"a matrix of proximities is applied to the multidimensional representation of the new case that accounts for relationships between concepts in the ontology.\" Claim 9 separately specifies that experts \"are each embedded based on information associated with the expert,\" such as profile, coded procedures, authored articles, and linked stored cases.\n\n## Inferred Shortcut vs. Explicit Relation\n\nThe explicit relation is that both cases and experts are embedded **based on the same medical ontology** (Claim 4). A shortcut inference would be that experts are embedded directly from ontology concepts alone; the document instead ties expert embedding to expert-associated information (Claim 9), so the ontology-based representation and the expert-information inputs should not be conflated. The evidence does not specify the exact weighting between these inputs.\n\n### References\n\n- [1] US9589231B2.txt",
+      "response_iterator": null,
+      "is_streaming": false,
+      "llm_generated": true
+    }
+  },
+  "forced_evidence": false
+}

@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-30T08:10:04.769616+00:00",
+  "scope": "round2 baseline",
+  "nodes": 612,
+  "edges": 994,
+  "documents": 20,
+  "chunks": 48,
+  "multisource_nodes": 38,
+  "multisource_fraction": 0.06209150326797386,
+  "multi_node_source_memberships": 98,
+  "max_publication_count": 9,
+  "publication_count_histogram": {
+    "2": 28,
+    "3": 6,
+    "5": 3,
+    "9": 1
+  },
+  "missing_doc_mappings": [],
+  "mapping_conflicts": [],
+  "unmapped_node_source_ids": [],
+  "graph_vs_entity_store_source_differences": [],
+  "node_filepath_vs_chunk_publication_differences": [],
+  "graph_field_only_multi_node_count": 38,
+  "exact_chunk_in_doc_matches": 48,
+  "new_model_calls": 0,
+  "new_embedding_calls": 0,
+  "credentials_read": false
+}

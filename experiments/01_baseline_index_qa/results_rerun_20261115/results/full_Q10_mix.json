@@ -1,0 +1,543 @@
+{
+  "question_id": "Q10",
+  "mode": "mix",
+  "question": "In US11423041B2, which dependent system claim says the first ETL process is external to the ETL service while the second is performed by that service? Contrast it with the next claim. Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+  "started_utc": "2026-11-15T03:26:54.158669+00:00",
+  "finished_utc": "2026-11-15T03:27:01.214686+00:00",
+  "api_call_id_range": [
+    359,
+    361
+  ],
+  "result": {
+    "status": "success",
+    "message": "Query processed successfully",
+    "data": {
+      "entities": [
+        {
+          "entity_name": "Second ETL Process",
+          "entity_type": "method",
+          "description": "An Extract, Transform, Load process subscribed to an event, performed in response to the first ETL process satisfying criteria for triggering the event.<SEP>An ETL process that is performed by the ETL service.",
+          "source_id": "US11423041B2-chunk-001<SEP>US11423041B2-chunk-002",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "Data Catalog",
+          "entity_type": "artifact",
+          "description": "A component implemented for an Extract, Transform, Load (ETL) service that receives indications of ETL processes, stores history objects in a history data structure, evaluates stored information against event-triggering criteria, and causes subscribed ETL processes to be performed.<SEP>A component of an ETL service that receives indications of ETL processes, stores history object instances in a history data structure, and evaluates stored performance information against criteria for triggering events.",
+          "source_id": "US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "ETL Service",
+          "entity_type": "organization",
+          "description": "A service that performs Extract, Transform, Load processes and provides a data catalog for monitoring ETL process performance and triggering subscribed events.<SEP>A service that performs ETL processes, including both the first ETL process and the second ETL process.",
+          "source_id": "US11423041B2-chunk-001<SEP>US11423041B2-chunk-002",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "US11423041B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Maintaining data lineage to detect data events\" that describes systems and methods for maintaining history for data objects to detect data events in ETL processes.",
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "Fourth ETL Process",
+          "entity_type": "method",
+          "description": "An Extract, Transform, Load process subscribed to a different event, performed in response to the third ETL process satisfying criteria for triggering the event.",
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "ETL Process",
+          "entity_type": "method",
+          "description": "An Extract, Transform, Load process applied to source data objects to generate transformed data objects, whose performance is recorded and evaluated against criteria for triggering events.",
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "Criteria",
+          "entity_type": "concept",
+          "description": "One or more conditions against which stored information describing the performance of an ETL process is evaluated to determine whether an event is triggered; may be one of a plurality of different alternative criteria registered for triggering an event.<SEP>Conditions evaluated against stored performance information of an ETL process to determine whether an event should be triggered; may be one of a plurality of different alternative criteria registered for triggering the event.",
+          "source_id": "US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "Extract, Transform, Load (ETL) Service",
+          "entity_type": "organization",
+          "description": "A service that performs ETL processes and implements a data catalog for maintaining data lineage and detecting data events.",
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "First ETL Process",
+          "entity_type": "method",
+          "description": "An Extract, Transform, Load process applied to one or more source data objects to generate one or more transformed data objects, whose performance is described by a history object instance.<SEP>An ETL process that is performed by the ETL service.",
+          "source_id": "US11423041B2-chunk-001<SEP>US11423041B2-chunk-002",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "Third ETL Process",
+          "entity_type": "method",
+          "description": "An Extract, Transform, Load process applied to one or more different source data objects to generate one or more different transformed data objects, whose performance is described by a second history object instance.",
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "Computer Implemented Method",
+          "entity_type": "method",
+          "description": "A method of evaluating information via a computer network comprising receiving user interest indications, identifying keywords, determining weights, ranking keywords, and selecting advertisements.",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1794712717
+        },
+        {
+          "entity_name": "US9304738B1",
+          "entity_type": "content",
+          "description": "A patent titled \"Systems and methods for selecting content using weighted terms\" describing techniques for evaluating information via a computer network using weighted keywords to select content for display.",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1794712717
+        },
+        {
+          "entity_name": "Source Data Objects",
+          "entity_type": "data",
+          "description": "Data objects to which ETL processes are applied to generate transformed data objects.",
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "US10778629B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Systems and methods for collation, translation, and analysis of passively created digital interaction and relationship data,\" describing methods for modeling relationships between e-mail users based on extracted e-mail exchange records.",
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1794713071
+        },
+        {
+          "entity_name": "US8655901B1",
+          "entity_type": "content",
+          "description": "A publication number for a patent document titled \"Translation-based query pattern mining\" describing technologies relating to search systems.",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "entity_name": "Non-Transitory Computer-Readable Storage Media",
+          "entity_type": "artifact",
+          "description": "Media storing program instructions that when executed on computing devices cause implementation of receiving ETL process indications, storing history object instances, evaluating performance against criteria, and causing subscribed ETL processes to be performed.<SEP>One or more non-transitory, computer-readable storage media referenced in claim 15 that store instructions or data.",
+          "source_id": "US11423041B2-chunk-001<SEP>US11423041B2-chunk-002",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "Source Data Object",
+          "entity_type": "data",
+          "description": "A data object that is input to an ETL process and transformed into one or more transformed data objects.",
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "entity_name": "Relationship Modeling Program",
+          "entity_type": "method",
+          "description": "A software program that assigns a weight to each of a plurality of characteristics of relevant interaction data and provides a model of relationships between e-mail users based at least in part on the weights.",
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1794713071
+        },
+        {
+          "entity_name": "Hash Tables",
+          "entity_type": "data",
+          "description": "A plurality of tables storing speaker vectors indexed by hash values, from which a set of speaker vectors is determined using the hash values of an utterance vector.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Speaker Identification Using Hash-Based Indexing",
+          "entity_type": "content",
+          "description": "A patent (US9514753B2) describing methods, systems, and apparatus for performing speaker identification using hash-based indexing of speaker vectors.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        }
+      ],
+      "relationships": [
+        {
+          "src_id": "ETL Process",
+          "tgt_id": "Event",
+          "description": "An ETL process subscribes to an event, and when the event is triggered the subscribed ETL process is caused to be performed.",
+          "keywords": "causes performance of,subscribed to by",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Data Catalog",
+          "tgt_id": "US11423041B2",
+          "description": "The patent document describes a data catalog for an ETL service that maintains history objects and evaluates criteria for triggering events.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Event",
+          "tgt_id": "Second ETL Process",
+          "description": "The second ETL process is subscribed to the event and is caused to be performed when the event is triggered.",
+          "keywords": "causes performance of,subscribed to",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Data Catalog",
+          "tgt_id": "ETL Process",
+          "description": "The data catalog receives indications of ETL processes and evaluates stored information describing their performance.",
+          "keywords": "evaluates performance of,receives indication of",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Data Catalog",
+          "tgt_id": "History Object",
+          "description": "The data catalog stores an instance of a history object in a history data structure according to a received indication of an ETL process.",
+          "keywords": "stores instance of",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Criteria",
+          "tgt_id": "Data Catalog",
+          "description": "The data catalog evaluates stored information describing ETL process performance with respect to criteria for triggering an event.<SEP>The data catalog evaluates stored performance information with respect to criteria for triggering an event.",
+          "keywords": "evaluates against",
+          "weight": 2.0,
+          "source_id": "US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Criteria",
+          "tgt_id": "Event",
+          "description": "Satisfying the criteria for triggering an event causes the event to be triggered.<SEP>Satisfying the criteria for triggering the event causes the event to be triggered.",
+          "keywords": "triggers",
+          "weight": 2.0,
+          "source_id": "US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Data Catalog",
+          "tgt_id": "Extract, Transform, Load (ETL) Service",
+          "description": "The data catalog is implemented for the ETL service to maintain data lineage and detect data events.",
+          "keywords": "component of,implemented for",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "src_id": "Data Catalog",
+          "tgt_id": "ETL Service",
+          "description": "The data catalog is a component of the ETL service for monitoring ETL process performance and triggering events.",
+          "keywords": "component of,part of",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Translation-Based Query Pattern Mining",
+          "tgt_id": "US8655901B1",
+          "description": "The publication US8655901B1 is titled \"Translation-based query pattern mining\" and describes this technique.",
+          "keywords": "document title,subject matter",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "src_id": "Computer Implemented Method",
+          "tgt_id": "US9304738B1",
+          "description": "The patent claims a computer implemented method of evaluating information via a computer network.",
+          "keywords": "Claims,Describes",
+          "weight": 1.0,
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1794712717
+        },
+        {
+          "src_id": "Source Data Objects",
+          "tgt_id": "Third ETL Process",
+          "description": "The third ETL process is applied to one or more different source data objects.",
+          "keywords": "applied to",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Event",
+          "tgt_id": "Fourth ETL Process",
+          "description": "The fourth ETL process is subscribed to the different event and is caused to be performed when the event is triggered.",
+          "keywords": "causes performance of,subscribed to",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "ETL Service",
+          "tgt_id": "Non-Transitory Computer-Readable Storage Media",
+          "description": "The storage media of claim 15 is associated with the ETL service that performs the first and second ETL processes.",
+          "keywords": "association,references",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-002",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "ETL Process",
+          "tgt_id": "History Object",
+          "description": "The history object specifies information expected to be stored to describe the performance of an ETL process on a source data object.",
+          "keywords": "describes performance of",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "First ETL Process",
+          "tgt_id": "Source Data Objects",
+          "description": "The first ETL process is applied to one or more source data objects.",
+          "keywords": "applied to",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "First ETL Process",
+          "tgt_id": "History Object",
+          "description": "The history object specifies information expected to be stored to describe the performance of the first ETL process.",
+          "keywords": "describes performance of",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "ETL Process",
+          "tgt_id": "Source Data Object",
+          "description": "An ETL process is applied to one or more source data objects to generate transformed data objects.",
+          "keywords": "applied to",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713047
+        },
+        {
+          "src_id": "Data Catalog",
+          "tgt_id": "History Data Structure",
+          "description": "The data catalog stores instances of history objects in the history data structure.",
+          "keywords": "contains,stores",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Relationship Modeling Program",
+          "tgt_id": "US10778629B2",
+          "description": "The patent document describes a relationship modeling program that assigns weights to characteristics of interaction data to model relationships between e-mail users.",
+          "keywords": "describes,discloses",
+          "weight": 1.0,
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1794713071
+        },
+        {
+          "src_id": "Hash Tables",
+          "tgt_id": "Speaker Identification Using Hash-Based Indexing",
+          "description": "The patent describes determining a set of speaker vectors from a plurality of hash tables using hash values.",
+          "keywords": "describes,uses",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "ETL Service",
+          "tgt_id": "First ETL Process",
+          "description": "The first ETL process may be performed external to the ETL service or performed by the ETL service.<SEP>The ETL service performs the first ETL process.",
+          "keywords": "execution,performed by,performed external to,performs",
+          "weight": 2.0,
+          "source_id": "US11423041B2-chunk-001<SEP>US11423041B2-chunk-002",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "ETL Service",
+          "tgt_id": "Second ETL Process",
+          "description": "The second ETL process is performed by the ETL service.<SEP>The ETL service performs the second ETL process.",
+          "keywords": "execution,performed by,performs",
+          "weight": 2.0,
+          "source_id": "US11423041B2-chunk-001<SEP>US11423041B2-chunk-002",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "First ETL Process",
+          "tgt_id": "Transformed Data Objects",
+          "description": "The first ETL process generates one or more transformed data objects from source data objects.",
+          "keywords": "generates",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Second ETL Process",
+          "tgt_id": "Transformed Data Objects",
+          "description": "The second ETL process is applied to the one or more transformed data objects.",
+          "keywords": "applied to",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Second History Object",
+          "tgt_id": "Third ETL Process",
+          "description": "The second history object specifies information expected to be stored to describe the performance of the third ETL process.",
+          "keywords": "describes performance of",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Third ETL Process",
+          "tgt_id": "Transformed Data Objects",
+          "description": "The third ETL process generates one or more different transformed data objects.",
+          "keywords": "generates",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-001",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "ETL Process",
+          "tgt_id": "Transformed Data Object",
+          "description": "An ETL process generates one or more transformed data objects from source data objects.",
+          "keywords": "generates",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        },
+        {
+          "src_id": "Data Lineage",
+          "tgt_id": "US11423041B2",
+          "description": "The patent document describes maintaining data lineage to detect data events.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US11423041B2-chunk-000",
+          "file_path": "US11423041B2.txt",
+          "created_at": 1794713048
+        }
+      ],
+      "chunks": [
+        {
+          "reference_id": "1",
+          "content": ". The one or more non-transitory, computer-readable storage media of claim 15 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "file_path": "US11423041B2.txt",
+          "chunk_id": "US11423041B2-chunk-002"
+        },
+        {
+          "reference_id": "1",
+          "content": "receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluating, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL process to be performed. 10. The method of claim 8 , further comprising: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL process. 11. The method of claim 8 , wherein the second ETL process is applied to the one or more transformed data objects. 12. The method of claim 8 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service. 13. The method of claim 8 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service. 14. The method of claim 8 , wherein the criteria is one of a plurality of different alternative criteria registered for triggering the event. 15. One or more non-transitory, computer-readable storage media, storing program instructions that when executed on or across one or more computing devices, cause the one or more computing devices to implement: receiving, at a data catalog for an Extract, Transform, Load (ETL) service, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; storing, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluating, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, causing the second ETL process to be performed. 16. The one or more non-transitory, computer-readable storage media of claim 15 , wherein a second history object is created in the history data structure, and wherein the one or more non-transitory, computer-readable storage media store further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluating, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to determining that the performance of the third ETL process satisfies the criteria for triggering the different event, causing the fourth ETL process to be performed. 17. The one or more non-transitory, computer-readable storage media of claim 15 , storing further instructions that when executed on or across the one or more computing devices cause the one or more computing devices to further implement: further in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, sending a notification of the event to another subscriber different than the second ETL process. 18. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the second ETL process is applied to the one or more transformed data objects. 19. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service. 20. The one or more non-transitory, computer-readable storage media of claim 15 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "file_path": "US11423041B2.txt",
+          "chunk_id": "US11423041B2-chunk-001"
+        },
+        {
+          "reference_id": "1",
+          "content": "Publication number: US11423041B2\nTitle: Maintaining data lineage to detect data events\n\nABSTRACT\nHistory for data objects may be maintained to detect data events. An indication of an Extract, Transform, Load (ETL) process applied to one or more source data objects to generate one or more transformed data objects may be received. History for the source data objects may be updated to include the transformed data objects and the ETL process that generated the transformed data objects. An evaluation of the update may be performed to determine whether an event associated with the data lineage is triggered. If the event is triggered, a notification of the event may be sent to one or more subscribers for the event.\n\nCLAIMS\nWhat is claimed is: 1. A system, comprising: at least one processor; and a memory, storing program instructions that when executed by the at least one processor, cause the at least one processor to implement a data catalog for an Extract, Transform, Load (ETL) service, the data catalog configured to: receive, at the data catalog, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; store, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluate, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed. 2. The system of claim 1 , wherein a second history object is created in the history data structure, and wherein the data catalog is further configured to: receive, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; store, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluate, in the data catalog, the stored information that describes the performance of the third ETL process in the instance of the second history object with respect to criteria for triggering a different event to perform a fourth ETL process subscribed to the different event to determine that the performance of the third ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the second history object; and in response to the determination that the performance of the third ETL process satisfies the criteria for triggering the different event, cause the fourth ETL process to be performed. 3. The system of claim 1 , wherein the data catalog service is further configured to: further in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, send a notification of the event to another subscriber different than the second ETL process. 4. The system of claim 1 , wherein the second ETL process is applied to the one or more transformed data objects. 5. The system of claim 1 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service. 6. The system of claim 1 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service. 7. The system of claim 1 , wherein the criteria is one of a plurality of different alternative criteria registered for triggering the event. 8. A method, comprising: receiving, at a data catalog for an Extract, Transform, Load (ETL) service, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects; storing, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object; evaluating, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event to determine that the performance of the first ETL process satisfies the criteria for triggering the event, the event registered for monitoring with regard to the history object; and in response to determining that the performance of the first ETL process satisfies the criteria for triggering the event, causing the second ETL process to be performed. 9. The method of claim 8 , wherein a second history object is created in the history data structure, and wherein the method further comprises: receiving, at the data catalog, an indication of a third ETL process applied to one or more different source data objects to generate one or more different transformed data objects; storing, in the data catalog, an instance of the second history object in the history data structure according to the received indication of the third ETL process, the second history object created in the history data structure to specify information expected to be stored to describe the performance of the third ETL process; evaluating, in the data catalog,",
+          "file_path": "US11423041B2.txt",
+          "chunk_id": "US11423041B2-chunk-000"
+        },
+        {
+          "reference_id": "2",
+          "content": "Publication number: US9118735B1\nTitle: Finding people using social networks\n\nABSTRACT\nEmbodiments are described for assisting a first person in finding a second person using a social network. A person may send a request to a server that identifies that person, the person he or she is looking for, and the requestor's location. The server may then traverse that person's social network to identify someone who is in a similar location and who knows the person being sought. The server may send an identification of this person who knows the person being sought to the requestor. Various privacy mechanisms are also disclosed, including anonymizing identifying information, and encrypting communications.\n\nCLAIMS\nWhat is claimed is: 1. A system for assisting a requesting person in finding a target person using social networks, comprising: a memory bearing instructions that, upon execution by a processor, cause the system to at least: receive an identification associated with the requesting person, an identification associated with the target person, and a location of the requesting person; determine a social network of the requesting person based on the identification of the requesting person, the social network comprising information from at least one social network service; determine an identifier associated with a connecting person in the social network of the requesting person who is likely to connect the social network of the requesting person with a social network of the target person, and who has a last-known location within a predetermined distance from the location of the requesting person, wherein the requesting person and connecting person have a number of degrees of separation and a type of relationship; determine that the connecting person has opted-in to sharing information about his or her identity, social network, or location with people of at least as many degrees of separation as the number of degrees of separation for the type of relationship that the requesting person and connecting person have; and send an identifier associated with the connecting person, or a response based on a response from a computer of the connecting person, or a possible location of the target person to a computer of the requesting person. 2. The system of claim 1 , wherein the instructions that, upon execution by the processor cause the system to at least determine that the connecting person has opted-in further cause the system to at least: determine that the connecting person has opted-in in response to sending the computer of the connecting person information identifying the requesting person, the target person, the location of the requesting person or a person in the social network of the requesting person that connects the requesting person and the connecting person. 3. The system of claim 1 , wherein the memory further bears instructions that, upon execution by the processor, cause the system to at least: determine an identifier associated with a second connecting person; and wherein the processor-executable instructions that, when executed on the processor cause the system to at least send the response based on the response from the computer of the connecting person further cause the system to at least: send the response based on the response from the computer of the connecting person based on determining that the response from the computer of the connecting person has a higher priority than a response from a computer of the second person. 4. A method for assisting a first user in finding a second user using a social network, comprising: determining a social network of a first user; determining an identifier associated with a third user in the social network of the first user, the third user being a user that is likely to connect the social network of the first user with a social network of the second user, and who has a last-known location within a predetermined distance from the location of the first user, wherein the first user and third user have a number of degrees of separation and a type of relationship; determine that the third user has opted-in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship that the first user and third user have; and sending an identifier associated with the third user, or a response based on a response from a computer of the third user, or a possible location of the second user to a computer of the first user. 5. The method of claim 4 , further comprising: determining an identifier associated with a fourth user that is likely to connect the social network of the first user with the social network of the second user; and wherein sending the response based on the response from a computer of the third user comprises: sending the response based on a combination of the response from the computer of the third user and a response from a computer of the fourth user. 6. The method of claim 5 , wherein a format of the response from the computer of the connecting person differs from a format of the response from the computer of the second connecting person, and wherein sending the response based on a combination of the response from the computer of the third user and a response from a computer of the fourth user comprises: converting the response from the computer of the third user and the response from the computer of the fourth user to a common format; and combining the response from the computer of the third user and the response from the computer of the fourth user while in the common format. 7. The method of claim 4 , wherein determining the third user who has the last-known location within the predetermined distance from the location of the first user comprises: determining the last-known location of the third user based on a wireless network to which the computer of the third user is connected, a geolocation provided by the computer of the third user, a venue that the third user has identified himself or herself as being at, or an event that the third user has identified himself or herself as being at. 8. The method of claim 4 , further comprising: receiving an identifier associated with the first user, an identifier associated with the second user, and a location of the first user. 9. The method of claim 8 , wherein the",
+          "file_path": "US9118735B1.txt",
+          "chunk_id": "US9118735B1-chunk-000"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US11423041B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9118735B1.txt"
+        }
+      ]
+    },
+    "metadata": {
+      "query_mode": "mix",
+      "keywords": {
+        "high_level": [
+          "patent claim analysis",
+          "ETL process architecture",
+          "dependent claim comparison",
+          "patent citation"
+        ],
+        "low_level": [
+          "US11423041B2",
+          "first ETL process",
+          "second ETL process",
+          "ETL service",
+          "external ETL process",
+          "dependent system claim",
+          "claim number",
+          "patent publication number",
+          "supporting wording"
+        ]
+      },
+      "processing_info": {
+        "total_entities_found": 20,
+        "total_relations_found": 29,
+        "entities_after_truncation": 20,
+        "relations_after_truncation": 29,
+        "merged_chunks_count": 11,
+        "final_chunks_count": 4
+      }
+    },
+    "llm_response": {
+      "content": "## Answer\n\n**Stated fact (the claim you asked for):** In US11423041B2, dependent system **claim 5** states: \"wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service.\"\n\n**Stated fact (the next claim):** Dependent system **claim 6** states: \"wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.\"\n\n**Contrast (based on the quoted wording):** Claim 5 places the first ETL process *outside* the ETL service while the second is performed by it; claim 6 instead places *both* the first and second ETL processes within the ETL service. The only textual difference between the two claims is the location of the first ETL process.\n\n**Inference (not stated in the document):** Claim 6 appears to cover the fully in-service configuration, whereas claim 5 covers a hybrid configuration where the triggering (first) process runs externally but the subscribed (second) process runs within the service. This is my interpretation of the claim language, not an express statement in the patent text.\n\n**Related context (stated):** The same distinction appears in the method claims, where claim 12 recites the first process \"performed external to the ETL service\" and claim 13 recites both processes \"performed by the ETL service.\"\n\n### References\n\n- [1] US11423041B2.txt",
+      "response_iterator": null,
+      "is_streaming": false,
+      "llm_generated": true
+    }
+  }
+}

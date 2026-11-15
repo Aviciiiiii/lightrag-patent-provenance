@@ -1,0 +1,135 @@
+{
+  "reviewed_utc": "2026-10-29T16:11:14.740818+00:00",
+  "review_scope": "Static guard review only. No private configuration read, no model/network calls, and no prior-round changes.",
+  "reviewed_file": "<DOT_WORKDIR>/round3/scripts/safe_api.py",
+  "reviewed_sha256": "e0acc99efcacbf1188c2eb6ed3445bf7222a27c74e9a4657040daf8b281dec34",
+  "status": "pass_direct_httpx_transport_and_ablation_runner",
+  "verified": {
+    "round": "round3",
+    "hard_deadline_utc": "2026-10-29T18:01:14+00:00",
+    "spend_cap_cny": 10,
+    "cost_currency": "CNY",
+    "pinned_llm_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "pinned_embedding_model": "BAAI/bge-m3",
+    "only_allowed_https_hostname": "api.siliconflow.cn",
+    "redirects_followed": false,
+    "sdk_retries": 0,
+    "temperature": 0,
+    "thinking_requested": false,
+    "stop_on_observed_reasoning": true,
+    "api_attempt_cap": 40,
+    "max_output_tokens": 8192,
+    "input_bound_limit_utf8_bytes_plus_2048": 180000,
+    "deadline_checked_before_dispatch": true,
+    "network_timeout_bounded_by_remaining_deadline": true,
+    "uncertain_call_reservations_retained": true,
+    "ledger_logs_isolated_from_round2": true,
+    "api_key_headers_not_serialized": true,
+    "base_A_input_reservation_bound": 151764
+  },
+  "runner_conditions": [
+    "Use one sequential runner/one ledger owner; the asyncio lock is process-local and does not make concurrent processes safe.",
+    "Give the runner an absolute process-level deadline as a backstop; SafeAPI bounds each network wait but does not schedule process shutdown when idle.",
+    "Do not call embedding/preflight unnecessarily: the frozen-context controls require completion calls only.",
+    "Treat finish_reason=length as an invalid or separately flagged extraction comparison; do not infer chunk-boundary loss from output truncation."
+  ],
+  "input_limit_recommendation": {
+    "policy": "Measure the fully serialized A/B/C messages before dispatch. Keep 180000 if all fit. If any B/C exceeds it, raise only to a rounded-up bound for the actual prepared conditions, preferably no higher than240000, without truncating or changing conditions.",
+    "example_240000_bound_max_single_reservation_cny": 0.80768,
+    "reason": "Byte-count reservation is intentionally conservative; allowing the complete pre-validated context preserves the ablation and remains subject to the10 CNY global cap."
+  },
+  "planned_cost_bounds": {
+    "calls": 21,
+    "ablation_calls": 9,
+    "ablation_output_cap": 3500,
+    "chunk_calls": 12,
+    "chunk_output_cap": 8192,
+    "planned_max_completion_tokens": 129804,
+    "planned_max_completion_cost_cny_without_reasoning": 1.038432,
+    "loose_total_cost_cny_if_all_21_inputs_at_180000_tokens": 8.598432,
+    "note": "Loose static ceiling intentionally treats bytes as tokens. Expected actual token counts are far smaller. This is a rate-based estimate, not an invoice; cache discounts are not used for the upper bound."
+  },
+  "minor_notes": [
+    "Output max_tokens validation only checks the upper bound. Controlled runners must supply positive explicit3500 or8192 values.",
+    "QUERY_DEADLINE is inherited metadata and is not enforced by this wrapper. Existing official-query gate was already passed in round2; new control scripts should enforce the18:01:14 final deadline.",
+    "Seed is not sent; temperature0 does not establish deterministic repeated outputs. Preserve interleaved schedule and report observed variability."
+  ],
+  "previous_sdk_wrapper_sha256": "881c8ce3f8a75ae84f52bc5e58dde2cf7ee5498c3007553d850712a15847b9c7",
+  "transport_amendment": {
+    "reason": "Avoid stalled heavyweight SDK/LightRAG imports for frozen-context generation controls",
+    "transport": "httpx.AsyncClient direct OpenAI-compatible JSON",
+    "request_body_equivalence": "Original logged request shape preserved; extra_body.enable_thinking is flattened into HTTP JSON exactly as the OpenAI SDK extra_body contract specifies. Model/messages/max_tokens/temperature/stream unchanged. Header defaults differ; generation parameters do not.",
+    "pinned_host_models_preserved": true,
+    "credentials_headers_memory_only": true,
+    "redirects_followed": false,
+    "automatic_retries": 0,
+    "embedding_disabled": true,
+    "response_logging": "Generated content, finish_reason, returned model and usage retained; not an entire HTTP payload/header dump.",
+    "runner_sha256": "ff2e8d09e0e6330d64a62a7cfd12d8a9a8cf99cc85def9db98648b24d6922efa",
+    "A_exact_request_fields_verified_offline": [
+      "model",
+      "messages",
+      "max_tokens",
+      "temperature",
+      "stream",
+      "extra_body"
+    ],
+    "all_ABC_fixed_parameters_verified_offline": true,
+    "actual_input_bounds": {
+      "A": 151764,
+      "B": 162260,
+      "C": 164819
+    },
+    "interleaved_order": [
+      [
+        "A",
+        1
+      ],
+      [
+        "B",
+        1
+      ],
+      [
+        "C",
+        1
+      ],
+      [
+        "B",
+        2
+      ],
+      [
+        "C",
+        2
+      ],
+      [
+        "A",
+        2
+      ],
+      [
+        "C",
+        3
+      ],
+      [
+        "A",
+        3
+      ],
+      [
+        "B",
+        3
+      ]
+    ],
+    "one_ledger_owner": true,
+    "absolute_process_alarm_bounded_by_deadline": true,
+    "actual_logged_requests_checked_against_conditions": true,
+    "no_paid_calls_in_review": true,
+    "nonblocking_note": "The wrapper still reads embedding configuration fields although it does not instantiate/use an embedding client. No embedding requests occur."
+  },
+  "previous_pre_run_reviewed_sha256": "d06552960e9b9aa53d16d847e4a1882eb8a261736b1f9b4b8dd3e2b99644e6a2",
+  "final_runtime_amendment": {
+    "reviewed_utc": "2026-10-29T16:23:41.528928+00:00",
+    "change": "After successful HTTP200, provider response JSON body is persisted before parsing; request/response headers are not saved.",
+    "full_provider_responses_present": 21,
+    "body_log_consistent_with_usage_and_content": true,
+    "credentials_not_read_by_reviewer": true
+  }
+}

@@ -1,0 +1,498 @@
+{
+  "reviewed_utc": "2026-10-29T16:23:58.120871+00:00",
+  "review_method": "AI-assisted direct semantic review of all12 raw responses, exact Claim27 wording and official parser records; not independent human annotation and no new grading API calls.",
+  "source_publication_number": "US7991757B2",
+  "target_claim": 27,
+  "ground_truth_quote": "27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+  "prepared_evidence": "round3/evidence/chunk_conditions.json",
+  "official_parse_evidence": "round3/results/chunk_parsed.json",
+  "rows": [
+    {
+      "condition": "SAME",
+      "repeat": 1,
+      "primary_semantic_relation_retained": true,
+      "primary_evidence": {
+        "src_id": "Registration Module",
+        "tgt_id": "Provider",
+        "weight": 1.0,
+        "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+        "keywords": "allows, configured to allow",
+        "source_id": "controlled-US7991757B2-same-000",
+        "file_path": "US7991757B2.txt",
+        "timestamp": 1793291017
+      },
+      "primary_reason": "The parsed Registration Module--Provider relation explicitly states the Claim27 machine-readable-description function.",
+      "strict_module_descriptions_direct_edge": false,
+      "complete_target_in_entity_description": true,
+      "legal_claim27_claim1_edge": false,
+      "local_machine_description_entity_fragments_retained": [
+        {
+          "entity_name": "Registration Module",
+          "entity_type": "artifact",
+          "description": "A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "artifact",
+          "description": "One of a plurality of external recommenders associated with a provider who can supply machine readable descriptions of it.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Provider",
+          "entity_type": "person",
+          "description": "A provider of an external recommender who is allowed to provide machine readable descriptions of the external recommender.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "local_machine_description_edges": [
+        {
+          "src_id": "Registration Module",
+          "tgt_id": "Provider",
+          "weight": 1.0,
+          "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+          "keywords": "allows, configured to allow",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Provider",
+          "tgt_id": "Machine Readable Descriptions",
+          "weight": 1.0,
+          "description": "The provider provides machine readable descriptions of the external recommender.",
+          "keywords": "provides, supplies",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Machine Readable Descriptions",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The machine readable descriptions describe the external recommender.",
+          "keywords": "describes, describes",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "truncated": false,
+      "all_completion_delimiters": true,
+      "prompt_tokens": 3721,
+      "completion_tokens": 667,
+      "cache_hit_tokens": 0,
+      "records_before_graph_merge": {
+        "nodes": 8,
+        "edges": 8
+      },
+      "raw_output_files": [
+        "round3/results/chunk_SAME_r1_c0.json",
+        "round3/results/chunk_SAME_r1_c1.json"
+      ]
+    },
+    {
+      "condition": "SAME",
+      "repeat": 2,
+      "primary_semantic_relation_retained": true,
+      "primary_evidence": {
+        "src_id": "Registration Module",
+        "tgt_id": "Provider",
+        "weight": 1.0,
+        "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+        "keywords": "allows, configuration",
+        "source_id": "controlled-US7991757B2-same-000",
+        "file_path": "US7991757B2.txt",
+        "timestamp": 1793291017
+      },
+      "primary_reason": "The parsed Registration Module--Provider relation explicitly states the Claim27 machine-readable-description function.",
+      "strict_module_descriptions_direct_edge": false,
+      "complete_target_in_entity_description": true,
+      "legal_claim27_claim1_edge": false,
+      "local_machine_description_entity_fragments_retained": [
+        {
+          "entity_name": "Registration Module",
+          "entity_type": "artifact",
+          "description": "A module of the system of claim 1 that is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "artifact",
+          "description": "A recommender external to the system, one of a plurality of external recommenders, whose provider may provide machine readable descriptions of it via the registration module.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Provider",
+          "entity_type": "person",
+          "description": "A provider of an external recommender associated with the plurality of external recommenders, allowed by the registration module to provide machine readable descriptions of the external recommender.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "local_machine_description_edges": [
+        {
+          "src_id": "Computer System",
+          "tgt_id": "Registration Module",
+          "weight": 1.0,
+          "description": "The registration module is a module of the computer system of claim 1 and is configured to allow providers to provide machine readable descriptions.",
+          "keywords": "component, configuration",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Registration Module",
+          "tgt_id": "Provider",
+          "weight": 1.0,
+          "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+          "keywords": "allows, configuration",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Provider",
+          "tgt_id": "Machine Readable Descriptions",
+          "weight": 1.0,
+          "description": "The provider is allowed to provide machine readable descriptions of the external recommender.",
+          "keywords": "provides",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Machine Readable Descriptions",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The machine readable descriptions describe the external recommender.",
+          "keywords": "describes",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "truncated": false,
+      "all_completion_delimiters": true,
+      "prompt_tokens": 3721,
+      "completion_tokens": 769,
+      "cache_hit_tokens": 0,
+      "records_before_graph_merge": {
+        "nodes": 8,
+        "edges": 9
+      },
+      "raw_output_files": [
+        "round3/results/chunk_SAME_r2_c0.json",
+        "round3/results/chunk_SAME_r2_c1.json"
+      ]
+    },
+    {
+      "condition": "SAME",
+      "repeat": 3,
+      "primary_semantic_relation_retained": true,
+      "primary_evidence": {
+        "src_id": "Registration Module",
+        "tgt_id": "Provider",
+        "weight": 1.0,
+        "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+        "keywords": "allows, enables",
+        "source_id": "controlled-US7991757B2-same-000",
+        "file_path": "US7991757B2.txt",
+        "timestamp": 1793291017
+      },
+      "primary_reason": "The parsed Registration Module--Provider relation explicitly states the Claim27 machine-readable-description function.",
+      "strict_module_descriptions_direct_edge": false,
+      "complete_target_in_entity_description": true,
+      "legal_claim27_claim1_edge": false,
+      "local_machine_description_entity_fragments_retained": [
+        {
+          "entity_name": "Registration Module",
+          "entity_type": "artifact",
+          "description": "A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "artifact",
+          "description": "One of a plurality of external recommenders associated with the system, whose provider may provide machine readable descriptions.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "entity_name": "Provider",
+          "entity_type": "person",
+          "description": "A provider of an external recommender who is allowed to provide machine readable descriptions of the external recommender.",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "local_machine_description_edges": [
+        {
+          "src_id": "Registration Module",
+          "tgt_id": "Provider",
+          "weight": 1.0,
+          "description": "The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions.",
+          "keywords": "allows, enables",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Provider",
+          "tgt_id": "Machine Readable Descriptions",
+          "weight": 1.0,
+          "description": "The provider is allowed to provide machine readable descriptions of the external recommender.",
+          "keywords": "provides",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        },
+        {
+          "src_id": "Machine Readable Descriptions",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The machine readable descriptions describe the external recommender.",
+          "keywords": "describes",
+          "source_id": "controlled-US7991757B2-same-000",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "truncated": false,
+      "all_completion_delimiters": true,
+      "prompt_tokens": 3721,
+      "completion_tokens": 666,
+      "cache_hit_tokens": 1792,
+      "records_before_graph_merge": {
+        "nodes": 8,
+        "edges": 8
+      },
+      "raw_output_files": [
+        "round3/results/chunk_SAME_r3_c0.json",
+        "round3/results/chunk_SAME_r3_c1.json"
+      ]
+    },
+    {
+      "condition": "CROSS",
+      "repeat": 1,
+      "primary_semantic_relation_retained": false,
+      "primary_evidence": {
+        "src_id": "Registration Module",
+        "tgt_id": "Provider",
+        "weight": 1.0,
+        "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+        "keywords": "allows, permits",
+        "source_id": "controlled-US7991757B2-cross-000",
+        "file_path": "US7991757B2.txt",
+        "timestamp": 1793291017
+      },
+      "primary_reason": "The parsed Registration Module--Provider relation ends with provide something; no parsed relation or entity description retains the complete target proposition.",
+      "strict_module_descriptions_direct_edge": false,
+      "complete_target_in_entity_description": false,
+      "legal_claim27_claim1_edge": false,
+      "local_machine_description_entity_fragments_retained": [
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "artifact",
+          "description": "An external recommender that is described in machine readable descriptions and to which weights are assigned by the content site.",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "local_machine_description_edges": [],
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "truncated": false,
+      "all_completion_delimiters": true,
+      "prompt_tokens": 3722,
+      "completion_tokens": 379,
+      "cache_hit_tokens": 0,
+      "records_before_graph_merge": {
+        "nodes": 5,
+        "edges": 4
+      },
+      "raw_output_files": [
+        "round3/results/chunk_CROSS_r1_c0.json",
+        "round3/results/chunk_CROSS_r1_c1.json"
+      ]
+    },
+    {
+      "condition": "CROSS",
+      "repeat": 2,
+      "primary_semantic_relation_retained": false,
+      "primary_evidence": {
+        "src_id": "Registration Module",
+        "tgt_id": "Provider",
+        "weight": 1.0,
+        "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+        "keywords": "allows, configuration",
+        "source_id": "controlled-US7991757B2-cross-000",
+        "file_path": "US7991757B2.txt",
+        "timestamp": 1793291017
+      },
+      "primary_reason": "The parsed Registration Module--Provider relation ends with provide something; no parsed relation or entity description retains the complete target proposition.",
+      "strict_module_descriptions_direct_edge": false,
+      "complete_target_in_entity_description": false,
+      "legal_claim27_claim1_edge": false,
+      "local_machine_description_entity_fragments_retained": [
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "concept",
+          "description": "An external recommendation source whose behavior is described in machine readable descriptions and to which weights are assigned.",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "local_machine_description_edges": [
+        {
+          "src_id": "Machine Readable Descriptions",
+          "tgt_id": "External Recommender",
+          "weight": 1.0,
+          "description": "The machine readable descriptions describe the external recommender.",
+          "keywords": "description",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "truncated": false,
+      "all_completion_delimiters": true,
+      "prompt_tokens": 3722,
+      "completion_tokens": 624,
+      "cache_hit_tokens": 0,
+      "records_before_graph_merge": {
+        "nodes": 8,
+        "edges": 7
+      },
+      "raw_output_files": [
+        "round3/results/chunk_CROSS_r2_c0.json",
+        "round3/results/chunk_CROSS_r2_c1.json"
+      ]
+    },
+    {
+      "condition": "CROSS",
+      "repeat": 3,
+      "primary_semantic_relation_retained": false,
+      "primary_evidence": {
+        "src_id": "Registration Module",
+        "tgt_id": "Provider",
+        "weight": 1.0,
+        "description": "The registration module is configured to allow a provider of an external recommender to provide something.",
+        "keywords": "allows, enables",
+        "source_id": "controlled-US7991757B2-cross-000",
+        "file_path": "US7991757B2.txt",
+        "timestamp": 1793291017
+      },
+      "primary_reason": "The parsed Registration Module--Provider relation ends with provide something; no parsed relation or entity description retains the complete target proposition.",
+      "strict_module_descriptions_direct_edge": false,
+      "complete_target_in_entity_description": false,
+      "legal_claim27_claim1_edge": false,
+      "local_machine_description_entity_fragments_retained": [
+        {
+          "entity_name": "External Recommender",
+          "entity_type": "concept",
+          "description": "An external recommendation system whose behavior is described in machine readable descriptions.",
+          "source_id": "controlled-US7991757B2-cross-001",
+          "file_path": "US7991757B2.txt",
+          "timestamp": 1793291017
+        }
+      ],
+      "local_machine_description_edges": [],
+      "finish_reasons": [
+        "stop",
+        "stop"
+      ],
+      "truncated": false,
+      "all_completion_delimiters": true,
+      "prompt_tokens": 3722,
+      "completion_tokens": 410,
+      "cache_hit_tokens": 1792,
+      "records_before_graph_merge": {
+        "nodes": 6,
+        "edges": 4
+      },
+      "raw_output_files": [
+        "round3/results/chunk_CROSS_r3_c0.json",
+        "round3/results/chunk_CROSS_r3_c1.json"
+      ]
+    }
+  ],
+  "summary": {
+    "SAME": {
+      "primary_semantic_relation_retained": 3,
+      "repeats": 3,
+      "strict_direct_edge": 0,
+      "complete_target_entity_description": 3,
+      "legal_dependency_edge": 0
+    },
+    "CROSS": {
+      "primary_semantic_relation_retained": 0,
+      "repeats": 3,
+      "strict_direct_edge": 0,
+      "complete_target_entity_description": 0,
+      "legal_dependency_edge": 0
+    },
+    "truncated_calls": 0,
+    "all12_calls_finish_stop": true,
+    "completion_token_range_per_call": [
+      98,
+      527
+    ],
+    "max_tokens_per_call": 8192
+  },
+  "tokens": {
+    "prompt": 22329,
+    "completion": 3515,
+    "cache_hit": 3584,
+    "api_prompt_tokens_per_two_chunk_repeat": {
+      "SAME": 3721,
+      "CROSS": 3722
+    },
+    "source_tokens_per_condition_o200k_base": 93
+  },
+  "attribution": "In this imposed boundary control, the complete technical proposition is present in the original source and parsed same-chunk outputs, but absent from each cross-chunk extraction and their concatenated parsed relation records. The difference is localized to independent chunk extraction under the changed boundary. Output truncation and record-limit exhaustion are not explanations for these12 responses. Graph indexing, graph merges, retrieval and answer generation were not rerun in this control.",
+  "important_limits": [
+    "This is an artificial split inside Claim27, not a natural-corpus failure of the original1200-token/100-overlap chunking.",
+    "Both conditions contain exactly the same contiguous source bytes in the same order and use two stateless calls. Chunk lengths and whether the subject/object are jointly visible necessarily change. API prompt tokenization differs by one token per condition pair despite the same93 source tokens under the recorded tokenizer.",
+    "Fragments survive in CROSS: the module allows a provider to provide something, and descriptions of the external recommender remain in at least an entity description. This is not complete factual information loss.",
+    "No exact Module--Machine Readable Descriptions edge appears even in SAME; the correct predicate is represented through Module--Provider. An endpoint-only metric would falsely classify both conditions as failures.",
+    "No explicit Claim27--Claim1 dependency edge appears in either condition. That is separate from the technical relation result; the default extractor does not require a legal claim ontology.",
+    "Three paired repeats on one patent and one imposed boundary do not establish corpus-wide rates. Temperature0 hosted responses varied; no seed was requested.",
+    "The result supports a limitation of independent local extraction under this boundary; it does not by itself establish an implementation bug, prove failure after all possible graph merges, or demonstrate downstream answer failure."
+  ]
+}

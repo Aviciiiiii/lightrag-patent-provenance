@@ -1,0 +1,547 @@
+{
+  "reviewed_utc": "2026-10-30T08:23:19.138079+00:00",
+  "reviewer": "env_history independent AI-assisted secondary review",
+  "protocol": "evidence/review_protocol.json",
+  "status": "supported_with_granularity_and_role_warning_qualifications",
+  "scope": {
+    "focused_nodes": [
+      "N010",
+      "N011",
+      "N012",
+      "N016",
+      "N017",
+      "N022",
+      "N030"
+    ],
+    "focused_node_publication_pairs": 15,
+    "extra_class_granularity_nodes": [
+      "N006",
+      "N015",
+      "N028",
+      "N036"
+    ],
+    "main_reviews_inventory_count": 38,
+    "main_initial_category_counts": {
+      "shared_broad_class": 27,
+      "shared_specific_concept": 5,
+      "contextual_conflation": 6
+    },
+    "not_full_independent_reannotation_of_all_98_sources": true,
+    "not_independent_human_gold": true
+  },
+  "node_reviews": {
+    "N010": {
+      "node_id": "First User",
+      "initial_category": "contextual_conflation",
+      "initial_confidence": "medium",
+      "publication_count": 2,
+      "source_chunk_count": 4,
+      "incident_edge_count": 6,
+      "dossier_sha256": "e655b7cf8fe65009def2c80900d9fbc58f9a5b0a5551b80caa5179a126cc91aa",
+      "review_sha256": "30c6da40cee125cdc181176ee9d2ce75eb40839f09f1660fbae89ac5752cb2a9",
+      "quote_checks": [
+        {
+          "publication_number": "US9118735B1",
+          "exact_quote": "for assisting a first user in finding a second user using a social network",
+          "declared_claim_or_section": "Claim 16",
+          "matching_claim_numbers": [
+            4,
+            16
+          ],
+          "matching_source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        },
+        {
+          "publication_number": "US9304738B1",
+          "exact_quote": "an indication of user interest of a first user in a first advertisement displayed on a parked domain web page",
+          "declared_claim_or_section": "Claim 1",
+          "matching_claim_numbers": [
+            1
+          ],
+          "matching_source_chunks": [
+            "US9304738B1-chunk-000"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        }
+      ],
+      "secondary_assessment": "contextual_role_scope_collision_with_legal_broad_class_alternative",
+      "agreement": "Accept contextual_conflation only as an operational scope-warning label; not a confirmed incorrect equivalence merge.",
+      "confidence_scope": "High that ordinal roles are document-scoped; medium that C3 is preferred over C2 under an unspecified ontology.",
+      "legal_broad_class_interpretation": "A class of users occupying the first/second/third participant role in any document is coherent if all properties are interpreted with provenance/scope. The graph does not state owl:sameAs or identify a real individual.",
+      "why_scope_still_matters": "The ordinal does not carry a stable cross-document behavioral role. Social seeker/target/connector roles differ from first-ad-interest/second-ad-interest/content-request roles. A source-insensitive traversal cannot lawfully transfer one local role to the other.",
+      "actual_cross_publication_unsupported_edge_observed": false,
+      "retrieval_or_answer_propagation_observed": false,
+      "primary_reporting_recommendation": "Retain medium-confidence label only with alternative interpretation and report these separately from the stronger lexical polysemy examples. Do not count as three proven wrong merges."
+    },
+    "N011": {
+      "node_id": "Second User",
+      "initial_category": "contextual_conflation",
+      "initial_confidence": "medium",
+      "publication_count": 2,
+      "source_chunk_count": 4,
+      "incident_edge_count": 3,
+      "dossier_sha256": "74207c392ae9059747fa9d5b0affe4e6c2ed616df14f63f209c5ff7f93698a86",
+      "review_sha256": "7a75e85da54331e6f4dbc5b547b8d4c2248c9868a775a5bd149188f026cff4ab",
+      "quote_checks": [
+        {
+          "publication_number": "US9118735B1",
+          "exact_quote": "for assisting a first user in finding a second user using a social network",
+          "declared_claim_or_section": "Claim 16",
+          "matching_claim_numbers": [
+            4,
+            16
+          ],
+          "matching_source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        },
+        {
+          "publication_number": "US9304738B1",
+          "exact_quote": "an indication of user interest of a second user in a second advertisement displayed on the parked domain web page",
+          "declared_claim_or_section": "Claim 1",
+          "matching_claim_numbers": [
+            1,
+            13,
+            18
+          ],
+          "matching_source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001",
+            "US9304738B1-chunk-002"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        }
+      ],
+      "secondary_assessment": "contextual_role_scope_collision_with_legal_broad_class_alternative",
+      "agreement": "Accept contextual_conflation only as an operational scope-warning label; not a confirmed incorrect equivalence merge.",
+      "confidence_scope": "High that ordinal roles are document-scoped; medium that C3 is preferred over C2 under an unspecified ontology.",
+      "legal_broad_class_interpretation": "A class of users occupying the first/second/third participant role in any document is coherent if all properties are interpreted with provenance/scope. The graph does not state owl:sameAs or identify a real individual.",
+      "why_scope_still_matters": "The ordinal does not carry a stable cross-document behavioral role. Social seeker/target/connector roles differ from first-ad-interest/second-ad-interest/content-request roles. A source-insensitive traversal cannot lawfully transfer one local role to the other.",
+      "actual_cross_publication_unsupported_edge_observed": false,
+      "retrieval_or_answer_propagation_observed": false,
+      "primary_reporting_recommendation": "Retain medium-confidence label only with alternative interpretation and report these separately from the stronger lexical polysemy examples. Do not count as three proven wrong merges."
+    },
+    "N012": {
+      "node_id": "Third User",
+      "initial_category": "contextual_conflation",
+      "initial_confidence": "medium",
+      "publication_count": 2,
+      "source_chunk_count": 4,
+      "incident_edge_count": 11,
+      "dossier_sha256": "a0bc09d44ac775f10ae35ee75204b2eecdfd1e71a7f91db479b17e4e121601e8",
+      "review_sha256": "6869ee907e4a0a6fd12822d5814bb308504727baae7059a462a7b6c0cdc18ee2",
+      "quote_checks": [
+        {
+          "publication_number": "US9118735B1",
+          "exact_quote": "determining a third user in the social network of the first user who is likely to connect the social network of the first user with a social network of the third user",
+          "declared_claim_or_section": "Claim 16",
+          "matching_claim_numbers": [
+            16
+          ],
+          "matching_source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        },
+        {
+          "publication_number": "US9304738B1",
+          "exact_quote": "for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page",
+          "declared_claim_or_section": "Claim 1",
+          "matching_claim_numbers": [
+            1,
+            13,
+            18
+          ],
+          "matching_source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001",
+            "US9304738B1-chunk-002"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        }
+      ],
+      "secondary_assessment": "contextual_role_scope_collision_with_legal_broad_class_alternative",
+      "agreement": "Accept contextual_conflation only as an operational scope-warning label; not a confirmed incorrect equivalence merge.",
+      "confidence_scope": "High that ordinal roles are document-scoped; medium that C3 is preferred over C2 under an unspecified ontology.",
+      "legal_broad_class_interpretation": "A class of users occupying the first/second/third participant role in any document is coherent if all properties are interpreted with provenance/scope. The graph does not state owl:sameAs or identify a real individual.",
+      "why_scope_still_matters": "The ordinal does not carry a stable cross-document behavioral role. Social seeker/target/connector roles differ from first-ad-interest/second-ad-interest/content-request roles. A source-insensitive traversal cannot lawfully transfer one local role to the other.",
+      "actual_cross_publication_unsupported_edge_observed": false,
+      "retrieval_or_answer_propagation_observed": false,
+      "primary_reporting_recommendation": "Retain medium-confidence label only with alternative interpretation and report these separately from the stronger lexical polysemy examples. Do not count as three proven wrong merges."
+    },
+    "N016": {
+      "node_id": "Event",
+      "initial_category": "contextual_conflation",
+      "initial_confidence": "medium",
+      "publication_count": 2,
+      "source_chunk_count": 4,
+      "incident_edge_count": 9,
+      "dossier_sha256": "90864e1b1aedde5cb45783a55c711297f2a5aede3de917d013eebfed8188a0f2",
+      "review_sha256": "ad6c8810b0e79491aab7cba5874e138b73e5c4cf93649ed0f7e7dc0544dc04b4",
+      "quote_checks": [
+        {
+          "publication_number": "US11423041B2",
+          "exact_quote": "criteria for triggering an event to perform a second ETL process subscribed to the event",
+          "declared_claim_or_section": "Claim 1",
+          "matching_claim_numbers": [
+            1,
+            8,
+            15
+          ],
+          "matching_source_chunks": [
+            "US11423041B2-chunk-000",
+            "US11423041B2-chunk-001"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        },
+        {
+          "publication_number": "US9118735B1",
+          "exact_quote": "an event that the third user has identified himself or herself as being at",
+          "declared_claim_or_section": "Claim 7",
+          "matching_claim_numbers": [
+            7
+          ],
+          "matching_source_chunks": [
+            "US9118735B1-chunk-000",
+            "US9118735B1-chunk-001"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        }
+      ],
+      "secondary_assessment": "two_source_supported_event_senses_pooled",
+      "agreement": "Source semantic distinction is strong; the C3 audit label is defensible as a word-sense separation need.",
+      "confidence_scope": "High for sense distinction, not high confidence of a core code error.",
+      "sense_groups": [
+        {
+          "sense": "software/data-processing event registered for monitoring and triggering an ETL operation",
+          "publications": [
+            "US11423041B2"
+          ]
+        },
+        {
+          "sense": "attended activity/event used as location evidence",
+          "publications": [
+            "US9118735B1"
+          ]
+        }
+      ],
+      "legal_broad_class_interpretation": "Both may be subsumed under a very broad occurrence/event class; that schema is not logically impossible. It would require source-conditioned/subtype-specific predicates, not interchangeability of attendance and ETL subscription.",
+      "actual_cross_publication_unsupported_edge_observed": false,
+      "retrieval_or_answer_propagation_observed": false,
+      "edge_evidence": "All9 incident edge descriptions retain local source support. No actual edge states a social user attended an ETL event or initiated ETL by attending."
+    },
+    "N017": {
+      "node_id": "Token",
+      "initial_category": "contextual_conflation",
+      "initial_confidence": "high",
+      "publication_count": 3,
+      "source_chunk_count": 3,
+      "incident_edge_count": 7,
+      "dossier_sha256": "2ac5e4ebaf8997ca274c006feb4d997b4d99fca7a7603db9108891c1f2c83135",
+      "review_sha256": "105c641cf8230de5815244260c5637065440047471721d30ca4a9042d0ca6dee",
+      "quote_checks": [
+        {
+          "publication_number": "US8655901B1",
+          "exact_quote": "segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query",
+          "declared_claim_or_section": "Claim 1",
+          "matching_claim_numbers": [
+            1,
+            8,
+            15
+          ],
+          "matching_source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        },
+        {
+          "publication_number": "US9118735B1",
+          "exact_quote": "anonymizing results based on replacing an identifier associated with the second user with a token",
+          "declared_claim_or_section": "Claim 14",
+          "matching_claim_numbers": [
+            14
+          ],
+          "matching_source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        },
+        {
+          "publication_number": "US9218390B2",
+          "exact_quote": "receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens",
+          "declared_claim_or_section": "Claim 18",
+          "matching_claim_numbers": [
+            1,
+            12,
+            18
+          ],
+          "matching_source_chunks": [
+            "US9218390B2-chunk-002"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        }
+      ],
+      "secondary_assessment": "lexical_query_token_and_anonymizing_surrogate_senses_pooled",
+      "agreement": "C3 defensible as a strong word-sense distinction; avoid calling all three source associations wrong.",
+      "confidence_scope": "High for source sense difference; no implementation-error probability implied.",
+      "sense_groups": [
+        {
+          "sense": "query text segment or labeling unit",
+          "publications": [
+            "US8655901B1",
+            "US9218390B2"
+          ]
+        },
+        {
+          "sense": "surrogate replacement for a user identifier in anonymization",
+          "publications": [
+            "US9118735B1"
+          ]
+        }
+      ],
+      "legal_broad_class_interpretation": "A broad symbolic/data-unit superclass could contain both, but it does not license NLP-label/CRF predicates for anonymizing identifiers without scope.",
+      "positive_merge_evidence": {
+        "edge_index": 251,
+        "meaning": "Token—Label",
+        "sources": [
+          "US8655901B1",
+          "US9218390B2"
+        ],
+        "assessment": "Both query sources support labeling tokens. This cross-publication edge is a valid shared-concept example within a node that also contains another sense."
+      },
+      "actual_cross_publication_unsupported_edge_observed": false,
+      "retrieval_or_answer_propagation_observed": false
+    },
+    "N022": {
+      "node_id": "Network",
+      "initial_category": "contextual_conflation",
+      "initial_confidence": "medium",
+      "publication_count": 2,
+      "source_chunk_count": 2,
+      "incident_edge_count": 4,
+      "dossier_sha256": "d9f43295358caa3d8d61dc78f86df3765fd6b0ee49965b5177e430557a630c6e",
+      "review_sha256": "57aebd007687ea509b0a8e7313ffe8f9767f464fa2e8e943fb090ea6d375bbee",
+      "quote_checks": [
+        {
+          "publication_number": "US8095432B1",
+          "exact_quote": "friends of the inquiring member are within a network of the inquiring member",
+          "declared_claim_or_section": "Claim 3",
+          "matching_claim_numbers": [
+            3
+          ],
+          "matching_source_chunks": [
+            "US8095432B1-chunk-000"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        },
+        {
+          "publication_number": "US9589231B2",
+          "exact_quote": "A network comprising a system for diagnosis assistance and a set of user devices for linking requesters and experts with the system",
+          "declared_claim_or_section": "Claim 20",
+          "matching_claim_numbers": [
+            20
+          ],
+          "matching_source_chunks": [
+            "US9589231B2-chunk-001"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        }
+      ],
+      "secondary_assessment": "ontology_granularity_sensitive_social_member_vs_device_system_network",
+      "agreement": "C3 is a reasonable candidate but C2 shared_broad_class is equally defensible with an explicit general network ontology.",
+      "confidence_scope": "Medium; retain as ontology-sensitive, not a definite semantic error.",
+      "sense_groups": [
+        {
+          "sense": "inquiring member social/friend network",
+          "publications": [
+            "US8095432B1"
+          ]
+        },
+        {
+          "sense": "system-and-device network linking requesters and experts",
+          "publications": [
+            "US9589231B2"
+          ]
+        }
+      ],
+      "legal_broad_class_interpretation": "A network is a connected set; social and technical realizations can coexist. Original text does not prove disjoint physical networks or mutually exclusive instances. Different member domains explain a need for subtypes/role scope rather than proving an invalid superclass.",
+      "actual_cross_publication_unsupported_edge_observed": false,
+      "retrieval_or_answer_propagation_observed": false,
+      "edge_evidence": "All4 edges have source-local support; none identifies friends as physical user devices."
+    },
+    "N030": {
+      "node_id": "Apparatus",
+      "initial_category": "shared_broad_class",
+      "initial_confidence": "medium",
+      "publication_count": 2,
+      "source_chunk_count": 5,
+      "incident_edge_count": 18,
+      "dossier_sha256": "6391cc8eb143846b5415fe30beb7b015b95bc1dc5a018dbbc94ff68ca057e8a1",
+      "review_sha256": "8ac38c7d83c83661cf184c1678ecae7c3ad71b4b4ec0d626aefdab3142fbb43d",
+      "quote_checks": [
+        {
+          "publication_number": "US7756837B2",
+          "exact_quote": "An apparatus, comprising: means for receiving at least one data-stream intended for archiving on a backup storage device;",
+          "declared_claim_or_section": "Claim 31",
+          "matching_claim_numbers": [
+            31
+          ],
+          "matching_source_chunks": [
+            "US7756837B2-chunk-001"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        },
+        {
+          "publication_number": "US9514120B1",
+          "exact_quote": "An apparatus comprising: a memory; a processing device operatively coupled to the memory",
+          "declared_claim_or_section": "Claim 18",
+          "matching_claim_numbers": [
+            18
+          ],
+          "matching_source_chunks": [
+            "US9514120B1-chunk-001"
+          ],
+          "exact_quote_in_claim_and_associated_source": true
+        }
+      ],
+      "secondary_assessment": "legitimate_shared_apparatus_class_with_separate_local_actor_attribution_warnings",
+      "agreement": "Agree C2 shared_broad_class. The two apparatus application domains alone do not establish wrong merging.",
+      "legal_broad_class_interpretation": "General device/apparatus class is supported; source-specific implementations remain distinct. A whole cooperating system interpretation is possible but not explicitly established for the Claim18 Apparatus node.",
+      "local_role_warning_count": 3,
+      "local_role_warnings": [
+        {
+          "edge_index": 495,
+          "source": "Combined Feedback",
+          "target": "Apparatus",
+          "actual_description": "The apparatus generates a combined feedback from one or more additional works.",
+          "source_id": "US9514120B1-chunk-002",
+          "publication": "US9514120B1",
+          "original_claim": 18,
+          "raw_cache_record_id": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+          "raw_line_number": 17,
+          "raw_line": "relation<|#|>Apparatus<|#|>Combined Feedback<|#|>generation<|#|>The apparatus generates a combined feedback from one or more additional works.",
+          "raw_to_merged_description_unchanged": true,
+          "assessment": "observed_local_actor_granularity_mismatch; qualified role-attribution warning, not demonstrated cross-publication propagation"
+        },
+        {
+          "edge_index": 502,
+          "source": "Sorted Feedback",
+          "target": "Apparatus",
+          "actual_description": "The apparatus sorts the combined feedback to generate a sorted feedback.",
+          "source_id": "US9514120B1-chunk-002",
+          "publication": "US9514120B1",
+          "original_claim": 18,
+          "raw_cache_record_id": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+          "raw_line_number": 18,
+          "raw_line": "relation<|#|>Apparatus<|#|>Sorted Feedback<|#|>generation<|#|>The apparatus sorts the combined feedback to generate a sorted feedback.",
+          "raw_to_merged_description_unchanged": true,
+          "assessment": "observed_local_actor_granularity_mismatch; qualified role-attribution warning, not demonstrated cross-publication propagation"
+        },
+        {
+          "edge_index": 517,
+          "source": "Apparatus",
+          "target": "Reference",
+          "actual_description": "The apparatus updates a reference based on the sorted feedback.",
+          "source_id": "US9514120B1-chunk-002",
+          "publication": "US9514120B1",
+          "original_claim": 18,
+          "raw_cache_record_id": "default:extract:9b8c5319f10cab0949de1137a048d7ac",
+          "raw_line_number": 19,
+          "raw_line": "relation<|#|>Apparatus<|#|>Reference<|#|>updating<|#|>The apparatus updates a reference based on the sorted feedback.",
+          "raw_to_merged_description_unchanged": true,
+          "assessment": "observed_local_actor_granularity_mismatch; qualified role-attribution warning, not demonstrated cross-publication propagation"
+        }
+      ],
+      "source_actor_evidence": {
+        "publication": "US9514120B1",
+        "claim": 18,
+        "exact_actor_prefix": "wherein the server computing machine is to:",
+        "actor_prefix_claim_char_offset": 1256,
+        "upstream_chunk_id": "US9514120B1-chunk-001",
+        "upstream_chunk_contains_actor_prefix": true,
+        "downstream_chunk_id": "US9514120B1-chunk-002",
+        "downstream_chunk_prefix": "one or more additional works to generate a combined feedback; sort the combined feedback based on the one or more parameters associated with the author-intended string to generate a sorted feedback; and update, based on the sorted feedback, a re",
+        "downstream_chunk_lacks_actor_prefix": true,
+        "downstream_content_sha256": "acd8de2188aa5f0e351b4f28d3bc69adfe94c510abc71739d4e7b707f20b5e40",
+        "scope_limit": "The claim assigns combine/sort/update to server computing machine and distinguishes provision of feedback to that role. It does not necessarily prove distinct physical machines."
+      },
+      "earliest_observed_stage": "raw entity/relationship extraction in US9514120B1-chunk-002; graph preserved these descriptions",
+      "boundary_attribution": "Clipped subject context is directly observable and a plausible contributor. No counterfactual re-extraction was run; do not claim unique chunk-boundary causation.",
+      "actual_cross_publication_unsupported_edge_observed": false,
+      "retrieval_or_answer_propagation_observed": false,
+      "review_wording_correction": "The blanket neighbor statement that all relationships have corresponding source statements needs qualification: all have source-local topic/action support, but3 preserve a coarsened/mismatched actor. observed_unsupported_edge=false should be explicitly scoped to cross-publication unsupported edges, with3 local role warnings shown separately."
+    }
+  },
+  "granularity_adjudication_recommendation": {
+    "agree_with_root_proposal": true,
+    "changes": [
+      {
+        "audit_id": "N006",
+        "initial": "shared_specific_concept",
+        "recommended": "shared_broad_class",
+        "reason": "Computer-readable storage device denotes a general computational storage/instruction carrier in distinct applications. Use the same audit granularity as Processor,Memory and other storage-media nodes."
+      },
+      {
+        "audit_id": "N015",
+        "initial": "shared_specific_concept",
+        "recommended": "shared_broad_class",
+        "reason": "Non-Transitory Computer Readable Medium is semantically equivalent in the reviewed sources to N028 Non-Transitory Computer-Readable Medium; hyphenation supplies no rationale for a specificity-class difference."
+      }
+    ],
+    "consistency_references": [
+      "N028",
+      "N036",
+      "N019 Processor"
+    ],
+    "proposed_after_counts": {
+      "shared_specific_concept": 3,
+      "shared_broad_class": 29,
+      "contextual_conflation": 6,
+      "insufficient_evidence": 0
+    },
+    "process_requirement": "Preserve initial reviewer category/reasons unchanged. Record a separate root adjudication with the explicit granularity rule and timestamp; distinguish it from frozen initial protocol and primary ratings.",
+    "meaning": "This is C1/C2 resolution-granularity consistency, not a new failure/success and not a change in semantic source support."
+  },
+  "report_recommendations": [
+    {
+      "priority": "required",
+      "recommendation": "Do not call C3 count a bug rate, wrong-merge rate, or same-individual identity error rate. It is an operational source-sense/scope classification under incomplete ontology semantics."
+    },
+    {
+      "priority": "required",
+      "recommendation": "Separate2strong word-sense distinction examples(Event,Token) from4ontology-sensitive role/class examples(First/Second/ThirdUser,Network), while preserving all six original labels and their confidence."
+    },
+    {
+      "priority": "required",
+      "recommendation": "Report no observed cross-publication unsupported-edge propagation separately from3 local Apparatus actor warnings. Do not state unqualified that every local edge is fully faithful in subject and action."
+    },
+    {
+      "priority": "required",
+      "recommendation": "Node provenance and edge source IDs constrain interpretation. Mixed descriptions and shared adjacency alone do not establish an erroneous multi-hop conclusion, retrieval contamination or answer hallucination."
+    },
+    {
+      "priority": "recommended",
+      "recommendation": "Use Token—Label edge251 as a positive source-supported cross-publication link; one mixed-sense node does not make all its source pairs or edges invalid."
+    },
+    {
+      "priority": "recommended",
+      "recommendation": "For N030 distinguish observed subject-context clipping/raw actor reassignment from hypothetical causes; no new boundary experiment or propagation test was performed."
+    }
+  ],
+  "limitations": [
+    "Focused secondary review of selected borderline/high-interest cases, not a random sample and not exhaustive independent annotation of38nodes/98source memberships.",
+    "Exact source quotes for15node-publication pairs verified against saved Claims and corresponding source chunks; this does not independently validate every claim in all incident edge descriptions.",
+    "No formal ontology or globally declared class/instance semantics is available; alternative superclass interpretations cannot be ruled out merely by differing implementations.",
+    "No new query, model call, embedding, index mutation or counterfactual re-extraction; retrieval/generation propagation not evaluated.",
+    "Graph serialization source/target order is not used to infer semantic direction for the undirected graph.",
+    "Raw response cache does not include finish_reason in these selected dossier records; no truncation conclusion inferred from absence of that metadata."
+  ],
+  "external_model_api_calls": 0,
+  "credentials_read": false,
+  "AutoDL_or_FOT_accessed": false,
+  "original_files_modified": false,
+  "main_reviews_modified": false
+}

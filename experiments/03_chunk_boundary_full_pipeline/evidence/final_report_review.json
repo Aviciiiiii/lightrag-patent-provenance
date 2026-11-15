@@ -1,0 +1,65 @@
+{
+  "reviewed_utc": "2026-10-30T03:52:12.708654+00:00",
+  "reviewer": "env_history independent final report reviewer",
+  "report_path": "<DOT_WORKDIR>/round4_full_20261030/report/LightRAG_patent_provenance_report_zh.html",
+  "report_sha256": "04ccbd962b2bc0cc0519e8a740ada6654aa7c3d656ff40dbec22a6c60718913e",
+  "outcome": "pass_after_summary_table_correction",
+  "blocking_corrections_remaining": [],
+  "corrected_during_review": [
+    {
+      "issue": "F04 summary table initially read wrong schema and showed0/unrun while six detailed rows were completed.",
+      "resolution": "Builder now reads summary_by_condition; verified latest HTML has A/B completed3 and all primary summaries3/3.",
+      "corrected_report_sha256": "04ccbd962b2bc0cc0519e8a740ada6654aa7c3d656ff40dbec22a6c60718913e"
+    }
+  ],
+  "checks": {
+    "user_third_round_title_and_internal_round4_identity_explained": true,
+    "18_fresh_indexes_and_18_mix_18_naive_18_forced_separated_from_old_M01_and_envdiag_smoke": true,
+    "M01_new_full_pipeline_not_claimed": true,
+    "full_document_scope_title_abstract_all_claims_not_full_specification": true,
+    "official_v1_5_7_current_code_not_paper_replication": true,
+    "F01_primary_relation_record_semantics_not_direct_endpoint_edges": true,
+    "F01_A3_combined_case_expert_role_description_quoted_correctly": true,
+    "F01_two_A_truncations_and_only_one_clean_pair_prominent": true,
+    "seven_of_nine_clean_pairs_correct": true,
+    "F01_predicates_intact_within_B_chunk0_and_not_irreducible_cross_fragment_loss_disclosed": true,
+    "F01_missing_record_predicates_earliest_raw_stage_not_parser_merge_error": true,
+    "F01_B2_naive_false_dependency_chain_verified_in_actual_answer_and_complete_returned_source": true,
+    "technical_core_correct_not_all_answer_claims_correct": true,
+    "F04_and_F05_primary_semantic_retention_matches_evaluations": true,
+    "F04_A1_interpretation_warning_not_definite_failure_or_unique_propagation_cause": true,
+    "F05_alias_id_difference_and_alternate_path_not_dedup_bug": true,
+    "quote_normalization_word_changes_and_omissions_not_hidden_by_core_scores": true,
+    "forced_diagnostics_separate_from_natural_scores": true,
+    "B_extra_chunks_tokens_and_single_target_document_retrieval_limits_disclosed": true,
+    "assistant_annotation_not_independent_human_or_judge_API_disclosed": true,
+    "source_id_requires_run_scope_and_hash_disclosed": true,
+    "117_LLM_247_embeddings_cost_summary_present_in_evidence": true,
+    "new_cost_1_08370008_cache_1_330566_no_cache_matches_summary": true,
+    "prior_unknown_reservation_0_315518_not_called_spending": true,
+    "combined_conservative_1_832664_arithmetic_correct": true,
+    "CSV18_rows_and_F04_entries_consistent": true,
+    "no_universal_chunk_loss_or_core_code_bug_claim": true,
+    "English_interest_paragraph_88_words_with_observational_scope": true,
+    "final_process_and_end_time_not_prematurely_claimed_in_report": true
+  },
+  "evidence_reviewed": [
+    "F01_evaluation.json summary,paired_comparison,selectedA3/B3 raw/parsed/merged support andB2naive",
+    "F04_evaluation.json summary_by_condition,paired_results,findings,limitations",
+    "F05_evaluation.json summary,conclusions,limits",
+    "M01_evaluation.json status/scope_update",
+    "cost_summary.json",
+    "results/F01_B_r2/natural_naive.json actual answer and returned chunks",
+    "report/paired_run_table.csv18rows",
+    "report latest complete HTML"
+  ],
+  "review_limitations": [
+    "No rerun, API call, secret access or source/index edits.",
+    "This review checks report against existing independently evaluated records and selected raw evidence; it does not independently recode every graph record or adjudicate all incidental answer facts.",
+    "Final process cleanup, complete package integrity and old index preservation remain separate guard/completion checks.",
+    "Prompt/context stochasticity and truncation prevent general causal claims beyond the report qualified observations."
+  ],
+  "additional_api_calls": 0,
+  "secrets_read": 0,
+  "report_modified_by_reviewer": false
+}

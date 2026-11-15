@@ -1,0 +1,316 @@
+{
+  "audit_id": "N014",
+  "node_id": "Computer Network",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两篇均把 Computer Network 用作计算机系统传输或处理信息的网络。推荐器通信与广告信息评估属于不同应用，而非两种互不兼容的 network 词义；原抽取将一处标为 Concept、另一处标为 Artifact 只是类型粒度不一致，不能据此判为混并。",
+  "class_instance_interpretation_zh": "共享计算机通信网络这一上位技术类；不是同一个网络部署，也不能把某篇专利的外部推荐器部署关系赋予另一篇。",
+  "source_assessments": [
+    {
+      "publication_number": "US7991757B2",
+      "evidence_quote": "query the plurality of external recommenders over the computer network for recommendations responsive to the second request",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "内容站点、推荐服务和外部推荐器之间请求/推荐的通信承载。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US7991757B2-chunk-000",
+        "US7991757B2-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US7991757B2-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US7991757B2.json",
+        "claim_file_sha256": "0ced9d1ec3872c98f02cad189cca345cc584f993bad73ab4d45fa1bc31e834dc",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "两块原实体描述分别概括 Claim 1 与 Claim 17，原文支持网络承载请求。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US7991757B2-chunk-000",
+            "raw_record_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+            "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 21,
+            "raw_line": "entity<|#|>Computer Network<|#|>Artifact<|#|>A network over which requests, recommendations, and scores are transmitted between content sites, the personalization network service, and external recommenders.",
+            "fields": [
+              "entity",
+              "Computer Network",
+              "Artifact",
+              "A network over which requests, recommendations, and scores are transmitted between content sites, the personalization network service, and external recommenders."
+            ]
+          },
+          {
+            "chunk_id": "US7991757B2-chunk-001",
+            "raw_record_id": "default:extract:05373d30b4b333298413a8a1419224e5",
+            "cache_key": "default:extract:05373d30b4b333298413a8a1419224e5",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 24,
+            "raw_line": "entity<|#|>Computer Network<|#|>Artifact<|#|>A network over which requests from content sites for item recommendations are received.",
+            "fields": [
+              "entity",
+              "Computer Network",
+              "Artifact",
+              "A network over which requests from content sites for item recommendations are received."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US7991757B2-chunk-000",
+            "raw_record_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+            "cache_key": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 45,
+            "raw_line": "relation<|#|>Computer Network<|#|>External Recommender<|#|>queries over<|#|>External recommenders are queried over the computer network for recommendations.",
+            "fields": [
+              "relation",
+              "Computer Network",
+              "External Recommender",
+              "queries over",
+              "External recommenders are queried over the computer network for recommendations."
+            ]
+          },
+          {
+            "chunk_id": "US7991757B2-chunk-001",
+            "raw_record_id": "default:extract:05373d30b4b333298413a8a1419224e5",
+            "cache_key": "default:extract:05373d30b4b333298413a8a1419224e5",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 69,
+            "raw_line": "relation<|#|>Computer Network<|#|>Network Service Interface<|#|>hosts<|#|>Requests are received over a computer network with a network service interface.",
+            "fields": [
+              "relation",
+              "Computer Network",
+              "Network Service Interface",
+              "hosts",
+              "Requests are received over a computer network with a network service interface."
+            ]
+          }
+        ],
+        "raw_entity_count": 2,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "External recommenders are queried over the computer network for recommendations.",
+          "keywords": "queries over",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284383,
+          "truncate": "",
+          "source": "Computer Network",
+          "target": "External Recommender",
+          "edge_index": 216,
+          "source_chunks": [
+            "US7991757B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Requests are received over a computer network with a network service interface.",
+          "keywords": "hosts",
+          "source_id": "US7991757B2-chunk-001",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284384,
+          "truncate": "",
+          "source": "Computer Network",
+          "target": "Network Service Interface",
+          "edge_index": 217,
+          "source_chunks": [
+            "US7991757B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US7991757B2-chunk-000",
+          "sha256": "44d14ac28f58ce1923e60c3a11843fe0f1dac0d16d0d7febf9882ad01fe17259",
+          "characters": 6819
+        },
+        {
+          "chunk_id": "US7991757B2-chunk-001",
+          "sha256": "e47c6e4c92c4b2d8567f8a01218a71a0dfe0ef1d353d28abc5f8acac2212e6f3",
+          "characters": 4716
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "evidence_quote": "A system to evaluate information via a computer network",
+      "claim_or_section": "Claim 13",
+      "claim_number": 13,
+      "role_zh": "停放域名广告信息评估系统使用的计算机网络。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9304738B1-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9304738B1-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9304738B1.json",
+        "claim_file_sha256": "807035dfe18845ee6d0df5c1c655df3f6fe0f045e877c8c95866b22b15f4faa2",
+        "claim_number": 13
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "原实体描述和 Data Processing System 邻边直接对应 Claim 13 的 system preamble。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 21,
+            "raw_line": "entity<|#|>Computer Network<|#|>Concept<|#|>A network via which the system evaluates information.",
+            "fields": [
+              "entity",
+              "Computer Network",
+              "Concept",
+              "A network via which the system evaluates information."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9304738B1-chunk-001",
+            "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 50,
+            "raw_line": "relation<|#|>Data Processing System<|#|>Computer Network<|#|>evaluates information via<|#|>The data processing system evaluates information via a computer network.",
+            "fields": [
+              "relation",
+              "Data Processing System",
+              "Computer Network",
+              "evaluates information via",
+              "The data processing system evaluates information via a computer network."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 1
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The data processing system evaluates information via a computer network.",
+          "keywords": "evaluates information via",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Computer Network",
+          "edge_index": 18,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9304738B1-chunk-001",
+          "sha256": "886071717df3356cda9c51bbd4b7299b9087e0e835cf5f86a477e6df3d50296d",
+          "characters": 6652
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 3,
+    "observed_unsupported_edge": false,
+    "details_zh": "已逐条审阅实际邻边及其 source_id。未确认一条缺少其自身来源支持的边；合并后的跨文档邻接不能当成已发生错误边传播的证据。",
+    "edge_indices": [
+      18,
+      216,
+      217
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 18,
+        "source_id": "US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9304738B1 Claim 13",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 216,
+        "source_id": "US7991757B2-chunk-000",
+        "canonical_publications": [
+          "US7991757B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US7991757B2 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 217,
+        "source_id": "US7991757B2-chunk-001",
+        "canonical_publications": [
+          "US7991757B2"
+        ],
+        "assessment": "locally_supported_with_qualification",
+        "source_evidence_claims": "US7991757B2 Claim 17",
+        "details_zh": "原文是 requests received over a computer network with a network service interface；描述保留这一陈述，但 keywords=hosts 比原文更具体。未据此确认接口部署/托管事实，也未把关键词粒度问题归因于跨专利混并。"
+      }
+    ],
+    "retrieval_or_generation_propagation_tested": false
+  },
+  "limitations_zh": [
+    "这是 AI 辅助原文/抽取/图结构审阅，非独立人工标注 gold、非新的模型评判 API 实验。",
+    "仅审核当前保存的第二轮图快照与其来源块；概念合并不等于实例 sameAs，也没有进行跨专利路径检索或答案生成传播实验。",
+    "原文为已索引摘要及 Claims；没有用外部说明书填补缺失事实。原始文本中的格式缺陷保持原样。",
+    "边的端点顺序来自保存的无向图；语义方向按原关系描述核对，不把 source/target 字段顺序当作因果方向。",
+    "observed_unsupported_edge=false 表示本次检查未确认无原文支持的实际边，不是证明全图无误；关键词粒度/局部实施例范围的警示另记。",
+    "未给定显式类/实例 ontology。类别是基于具体词义及作用域的审阅标签，contextual_conflation 数量不是错误边数或代码 bug 率；Event/Network 的宽类解释可改变类别。",
+    "缓存提取行未保存 finish_reason 时不推定完整或截断；本审核只对实际保存的实体/关系行与当前已入图事实作语义核验。"
+  ],
+  "ontology_sensitivity": {
+    "explicit_ontology_available": false,
+    "alternative_shared_broad_class_plausible": false,
+    "interpretation_zh": "类别只描述现有证据下的概念语义，未断言跨专利实例相同或已发生错误推理。"
+  },
+  "review_method": {
+    "reviewer": "AI-assisted Codex content review",
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "all_source_publications_reviewed": 2,
+    "all_source_chunks_reviewed": 3,
+    "all_actual_incident_edges_reviewed": 3,
+    "raw_input_kind": "saved extraction rows; no new extraction",
+    "review_protocol_sha256": "bbed066b8051df60997798d319549164d750797ebef3d7c1e86d69ffc6092255",
+    "dossier_sha256": "87c767b3a181718bbd08e9a38c3f7085262e949a5db862e59450583b011db88f",
+    "generated_utc": "2026-10-30T08:21:11.041427+00:00"
+  },
+  "graph_node_description_reviewed": "A network via which the system evaluates information.<SEP>A network over which requests, recommendations, and scores are transmitted between content sites, the personalization network service, and external recommenders.<SEP>A network over which requests from content sites for item recommendations are received."
+}

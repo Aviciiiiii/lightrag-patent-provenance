@@ -1,0 +1,1061 @@
+{
+  "source": "round2/evidence/extraction_truncation_parser_replay.json",
+  "raw_response": "round2/logs/api_0191_response.json",
+  "input_type": "official unchanged TruncatedResponse class",
+  "chunk_id": "US9218390B2-chunk-000",
+  "timestamp": 0,
+  "file_path": "US9218390B2.txt",
+  "node_group_count_equal": true,
+  "edge_group_count_equal": true,
+  "feature_node_records_equal": true,
+  "feature_edge_records_equal": true,
+  "partial_edge_absence_equal": true,
+  "scope": "Exact equality of saved13 feature-node groups and4 feature-edge groups including5 edge records, both total group counts42/34, and absent truncated membership edge. Round2 did not retain every parsed record in this replay artifact, so full-record equality across all42/34 groups is not claimed.",
+  "parsed_nodes": {
+    "Query Parser Derivation Computing Device": [
+      {
+        "entity_name": "Query Parser Derivation Computing Device",
+        "entity_type": "artifact",
+        "description": "A computing device that derives a query parser for parsing unstructured geographic web-search queries into a field-based format.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Query Parser": [
+      {
+        "entity_name": "Query Parser",
+        "entity_type": "artifact",
+        "description": "A parser derived by the query parser derivation computing device that parses unstructured geographic web-search queries into a field-based format using conditional random fields.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Unstructured Geographic Web-Search Query": [
+      {
+        "entity_name": "Unstructured Geographic Web-Search Query",
+        "entity_type": "data",
+        "description": "An unstructured search query of a geographic nature that is parsed into a field-based format.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Conditional Random Fields": [
+      {
+        "entity_name": "Conditional Random Fields",
+        "entity_type": "method",
+        "description": "A statistical modeling method learned by semi-supervised automated learning and used to parse structured information from unstructured geographic web-search queries.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Semi-Supervised Automated Learning": [
+      {
+        "entity_name": "Semi-Supervised Automated Learning",
+        "entity_type": "method",
+        "description": "An automated learning approach by which the conditional random fields are learned.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Rule-Based Finite State Machine Model": [
+      {
+        "entity_name": "Rule-Based Finite State Machine Model",
+        "entity_type": "method",
+        "description": "One of the models that may be used to establish the semi-supervised conditional random fields.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Statistics-Based Conditional Random Field Model": [
+      {
+        "entity_name": "Statistics-Based Conditional Random Field Model",
+        "entity_type": "method",
+        "description": "One of the models that may be used to establish the semi-supervised conditional random fields.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Systematic Geographic Parsing": [
+      {
+        "entity_name": "Systematic Geographic Parsing",
+        "entity_type": "method",
+        "description": "A parsing technique used with the rule-based finite state machine model or the statistics-based conditional random field model to establish the semi-supervised conditional random fields.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Learned Model Parser": [
+      {
+        "entity_name": "Learned Model Parser",
+        "entity_type": "artifact",
+        "description": "A parser applied to an unstructured local geographical web-based query in a local domain, comprising at least one class-level n-gram language model-based feature.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Class-Based Query Log": [
+      {
+        "entity_name": "Class-Based Query Log",
+        "entity_type": "data",
+        "description": "A query log from a form-based query system used in applying the learned model parser to a query.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Form-Based Query System": [
+      {
+        "entity_name": "Form-Based Query System",
+        "entity_type": "artifact",
+        "description": "A query system that provides the class-based query log.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Class-Level N-Gram Language Model-Based Feature": [
+      {
+        "entity_name": "Class-Level N-Gram Language Model-Based Feature",
+        "entity_type": "data",
+        "description": "A feature harvested from a structured query log and comprised by the learned model parser.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Structured Query Log": [
+      {
+        "entity_name": "Structured Query Log",
+        "entity_type": "data",
+        "description": "A log from which the class-level n-gram language model-based feature is harvested.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Input Query": [
+      {
+        "entity_name": "Input Query",
+        "entity_type": "data",
+        "description": "A query received as input that comprises a series of tokens.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Tokens": [
+      {
+        "entity_name": "Tokens",
+        "entity_type": "data",
+        "description": "The series of tokens comprising the input query, to which labels are assigned.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Labels": [
+      {
+        "entity_name": "Labels",
+        "entity_type": "data",
+        "description": "Labels assigned to tokens of the input query, identifying them as corresponding to a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Most Probable Label Sequence": [
+      {
+        "entity_name": "Most Probable Label Sequence",
+        "entity_type": "data",
+        "description": "The calculated most probable sequence of labels for the input query.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Sentences": [
+      {
+        "entity_name": "Sentences",
+        "entity_type": "data",
+        "description": "Sentences assigned to each label based at least in part on the most probable label sequence, different from the labels.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Feature Functions": [
+      {
+        "entity_name": "Feature Functions",
+        "entity_type": "concept",
+        "description": "A set of one or more feature functions representing a state transition feature and/or features of an output state for an input sequence, used to compute a conditional probability.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "State Transition Feature": [
+      {
+        "entity_name": "State Transition Feature",
+        "entity_type": "concept",
+        "description": "A feature representing a state transition, trained on a labeled set with learning limited relative to learning the output state features.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Output State Features": [
+      {
+        "entity_name": "Output State Features",
+        "entity_type": "concept",
+        "description": "One or more features of an output state for an input sequence, trained on a labeled set.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Labeled Set": [
+      {
+        "entity_name": "Labeled Set",
+        "entity_type": "data",
+        "description": "A set of labeled data on which the state transition features and output state features are trained.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Structured Information": [
+      {
+        "entity_name": "Structured Information",
+        "entity_type": "data",
+        "description": "Information produced from the unstructured geographic web-search query by utilizing the conditional random fields.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Multiple Interpretation Condition": [
+      {
+        "entity_name": "Multiple Interpretation Condition",
+        "entity_type": "concept",
+        "description": "A condition in which parsing the unstructured geographic web-search query results in multiple interpretations.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "First Interpretation": [
+      {
+        "entity_name": "First Interpretation",
+        "entity_type": "concept",
+        "description": "A first interpretation of the unstructured geographic web-search query corresponding to first parsing results.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Second Interpretation": [
+      {
+        "entity_name": "Second Interpretation",
+        "entity_type": "concept",
+        "description": "A second interpretation of the unstructured geographic web-search query corresponding to second parsing results.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "First Parsing Results": [
+      {
+        "entity_name": "First Parsing Results",
+        "entity_type": "data",
+        "description": "Parsing results corresponding to the first interpretation of the unstructured geographic web-search query.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Second Parsing Results": [
+      {
+        "entity_name": "Second Parsing Results",
+        "entity_type": "data",
+        "description": "Parsing results corresponding to the second interpretation of the unstructured geographic web-search query.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "User Behavior Data": [
+      {
+        "entity_name": "User Behavior Data",
+        "entity_type": "data",
+        "description": "Data used to disambiguate the first parsing results and the second parsing results.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "Class-Based Language Model Features": [
+      {
+        "entity_name": "Class-Based Language Model Features",
+        "entity_type": "data",
+        "description": "Features comprising at least one token appearing in a defined position in a model feature comprising a grouping of tokens of a given length n.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "GEO_UNI_FIRST": [
+      {
+        "entity_name": "GEO_UNI_FIRST",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the first token in a grouping of tokens of length one relating to a geographic term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "GEO_BI_FIRST": [
+      {
+        "entity_name": "GEO_BI_FIRST",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the first token in a grouping of tokens of length two relating to a geographic term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "GEO_BI_SECOND": [
+      {
+        "entity_name": "GEO_BI_SECOND",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the second token in a grouping of tokens of length two relating to a geographic term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "GEO_TRI_FIRST": [
+      {
+        "entity_name": "GEO_TRI_FIRST",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the first token in a grouping of tokens of length three relating to a geographic term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "GEO_TRI_SECOND": [
+      {
+        "entity_name": "GEO_TRI_SECOND",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the second token in a grouping of tokens of length three relating to a geographic term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "GEO_TRI_THIRD": [
+      {
+        "entity_name": "GEO_TRI_THIRD",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the third token in a grouping of tokens of length three relating to a geographic term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "ST_UNI_FIRST": [
+      {
+        "entity_name": "ST_UNI_FIRST",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the first token in a grouping of tokens of length one relating to a search term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "ST_BI_FIRST": [
+      {
+        "entity_name": "ST_BI_FIRST",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the first token in a grouping of tokens of length two relating to a search term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "ST_BI_SECOND": [
+      {
+        "entity_name": "ST_BI_SECOND",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the second token in a grouping of tokens of length two relating to a search term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "ST_TRI_FIRST": [
+      {
+        "entity_name": "ST_TRI_FIRST",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the first token in a grouping of tokens of length three relating to a search term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "ST_TRI_SECOND": [
+      {
+        "entity_name": "ST_TRI_SECOND",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the second token in a grouping of tokens of length three relating to a search term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ],
+    "ST_TRI_THIRD": [
+      {
+        "entity_name": "ST_TRI_THIRD",
+        "entity_type": "data",
+        "description": "A class-based language model feature for the third token in a grouping of tokens of length three relating to a search term.",
+        "source_id": "US9218390B2-chunk-000",
+        "file_path": "US9218390B2.txt",
+        "timestamp": 0
+      }
+    ]
+  },
+  "parsed_edges": [
+    {
+      "endpoints": [
+        "Query Parser Derivation Computing Device",
+        "Query Parser"
+      ],
+      "records": [
+        {
+          "src_id": "Query Parser Derivation Computing Device",
+          "tgt_id": "Query Parser",
+          "weight": 1.0,
+          "description": "The query parser derivation computing device derives the query parser for parsing unstructured geographic web-search queries into a field-based format.",
+          "keywords": "derives, creates",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Query Parser",
+        "Unstructured Geographic Web-Search Query"
+      ],
+      "records": [
+        {
+          "src_id": "Query Parser",
+          "tgt_id": "Unstructured Geographic Web-Search Query",
+          "weight": 1.0,
+          "description": "The query parser parses the unstructured geographic web-search query into a field-based format.",
+          "keywords": "parses",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Query Parser",
+        "Conditional Random Fields"
+      ],
+      "records": [
+        {
+          "src_id": "Query Parser",
+          "tgt_id": "Conditional Random Fields",
+          "weight": 1.0,
+          "description": "The query parser utilizes conditional random fields learned by semi-supervised automated learning to produce structured information from the unstructured geographic web-search query.",
+          "keywords": "utilizes",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Conditional Random Fields",
+        "Semi-Supervised Automated Learning"
+      ],
+      "records": [
+        {
+          "src_id": "Conditional Random Fields",
+          "tgt_id": "Semi-Supervised Automated Learning",
+          "weight": 1.0,
+          "description": "The conditional random fields are learned by semi-supervised automated learning.",
+          "keywords": "learned by",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Conditional Random Fields",
+        "Rule-Based Finite State Machine Model"
+      ],
+      "records": [
+        {
+          "src_id": "Conditional Random Fields",
+          "tgt_id": "Rule-Based Finite State Machine Model",
+          "weight": 1.0,
+          "description": "The semi-supervised conditional random fields may be established via the rule-based finite state machine model.",
+          "keywords": "established via",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Conditional Random Fields",
+        "Statistics-Based Conditional Random Field Model"
+      ],
+      "records": [
+        {
+          "src_id": "Conditional Random Fields",
+          "tgt_id": "Statistics-Based Conditional Random Field Model",
+          "weight": 1.0,
+          "description": "The semi-supervised conditional random fields may be established via the statistics-based conditional random field model.",
+          "keywords": "established via",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Systematic Geographic Parsing",
+        "Rule-Based Finite State Machine Model"
+      ],
+      "records": [
+        {
+          "src_id": "Systematic Geographic Parsing",
+          "tgt_id": "Rule-Based Finite State Machine Model",
+          "weight": 1.0,
+          "description": "Systematic geographic parsing is used with the rule-based finite state machine model.",
+          "keywords": "used with",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Systematic Geographic Parsing",
+        "Statistics-Based Conditional Random Field Model"
+      ],
+      "records": [
+        {
+          "src_id": "Systematic Geographic Parsing",
+          "tgt_id": "Statistics-Based Conditional Random Field Model",
+          "weight": 1.0,
+          "description": "Systematic geographic parsing is used with the statistics-based conditional random field model.",
+          "keywords": "used with",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Learned Model Parser",
+        "Class-Based Query Log"
+      ],
+      "records": [
+        {
+          "src_id": "Learned Model Parser",
+          "tgt_id": "Class-Based Query Log",
+          "weight": 1.0,
+          "description": "The learned model parser is applied to a query using at least one class-based query log.",
+          "keywords": "uses",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Class-Based Query Log",
+        "Form-Based Query System"
+      ],
+      "records": [
+        {
+          "src_id": "Class-Based Query Log",
+          "tgt_id": "Form-Based Query System",
+          "weight": 1.0,
+          "description": "The class-based query log comes from a form-based query system.",
+          "keywords": "from",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Learned Model Parser",
+        "Class-Level N-Gram Language Model-Based Feature"
+      ],
+      "records": [
+        {
+          "src_id": "Learned Model Parser",
+          "tgt_id": "Class-Level N-Gram Language Model-Based Feature",
+          "weight": 1.0,
+          "description": "The learned model parser comprises at least one class-level n-gram language model-based feature.",
+          "keywords": "comprises",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Class-Level N-Gram Language Model-Based Feature",
+        "Structured Query Log"
+      ],
+      "records": [
+        {
+          "src_id": "Class-Level N-Gram Language Model-Based Feature",
+          "tgt_id": "Structured Query Log",
+          "weight": 1.0,
+          "description": "The class-level n-gram language model-based feature is harvested from a structured query log.",
+          "keywords": "harvested from",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Query Parser Derivation Computing Device",
+        "Input Query"
+      ],
+      "records": [
+        {
+          "src_id": "Query Parser Derivation Computing Device",
+          "tgt_id": "Input Query",
+          "weight": 1.0,
+          "description": "The query parser derivation computing device receives an input query comprising a series of tokens.",
+          "keywords": "receives",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Input Query",
+        "Tokens"
+      ],
+      "records": [
+        {
+          "src_id": "Input Query",
+          "tgt_id": "Tokens",
+          "weight": 1.0,
+          "description": "The input query comprises a series of tokens.",
+          "keywords": "comprises",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Tokens",
+        "Labels"
+      ],
+      "records": [
+        {
+          "src_id": "Tokens",
+          "tgt_id": "Labels",
+          "weight": 1.0,
+          "description": "A label is assigned to each of a plurality of the tokens.",
+          "keywords": "assigned",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Input Query",
+        "Most Probable Label Sequence"
+      ],
+      "records": [
+        {
+          "src_id": "Input Query",
+          "tgt_id": "Most Probable Label Sequence",
+          "weight": 1.0,
+          "description": "The most probable label sequence is calculated for the input query.",
+          "keywords": "calculated for",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Labels",
+        "Sentences"
+      ],
+      "records": [
+        {
+          "src_id": "Labels",
+          "tgt_id": "Sentences",
+          "weight": 1.0,
+          "description": "One or more sentences are assigned to each label based at least in part on the most probable label sequence.",
+          "keywords": "assigned",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Conditional Random Fields",
+        "Feature Functions"
+      ],
+      "records": [
+        {
+          "src_id": "Conditional Random Fields",
+          "tgt_id": "Feature Functions",
+          "weight": 1.0,
+          "description": "A conditional random field model is created based at least in part on the tokens, the labels, and a set of feature functions.",
+          "keywords": "created based on",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Feature Functions",
+        "State Transition Feature"
+      ],
+      "records": [
+        {
+          "src_id": "Feature Functions",
+          "tgt_id": "State Transition Feature",
+          "weight": 1.0,
+          "description": "The set of feature functions represents a state transition feature.",
+          "keywords": "represent",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Feature Functions",
+        "Output State Features"
+      ],
+      "records": [
+        {
+          "src_id": "Feature Functions",
+          "tgt_id": "Output State Features",
+          "weight": 1.0,
+          "description": "The set of feature functions represents one or more features of an output state for an input sequence.",
+          "keywords": "represent",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "State Transition Feature",
+        "Labeled Set"
+      ],
+      "records": [
+        {
+          "src_id": "State Transition Feature",
+          "tgt_id": "Labeled Set",
+          "weight": 1.0,
+          "description": "The state transition features are trained on a labeled set.",
+          "keywords": "trained on",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Output State Features",
+        "Labeled Set"
+      ],
+      "records": [
+        {
+          "src_id": "Output State Features",
+          "tgt_id": "Labeled Set",
+          "weight": 1.0,
+          "description": "The output state features are trained on a labeled set.",
+          "keywords": "trained on",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Conditional Random Fields",
+        "Structured Information"
+      ],
+      "records": [
+        {
+          "src_id": "Conditional Random Fields",
+          "tgt_id": "Structured Information",
+          "weight": 1.0,
+          "description": "The conditional random fields are utilized to produce structured information from the unstructured geographic web-search query.",
+          "keywords": "produces",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Unstructured Geographic Web-Search Query",
+        "Multiple Interpretation Condition"
+      ],
+      "records": [
+        {
+          "src_id": "Unstructured Geographic Web-Search Query",
+          "tgt_id": "Multiple Interpretation Condition",
+          "weight": 1.0,
+          "description": "Parsing the unstructured geographic web-search query may result in a multiple interpretation condition.",
+          "keywords": "results in",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Multiple Interpretation Condition",
+        "First Interpretation"
+      ],
+      "records": [
+        {
+          "src_id": "Multiple Interpretation Condition",
+          "tgt_id": "First Interpretation",
+          "weight": 1.0,
+          "description": "The parsing identifies a first interpretation of the unstructured geographic web-search query.",
+          "keywords": "identifies",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Multiple Interpretation Condition",
+        "Second Interpretation"
+      ],
+      "records": [
+        {
+          "src_id": "Multiple Interpretation Condition",
+          "tgt_id": "Second Interpretation",
+          "weight": 1.0,
+          "description": "The parsing identifies a second interpretation of the unstructured geographic web-search query.",
+          "keywords": "identifies",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "First Interpretation",
+        "First Parsing Results"
+      ],
+      "records": [
+        {
+          "src_id": "First Interpretation",
+          "tgt_id": "First Parsing Results",
+          "weight": 1.0,
+          "description": "The first interpretation corresponds to first parsing results.",
+          "keywords": "corresponds to",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Second Interpretation",
+        "Second Parsing Results"
+      ],
+      "records": [
+        {
+          "src_id": "Second Interpretation",
+          "tgt_id": "Second Parsing Results",
+          "weight": 1.0,
+          "description": "The second interpretation corresponds to second parsing results.",
+          "keywords": "corresponds to",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "User Behavior Data",
+        "First Parsing Results"
+      ],
+      "records": [
+        {
+          "src_id": "User Behavior Data",
+          "tgt_id": "First Parsing Results",
+          "weight": 1.0,
+          "description": "Based at least in part on user behavior data, the first parsing results and the second parsing results are disambiguated to select the first parsing results.",
+          "keywords": "disambiguates",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "User Behavior Data",
+        "Second Parsing Results"
+      ],
+      "records": [
+        {
+          "src_id": "User Behavior Data",
+          "tgt_id": "Second Parsing Results",
+          "weight": 1.0,
+          "description": "Based at least in part on user behavior data, the first parsing results and the second parsing results are disambiguated to select the first parsing results.",
+          "keywords": "disambiguates",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Query Parser Derivation Computing Device",
+        "Class-Based Language Model Features"
+      ],
+      "records": [
+        {
+          "src_id": "Query Parser Derivation Computing Device",
+          "tgt_id": "Class-Based Language Model Features",
+          "weight": 1.0,
+          "description": "The query parser derivation computing device defines class-based language model features.",
+          "keywords": "defines",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        },
+        {
+          "src_id": "Query Parser Derivation Computing Device",
+          "tgt_id": "Class-Based Language Model Features",
+          "weight": 1.0,
+          "description": "The query parser derivation computing device utilizes the class-based language model features as high-level language model features in deriving the query parser.",
+          "keywords": "utilizes",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Class-Based Language Model Features",
+        "GEO_UNI_FIRST"
+      ],
+      "records": [
+        {
+          "src_id": "Class-Based Language Model Features",
+          "tgt_id": "GEO_UNI_FIRST",
+          "weight": 1.0,
+          "description": "The class-based language model features include GEO_UNI_FIRST.",
+          "keywords": "includes",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Class-Based Language Model Features",
+        "GEO_BI_FIRST"
+      ],
+      "records": [
+        {
+          "src_id": "Class-Based Language Model Features",
+          "tgt_id": "GEO_BI_FIRST",
+          "weight": 1.0,
+          "description": "The class-based language model features include GEO_BI_FIRST.",
+          "keywords": "includes",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "endpoints": [
+        "Class-Based Language Model Features",
+        "GEO_BI_SECOND"
+      ],
+      "records": [
+        {
+          "src_id": "Class-Based Language Model Features",
+          "tgt_id": "GEO_BI_SECOND",
+          "weight": 1.0,
+          "description": "The class-based language model features include GEO_BI_SECOND.",
+          "keywords": "includes",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "timestamp": 0
+        }
+      ]
+    }
+  ],
+  "all_saved_comparisons_passed": true
+}

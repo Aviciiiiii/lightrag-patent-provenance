@@ -1,0 +1,71 @@
+{
+  "group": "M01",
+  "status": "not_run_by_scope_update",
+  "complete_six_runs": false,
+  "new_official_runs": 0,
+  "new_api_calls": 0,
+  "summary": null,
+  "runs": [
+    {
+      "run_id": "M01_A_r1",
+      "condition": "A",
+      "repeat": 1,
+      "status": "not_run_by_scope_update",
+      "eligible": false,
+      "scores": null
+    },
+    {
+      "run_id": "M01_B_r1",
+      "condition": "B",
+      "repeat": 1,
+      "status": "not_run_by_scope_update",
+      "eligible": false,
+      "scores": null
+    },
+    {
+      "run_id": "M01_B_r2",
+      "condition": "B",
+      "repeat": 2,
+      "status": "not_run_by_scope_update",
+      "eligible": false,
+      "scores": null
+    },
+    {
+      "run_id": "M01_A_r2",
+      "condition": "A",
+      "repeat": 2,
+      "status": "not_run_by_scope_update",
+      "eligible": false,
+      "scores": null
+    },
+    {
+      "run_id": "M01_A_r3",
+      "condition": "A",
+      "repeat": 3,
+      "status": "not_run_by_scope_update",
+      "eligible": false,
+      "scores": null
+    },
+    {
+      "run_id": "M01_B_r3",
+      "condition": "B",
+      "repeat": 3,
+      "status": "not_run_by_scope_update",
+      "eligible": false,
+      "scores": null
+    }
+  ],
+  "manual_review_status": "not_applicable_no_new_outputs",
+  "scope_update": {
+    "updated_utc": "2026-10-30T03:43:24.699676+00:00",
+    "group": "M01",
+    "status": "not_run_by_scope_update",
+    "reason": "Parent conveyed latest user scope: preserve previously completed Claim1/27 minimal experiment; do not repeat it. No new official M01 full-pipeline calls were started.",
+    "preserved": "M01_scoring_protocol.json and prepared evaluation script retained as unexecuted future rubric. Earlier round4 partial AST and envdiag smoke remain separate.",
+    "new_M01_api_calls": 0,
+    "new_M01_indexes": 0,
+    "do_not_substitute_old_results": true
+  },
+  "rubric": "evidence/M01_scoring_protocol.json",
+  "old_results_not_mixed": true
+}

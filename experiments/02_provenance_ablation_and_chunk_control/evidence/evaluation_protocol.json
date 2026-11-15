@@ -1,0 +1,26 @@
+{
+  "ablation": {
+    "primary_error": "Positive wrong-source assignment/exclusion: attributes the retrieved registration capability to another patent/family, explicitly excludes US7991757B2 as its source, or cites a different patent as support for that capability. Neutral insufficient-source abstention is separate.",
+    "document_attribution": "Correctly identifies US7991757B2 as source of the registration capability.",
+    "claim_task": "Correctly distinguishes Claim1 registration from Claim27 addition of machine-readable descriptions and Claim27 dependence on Claim1; claims must be grounded in evidence actually supplied for that condition.",
+    "quote_fidelity": "Distinguish original Claim quotations from graph-description paraphrases; spelling/punctuation normalization disclosed.",
+    "citation": "Separate prose source attribution from formal reference-ID validity; reference list remains unchanged and lacks target in all conditions.",
+    "repeats": "3 each, order ABC/BCA/CAB, temp0, no seed; report observed counts only, no population significance or universal guarantee.",
+    "comparison": "A vs B isolates addition of three provenance fields across existing relation records, with unavoidable token-length/attention changes. C vs B is additional original-evidence diagnostic. No single-field effect can be separated."
+  },
+  "chunk": {
+    "primary": "Faithful target technical relationship present in parsed relationship records: the registration module allows a provider of an external recommender to provide machine readable descriptions of that recommender. Semantic wording allowed; edge endpoints alone are not sufficient.",
+    "secondary": "Direct Registration Module to Machine-readable Descriptions edge; separately report entity-description-only preservation and any unsupported cross-chunk completion.",
+    "legal_dependency": "Claim27 depends on Claim1 is separate exploratory target, not interchangeable with technical relation.",
+    "validity": "Any finish_reason=length invalidates that repetition for boundary-loss attribution. Same literal original text/order,2calls,zerooverlap,identicalprompt/parameters/outputlimit per condition.",
+    "scope": "Artificial boundary control on tiny excerpt; neither natural-chunk failure frequency nor full-system-answer failure."
+  },
+  "review": "AI-assisted evidence review plus mechanical assertions; no independent human annotation claimed.",
+  "pre_chunk_wording_correction": {
+    "utc": "2026-10-29T16:14:23.129821+00:00",
+    "before_first_chunk_call": true,
+    "reason": "Replace loose word algorithms with the exact original object: external recommender. No target outcomes inspected."
+  },
+  "written_utc": "2026-10-29T16:12:40.327553+00:00",
+  "protocol_timing_note": "A/B/C criteria were recorded in conditions/condition_manifest.json at16:08:44 before ablation dispatch. This consolidated protocol was written at16:12:40, three seconds after ablation calls completed, before root inspected answer content. It must not be represented as independently preregistered before those calls. Chunk wording was corrected before the first chunk-control call."
+}

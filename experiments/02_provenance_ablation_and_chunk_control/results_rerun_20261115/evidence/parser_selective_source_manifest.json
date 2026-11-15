@@ -1,0 +1,227 @@
+{
+  "official_source_root": "<ORIG_COPY>/LightRAG_PINNED_28ff1b05",
+  "official_commit": "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+  "git_worktree_clean": true,
+  "official_origin_verified": true,
+  "selected_files_equal_pinned_git_blobs": true,
+  "selected_file_sha256": {
+    "lightrag/_version.py": "6dd9edee78ddd7c0c7822a79214d9db424cb2cc18ca3b61136cc84a71868840a",
+    "lightrag/constants.py": "295f3e46121b111ead3e164231ff363a4a6b0231c9bd530c370b88346157b3b7",
+    "lightrag/utils.py": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc",
+    "lightrag/operate.py": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047"
+  },
+  "load_mode": "selective execution of unchanged official AST nodes; not normal package import",
+  "official_version": "1.5.7",
+  "tracked_source_diff_empty": true,
+  "selected_nodes": [
+    {
+      "name": "__version__",
+      "file": "lightrag/_version.py",
+      "first_line": 3,
+      "last_line": 3,
+      "source_sha256": "f3598ce8c521d770f9b4987758ea286a540484472555b101ae51a6efd1636782",
+      "ast_sha256": "f21e006d1ded00f983f1604751018ea4938c7fd3b1f1c85f29cb32d56b7ed8ee",
+      "file_sha256": "6dd9edee78ddd7c0c7822a79214d9db424cb2cc18ca3b61136cc84a71868840a"
+    },
+    {
+      "name": "DEFAULT_ENTITY_NAME_MAX_LENGTH",
+      "file": "lightrag/constants.py",
+      "first_line": 18,
+      "last_line": 18,
+      "source_sha256": "d7c2cc471ebac2ccf43b0e62fe05fa2a197dc7280f9899b522ffeb64ba8b6d3e",
+      "ast_sha256": "267a29c736b5c35c0478be237f805c05445cbdcd413716db0adb4994c2b4570a",
+      "file_sha256": "295f3e46121b111ead3e164231ff363a4a6b0231c9bd530c370b88346157b3b7"
+    },
+    {
+      "name": "DEFAULT_ENTITY_NAME_MAX_BYTES",
+      "file": "lightrag/constants.py",
+      "first_line": 23,
+      "last_line": 23,
+      "source_sha256": "0968237edcd613404cc3bebd6a20466051e22bf083b47cc48489b1c4509cb5db",
+      "ast_sha256": "abfb8137127b15640ec49df173dc8fab008c7bf18fd2f5f7d365238429c4ed01",
+      "file_sha256": "295f3e46121b111ead3e164231ff363a4a6b0231c9bd530c370b88346157b3b7"
+    },
+    {
+      "name": "_SURROGATE_PATTERN",
+      "file": "lightrag/utils.py",
+      "first_line": 65,
+      "last_line": 65,
+      "source_sha256": "1f3e0ab85ced4b11d003003bef609eae315de440101b4ee6f5570ba86c89cb1d",
+      "ast_sha256": "43b117ad335e15b54c52c8236c5042bdb5cdd39c25c0da29189c62f2e4df60b2",
+      "file_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+    },
+    {
+      "name": "_CONTROL_CHAR_PATTERN_ALL",
+      "file": "lightrag/utils.py",
+      "first_line": 66,
+      "last_line": 66,
+      "source_sha256": "0dbe3fd84f12bf99672c9345210c24a3411d0475dc3f3d40932038c3dac4ddac",
+      "ast_sha256": "81fe8bf9bf71c01929d531b8411fb58ca89ca43c969b4ad9dea68707beeee488",
+      "file_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+    },
+    {
+      "name": "TruncatedResponse",
+      "file": "lightrag/utils.py",
+      "first_line": 4875,
+      "last_line": 4888,
+      "source_sha256": "cf6bdb5710e7931ff1787ed43ed2342d16402dc6bdf3565d4a897689bc618306",
+      "ast_sha256": "bd04311bc6a11ea7fb91469daa9531afb4e67ee495ec0e4b99763eed53b304a8",
+      "file_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+    },
+    {
+      "name": "is_truncated_response",
+      "file": "lightrag/utils.py",
+      "first_line": 4891,
+      "last_line": 4898,
+      "source_sha256": "54fc3115938f77c23699fc6f55a5b9a2c7c12c1c0e8ac2119c95046a57c8dde8",
+      "ast_sha256": "9df5880a49d6868594b00978fc8096fa6653bb29c56d943c5f78b73ad47ff4c4",
+      "file_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+    },
+    {
+      "name": "split_string_by_multi_markers",
+      "file": "lightrag/utils.py",
+      "first_line": 3694,
+      "last_line": 3700,
+      "source_sha256": "a8f4888c4d33b55bd0378b0fe6e0a01d99deea50e0cd76b25053bb143894c6f1",
+      "ast_sha256": "9fdee93d667395ee1b68c1ae82c0bb21c907503248e0aa2206bfebf606b39d03",
+      "file_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+    },
+    {
+      "name": "_cooperative_yield",
+      "file": "lightrag/utils.py",
+      "first_line": 4268,
+      "last_line": 4275,
+      "source_sha256": "4f5a3ef728c5d10ef24b644227da4804485ab6e3acce1a1d5fa29b73d52a196c",
+      "ast_sha256": "7cd936df126d0478f5637f0d6ebf2638e2c81c6048bda0af135c8fdc98f6986c",
+      "file_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+    },
+    {
+      "name": "normalize_extracted_info",
+      "file": "lightrag/utils.py",
+      "first_line": 5396,
+      "last_line": 5526,
+      "source_sha256": "a639cbb668c1bfbe4f0c1c6997284ee6082ffbaa0212862d6ef637ca3717ee45",
+      "ast_sha256": "419ef85381c11d57d2cc0a9e88546761fd9db2a7a82e40e6612d62e52c2bce38",
+      "file_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+    },
+    {
+      "name": "sanitize_text_for_encoding",
+      "file": "lightrag/utils.py",
+      "first_line": 5529,
+      "last_line": 5567,
+      "source_sha256": "37f2aaf8ffd2ee83e171247a9e0ec766ab0126070047683ae8b1c4bb29255c51",
+      "ast_sha256": "a1990f011e195bd5e4a5efc7772e2bc6249bcd52e2396155dc1be9faa81debd2",
+      "file_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+    },
+    {
+      "name": "sanitize_and_normalize_extracted_text",
+      "file": "lightrag/utils.py",
+      "first_line": 5371,
+      "last_line": 5388,
+      "source_sha256": "bd9034e2ea1cadd80b017fa6a060dbb124786812b1e0529a23c734b80b250c25",
+      "ast_sha256": "4c8fc96ba1035f4ba41af8458a82fab821b4b1157701283f97412bd283b35041",
+      "file_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+    },
+    {
+      "name": "normalize_entity_name",
+      "file": "lightrag/utils.py",
+      "first_line": 5391,
+      "last_line": 5393,
+      "source_sha256": "39fa0f20b166452a69450c83e2c8ca65848da3540e8f25c2d9ff8c5ed8ca33cf",
+      "ast_sha256": "7acc4418ebf5610c4dfc8b6c0662c5a900cc9265739effad3efc8302ff49bb45",
+      "file_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+    },
+    {
+      "name": "fix_tuple_delimiter_corruption",
+      "file": "lightrag/utils.py",
+      "first_line": 6680,
+      "last_line": 6799,
+      "source_sha256": "ae06123dc9632d9fbcc70d969671e9778e1c0331692fedd6d19bb4ec4f497970",
+      "ast_sha256": "f49253bd4f0a60e4323ed74b47675e28fbf110b2e82048b253110fe0b374b100",
+      "file_sha256": "70fe8389a462a3ada44df7d2dd7c49ed85a5c959ca32422f78ac8fdb2dafd5fc"
+    },
+    {
+      "name": "_RESERVED_ENTITY_TYPES",
+      "file": "lightrag/operate.py",
+      "first_line": 658,
+      "last_line": 658,
+      "source_sha256": "f8c84267551657598f8027ae2983edee2b21216e9a07e8661a1e9e545d57c13c",
+      "ast_sha256": "226b17a0710797e0098e7386eb293accc02120e25daa2f5011e386c1bc19e170",
+      "file_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047"
+    },
+    {
+      "name": "_truncate_entity_identifier",
+      "file": "lightrag/operate.py",
+      "first_line": 209,
+      "last_line": 246,
+      "source_sha256": "5031de9a461ac90b073903034ad89946167e6eae61aad5303702e4be9826de49",
+      "ast_sha256": "c540925772c84a64864d69309b52745533572eb8479a28e71d120ed70573be41",
+      "file_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047"
+    },
+    {
+      "name": "_normalize_and_validate_entity_type",
+      "file": "lightrag/operate.py",
+      "first_line": 661,
+      "last_line": 706,
+      "source_sha256": "24c0b235c1508d6425bd4f4b06ee4d9ab8021cdf0cb23e81f5e2a8914d12d3ac",
+      "ast_sha256": "b67616f9f4748740e3858aef02892360b5d2dba3fc9e371ceb736e970e289595",
+      "file_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047"
+    },
+    {
+      "name": "_handle_single_entity_extraction",
+      "file": "lightrag/operate.py",
+      "first_line": 709,
+      "last_line": 770,
+      "source_sha256": "a355475966c58216f263614b83111ed54a1acb8b525c3286586e40545a66e1f6",
+      "ast_sha256": "67ce6508c00cda86290b902f5c277595bbff8e46cda94bd04e8dc50e54e4d745",
+      "file_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047"
+    },
+    {
+      "name": "_handle_single_relationship_extraction",
+      "file": "lightrag/operate.py",
+      "first_line": 773,
+      "last_line": 850,
+      "source_sha256": "d75091b8e8c7ee3256edc25ba1b7607014bea94cc03cb1680151e9e7a94435ff",
+      "ast_sha256": "f92781552ef6cc934d54ced65fb53b2a4de201589e74002fd323a9f7ec0fc3d3",
+      "file_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047"
+    },
+    {
+      "name": "_normalize_text_extraction_record_attributes",
+      "file": "lightrag/operate.py",
+      "first_line": 853,
+      "last_line": 872,
+      "source_sha256": "84f33da773d883d49d6dfa639898b091c7413521f2836db17618cb29fe8564a2",
+      "ast_sha256": "c0ca58ecbabff8ed7b2dc82c0f805a5b83ec708c82fd77d7993cb7198b589cbb",
+      "file_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047"
+    },
+    {
+      "name": "_truncation_cause_suffix",
+      "file": "lightrag/operate.py",
+      "first_line": 875,
+      "last_line": 887,
+      "source_sha256": "aad6550ea9780123a43c6163e62b56bd807fc057c5f2e7610e68c74538375691",
+      "ast_sha256": "05146b64af1820d10529e6724ef1590f74d1a25119cb3634da75a5332c5e8f9e",
+      "file_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047"
+    },
+    {
+      "name": "_process_extraction_result",
+      "file": "lightrag/operate.py",
+      "first_line": 1507,
+      "last_line": 1645,
+      "source_sha256": "e54995d2de2baa7e622f940d0f75521485a8f75082bbbeaf19c3aa263e5c384b",
+      "ast_sha256": "17f7359d7fc84b120d6f1bdbc490aa43176367a8a26e541ff151fa8c355b4811",
+      "file_sha256": "fecb70d27b860efacb57d7b1bc16a706d7d68bd18de9ac80571fcd4628305047"
+    }
+  ],
+  "all_loaded_global_dependencies_resolved": true,
+  "injected_standard_library_dependencies": [
+    "re",
+    "html",
+    "asyncio",
+    "collections.defaultdict"
+  ],
+  "logger_binding": "logging.getLogger(\"lightrag\"), same name as official logger; no semantic adapter",
+  "functions_rewritten": false,
+  "normal_package_import_performed": false,
+  "historical_loader_note": "Original experiment used selective AST loading after unrelated GraphML/networkx startup stalled; this does not describe a new import test."
+}

@@ -1,0 +1,146 @@
+--- dot/delivery_split_20261030/build_split_delivery.py
++++ repo/delivery_split_20261030/build_split_delivery.py
+@@ -0,0 +1,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import ENV_FILE  # path mapping only, see paths.py
+@@ -14 +16 @@
+-keys=[v.encode() for k,v in dotenv_values('<EXTERNAL_DISK>/LightRAG/secrets/.env').items() if k.endswith('_API_KEY') and v]
++keys=[v.encode() for k,v in dotenv_values(str(ENV_FILE)).items() if k.endswith('_API_KEY') and v]
+--- dot/scripts/audit_completed_runs.py
++++ repo/scripts/audit_completed_runs.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4 +6 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round4_full_20261030'
++ROOT=legacy_root('round4_full_20261030');R=ROOT/'round4_full_20261030'
+--- dot/scripts/audit_frozen_preflight.py
++++ repo/scripts/audit_frozen_preflight.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4,2 +6,2 @@
+-ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'round4_full_20261030/evidence'
+-os.environ['TIKTOKEN_CACHE_DIR']='<TMP>/lightrag-envdiag-20261030/tiktoken_cache'
++ROOT=legacy_root('round4_full_20261030');OUT=ROOT/'round4_full_20261030/evidence'
++os.environ['TIKTOKEN_CACHE_DIR']=str(legacy_root('round4_full_20261030')/'tiktoken_cache')
+--- dot/scripts/build_final_report.py
++++ repo/scripts/build_final_report.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4 +6 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round4_full_20261030'
++ROOT=legacy_root('round4_full_20261030');R=ROOT/'round4_full_20261030'
+--- dot/scripts/collect_F05_evidence.py
++++ repo/scripts/collect_F05_evidence.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4 +6 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round4_full_20261030'
++ROOT=legacy_root('round4_full_20261030');R=ROOT/'round4_full_20261030'
+--- dot/scripts/evaluate_F01.py
++++ repo/scripts/evaluate_F01.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4 +6 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round4_full_20261030';G=next(g for g in json.loads((R/'conditions/frozen_groups.json').read_text())['groups'] if g['id']=='F01')
++ROOT=legacy_root('round4_full_20261030');R=ROOT/'round4_full_20261030';G=next(g for g in json.loads((R/'conditions/frozen_groups.json').read_text())['groups'] if g['id']=='F01')
+--- dot/scripts/evaluate_F04.py
++++ repo/scripts/evaluate_F04.py
+@@ -2,0 +3,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -5 +7 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round4_full_20261030';g=next(g for g in json.loads((R/'conditions/frozen_groups.json').read_text())['groups'] if g['id']=='F04');source=g['content'];runs=[]
++ROOT=legacy_root('round4_full_20261030');R=ROOT/'round4_full_20261030';g=next(g for g in json.loads((R/'conditions/frozen_groups.json').read_text())['groups'] if g['id']=='F04');source=g['content'];runs=[]
+--- dot/scripts/evaluate_F05.py
++++ repo/scripts/evaluate_F05.py
+@@ -3,0 +4,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -6 +8 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round4_full_20261030'
++ROOT=legacy_root('round4_full_20261030');R=ROOT/'round4_full_20261030'
+--- dot/scripts/evaluate_F05_naive.py
++++ repo/scripts/evaluate_F05_naive.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4 +6 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round4_full_20261030'
++ROOT=legacy_root('round4_full_20261030');R=ROOT/'round4_full_20261030'
+--- dot/scripts/evaluate_M01.py
++++ repo/scripts/evaluate_M01.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4 +6 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round4_full_20261030';G=next(g for g in json.loads((R/'conditions/frozen_groups.json').read_text())['groups'] if g['id']=='M01')
++ROOT=legacy_root('round4_full_20261030');R=ROOT/'round4_full_20261030';G=next(g for g in json.loads((R/'conditions/frozen_groups.json').read_text())['groups'] if g['id']=='M01')
+--- dot/scripts/extract_F04_review_packet.py
++++ repo/scripts/extract_F04_review_packet.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4 +6 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round4_full_20261030';g=next(g for g in json.loads((R/'conditions/frozen_groups.json').read_text())['groups'] if g['id']=='F04')
++ROOT=legacy_root('round4_full_20261030');R=ROOT/'round4_full_20261030';g=next(g for g in json.loads((R/'conditions/frozen_groups.json').read_text())['groups'] if g['id']=='F04')
+--- dot/scripts/final_integrity_audit.py
++++ repo/scripts/final_integrity_audit.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -3 +5 @@
+-BASE=pathlib.Path(__file__).resolve().parents[1];ROOT=BASE.parent
++ROOT=legacy_root('round4_full_20261030');BASE=ROOT/'round4_full_20261030'
+@@ -98 +100 @@
+- p=pathlib.Path('<TMP>/lightrag-envdiag-20261030/official_source')/name;current=sha(p.read_bytes());entry={'path':name,'current_sha256':current,'manifest_sha256':manifest[name]['sha256'],'matches':current==manifest[name]['sha256']};source.append(entry);check(entry['matches'],'official_source_changed',name)
++ p=(legacy_root('round4_full_20261030')/'src/LightRAG-v1.5.7')/name;current=sha(p.read_bytes());entry={'path':name,'current_sha256':current,'manifest_sha256':manifest[name]['sha256'],'matches':current==manifest[name]['sha256']};source.append(entry);check(entry['matches'],'official_source_changed',name)
+--- dot/scripts/group_watchdog.py
++++ repo/scripts/group_watchdog.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -18 +20 @@
+-    root=Path(__file__).resolve().parents[2]
++    root=legacy_root('round4_full_20261030')
+--- dot/scripts/naive_watchdog.py
++++ repo/scripts/naive_watchdog.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -16 +18 @@
+-    root=Path(__file__).resolve().parents[2]
++    root=legacy_root('round4_full_20261030')
+--- dot/scripts/package_full_evidence.py
++++ repo/scripts/package_full_evidence.py
+@@ -0,0 +1,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root, ENV_FILE  # path mapping only, see paths.py
+@@ -4,2 +6,2 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round4_full_20261030';signal.alarm(180)
+-keys=[v.encode() for k,v in dotenv_values('<EXTERNAL_DISK>/LightRAG/secrets/.env').items() if k.endswith('_API_KEY') and v];assert keys
++ROOT=legacy_root('round4_full_20261030');R=ROOT/'round4_full_20261030';signal.alarm(180)
++keys=[v.encode() for k,v in dotenv_values(str(ENV_FILE)).items() if k.endswith('_API_KEY') and v];assert keys
+--- dot/scripts/repro_runtime.py
++++ repo/scripts/repro_runtime.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root, ENV_FILE  # path mapping only, see paths.py
+@@ -11 +13 @@
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = legacy_root('round4_full_20261030')
+@@ -16 +18 @@
+-DEFAULT_CONFIG = Path('<EXTERNAL_DISK>/LightRAG/secrets/.env')
++DEFAULT_CONFIG = ENV_FILE
+--- dot/scripts/safe_api.py
++++ repo/scripts/safe_api.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -6 +8 @@
+-ROOT=Path(__file__).resolve().parents[2]
++ROOT=legacy_root('round4_full_20261030')

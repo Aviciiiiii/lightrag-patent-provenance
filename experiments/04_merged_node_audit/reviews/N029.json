@@ -1,0 +1,263 @@
+{
+  "audit_id": "N029",
+  "node_id": "Users",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两来源均是系统的人类用户群体：推荐结果受众与疑似文字错误反馈参与者。共同人类使用者角色成立，场景和具体人员集合不同不是实体语义错误。",
+  "class_instance_interpretation_zh": "Users为用户类/集合角色，不是跨专利可唯一识别的一批人；不能从共享节点推出两篇用户身份或行为相同。",
+  "concept_class_vs_local_instance": "shared_class; document-local instances remain distinct",
+  "source_assessments": [
+    {
+      "publication_number": "US7991757B2",
+      "evidence_quote": "A system for enabling site operators to obtain item recommendations for presentation to users",
+      "claim_or_section": "Claim 22",
+      "source_chunk_ids": [
+        "US7991757B2-chunk-001"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US7991757B2-chunk-001"
+      ],
+      "claim_number": 22,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 4,
+        "indexed_document_char_offset": 8253
+      },
+      "role_zh": "内容站点展示项目推荐的最终用户。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk001实体和Site Operators邻边直接对应Claim22首句。",
+        "raw_records": [
+          {
+            "chunk_id": "US7991757B2-chunk-001",
+            "content_sha256": "e47c6e4c92c4b2d8567f8a01218a71a0dfe0ef1d353d28abc5f8acac2212e6f3",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:05373d30b4b333298413a8a1419224e5",
+                "cache_key": "default:extract:05373d30b4b333298413a8a1419224e5",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 34,
+                "raw_line": "entity<|#|>Users<|#|>Person<|#|>Users to whom item recommendations are presented.",
+                "fields": [
+                  "entity",
+                  "Users",
+                  "Person",
+                  "Users to whom item recommendations are presented."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:05373d30b4b333298413a8a1419224e5",
+                "cache_key": "default:extract:05373d30b4b333298413a8a1419224e5",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 70,
+                "raw_line": "relation<|#|>Site Operators<|#|>Users<|#|>present recommendations<|#|>Site operators obtain item recommendations for presentation to users.",
+                "fields": [
+                  "relation",
+                  "Site Operators",
+                  "Users",
+                  "present recommendations",
+                  "Site operators obtain item recommendations for presentation to users."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US7991757B2-chunk-001",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "fa557a9ca6d9aa0dfc7eda7b769bc36f6f5b1656340010a5edd1df1286348d86"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "Site operators obtain item recommendations for presentation to users.",
+          "keywords": "present recommendations",
+          "source_id": "US7991757B2-chunk-001",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284384,
+          "truncate": "",
+          "source": "Users",
+          "target": "Site Operators",
+          "edge_index": 513,
+          "source_chunks": [
+            "US7991757B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "evidence_quote": "sending, by the processing device, data indicative of presence of the potential typographical error in the work to a plurality of users",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ],
+      "quote_contained_in_source_chunk_ids": [
+        "US9514120B1-chunk-000"
+      ],
+      "claim_number": 1,
+      "quote_verification": {
+        "exact_contiguous_in_claim": true,
+        "exact_contiguous_in_indexed_document": true,
+        "exact_contiguous_in_mapped_source_chunk": true,
+        "claim_text_char_offset": 180,
+        "indexed_document_char_offset": 1134
+      },
+      "role_zh": "收到潜在文字错误提示并提供作者意图反馈的用户群体。",
+      "extraction_description_support": {
+        "assessment_zh": "chunk000实体与Claim1及摘要收集反馈操作一致。",
+        "raw_records": [
+          {
+            "chunk_id": "US9514120B1-chunk-000",
+            "content_sha256": "0b094b66650820aadeb8cf681dbb275f6e8339dfd53ea0886553a1ad1e7e9a0e",
+            "raw_entity_rows": [
+              {
+                "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 24,
+                "raw_line": "entity<|#|>Users<|#|>Person<|#|>A plurality of users who receive data indicative of potential typographical errors and provide feedback for a work.",
+                "fields": [
+                  "entity",
+                  "Users",
+                  "Person",
+                  "A plurality of users who receive data indicative of potential typographical errors and provide feedback for a work."
+                ]
+              }
+            ],
+            "raw_relation_endpoint_rows": [
+              {
+                "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+                "response_file": null,
+                "finish_reason": "not recorded in cache",
+                "line_number": 29,
+                "raw_line": "relation<|#|>Computing Device<|#|>Users<|#|>sends data to, collects feedback from<|#|>The computing device sends data indicative of potential typographical errors to users and collects feedback from them.",
+                "fields": [
+                  "relation",
+                  "Computing Device",
+                  "Users",
+                  "sends data to, collects feedback from",
+                  "The computing device sends data indicative of potential typographical errors to users and collects feedback from them."
+                ]
+              }
+            ],
+            "extraction_records": [
+              {
+                "chunk_id": "US9514120B1-chunk-000",
+                "origin": "official_llm_response_cache",
+                "finish_reason": "not recorded in cache",
+                "response_file": null,
+                "request_file": null,
+                "content_sha256": "4fe04b755a3773900247f241ed3834154557d16eacb219db1ebf120bb60459d7"
+              }
+            ]
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The computing device sends data indicative of potential typographical errors to users and collects feedback from them.",
+          "keywords": "collects feedback from,sends data to",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "Users",
+          "edge_index": 451,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 2,
+    "observed_unsupported_edge": false,
+    "observed_unsupported_edge_definition": "true仅用于依据原文明确不支持的实际关系；类级概括/端点角色候选单列，不自动计入。",
+    "details_zh": "已逐条检查全部实际邻边及其source_id/file_path；各关系在所属专利中有对应陈述，未发现将另一专利特征直接写入本专利边描述的确证。共同节点容许潜在无作用域路径组合，但本审计没有执行或观察该传播。",
+    "edge_indices": [
+      451,
+      513
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 451,
+        "source": "Computing Device",
+        "target": "Users",
+        "source_id": "US9514120B1-chunk-000",
+        "file_path": "US9514120B1.txt",
+        "canonical_publications": [
+          "US9514120B1"
+        ],
+        "actual_description": "The computing device sends data indicative of potential typographical errors to users and collects feedback from them.",
+        "claim_or_section": "US9514120B1 Abstract/Claim1",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      },
+      {
+        "edge_index": 513,
+        "source": "Users",
+        "target": "Site Operators",
+        "source_id": "US7991757B2-chunk-001",
+        "file_path": "US7991757B2.txt",
+        "canonical_publications": [
+          "US7991757B2"
+        ],
+        "actual_description": "Site operators obtain item recommendations for presentation to users.",
+        "claim_or_section": "US7991757B2 Claim22",
+        "assessment": "supported_in_source_scope",
+        "assessment_zh": "关系描述与其实际source_id所指专利的相应原文角色相符；不将其外推到本节点另一来源。"
+      }
+    ],
+    "observed_cross_publication_unsupported_edge": false
+  },
+  "limitations_zh": [
+    "本结果为AI辅助逐来源语义审阅，不是独立人工金标准；分类依赖所声明的类/实例粒度。",
+    "只审计第二轮既有20篇索引中的可见原chunk、原抽取与实际图邻边；原文范围为已索引的标题、摘要及Claims，未额外读取完整说明书或新语料，未调用模型API，也未进行新的检索/生成传播测试。",
+    "共享节点产生跨专利邻接不等于已观察到错误跨文档推理；边的source_id和file_path应保持作用域。"
+  ],
+  "review_method": "AI-assisted source-by-source reading; deterministic quote/coverage validation; no external model API",
+  "reviewed_utc": "2026-10-30T08:17:28.833869+00:00",
+  "dossier_sha256": "d6d2663adc6a400f6b3c706c002652b78dae3f552043a5907f8aa72404157514",
+  "input_sha256": {
+    "round2_multisource_audit/dossiers/N029.json": "d6d2663adc6a400f6b3c706c002652b78dae3f552043a5907f8aa72404157514",
+    "data/claims/US7991757B2.json": "0ced9d1ec3872c98f02cad189cca345cc584f993bad73ab4d45fa1bc31e834dc",
+    "data/documents/US7991757B2.txt": "8d6d3c38c198d6e9ddba783716e45d230ec597d4c2c7a4699c34a7167b7510e9",
+    "data/claims/US9514120B1.json": "8346fa36328fdfbabb59a6e1b894c45fb7d867deac3a02966169ba752bd06d81",
+    "data/documents/US9514120B1.txt": "5e38f1308be15b55022afd8d84a90bafe735903cca172069ef79854d9fe26057"
+  },
+  "source_and_raw_review_coverage": {
+    "publication_count": 2,
+    "source_chunk_ids_reviewed": [
+      "US7991757B2-chunk-001",
+      "US9514120B1-chunk-000"
+    ],
+    "all_source_chunks_read": true,
+    "all_raw_entity_and_relation_endpoint_rows_read": true,
+    "all_actual_incident_edges_reviewed": true
+  }
+}

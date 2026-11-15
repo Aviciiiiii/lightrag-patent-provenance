@@ -1,0 +1,340 @@
+{
+  "node_id": "Users",
+  "entity_type": "person",
+  "graph_source_chunks": [
+    "US7991757B2-chunk-001",
+    "US9514120B1-chunk-000"
+  ],
+  "entity_chunk_store_sources": [
+    "US7991757B2-chunk-001",
+    "US9514120B1-chunk-000"
+  ],
+  "all_source_chunks": [
+    "US7991757B2-chunk-001",
+    "US9514120B1-chunk-000"
+  ],
+  "canonical_publications": [
+    "US7991757B2",
+    "US9514120B1"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US7991757B2.txt",
+    "US9514120B1.txt"
+  ],
+  "graph_file_paths": [
+    "US9514120B1.txt",
+    "US7991757B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US7991757B2",
+    "US9514120B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US7991757B2-chunk-001",
+    "US9514120B1-chunk-000"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US7991757B2-chunk-001",
+    "US9514120B1-chunk-000"
+  ],
+  "graph_node": {
+    "entity_id": "Users",
+    "entity_type": "person",
+    "description": "A plurality of users who receive data indicative of potential typographical errors and provide feedback for a work.<SEP>Users to whom item recommendations are presented.",
+    "source_id": "US9514120B1-chunk-000<SEP>US7991757B2-chunk-001",
+    "file_path": "US9514120B1.txt<SEP>US7991757B2.txt",
+    "created_at": 1793284383,
+    "truncate": "",
+    "id": "Users"
+  },
+  "incident_edge_count": 2,
+  "audit_id": "N029",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US7991757B2",
+      "file_paths": [
+        "US7991757B2.txt"
+      ],
+      "source_chunks": [
+        "US7991757B2-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US7991757B2",
+          "full_doc_id": "US7991757B2",
+          "file_path": "US7991757B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 828,
+          "content_sha256": "e47c6e4c92c4b2d8567f8a01218a71a0dfe0ef1d353d28abc5f8acac2212e6f3",
+          "exact_doc_char_start": 6237,
+          "exact_doc_char_end": 10953,
+          "content": "of claim 14 , wherein the user-generated events comprise one or more of purchase events, item viewing events, and item rating events. 16. The method of claim 14 , wherein adjusting the recommendations results comprises applying weights to the recommendations results. 17. A computer-implemented method of providing a network service to content sites, the method comprising: by a computer system comprising computer hardware: receiving registration submissions for recommenders from a plurality of recommender providers, the registration submissions operative to request registration of the recommenders with a recommendations system, wherein the recommender providers are different entities than a provider of the recommendations system; storing, in computer storage, access information for accessing the recommenders with the recommendations system; receiving requests from one or more content sites for item recommendations, the requests being received over a computer network with a network service interface; in response to the requests, using the recommendations system to cause the recommenders to provide recommendations for the one or more content sites; normalizing scores provided by the recommenders to produce normalized scores; applying weights to each of the recommenders; and combining the normalized scores with the weights to generate overall scores to be used in selecting recommendations to provide to the one or more content sites. 18. The method of claim 17 , wherein the information for accessing the recommenders with the recommendations system comprises uniform resource indicators. 19. The method of claim 17 , further comprising receiving recommender selections from the one or more content sites. 20. The method of claim 17 , wherein applying weights to each of the recommenders further comprises weighting the recommenders based on the performance of the recommenders. 21. The method of claim 20 , further comprising receiving weighting selections from the one or more content sites. 22. A system for enabling site operators to obtain item recommendations for presentation to users, the system comprising: a computer data repository that stores information regarding a plurality of recommenders, including network addresses for accessing the recommenders on a network, each recommender provided by a respective recommender provider, at least some of the recommenders provided by different recommendation providers than others, the recommenders capable of using collected event data regarding user-generated events to select particular items to recommend to users; and a server system comprising computer hardware operative to provide a service through which content sites obtain recommendations from the plurality of recommenders for presentation to users, the server system responsive to a request from a content site for recommendations by using the network addresses to request recommendations from the recommenders, and by combining resulting recommendation sets returned by the recommenders to generate a combined set of recommendations to provide to the content site; wherein said combining comprises: normalizing scores provided by the recommenders to produce normalized scores, applying weights to each of the recommenders, and combining the normalized scores with the weights to generate overall scores to be used in selecting the combined set of recommendations. 23. The system of claim 22 , wherein the server system is operative to monitor context-specific performance of each recommender in each of a plurality of contexts, and to use collected data regarding the context-specific performance to determine, for each of the contexts, how much weight to give to particular recommenders in combining the recommendation sets returned by the recommenders. 24. The system of claim 23 , wherein the context-specific performance of each recommender comprises one or more of user-specific performance, segment-specific performance, and site-specific performance. 25. The system of claim 22 , wherein the server system provides an interface that enables an operator of a content site to specify which of the plurality of recommenders are to be used to generate recommendations for the content site. 26. The system of claim 1 , wherein the computer system comprises multiple physical computing devices. 27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender. 28. The system of claim 3 , wherein the content site selects at least some of the weights to assign to the external recommenders.",
+          "llm_cache_list": [
+            "default:extract:05373d30b4b333298413a8a1419224e5"
+          ],
+          "chunk_id": "US7991757B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US7991757B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "fa557a9ca6d9aa0dfc7eda7b769bc36f6f5b1656340010a5edd1df1286348d86"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:05373d30b4b333298413a8a1419224e5",
+              "cache_key": "default:extract:05373d30b4b333298413a8a1419224e5",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 34,
+              "raw_line": "entity<|#|>Users<|#|>Person<|#|>Users to whom item recommendations are presented.",
+              "fields": [
+                "entity",
+                "Users",
+                "Person",
+                "Users to whom item recommendations are presented."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:05373d30b4b333298413a8a1419224e5",
+              "cache_key": "default:extract:05373d30b4b333298413a8a1419224e5",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 70,
+              "raw_line": "relation<|#|>Site Operators<|#|>Users<|#|>present recommendations<|#|>Site operators obtain item recommendations for presentation to users.",
+              "fields": [
+                "relation",
+                "Site Operators",
+                "Users",
+                "present recommendations",
+                "Site operators obtain item recommendations for presentation to users."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 1924,
+              "chunk_char_end": 2349,
+              "text": ", further comprising receiving weighting selections from the one or more content sites. 22. A system for enabling site operators to obtain item recommendations for presentation to users, the system comprising: a computer data repository that stores information regarding a plurality of recommenders, including network addresses for accessing the recommenders on a network, each recommender provided by a respective recommende"
+            },
+            {
+              "chunk_char_start": 2405,
+              "chunk_char_end": 2830,
+              "text": "y different recommendation providers than others, the recommenders capable of using collected event data regarding user-generated events to select particular items to recommend to users; and a server system comprising computer hardware operative to provide a service through which content sites obtain recommendations from the plurality of recommenders for presentation to users, the server system responsive to a request fro"
+            },
+            {
+              "chunk_char_start": 2598,
+              "chunk_char_end": 3023,
+              "text": "server system comprising computer hardware operative to provide a service through which content sites obtain recommendations from the plurality of recommenders for presentation to users, the server system responsive to a request from a content site for recommendations by using the network addresses to request recommendations from the recommenders, and by combining resulting recommendation sets returned by the recommenders"
+            }
+          ],
+          "lexical_occurrence_count": 3
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "Site operators obtain item recommendations for presentation to users.",
+          "keywords": "present recommendations",
+          "source_id": "US7991757B2-chunk-001",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793284384,
+          "truncate": "",
+          "source": "Users",
+          "target": "Site Operators",
+          "edge_index": 513,
+          "source_chunks": [
+            "US7991757B2-chunk-001"
+          ],
+          "canonical_publications": [
+            "US7991757B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9514120B1",
+      "file_paths": [
+        "US9514120B1.txt"
+      ],
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9514120B1",
+          "full_doc_id": "US9514120B1",
+          "file_path": "US9514120B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "0b094b66650820aadeb8cf681dbb275f6e8339dfd53ea0886553a1ad1e7e9a0e",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6477,
+          "content": "Publication number: US9514120B1\nTitle: Classification of a string as a typographical error based on feedback\n\nABSTRACT\nA computing device hosting a server identifies one or more potential typographical errors in a work using an initial reference. The computing device sends data indicative of the presence of the potential typographical errors to users. The computing device collects feedback for the work from the users. The feedback for the work indicates whether the potential typographical errors are author-intended strings. The computing device combines the user feedback for the work with user feedback for other works and sorts the combined user feedback based on one or more selected parameters. The computing device determines, based on the sorted user feedback, that one or more of the potential typographical errors includes an acceptable string and updates the initial reference to include the acceptable string.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: identifying, by a processing device, a potential typographical error in a work using an initial reference, wherein the work comprises a plurality of words; sending, by the processing device, data indicative of presence of the potential typographical error in the work to a plurality of users; receiving, by the processing device, feedback for the work from the plurality of users, the feedback comprising an indicator that specifies that the potential typographical error is an author-intended string for the work, wherein the author-intended string comprises at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; combining, by the processing device, the feedback from the plurality of users for the work with feedback for a plurality of additional works to generate a combined feedback; sorting, by the processing device, the combined feedback based on one or more selected parameters associated with the work to generate a sorted feedback, wherein the one or more selected parameters comprises at least one of an author associated with the work, a title associated the work, a topic associated with the work, or a publisher associated with the work; determining, by the processing device and based on the sorted feedback, that the potential typographical error comprises an acceptable string; and updating, by the processing device, the initial reference to include the acceptable string. 2. The method of claim 1 , wherein determining that the potential typographical error comprises an acceptable string comprises: determining a percentage of the sorted feedback that identifies the potential typographical error as an author-intended string; determining that the percentage exceeds a threshold percentage; and identifying the potential typographical error as an acceptable string. 3. The method of claim 2 , further comprising: determining that the percentage does not exceed the threshold percentage; identifying the potential typographical error as an actual error; and associating an alternative string with the actual error. 4. The method of claim 1 , further comprising: generating one or more parameter-specific references based, at least in part, on the acceptable string. 5. The method of claim 4 , wherein generating one or more parameter-specific references comprises: determining, based on the sorted feedback, one or more parameters that are associated with the acceptable string; identifying a parameter-specific reference that corresponds to each of the one or more parameters associated with the acceptable string, wherein the one or more parameter-specific references comprises at least one of an author-specific reference, a title-specific reference, a topic-specific reference, or a publisher-specific reference. 6. The method of claim 1 , wherein updating the initial reference comprises: adding a string to the initial reference to represent the acceptable string. 7. The method of claim 1 , wherein the feedback for the work comprises at least one of a user identifier, a work identifier, at least one string identified as a potential typographical error, a position of the at least one string in a work, a decision indicating whether a corresponding string is an author-intended string, a confidence level of the decision, or at least one parameter associated with the corresponding string. 8. The method of claim 1 , wherein determining that the potential typographical error comprises an acceptable string comprises: compiling, based on the sorted feedback, one or more parameter-specific statistics; determining that at least one of the one or more parameter-specific statistics exceeds a threshold; and identifying the potential typographical error as an acceptable string. 9. The method of claim 8 , wherein the one or more parameter-specific statistics comprises at least one of a number of times users mark a potential typographical error as an author-intended string, a total number of times a potential typographical error is marked as an author-intended string, a percentage of feedback that marked the potential typographical error as an author-intended string, a percentage of users that marked the potential typographical error as an author-intended string, or a number of times the one or more potential typographical errors are marked as an author-intended string for a parameter. 10. A non-transitory computer-readable medium having instructions stored thereon which, when executed by a processing device, cause the processing device to perform operations comprising: receiving, by the processing device, feedback from a plurality of users for one or more potential typographical errors identified in a work, the feedback comprising an indicator that specifies that at least one of the one or more potential typographical errors are author-intended strings for the work, wherein the work comprises a plurality of words and wherein the author-intended strings comprise at least one of an author-intended spelling of one or more words, an author-intended punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; determining, by the processing device and based at least in part on the indicator received in the feedback for the work, that one or more of the potential typographical errors is an author-intended string; combining, by the processing device, the feedback from",
+          "llm_cache_list": [
+            "default:extract:d59fe2a8e8eb522668e862aa852ac51f"
+          ],
+          "chunk_id": "US9514120B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9514120B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "4fe04b755a3773900247f241ed3834154557d16eacb219db1ebf120bb60459d7"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 24,
+              "raw_line": "entity<|#|>Users<|#|>Person<|#|>A plurality of users who receive data indicative of potential typographical errors and provide feedback for a work.",
+              "fields": [
+                "entity",
+                "Users",
+                "Person",
+                "A plurality of users who receive data indicative of potential typographical errors and provide feedback for a work."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "cache_key": "default:extract:d59fe2a8e8eb522668e862aa852ac51f",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 29,
+              "raw_line": "relation<|#|>Computing Device<|#|>Users<|#|>sends data to, collects feedback from<|#|>The computing device sends data indicative of potential typographical errors to users and collects feedback from them.",
+              "fields": [
+                "relation",
+                "Computing Device",
+                "Users",
+                "sends data to, collects feedback from",
+                "The computing device sends data indicative of potential typographical errors to users and collects feedback from them."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 167,
+              "chunk_char_end": 592,
+              "text": "ne or more potential typographical errors in a work using an initial reference. The computing device sends data indicative of the presence of the potential typographical errors to users. The computing device collects feedback for the work from the users. The feedback for the work indicates whether the potential typographical errors are author-intended strings. The computing device combines the user feedback for the work w"
+            },
+            {
+              "chunk_char_start": 235,
+              "chunk_char_end": 660,
+              "text": " reference. The computing device sends data indicative of the presence of the potential typographical errors to users. The computing device collects feedback for the work from the users. The feedback for the work indicates whether the potential typographical errors are author-intended strings. The computing device combines the user feedback for the work with user feedback for other works and sorts the combined user feedba"
+            },
+            {
+              "chunk_char_start": 1084,
+              "chunk_char_end": 1509,
+              "text": " wherein the work comprises a plurality of words; sending, by the processing device, data indicative of presence of the potential typographical error in the work to a plurality of users; receiving, by the processing device, feedback for the work from the plurality of users, the feedback comprising an indicator that specifies that the potential typographical error is an author-intended string for the work, wherein the auth"
+            },
+            {
+              "chunk_char_start": 1172,
+              "chunk_char_end": 1597,
+              "text": "a indicative of presence of the potential typographical error in the work to a plurality of users; receiving, by the processing device, feedback for the work from the plurality of users, the feedback comprising an indicator that specifies that the potential typographical error is an author-intended string for the work, wherein the author-intended string comprises at least one of an author-intended spelling of one or more "
+            },
+            {
+              "chunk_char_start": 1621,
+              "chunk_char_end": 2046,
+              "text": "d punctuation, an author-intended grammar, or an author-intended use of one or more foreign language words; combining, by the processing device, the feedback from the plurality of users for the work with feedback for a plurality of additional works to generate a combined feedback; sorting, by the processing device, the combined feedback based on one or more selected parameters associated with the work to generate a sorted"
+            },
+            {
+              "chunk_char_start": 4765,
+              "chunk_char_end": 5190,
+              "text": "potential typographical error as an acceptable string. 9. The method of claim 8 , wherein the one or more parameter-specific statistics comprises at least one of a number of times users mark a potential typographical error as an author-intended string, a total number of times a potential typographical error is marked as an author-intended string, a percentage of feedback that marked the potential typographical error as an"
+            },
+            {
+              "chunk_char_start": 5051,
+              "chunk_char_end": 5476,
+              "text": "al typographical error is marked as an author-intended string, a percentage of feedback that marked the potential typographical error as an author-intended string, a percentage of users that marked the potential typographical error as an author-intended string, or a number of times the one or more potential typographical errors are marked as an author-intended string for a parameter. 10. A non-transitory computer-readable"
+            },
+            {
+              "chunk_char_start": 5512,
+              "chunk_char_end": 5937,
+              "text": "hereon which, when executed by a processing device, cause the processing device to perform operations comprising: receiving, by the processing device, feedback from a plurality of users for one or more potential typographical errors identified in a work, the feedback comprising an indicator that specifies that at least one of the one or more potential typographical errors are author-intended strings for the work, wherein "
+            }
+          ],
+          "lexical_occurrence_count": 8
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The computing device sends data indicative of potential typographical errors to users and collects feedback from them.",
+          "keywords": "collects feedback from,sends data to",
+          "source_id": "US9514120B1-chunk-000",
+          "file_path": "US9514120B1.txt",
+          "created_at": 1793284350,
+          "truncate": "",
+          "source": "Computing Device",
+          "target": "Users",
+          "edge_index": 451,
+          "source_chunks": [
+            "US9514120B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9514120B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "The computing device sends data indicative of potential typographical errors to users and collects feedback from them.",
+      "keywords": "collects feedback from,sends data to",
+      "source_id": "US9514120B1-chunk-000",
+      "file_path": "US9514120B1.txt",
+      "created_at": 1793284350,
+      "truncate": "",
+      "source": "Computing Device",
+      "target": "Users",
+      "edge_index": 451,
+      "source_chunks": [
+        "US9514120B1-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9514120B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Site operators obtain item recommendations for presentation to users.",
+      "keywords": "present recommendations",
+      "source_id": "US7991757B2-chunk-001",
+      "file_path": "US7991757B2.txt",
+      "created_at": 1793284384,
+      "truncate": "",
+      "source": "Users",
+      "target": "Site Operators",
+      "edge_index": 513,
+      "source_chunks": [
+        "US7991757B2-chunk-001"
+      ],
+      "canonical_publications": [
+        "US7991757B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

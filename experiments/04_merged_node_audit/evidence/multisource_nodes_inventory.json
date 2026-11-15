@@ -1,0 +1,2562 @@
+[
+  {
+    "node_id": "Data Processing System",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US9298709B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US9298709B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US9298709B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US9298709B2",
+      "US9304738B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US9298709B2.txt",
+      "US9304738B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9298709B2.txt",
+      "US9304738B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US9298709B2",
+      "US9304738B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US9298709B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US9298709B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Data Processing System",
+      "entity_type": "artifact",
+      "description": "A computer system (10) that visualizes data from an IP rights database as a geographic map with a viewable area, generating and updating data visualizations based on the current map coordinates and restriction criteria.<SEP>A system having one or more processors and memory configured to evaluate information via a computer network, including receiving user interest indications, determining keyword weights, ranking keywords, and selecting advertisements.<SEP>A computer-based system that detects user interest, identifies keywords, determines keyword weights, receives content requests, ranks keywords, and selects content for display with information resources.",
+      "source_id": "US9298709B2-chunk-000<SEP>US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+      "file_path": "US9298709B2.txt<SEP>US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "id": "Data Processing System"
+    },
+    "incident_edge_count": 19,
+    "audit_id": "N001"
+  },
+  {
+    "node_id": "Mobile Device",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US8509827B2-chunk-000",
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US8509827B2-chunk-000",
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US8509827B2-chunk-000",
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001"
+    ],
+    "canonical_publications": [
+      "US8509827B2",
+      "US8917913B2"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US8509827B2.txt",
+      "US8917913B2.txt"
+    ],
+    "graph_file_paths": [
+      "US8509827B2.txt",
+      "US8917913B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US8509827B2",
+      "US8917913B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US8509827B2-chunk-000",
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US8509827B2-chunk-000",
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Mobile Device",
+      "entity_type": "artifact",
+      "description": "A device that generates a short message and a query, and to which received context data may be provided; may be a smart phone.<SEP>A portable device including at least a camera and a screen, running an application in operative communication with the camera and an Internet access mechanism. It may be a mobile phone, tablet, PDA, or dedicated camera.<SEP>A device including at least a camera and a screen, used to interact with a social networking service; may be a mobile phone, tablet, PDA, or dedicated camera.",
+      "source_id": "US8509827B2-chunk-000<SEP>US8917913B2-chunk-000<SEP>US8917913B2-chunk-001",
+      "file_path": "US8509827B2.txt<SEP>US8917913B2.txt",
+      "created_at": 1793284304,
+      "truncate": "",
+      "id": "Mobile Device"
+    },
+    "incident_edge_count": 13,
+    "audit_id": "N002"
+  },
+  {
+    "node_id": "Server",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US8509827B2-chunk-000",
+      "US8509827B2-chunk-001",
+      "US9118735B1-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9514120B1-chunk-000"
+    ],
+    "entity_chunk_store_sources": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US8509827B2-chunk-000",
+      "US8509827B2-chunk-001",
+      "US9118735B1-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9514120B1-chunk-000"
+    ],
+    "all_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US8509827B2-chunk-000",
+      "US8509827B2-chunk-001",
+      "US9118735B1-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9514120B1-chunk-000"
+    ],
+    "canonical_publications": [
+      "US10778629B2",
+      "US8509827B2",
+      "US9118735B1",
+      "US9374411B1",
+      "US9514120B1"
+    ],
+    "publication_count": 5,
+    "actual_chunk_file_paths": [
+      "US10778629B2.txt",
+      "US8509827B2.txt",
+      "US9118735B1.txt",
+      "US9374411B1.txt",
+      "US9514120B1.txt"
+    ],
+    "graph_file_paths": [
+      "US8509827B2.txt",
+      "US9118735B1.txt",
+      "US9514120B1.txt",
+      "US9374411B1.txt",
+      "US10778629B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US10778629B2",
+      "US8509827B2",
+      "US9118735B1",
+      "US9374411B1",
+      "US9514120B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US8509827B2-chunk-000",
+      "US8509827B2-chunk-001",
+      "US9118735B1-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9514120B1-chunk-000"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US8509827B2-chunk-000",
+      "US8509827B2-chunk-001",
+      "US9118735B1-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9514120B1-chunk-000"
+    ],
+    "graph_node": {
+      "entity_id": "Server",
+      "entity_type": "artifact",
+      "description": "At least one server associated with a context-data provider used to collect a set of context-data.<SEP>A computing system that receives short messages from mobile devices, determines context-data types, identifies and ranks context-data sources, and generates requests for context data.<SEP>A computing system that receives requests, traverses social networks to identify connecting persons, and sends identifiers or responses to the requesting person's computer.<SEP>A server hosted by the computing device that performs the typographical error classification operations.<SEP>A computing system that streams video content features to a client.<SEP>A server that receives data comprising characteristics of e-mail exchanges from the interaction database, assigns weights to characteristics, and transfers data to a processor.<SEP>A server that receives data comprising characteristics of e-mail exchanges, assigns weights to characteristics, and transfers data to a processor for generating relationship data.",
+      "source_id": "US8509827B2-chunk-000<SEP>US8509827B2-chunk-001<SEP>US9118735B1-chunk-000<SEP>US9514120B1-chunk-000<SEP>US9374411B1-chunk-000<SEP>US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+      "file_path": "US8509827B2.txt<SEP>US9118735B1.txt<SEP>US9514120B1.txt<SEP>US9374411B1.txt<SEP>US10778629B2.txt",
+      "created_at": 1793284708,
+      "truncate": "",
+      "id": "Server"
+    },
+    "incident_edge_count": 12,
+    "audit_id": "N003"
+  },
+  {
+    "node_id": "Database",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US7756837B2-chunk-003",
+      "US8509827B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US7756837B2-chunk-003",
+      "US8509827B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US7756837B2-chunk-003",
+      "US8509827B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US7756837B2",
+      "US8509827B2",
+      "US9304738B1"
+    ],
+    "publication_count": 3,
+    "actual_chunk_file_paths": [
+      "US7756837B2.txt",
+      "US8509827B2.txt",
+      "US9304738B1.txt"
+    ],
+    "graph_file_paths": [
+      "US8509827B2.txt",
+      "US9304738B1.txt",
+      "US7756837B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US7756837B2",
+      "US8509827B2",
+      "US9304738B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US7756837B2-chunk-003",
+      "US8509827B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US7756837B2-chunk-003",
+      "US8509827B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Database",
+      "entity_type": "artifact",
+      "description": "A storage system available to a recipient mobile device in which received context data may be stored and queried via metadata instructions.<SEP>A storage that holds a plurality of keywords and their associated weights, associated with a parked domain web page having a unique identifier.<SEP>A storage system from which keywords of advertisements are identified using the unique identifier of the parked domain web page and in which increased keyword weights are associated with the parked domain web page.<SEP>A searchable database in which management data is stored in a searchable format.<SEP>A searchable storage repository in which extracted management data is stored for subsequent review and query by users and administrators.<SEP>A searchable database in which the management data is stored in a searchable format.<SEP>A searchable storage system in which management data is stored.",
+      "source_id": "US8509827B2-chunk-000<SEP>US9304738B1-chunk-000<SEP>US9304738B1-chunk-001<SEP>US7756837B2-chunk-000<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002<SEP>US7756837B2-chunk-003",
+      "file_path": "US8509827B2.txt<SEP>US9304738B1.txt<SEP>US7756837B2.txt",
+      "created_at": 1793284549,
+      "truncate": "",
+      "id": "Database"
+    },
+    "incident_edge_count": 9,
+    "audit_id": "N004"
+  },
+  {
+    "node_id": "Communication Network",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8509827B2-chunk-000"
+    ],
+    "entity_chunk_store_sources": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8509827B2-chunk-000"
+    ],
+    "all_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8509827B2-chunk-000"
+    ],
+    "canonical_publications": [
+      "US7756837B2",
+      "US8509827B2"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US7756837B2.txt",
+      "US8509827B2.txt"
+    ],
+    "graph_file_paths": [
+      "US8509827B2.txt",
+      "US7756837B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US7756837B2",
+      "US8509827B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8509827B2-chunk-000"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8509827B2-chunk-000"
+    ],
+    "graph_node": {
+      "entity_id": "Communication Network",
+      "entity_type": "artifact",
+      "description": "A network through which context data may be communicated to a mobile device and whose state may serve as a specified parameter.<SEP>A network over which queries are received and responses transmitted electronically; may be the Internet.<SEP>A network such as the Internet over which queries are received electronically and responses are transmitted electronically to a party.<SEP>A network over which queries are received and responses transmitted electronically, which may be the Internet.",
+      "source_id": "US8509827B2-chunk-000<SEP>US7756837B2-chunk-000<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+      "file_path": "US8509827B2.txt<SEP>US7756837B2.txt",
+      "created_at": 1793284549,
+      "truncate": "",
+      "id": "Communication Network"
+    },
+    "incident_edge_count": 4,
+    "audit_id": "N005"
+  },
+  {
+    "node_id": "Computer-Readable Storage Device",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US9514753B2-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US9514753B2-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US9514753B2-chunk-001"
+    ],
+    "canonical_publications": [
+      "US8719408B2",
+      "US9514753B2"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US8719408B2.txt",
+      "US9514753B2.txt"
+    ],
+    "graph_file_paths": [
+      "US9514753B2.txt",
+      "US8719408B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US8719408B2",
+      "US9514753B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US9514753B2-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US9514753B2-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Computer-Readable Storage Device",
+      "entity_type": "artifact",
+      "description": "A device storing instructions that, when executed by one or more computers, cause the computers to perform operations for speaker identification.<SEP>A storage device with an executable program stored thereon that instructs a processor to perform the filtration method.<SEP>A storage device containing executable program code for presenting digital media content, establishing user relationships, and determining relevancy weights, as described in claims 13-16.",
+      "source_id": "US9514753B2-chunk-001<SEP>US8719408B2-chunk-000<SEP>US8719408B2-chunk-001",
+      "file_path": "US9514753B2.txt<SEP>US8719408B2.txt",
+      "created_at": 1793284588,
+      "truncate": "",
+      "id": "Computer-Readable Storage Device"
+    },
+    "incident_edge_count": 6,
+    "audit_id": "N006"
+  },
+  {
+    "node_id": "System",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US10867122B1-chunk-001",
+      "US10867122B1-chunk-002",
+      "US8655901B1-chunk-000",
+      "US9514753B2-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US10867122B1-chunk-001",
+      "US10867122B1-chunk-002",
+      "US8655901B1-chunk-000",
+      "US9514753B2-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US10867122B1-chunk-001",
+      "US10867122B1-chunk-002",
+      "US8655901B1-chunk-000",
+      "US9514753B2-chunk-001"
+    ],
+    "canonical_publications": [
+      "US10867122B1",
+      "US8655901B1",
+      "US9514753B2"
+    ],
+    "publication_count": 3,
+    "actual_chunk_file_paths": [
+      "US10867122B1.txt",
+      "US8655901B1.txt",
+      "US9514753B2.txt"
+    ],
+    "graph_file_paths": [
+      "US9514753B2.txt",
+      "US8655901B1.txt",
+      "US10867122B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US10867122B1",
+      "US8655901B1",
+      "US9514753B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US10867122B1-chunk-001",
+      "US10867122B1-chunk-002",
+      "US8655901B1-chunk-000",
+      "US9514753B2-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US10867122B1-chunk-001",
+      "US10867122B1-chunk-002",
+      "US8655901B1-chunk-000",
+      "US9514753B2-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "System",
+      "entity_type": "artifact",
+      "description": "A system comprising one or more computers and a computer-readable storage device storing instructions.<SEP>A computing system comprising one or more processors configured to interact with a computer-readable medium to perform query pattern mining operations.<SEP>A system comprising one or more processors configured to execute computer program instructions and computer storage media encoded with such instructions.<SEP>A system that performs operations including causing display of updated content in a user interface element and inserting content into a display environment.",
+      "source_id": "US9514753B2-chunk-001<SEP>US8655901B1-chunk-000<SEP>US10867122B1-chunk-001<SEP>US10867122B1-chunk-002",
+      "file_path": "US9514753B2.txt<SEP>US8655901B1.txt<SEP>US10867122B1.txt",
+      "created_at": 1793284649,
+      "truncate": "",
+      "id": "System"
+    },
+    "incident_edge_count": 9,
+    "audit_id": "N007"
+  },
+  {
+    "node_id": "Keyword",
+    "entity_type": "data",
+    "graph_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "entity_chunk_store_sources": [
+      "US7756837B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "all_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "canonical_publications": [
+      "US7756837B2",
+      "US9304738B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US7756837B2.txt",
+      "US9304738B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9304738B1.txt",
+      "US7756837B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US7756837B2",
+      "US9304738B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Keyword",
+      "entity_type": "data",
+      "description": "A term associated with advertisements displayed on a parked domain web page, having a weight determined based on user interest and historic performance.<SEP>A term associated with subject matter of an information resource or advertisement, assigned a weight used for content selection.<SEP>A term from a plurality of keywords that carries a weight on the parked domain web page and a different weight on a second information resource, and is used for ranking and advertisement selection.<SEP>Keywords of the data files of the data-stream, obtained by indexing types of data, included in the management data.",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001<SEP>US9304738B1-chunk-002<SEP>US7756837B2-chunk-000",
+      "file_path": "US9304738B1.txt<SEP>US7756837B2.txt",
+      "created_at": 1793284549,
+      "truncate": "",
+      "id": "Keyword"
+    },
+    "incident_edge_count": 7,
+    "audit_id": "N008"
+  },
+  {
+    "node_id": "Weight",
+    "entity_type": "concept",
+    "graph_source_chunks": [
+      "US10778629B2-chunk-001",
+      "US7991757B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US10778629B2-chunk-001",
+      "US7991757B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US10778629B2-chunk-001",
+      "US7991757B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US10778629B2",
+      "US7991757B2",
+      "US9304738B1"
+    ],
+    "publication_count": 3,
+    "actual_chunk_file_paths": [
+      "US10778629B2.txt",
+      "US7991757B2.txt",
+      "US9304738B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9304738B1.txt",
+      "US7991757B2.txt",
+      "US10778629B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US10778629B2",
+      "US7991757B2",
+      "US9304738B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US10778629B2-chunk-001",
+      "US7991757B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US10778629B2-chunk-001",
+      "US7991757B2-chunk-000",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Weight",
+      "entity_type": "concept",
+      "description": "A value assigned to a keyword based on user interest indications and historic performance, used to rank and select keywords.<SEP>A value determined for each keyword of an information resource based on user interest indications and historic performance, used to rank and select keywords.<SEP>A value applied to each recommender, which may be site-specific, user-specific, user segment-specific, or default, and is adjusted based on user-generated events.<SEP>A value assigned to each of the plurality of characteristics for each pair of users, used to determine relationship strength.",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001<SEP>US7991757B2-chunk-000<SEP>US10778629B2-chunk-001",
+      "file_path": "US9304738B1.txt<SEP>US7991757B2.txt<SEP>US10778629B2.txt",
+      "created_at": 1793284708,
+      "truncate": "",
+      "id": "Weight"
+    },
+    "incident_edge_count": 12,
+    "audit_id": "N009"
+  },
+  {
+    "node_id": "First User",
+    "entity_type": "person",
+    "graph_source_chunks": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "entity_chunk_store_sources": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "all_source_chunks": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "canonical_publications": [
+      "US9118735B1",
+      "US9304738B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US9118735B1.txt",
+      "US9304738B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9304738B1.txt",
+      "US9118735B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US9118735B1",
+      "US9304738B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "First User",
+      "entity_type": "person",
+      "description": "A user whose indication of interest in a first advertisement displayed on a parked domain web page is received.<SEP>A user who shows interest in the first advertisement displayed on the parked domain web page.<SEP>A user associated with the parked domain web page, distinct from the second and third users.<SEP>A user seeking to find a second user via a social network; the first user has an identifier, a location, and a social network that can be traversed and combined from multiple social network types.",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001<SEP>US9304738B1-chunk-002<SEP>US9118735B1-chunk-001",
+      "file_path": "US9304738B1.txt<SEP>US9118735B1.txt",
+      "created_at": 1793284215,
+      "truncate": "",
+      "id": "First User"
+    },
+    "incident_edge_count": 6,
+    "audit_id": "N010"
+  },
+  {
+    "node_id": "Second User",
+    "entity_type": "person",
+    "graph_source_chunks": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "entity_chunk_store_sources": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "all_source_chunks": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "canonical_publications": [
+      "US9118735B1",
+      "US9304738B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US9118735B1.txt",
+      "US9304738B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9304738B1.txt",
+      "US9118735B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US9118735B1",
+      "US9304738B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "graph_node": {
+      "entity_id": "Second User",
+      "entity_type": "person",
+      "description": "A user, different from the first user, whose indication of interest in a second advertisement displayed on the parked domain web page is received.<SEP>A user who shows interest in the second advertisement displayed on the parked domain web page.<SEP>A user whose indication of interest in the second advertisement is received and used to determine the second weight of the second keyword.<SEP>A user whom the first user is trying to find using the social network; the second user has an associated identifier and a possible location.",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001<SEP>US9304738B1-chunk-002<SEP>US9118735B1-chunk-001",
+      "file_path": "US9304738B1.txt<SEP>US9118735B1.txt",
+      "created_at": 1793284215,
+      "truncate": "",
+      "id": "Second User"
+    },
+    "incident_edge_count": 3,
+    "audit_id": "N011"
+  },
+  {
+    "node_id": "Third User",
+    "entity_type": "person",
+    "graph_source_chunks": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "entity_chunk_store_sources": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "all_source_chunks": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "canonical_publications": [
+      "US9118735B1",
+      "US9304738B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US9118735B1.txt",
+      "US9304738B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9304738B1.txt",
+      "US9118735B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US9118735B1",
+      "US9304738B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US9118735B1-chunk-001",
+      "US9304738B1-chunk-000",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "graph_node": {
+      "entity_id": "Third User",
+      "entity_type": "person",
+      "description": "A user, different from the first user and the second user, who requests content to provide for display with the parked domain web page.<SEP>A user different from the first and second users who requests content to provide for display with the parked domain web page.<SEP>A user in the first user's social network who is likely to connect the first user's social network with the third user's own social network and whose last-known location is within a predetermined distance from the first user's location; the third user may opt in to sharing identity, social network, or location information.",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001<SEP>US9304738B1-chunk-002<SEP>US9118735B1-chunk-001",
+      "file_path": "US9304738B1.txt<SEP>US9118735B1.txt",
+      "created_at": 1793284215,
+      "truncate": "",
+      "id": "Third User"
+    },
+    "incident_edge_count": 11,
+    "audit_id": "N012"
+  },
+  {
+    "node_id": "Characteristic",
+    "entity_type": "concept",
+    "graph_source_chunks": [
+      "US10778629B2-chunk-001",
+      "US9304738B1-chunk-000"
+    ],
+    "entity_chunk_store_sources": [
+      "US10778629B2-chunk-001",
+      "US9304738B1-chunk-000"
+    ],
+    "all_source_chunks": [
+      "US10778629B2-chunk-001",
+      "US9304738B1-chunk-000"
+    ],
+    "canonical_publications": [
+      "US10778629B2",
+      "US9304738B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US10778629B2.txt",
+      "US9304738B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9304738B1.txt",
+      "US10778629B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US10778629B2",
+      "US9304738B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US10778629B2-chunk-001",
+      "US9304738B1-chunk-000"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US10778629B2-chunk-001",
+      "US9304738B1-chunk-000"
+    ],
+    "graph_node": {
+      "entity_id": "Characteristic",
+      "entity_type": "concept",
+      "description": "An attribute associated with user interest used in determining keyword weights, including temporal, day, web page content slot, monetary, and performance characteristics.<SEP>Attributes of e-mail exchanges between pairs of users, including interaction frequency, interaction type, number of communication participants, time between interactions, time since first interaction, time since last interaction, interaction volume, and ratio of source to target versus target to source interactions.",
+      "source_id": "US9304738B1-chunk-000<SEP>US10778629B2-chunk-001",
+      "file_path": "US9304738B1.txt<SEP>US10778629B2.txt",
+      "created_at": 1793284708,
+      "truncate": "",
+      "id": "Characteristic"
+    },
+    "incident_edge_count": 6,
+    "audit_id": "N013"
+  },
+  {
+    "node_id": "Computer Network",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US7991757B2-chunk-000",
+      "US7991757B2-chunk-001",
+      "US9304738B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US7991757B2-chunk-000",
+      "US7991757B2-chunk-001",
+      "US9304738B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US7991757B2-chunk-000",
+      "US7991757B2-chunk-001",
+      "US9304738B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US7991757B2",
+      "US9304738B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US7991757B2.txt",
+      "US9304738B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9304738B1.txt",
+      "US7991757B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US7991757B2",
+      "US9304738B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US7991757B2-chunk-000",
+      "US7991757B2-chunk-001",
+      "US9304738B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US7991757B2-chunk-000",
+      "US7991757B2-chunk-001",
+      "US9304738B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Computer Network",
+      "entity_type": "artifact",
+      "description": "A network via which the system evaluates information.<SEP>A network over which requests, recommendations, and scores are transmitted between content sites, the personalization network service, and external recommenders.<SEP>A network over which requests from content sites for item recommendations are received.",
+      "source_id": "US9304738B1-chunk-001<SEP>US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+      "file_path": "US9304738B1.txt<SEP>US7991757B2.txt",
+      "created_at": 1793284383,
+      "truncate": "",
+      "id": "Computer Network"
+    },
+    "incident_edge_count": 3,
+    "audit_id": "N014"
+  },
+  {
+    "node_id": "Non-Transitory Computer Readable Medium",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "entity_chunk_store_sources": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "all_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "canonical_publications": [
+      "US10778629B2",
+      "US9304738B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US10778629B2.txt",
+      "US9304738B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9304738B1.txt",
+      "US10778629B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US10778629B2",
+      "US9304738B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US9304738B1-chunk-001",
+      "US9304738B1-chunk-002"
+    ],
+    "graph_node": {
+      "entity_id": "Non-Transitory Computer Readable Medium",
+      "entity_type": "artifact",
+      "description": "A medium having instructions to evaluate information, comprising instructions to perform the described operations.<SEP>A computer readable medium storing instructions, referenced in claim 18 and claim 19.<SEP>A medium containing executable instructions that when executed perform a method of generating relationship data.<SEP>A medium containing executable instructions that when executed perform a method of modeling relationships between e-mail users.",
+      "source_id": "US9304738B1-chunk-001<SEP>US9304738B1-chunk-002<SEP>US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+      "file_path": "US9304738B1.txt<SEP>US10778629B2.txt",
+      "created_at": 1793284708,
+      "truncate": "",
+      "id": "Non-Transitory Computer Readable Medium"
+    },
+    "incident_edge_count": 4,
+    "audit_id": "N015"
+  },
+  {
+    "node_id": "Event",
+    "entity_type": "concept",
+    "graph_source_chunks": [
+      "US11423041B2-chunk-000",
+      "US11423041B2-chunk-001",
+      "US9118735B1-chunk-000",
+      "US9118735B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US11423041B2-chunk-000",
+      "US11423041B2-chunk-001",
+      "US9118735B1-chunk-000",
+      "US9118735B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US11423041B2-chunk-000",
+      "US11423041B2-chunk-001",
+      "US9118735B1-chunk-000",
+      "US9118735B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US11423041B2",
+      "US9118735B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US11423041B2.txt",
+      "US9118735B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9118735B1.txt",
+      "US11423041B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US11423041B2",
+      "US9118735B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US11423041B2-chunk-000",
+      "US11423041B2-chunk-001",
+      "US9118735B1-chunk-000",
+      "US9118735B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US11423041B2-chunk-000",
+      "US11423041B2-chunk-001",
+      "US9118735B1-chunk-000",
+      "US9118735B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Event",
+      "entity_type": "concept",
+      "description": "An occurrence that a connecting person has identified himself or herself as being at, used to determine the last-known location.<SEP>An occurrence that a user, such as the third user, has identified himself or herself as being at, which may be the same event as the first user's location.<SEP>A condition registered for monitoring with regard to a history object, triggered when stored information describing an ETL process's performance satisfies specified criteria, causing a subscribed ETL process to be performed.<SEP>An event registered for monitoring with regard to the history object, triggered when the performance of the first ETL process satisfies criteria, and subscribed to by the second ETL process.",
+      "source_id": "US9118735B1-chunk-000<SEP>US9118735B1-chunk-001<SEP>US11423041B2-chunk-000<SEP>US11423041B2-chunk-001",
+      "file_path": "US9118735B1.txt<SEP>US11423041B2.txt",
+      "created_at": 1793284675,
+      "truncate": "",
+      "id": "Event"
+    },
+    "incident_edge_count": 9,
+    "audit_id": "N016"
+  },
+  {
+    "node_id": "Token",
+    "entity_type": "concept",
+    "graph_source_chunks": [
+      "US8655901B1-chunk-000",
+      "US9118735B1-chunk-001",
+      "US9218390B2-chunk-002"
+    ],
+    "entity_chunk_store_sources": [
+      "US8655901B1-chunk-000",
+      "US9118735B1-chunk-001",
+      "US9218390B2-chunk-002"
+    ],
+    "all_source_chunks": [
+      "US8655901B1-chunk-000",
+      "US9118735B1-chunk-001",
+      "US9218390B2-chunk-002"
+    ],
+    "canonical_publications": [
+      "US8655901B1",
+      "US9118735B1",
+      "US9218390B2"
+    ],
+    "publication_count": 3,
+    "actual_chunk_file_paths": [
+      "US8655901B1.txt",
+      "US9118735B1.txt",
+      "US9218390B2.txt"
+    ],
+    "graph_file_paths": [
+      "US9118735B1.txt",
+      "US9218390B2.txt",
+      "US8655901B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US8655901B1",
+      "US9118735B1",
+      "US9218390B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US8655901B1-chunk-000",
+      "US9118735B1-chunk-001",
+      "US9218390B2-chunk-002"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US8655901B1-chunk-000",
+      "US9118735B1-chunk-001",
+      "US9218390B2-chunk-002"
+    ],
+    "graph_node": {
+      "entity_id": "Token",
+      "entity_type": "concept",
+      "description": "A replacement value used to anonymize results by replacing an identifier associated with the second user.<SEP>A unit of the input query to which a label is assigned.<SEP>A segment of a query in the first language containing one or more terms, associated with components of the first query pattern and annotated with labels.",
+      "source_id": "US9118735B1-chunk-001<SEP>US9218390B2-chunk-002<SEP>US8655901B1-chunk-000",
+      "file_path": "US9118735B1.txt<SEP>US9218390B2.txt<SEP>US8655901B1.txt",
+      "created_at": 1793284618,
+      "truncate": "",
+      "id": "Token"
+    },
+    "incident_edge_count": 7,
+    "audit_id": "N017"
+  },
+  {
+    "node_id": "Recommendation",
+    "entity_type": "concept",
+    "graph_source_chunks": [
+      "US8095432B1-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US8095432B1-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US8095432B1-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US8095432B1",
+      "US9374411B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US8095432B1.txt",
+      "US9374411B1.txt"
+    ],
+    "graph_file_paths": [
+      "US8095432B1.txt",
+      "US9374411B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US8095432B1",
+      "US9374411B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US8095432B1-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US8095432B1-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Recommendation",
+      "entity_type": "concept",
+      "description": "An opinion or endorsement of an item provided by a member of the social networking utility.<SEP>A suggestion sent to a user to play a second video content feature based on the relationship score.<SEP>A generated suggestion presented to another user for content or characters, based on preferences and relationship scores.",
+      "source_id": "US8095432B1-chunk-000<SEP>US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+      "file_path": "US8095432B1.txt<SEP>US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "id": "Recommendation"
+    },
+    "incident_edge_count": 9,
+    "audit_id": "N018"
+  },
+  {
+    "node_id": "Processor",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US11423041B2-chunk-000",
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8069128B2-chunk-000",
+      "US8095432B1-chunk-000",
+      "US8095432B1-chunk-001",
+      "US8655901B1-chunk-000",
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US8880423B2-chunk-000",
+      "US9589231B2-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US11423041B2-chunk-000",
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8069128B2-chunk-000",
+      "US8095432B1-chunk-000",
+      "US8095432B1-chunk-001",
+      "US8655901B1-chunk-000",
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US8880423B2-chunk-000",
+      "US9589231B2-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US11423041B2-chunk-000",
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8069128B2-chunk-000",
+      "US8095432B1-chunk-000",
+      "US8095432B1-chunk-001",
+      "US8655901B1-chunk-000",
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US8880423B2-chunk-000",
+      "US9589231B2-chunk-001"
+    ],
+    "canonical_publications": [
+      "US10778629B2",
+      "US11423041B2",
+      "US7756837B2",
+      "US8069128B2",
+      "US8095432B1",
+      "US8655901B1",
+      "US8719408B2",
+      "US8880423B2",
+      "US9589231B2"
+    ],
+    "publication_count": 9,
+    "actual_chunk_file_paths": [
+      "US10778629B2.txt",
+      "US11423041B2.txt",
+      "US7756837B2.txt",
+      "US8069128B2.txt",
+      "US8095432B1.txt",
+      "US8655901B1.txt",
+      "US8719408B2.txt",
+      "US8880423B2.txt",
+      "US9589231B2.txt"
+    ],
+    "graph_file_paths": [
+      "US8095432B1.txt",
+      "US8880423B2.txt",
+      "US8069128B2.txt",
+      "US7756837B2.txt",
+      "US8719408B2.txt",
+      "US8655901B1.txt",
+      "US11423041B2.txt",
+      "US10778629B2.txt",
+      "US9589231B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US10778629B2",
+      "US11423041B2",
+      "US7756837B2",
+      "US8069128B2",
+      "US8095432B1",
+      "US8655901B1",
+      "US8719408B2",
+      "US8880423B2",
+      "US9589231B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US11423041B2-chunk-000",
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8069128B2-chunk-000",
+      "US8095432B1-chunk-000",
+      "US8095432B1-chunk-001",
+      "US8655901B1-chunk-000",
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US8880423B2-chunk-000",
+      "US9589231B2-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US11423041B2-chunk-000",
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8069128B2-chunk-000",
+      "US8095432B1-chunk-000",
+      "US8095432B1-chunk-001",
+      "US8655901B1-chunk-000",
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US8880423B2-chunk-000",
+      "US9589231B2-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Processor",
+      "entity_type": "artifact",
+      "description": "The term \"Processor\" refers to a hardware component or computing element that executes software programs and performs a wide range of computational and operational tasks across various system contexts. As a hardware component, the processor executes applications—such as a recommendation application—and carries out the core operations of a system. In the context of recommendation systems, it is used to determine relationship proximities, rank recommendations, and generate recommendation lists. It also performs computational steps such as clustering and estimating within various methods.\n\nThe processor may be a component of a network device, where it is operative to perform actions including first and second pass analyses and purging a classification model. When executing software programs, the processor is operable to perform steps such as receiving, extracting, and storing management data, as well as receiving data-streams, extracting management data, and storing it in a searchable format. In some configurations, the processor is caused by a software program to carry out actions such as receiving, extracting, and storing. It may also be a hardware component that performs the steps of establishing user relationships and executing a filtration method. Additionally, the processor can be coupled to memory and programmed by program code stored in that memory to implement the modules of an apparatus.<SEP>One or more processors in the system configured to interact with a computer-readable medium to perform the described operations.<SEP>At least one processor in a system that executes program instructions to implement the data catalog.<SEP>A component that generates relationship data by determining relationship strength associated with each pair of users.<SEP>A processor that generates relationship data by determining a relationship strength associated with each pair of users.<SEP>A component in communication with memory for executing stored instructions.",
+      "source_id": "US8095432B1-chunk-000<SEP>US8095432B1-chunk-001<SEP>US8880423B2-chunk-000<SEP>US8069128B2-chunk-000<SEP>US7756837B2-chunk-000<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002<SEP>US8719408B2-chunk-000<SEP>US8719408B2-chunk-001<SEP>US8655901B1-chunk-000<SEP>US11423041B2-chunk-000<SEP>US10778629B2-chunk-000<SEP>US10778629B2-chunk-001<SEP>US9589231B2-chunk-001",
+      "file_path": "US8095432B1.txt<SEP>US8880423B2.txt<SEP>US8069128B2.txt<SEP>US7756837B2.txt<SEP>US8719408B2.txt<SEP>US8655901B1.txt<SEP>US11423041B2.txt<SEP>US10778629B2.txt<SEP>US9589231B2.txt",
+      "created_at": 1793284737,
+      "truncate": "",
+      "id": "Processor"
+    },
+    "incident_edge_count": 25,
+    "audit_id": "N019"
+  },
+  {
+    "node_id": "Memory",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US11423041B2-chunk-000",
+      "US8095432B1-chunk-000",
+      "US8095432B1-chunk-001",
+      "US8719408B2-chunk-001",
+      "US9514120B1-chunk-001",
+      "US9589231B2-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US11423041B2-chunk-000",
+      "US8095432B1-chunk-000",
+      "US8095432B1-chunk-001",
+      "US8719408B2-chunk-001",
+      "US9514120B1-chunk-001",
+      "US9589231B2-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US11423041B2-chunk-000",
+      "US8095432B1-chunk-000",
+      "US8095432B1-chunk-001",
+      "US8719408B2-chunk-001",
+      "US9514120B1-chunk-001",
+      "US9589231B2-chunk-001"
+    ],
+    "canonical_publications": [
+      "US11423041B2",
+      "US8095432B1",
+      "US8719408B2",
+      "US9514120B1",
+      "US9589231B2"
+    ],
+    "publication_count": 5,
+    "actual_chunk_file_paths": [
+      "US11423041B2.txt",
+      "US8095432B1.txt",
+      "US8719408B2.txt",
+      "US9514120B1.txt",
+      "US9589231B2.txt"
+    ],
+    "graph_file_paths": [
+      "US8095432B1.txt",
+      "US9514120B1.txt",
+      "US8719408B2.txt",
+      "US11423041B2.txt",
+      "US9589231B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US11423041B2",
+      "US8095432B1",
+      "US8719408B2",
+      "US9514120B1",
+      "US9589231B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US11423041B2-chunk-000",
+      "US8095432B1-chunk-000",
+      "US8095432B1-chunk-001",
+      "US8719408B2-chunk-001",
+      "US9514120B1-chunk-001",
+      "US9589231B2-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US11423041B2-chunk-000",
+      "US8095432B1-chunk-000",
+      "US8095432B1-chunk-001",
+      "US8719408B2-chunk-001",
+      "US9514120B1-chunk-001",
+      "US9589231B2-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Memory",
+      "entity_type": "artifact",
+      "description": "A storage component operatively connected to the processor in which the recommendation application resides.<SEP>A component of the apparatus operatively coupled to the processing device.<SEP>Memory coupled to the processor that stores program code programming the processor.<SEP>A memory storing program instructions that when executed by the at least one processor cause the processor to implement the data catalog.<SEP>A component that stores instructions for receiving queries, embedding cases, providing query types, and returning subsets.",
+      "source_id": "US8095432B1-chunk-000<SEP>US8095432B1-chunk-001<SEP>US9514120B1-chunk-001<SEP>US8719408B2-chunk-001<SEP>US11423041B2-chunk-000<SEP>US9589231B2-chunk-001",
+      "file_path": "US8095432B1.txt<SEP>US9514120B1.txt<SEP>US8719408B2.txt<SEP>US11423041B2.txt<SEP>US9589231B2.txt",
+      "created_at": 1793284737,
+      "truncate": "",
+      "id": "Memory"
+    },
+    "incident_edge_count": 5,
+    "audit_id": "N020"
+  },
+  {
+    "node_id": "Payment",
+    "entity_type": "concept",
+    "graph_source_chunks": [
+      "US8095432B1-chunk-000",
+      "US9589231B2-chunk-000"
+    ],
+    "entity_chunk_store_sources": [
+      "US8095432B1-chunk-000",
+      "US9589231B2-chunk-000"
+    ],
+    "all_source_chunks": [
+      "US8095432B1-chunk-000",
+      "US9589231B2-chunk-000"
+    ],
+    "canonical_publications": [
+      "US8095432B1",
+      "US9589231B2"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US8095432B1.txt",
+      "US9589231B2.txt"
+    ],
+    "graph_file_paths": [
+      "US8095432B1.txt",
+      "US9589231B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US8095432B1",
+      "US9589231B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US8095432B1-chunk-000",
+      "US9589231B2-chunk-000"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US8095432B1-chunk-000",
+      "US9589231B2-chunk-000"
+    ],
+    "graph_node": {
+      "entity_id": "Payment",
+      "entity_type": "concept",
+      "description": "Money received upon a purchase of an item or for each click associated with an item.<SEP>A payment made to an expert for formulating a diagnosis when the query-for-experts is selected.",
+      "source_id": "US8095432B1-chunk-000<SEP>US9589231B2-chunk-000",
+      "file_path": "US8095432B1.txt<SEP>US9589231B2.txt",
+      "created_at": 1793284737,
+      "truncate": "",
+      "id": "Payment"
+    },
+    "incident_edge_count": 3,
+    "audit_id": "N021"
+  },
+  {
+    "node_id": "Network",
+    "entity_type": "organization",
+    "graph_source_chunks": [
+      "US8095432B1-chunk-000",
+      "US9589231B2-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US8095432B1-chunk-000",
+      "US9589231B2-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US8095432B1-chunk-000",
+      "US9589231B2-chunk-001"
+    ],
+    "canonical_publications": [
+      "US8095432B1",
+      "US9589231B2"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US8095432B1.txt",
+      "US9589231B2.txt"
+    ],
+    "graph_file_paths": [
+      "US8095432B1.txt",
+      "US9589231B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US8095432B1",
+      "US9589231B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US8095432B1-chunk-000",
+      "US9589231B2-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US8095432B1-chunk-000",
+      "US9589231B2-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Network",
+      "entity_type": "organization",
+      "description": "The set of members connected to the inquiring member, within which friends reside and outside of which non-friends reside.<SEP>A network comprising a diagnosis assistance system and a set of user devices linking requesters and experts with the system.",
+      "source_id": "US8095432B1-chunk-000<SEP>US9589231B2-chunk-001",
+      "file_path": "US8095432B1.txt<SEP>US9589231B2.txt",
+      "created_at": 1793284737,
+      "truncate": "",
+      "id": "Network"
+    },
+    "incident_edge_count": 4,
+    "audit_id": "N022"
+  },
+  {
+    "node_id": "User",
+    "entity_type": "person",
+    "graph_source_chunks": [
+      "US8069128B2-chunk-000",
+      "US8069128B2-chunk-001",
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US8880423B2-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US8069128B2-chunk-000",
+      "US8069128B2-chunk-001",
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US8880423B2-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US8069128B2-chunk-000",
+      "US8069128B2-chunk-001",
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US8880423B2-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US8069128B2",
+      "US8719408B2",
+      "US8880423B2",
+      "US9374411B1",
+      "US9514120B1"
+    ],
+    "publication_count": 5,
+    "actual_chunk_file_paths": [
+      "US8069128B2.txt",
+      "US8719408B2.txt",
+      "US8880423B2.txt",
+      "US9374411B1.txt",
+      "US9514120B1.txt"
+    ],
+    "graph_file_paths": [
+      "US8880423B2.txt",
+      "US9514120B1.txt",
+      "US8069128B2.txt",
+      "US9374411B1.txt",
+      "US8719408B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US8069128B2",
+      "US8719408B2",
+      "US8880423B2",
+      "US9374411B1",
+      "US9514120B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US8069128B2-chunk-000",
+      "US8069128B2-chunk-001",
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US8880423B2-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US8069128B2-chunk-000",
+      "US8069128B2-chunk-001",
+      "US8719408B2-chunk-000",
+      "US8719408B2-chunk-001",
+      "US8880423B2-chunk-000",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9514120B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "User",
+      "entity_type": "person",
+      "description": "The term \"User\" refers to an individual who interacts with various systems, interfaces, and content across multiple contexts. In the context of search and inventory systems, a User is an individual who has previously submitted search keywords and viewed pages, thereby providing the history used for inventory estimation. In the context of error reporting, a User is an individual who provides feedback on potential typographical errors in a work via a graphical user interface. In messaging systems, a User is a person enabled to move an identified message to another message folder and who may select the multi-pass message filter for execution through an interface on the client device; relatedly, a User is a person for whom messages are sorted into folders and who is enabled to move identified misclassified messages to another folder.\n\nIn the context of media and content consumption, a User is a person associated with a client who interacts with video content features and expresses preferences toward characters, receiving content recommendations. Similarly, a User is an individual who interacts with network content and expresses preferences toward characters, and a User who interacts with a user interface and may express explicit feedback favoring a fictional character. In the context of digital media distribution and relationships, a User is an individual for whom user relationships are established and to whom filtered digital media content is presented with priority based on relevancy weights. Finally, a User is a user who has relationships with content producers, has a user profile, and receives presented digital media content.",
+      "source_id": "US8880423B2-chunk-000<SEP>US9514120B1-chunk-001<SEP>US8069128B2-chunk-000<SEP>US8069128B2-chunk-001<SEP>US9374411B1-chunk-000<SEP>US9374411B1-chunk-001<SEP>US9374411B1-chunk-002<SEP>US8719408B2-chunk-000<SEP>US8719408B2-chunk-001",
+      "file_path": "US8880423B2.txt<SEP>US9514120B1.txt<SEP>US8069128B2.txt<SEP>US9374411B1.txt<SEP>US8719408B2.txt",
+      "created_at": 1793284592,
+      "truncate": "",
+      "id": "User"
+    },
+    "incident_edge_count": 21,
+    "audit_id": "N023"
+  },
+  {
+    "node_id": "Application",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US8917913B2",
+      "US9374411B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US8917913B2.txt",
+      "US9374411B1.txt"
+    ],
+    "graph_file_paths": [
+      "US8917913B2.txt",
+      "US9374411B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US8917913B2",
+      "US9374411B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Application",
+      "entity_type": "artifact",
+      "description": "An application associated with the mobile device that is in operative communication with the camera, provides a user interface, receives search terms and source images, and communicates with the search service.<SEP>Software associated with the mobile device that is in operative communication with the camera, provides a user interface, receives friend identifiers and source images, and displays results on the screen.<SEP>Software executable in a computing device that causes the device to perform content recommendation functions.<SEP>Software executed by a computing device that causes it to perform content rendering, character identification, and recommendation generation.",
+      "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001<SEP>US9374411B1-chunk-000<SEP>US9374411B1-chunk-001",
+      "file_path": "US8917913B2.txt<SEP>US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "id": "Application"
+    },
+    "incident_edge_count": 7,
+    "audit_id": "N024"
+  },
+  {
+    "node_id": "User Interface",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-002"
+    ],
+    "entity_chunk_store_sources": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-002"
+    ],
+    "all_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-002"
+    ],
+    "canonical_publications": [
+      "US10778629B2",
+      "US8917913B2",
+      "US9374411B1"
+    ],
+    "publication_count": 3,
+    "actual_chunk_file_paths": [
+      "US10778629B2.txt",
+      "US8917913B2.txt",
+      "US9374411B1.txt"
+    ],
+    "graph_file_paths": [
+      "US8917913B2.txt",
+      "US9374411B1.txt",
+      "US10778629B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US10778629B2",
+      "US8917913B2",
+      "US9374411B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-002"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US10778629B2-chunk-000",
+      "US10778629B2-chunk-001",
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-002"
+    ],
+    "graph_node": {
+      "entity_id": "User Interface",
+      "entity_type": "artifact",
+      "description": "An interface provided by the application through which a user supplies at least one friend identifier and optionally a friend level indicator.<SEP>An interface provided by the application that receives at least one search term or friend identifier from the user.<SEP>An interface rendered on a client for displaying video content features and receiving user interactions.<SEP>An interface through which explicit user feedback favoring the first fictional character is obtained.<SEP>An interface that displays the generated relationship data.<SEP>A user interface on which the model of relationships or relationship data is displayed, optionally providing a graphical representation of relationship strength.",
+      "source_id": "US8917913B2-chunk-000<SEP>US8917913B2-chunk-001<SEP>US9374411B1-chunk-000<SEP>US9374411B1-chunk-002<SEP>US10778629B2-chunk-000<SEP>US10778629B2-chunk-001",
+      "file_path": "US8917913B2.txt<SEP>US9374411B1.txt<SEP>US10778629B2.txt",
+      "created_at": 1793284708,
+      "truncate": "",
+      "id": "User Interface"
+    },
+    "incident_edge_count": 8,
+    "audit_id": "N025"
+  },
+  {
+    "node_id": "Computing Device",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US9218390B2-chunk-002",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000"
+    ],
+    "entity_chunk_store_sources": [
+      "US9218390B2-chunk-002",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000"
+    ],
+    "all_source_chunks": [
+      "US9218390B2-chunk-002",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000"
+    ],
+    "canonical_publications": [
+      "US9218390B2",
+      "US9374411B1",
+      "US9514120B1"
+    ],
+    "publication_count": 3,
+    "actual_chunk_file_paths": [
+      "US9218390B2.txt",
+      "US9374411B1.txt",
+      "US9514120B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9514120B1.txt",
+      "US9374411B1.txt",
+      "US9218390B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US9218390B2",
+      "US9374411B1",
+      "US9514120B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US9218390B2-chunk-002",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US9218390B2-chunk-002",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000"
+    ],
+    "graph_node": {
+      "entity_id": "Computing Device",
+      "entity_type": "artifact",
+      "description": "A device hosting a server that identifies potential typographical errors in a work, sends data to users, collects and combines feedback, sorts the feedback, and updates an initial reference.<SEP>A device that executes computer instructions and applications to perform content recommendation functions.<SEP>A device that executes an application to render content, obtain interaction data, identify characters, calculate relationship scores, and generate recommendations.<SEP>A device comprising at least one computing device that executes the plurality of computer instructions stored on the non-transitory computer-readable medium.<SEP>One or more devices that execute machine-readable instructions to perform the described operations.",
+      "source_id": "US9514120B1-chunk-000<SEP>US9374411B1-chunk-000<SEP>US9374411B1-chunk-001<SEP>US9374411B1-chunk-002<SEP>US9218390B2-chunk-002",
+      "file_path": "US9514120B1.txt<SEP>US9374411B1.txt<SEP>US9218390B2.txt",
+      "created_at": 1793284503,
+      "truncate": "",
+      "id": "Computing Device"
+    },
+    "incident_edge_count": 16,
+    "audit_id": "N026"
+  },
+  {
+    "node_id": "User Feedback",
+    "entity_type": "data",
+    "graph_source_chunks": [
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000"
+    ],
+    "entity_chunk_store_sources": [
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000"
+    ],
+    "all_source_chunks": [
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000"
+    ],
+    "canonical_publications": [
+      "US9374411B1",
+      "US9514120B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US9374411B1.txt",
+      "US9514120B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9514120B1.txt",
+      "US9374411B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US9374411B1",
+      "US9514120B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000"
+    ],
+    "graph_node": {
+      "entity_id": "User Feedback",
+      "entity_type": "data",
+      "description": "Feedback collected from users for a work indicating whether potential typographical errors are author-intended strings, comprising user identifier, work identifier, string, position, decision, confidence level, and parameters.<SEP>Explicit user feedback expressing that the user favors the first fictional character, obtained via a user interface as described in claim 23.",
+      "source_id": "US9514120B1-chunk-000<SEP>US9374411B1-chunk-002",
+      "file_path": "US9514120B1.txt<SEP>US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "id": "User Feedback"
+    },
+    "incident_edge_count": 7,
+    "audit_id": "N027"
+  },
+  {
+    "node_id": "Non-Transitory Computer-Readable Medium",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000",
+      "US9514120B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000",
+      "US9514120B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000",
+      "US9514120B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US9374411B1",
+      "US9514120B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US9374411B1.txt",
+      "US9514120B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9514120B1.txt",
+      "US9374411B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US9374411B1",
+      "US9514120B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000",
+      "US9514120B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001",
+      "US9374411B1-chunk-002",
+      "US9514120B1-chunk-000",
+      "US9514120B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Non-Transitory Computer-Readable Medium",
+      "entity_type": "artifact",
+      "description": "A medium having instructions stored thereon that, when executed by a processing device, cause the processing device to perform operations for classifying typographical errors.<SEP>A medium storing instructions that, when executed, cause operations for determining author-intended strings, combining and sorting feedback, and updating parameter-specific references.<SEP>A medium having computer instructions executable by a computing device to perform content recommendation functions.<SEP>A medium having computer instructions executable by a computing device to perform content rendering, character preference determination, and recommendation generation.<SEP>A non-transitory computer-readable medium storing computer instructions, referenced in claims 22-25, that causes a computing device to perform operations related to media content and fictional character relationship scoring.",
+      "source_id": "US9514120B1-chunk-000<SEP>US9514120B1-chunk-001<SEP>US9374411B1-chunk-000<SEP>US9374411B1-chunk-001<SEP>US9374411B1-chunk-002",
+      "file_path": "US9514120B1.txt<SEP>US9374411B1.txt",
+      "created_at": 1793284456,
+      "truncate": "",
+      "id": "Non-Transitory Computer-Readable Medium"
+    },
+    "incident_edge_count": 3,
+    "audit_id": "N028"
+  },
+  {
+    "node_id": "Users",
+    "entity_type": "person",
+    "graph_source_chunks": [
+      "US7991757B2-chunk-001",
+      "US9514120B1-chunk-000"
+    ],
+    "entity_chunk_store_sources": [
+      "US7991757B2-chunk-001",
+      "US9514120B1-chunk-000"
+    ],
+    "all_source_chunks": [
+      "US7991757B2-chunk-001",
+      "US9514120B1-chunk-000"
+    ],
+    "canonical_publications": [
+      "US7991757B2",
+      "US9514120B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US7991757B2.txt",
+      "US9514120B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9514120B1.txt",
+      "US7991757B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US7991757B2",
+      "US9514120B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US7991757B2-chunk-001",
+      "US9514120B1-chunk-000"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US7991757B2-chunk-001",
+      "US9514120B1-chunk-000"
+    ],
+    "graph_node": {
+      "entity_id": "Users",
+      "entity_type": "person",
+      "description": "A plurality of users who receive data indicative of potential typographical errors and provide feedback for a work.<SEP>Users to whom item recommendations are presented.",
+      "source_id": "US9514120B1-chunk-000<SEP>US7991757B2-chunk-001",
+      "file_path": "US9514120B1.txt<SEP>US7991757B2.txt",
+      "created_at": 1793284383,
+      "truncate": "",
+      "id": "Users"
+    },
+    "incident_edge_count": 2,
+    "audit_id": "N029"
+  },
+  {
+    "node_id": "Apparatus",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US7756837B2-chunk-003",
+      "US9514120B1-chunk-001",
+      "US9514120B1-chunk-002"
+    ],
+    "entity_chunk_store_sources": [
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US7756837B2-chunk-003",
+      "US9514120B1-chunk-001",
+      "US9514120B1-chunk-002"
+    ],
+    "all_source_chunks": [
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US7756837B2-chunk-003",
+      "US9514120B1-chunk-001",
+      "US9514120B1-chunk-002"
+    ],
+    "canonical_publications": [
+      "US7756837B2",
+      "US9514120B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US7756837B2.txt",
+      "US9514120B1.txt"
+    ],
+    "graph_file_paths": [
+      "US9514120B1.txt",
+      "US7756837B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US7756837B2",
+      "US9514120B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US7756837B2-chunk-003",
+      "US9514120B1-chunk-001",
+      "US9514120B1-chunk-002"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US7756837B2-chunk-003",
+      "US9514120B1-chunk-001",
+      "US9514120B1-chunk-002"
+    ],
+    "graph_node": {
+      "entity_id": "Apparatus",
+      "entity_type": "artifact",
+      "description": "A device comprising a memory and a processing device that provides data on potential typographical errors to users, receives input identifying author-intended strings, determines associated parameters, and provides feedback to a server computing machine.<SEP>A device or system referenced in claims 18, 19, and 20 that processes input, data indicative of potential typographical errors, and generates combined feedback.<SEP>An apparatus comprising means for receiving a data-stream, means for extracting management data, and means for storing management data in a searchable format in a database.<SEP>An apparatus comprising means for receiving a data-stream, carrying out a server function, extracting management data, and storing the management data in a searchable format in a database.<SEP>A device comprising means for receiving data-streams, carrying out a storage router function, and extracting management data.",
+      "source_id": "US9514120B1-chunk-001<SEP>US9514120B1-chunk-002<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002<SEP>US7756837B2-chunk-003",
+      "file_path": "US9514120B1.txt<SEP>US7756837B2.txt",
+      "created_at": 1793284549,
+      "truncate": "",
+      "id": "Apparatus"
+    },
+    "incident_edge_count": 18,
+    "audit_id": "N030"
+  },
+  {
+    "node_id": "Score",
+    "entity_type": "data",
+    "graph_source_chunks": [
+      "US7991757B2-chunk-000",
+      "US8069128B2-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US7991757B2-chunk-000",
+      "US8069128B2-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US7991757B2-chunk-000",
+      "US8069128B2-chunk-001"
+    ],
+    "canonical_publications": [
+      "US7991757B2",
+      "US8069128B2"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US7991757B2.txt",
+      "US8069128B2.txt"
+    ],
+    "graph_file_paths": [
+      "US7991757B2.txt",
+      "US8069128B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US7991757B2",
+      "US8069128B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US7991757B2-chunk-000",
+      "US8069128B2-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US7991757B2-chunk-000",
+      "US8069128B2-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Score",
+      "entity_type": "data",
+      "description": "A value associated with a recommendation received from a recommender, which may be normalized and combined with weights to produce overall scores.<SEP>A value assigned to each message by the second pass of the multi-pass message filter, used to indicate whether the message is sorted into an incorrect message folder.",
+      "source_id": "US7991757B2-chunk-000<SEP>US8069128B2-chunk-001",
+      "file_path": "US7991757B2.txt<SEP>US8069128B2.txt",
+      "created_at": 1793284411,
+      "truncate": "",
+      "id": "Score"
+    },
+    "incident_edge_count": 4,
+    "audit_id": "N031"
+  },
+  {
+    "node_id": "Tokens",
+    "entity_type": "concept",
+    "graph_source_chunks": [
+      "US8655901B1-chunk-001",
+      "US9218390B2-chunk-000"
+    ],
+    "entity_chunk_store_sources": [
+      "US8655901B1-chunk-001",
+      "US9218390B2-chunk-000"
+    ],
+    "all_source_chunks": [
+      "US8655901B1-chunk-001",
+      "US9218390B2-chunk-000"
+    ],
+    "canonical_publications": [
+      "US8655901B1",
+      "US9218390B2"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US8655901B1.txt",
+      "US9218390B2.txt"
+    ],
+    "graph_file_paths": [
+      "US9218390B2.txt",
+      "US8655901B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US8655901B1",
+      "US9218390B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US8655901B1-chunk-001",
+      "US9218390B2-chunk-000"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US8655901B1-chunk-001",
+      "US9218390B2-chunk-000"
+    ],
+    "graph_node": {
+      "entity_id": "Tokens",
+      "entity_type": "concept",
+      "description": "The series of tokens comprising the input query, to which labels are assigned.<SEP>Segments of a given query in the first language, each including one or more terms from the query.",
+      "source_id": "US9218390B2-chunk-000<SEP>US8655901B1-chunk-001",
+      "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+      "created_at": 1793284618,
+      "truncate": "",
+      "id": "Tokens"
+    },
+    "incident_edge_count": 5,
+    "audit_id": "N032"
+  },
+  {
+    "node_id": "Labels",
+    "entity_type": "concept",
+    "graph_source_chunks": [
+      "US8655901B1-chunk-001",
+      "US9218390B2-chunk-000",
+      "US9218390B2-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US8655901B1-chunk-001",
+      "US9218390B2-chunk-000",
+      "US9218390B2-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US8655901B1-chunk-001",
+      "US9218390B2-chunk-000",
+      "US9218390B2-chunk-001"
+    ],
+    "canonical_publications": [
+      "US8655901B1",
+      "US9218390B2"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US8655901B1.txt",
+      "US9218390B2.txt"
+    ],
+    "graph_file_paths": [
+      "US9218390B2.txt",
+      "US8655901B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US8655901B1",
+      "US9218390B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US8655901B1-chunk-001",
+      "US9218390B2-chunk-000",
+      "US9218390B2-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US8655901B1-chunk-001",
+      "US9218390B2-chunk-000",
+      "US9218390B2-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Labels",
+      "entity_type": "concept",
+      "description": "Labels assigned to tokens of the input query, corresponding to a search term, geographic expression, geographic expression relation indication, and/or uninteresting information.<SEP>Labels assigned to tokens of the input query, identifying them as corresponding to a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information.<SEP>Annotations identifying the parts of each query, associated with corresponding components of the first query pattern.",
+      "source_id": "US9218390B2-chunk-000<SEP>US9218390B2-chunk-001<SEP>US8655901B1-chunk-001",
+      "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+      "created_at": 1793284618,
+      "truncate": "",
+      "id": "Labels"
+    },
+    "incident_edge_count": 5,
+    "audit_id": "N033"
+  },
+  {
+    "node_id": "Label",
+    "entity_type": "concept",
+    "graph_source_chunks": [
+      "US8655901B1-chunk-000",
+      "US9218390B2-chunk-002"
+    ],
+    "entity_chunk_store_sources": [
+      "US8655901B1-chunk-000",
+      "US9218390B2-chunk-002"
+    ],
+    "all_source_chunks": [
+      "US8655901B1-chunk-000",
+      "US9218390B2-chunk-002"
+    ],
+    "canonical_publications": [
+      "US8655901B1",
+      "US9218390B2"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US8655901B1.txt",
+      "US9218390B2.txt"
+    ],
+    "graph_file_paths": [
+      "US9218390B2.txt",
+      "US8655901B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US8655901B1",
+      "US9218390B2"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US8655901B1-chunk-000",
+      "US9218390B2-chunk-002"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US8655901B1-chunk-000",
+      "US9218390B2-chunk-002"
+    ],
+    "graph_node": {
+      "entity_id": "Label",
+      "entity_type": "concept",
+      "description": "A classification assigned to tokens, corresponding to a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information.<SEP>An annotation applied to tokens of a query identifying the parts of the query and corresponding to components of the first query pattern.",
+      "source_id": "US9218390B2-chunk-002<SEP>US8655901B1-chunk-000",
+      "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+      "created_at": 1793284618,
+      "truncate": "",
+      "id": "Label"
+    },
+    "incident_edge_count": 3,
+    "audit_id": "N034"
+  },
+  {
+    "node_id": "Query",
+    "entity_type": "concept",
+    "graph_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8655901B1-chunk-000",
+      "US8655901B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8655901B1-chunk-000",
+      "US8655901B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8655901B1-chunk-000",
+      "US8655901B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US7756837B2",
+      "US8655901B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US7756837B2.txt",
+      "US8655901B1.txt"
+    ],
+    "graph_file_paths": [
+      "US7756837B2.txt",
+      "US8655901B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US7756837B2",
+      "US8655901B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8655901B1-chunk-000",
+      "US8655901B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US7756837B2-chunk-000",
+      "US7756837B2-chunk-001",
+      "US7756837B2-chunk-002",
+      "US8655901B1-chunk-000",
+      "US8655901B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Query",
+      "entity_type": "concept",
+      "description": "A query received from a party concerning the archived data-stream, used to formulate responses based on analysis of stored management data.<SEP>A request received from a party concerning archived data-streams, answered by analyzing the management data stored in the database.<SEP>A query received from a party concerning the archived data-stream, used to formulate responses.<SEP>A search query in a first or second language that is segmented into tokens, annotated, translated, and searched against indexes.<SEP>A search request that is segmented into tokens, annotated with labels, and translated as part of the query pattern mining process.",
+      "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002<SEP>US8655901B1-chunk-000<SEP>US8655901B1-chunk-001",
+      "file_path": "US7756837B2.txt<SEP>US8655901B1.txt",
+      "created_at": 1793284618,
+      "truncate": "",
+      "id": "Query"
+    },
+    "incident_edge_count": 14,
+    "audit_id": "N035"
+  },
+  {
+    "node_id": "Non-Transitory Computer Storage Medium",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US10867122B1-chunk-000",
+      "US10867122B1-chunk-001",
+      "US8655901B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US10867122B1-chunk-000",
+      "US10867122B1-chunk-001",
+      "US8655901B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US10867122B1-chunk-000",
+      "US10867122B1-chunk-001",
+      "US8655901B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US10867122B1",
+      "US8655901B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US10867122B1.txt",
+      "US8655901B1.txt"
+    ],
+    "graph_file_paths": [
+      "US8655901B1.txt",
+      "US10867122B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US10867122B1",
+      "US8655901B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US10867122B1-chunk-000",
+      "US10867122B1-chunk-001",
+      "US8655901B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US10867122B1-chunk-000",
+      "US10867122B1-chunk-001",
+      "US8655901B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Non-Transitory Computer Storage Medium",
+      "entity_type": "artifact",
+      "description": "A storage medium encoded with a computer program whose instructions cause data processing apparatus to perform query pattern translation operations.<SEP>A storage medium encoded with computer program instructions that, when executed by processors, cause a computer device to perform operations for determining factual entities and displaying knowledge panel content.<SEP>A computer storage medium encoded with computer program instructions that cause a computer device to perform operations for determining factual entities and displaying related content.",
+      "source_id": "US8655901B1-chunk-001<SEP>US10867122B1-chunk-000<SEP>US10867122B1-chunk-001",
+      "file_path": "US8655901B1.txt<SEP>US10867122B1.txt",
+      "created_at": 1793284649,
+      "truncate": "",
+      "id": "Non-Transitory Computer Storage Medium"
+    },
+    "incident_edge_count": 2,
+    "audit_id": "N036"
+  },
+  {
+    "node_id": "Data Processing Apparatus",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US10867122B1-chunk-000",
+      "US8655901B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US10867122B1-chunk-000",
+      "US8655901B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US10867122B1-chunk-000",
+      "US8655901B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US10867122B1",
+      "US8655901B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US10867122B1.txt",
+      "US8655901B1.txt"
+    ],
+    "graph_file_paths": [
+      "US8655901B1.txt",
+      "US10867122B1.txt"
+    ],
+    "graph_file_path_publications": [
+      "US10867122B1",
+      "US8655901B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US10867122B1-chunk-000",
+      "US8655901B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US10867122B1-chunk-000",
+      "US8655901B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Data Processing Apparatus",
+      "entity_type": "artifact",
+      "description": "Apparatus that executes program instructions to perform the query pattern translation operations.<SEP>An apparatus that performs the claimed method of receiving content, determining factual entities, requesting knowledge panel content, and providing display instructions.",
+      "source_id": "US8655901B1-chunk-001<SEP>US10867122B1-chunk-000",
+      "file_path": "US8655901B1.txt<SEP>US10867122B1.txt",
+      "created_at": 1793284649,
+      "truncate": "",
+      "id": "Data Processing Apparatus"
+    },
+    "incident_edge_count": 4,
+    "audit_id": "N037"
+  },
+  {
+    "node_id": "Computing Devices",
+    "entity_type": "artifact",
+    "graph_source_chunks": [
+      "US11423041B2-chunk-001",
+      "US8655901B1-chunk-001"
+    ],
+    "entity_chunk_store_sources": [
+      "US11423041B2-chunk-001",
+      "US8655901B1-chunk-001"
+    ],
+    "all_source_chunks": [
+      "US11423041B2-chunk-001",
+      "US8655901B1-chunk-001"
+    ],
+    "canonical_publications": [
+      "US11423041B2",
+      "US8655901B1"
+    ],
+    "publication_count": 2,
+    "actual_chunk_file_paths": [
+      "US11423041B2.txt",
+      "US8655901B1.txt"
+    ],
+    "graph_file_paths": [
+      "US8655901B1.txt",
+      "US11423041B2.txt"
+    ],
+    "graph_file_path_publications": [
+      "US11423041B2",
+      "US8655901B1"
+    ],
+    "missing_source_chunks": [],
+    "graph_source_matches_entity_chunk_store": true,
+    "raw_entity_source_chunks": [
+      "US11423041B2-chunk-001",
+      "US8655901B1-chunk-001"
+    ],
+    "raw_relation_endpoint_source_chunks": [
+      "US11423041B2-chunk-001",
+      "US8655901B1-chunk-001"
+    ],
+    "graph_node": {
+      "entity_id": "Computing Devices",
+      "entity_type": "artifact",
+      "description": "One or more devices forming a system that translates the collection of annotated queries.<SEP>One or more devices on or across which the stored program instructions are executed.",
+      "source_id": "US8655901B1-chunk-001<SEP>US11423041B2-chunk-001",
+      "file_path": "US8655901B1.txt<SEP>US11423041B2.txt",
+      "created_at": 1793284675,
+      "truncate": "",
+      "id": "Computing Devices"
+    },
+    "incident_edge_count": 2,
+    "audit_id": "N038"
+  }
+]

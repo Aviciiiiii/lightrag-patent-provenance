@@ -1,0 +1,33 @@
+{
+  "adjudicated_utc": "2026-10-30T08:22:00Z",
+  "method": "Root AI-assisted consistency review, with separate AI-assisted quality review. Not independent human gold or calibrated classification accuracy.",
+  "preserve_original_reviews": true,
+  "category_overrides": {
+    "N006": {
+      "initial_category": "shared_specific_concept",
+      "final_category": "shared_broad_class",
+      "reason_zh": "计算机可读存储设备在两专利均为通用指令载体；同概念共享成立，但按本报告统一颗粒度，与Processor/Memory及其他通用存储介质归共享宽类。这只是C1/C2粒度统一，不是从成功改判错误。"
+    },
+    "N015": {
+      "initial_category": "shared_specific_concept",
+      "final_category": "shared_broad_class",
+      "reason_zh": "非暂态计算机可读介质是通用指令载体，与N028的连字符拼写变体及N036同属宽泛计算载体类别；统一归共享宽类。保留原审阅，不以拼写决定具体概念等级。"
+    }
+  },
+  "granularity_convention_zh": "本报告把通用计算硬件、软件、存储载体、参与者和流程角色归入共享宽类；在本语料中被限制到查询分词/注释含义且技术角色一致的Tokens/Labels/Label归较具体共享概念。二者均属合理共享，界线是报告颗粒度约定，不是正确/错误分界。该一致性约定在初审后明确记录。",
+  "ontology_sensitive_contextual_nodes": ["N010", "N011", "N012", "N016", "N022"],
+  "stronger_polysemy_example": "N017",
+  "sensitivity_zh": "若显式采用共同宽类本体，First/Second/Third User、Event、Network这5项可重新归入共享宽类；此时C3从6降至1、C2从29升至34，C1仍3。即使Token的异义并置有较强证据，也不等于已证明LightRAG代码bug、sameAs断言或错误答案传播。",
+  "local_role_attribution_warnings": {
+    "audit_id": "N030",
+    "publication_number": "US9514120B1",
+    "claim_number": 18,
+    "edge_indices": [495, 502, 517],
+    "source_chunk": "US9514120B1-chunk-002",
+    "finding_zh": "完整Claim18把combine/sort/update的显式主语写为server computing machine；chunk002从句中间开始，原抽取行及实际图边改写为Apparatus执行。已观察到主语/角色粒度不一致，最早在单专利的原始抽取中出现。把装置整体功能作概括的解释仍需谨慎评估。",
+    "confirmed_cross_publication_wrong_edge_propagation": false,
+    "causal_chunk_boundary_ablation_performed": false,
+    "new_query_performed": false
+  },
+  "coordinate_note": "最终引用位置以review_validation.json的Claim+Chunk锚定坐标为准。N024–N026初审中exact_full_doc_char_start实际上是全文首次字面匹配；最终汇总将其重命名为first_occurrence_in_full_doc_char_start，避免当作指定Claim坐标。原初审文件保留。"
+}

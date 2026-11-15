@@ -1,0 +1,574 @@
+{
+  "audit_id": "N017",
+  "node_id": "Token",
+  "category": "contextual_conflation",
+  "confidence": "high",
+  "reason_zh": "US8655901B1 和 US9218390B2 的 token 是输入查询的一段/单元，可被分词、标注标签并用于查询模型；US9118735B1 Claim 14 的 token 则是替换第二用户标识符以匿名化结果的代用值。当前单一 ID 合并这两个具体意义。可把它们抽象为数据值，但不足以支持将查询分词/标签关系用于匿名替代标识；两篇查询专利相互共享词元概念是有依据的。",
+  "class_instance_interpretation_zh": "同名词义混合而非证明 token 实例相等。查询词元子类和匿名替代标识子类须区分；Token—Label 这条跨两篇查询专利的边本身仍有支持。",
+  "source_assessments": [
+    {
+      "publication_number": "US8655901B1",
+      "evidence_quote": "segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query",
+      "claim_or_section": "Claim 1",
+      "claim_number": 1,
+      "role_zh": "查询中的一段词语，按查询模式组件加标签，用于跨语言模式挖掘。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US8655901B1-chunk-000"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US8655901B1-chunk-000"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US8655901B1.json",
+        "claim_file_sha256": "3c4320d6d4a3603680fed5c9a62944142f5443962d5efd343277600f79f8ce75",
+        "claim_number": 1
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "原实体行明确 segment of a query，与 Claim 1 的 tokens/terms 定义一致。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8655901B1-chunk-000",
+            "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 8,
+            "raw_line": "entity<|#|>Token<|#|>Concept<|#|>A segment of a query in the first language containing one or more terms, associated with components of the first query pattern and annotated with labels.",
+            "fields": [
+              "entity",
+              "Token",
+              "Concept",
+              "A segment of a query in the first language containing one or more terms, associated with components of the first query pattern and annotated with labels."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8655901B1-chunk-000",
+            "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 23,
+            "raw_line": "relation<|#|>Query<|#|>Token<|#|>segmented into<|#|>A given query among the collection is segmented into one or more tokens in the first language.",
+            "fields": [
+              "relation",
+              "Query",
+              "Token",
+              "segmented into",
+              "A given query among the collection is segmented into one or more tokens in the first language."
+            ]
+          },
+          {
+            "chunk_id": "US8655901B1-chunk-000",
+            "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 24,
+            "raw_line": "relation<|#|>Token<|#|>Label<|#|>annotated with<|#|>The one or more tokens are annotated with labels for the corresponding components of the first query pattern.",
+            "fields": [
+              "relation",
+              "Token",
+              "Label",
+              "annotated with",
+              "The one or more tokens are annotated with labels for the corresponding components of the first query pattern."
+            ]
+          },
+          {
+            "chunk_id": "US8655901B1-chunk-000",
+            "raw_record_id": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "cache_key": "default:extract:1689f97449c8ea224bf62a4088b56f4b",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 25,
+            "raw_line": "relation<|#|>Token<|#|>Query Pattern<|#|>associated with components of<|#|>Each of the one or more tokens is associated with corresponding components of the first query pattern.",
+            "fields": [
+              "relation",
+              "Token",
+              "Query Pattern",
+              "associated with components of",
+              "Each of the one or more tokens is associated with corresponding components of the first query pattern."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 3
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "A label is assigned to each of a plurality of the tokens.<SEP>The one or more tokens are annotated with labels for the corresponding components of the first query pattern.",
+          "keywords": "annotated with,assigned to",
+          "source_id": "US9218390B2-chunk-002<SEP>US8655901B1-chunk-000",
+          "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Token",
+          "target": "Label",
+          "edge_index": 251,
+          "source_chunks": [
+            "US9218390B2-chunk-002",
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1",
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A given query among the collection is segmented into one or more tokens in the first language.",
+          "keywords": "segmented into",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Token",
+          "target": "Query",
+          "edge_index": 253,
+          "source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Each of the one or more tokens is associated with corresponding components of the first query pattern.",
+          "keywords": "associated with components of",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Token",
+          "target": "Query Pattern",
+          "edge_index": 254,
+          "source_chunks": [
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US8655901B1-chunk-000",
+          "sha256": "0bab0caa8c0462609609b9037c577b4201a3af3034b28331edefba06b1dee6e8",
+          "characters": 6722
+        }
+      ]
+    },
+    {
+      "publication_number": "US9118735B1",
+      "evidence_quote": "anonymizing results based on replacing an identifier associated with the second user with a token",
+      "claim_or_section": "Claim 14",
+      "claim_number": 14,
+      "role_zh": "替换用户标识符的匿名化代用值。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9118735B1-chunk-001"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9118735B1-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9118735B1.json",
+        "claim_file_sha256": "1fd4df31aac1196b4399ade27a6cc43837b73da9fdf588b6785fd4a606e47265",
+        "claim_number": 14
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "原实体描述为 replacement value，原始关系行保留 Second User/Anonymized Results 语义；不应进一步猜测它是身份验证令牌或加密密钥。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9118735B1-chunk-001",
+            "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+            "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 11,
+            "raw_line": "entity<|#|>Token<|#|>Data<|#|>A replacement value used to anonymize results by replacing an identifier associated with the second user.",
+            "fields": [
+              "entity",
+              "Token",
+              "Data",
+              "A replacement value used to anonymize results by replacing an identifier associated with the second user."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9118735B1-chunk-001",
+            "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+            "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 33,
+            "raw_line": "relation<|#|>Second User<|#|>Token<|#|>Anonymization<|#|>An identifier associated with the second user is replaced with a token to anonymize results.",
+            "fields": [
+              "relation",
+              "Second User",
+              "Token",
+              "Anonymization",
+              "An identifier associated with the second user is replaced with a token to anonymize results."
+            ]
+          },
+          {
+            "chunk_id": "US9118735B1-chunk-001",
+            "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+            "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 34,
+            "raw_line": "relation<|#|>Anonymized Results<|#|>Token<|#|>Encryption<|#|>The anonymized results are encrypted after replacing the second user's identifier with a token.",
+            "fields": [
+              "relation",
+              "Anonymized Results",
+              "Token",
+              "Encryption",
+              "The anonymized results are encrypted after replacing the second user's identifier with a token."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 2
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "An identifier associated with the second user is replaced with a token to anonymize results.",
+          "keywords": "Anonymization",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Second User",
+          "target": "Token",
+          "edge_index": 193,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The anonymized results are encrypted after replacing the second user's identifier with a token.",
+          "keywords": "Encryption",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Token",
+          "target": "Anonymized Results",
+          "edge_index": 249,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9118735B1-chunk-001",
+          "sha256": "b3448c0610adb75d41d0e719be9b14b65e384183af67e7f82dd178abc42f6404",
+          "characters": 4935
+        }
+      ]
+    },
+    {
+      "publication_number": "US9218390B2",
+      "evidence_quote": "receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens",
+      "claim_or_section": "Claim 18",
+      "claim_number": 18,
+      "role_zh": "地理搜索查询中的可标注单元，参与 CRF 模型构建。",
+      "additional_quotes": [],
+      "source_chunk_ids": [
+        "US9218390B2-chunk-002"
+      ],
+      "evidence_quote_present_in_chunk_ids": [
+        "US9218390B2-chunk-002"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_source_chunk": true,
+        "exact_contiguous_in_numbered_claim": true,
+        "claim_file": "data/claims/US9218390B2.json",
+        "claim_file_sha256": "b2eb952ccee3cfb211bd336b4fdc4020a99a0ae9fab19e5e7cfa2096eb763735",
+        "claim_number": 18
+      },
+      "extraction_description_support": {
+        "status": "supported_local_sense",
+        "assessment_zh": "当前图源只含 chunk002；新版 dossier 的原抽取仍来自此块的缓存。补回的 chunk000 截断响应不属于该节点的已入图 source set，未偷偷加作图来源。",
+        "raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9218390B2-chunk-002",
+            "raw_record_id": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+            "cache_key": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 3,
+            "raw_line": "entity<|#|>Token<|#|>Data<|#|>A unit of the input query to which a label is assigned.",
+            "fields": [
+              "entity",
+              "Token",
+              "Data",
+              "A unit of the input query to which a label is assigned."
+            ]
+          }
+        ],
+        "raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9218390B2-chunk-002",
+            "raw_record_id": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+            "cache_key": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 23,
+            "raw_line": "relation<|#|>Unstructured Geographic Web-Search Query<|#|>Token<|#|>comprises<|#|>The unstructured geographic web-search query comprises a series of tokens.",
+            "fields": [
+              "relation",
+              "Unstructured Geographic Web-Search Query",
+              "Token",
+              "comprises",
+              "The unstructured geographic web-search query comprises a series of tokens."
+            ]
+          },
+          {
+            "chunk_id": "US9218390B2-chunk-002",
+            "raw_record_id": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+            "cache_key": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 24,
+            "raw_line": "relation<|#|>Token<|#|>Label<|#|>assigned to<|#|>A label is assigned to each of a plurality of the tokens.",
+            "fields": [
+              "relation",
+              "Token",
+              "Label",
+              "assigned to",
+              "A label is assigned to each of a plurality of the tokens."
+            ]
+          },
+          {
+            "chunk_id": "US9218390B2-chunk-002",
+            "raw_record_id": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+            "cache_key": "default:extract:7c90aad65a26a0dcb87df7a397281a6d",
+            "response_file": null,
+            "finish_reason": "not recorded in cache",
+            "line_number": 27,
+            "raw_line": "relation<|#|>Conditional Random Field Model<|#|>Token<|#|>based on<|#|>The conditional random field model is created based at least in part on the tokens.",
+            "fields": [
+              "relation",
+              "Conditional Random Field Model",
+              "Token",
+              "based on",
+              "The conditional random field model is created based at least in part on the tokens."
+            ]
+          }
+        ],
+        "raw_entity_count": 1,
+        "raw_relation_endpoint_count": 3
+      },
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The unstructured geographic web-search query comprises a series of tokens.",
+          "keywords": "comprises",
+          "source_id": "US9218390B2-chunk-002",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1793284503,
+          "truncate": "",
+          "source": "Token",
+          "target": "Unstructured Geographic Web-Search Query",
+          "edge_index": 250,
+          "source_chunks": [
+            "US9218390B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "A label is assigned to each of a plurality of the tokens.<SEP>The one or more tokens are annotated with labels for the corresponding components of the first query pattern.",
+          "keywords": "annotated with,assigned to",
+          "source_id": "US9218390B2-chunk-002<SEP>US8655901B1-chunk-000",
+          "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Token",
+          "target": "Label",
+          "edge_index": 251,
+          "source_chunks": [
+            "US9218390B2-chunk-002",
+            "US8655901B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8655901B1",
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The conditional random field model is created based at least in part on the tokens.",
+          "keywords": "based on",
+          "source_id": "US9218390B2-chunk-002",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1793284503,
+          "truncate": "",
+          "source": "Token",
+          "target": "Conditional Random Field Model",
+          "edge_index": 252,
+          "source_chunks": [
+            "US9218390B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ],
+      "source_chunks_read_in_full": [
+        {
+          "chunk_id": "US9218390B2-chunk-002",
+          "sha256": "77bfbf775e4f111c23aae4de373e87c4778a5f6b7d4821dc232eeaa95153886c",
+          "characters": 2842
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 7,
+    "observed_unsupported_edge": false,
+    "details_zh": "7 条实际邻边的来源均可支持其本地关系。未观察到匿名化 token 被直接加上查询标签或 CRF 角色的实际边；跨来源路径组合风险未转化为已验证的错误检索或答案。",
+    "edge_indices": [
+      193,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 193,
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9118735B1 Claim 14",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 249,
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "assessment": "locally_supported_with_qualification",
+        "source_evidence_claims": "US9118735B1 Claim 14",
+        "details_zh": "原文及描述是匿名化后的结果被加密，不是 token 本身执行加密；无向邻接/关键词不能解释为 token 是加密算法。"
+      },
+      {
+        "edge_index": 250,
+        "source_id": "US9218390B2-chunk-002",
+        "canonical_publications": [
+          "US9218390B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9218390B2 Claim 18",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 251,
+        "source_id": "US9218390B2-chunk-002<SEP>US8655901B1-chunk-000",
+        "canonical_publications": [
+          "US8655901B1",
+          "US9218390B2"
+        ],
+        "assessment": "locally_supported_with_qualification",
+        "source_evidence_claims": "US8655901B1 Claim 1; US9218390B2 Claim 18",
+        "details_zh": "跨两个查询词元来源的共享标签关系有原文支持；该边 source_id 不含匿名化专利。"
+      },
+      {
+        "edge_index": 252,
+        "source_id": "US9218390B2-chunk-002",
+        "canonical_publications": [
+          "US9218390B2"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US9218390B2 Claim 18",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 253,
+        "source_id": "US8655901B1-chunk-000",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8655901B1 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      },
+      {
+        "edge_index": 254,
+        "source_id": "US8655901B1-chunk-000",
+        "canonical_publications": [
+          "US8655901B1"
+        ],
+        "assessment": "locally_supported",
+        "source_evidence_claims": "US8655901B1 Claim 1",
+        "details_zh": "按该边自己的来源核对其描述；来源原文支持这一局部关系，不由其他专利补充事实。"
+      }
+    ],
+    "retrieval_or_generation_propagation_tested": false
+  },
+  "limitations_zh": [
+    "这是 AI 辅助原文/抽取/图结构审阅，非独立人工标注 gold、非新的模型评判 API 实验。",
+    "仅审核当前保存的第二轮图快照与其来源块；概念合并不等于实例 sameAs，也没有进行跨专利路径检索或答案生成传播实验。",
+    "原文为已索引摘要及 Claims；没有用外部说明书填补缺失事实。原始文本中的格式缺陷保持原样。",
+    "边的端点顺序来自保存的无向图；语义方向按原关系描述核对，不把 source/target 字段顺序当作因果方向。",
+    "observed_unsupported_edge=false 表示本次检查未确认无原文支持的实际边，不是证明全图无误；关键词粒度/局部实施例范围的警示另记。",
+    "未给定显式类/实例 ontology。类别是基于具体词义及作用域的审阅标签，contextual_conflation 数量不是错误边数或代码 bug 率；Event/Network 的宽类解释可改变类别。",
+    "缓存提取行未保存 finish_reason 时不推定完整或截断；本审核只对实际保存的实体/关系行与当前已入图事实作语义核验。"
+  ],
+  "ontology_sensitivity": {
+    "explicit_ontology_available": false,
+    "alternative_shared_broad_class_plausible": false,
+    "interpretation_zh": "类别只描述现有证据下的概念语义，未断言跨专利实例相同或已发生错误推理。"
+  },
+  "review_method": {
+    "reviewer": "AI-assisted Codex content review",
+    "external_model_api_calls": 0,
+    "credentials_read": false,
+    "all_source_publications_reviewed": 3,
+    "all_source_chunks_reviewed": 3,
+    "all_actual_incident_edges_reviewed": 7,
+    "raw_input_kind": "saved extraction rows; no new extraction",
+    "review_protocol_sha256": "bbed066b8051df60997798d319549164d750797ebef3d7c1e86d69ffc6092255",
+    "dossier_sha256": "2ac5e4ebaf8997ca274c006feb4d997b4d99fca7a7603db9108891c1f2c83135",
+    "generated_utc": "2026-10-30T08:21:11.044577+00:00"
+  },
+  "graph_node_description_reviewed": "A replacement value used to anonymize results by replacing an identifier associated with the second user.<SEP>A unit of the input query to which a label is assigned.<SEP>A segment of a query in the first language containing one or more terms, associated with components of the first query pattern and annotated with labels."
+}

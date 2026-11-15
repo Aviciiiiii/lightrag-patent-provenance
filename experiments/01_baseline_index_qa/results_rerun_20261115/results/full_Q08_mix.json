@@ -1,0 +1,590 @@
+{
+  "question_id": "Q08",
+  "mode": "mix",
+  "question": "In US9514753B2, trace the claim dependency chain connecting hash-table speaker candidates to selection using the smallest cosine distance below a maximum threshold. Identify the relevant claims and conditions. Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+  "started_utc": "2026-11-15T03:26:29.330538+00:00",
+  "finished_utc": "2026-11-15T03:26:37.143441+00:00",
+  "api_call_id_range": [
+    349,
+    351
+  ],
+  "result": {
+    "status": "success",
+    "message": "Query processed successfully",
+    "data": {
+      "entities": [
+        {
+          "entity_name": "Speaker Identification Using Hash-Based Indexing",
+          "entity_type": "content",
+          "description": "A patent (US9514753B2) describing methods, systems, and apparatus for performing speaker identification using hash-based indexing of speaker vectors.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Cosine Distance",
+          "entity_type": "method",
+          "description": "A measure of distance between the utterance vector and each speaker vector in the set, used to determine similarity scores.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Maximum Distance Threshold Value",
+          "entity_type": "data",
+          "description": "A threshold value against which the smallest cosine distance is compared to decide whether to select the corresponding speaker vector.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Similarity Scores",
+          "entity_type": "data",
+          "description": "Scores each indicating a degree of similarity between the utterance vector and one of the speaker vectors in the set, used to select the most similar speaker vector.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "US8509827B2",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Methods and apparatus of context-data acquisition and ranking\" that discloses a system, method, and article of manufacture for acquiring and ranking context data based on a query derived from a short message.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1794712670
+        },
+        {
+          "entity_name": "US8655901B1",
+          "entity_type": "content",
+          "description": "A publication number for a patent document titled \"Translation-based query pattern mining\" describing technologies relating to search systems.",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "entity_name": "Speaker Identity",
+          "entity_type": "concept",
+          "description": "Data indicating the identity of a speaker, determined based on associations between speaker vectors and respective speakers and corresponding to a selected speaker vector.<SEP>The identity of a speaker determined from the selected speaker vector, with data indicating the speaker identity being output.",
+          "source_id": "US9514753B2-chunk-000<SEP>US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Hash Tables",
+          "entity_type": "data",
+          "description": "A plurality of tables storing speaker vectors indexed by hash values, from which a set of speaker vectors is determined using the hash values of an utterance vector.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Hash Table",
+          "entity_type": "data",
+          "description": "A data structure from which a set of speaker vectors is determined using hash values, with a different speaker vector determined for each of multiple hash tables.",
+          "source_id": "US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Utterance Vector",
+          "entity_type": "data",
+          "description": "A vector derived from an utterance, for which hash values are determined according to multiple different hash functions and which is compared with speaker vectors to select a speaker vector.<SEP>A vector derived from an utterance, used as the query in speaker identification; may be an i-vector determined via multivariate factor analysis or parameters based on deep neural network activations.",
+          "source_id": "US9514753B2-chunk-000<SEP>US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "US9304738B1",
+          "entity_type": "content",
+          "description": "A patent titled \"Systems and methods for selecting content using weighted terms\" describing techniques for evaluating information via a computer network using weighted keywords to select content for display.",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1794712717
+        },
+        {
+          "entity_name": "Multivariate Factor Analysis",
+          "entity_type": "method",
+          "description": "A technique used to determine parameters of utterance i-vectors and speaker i-vectors.",
+          "source_id": "US9514753B2-chunk-001<SEP>US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Social Medical Network For Diagnosis Assistance",
+          "entity_type": "content",
+          "description": "The title of patent US9589231B2, referring to a network-based approach for assisting diagnosis through similarity matching of medical cases and experts.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1794713091
+        },
+        {
+          "entity_name": "Speaker I-Vector",
+          "entity_type": "data",
+          "description": "A speaker vector comprising parameters determined using multivariate factor analysis of one or more utterances of a respective speaker.",
+          "source_id": "US9514753B2-chunk-000<SEP>US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Inventory Estimation For Search Retargeting",
+          "entity_type": "content",
+          "description": "The title of the patent US8880423B2, referring to techniques for estimating advertisement inventory for search retargeting segments.",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1794712778
+        },
+        {
+          "entity_name": "Recommendation Engine For Social Networks",
+          "entity_type": "content",
+          "description": "A patent (US8095432B1) describing a method and system for generating ranked recommendation lists for items based on relationship proximity between members of a social networking utility.",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1794712759
+        },
+        {
+          "entity_name": "Speaker Vector",
+          "entity_type": "data",
+          "description": "A vector derived from one or more utterances of a respective speaker, used to characterize the speech of that speaker and compared against an utterance vector to identify a speaker.",
+          "source_id": "US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Speaker Vectors",
+          "entity_type": "data",
+          "description": "Vectors each derived from one or more utterances of a respective speaker, stored in hash tables and compared against an utterance vector to identify a speaker.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Computer Implemented Method",
+          "entity_type": "method",
+          "description": "A method of evaluating information via a computer network comprising receiving user interest indications, identifying keywords, determining weights, ranking keywords, and selecting advertisements.",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1794712717
+        },
+        {
+          "entity_name": "Speaker",
+          "entity_type": "person",
+          "description": "A person whose speech is characterized by speaker vectors derived from one or more of the speaker's utterances.<SEP>A person whose speech characteristics are represented by speaker vectors and whose identity is determined from an utterance.",
+          "source_id": "US9514753B2-chunk-000<SEP>US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "entity_name": "Phrase Level Grammar",
+          "entity_type": "concept",
+          "description": "A grammar used with the rule-based finite state machine model to construct a phrase level grammar composition, constructed using a context free grammar composition.",
+          "source_id": "US9218390B2-chunk-001",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1794712933
+        },
+        {
+          "entity_name": "Query Parser Derivation Computing Device",
+          "entity_type": "artifact",
+          "description": "A computing device that derives a query parser, characterizes conditional random field models, and constructs phrase level grammars.<SEP>A computing device that derives a query parser for parsing unstructured geographic web-search queries into a field-based format.",
+          "source_id": "US9218390B2-chunk-000<SEP>US9218390B2-chunk-001",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1794712933
+        }
+      ],
+      "relationships": [
+        {
+          "src_id": "Speaker Vectors",
+          "tgt_id": "User",
+          "description": "The selected speaker vector may be determined to correspond to a particular user.",
+          "keywords": "corresponds to",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Cosine Distance",
+          "tgt_id": "Similarity Scores",
+          "description": "Determining similarity scores may comprise determining a cosine distance between the utterance vector and each speaker vector in the set.",
+          "keywords": "determined using",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Processor",
+          "tgt_id": "Recommendation Engine For Social Networks",
+          "description": "The recommendation engine uses a processor to determine relationship proximities and rank recommendations.",
+          "keywords": "executes on",
+          "weight": 1.0,
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1794712762
+        },
+        {
+          "src_id": "Speaker Identification Using Hash-Based Indexing",
+          "tgt_id": "Speaker Identity",
+          "description": "The patent describes determining a speaker identity corresponding to the selected speaker vector and outputting data indicating the speaker identity.",
+          "keywords": "describes,outputs",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Data Processing System",
+          "tgt_id": "US9304738B1",
+          "description": "The patent describes systems and methods involving a data processing system for selecting content using weighted terms.",
+          "keywords": "Describes,Patent Subject Matter",
+          "weight": 1.0,
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1794712717
+        },
+        {
+          "src_id": "Cosine Distance",
+          "tgt_id": "Maximum Distance Threshold Value",
+          "description": "The smallest cosine distance is determined to be less than a maximum distance threshold value before selecting the corresponding speaker vector.",
+          "keywords": "compared against",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "US8509827B2",
+          "description": "The patent publication US8509827B2 discloses a system, method, and article of manufacture of context-data acquisition and ranking.",
+          "keywords": "describes,discloses",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1794712670
+        },
+        {
+          "src_id": "Speaker Identification Using Hash-Based Indexing",
+          "tgt_id": "Utterance Vector",
+          "description": "The patent describes obtaining an utterance vector derived from an utterance as part of speaker identification.",
+          "keywords": "describes,uses",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Speaker Vectors",
+          "tgt_id": "Utterance Vector",
+          "description": "The speaker vectors in the set are compared with the utterance vector to select a speaker vector.",
+          "keywords": "compared with",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Hash Tables",
+          "tgt_id": "Speaker Identification Using Hash-Based Indexing",
+          "description": "The patent describes determining a set of speaker vectors from a plurality of hash tables using hash values.",
+          "keywords": "describes,uses",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Hash Tables",
+          "tgt_id": "Speaker Vectors",
+          "description": "Each particular speaker vector is inserted into each of the plurality of hash tables based on its hash values.<SEP>The hash tables store speaker vectors, each derived from one or more utterances of a respective speaker.",
+          "keywords": "index,inserted into,store",
+          "weight": 2.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Multivariate Factor Analysis",
+          "tgt_id": "Speaker I-Vector",
+          "description": "Each speaker i-vector comprises parameters determined using multivariate factor analysis of one or more utterances of a respective speaker.",
+          "keywords": "derivation,determined using",
+          "weight": 2.0,
+          "source_id": "US9514753B2-chunk-000<SEP>US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Speaker Identity",
+          "tgt_id": "Speaker Vectors",
+          "description": "A speaker identity is determined corresponding to the selected speaker vector.",
+          "keywords": "corresponds to",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Hash Table",
+          "tgt_id": "Speaker Vector",
+          "description": "A set of speaker vectors is determined from a plurality of hash tables, with a different speaker vector determined for each hash table.",
+          "keywords": "containment,determination",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Translation-Based Query Pattern Mining",
+          "tgt_id": "US8655901B1",
+          "description": "The publication US8655901B1 is titled \"Translation-based query pattern mining\" and describes this technique.",
+          "keywords": "document title,subject matter",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1794713005
+        },
+        {
+          "src_id": "Speaker Identity",
+          "tgt_id": "Speaker Vector",
+          "description": "A speaker identity corresponding to the selected speaker vector is determined based on the associations between speaker vectors and respective speakers.",
+          "keywords": "correspondence,determination",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Speaker",
+          "tgt_id": "Speaker Vectors",
+          "description": "Each speaker vector is derived from one or more utterances of a respective speaker.",
+          "keywords": "derived from utterances of",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Computer Implemented Method",
+          "tgt_id": "US9304738B1",
+          "description": "The patent claims a computer implemented method of evaluating information via a computer network.",
+          "keywords": "Claims,Describes",
+          "weight": 1.0,
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1794712717
+        },
+        {
+          "src_id": "Speaker I-Vector",
+          "tgt_id": "Speaker Vectors",
+          "description": "The set of speaker vectors determined from the hash tables may be a set of speaker i-vectors.",
+          "keywords": "may be",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Speaker",
+          "tgt_id": "Speaker Vector",
+          "description": "Each speaker vector is derived from one or more utterances of a respective speaker, and data indicates associations between speaker vectors and respective speakers.",
+          "keywords": "association,derivation",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Deep Neural Network",
+          "tgt_id": "Speaker Vectors",
+          "description": "Each speaker vector may comprise parameters determined based on deep neural network activations occurring in response to information about one or more utterances of a respective speaker.",
+          "keywords": "parameters based on activations of",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Phrase Level Grammar",
+          "tgt_id": "Query Parser Derivation Computing Device",
+          "description": "The query parser derivation computing device constructs the phrase level grammar using a context free grammar composition.",
+          "keywords": "construction",
+          "weight": 1.0,
+          "source_id": "US9218390B2-chunk-001",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1794712935
+        },
+        {
+          "src_id": "Similarity Scores",
+          "tgt_id": "Speaker Vectors",
+          "description": "Comparing the speaker vectors with the utterance vector comprises determining similarity scores indicating degrees of similarity.",
+          "keywords": "compared using",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Recommendation Engine For Social Networks",
+          "tgt_id": "Recommendation List",
+          "description": "The recommendation engine generates a recommendation list for an item based on ranked recommendations.",
+          "keywords": "generates,produces",
+          "weight": 1.0,
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1794712762
+        },
+        {
+          "src_id": "Media Items",
+          "tgt_id": "Speaker Vectors",
+          "description": "One or more media items that include utterances of a speaker corresponding to the selected speaker vector may be identified and indicated in output data.",
+          "keywords": "identifies media items including utterances of",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Speaker Vectors",
+          "tgt_id": "Video Resources",
+          "description": "A speaker vector may be generated for each of multiple video resources that are accessed.",
+          "keywords": "generated from",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Recommendation Engine For Social Networks",
+          "tgt_id": "Social Networking Utility",
+          "description": "The recommendation engine for social networks operates within a social networking utility to generate recommendations for items.",
+          "keywords": "application domain,recommendation",
+          "weight": 1.0,
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1794712761
+        },
+        {
+          "src_id": "Recommendation Engine For Social Networks",
+          "tgt_id": "Relationship Proximity",
+          "description": "The recommendation engine ranks recommendations based on the relationship proximity of members to the inquiring member.",
+          "keywords": "ranks by,uses",
+          "weight": 1.0,
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1794712762
+        },
+        {
+          "src_id": "Hash Tables",
+          "tgt_id": "Hash Values",
+          "description": "The hash values are used to determine a set of speaker vectors from the plurality of hash tables.",
+          "keywords": "used to query",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Hash Table",
+          "tgt_id": "Hash Value",
+          "description": "The hash values are used to determine a set of speaker vectors from a plurality of hash tables.",
+          "keywords": "determination,lookup",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1794712688
+        },
+        {
+          "src_id": "Inventory Estimation For Search Retargeting",
+          "tgt_id": "US8880423B2",
+          "description": "US8880423B2 is a patent document whose title is \"Inventory estimation for search retargeting\".",
+          "keywords": "document title,titled",
+          "weight": 1.0,
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1794712778
+        },
+        {
+          "src_id": "Social Medical Network For Diagnosis Assistance",
+          "tgt_id": "US9589231B2",
+          "description": "The patent publication US9589231B2 bears the title \"Social medical network for diagnosis assistance\".",
+          "keywords": "titled",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1794713094
+        }
+      ],
+      "chunks": [
+        {
+          "reference_id": "1",
+          "content": "Publication number: US9514753B2\nTitle: Speaker identification using hash-based indexing\n\nABSTRACT\nMethods, systems, and apparatus, including computer programs encoded on a computer storage medium, for performing speaker identification. In some implementations, an utterance vector that is derived from an utterance is obtained. Hash values are determined for the utterance vector according to multiple different hash functions. A set of speaker vectors from a plurality of hash tables is determined using the hash values, where each speaker vector was derived from one or more utterances of a respective speaker. The speaker vectors in the set are compared with the utterance vector. A speaker vector is selected based on comparing the speaker vectors in the set with the utterance vector.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: obtaining an utterance vector that is derived from an utterance; determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity. 2. The method of claim 1 , wherein obtaining the utterance vector comprises obtaining an utterance i-vector for the utterance, the utterance i-vector comprising parameters determined using multivariate factor analysis of the utterance; and wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises determining a set of speaker i-vectors from the plurality of hash tables, each speaker i-vector comprising parameters determined using multivariate factor analysis of one or more utterances of a respective speaker. 3. The method of claim 1 , wherein obtaining the utterance vector comprises obtaining an utterance vector comprising parameters determined based on deep neural network activations that occur in response to information about the utterance being provided to the deep neural network; and wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises determining a set of speaker vectors in which each speaker vector comprises parameters determined based on deep neural network activations that occur in response to information about one or more utterances of a respective speaker being provided to the deep neural network. 4. The method of claim 1 , further comprising: identifying one or more media items that include utterances of a speaker corresponding to the selected speaker vector; and outputting data indicating the identified one or more media items. 5. The method of claim 1 , further comprising: determining that the selected speaker vector corresponds to a particular user; and based at least in part on the determining that the selected speaker vector corresponds to a particular user identity, authenticating the particular user. 6. The method of claim 1 , wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions. 7. The method of claim 1 , wherein determining the hash values comprises determining the hash values based on a position of the utterance vector with respect to different hyperplanes. 8. The method of claim 1 , wherein determining the hash values comprises: determining first hash values for the utterance vector based on a first set of hash functions; and determining second hash values as different combinations of two or more of the first hash values; wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises determining the set of speaker vectors from the plurality of hash tables using the second hash values. 9. The method of claim 1 , wherein comparing the speaker vectors in the set with the utterance vector comprises determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set; and wherein selecting a speaker vector comprises selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector. 10. The method of claim 9 , wherein determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set comprises determining a cosine distance between the utterance vector and each of the speaker vectors in the set. 11. The method of claim 10 , wherein selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector comprises: identifying a smallest cosine distance from among the determined cosine distances; determining that the smallest cosine distance is less than a maximum distance threshold value; and based on determining that the smallest cosine distance is less than the maximum distance threshold value, selecting the speaker vector corresponding to the smallest cosine distance. 12. The method of claim 1 , wherein each of the speaker vectors corresponds to a different speaker; and wherein the method further comprises providing data indicating that the speaker corresponding to the selected speaker vector is the speaker of the utterance. 13. The method of claim 1 , further comprising: obtaining multiple speaker vectors that each indicate characteristics of speech of a respective speaker; and for each particular speaker vector of the multiple speaker vectors: determining hash values for the particular speaker vector according to each of the multiple different hash functions; and inserting the particular speaker vector into each of the plurality of hash tables based on the hash values. 14. The method of claim 1 , wherein obtaining multiple speaker vectors that each indicate characteristics of speech of a respective speaker comprises: accessing a set of multiple video resources; and generating a speaker vector for each of the multiple video resources. 15. The method of claim 1 , wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises: determining a different speaker vector for each of the plurality of hash tables, wherein each of the different speaker vectors is determined using (i) a different hash value of the determined hash values and (",
+          "file_path": "US9514753B2.txt",
+          "chunk_id": "US9514753B2-chunk-000"
+        },
+        {
+          "reference_id": "1",
+          "content": "that each indicate characteristics of speech of a respective speaker comprises: accessing a set of multiple video resources; and generating a speaker vector for each of the multiple video resources. 15. The method of claim 1 , wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises: determining a different speaker vector for each of the plurality of hash tables, wherein each of the different speaker vectors is determined using (i) a different hash value of the determined hash values and (ii) a different hash table of the plurality of hash tables. 16. A computer-readable storage device storing instructions that, when executed by one or more computers, cause the one or more computers to perform operations comprising: obtaining an utterance vector that is derived from an utterance; determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; and selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector. 17. The storage device of claim 16 , wherein the operations further comprise: accessing data indicating associations between the speaker vectors and respective speakers; determining, based on the data indicating the associations between the speaker vectors and the respective speakers, a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity. 18. A system comprising: one or more computers; and a computer-readable storage device storing instructions that, when executed by the one or more computers, cause the one or more computers to perform operations comprising: obtaining an utterance vector that is derived from an utterance; determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; and selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector. 19. The system of claim 18 , wherein obtaining the utterance vector comprises obtaining an utterance i-vector for the utterance, the utterance i-vector comprising parameters determined using multivariate factor analysis of the utterance; and wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises determining a set of speaker i-vectors from the plurality of hash tables, each speaker i-vector comprising parameters determined using multivariate factor analysis of one or more utterances of a respective speaker. 20. The system of claim 18 , wherein the operations further comprise: accessing data indicating associations between the speaker vectors and respective speakers; determining, based on the data indicating the associations between the speaker vectors and the respective speakers, a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "file_path": "US9514753B2.txt",
+          "chunk_id": "US9514753B2-chunk-001"
+        },
+        {
+          "reference_id": "2",
+          "content": "geographic location token and a search term token in an input query. 4. The method of claim 1 , further comprising: establishing the semi-supervised conditional random fields via one of a rule-based finite state machine model and a statistics-based conditional random field model. 5. The method of claim 4 , wherein the semi-supervised conditional random fields are established via utilizing systematic geographic parsing with the one of the rule-based finite state machine model and the statistics-based conditional random field model. 6. The method of claim 4 , wherein the statistics-based conditional random field model is utilized with class transition features learned from a labeled set of features and extracting at least one high-level language model as a state feature, thereby allowing at least one learned language model to be learned from at least one large-scale class-based log. 7. The method of claim 4 , wherein the rule based finite state machine model is utilized with a phrase level grammar to construct a phrase level grammar composition. 8. The method of claim 7 , further comprising: constructing the phrase level grammar, via the query parser derivation computing device, using a context free grammar composition. 9. The method of claim 4 , wherein the semi-supervised conditional random fields are utilized in a linear-chain Markov random field model. 10. The method of claim 1 , wherein for each label in L = argmax L â¢ â¢ P ( L â¢ ï Q ) . 11. The method of claim 10 , wherein the creating the conditional random field model comprises: characterizing, via the query parser derivation computing device, a conditional random field model of Q and L as a set of feature functions fk, each having a corresponding weight Î»k and computing via the query parser derivation computing device, the conditional probability P ( L â¢ ï Q ) = 1 Z S â¢ exp â¡ ( â t = 1 T â¢ â k â¢ Î» k * f k â¡ ( l t - 1 , l t , Q , t ) ) where fk (ltâ1, lt, Q, t) is a feature function, representing one of a state transition feature, including fk (ltâ1, lt, Q), and an output state feature, including fk (lt, Q), for a given input sequence. 12. A method comprising: deriving a query parser, via a query parser derivation computing device, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens; calculating the most probable label sequence for the input query; assigning one or more sentences from a plurality of sentences to each label based at least in part on the most probable label sequence for the input query, wherein: the one or more sentences are different from the labels; and the one or more sentences are assigned so that the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information; creating a conditional random field model based at least in part on i) the tokens, ii) the labels, iii) characterizing a set of one or more feature functions, wherein: the set of one or more feature functions represent a state transition feature and/or one or more features of an output state for an input sequence; and a conditional probability is computed based in part on the set of one or more feature functions; training the one or more state transition features and the one or more output state features on a labeled set, wherein learning the state transition feature is limited on learning the one or more features of the output state; and utilizing an unstructured local geographical web-based query in local domain by applying a learned model parser, which is based at least in part on the training, to the query, wherein the utilizing the conditional random fields to produce the structured information comprises: parsing the unstructured geographic web-search query to produce the structured information from the unstructured geographic web-search query; determining that the parsing the unstructured geographic web-search query results in a multiple interpretation condition, where the parsing identifies at least a first interpretation of the unstructured geographic web-search query corresponding to first parsing results and a second interpretation of the unstructured geographic web-search query corresponding to second parsing results; and based at least in part on user behavior data, disambiguate the first parsing results and the second parsing results to select the first parsing results corresponding to the first interpretation of the unstructured geographic web-search query. 13. The method of claim 12 , wherein the learned model parser uses at least one class-based query log from a form-based query system. 14. The method of claim 13 , wherein the learned model parser comprises at least one class-level multi-token language model-based feature harvested from a structured query log. 15. The method of claim 14 , wherein the structured query log comprises a class-based log from a form-based query system. 16. The method of claim 12 , wherein the learned model parser comprises a learning statistical conditional random field parser. 17. The method of claim 16 , wherein the learning statistical conditional random field parser performs at least one of segmenting and labeling query sequence data. 18. One or more non-transitory, machine-readable media having machine-readable instructions thereon, which instructions, when executed by one or more computing devices, cause the one or more computing devices to: derive a query parser for parsing an unstructured geographic web-search query into a field-based format, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each",
+          "file_path": "US9218390B2.txt",
+          "chunk_id": "US9218390B2-chunk-001"
+        },
+        {
+          "reference_id": "3",
+          "content": "Publication number: US8095432B1\nTitle: Recommendation engine for social networks\n\nABSTRACT\nA method for making a recommendation, comprising obtaining a plurality of recommendations for a plurality of items from a plurality of members of a social networking utility, ranking the plurality of recommendations based on a relationship proximity of the plurality of members to an inquiring member within the social networking utility, wherein the relationship proximity is closest for friends of the inquiring member, and farthest for strangers to the inquiring member, wherein friends of the inquiring member are within a network of the inquiring member, and strangers of the inquiring member are outside of the network of the inquiring network, performing a search for one of the plurality of items, and displaying the plurality of recommendations associated with one of the plurality of items in an order defined by the ranking.\n\nCLAIMS\n1. A method for generating a recommendation list for an item, comprising: obtaining a first recommendation for the item from a first member of a social networking utility, wherein the first member of the social networking utility is a friend of an inquiring member within the social networking utility; obtaining a second recommendation for the item from a second member of the social networking utility, wherein the second member of the social networking utility is a non-friend of the inquiring member within the social networking utility; determining, using a processor, a first relationship proximity of the first member with the inquiring member; determining, using the processor, a second relationship proximity of the second member with the inquiring member; ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank; receiving, from the inquiring member, a request to search for the item in the social networking utility; performing, based on the request from the inquiring member, a search for the item within the social networking utility; generating, using the processor, a recommendation list for the item comprising the first recommendation and the second recommendation, wherein the first recommendation is higher on the recommendation list than the second recommendation based on the first rank exceeding the second rank; determining that the first member comprises a plurality of interests in common with the inquiring member; determining that a third member of the social networking utility comprises a plurality of different interests than the inquiring member; comparing the first rank of the first recommendation of the first member with a third rank of a third recommendation of the third member; and determining that the first rank is higher than the third rank. 2. The method of claim 1 , further comprising: receiving, from the inquiring member, a third recommendation of the item; and transmitting the third recommendation of the item to a third member of the social networking utility, wherein the third member of the social networking utility is a third friend of the inquiring member within the social networking utility. 3. The method of claim 1 , wherein the relationship proximity of group members of the inquiring member is closer than the relationship proximity of non-group members of the inquiring member, wherein the relationship proximity is closer for friends of the inquiring member, and farther for non-friends to the inquiring member, wherein friends of the inquiring member are within a network of the inquiring member, and wherein non-friends of the inquiring member are outside of the network of the inquiring member. 4. The method of claim 1 , further comprising: receiving a request for a plurality of recommendations associated with a random item of a plurality of items; and displaying the plurality of recommendations associated with the random item. 5. The method of claim 1 , further comprising: receiving a request to purchase the item; and performing a purchase transaction for the item. 6. The method of claim 1 , wherein the search is filtered by a network of the inquiring member. 7. The method of claim 1 , further comprising: identifying a plurality of favorite items of the inquiring member; and sharing the plurality of favorite items with a network of the inquiring member. 8. The method of claim 1 , further comprising: receiving a plurality of inventory details associated with the item; and associating the plurality of inventory details with the first recommendation and the second recommendation. 9. The method of claim 8 , wherein the plurality of inventory details is received from an inventory management system. 10. The method of claim 1 , further comprising: generating receiving a plurality of inventory management reports for the item. 11. The method of claim 1 , further comprising: generating a plurality of searchable tags for the item; and associating the plurality of searchable tags with the item. 12. The method of claim 1 , further comprising: receiving a reduced a price for the item; modifying a price of the item to the reduced price; and updating a news feed of the inquiring member to include the reduced price and the price. 13. The method of claim 1 , further comprising: receiving a payment upon a purchase of the item from the inquiring member. 14. The method of claim 1 , further comprising: receiving a payment for each click associated with the item within plurality of items from the social networking utility. 15. The method of claim 1 , further comprising: adding the inquiring member to a fan group associated with the item. 16. A system for generating a recommendation list for an item, comprising: a processor; a memory operatively connected to the processor; and a recommendation application executing on the processor, resident in memory, and configured to: obtain a first recommendation for the item from a first member of a social networking utility, wherein the first member of the social networking utility is a friend of an inquiring member within the social networking utility; obtain a second recommendation for the item from a second member of the social networking utility, wherein the second member",
+          "file_path": "US8095432B1.txt",
+          "chunk_id": "US8095432B1-chunk-000"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9514753B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9218390B2.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US8095432B1.txt"
+        }
+      ]
+    },
+    "metadata": {
+      "query_mode": "mix",
+      "keywords": {
+        "high_level": [
+          "claim dependency chain",
+          "patent claim analysis",
+          "speaker selection",
+          "cosine distance threshold"
+        ],
+        "low_level": [
+          "US9514753B2",
+          "hash-table speaker candidates",
+          "smallest cosine distance",
+          "maximum threshold",
+          "claim number",
+          "patent publication number"
+        ]
+      },
+      "processing_info": {
+        "total_entities_found": 22,
+        "total_relations_found": 32,
+        "entities_after_truncation": 22,
+        "relations_after_truncation": 32,
+        "merged_chunks_count": 13,
+        "final_chunks_count": 4
+      }
+    },
+    "llm_response": {
+      "content": "## Claim Dependency Chain in US9514753B2\n\n**Stated facts (from the claims):**\n\n- **Claim 1** is the base independent method claim. It recites \"determining a set of speaker vectors from a plurality of hash tables using the hash values\" and \"selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector.\"\n- **Claim 9** depends on claim 1 and states: \"comparing the speaker vectors in the set with the utterance vector comprises determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set; and wherein selecting a speaker vector comprises selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector.\"\n- **Claim 10** depends on claim 9 and states: \"determining similarity scores … comprises determining a cosine distance between the utterance vector and each of the speaker vectors in the set.\"\n- **Claim 11** depends on claim 10 and states: \"identifying a smallest cosine distance from among the determined cosine distances; determining that the smallest cosine distance is less than a maximum distance threshold value; and based on determining that the smallest cosine distance is less than the maximum distance threshold value, selecting the speaker vector corresponding to the smallest cosine distance.\"\n\n**Inference (not stated in the patent):** The dependency chain is therefore 1 → 9 → 10 → 11, meaning the hash-table candidate set of claim 1 is narrowed through similarity scoring (claim 9), cosine distance (claim 10), and finally the threshold-gated minimum-distance selection (claim 11). This ordering is my reading of the claim references, not an explicit statement in the text.\n\n**Missing evidence:** The provided context does not state what happens if the smallest cosine distance is *not* below the threshold; no fallback or rejection step is recited in the available claims.\n\n### References\n\n- [1] US9514753B2.txt",
+      "response_iterator": null,
+      "is_streaming": false,
+      "llm_generated": true
+    }
+  }
+}

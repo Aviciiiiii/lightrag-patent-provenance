@@ -1,0 +1,19 @@
+{
+  "url": "https://datasets-server.huggingface.co/rows?dataset=lj408%2FDis2Pat&config=default&split=train&offset=0&length=100",
+  "retrieved_at": "2026-10-29T13:12:26.608525+00:00",
+  "headers": {
+    "Content-Type": "application/json",
+    "Content-Length": "6749896",
+    "Connection": "close",
+    "Date": "Thu, 29 Oct 2026 13:12:24 GMT",
+    "vary": "Accept-Encoding",
+    "server": "uvicorn",
+    "cache-control": "max-age=120",
+    "x-revision": "eda4a497291e9e8b898639881c34f158524732fc",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 287991e261162873df46f1b9991cee7e.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "LAX54-P12",
+    "X-Amz-Cf-Id": "QlOvJ-fxIrb3xbn_G_OyqzBajp1P6KRwZmdhrVeJtvus0kG6nDmUDw=="
+  },
+  "bytes": 6749896
+}

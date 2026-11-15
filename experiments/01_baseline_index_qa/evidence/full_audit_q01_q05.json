@@ -1,0 +1,1301 @@
+{
+  "reviewed_utc": "2026-10-29T14:44:36.679041+00:00",
+  "scope": "Q01–Q05,naiveandmix,full20-patentindex",
+  "review_method": "AI-assisted independent agent review against preserved source Claims, same-call retrieval data, graph snapshot and mechanically checked quotes; not independent human gold standard",
+  "criteria": "round2/evidence/evaluation_criteria.json",
+  "clarification": "round2/evidence/evaluation_criteria_amendment.json",
+  "audited_query_count": 10,
+  "core_required_fact_correct_count": 10,
+  "correct_patent_count": 10,
+  "correct_claim_attribution_count": 10,
+  "all_required_evidence_retrieved_count": 10,
+  "answer_reference_mapping_correct_count": 10,
+  "unsupported_scope_assertion_answer_count": 1,
+  "verbatim_quote_note": "Some otherwise faithful excerpts alter terminal punctuation or explicitly use ellipses/editorial[s]; do not claim all quotes are byte-exact. These are separated from technical fact errors.",
+  "audits": [
+    {
+      "question_id": "Q01",
+      "mode": "naive",
+      "execution_state": "completed",
+      "question": "Which patent in this collection uses multiple hash functions and hash tables to select a speaker vector and output a speaker identity? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "finished_utc": "2026-10-29T14:39:13.938961+00:00",
+      "query_artifact": "round2/results/full_Q01_naive.json",
+      "query_artifact_sha256": "a51af785c0f5d03135cfd3026b0024cf4ed02c9c57e7a1753f566dfa5133e269",
+      "answer_verbatim": "**Answer**\n\nThe patent is **US9514753B2**, titled \"Speaker identification using hash-based indexing.\"\n\n**Stated facts (from the document):**\n\n- Claim 1 recites: \"determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values.\"\n- Claim 1 further recites: \"selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.\"\n- The abstract describes the same approach: \"Hash values are determined for the utterance vector according to multiple different hash functions. A set of speaker vectors from a plurality of hash tables is determined using the hash values.\"\n\n**Inference (not stated in the document):**\n\n- Because Claim 1 combines multiple hash functions, multiple hash tables, speaker-vector selection, and output of a speaker identity in a single claim, it is the claim that most directly matches the query's combination of features. This is my comparison, not an explicit statement in the source.\n\n**Missing/insufficient evidence:** The provided context does not show equivalent hash-function/hash-table speaker-identification claims in the other documents, so no cross-patent comparison beyond this one can be confirmed.\n\n### References\n\n- [1] US9514753B2.txt",
+      "core_required_fact_correct": true,
+      "correct_patent": true,
+      "correct_claim_attribution": true,
+      "named_claims_checked": [
+        1
+      ],
+      "claim_alternative_note": null,
+      "references_resolve": true,
+      "referenced_documents_support_requested_fact": true,
+      "answer_reference_checks": [
+        {
+          "reference_id": "1",
+          "answer_file_path": "US9514753B2.txt",
+          "same_call_file_path": "US9514753B2.txt",
+          "resolves": true,
+          "supports_requested_fact": true
+        }
+      ],
+      "references_format": "official final References list; absence of per-sentence numbered anchors not scored as an error",
+      "retrieval_counts": {
+        "entities": 0,
+        "relationships": 0,
+        "chunks": 8,
+        "references": 6
+      },
+      "required_evidence_retrieval": [
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 1,
+          "required_quote": "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values",
+          "exact_supporting_returned_chunk_ids": [
+            "US9514753B2-chunk-000",
+            "US9514753B2-chunk-001"
+          ],
+          "present": true
+        },
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 1,
+          "required_quote": "determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "exact_supporting_returned_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ],
+          "present": true
+        }
+      ],
+      "all_required_quotes_retrieved": true,
+      "quoted_segment_checks": [
+        {
+          "quoted_text": "Speaker identification using hash-based indexing.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "Speaker identification using hash-based indexing."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity."
+          ],
+          "literal_segment_document_positions": [
+            1249
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            1
+          ],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "Hash values are determined for the utterance vector according to multiple different hash functions. A set of speaker vectors from a plurality of hash tables is determined using the hash values.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "Hash values are determined for the utterance vector according to multiple different hash functions. A set of speaker vectors from a plurality of hash tables is determined using the hash values."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        }
+      ],
+      "exact_quote_caveat": true,
+      "quoted_technical_meaning_errors_found": false,
+      "unsupported_assertions": [],
+      "possible_failure_stages": [],
+      "minor_quote_formatting_stage": "generation quotation rendering",
+      "source_coverage_notes": "Core answer supported. Explicitly says broader cross-patent comparison cannot be confirmed; this appropriately limits the retrieved context.",
+      "primary_verdict": "core_answer_success",
+      "graph_trace_availability": {
+        "full_snapshot": "round2/results/full_graph.json",
+        "publication_linked_edge_count": 32,
+        "raw_extraction_cache": "round2/storage_full/patent_r2_full/kv_store_llm_response_cache.json",
+        "no_extraction_failure_inferred": true
+      }
+    },
+    {
+      "question_id": "Q01",
+      "mode": "mix",
+      "execution_state": "completed",
+      "question": "Which patent in this collection uses multiple hash functions and hash tables to select a speaker vector and output a speaker identity? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "finished_utc": "2026-10-29T14:39:24.281698+00:00",
+      "query_artifact": "round2/results/full_Q01_mix.json",
+      "query_artifact_sha256": "b7ca3b3328a5ce9e306f2b90852ab0bebaa370d8e918f7697c1c9a0f59706342",
+      "answer_verbatim": "**Patent identified:** US9514753B2, titled \"Speaker identification using hash-based indexing.\"\n\n**Stated facts (from the document):**\n\n- The abstract describes obtaining \"an utterance vector that is derived from an utterance,\" determining \"hash values for the utterance vector according to multiple different hash functions,\" and determining \"a set of speaker vectors from a plurality of hash tables using the hash values.\"\n- Claim 1 recites the full sequence: \"determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values... comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.\"\n- Claim 6 states the hash values may be determined \"using one or more locality sensitive hash functions,\" and Claim 7 states they may be based on \"a position of the utterance vector with respect to different hyperplanes.\"\n- Claim 9 describes comparing via \"similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set,\" selecting the most similar vector.\n\n**Inference (not stated in the document):**\n\n- That US9514753B2 is the only patent in this collection matching the described hash-based speaker-identification approach is an inference from the provided evidence: the other documents (US8655901B1 on translation-based query pattern mining; US8880423B2 on advertisement inventory estimation) contain no speaker-vector or hash-table speaker identification claims. The evidence does not establish links between these patents.\n\n### References\n\n- [1] US9514753B2.txt",
+      "core_required_fact_correct": true,
+      "correct_patent": true,
+      "correct_claim_attribution": true,
+      "named_claims_checked": [
+        1,
+        6,
+        7,
+        9
+      ],
+      "claim_alternative_note": null,
+      "references_resolve": true,
+      "referenced_documents_support_requested_fact": true,
+      "answer_reference_checks": [
+        {
+          "reference_id": "1",
+          "answer_file_path": "US9514753B2.txt",
+          "same_call_file_path": "US9514753B2.txt",
+          "resolves": true,
+          "supports_requested_fact": true
+        }
+      ],
+      "references_format": "official final References list; absence of per-sentence numbered anchors not scored as an error",
+      "retrieval_counts": {
+        "entities": 16,
+        "relationships": 26,
+        "chunks": 5,
+        "references": 3
+      },
+      "required_evidence_retrieval": [
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 1,
+          "required_quote": "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values",
+          "exact_supporting_returned_chunk_ids": [
+            "US9514753B2-chunk-000",
+            "US9514753B2-chunk-001"
+          ],
+          "present": true
+        },
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 1,
+          "required_quote": "determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "exact_supporting_returned_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ],
+          "present": true
+        }
+      ],
+      "all_required_quotes_retrieved": true,
+      "quoted_segment_checks": [
+        {
+          "quoted_text": "Speaker identification using hash-based indexing.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "Speaker identification using hash-based indexing."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "an utterance vector that is derived from an utterance,",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "an utterance vector that is derived from an utterance,"
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "hash values for the utterance vector according to multiple different hash functions,",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "hash values for the utterance vector according to multiple different hash functions,"
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "a set of speaker vectors from a plurality of hash tables using the hash values.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "a set of speaker vectors from a plurality of hash tables using the hash values."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values... comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "classification": "declared_ellipsis_segments_exact_in_order",
+          "declared_ellipsis": true,
+          "segments": [
+            "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values",
+            "comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity."
+          ],
+          "literal_segment_document_positions": [
+            905,
+            1181
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "using one or more locality sensitive hash functions,",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "using one or more locality sensitive hash functions,"
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "a position of the utterance vector with respect to different hyperplanes.",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "a position of the utterance vector with respect to different hyperplanes."
+          ],
+          "literal_segment_document_positions": [
+            3507
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            7
+          ],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set,",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set,"
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        }
+      ],
+      "exact_quote_caveat": true,
+      "quoted_technical_meaning_errors_found": false,
+      "unsupported_assertions": [
+        {
+          "answer_span": "That US9514753B2 is the only patent in this collection matching the described hash-based speaker-identification approach is an inference from the provided evidence",
+          "type": "unsupported_corpus_wide_exclusivity",
+          "source_evidence": "Same-call context returns only US9514753B2,US8655901B1,US8880423B2 from20 indexed publications; US8880423B2 is represented by chunk001 only.",
+          "retrieved_publications": [
+            "US8655901B1",
+            "US8880423B2",
+            "US9514753B2"
+          ],
+          "retrieved_publication_count": 3,
+          "indexed_publication_count": 20,
+          "reason": "The retrieved subset can support identifying the target patent, but cannot establish uniqueness across all20 patents. Labeling this as inference does not supply exhaustive evidence.",
+          "stage": "generation_evidence_scope",
+          "attribution_confidence": "high for the evidential overreach; truth of whole-corpus uniqueness not adjudicated",
+          "not_claimed": "Not a proven false technical fact, extraction failure, graph-indexing defect, retrieval miss, or wrong-reference mapping."
+        }
+      ],
+      "possible_failure_stages": [
+        "generation_evidence_scope"
+      ],
+      "minor_quote_formatting_stage": "generation quotation rendering",
+      "source_coverage_notes": "Core answer supported, but corpus-wide exclusivity is not established by the retrieved subset. No claim that the exclusivity is demonstrably false.",
+      "primary_verdict": "core_answer_success_with_unsupported_exclusivity",
+      "graph_trace_availability": {
+        "full_snapshot": "round2/results/full_graph.json",
+        "publication_linked_edge_count": 32,
+        "raw_extraction_cache": "round2/storage_full/patent_r2_full/kv_store_llm_response_cache.json",
+        "no_extraction_failure_inferred": true
+      }
+    },
+    {
+      "question_id": "Q02",
+      "mode": "naive",
+      "execution_state": "completed",
+      "question": "Which patent uses a data catalog history object describing a first ETL process to trigger a second subscribed ETL process? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "finished_utc": "2026-10-29T14:39:34.055372+00:00",
+      "query_artifact": "round2/results/full_Q02_naive.json",
+      "query_artifact_sha256": "071d5d6a7e94f47f67fde2dd3272c7a272a6289e4413903984d7b06e8c51fd4d",
+      "answer_verbatim": "**Answer**\n\nThe patent is **US11423041B2**, titled *Maintaining data lineage to detect data events*. The relevant subject matter appears in **claim 1** (system claim), with corresponding method and media claims (claims 8 and 15).\n\n**Stated facts (quoted from the evidence):**\n\n- Claim 1 recites a data catalog configured to \"receive, at the data catalog, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects.\"\n- It further recites storing \"an instance of a history object in a history data structure according to the received indication,\" where the history object is \"created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process.\"\n- The catalog then \"evaluate[s] … the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event.\"\n- Upon determining the criteria are satisfied, the catalog \"cause[s] the second ETL process to be performed.\"\n\n**Inference (not stated as such in the document):** The claim structure implies the history object functions as the monitoring anchor for event registration, since the event is described as \"registered for monitoring with regard to the history object.\" This is a characterization of how the claim elements relate, not an explicit statement in the text.\n\n**Missing/insufficient evidence:** The provided context does not establish any link between US11423041B2 and the other listed patents (US8655901B1, US9118735B1, US7756837B2); no comparison is supported.\n\n### References\n\n- [1] US11423041B2.txt",
+      "core_required_fact_correct": true,
+      "correct_patent": true,
+      "correct_claim_attribution": true,
+      "named_claims_checked": [
+        1,
+        8,
+        15
+      ],
+      "claim_alternative_note": null,
+      "references_resolve": true,
+      "referenced_documents_support_requested_fact": true,
+      "answer_reference_checks": [
+        {
+          "reference_id": "1",
+          "answer_file_path": "US11423041B2.txt",
+          "same_call_file_path": "US11423041B2.txt",
+          "resolves": true,
+          "supports_requested_fact": true
+        }
+      ],
+      "references_format": "official final References list; absence of per-sentence numbered anchors not scored as an error",
+      "retrieval_counts": {
+        "entities": 0,
+        "relationships": 0,
+        "chunks": 7,
+        "references": 4
+      },
+      "required_evidence_retrieval": [
+        {
+          "publication_number": "US11423041B2",
+          "claim_number": 1,
+          "required_quote": "the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object",
+          "exact_supporting_returned_chunk_ids": [
+            "US11423041B2-chunk-000",
+            "US11423041B2-chunk-001"
+          ],
+          "present": true
+        },
+        {
+          "publication_number": "US11423041B2",
+          "claim_number": 1,
+          "required_quote": "in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed.",
+          "exact_supporting_returned_chunk_ids": [
+            "US11423041B2-chunk-000"
+          ],
+          "present": true
+        }
+      ],
+      "all_required_quotes_retrieved": true,
+      "quoted_segment_checks": [
+        {
+          "quoted_text": "receive, at the data catalog, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "receive, at the data catalog, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "an instance of a history object in a history data structure according to the received indication,",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "an instance of a history object in a history data structure according to the received indication,"
+          ],
+          "literal_segment_document_positions": [
+            1214
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            1,
+            8,
+            15
+          ],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "evaluate[s] … the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": true,
+          "segments": [
+            "evaluate[s]",
+            "the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "cause[s] the second ETL process to be performed.",
+          "classification": "explicit_bracketed_grammar_and_declared_ellipsis_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "cause[s] the second ETL process to be performed."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "registered for monitoring with regard to the history object.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "registered for monitoring with regard to the history object."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        }
+      ],
+      "exact_quote_caveat": true,
+      "quoted_technical_meaning_errors_found": false,
+      "unsupported_assertions": [],
+      "possible_failure_stages": [],
+      "minor_quote_formatting_stage": "generation quotation rendering",
+      "source_coverage_notes": "Claim1 and parallel method/media Claims8/15 were checked in original text. evaluate[s]/cause[s] are declared editorial grammar adjustments, not invented technical operations.",
+      "primary_verdict": "core_answer_success",
+      "graph_trace_availability": {
+        "full_snapshot": "round2/results/full_graph.json",
+        "publication_linked_edge_count": 46,
+        "raw_extraction_cache": "round2/storage_full/patent_r2_full/kv_store_llm_response_cache.json",
+        "no_extraction_failure_inferred": true
+      }
+    },
+    {
+      "question_id": "Q02",
+      "mode": "mix",
+      "execution_state": "completed",
+      "question": "Which patent uses a data catalog history object describing a first ETL process to trigger a second subscribed ETL process? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "finished_utc": "2026-10-29T14:39:45.064528+00:00",
+      "query_artifact": "round2/results/full_Q02_mix.json",
+      "query_artifact_sha256": "358e8af931a12d6afe2bf5d4eda84e66f680d05988a7a3f76f4f78bb3c07d4e4",
+      "answer_verbatim": "**Answer**\n\nThe patent that describes this arrangement is **US11423041B2**, titled \"Maintaining data lineage to detect data events.\"\n\n**Stated facts (from the document):**\n\n- **Claim 1** of US11423041B2 recites a system implementing \"a data catalog for an Extract, Transform, Load (ETL) service,\" configured to \"store, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process.\"\n- The same claim states the data catalog is configured to \"evaluate, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event.\"\n- It further recites: \"in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed.\"\n- The event is described as \"registered for monitoring with regard to the history object.\"\n\n**Inference (not stated as such in the document):**\n\n- The history object therefore functions as the monitoring anchor that links the first ETL process's recorded performance to the triggering of the subscribed second ETL process. This is a characterization of how the recited elements combine, not an explicit statement in the text.\n\n**Note on scope:** The document also describes a parallel arrangement in **Claim 2** involving a second history object, a third ETL process, and a fourth ETL process subscribed to a different event. No comparison to other patents is supported by the provided evidence.\n\n### References\n\n- [1] US11423041B2.txt",
+      "core_required_fact_correct": true,
+      "correct_patent": true,
+      "correct_claim_attribution": true,
+      "named_claims_checked": [
+        1,
+        2
+      ],
+      "claim_alternative_note": null,
+      "references_resolve": true,
+      "referenced_documents_support_requested_fact": true,
+      "answer_reference_checks": [
+        {
+          "reference_id": "1",
+          "answer_file_path": "US11423041B2.txt",
+          "same_call_file_path": "US11423041B2.txt",
+          "resolves": true,
+          "supports_requested_fact": true
+        }
+      ],
+      "references_format": "official final References list; absence of per-sentence numbered anchors not scored as an error",
+      "retrieval_counts": {
+        "entities": 14,
+        "relationships": 38,
+        "chunks": 4,
+        "references": 2
+      },
+      "required_evidence_retrieval": [
+        {
+          "publication_number": "US11423041B2",
+          "claim_number": 1,
+          "required_quote": "the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object",
+          "exact_supporting_returned_chunk_ids": [
+            "US11423041B2-chunk-000",
+            "US11423041B2-chunk-001"
+          ],
+          "present": true
+        },
+        {
+          "publication_number": "US11423041B2",
+          "claim_number": 1,
+          "required_quote": "in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed.",
+          "exact_supporting_returned_chunk_ids": [
+            "US11423041B2-chunk-000"
+          ],
+          "present": true
+        }
+      ],
+      "all_required_quotes_retrieved": true,
+      "quoted_segment_checks": [
+        {
+          "quoted_text": "Maintaining data lineage to detect data events.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "Maintaining data lineage to detect data events."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "a data catalog for an Extract, Transform, Load (ETL) service,",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "a data catalog for an Extract, Transform, Load (ETL) service,"
+          ],
+          "literal_segment_document_positions": [
+            932
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            1,
+            8,
+            15
+          ],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "store, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "store, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "evaluate, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "evaluate, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed.",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed."
+          ],
+          "literal_segment_document_positions": [
+            1972
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            1
+          ],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "registered for monitoring with regard to the history object.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "registered for monitoring with regard to the history object."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        }
+      ],
+      "exact_quote_caveat": true,
+      "quoted_technical_meaning_errors_found": false,
+      "unsupported_assertions": [],
+      "possible_failure_stages": [],
+      "minor_quote_formatting_stage": "generation quotation rendering",
+      "source_coverage_notes": "Claim1 and additional Claim2 third/fourth-ETL arrangement checked against source. Monitoring-anchor characterization is labeled inference and consistent with source event registration wording.",
+      "primary_verdict": "core_answer_success",
+      "graph_trace_availability": {
+        "full_snapshot": "round2/results/full_graph.json",
+        "publication_linked_edge_count": 46,
+        "raw_extraction_cache": "round2/storage_full/patent_r2_full/kv_store_llm_response_cache.json",
+        "no_extraction_failure_inferred": true
+      }
+    },
+    {
+      "question_id": "Q03",
+      "mode": "naive",
+      "execution_state": "completed",
+      "question": "In US8509827B2, which claim explicitly ranks context-data sources using the pecuniary cost of acquiring their context data? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "finished_utc": "2026-10-29T14:39:51.699969+00:00",
+      "query_artifact": "round2/results/full_Q03_naive.json",
+      "query_artifact_sha256": "dcb795e96fc3c40dfbdae6e448aaed91d1f1fe819884b02d8c3fbd1a8e8db50d",
+      "answer_verbatim": "**Answer**\n\nIn US8509827B2, **claim 1** explicitly recites ranking context-data sources using a pecuniary cost. The exact supporting wording is:\n\n> \"algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source\"\n\n**Stated facts (from the document):**\n- Claim 1 is a method claim that includes receiving a short message, determining a context-data type, identifying at least one context-data source, ranking that source according to a specified parameter, and generating a request for context data.\n- The specified parameter in claim 1 is defined as comprising \"a pecuniary cost to acquire the context data.\"\n- Claim 18 (apparatus) contains the same ranking limitation with the same pecuniary-cost wording.\n- Claim 22 recites selecting relevant context data according to a metric that \"comprises a monetary cost of the context-data.\"\n\n**Inference (not stated):**\n- Claims 18 and 22 appear to mirror the pecuniary/monetary cost ranking concept in apparatus and alternative method form, but the document does not expressly link these claims as a family or state that they are equivalent in scope.\n\n### References\n\n- [1] US8509827B2.txt",
+      "core_required_fact_correct": true,
+      "correct_patent": true,
+      "correct_claim_attribution": true,
+      "named_claims_checked": [
+        1,
+        18,
+        22
+      ],
+      "claim_alternative_note": "Claim18 is also accepted and source-verified, but this answer correctly names Claim1.",
+      "references_resolve": true,
+      "referenced_documents_support_requested_fact": true,
+      "answer_reference_checks": [
+        {
+          "reference_id": "1",
+          "answer_file_path": "US8509827B2.txt",
+          "same_call_file_path": "US8509827B2.txt",
+          "resolves": true,
+          "supports_requested_fact": true
+        }
+      ],
+      "references_format": "official final References list; absence of per-sentence numbered anchors not scored as an error",
+      "retrieval_counts": {
+        "entities": 0,
+        "relationships": 0,
+        "chunks": 6,
+        "references": 5
+      },
+      "required_evidence_retrieval": [
+        {
+          "publication_number": "US8509827B2",
+          "claim_number": 1,
+          "required_quote": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source",
+          "exact_supporting_returned_chunk_ids": [
+            "US8509827B2-chunk-000"
+          ],
+          "present": true
+        }
+      ],
+      "all_required_quotes_retrieved": true,
+      "quoted_segment_checks": [
+        {
+          "quoted_text": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source"
+          ],
+          "literal_segment_document_positions": [
+            1350
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            1,
+            18
+          ],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "a pecuniary cost to acquire the context data.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "a pecuniary cost to acquire the context data."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "comprises a monetary cost of the context-data.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "comprises a monetary cost of the context-data."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        }
+      ],
+      "exact_quote_caveat": true,
+      "quoted_technical_meaning_errors_found": false,
+      "unsupported_assertions": [],
+      "possible_failure_stages": [],
+      "minor_quote_formatting_stage": "generation quotation rendering",
+      "source_coverage_notes": "Claim1 is correct; Claim18 repeats the ranking parameter; Claim22 is a method with monetary-cost metric. Model explicitly avoids claiming equivalent legal scope.",
+      "primary_verdict": "core_answer_success",
+      "graph_trace_availability": {
+        "full_snapshot": "round2/results/full_graph.json",
+        "publication_linked_edge_count": 40,
+        "raw_extraction_cache": "round2/storage_full/patent_r2_full/kv_store_llm_response_cache.json",
+        "no_extraction_failure_inferred": true
+      }
+    },
+    {
+      "question_id": "Q03",
+      "mode": "mix",
+      "execution_state": "completed",
+      "question": "In US8509827B2, which claim explicitly ranks context-data sources using the pecuniary cost of acquiring their context data? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "finished_utc": "2026-10-29T14:40:04.434896+00:00",
+      "query_artifact": "round2/results/full_Q03_mix.json",
+      "query_artifact_sha256": "10524bb8ca34059f982be5d1a35feeb60691c28385ab5ef08e7b1c655fbc302d",
+      "answer_verbatim": "**Stated fact (from the evidence):** In US8509827B2, **claim 1** explicitly recites ranking context-data sources using the pecuniary cost of acquiring their context data. The exact supporting wording is:\n\n> \"algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source\"\n\nClaim 1 also frames this within a method that includes \"receiving a short message from a mobile device with a server\" and \"algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message.\"\n\n**Related stated facts:** The same pecuniary-cost parameter appears in independent **claim 18** (apparatus), which recites \"algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source.\" Dependent **claim 14** separately recites that \"the specified parameter comprises a cost value of the context data as provided by the context-data source.\"\n\n**Inference (not stated in the evidence):** Because claim 1 uses \"comprising,\" the pecuniary-cost limitation appears to be a required element of that claim rather than an optional feature; however, the evidence does not include claim construction or prosecution history, so this is an interpretive inference only.\n\n### References\n\n- [1] US8509827B2.txt",
+      "core_required_fact_correct": true,
+      "correct_patent": true,
+      "correct_claim_attribution": true,
+      "named_claims_checked": [
+        1,
+        14,
+        18
+      ],
+      "claim_alternative_note": "Claim18 is also accepted and source-verified, but this answer correctly names Claim1.",
+      "references_resolve": true,
+      "referenced_documents_support_requested_fact": true,
+      "answer_reference_checks": [
+        {
+          "reference_id": "1",
+          "answer_file_path": "US8509827B2.txt",
+          "same_call_file_path": "US8509827B2.txt",
+          "resolves": true,
+          "supports_requested_fact": true
+        }
+      ],
+      "references_format": "official final References list; absence of per-sentence numbered anchors not scored as an error",
+      "retrieval_counts": {
+        "entities": 22,
+        "relationships": 32,
+        "chunks": 4,
+        "references": 3
+      },
+      "required_evidence_retrieval": [
+        {
+          "publication_number": "US8509827B2",
+          "claim_number": 1,
+          "required_quote": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source",
+          "exact_supporting_returned_chunk_ids": [
+            "US8509827B2-chunk-000"
+          ],
+          "present": true
+        }
+      ],
+      "all_required_quotes_retrieved": true,
+      "quoted_segment_checks": [
+        {
+          "quoted_text": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source"
+          ],
+          "literal_segment_document_positions": [
+            1350
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            1,
+            18
+          ],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "receiving a short message from a mobile device with a server",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "receiving a short message from a mobile device with a server"
+          ],
+          "literal_segment_document_positions": [
+            970
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            1
+          ],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "the specified parameter comprises a cost value of the context data as provided by the context-data source.",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "the specified parameter comprises a cost value of the context data as provided by the context-data source."
+          ],
+          "literal_segment_document_positions": [
+            3625
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            14
+          ],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "comprising,",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "comprising,"
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        }
+      ],
+      "exact_quote_caveat": true,
+      "quoted_technical_meaning_errors_found": false,
+      "unsupported_assertions": [],
+      "possible_failure_stages": [],
+      "minor_quote_formatting_stage": "generation quotation rendering",
+      "source_coverage_notes": "Claims1/18/14 accurately quoted or summarized. Claim-construction remark is explicitly qualified interpretation, not verified legal conclusion; it is not needed for the technical answer.",
+      "primary_verdict": "core_answer_success",
+      "graph_trace_availability": {
+        "full_snapshot": "round2/results/full_graph.json",
+        "publication_linked_edge_count": 40,
+        "raw_extraction_cache": "round2/storage_full/patent_r2_full/kv_store_llm_response_cache.json",
+        "no_extraction_failure_inferred": true
+      }
+    },
+    {
+      "question_id": "Q04",
+      "mode": "naive",
+      "execution_state": "completed",
+      "question": "In US9514753B2, which claim explicitly specifies locality sensitive hash functions, and what exact wording supports this? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "finished_utc": "2026-10-29T14:40:11.969027+00:00",
+      "query_artifact": "round2/results/full_Q04_naive.json",
+      "query_artifact_sha256": "2b12e2e3eee91327005c25a4b9fabefc30b8e980724fb766d4d4e40f5ac202e7",
+      "answer_verbatim": "**Stated fact (from the patent text):** In US9514753B2, **claim 6** explicitly specifies locality sensitive hash functions. The exact supporting wording is: “wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.”\n\n**Related context (also stated):** Claim 1 recites the broader step of “determining hash values for the utterance vector according to multiple different hash functions,” while claim 7 adds that hash values may be determined “based on a position of the utterance vector with respect to different hyperplanes.”\n\n**Inference (not stated as such in the text):** Claim 6 appears to be the claim that most directly names locality sensitive hashing; the hyperplane-based approach in claim 7 is a separate, more specific hash-determination feature, but the text does not expressly label claim 7 as locality sensitive hashing.\n\n### References\n\n- [1] US9514753B2.txt",
+      "core_required_fact_correct": true,
+      "correct_patent": true,
+      "correct_claim_attribution": true,
+      "named_claims_checked": [
+        1,
+        6,
+        7
+      ],
+      "claim_alternative_note": null,
+      "references_resolve": true,
+      "referenced_documents_support_requested_fact": true,
+      "answer_reference_checks": [
+        {
+          "reference_id": "1",
+          "answer_file_path": "US9514753B2.txt",
+          "same_call_file_path": "US9514753B2.txt",
+          "resolves": true,
+          "supports_requested_fact": true
+        }
+      ],
+      "references_format": "official final References list; absence of per-sentence numbered anchors not scored as an error",
+      "retrieval_counts": {
+        "entities": 0,
+        "relationships": 0,
+        "chunks": 6,
+        "references": 5
+      },
+      "required_evidence_retrieval": [
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 6,
+          "required_quote": "6. The method of claim 1 , wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.",
+          "exact_supporting_returned_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ],
+          "present": true
+        }
+      ],
+      "all_required_quotes_retrieved": true,
+      "quoted_segment_checks": [
+        {
+          "quoted_text": "wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions."
+          ],
+          "literal_segment_document_positions": [
+            3270
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            6
+          ],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "determining hash values for the utterance vector according to multiple different hash functions,",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "determining hash values for the utterance vector according to multiple different hash functions,"
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "based on a position of the utterance vector with respect to different hyperplanes.",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "based on a position of the utterance vector with respect to different hyperplanes."
+          ],
+          "literal_segment_document_positions": [
+            3498
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            7
+          ],
+          "technical_meaning_changed": false
+        }
+      ],
+      "exact_quote_caveat": true,
+      "quoted_technical_meaning_errors_found": false,
+      "unsupported_assertions": [],
+      "possible_failure_stages": [],
+      "minor_quote_formatting_stage": "generation quotation rendering",
+      "source_coverage_notes": "Claim6 exact key quotation. Claim7 hyperplane feature correctly distinguished from an explicit locality-sensitive-hash label.",
+      "primary_verdict": "core_answer_success",
+      "graph_trace_availability": {
+        "full_snapshot": "round2/results/full_graph.json",
+        "publication_linked_edge_count": 32,
+        "raw_extraction_cache": "round2/storage_full/patent_r2_full/kv_store_llm_response_cache.json",
+        "no_extraction_failure_inferred": true
+      }
+    },
+    {
+      "question_id": "Q04",
+      "mode": "mix",
+      "execution_state": "completed",
+      "question": "In US9514753B2, which claim explicitly specifies locality sensitive hash functions, and what exact wording supports this? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "finished_utc": "2026-10-29T14:40:21.212356+00:00",
+      "query_artifact": "round2/results/full_Q04_mix.json",
+      "query_artifact_sha256": "20549aa9dd0419c42590bb71902f4a92ff9c601f0aa5bdce664044f03195a304",
+      "answer_verbatim": "**Stated fact (from the patent text):** In US9514753B2, **claim 6** explicitly specifies locality sensitive hash functions. The exact supporting wording is: “wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.”\n\n**Related stated fact:** Claim 7 separately recites hashing “based on a position of the utterance vector with respect to different hyperplanes,” which is distinct from the locality sensitive hash function language in claim 6.\n\n**Inference (not stated in the evidence):** Claim 6 appears to be the claim that most directly ties the claimed hash-value determination to locality sensitive hashing; however, the evidence does not expressly characterize claim 6 as the only such claim or compare it to other claims beyond the quoted text.\n\n### References\n\n- [1] US9514753B2.txt",
+      "core_required_fact_correct": true,
+      "correct_patent": true,
+      "correct_claim_attribution": true,
+      "named_claims_checked": [
+        6,
+        7
+      ],
+      "claim_alternative_note": null,
+      "references_resolve": true,
+      "referenced_documents_support_requested_fact": true,
+      "answer_reference_checks": [
+        {
+          "reference_id": "1",
+          "answer_file_path": "US9514753B2.txt",
+          "same_call_file_path": "US9514753B2.txt",
+          "resolves": true,
+          "supports_requested_fact": true
+        }
+      ],
+      "references_format": "official final References list; absence of per-sentence numbered anchors not scored as an error",
+      "retrieval_counts": {
+        "entities": 26,
+        "relationships": 21,
+        "chunks": 4,
+        "references": 3
+      },
+      "required_evidence_retrieval": [
+        {
+          "publication_number": "US9514753B2",
+          "claim_number": 6,
+          "required_quote": "6. The method of claim 1 , wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.",
+          "exact_supporting_returned_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ],
+          "present": true
+        }
+      ],
+      "all_required_quotes_retrieved": true,
+      "quoted_segment_checks": [
+        {
+          "quoted_text": "wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions."
+          ],
+          "literal_segment_document_positions": [
+            3270
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            6
+          ],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "based on a position of the utterance vector with respect to different hyperplanes,",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "based on a position of the utterance vector with respect to different hyperplanes,"
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        }
+      ],
+      "exact_quote_caveat": true,
+      "quoted_technical_meaning_errors_found": false,
+      "unsupported_assertions": [],
+      "possible_failure_stages": [],
+      "minor_quote_formatting_stage": "generation quotation rendering",
+      "source_coverage_notes": "Claim6 exact key quotation. Does not assert Claim6 is the sole such claim; extra Claim7 context is supported.",
+      "primary_verdict": "core_answer_success",
+      "graph_trace_availability": {
+        "full_snapshot": "round2/results/full_graph.json",
+        "publication_linked_edge_count": 32,
+        "raw_extraction_cache": "round2/storage_full/patent_r2_full/kv_store_llm_response_cache.json",
+        "no_extraction_failure_inferred": true
+      }
+    },
+    {
+      "question_id": "Q05",
+      "mode": "naive",
+      "execution_state": "completed",
+      "question": "In US8655901B1, which method claim requires cross-validating a translated query pattern against a query log using an occurrence threshold? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "finished_utc": "2026-10-29T14:40:26.643420+00:00",
+      "query_artifact": "round2/results/full_Q05_naive.json",
+      "query_artifact_sha256": "d34305eac9b2561d329fe06b641d5462fbbfb2ed4bb0a347fd341ad7bce37424",
+      "answer_verbatim": "**Answer**\n\nIn US8655901B1, the method claim that requires cross-validating a translated query pattern against a query log using an occurrence threshold is **claim 7**.\n\n**Stated fact (quoted from the source):** Claim 7 recites: \"where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.\"\n\n**Inference (not stated in the source):** Because claim 7 depends from claim 1, the cross-validating step is an additional limitation on the method of claim 1 rather than a standalone method. The evidence does not specify how the occurrence threshold is applied or what value it takes.\n\n### References\n\n- [1] US8655901B1.txt",
+      "core_required_fact_correct": true,
+      "correct_patent": true,
+      "correct_claim_attribution": true,
+      "named_claims_checked": [
+        1,
+        7
+      ],
+      "claim_alternative_note": null,
+      "references_resolve": true,
+      "referenced_documents_support_requested_fact": true,
+      "answer_reference_checks": [
+        {
+          "reference_id": "1",
+          "answer_file_path": "US8655901B1.txt",
+          "same_call_file_path": "US8655901B1.txt",
+          "resolves": true,
+          "supports_requested_fact": true
+        }
+      ],
+      "references_format": "official final References list; absence of per-sentence numbered anchors not scored as an error",
+      "retrieval_counts": {
+        "entities": 0,
+        "relationships": 0,
+        "chunks": 6,
+        "references": 5
+      },
+      "required_evidence_retrieval": [
+        {
+          "publication_number": "US8655901B1",
+          "claim_number": 7,
+          "required_quote": "7. The method of claim 1 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.",
+          "exact_supporting_returned_chunk_ids": [
+            "US8655901B1-chunk-000"
+          ],
+          "present": true
+        }
+      ],
+      "all_required_quotes_retrieved": true,
+      "quoted_segment_checks": [
+        {
+          "quoted_text": "where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold."
+          ],
+          "literal_segment_document_positions": [
+            3877
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            7,
+            14
+          ],
+          "technical_meaning_changed": false
+        }
+      ],
+      "exact_quote_caveat": false,
+      "quoted_technical_meaning_errors_found": false,
+      "unsupported_assertions": [],
+      "possible_failure_stages": [],
+      "minor_quote_formatting_stage": null,
+      "source_coverage_notes": "Correct method Claim7 and dependency on Claim1; threshold numeric value is absent from the cited Claims.",
+      "primary_verdict": "core_answer_success",
+      "graph_trace_availability": {
+        "full_snapshot": "round2/results/full_graph.json",
+        "publication_linked_edge_count": 32,
+        "raw_extraction_cache": "round2/storage_full/patent_r2_full/kv_store_llm_response_cache.json",
+        "no_extraction_failure_inferred": true
+      }
+    },
+    {
+      "question_id": "Q05",
+      "mode": "mix",
+      "execution_state": "completed",
+      "question": "In US8655901B1, which method claim requires cross-validating a translated query pattern against a query log using an occurrence threshold? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+      "finished_utc": "2026-10-29T14:40:35.112946+00:00",
+      "query_artifact": "round2/results/full_Q05_mix.json",
+      "query_artifact_sha256": "08c759a007a932404c0fb1f61c38fa9f94d34fc2779125de886cb0f44364a15b",
+      "answer_verbatim": "**Answer**\n\nIn US8655901B1, the method claim that requires cross-validating a translated query pattern against a query log using an occurrence threshold is **claim 7**.\n\nThe exact supporting wording is: “where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.”\n\n**Stated facts (from the evidence):**\n- US8655901B1 is titled “Translation-based query pattern mining.”\n- Claim 7 depends from claim 1 and adds the cross-validation limitation quoted above.\n- The same limitation also appears in system claim 14 (“The system of claim 8 … cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold”).\n\n**Inference (not stated in the evidence):**\n- Because claim 7 is a method claim and claim 14 is a system claim, claim 7 is the method claim that specifically recites the occurrence-threshold cross-validation step.\n\n### References\n\n- [1] US8655901B1.txt",
+      "core_required_fact_correct": true,
+      "correct_patent": true,
+      "correct_claim_attribution": true,
+      "named_claims_checked": [
+        1,
+        7,
+        8,
+        14
+      ],
+      "claim_alternative_note": null,
+      "references_resolve": true,
+      "referenced_documents_support_requested_fact": true,
+      "answer_reference_checks": [
+        {
+          "reference_id": "1",
+          "answer_file_path": "US8655901B1.txt",
+          "same_call_file_path": "US8655901B1.txt",
+          "resolves": true,
+          "supports_requested_fact": true
+        }
+      ],
+      "references_format": "official final References list; absence of per-sentence numbered anchors not scored as an error",
+      "retrieval_counts": {
+        "entities": 21,
+        "relationships": 33,
+        "chunks": 3,
+        "references": 2
+      },
+      "required_evidence_retrieval": [
+        {
+          "publication_number": "US8655901B1",
+          "claim_number": 7,
+          "required_quote": "7. The method of claim 1 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.",
+          "exact_supporting_returned_chunk_ids": [
+            "US8655901B1-chunk-000"
+          ],
+          "present": true
+        }
+      ],
+      "all_required_quotes_retrieved": true,
+      "quoted_segment_checks": [
+        {
+          "quoted_text": "where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.",
+          "classification": "exact",
+          "declared_ellipsis": false,
+          "segments": [
+            "where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold."
+          ],
+          "literal_segment_document_positions": [
+            3877
+          ],
+          "literal_normalized_whole_quote_claim_matches": [
+            7,
+            14
+          ],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "Translation-based query pattern mining.",
+          "classification": "terminal_punctuation_or_clause_ending_changed_source_faithful",
+          "declared_ellipsis": false,
+          "segments": [
+            "Translation-based query pattern mining."
+          ],
+          "literal_segment_document_positions": [
+            -1
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        },
+        {
+          "quoted_text": "The system of claim 8 … cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold",
+          "classification": "declared_ellipsis_segments_exact_in_order",
+          "declared_ellipsis": true,
+          "segments": [
+            "The system of claim 8",
+            "cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold"
+          ],
+          "literal_segment_document_positions": [
+            5932,
+            7035
+          ],
+          "literal_normalized_whole_quote_claim_matches": [],
+          "technical_meaning_changed": false
+        }
+      ],
+      "exact_quote_caveat": true,
+      "quoted_technical_meaning_errors_found": false,
+      "unsupported_assertions": [],
+      "possible_failure_stages": [],
+      "minor_quote_formatting_stage": "generation quotation rendering",
+      "source_coverage_notes": "Correct method Claim7; parallel system Claim14 is correctly labeled system and Claim8 parent. Ellipsis segments in the system-claim excerpt match source.",
+      "primary_verdict": "core_answer_success",
+      "graph_trace_availability": {
+        "full_snapshot": "round2/results/full_graph.json",
+        "publication_linked_edge_count": 32,
+        "raw_extraction_cache": "round2/storage_full/patent_r2_full/kv_store_llm_response_cache.json",
+        "no_extraction_failure_inferred": true
+      }
+    }
+  ],
+  "summary": "All10 core answers identify and support the correct patent/Claim. Q01mix adds an unsupported whole-collection exclusivity claim from3of20 retrieved patents; stage attribution is generation/evidence scope, not earlier pipeline loss. No extraction,indexing,retrieval or citation-mapping failure established in these5 questions."
+}

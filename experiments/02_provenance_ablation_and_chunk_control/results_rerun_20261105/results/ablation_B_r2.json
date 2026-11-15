@@ -1,0 +1,27 @@
+{
+  "condition": "B",
+  "repeat": 2,
+  "call_id": 4,
+  "request_exact_match": true,
+  "messages_sha256": "cbf774bfbb141af7dfbe71e85a6204a5943be9280b8fdb3e2ee3ee80fcc986a5",
+  "response": {
+    "id": 4,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "I do not have enough information to answer this query. The provided **Context** does not contain the text of US7991757B2's claims. The only evidence relating to that patent is a Knowledge Graph relationship stating that \"Registration submissions are operative to request registration of recommenders\" and that \"The registration module provides functionality for registering an external recommender with the recommendations service\" (source_id `US7991757B2-chunk-000`/`-chunk-001`). No Document Chunk with the actual wording of Claim 1 or Claim 27 of US7991757B2 is present, so I cannot quote either claim or establish their dependency.\n\n**What is missing:**\n- The verbatim text of Claim 1 of US7991757B2 (the registration capability it specifies).\n- The verbatim text of Claim 27 of US7991757B2 (the additional capability it adds).\n- The claim dependency statement (e.g., \"The method of claim 1, further comprising...\").\n\n**Explicit evidence vs. inference:** The only explicit evidence is the Knowledge Graph description of a registration module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender. Any statement about what Claim 1 or Claim 27 specifically recite would be inference, not evidence, and is therefore not provided.\n\n### References\n\n- [1] US10867122B1.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 31966,
+      "completion_tokens": 292,
+      "total_tokens": 32258,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 31872
+      },
+      "prompt_cache_hit_tokens": 31872,
+      "prompt_cache_miss_tokens": 94
+    },
+    "reasoning_content_present": false
+  }
+}

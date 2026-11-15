@@ -1,0 +1,372 @@
+{
+  "audit_id": "N011",
+  "node_id": "Second User",
+  "category": "contextual_conflation",
+  "confidence": "medium",
+  "reason_zh": "Second User在US9118735B1中是被第一用户寻找、其标识可匿名化的目标；在US9304738B1中是第二广告的兴趣提供者。两角色的定义及关联行为都由文档内序号约束，而不是一个跨文档稳定技术角色。归为User宽类虽可容纳二者，却不能证明两个Second User占位符有对应身份或可互换，单一ID丢失了该局部角色作用域。未声称模型实际认定同一现实人。",
+  "class_instance_interpretation_zh": "局部角色占位符，不是已知个体，也不是明确建模的全局“第二用户”本体类。contextual_conflation只用于该角色作用域碰撞；若调用方严格按来源把它当多态User宽类使用，可避免错误，故置信度medium。",
+  "source_assessments": [
+    {
+      "publication_number": "US9118735B1",
+      "evidence_quote": "for assisting a first user in finding a second user using a social network",
+      "claim_or_section": "Claim 16",
+      "source_chunk_ids": [
+        "US9118735B1-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US9118735B1-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_chunk": true,
+        "exact_contiguous_in_saved_claim": true,
+        "claims_file": "data/claims/US9118735B1.json",
+        "claim_number": 16,
+        "claim_char_start": 54,
+        "chunk_char_starts": {
+          "US9118735B1-chunk-001": 1930
+        }
+      },
+      "role_zh": "被寻找的第二用户；关联标识可替换为token，可能位置可返回第一用户。",
+      "extraction_description_support": "原抽取entity和两条关系由Claim16寻人流程及Claim14匿名化支持。",
+      "raw_extraction_records_reviewed": [
+        {
+          "chunk_id": "US9118735B1-chunk-001",
+          "content_sha256": "b3448c0610adb75d41d0e719be9b14b65e384183af67e7f82dd178abc42f6404",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 2,
+              "raw_line": "entity<|#|>Second User<|#|>Person<|#|>A user whom the first user is trying to find using the social network; the second user has an associated identifier and a possible location.",
+              "fields": [
+                "entity",
+                "Second User",
+                "Person",
+                "A user whom the first user is trying to find using the social network; the second user has an associated identifier and a possible location."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 19,
+              "raw_line": "relation<|#|>First User<|#|>Second User<|#|>Finding, Assistance<|#|>The first user is assisted in finding the second user using a social network.",
+              "fields": [
+                "relation",
+                "First User",
+                "Second User",
+                "Finding, Assistance",
+                "The first user is assisted in finding the second user using a social network."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 33,
+              "raw_line": "relation<|#|>Second User<|#|>Token<|#|>Anonymization<|#|>An identifier associated with the second user is replaced with a token to anonymize results.",
+              "fields": [
+                "relation",
+                "Second User",
+                "Token",
+                "Anonymization",
+                "An identifier associated with the second user is replaced with a token to anonymize results."
+              ]
+            }
+          ]
+        }
+      ],
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The first user is assisted in finding the second user using a social network.",
+          "keywords": "Assistance,Finding",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "First User",
+          "target": "Second User",
+          "edge_index": 188,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "An identifier associated with the second user is replaced with a token to anonymize results.",
+          "keywords": "Anonymization",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Second User",
+          "target": "Token",
+          "edge_index": 193,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "evidence_quote": "an indication of user interest of a second user in a second advertisement displayed on the parked domain web page",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ],
+      "quote_source_chunk_ids": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_chunk": true,
+        "exact_contiguous_in_saved_claim": true,
+        "claims_file": "data/claims/US9304738B1.json",
+        "claim_number": 1,
+        "claim_char_start": 1375,
+        "chunk_char_starts": {
+          "US9304738B1-chunk-000": 2417,
+          "US9304738B1-chunk-001": 2590,
+          "US9304738B1-chunk-002": 190
+        }
+      },
+      "role_zh": "对第二广告表现兴趣，兴趣用于第二关键词权重的用户。",
+      "extraction_description_support": "Claims1/13/18支持第二广告兴趣及权重计算。chunk001实体额外写different from first user，原文只明确third与first/second不同；该独立区分未明文陈述，作为抽取描述推断警示记录。",
+      "raw_extraction_records_reviewed": [
+        {
+          "chunk_id": "US9304738B1-chunk-000",
+          "content_sha256": "bf269ef3cfec2756c71ada433b655ddffc3b98b38e15a717a03facdb173d7546",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 12,
+              "raw_line": "entity<|#|>Second User<|#|>Person<|#|>A user who shows interest in the second advertisement displayed on the parked domain web page.",
+              "fields": [
+                "entity",
+                "Second User",
+                "Person",
+                "A user who shows interest in the second advertisement displayed on the parked domain web page."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 40,
+              "raw_line": "relation<|#|>Second User<|#|>Second Advertisement<|#|>user interest<|#|>The second user shows interest in the second advertisement displayed on the parked domain web page.",
+              "fields": [
+                "relation",
+                "Second User",
+                "Second Advertisement",
+                "user interest",
+                "The second user shows interest in the second advertisement displayed on the parked domain web page."
+              ]
+            }
+          ]
+        },
+        {
+          "chunk_id": "US9304738B1-chunk-001",
+          "content_sha256": "886071717df3356cda9c51bbd4b7299b9087e0e835cf5f86a477e6df3d50296d",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 10,
+              "raw_line": "entity<|#|>Second User<|#|>Person<|#|>A user, different from the first user, whose indication of interest in a second advertisement displayed on the parked domain web page is received.",
+              "fields": [
+                "entity",
+                "Second User",
+                "Person",
+                "A user, different from the first user, whose indication of interest in a second advertisement displayed on the parked domain web page is received."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 38,
+              "raw_line": "relation<|#|>Second User<|#|>Second Advertisement<|#|>indicates interest in<|#|>The second user indicates interest in the second advertisement displayed on the parked domain web page.",
+              "fields": [
+                "relation",
+                "Second User",
+                "Second Advertisement",
+                "indicates interest in",
+                "The second user indicates interest in the second advertisement displayed on the parked domain web page."
+              ]
+            }
+          ]
+        },
+        {
+          "chunk_id": "US9304738B1-chunk-002",
+          "content_sha256": "5068046fde0e59f40e0ae450831aa70f5f1383b362efb5455d0ec0cf6d409520",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "cache_key": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 12,
+              "raw_line": "entity<|#|>Second User<|#|>Person<|#|>A user whose indication of interest in the second advertisement is received and used to determine the second weight of the second keyword.",
+              "fields": [
+                "entity",
+                "Second User",
+                "Person",
+                "A user whose indication of interest in the second advertisement is received and used to determine the second weight of the second keyword."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "cache_key": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 20,
+              "raw_line": "relation<|#|>Second User<|#|>Second Advertisement<|#|>user interest<|#|>An indication of the second user's interest in the second advertisement is received.",
+              "fields": [
+                "relation",
+                "Second User",
+                "Second Advertisement",
+                "user interest",
+                "An indication of the second user's interest in the second advertisement is received."
+              ]
+            }
+          ]
+        }
+      ],
+      "relevant_actual_edges": [
+        {
+          "weight": 3.0,
+          "description": "The second user indicates interest in the second advertisement displayed on the parked domain web page.<SEP>The second user shows interest in the second advertisement displayed on the parked domain web page.<SEP>An indication of the second user's interest in the second advertisement is received.",
+          "keywords": "indicates interest in,user interest",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001<SEP>US9304738B1-chunk-002",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Second Advertisement",
+          "target": "Second User",
+          "edge_index": 183,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001",
+            "US9304738B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 3,
+    "observed_unsupported_edge": false,
+    "details_zh": "3条实际边183（广告兴趣）、188（被寻找）、193（标识token匿名化）均可按实际source_id归属其专利并找到支持。没有一条边声称第二广告用户就是被找的人；不把单一节点邻接造成的潜在跨文档组合当作已观察的错误边。",
+    "edge_indices": [
+      183,
+      188,
+      193
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 183,
+        "source": "Second Advertisement",
+        "target": "Second User",
+        "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001<SEP>US9304738B1-chunk-002",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9304738B1",
+            "claim_numbers": [
+              1,
+              13,
+              18
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 188,
+        "source": "First User",
+        "target": "Second User",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              16
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 193,
+        "source": "Second User",
+        "target": "Token",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              14
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      }
+    ]
+  },
+  "limitations_zh": [
+    "AI辅助逐条原文审阅，非独立人工gold；未调用外部模型API。",
+    "只判断保存快照中的角色/概念与实际邻边，不测试新查询，不据邻接推断已发生检索或生成传播。",
+    "描述以SEP合并后没有句级来源标签；本文借原始抽取行复核句子来源，不能要求多源边的每个子句都被每个source支持。"
+  ],
+  "reviewed_utc": "2026-10-30T08:10:30.359339+00:00",
+  "dossier_path": "dossiers/N011.json",
+  "original_files_modified": false,
+  "external_model_api_calls": 0
+}

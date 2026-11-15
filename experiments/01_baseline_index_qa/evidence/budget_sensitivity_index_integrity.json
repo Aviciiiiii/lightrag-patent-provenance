@@ -1,0 +1,14 @@
+{
+  "before": {
+    "vdb_chunks.json": "a5392f28b25c995c1595a138afabbad64c34ba5bba547905cfb07fc80b114107",
+    "kv_store_text_chunks.json": "c3d55a105cebbe177d259d1820e2f47192a010aabef300e01b435dd9b1908906",
+    "graph_chunk_entity_relation.graphml": "5d551e39fdc045a956303a68d0b587ade881426ab0bb1bd1710a5f0473d4362b"
+  },
+  "after": {
+    "vdb_chunks.json": "a5392f28b25c995c1595a138afabbad64c34ba5bba547905cfb07fc80b114107",
+    "kv_store_text_chunks.json": "c3d55a105cebbe177d259d1820e2f47192a010aabef300e01b435dd9b1908906",
+    "graph_chunk_entity_relation.graphml": "5d551e39fdc045a956303a68d0b587ade881426ab0bb1bd1710a5f0473d4362b"
+  },
+  "unchanged": true,
+  "finished_utc": "2026-10-29T14:52:26.070833+00:00"
+}

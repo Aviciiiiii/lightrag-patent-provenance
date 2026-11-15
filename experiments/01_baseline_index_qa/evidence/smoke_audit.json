@@ -1,0 +1,457 @@
+{
+  "reviewed_utc": "2026-10-29T14:31:51.188067+00:00",
+  "review_method": "Independent agent AI-assisted source/answer/trace audit plus exact-substring and citation-mapping checks; not independent human gold standard",
+  "criteria_file": "round2/evidence/evaluation_criteria.json",
+  "smoke_question_count": 1,
+  "query_runs_audited": 2,
+  "official_prompt_interpretation": {
+    "source": "src/LightRAG-v1.5.7/lightrag/prompt.py",
+    "lines": "350–369 and404–423",
+    "finding": "Official prompt requests final References section, not mandatory inline footnotes. Absence of per-assertion anchors is a granularity observation rather than automatic citation failure."
+  },
+  "audits": [
+    {
+      "question_id": "Q01",
+      "mode": "naive",
+      "query_file": "round2/results/smoke_Q01_naive.json",
+      "query_file_sha256": "ee14359c2b57e78187f07950f9090076931f188828f1a02445479f6535ac8eee",
+      "execution_state": "completed",
+      "query_status": "success",
+      "corpus_scope": "two-patent smoke only, not the full20 experiment",
+      "answer_verbatim": "**Answer**\n\nThe patent that uses multiple hash functions and hash tables to select a speaker vector and output a speaker identity is **US9514753B2**, titled \"Speaker identification using hash-based indexing.\"\n\n**Stated facts (from the document):**\n\n- **US9514753B2, Claim 1** recites: \"determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values ... comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.\"\n\n- The abstract similarly describes: \"Hash values are determined for the utterance vector according to multiple different hash functions. A set of speaker vectors from a plurality of hash tables is determined using the hash values.\"\n\n- **Claim 6** adds that the hash values are determined \"using one or more locality sensitive hash functions,\" and **Claim 7** recites determining hash values \"based on a position of the utterance vector with respect to different hyperplanes.\"\n\n**Inference (not stated in the document):**\n\n- The combination of multiple hash functions, multiple hash tables, speaker-vector selection, and speaker-identity output in Claim 1 indicates that US9514753B2 is the patent in this collection directed to hash-based speaker identification. This is my inference from the claim language; the document does not expressly compare itself to the other patent (US7991757B2, which concerns recommenders).\n\n### References\n\n- [1] US9514753B2.txt",
+      "required_publication": "US9514753B2",
+      "required_claim": 1,
+      "technical_answer_correct": true,
+      "claim_attribution_correct": true,
+      "additional_claims_verified": [
+        6,
+        7
+      ],
+      "all_required_source_evidence_retained": true,
+      "supporting_chunk_ids": [
+        "US9514753B2-chunk-000"
+      ],
+      "retrieval_counts": {
+        "entities": 0,
+        "relationships": 0,
+        "chunks": 4,
+        "references": 2
+      },
+      "answer_reference_checks": [
+        {
+          "id": "1",
+          "answer_path": "US9514753B2.txt",
+          "structured_path": "US9514753B2.txt",
+          "resolves_correctly": true
+        }
+      ],
+      "all_answer_reference_ids_resolve": true,
+      "extra_structured_references_not_counted_as_errors": [
+        "US7991757B2.txt"
+      ],
+      "citation_assessment": "Document-level reference mapping is correct; explicit patent/claim wording is correct. Answer uses the official final References convention rather than per-sentence numbered anchors. This is not automatically a citation failure.",
+      "quote_checks": [
+        {
+          "quoted_text": "Speaker identification using hash-based indexing.",
+          "classification": "punctuation_or_clause_ending_difference",
+          "ellipsis_segments": [
+            "Speaker identification using hash-based indexing."
+          ],
+          "segment_normalized_positions": [
+            -1
+          ],
+          "all_segments_match_if_only_terminal_punctuation_removed": true
+        },
+        {
+          "quoted_text": "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values ... comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "classification": "ellipsis_segments_exact_in_order",
+          "ellipsis_segments": [
+            "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values",
+            "comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity."
+          ],
+          "segment_normalized_positions": [
+            905,
+            1181
+          ],
+          "all_segments_match_if_only_terminal_punctuation_removed": true
+        },
+        {
+          "quoted_text": "Hash values are determined for the utterance vector according to multiple different hash functions. A set of speaker vectors from a plurality of hash tables is determined using the hash values.",
+          "classification": "punctuation_or_clause_ending_difference",
+          "ellipsis_segments": [
+            "Hash values are determined for the utterance vector according to multiple different hash functions. A set of speaker vectors from a plurality of hash tables is determined using the hash values."
+          ],
+          "segment_normalized_positions": [
+            -1
+          ],
+          "all_segments_match_if_only_terminal_punctuation_removed": true
+        },
+        {
+          "quoted_text": "using one or more locality sensitive hash functions,",
+          "classification": "punctuation_or_clause_ending_difference",
+          "ellipsis_segments": [
+            "using one or more locality sensitive hash functions,"
+          ],
+          "segment_normalized_positions": [
+            -1
+          ],
+          "all_segments_match_if_only_terminal_punctuation_removed": true
+        },
+        {
+          "quoted_text": "based on a position of the utterance vector with respect to different hyperplanes.",
+          "classification": "exact",
+          "ellipsis_segments": [
+            "based on a position of the utterance vector with respect to different hyperplanes."
+          ],
+          "segment_normalized_positions": [
+            3498
+          ],
+          "all_segments_match_if_only_terminal_punctuation_removed": true
+        }
+      ],
+      "quote_exactness_summary": "Claim1 uses declared ellipses whose segments occur in order. All factual quotation content is source-supported. Some quoted excerpts change trailing punctuation or terminate a source clause with a period; therefore not every quoted string is byte-exact.",
+      "unsupported_technical_assertions": [],
+      "scope_caveat": "The comparison with US7991757B2 is supported by the two indexed abstract/claims documents; do not extend it to unindexed specifications or the20-patent full run.",
+      "observed_failure_stages": [],
+      "minor_quality_notes": [
+        {
+          "stage": "generation_text_fidelity",
+          "finding": "Terminal punctuation is changed inside some otherwise faithful quoted excerpts; no technical meaning change found.",
+          "not_a_proven_extraction_or_retrieval_failure": true
+        }
+      ],
+      "verdict": "core factual and Claim-level answer success, with minor exact-quotation formatting caveat"
+    },
+    {
+      "question_id": "Q01",
+      "mode": "mix",
+      "query_file": "round2/results/smoke_Q01_mix.json",
+      "query_file_sha256": "7f9586fb810c39657cc637536b310842c76f76e5c854f9a0a1ac14acbdf47f69",
+      "execution_state": "completed",
+      "query_status": "success",
+      "corpus_scope": "two-patent smoke only, not the full20 experiment",
+      "answer_verbatim": "**Answer**\n\nThe patent in this collection that uses multiple hash functions and hash tables to select a speaker vector and output a speaker identity is **US9514753B2**, titled \"Speaker identification using hash-based indexing.\"\n\n**Stated facts (from the document):**\n\n- **US9514753B2, claim 1** recites: \"determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values … comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.\"\n\n- The abstract likewise states: \"Hash values are determined for the utterance vector according to multiple different hash functions. A set of speaker vectors from a plurality of hash tables is determined using the hash values.\"\n\n- **Claim 6** adds that the hash values may be determined \"using one or more locality sensitive hash functions,\" and **claim 7** that they may be based on \"a position of the utterance vector with respect to different hyperplanes.\"\n\n- **Claim 17** (storage device) and **claim 20** (system) similarly recite determining a speaker identity from associations between speaker vectors and speakers and \"outputting data indicating the speaker identity.\"\n\n**Inference (not stated in the document):**\n\n- The second document in the collection, **US7991757B2**, concerns a recommendation network service and does not describe hash functions, hash tables, speaker vectors, or speaker identity; therefore, US9514753B2 is the only patent in this collection matching the described features. This is a comparison drawn from the provided evidence, not an explicit statement in either document.\n\n### References\n\n- [1] US9514753B2.txt\n- [2] US7991757B2.txt",
+      "required_publication": "US9514753B2",
+      "required_claim": 1,
+      "technical_answer_correct": true,
+      "claim_attribution_correct": true,
+      "additional_claims_verified": [
+        6,
+        7,
+        17,
+        20
+      ],
+      "all_required_source_evidence_retained": true,
+      "supporting_chunk_ids": [
+        "US9514753B2-chunk-000"
+      ],
+      "retrieval_counts": {
+        "entities": 14,
+        "relationships": 26,
+        "chunks": 4,
+        "references": 2
+      },
+      "answer_reference_checks": [
+        {
+          "id": "1",
+          "answer_path": "US9514753B2.txt",
+          "structured_path": "US9514753B2.txt",
+          "resolves_correctly": true
+        },
+        {
+          "id": "2",
+          "answer_path": "US7991757B2.txt",
+          "structured_path": "US7991757B2.txt",
+          "resolves_correctly": true
+        }
+      ],
+      "all_answer_reference_ids_resolve": true,
+      "extra_structured_references_not_counted_as_errors": [],
+      "citation_assessment": "Document-level reference mapping is correct; explicit patent/claim wording is correct. Answer uses the official final References convention rather than per-sentence numbered anchors. This is not automatically a citation failure.",
+      "quote_checks": [
+        {
+          "quoted_text": "Speaker identification using hash-based indexing.",
+          "classification": "punctuation_or_clause_ending_difference",
+          "ellipsis_segments": [
+            "Speaker identification using hash-based indexing."
+          ],
+          "segment_normalized_positions": [
+            -1
+          ],
+          "all_segments_match_if_only_terminal_punctuation_removed": true
+        },
+        {
+          "quoted_text": "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values … comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "classification": "ellipsis_segments_exact_in_order",
+          "ellipsis_segments": [
+            "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values",
+            "comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity."
+          ],
+          "segment_normalized_positions": [
+            905,
+            1181
+          ],
+          "all_segments_match_if_only_terminal_punctuation_removed": true
+        },
+        {
+          "quoted_text": "Hash values are determined for the utterance vector according to multiple different hash functions. A set of speaker vectors from a plurality of hash tables is determined using the hash values.",
+          "classification": "punctuation_or_clause_ending_difference",
+          "ellipsis_segments": [
+            "Hash values are determined for the utterance vector according to multiple different hash functions. A set of speaker vectors from a plurality of hash tables is determined using the hash values."
+          ],
+          "segment_normalized_positions": [
+            -1
+          ],
+          "all_segments_match_if_only_terminal_punctuation_removed": true
+        },
+        {
+          "quoted_text": "using one or more locality sensitive hash functions,",
+          "classification": "punctuation_or_clause_ending_difference",
+          "ellipsis_segments": [
+            "using one or more locality sensitive hash functions,"
+          ],
+          "segment_normalized_positions": [
+            -1
+          ],
+          "all_segments_match_if_only_terminal_punctuation_removed": true
+        },
+        {
+          "quoted_text": "a position of the utterance vector with respect to different hyperplanes.",
+          "classification": "exact",
+          "ellipsis_segments": [
+            "a position of the utterance vector with respect to different hyperplanes."
+          ],
+          "segment_normalized_positions": [
+            3507
+          ],
+          "all_segments_match_if_only_terminal_punctuation_removed": true
+        },
+        {
+          "quoted_text": "outputting data indicating the speaker identity.",
+          "classification": "exact",
+          "ellipsis_segments": [
+            "outputting data indicating the speaker identity."
+          ],
+          "segment_normalized_positions": [
+            1434
+          ],
+          "all_segments_match_if_only_terminal_punctuation_removed": true
+        }
+      ],
+      "quote_exactness_summary": "Claim1 uses declared ellipses whose segments occur in order. All factual quotation content is source-supported. Some quoted excerpts change trailing punctuation or terminate a source clause with a period; therefore not every quoted string is byte-exact.",
+      "unsupported_technical_assertions": [],
+      "scope_caveat": "The comparison with US7991757B2 is supported by the two indexed abstract/claims documents; do not extend it to unindexed specifications or the20-patent full run.",
+      "observed_failure_stages": [],
+      "minor_quality_notes": [
+        {
+          "stage": "generation_text_fidelity",
+          "finding": "Terminal punctuation is changed inside some otherwise faithful quoted excerpts; no technical meaning change found.",
+          "not_a_proven_extraction_or_retrieval_failure": true
+        }
+      ],
+      "verdict": "core factual and Claim-level answer success, with minor exact-quotation formatting caveat"
+    }
+  ],
+  "graph_snapshot_counts": {
+    "nodes": 71,
+    "edges": 90
+  },
+  "supporting_graph_edges": [
+    {
+      "weight": 1.0,
+      "description": "The patent describes determining hash values for the utterance vector according to multiple different hash functions.",
+      "keywords": "describes,uses",
+      "source_id": "US9514753B2-chunk-000",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Speaker Identification Using Hash-Based Indexing",
+      "target": "Hash Values"
+    },
+    {
+      "weight": 1.0,
+      "description": "The patent describes determining a set of speaker vectors from a plurality of hash tables using hash values.",
+      "keywords": "describes,uses",
+      "source_id": "US9514753B2-chunk-000",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Speaker Identification Using Hash-Based Indexing",
+      "target": "Hash Tables"
+    },
+    {
+      "weight": 1.0,
+      "description": "The patent describes determining a speaker identity corresponding to the selected speaker vector and outputting data indicating the speaker identity.",
+      "keywords": "describes,outputs",
+      "source_id": "US9514753B2-chunk-000",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Speaker Identification Using Hash-Based Indexing",
+      "target": "Speaker Identity"
+    },
+    {
+      "weight": 1.0,
+      "description": "Hash values are determined for the utterance vector.",
+      "keywords": "derived from",
+      "source_id": "US9514753B2-chunk-000",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Utterance Vector",
+      "target": "Hash Values"
+    },
+    {
+      "weight": 1.0,
+      "description": "Hash values are determined for the utterance vector according to multiple different hash functions.",
+      "keywords": "derivation,hashing",
+      "source_id": "US9514753B2-chunk-001",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Utterance Vector",
+      "target": "Hash Value"
+    },
+    {
+      "weight": 1.0,
+      "description": "Hash values for the utterance vector are determined according to multiple different hash functions.",
+      "keywords": "determined by",
+      "source_id": "US9514753B2-chunk-000",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Hash Values",
+      "target": "Hash Functions"
+    },
+    {
+      "weight": 1.0,
+      "description": "The hash values are used to determine a set of speaker vectors from the plurality of hash tables.",
+      "keywords": "used to query",
+      "source_id": "US9514753B2-chunk-000",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Hash Values",
+      "target": "Hash Tables"
+    },
+    {
+      "weight": 1.0,
+      "description": "The hash values may be determined using one or more locality sensitive hash functions.",
+      "keywords": "includes",
+      "source_id": "US9514753B2-chunk-000",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Hash Functions",
+      "target": "Locality Sensitive Hash Functions"
+    },
+    {
+      "weight": 1.0,
+      "description": "Hash values may be determined based on the position of the utterance vector with respect to different hyperplanes.",
+      "keywords": "based on position",
+      "source_id": "US9514753B2-chunk-000",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Hash Functions",
+      "target": "Hyperplanes"
+    },
+    {
+      "weight": 1.0,
+      "description": "The hash tables store speaker vectors, each derived from one or more utterances of a respective speaker.",
+      "keywords": "index,store",
+      "source_id": "US9514753B2-chunk-000",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Speaker Vectors",
+      "target": "Hash Tables"
+    },
+    {
+      "weight": 1.0,
+      "description": "A speaker identity is determined corresponding to the selected speaker vector.",
+      "keywords": "corresponds to",
+      "source_id": "US9514753B2-chunk-000",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Speaker Vectors",
+      "target": "Speaker Identity"
+    },
+    {
+      "weight": 1.0,
+      "description": "The set of speaker vectors may be a set of speaker i-vectors from the plurality of hash tables.",
+      "keywords": "may be",
+      "source_id": "US9514753B2-chunk-000",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Speaker Vectors",
+      "target": "Speaker I-Vector"
+    },
+    {
+      "weight": 1.0,
+      "description": "A speaker identity corresponding to the selected speaker vector is determined based on data indicating associations between speaker vectors and respective speakers.",
+      "keywords": "association,identification",
+      "source_id": "US9514753B2-chunk-001",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Speaker Identity",
+      "target": "Speaker Vector"
+    },
+    {
+      "weight": 1.0,
+      "description": "A set of speaker vectors is determined from a plurality of hash tables using the hash values.",
+      "keywords": "containment,retrieval",
+      "source_id": "US9514753B2-chunk-001",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Speaker Vector",
+      "target": "Hash Table"
+    },
+    {
+      "weight": 1.0,
+      "description": "Hash values are used to determine a set of speaker vectors from a plurality of hash tables.",
+      "keywords": "lookup,querying",
+      "source_id": "US9514753B2-chunk-001",
+      "file_path": "US9514753B2.txt",
+      "created_at": 1793283906,
+      "truncate": "",
+      "source": "Hash Table",
+      "target": "Hash Value"
+    }
+  ],
+  "supporting_raw_extraction_cache_rows": [
+    {
+      "cache_key": "default:extract:01d28ddc0f0554b0a28e043f6f9db994",
+      "matching_relation_rows": [
+        "relation<|#|>Utterance Vector<|#|>Hash Value<|#|>derivation, hashing<|#|>Hash values are determined for the utterance vector according to multiple different hash functions.",
+        "relation<|#|>Hash Value<|#|>Hash Table<|#|>lookup, querying<|#|>Hash values are used to determine a set of speaker vectors from a plurality of hash tables.",
+        "relation<|#|>Hash Table<|#|>Speaker Vector<|#|>containment, retrieval<|#|>A set of speaker vectors is determined from a plurality of hash tables using the hash values.",
+        "relation<|#|>Speaker Vector<|#|>Speaker Identity<|#|>association, identification<|#|>A speaker identity corresponding to the selected speaker vector is determined based on data indicating associations between speaker vectors and respective speakers."
+      ]
+    },
+    {
+      "cache_key": "default:extract:ef140e0c8fa56438f7536d0900e89983",
+      "matching_relation_rows": [
+        "relation<|#|>Speaker Identification Using Hash-Based Indexing<|#|>Utterance Vector<|#|>describes, uses<|#|>The patent describes obtaining an utterance vector derived from an utterance as part of speaker identification.",
+        "relation<|#|>Speaker Identification Using Hash-Based Indexing<|#|>Hash Values<|#|>describes, uses<|#|>The patent describes determining hash values for the utterance vector according to multiple different hash functions.",
+        "relation<|#|>Speaker Identification Using Hash-Based Indexing<|#|>Speaker Vectors<|#|>describes, uses<|#|>The patent describes determining and comparing speaker vectors to select a speaker vector.",
+        "relation<|#|>Speaker Identification Using Hash-Based Indexing<|#|>Hash Tables<|#|>describes, uses<|#|>The patent describes determining a set of speaker vectors from a plurality of hash tables using hash values.",
+        "relation<|#|>Speaker Identification Using Hash-Based Indexing<|#|>Speaker Identity<|#|>describes, outputs<|#|>The patent describes determining a speaker identity corresponding to the selected speaker vector and outputting data indicating the speaker identity.",
+        "relation<|#|>Hash Values<|#|>Hash Functions<|#|>determined by<|#|>Hash values for the utterance vector are determined according to multiple different hash functions.",
+        "relation<|#|>Hash Values<|#|>Utterance Vector<|#|>derived from<|#|>Hash values are determined for the utterance vector.",
+        "relation<|#|>Hash Tables<|#|>Speaker Vectors<|#|>store, index<|#|>The hash tables store speaker vectors, each derived from one or more utterances of a respective speaker.",
+        "relation<|#|>Hash Values<|#|>Hash Tables<|#|>used to query<|#|>The hash values are used to determine a set of speaker vectors from the plurality of hash tables.",
+        "relation<|#|>Speaker Vectors<|#|>Speaker Identity<|#|>corresponds to<|#|>A speaker identity is determined corresponding to the selected speaker vector.",
+        "relation<|#|>Speaker Vectors<|#|>Speaker I-Vector<|#|>may be<|#|>The set of speaker vectors may be a set of speaker i-vectors from the plurality of hash tables.",
+        "relation<|#|>Hash Functions<|#|>Locality Sensitive Hash Functions<|#|>includes<|#|>The hash values may be determined using one or more locality sensitive hash functions.",
+        "relation<|#|>Hash Functions<|#|>Hyperplanes<|#|>based on position<|#|>Hash values may be determined based on the position of the utterance vector with respect to different hyperplanes."
+      ]
+    }
+  ],
+  "overall": "Both actual smoke answers correctly retrieve, identify, attribute and support the requested Claim1 fact. No extraction/index/retrieval/citation failure established in this question. Do not report perfect verbatim quotation quality.",
+  "no_forced_failure": true
+}

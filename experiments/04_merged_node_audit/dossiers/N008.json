@@ -1,0 +1,910 @@
+{
+  "node_id": "Keyword",
+  "entity_type": "data",
+  "graph_source_chunks": [
+    "US7756837B2-chunk-000",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001",
+    "US9304738B1-chunk-002"
+  ],
+  "entity_chunk_store_sources": [
+    "US7756837B2-chunk-000",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001",
+    "US9304738B1-chunk-002"
+  ],
+  "all_source_chunks": [
+    "US7756837B2-chunk-000",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001",
+    "US9304738B1-chunk-002"
+  ],
+  "canonical_publications": [
+    "US7756837B2",
+    "US9304738B1"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US7756837B2.txt",
+    "US9304738B1.txt"
+  ],
+  "graph_file_paths": [
+    "US9304738B1.txt",
+    "US7756837B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US7756837B2",
+    "US9304738B1"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US7756837B2-chunk-000",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001",
+    "US9304738B1-chunk-002"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US7756837B2-chunk-000",
+    "US9304738B1-chunk-000",
+    "US9304738B1-chunk-001"
+  ],
+  "graph_node": {
+    "entity_id": "Keyword",
+    "entity_type": "data",
+    "description": "A term associated with advertisements displayed on a parked domain web page, having a weight determined based on user interest and historic performance.<SEP>A term associated with subject matter of an information resource or advertisement, assigned a weight used for content selection.<SEP>A term from a plurality of keywords that carries a weight on the parked domain web page and a different weight on a second information resource, and is used for ranking and advertisement selection.<SEP>Keywords of the data files of the data-stream, obtained by indexing types of data, included in the management data.",
+    "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001<SEP>US9304738B1-chunk-002<SEP>US7756837B2-chunk-000",
+    "file_path": "US9304738B1.txt<SEP>US7756837B2.txt",
+    "created_at": 1793284549,
+    "truncate": "",
+    "id": "Keyword"
+  },
+  "incident_edge_count": 7,
+  "audit_id": "N008",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US7756837B2",
+      "file_paths": [
+        "US7756837B2.txt"
+      ],
+      "source_chunks": [
+        "US7756837B2-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US7756837B2",
+          "full_doc_id": "US7756837B2",
+          "file_path": "US7756837B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "816fc9cf05223956b4e376ef0f6e135985e9f900de35575a229b3fb046a5e544",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 5990,
+          "content": "Publication number: US7756837B2\nTitle: Methods and apparatus for searching backup data based on content and attributes\n\nABSTRACT\nMethods and apparatus are disclosed that permit the transparent bridging of a broad range of backup storage devices, such that backup software will identify an intermediate device as a one of those storage devices and will transparently send their backup data-stream thereto as part of the existing standard backup process. Upon receipt of a backup data-stream from the backup software, the methods and apparatus provide for analysis of the data elements in the data-stream, collection of management information about those data elements, and storage of the management information in an easily accessible format for subsequent review and query by users and administrators of the original data. The same backup data-stream is stored on any standard backup storage device, including the imitated backup storage device.\n\nCLAIMS\n1. A method, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and storing the management data in a searchable format in a database, wherein the method is carried out by a device that is transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 2. The method of claim 1 , further comprising one of: (i) passing the data-stream to the backup storage device before the extraction step; (ii) passing the data-stream to the backup storage device substantially simultaneously with the extraction step; and (iii) passing the data-stream to the backup storage device after the extraction step. 3. The method of claim 2 , further comprising: reading back data from the backup storage device after the data-stream has been passed to the backup storage device to re-create the data-stream; and performing the extraction step on the re-created data-stream. 4. The method of claim 1 , wherein the source is taken from the group consisting of a computer server, a desktop computer, a laptop computer, a notebook computer, a personal digital assistant, and a source database, when the management data includes the identifier of the source of the data-stream. 5. The method of claim 1 , wherein the volume is taken from the group consisting of computer disk drives and computer sub-drives, when the management data includes the volume information. 6. The method of claim 1 , wherein a plurality of data-streams adhere to the same or different protocols, the method further comprising converting the different protocols to a protocol supported by the backup storage device. 7. The method of claim 1 , wherein the extraction step includes at least one of: (i) separating distinct data sets from the data-stream; and (ii) segregating types of data within the data sets into data groups. 8. The method of claim 7 , wherein: the distinct data sets include at least one of file folders, data files, and types of data files; and the types of data include at least one of: text data, image data, audio data, graphic data, tabular data, hyperlink data, and executable data. 9. The method of claim 8 , further comprising indexing at least one of the types of data to obtain keywords thereof. 10. The method of claim 7 , further comprising using a predetermined rule set to recognize the distinct data sets of the data-stream. 11. The method of claim 10 , wherein the predetermined rule set is based on a data-stream protocol of a third party backup data product intended to be used to store the data-stream on the backup storage device. 12. The method of claim 10 , wherein the predetermined rule set is taken from a group of pre-determined rule sets, each set based on a data-stream protocol of a third party backup data product. 13. A method, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data being descriptive of the data of the data-stream; storing the management data in a searchable format in a database; receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party, wherein the method is carried out by a device that is transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 14. The method of claim 13 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 15. The method of claim 14 , wherein the communication network is the Internet. 16. A processor operable to execute a software program, the software program causing the processor to perform steps, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data",
+          "llm_cache_list": [
+            "default:extract:dd4cc38c8b4390407aeadd85a7ef3593"
+          ],
+          "chunk_id": "US7756837B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US7756837B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "cfcb05ec28398152d92adf72b59710da1ed619ca1dcfc1423fdd2c8d5980b6f0"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 19,
+              "raw_line": "entity<|#|>Keyword<|#|>Data<|#|>Keywords of the data files of the data-stream, obtained by indexing types of data, included in the management data.",
+              "fields": [
+                "entity",
+                "Keyword",
+                "Data",
+                "Keywords of the data files of the data-stream, obtained by indexing types of data, included in the management data."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 41,
+              "raw_line": "relation<|#|>Management Data<|#|>Keyword<|#|>Includes<|#|>The management data includes keywords of the data files of the data-stream.",
+              "fields": [
+                "relation",
+                "Management Data",
+                "Keyword",
+                "Includes",
+                "The management data includes keywords of the data files of the data-stream."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 50,
+              "raw_line": "relation<|#|>Indexing<|#|>Keyword<|#|>Obtains<|#|>Indexing at least one of the types of data obtains keywords thereof.",
+              "fields": [
+                "relation",
+                "Indexing",
+                "Keyword",
+                "Obtains",
+                "Indexing at least one of the types of data obtains keywords thereof."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 1640,
+              "chunk_char_end": 2067,
+              "text": " data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and storing the management data in a searchable format in a database, wherein the method is carried out by a device that is transparent to a source producing the data-stream such that it is apparent t"
+            },
+            {
+              "chunk_char_start": 3872,
+              "chunk_char_end": 4299,
+              "text": "ta, audio data, graphic data, tabular data, hyperlink data, and executable data. 9. The method of claim 8 , further comprising indexing at least one of the types of data to obtain keywords thereof. 10. The method of claim 7 , further comprising using a predetermined rule set to recognize the distinct data sets of the data-stream. 11. The method of claim 10 , wherein the predetermined rule set is based on a data-stream proto"
+            }
+          ],
+          "lexical_occurrence_count": 2
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The management data includes keywords of the data files of the data-stream.",
+          "keywords": "Includes",
+          "source_id": "US7756837B2-chunk-000",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Keyword",
+          "target": "Management Data",
+          "edge_index": 170,
+          "source_chunks": [
+            "US7756837B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Indexing at least one of the types of data obtains keywords thereof.",
+          "keywords": "Obtains",
+          "source_id": "US7756837B2-chunk-000",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Keyword",
+          "target": "Indexing",
+          "edge_index": 171,
+          "source_chunks": [
+            "US7756837B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "file_paths": [
+        "US9304738B1.txt"
+      ],
+      "source_chunks": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9304738B1",
+          "full_doc_id": "US9304738B1",
+          "file_path": "US9304738B1.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "bf269ef3cfec2756c71ada433b655ddffc3b98b38e15a717a03facdb173d7546",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6516,
+          "content": "Publication number: US9304738B1\nTitle: Systems and methods for selecting content using weighted terms\n\nABSTRACT\nSystems and methods for evaluating information via a computer network using weighted terms are provided. A data processing system can detect an indication of user interest in subject matter of an information resource, and can identify a plurality of keywords associated with the subject matter. The data processing system can determine a weight for each of the plurality of keywords for the information resource. The data processing system can receive a request for content to provide for display with the information resource, and can evaluate the weight of each of the plurality of keywords associated with the information resource to determine one or more keywords to use for content selection. The data processing system can select content to provide for display with the information resource based at least in part on the selected keyword(s) or the weight associated with the selected keyword(s).\n\nCLAIMS\nWhat is claimed is: 1. A computer implemented method of evaluating information via a computer network, comprising: receiving, by a data processing system via the computer network, an indication of user interest of a first user in a first advertisement displayed on a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identifying, by the data processing system from a database, a plurality of keywords of the first advertisement using the unique identifier of the parked domain web page; determining, by the data processing system, for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement displayed on the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receiving, by the data processing system, an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determining, by the data processing system, a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receiving, by the data processing system, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; ranking, by the data processing system, the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and selecting, by the data processing system, a third advertisement to provide for display with the parked domain web page based at least in part on the first keyword selected as the highest ranked keyword, wherein the third advertisement is different from the first advertisement and the second advertisement. 2. The method of claim 1 , wherein the third advertisement includes a first content having the first keyword and a second content having the first keyword. 3. The method of claim 1 , further comprising: ranking, for the parked domain web page, the plurality of keywords based on the weight of each of the plurality of keywords; and wherein the first keyword has a top ranking of the plurality of keywords. 4. The method of claim 1 , wherein the plurality of keywords includes the first keyword associated with the first advertisement displayed on the parked domain web page and a third keyword associated with the third advertisement displayed on the parked domain web page. 5. The method of claim 1 , further comprising: receiving an indication of user interest in a fourth advertisement displayed on the parked domain web page, the fourth advertisement associated with the first keyword. 6. The method of claim 1 , further comprising: determining the weight of each of the plurality of keywords based on a characteristic associated with the user interest of the first user in the first advertisement display on the parked domain web page, the characteristic including at least one of a temporal characteristic, a day characteristic, a web page content slot characteristic, a monetary characteristic, and a performance characteristic. 7. The method of claim 1 , wherein the user interest of the first user includes the click. 8. The method of claim 1 , wherein the weight of each of the plurality of keywords associated with the first advertisement displayed on the parked domain web page is specific to the parked domain web page. 9. The method of claim 1 , further comprising: selecting the second keyword based on the weight of each of the plurality of keywords, wherein the first advertisement is associated with the first keyword and the second keyword. 10. The method of claim 1 , further comprising: assigning the weight to each of the plurality of keywords based on a number of user interactions with corresponding advertisements when the corresponding advertisements were previously displayed on the parked domain web page having the unique identifier. 11. The method of claim 1 , further comprising: receiving the indication of user interaction with the first advertisement displayed on the parked domain web page having the unique identifier, the first advertisement corresponding to the first keyword of the plurality of keywords; responsive to the indication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords with the parked domain web page having the unique identifier. 12. The method of claim 1 , further comprising: responsive to receiving the request for content, accessing the database storing",
+          "llm_cache_list": [
+            "default:extract:8f267c1e1e92c895ba038e71099892c6"
+          ],
+          "chunk_id": "US9304738B1-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9304738B1-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "21acc4a419571a4e62cda9bb681542631b8c56457d7bc8ce53809ac0c075d793"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 4,
+              "raw_line": "entity<|#|>Keyword<|#|>Concept<|#|>A term associated with subject matter of an information resource or advertisement, assigned a weight used for content selection.",
+              "fields": [
+                "entity",
+                "Keyword",
+                "Concept",
+                "A term associated with subject matter of an information resource or advertisement, assigned a weight used for content selection."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 31,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Keyword<|#|>identification, weighting<|#|>The data processing system identifies keywords of advertisements and determines a weight for each keyword.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Keyword",
+                "identification, weighting",
+                "The data processing system identifies keywords of advertisements and determines a weight for each keyword."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 36,
+              "raw_line": "relation<|#|>Keyword<|#|>Weight<|#|>assigned weight<|#|>Each keyword is assigned a weight determined based on user interest indications and historic performance.",
+              "fields": [
+                "relation",
+                "Keyword",
+                "Weight",
+                "assigned weight",
+                "Each keyword is assigned a weight determined based on user interest indications and historic performance."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 37,
+              "raw_line": "relation<|#|>Keyword<|#|>Parked Domain Web Page<|#|>association, weighting<|#|>Keywords are associated with the parked domain web page and have weights specific to that page.",
+              "fields": [
+                "relation",
+                "Keyword",
+                "Parked Domain Web Page",
+                "association, weighting",
+                "Keywords are associated with the parked domain web page and have weights specific to that page."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 38,
+              "raw_line": "relation<|#|>Keyword<|#|>Advertisement<|#|>association<|#|>Keywords are associated with advertisements displayed on the parked domain web page.",
+              "fields": [
+                "relation",
+                "Keyword",
+                "Advertisement",
+                "association",
+                "Keywords are associated with advertisements displayed on the parked domain web page."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 182,
+              "chunk_char_end": 609,
+              "text": "using weighted terms are provided. A data processing system can detect an indication of user interest in subject matter of an information resource, and can identify a plurality of keywords associated with the subject matter. The data processing system can determine a weight for each of the plurality of keywords for the information resource. The data processing system can receive a request for content to provide for display "
+            },
+            {
+              "chunk_char_start": 306,
+              "chunk_char_end": 733,
+              "text": "n information resource, and can identify a plurality of keywords associated with the subject matter. The data processing system can determine a weight for each of the plurality of keywords for the information resource. The data processing system can receive a request for content to provide for display with the information resource, and can evaluate the weight of each of the plurality of keywords associated with the informat"
+            },
+            {
+              "chunk_char_start": 516,
+              "chunk_char_end": 943,
+              "text": "esource. The data processing system can receive a request for content to provide for display with the information resource, and can evaluate the weight of each of the plurality of keywords associated with the information resource to determine one or more keywords to use for content selection. The data processing system can select content to provide for display with the information resource based at least in part on the sele"
+            },
+            {
+              "chunk_char_start": 591,
+              "chunk_char_end": 1018,
+              "text": "ovide for display with the information resource, and can evaluate the weight of each of the plurality of keywords associated with the information resource to determine one or more keywords to use for content selection. The data processing system can select content to provide for display with the information resource based at least in part on the selected keyword(s) or the weight associated with the selected keyword(s).\n\nCLA"
+            },
+            {
+              "chunk_char_start": 768,
+              "chunk_char_end": 1195,
+              "text": "re keywords to use for content selection. The data processing system can select content to provide for display with the information resource based at least in part on the selected keyword(s) or the weight associated with the selected keyword(s).\n\nCLAIMS\nWhat is claimed is: 1. A computer implemented method of evaluating information via a computer network, comprising: receiving, by a data processing system via the computer ne"
+            },
+            {
+              "chunk_char_start": 822,
+              "chunk_char_end": 1249,
+              "text": "cessing system can select content to provide for display with the information resource based at least in part on the selected keyword(s) or the weight associated with the selected keyword(s).\n\nCLAIMS\nWhat is claimed is: 1. A computer implemented method of evaluating information via a computer network, comprising: receiving, by a data processing system via the computer network, an indication of user interest of a first user "
+            },
+            {
+              "chunk_char_start": 1210,
+              "chunk_char_end": 1637,
+              "text": "ation of user interest of a first user in a first advertisement displayed on a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identifying, by the data processing system from "
+            },
+            {
+              "chunk_char_start": 1484,
+              "chunk_char_end": 1911,
+              "text": "terest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identifying, by the data processing system from a database, a plurality of keywords of the first advertisement using the unique identifier of the parked domain web page; determining, by the data processing system, for the parked domain web page, a weight of each of the plurality of keywords based on the indication of use"
+            },
+            {
+              "chunk_char_start": 1692,
+              "chunk_char_end": 2119,
+              "text": "isement using the unique identifier of the parked domain web page; determining, by the data processing system, for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement displayed on the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corre"
+            },
+            {
+              "chunk_char_start": 1925,
+              "chunk_char_end": 2352,
+              "text": "the first user in the first advertisement displayed on the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second"
+            },
+            {
+              "chunk_char_start": 2029,
+              "chunk_char_end": 2456,
+              "text": "toric performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receiving, by the data processing system, an indication of user interest of a sec"
+            },
+            {
+              "chunk_char_start": 2057,
+              "chunk_char_end": 2484,
+              "text": "ked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receiving, by the data processing system, an indication of user interest of a second user in a second adverti"
+            }
+          ],
+          "lexical_occurrence_count": 51
+        },
+        {
+          "publication_number": "US9304738B1",
+          "full_doc_id": "US9304738B1",
+          "file_path": "US9304738B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 1200,
+          "content_sha256": "886071717df3356cda9c51bbd4b7299b9087e0e835cf5f86a477e6df3d50296d",
+          "exact_doc_char_start": 5970,
+          "exact_doc_char_end": 12622,
+          "content": "having the unique identifier, the first advertisement corresponding to the first keyword of the plurality of keywords; responsive to the indication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords with the parked domain web page having the unique identifier. 12. The method of claim 1 , further comprising: responsive to receiving the request for content, accessing the database storing the plurality of keywords and a second plurality of keywords corresponding to advertisements previously displayed on the parked domain web page; determining, for each of the second plurality of keywords, a weight based on a performance of the corresponding advertisement previously displayed on the parked domain web page having the unique identifier; comparing, for the parked domain web page, the weight for each of the second plurality of keywords and the plurality of keywords to select a highest weighted keyword, a weight of the highest weighted keyword satisfying the threshold weight; and using the highest weighted keyword to select the second advertisement to provide for display with the parked domain web page having the unique identifier. 13. A system to evaluate information via a computer network, comprising: a data processing system having one or more processors and memory, the data processing system configured to: receive an indication of user interest of a first user in a first advertisement displayed with a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identify a plurality of keywords associated with the first advertisement using the unique identifier of the parked domain web page; determine for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement of the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and select a third advertisement to provide for display with the parked domain web page based at least in part on the first keyword selected as the highest ranked keyword, wherein the third advertisement is different from the first advertisement and the second advertisement. 14. The system of claim 13 , wherein the data processing system is further configured to: rank, for the parked domain web page, the plurality of keywords based on the weight of each of the plurality of keywords; and evaluate the plurality of keywords to select the first keyword, wherein the first keyword has a top ranking of the plurality of keywords. 15. The system of claim 13 , wherein the plurality of keywords includes the first keyword associated with the first advertisement of the parked domain web page and a third keyword associated with the third advertisement of the parked domain web page. 16. The system of claim 13 , wherein the data processing system is further configured to: receive an indication of user interest in a fourth advertisement of the parked domain web page, the fourth advertisement associated with a third keyword of the plurality of keywords; determine a third weight of the third keyword; and identify one of the first keyword and the third keyword as the highest ranked keyword. 17. The system of claim 13 , wherein the data processing system is further configured to: receive the indication of user interest in the first advertisement, the first advertisement associated with the first keyword; and receive an indication of user interest in a third advertisement, the third advertisement associated with the first keyword. 18. A non-transitory computer readable medium having instructions to evaluate information, the instructions comprising instructions to: receive an indication of user interest of a first user in a first advertisement displayed with a parked domain web page having a unique identifier, the parked domain web page lacking content having keywords other than content provided via the data processing system, the indication of user interest including at least one of a click, a selection, a finger gesture, a mouse over, and a conversion; identify a plurality of keywords associated with the first advertisement using the unique identifier of the parked domain web page; determine for the parked domain web page, a weight of each of the plurality of keywords based on the indication of user interest of the first user in the first advertisement of the parked domain web page, and also based on historic performance on the parked domain web page of each of the plurality of keywords corresponding to user interest of at least one user other than the first user, wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user",
+          "llm_cache_list": [
+            "default:extract:01a1996f64d5c8dab6d049de495fe47c"
+          ],
+          "chunk_id": "US9304738B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US9304738B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "67aa8ef7561687895e22a86257706574a7ec37aba9fac32867efafbf1155f530"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 2,
+              "raw_line": "entity<|#|>Keyword<|#|>Concept<|#|>A term associated with advertisements displayed on a parked domain web page, having a weight determined based on user interest and historic performance.",
+              "fields": [
+                "entity",
+                "Keyword",
+                "Concept",
+                "A term associated with advertisements displayed on a parked domain web page, having a weight determined based on user interest and historic performance."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 24,
+              "raw_line": "relation<|#|>Data Processing System<|#|>Keyword<|#|>identifies, determines weight<|#|>The data processing system identifies a plurality of keywords associated with an advertisement using the unique identifier and determines a weight of each keyword.",
+              "fields": [
+                "relation",
+                "Data Processing System",
+                "Keyword",
+                "identifies, determines weight",
+                "The data processing system identifies a plurality of keywords associated with an advertisement using the unique identifier and determines a weight of each keyword."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 28,
+              "raw_line": "relation<|#|>Keyword<|#|>Weight<|#|>has, is assigned<|#|>Each keyword has a weight determined based on user interest indications and historic performance.",
+              "fields": [
+                "relation",
+                "Keyword",
+                "Weight",
+                "has, is assigned",
+                "Each keyword has a weight determined based on user interest indications and historic performance."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 31,
+              "raw_line": "relation<|#|>Keyword<|#|>Parked Domain Web Page<|#|>associated with, displayed on<|#|>Keywords are associated with advertisements displayed on the parked domain web page.",
+              "fields": [
+                "relation",
+                "Keyword",
+                "Parked Domain Web Page",
+                "associated with, displayed on",
+                "Keywords are associated with advertisements displayed on the parked domain web page."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 32,
+              "raw_line": "relation<|#|>Advertisement<|#|>Keyword<|#|>associated with<|#|>An advertisement is associated with one or more keywords of the plurality of keywords.",
+              "fields": [
+                "relation",
+                "Advertisement",
+                "Keyword",
+                "associated with",
+                "An advertisement is associated with one or more keywords of the plurality of keywords."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 35,
+              "raw_line": "relation<|#|>Database<|#|>Keyword<|#|>stores<|#|>The database stores a plurality of keywords and their weights.",
+              "fields": [
+                "relation",
+                "Database",
+                "Keyword",
+                "stores",
+                "The database stores a plurality of keywords and their weights."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 328,
+              "text": "having the unique identifier, the first advertisement corresponding to the first keyword of the plurality of keywords; responsive to the indication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword "
+            },
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 356,
+              "text": "having the unique identifier, the first advertisement corresponding to the first keyword of the plurality of keywords; responsive to the indication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords"
+            },
+            {
+              "chunk_char_start": 2,
+              "chunk_char_end": 429,
+              "text": "ving the unique identifier, the first advertisement corresponding to the first keyword of the plurality of keywords; responsive to the indication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords with the parked domain web page having the unique identifier. 12. The me"
+            },
+            {
+              "chunk_char_start": 30,
+              "chunk_char_end": 457,
+              "text": "the first advertisement corresponding to the first keyword of the plurality of keywords; responsive to the indication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords with the parked domain web page having the unique identifier. 12. The method of claim 1 , further co"
+            },
+            {
+              "chunk_char_start": 140,
+              "chunk_char_end": 567,
+              "text": "ication, increasing a weight of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords with the parked domain web page having the unique identifier. 12. The method of claim 1 , further comprising: responsive to receiving the request for content, accessing the database storing the plurality of key"
+            },
+            {
+              "chunk_char_start": 168,
+              "chunk_char_end": 595,
+              "text": " of the first keyword of the plurality of keywords by adding a point to the weight; and associating, in the database, the increased weight of the first keyword of the plurality of keywords with the parked domain web page having the unique identifier. 12. The method of claim 1 , further comprising: responsive to receiving the request for content, accessing the database storing the plurality of keywords and a second plurality"
+            },
+            {
+              "chunk_char_start": 384,
+              "chunk_char_end": 811,
+              "text": "page having the unique identifier. 12. The method of claim 1 , further comprising: responsive to receiving the request for content, accessing the database storing the plurality of keywords and a second plurality of keywords corresponding to advertisements previously displayed on the parked domain web page; determining, for each of the second plurality of keywords, a weight based on a performance of the corresponding adverti"
+            },
+            {
+              "chunk_char_start": 419,
+              "chunk_char_end": 846,
+              "text": "12. The method of claim 1 , further comprising: responsive to receiving the request for content, accessing the database storing the plurality of keywords and a second plurality of keywords corresponding to advertisements previously displayed on the parked domain web page; determining, for each of the second plurality of keywords, a weight based on a performance of the corresponding advertisement previously displayed on the "
+            },
+            {
+              "chunk_char_start": 561,
+              "chunk_char_end": 988,
+              "text": "of keywords and a second plurality of keywords corresponding to advertisements previously displayed on the parked domain web page; determining, for each of the second plurality of keywords, a weight based on a performance of the corresponding advertisement previously displayed on the parked domain web page having the unique identifier; comparing, for the parked domain web page, the weight for each of the second plurality of"
+            },
+            {
+              "chunk_char_start": 809,
+              "chunk_char_end": 1236,
+              "text": "tisement previously displayed on the parked domain web page having the unique identifier; comparing, for the parked domain web page, the weight for each of the second plurality of keywords and the plurality of keywords to select a highest weighted keyword, a weight of the highest weighted keyword satisfying the threshold weight; and using the highest weighted keyword to select the second advertisement to provide for display"
+            },
+            {
+              "chunk_char_start": 839,
+              "chunk_char_end": 1266,
+              "text": "on the parked domain web page having the unique identifier; comparing, for the parked domain web page, the weight for each of the second plurality of keywords and the plurality of keywords to select a highest weighted keyword, a weight of the highest weighted keyword satisfying the threshold weight; and using the highest weighted keyword to select the second advertisement to provide for display with the parked domain web pa"
+            },
+            {
+              "chunk_char_start": 877,
+              "chunk_char_end": 1304,
+              "text": "he unique identifier; comparing, for the parked domain web page, the weight for each of the second plurality of keywords and the plurality of keywords to select a highest weighted keyword, a weight of the highest weighted keyword satisfying the threshold weight; and using the highest weighted keyword to select the second advertisement to provide for display with the parked domain web page having the unique identifier. 13. A"
+            }
+          ],
+          "lexical_occurrence_count": 63
+        },
+        {
+          "publication_number": "US9304738B1",
+          "full_doc_id": "US9304738B1",
+          "file_path": "US9304738B1.txt",
+          "chunk_order_index": 2,
+          "tokens": 265,
+          "content_sha256": "5068046fde0e59f40e0ae450831aa70f5f1383b362efb5455d0ec0cf6d409520",
+          "exact_doc_char_start": 12067,
+          "exact_doc_char_end": 13508,
+          "content": "wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and select a third advertisement to provide for display with the parked domain web page based at least in part on the first keyword selected as the highest ranked keyword, wherein the third advertisement is different from the first advertisement and the second advertisement. 19. The non-transitory computer readable medium of claim 18 , wherein the weight of each of the plurality of keywords is specific to the parked domain web page.",
+          "llm_cache_list": [
+            "default:extract:7aaccba95e58a8dae5414b328138389c"
+          ],
+          "chunk_id": "US9304738B1-chunk-002",
+          "extraction_records": [
+            {
+              "chunk_id": "US9304738B1-chunk-002",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "d34ab8d11741f354126aaf9572f2eac83f2ff733886b2ed14f1b7569c2d4e557"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "cache_key": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 2,
+              "raw_line": "entity<|#|>Keyword<|#|>Concept<|#|>A term from a plurality of keywords that carries a weight on the parked domain web page and a different weight on a second information resource, and is used for ranking and advertisement selection.",
+              "fields": [
+                "entity",
+                "Keyword",
+                "Concept",
+                "A term from a plurality of keywords that carries a weight on the parked domain web page and a different weight on a second information resource, and is used for ranking and advertisement selection."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 263,
+              "text": "wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement"
+            },
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 291,
+              "text": "wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement displayed on the parked dom"
+            },
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 364,
+              "text": "wherein a first keyword of the plurality of keywords has a first weight on the parked domain web page, and the first keyword has a different weight on a second information resource; receive an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword o"
+            },
+            {
+              "chunk_char_start": 175,
+              "chunk_char_end": 602,
+              "text": "ource; receive an indication of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user different from the first user and the second u"
+            },
+            {
+              "chunk_char_start": 203,
+              "chunk_char_end": 630,
+              "text": " of user interest of a second user in a second advertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user different from the first user and the second user, a request for content t"
+            },
+            {
+              "chunk_char_start": 253,
+              "chunk_char_end": 680,
+              "text": "ertisement displayed on the parked domain web page, the second advertisement associated with a second keyword of the plurality of keywords; determine a second weight of the second keyword based on the indication of user interest of the second user in the second advertisement; receive, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web p"
+            },
+            {
+              "chunk_char_start": 520,
+              "chunk_char_end": 947,
+              "text": "tisement; receive, for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the secon"
+            },
+            {
+              "chunk_char_start": 548,
+              "chunk_char_end": 975,
+              "text": "rd user different from the first user and the second user, a request for content to provide for display with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword"
+            },
+            {
+              "chunk_char_start": 572,
+              "chunk_char_end": 999,
+              "text": "he first user and the second user, a request for content to provide for display with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked key"
+            },
+            {
+              "chunk_char_start": 600,
+              "chunk_char_end": 1027,
+              "text": " user, a request for content to provide for display with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and select a third adv"
+            },
+            {
+              "chunk_char_start": 648,
+              "chunk_char_end": 1075,
+              "text": "lay with the parked domain web page; rank the first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and select a third advertisement to provide for display with the parke"
+            },
+            {
+              "chunk_char_start": 692,
+              "chunk_char_end": 1119,
+              "text": "e first keyword of the plurality of keywords and the second keyword of the plurality of keywords based on the first weight of the first keyword and the second weight of the second keyword to select, based on the first keyword ranking higher than the second keyword, the first keyword as a highest ranked keyword; and select a third advertisement to provide for display with the parked domain web page based at least in part on "
+            }
+          ],
+          "lexical_occurrence_count": 19
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "The data processing system identifies a plurality of keywords associated with an advertisement using the unique identifier and determines a weight of each keyword.<SEP>The data processing system identifies keywords of advertisements and determines a weight for each keyword.",
+          "keywords": "determines weight,identification,identifies,weighting",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Data Processing System",
+          "target": "Keyword",
+          "edge_index": 11,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The database stores a plurality of keywords and their weights.",
+          "keywords": "stores",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Database",
+          "target": "Keyword",
+          "edge_index": 98,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "Keywords are associated with advertisements displayed on the parked domain web page.<SEP>Keywords are associated with the parked domain web page and have weights specific to that page.",
+          "keywords": "associated with,association,displayed on,weighting",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Parked Domain Web Page",
+          "target": "Keyword",
+          "edge_index": 160,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "Each keyword has a weight determined based on user interest indications and historic performance.<SEP>Each keyword is assigned a weight determined based on user interest indications and historic performance.",
+          "keywords": "assigned weight,has,is assigned",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Keyword",
+          "target": "Weight",
+          "edge_index": 168,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "An advertisement is associated with one or more keywords of the plurality of keywords.<SEP>Keywords are associated with advertisements displayed on the parked domain web page.",
+          "keywords": "associated with,association",
+          "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Keyword",
+          "target": "Advertisement",
+          "edge_index": 169,
+          "source_chunks": [
+            "US9304738B1-chunk-000",
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 2.0,
+      "description": "The data processing system identifies a plurality of keywords associated with an advertisement using the unique identifier and determines a weight of each keyword.<SEP>The data processing system identifies keywords of advertisements and determines a weight for each keyword.",
+      "keywords": "determines weight,identification,identifies,weighting",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Data Processing System",
+      "target": "Keyword",
+      "edge_index": 11,
+      "source_chunks": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The database stores a plurality of keywords and their weights.",
+      "keywords": "stores",
+      "source_id": "US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Database",
+      "target": "Keyword",
+      "edge_index": 98,
+      "source_chunks": [
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "Keywords are associated with advertisements displayed on the parked domain web page.<SEP>Keywords are associated with the parked domain web page and have weights specific to that page.",
+      "keywords": "associated with,association,displayed on,weighting",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Parked Domain Web Page",
+      "target": "Keyword",
+      "edge_index": 160,
+      "source_chunks": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "Each keyword has a weight determined based on user interest indications and historic performance.<SEP>Each keyword is assigned a weight determined based on user interest indications and historic performance.",
+      "keywords": "assigned weight,has,is assigned",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Keyword",
+      "target": "Weight",
+      "edge_index": 168,
+      "source_chunks": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "An advertisement is associated with one or more keywords of the plurality of keywords.<SEP>Keywords are associated with advertisements displayed on the parked domain web page.",
+      "keywords": "associated with,association",
+      "source_id": "US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+      "file_path": "US9304738B1.txt",
+      "created_at": 1793284192,
+      "truncate": "",
+      "source": "Keyword",
+      "target": "Advertisement",
+      "edge_index": 169,
+      "source_chunks": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US9304738B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The management data includes keywords of the data files of the data-stream.",
+      "keywords": "Includes",
+      "source_id": "US7756837B2-chunk-000",
+      "file_path": "US7756837B2.txt",
+      "created_at": 1793284552,
+      "truncate": "",
+      "source": "Keyword",
+      "target": "Management Data",
+      "edge_index": 170,
+      "source_chunks": [
+        "US7756837B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US7756837B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Indexing at least one of the types of data obtains keywords thereof.",
+      "keywords": "Obtains",
+      "source_id": "US7756837B2-chunk-000",
+      "file_path": "US7756837B2.txt",
+      "created_at": 1793284552,
+      "truncate": "",
+      "source": "Keyword",
+      "target": "Indexing",
+      "edge_index": 171,
+      "source_chunks": [
+        "US7756837B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US7756837B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

@@ -1,0 +1,7 @@
+{
+  "started_utc": "2026-10-29T13:17:54.583769+00:00",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "Cloning into 'LightRAG-v1.5.7'...\nNote: switching to '28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c'.\n\nYou are in 'detached HEAD' state. You can look around, make experimental\nchanges and commit them, and you can discard any commits you make in this\nstate without impacting any branches by switching back to a branch.\n\nIf you want to create a new branch to retain commits you create, you may\ndo so (now or later) by using -c with the switch command. Example:\n\n  git switch -c <new-branch-name>\n\nOr undo this operation with:\n\n  git switch -\n\nTurn off this advice by setting config variable advice.detachedHead to false\n\n",
+  "elapsed_seconds": 4.936
+}

@@ -1,0 +1,786 @@
+{
+  "audit_id": "N012",
+  "node_id": "Third User",
+  "category": "contextual_conflation",
+  "confidence": "medium",
+  "reason_zh": "Third User在一篇专利是区别于前两用户、其请求触发广告内容选择的接收者；在另一篇是位于第一用户社交网络、满足位置/同意共享条件的桥接者。third是文档局部角色名称，原文没有赋予跨场景统一角色定义。仅抽象为User会丢失“第三参与者”依赖具体流程的含义；现图的单一Person ID汇总了这些不应直接互换的局部角色。此为作用域折叠证据，不是同人断言或跨专利错误传播证据。",
+  "class_instance_interpretation_zh": "同名局部角色，不是同一现实individual；共享User上位类本身合理，不能从中推出Third User实例或角色同一。没有独立schema约束禁止宽类解释，所以不把这个分类升格为确定的程序合并bug。",
+  "source_assessments": [
+    {
+      "publication_number": "US9118735B1",
+      "evidence_quote": "determining a third user in the social network of the first user who is likely to connect the social network of the first user with a social network of the third user",
+      "claim_or_section": "Claim 16",
+      "source_chunk_ids": [
+        "US9118735B1-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US9118735B1-chunk-001"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_chunk": true,
+        "exact_contiguous_in_saved_claim": true,
+        "claims_file": "data/claims/US9118735B1.json",
+        "claim_number": 16,
+        "claim_char_start": 511,
+        "chunk_char_starts": {
+          "US9118735B1-chunk-001": 2387
+        }
+      },
+      "role_zh": "社交寻人中的第三用户/网络桥接者，具有邻近位置、分离度和opt-in共享约束。",
+      "extraction_description_support": "Claim16支持桥接、邻近、分离度及opt-in；7/17/20/21支持定位信息、同场所、第四用户连接及标识字段。全部原抽取entity/relation行与这些角色相符。",
+      "raw_extraction_records_reviewed": [
+        {
+          "chunk_id": "US9118735B1-chunk-001",
+          "content_sha256": "b3448c0610adb75d41d0e719be9b14b65e384183af67e7f82dd178abc42f6404",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 3,
+              "raw_line": "entity<|#|>Third User<|#|>Person<|#|>A user in the first user's social network who is likely to connect the first user's social network with the third user's own social network and whose last-known location is within a predetermined distance from the first user's location; the third user may opt in to sharing identity, social network, or location information.",
+              "fields": [
+                "entity",
+                "Third User",
+                "Person",
+                "A user in the first user's social network who is likely to connect the first user's social network with the third user's own social network and whose last-known location is within a predetermined distance from the first user's location; the third user may opt in to sharing identity, social network, or location information."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 21,
+              "raw_line": "relation<|#|>Third User<|#|>Social Network<|#|>Membership, Connection<|#|>The third user is in the social network of the first user and is likely to connect the first user's social network with the third user's own social network.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Social Network",
+                "Membership, Connection",
+                "The third user is in the social network of the first user and is likely to connect the first user's social network with the third user's own social network."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 22,
+              "raw_line": "relation<|#|>Third User<|#|>First User<|#|>Proximity, Degrees Of Separation<|#|>The third user has a last-known location within a predetermined distance from the first user's location and has a number of degrees of separation and a type of relationship with the first user.",
+              "fields": [
+                "relation",
+                "Third User",
+                "First User",
+                "Proximity, Degrees Of Separation",
+                "The third user has a last-known location within a predetermined distance from the first user's location and has a number of degrees of separation and a type of relationship with the first user."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 23,
+              "raw_line": "relation<|#|>Third User<|#|>Opt-In<|#|>Consent<|#|>The third user has opted in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship with the first user.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Opt-In",
+                "Consent",
+                "The third user has opted in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship with the first user."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Fourth User<|#|>Third User<|#|>Connection<|#|>The fourth user connects the first and third users, and the third user has at least two degrees of separation from the first user with the fourth user connecting them.",
+              "fields": [
+                "relation",
+                "Fourth User",
+                "Third User",
+                "Connection",
+                "The fourth user connects the first and third users, and the third user has at least two degrees of separation from the first user with the fourth user connecting them."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 27,
+              "raw_line": "relation<|#|>Third User<|#|>Geolocation<|#|>Location Provision<|#|>A geolocation may be provided by the computer of the third user.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Geolocation",
+                "Location Provision",
+                "A geolocation may be provided by the computer of the third user."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 28,
+              "raw_line": "relation<|#|>Third User<|#|>Venue<|#|>Presence<|#|>The third user may have identified himself or herself as being at a venue.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Venue",
+                "Presence",
+                "The third user may have identified himself or herself as being at a venue."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 29,
+              "raw_line": "relation<|#|>Third User<|#|>Event<|#|>Presence<|#|>The third user may have identified himself or herself as being at an event.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Event",
+                "Presence",
+                "The third user may have identified himself or herself as being at an event."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 30,
+              "raw_line": "relation<|#|>Third User<|#|>First User<|#|>Same Event Or Venue<|#|>The last-known location of the third user and the location of the first user may be determined to be the same event or venue.",
+              "fields": [
+                "relation",
+                "Third User",
+                "First User",
+                "Same Event Or Venue",
+                "The last-known location of the third user and the location of the first user may be determined to be the same event or venue."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:428466472288172ce1196a08a08e71c2",
+              "cache_key": "default:extract:428466472288172ce1196a08a08e71c2",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 37,
+              "raw_line": "relation<|#|>Third User<|#|>Identifier<|#|>Identification<|#|>The identifier associated with the third user may comprise a name, image, or location of the third user, a relationship between the first user and the third user, or a relationship between the second user and the third user.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Identifier",
+                "Identification",
+                "The identifier associated with the third user may comprise a name, image, or location of the third user, a relationship between the first user and the third user, or a relationship between the second user and the third user."
+              ]
+            }
+          ]
+        }
+      ],
+      "relevant_actual_edges": [
+        {
+          "weight": 2.0,
+          "description": "The third user has a last-known location within a predetermined distance from the first user's location and has a number of degrees of separation and a type of relationship with the first user.<SEP>The last-known location of the third user and the location of the first user may be determined to be the same event or venue.",
+          "keywords": "Degrees Of Separation,Proximity,Same Event Or Venue",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "First User",
+          "target": "Third User",
+          "edge_index": 190,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The third user is in the social network of the first user and is likely to connect the first user's social network with the third user's own social network.",
+          "keywords": "Connection,Membership",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Social Network",
+          "edge_index": 196,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The third user has opted in to sharing information about his or her identity, social network, or location with users of at least as many degrees of separation as the number of degrees of separation for the type of relationship with the first user.",
+          "keywords": "Consent",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Opt-In",
+          "edge_index": 197,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The fourth user connects the first and third users, and the third user has at least two degrees of separation from the first user with the fourth user connecting them.",
+          "keywords": "Connection",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Fourth User",
+          "edge_index": 198,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A geolocation may be provided by the computer of the third user.",
+          "keywords": "Location Provision",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Geolocation",
+          "edge_index": 199,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The third user may have identified himself or herself as being at a venue.",
+          "keywords": "Presence",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Venue",
+          "edge_index": 200,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The third user may have identified himself or herself as being at an event.",
+          "keywords": "Presence",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Event",
+          "edge_index": 201,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The identifier associated with the third user may comprise a name, image, or location of the third user, a relationship between the first user and the third user, or a relationship between the second user and the third user.",
+          "keywords": "Identification",
+          "source_id": "US9118735B1-chunk-001",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793284218,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Identifier",
+          "edge_index": 202,
+          "source_chunks": [
+            "US9118735B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9118735B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9304738B1",
+      "evidence_quote": "for a third user different from the first user and the second user, a request for content to provide for display with the parked domain web page",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ],
+      "quote_source_chunk_ids": [
+        "US9304738B1-chunk-000",
+        "US9304738B1-chunk-001",
+        "US9304738B1-chunk-002"
+      ],
+      "quote_verification": {
+        "exact_contiguous_in_chunk": true,
+        "exact_contiguous_in_saved_claim": true,
+        "claims_file": "data/claims/US9304738B1.json",
+        "claim_number": 1,
+        "claim_char_start": 1791,
+        "chunk_char_starts": {
+          "US9304738B1-chunk-000": 2833,
+          "US9304738B1-chunk-001": 2939,
+          "US9304738B1-chunk-002": 539
+        }
+      },
+      "role_zh": "与前两兴趣提供用户不同的第三用户；接收与停放域名页面一起展示的内容，请求触发权重排序与广告选择。",
+      "extraction_description_support": "三个chunk的实体描述及Content Request/Request For Content/Parked Domain Web Page关系均由Claims1/13/18中的请求句支持。",
+      "raw_extraction_records_reviewed": [
+        {
+          "chunk_id": "US9304738B1-chunk-000",
+          "content_sha256": "bf269ef3cfec2756c71ada433b655ddffc3b98b38e15a717a03facdb173d7546",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 13,
+              "raw_line": "entity<|#|>Third User<|#|>Person<|#|>A user different from the first and second users who requests content to provide for display with the parked domain web page.",
+              "fields": [
+                "entity",
+                "Third User",
+                "Person",
+                "A user different from the first and second users who requests content to provide for display with the parked domain web page."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "cache_key": "default:extract:8f267c1e1e92c895ba038e71099892c6",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 41,
+              "raw_line": "relation<|#|>Third User<|#|>Content Request<|#|>requesting content<|#|>The third user requests content to provide for display with the parked domain web page.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Content Request",
+                "requesting content",
+                "The third user requests content to provide for display with the parked domain web page."
+              ]
+            }
+          ]
+        },
+        {
+          "chunk_id": "US9304738B1-chunk-001",
+          "content_sha256": "886071717df3356cda9c51bbd4b7299b9087e0e835cf5f86a477e6df3d50296d",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 11,
+              "raw_line": "entity<|#|>Third User<|#|>Person<|#|>A user, different from the first user and the second user, who requests content to provide for display with the parked domain web page.",
+              "fields": [
+                "entity",
+                "Third User",
+                "Person",
+                "A user, different from the first user and the second user, who requests content to provide for display with the parked domain web page."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "cache_key": "default:extract:01a1996f64d5c8dab6d049de495fe47c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 39,
+              "raw_line": "relation<|#|>Third User<|#|>Parked Domain Web Page<|#|>requests content for<|#|>The third user requests content to provide for display with the parked domain web page.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Parked Domain Web Page",
+                "requests content for",
+                "The third user requests content to provide for display with the parked domain web page."
+              ]
+            }
+          ]
+        },
+        {
+          "chunk_id": "US9304738B1-chunk-002",
+          "content_sha256": "5068046fde0e59f40e0ae450831aa70f5f1383b362efb5455d0ec0cf6d409520",
+          "entity_rows": [
+            {
+              "raw_record_id": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "cache_key": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 13,
+              "raw_line": "entity<|#|>Third User<|#|>Person<|#|>A user different from the first and second users who requests content to provide for display with the parked domain web page.",
+              "fields": [
+                "entity",
+                "Third User",
+                "Person",
+                "A user different from the first and second users who requests content to provide for display with the parked domain web page."
+              ]
+            }
+          ],
+          "relation_rows": [
+            {
+              "raw_record_id": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "cache_key": "default:extract:7aaccba95e58a8dae5414b328138389c",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 23,
+              "raw_line": "relation<|#|>Third User<|#|>Request For Content<|#|>content request<|#|>The third user submits a request for content to provide for display with the parked domain web page.",
+              "fields": [
+                "relation",
+                "Third User",
+                "Request For Content",
+                "content request",
+                "The third user submits a request for content to provide for display with the parked domain web page."
+              ]
+            }
+          ]
+        }
+      ],
+      "relevant_actual_edges": [
+        {
+          "weight": 1.0,
+          "description": "The third user requests content to provide for display with the parked domain web page.",
+          "keywords": "requests content for",
+          "source_id": "US9304738B1-chunk-001",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Parked Domain Web Page",
+          "target": "Third User",
+          "edge_index": 163,
+          "source_chunks": [
+            "US9304738B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The third user requests content to provide for display with the parked domain web page.",
+          "keywords": "requesting content",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Content Request",
+          "edge_index": 194,
+          "source_chunks": [
+            "US9304738B1-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The third user submits a request for content to provide for display with the parked domain web page.",
+          "keywords": "content request",
+          "source_id": "US9304738B1-chunk-002",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793284192,
+          "truncate": "",
+          "source": "Third User",
+          "target": "Request For Content",
+          "edge_index": 195,
+          "source_chunks": [
+            "US9304738B1-chunk-002"
+          ],
+          "canonical_publications": [
+            "US9304738B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "reviewed_incident_edge_count": 11,
+    "observed_unsupported_edge": false,
+    "details_zh": "11条实际边都保留专利source_id，逐项对应Claims7/16/17/20/21或广告Claims1/13/18。两套邻边聚合在同一Third User，但未出现“广告请求者一定是社交桥接者”这条实际边。没有任何原查询证明发生了这种错误传播。",
+    "edge_indices": [
+      163,
+      190,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202
+    ],
+    "edge_reviews": [
+      {
+        "edge_index": 163,
+        "source": "Parked Domain Web Page",
+        "target": "Third User",
+        "source_id": "US9304738B1-chunk-001",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9304738B1",
+            "claim_numbers": [
+              13
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 190,
+        "source": "First User",
+        "target": "Third User",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              16,
+              17
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 194,
+        "source": "Third User",
+        "target": "Content Request",
+        "source_id": "US9304738B1-chunk-000",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9304738B1",
+            "claim_numbers": [
+              1
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 195,
+        "source": "Third User",
+        "target": "Request For Content",
+        "source_id": "US9304738B1-chunk-002",
+        "canonical_publications": [
+          "US9304738B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9304738B1",
+            "claim_numbers": [
+              18
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 196,
+        "source": "Third User",
+        "target": "Social Network",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              16
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 197,
+        "source": "Third User",
+        "target": "Opt-In",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              16
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 198,
+        "source": "Third User",
+        "target": "Fourth User",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              20
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 199,
+        "source": "Third User",
+        "target": "Geolocation",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              7
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 200,
+        "source": "Third User",
+        "target": "Venue",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              7
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 201,
+        "source": "Third User",
+        "target": "Event",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              7
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      },
+      {
+        "edge_index": 202,
+        "source": "Third User",
+        "target": "Identifier",
+        "source_id": "US9118735B1-chunk-001",
+        "canonical_publications": [
+          "US9118735B1"
+        ],
+        "supporting_claims": [
+          {
+            "publication_number": "US9118735B1",
+            "claim_numbers": [
+              21
+            ]
+          }
+        ],
+        "verdict": "supported_with_source_scope",
+        "note_zh": "按记录中的原文来源解释；无向图序列化source/target次序不当作语义方向。"
+      }
+    ]
+  },
+  "limitations_zh": [
+    "AI辅助逐条原文审阅，非独立人工gold；未调用外部模型API。",
+    "只判断保存快照中的角色/概念与实际邻边，不测试新查询，不据邻接推断已发生检索或生成传播。",
+    "描述以SEP合并后没有句级来源标签；本文借原始抽取行复核句子来源，不能要求多源边的每个子句都被每个source支持。"
+  ],
+  "reviewed_utc": "2026-10-30T08:10:30.359782+00:00",
+  "dossier_path": "dossiers/N012.json",
+  "original_files_modified": false,
+  "external_model_api_calls": 0
+}

@@ -1,0 +1,441 @@
+diff -ruN round4_full_20261030/group_watchdog.py ../../../experiments/03_chunk_boundary_full_pipeline/scripts/group_watchdog.py
+--- round4_full_20261030/group_watchdog.py	2026-11-04 00:10:20
++++ ../../../experiments/03_chunk_boundary_full_pipeline/scripts/group_watchdog.py	2026-11-05 04:24:34
+@@ -1,14 +1,49 @@
+-import subprocess,os,sys,signal,json,datetime
++"""Run one full group within the existing shared watchdog limits."""
++import argparse
++import datetime
++import json
++import os
+ from pathlib import Path
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round4_full_20261030';group=sys.argv[1];assert group in ['M01','F01','F04','F05']
+-start=datetime.datetime.now(datetime.timezone.utc);hard=datetime.datetime.fromisoformat('2026-10-30T03:56:08+00:00');limit=max(1,min(720,int((hard-start).total_seconds())))
+-with (R/'logs'/f'{group}_pipeline.log').open('x') as log:
+- p=subprocess.Popen(['<TMP>/lightrag-envdiag-20261030/venv/bin/python','-B','-u',str(R/'scripts/run_pipeline.py'),group],cwd='<TMP>/lightrag-envdiag-20261030',stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
+- status='completed'
+- try:p.wait(timeout=limit)
+- except subprocess.TimeoutExpired:
+-  status='watchdog_timeout';os.killpg(p.pid,signal.SIGTERM)
+-  try:p.wait(timeout=5)
+-  except subprocess.TimeoutExpired:os.killpg(p.pid,signal.SIGKILL);p.wait()
+- r={'group':group,'started_utc':start.isoformat(),'finished_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':status,'exit_code':p.returncode,'pid':p.pid,'child_alive':p.poll() is None,'timeout_seconds':limit}
+-(R/'results'/f'{group}_watchdog.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r,indent=2))
++import signal
++import subprocess
++import sys
++
++
++def main():
++    parser=argparse.ArgumentParser(description=__doc__)
++    parser.add_argument('group',choices=['F01','F05','F04'])
++    group=parser.parse_args().group
++    from repro_runtime import get_runtime
++    runtime=get_runtime(create=True)
++    root=Path(__file__).resolve().parents[2]
++    round_dir=root/'round4_full_20261030'
++    start=datetime.datetime.now(datetime.timezone.utc)
++    if start<runtime.start or start>=runtime.watchdog_deadline:
++        raise RuntimeError('Shared run window is not active; refusing to start a child')
++    limit=min(720,(runtime.watchdog_deadline-start).total_seconds())
++    with (round_dir/'logs'/f'{group}_pipeline.log').open('x') as log:
++        p=subprocess.Popen([sys.executable,'-B','-u',str(round_dir/'scripts/run_pipeline.py'),group],cwd=root,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
++        status='completed'
++        try:
++            p.wait(timeout=limit)
++        except subprocess.TimeoutExpired:
++            status='watchdog_timeout'
++            os.killpg(p.pid,signal.SIGTERM)
++            try:
++                p.wait(timeout=5)
++            except subprocess.TimeoutExpired:
++                os.killpg(p.pid,signal.SIGKILL)
++                p.wait()
++        if p.returncode!=0 and status=='completed':
++            status='failed'
++        if status=='completed':
++            summary_path=round_dir/'results'/f'run_status_{group}.json'
++            if not summary_path.is_file() or json.loads(summary_path.read_text()).get('status')!='completed':
++                status='failed'
++        result={'group':group,'started_utc':start.isoformat(),'finished_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':status,'exit_code':p.returncode,'pid':p.pid,'child_alive':p.poll() is None,'timeout_seconds':limit}
++    (round_dir/'results'/f'{group}_watchdog.json').write_text(json.dumps(result,indent=2)+'\n')
++    print(json.dumps(result,indent=2))
++
++
++if __name__=='__main__':
++    main()
+diff -ruN round4_full_20261030/naive_watchdog.py ../../../experiments/03_chunk_boundary_full_pipeline/scripts/naive_watchdog.py
+--- round4_full_20261030/naive_watchdog.py	2026-11-04 00:10:20
++++ ../../../experiments/03_chunk_boundary_full_pipeline/scripts/naive_watchdog.py	2026-11-05 04:24:34
+@@ -1,11 +1,47 @@
++"""Run naive followup within the existing indexing session."""
++import argparse
++import datetime
++import json
++import os
+ from pathlib import Path
+-import subprocess,datetime,os,signal,json
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round4_full_20261030';start=datetime.datetime.now(datetime.timezone.utc);stop=datetime.datetime.fromisoformat('2026-10-30T03:56:08+00:00');limit=max(1,min(600,int((stop-start).total_seconds())))
+-with (R/'logs/naive_followup.log').open('x') as f:
+- p=subprocess.Popen(['<TMP>/lightrag-envdiag-20261030/venv/bin/python','-B','-u',str(R/'scripts/run_naive_followup.py')],cwd='<TMP>/lightrag-envdiag-20261030',stdout=f,stderr=subprocess.STDOUT,start_new_session=True);status='completed'
+- try:p.wait(timeout=limit)
+- except subprocess.TimeoutExpired:
+-  status='timeout';os.killpg(p.pid,signal.SIGTERM)
+-  try:p.wait(timeout=5)
+-  except subprocess.TimeoutExpired:os.killpg(p.pid,signal.SIGKILL);p.wait()
+- r={'started_utc':start.isoformat(),'ended_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':status,'pid':p.pid,'exit_code':p.returncode,'child_alive':p.poll() is None,'timeout_seconds':limit};(R/'results/naive_watchdog.json').write_text(json.dumps(r,indent=2));print(json.dumps(r,indent=2))
++import signal
++import subprocess
++import sys
++
++
++def main():
++    argparse.ArgumentParser(description=__doc__).parse_args()
++    from repro_runtime import get_runtime
++    runtime=get_runtime(create=False)
++    root=Path(__file__).resolve().parents[2]
++    round_dir=root/'round4_full_20261030'
++    start=datetime.datetime.now(datetime.timezone.utc)
++    if start<runtime.start or start>=runtime.watchdog_deadline:
++        raise RuntimeError('Shared run window is not active; refusing to start a child')
++    limit=min(600,(runtime.watchdog_deadline-start).total_seconds())
++    with (round_dir/'logs/naive_followup.log').open('x') as log:
++        p=subprocess.Popen([sys.executable,'-B','-u',str(round_dir/'scripts/run_naive_followup.py')],cwd=root,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
++        status='completed'
++        try:
++            p.wait(timeout=limit)
++        except subprocess.TimeoutExpired:
++            status='timeout'
++            os.killpg(p.pid,signal.SIGTERM)
++            try:
++                p.wait(timeout=5)
++            except subprocess.TimeoutExpired:
++                os.killpg(p.pid,signal.SIGKILL)
++                p.wait()
++        if p.returncode!=0 and status=='completed':
++            status='failed'
++        if status=='completed':
++            summary_path=round_dir/'results/naive_followup_status.json'
++            if not summary_path.is_file() or json.loads(summary_path.read_text()).get('status')!='completed':
++                status='failed'
++        result={'started_utc':start.isoformat(),'ended_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':status,'pid':p.pid,'exit_code':p.returncode,'child_alive':p.poll() is None,'timeout_seconds':limit}
++        (round_dir/'results/naive_watchdog.json').write_text(json.dumps(result,indent=2))
++        print(json.dumps(result,indent=2))
++
++
++if __name__=='__main__':
++    main()
+diff -ruN round4_full_20261030/repro_runtime.py ../../../experiments/03_chunk_boundary_full_pipeline/scripts/repro_runtime.py
+--- round4_full_20261030/repro_runtime.py	1969-12-31 16:00:00
++++ ../../../experiments/03_chunk_boundary_full_pipeline/scripts/repro_runtime.py	2026-11-05 04:24:34
+@@ -0,0 +1,141 @@
++"""Persistent run session. Importing this module never creates or resets a run."""
++import argparse
++from dataclasses import dataclass
++import datetime as dt
++import fcntl
++import json
++import os
++from pathlib import Path
++import tempfile
++
++ROOT = Path(__file__).resolve().parents[2]
++GROUP = 'C'
++ROUND = ROOT / 'round4_full_20261030'
++QUERY_MINUTES = 102
++SESSION_PATH = ROOT / 'config/repro_session.json'
++DEFAULT_CONFIG = Path('<EXTERNAL_DISK>/LightRAG/secrets/.env')
++OUTPUT_DIRS = ['results', 'logs', 'report', 'storage']
++
++
++@dataclass(frozen=True)
++class Runtime:
++    start: dt.datetime
++    query_deadline: dt.datetime
++    deadline: dt.datetime
++    watchdog_deadline: dt.datetime
++    config_path: Path
++
++
++def utc_time(value):
++    if not isinstance(value, str) or not value.strip():
++        raise RuntimeError('开始时间必须是带时区的 ISO-8601 时间。')
++    try:
++        result = dt.datetime.fromisoformat(value.strip().replace('Z', '+00:00'))
++    except ValueError:
++        raise RuntimeError('开始时间格式无效；已有会话不会被重建。') from None
++    if result.tzinfo is None or result.utcoffset() is None:
++        raise RuntimeError('开始时间必须包含时区。')
++    return result.astimezone(dt.timezone.utc)
++
++
++def _validate(data, require_active=True):
++    required = {'schema_version', 'group', 'root', 'start_utc', 'config_path'}
++    if not isinstance(data, dict) or not required.issubset(data) or type(data['schema_version']) is not int or data['schema_version'] != 1:
++        raise RuntimeError('会话文件格式无效；请保留文件并检查，不会自动重建。')
++    if data['group'] != GROUP or data['root'] != str(ROOT):
++        raise RuntimeError('会话属于其他运行副本；不能复制旧会话继续运行。')
++    start = utc_time(data['start_utc'])
++    if not isinstance(data['config_path'], str) or not data['config_path'].strip() or not Path(data['config_path']).expanduser().is_absolute():
++        raise RuntimeError('会话中的配置路径无效；已有会话不会被重建。')
++    config = Path(data['config_path']).expanduser().resolve()
++    explicit_start = os.environ.get('LIGHTRAG_REPRO_START_UTC', '').strip()
++    if explicit_start and utc_time(explicit_start) != start:
++        raise RuntimeError('环境变量开始时间与已保存会话冲突。取消 LIGHTRAG_REPRO_START_UTC 后可读取原会话；不能延长窗口。')
++    explicit_config = os.environ.get('LIGHTRAG_REPRO_CONFIG', '').strip()
++    if explicit_config and Path(explicit_config).expanduser().resolve() != config:
++        raise RuntimeError('配置路径与已保存会话不一致；不会更换当前运行的配置。')
++    runtime = Runtime(start, start + dt.timedelta(minutes=QUERY_MINUTES),
++                      start + dt.timedelta(minutes=120), start + dt.timedelta(minutes=105), config)
++    now = dt.datetime.now(dt.timezone.utc)
++    if require_active and now < runtime.start:
++        raise RuntimeError('会话开始时间在未来，拒绝运行。')
++    if require_active and now >= runtime.deadline:
++        raise RuntimeError('本轮120分钟窗口已结束；保留会话和结果，另建新运行副本。不会自动重置时间。')
++    if require_active and not config.is_file():
++        raise RuntimeError('找不到会话指定的配置文件，请检查外置硬盘；无需复制密钥。')
++    return runtime
++
++
++def _read(require_active=True):
++    try:
++        data = json.loads(SESSION_PATH.read_text())
++    except (OSError, ValueError):
++        raise RuntimeError('无法读取已有会话文件；保留文件并检查，不会自动重建。') from None
++    return _validate(data, require_active)
++
++
++def _check_empty_outputs():
++    for directory in OUTPUT_DIRS:
++        path = ROUND / directory
++        if path.is_file() or any(p.is_file() or p.is_symlink() for p in path.rglob('*')):
++            raise RuntimeError('已有活动输出但没有会话，拒绝重新计时。请保留结果并检查：' + str(path))
++    if (ROUND / 'evidence/public_runtime_config.json').exists():
++        raise RuntimeError('已有运行配置证据但没有会话，拒绝重新计时。')
++
++
++def get_runtime(create=False, require_active=True):
++    """Create only for an explicit run entrypoint; otherwise read the fixed session."""
++    if SESSION_PATH.exists():
++        runtime = _read(require_active)
++    elif not create:
++        raise RuntimeError('本副本尚未开始运行。请按 START_HERE.txt 执行首个运行命令；无需手动设置开始时间。')
++    else:
++        SESSION_PATH.parent.mkdir(parents=True, exist_ok=True)
++        lock_fd = os.open(SESSION_PATH.with_suffix('.lock'), os.O_CREAT | os.O_RDWR, 0o600)
++        with os.fdopen(lock_fd, 'a+') as lock:
++            fcntl.flock(lock, fcntl.LOCK_EX)
++            if SESSION_PATH.exists():
++                runtime = _read(require_active)
++            else:
++                _check_empty_outputs()
++                config = Path(os.environ.get('LIGHTRAG_REPRO_CONFIG') or DEFAULT_CONFIG).expanduser().resolve()
++                raw_start = os.environ.get('LIGHTRAG_REPRO_START_UTC', '').strip()
++                start = utc_time(raw_start) if raw_start else dt.datetime.now(dt.timezone.utc)
++                data = {'schema_version': 1, 'group': GROUP, 'root': str(ROOT),
++                        'start_utc': start.isoformat(), 'config_path': str(config)}
++                runtime = _validate(data, require_active=True)
++                fd, temp_name = tempfile.mkstemp(prefix='.repro-session-', dir=SESSION_PATH.parent)
++                try:
++                    with os.fdopen(fd, 'w') as output:
++                        json.dump(data, output, ensure_ascii=False, indent=2)
++                        output.write('\n');output.flush();os.fsync(output.fileno())
++                    try:
++                        os.link(temp_name, SESSION_PATH)  # Never overwrite another session.
++                    except FileExistsError:
++                        runtime = _read(require_active)
++                finally:
++                    Path(temp_name).unlink(missing_ok=True)
++    os.environ.setdefault('LIGHTRAG_REPRO_START_UTC', runtime.start.isoformat())
++    os.environ.setdefault('LIGHTRAG_REPRO_CONFIG', str(runtime.config_path))
++    return runtime
++
++
++def main():
++    parser = argparse.ArgumentParser(description='只查看本组会话状态；不创建会话、不调用 API。')
++    parser.add_argument('action', nargs='?', choices=['status'], default='status')
++    parser.parse_args()
++    if not SESSION_PATH.exists():
++        print(json.dumps({'state': 'not_started', 'group': GROUP, 'session_file': str(SESSION_PATH),
++                          'instruction': '直接执行 START_HERE.txt 中的首个运行命令。该命令会调用真实 API；首次运行会固定开始时间。'}, ensure_ascii=False, indent=2))
++        return
++    runtime = get_runtime(require_active=False)
++    now = dt.datetime.now(dt.timezone.utc)
++    state = 'expired' if now >= runtime.deadline else 'future' if now < runtime.start else 'active'
++    print(json.dumps({'state': state, 'group': GROUP, 'start_utc': runtime.start.isoformat(),
++                      'query_deadline_utc': runtime.query_deadline.isoformat(),
++                      'deadline_utc': runtime.deadline.isoformat(), 'config_file_exists': runtime.config_path.is_file(),
++                      'session_file': str(SESSION_PATH)}, ensure_ascii=False, indent=2))
++
++
++if __name__ == '__main__':
++    main()
+diff -ruN round4_full_20261030/run_naive_followup.py ../../../experiments/03_chunk_boundary_full_pipeline/scripts/run_naive_followup.py
+--- round4_full_20261030/run_naive_followup.py	2026-11-04 00:10:20
++++ ../../../experiments/03_chunk_boundary_full_pipeline/scripts/run_naive_followup.py	2026-11-05 04:24:34
+@@ -1,18 +1,44 @@
+ """Query-only naive comparison on completed new full-group indexes; no insertion."""
+-import asyncio,json,sys,hashlib,datetime as dt,traceback
++import asyncio,json,sys,hashlib,datetime as dt,traceback,argparse
+ from pathlib import Path
+-from safe_api import ROOT,ROUND,SafeAPI,write_json,now,safe_error
++
++# Followup must reuse the indexing session; it cannot start a new time window.
++if __name__=='__main__':
++ argparse.ArgumentParser(description=__doc__).parse_args()
++ from repro_runtime import get_runtime
++ get_runtime(create=False)
++
++from safe_api import ROOT,ROUND,SafeAPI,write_json,now,safe_error,QUERY_DEADLINE
+ from run_pipeline import PARAMS,make_precomputed_chunker,ranges_for
+ from lightrag import LightRAG,QueryParam
+ from lightrag.utils import EmbeddingFunc,TiktokenTokenizer
+ 
+ def hashes(path):return {n:hashlib.sha256((path/n).read_bytes()).hexdigest() for n in ['graph_chunk_entity_relation.graphml','vdb_chunks.json','kv_store_text_chunks.json']}
++def validate_completed_runs(groups):
++ if len(groups)!=3 or {g['id'] for g in groups}!={'F01','F05','F04'}:
++  raise RuntimeError('Naive followup requires all three frozen groups')
++ for g in groups:
++  for cond in ['A','B']:
++   for repeat in [1,2,3]:
++    rid=f"{g['id']}_{cond}_r{repeat}";base=ROUND/'results'/rid
++    status_path=base/'status.json'
++    if not status_path.is_file():raise RuntimeError(f'Missing completed run: {rid}')
++    status=json.loads(status_path.read_text())
++    if status.get('status')!='completed':raise RuntimeError(f'Run is not completed: {rid}')
++    expected_storage=ROUND/'storage'/rid
++    if Path(status['storage']).resolve()!=expected_storage.resolve():raise RuntimeError(f'Unexpected index path: {rid}')
++    if status['workspace']!='patent_r4_'+rid.lower():raise RuntimeError(f'Unexpected workspace: {rid}')
++    if (base/'natural_naive.json').exists():raise RuntimeError(f'Naive result already exists: {rid}')
++    hashes(expected_storage/status['workspace'])
++
+ async def main():
+- api=SafeAPI('naive_followup');groups=json.loads((ROUND/'conditions/frozen_groups.json').read_text())['groups'];groups=[g for g in groups if g['id'] in ['F01','F05','F04']];summary={'started_utc':now().isoformat(),'scope':'query-only naive followup of existing new full-group indexes; no extraction/insertion','runs':[]}
++ groups=json.loads((ROUND/'conditions/frozen_groups.json').read_text())['groups'];groups=[g for g in groups if g['id'] in ['F01','F05','F04']]
++ validate_completed_runs(groups)
++ api=SafeAPI('naive_followup');summary={'started_utc':now().isoformat(),'scope':'query-only naive followup of existing new full-group indexes; no extraction/insertion','runs':[]}
+  try:
+   for g in groups:
+    for cond,r in [('A',1),('B',1),('B',2),('A',2),('A',3),('B',3)]:
+-    if now()>=dt.datetime.fromisoformat('2026-10-30T03:53:08+00:00'):summary['stopped_for_review']=True;return
++    if now()>=QUERY_DEADLINE:summary['stopped_for_review']=True;return
+     rid=f"{g['id']}_{cond}_r{r}";base=ROUND/'results'/rid;status=json.loads((base/'status.json').read_text());assert status['status']=='completed';dest=base/'natural_naive.json';assert not dest.exists();storage=Path(status['storage']);workspace=status['workspace'];before_hash=hashes(storage/workspace);rag=None;result=None;entry={'run_id':rid,'started_utc':now().isoformat(),'forced_evidence':False,'mode':'naive'}
+     try:
+      async def llm(*a,**k):return await api.complete(*a,**k)
+diff -ruN round4_full_20261030/run_pipeline.py ../../../experiments/03_chunk_boundary_full_pipeline/scripts/run_pipeline.py
+--- round4_full_20261030/run_pipeline.py	2026-11-04 00:10:20
++++ ../../../experiments/03_chunk_boundary_full_pipeline/scripts/run_pipeline.py	2026-11-05 04:24:34
+@@ -1,7 +1,18 @@
+ """Fresh official indexes for every frozen group/condition/repetition."""
+-import asyncio,json,hashlib,sys,datetime as dt,traceback
++import asyncio,json,hashlib,sys,datetime as dt,traceback,argparse
+ from pathlib import Path
+-from safe_api import ROOT,ROUND,SafeAPI,now,write_json,DEADLINE,safe_error
++
++# Validate an explicit invocation before starting or loading its shared session.
++# Imported by naive followup for constants; importing must never create a session.
++if __name__=='__main__':
++ parser=argparse.ArgumentParser(description=__doc__)
++ parser.add_argument('groups',nargs='+',choices=['F01','F05','F04'])
++ _requested_groups=parser.parse_args().groups
++ if len(set(_requested_groups))!=len(_requested_groups):parser.error('Specify each group only once')
++ from repro_runtime import get_runtime
++ get_runtime(create=True)
++
++from safe_api import ROOT,ROUND,SafeAPI,now,write_json,DEADLINE,QUERY_DEADLINE,safe_error
+ from custom_chunker import make_precomputed_chunker
+ from lightrag import LightRAG,QueryParam
+ from lightrag._version import __version__
+@@ -12,7 +23,7 @@
+ EVIDENCE_PROMPT=('Use only retrieved evidence. State the patent publication number and the exact Claim number only when present in the evidence. '
+  'Quote the supporting wording exactly, keeping each quotation short. Distinguish document facts from comparisons and inference. '
+  'If evidence is insufficient, state what is missing. Do not invent links between patents. Answer in English in at most 350 words and preserve source references.')
+-SOFT_STOP=dt.datetime.fromisoformat('2026-10-30T03:53:08+00:00')
++SOFT_STOP=QUERY_DEADLINE
+ PARAMS={'mode':'mix','stream':False,'include_references':True,'enable_rerank':False,'top_k':12,'chunk_top_k':8,'max_entity_tokens':2000,'max_relation_tokens':2000,'max_total_tokens':8000,'user_prompt':EVIDENCE_PROMPT}
+ 
+ def clean_edge_map(edges):return [{'endpoints':list(k),'records':v} for k,v in edges.items()]
+@@ -101,10 +112,14 @@
+   print(json.dumps(status,ensure_ascii=False),flush=True)
+  return status
+ 
+-async def main():
++async def main(requested):
+  assert __version__=='1.5.7'
+  groups=json.loads((ROUND/'conditions/frozen_groups.json').read_text())['groups']
+- if len(sys.argv)>1:groups=[g for g in groups if g['id'] in sys.argv[1:]]
++ requested=list(requested)
++ if not requested or any(g not in ['F01','F05','F04'] for g in requested) or len(set(requested))!=len(requested):
++  raise ValueError('Specify F01, F05 or F04 explicitly; M01 is outside this new run')
++ groups=[g for g in groups if g['id'] in requested]
++ if len(groups)!=len(requested):raise ValueError('Requested frozen group is missing')
+  api=SafeAPI('round4');overall={'started_utc':now().isoformat(),'official_version':__version__,'groups':[g['id'] for g in groups],'runs':[],'status':'running','settings':PARAMS,'same_original_model_and_embedding':True,'fresh_index_per_run':True,'natural_retrieval_scope':'one complete target document per full group; minimalgroup clippedclaims only; no20docbackgroundcorpus'}
+  write_json(ROUND/'results'/('run_status_'+('-'.join(g['id'] for g in groups))+'.json'),overall)
+  try:
+@@ -117,4 +132,4 @@
+  finally:
+   await api.close();overall['finished_utc']=now().isoformat();write_json(ROUND/'results'/('run_status_'+('-'.join(g['id'] for g in groups))+'.json'),overall)
+ 
+-if __name__=='__main__':asyncio.run(main())
++if __name__=='__main__':asyncio.run(main(_requested_groups))
+diff -ruN round4_full_20261030/safe_api.py ../../../experiments/03_chunk_boundary_full_pipeline/scripts/safe_api.py
+--- round4_full_20261030/safe_api.py	2026-11-04 00:10:20
++++ ../../../experiments/03_chunk_boundary_full_pipeline/scripts/safe_api.py	2026-11-05 04:24:34
+@@ -5,8 +5,8 @@
+ 
+ ROOT=Path(__file__).resolve().parents[2]
+ ROUND=ROOT/'round4_full_20261030'
+-sys.path.insert(0,'<TMP>/lightrag-envdiag-20261030/official_source')
+-os.environ['TIKTOKEN_CACHE_DIR']='<TMP>/lightrag-envdiag-20261030/tiktoken_cache'
++sys.path.insert(0,str(ROOT/'src/LightRAG-v1.5.7'))
++os.environ['TIKTOKEN_CACHE_DIR']=str(ROOT/'tiktoken_cache')
+ import certifi
+ os.environ['SSL_CERT_FILE']=certifi.where()
+ os.environ['REQUESTS_CA_BUNDLE']=certifi.where()
+@@ -15,9 +15,12 @@
+ # Direct httpx transport preserves the OpenAI-compatible JSON request; no SDK retries or heavyweight imports.
+ # The full official pipeline is imported by the runner; transport logs remain isolated.
+ 
+-START=dt.datetime.fromisoformat('2026-10-30T02:11:08+00:00')
+-QUERY_DEADLINE=dt.datetime.fromisoformat('2026-10-30T03:53:08+00:00')
+-DEADLINE=dt.datetime.fromisoformat('2026-10-30T04:11:08+00:00')
++from repro_runtime import get_runtime
++_runtime=get_runtime()
++START=_runtime.start
++QUERY_DEADLINE=_runtime.query_deadline
++DEADLINE=_runtime.deadline
++CONFIG_PATH=_runtime.config_path
+ CAP_CNY=4.0
+ INPUT_CNY_PER_M=2.0
+ OUTPUT_CNY_PER_M=8.0
+@@ -36,7 +39,7 @@
+ class SafeAPI:
+     def __init__(self,stage):
+         # The only credential read. Values remain in process memory and clients.
+-        cfg=dotenv_values('<EXTERNAL_DISK>/LightRAG/secrets/.env')
++        cfg=dotenv_values(str(CONFIG_PATH))
+         required=['LLM_BINDING_HOST','LLM_MODEL','LLM_BINDING_API_KEY','EMBEDDING_BINDING_HOST','EMBEDDING_MODEL','EMBEDDING_BINDING_API_KEY']
+         if any(not cfg.get(k) for k in required):raise ValueError('required configuration field missing')
+         for field in ['LLM_BINDING_HOST','EMBEDDING_BINDING_HOST']:
+@@ -55,15 +58,19 @@
+         self.lock=asyncio.Lock();self.semaphore=asyncio.Semaphore(2)
+         self.ledger_path=ROUND/'results/cost_ledger.json'
+         self.ledger=json.loads(self.ledger_path.read_text()) if self.ledger_path.exists() else {
+-            'currency':'CNY','hard_cap_cny':CAP_CNY,'budget_conversion_cny_per_usd':4,
++            'run_start_utc':START.isoformat(),'currency':'CNY','hard_cap_cny':CAP_CNY,'budget_conversion_cny_per_usd':4,
+             'note':'Conservative price estimate, not provider invoice. Peak rates; no cache discount. Unknown outcomes retain reservation.',
+             'estimated_observed_cost_cny':0.0,'reserved_unknown_cny':0.0,'calls':[]}
++        if self.ledger.get('run_start_utc')!=START.isoformat():
++            raise RuntimeError('Cost ledger belongs to a different or unknown run session; refusing to continue')
+         self.public={'provider':'SiliconFlow','host':'https://api.siliconflow.cn/v1','llm_model':self.llm_model,
+                      'embedding_model':self.embedding_model,'embedding_dim':self.dim,'embedding_token_limit':self.embedding_token_limit,
+-                     'client_max_retries':0,'enable_thinking':False,'deadline_utc':DEADLINE.isoformat(),'hard_cap_cny':CAP_CNY}
++                     'client_max_retries':0,'enable_thinking':False,'start_utc':START.isoformat(),
++                     'query_deadline_utc':QUERY_DEADLINE.isoformat(),'deadline_utc':DEADLINE.isoformat(),'hard_cap_cny':CAP_CNY}
+         write_json(ROUND/'evidence/public_runtime_config.json',self.public)
+ 
+     def check_deadline(self):
++        if now()<START:raise RuntimeError('experiment shared start is in the future')
+         if now()>=DEADLINE:raise TimeoutError('experiment hard deadline reached')
+ 
+     async def reserve(self,kind,reservation):

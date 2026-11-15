@@ -1,0 +1,543 @@
+{
+  "audit_id": "N024",
+  "node_id": "Application",
+  "category": "shared_broad_class",
+  "confidence": "high",
+  "reason_zh": "两个来源的 Application 都是可在设备上执行、接受输入并完成功能的软件应用。一项做人脸/社交检索，另一项做内容推荐，功能差异不使 application 发生词义冲突。现有描述分段与各边来源仍可区分各专利，支持共享软件应用大类；没有证据表明两文档指向同一应用实例。",
+  "class_instance_interpretation_zh": "按共享概念类别解释成立；不是跨专利同一个体身份声明。图中一个 ID 汇集多个文档内实例/功能描述，后续推理仍须保留每条边和原文的专利作用域。",
+  "source_assessments": [
+    {
+      "publication_number": "US8917913B2",
+      "evidence_quote": "an application associated with the mobile device, wherein the application is in operative communication with the camera",
+      "claim_or_section": "Claim 1",
+      "source_chunk_ids": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US8917913B2-chunk-000",
+        "US8917913B2-chunk-001"
+      ],
+      "evidence_verification": {
+        "publication_number": "US8917913B2",
+        "claim_or_section": "Claim 1",
+        "quote": "an application associated with the mobile device, wherein the application is in operative communication with the camera",
+        "source_chunk_ids": [
+          "US8917913B2-chunk-000",
+          "US8917913B2-chunk-001"
+        ],
+        "exact_full_doc_char_start": 1116,
+        "exact_contiguous_quote_verified": true,
+        "saved_claims_file_verified": true
+      },
+      "role_zh": "移动设备上的软件应用，与相机、用户接口和搜索服务交互；不是专利申请这一不同词义。",
+      "extraction_description_support": {
+        "assessment_zh": "两个原始实体行均描述移动软件；主要职责可由 Claims 1、10、16 对照。第二行把显示结果归给应用，而原文直接表述结果显示在设备屏幕，属于局部实施角色概括，并非跨专利身份等同证据。",
+        "all_raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US8917913B2-chunk-000",
+            "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+            "line_number": 5,
+            "raw_line": "entity<|#|>Application<|#|>Artifact<|#|>An application associated with the mobile device that is in operative communication with the camera, provides a user interface, receives search terms and source images, and communicates with the search service."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-001",
+            "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+            "line_number": 4,
+            "raw_line": "entity<|#|>Application<|#|>Artifact<|#|>Software associated with the mobile device that is in operative communication with the camera, provides a user interface, receives friend identifiers and source images, and displays results on the screen."
+          }
+        ],
+        "all_raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US8917913B2-chunk-000",
+            "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+            "line_number": 20,
+            "raw_line": "relation<|#|>Application<|#|>Mobile Device<|#|>association<|#|>The application is associated with the mobile device and is in operative communication with its camera."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-000",
+            "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+            "line_number": 21,
+            "raw_line": "relation<|#|>Application<|#|>Camera<|#|>operative communication<|#|>The application is in operative communication with the camera and receives source images from it."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-000",
+            "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+            "line_number": 22,
+            "raw_line": "relation<|#|>Application<|#|>User Interface<|#|>provides<|#|>The application provides a user interface and receives search terms or friend identifiers from it."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-000",
+            "raw_record_id": "default:extract:958acb32aa3144daf63e3c4a201f570c",
+            "line_number": 24,
+            "raw_line": "relation<|#|>Internet Access Mechanism<|#|>Application<|#|>operative communication<|#|>The Internet access mechanism is in operative communication with the application."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-001",
+            "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+            "line_number": 23,
+            "raw_line": "relation<|#|>Application<|#|>Mobile Device<|#|>association<|#|>The application is associated with the mobile device."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-001",
+            "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+            "line_number": 24,
+            "raw_line": "relation<|#|>Application<|#|>Camera<|#|>operative communication, image reception<|#|>The application is in operative communication with the camera and receives source images from it."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-001",
+            "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+            "line_number": 25,
+            "raw_line": "relation<|#|>Application<|#|>User Interface<|#|>provision, data reception<|#|>The application provides a user interface and receives friend identifiers and friend level indicators from it."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-001",
+            "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+            "line_number": 26,
+            "raw_line": "relation<|#|>Application<|#|>Friend Identifier<|#|>reception<|#|>The application receives at least one friend identifier from the user interface."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-001",
+            "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+            "line_number": 27,
+            "raw_line": "relation<|#|>Application<|#|>Source Image<|#|>reception<|#|>The application receives at least one source image from the camera."
+          },
+          {
+            "chunk_id": "US8917913B2-chunk-001",
+            "raw_record_id": "default:extract:7182907f22ae09a0de65a3da1b71fb0a",
+            "line_number": 29,
+            "raw_line": "relation<|#|>Internet Access Mechanism<|#|>Application<|#|>operative communication<|#|>The Internet access mechanism is in operative communication with the application."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "edge_index": 73,
+          "endpoints": [
+            "Mobile Device",
+            "Application"
+          ],
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "publication_numbers": [
+            "US8917913B2"
+          ]
+        },
+        {
+          "edge_index": 426,
+          "endpoints": [
+            "Application",
+            "Camera"
+          ],
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "publication_numbers": [
+            "US8917913B2"
+          ]
+        },
+        {
+          "edge_index": 427,
+          "endpoints": [
+            "Application",
+            "User Interface"
+          ],
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "publication_numbers": [
+            "US8917913B2"
+          ]
+        },
+        {
+          "edge_index": 428,
+          "endpoints": [
+            "Application",
+            "Internet Access Mechanism"
+          ],
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "publication_numbers": [
+            "US8917913B2"
+          ]
+        },
+        {
+          "edge_index": 429,
+          "endpoints": [
+            "Application",
+            "Friend Identifier"
+          ],
+          "source_chunk_ids": [
+            "US8917913B2-chunk-001"
+          ],
+          "publication_numbers": [
+            "US8917913B2"
+          ]
+        },
+        {
+          "edge_index": 430,
+          "endpoints": [
+            "Application",
+            "Source Image"
+          ],
+          "source_chunk_ids": [
+            "US8917913B2-chunk-001"
+          ],
+          "publication_numbers": [
+            "US8917913B2"
+          ]
+        }
+      ]
+    },
+    {
+      "publication_number": "US9374411B1",
+      "evidence_quote": "at least one application executable in the at least one computing device",
+      "claim_or_section": "Claim 6",
+      "source_chunk_ids": [
+        "US9374411B1-chunk-000",
+        "US9374411B1-chunk-001"
+      ],
+      "quote_source_chunk_ids": [
+        "US9374411B1-chunk-000"
+      ],
+      "evidence_verification": {
+        "publication_number": "US9374411B1",
+        "claim_or_section": "Claim 6",
+        "quote": "at least one application executable in the at least one computing device",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-000"
+        ],
+        "exact_full_doc_char_start": 3714,
+        "exact_contiguous_quote_verified": true,
+        "saved_claims_file_verified": true
+      },
+      "role_zh": "执行内容推荐操作的软件应用；与人脸检索应用属于相同软件大类，具体实例不同。",
+      "extraction_description_support": {
+        "assessment_zh": "两个实体行及两条原始 Application—Computing Device 关系描述执行、内容处理和推荐；Claim 6 直接支持执行应用，Claims 10–12 支持后续操作。",
+        "all_raw_entity_rows_reviewed": [
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "line_number": 23,
+            "raw_line": "entity<|#|>Application<|#|>Artifact<|#|>Software executable in a computing device that causes the device to perform content recommendation functions."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "line_number": 2,
+            "raw_line": "entity<|#|>Application<|#|>Artifact<|#|>Software executed by a computing device that causes it to perform content rendering, character identification, and recommendation generation."
+          }
+        ],
+        "all_raw_relation_endpoint_rows_reviewed": [
+          {
+            "chunk_id": "US9374411B1-chunk-000",
+            "raw_record_id": "default:extract:4a665eb9b6325343afd5a73cbd168366",
+            "line_number": 51,
+            "raw_line": "relation<|#|>Application<|#|>Computing Device<|#|>executable in<|#|>The application is executable in the computing device and causes it to perform content recommendation functions."
+          },
+          {
+            "chunk_id": "US9374411B1-chunk-001",
+            "raw_record_id": "default:extract:fc07aa368ab1fc09d1e01381471bcdbc",
+            "line_number": 28,
+            "raw_line": "relation<|#|>Application<|#|>Computing Device<|#|>execution, causation<|#|>The application is executed by the computing device and causes it to perform various operations."
+          }
+        ]
+      },
+      "relevant_actual_edges": [
+        {
+          "edge_index": 431,
+          "endpoints": [
+            "Application",
+            "Computing Device"
+          ],
+          "source_chunk_ids": [
+            "US9374411B1-chunk-000",
+            "US9374411B1-chunk-001"
+          ],
+          "publication_numbers": [
+            "US9374411B1"
+          ]
+        }
+      ]
+    }
+  ],
+  "neighbor_audit": {
+    "all_actual_incident_edges_read": true,
+    "incident_edge_count": 7,
+    "all_incident_edge_indices": [
+      73,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431
+    ],
+    "edge_checks": [
+      {
+        "edge_index": 73,
+        "endpoints": [
+          "Mobile Device",
+          "Application"
+        ],
+        "actual_description": "The application is associated with the mobile device and is in operative communication with its camera.<SEP>The application is associated with the mobile device.",
+        "source_chunk_ids": [
+          "US8917913B2-chunk-000",
+          "US8917913B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US8917913B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US8917913B2",
+          "claim_or_section": "Claim 1",
+          "quote": "an application associated with the mobile device",
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "exact_full_doc_char_start": 1116,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "设备与应用关联由原文直接给出。"
+      },
+      {
+        "edge_index": 426,
+        "endpoints": [
+          "Application",
+          "Camera"
+        ],
+        "actual_description": "The application is in operative communication with the camera and receives source images from it.",
+        "source_chunk_ids": [
+          "US8917913B2-chunk-000",
+          "US8917913B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US8917913B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US8917913B2",
+          "claim_or_section": "Claim 1",
+          "quote": "wherein the application receives from the camera at least one source image",
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "exact_full_doc_char_start": 1371,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "相机输入与应用关系有直接证据。"
+      },
+      {
+        "edge_index": 427,
+        "endpoints": [
+          "Application",
+          "User Interface"
+        ],
+        "actual_description": "The application provides a user interface and receives friend identifiers and friend level indicators from it.<SEP>The application provides a user interface and receives search terms or friend identifiers from it.",
+        "source_chunk_ids": [
+          "US8917913B2-chunk-000",
+          "US8917913B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US8917913B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US8917913B2",
+          "claim_or_section": "Claim 1",
+          "quote": "wherein the application provides a user interface",
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "exact_full_doc_char_start": 1237,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "提供接口、获取搜索词见 Claim 1；好友标识见 Claim 10，好友层级见 Claim 16。"
+      },
+      {
+        "edge_index": 428,
+        "endpoints": [
+          "Application",
+          "Internet Access Mechanism"
+        ],
+        "actual_description": "The Internet access mechanism is in operative communication with the application.",
+        "source_chunk_ids": [
+          "US8917913B2-chunk-000",
+          "US8917913B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US8917913B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US8917913B2",
+          "claim_or_section": "Claim 1",
+          "quote": "wherein the Internet access mechanism is in operative communication with the application",
+          "source_chunk_ids": [
+            "US8917913B2-chunk-000",
+            "US8917913B2-chunk-001"
+          ],
+          "exact_full_doc_char_start": 1609,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "应用与互联网接入机制的操作通信有直接证据。"
+      },
+      {
+        "edge_index": 429,
+        "endpoints": [
+          "Application",
+          "Friend Identifier"
+        ],
+        "actual_description": "The application receives at least one friend identifier from the user interface.",
+        "source_chunk_ids": [
+          "US8917913B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US8917913B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US8917913B2",
+          "claim_or_section": "Claim 10",
+          "quote": "wherein the application receives from the user interface at least one friend identifier",
+          "source_chunk_ids": [
+            "US8917913B2-chunk-001"
+          ],
+          "exact_full_doc_char_start": 6044,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "好友标识输入有直接证据。"
+      },
+      {
+        "edge_index": 430,
+        "endpoints": [
+          "Application",
+          "Source Image"
+        ],
+        "actual_description": "The application receives at least one source image from the camera.",
+        "source_chunk_ids": [
+          "US8917913B2-chunk-001"
+        ],
+        "publication_numbers": [
+          "US8917913B2"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US8917913B2",
+          "claim_or_section": "Claim 10",
+          "quote": "wherein the application receives from the camera at least one source image",
+          "source_chunk_ids": [
+            "US8917913B2-chunk-001"
+          ],
+          "exact_full_doc_char_start": 1371,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "相机源图像输入有直接证据。"
+      },
+      {
+        "edge_index": 431,
+        "endpoints": [
+          "Application",
+          "Computing Device"
+        ],
+        "actual_description": "The application is executable in the computing device and causes it to perform content recommendation functions.<SEP>The application is executed by the computing device and causes it to perform various operations.",
+        "source_chunk_ids": [
+          "US9374411B1-chunk-000",
+          "US9374411B1-chunk-001"
+        ],
+        "publication_numbers": [
+          "US9374411B1"
+        ],
+        "source_mapping_checked": true,
+        "support_assessment": "supported_document_local",
+        "evidence": {
+          "publication_number": "US9374411B1",
+          "claim_or_section": "Claim 6",
+          "quote": "at least one application executable in the at least one computing device",
+          "source_chunk_ids": [
+            "US9374411B1-chunk-000"
+          ],
+          "exact_full_doc_char_start": 3714,
+          "exact_contiguous_quote_verified": true,
+          "saved_claims_file_verified": true
+        },
+        "assessment_zh": "执行应用及推荐操作有 Claim 6 支持；后续依赖 Claims 10–12 延续该设备。"
+      }
+    ],
+    "observed_unsupported_cross_document_edge": false,
+    "observed_wrong_retrieval_or_generation_propagation": false,
+    "potential_unscoped_path_composition": {
+      "path": [
+        "Camera",
+        "Application",
+        "Computing Device"
+      ],
+      "edge_indices": [
+        426,
+        431
+      ],
+      "publications": [
+        "US8917913B2",
+        "US9374411B1"
+      ],
+      "interpretation_zh": "图上确实可经共享 Application 跨到另一专利的 Computing Device；该两步邻接不证明内容推荐设备具备人脸检索相机接口。这里只观察到可组合路径，未观察到对应错误回答。"
+    },
+    "note_zh": "实际边均保留其文档来源；跨文档共享邻接或可组合路径不等于原文支持跨专利关系，也不等于已观察到系统回答受污染。",
+    "reviewed_incident_edge_count": 7,
+    "edge_indices": [
+      73,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431
+    ]
+  },
+  "limitations_zh": [
+    "本结果是助手逐文内容审阅，不是独立人类金标准，也未调用新的模型评判 API。",
+    "共享宽类不保证所有合并描述适用于每个来源，也不验证物理/软件实例身份相等。",
+    "未运行新的检索和生成实验，不能据邻接路径推定已发生错误传播。",
+    "缓存行未保存 finish_reason；本评审不从缓存缺该字段推定响应完整或截断。"
+  ],
+  "review_coverage": {
+    "full_source_chunks_read": [
+      "US8917913B2-chunk-000",
+      "US8917913B2-chunk-001",
+      "US9374411B1-chunk-000",
+      "US9374411B1-chunk-001"
+    ],
+    "raw_entity_rows_read": 4,
+    "raw_relation_endpoint_rows_read": 12,
+    "actual_incident_edges_read": 7,
+    "claim_number_source": "data/claims/<publication_number>.json; Abstract explicitly labeled",
+    "updated_dossier_sha256": "66748ee42f53b43b7a458e70d21efba86025314e3da88fd8ea48b55c2a5c0f22",
+    "review_protocol": "round2_multisource_audit/evidence/review_protocol.json"
+  },
+  "reviewed_utc": "2026-10-30T08:14:23.464312+00:00",
+  "reviewer": "AI-assisted content review by round4_guard; expanded assignment approved by root",
+  "external_model_api_calls": 0,
+  "credentials_read": false
+}

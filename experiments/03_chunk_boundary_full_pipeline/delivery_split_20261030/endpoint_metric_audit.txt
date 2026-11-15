@@ -1,0 +1,13 @@
+精确端点指标交付审计（只读；事后库存，非新实验）
+
+结论：尚未完成全组三组统一、预先冻结的精确实体端点边指标。现有主指标主要核验关系记录description中的技术谓词，接受组合角色/忠实等价描述/组件路径；不能写成严格端点边召回或统一拓扑成功率。
+
+F01：主谓词共存A3/3、B0/3，但A1/A2截断，仅r3是干净配对。A3真实边是Diagnosis Assistance Method→Medical Ontology（description同时提到existing cases和experts）以及Medical Ontology→Unified Medical Language System；没有两条直接Existing Medical Cases/Experts→Medical Ontology边。A3与B3的直接主体边都不存在。因此只能支持关系记录谓词表示差异，不能声称干净对照证明两条指定端点边消失。
+
+F04：P1/P2描述谓词A/B均3/3；保存记录中共同成本/参数端点A1/3、B3/3（共同ID为Specified Parameter）。这是次级身份库存，不等于预先冻结的完整Source→Cost→Ranking路径。同一关系记录的描述有时支撑两个谓词；端点未必就是谓词中的语义主体。无共同端点不能直接判dedup错误。
+
+F05：组件谓词及exclusivity A/B均3/3；同一目标filter ID链A0/3、B3/3。A的Naive Bayes边连Multi-Pass Ad-Hoc Spam Message Filter，生成Second Classification Data的边连Multi-Pass Message Filter；B两者共享后一个ID。六图18条目标边及节点已逐条复核存在。A另有Classification Model替代路径，但这不证明Classification Model=Second Classification Data或别名已合并。此项是次级身份检查，不能冒充全组统一预注册端点指标。
+
+最终HTML已明确“关系描述谓词不自动等于指定端点边”，明确A3不是三条直接边，并讨论F05命名分裂。缺口：HTML未直接列F05同ID链0/3 vs3/3，也未列F04共同端点1/3 vs3/3；统一精确端点指标仍未完成。本审计补充披露，不修改原报告或ZIP。
+
+证据定位：evidence/F01_evaluation.json的direct_subject_endpoint_edges、primary_metric_endpoint_limit、merged_support；evidence/F04_evaluation.json的runs[].merged_graph；evidence/F05_evaluation.json的summary.*.exact_target_filter_id_chain与runs[].shared_identity_secondary；各results/<run>/merged_graph.json。完整逐次端点和实际source_id见同名JSON。source_id需结合run/workspace解释，不能作为跨索引全局证据ID。

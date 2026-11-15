@@ -1,0 +1,20 @@
+{
+  "frozen_before_F05_model_outputs": true,
+  "group": "F05",
+  "publication_number": "US8069128B2",
+  "evaluation_type": "Evidence-grounded researcher-style AI-assisted review; not independently human-annotated gold and not model self-evaluation",
+  "source": "round4/conditions/frozen_groups.json and round4/evidence/manual_gold_review.json, existing frozen Claim6/10 originals",
+  "predicates": [
+    {"id":"P1","statement":"The multi-pass message filter employs a Naive Bayes classifier.","claim":10,"edge_standard":"A supported edge directly linking the multi-pass filter and Naive Bayes classifier with employs/uses relation; an equivalent faithful relation description with those roles retained is acceptable."},
+    {"id":"P2","statement":"The multi-pass message filter generates second classification data during first-pass training.","claim":6,"edge_standard":"A supported filter-to-second-data generation edge or explicit linked component path through first pass. Mere second-data use/scoring is recorded separately and does not entail generation."},
+    {"id":"P3","statement":"The second classification data resides exclusively in non-persistent memory.","claim":6,"edge_standard":"An edge links second classification data to non-persistent memory/location/store; separately score whether exclusive/only restriction remains explicit. Do not count the first filter's persistent data or substitute generic classification data without evidence that it denotes second-filter data."}
+  ],
+  "separate_levels": ["Raw extraction relation rows and entity descriptions, with actual parsed records and finish_reason", "Actual merged graph nodes/edges and shared identities", "Naturally retrieved graph context and exact original target evidence in chunks", "Natural answer content, claims and publication/reference attribution", "Forced-original-evidence diagnostic, never counted as natural retrieval"],
+  "strict_chain_success": "All three explicit technical component predicates and P3 exclusivity retained with actual linked identities. Do not demand invented NaiveBayes-to-memory shortcut.",
+  "claim_dependency_secondary": "Claim10 expressly depends on Claim6; absence of legal Claim nodes/edge can reflect default ontology scope and is not itself technical relation loss.",
+  "exclusions": ["Any truncated extraction response (finish_reason length) disqualifies the run from clean boundary-causal comparison, while observations remain reported", "Failed or unfinished runs are not negatives", "No inference from final correct answer alone to graph retention", "No attribution of omitted edge to chunking without intermediate evidence; no universal cross-chunk loss conclusion"],
+  "semantic_limits": "All literal memory-residency anchors segregated from NaiveBayes in B. Deletion/inaccessibility/Claim dependency cues may remain; semantic isolation is not exhaustive.",
+  "normalization": "Case, hyphen and whitespace normalized only to find candidate records; final decisions require reading descriptions and preserving actual endpoints/source IDs. Raw quotes remain unchanged in evidence.",
+  "api_calls":0,
+  "secrets_read":false
+}

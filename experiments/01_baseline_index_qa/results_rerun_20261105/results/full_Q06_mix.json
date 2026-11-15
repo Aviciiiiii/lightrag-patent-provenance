@@ -1,0 +1,564 @@
+{
+  "question_id": "Q06",
+  "mode": "mix",
+  "question": "Compare how US7991757B2 and US8095432B1 select or rank recommendations. Does either claim say the two systems interoperate? Cite the patent publication number, claim number, and exact supporting wording. Separate stated facts from your inferences.",
+  "started_utc": "2026-11-05T12:57:27.414897+00:00",
+  "finished_utc": "2026-11-05T12:57:38.471627+00:00",
+  "api_call_id_range": [
+    352,
+    354
+  ],
+  "result": {
+    "status": "success",
+    "message": "Query processed successfully",
+    "data": {
+      "entities": [
+        {
+          "entity_name": "US7991757B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"System for obtaining recommendations from multiple recommenders\" describing a personalization network service and methods for optimizing recommender results.",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793883019
+        },
+        {
+          "entity_name": "Content Recommendation System",
+          "entity_type": "method",
+          "description": "A system and method for recommending network content to users by associating a user with a preferred character, referencing a library to identify a recommended character based on a relationship score, and sending a recommendation for presentation of the second network content.",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793883089
+        },
+        {
+          "entity_name": "Social Medical Network For Diagnosis Assistance",
+          "entity_type": "content",
+          "description": "The title of patent US9589231B2, referring to a network-based approach for assisting diagnosis through similarity matching of medical cases and experts.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        },
+        {
+          "entity_name": "US9374411B1",
+          "entity_type": "content",
+          "description": "A patent document titled \"Content recommendations using deep data\" that discloses various embodiments for recommending content to users based on preferred characters and relationship scores.",
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793883089
+        },
+        {
+          "entity_name": "Data Processing System",
+          "entity_type": "artifact",
+          "description": "A computer system (10) that visualizes data from an IP rights database as a geographic map with a viewable area, comprising a map display change monitor, an IP rights list generator, and an information display generator.<SEP>A system with one or more processors and memory configured to evaluate information via a computer network, performing keyword identification, weight determination, ranking, and advertisement selection.<SEP>A computer-based system that detects user interest, identifies keywords, determines keyword weights, receives content requests, ranks keywords, and selects content such as advertisements for display with information resources.",
+          "source_id": "US9298709B2-chunk-000<SEP>US9304738B1-chunk-000<SEP>US9304738B1-chunk-001",
+          "file_path": "US9298709B2.txt<SEP>US9304738B1.txt",
+          "created_at": 1793882829
+        },
+        {
+          "entity_name": "US9589231B2",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Social medical network for diagnosis assistance\" describing a method and system for assisting medical diagnosis by exploiting similarity between new medical cases and existing cases and experts in a common embedding space.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        },
+        {
+          "entity_name": "US9304738B1",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Systems and methods for selecting content using weighted terms,\" describing techniques for evaluating information via a computer network using weighted keywords to select content for display.",
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793882829
+        },
+        {
+          "entity_name": "Inventory Estimation For Search Retargeting",
+          "entity_type": "content",
+          "description": "The title of the patent US8880423B2, referring to techniques for estimating advertisement inventory for search retargeting segments.",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882917
+        },
+        {
+          "entity_name": "Context-Data Acquisition And Ranking",
+          "entity_type": "method",
+          "description": "A method of determining a context-data type from a query, identifying context-data sources, generating requests for context data, and ranking received context data according to a specified parameter.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793882765
+        },
+        {
+          "entity_name": "US7756837B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Methods and apparatus for searching backup data based on content and attributes\" that discloses transparent bridging of backup storage devices and extraction of management data from backup data-streams.",
+          "source_id": "US7756837B2-chunk-000",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793883179
+        },
+        {
+          "entity_name": "US8509827B2",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Methods and apparatus of context-data acquisition and ranking\" that discloses a system, method, and article of manufacture for acquiring and ranking context data based on a query derived from a short message.",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793882765
+        },
+        {
+          "entity_name": "Recommendations Service",
+          "entity_type": "concept",
+          "description": "A service comprising a recommendations retriever that queries external recommenders for recommendations, receives recommendations and scores, and selects a subset of recommendations to provide to content sites.",
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793883019
+        },
+        {
+          "entity_name": "US10778629B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Systems and methods for collation, translation, and analysis of passively created digital interaction and relationship data,\" describing methods for modeling relationships between e-mail users.",
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793883322
+        },
+        {
+          "entity_name": "US9118735B1",
+          "entity_type": "content",
+          "description": "A patent document titled \"Finding people using social networks\" that describes embodiments for assisting a first person in finding a second person using a social network, including systems, methods, and privacy mechanisms.",
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793882855
+        },
+        {
+          "entity_name": "Favorite Items",
+          "entity_type": "other",
+          "description": "A plurality of items identified as favorites of the inquiring member, which can be shared with a network of the inquiring member.<SEP>Items identified as favorites of the inquiring member that may be shared with the inquiring member's network.",
+          "source_id": "US8095432B1-chunk-000<SEP>US8095432B1-chunk-001",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793882891
+        },
+        {
+          "entity_name": "Uniform Resource Indicators",
+          "entity_type": "data",
+          "description": "Information for accessing the recommenders with the recommendations system, comprising uniform resource indicators.",
+          "source_id": "US7991757B2-chunk-001",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793883019
+        },
+        {
+          "entity_name": "Recommendation Application",
+          "entity_type": "artifact",
+          "description": "A software application executing on a processor and resident in memory, configured to obtain recommendations for an item from members of a social networking utility, determine relationship proximities, rank recommendations, perform searches, and generate a recommendation list.<SEP>A software application executing on the processor and resident in memory, configured to obtain recommendations, rank them, and generate recommendation lists.",
+          "source_id": "US8095432B1-chunk-000<SEP>US8095432B1-chunk-001",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793882891
+        },
+        {
+          "entity_name": "Inventory Details",
+          "entity_type": "data",
+          "description": "Details associated with an item that are received and associated with recommendations.",
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793882891
+        },
+        {
+          "entity_name": "Recommendations System",
+          "entity_type": "artifact",
+          "description": "A computer-implemented system that registers recommenders from external recommender providers, stores access information for the recommenders, receives requests from content sites for item recommendations, causes the recommenders to provide recommendations, normalizes scores, applies weights, and combines scores to generate overall recommendations.",
+          "source_id": "US7991757B2-chunk-001",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793883019
+        },
+        {
+          "entity_name": "US8655901B1",
+          "entity_type": "content",
+          "description": "A patent publication titled \"Translation-based query pattern mining\" describing technologies relating to search systems.",
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793883238
+        },
+        {
+          "entity_name": "Recommender",
+          "entity_type": "artifact",
+          "description": "A component or service provided by a recommender provider that uses collected event data regarding user-generated events to select particular items to recommend to users; recommenders are registered with the recommendations system and accessed via network addresses.<SEP>A software component developed by developers that generates item recommendations and associated scores, which can be registered with the recommendations service and queried for recommendations.",
+          "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793883016
+        },
+        {
+          "entity_name": "Speaker Identification Using Hash-Based Indexing",
+          "entity_type": "content",
+          "description": "A patent (US9514753B2) describing methods, systems, and apparatus for performing speaker identification using hash-based indexing of speaker vectors.",
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882787
+        },
+        {
+          "entity_name": "Speaker Vector",
+          "entity_type": "data",
+          "description": "A vector derived from one or more utterances of a respective speaker, used to represent characteristics of that speaker's speech.<SEP>A vector derived from one or more utterances of a respective speaker, stored in hash tables and compared against an utterance vector to identify a speaker.",
+          "source_id": "US9514753B2-chunk-000<SEP>US9514753B2-chunk-001",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882787
+        },
+        {
+          "entity_name": "Diagnosis Assistance Method",
+          "entity_type": "method",
+          "description": "A method that receives a query request including a new medical case, embeds the new case in an embedding space containing existing medical cases and experts, allows selection between query-for-cases and query-for-experts, and returns subsets based on computed similarity.",
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        },
+        {
+          "entity_name": "First Rank",
+          "entity_type": "data",
+          "description": "The rank assigned to the first recommendation, which exceeds the second rank and the third rank.",
+          "source_id": "US8095432B1-chunk-001",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793882891
+        },
+        {
+          "entity_name": "Advertisement Inventory",
+          "entity_type": "concept",
+          "description": "The inventory of advertisements that a system estimates, including total inventory per cluster and deliverable inventory for segments.<SEP>The total and deliverable inventory of advertisement placements estimated for clusters and search retargeting segments.",
+          "source_id": "US8880423B2-chunk-000<SEP>US8880423B2-chunk-001",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882919
+        },
+        {
+          "entity_name": "US8880423B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Inventory estimation for search retargeting\" that describes techniques for estimating advertisement inventory for search retargeting segments.",
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882917
+        },
+        {
+          "entity_name": "Face Recognition",
+          "entity_type": "concept",
+          "description": "The technique of comparing representations of faces in a source image to representations of faces in member images to identify matching members.",
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793882952
+        },
+        {
+          "entity_name": "US8917913B2",
+          "entity_type": "content",
+          "description": "A patent document titled \"Searching with face recognition and social networking profiles\" describing systems for on-line searching using face recognition combined with social networking profiles.",
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793882952
+        },
+        {
+          "entity_name": "Second Rank",
+          "entity_type": "data",
+          "description": "The rank assigned to the second recommendation, which is lower than the first rank.",
+          "source_id": "US8095432B1-chunk-001",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793882891
+        }
+      ],
+      "relationships": [
+        {
+          "src_id": "Data Processing System",
+          "tgt_id": "US9304738B1",
+          "description": "The patent publication describes systems and methods involving the data processing system for selecting content using weighted terms.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US9304738B1-chunk-000",
+          "file_path": "US9304738B1.txt",
+          "created_at": 1793882829
+        },
+        {
+          "src_id": "Content Recommendation System",
+          "tgt_id": "US9374411B1",
+          "description": "The patent document discloses various embodiments of the content recommendation system for recommending content for users.",
+          "keywords": "discloses",
+          "weight": 1.0,
+          "source_id": "US9374411B1-chunk-000",
+          "file_path": "US9374411B1.txt",
+          "created_at": 1793883091
+        },
+        {
+          "src_id": "Diagnosis Assistance Method",
+          "tgt_id": "US9589231B2",
+          "description": "The patent US9589231B2 describes a method for diagnosis assistance exploiting similarity between new medical cases and existing cases and experts.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        },
+        {
+          "src_id": "Recommendations Service",
+          "tgt_id": "US7991757B2",
+          "description": "The patent document describes a recommendations service comprising a recommendations retriever and optimization module.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793883023
+        },
+        {
+          "src_id": "Context-Data Acquisition And Ranking",
+          "tgt_id": "US8509827B2",
+          "description": "The patent publication US8509827B2 discloses a system, method, and article of manufacture of context-data acquisition and ranking.",
+          "keywords": "describes,discloses",
+          "weight": 1.0,
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793882766
+        },
+        {
+          "src_id": "Relationship Modeling Program",
+          "tgt_id": "US10778629B2",
+          "description": "The patent document describes a relationship modeling program that assigns weights to characteristics of interaction data and provides a model of relationships between e-mail users.",
+          "keywords": "describes,discloses",
+          "weight": 1.0,
+          "source_id": "US10778629B2-chunk-000",
+          "file_path": "US10778629B2.txt",
+          "created_at": 1793883322
+        },
+        {
+          "src_id": "Inventory Details",
+          "tgt_id": "Recommendation",
+          "description": "The inventory details are associated with the first recommendation and the second recommendation.",
+          "keywords": "associated with",
+          "weight": 1.0,
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793882894
+        },
+        {
+          "src_id": "Favorite Items",
+          "tgt_id": "Recommendation Application",
+          "description": "The recommendation application identifies favorite items of the inquiring member and shares them with the inquiring member's network.",
+          "keywords": "identifies,shares",
+          "weight": 1.0,
+          "source_id": "US8095432B1-chunk-001",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793882894
+        },
+        {
+          "src_id": "Personalization Network Service",
+          "tgt_id": "US7991757B2",
+          "description": "The patent document describes a personalization network service that enables developers to develop recommenders and optimizes their use and selection.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US7991757B2-chunk-000",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793883023
+        },
+        {
+          "src_id": "Recommendations System",
+          "tgt_id": "Recommender",
+          "description": "The recommendations system registers recommenders, stores access information for accessing them, and causes them to provide recommendations for content sites.",
+          "keywords": "access,invocation,registration",
+          "weight": 1.0,
+          "source_id": "US7991757B2-chunk-001",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793883023
+        },
+        {
+          "src_id": "Speaker Identification Using Hash-Based Indexing",
+          "tgt_id": "Speaker Vector",
+          "description": "The patent describes comparing speaker vectors in the set with the utterance vector and selecting a speaker vector.",
+          "keywords": "describes,uses",
+          "weight": 1.0,
+          "source_id": "US9514753B2-chunk-000",
+          "file_path": "US9514753B2.txt",
+          "created_at": 1793882788
+        },
+        {
+          "src_id": "Requesting Person",
+          "tgt_id": "US9118735B1",
+          "description": "The patent document describes embodiments for assisting a requesting person in finding a target person using a social network.",
+          "keywords": "assists,describes",
+          "weight": 1.0,
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793882855
+        },
+        {
+          "src_id": "Privacy Mechanism",
+          "tgt_id": "US9118735B1",
+          "description": "The patent document discloses various privacy mechanisms including anonymizing identifying information and encrypting communications.",
+          "keywords": "discloses",
+          "weight": 1.0,
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793882857
+        },
+        {
+          "src_id": "First Rank",
+          "tgt_id": "Recommendation Application",
+          "description": "The recommendation application ranks the first recommendation with the first rank based on the first relationship proximity.",
+          "keywords": "assigns,ranks",
+          "weight": 1.0,
+          "source_id": "US8095432B1-chunk-001",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793882894
+        },
+        {
+          "src_id": "Recommendations System",
+          "tgt_id": "Uniform Resource Indicators",
+          "description": "The information for accessing the recommenders with the recommendations system comprises uniform resource indicators.",
+          "keywords": "access information",
+          "weight": 1.0,
+          "source_id": "US7991757B2-chunk-001",
+          "file_path": "US7991757B2.txt",
+          "created_at": 1793883023
+        },
+        {
+          "src_id": "Advertisement Inventory",
+          "tgt_id": "US8880423B2",
+          "description": "The patent describes methods and systems for estimating advertisement inventory.",
+          "keywords": "describes,relates to",
+          "weight": 1.0,
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882922
+        },
+        {
+          "src_id": "Target Person",
+          "tgt_id": "US9118735B1",
+          "description": "The patent document describes embodiments for assisting a requesting person in finding a target person using a social network.",
+          "keywords": "assists,describes",
+          "weight": 1.0,
+          "source_id": "US9118735B1-chunk-000",
+          "file_path": "US9118735B1.txt",
+          "created_at": 1793882857
+        },
+        {
+          "src_id": "Face Recognition",
+          "tgt_id": "US8917913B2",
+          "description": "The patent document describes searching with face recognition and social networking profiles.",
+          "keywords": "describes",
+          "weight": 1.0,
+          "source_id": "US8917913B2-chunk-000",
+          "file_path": "US8917913B2.txt",
+          "created_at": 1793882952
+        },
+        {
+          "src_id": "Translation-Based Query Pattern Mining",
+          "tgt_id": "US8655901B1",
+          "description": "The patent publication US8655901B1 is titled \"Translation-based query pattern mining\" and describes this technique.",
+          "keywords": "describes,title",
+          "weight": 1.0,
+          "source_id": "US8655901B1-chunk-000",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793883238
+        },
+        {
+          "src_id": "Recommendation Application",
+          "tgt_id": "Second Rank",
+          "description": "The recommendation application ranks the second recommendation with the second rank based on the second relationship proximity.",
+          "keywords": "assigns,ranks",
+          "weight": 1.0,
+          "source_id": "US8095432B1-chunk-001",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793882894
+        },
+        {
+          "src_id": "Inventory Estimation For Search Retargeting",
+          "tgt_id": "US8880423B2",
+          "description": "The patent US8880423B2 has the title \"Inventory estimation for search retargeting\" and describes techniques for estimating advertisement inventory.",
+          "keywords": "describes,has title",
+          "weight": 1.0,
+          "source_id": "US8880423B2-chunk-000",
+          "file_path": "US8880423B2.txt",
+          "created_at": 1793882919
+        },
+        {
+          "src_id": "Social Medical Network For Diagnosis Assistance",
+          "tgt_id": "US9589231B2",
+          "description": "US9589231B2 is the publication number of the patent titled \"Social Medical Network for Diagnosis Assistance\".",
+          "keywords": "has title",
+          "weight": 1.0,
+          "source_id": "US9589231B2-chunk-000",
+          "file_path": "US9589231B2.txt",
+          "created_at": 1793883352
+        },
+        {
+          "src_id": "Inventory Details",
+          "tgt_id": "Inventory Management System",
+          "description": "The plurality of inventory details is received from the inventory management system.",
+          "keywords": "provides",
+          "weight": 1.0,
+          "source_id": "US8095432B1-chunk-000",
+          "file_path": "US8095432B1.txt",
+          "created_at": 1793882894
+        }
+      ],
+      "chunks": [
+        {
+          "reference_id": "1",
+          "content": "Publication number: US8095432B1\nTitle: Recommendation engine for social networks\n\nABSTRACT\nA method for making a recommendation, comprising obtaining a plurality of recommendations for a plurality of items from a plurality of members of a social networking utility, ranking the plurality of recommendations based on a relationship proximity of the plurality of members to an inquiring member within the social networking utility, wherein the relationship proximity is closest for friends of the inquiring member, and farthest for strangers to the inquiring member, wherein friends of the inquiring member are within a network of the inquiring member, and strangers of the inquiring member are outside of the network of the inquiring network, performing a search for one of the plurality of items, and displaying the plurality of recommendations associated with one of the plurality of items in an order defined by the ranking.\n\nCLAIMS\n1. A method for generating a recommendation list for an item, comprising: obtaining a first recommendation for the item from a first member of a social networking utility, wherein the first member of the social networking utility is a friend of an inquiring member within the social networking utility; obtaining a second recommendation for the item from a second member of the social networking utility, wherein the second member of the social networking utility is a non-friend of the inquiring member within the social networking utility; determining, using a processor, a first relationship proximity of the first member with the inquiring member; determining, using the processor, a second relationship proximity of the second member with the inquiring member; ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank; receiving, from the inquiring member, a request to search for the item in the social networking utility; performing, based on the request from the inquiring member, a search for the item within the social networking utility; generating, using the processor, a recommendation list for the item comprising the first recommendation and the second recommendation, wherein the first recommendation is higher on the recommendation list than the second recommendation based on the first rank exceeding the second rank; determining that the first member comprises a plurality of interests in common with the inquiring member; determining that a third member of the social networking utility comprises a plurality of different interests than the inquiring member; comparing the first rank of the first recommendation of the first member with a third rank of a third recommendation of the third member; and determining that the first rank is higher than the third rank. 2. The method of claim 1 , further comprising: receiving, from the inquiring member, a third recommendation of the item; and transmitting the third recommendation of the item to a third member of the social networking utility, wherein the third member of the social networking utility is a third friend of the inquiring member within the social networking utility. 3. The method of claim 1 , wherein the relationship proximity of group members of the inquiring member is closer than the relationship proximity of non-group members of the inquiring member, wherein the relationship proximity is closer for friends of the inquiring member, and farther for non-friends to the inquiring member, wherein friends of the inquiring member are within a network of the inquiring member, and wherein non-friends of the inquiring member are outside of the network of the inquiring member. 4. The method of claim 1 , further comprising: receiving a request for a plurality of recommendations associated with a random item of a plurality of items; and displaying the plurality of recommendations associated with the random item. 5. The method of claim 1 , further comprising: receiving a request to purchase the item; and performing a purchase transaction for the item. 6. The method of claim 1 , wherein the search is filtered by a network of the inquiring member. 7. The method of claim 1 , further comprising: identifying a plurality of favorite items of the inquiring member; and sharing the plurality of favorite items with a network of the inquiring member. 8. The method of claim 1 , further comprising: receiving a plurality of inventory details associated with the item; and associating the plurality of inventory details with the first recommendation and the second recommendation. 9. The method of claim 8 , wherein the plurality of inventory details is received from an inventory management system. 10. The method of claim 1 , further comprising: generating receiving a plurality of inventory management reports for the item. 11. The method of claim 1 , further comprising: generating a plurality of searchable tags for the item; and associating the plurality of searchable tags with the item. 12. The method of claim 1 , further comprising: receiving a reduced a price for the item; modifying a price of the item to the reduced price; and updating a news feed of the inquiring member to include the reduced price and the price. 13. The method of claim 1 , further comprising: receiving a payment upon a purchase of the item from the inquiring member. 14. The method of claim 1 , further comprising: receiving a payment for each click associated with the item within plurality of items from the social networking utility. 15. The method of claim 1 , further comprising: adding the inquiring member to a fan group associated with the item. 16. A system for generating a recommendation list for an item, comprising: a processor; a memory operatively connected to the processor; and a recommendation application executing on the processor, resident in memory, and configured to: obtain a first recommendation for the item from a first member of a social networking utility, wherein the first member of the social networking utility is a friend of an inquiring member within the social networking utility; obtain a second recommendation for the item from a second member of the social networking utility, wherein the second member",
+          "file_path": "US8095432B1.txt",
+          "chunk_id": "US8095432B1-chunk-000"
+        },
+        {
+          "reference_id": "1",
+          "content": "generating a recommendation list for an item, comprising: a processor; a memory operatively connected to the processor; and a recommendation application executing on the processor, resident in memory, and configured to: obtain a first recommendation for the item from a first member of a social networking utility, wherein the first member of the social networking utility is a friend of an inquiring member within the social networking utility; obtain a second recommendation for the item from a second member of the social networking utility, wherein the second member of the social networking utility is a non-friend of the inquiring member within the social networking utility; determine a first relationship proximity of the first member with the inquiring member; determine a second relationship proximity of the second member with the inquiring member; rank the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank; receive, from the inquiring member, a request to search for the item in the social networking utility; perform, based on the request from the inquiring member, a search for the item within the social networking utility; and generate a recommendation list for the item comprising the first recommendation and the second recommendation, wherein the first recommendation is higher on the recommendation list than the second recommendation based on the first rank exceeding the second rank; determine that the first member comprises a plurality of interests in common with the inquiring member; determine that a third member of the social networking utility comprises a plurality of different interests than the inquiring member; compare the first rank of the first recommendation of the first member with a third rank of a third recommendation of the third member; and determine that the first rank is higher than the third rank. 17. The system of claim 16 , wherein the recommendation application is further configured to obtain a plurality of recommendations from an external social networking utility. 18. The system of claim 16 , wherein the recommendation application is further configured to interact with a financial application. 19. The system of claim 16 , wherein the recommendation application is further configured to interact with an inventory management application. 20. A non-transitory computer readable storage medium storing instructions to generate a recommendation list for an item, the instructions comprising functionality to: obtain a first recommendation for the item from a first member of a social networking utility, wherein the first member of the social networking utility is a friend of an inquiring member within the social networking utility; obtain a second recommendation for the item from a second member of the social networking utility, wherein the second member of the social networking utility is a non-friend of the inquiring member within the social networking utility; determine a first relationship proximity of the first member with the inquiring member; determine a second relationship proximity of the second member with the inquiring member; rank the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank; receive, from the inquiring member, a request to search for the item in the social networking utility; perform, based on the request from the inquiring member, a search for the item within the social networking utility; and generate a recommendation list for the item comprising the first recommendation and the second recommendation, wherein the first recommendation is higher on the recommendation list than the second recommendation based on the first rank exceeding the second rank; determine that the first member comprises a plurality of interests in common with the inquiring member; determine that a third member of the social networking utility comprises a plurality of different interests than the inquiring member; compare the first rank of the first recommendation of the first member with a third rank of a third recommendation of the third member; and determine that the first rank is higher than the third rank. 21. The non-transitory computer readable storage medium of claim 20 , the instructions further comprising functionality to: receive, from the inquiring member, a third recommendation of the item; and transmit the third recommendation of recommend the item to a third member of the social networking utility, wherein the third member of the social networking utility is a third friend of the inquiring member within the social networking utility. 22. The non-transitory computer readable storage medium of claim 20 , the instructions further comprising functionality to: identify a plurality of favorite items of the inquiring member; and share the plurality of favorite items with a network of the inquiring member. 23. The non-transitory computer readable storage medium of claim 20 , the instructions further comprising functionality to: receive a request to purchase the item; and perform a purchase transaction for the item. 24. The non-transitory computer readable storage medium of claim 20 , wherein the search is filtered by a network of the inquiring member.",
+          "file_path": "US8095432B1.txt",
+          "chunk_id": "US8095432B1-chunk-001"
+        },
+        {
+          "reference_id": "2",
+          "content": "one or more additional works to generate a combined feedback; sort the combined feedback based on the one or more parameters associated with the author-intended string to generate a sorted feedback; and update, based on the sorted feedback, a reference using the author-intended string. 19. The apparatus of claim 18 , wherein the input comprises at least one of a user identifier, a work identifier, at least one string identified as a potential typographical error, a position of the at least one string in the work, a decision indicating whether a corresponding string is an author-intended string, a confidence level of the decision, or at least one parameter associated with the corresponding string. 20. The apparatus of claim 18 , wherein the data indicative of the presence of the potential typographical error comprises at least one of a string identified as the potential typographical error, a position of the string in the work, or a context for the string in the work.",
+          "file_path": "US9514120B1.txt",
+          "chunk_id": "US9514120B1-chunk-002"
+        },
+        {
+          "reference_id": "3",
+          "content": "Publication number: US9374411B1\nTitle: Content recommendations using deep data\n\nABSTRACT\nDisclosed are various embodiments for recommending content for users. A user is associated with a user preferred character that is represented in a first network content. A library is referenced to identify a recommended character based at least upon the user preferred character, the recommended character being represented in a second network content, the library associating the preferred character to the recommended character according to a relationship score. A recommendation is sent for presentation of the second network content.\n\nCLAIMS\nTherefore, the following is claimed: 1. A non-transitory computer-readable medium having a plurality of computer instructions executable by at least one computing device, wherein, upon execution, the plurality of computer instructions cause the at least one computing device to: stream a first video content feature from at least one server to a client associated with a user; cause the first video content feature to be rendered in a user interface for display on the client; obtain first user interaction data from the client based at least in part upon a first interaction with the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first user interaction data; obtain second user interaction data from the client based at least in part upon a second interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; associate a preferred character with the user based at least upon the second user interaction data, the preferred character being represented by a corresponding first cast member of the first video content feature; reference a library to identify a recommended character based at least upon the preferred character, the recommended character being represented by a corresponding second cast member of a second video content feature, the library associating the preferred character to the recommended character according to a relationship score, the relationship score being calculated based at least in part upon a proportion of users who have expressed a preference towards both the preferred character and the recommended character; and send to the user a recommendation to play the second video content feature. 2. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: obtain additional user interaction data from the user based at least upon an interaction with the second video content feature; and update the relationship score based at least upon the additional user interaction data. 3. The non-transitory computer-readable medium of claim 2 , wherein the additional user interaction data comprises user feedback expressing that the user favors at least one scene associated with the second video content feature. 4. The non-transitory computer-readable medium of claim 1 , wherein the plurality of computer instructions further cause the at least one computing device to: identify an attribute associated with the recommended character; and send the attribute to the client to indicate a basis for the recommendation to the user. 5. The non-transitory computer-readable medium of claim 1 , wherein the user interaction data is obtained during a playback of the first video content feature via the client. 6. A system, comprising: at least one computing device; and at least one application executable in the at least one computing device, the at least one application causing the at least one computing device to: cause a first video content feature to be rendered in a user interface for display on a client; determine that a user prefers a first character based at least upon a first interaction data, the first character being represented by a corresponding first cast member of the first video content feature; cause a timeline user interface that segments the first video content feature into a plurality of scenes to be rendered in response to obtaining the first interaction data; obtain second user interaction data from the client based at least in part upon an interaction with at least one character feedback interface rendered on the timeline user interface, the at least one character feedback interface being associated with a current scene included in the plurality of scenes; determine that the user prefers a second character based at least upon the second interaction data, the second character being represented by a corresponding second cast member of a second video content feature; determine a relationship score based at least upon the first interaction data and the second interaction data, the relationship score quantifying a degree of commonality between the first character and the second character and being calculated based at least in part upon a proportion of users who have expressed a preference towards both the first character and the second character; and generate a recommendation to play at least one of the first video content feature or the second video content feature based at least upon the relationship score. 7. The system of claim 6 , wherein the at least one application further causes the at least one computing device to: store a first set of attributes associated with the first character; store a second set of attributes associated with the second character; and compare the first set of attributes to the second set of attributes. 8. The system of claim 6 , wherein the first interaction data comprises explicit user feedback expressing that the user favors the first character. 9. The system of claim 6 , wherein the first interaction data comprises at least one of consumption history data relating to a product associated with the first character or browse history data relating to a product associated with the first character. 10. The system of claim 6 , wherein the first interaction data comprises user feedback expressing that the user favors at least one scene associated with the first video content feature, and wherein the at least one application further causes the at least one computing device to identify the first character in the at least one scene. 11. The system of claim 6 , wherein the at least one application further causes the at least one computing device to generate the recommendation for another user in response to the another user specifying a preference for at least one of the first character or the second character. 12. The system of claim",
+          "file_path": "US9374411B1.txt",
+          "chunk_id": "US9374411B1-chunk-000"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US8095432B1.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9514120B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US9374411B1.txt"
+        }
+      ]
+    },
+    "metadata": {
+      "query_mode": "mix",
+      "keywords": {
+        "high_level": [
+          "patent claim comparison",
+          "recommendation selection and ranking",
+          "system interoperability",
+          "evidence citation"
+        ],
+        "low_level": [
+          "US7991757B2",
+          "US8095432B1",
+          "claim number",
+          "exact supporting wording",
+          "recommendations",
+          "interoperate"
+        ]
+      },
+      "processing_info": {
+        "total_entities_found": 30,
+        "total_relations_found": 23,
+        "entities_after_truncation": 30,
+        "relations_after_truncation": 23,
+        "merged_chunks_count": 21,
+        "final_chunks_count": 4
+      }
+    },
+    "llm_response": {
+      "content": "## Comparison of Recommendation Selection/Ranking\n\n**US7991757B2 (Recommendations System)**\n\nThe evidence describes a system that \"registers recommenders from external recommender providers, stores access information for the recommenders, receives requests from content sites for item recommendations, causes the recommenders to provide recommendations, normalizes scores, applies weights, and combines scores to generate overall recommendations.\" Its recommendations service \"queries external recommenders for recommendations, receives recommendations and scores, and selects a subset of recommendations to provide to content sites.\" Access information \"comprises uniform resource indicators.\" No specific claim number or claim wording for US7991757B2 appears in the provided evidence.\n\n**US8095432B1 (Recommendation Engine for Social Networks)**\n\nClaim 1 recites ranking based on social relationship proximity: \"ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank.\" It further recites \"generating... a recommendation list for the item comprising the first recommendation and the second recommendation, wherein the first recommendation is higher on the recommendation list than the second recommendation based on the first rank exceeding the second rank.\" Claim 1 also compares interest overlap: \"determining that the first member comprises a plurality of interests in common with the inquiring member\" and \"determining that the first rank is higher than the third rank.\"\n\n**Stated facts vs. inference**\n\n- Stated: US7991757B2 aggregates and normalizes/weights scores from multiple external recommenders; US8095432B1 ranks recommendations by relationship proximity within a social network (Claim 1).\n- Inference (mine): the two approaches differ in ranking basis—cross-recommender score combination versus social-graph proximity—but the evidence does not state they are combined.\n\n**Interoperation**\n\nNeither document's claims in the provided evidence state that the two systems interoperate. No claim language linking US7991757B2 and US8095432B1 is present; this is missing from the evidence.\n\n### References\n\n- [1] US8095432B1.txt\n- [3] US9374411B1.txt",
+      "response_iterator": null,
+      "is_streaming": false,
+      "llm_generated": true
+    }
+  }
+}

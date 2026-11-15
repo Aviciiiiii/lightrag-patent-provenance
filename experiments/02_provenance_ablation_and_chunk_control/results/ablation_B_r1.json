@@ -1,0 +1,27 @@
+{
+  "condition": "B",
+  "repeat": 1,
+  "call_id": 2,
+  "request_exact_match": true,
+  "messages_sha256": "cbf774bfbb141af7dfbe71e85a6204a5943be9280b8fdb3e2ee3ee80fcc986a5",
+  "response": {
+    "id": 2,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "I do not have enough information to answer this query. The provided **Context** does not contain the text of Claim 1 or Claim 27 of US7991757B2.\n\n**What the evidence does show (document facts):**\n- US7991757B2 is referenced only through Knowledge Graph relationships, not through any Document Chunk. The relationships state that \"Registration submissions are operative to request registration of recommenders\" and that \"The registration module provides functionality for registering an external recommender with the recommendations service,\" with the registration module \"configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.\" These are entity descriptions, not claim language.\n- No Document Chunk in the Context corresponds to US7991757B2; the Reference Document List contains no entry for it.\n\n**What is missing:**\n- The exact wording of Claim 1 and Claim 27 of US7991757B2.\n- Any statement of dependency between Claim 27 and another claim (e.g., \"The method of claim 1, further comprising...\").\n\nBecause the instructions require quoting exact supporting wording and stating claim numbers only when present in the evidence, I cannot supply the requested quotes or characterize the dependency. Any description of Claim 27's added capability would be inference, not evidence, so I have not provided one.\n\n### References\n\n- [1] US10867122B1.txt\n- [4] US7756837B2.txt\n- [5] US8095432B1.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 31966,
+      "completion_tokens": 313,
+      "total_tokens": 32279,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 6144
+      },
+      "prompt_cache_hit_tokens": 6144,
+      "prompt_cache_miss_tokens": 25822
+    },
+    "reasoning_content_present": false
+  }
+}

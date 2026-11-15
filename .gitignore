@@ -1,0 +1,28 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# OS / Python
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# local-only: complete LightRAG working dirs, full API logs, caches, archives
+runs/*
+!runs/README.md
+
+# per-run session files written by repro_runtime.py
+experiments/*/config/repro_session.*
+experiments/*/config/.repro-session-*
+
+# re-fetchable raw inputs (see data/README.md)
+data/source_checks/
+data/dis2pat_train_rows_[0-9][0-9][0-9][0-9].json
+# regenerated report HTML (committed copies live in reports/original/)
+experiments/04_merged_node_audit/report/*.html
+
+# personal notes, never committed
+local/

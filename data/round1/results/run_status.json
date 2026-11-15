@@ -1,0 +1,27 @@
+{
+  "start_utc": "2026-10-29T13:08:42+00:00",
+  "report_generated_utc": "2026-10-29T13:34:53.388586+00:00",
+  "elapsed_minutes_to_report": 26.19,
+  "disposition": "early_stop_missing_authorized_model_service",
+  "data_milestone_passed": true,
+  "official_stable_code_executed": "deterministic chunker only",
+  "official_index_completed": false,
+  "official_query_completed": false,
+  "llm_model": null,
+  "embedding_model": null,
+  "model_calls": 0,
+  "cost_usd": 0,
+  "queries_prepared": 10,
+  "queries_executed": 0,
+  "naive_mix_comparison_completed": false,
+  "incremental_test_completed": false,
+  "autodl_used": false,
+  "fot_touched": false,
+  "blocker": {
+    "action": "ainsert followed by aquery_llm for patent corpus",
+    "target": "local official LightRAG v1.5.7",
+    "reason": "No configured authorized LLM and embedding service found in this execution environment; common local service ports refused connections.",
+    "state": "blocked; no query attempted; not an approval denial; no uncertain paid call"
+  },
+  "review": "AI-assisted source review, exact-string checks; not independent human adjudication"
+}

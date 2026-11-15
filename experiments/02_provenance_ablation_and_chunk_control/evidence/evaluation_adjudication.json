@@ -1,0 +1,33 @@
+{
+  "adjudicated_utc": "2026-10-29T16:25:58.853696+00:00",
+  "source": "ablation_evaluation.json",
+  "decision": "Do not use the combined primary_wrong_source_error_including_reference_list field as an unequivocal positive-source-error rate. A/B lack inline sentence-level citation mapping and discuss other retrieved concepts. Report body-positive wrong-source assertions separately (0/9), and objectively report that their tail reference lists do not provide the target patent evidence (A3/3,B3/3). C has an unambiguous target reference-ID conflict3/3.",
+  "raw_evaluator_scores_preserved": true,
+  "counts_used_in_report": {
+    "positive_wrong_source_prose": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "correct_target_document": {
+      "A": 0,
+      "B": 3,
+      "C": 3
+    },
+    "target_claim_task_grounded": {
+      "A": 0,
+      "B": 0,
+      "C": 3
+    },
+    "tail_list_lacks_target_patent_evidence": {
+      "A": 3,
+      "B": 3,
+      "C": 0
+    },
+    "reference_id_conflict": {
+      "A": 0,
+      "B": 0,
+      "C": 3
+    }
+  }
+}

@@ -1,0 +1,1377 @@
+{
+  "created_utc": "2026-10-29T14:47:19.949440+00:00",
+  "note": "Mechanical annotations only. Evidence absence alone is not an extraction error; quotations and entailment require review.",
+  "rows": [
+    {
+      "question_id": "Q01",
+      "mode": "naive",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "**Answer**\n\nThe patent is **US9514753B2**, titled \"Speaker identification using hash-based indexing.\"\n\n**Stated facts (from the document):**\n\n- Claim 1 recites: \"determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values.\"\n- Claim 1 further recites: \"selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.\"\n- The abstract describes the same approach: \"Hash values are determined for the utterance vector according to multiple different hash functions. A set of speaker vectors from a plurality of hash tables is determined using the hash values.\"\n\n**Inference (not stated in the document):**\n\n- Because Claim 1 combines multiple hash functions, multiple hash tables, speaker-vector selection, and output of a speaker identity in a single claim, it is the claim that most directly matches the query's combination of features. This is my comparison, not an explicit statement in the source.\n\n**Missing/insufficient evidence:** The provided context does not show equivalent hash-function/hash-table speaker-identification claims in the other documents, so no cross-patent comparison beyond this one can be confirmed.\n\n### References\n\n- [1] US9514753B2.txt",
+      "answer_patent_ids": [
+        "US9514753B2"
+      ],
+      "answer_claim_numbers": [
+        1
+      ],
+      "retrieved_entities": 0,
+      "retrieved_relationships": 0,
+      "retrieved_chunks": 8,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9514753B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US8655901B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US8880423B2.txt"
+        },
+        {
+          "reference_id": "4",
+          "file_path": "US7756837B2.txt"
+        },
+        {
+          "reference_id": "5",
+          "file_path": "US9218390B2.txt"
+        },
+        {
+          "reference_id": "6",
+          "file_path": "US9514120B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US9514753B2",
+          "claim": 1,
+          "quote": "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000",
+            "US9514753B2-chunk-001"
+          ]
+        },
+        {
+          "patent": "US9514753B2",
+          "claim": 1,
+          "quote": "determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 2,
+      "estimated_query_cost_upper_cny": 0.017446,
+      "api_prompt_tokens": 7575,
+      "api_completion_tokens": 287,
+      "source_result_file": "round2/results/full_Q01_naive.json"
+    },
+    {
+      "question_id": "Q01",
+      "mode": "mix",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "**Patent identified:** US9514753B2, titled \"Speaker identification using hash-based indexing.\"\n\n**Stated facts (from the document):**\n\n- The abstract describes obtaining \"an utterance vector that is derived from an utterance,\" determining \"hash values for the utterance vector according to multiple different hash functions,\" and determining \"a set of speaker vectors from a plurality of hash tables using the hash values.\"\n- Claim 1 recites the full sequence: \"determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values... comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.\"\n- Claim 6 states the hash values may be determined \"using one or more locality sensitive hash functions,\" and Claim 7 states they may be based on \"a position of the utterance vector with respect to different hyperplanes.\"\n- Claim 9 describes comparing via \"similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set,\" selecting the most similar vector.\n\n**Inference (not stated in the document):**\n\n- That US9514753B2 is the only patent in this collection matching the described hash-based speaker-identification approach is an inference from the provided evidence: the other documents (US8655901B1 on translation-based query pattern mining; US8880423B2 on advertisement inventory estimation) contain no speaker-vector or hash-table speaker identification claims. The evidence does not establish links between these patents.\n\n### References\n\n- [1] US9514753B2.txt",
+      "answer_patent_ids": [
+        "US8655901B1",
+        "US8880423B2",
+        "US9514753B2"
+      ],
+      "answer_claim_numbers": [
+        1,
+        6,
+        7,
+        9
+      ],
+      "retrieved_entities": 16,
+      "retrieved_relationships": 26,
+      "retrieved_chunks": 5,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9514753B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US8655901B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US8880423B2.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US9514753B2",
+          "claim": 1,
+          "quote": "determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000",
+            "US9514753B2-chunk-001"
+          ]
+        },
+        {
+          "patent": "US9514753B2",
+          "claim": 1,
+          "quote": "determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity.",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 3,
+      "estimated_query_cost_upper_cny": 0.018382,
+      "api_prompt_tokens": 7483,
+      "api_completion_tokens": 427,
+      "source_result_file": "round2/results/full_Q01_mix.json"
+    },
+    {
+      "question_id": "Q02",
+      "mode": "naive",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "**Answer**\n\nThe patent is **US11423041B2**, titled *Maintaining data lineage to detect data events*. The relevant subject matter appears in **claim 1** (system claim), with corresponding method and media claims (claims 8 and 15).\n\n**Stated facts (quoted from the evidence):**\n\n- Claim 1 recites a data catalog configured to \"receive, at the data catalog, an indication of a first ETL process applied to one or more source data objects to generate one or more transformed data objects.\"\n- It further recites storing \"an instance of a history object in a history data structure according to the received indication,\" where the history object is \"created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process.\"\n- The catalog then \"evaluate[s] … the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event.\"\n- Upon determining the criteria are satisfied, the catalog \"cause[s] the second ETL process to be performed.\"\n\n**Inference (not stated as such in the document):** The claim structure implies the history object functions as the monitoring anchor for event registration, since the event is described as \"registered for monitoring with regard to the history object.\" This is a characterization of how the claim elements relate, not an explicit statement in the text.\n\n**Missing/insufficient evidence:** The provided context does not establish any link between US11423041B2 and the other listed patents (US8655901B1, US9118735B1, US7756837B2); no comparison is supported.\n\n### References\n\n- [1] US11423041B2.txt",
+      "answer_patent_ids": [
+        "US11423041B2",
+        "US7756837B2",
+        "US8655901B1",
+        "US9118735B1"
+      ],
+      "answer_claim_numbers": [
+        1,
+        8
+      ],
+      "retrieved_entities": 0,
+      "retrieved_relationships": 0,
+      "retrieved_chunks": 7,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US11423041B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US8655901B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US9118735B1.txt"
+        },
+        {
+          "reference_id": "4",
+          "file_path": "US7756837B2.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US11423041B2",
+          "claim": 1,
+          "quote": "the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object",
+          "matching_retrieved_chunk_ids": [
+            "US11423041B2-chunk-000",
+            "US11423041B2-chunk-001"
+          ]
+        },
+        {
+          "patent": "US11423041B2",
+          "claim": 1,
+          "quote": "in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed.",
+          "matching_retrieved_chunk_ids": [
+            "US11423041B2-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 2,
+      "estimated_query_cost_upper_cny": 0.017806,
+      "api_prompt_tokens": 7419,
+      "api_completion_tokens": 371,
+      "source_result_file": "round2/results/full_Q02_naive.json"
+    },
+    {
+      "question_id": "Q02",
+      "mode": "mix",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "**Answer**\n\nThe patent that describes this arrangement is **US11423041B2**, titled \"Maintaining data lineage to detect data events.\"\n\n**Stated facts (from the document):**\n\n- **Claim 1** of US11423041B2 recites a system implementing \"a data catalog for an Extract, Transform, Load (ETL) service,\" configured to \"store, in the data catalog, an instance of a history object in a history data structure according to the received indication, the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process.\"\n- The same claim states the data catalog is configured to \"evaluate, in the data catalog, the stored information that describes the performance of the first ETL process in the instance of the history object with respect to criteria for triggering an event to perform a second ETL process subscribed to the event.\"\n- It further recites: \"in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed.\"\n- The event is described as \"registered for monitoring with regard to the history object.\"\n\n**Inference (not stated as such in the document):**\n\n- The history object therefore functions as the monitoring anchor that links the first ETL process's recorded performance to the triggering of the subscribed second ETL process. This is a characterization of how the recited elements combine, not an explicit statement in the text.\n\n**Note on scope:** The document also describes a parallel arrangement in **Claim 2** involving a second history object, a third ETL process, and a fourth ETL process subscribed to a different event. No comparison to other patents is supported by the provided evidence.\n\n### References\n\n- [1] US11423041B2.txt",
+      "answer_patent_ids": [
+        "US11423041B2"
+      ],
+      "answer_claim_numbers": [
+        1,
+        2
+      ],
+      "retrieved_entities": 14,
+      "retrieved_relationships": 38,
+      "retrieved_chunks": 4,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US11423041B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US8655901B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US11423041B2",
+          "claim": 1,
+          "quote": "the history object created in the history data structure to specify information expected to be stored to describe the performance of the first ETL process on a given source data object to generate a transformed data object",
+          "matching_retrieved_chunk_ids": [
+            "US11423041B2-chunk-000",
+            "US11423041B2-chunk-001"
+          ]
+        },
+        {
+          "patent": "US11423041B2",
+          "claim": 1,
+          "quote": "in response to the determination that the performance of the first ETL process satisfies the criteria for triggering the event, cause the second ETL process to be performed.",
+          "matching_retrieved_chunk_ids": [
+            "US11423041B2-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 3,
+      "estimated_query_cost_upper_cny": 0.018973999999999998,
+      "api_prompt_tokens": 7707,
+      "api_completion_tokens": 445,
+      "source_result_file": "round2/results/full_Q02_mix.json"
+    },
+    {
+      "question_id": "Q03",
+      "mode": "naive",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "**Answer**\n\nIn US8509827B2, **claim 1** explicitly recites ranking context-data sources using a pecuniary cost. The exact supporting wording is:\n\n> \"algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source\"\n\n**Stated facts (from the document):**\n- Claim 1 is a method claim that includes receiving a short message, determining a context-data type, identifying at least one context-data source, ranking that source according to a specified parameter, and generating a request for context data.\n- The specified parameter in claim 1 is defined as comprising \"a pecuniary cost to acquire the context data.\"\n- Claim 18 (apparatus) contains the same ranking limitation with the same pecuniary-cost wording.\n- Claim 22 recites selecting relevant context data according to a metric that \"comprises a monetary cost of the context-data.\"\n\n**Inference (not stated):**\n- Claims 18 and 22 appear to mirror the pecuniary/monetary cost ranking concept in apparatus and alternative method form, but the document does not expressly link these claims as a family or state that they are equivalent in scope.\n\n### References\n\n- [1] US8509827B2.txt",
+      "answer_patent_ids": [
+        "US8509827B2"
+      ],
+      "answer_claim_numbers": [
+        1,
+        18,
+        22
+      ],
+      "retrieved_entities": 0,
+      "retrieved_relationships": 0,
+      "retrieved_chunks": 6,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US8509827B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US8655901B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US10867122B1.txt"
+        },
+        {
+          "reference_id": "4",
+          "file_path": "US7756837B2.txt"
+        },
+        {
+          "reference_id": "5",
+          "file_path": "US9304738B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US8509827B2",
+          "claim": 1,
+          "quote": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source",
+          "matching_retrieved_chunk_ids": [
+            "US8509827B2-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 2,
+      "estimated_query_cost_upper_cny": 0.01645,
+      "api_prompt_tokens": 7125,
+      "api_completion_tokens": 275,
+      "source_result_file": "round2/results/full_Q03_naive.json"
+    },
+    {
+      "question_id": "Q03",
+      "mode": "mix",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "**Stated fact (from the evidence):** In US8509827B2, **claim 1** explicitly recites ranking context-data sources using the pecuniary cost of acquiring their context data. The exact supporting wording is:\n\n> \"algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source\"\n\nClaim 1 also frames this within a method that includes \"receiving a short message from a mobile device with a server\" and \"algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message.\"\n\n**Related stated facts:** The same pecuniary-cost parameter appears in independent **claim 18** (apparatus), which recites \"algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source.\" Dependent **claim 14** separately recites that \"the specified parameter comprises a cost value of the context data as provided by the context-data source.\"\n\n**Inference (not stated in the evidence):** Because claim 1 uses \"comprising,\" the pecuniary-cost limitation appears to be a required element of that claim rather than an optional feature; however, the evidence does not include claim construction or prosecution history, so this is an interpretive inference only.\n\n### References\n\n- [1] US8509827B2.txt",
+      "answer_patent_ids": [
+        "US8509827B2"
+      ],
+      "answer_claim_numbers": [
+        1,
+        14,
+        18
+      ],
+      "retrieved_entities": 22,
+      "retrieved_relationships": 32,
+      "retrieved_chunks": 4,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US8509827B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US8655901B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US10867122B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US8509827B2",
+          "claim": 1,
+          "quote": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source",
+          "matching_retrieved_chunk_ids": [
+            "US8509827B2-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 3,
+      "estimated_query_cost_upper_cny": 0.01908,
+      "api_prompt_tokens": 8024,
+      "api_completion_tokens": 379,
+      "source_result_file": "round2/results/full_Q03_mix.json"
+    },
+    {
+      "question_id": "Q04",
+      "mode": "naive",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "**Stated fact (from the patent text):** In US9514753B2, **claim 6** explicitly specifies locality sensitive hash functions. The exact supporting wording is: “wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.”\n\n**Related context (also stated):** Claim 1 recites the broader step of “determining hash values for the utterance vector according to multiple different hash functions,” while claim 7 adds that hash values may be determined “based on a position of the utterance vector with respect to different hyperplanes.”\n\n**Inference (not stated as such in the text):** Claim 6 appears to be the claim that most directly names locality sensitive hashing; the hyperplane-based approach in claim 7 is a separate, more specific hash-determination feature, but the text does not expressly label claim 7 as locality sensitive hashing.\n\n### References\n\n- [1] US9514753B2.txt",
+      "answer_patent_ids": [
+        "US9514753B2"
+      ],
+      "answer_claim_numbers": [
+        1,
+        6,
+        7
+      ],
+      "retrieved_entities": 0,
+      "retrieved_relationships": 0,
+      "retrieved_chunks": 6,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9514753B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9218390B2.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US8719408B2.txt"
+        },
+        {
+          "reference_id": "4",
+          "file_path": "US9304738B1.txt"
+        },
+        {
+          "reference_id": "5",
+          "file_path": "US8655901B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US9514753B2",
+          "claim": 6,
+          "quote": "6. The method of claim 1 , wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 2,
+      "estimated_query_cost_upper_cny": 0.015698,
+      "api_prompt_tokens": 7065,
+      "api_completion_tokens": 196,
+      "source_result_file": "round2/results/full_Q04_naive.json"
+    },
+    {
+      "question_id": "Q04",
+      "mode": "mix",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "**Stated fact (from the patent text):** In US9514753B2, **claim 6** explicitly specifies locality sensitive hash functions. The exact supporting wording is: “wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.”\n\n**Related stated fact:** Claim 7 separately recites hashing “based on a position of the utterance vector with respect to different hyperplanes,” which is distinct from the locality sensitive hash function language in claim 6.\n\n**Inference (not stated in the evidence):** Claim 6 appears to be the claim that most directly ties the claimed hash-value determination to locality sensitive hashing; however, the evidence does not expressly characterize claim 6 as the only such claim or compare it to other claims beyond the quoted text.\n\n### References\n\n- [1] US9514753B2.txt",
+      "answer_patent_ids": [
+        "US9514753B2"
+      ],
+      "answer_claim_numbers": [
+        6,
+        7
+      ],
+      "retrieved_entities": 26,
+      "retrieved_relationships": 21,
+      "retrieved_chunks": 4,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9514753B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9218390B2.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US7756837B2.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US9514753B2",
+          "claim": 6,
+          "quote": "6. The method of claim 1 , wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions.",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 3,
+      "estimated_query_cost_upper_cny": 0.018256,
+      "api_prompt_tokens": 8180,
+      "api_completion_tokens": 237,
+      "source_result_file": "round2/results/full_Q04_mix.json"
+    },
+    {
+      "question_id": "Q05",
+      "mode": "naive",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "**Answer**\n\nIn US8655901B1, the method claim that requires cross-validating a translated query pattern against a query log using an occurrence threshold is **claim 7**.\n\n**Stated fact (quoted from the source):** Claim 7 recites: \"where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.\"\n\n**Inference (not stated in the source):** Because claim 7 depends from claim 1, the cross-validating step is an additional limitation on the method of claim 1 rather than a standalone method. The evidence does not specify how the occurrence threshold is applied or what value it takes.\n\n### References\n\n- [1] US8655901B1.txt",
+      "answer_patent_ids": [
+        "US8655901B1"
+      ],
+      "answer_claim_numbers": [
+        1,
+        7
+      ],
+      "retrieved_entities": 0,
+      "retrieved_relationships": 0,
+      "retrieved_chunks": 6,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US8655901B1.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9218390B2.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US11423041B2.txt"
+        },
+        {
+          "reference_id": "4",
+          "file_path": "US9589231B2.txt"
+        },
+        {
+          "reference_id": "5",
+          "file_path": "US9514753B2.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US8655901B1",
+          "claim": 7,
+          "quote": "7. The method of claim 1 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.",
+          "matching_retrieved_chunk_ids": [
+            "US8655901B1-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 2,
+      "estimated_query_cost_upper_cny": 0.015956,
+      "api_prompt_tokens": 7338,
+      "api_completion_tokens": 160,
+      "source_result_file": "round2/results/full_Q05_naive.json"
+    },
+    {
+      "question_id": "Q05",
+      "mode": "mix",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "**Answer**\n\nIn US8655901B1, the method claim that requires cross-validating a translated query pattern against a query log using an occurrence threshold is **claim 7**.\n\nThe exact supporting wording is: “where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.”\n\n**Stated facts (from the evidence):**\n- US8655901B1 is titled “Translation-based query pattern mining.”\n- Claim 7 depends from claim 1 and adds the cross-validation limitation quoted above.\n- The same limitation also appears in system claim 14 (“The system of claim 8 … cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold”).\n\n**Inference (not stated in the evidence):**\n- Because claim 7 is a method claim and claim 14 is a system claim, claim 7 is the method claim that specifically recites the occurrence-threshold cross-validation step.\n\n### References\n\n- [1] US8655901B1.txt",
+      "answer_patent_ids": [
+        "US8655901B1"
+      ],
+      "answer_claim_numbers": [
+        1,
+        7,
+        8,
+        14
+      ],
+      "retrieved_entities": 21,
+      "retrieved_relationships": 33,
+      "retrieved_chunks": 3,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US8655901B1.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9218390B2.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US8655901B1",
+          "claim": 7,
+          "quote": "7. The method of claim 1 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold.",
+          "matching_retrieved_chunk_ids": [
+            "US8655901B1-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 3,
+      "estimated_query_cost_upper_cny": 0.01711,
+      "api_prompt_tokens": 7391,
+      "api_completion_tokens": 291,
+      "source_result_file": "round2/results/full_Q05_mix.json"
+    },
+    {
+      "question_id": "Q06",
+      "mode": "naive",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "I do not have enough information to compare US7991757B2 with US8095432B1, because the provided context contains no document for US7991757B2. Only US8095432B1, US9374411B1, US9514120B1, and US9304738B1 appear in the retrieved evidence.\n\n**Stated facts about US8095432B1 (ranking/selection):**\n\n- Claim 1 recites ranking based on relationship proximity: \"ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank.\"\n- Claim 1 also recites list ordering: \"wherein the first recommendation is higher on the recommendation list than the second recommendation based on the first rank exceeding the second rank.\"\n- Claim 1 adds interest-based comparison: \"determining that the first member comprises a plurality of interests in common with the inquiring member\" and \"determining that the first rank is higher than the third rank.\"\n- Claim 3 states proximity rules: \"wherein the relationship proximity is closer for friends of the inquiring member, and farther for non-friends to the inquiring member.\"\n\n**Interoperation:** Neither US8095432B1's claims nor any other provided claim states that US8095432B1 interoperates with US7991757B2. US8095432B1 claim 17 mentions only \"an external social networking utility,\" not another recommendation patent.\n\n**Inference (not stated):** Any comparison of selection logic between the two patents, or any interoperability link, cannot be drawn from this evidence.\n\n### References\n\n- [1] US8095432B1.txt",
+      "answer_patent_ids": [
+        "US7991757B2",
+        "US8095432B1",
+        "US9304738B1",
+        "US9374411B1",
+        "US9514120B1"
+      ],
+      "answer_claim_numbers": [
+        1,
+        3,
+        17
+      ],
+      "retrieved_entities": 0,
+      "retrieved_relationships": 0,
+      "retrieved_chunks": 6,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US8095432B1.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9374411B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US9514120B1.txt"
+        },
+        {
+          "reference_id": "4",
+          "file_path": "US9304738B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US7991757B2",
+          "claim": 1,
+          "quote": "an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.",
+          "matching_retrieved_chunk_ids": []
+        },
+        {
+          "patent": "US8095432B1",
+          "claim": 1,
+          "quote": "ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank",
+          "matching_retrieved_chunk_ids": [
+            "US8095432B1-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 2,
+      "estimated_query_cost_upper_cny": 0.016576,
+      "api_prompt_tokens": 6844,
+      "api_completion_tokens": 361,
+      "source_result_file": "round2/results/full_Q06_naive.json"
+    },
+    {
+      "question_id": "Q06",
+      "mode": "mix",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "I do not have enough information to compare US7991757B2 with US8095432B1, because the provided context contains no document chunks or knowledge-graph facts about US7991757B2. Its selection or ranking approach, claims, and any interoperability disclosure are therefore unavailable.\n\n**What the evidence does show for US8095432B1**\n\nUS8095432B1 ranks recommendations by relationship proximity within a social networking utility. Claim 1 recites: \"ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank.\" The resulting list places the first recommendation higher: \"wherein the first recommendation is higher on the recommendation list than the second recommendation based on the first rank exceeding the second rank.\" Claim 1 also addresses shared interests: \"determining that the first member comprises a plurality of interests in common with the inquiring member.\"\n\n**Interoperability**\n\nFor US8095432B1, the only external-system language I can locate is in claim 17, which concerns obtaining recommendations from an external social networking utility: \"obtain a plurality of recommendations from an external social networking utility.\" That is a stated fact about sourcing recommendations; it does not state interoperability with US7991757B2. No claim in the provided evidence names US7991757B2 or describes the two systems interoperating.\n\n**Inference (not stated in the evidence)**\n\nBecause US7991757B2 is absent from the context, I cannot infer any ranking comparison or interoperability link between the two patents. The missing evidence is US7991757B2's abstract, claims, and any cross-reference to US8095432B1.\n\n### References\n\n- [1] US8095432B1.txt",
+      "answer_patent_ids": [
+        "US7991757B2",
+        "US8095432B1"
+      ],
+      "answer_claim_numbers": [
+        1,
+        17
+      ],
+      "retrieved_entities": 29,
+      "retrieved_relationships": 27,
+      "retrieved_chunks": 4,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US8095432B1.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9514120B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US9374411B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US7991757B2",
+          "claim": 1,
+          "quote": "an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.",
+          "matching_retrieved_chunk_ids": []
+        },
+        {
+          "patent": "US8095432B1",
+          "claim": 1,
+          "quote": "ranking, using the processor, the first recommendation with a first rank and the second recommendation with a second rank based on the first relationship proximity and the second relationship proximity, wherein the first rank exceeds the second rank",
+          "matching_retrieved_chunk_ids": [
+            "US8095432B1-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 3,
+      "estimated_query_cost_upper_cny": 0.019832,
+      "api_prompt_tokens": 8136,
+      "api_completion_tokens": 445,
+      "source_result_file": "round2/results/full_Q06_mix.json"
+    },
+    {
+      "question_id": "Q07",
+      "mode": "naive",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "## Comparison: US8509827B2 vs. US10867122B1\n\n**US8509827B2 — source-selection criterion (Claim 1)**\n\nClaim 1 of US8509827B2 explicitly requires \"algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source.\" The context-data type itself is \"determined by a meaning of a term of the short message.\" So the selection/ranking criterion is tied to a **monetary acquisition cost** of the context data.\n\n**US10867122B1 — entity-driven content request (Claim 1)**\n\nClaim 1 of US10867122B1 requires determining a first factual entity \"based on a second portion of the content that (i) was previously typed and (ii) is behind an input cursor,\" then determining a second factual entity, with the step comprising \"determining that a measured level of intent for the third portion of the content is greater than a threshold level of intent.\" It then requires \"requesting, for a user interface element, content that is related to both the first factual entity and the second factual entity.\" The trigger here is an **intent threshold tied to typed content and derived entities**, not a cost parameter.\n\n**Stated facts vs. inference**\n\n- *Stated:* US8509827B2 ranks sources by pecuniary cost (Claim 1). US10867122B1 requests panel content keyed to two factual entities, gated by an intent threshold (Claim 1).\n- *Inference (mine):* The two criteria operate on different axes — cost-based source ranking versus intent-gated entity relevance — but the evidence does not state they are combinable or related.\n\n### References\n\n- [1] US10867122B1.txt\n- [2] US8509827B2.txt",
+      "answer_patent_ids": [
+        "US10867122B1",
+        "US8509827B2"
+      ],
+      "answer_claim_numbers": [
+        1
+      ],
+      "retrieved_entities": 0,
+      "retrieved_relationships": 0,
+      "retrieved_chunks": 6,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US10867122B1.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US8509827B2.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US8655901B1.txt"
+        },
+        {
+          "reference_id": "4",
+          "file_path": "US7756837B2.txt"
+        },
+        {
+          "reference_id": "5",
+          "file_path": "US9514120B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1",
+        "2"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US8509827B2",
+          "claim": 1,
+          "quote": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source",
+          "matching_retrieved_chunk_ids": [
+            "US8509827B2-chunk-000"
+          ]
+        },
+        {
+          "patent": "US10867122B1",
+          "claim": 1,
+          "quote": "requesting, for a user interface element, content that is related to both the first factual entity and the second factual entity, wherein the user interface element provides a collection of content related to the first factual entity and the second factual entity within the display environment",
+          "matching_retrieved_chunk_ids": [
+            "US10867122B1-chunk-000",
+            "US10867122B1-chunk-001"
+          ]
+        }
+      ],
+      "api_calls": 2,
+      "estimated_query_cost_upper_cny": 0.017346,
+      "api_prompt_tokens": 7081,
+      "api_completion_tokens": 398,
+      "source_result_file": "round2/results/full_Q07_naive.json"
+    },
+    {
+      "question_id": "Q07",
+      "mode": "mix",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "## Comparison: Source Selection vs. Entity-Driven Content Request\n\n**US8509827B2 — source-selection criterion**\n\nClaim 1 of US8509827B2 explicitly requires \"algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source.\" The method also requires \"identifying at least one context-data source that provides the context-data type\" and \"generating a request for a context data of the context-data type from the at least one context data source.\" The context-data type itself is \"determined by a meaning of a term of the short message.\"\n\n**US10867122B1 — entity-driven content request**\n\nClaim 1 of US10867122B1 requires \"determining ... a first factual entity related to the second portion of content that is behind the input cursor,\" then \"determining a second factual entity\" based on the first and second portions collectively, conditioned on \"determining that a measured level of intent for the third portion of the content is greater than a threshold level of intent.\" It then requires \"requesting, for a user interface element, content that is related to both the first factual entity and the second factual entity,\" and \"receiving the content of the user interface element for contemporaneous display on the user device with the content of the display environment.\"\n\n**Stated facts vs. inference**\n\nStated: US8509827B2's ranking criterion is expressly a pecuniary cost (claim 1); US10867122B1's request is keyed to two determined factual entities and gated by an intent threshold (claim 1). Neither claim recites the other's mechanism.\n\nInference (not stated in either document): the two criteria address different selection problems—cost-based source ranking versus entity-relevance of requested content—and the evidence does not establish that either patent incorporates the other's criterion.\n\n### References\n\n- [1] US10867122B1.txt\n- [2] US8509827B2.txt",
+      "answer_patent_ids": [
+        "US10867122B1",
+        "US8509827B2"
+      ],
+      "answer_claim_numbers": [
+        1
+      ],
+      "retrieved_entities": 28,
+      "retrieved_relationships": 29,
+      "retrieved_chunks": 3,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US10867122B1.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US8509827B2.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1",
+        "2"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US8509827B2",
+          "claim": 1,
+          "quote": "algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source",
+          "matching_retrieved_chunk_ids": [
+            "US8509827B2-chunk-000"
+          ]
+        },
+        {
+          "patent": "US10867122B1",
+          "claim": 1,
+          "quote": "requesting, for a user interface element, content that is related to both the first factual entity and the second factual entity, wherein the user interface element provides a collection of content related to the first factual entity and the second factual entity within the display environment",
+          "matching_retrieved_chunk_ids": [
+            "US10867122B1-chunk-000",
+            "US10867122B1-chunk-001"
+          ]
+        }
+      ],
+      "api_calls": 3,
+      "estimated_query_cost_upper_cny": 0.01998,
+      "api_prompt_tokens": 7990,
+      "api_completion_tokens": 500,
+      "source_result_file": "round2/results/full_Q07_mix.json"
+    },
+    {
+      "question_id": "Q08",
+      "mode": "naive",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "**Claim dependency chain in US9514753B2**\n\nThe chain begins at independent claim 1, which recites the hash-table lookup and comparison steps: \"determining a set of speaker vectors from a plurality of hash tables using the hash values\" and \"comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector.\"\n\nClaim 9 depends on claim 1 and specifies the comparison/selection mechanism: \"comparing the speaker vectors in the set with the utterance vector comprises determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set; and wherein selecting a speaker vector comprises selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector.\"\n\nClaim 10 depends on claim 9 and narrows the similarity score to cosine distance: \"determining a cosine distance between the utterance vector and each of the speaker vectors in the set.\"\n\nClaim 11 depends on claim 10 and adds the threshold condition: \"identifying a smallest cosine distance from among the determined cosine distances; determining that the smallest cosine distance is less than a maximum distance threshold value; and based on determining that the smallest cosine distance is less than the maximum distance threshold value, selecting the speaker vector corresponding to the smallest cosine distance.\"\n\n**Stated facts vs. inference**\n\nStated facts: the dependency sequence 1 → 9 → 10 → 11, and the quoted conditions above, are explicit in the claim text. Inference: the chain's practical effect is that hash-table retrieval (claim 1) supplies the candidate set, claim 9/10 rank candidates by cosine distance, and claim 11 gates final selection on a maximum-distance threshold — this functional summary is my interpretation, not claim language. The evidence does not state how the threshold value is set or what happens when no candidate falls below it.\n\n### References\n\n- [1] US9514753B2.txt",
+      "answer_patent_ids": [
+        "US9514753B2"
+      ],
+      "answer_claim_numbers": [
+        1,
+        9,
+        10,
+        11
+      ],
+      "retrieved_entities": 0,
+      "retrieved_relationships": 0,
+      "retrieved_chunks": 6,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9514753B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US8655901B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US9218390B2.txt"
+        },
+        {
+          "reference_id": "4",
+          "file_path": "US8095432B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US9514753B2",
+          "claim": 1,
+          "quote": "determining a set of speaker vectors from a plurality of hash tables using the hash values",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000",
+            "US9514753B2-chunk-001"
+          ]
+        },
+        {
+          "patent": "US9514753B2",
+          "claim": 9,
+          "quote": "9. The method of claim 1 , wherein comparing the speaker vectors in the set with the utterance vector comprises determining similarity scores",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ]
+        },
+        {
+          "patent": "US9514753B2",
+          "claim": 10,
+          "quote": "10. The method of claim 9 , wherein determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set comprises determining a cosine distance between the utterance vector and each of the speaker vectors in the set.",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ]
+        },
+        {
+          "patent": "US9514753B2",
+          "claim": 11,
+          "quote": "11. The method of claim 10 , wherein selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector comprises: identifying a smallest cosine distance from among the determined cosine distances; determining that the smallest cosine distance is less than a maximum distance threshold value; and based on determining that the smallest cosine distance is less than the maximum distance threshold value, selecting the speaker vector corresponding to the smallest cosine distance.",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 2,
+      "estimated_query_cost_upper_cny": 0.016788,
+      "api_prompt_tokens": 6778,
+      "api_completion_tokens": 404,
+      "source_result_file": "round2/results/full_Q08_naive.json"
+    },
+    {
+      "question_id": "Q08",
+      "mode": "mix",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "## Claim Dependency Chain in US9514753B2\n\n**Stated facts (from the claims):**\n\n- **Claim 1** (independent) recites the base method: \"determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector.\"\n\n- **Claim 9** depends on Claim 1 and specifies the comparison/selection mechanism: \"comparing the speaker vectors in the set with the utterance vector comprises determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set; and wherein selecting a speaker vector comprises selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector.\"\n\n- **Claim 10** depends on Claim 9 and specifies the metric: \"determining a cosine distance between the utterance vector and each of the speaker vectors in the set.\"\n\n- **Claim 11** depends on Claim 10 and adds the threshold condition: \"identifying a smallest cosine distance from among the determined cosine distances; determining that the smallest cosine distance is less than a maximum distance threshold value; and based on determining that the smallest cosine distance is less than the maximum distance threshold value, selecting the speaker vector corresponding to the smallest cosine distance.\"\n\n**Inference (not stated in the claims):** The dependency chain is therefore 1 → 9 → 10 → 11, meaning the hash-table candidate set of Claim 1 is narrowed by similarity scoring (Claim 9), measured by cosine distance (Claim 10), and finalized only if the smallest distance falls below the maximum threshold (Claim 11). The claims do not state what happens if the threshold is not met.\n\n### References\n\n- [1] US9514753B2.txt",
+      "answer_patent_ids": [
+        "US9514753B2"
+      ],
+      "answer_claim_numbers": [
+        1,
+        9,
+        10,
+        11
+      ],
+      "retrieved_entities": 25,
+      "retrieved_relationships": 23,
+      "retrieved_chunks": 4,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9514753B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9218390B2.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US8095432B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US9514753B2",
+          "claim": 1,
+          "quote": "determining a set of speaker vectors from a plurality of hash tables using the hash values",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000",
+            "US9514753B2-chunk-001"
+          ]
+        },
+        {
+          "patent": "US9514753B2",
+          "claim": 9,
+          "quote": "9. The method of claim 1 , wherein comparing the speaker vectors in the set with the utterance vector comprises determining similarity scores",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ]
+        },
+        {
+          "patent": "US9514753B2",
+          "claim": 10,
+          "quote": "10. The method of claim 9 , wherein determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set comprises determining a cosine distance between the utterance vector and each of the speaker vectors in the set.",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ]
+        },
+        {
+          "patent": "US9514753B2",
+          "claim": 11,
+          "quote": "11. The method of claim 10 , wherein selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector comprises: identifying a smallest cosine distance from among the determined cosine distances; determining that the smallest cosine distance is less than a maximum distance threshold value; and based on determining that the smallest cosine distance is less than the maximum distance threshold value, selecting the speaker vector corresponding to the smallest cosine distance.",
+          "matching_retrieved_chunk_ids": [
+            "US9514753B2-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 3,
+      "estimated_query_cost_upper_cny": 0.020186000000000003,
+      "api_prompt_tokens": 8237,
+      "api_completion_tokens": 464,
+      "source_result_file": "round2/results/full_Q08_mix.json"
+    },
+    {
+      "question_id": "Q09",
+      "mode": "naive",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "## Connection in US9298709B2\n\n**Stated facts (from the claims):**\n\nThe geographic-map-based IP-rights visualization process is set out in **claim 10** of US9298709B2, which recites \"generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic co-ordinates of the current viewable area of the geographic map display.\"\n\nThe on-screen-button update condition is established through a chain of dependent claims:\n\n- **Claim 16** depends on claim 10 and states: \"wherein generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic coordinates of the current viewable area of the geographic map display occurs following a user initiated command.\"\n- **Claim 17** depends on claim 16 and states: \"wherein the user initiated command comprises the pressing of an on-screen button.\"\n\n**Inference (not stated in the patent):**\n\nBecause claim 17 depends from claim 16, which in turn depends from claim 10, the on-screen-button-triggered update is linked back to the geographic-map-based visualization process of claim 10. This dependency chain is my inference from the claim numbering and dependency references; the patent text itself does not explicitly narrate this linkage.\n\n**Note on scope:** A parallel timing-based condition appears in **claim 15** (depending on claim 10), covering updates \"after a pre-defined time period elapses and there has been no change in the viewable area of the geographic map.\" The evidence does not state whether claims 15 and 16 are mutually exclusive alternatives.\n\n### References\n\n- [1] US9298709B2.txt",
+      "answer_patent_ids": [
+        "US9298709B2"
+      ],
+      "answer_claim_numbers": [
+        10,
+        15,
+        16,
+        17
+      ],
+      "retrieved_entities": 0,
+      "retrieved_relationships": 0,
+      "retrieved_chunks": 6,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9298709B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US10867122B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US9218390B2.txt"
+        },
+        {
+          "reference_id": "4",
+          "file_path": "US8917913B2.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US9298709B2",
+          "claim": 10,
+          "quote": "restricting the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights, generating and displaying an information pane containing one or more data visualizations related to the restricted list of IP rights",
+          "matching_retrieved_chunk_ids": [
+            "US9298709B2-chunk-001"
+          ]
+        },
+        {
+          "patent": "US9298709B2",
+          "claim": 16,
+          "quote": "16. A process according to claim 10 , wherein generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic coordinates of the current viewable area of the geographic map display occurs following a user initiated command.",
+          "matching_retrieved_chunk_ids": [
+            "US9298709B2-chunk-001"
+          ]
+        },
+        {
+          "patent": "US9298709B2",
+          "claim": 17,
+          "quote": "17. A process according to claim 16 , wherein the user initiated command comprises the pressing of an on-screen button.",
+          "matching_retrieved_chunk_ids": [
+            "US9298709B2-chunk-001"
+          ]
+        }
+      ],
+      "api_calls": 2,
+      "estimated_query_cost_upper_cny": 0.017738,
+      "api_prompt_tokens": 7489,
+      "api_completion_tokens": 345,
+      "source_result_file": "round2/results/full_Q09_naive.json"
+    },
+    {
+      "question_id": "Q09",
+      "mode": "mix",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "## Stated Facts (US9298709B2)\n\nThe patent describes a process for visualizing IP rights data tied to a geographic map. Claim 10 recites a process comprising monitoring/storing geographic co-ordinates, issuing a display change notification, generating a list of IP rights whose owner address falls within the map area, restricting that list by restriction criteria, and \"generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic co-ordinates of the current viewable area of the geographic map display.\"\n\nThe on-screen-button condition appears in the dependent claims:\n\n- **Claim 16** (dependent on claim 10): \"wherein generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic coordinates of the current viewable area of the geographic map display occurs following a user initiated command.\"\n- **Claim 17** (dependent on claim 16): \"wherein the user initiated command comprises the pressing of an on-screen button.\"\n\nSo the chain is: **Claim 10** (base process) → **Claim 16** (user-initiated command triggers the update) → **Claim 17** (that command is an on-screen button press).\n\n## Inference (not stated in the patent)\n\nThe connection is established through dependency: claim 16 narrows claim 10's updating step to a user-initiated command, and claim 17 further specifies that command as an on-screen button press. The patent does not expressly state that claim 17 \"connects\" the map-based process to the button condition; that linkage is my reading of the claim dependency structure.\n\n### References\n\n- [1] US9298709B2.txt",
+      "answer_patent_ids": [
+        "US9298709B2"
+      ],
+      "answer_claim_numbers": [
+        10,
+        16,
+        17
+      ],
+      "retrieved_entities": 26,
+      "retrieved_relationships": 31,
+      "retrieved_chunks": 3,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US9298709B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US10867122B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US9298709B2",
+          "claim": 10,
+          "quote": "restricting the list of IP rights based on one or more restriction criteria related to the IP rights to form a restricted list of IP rights, generating and displaying an information pane containing one or more data visualizations related to the restricted list of IP rights",
+          "matching_retrieved_chunk_ids": [
+            "US9298709B2-chunk-001"
+          ]
+        },
+        {
+          "patent": "US9298709B2",
+          "claim": 16,
+          "quote": "16. A process according to claim 10 , wherein generating or updating each data visualization displayed in the information pane based on each set of successively obtained geographic coordinates of the current viewable area of the geographic map display occurs following a user initiated command.",
+          "matching_retrieved_chunk_ids": [
+            "US9298709B2-chunk-001"
+          ]
+        },
+        {
+          "patent": "US9298709B2",
+          "claim": 17,
+          "quote": "17. A process according to claim 16 , wherein the user initiated command comprises the pressing of an on-screen button.",
+          "matching_retrieved_chunk_ids": [
+            "US9298709B2-chunk-001"
+          ]
+        }
+      ],
+      "api_calls": 3,
+      "estimated_query_cost_upper_cny": 0.019146,
+      "api_prompt_tokens": 7873,
+      "api_completion_tokens": 425,
+      "source_result_file": "round2/results/full_Q09_mix.json"
+    },
+    {
+      "question_id": "Q10",
+      "mode": "naive",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "In US11423041B2, the dependent system claim you are asking about is **claim 5**, which states: \"wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service.\"\n\nThe next claim, **claim 6**, states the opposite arrangement: \"wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.\"\n\n**Stated facts:** Claim 5 covers a configuration where the first ETL process runs externally while the second runs within the ETL service; claim 6 covers a configuration where both the first and second ETL processes are performed by the ETL service. Both depend from claim 1 (the system claim).\n\n**Inference (not stated in the patent):** The two claims appear to define mutually exclusive alternatives for where the first ETL process executes (external vs. internal to the ETL service), while both require the second ETL process to be performed by the ETL service. This is my comparison, not wording from the document.\n\n### References\n\n- [1] US11423041B2.txt",
+      "answer_patent_ids": [
+        "US11423041B2"
+      ],
+      "answer_claim_numbers": [
+        1,
+        5,
+        6
+      ],
+      "retrieved_entities": 0,
+      "retrieved_relationships": 0,
+      "retrieved_chunks": 7,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US11423041B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US8655901B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US9118735B1.txt"
+        },
+        {
+          "reference_id": "4",
+          "file_path": "US10867122B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US11423041B2",
+          "claim": 5,
+          "quote": "5. The system of claim 1 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "matching_retrieved_chunk_ids": [
+            "US11423041B2-chunk-000"
+          ]
+        },
+        {
+          "patent": "US11423041B2",
+          "claim": 6,
+          "quote": "6. The system of claim 1 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "matching_retrieved_chunk_ids": [
+            "US11423041B2-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 2,
+      "estimated_query_cost_upper_cny": 0.016778,
+      "api_prompt_tokens": 7421,
+      "api_completion_tokens": 242,
+      "source_result_file": "round2/results/full_Q10_naive.json"
+    },
+    {
+      "question_id": "Q10",
+      "mode": "mix",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "In US11423041B2, the dependent system claim that states the first ETL process is external to the ETL service while the second is performed by that service is **claim 5**. Its exact wording is: “wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service.”\n\n**Contrast with the next claim (claim 6):** Claim 6 instead states: “wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.” Thus, the stated difference is that claim 5 places the first ETL process outside the ETL service, whereas claim 6 places both the first and second ETL processes within the ETL service.\n\n**Stated facts:** Both claims depend from claim 1 and concern where the first and second ETL processes are performed. **Inference:** Claim 6 appears to cover an entirely in-service arrangement, while claim 5 covers a hybrid arrangement; this characterization is my inference, not express claim language.\n\n### References\n\n- [1] US11423041B2.txt",
+      "answer_patent_ids": [
+        "US11423041B2"
+      ],
+      "answer_claim_numbers": [
+        1,
+        5,
+        6
+      ],
+      "retrieved_entities": 14,
+      "retrieved_relationships": 38,
+      "retrieved_chunks": 4,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US11423041B2.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9118735B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US11423041B2",
+          "claim": 5,
+          "quote": "5. The system of claim 1 , wherein the first ETL process is performed external to the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "matching_retrieved_chunk_ids": [
+            "US11423041B2-chunk-000"
+          ]
+        },
+        {
+          "patent": "US11423041B2",
+          "claim": 6,
+          "quote": "6. The system of claim 1 , wherein the first ETL process is performed by the ETL service and wherein the second ETL process is performed by the ETL service.",
+          "matching_retrieved_chunk_ids": [
+            "US11423041B2-chunk-000"
+          ]
+        }
+      ],
+      "api_calls": 3,
+      "estimated_query_cost_upper_cny": 0.018046,
+      "api_prompt_tokens": 7763,
+      "api_completion_tokens": 315,
+      "source_result_file": "round2/results/full_Q10_mix.json"
+    },
+    {
+      "question_id": "Q11_supplementary",
+      "mode": "naive",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "I do not have enough information to answer this query. The provided **Context** does not contain any document chunks from **US7991757B2**, so I cannot quote Claim 1 or Claim 27, describe their capabilities, or explain their dependency.\n\nThe available evidence covers only the following publications: US10867122B1, US8655901B1, US9514120B1, US9374411B1, US8719408B2, and US8069128B2. None of these is US7991757B2, and no chunk mentions that patent number or its claims.\n\nTo answer, I would need the text of US7991757B2 — specifically the wording of Claim 1 and Claim 27, including Claim 27's dependency reference (e.g., \"The method of claim 1, further comprising…\"). Without that, any statement about the registration capability or the added capability would be inference rather than explicit evidence, which I cannot provide.\n\n### References\n\n- [1] US10867122B1.txt\n- [2] US8655901B1.txt\n- [3] US9514120B1.txt\n- [4] US9374411B1.txt\n- [5] US8719408B2.txt",
+      "answer_patent_ids": [
+        "US10867122B1",
+        "US7991757B2",
+        "US8069128B2",
+        "US8655901B1",
+        "US8719408B2",
+        "US9374411B1",
+        "US9514120B1"
+      ],
+      "answer_claim_numbers": [
+        1,
+        27
+      ],
+      "retrieved_entities": 0,
+      "retrieved_relationships": 0,
+      "retrieved_chunks": 8,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US10867122B1.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US8655901B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US9514120B1.txt"
+        },
+        {
+          "reference_id": "4",
+          "file_path": "US9374411B1.txt"
+        },
+        {
+          "reference_id": "5",
+          "file_path": "US8719408B2.txt"
+        },
+        {
+          "reference_id": "6",
+          "file_path": "US8069128B2.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US7991757B2",
+          "claim": 1,
+          "quote": "1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.",
+          "matching_retrieved_chunk_ids": []
+        },
+        {
+          "patent": "US7991757B2",
+          "claim": 27,
+          "quote": "27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+          "matching_retrieved_chunk_ids": []
+        }
+      ],
+      "api_calls": 2,
+      "estimated_query_cost_upper_cny": 0.017718,
+      "api_prompt_tokens": 7799,
+      "api_completion_tokens": 265,
+      "source_result_file": "round2/results/full_Q11_supplementary_naive.json"
+    },
+    {
+      "question_id": "Q11_supplementary",
+      "mode": "mix",
+      "system_status": "success",
+      "llm_generated": true,
+      "answer": "I do not have enough information to answer this query. The provided **Context** does not contain any document chunk, knowledge graph entity, or reference entry for **US7991757B2**, so I cannot quote Claim 1 or Claim 27, describe their dependency, or state any registration capability specified therein.\n\n**What is present in the evidence:** The available materials cover other patents, such as US10867122B1 (contextually relevant knowledge panels), US9374411B1 (content recommendations using deep data), and US9514120B1 (typographical-error feedback), along with entities like speaker identification using hash-based indexing, inventory estimation for search retargeting, and data lineage detection. None of these mention US7991757B2 or a \"registration capability.\"\n\n**What is missing:** The text of US7991757B2, specifically its Claim 1 and Claim 27, including any claim dependency wording (e.g., \"The method of claim 1, further comprising...\"). Without that text, any answer would be inference rather than explicit evidence, which the instructions prohibit.\n\n### References\n\n- [1] US10867122B1.txt\n- [2] US9514120B1.txt\n- [3] US9374411B1.txt",
+      "answer_patent_ids": [
+        "US10867122B1",
+        "US7991757B2",
+        "US9374411B1",
+        "US9514120B1"
+      ],
+      "answer_claim_numbers": [
+        1,
+        27
+      ],
+      "retrieved_entities": 27,
+      "retrieved_relationships": 24,
+      "retrieved_chunks": 4,
+      "references": [
+        {
+          "reference_id": "1",
+          "file_path": "US10867122B1.txt"
+        },
+        {
+          "reference_id": "2",
+          "file_path": "US9514120B1.txt"
+        },
+        {
+          "reference_id": "3",
+          "file_path": "US9374411B1.txt"
+        }
+      ],
+      "cited_reference_ids": [
+        "1",
+        "2",
+        "3"
+      ],
+      "unresolved_cited_reference_ids": [],
+      "evidence_quote_coverage": [
+        {
+          "patent": "US7991757B2",
+          "claim": 1,
+          "quote": "1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.",
+          "matching_retrieved_chunk_ids": []
+        },
+        {
+          "patent": "US7991757B2",
+          "claim": 27,
+          "quote": "27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+          "matching_retrieved_chunk_ids": []
+        }
+      ],
+      "api_calls": 3,
+      "estimated_query_cost_upper_cny": 0.018340000000000002,
+      "api_prompt_tokens": 7898,
+      "api_completion_tokens": 318,
+      "source_result_file": "round2/results/full_Q11_supplementary_mix.json"
+    }
+  ]
+}

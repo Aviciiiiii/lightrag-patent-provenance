@@ -1,0 +1,23 @@
+{
+  "phase": "smoke",
+  "started_utc": "2026-11-15T03:16:18.979374+00:00",
+  "status": "completed",
+  "index": {
+    "track_id": "insert_20261114_191619_d345db44",
+    "nodes": 60,
+    "edges": 79,
+    "counts": {
+      "pending": 0,
+      "parsing": 0,
+      "analyzing": 0,
+      "processing": 0,
+      "preprocessed": 0,
+      "processed": 2,
+      "failed": 0,
+      "all": 2
+    }
+  },
+  "queries_attempted": 2,
+  "finished_utc": "2026-11-15T03:17:08.437898+00:00",
+  "conservative_cost_cny": 0.111518
+}

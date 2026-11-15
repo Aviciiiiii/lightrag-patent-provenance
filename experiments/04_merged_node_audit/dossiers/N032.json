@@ -1,0 +1,562 @@
+{
+  "node_id": "Tokens",
+  "entity_type": "concept",
+  "graph_source_chunks": [
+    "US8655901B1-chunk-001",
+    "US9218390B2-chunk-000"
+  ],
+  "entity_chunk_store_sources": [
+    "US8655901B1-chunk-001",
+    "US9218390B2-chunk-000"
+  ],
+  "all_source_chunks": [
+    "US8655901B1-chunk-001",
+    "US9218390B2-chunk-000"
+  ],
+  "canonical_publications": [
+    "US8655901B1",
+    "US9218390B2"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US8655901B1.txt",
+    "US9218390B2.txt"
+  ],
+  "graph_file_paths": [
+    "US9218390B2.txt",
+    "US8655901B1.txt"
+  ],
+  "graph_file_path_publications": [
+    "US8655901B1",
+    "US9218390B2"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US8655901B1-chunk-001",
+    "US9218390B2-chunk-000"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US8655901B1-chunk-001",
+    "US9218390B2-chunk-000"
+  ],
+  "graph_node": {
+    "entity_id": "Tokens",
+    "entity_type": "concept",
+    "description": "The series of tokens comprising the input query, to which labels are assigned.<SEP>Segments of a given query in the first language, each including one or more terms from the query.",
+    "source_id": "US9218390B2-chunk-000<SEP>US8655901B1-chunk-001",
+    "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+    "created_at": 1793284618,
+    "truncate": "",
+    "id": "Tokens"
+  },
+  "incident_edge_count": 5,
+  "audit_id": "N032",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US8655901B1",
+      "file_paths": [
+        "US8655901B1.txt"
+      ],
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8655901B1",
+          "full_doc_id": "US8655901B1",
+          "file_path": "US8655901B1.txt",
+          "chunk_order_index": 1,
+          "tokens": 532,
+          "content_sha256": "5d0d79edafe5af7919f82cb1ee8099a3dec6b156ad11326e2bf75e47dad3f315",
+          "exact_doc_char_start": 6164,
+          "exact_doc_char_end": 9170,
+          "content": ", where using the translated query pattern includes applying the translated query pattern to a received query in order to identify one or more query splits into query components and using the resulting query components to search a respective index for each query component. 11. The system of claim 8 , further configured to perform operations comprising: using the translated query pattern to search for results responsive to a received query in the second language and presenting search results. 12. The system of claim 8 , where identifying a collection of queries includes identifying queries from a query log that match the first query pattern. 13. The system of claim 8 , where annotating each query includes labeling portions of the query according to the first query pattern. 14. The system of claim 8 , where extracting a translated query pattern further comprises cross-validating the translated query pattern with a query log with respect to a specified occurrence threshold. 15. A non-transitory computer storage medium encoded with a computer program, the program comprising instructions that when executed by data processing apparatus cause the data processing apparatus to perform operations comprising: receiving a first query pattern, the query pattern identifying a particular rule to interpret a particular type of query, the query pattern being in a first language; identifying a collection of queries in the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating, with a system comprising one or more computing devices, the collection of annotated queries in the first language into a translated collection of queries in a second language; and extracting a translated query pattern from the translated collection of queries, wherein for the given one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extracting the translated query pattern from the order in which labels for the components of the first query pattern correspond to the translated terms of the given query pattern.",
+          "llm_cache_list": [
+            "default:extract:c20f6f1580eec63f6eb8020610ec1b05"
+          ],
+          "chunk_id": "US8655901B1-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US8655901B1-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "316996f6608a19543149f869b202a0f90c851b294a1aea1e4f2b52f923f5462b"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 6,
+              "raw_line": "entity<|#|>Tokens<|#|>Concept<|#|>Segments of a given query in the first language, each including one or more terms from the query.",
+              "fields": [
+                "entity",
+                "Tokens",
+                "Concept",
+                "Segments of a given query in the first language, each including one or more terms from the query."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 25,
+              "raw_line": "relation<|#|>Query<|#|>Tokens<|#|>segmentation<|#|>A given query among the collection is segmented into one or more tokens in the first language.",
+              "fields": [
+                "relation",
+                "Query",
+                "Tokens",
+                "segmentation",
+                "A given query among the collection is segmented into one or more tokens in the first language."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 26,
+              "raw_line": "relation<|#|>Tokens<|#|>Query Pattern<|#|>association, components<|#|>Each token is associated with corresponding components of the first query pattern.",
+              "fields": [
+                "relation",
+                "Tokens",
+                "Query Pattern",
+                "association, components",
+                "Each token is associated with corresponding components of the first query pattern."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 27,
+              "raw_line": "relation<|#|>Tokens<|#|>Labels<|#|>annotation<|#|>The tokens are annotated with labels for the corresponding components of the first query pattern.",
+              "fields": [
+                "relation",
+                "Tokens",
+                "Labels",
+                "annotation",
+                "The tokens are annotated with labels for the corresponding components of the first query pattern."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "cache_key": "default:extract:c20f6f1580eec63f6eb8020610ec1b05",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 29,
+              "raw_line": "relation<|#|>Translated Query Pattern<|#|>Tokens<|#|>translation order, extraction<|#|>The order in which tokens are translated into the second language determines the order in which labels correspond to translated terms, from which the translated query pattern is extracted.",
+              "fields": [
+                "relation",
+                "Translated Query Pattern",
+                "Tokens",
+                "translation order, extraction",
+                "The order in which tokens are translated into the second language determines the order in which labels correspond to translated terms, from which the translated query pattern is extracted."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 1422,
+              "chunk_char_end": 1848,
+              "text": "n the first language matching the query pattern by determining which queries in a query log match the query pattern; segmenting a given query among the collection into one or more tokens in the first language, wherein each token includes one or more terms from the given query; annotating each query of the collection of queries with one or more labels identifying the parts of each query, wherein annotating each query of the"
+            },
+            {
+              "chunk_char_start": 1762,
+              "chunk_char_end": 2188,
+              "text": " more labels identifying the parts of each query, wherein annotating each query of the collection of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating, with a system comprising one or more computing devices, t"
+            },
+            {
+              "chunk_char_start": 1858,
+              "chunk_char_end": 2284,
+              "text": "n of queries with one or more labels comprises: associating each of the one or more tokens with corresponding components of the first query pattern; and annotating the one or more tokens with labels for the corresponding components of the first query pattern; translating, with a system comprising one or more computing devices, the collection of annotated queries in the first language into a translated collection of queries"
+            },
+            {
+              "chunk_char_start": 2410,
+              "chunk_char_end": 2836,
+              "text": "ven one of the plurality of queries, extracting a translated query pattern from the translated collection of queries comprises: determining, from an order in which the one or more tokens into which the given query was segmented in the first language are translated into the second language, an order in which labels for the components of the first query pattern correspond to translated terms of the given query; and extractin"
+            }
+          ],
+          "lexical_occurrence_count": 4
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 2.0,
+          "description": "A label is assigned to each of a plurality of the tokens.<SEP>The tokens are annotated with labels for the corresponding components of the first query pattern.",
+          "keywords": "annotation,assigned",
+          "source_id": "US9218390B2-chunk-000<SEP>US8655901B1-chunk-001",
+          "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Tokens",
+          "target": "Labels",
+          "edge_index": 704,
+          "source_chunks": [
+            "US9218390B2-chunk-000",
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1",
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "Each token is associated with corresponding components of the first query pattern.",
+          "keywords": "association,components",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Tokens",
+          "target": "Query Pattern",
+          "edge_index": 705,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "A given query among the collection is segmented into one or more tokens in the first language.",
+          "keywords": "segmentation",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Tokens",
+          "target": "Query",
+          "edge_index": 706,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 1.0,
+          "description": "The order in which tokens are translated into the second language determines the order in which labels correspond to translated terms, from which the translated query pattern is extracted.",
+          "keywords": "extraction,translation order",
+          "source_id": "US8655901B1-chunk-001",
+          "file_path": "US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Tokens",
+          "target": "Translated Query Pattern",
+          "edge_index": 707,
+          "source_chunks": [
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US9218390B2",
+      "file_paths": [
+        "US9218390B2.txt"
+      ],
+      "source_chunks": [
+        "US9218390B2-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US9218390B2",
+          "full_doc_id": "US9218390B2",
+          "file_path": "US9218390B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "7a73db91316653f79b50b327f19f59f747f43106e5cf0f44c5a0db631d7b203e",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6334,
+          "content": "Publication number: US9218390B2\nTitle: Query parser derivation computing device and method for making a query parser for parsing unstructured search queries\n\nABSTRACT\nA system and method is provided which may comprise parsing an unstructured geographic web-search query into a field-based format, by utilizing conditional random fields, learned by semi-supervised automated learning, to parse structured information from the unstructured geographic web-search query. The system and method may also comprise establishing semi-supervised conditional random fields utilizing one of a rule-based finite state machine model and a statistics-based conditional random field model. Systematic geographic parsing may be used with the one of the rule-based finite state machine model and the statistics-based conditional random field model. Parsing an unstructured local geographical web-based query in local domain may be done by applying a learned model parser to the query, using at least one class-based query log from a form-based query system. The learned model parser may comprise at least one class-level n-gram language model-based feature harvested from a structured query log.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: deriving, via a query parser derivation computing device, a query parser for parsing an unstructured geographic web-search query into a field-based format, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens; calculating the most probable label sequence for the input query; assigning one or more sentences from a plurality of sentences to each label based at least in part on the most probable label sequence for the input query, wherein: the one or more sentences are different from the labels; and the one or more sentences are assigned so that the respective sentence identifies the respective label as corresponding to one or more of a search term, a geographic expression, a geographic expression relation indication, and/or uninteresting information; creating a conditional random field model based at least in part on i) the tokens, ii) the labels, iii) characterizing a set of one or more feature functions, wherein: the set of one or more feature functions represent a state transition feature and/or one or more features of an output state for an input sequence; and a conditional probability is computed based in part on the set of one or more feature functions; training the one or more state transition features and the one or more output state features on a labeled set, wherein learning the state transition feature is limited on learning the one or more features of the output state; and utilizing, by the query parser, conditional random fields, learned by semi-supervised automated learning and based at least in part on the training, to produce structured information from the unstructured geographic web-search query, wherein the utilizing the conditional random fields to produce the structured information comprises: parsing the unstructured geographic web-search query to produce the structured information from the unstructured geographic web-search query; determining that the parsing the unstructured geographic web-search query results in a multiple interpretation condition, where the parsing identifies at least a first interpretation of the unstructured geographic web-search query corresponding to first parsing results and a second interpretation of the unstructured geographic web-search query corresponding to second parsing results; and based at least in part on user behavior data, disambiguate the first parsing results and the second parsing results to select the first parsing results corresponding to the first interpretation of the unstructured geographic web-search query. 2. The method of claim 1 , further comprising: defining, via the query parser derivation computing device, class-based language model features comprising at least one token appearing in a defined position in a model feature comprising a grouping of tokens of a given length n, where n is an integer, including GEO_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a geographic term, GEO_BI_FIRST, for the first token in a grouping of tokens of length two relating to a geographic term, GEO_BI_SECOND, for the second token in a grouping of tokens of length two relating to a geographic term, GEO_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_SECOND, for the second token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_THIRD, for the third token in a grouping of tokens of length three relating to a geographic term, and including ST_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a search term, ST_BI_FIRST, for the first token in a grouping of tokens of length two relating to a search term, ST_BI_SECOND, for the second token in a grouping of tokens of length two relating to a search term, ST_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a search term, ST_TRI_SECOND, for the second token in a grouping of tokens of length three relating to a search term, ST_TRI_THIRD, for the third token in a grouping of tokens of length three relating to a search term, for tokens relating to one of a geographic term and a search term, for any grouping of length n where n is an integer; and utilizing, via the query parser derivation computing device, the class-based language model features as high-level language model features in deriving the query parser. 3. The method of claim 2 , wherein the query parser recognizes both a geographic location token and a search term token in an input query. 4. The method of claim 1 , further comprising: establishing the semi-supervised conditional random fields via one of a rule-based finite state machine model and a statistics-based conditional random field model. 5. The method of claim 4 , wherein the semi-supervised conditional random fields are established via utilizing systematic geographic parsing with the one of the rule-based finite state machine model and the statistics-based conditional random field model. 6",
+          "llm_cache_list": [],
+          "chunk_id": "US9218390B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US9218390B2-chunk-000",
+              "origin": "saved_raw_response",
+              "finish_reason": "length",
+              "response_file": "round2/logs/api_0191_response.json",
+              "request_file": "round2/logs/api_0191_request.json",
+              "content_sha256": "4fc33a0a27d2be76ea9ce900f3922c2a75e9c411c85cb476387d883b293b95bc"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "raw_log:round2/logs/api_0191_response.json",
+              "cache_key": null,
+              "response_file": "round2/logs/api_0191_response.json",
+              "finish_reason": "length",
+              "line_number": 15,
+              "raw_line": "entity<|#|>Tokens<|#|>Data<|#|>The series of tokens comprising the input query, to which labels are assigned.",
+              "fields": [
+                "entity",
+                "Tokens",
+                "Data",
+                "The series of tokens comprising the input query, to which labels are assigned."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "raw_log:round2/logs/api_0191_response.json",
+              "cache_key": null,
+              "response_file": "round2/logs/api_0191_response.json",
+              "finish_reason": "length",
+              "line_number": 56,
+              "raw_line": "relation<|#|>Input Query<|#|>Tokens<|#|>comprises<|#|>The input query comprises a series of tokens.",
+              "fields": [
+                "relation",
+                "Input Query",
+                "Tokens",
+                "comprises",
+                "The input query comprises a series of tokens."
+              ]
+            },
+            {
+              "raw_record_id": "raw_log:round2/logs/api_0191_response.json",
+              "cache_key": null,
+              "response_file": "round2/logs/api_0191_response.json",
+              "finish_reason": "length",
+              "line_number": 57,
+              "raw_line": "relation<|#|>Tokens<|#|>Labels<|#|>assigned<|#|>A label is assigned to each of a plurality of the tokens.",
+              "fields": [
+                "relation",
+                "Tokens",
+                "Labels",
+                "assigned",
+                "A label is assigned to each of a plurality of the tokens."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 1323,
+              "chunk_char_end": 1749,
+              "text": "uctured geographic web-search query into a field-based format, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens; calculating the most probable label sequence for the input query; assigning one or more sentences from a plurality of sentences to each label based at least in part on the most proba"
+            },
+            {
+              "chunk_char_start": 1379,
+              "chunk_char_end": 1805,
+              "text": "ormat, the deriving of the query parser comprising: receiving an input query, wherein the input query comprises a series of tokens; assigning a label to each of a plurality of the tokens; calculating the most probable label sequence for the input query; assigning one or more sentences from a plurality of sentences to each label based at least in part on the most probable label sequence for the input query, wherein: the one"
+            },
+            {
+              "chunk_char_start": 2011,
+              "chunk_char_end": 2437,
+              "text": " a geographic expression, a geographic expression relation indication, and/or uninteresting information; creating a conditional random field model based at least in part on i) the tokens, ii) the labels, iii) characterizing a set of one or more feature functions, wherein: the set of one or more feature functions represent a state transition feature and/or one or more features of an output state for an input sequence; and a"
+            },
+            {
+              "chunk_char_start": 3943,
+              "chunk_char_end": 4369,
+              "text": "y parser derivation computing device, class-based language model features comprising at least one token appearing in a defined position in a model feature comprising a grouping of tokens of a given length n, where n is an integer, including GEO_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a geographic term, GEO_BI_FIRST, for the first token in a grouping of tokens of length two relating"
+            },
+            {
+              "chunk_char_start": 4056,
+              "chunk_char_end": 4482,
+              "text": " in a defined position in a model feature comprising a grouping of tokens of a given length n, where n is an integer, including GEO_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a geographic term, GEO_BI_FIRST, for the first token in a grouping of tokens of length two relating to a geographic term, GEO_BI_SECOND, for the second token in a grouping of tokens of length two relating to a ge"
+            },
+            {
+              "chunk_char_start": 4160,
+              "chunk_char_end": 4586,
+              "text": "s an integer, including GEO_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a geographic term, GEO_BI_FIRST, for the first token in a grouping of tokens of length two relating to a geographic term, GEO_BI_SECOND, for the second token in a grouping of tokens of length two relating to a geographic term, GEO_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a "
+            },
+            {
+              "chunk_char_start": 4265,
+              "chunk_char_end": 4691,
+              "text": "g to a geographic term, GEO_BI_FIRST, for the first token in a grouping of tokens of length two relating to a geographic term, GEO_BI_SECOND, for the second token in a grouping of tokens of length two relating to a geographic term, GEO_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_SECOND, for the second token in a grouping of tokens of length three relating to"
+            },
+            {
+              "chunk_char_start": 4369,
+              "chunk_char_end": 4795,
+              "text": " to a geographic term, GEO_BI_SECOND, for the second token in a grouping of tokens of length two relating to a geographic term, GEO_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_SECOND, for the second token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_THIRD, for the third token in a grouping of tokens of length three relating "
+            },
+            {
+              "chunk_char_start": 4477,
+              "chunk_char_end": 4903,
+              "text": " a geographic term, GEO_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_SECOND, for the second token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_THIRD, for the third token in a grouping of tokens of length three relating to a geographic term, and including ST_UNI_FIRST, for the first token in a grouping of tokens of length one,"
+            },
+            {
+              "chunk_char_start": 4583,
+              "chunk_char_end": 5009,
+              "text": " a geographic term, GEO_TRI_SECOND, for the second token in a grouping of tokens of length three relating to a geographic term, GEO_TRI_THIRD, for the third token in a grouping of tokens of length three relating to a geographic term, and including ST_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a search term, ST_BI_FIRST, for the first token in a grouping of tokens of length two relatin"
+            },
+            {
+              "chunk_char_start": 4702,
+              "chunk_char_end": 5128,
+              "text": "ic term, GEO_TRI_THIRD, for the third token in a grouping of tokens of length three relating to a geographic term, and including ST_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a search term, ST_BI_FIRST, for the first token in a grouping of tokens of length two relating to a search term, ST_BI_SECOND, for the second token in a grouping of tokens of length two relating to a search term,"
+            },
+            {
+              "chunk_char_start": 4801,
+              "chunk_char_end": 5227,
+              "text": "eographic term, and including ST_UNI_FIRST, for the first token in a grouping of tokens of length one, relating to a search term, ST_BI_FIRST, for the first token in a grouping of tokens of length two relating to a search term, ST_BI_SECOND, for the second token in a grouping of tokens of length two relating to a search term, ST_TRI_FIRST, for the first token in a grouping of tokens of length three relating to a search ter"
+            }
+          ],
+          "lexical_occurrence_count": 17
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The input query comprises a series of tokens.",
+          "keywords": "comprises",
+          "source_id": "US9218390B2-chunk-000",
+          "file_path": "US9218390B2.txt",
+          "created_at": 1793284503,
+          "truncate": "",
+          "source": "Input Query",
+          "target": "Tokens",
+          "edge_index": 701,
+          "source_chunks": [
+            "US9218390B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "A label is assigned to each of a plurality of the tokens.<SEP>The tokens are annotated with labels for the corresponding components of the first query pattern.",
+          "keywords": "annotation,assigned",
+          "source_id": "US9218390B2-chunk-000<SEP>US8655901B1-chunk-001",
+          "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+          "created_at": 1793284621,
+          "truncate": "",
+          "source": "Tokens",
+          "target": "Labels",
+          "edge_index": 704,
+          "source_chunks": [
+            "US9218390B2-chunk-000",
+            "US8655901B1-chunk-001"
+          ],
+          "canonical_publications": [
+            "US8655901B1",
+            "US9218390B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "The input query comprises a series of tokens.",
+      "keywords": "comprises",
+      "source_id": "US9218390B2-chunk-000",
+      "file_path": "US9218390B2.txt",
+      "created_at": 1793284503,
+      "truncate": "",
+      "source": "Input Query",
+      "target": "Tokens",
+      "edge_index": 701,
+      "source_chunks": [
+        "US9218390B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US9218390B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "A label is assigned to each of a plurality of the tokens.<SEP>The tokens are annotated with labels for the corresponding components of the first query pattern.",
+      "keywords": "annotation,assigned",
+      "source_id": "US9218390B2-chunk-000<SEP>US8655901B1-chunk-001",
+      "file_path": "US9218390B2.txt<SEP>US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Tokens",
+      "target": "Labels",
+      "edge_index": 704,
+      "source_chunks": [
+        "US9218390B2-chunk-000",
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1",
+        "US9218390B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "Each token is associated with corresponding components of the first query pattern.",
+      "keywords": "association,components",
+      "source_id": "US8655901B1-chunk-001",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Tokens",
+      "target": "Query Pattern",
+      "edge_index": 705,
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "A given query among the collection is segmented into one or more tokens in the first language.",
+      "keywords": "segmentation",
+      "source_id": "US8655901B1-chunk-001",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Tokens",
+      "target": "Query",
+      "edge_index": 706,
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The order in which tokens are translated into the second language determines the order in which labels correspond to translated terms, from which the translated query pattern is extracted.",
+      "keywords": "extraction,translation order",
+      "source_id": "US8655901B1-chunk-001",
+      "file_path": "US8655901B1.txt",
+      "created_at": 1793284621,
+      "truncate": "",
+      "source": "Tokens",
+      "target": "Translated Query Pattern",
+      "edge_index": 707,
+      "source_chunks": [
+        "US8655901B1-chunk-001"
+      ],
+      "canonical_publications": [
+        "US8655901B1"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

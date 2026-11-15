@@ -1,0 +1,18 @@
+{
+  "scope": "AI-assisted content review of all 38 cross-publication nodes in the existing round2 20-patent baseline. Not independent human gold and not an LLM judge API experiment.",
+  "frozen_before_semantic_review_utc": "2026-10-30T08:05:00Z",
+  "membership_rule": "Union node.source_id and kv_store_entity_chunks.chunk_ids; map each chunk.full_doc_id to full_docs publication header; deduplicate canonical publication numbers. Raw extraction rows cross-check attribution but do not silently add graph sources.",
+  "categories": {
+    "shared_specific_concept": "At each source the node denotes the same reasonably specific technical concept; distinct document implementations are not claimed to be the same individual instance.",
+    "shared_broad_class": "Sources support a common broad class/role, while implementations or instances differ. A generic label alone is not an error.",
+    "contextual_conflation": "Concrete source quotes establish distinct senses or non-interchangeable document-local roles collapsed into one ID. Must explain why a common class interpretation is insufficient for the asserted node semantics; mere differing application contexts are not enough.",
+    "insufficient_evidence": "Available original/extraction/graph evidence does not support a confident semantic decision. Specify missing or ambiguous evidence."
+  },
+  "instance_rule": "Record concept_class_vs_local_instance explicitly. Shared class is separate from identity equality; graph coalescence alone does not prove same-individual identity or wrong-edge propagation.",
+  "per_node_required": ["audit_id", "node_id", "category", "confidence", "reason_zh", "class_instance_interpretation_zh", "source_assessments", "neighbor_audit", "limitations_zh"],
+  "source_assessment_required": ["publication_number", "evidence_quote", "claim_or_section", "source_chunk_ids", "role_zh", "extraction_description_support", "relevant_actual_edges"],
+  "edge_rule": "Inspect actual incident edges and their source mappings. Distinguish shared-node cross-document adjacency/possible unscoped path composition from an observed unsupported edge. Do not claim actual retrieval/generation propagation without saved evidence.",
+  "quote_rule": "Each publication gets at least one exact contiguous short quote from the indexed full document and a source chunk containing it; claim number checked against saved claims JSON. Preserve exact punctuation/spelling; use multiple quote fields rather than invented ellipses.",
+  "external_model_api_calls": 0,
+  "credentials_read": false
+}

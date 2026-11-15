@@ -1,0 +1,248 @@
+{
+  "audit_utc": "2026-10-29T14:43:51.737635+00:00",
+  "scope": "Immutable completed full graph/chunks plus stable extraction-cache entries; no API calls",
+  "official_version": "1.5.7",
+  "graph_size": {
+    "nodes": 612,
+    "edges": 994
+  },
+  "truncated_extraction": {
+    "publication_number": "US9218390B2",
+    "claim": 2,
+    "api_call": 191,
+    "missing_edge_endpoints": [
+      "Class-Based Language Model Features",
+      "GEO_TRI_FIRST"
+    ],
+    "specific_membership_edge_present": false,
+    "graph_edges_mentioning_geo_tri_first": [],
+    "retained_entity": {
+      "entity_id": "GEO_TRI_FIRST",
+      "entity_type": "data",
+      "description": "A class-based language model feature for the first token in a grouping of tokens of length three relating to a geographic term.",
+      "source_id": "US9218390B2-chunk-000",
+      "file_path": "US9218390B2.txt",
+      "created_at": 1793284503,
+      "truncate": "",
+      "id": "GEO_TRI_FIRST"
+    },
+    "other_chunk_recovery_checks": [
+      {
+        "chunk_id": "US9218390B2-chunk-000",
+        "full_doc_id": "US9218390B2",
+        "token_count": 1200,
+        "contains_source_feature_name": true,
+        "llm_cache_ids": [],
+        "extraction_feature_mentions": []
+      },
+      {
+        "chunk_id": "US9218390B2-chunk-001",
+        "full_doc_id": "US9218390B2",
+        "token_count": 1201,
+        "contains_source_feature_name": false,
+        "llm_cache_ids": [
+          "default:extract:14fee2407d55e25956ada7ecc76674f0"
+        ],
+        "extraction_feature_mentions": []
+      },
+      {
+        "chunk_id": "US9218390B2-chunk-002",
+        "full_doc_id": "US9218390B2",
+        "token_count": 502,
+        "contains_source_feature_name": false,
+        "llm_cache_ids": [
+          "default:extract:7c90aad65a26a0dcb87df7a397281a6d"
+        ],
+        "extraction_feature_mentions": []
+      }
+    ],
+    "claim2_feature_entity_and_edge_inventory": [
+      {
+        "feature": "GEO_UNI_FIRST",
+        "entity_present": true,
+        "membership_edge_present": true,
+        "claim2_lists_feature": true
+      },
+      {
+        "feature": "GEO_BI_FIRST",
+        "entity_present": true,
+        "membership_edge_present": true,
+        "claim2_lists_feature": true
+      },
+      {
+        "feature": "GEO_BI_SECOND",
+        "entity_present": true,
+        "membership_edge_present": true,
+        "claim2_lists_feature": true
+      },
+      {
+        "feature": "GEO_TRI_FIRST",
+        "entity_present": true,
+        "membership_edge_present": false,
+        "claim2_lists_feature": true
+      },
+      {
+        "feature": "GEO_TRI_SECOND",
+        "entity_present": true,
+        "membership_edge_present": false,
+        "claim2_lists_feature": true
+      },
+      {
+        "feature": "GEO_TRI_THIRD",
+        "entity_present": true,
+        "membership_edge_present": false,
+        "claim2_lists_feature": true
+      },
+      {
+        "feature": "ST_UNI_FIRST",
+        "entity_present": true,
+        "membership_edge_present": false,
+        "claim2_lists_feature": true
+      },
+      {
+        "feature": "ST_BI_FIRST",
+        "entity_present": true,
+        "membership_edge_present": false,
+        "claim2_lists_feature": true
+      },
+      {
+        "feature": "ST_BI_SECOND",
+        "entity_present": true,
+        "membership_edge_present": false,
+        "claim2_lists_feature": true
+      },
+      {
+        "feature": "ST_TRI_FIRST",
+        "entity_present": true,
+        "membership_edge_present": false,
+        "claim2_lists_feature": true
+      },
+      {
+        "feature": "ST_TRI_SECOND",
+        "entity_present": true,
+        "membership_edge_present": false,
+        "claim2_lists_feature": true
+      },
+      {
+        "feature": "ST_TRI_THIRD",
+        "entity_present": true,
+        "membership_edge_present": false,
+        "claim2_lists_feature": true
+      }
+    ],
+    "finding": "Specific unfinished membership edge is absent from final merged graph and was not recovered by other chunks. GEO_TRI_FIRST remains an entity whose description preserves the class-based feature meaning. The graph therefore has a missing explicit edge, not a missing entity or demonstrated total fact/answer loss.",
+    "attribution": "source complete within chunk→model output cutoff at3500→unfinished row rejected by parser→edge absent from full graph. Experimental output cap is the directly observed limiting condition; no evidence of indexing deletion or chunk-boundary causality.",
+    "truncated_chunk_cache_list": [],
+    "raw_response_preservation_note": "Official truncated response is not cached. Use captured API191 raw request/response for this stage trace."
+  },
+  "natural_cross_chunk_success": {
+    "publication_number": "US7991757B2",
+    "claims": [
+      {
+        "claim_number": 1,
+        "exact_claim": "1. A system for providing a network service to one or more content sites, the system comprising: a computer system comprising computer hardware programmed to implement at least: a network service interface operative to: receive a first request from a content site to store event data descriptive of user-generated events, the event data comprising identifiers of particular items and particular users to which the events correspond, the first request being received over a computer network; and receive a second request from the content site for item recommendations, the second request being received over the computer network; an event data repository operative to store the event data received from the content site, the event data repository comprising physical computer storage; a registration module configured to provide functionality for registering an external recommender with a recommendations service; a data interface operative to provide access to the event data to a plurality of external recommenders registered with the recommendations service, the plurality of external recommenders being provided by one or more entities that differ from a provider of the recommendations service; and the recommendations service comprising a recommendations retriever operative to, in response to the second request: query the plurality of external recommenders over the computer network for recommendations responsive to the second request, and receive recommendations and associated scores from the external recommenders over the computer network, at least some of the recommendations being generated based at least in part on the event data stored in the event data repository; and an optimization module configured to normalize the associated scores; wherein the recommendations service is further configured to select a subset of the recommendations, based at least in part on the normalized scores, to provide to the content site.",
+        "actual_containing_chunks": [
+          "US7991757B2-chunk-000"
+        ]
+      },
+      {
+        "claim_number": 27,
+        "exact_claim": "27. The system of claim 1 , wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.",
+        "actual_containing_chunks": [
+          "US7991757B2-chunk-001"
+        ]
+      }
+    ],
+    "raw_extraction_rows": [
+      {
+        "chunk_id": "US7991757B2-chunk-000",
+        "cache_id": "default:extract:165fbd694545aca044d0d459a62fd0cb",
+        "exact_relevant_rows": [
+          "entity<|#|>Registration Module<|#|>Artifact<|#|>A module configured to provide functionality for registering an external recommender with a recommendations service.",
+          "entity<|#|>Computer System<|#|>Artifact<|#|>A system comprising computer hardware programmed to implement the network service interface, event data repository, registration module, data interface, recommendations service, and optimization module.",
+          "relation<|#|>Registration Module<|#|>External Recommender<|#|>registers<|#|>The registration module provides functionality for registering an external recommender with the recommendations service."
+        ],
+        "contains_claim_word": false
+      },
+      {
+        "chunk_id": "US7991757B2-chunk-001",
+        "cache_id": "default:extract:05373d30b4b333298413a8a1419224e5",
+        "exact_relevant_rows": [
+          "entity<|#|>Registration Module<|#|>Artifact<|#|>A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+          "entity<|#|>External Recommender<|#|>Artifact<|#|>A recommender associated with a plurality of external recommenders, whose provider may provide machine readable descriptions and to which content sites may assign weights.",
+          "entity<|#|>Machine Readable Descriptions<|#|>Data<|#|>Descriptions of an external recommender provided by the provider of the external recommender.",
+          "relation<|#|>Registration Module<|#|>External Recommender<|#|>allows descriptions<|#|>The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+          "relation<|#|>External Recommender<|#|>Machine Readable Descriptions<|#|>described by<|#|>Machine readable descriptions describe the external recommender and are provided by its provider."
+        ],
+        "contains_claim_word": false
+      }
+    ],
+    "merged_nodes": [
+      {
+        "entity_id": "External Recommender",
+        "entity_type": "artifact",
+        "description": "A recommender registered with the recommendations service and provided by entities that differ from the provider of the recommendations service, accessed over the computer network.<SEP>A recommender associated with a plurality of external recommenders, whose provider may provide machine readable descriptions and to which content sites may assign weights.",
+        "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+        "file_path": "US7991757B2.txt",
+        "created_at": 1793284383,
+        "truncate": "",
+        "id": "External Recommender"
+      },
+      {
+        "entity_id": "Registration Module",
+        "entity_type": "artifact",
+        "description": "A module configured to provide functionality for registering an external recommender with a recommendations service.<SEP>A module configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+        "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+        "file_path": "US7991757B2.txt",
+        "created_at": 1793284383,
+        "truncate": "",
+        "id": "Registration Module"
+      },
+      {
+        "entity_id": "Machine Readable Descriptions",
+        "entity_type": "data",
+        "description": "Descriptions of an external recommender provided by the provider of the external recommender.",
+        "source_id": "US7991757B2-chunk-001",
+        "file_path": "US7991757B2.txt",
+        "created_at": 1793284383,
+        "truncate": "",
+        "id": "Machine Readable Descriptions"
+      }
+    ],
+    "merged_edges": [
+      {
+        "weight": 2.0,
+        "description": "The registration module provides functionality for registering an external recommender with the recommendations service.<SEP>The registration module is configured to allow a provider of an external recommender to provide machine readable descriptions of the external recommender.",
+        "keywords": "allows descriptions,registers",
+        "source_id": "US7991757B2-chunk-000<SEP>US7991757B2-chunk-001",
+        "file_path": "US7991757B2.txt",
+        "created_at": 1793284383,
+        "truncate": "",
+        "source": "External Recommender",
+        "target": "Registration Module"
+      },
+      {
+        "weight": 1.0,
+        "description": "Machine readable descriptions describe the external recommender and are provided by its provider.",
+        "keywords": "described by",
+        "source_id": "US7991757B2-chunk-001",
+        "file_path": "US7991757B2.txt",
+        "created_at": 1793284383,
+        "truncate": "",
+        "source": "External Recommender",
+        "target": "Machine Readable Descriptions"
+      }
+    ],
+    "finding": "The registration and machine-readable-description technical capabilities survive extraction and graph merge across chunks000/001. The registration edge preserves both sources and descriptions. Explicit legal Claim27→Claim1 dependency remains text in chunks, not a dedicated Claim-to-Claim edge.",
+    "technical_relation_loss_established": false,
+    "dedicated_claim_dependency_edge_materialized": false
+  },
+  "query_and_answer_status": "This trace does not inspect query outputs. Await Q11 and any targeted query before claiming answer success/failure.",
+  "review_method": "AI-assisted exact source/extraction/parser/graph audit; not independent human gold standard",
+  "source_file_hashes": {
+    "round2/results/full_graph.json": "d9798d566a0886b998fb682f4b98347376fe6369eeb2649127a078f93520a488",
+    "round2/storage_full/patent_r2_full/kv_store_text_chunks.json": "c3d55a105cebbe177d259d1820e2f47192a010aabef300e01b435dd9b1908906",
+    "round2/logs/api_0191_request.json": "9917dc73a43eff15bb4787477a1598ca7f59f8dc4d43f082d40eb134ed959f6c",
+    "round2/logs/api_0191_response.json": "8cd6f5280d1f29f7402bd6dd57bf6f7990a1d0f0891bfbf96991d0cdfd2bcb03"
+  }
+}

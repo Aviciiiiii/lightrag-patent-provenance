@@ -1,0 +1,31 @@
+{
+  "condition": "CROSS",
+  "repeat": 1,
+  "chunk_index": 0,
+  "chunk_id": "controlled-US7991757B2-cross-000",
+  "file_path": "US7991757B2.txt",
+  "call_id": 12,
+  "request_messages_exact_match": true,
+  "response": {
+    "id": 12,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "entity<|#|>Computer System<|#|>Artifact<|#|>A system comprising multiple physical computing devices, referenced in the claims.\nentity<|#|>Registration Module<|#|>Artifact<|#|>A module configured to allow a provider of an external recommender to provide something, referenced in the claims.\nentity<|#|>External Recommender<|#|>Artifact<|#|>One of a plurality of external recommenders associated with a provider, referenced in the claims.\nentity<|#|>Provider<|#|>Person<|#|>A provider of an external recommender associated with the plurality of external recommenders.\nrelation<|#|>Computer System<|#|>Registration Module<|#|>comprises, contains<|#|>The computer system comprises the registration module referenced in the claims.\nrelation<|#|>Registration Module<|#|>Provider<|#|>configured to allow<|#|>The registration module is configured to allow a provider of an external recommender to provide something.\nrelation<|#|>Provider<|#|>External Recommender<|#|>provides, associated with<|#|>The provider provides an external recommender associated with the plurality of external recommenders.\n<|COMPLETE|>",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1870,
+      "completion_tokens": 287,
+      "total_tokens": 2157,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1870
+    },
+    "reasoning_content_present": false
+  },
+  "completion_delimiter_present": true,
+  "valid_nontruncated": true
+}

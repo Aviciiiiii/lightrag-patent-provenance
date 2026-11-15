@@ -1,0 +1,34 @@
+{
+  "round2/results/full_graph.json": {
+    "bytes": 736987,
+    "sha256": "d9798d566a0886b998fb682f4b98347376fe6369eeb2649127a078f93520a488"
+  },
+  "round2/storage_full/patent_r2_full/kv_store_text_chunks.json": {
+    "bytes": 258931,
+    "sha256": "c3d55a105cebbe177d259d1820e2f47192a010aabef300e01b435dd9b1908906"
+  },
+  "round2/storage_full/patent_r2_full/kv_store_entity_chunks.json": {
+    "bytes": 131083,
+    "sha256": "d9a5f265e9f9feffd103ddc8855d01d3584de725ebb34d874f7c624fda743b85"
+  },
+  "round2/storage_full/patent_r2_full/kv_store_relation_chunks.json": {
+    "bytes": 246693,
+    "sha256": "73d1b92e9b1f5274d35e39be5e135b9e75498793d86bbcbcf402e06e4445314f"
+  },
+  "round2/storage_full/patent_r2_full/kv_store_full_docs.json": {
+    "bytes": 236378,
+    "sha256": "38f81b633b3ab5ed3b9b69fa5d3c3d708812bc8846014eced8590fc3c1991a2c"
+  },
+  "round2/storage_full/patent_r2_full/kv_store_llm_response_cache.json": {
+    "bytes": 1121475,
+    "sha256": "47e966a7dc15543c0d3a641d837adadc6dbbe88baf8e18e7aaad950332b8bb2f"
+  },
+  "round2/logs/api_0191_request.json": {
+    "bytes": 15041,
+    "sha256": "9917dc73a43eff15bb4787477a1598ca7f59f8dc4d43f082d40eb134ed959f6c"
+  },
+  "round2/logs/api_0191_response.json": {
+    "bytes": 14203,
+    "sha256": "8cd6f5280d1f29f7402bd6dd57bf6f7990a1d0f0891bfbf96991d0cdfd2bcb03"
+  }
+}

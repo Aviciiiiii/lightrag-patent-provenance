@@ -1,0 +1,64 @@
+{
+  "reviewed_utc": "2026-10-29T16:26:17.709690+00:00",
+  "status": "pass",
+  "report_sha256": "e0658f67d9816039c0e30a3824df2a0fea7eec4afdbf092a8cab408b01ede5af",
+  "review_scope": "Read-only cross-check of report generator and generated HTML against saved A/B/C evaluation, all12 raw chunk outputs, parsed evaluations, selective-source manifest, API191 validation subset, cost summary and protocol timing; no API or credential access.",
+  "major_issues": [],
+  "verified": {
+    "english_words": 87,
+    "api_calls": 21,
+    "prompt_tokens": 300642,
+    "completion_tokens": 6454,
+    "cache_tokens": 254848,
+    "cost_cache_cny": 0.15341392,
+    "cost_upper_cny": 0.652916,
+    "ablation_document_attribution": [
+      0,
+      3,
+      3
+    ],
+    "ablation_core_claim_completion": [
+      0,
+      0,
+      3
+    ],
+    "positive_wrong_source_assignment_in_prose": [
+      0,
+      0,
+      0
+    ],
+    "original_failure_not_reproduced_disclosed": true,
+    "C_original_claim_evidence_confound_disclosed": true,
+    "C_reference_id_collision": [
+      3,
+      3
+    ],
+    "C_quote_caveats_disclosed": true,
+    "chunk_same_complete_relation": 3,
+    "chunk_cross_complete_relation": 0,
+    "chunk_strict_direct_edge_both": 0,
+    "chunk_output_truncation": 0,
+    "chunk_control_not_natural_corpus_disclosed": true,
+    "surviving_fragments_and_untested_merge_recovery_disclosed": true,
+    "selective_official_AST_execution_disclosed": true,
+    "parser_reference_validation_scope_not_overstated": true,
+    "protocol_file_timing_disclosed": true,
+    "no_independent_human_annotation_or_statistical_significance_claim": true
+  },
+  "minor_wording_corrections": [
+    {
+      "current": "无关专利尾部References",
+      "recommended": "尾部References未提供目标专利证据",
+      "reason": "A/B mention other retrieved concepts, and the References have no sentence-level mapping. Their citations do not supply the target patent evidence, but calling every reference unrelated or an unequivocal wrong assignment overstates the available attribution granularity."
+    },
+    {
+      "current": "新文件仅在round3",
+      "recommended": "实验产物写入独立round3目录",
+      "reason": "Python imports may generate cache files in existing dependency/source directories; source/index integrity is verified, but an absolute statement about every new file is unnecessary."
+    }
+  ],
+  "additional_note": "Do not summarize A/B reference-list entries as proof that their neutral abstentions made a positive wrong-source assertion. The report correctly presents explicit prose misattribution separately.",
+  "minor_corrections_applied": true,
+  "final_report_sha256": "e0658f67d9816039c0e30a3824df2a0fea7eec4afdbf092a8cab408b01ede5af",
+  "final_checked_utc": "2026-10-29T16:26:26.579585+00:00"
+}

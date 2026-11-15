@@ -1,0 +1,46 @@
+--- dot/scripts/build_report.py
++++ repo/scripts/build_report.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -5 +7 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round2';E=html.escape
++ROOT=legacy_root('round2');R=ROOT/'round2';E=html.escape
+--- dot/scripts/collect_query_evidence.py
++++ repo/scripts/collect_query_evidence.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -4 +6 @@
+-R=Path(__file__).resolve().parents[2];D=R/'round2'
++R=legacy_root('round2');D=R/'round2'
+--- dot/scripts/package_evidence.py
++++ repo/scripts/package_evidence.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root, ENV_FILE  # path mapping only, see paths.py
+@@ -8 +10 @@
+-ROOT=Path(__file__).resolve().parents[2];R=ROOT/'round2'
++ROOT=legacy_root('round2');R=ROOT/'round2'
+@@ -24 +26 @@
+-cfg=dotenv_values('<EXTERNAL_DISK>/LightRAG/secrets/.env')
++cfg=dotenv_values(str(ENV_FILE))
+--- dot/scripts/repro_runtime.py
++++ repo/scripts/repro_runtime.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root, ENV_FILE  # path mapping only, see paths.py
+@@ -11 +13 @@
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = legacy_root('round2')
+@@ -16 +18 @@
+-DEFAULT_CONFIG = Path('<EXTERNAL_DISK>/LightRAG/secrets/.env')
++DEFAULT_CONFIG = ENV_FILE
+--- dot/scripts/safe_api.py
++++ repo/scripts/safe_api.py
+@@ -1,0 +2,2 @@
++import sys as _lrp_sys, pathlib as _lrp_pl; _lrp_sys.path.insert(0, str(_lrp_pl.Path(__file__).resolve().parents[3]))  # repo root (paths.py)
++from paths import legacy_root  # path mapping only, see paths.py
+@@ -14 +16 @@
+-ROOT=Path(__file__).resolve().parents[2]
++ROOT=legacy_root('round2')

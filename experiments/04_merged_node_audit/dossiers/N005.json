@@ -1,0 +1,611 @@
+{
+  "node_id": "Communication Network",
+  "entity_type": "artifact",
+  "graph_source_chunks": [
+    "US7756837B2-chunk-000",
+    "US7756837B2-chunk-001",
+    "US7756837B2-chunk-002",
+    "US8509827B2-chunk-000"
+  ],
+  "entity_chunk_store_sources": [
+    "US7756837B2-chunk-000",
+    "US7756837B2-chunk-001",
+    "US7756837B2-chunk-002",
+    "US8509827B2-chunk-000"
+  ],
+  "all_source_chunks": [
+    "US7756837B2-chunk-000",
+    "US7756837B2-chunk-001",
+    "US7756837B2-chunk-002",
+    "US8509827B2-chunk-000"
+  ],
+  "canonical_publications": [
+    "US7756837B2",
+    "US8509827B2"
+  ],
+  "publication_count": 2,
+  "actual_chunk_file_paths": [
+    "US7756837B2.txt",
+    "US8509827B2.txt"
+  ],
+  "graph_file_paths": [
+    "US8509827B2.txt",
+    "US7756837B2.txt"
+  ],
+  "graph_file_path_publications": [
+    "US7756837B2",
+    "US8509827B2"
+  ],
+  "missing_source_chunks": [],
+  "graph_source_matches_entity_chunk_store": true,
+  "raw_entity_source_chunks": [
+    "US7756837B2-chunk-000",
+    "US7756837B2-chunk-001",
+    "US7756837B2-chunk-002",
+    "US8509827B2-chunk-000"
+  ],
+  "raw_relation_endpoint_source_chunks": [
+    "US7756837B2-chunk-000",
+    "US7756837B2-chunk-001",
+    "US7756837B2-chunk-002",
+    "US8509827B2-chunk-000"
+  ],
+  "graph_node": {
+    "entity_id": "Communication Network",
+    "entity_type": "artifact",
+    "description": "A network through which context data may be communicated to a mobile device and whose state may serve as a specified parameter.<SEP>A network over which queries are received and responses transmitted electronically; may be the Internet.<SEP>A network such as the Internet over which queries are received electronically and responses are transmitted electronically to a party.<SEP>A network over which queries are received and responses transmitted electronically, which may be the Internet.",
+    "source_id": "US8509827B2-chunk-000<SEP>US7756837B2-chunk-000<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+    "file_path": "US8509827B2.txt<SEP>US7756837B2.txt",
+    "created_at": 1793284549,
+    "truncate": "",
+    "id": "Communication Network"
+  },
+  "incident_edge_count": 4,
+  "audit_id": "N005",
+  "scope": "round2 original 20-patent baseline only",
+  "source_documents": [
+    {
+      "publication_number": "US7756837B2",
+      "file_paths": [
+        "US7756837B2.txt"
+      ],
+      "source_chunks": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ],
+      "sources": [
+        {
+          "publication_number": "US7756837B2",
+          "full_doc_id": "US7756837B2",
+          "file_path": "US7756837B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "816fc9cf05223956b4e376ef0f6e135985e9f900de35575a229b3fb046a5e544",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 5990,
+          "content": "Publication number: US7756837B2\nTitle: Methods and apparatus for searching backup data based on content and attributes\n\nABSTRACT\nMethods and apparatus are disclosed that permit the transparent bridging of a broad range of backup storage devices, such that backup software will identify an intermediate device as a one of those storage devices and will transparently send their backup data-stream thereto as part of the existing standard backup process. Upon receipt of a backup data-stream from the backup software, the methods and apparatus provide for analysis of the data elements in the data-stream, collection of management information about those data elements, and storage of the management information in an easily accessible format for subsequent review and query by users and administrators of the original data. The same backup data-stream is stored on any standard backup storage device, including the imitated backup storage device.\n\nCLAIMS\n1. A method, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and storing the management data in a searchable format in a database, wherein the method is carried out by a device that is transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 2. The method of claim 1 , further comprising one of: (i) passing the data-stream to the backup storage device before the extraction step; (ii) passing the data-stream to the backup storage device substantially simultaneously with the extraction step; and (iii) passing the data-stream to the backup storage device after the extraction step. 3. The method of claim 2 , further comprising: reading back data from the backup storage device after the data-stream has been passed to the backup storage device to re-create the data-stream; and performing the extraction step on the re-created data-stream. 4. The method of claim 1 , wherein the source is taken from the group consisting of a computer server, a desktop computer, a laptop computer, a notebook computer, a personal digital assistant, and a source database, when the management data includes the identifier of the source of the data-stream. 5. The method of claim 1 , wherein the volume is taken from the group consisting of computer disk drives and computer sub-drives, when the management data includes the volume information. 6. The method of claim 1 , wherein a plurality of data-streams adhere to the same or different protocols, the method further comprising converting the different protocols to a protocol supported by the backup storage device. 7. The method of claim 1 , wherein the extraction step includes at least one of: (i) separating distinct data sets from the data-stream; and (ii) segregating types of data within the data sets into data groups. 8. The method of claim 7 , wherein: the distinct data sets include at least one of file folders, data files, and types of data files; and the types of data include at least one of: text data, image data, audio data, graphic data, tabular data, hyperlink data, and executable data. 9. The method of claim 8 , further comprising indexing at least one of the types of data to obtain keywords thereof. 10. The method of claim 7 , further comprising using a predetermined rule set to recognize the distinct data sets of the data-stream. 11. The method of claim 10 , wherein the predetermined rule set is based on a data-stream protocol of a third party backup data product intended to be used to store the data-stream on the backup storage device. 12. The method of claim 10 , wherein the predetermined rule set is taken from a group of pre-determined rule sets, each set based on a data-stream protocol of a third party backup data product. 13. A method, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data being descriptive of the data of the data-stream; storing the management data in a searchable format in a database; receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party, wherein the method is carried out by a device that is transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 14. The method of claim 13 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 15. The method of claim 14 , wherein the communication network is the Internet. 16. A processor operable to execute a software program, the software program causing the processor to perform steps, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data",
+          "llm_cache_list": [
+            "default:extract:dd4cc38c8b4390407aeadd85a7ef3593"
+          ],
+          "chunk_id": "US7756837B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US7756837B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "cfcb05ec28398152d92adf72b59710da1ed619ca1dcfc1423fdd2c8d5980b6f0"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 11,
+              "raw_line": "entity<|#|>Communication Network<|#|>Artifact<|#|>A network such as the Internet over which queries are received electronically and responses are transmitted electronically to a party.",
+              "fields": [
+                "entity",
+                "Communication Network",
+                "Artifact",
+                "A network such as the Internet over which queries are received electronically and responses are transmitted electronically to a party."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 53,
+              "raw_line": "relation<|#|>Party<|#|>Communication Network<|#|>Receives Responses Over<|#|>The party receives responses electronically over the communication network.",
+              "fields": [
+                "relation",
+                "Party",
+                "Communication Network",
+                "Receives Responses Over",
+                "The party receives responses electronically over the communication network."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "cache_key": "default:extract:dd4cc38c8b4390407aeadd85a7ef3593",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 54,
+              "raw_line": "relation<|#|>Communication Network<|#|>Internet<|#|>Is A<|#|>The communication network may be the Internet.",
+              "fields": [
+                "relation",
+                "Communication Network",
+                "Internet",
+                "Is A",
+                "The communication network may be the Internet."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 5266,
+              "chunk_char_end": 5707,
+              "text": "t it is apparent to the source that the data-stream is being delivered to a backup storage device. 14. The method of claim 13 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 15. The method of claim 14 , wherein the communication network is the Internet. 16. A processor operable to execute a software progra"
+            },
+            {
+              "chunk_char_start": 5371,
+              "chunk_char_end": 5812,
+              "text": "e method of claim 13 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 15. The method of claim 14 , wherein the communication network is the Internet. 16. A processor operable to execute a software program, the software program causing the processor to perform steps, comprising: receiving at least one data-s"
+            },
+            {
+              "chunk_char_start": 5435,
+              "chunk_char_end": 5876,
+              "text": "lly over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 15. The method of claim 14 , wherein the communication network is the Internet. 16. A processor operable to execute a software program, the software program causing the processor to perform steps, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extract"
+            }
+          ],
+          "lexical_occurrence_count": 3
+        },
+        {
+          "publication_number": "US7756837B2",
+          "full_doc_id": "US7756837B2",
+          "file_path": "US7756837B2.txt",
+          "chunk_order_index": 1,
+          "tokens": 1200,
+          "content_sha256": "8b1a94961ae323fa62890371b8df43eadff7e06ff68633f58c71a9050db94c86",
+          "exact_doc_char_start": 5468,
+          "exact_doc_char_end": 11353,
+          "content": "and the one or more responses are transmitted electronically to the party over the communication network. 15. The method of claim 14 , wherein the communication network is the Internet. 16. A processor operable to execute a software program, the software program causing the processor to perform steps, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and storing the management data in a searchable format in a database wherein the steps carried out by the processor are such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 17. The processor of claim 16 , further comprising one of: (i) passing the data-stream to the backup storage device before the extraction step; (ii) passing the data-stream to the backup storage device substantially simultaneously with the extraction step; and (iii) passing the data-stream to the backup storage device after the extraction step. 18. The processor of claim 17 , further comprising: reading back data from the backup storage device after the data-stream has been passed to the backup storage device to re-create the data-stream; and performing the extraction step on the re-created data-stream. 19. The processor of claim 16 , wherein the source is taken from the group consisting of a computer server, a desktop computer, a laptop computer, a notebook computer, a personal digital assistant, and a source database, when the management data includes the identifier of the source of the data-stream. 20. The processor of claim 16 , wherein the volume is taken from the group consisting of computer disk drives and computer sub-drives, when the management data includes the volume information. 21. The processor of claim 16 , wherein a plurality of data-streams adhere to the same or different protocols, the steps further include converting the different protocols to a protocol supported by the backup storage device. 22. The processor of claim 16 , wherein the extraction step includes at least one of: (i) separating distinct data sets from the data-stream; and (ii) segregating types of data within the data sets into data groups. 23. The processor of claim 22 , wherein: the distinct data sets include at least one of file folders, data files, and types of data files; and the types of data include at least one of: text data, image data, audio data, graphic data, tabular data, hyperlink data, and executable data. 24. The processor of claim 23 , further comprising indexing at least one of the types of data to obtain keywords thereof. 25. The processor of claim 22 , further comprising using a predetermined rule set to recognize the distinct data sets of the data-stream. 26. The processor of claim 25 , wherein the predetermined rule set is based on a data-stream protocol of a third party backup data product intended to be used to store the data-stream on the backup storage device. 27. The processor of claim 25 , wherein the predetermined rule set is taken from a group of pre-determined rule sets, each set based on a data-stream protocol of a third party backup data product. 28. The processor of claim 16 , further comprising: receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party. 29. The processor of claim 28 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 30. The processor of claim 29 , wherein the communication network is the Internet. 31. An apparatus, comprising: means for receiving at least one data-stream intended for archiving on a backup storage device; means for extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and means for storing the management data in a searchable format in a database wherein the receiving, extracting, and storing actions are carried out such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 32. A storage medium",
+          "llm_cache_list": [
+            "default:extract:a234af18887941703cfa00cdc75f7444"
+          ],
+          "chunk_id": "US7756837B2-chunk-001",
+          "extraction_records": [
+            {
+              "chunk_id": "US7756837B2-chunk-001",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "4d3c83871d912887d1d45e4c226af68edf1390b619d2df1afce23ca479d93d32"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 9,
+              "raw_line": "entity<|#|>Communication Network<|#|>Other<|#|>A network over which queries are received and responses transmitted electronically; may be the Internet.",
+              "fields": [
+                "entity",
+                "Communication Network",
+                "Other",
+                "A network over which queries are received and responses transmitted electronically; may be the Internet."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 34,
+              "raw_line": "relation<|#|>Query<|#|>Communication Network<|#|>received over<|#|>The query is received electronically over a communication network.",
+              "fields": [
+                "relation",
+                "Query",
+                "Communication Network",
+                "received over",
+                "The query is received electronically over a communication network."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "cache_key": "default:extract:a234af18887941703cfa00cdc75f7444",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 35,
+              "raw_line": "relation<|#|>Communication Network<|#|>Internet<|#|>is<|#|>The communication network is the Internet.",
+              "fields": [
+                "relation",
+                "Communication Network",
+                "Internet",
+                "is",
+                "The communication network is the Internet."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 344,
+              "text": "and the one or more responses are transmitted electronically to the party over the communication network. 15. The method of claim 14 , wherein the communication network is the Internet. 16. A processor operable to execute a software program, the software program causing the processor to perform steps, comprising: receiving at least one data-s"
+            },
+            {
+              "chunk_char_start": 0,
+              "chunk_char_end": 408,
+              "text": "and the one or more responses are transmitted electronically to the party over the communication network. 15. The method of claim 14 , wherein the communication network is the Internet. 16. A processor operable to execute a software program, the software program causing the processor to perform steps, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extract"
+            },
+            {
+              "chunk_char_start": 4210,
+              "chunk_char_end": 4651,
+              "text": "e management data stored in the database; and providing the one or more responses to the party. 29. The processor of claim 28 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 30. The processor of claim 29 , wherein the communication network is the Internet. 31. An apparatus, comprising: means for receiving "
+            },
+            {
+              "chunk_char_start": 4315,
+              "chunk_char_end": 4756,
+              "text": "rocessor of claim 28 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 30. The processor of claim 29 , wherein the communication network is the Internet. 31. An apparatus, comprising: means for receiving at least one data-stream intended for archiving on a backup storage device; means for extracting manageme"
+            },
+            {
+              "chunk_char_start": 4382,
+              "chunk_char_end": 4823,
+              "text": " over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 30. The processor of claim 29 , wherein the communication network is the Internet. 31. An apparatus, comprising: means for receiving at least one data-stream intended for archiving on a backup storage device; means for extracting management data from the data-stream, the management data including: (i) an"
+            }
+          ],
+          "lexical_occurrence_count": 5
+        },
+        {
+          "publication_number": "US7756837B2",
+          "full_doc_id": "US7756837B2",
+          "file_path": "US7756837B2.txt",
+          "chunk_order_index": 2,
+          "tokens": 1200,
+          "content_sha256": "c301fb50a9bcd91ff8802abcebcecf3db19cbcb3773547c471bfbded65e67e9c",
+          "exact_doc_char_start": 10847,
+          "exact_doc_char_end": 16739,
+          "content": "or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and means for storing the management data in a searchable format in a database wherein the receiving, extracting, and storing actions are carried out such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 32. A storage medium containing a software program, the program being capable of causing a processor to carry out actions, comprising: receiving at least one data-stream intended for archiving on a backup storage device; extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or more authors generating the data; (iv) information concerning types of data files of the data-stream; and (v) keywords of the data files of the data-stream; and storing the management data in a searchable format in a database wherein the steps carried out by the processor such that they are transparent to a source producing the data-stream such that it is apparent to the source that the data-stream is being delivered to a backup storage device. 33. The storage medium of claim 32 , further comprising one of: (i) passing the data-stream to the backup storage device before the extraction step; (ii) passing the data-stream to the backup storage device substantially simultaneously with the extraction step; and (iii) passing the data-stream to the backup storage device after the extraction step. 34. The storage medium of claim 33 , further comprising: reading back data from the backup storage device after the data-stream has been passed to the backup storage device to re-create the data-stream; and performing the extraction step on the re-created data-stream. 35. The storage medium of claim 32 , wherein the source is taken from the group consisting of a computer server, a desktop computer, a laptop computer, a notebook computer, a personal digital assistant, and a source database, when the management data includes the identifier of the source of the data-stream. 36. The storage medium of claim 32 , wherein the volume is taken from the group consisting of computer disk drives and computer sub-drives, when the management data includes the volume information. 37. The storage medium of claim 32 , wherein a plurality of data-streams adhere to the same or different protocols, the actions include converting the different protocols to a protocol supported by the backup storage device. 38. The storage medium of claim 32 , wherein the extraction step includes at least one of: (i) separating distinct data sets from the data-stream; and (ii) segregating types of data within the data sets into data groups. 39. The storage medium of claim 38 , wherein: the distinct data sets include at least one of file folders, data files, and types of data files; and the types of data include at least one of: text data, image data, audio data, graphic data, tabular data, hyperlink data, and executable data. 40. The storage medium of claim 39 , further comprising indexing at least one of the types of data to obtain keywords thereof. 41. The storage medium of claim 38 , further comprising using a predetermined rule set to recognize the distinct data sets of the data-stream. 42. The storage medium of claim 41 , wherein the predetermined rule set is based on a data-stream protocol of a third party backup data product intended to be used to store the data-stream on the backup storage device. 43. The storage medium of claim 41 , wherein the predetermined rule set is taken from a group of pre-determined rule sets, each set based on a data-stream protocol of a third party backup data product. 44. The storage medium of claim 32 , further comprising: receiving at least one query from a party concerning the archived data-stream; formulating one or more responses to the query based on an analysis of the management data stored in the database; and providing the one or more responses to the party. 45. The storage medium of claim 44 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 46. The storage medium of claim 45 , wherein the communication network is the Internet. 47. An apparatus, comprising: means for receiving at least one data-stream from one or more sources, the data-stream intended for archiving on a backup storage device; means for carrying out a storage router function as between the sources and the backup storage device; means for extracting management data from the data-stream, the management data including: (i) an identifier of a source of the data-stream; (ii) volume information concerning where the data of the data-stream were stored, including at least one of: a size of each volume of data, space consumed by each volume, and space available in each volume; (iii) metadata of the data of the data-stream, including at least one of: one or more identifiers of one or more groups of users generating the data, one or more identifiers of one or more users having access to the data, file size of the data, folder size of the data, and one or more identifiers of one or",
+          "llm_cache_list": [
+            "default:extract:64f8f02b9ec1461411eea00af38a5684"
+          ],
+          "chunk_id": "US7756837B2-chunk-002",
+          "extraction_records": [
+            {
+              "chunk_id": "US7756837B2-chunk-002",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "eb197a0cf78cf463212ad664302636f45f8a193d53d7b3e5587313d1e72d1d57"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+              "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 14,
+              "raw_line": "entity<|#|>Communication Network<|#|>Other<|#|>A network over which queries are received and responses transmitted electronically, which may be the Internet.",
+              "fields": [
+                "entity",
+                "Communication Network",
+                "Other",
+                "A network over which queries are received and responses transmitted electronically, which may be the Internet."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+              "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 40,
+              "raw_line": "relation<|#|>Query<|#|>Communication Network<|#|>electronic transmission<|#|>The query is received electronically over the communication network and responses are transmitted electronically over it.",
+              "fields": [
+                "relation",
+                "Query",
+                "Communication Network",
+                "electronic transmission",
+                "The query is received electronically over the communication network and responses are transmitted electronically over it."
+              ]
+            },
+            {
+              "raw_record_id": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+              "cache_key": "default:extract:64f8f02b9ec1461411eea00af38a5684",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 41,
+              "raw_line": "relation<|#|>Communication Network<|#|>Internet<|#|>type of<|#|>The communication network may be the Internet.",
+              "fields": [
+                "relation",
+                "Communication Network",
+                "Internet",
+                "type of",
+                "The communication network may be the Internet."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 4571,
+              "chunk_char_end": 5012,
+              "text": "agement data stored in the database; and providing the one or more responses to the party. 45. The storage medium of claim 44 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 46. The storage medium of claim 45 , wherein the communication network is the Internet. 47. An apparatus, comprising: means for recei"
+            },
+            {
+              "chunk_char_start": 4676,
+              "chunk_char_end": 5117,
+              "text": "e medium of claim 44 , wherein the query is received electronically over a communication network and the one or more responses are transmitted electronically to the party over the communication network. 46. The storage medium of claim 45 , wherein the communication network is the Internet. 47. An apparatus, comprising: means for receiving at least one data-stream from one or more sources, the data-stream intended for archiving on a backu"
+            },
+            {
+              "chunk_char_start": 4748,
+              "chunk_char_end": 5189,
+              "text": " a communication network and the one or more responses are transmitted electronically to the party over the communication network. 46. The storage medium of claim 45 , wherein the communication network is the Internet. 47. An apparatus, comprising: means for receiving at least one data-stream from one or more sources, the data-stream intended for archiving on a backup storage device; means for carrying out a storage router function as be"
+            }
+          ],
+          "lexical_occurrence_count": 3
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The party receives responses electronically over the communication network.",
+          "keywords": "Receives Responses Over",
+          "source_id": "US7756837B2-chunk-000",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Communication Network",
+          "target": "Party",
+          "edge_index": 110,
+          "source_chunks": [
+            "US7756837B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 3.0,
+          "description": "The communication network is the Internet.<SEP>The communication network may be the Internet.",
+          "keywords": "Is A,is,type of",
+          "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Communication Network",
+          "target": "Internet",
+          "edge_index": 111,
+          "source_chunks": [
+            "US7756837B2-chunk-000",
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        },
+        {
+          "weight": 2.0,
+          "description": "The query is received electronically over a communication network.<SEP>The query is received electronically over the communication network and responses are transmitted electronically over it.",
+          "keywords": "electronic transmission,received over",
+          "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+          "file_path": "US7756837B2.txt",
+          "created_at": 1793284552,
+          "truncate": "",
+          "source": "Communication Network",
+          "target": "Query",
+          "edge_index": 112,
+          "source_chunks": [
+            "US7756837B2-chunk-001",
+            "US7756837B2-chunk-002"
+          ],
+          "canonical_publications": [
+            "US7756837B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    },
+    {
+      "publication_number": "US8509827B2",
+      "file_paths": [
+        "US8509827B2.txt"
+      ],
+      "source_chunks": [
+        "US8509827B2-chunk-000"
+      ],
+      "sources": [
+        {
+          "publication_number": "US8509827B2",
+          "full_doc_id": "US8509827B2",
+          "file_path": "US8509827B2.txt",
+          "chunk_order_index": 0,
+          "tokens": 1200,
+          "content_sha256": "6773cf78665bbb35e2353f276d6c19b21d69539b45a17c7fb0645c99c7afd791",
+          "exact_doc_char_start": 0,
+          "exact_doc_char_end": 6249,
+          "content": "Publication number: US8509827B2\nTitle: Methods and apparatus of context-data acquisition and ranking\n\nABSTRACT\nDisclosed are a system, method, and article of manufacture of a context-data acquisition and ranking. A context-data type is determined from a query. At least one context-data source that provides the context-data type is identified. A request for a context data of the context-data type is generated from the at least one context data source. A received context data from the at least one context data source according a specified parameter may be ranked. The received context data may be provided to the device that generated a short message. The received context data may be provided to a recipient mobile device. The received context data may be associated with a component of a short message generated by a device that generated the query. The received context data may be appended to the short message.\n\nCLAIMS\nWhat is claimed is: 1. A method comprising: receiving a short message from a mobile device with a server; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type from the at least one context data source. 2. The method of claim further comprising: providing the received context data to the device that generated a short message. 3. The method of claim further comprising: providing the received context data to a recipient mobile device, 4. The method of claim 3 , wherein providing the received context data to the recipient mobile device further comprises: associating the received context data with a component of a short message generated by a device that generated the query. 5. The method of claim 4 , wherein providing the received context data to the mobile device further comprises: appending the received context data to the short message. 6. The method of claim 5 further comprising: forwarding the short message and the received context data to the recipient mobile device. 7. The method of claim 4 , wherein providing the received context data to the mobile device further comprises: encoding the received context data into the short message with a markup language. 8. The method of claim 1 , wherein providing the request for the context data of the context-data type to the at least one context data source further comprises: providing the request for the context data of the context-data type to a plurality of context-data sources. 9. The method of claim 1 further comprising: storing the received context data in a database available to a recipient mobile device, 10. The method of claim 9 further comprising: forwarding a Uniform Resource Identifier (URI) of a database server to the receiving mobile device, 11. The method of claim 9 further comprising: appending metadata instructions to query the database for the received context data in the short message. 12. The method of claim 1 , wherein the specified parameter comprises a state of the receiving mobile device. 13. The method of claim 1 , wherein the specified parameter comprises a state of an available communication network. 14. The method of claim 1 , wherein the specified parameter comprises a cost value of the context data as provided by the context-data source. 15. The method of claim 1 , wherein the context-data type provides information about a context of the device that generated the short message. 16. The method of claim 15 , wherein the mobile device that generated the short message comprises a smart phone. 17. The method of claim 1 , further comprising a computer readable medium comprising computer-executable instructions adapted to perform the method of claim 1 . 18. A computerized-apparatus comprising: at least one memory having program instructions, and at least one processor configured to execute the program instructions to perform the operations of: receiving a short message from a mobile device; algorithmically determining a context-data type, wherein the context-data type is determined by a meaning of a term of the short message, and wherein the context-data type provides information about an environment of the mobile device; identifying at least one context-data source that provides the context-data type; algorithmically ranking the at least one context data source according a specified parameter, wherein the specified parameter comprises a pecuniary cost to acquire the context data from the at least one context data source; and generating a request for a context data of the context-data type to the at least one context data source. 19. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of rendering a context data from the at least one context-data source for communication through a communication network to a mobile device. 20. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of appending the context data from the at least one context-data source to a short message generated by the mobile device. 21. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of selecting the context-data. from a list of context-data elements weighted according to at least one metric. 22. A method comprising: collecting a set of context-data. from at least one context-data provider with at least one server, wherein the context-data. is related to a meaning of a short message content; algorithmically selecting a relevant context data according to a metric, wherein the metric comprises a monetary cost of the context-data, and wherein the context-data is obtained by a physical sensor;",
+          "llm_cache_list": [
+            "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e"
+          ],
+          "chunk_id": "US8509827B2-chunk-000",
+          "extraction_records": [
+            {
+              "chunk_id": "US8509827B2-chunk-000",
+              "origin": "official_llm_response_cache",
+              "finish_reason": "not recorded in cache",
+              "response_file": null,
+              "request_file": null,
+              "content_sha256": "3269f5ba7724a2383297188a787e202de357355c0830407a79fdedbe8d5d6974"
+            }
+          ],
+          "raw_entity_rows": [
+            {
+              "raw_record_id": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+              "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 19,
+              "raw_line": "entity<|#|>Communication Network<|#|>Artifact<|#|>A network through which context data may be communicated to a mobile device and whose state may serve as a specified parameter.",
+              "fields": [
+                "entity",
+                "Communication Network",
+                "Artifact",
+                "A network through which context data may be communicated to a mobile device and whose state may serve as a specified parameter."
+              ]
+            }
+          ],
+          "raw_relation_endpoint_rows": [
+            {
+              "raw_record_id": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+              "cache_key": "default:extract:6ecbf8bfb377b4fed873f8bdc0932b3e",
+              "response_file": null,
+              "finish_reason": "not recorded in cache",
+              "line_number": 41,
+              "raw_line": "relation<|#|>Specified Parameter<|#|>Communication Network<|#|>Includes State Of<|#|>The specified parameter may comprise a state of an available communication network.",
+              "fields": [
+                "relation",
+                "Specified Parameter",
+                "Communication Network",
+                "Includes State Of",
+                "The specified parameter may comprise a state of an available communication network."
+              ]
+            }
+          ],
+          "lexical_context_windows": [
+            {
+              "chunk_char_start": 3388,
+              "chunk_char_end": 3829,
+              "text": "1 , wherein the specified parameter comprises a state of the receiving mobile device. 13. The method of claim 1 , wherein the specified parameter comprises a state of an available communication network. 14. The method of claim 1 , wherein the specified parameter comprises a cost value of the context data as provided by the context-data source. 15. The method of claim 1 , wherein the context-data type provides information about a context "
+            },
+            {
+              "chunk_char_start": 5105,
+              "chunk_char_end": 5546,
+              "text": "cessor is configured to execute the program instructions to perform the operation of rendering a context data from the at least one context-data source for communication through a communication network to a mobile device. 20. The apparatus of claim 18 , wherein the at least one processor is configured to execute the program instructions to perform the operation of appending the context data from the at least one context-data source to a "
+            }
+          ],
+          "lexical_occurrence_count": 2
+        }
+      ],
+      "incident_edges_from_publication": [
+        {
+          "weight": 1.0,
+          "description": "The specified parameter may comprise a state of an available communication network.",
+          "keywords": "Includes State Of",
+          "source_id": "US8509827B2-chunk-000",
+          "file_path": "US8509827B2.txt",
+          "created_at": 1793284125,
+          "truncate": "",
+          "source": "Specified Parameter",
+          "target": "Communication Network",
+          "edge_index": 95,
+          "source_chunks": [
+            "US8509827B2-chunk-000"
+          ],
+          "canonical_publications": [
+            "US8509827B2"
+          ],
+          "unmapped_source_chunks": []
+        }
+      ]
+    }
+  ],
+  "all_incident_edges": [
+    {
+      "weight": 1.0,
+      "description": "The specified parameter may comprise a state of an available communication network.",
+      "keywords": "Includes State Of",
+      "source_id": "US8509827B2-chunk-000",
+      "file_path": "US8509827B2.txt",
+      "created_at": 1793284125,
+      "truncate": "",
+      "source": "Specified Parameter",
+      "target": "Communication Network",
+      "edge_index": 95,
+      "source_chunks": [
+        "US8509827B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US8509827B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 1.0,
+      "description": "The party receives responses electronically over the communication network.",
+      "keywords": "Receives Responses Over",
+      "source_id": "US7756837B2-chunk-000",
+      "file_path": "US7756837B2.txt",
+      "created_at": 1793284552,
+      "truncate": "",
+      "source": "Communication Network",
+      "target": "Party",
+      "edge_index": 110,
+      "source_chunks": [
+        "US7756837B2-chunk-000"
+      ],
+      "canonical_publications": [
+        "US7756837B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 3.0,
+      "description": "The communication network is the Internet.<SEP>The communication network may be the Internet.",
+      "keywords": "Is A,is,type of",
+      "source_id": "US7756837B2-chunk-000<SEP>US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+      "file_path": "US7756837B2.txt",
+      "created_at": 1793284552,
+      "truncate": "",
+      "source": "Communication Network",
+      "target": "Internet",
+      "edge_index": 111,
+      "source_chunks": [
+        "US7756837B2-chunk-000",
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ],
+      "canonical_publications": [
+        "US7756837B2"
+      ],
+      "unmapped_source_chunks": []
+    },
+    {
+      "weight": 2.0,
+      "description": "The query is received electronically over a communication network.<SEP>The query is received electronically over the communication network and responses are transmitted electronically over it.",
+      "keywords": "electronic transmission,received over",
+      "source_id": "US7756837B2-chunk-001<SEP>US7756837B2-chunk-002",
+      "file_path": "US7756837B2.txt",
+      "created_at": 1793284552,
+      "truncate": "",
+      "source": "Communication Network",
+      "target": "Query",
+      "edge_index": 112,
+      "source_chunks": [
+        "US7756837B2-chunk-001",
+        "US7756837B2-chunk-002"
+      ],
+      "canonical_publications": [
+        "US7756837B2"
+      ],
+      "unmapped_source_chunks": []
+    }
+  ],
+  "review_status": "unreviewed"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "processed",
+  "content_summary": "Publication number: US9589231B2\nTitle: Social medical network for diagnosis assistance\n\nABSTRACT\nA method for diagnosis assistance exploits similarity between a new medical case and existing medical cases and experts when embedded in a common embeddi...",
+  "content_length": 8799,
+  "created_at": "2026-11-15T03:34:16.207522+00:00",
+  "updated_at": "2026-11-15T03:34:40.602358+00:00",
+  "file_path": "US9589231B2.txt",
+  "track_id": "insert_20261114_193416_f8ba467f",
+  "content_hash": "0bea5d4e29945f8db772e6df912bd6a1",
+  "metadata": {
+    "parse_start_time": 1794713656,
+    "parse_stage_skipped": true,
+    "parse_format": "raw",
+    "parse_engine": "legacy",
+    "analyzing_start_time": 1794713656,
+    "analyzing_stage_skipped": true,
+    "kg_write_state": "graph_mutation_started",
+    "process_start_time": 1794713656,
+    "process_end_time": 1794713680,
+    "chunk_method": "legacy_chunking_func",
+    "chunk_opts": "size=1200, split_only=False, overlap=100"
+  },
+  "chunks_count": 2,
+  "chunks_list": [
+    "US9589231B2-chunk-000",
+    "US9589231B2-chunk-001"
+  ]
+}

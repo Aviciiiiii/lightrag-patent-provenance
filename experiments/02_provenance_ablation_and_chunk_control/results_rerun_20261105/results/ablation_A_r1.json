@@ -1,0 +1,27 @@
+{
+  "condition": "A",
+  "repeat": 1,
+  "call_id": 1,
+  "request_exact_match": true,
+  "messages_sha256": "2fca4d69c1c5554b570ff04a57ccc8ae1c8af87862bae14e46a5f755a4a3490e",
+  "response": {
+    "id": 1,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "I do not have enough information to answer this query. The provided **Context** does not contain any document chunk, knowledge-graph entity, or reference entry for **US7991757B2**. The reference document list includes patents such as US10867122B1, US9374411B1, US8655901B1, US7756837B2, US8095432B1, US9514120B1, US8719408B2, US8069128B2, US11423041B2, US9304738B1, US9218390B2, US9514753B2, and US9118735B1, but none of these is US7991757B2.\n\nBecause the patent is absent, I cannot:\n- state what registration capability is specified in **Claim 1** of US7991757B2,\n- state what additional capability **Claim 27** adds,\n- explain the dependency between those claims, or\n- quote the supporting wording from each claim.\n\nThe knowledge graph does contain a related concept, \"Registration Module,\" described as \"configured to provide functionality for registering an external recommender with a recommendations service,\" and \"Registration Submission,\" described as \"a submission received from recommender providers that is operative to request registration of recommenders.\" However, these entities are not linked in the evidence to US7991757B2, and no claim text from that patent is provided. Any attempt to attribute these descriptions to US7991757B2's Claim 1 or Claim 27 would be inference, not explicit evidence, and is therefore not supportable here.\n\nTo answer, the full text (or at least Claims 1 and 27) of US7991757B2 would need to be supplied in the Context.\n\n### References\n\n- [1] US10867122B1.txt\n- [5] US8095432B1.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 28360,
+      "completion_tokens": 394,
+      "total_tokens": 28754,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 28360
+    },
+    "reasoning_content_present": false
+  }
+}

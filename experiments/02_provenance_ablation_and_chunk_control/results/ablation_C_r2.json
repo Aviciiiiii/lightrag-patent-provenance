@@ -1,0 +1,27 @@
+{
+  "condition": "C",
+  "repeat": 2,
+  "call_id": 5,
+  "request_exact_match": true,
+  "messages_sha256": "2206db34c3147b68040fba5aded3384b370174c241cb89dc9f2a9c3a6a1f3a2b",
+  "response": {
+    "id": 5,
+    "model_returned": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "content": "**Claim 1 of US7991757B2** specifies a registration module within the claimed system. The claim recites: \"a registration module configured to provide functionality for registering an external recommender with a recommendations service.\" This is the explicit registration capability stated in Claim 1.\n\n**Claim 27** adds a further capability to that module. It recites: \"The system of claim 1, wherein the registration module is further configured to allow a provider of an external recommender associated with the plurality of external recommenders to provide machine readable descriptions of the external recommender.\"\n\n**Dependency:** Claim 27 explicitly depends on Claim 1 (\"The system of claim 1\"), so it narrows the Claim 1 system rather than defining a separate one. The added limitation concerns who may supply the descriptions (the provider of an external recommender) and what they supply (machine readable descriptions of that recommender).\n\n**Explicit evidence vs. inference:** The quotations above are the explicit evidence. It is an inference—not stated in either claim—that Claim 27's machine readable descriptions are used to configure or register the recommender; the claims do not specify that link. Likewise, the claims do not state any format or content requirements for the descriptions.\n\n### References\n\n- [1] US7991757B2.txt",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 32445,
+      "completion_tokens": 268,
+      "total_tokens": 32713,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 32384
+      },
+      "prompt_cache_hit_tokens": 32384,
+      "prompt_cache_miss_tokens": 61
+    },
+    "reasoning_content_present": false
+  }
+}

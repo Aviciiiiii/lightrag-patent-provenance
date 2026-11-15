@@ -1,0 +1,122 @@
+[
+  {
+    "claim_number": 1,
+    "start_char_in_raw_claims": 20,
+    "end_char_in_raw_claims": 687,
+    "text": "1. A method comprising: obtaining an utterance vector that is derived from an utterance; determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector; determining a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity."
+  },
+  {
+    "claim_number": 2,
+    "start_char_in_raw_claims": 687,
+    "end_char_in_raw_claims": 1255,
+    "text": "2. The method of claim 1 , wherein obtaining the utterance vector comprises obtaining an utterance i-vector for the utterance, the utterance i-vector comprising parameters determined using multivariate factor analysis of the utterance; and wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises determining a set of speaker i-vectors from the plurality of hash tables, each speaker i-vector comprising parameters determined using multivariate factor analysis of one or more utterances of a respective speaker."
+  },
+  {
+    "claim_number": 3,
+    "start_char_in_raw_claims": 1255,
+    "end_char_in_raw_claims": 1926,
+    "text": "3. The method of claim 1 , wherein obtaining the utterance vector comprises obtaining an utterance vector comprising parameters determined based on deep neural network activations that occur in response to information about the utterance being provided to the deep neural network; and wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises determining a set of speaker vectors in which each speaker vector comprises parameters determined based on deep neural network activations that occur in response to information about one or more utterances of a respective speaker being provided to the deep neural network."
+  },
+  {
+    "claim_number": 4,
+    "start_char_in_raw_claims": 1926,
+    "end_char_in_raw_claims": 2163,
+    "text": "4. The method of claim 1 , further comprising: identifying one or more media items that include utterances of a speaker corresponding to the selected speaker vector; and outputting data indicating the identified one or more media items."
+  },
+  {
+    "claim_number": 5,
+    "start_char_in_raw_claims": 2163,
+    "end_char_in_raw_claims": 2447,
+    "text": "5. The method of claim 1 , further comprising: determining that the selected speaker vector corresponds to a particular user; and based at least in part on the determining that the selected speaker vector corresponds to a particular user identity, authenticating the particular user."
+  },
+  {
+    "claim_number": 6,
+    "start_char_in_raw_claims": 2447,
+    "end_char_in_raw_claims": 2601,
+    "text": "6. The method of claim 1 , wherein determining the hash values comprises determining the hash values using one or more locality sensitive hash functions."
+  },
+  {
+    "claim_number": 7,
+    "start_char_in_raw_claims": 2601,
+    "end_char_in_raw_claims": 2785,
+    "text": "7. The method of claim 1 , wherein determining the hash values comprises determining the hash values based on a position of the utterance vector with respect to different hyperplanes."
+  },
+  {
+    "claim_number": 8,
+    "start_char_in_raw_claims": 2785,
+    "end_char_in_raw_claims": 3272,
+    "text": "8. The method of claim 1 , wherein determining the hash values comprises: determining first hash values for the utterance vector based on a first set of hash functions; and determining second hash values as different combinations of two or more of the first hash values; wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises determining the set of speaker vectors from the plurality of hash tables using the second hash values."
+  },
+  {
+    "claim_number": 9,
+    "start_char_in_raw_claims": 3272,
+    "end_char_in_raw_claims": 3678,
+    "text": "9. The method of claim 1 , wherein comparing the speaker vectors in the set with the utterance vector comprises determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set; and wherein selecting a speaker vector comprises selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector."
+  },
+  {
+    "claim_number": 10,
+    "start_char_in_raw_claims": 3678,
+    "end_char_in_raw_claims": 3965,
+    "text": "10. The method of claim 9 , wherein determining similarity scores that each indicate a degree of similarity of the utterance vector and one of the speaker vectors in the set comprises determining a cosine distance between the utterance vector and each of the speaker vectors in the set."
+  },
+  {
+    "claim_number": 11,
+    "start_char_in_raw_claims": 3965,
+    "end_char_in_raw_claims": 4482,
+    "text": "11. The method of claim 10 , wherein selecting the speaker vector that the similarity scores indicate is most similar to the utterance vector comprises: identifying a smallest cosine distance from among the determined cosine distances; determining that the smallest cosine distance is less than a maximum distance threshold value; and based on determining that the smallest cosine distance is less than the maximum distance threshold value, selecting the speaker vector corresponding to the smallest cosine distance."
+  },
+  {
+    "claim_number": 12,
+    "start_char_in_raw_claims": 4482,
+    "end_char_in_raw_claims": 4744,
+    "text": "12. The method of claim 1 , wherein each of the speaker vectors corresponds to a different speaker; and wherein the method further comprises providing data indicating that the speaker corresponding to the selected speaker vector is the speaker of the utterance."
+  },
+  {
+    "claim_number": 13,
+    "start_char_in_raw_claims": 4744,
+    "end_char_in_raw_claims": 5199,
+    "text": "13. The method of claim 1 , further comprising: obtaining multiple speaker vectors that each indicate characteristics of speech of a respective speaker; and for each particular speaker vector of the multiple speaker vectors: determining hash values for the particular speaker vector according to each of the multiple different hash functions; and inserting the particular speaker vector into each of the plurality of hash tables based on the hash values."
+  },
+  {
+    "claim_number": 14,
+    "start_char_in_raw_claims": 5199,
+    "end_char_in_raw_claims": 5469,
+    "text": "14. The method of claim 1 , wherein obtaining multiple speaker vectors that each indicate characteristics of speech of a respective speaker comprises: accessing a set of multiple video resources; and generating a speaker vector for each of the multiple video resources."
+  },
+  {
+    "claim_number": 15,
+    "start_char_in_raw_claims": 5469,
+    "end_char_in_raw_claims": 5880,
+    "text": "15. The method of claim 1 , wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises: determining a different speaker vector for each of the plurality of hash tables, wherein each of the different speaker vectors is determined using (i) a different hash value of the determined hash values and (ii) a different hash table of the plurality of hash tables."
+  },
+  {
+    "claim_number": 16,
+    "start_char_in_raw_claims": 5880,
+    "end_char_in_raw_claims": 6569,
+    "text": "16. A computer-readable storage device storing instructions that, when executed by one or more computers, cause the one or more computers to perform operations comprising: obtaining an utterance vector that is derived from an utterance; determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; and selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector."
+  },
+  {
+    "claim_number": 17,
+    "start_char_in_raw_claims": 6569,
+    "end_char_in_raw_claims": 6973,
+    "text": "17. The storage device of claim 16 , wherein the operations further comprise: accessing data indicating associations between the speaker vectors and respective speakers; determining, based on the data indicating the associations between the speaker vectors and the respective speakers, a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity."
+  },
+  {
+    "claim_number": 18,
+    "start_char_in_raw_claims": 6973,
+    "end_char_in_raw_claims": 7714,
+    "text": "18. A system comprising: one or more computers; and a computer-readable storage device storing instructions that, when executed by the one or more computers, cause the one or more computers to perform operations comprising: obtaining an utterance vector that is derived from an utterance; determining hash values for the utterance vector according to multiple different hash functions; determining a set of speaker vectors from a plurality of hash tables using the hash values, each speaker vector being derived from one or more utterances of a respective speaker; comparing the speaker vectors in the set with the utterance vector; and selecting a speaker vector based on comparing the speaker vectors in the set with the utterance vector."
+  },
+  {
+    "claim_number": 19,
+    "start_char_in_raw_claims": 7714,
+    "end_char_in_raw_claims": 8284,
+    "text": "19. The system of claim 18 , wherein obtaining the utterance vector comprises obtaining an utterance i-vector for the utterance, the utterance i-vector comprising parameters determined using multivariate factor analysis of the utterance; and wherein determining the set of speaker vectors from the plurality of hash tables using the hash values comprises determining a set of speaker i-vectors from the plurality of hash tables, each speaker i-vector comprising parameters determined using multivariate factor analysis of one or more utterances of a respective speaker."
+  },
+  {
+    "claim_number": 20,
+    "start_char_in_raw_claims": 8284,
+    "end_char_in_raw_claims": 8679,
+    "text": "20. The system of claim 18 , wherein the operations further comprise: accessing data indicating associations between the speaker vectors and respective speakers; determining, based on the data indicating the associations between the speaker vectors and the respective speakers, a speaker identity corresponding to the selected speaker vector; and outputting data indicating the speaker identity."
+  }
+]
